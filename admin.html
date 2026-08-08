@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TeknoVersus — Yönetim Paneli</title>
+<meta name="robots" content="noindex, nofollow" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+  :root{
+    --bg:#EFF2ED; --surface:#FFFFFF; --ink:#1B211D; --ink-soft:#5B6B60; --yellow:#EFB123;
+    --line:#DDE3D9; --line-strong:#C9D2C4;
+    --c1:#2B6CB0; --c2:#B23A5C; --c3:#B8790F; --c4:#1F7A6C; --c5:#6B4C9A; --c6:#4A5568;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;}
+  h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.02em;}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 60px;}
+  .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:10px;}
+  .brand{font-family:'Oswald',sans-serif;font-size:20px;letter-spacing:.05em;display:flex;align-items:center;gap:9px;}
+  .brand-logo{height:26px;width:auto;background:var(--bg);border-radius:6px;}
+  .brand-text .tekno{color:var(--ink);}
+  .brand-text .versus{color:var(--yellow);}
+  .warn{background:#FFF7E6;border:1px solid #E8C77A;color:#7A5A12;font-size:12.5px;padding:10px 14px;border-radius:8px;margin-bottom:22px;}
+  .btn{font-family:'Inter',sans-serif;font-weight:600;font-size:14px;border:none;border-radius:8px;padding:11px 20px;cursor:pointer;}
+  .btn-dark{background:var(--ink);color:var(--bg);}
+  .btn-outline{background:transparent;border:1.5px solid var(--line-strong);color:var(--ink);}
+  .stat-cards{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}
+  .stat-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 16px;min-width:110px;}
+  .stat-card .num{font-family:'Oswald',sans-serif;font-size:24px;}
+  .stat-card .lbl{font-size:11px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;}
+  .admin-search{width:100%;margin-bottom:14px;font-family:'Inter',sans-serif;border:1.5px solid var(--line-strong);border-radius:6px;padding:10px 12px;font-size:14px;outline:none;background:var(--surface);}
+  .admin-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);}
+  .admin-row .name{flex:1;font-weight:600;font-size:13.5px;}
+  .admin-row .meta{font-size:11.5px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;}
+  .admin-edit{border:1px solid var(--line-strong);background:#fff;color:var(--ink);border-radius:6px;padding:5px 10px;font-size:12px;cursor:pointer;}
+  .admin-remove{border:1px solid var(--line-strong);background:#fff;color:#B23A5C;border-radius:6px;padding:5px 10px;font-size:12px;cursor:pointer;}
+
+  .modal-overlay{position:fixed;inset:0;background:rgba(27,33,29,.55);display:none;align-items:flex-start;justify-content:center;padding:24px 16px;overflow-y:auto;z-index:80;}
+  .modal-overlay.show{display:flex;}
+  .modal{background:var(--surface);border-radius:14px;max-width:640px;width:100%;padding:24px;margin-top:20px;}
+  .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+  .modal-close{background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink-soft);}
+  .field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;}
+  .field label{font-size:12.5px;font-weight:600;color:var(--ink-soft);}
+  .field input,.field select,.field textarea{font-family:'Inter',sans-serif;border:1.5px solid var(--line-strong);border-radius:6px;padding:9px 10px;font-size:14px;outline:none;}
+  .field textarea{resize:vertical;line-height:1.5;}
+  .spec-input-row{display:flex;gap:8px;margin-bottom:8px;}
+  .spec-input-row input{flex:1;}
+  label.chk{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:12px;}
+
+  .admin-tabs{display:flex;gap:22px;margin-bottom:20px;border-bottom:1px solid var(--line);}
+  .admin-tab{padding:10px 2px;font-weight:600;font-size:14.5px;color:var(--ink-soft);cursor:pointer;border-bottom:2px solid transparent;user-select:none;}
+  .admin-tab.active{color:var(--ink);border-bottom-color:var(--ink);}
+  .admin-tab .badge{background:var(--c2);color:#fff;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px;}
+
+  .cat-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+  .cat-chip{padding:6px 13px;border-radius:16px;border:1px solid var(--line-strong);background:var(--surface);font-size:12.5px;cursor:pointer;font-family:'Inter',sans-serif;}
+  .cat-chip.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .cat-group-header{font-size:11.5px;font-weight:700;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em;margin:18px 0 6px;}
+
+  .review-row{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;}
+  .review-row .meta{font-size:11.5px;color:var(--ink-soft);margin-bottom:5px;}
+  .review-row .txt{font-size:13px;margin-bottom:10px;}
+  .review-row .stars{color:var(--yellow);}
+  .review-actions{display:flex;gap:8px;}
+  .review-actions button{padding:6px 14px;font-size:12px;}
+</style>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+
+<!-- Giriş ekranı -->
+<div class="wrap" id="loginGate" style="max-width:380px;padding-top:60px;">
+  <div class="brand" style="justify-content:center;margin-bottom:24px;"><picture><source srcset="assets/logo-header.webp" type="image/webp"/><img src="assets/logo-header.png" class="brand-logo" alt="TeknoVersus logo" width="144" height="60" decoding="async"/></picture><span class="brand-text"><span class="tekno">TEKNO</span><span class="versus">VERSUS</span></span></div>
+  <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;">
+    <h3 style="margin:0 0 4px;">Yönetim Paneli Girişi</h3>
+    <p style="font-size:12.5px;color:var(--ink-soft);margin:0 0 16px;">Supabase'de oluşturduğun admin hesabıyla giriş yap.</p>
+    <div class="field"><label>E-posta</label><input id="loginEmail" type="email" placeholder="admin@ornek.com" /></div>
+    <div class="field"><label>Şifre</label><input id="loginPassword" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter') doLogin()" /></div>
+    <div id="loginError" style="color:var(--bad);font-size:12.5px;margin-bottom:10px;display:none;"></div>
+    <button class="btn btn-dark" style="width:100%;" onclick="doLogin()" id="loginBtn">Giriş Yap</button>
+  </div>
+  <p style="font-size:11px;color:var(--ink-soft);margin-top:14px;text-align:center;">
+    Hesabın yok mu? Supabase panelinde Authentication → Users → Add user'dan oluşturabilirsin.
+  </p>
+</div>
+
+<div class="wrap" id="adminApp" style="display:none;">
+  <div class="top">
+    <div class="brand"><a href="index.html"><picture><source srcset="assets/logo-header.webp" type="image/webp"/><img src="assets/logo-header.png" class="brand-logo" alt="TeknoVersus logo" width="144" height="60" decoding="async"/></picture><span class="brand-text"><span class="tekno">TEKNO</span><span class="versus">VERSUS</span></span></a><span>— Yönetim Paneli</span></div>
+    <div style="display:flex;gap:8px;">
+      <a class="btn btn-outline" href="index.html" style="text-decoration:none;">← Siteye dön</a>
+      <button class="btn btn-outline" onclick="doLogout()">Çıkış Yap</button>
+    </div>
+  </div>
+
+  <div class="warn">
+    Bu panel artık gerçek Supabase girişiyle korunuyor. Yine de ek güvenlik için bu sayfayı arama motorlarından
+    gizli tutmak (robots.txt zaten engelliyor) ve mümkünse hosting seviyesinde de bir erişim kısıtlaması eklemek iyi bir pratiktir.
+  </div>
+
+  <div class="admin-tabs">
+    <div class="admin-tab active" id="tabProducts" onclick="switchAdminTab('products')">Ürünler</div>
+    <div class="admin-tab" id="tabNews" onclick="switchAdminTab('news')">Haberler</div>
+    <div class="admin-tab" id="tabReviews" onclick="switchAdminTab('reviews')">Yorumlar<span class="badge" id="pendingBadge" style="display:none;">0</span></div>
+    <div class="admin-tab" id="tabRequests" onclick="switchAdminTab('requests')">Talepler<span class="badge" id="requestsBadge" style="display:none;">0</span></div>
+  </div>
+
+  <div id="productsPanel">
+    <div class="stat-cards" id="adminStats"></div>
+    <button class="btn btn-dark" style="margin-bottom:16px;" onclick="openAdd()">+ Yeni ürün ekle</button>
+    <input class="admin-search" id="adminSearch" placeholder="Ürün adı veya kategoriye göre ara…" oninput="renderAdminList()" />
+    <div class="cat-chips" id="catChips"></div>
+    <div id="adminProductList"></div>
+  </div>
+
+  <div id="newsPanel" style="display:none;">
+    <p style="font-size:12.5px;color:var(--ink-soft);margin-bottom:14px;">
+      Buraya eklediğin her haber, bir sonraki otomatik build'de (GitHub Actions, Supabase kaydından ~1 dakika sonra)
+      kendi HTML sayfasına kavuşur: <code>haberler/[başlık-slug].html</code>. Elle bir şey yapmana gerek yok.
+    </p>
+    <button class="btn btn-dark" style="margin-bottom:16px;" onclick="openAddNews()">+ Yeni haber ekle</button>
+    <div id="adminNewsList"></div>
+  </div>
+
+
+  <div id="reviewsPanel" style="display:none;">
+    <div id="reviewsList"></div>
+  </div>
+
+  <div id="requestsPanel" style="display:none;">
+    <p style="font-size:12.5px;color:var(--ink-soft);margin-bottom:14px;">
+      Ziyaretçilerin arayıp kataloğunda bulamadığı ürün istekleri — hangi ürünleri eklemen gerektiğine dair fikir verir.
+    </p>
+    <div id="requestsList"></div>
+  </div>
+</div>
+
+<!-- Add/Edit product modal -->
+<div class="modal-overlay" id="addOverlay">
+  <div class="modal">
+    <div class="modal-head"><h3 id="addModalTitle">Yeni ürün ekle</h3><button class="modal-close" onclick="closeAdd()">×</button></div>
+    <div class="field"><label>Ürün adı</label><input id="fName" placeholder="örn. Pixel 10 Pro" /></div>
+    <div class="field"><label>Kategori</label><select id="fCat" onchange="if(!editingId) fillSpecTemplate(this.value)"></select></div>
+    <div class="field"><label>Kısa açıklama</label><input id="fBlurb" placeholder="Tek cümlelik özet" /></div>
+    <div class="field"><label>Çıkış / eklenme tarihi</label><input id="fDate" type="date" /></div>
+    <div class="field"><label>Satış linki (opsiyonel)</label><input id="fLink" placeholder="https://..." /></div>
+    <label class="chk"><input type="checkbox" id="fUpcoming"/> Henüz çıkmadı — "Beklenenler" sekmesinde göster</label>
+    <label style="font-size:12.5px;font-weight:600;color:var(--ink-soft);">Özellikler (etiket : değer)</label>
+    <div id="specRows"></div>
+    <button class="btn btn-outline" style="margin:8px 0 16px;" onclick="addSpecRow()">+ Özellik satırı</button>
+    <button class="btn btn-dark" id="submitProductBtn" onclick="submitProduct()">Kataloğa ekle</button>
+    <p style="font-size:11.5px;color:var(--ink-soft);margin-top:10px;">Ürün eklendiği anda kataloğa ve (çıkış tarihi en yeni olduğu için) otomatik olarak "Yeni Çıkanlar" bölümüne eklenir. Satış linki girilirse ürün kartında "Satın Al" butonu görünür.</p>
+  </div>
+</div>
+
+<!-- Add/Edit news modal -->
+<div class="modal-overlay" id="newsOverlay">
+  <div class="modal">
+    <div class="modal-head"><h3 id="newsModalTitle">Yeni haber ekle</h3><button class="modal-close" onclick="closeAddNews()">×</button></div>
+    <div class="field"><label>Başlık</label><input id="nTitle" placeholder="örn. Google Pixel 11 Serisi Tanıtıldı" oninput="if(!editingNewsId) document.getElementById('nSlugPreview').textContent = slugify(this.value) + '.html'" /></div>
+    <div class="field" id="nSlugField" style="display:none;"><label>URL (otomatik, düzenlenemez)</label><input id="nSlugPreview" disabled style="color:var(--ink-soft);" /></div>
+    <div class="field"><label>Kategori</label><select id="nCat"></select></div>
+    <div class="field"><label>Tarih</label><input id="nDate" type="date" /></div>
+    <div class="field"><label>Kısa özet (liste kartında ve arama motorunda görünür)</label><textarea id="nSummary" rows="2" placeholder="1-2 cümlelik özet"></textarea></div>
+    <div class="field"><label>İlgili ürün (opsiyonel)</label><select id="nRelatedProduct"><option value="">— Yok —</option></select></div>
+    <div class="field">
+      <label>Haber metni (her paragrafı BOŞ SATIRLA ayır)</label>
+      <textarea id="nBody" rows="10" placeholder="Birinci paragraf...&#10;&#10;İkinci paragraf...&#10;&#10;Üçüncü paragraf..."></textarea>
+    </div>
+    <button class="btn btn-dark" id="submitNewsBtn" onclick="submitNews()">Yayınla</button>
+    <p style="font-size:11.5px;color:var(--ink-soft);margin-top:10px;">
+      Kaydettiğinde haber, sitedeki <code>haberler.html</code> listesine ve seçtiğin varsa ilgili ürün sayfasına
+      otomatik bağlanır. Sayfanın kendisi bir sonraki build'de üretilir (elle FTP/HTML işi yok).
+    </p>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script>
+let products = [];
+let editingId = null;
+
+// ---- Supabase Auth (gerçek giriş) ----
+function getSession(){
+  try{
+    const raw = localStorage.getItem('tv_admin_session');
+    return raw ? JSON.parse(raw) : null;
+  }catch(e){ return null; }
+}
+
+function setSession(s){
+  localStorage.setItem('tv_admin_session', JSON.stringify(s));
+}
+
+function clearSession(){
+  localStorage.removeItem('tv_admin_session');
+}
+
+async function doLogin(){
+  const email = document.getElementById('loginEmail').value.trim();
+  const password = document.getElementById('loginPassword').value;
+  const errEl = document.getElementById('loginError');
+  const btn = document.getElementById('loginBtn');
+  errEl.style.display = 'none';
+  if(!email || !password){ errEl.textContent = 'E-posta ve şifre gerekli.'; errEl.style.display=''; return; }
+
+  btn.disabled = true; btn.textContent = 'Giriş yapılıyor…';
+  try{
+    const res = await fetch(SUPABASE_URL + '/auth/v1/token?grant_type=password', {
+      method: 'POST',
+      headers: { 'apikey': SUPABASE_KEY, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password })
+    });
+    const data = await res.json();
+    if(!res.ok || !data.access_token){
+      errEl.textContent = 'Giriş başarısız — e-posta ya da şifre hatalı.';
+      errEl.style.display = '';
+      btn.disabled = false; btn.textContent = 'Giriş Yap';
+      return;
+    }
+    setSession({
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      expires_at: Date.now() + (data.expires_in || 3600) * 1000
+    });
+    showAdmin();
+  }catch(e){
+    errEl.textContent = 'Bağlantı hatası, tekrar dene.';
+    errEl.style.display = '';
+    btn.disabled = false; btn.textContent = 'Giriş Yap';
+  }
+}
+
+async function tryRefreshSession(){
+  const s = getSession();
+  if(!s || !s.refresh_token) return false;
+  try{
+    const res = await fetch(SUPABASE_URL + '/auth/v1/token?grant_type=refresh_token', {
+      method: 'POST',
+      headers: { 'apikey': SUPABASE_KEY, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ refresh_token: s.refresh_token })
+    });
+    const data = await res.json();
+    if(!res.ok || !data.access_token) return false;
+    setSession({
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      expires_at: Date.now() + (data.expires_in || 3600) * 1000
+    });
+    return true;
+  }catch(e){ return false; }
+}
+
+function doLogout(){
+  clearSession();
+  location.reload();
+}
+
+async function checkSessionAndBoot(){
+  let s = getSession();
+  if(s && s.expires_at && Date.now() > s.expires_at){
+    const refreshed = await tryRefreshSession();
+    if(!refreshed) s = null;
+  }
+  if(s && getAdminAccessToken()){
+    showAdmin();
+  } else {
+    document.getElementById('loginGate').style.display = '';
+    document.getElementById('adminApp').style.display = 'none';
+  }
+}
+
+function showAdmin(){
+  document.getElementById('loginGate').style.display = 'none';
+  document.getElementById('adminApp').style.display = '';
+  init();
+}
+
+let adminTab = 'products';
+let catFilter = 'Tümü';
+let news = [];
+let editingNewsId = null;
+
+async function init(){
+  products = await loadSharedProducts();
+  news = await loadSharedNews();
+  renderStats();
+  renderCatChips();
+  renderAdminList();
+  refreshPendingBadge();
+}
+
+async function refreshPendingBadge(){
+  const all = await getAllRatingsForAdmin();
+  updatePendingBadge(all.filter(r => !r.approved).length);
+}
+
+function updatePendingBadge(n){
+  const b = document.getElementById('pendingBadge');
+  if(n > 0){ b.style.display = ''; b.textContent = n; } else { b.style.display = 'none'; }
+}
+
+function switchAdminTab(tab){
+  adminTab = tab;
+  document.getElementById('tabProducts').classList.toggle('active', tab === 'products');
+  document.getElementById('tabNews').classList.toggle('active', tab === 'news');
+  document.getElementById('tabReviews').classList.toggle('active', tab === 'reviews');
+  document.getElementById('tabRequests').classList.toggle('active', tab === 'requests');
+  document.getElementById('productsPanel').style.display = tab === 'products' ? '' : 'none';
+  document.getElementById('newsPanel').style.display = tab === 'news' ? '' : 'none';
+  document.getElementById('reviewsPanel').style.display = tab === 'reviews' ? '' : 'none';
+  document.getElementById('requestsPanel').style.display = tab === 'requests' ? '' : 'none';
+  if(tab === 'news') renderAdminNewsList();
+  if(tab === 'reviews') renderReviewsPanel();
+  if(tab === 'requests') renderRequestsPanel();
+}
+
+async function renderRequestsPanel(){
+  const list = document.getElementById('requestsList');
+  list.innerHTML = '<p style="color:var(--ink-soft);font-size:13px;">Yükleniyor…</p>';
+  const requests = await getProductRequests();
+  updateRequestsBadge(requests.length);
+
+  if(!requests.length){
+    list.innerHTML = '<p style="color:var(--ink-soft);font-size:13px;">Henüz bir talep yok.</p>';
+    return;
+  }
+
+  list.innerHTML = requests.map(r => `
+    <div class="review-row">
+      <div class="meta">"${r.query.replace(/</g,'&lt;')}" · ${new Date(r.created_at).toLocaleDateString('tr-TR')}</div>
+      <div class="review-actions">
+        <button class="btn btn-dark" onclick="doResolveRequest(${r.id})">Ele Alındı</button>
+        <button class="admin-remove" onclick="doDeleteRequest(${r.id})">Kaldır</button>
+      </div>
+    </div>`).join('');
+}
+
+function updateRequestsBadge(n){
+  const b = document.getElementById('requestsBadge');
+  if(n > 0){ b.style.display = ''; b.textContent = n; } else { b.style.display = 'none'; }
+}
+
+async function doResolveRequest(id){
+  await resolveProductRequest(id);
+  renderRequestsPanel();
+}
+
+async function doDeleteRequest(id){
+  if(!confirm('Bu talebi kaldırmak istediğine emin misin?')) return;
+  await deleteProductRequest(id);
+  renderRequestsPanel();
+}
+
+function renderCatChips(){
+  const chips = ['Tümü', ...CATS, 'Beklenenler'];
+  document.getElementById('catChips').innerHTML = chips.map(c =>
+    `<span class="cat-chip ${catFilter===c ? 'active' : ''}" onclick="setCatFilter('${c}')">${c}</span>`
+  ).join('');
+}
+
+function setCatFilter(c){
+  catFilter = c;
+  renderCatChips();
+  renderAdminList();
+}
+
+function renderStats(){
+  const total = products.filter(p=>!p.upcoming).length;
+  const upcoming = products.filter(p=>p.upcoming).length;
+  const byCat = {};
+  products.forEach(p=>{ if(!p.upcoming) byCat[p.cat]=(byCat[p.cat]||0)+1; });
+  const topCat = Object.entries(byCat).sort((a,b)=>b[1]-a[1])[0];
+  document.getElementById('adminStats').innerHTML = `
+    <div class="stat-card"><div class="num">${total}</div><div class="lbl">TOPLAM ÜRÜN</div></div>
+    <div class="stat-card"><div class="num">${upcoming}</div><div class="lbl">BEKLENEN</div></div>
+    <div class="stat-card"><div class="num">${topCat ? topCat[1] : 0}</div><div class="lbl">${topCat ? topCat[0].toUpperCase() : '—'}</div></div>
+  `;
+}
+
+function populateCatSelect(){
+  document.getElementById('fCat').innerHTML = CATS.map(c=>`<option>${c}</option>`).join('');
+}
+function addSpecRow(k,v){
+  const row = document.createElement('div');
+  row.className = 'spec-input-row';
+  row.innerHTML = `<input placeholder="Etiket (örn. Pil)" class="specKey" value="${k||''}"/><input placeholder="Değer (örn. 5000 mAh)" class="specVal" value="${v||''}"/>`;
+  document.getElementById('specRows').appendChild(row);
+}
+
+// Sitede zaten kullanılan tam etiket adlarıyla birebir eşleşen şablonlar —
+// böylece skor/karşılaştırma mantığı yeni eklenen ürünlerdeki alanları da tanır.
+const SPEC_TEMPLATES = {
+  'Telefon': ['Fiyat (₺)','Ekran (inç)','Pil (mAh)','Kamera (MP)','RAM (GB)','Su Geçirmezlik','Kalınlık (mm)','Genişlik (mm)','Uzunluk (mm)','Ekran Türü','Piksel Yoğunluğu (PPI)','Çözünürlük','Yenileme Hızı (Hz)','İşletim Sistemi'],
+  'Dizüstü': ['Fiyat (₺)','Ekran (inç)','Pil (saat)','RAM (GB)','Depolama (GB)','Kalınlık (mm)','Genişlik (mm)','Uzunluk (mm)','Ekran Türü','Piksel Yoğunluğu (PPI)','Çözünürlük','Yenileme Hızı (Hz)','İşletim Sistemi'],
+  'Kulaklık': ['Fiyat (₺)','Pil (saat)','Ağırlık (gram)','Su Geçirmezlik'],
+  'Tablet': ['Fiyat (₺)','Ekran (inç)','RAM (GB)','Depolama (GB)','Kalınlık (mm)','Genişlik (mm)','Uzunluk (mm)','Ekran Türü','Piksel Yoğunluğu (PPI)','Çözünürlük','Yenileme Hızı (Hz)','İşletim Sistemi'],
+  'Akıllı Saat': ['Fiyat (₺)','Su Geçirmezlik','Pil (saat)','Kalınlık (mm)','Genişlik (mm)','Uzunluk (mm)','Ekran Türü','Yenileme Hızı (Hz)','İşletim Sistemi'],
+  'Kamera': ['Fiyat (₺)','Çözünürlük (MP)','Video','Kalınlık (mm)','Genişlik (mm)','Uzunluk (mm)','Ekran Türü'],
+  'Televizyon': ['Fiyat (₺)','Ekran (inç)','Çözünürlük','Ekran Türü','Yenileme Hızı (Hz)','İşletim Sistemi'],
+};
+
+function fillSpecTemplate(cat){
+  document.getElementById('specRows').innerHTML = '';
+  const keys = SPEC_TEMPLATES[cat] || ['Fiyat (₺)'];
+  keys.forEach(k => addSpecRow(k, ''));
+}
+
+function openAdd(id){
+  populateCatSelect();
+  document.getElementById('specRows').innerHTML = '';
+  editingId = id || null;
+
+  if(editingId){
+    const p = products.find(x => x.id === editingId);
+    document.getElementById('addModalTitle').textContent = 'Ürünü düzenle';
+    document.getElementById('submitProductBtn').textContent = 'Değişiklikleri kaydet';
+    document.getElementById('fName').value = p.name || '';
+    document.getElementById('fCat').value = p.cat || CATS[0];
+    document.getElementById('fBlurb').value = p.blurb || '';
+    document.getElementById('fLink').value = p.link || '';
+    document.getElementById('fDate').value = (p.addedAt||'').slice(0,10);
+    document.getElementById('fUpcoming').checked = !!p.upcoming;
+    const entries = Object.entries(p.specs || {});
+    if(entries.length) entries.forEach(([k,v]) => addSpecRow(k, v));
+    else { addSpecRow(); addSpecRow(); }
+  } else {
+    document.getElementById('addModalTitle').textContent = 'Yeni ürün ekle';
+    document.getElementById('submitProductBtn').textContent = 'Kataloğa ekle';
+    document.getElementById('fName').value = '';
+    document.getElementById('fBlurb').value = '';
+    document.getElementById('fLink').value = '';
+    document.getElementById('fDate').value = new Date().toISOString().slice(0,10);
+    document.getElementById('fUpcoming').checked = false;
+    document.getElementById('fCat').value = CATS[0];
+    fillSpecTemplate(CATS[0]);
+  }
+  document.getElementById('addOverlay').classList.add('show');
+}
+function closeAdd(){ document.getElementById('addOverlay').classList.remove('show'); editingId = null; }
+
+async function submitProduct(){
+  const name = document.getElementById('fName').value.trim();
+  const cat = document.getElementById('fCat').value;
+  const blurb = document.getElementById('fBlurb').value.trim();
+  const link = document.getElementById('fLink').value.trim();
+  const dateVal = document.getElementById('fDate').value;
+  const upcoming = document.getElementById('fUpcoming').checked;
+  if(!name){ alert('Ürün adı gerekli.'); return; }
+  const specs = {};
+  document.querySelectorAll('#specRows .spec-input-row').forEach(row=>{
+    const k = row.querySelector('.specKey').value.trim();
+    const v = row.querySelector('.specVal').value.trim();
+    if(k) specs[k]=v;
+  });
+  const id = editingId || ('p_'+Date.now());
+  const product = {
+    id, name, cat, blurb, specs, link,
+    addedAt: dateVal ? new Date(dateVal).toISOString() : new Date().toISOString(),
+    upcoming
+  };
+  await saveProductShared(product);
+  if(editingId){
+    products = products.map(p=>p.id===id?product:p);
+  } else {
+    products.push(product);
+  }
+  closeAdd();
+  renderStats();
+  renderAdminList();
+}
+
+function adminRowHTML(p){
+  return `
+    <div class="admin-row">
+      <span class="name">${p.name}${p.upcoming ? ' <span style="color:var(--c3);font-size:11px;">(beklenen)</span>' : ''}</span>
+      <span class="meta">${p.cat} · ${fmtDate(p.addedAt)}</span>
+      <button class="admin-edit" onclick="openAdd('${p.id}')">Düzenle</button>
+      <button class="admin-remove" onclick="adminRemoveProduct('${p.id}')">Kaldır</button>
+    </div>`;
+}
+
+function renderAdminList(){
+  const q = (document.getElementById('adminSearch').value||'').toLowerCase();
+  let filtered = products.filter(p => !q || p.name.toLowerCase().includes(q) || p.cat.toLowerCase().includes(q));
+
+  if(catFilter === 'Beklenenler') filtered = filtered.filter(p => p.upcoming);
+  else if(catFilter !== 'Tümü') filtered = filtered.filter(p => p.cat === catFilter && !p.upcoming);
+
+  const container = document.getElementById('adminProductList');
+
+  // "Tümü" ve arama kutusu boşken kategoriye göre gruplu göster — karışıklığı önler
+  if(catFilter === 'Tümü' && !q){
+    let html = '';
+    CATS.forEach(cat => {
+      const items = filtered.filter(p => p.cat === cat && !p.upcoming)
+        .sort((a,b)=> new Date(b.addedAt) - new Date(a.addedAt));
+      if(!items.length) return;
+      html += `<div class="cat-group-header">${cat} (${items.length})</div>`;
+      html += items.map(adminRowHTML).join('');
+    });
+    const upcoming = filtered.filter(p => p.upcoming).sort((a,b)=> new Date(b.addedAt) - new Date(a.addedAt));
+    if(upcoming.length){
+      html += `<div class="cat-group-header">Beklenenler (${upcoming.length})</div>`;
+      html += upcoming.map(adminRowHTML).join('');
+    }
+    container.innerHTML = html || '<p style="color:var(--ink-soft);font-size:13px;">Ürün bulunamadı.</p>';
+  } else {
+    const sorted = [...filtered].sort((a,b)=> new Date(b.addedAt) - new Date(a.addedAt));
+    container.innerHTML = sorted.map(adminRowHTML).join('') || '<p style="color:var(--ink-soft);font-size:13px;">Ürün bulunamadı.</p>';
+  }
+}
+
+// ---- Yorum moderasyonu ----
+async function renderReviewsPanel(){
+  const list = document.getElementById('reviewsList');
+  list.innerHTML = '<p style="color:var(--ink-soft);font-size:13px;">Yükleniyor…</p>';
+
+  const all = await getAllRatingsForAdmin();
+  updatePendingBadge(all.filter(r => !r.approved).length);
+
+  const byId = {};
+  products.forEach(p => byId[p.id] = p);
+
+  function reviewRowHTML(r, pending){
+    const p = byId[r.product_id];
+    const pname = p ? p.name : `(ürün silinmiş: ${r.product_id})`;
+    const stars = '★'.repeat(r.stars) + '☆'.repeat(5-r.stars);
+    const date = r.created_at ? new Date(r.created_at).toLocaleDateString('tr-TR') : '';
+    return `
+      <div class="review-row">
+        <div class="meta"><span class="stars">${stars}</span> — <b>${pname}</b> · ${r.name || 'Anonim'} · ${date}</div>
+        ${r.comment ? `<div class="txt">${r.comment.replace(/</g,'&lt;')}</div>` : ''}
+        <div class="review-actions">
+          ${pending ? `<button class="btn btn-dark" onclick="doApproveReview(${r.id})">Onayla</button>` : ''}
+          <button class="admin-remove" onclick="doDeleteReview(${r.id})">${pending ? 'Reddet' : 'Kaldır'}</button>
+        </div>
+      </div>`;
+  }
+
+  const pending = all.filter(r => !r.approved);
+  const approved = all.filter(r => r.approved);
+
+  let html = `<h3 style="font-size:15px;margin-bottom:12px;">Onay Bekleyenler (${pending.length})</h3>`;
+  html += pending.length ? pending.map(r=>reviewRowHTML(r,true)).join('') : '<p style="color:var(--ink-soft);font-size:13px;margin-bottom:20px;">Bekleyen yorum yok.</p>';
+  html += `<h3 style="font-size:15px;margin:26px 0 12px;">Yayında Olanlar (${approved.length})</h3>`;
+  html += approved.length ? approved.map(r=>reviewRowHTML(r,false)).join('') : '<p style="color:var(--ink-soft);font-size:13px;">Henüz yayında yorum yok.</p>';
+
+  list.innerHTML = html;
+}
+
+async function doApproveReview(id){
+  await approveRating(id);
+  renderReviewsPanel();
+}
+
+async function doDeleteReview(id){
+  if(!confirm('Bu yorumu kaldırmak istediğine emin misin?')) return;
+  await deleteRating(id);
+  renderReviewsPanel();
+}
+
+async function adminRemoveProduct(id){
+  if(!confirm('Bu ürünü kataloğdan kaldırmak istediğine emin misin?')) return;
+  await deleteProductShared(id);
+  products = products.filter(p => p.id !== id);
+  renderStats();
+  renderAdminList();
+}
+
+// ---- Haberler ----
+function populateNewsSelects(){
+  const catSel = document.getElementById('nCat');
+  catSel.innerHTML = CATS.map(c => `<option value="${c}">${c}</option>`).join('');
+  const prodSel = document.getElementById('nRelatedProduct');
+  const opts = products.map(p => `<option value="${p.id}">${p.name}${p.upcoming ? ' (beklenen)' : ''}</option>`).join('');
+  prodSel.innerHTML = '<option value="">— Yok —</option>' + opts;
+}
+
+function openAddNews(id){
+  populateNewsSelects();
+  editingNewsId = id || null;
+  document.getElementById('nSlugField').style.display = editingNewsId ? '' : 'none';
+
+  if(editingNewsId){
+    const n = news.find(x => x.id === editingNewsId);
+    document.getElementById('newsModalTitle').textContent = 'Haberi düzenle';
+    document.getElementById('submitNewsBtn').textContent = 'Değişiklikleri kaydet';
+    document.getElementById('nTitle').value = n.title || '';
+    document.getElementById('nSlugPreview').value = n.id + '.html';
+    document.getElementById('nCat').value = n.cat || CATS[0];
+    document.getElementById('nDate').value = (n.date||'').slice(0,10);
+    document.getElementById('nSummary').value = n.summary || '';
+    document.getElementById('nRelatedProduct').value = n.relatedProductId || '';
+    document.getElementById('nBody').value = (n.body||[]).join('\n\n');
+  } else {
+    document.getElementById('newsModalTitle').textContent = 'Yeni haber ekle';
+    document.getElementById('submitNewsBtn').textContent = 'Yayınla';
+    document.getElementById('nTitle').value = '';
+    document.getElementById('nSlugPreview').value = '';
+    document.getElementById('nCat').value = CATS[0];
+    document.getElementById('nDate').value = new Date().toISOString().slice(0,10);
+    document.getElementById('nSummary').value = '';
+    document.getElementById('nRelatedProduct').value = '';
+    document.getElementById('nBody').value = '';
+  }
+  document.getElementById('newsOverlay').classList.add('show');
+}
+function closeAddNews(){ document.getElementById('newsOverlay').classList.remove('show'); editingNewsId = null; }
+
+async function submitNews(){
+  const title = document.getElementById('nTitle').value.trim();
+  const cat = document.getElementById('nCat').value;
+  const dateVal = document.getElementById('nDate').value;
+  const summary = document.getElementById('nSummary').value.trim();
+  const relatedProductId = document.getElementById('nRelatedProduct').value || null;
+  const bodyRaw = document.getElementById('nBody').value.trim();
+  if(!title){ alert('Başlık gerekli.'); return; }
+  if(!bodyRaw){ alert('Haber metni gerekli.'); return; }
+  const body = bodyRaw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  // Yeni haberde id = slug(title). Aynı slug zaten varsa sonuna sayı eklenir (çakışmayı önler).
+  let id = editingNewsId;
+  if(!id){
+    let base = slugify(title);
+    id = base;
+    let n = 2;
+    while(news.some(x => x.id === id)){ id = `${base}-${n}`; n++; }
+  }
+
+  const newsItem = { id, title, cat, date: dateVal || new Date().toISOString().slice(0,10), summary, relatedProductId, body };
+  const ok = await saveNewsShared(newsItem);
+  if(!ok){ alert('Kaydedilemedi — internet bağlantını veya Supabase ayarlarını kontrol et.'); return; }
+
+  if(editingNewsId){
+    news = news.map(n => n.id === id ? newsItem : n);
+  } else {
+    news.unshift(newsItem);
+  }
+  closeAddNews();
+  renderAdminNewsList();
+}
+
+function adminNewsRowHTML(n){
+  const relatedProduct = n.relatedProductId ? products.find(p => p.id === n.relatedProductId) : null;
+  return `
+    <div class="admin-row">
+      <span class="name">${n.title}</span>
+      <span class="meta">${n.cat} · ${n.date || ''}${relatedProduct ? ' · İlgili: ' + relatedProduct.name : ''} · <code style="font-size:11px;">haberler/${n.id}.html</code></span>
+      <button class="admin-edit" onclick="openAddNews('${n.id}')">Düzenle</button>
+      <button class="admin-remove" onclick="adminRemoveNews('${n.id}')">Kaldır</button>
+    </div>`;
+}
+
+function renderAdminNewsList(){
+  const list = document.getElementById('adminNewsList');
+  if(!news.length){
+    list.innerHTML = '<p style="color:var(--ink-soft);font-size:13px;">Henüz haber eklenmedi.</p>';
+    return;
+  }
+  const sorted = [...news].sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  list.innerHTML = sorted.map(adminNewsRowHTML).join('');
+}
+
+async function adminRemoveNews(id){
+  if(!confirm('Bu haberi kaldırmak istediğine emin misin? Sayfası bir sonraki build ile sitemap üzerinden de kaldırılır.')) return;
+  await deleteNewsShared(id);
+  news = news.filter(n => n.id !== id);
+  renderAdminNewsList();
+}
+
+checkSessionAndBoot();
+</script>
+</body>
+</html>

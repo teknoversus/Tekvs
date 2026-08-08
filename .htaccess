@@ -1,0 +1,64 @@
+# ============================================================
+# TeknoVersus — Güvenlik başlıkları (Apache / cPanel)
+# mod_headers gerektirir (çoğu cPanel hosting'de zaten aktif).
+# ============================================================
+
+<IfModule mod_headers.c>
+  # HSTS — HTTPS'e zorla, 1 yıl (alt domainler dahil)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+  # MIME sniffing engelle
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Clickjacking koruması — kendi sitenden iframe'e izin ver, başkasına verme
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Referrer bilgisini sınırlı paylaş
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Kullanılmayan tarayıcı izinlerini kapat (kamera/mikrofon/konum kullanılmıyor)
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+  # Content-Security-Policy — sitenin GERÇEKTEN kullandığı kaynaklara göre:
+  # cdnjs (Chart.js), Google Fonts, Google Analytics, Unsplash (kategori
+  # banner görselleri), Supabase (admin.html girişi + Amazon linkleri).
+  # 'unsafe-inline' script-src'te var çünkü site build sürecinde sayfa
+  # başına inline <script> kullanıyor (nonce/hash sistemi yok) — bu, tam
+  # bir CSP'nin sağladığı XSS korumasını biraz azaltıyor ama diğer başlıklar
+  # (clickjacking, MIME sniffing, HSTS) tam korumada; ilerde script'leri
+  # ayrı .js dosyalarına taşırsak 'unsafe-inline' kaldırılıp sıkılaştırılabilir.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.googletagmanager.com; connect-src 'self' https://qsetmleywkhjcntajphx.supabase.co https://www.google-analytics.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
+
+  # Admin sayfasını arama motorlarından gizle — netlify.toml'daki ölü
+  # ayarın YERİNE gerçek, çalışan bir koruma (bkz. AUTOMATION.md notu).
+  <FilesMatch "^admin\.html$">
+    Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+  </FilesMatch>
+</IfModule>
+
+# Sunucu imzasını gizle (Apache sürüm bilgisi vb.)
+ServerSignature Off
+
+# ============================================================
+# Performans — sıkıştırma ve tarayıcı önbelleği
+# ============================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# HTTPS'e yönlendir (hosting bunu zaten yapıyorsa bu blok zararsızdır)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

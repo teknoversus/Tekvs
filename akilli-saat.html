@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Akıllı Saat Karşılaştırma — TeknoVersus</title>
+<meta name="description" content="Akıllı saat karşılaştırma: akıllı saat modellerini fiyat, pil ömrü ve su geçirmezliğe göre yan yana karşılaştır." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://teknoversus.com.tr/akilli-saat.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://teknoversus.com.tr/akilli-saat.html" />
+<meta property="og:title" content="Akıllı Saat Karşılaştırma — TeknoVersus" />
+<meta property="og:description" content="Akıllı saat karşılaştırma: akıllı saat modellerini fiyat, pil ömrü ve su geçirmezliğe göre yan yana karşılaştır." />
+<meta property="og:locale" content="tr_TR" />
+<meta name="twitter:card" content="summary" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Anasayfa","item":"https://teknoversus.com.tr/"},
+    {"@type":"ListItem","position":2,"name":"Akıllı Saat","item":"https://teknoversus.com.tr/akilli-saat.html"}
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q14VG0SB56"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-Q14VG0SB56");
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand"><a href="index.html"><picture><source srcset="assets/logo-header.webp" type="image/webp"/><img src="assets/logo-header.png" class="brand-logo" alt="TeknoVersus logo" width="144" height="60" decoding="async"/></picture><span class="brand-text"><span class="tekno">TEKNO</span><span class="versus">VERSUS</span></span></a></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Anasayfa</a>
+      <a href="haberler.html">Haberler</a>
+      <a href="yakinda-cikacak.html">Yakında Çıkacak</a>
+      <a href="karsilastirmalar.html">Karşılaştırmalar</a>
+      <a href="index.html#yeni">Yeni Çıkanlar</a>
+      <a href="index.html#katalog">Tüm Kategoriler</a>
+      <a href="index.html?finder=1">Bulucu</a>
+    </nav>
+    <button class="burger" id="burgerBtn">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-label"><a href="index.html" style="text-decoration:none;color:inherit;">Anasayfa</a> / Akıllı Saat</div>
+        <h1 class="section-title">Akıllı Saat Karşılaştırma</h1>
+      </div>
+    </div>
+
+    <div class="cat-banner"><img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" alt="" loading="lazy" decoding="async" width="1600" height="360"/><div class="txt"><small>Akıllı Saat</small><strong>Sağlık takibinden bildirime en iyi modelleri bul</strong></div>
+      <span class="credit">Foto: Unsplash</span>
+    </div>
+
+    <div class="guide-content"><h2>Akıllı Saat Alırken Nelere Dikkat Etmeli?</h2>
+    Akıllı saatlerde en çok fark yaratan unsurlardan biri <b>pil ömrüdür</b> — sürekli ekran açık
+    (always-on display) kullanımı pil ömrünü belirgin şekilde kısaltabilir. Sağlık takibi
+    önemliyse, nabız, SpO2 (kandaki oksijen) ve uyku takibi gibi sensörlerin doğruluğu markadan
+    markaya değişir. Su geçirmezlik derecesi (genelde metre cinsinden belirtilir) yüzme gibi
+    aktiviteler için önemlidir. Telefon uyumluluğu da kritik bir noktadır — bazı akıllı saatler
+    yalnızca belirli bir işletim sistemiyle (iOS veya Android) tam uyumlu çalışır, bu yüzden
+    telefonunuzla uyumluluğu satın almadan önce mutlaka kontrol edin.
+    <ul>
+      <li>Spor takibi önemliyse: GPS ve sensör çeşitliliğine bakın.</li>
+      <li>Pil ömrü önemliyse: always-on ekran kullanmadığınızda süre belirgin uzar.</li>
+      <li>Telefon uyumluluğunu satın almadan önce mutlaka teyit edin.</li>
+    </ul></div>
+
+    <div class="chips" id="catChipsNav"></div>
+
+    <div class="search-box">
+      <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz akıllı saat'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
+    </div>
+    <div class="search-status" id="searchStatus"></div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
+      </div>
+      <div class="toolbar-left">
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+          <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
+          <option value="score_desc">Skor: Yüksekten düşüğe</option>
+          <option value="date_asc">Tarih: Eskiden yeniye</option>
+          <option value="price_asc">Fiyat: Düşükten yükseğe</option>
+          <option value="price_desc">Fiyat: Yüksekten düşüğe</option>
+          <option value="views_desc">Görüntülenme: Çoktan aza</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid" id="mainGrid">
+  <div class="card" onclick="openDetail('h26')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h26')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 23 Eylül 2022</div>
+    <div class="card-name">Apple Watch Ultra</div>
+    <span class="score-pill" style="background:var(--good)22;color:var(--good);">Skor: 100</span>
+    <div class="card-blurb">Titanyum kasa ve 36 saate kadar pil ömrüyle dayanıklı model</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 799</span><span class="spec-pill">Pil (saat): 36</span><span class="spec-pill">Su Geçirmezlik: 100m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h26')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('s6')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('s6')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 19 Eylül 2025</div>
+    <div class="card-name">Apple Watch Series 11 (42mm)</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 1</span>
+    <div class="card-blurb">S10 çip, sıcaklık sensörü ve 24 saate kadar pil ömrü</div>
+    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 18589</span><span class="spec-pill">Pil (saat): 24</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('s6')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h24')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h24')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 20 Eylül 2024</div>
+    <div class="card-name">Apple Watch Series 10</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 0</span>
+    <div class="card-blurb">Şimdiye kadarki en ince Apple Watch, geniş açılı OLED ekran</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h24')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h25')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h25')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 22 Eylül 2023</div>
+    <div class="card-name">Apple Watch Series 9</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 0</span>
+    <div class="card-blurb">S9 çip ve Çift Dokunuş hareketiyle gelen model</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h25')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h27')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h27')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 16 Eylül 2022</div>
+    <div class="card-name">Apple Watch Series 8</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 0</span>
+    <div class="card-blurb">Vücut sıcaklığı sensörünün tanıtıldığı model</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h27')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h28')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h28')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 15 Ekim 2021</div>
+    <div class="card-name">Apple Watch Series 7</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 0</span>
+    <div class="card-blurb">Daha büyük ve dayanıklı ekranıyla gelen model</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h28')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h29')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h29')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#6B4C9A22;color:#6B4C9A;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="6" width="10" height="12" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M9 3h6M9 21h6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Akıllı Saat · Çıkış: 18 Eylül 2020</div>
+    <div class="card-name">Apple Watch Series 6</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 0</span>
+    <div class="card-blurb">Kan oksijeni sensörünün ilk kez geldiği model</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h29')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div></div>
+  </section>
+
+  <div class="wrap" id="recentlyViewedStrip"></div>
+  <!-- POPULER_KARSILASTIRMALAR_START -->
+    <div style="margin:6px 0 22px;">
+      <h2 style="font-size:15px;margin:0 0 10px;">Popüler Karşılaştırmalar</h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a class="chip-filter" href="karsilastir/garmin-forerunner-165-vs-huawei-watch-gt-5.html">Garmin Forerunner 165 vs Huawei Watch GT 5</a>
+        <a class="chip-filter" href="karsilastir/apple-watch-se-2-nesil-vs-huawei-watch-gt-5.html">Apple Watch SE (2. Nesil) vs Huawei Watch GT 5</a>
+        <a class="chip-filter" href="karsilastir/apple-watch-se-2-nesil-vs-garmin-forerunner-165.html">Apple Watch SE (2. Nesil) vs Garmin Forerunner 165</a>
+        <a class="chip-filter" href="karsilastir/apple-watch-series-10-vs-fitbit-charge-6.html">Apple Watch Series 10 vs Fitbit Charge 6</a>
+      </div>
+    </div>
+    <!-- POPULER_KARSILASTIRMALAR_END -->
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;">
+    <a class="chip-filter" href="telefon.html">Telefon</a>
+    <a class="chip-filter" href="dizustu.html">Dizüstü</a>
+    <a class="chip-filter" href="kulaklik.html">Kulaklık</a>
+    <a class="chip-filter" href="kamera.html">Kamera</a>
+    <a class="chip-filter" href="akilli-saat.html">Akıllı Saat</a>
+    <a class="chip-filter" href="tablet.html">Tablet</a>
+    <a class="chip-filter" href="televizyon.html">Televizyon</a>
+  </div>
+  TeknoVersus — gerçek ürünlerle çalışan karşılaştırma kataloğu. Fiyatlar Temmuz 2026 itibarıyla fiyat karşılaştırma
+  sitelerinde bulunan en düşük değerlerin bir anlık görüntüsüdür, canlı güncellenmez. Artık satışta olmayan eski modellerin fiyatı, güncel Türkiye piyasasındaki (yenilenmiş/ikinci el dahil) karşılaştırılabilir satış fiyatlarına dayalı bir tahmindir; gerçek zamanlı değildir. Skorlar otomatik hesaplanır
+  ve bağımsız bir benchmark değildir.
+  <div style="margin-top:10px;"><a href="gizlilik-politikasi.html" style="color:inherit;">Gizlilik Politikası</a></div>
+</footer>
+
+<div class="compare-bar" id="compareBar">
+  <span id="compareCount">0 ürün seçildi</span>
+  <div style="display:flex;gap:8px;">
+    <button class="btn btn-outline" style="border-color:#fff;color:#fff;" onclick="clearCompare()">Temizle</button>
+    <button class="btn btn-dark" onclick="openCompare()">Karşılaştır</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="cmpOverlay">
+  <div class="modal" style="max-width:820px;">
+    <div class="modal-head">
+      <h3>Karşılaştırma</h3>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button class="btn btn-outline btn-sm" onclick="copyCompareLink()">🔗 Linki kopyala</button>
+        <button class="modal-close" onclick="closeCompare()">×</button>
+      </div>
+    </div>
+    <div class="cmp-winner" id="cmpWinner"></div>
+    <div class="cmp-legend" id="cmpLegend"></div>
+    <div id="cmpBody"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="detailOverlay">
+  <div class="modal" style="max-width:720px;">
+    <div class="modal-head">
+      <div style="flex:1;"></div>
+      <button class="modal-close" onclick="closeDetail()">×</button>
+    </div>
+    <div id="detailBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="shared.js"></script>
+<script>const CATEGORY_FIXED = 'Akıllı Saat';</script>
+<script src="category.js"></script>
+</body>
+</html>

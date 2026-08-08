@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Televizyon Karşılaştırma — TeknoVersus</title>
+<meta name="description" content="Televizyon karşılaştırma: akıllı TV modellerini fiyat, ekran boyutu ve panel türüne göre yan yana karşılaştır." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://teknoversus.com.tr/televizyon.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://teknoversus.com.tr/televizyon.html" />
+<meta property="og:title" content="Televizyon Karşılaştırma — TeknoVersus" />
+<meta property="og:description" content="Televizyon karşılaştırma: akıllı TV modellerini fiyat, ekran boyutu ve panel türüne göre yan yana karşılaştır." />
+<meta property="og:locale" content="tr_TR" />
+<meta name="twitter:card" content="summary" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Anasayfa","item":"https://teknoversus.com.tr/"},
+    {"@type":"ListItem","position":2,"name":"Televizyon","item":"https://teknoversus.com.tr/televizyon.html"}
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q14VG0SB56"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-Q14VG0SB56");
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand"><a href="index.html"><picture><source srcset="assets/logo-header.webp" type="image/webp"/><img src="assets/logo-header.png" class="brand-logo" alt="TeknoVersus logo" width="144" height="60" decoding="async"/></picture><span class="brand-text"><span class="tekno">TEKNO</span><span class="versus">VERSUS</span></span></a></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Anasayfa</a>
+      <a href="haberler.html">Haberler</a>
+      <a href="yakinda-cikacak.html">Yakında Çıkacak</a>
+      <a href="karsilastirmalar.html">Karşılaştırmalar</a>
+      <a href="index.html#yeni">Yeni Çıkanlar</a>
+      <a href="index.html#katalog">Tüm Kategoriler</a>
+      <a href="index.html?finder=1">Bulucu</a>
+    </nav>
+    <button class="burger" id="burgerBtn">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-label"><a href="index.html" style="text-decoration:none;color:inherit;">Anasayfa</a> / Televizyon</div>
+        <h1 class="section-title">Televizyon Karşılaştırma</h1>
+      </div>
+    </div>
+
+    <div class="cat-banner"><img src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" alt="" loading="lazy" decoding="async" width="1600" height="360"/><div class="txt"><small>Televizyon</small><strong>Salonuna en uygun ekranı seç</strong></div>
+      <span class="credit">Foto: Unsplash</span>
+    </div>
+
+    <div class="guide-content"><h2>Televizyon Alırken Nelere Dikkat Etmeli?</h2>
+    Televizyon seçiminde <b>panel türü</b> en belirleyici unsurdur — OLED modeller derin siyahlar ve
+    üstün kontrast sunar, QLED/Neo QLED modeller ise daha yüksek parlaklıkla aydınlık odalarda öne
+    çıkar. Ekran boyutunu seçerken odanızla izleme mesafenizi göz önünde bulundurun; çok büyük bir
+    ekran yakın mesafede rahatsız edici olabilir. <b>Yenileme hızı</b> (60Hz, 120Hz gibi) özellikle
+    oyun konsolu kullanacaksanız önemlidir — yüksek yenileme hızı daha akıcı bir görüntü sağlar.
+    Akıllı TV işletim sistemi (Tizen, webOS, Android TV/Google TV gibi) uygulama desteğini ve
+    kullanım deneyimini belirler. HDR desteği, parlak ve karanlık sahnelerdeki detayı zenginleştirir.
+    <ul>
+      <li>Karanlık oda/sinema keyfi için: OLED panelli modellere yönelin.</li>
+      <li>Aydınlık salon için: yüksek parlaklıklı QLED/Neo QLED modeller daha avantajlı olabilir.</li>
+      <li>Oyun konsolu kullanacaksanız: 120Hz ve düşük gecikme süresi (input lag) arayın.</li>
+    </ul></div>
+
+    <div class="chips" id="catChipsNav"></div>
+
+    <div class="search-box">
+      <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. '55 inç uygun fiyatlı OLED televizyon'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
+    </div>
+    <div class="search-status" id="searchStatus"></div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
+      </div>
+      <div class="toolbar-left">
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+          <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
+          <option value="score_desc">Skor: Yüksekten düşüğe</option>
+          <option value="date_asc">Tarih: Eskiden yeniye</option>
+          <option value="price_asc">Fiyat: Düşükten yükseğe</option>
+          <option value="price_desc">Fiyat: Yüksekten düşüğe</option>
+          <option value="views_desc">Görüntülenme: Çoktan aza</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid" id="mainGrid">
+  <div class="card" onclick="openDetail('tv1')">
+    <div class="card-icon" style="background:#9A4B2F22;color:#9A4B2F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="1.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Televizyon · Çıkış: 10 Haziran 2025</div>
+    <a class="card-name" href="urun/vestel-55ua9540-tv1.html" onclick="event.stopPropagation()">Vestel 55UA9540</a>
+    <span class="score-pill" style="background:var(--good)22;color:var(--good);">Skor: 100</span>
+    <div class="card-blurb">55 inç 4K Ultra HD, uygun fiyatlı Android TV</div>
+    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 32800</span><span class="spec-pill">Ekran (inç): 55</span><span class="spec-pill">Çözünürlük: 3840x2160</span><span class="spec-pill">Ekran Türü: 4K Ultra HD LED</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('tv1')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('tv2')">
+    <div class="card-icon" style="background:#9A4B2F22;color:#9A4B2F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="1.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Televizyon · Çıkış: 15 Mart 2025</div>
+    <a class="card-name" href="urun/samsung-55qn80f-tv2.html" onclick="event.stopPropagation()">Samsung 55QN80F</a>
+    <span class="score-pill" style="background:var(--good)22;color:var(--good);">Skor: 79</span>
+    <div class="card-blurb">55 inç 4K Neo QLED, yüksek yenileme hızıyla fiyat/performans dengesi</div>
+    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 55500</span><span class="spec-pill">Ekran (inç): 55</span><span class="spec-pill">Çözünürlük: 3840x2160</span><span class="spec-pill">Ekran Türü: Neo QLED</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('tv2')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('tv3')">
+    <div class="card-icon" style="background:#9A4B2F22;color:#9A4B2F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="1.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+    <div class="card-cat">Televizyon · Çıkış: 5 Nisan 2024</div>
+    <a class="card-name" href="urun/lg-oled55b4-oled55b46la-tv3.html" onclick="event.stopPropagation()">LG OLED55B4 (OLED55B46LA)</a>
+    <span class="score-pill" style="background:var(--mid)22;color:var(--mid);">Skor: 62</span>
+    <div class="card-blurb">55 inç 4K OLED, kendi kendine ışık yayan piksellerle üstün kontrast</div>
+    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 64300</span><span class="spec-pill">Ekran (inç): 55</span><span class="spec-pill">Çözünürlük: 3840x2160</span><span class="spec-pill">Ekran Türü: OLED</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('tv3')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+    </div>
+  </div></div>
+  </section>
+
+  <div class="wrap" id="recentlyViewedStrip"></div>
+  <!-- POPULER_KARSILASTIRMALAR_START -->
+    <div style="margin:6px 0 22px;">
+      <h2 style="font-size:15px;margin:0 0 10px;">Popüler Karşılaştırmalar</h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a class="chip-filter" href="karsilastir/vestel-55ua9540-vs-vestel-65ua9500.html">Vestel 55UA9540 vs Vestel 65UA9500</a>
+        <a class="chip-filter" href="karsilastir/samsung-43q60d-vs-vestel-55ua9540.html">Samsung 43Q60D vs Vestel 55UA9540</a>
+        <a class="chip-filter" href="karsilastir/samsung-43q60d-vs-vestel-65ua9500.html">Samsung 43Q60D vs Vestel 65UA9500</a>
+        <a class="chip-filter" href="karsilastir/tcl-65c655-vs-toshiba-50ua2263dg.html">TCL 65C655 vs Toshiba 50UA2263DG</a>
+      </div>
+    </div>
+    <!-- POPULER_KARSILASTIRMALAR_END -->
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;">
+    <a class="chip-filter" href="telefon.html">Telefon</a>
+    <a class="chip-filter" href="dizustu.html">Dizüstü</a>
+    <a class="chip-filter" href="kulaklik.html">Kulaklık</a>
+    <a class="chip-filter" href="kamera.html">Kamera</a>
+    <a class="chip-filter" href="akilli-saat.html">Akıllı Saat</a>
+    <a class="chip-filter" href="tablet.html">Tablet</a>
+    <a class="chip-filter" href="televizyon.html">Televizyon</a>
+  </div>
+  TeknoVersus — gerçek ürünlerle çalışan karşılaştırma kataloğu. Fiyatlar Temmuz 2026 itibarıyla fiyat karşılaştırma
+  sitelerinde bulunan en düşük değerlerin bir anlık görüntüsüdür, canlı güncellenmez. Artık satışta olmayan eski modellerin fiyatı, güncel Türkiye piyasasındaki (yenilenmiş/ikinci el dahil) karşılaştırılabilir satış fiyatlarına dayalı bir tahmindir; gerçek zamanlı değildir. Skorlar otomatik hesaplanır
+  ve bağımsız bir benchmark değildir.
+  <div style="margin-top:10px;"><a href="gizlilik-politikasi.html" style="color:inherit;">Gizlilik Politikası</a></div>
+</footer>
+
+<div class="compare-bar" id="compareBar">
+  <span id="compareCount">0 ürün seçildi</span>
+  <div style="display:flex;gap:8px;">
+    <button class="btn btn-outline" style="border-color:#fff;color:#fff;" onclick="clearCompare()">Temizle</button>
+    <button class="btn btn-dark" onclick="openCompare()">Karşılaştır</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="cmpOverlay">
+  <div class="modal" style="max-width:820px;">
+    <div class="modal-head">
+      <h3>Karşılaştırma</h3>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button class="btn btn-outline btn-sm" onclick="copyCompareLink()">🔗 Linki kopyala</button>
+        <button class="modal-close" onclick="closeCompare()">×</button>
+      </div>
+    </div>
+    <div class="cmp-winner" id="cmpWinner"></div>
+    <div class="cmp-legend" id="cmpLegend"></div>
+    <div id="cmpBody"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="detailOverlay">
+  <div class="modal" style="max-width:720px;">
+    <div class="modal-head">
+      <div style="flex:1;"></div>
+      <button class="modal-close" onclick="closeDetail()">×</button>
+    </div>
+    <div id="detailBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="shared.js"></script>
+<script>const CATEGORY_FIXED = 'Televizyon';</script>
+<script src="category.js"></script>
+</body>
+</html>

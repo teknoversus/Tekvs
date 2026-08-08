@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kulaklık Karşılaştırma — TeknoVersus</title>
+<meta name="description" content="Kulaklık karşılaştırma: kablosuz kulaklık modellerini fiyat, pil ömrü ve ağırlığa göre yan yana karşılaştır." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://teknoversus.com.tr/kulaklik.html" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://teknoversus.com.tr/kulaklik.html" />
+<meta property="og:title" content="Kulaklık Karşılaştırma — TeknoVersus" />
+<meta property="og:description" content="Kulaklık karşılaştırma: kablosuz kulaklık modellerini fiyat, pil ömrü ve ağırlığa göre yan yana karşılaştır." />
+<meta property="og:locale" content="tr_TR" />
+<meta name="twitter:card" content="summary" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Anasayfa","item":"https://teknoversus.com.tr/"},
+    {"@type":"ListItem","position":2,"name":"Kulaklık","item":"https://teknoversus.com.tr/kulaklik.html"}
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q14VG0SB56"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-Q14VG0SB56");
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand"><a href="index.html"><picture><source srcset="assets/logo-header.webp" type="image/webp"/><img src="assets/logo-header.png" class="brand-logo" alt="TeknoVersus logo" width="144" height="60" decoding="async"/></picture><span class="brand-text"><span class="tekno">TEKNO</span><span class="versus">VERSUS</span></span></a></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Anasayfa</a>
+      <a href="haberler.html">Haberler</a>
+      <a href="yakinda-cikacak.html">Yakında Çıkacak</a>
+      <a href="karsilastirmalar.html">Karşılaştırmalar</a>
+      <a href="index.html#yeni">Yeni Çıkanlar</a>
+      <a href="index.html#katalog">Tüm Kategoriler</a>
+      <a href="index.html?finder=1">Bulucu</a>
+    </nav>
+    <button class="burger" id="burgerBtn">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="section-label"><a href="index.html" style="text-decoration:none;color:inherit;">Anasayfa</a> / Kulaklık</div>
+        <h1 class="section-title">Kulaklık Karşılaştırma</h1>
+      </div>
+    </div>
+
+    <div class="cat-banner"><img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" alt="" loading="lazy" decoding="async" width="1600" height="360"/><div class="txt"><small>Kulaklık</small><strong>Kablosuz kulaklıkları yan yana karşılaştır</strong></div>
+      <span class="credit">Foto: Unsplash</span>
+    </div>
+
+    <div class="guide-content"><h2>Kablosuz Kulaklık Alırken Nelere Dikkat Etmeli?</h2>
+    Kulaklık seçiminde en çok fark yaratan unsur genellikle <b>aktif gürültü engelleme (ANC)</b>
+    kalitesi ve <b>pil ömrüdür</b>. Günlük toplu taşıma kullanımı için güçlü ANC büyük fark yaratır;
+    sessiz bir ortamda çalışıyorsanız bu özellik daha az öncelikli olabilir. Kulak içi (in-ear) modeller
+    daha taşınabilir ama uzun süreli konforda kişiden kişiye değişir; kulak üstü (over-ear) modeller
+    genelde daha uzun pil ömrü ve daha zengin ses sunar ama hacimlidir. Su geçirmezlik derecesi
+    (IPX4 ve üzeri) spor yaparken kullanım için önemlidir. Ses kodek desteği (aptX, LDAC gibi)
+    yüksek kaliteli ses akışı isteyenler için dikkate değer bir detaydır.
+    <ul>
+      <li>Toplu taşıma/uçak kullanımı için: ANC kalitesine öncelik verin.</li>
+      <li>Spor için: su geçirmezlik derecesine ve oturmasına bakın.</li>
+      <li>Uzun dinleme seansları için: over-ear modeller genelde daha konforludur.</li>
+    </ul></div>
+
+    <div class="chips" id="catChipsNav"></div>
+
+    <div class="search-box">
+      <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz kulaklık'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
+    </div>
+    <div class="search-status" id="searchStatus"></div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
+      </div>
+      <div class="toolbar-left">
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+          <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
+          <option value="score_desc">Skor: Yüksekten düşüğe</option>
+          <option value="date_asc">Tarih: Eskiden yeniye</option>
+          <option value="price_asc">Fiyat: Düşükten yükseğe</option>
+          <option value="price_desc">Fiyat: Yüksekten düşüğe</option>
+          <option value="views_desc">Görüntülenme: Çoktan aza</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid" id="mainGrid">
+  <div class="card" onclick="openDetail('h17')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h17')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#B8790F22;color:#B8790F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0116 0v1" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="2.5" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="17" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    </div>
+    <div class="card-cat">Kulaklık · Çıkış: 23 Eylül 2022</div>
+    <div class="card-name">AirPods Pro (2. Nesil)</div>
+    <span class="score-pill" style="background:var(--good)22;color:var(--good);">Skor: 100</span>
+    <div class="card-blurb">H2 çip ve Adaptif Ses özelliğiyle gelen kulaklık</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 249</span><span class="spec-pill">Pil (saat): 6</span><span class="spec-pill">Ağırlık (g): 5.3</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h17')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h19')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h19')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#B8790F22;color:#B8790F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0116 0v1" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="2.5" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="17" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    </div>
+    <div class="card-cat">Kulaklık · Çıkış: 20 Ağustos 2020</div>
+    <div class="card-name">Sony WH-1000XM4</div>
+    <span class="score-pill" style="background:var(--good)22;color:var(--good);">Skor: 71</span>
+    <div class="card-blurb">Sektörde uzun süre lider kalan ANC kulaklık</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 349</span><span class="spec-pill">Pil (saat): 30</span><span class="spec-pill">Ağırlık (g): 254</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h19')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('h18')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('h18')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#B8790F22;color:#B8790F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0116 0v1" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="2.5" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="17" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    </div>
+    <div class="card-cat">Kulaklık · Çıkış: 20 Mayıs 2022</div>
+    <div class="card-name">Sony WH-1000XM5</div>
+    <span class="score-pill" style="background:var(--mid)22;color:var(--mid);">Skor: 63</span>
+    <div class="card-blurb">Yeniden tasarlanan gövde ve çift işlemcili gürültü engelleme</div>
+    <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 30</span><span class="spec-pill">Ağırlık (g): 250</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('h18')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div>
+  <div class="card" onclick="openDetail('s5')">
+    
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('s5')" title="Favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
+    <div class="card-icon" style="background:#B8790F22;color:#B8790F;">
+      <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0116 0v1" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="2.5" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="17" y="13" width="4.5" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    </div>
+    <div class="card-cat">Kulaklık · Çıkış: 19 Eylül 2025</div>
+    <div class="card-name">Apple AirPods Pro 3</div>
+    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 2</span>
+    <div class="card-blurb">H2 çipli, kalp atış sensörlü, gelişmiş ANC'li kablosuz kulaklık</div>
+    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 13999</span><span class="spec-pill">Pil (saat): 8</span><span class="spec-pill">Ağırlık (g): 5.5</span></div>
+    <div class="card-foot">
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" onchange="toggleSelect('s5')" />
+        Karşılaştır
+      </label>
+      <span class="view-count"></span>
+      
+    </div>
+  </div></div>
+  </section>
+
+  <div class="wrap" id="recentlyViewedStrip"></div>
+  <!-- POPULER_KARSILASTIRMALAR_START -->
+    <div style="margin:6px 0 22px;">
+      <h2 style="font-size:15px;margin:0 0 10px;">Popüler Karşılaştırmalar</h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a class="chip-filter" href="karsilastir/airpods-pro-2-nesil-vs-sony-wf-1000xm5.html">AirPods Pro (2. Nesil) vs Sony WF-1000XM5</a>
+        <a class="chip-filter" href="karsilastir/sony-wh-1000xm4-vs-sony-wh-1000xm5.html">Sony WH-1000XM4 vs Sony WH-1000XM5</a>
+        <a class="chip-filter" href="karsilastir/apple-airpods-pro-3-vs-bose-quietcomfort-ultra-earbuds.html">Apple AirPods Pro 3 vs Bose QuietComfort Ultra Earbuds</a>
+        <a class="chip-filter" href="karsilastir/huawei-freebuds-pro-3-vs-samsung-galaxy-buds3.html">Huawei FreeBuds Pro 3 vs Samsung Galaxy Buds3</a>
+      </div>
+    </div>
+    <!-- POPULER_KARSILASTIRMALAR_END -->
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;">
+    <a class="chip-filter" href="telefon.html">Telefon</a>
+    <a class="chip-filter" href="dizustu.html">Dizüstü</a>
+    <a class="chip-filter" href="kulaklik.html">Kulaklık</a>
+    <a class="chip-filter" href="kamera.html">Kamera</a>
+    <a class="chip-filter" href="akilli-saat.html">Akıllı Saat</a>
+    <a class="chip-filter" href="tablet.html">Tablet</a>
+    <a class="chip-filter" href="televizyon.html">Televizyon</a>
+  </div>
+  TeknoVersus — gerçek ürünlerle çalışan karşılaştırma kataloğu. Fiyatlar Temmuz 2026 itibarıyla fiyat karşılaştırma
+  sitelerinde bulunan en düşük değerlerin bir anlık görüntüsüdür, canlı güncellenmez. Artık satışta olmayan eski modellerin fiyatı, güncel Türkiye piyasasındaki (yenilenmiş/ikinci el dahil) karşılaştırılabilir satış fiyatlarına dayalı bir tahmindir; gerçek zamanlı değildir. Skorlar otomatik hesaplanır
+  ve bağımsız bir benchmark değildir.
+  <div style="margin-top:10px;"><a href="gizlilik-politikasi.html" style="color:inherit;">Gizlilik Politikası</a></div>
+</footer>
+
+<div class="compare-bar" id="compareBar">
+  <span id="compareCount">0 ürün seçildi</span>
+  <div style="display:flex;gap:8px;">
+    <button class="btn btn-outline" style="border-color:#fff;color:#fff;" onclick="clearCompare()">Temizle</button>
+    <button class="btn btn-dark" onclick="openCompare()">Karşılaştır</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="cmpOverlay">
+  <div class="modal" style="max-width:820px;">
+    <div class="modal-head">
+      <h3>Karşılaştırma</h3>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button class="btn btn-outline btn-sm" onclick="copyCompareLink()">🔗 Linki kopyala</button>
+        <button class="modal-close" onclick="closeCompare()">×</button>
+      </div>
+    </div>
+    <div class="cmp-winner" id="cmpWinner"></div>
+    <div class="cmp-legend" id="cmpLegend"></div>
+    <div id="cmpBody"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="detailOverlay">
+  <div class="modal" style="max-width:720px;">
+    <div class="modal-head">
+      <div style="flex:1;"></div>
+      <button class="modal-close" onclick="closeDetail()">×</button>
+    </div>
+    <div id="detailBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="shared.js"></script>
+<script>const CATEGORY_FIXED = 'Kulaklık';</script>
+<script src="category.js"></script>
+</body>
+</html>

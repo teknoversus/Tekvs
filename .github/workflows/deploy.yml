@@ -1,0 +1,67 @@
+name: Build ve mevcut hosting'e yükle
+
+# Ne zaman çalışır:
+#   1) main dalına her push'ta (elle kod/içerik değişikliği yaptığında)
+#   2) Supabase webhook'u tetiklediğinde (admin panelinden ürün ekleme/silme/düzenleme)
+#   3) Actions sekmesinden "Run workflow" ile elle
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [supabase-update]
+  workflow_dispatch: {}
+
+# Aynı anda birden fazla tetikleme gelirse (örn. admin panelinden art arda birkaç
+# ürün eklenirse), sadece en son çalışmayı tamamla — öncekileri iptal et.
+concurrency:
+  group: teknoversus-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu çek
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Siteyi Supabase'deki güncel veriyle üret (urun/*.html + sitemap.xml)
+        run: node build.js
+        env:
+          # Not: shared.js'teki genel (publishable) anahtarla aynı — istersen
+          # repo Secrets'a SUPABASE_URL / SUPABASE_KEY ekleyip override edebilirsin,
+          # eklemezsen build.js içindeki varsayılan değerler kullanılır.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+
+      - name: FTP ile hosting'e yükle
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          # Sunucuda kalması gereken ama repo'da olmayan dosyalara (örn. hosting'in
+          # kendi sistem klasörleri) her deploy'da dokunma — sadece fark eden
+          # dosyaları yükler/siler, tamamen silip yeniden yüklemez.
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
+            **/lib/**
+            build.js
+            gen_product_pages.js
+            gen_product_images.js
+            package.json
+            package-lock.json
+            seed_products.sql
+            seed_products_amazon.sql
+            supabase_setup.sql
+            AUTOMATION.md
+            README.md

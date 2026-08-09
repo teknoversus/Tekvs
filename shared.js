@@ -302,6 +302,72 @@ const NEWS_SEED = [
       "Honor, cihaz için Çin'de ön rezervasyon sürecini başlattı ama kesin küresel tanıtım tarihini henüz netleştirmedi. Bazı kaynaklar 12 Ağustos'u işaret ediyor. Robotik kamera mekanizması ve üst düzey donanımı düşünülünce telefonun markanın şimdiye kadarki en pahalı modellerinden biri olması bekleniyor.",
       "Telefonun Türkiye'ye gelip gelmeyeceği henüz belirsiz; bu tür deneysel modeller genellikle önce sınırlı pazarlarda satışa çıkıyor. Kesin teknik özellikler, fiyat ve satış bölgeleri Ağustos ayı içindeki resmi lansmanla netleşecek."
     ]
+  },
+  {
+    id:'huawei-matebook-fold-ultimate-design-2026-tanitildi',
+    title:"Huawei İkinci Nesil Katlanabilir Dizüstüsünü Tanıttı: MateBook Fold Ultimate Design",
+    date:'2026-08-05', cat:'Dizüstü',
+    summary:"Huawei, katlanabilir dizüstü bilgisayarı MateBook Fold Ultimate Design'ın ikinci neslini Çin'de tanıttı. Üç farklı bellek/depolama seçeneğiyle gelen model 3.700 dolardan başlıyor.",
+    relatedProductId: null,
+    body: [
+      "Huawei, katlanabilir dizüstü bilgisayar kategorisindeki iddiasını sürdürüyor. Şirket, MateBook Fold Ultimate Design'ın ikinci neslini Çin'de resmen tanıttı. Cihaz, geçen yılki modelin tasarım felsefesini koruyup donanımda bir adım daha ileri gidiyor.",
+      "Yeni model üç farklı bellek ve depolama kombinasyonuyla satışa sunuluyor: 24 GB + 512 GB, 24 GB + 1 TB ve 32 GB + 2 TB. Fiyatlar 24.999 yuandan (yaklaşık 3.700 dolar) başlıyor, en üst versiyon 29.999 yuana (yaklaşık 4.440 dolar) kadar çıkıyor. Katlanabilir dizüstülerin hâlâ niş ve pahalı bir kategori olduğunu bu fiyat aralığı bir kez daha gösteriyor.",
+      "Katlanabilir laptop segmenti geleneksel dizüstülere kıyasla küçük kalsa da Huawei'nin arka arkaya ikinci nesli piyasaya sürmesi, şirketin bu formatta ciddi olduğunu gösteriyor. Rakiplerin çoğu henüz katlanabilir bir dizüstü modeli bile duyurmadı.",
+      "Cihazın küresel pazarlara gelip gelmeyeceği, gelecekse hangi ülkelerde satışa çıkacağı henüz açıklanmadı. Huawei'nin önceki katlanabilir ürünlerinde olduğu gibi, önce Çin'de sınırlı bir lansman, ardından kademeli genişleme senaryosu bu model için de olası görünüyor."
+    ]
+  },
+  {
+    id:'cmf-clip-pro-acik-tasarimli-kulaklik-tanitildi',
+    title:"CMF'den İlk Açık Tasarımlı Kulaklık: Clip Pro Tanıtıldı",
+    date:'2026-08-04', cat:'Kulaklık',
+    summary:"Nothing'in alt markası CMF, ilk açık tasarımlı (OWS) kablosuz kulaklığı Clip Pro'yu 4 Ağustos'ta tanıttı. Kulağı saran, kulak kanalını tıkamayan bir yapıyla farklı bir kategoriye giriyor.",
+    relatedProductId: null,
+    body: [
+      "Nothing'in bütçe dostu alt markası CMF, ürün yelpazesine yeni bir kategori ekliyor. Şirket, ilk açık tasarımlı kablosuz stereo kulaklığı (OWS) Clip Pro'yu 4 Ağustos'ta resmen tanıttı.",
+      "Birkaç gün önce sosyal medyada paylaşılan ipuçlarının ardından ürünün adı netleşmişti. Tanıtım öncesi yayımlanan kısa video, kulaklığın genel tasarım çizgisini gösteriyordu; kulağı saran, kulak kanalını tıkamayan bir yapı öne çıkıyor.",
+      "Açık tasarımlı kulaklıklar son dönemde özellikle spor yaparken veya çevre sesini duymaya devam etmek isteyenler arasında popülerleşti. CMF'nin bu kategoriye girmesi, markanın ürün yelpazesini klasik kulak içi ve kulak üstü modellerin ötesine taşıma isteğinin bir işareti.",
+      "Clip Pro'nun tam teknik özellikleri ve Türkiye satış planı henüz netleşmedi. CMF'nin önceki ürünlerinde olduğu gibi, agresif bir fiyatlandırma stratejisi izlemesi bekleniyor."
+    ]
+  },
+  {
+    id:'huawei-watch-gt-7-serisi-tanitildi-21-gun-pil',
+    title:"Huawei Watch GT 7 Serisi Tanıtıldı: 21 Güne Kadar Pil Ömrü",
+    date:'2026-08-06', cat:'Akıllı Saat',
+    summary:"Huawei, yeni akıllı saat ailesi Watch GT 7 serisini Çin'de tanıttı. Standart ve Pro modelden oluşan seri, 3.000 nit parlaklıklı ekran ve 21 güne varan pil ömrü sunuyor.",
+    relatedProductId: null,
+    body: [
+      "Huawei, yeni nesil akıllı saat ailesi Watch GT 7'yi Çin'de tanıttı. Seri, standart Watch GT 7 ve üst seviye Watch GT 7 Pro olmak üzere iki modelden oluşuyor. Donanım tarafında büyük bir sıçrama yok; şirket bunun yerine spor takibi ve yazılım özelliklerine ağırlık vermiş.",
+      "Standart model paslanmaz çelik ve plastik kasayla geliyor, 41 mm ve 46 mm olmak üzere iki boyut seçeneği sunuyor. Küçük versiyon 9,9 mm inceliğinde ve 1,32 inç ekrana sahip, 46 mm'lik versiyonda ekran 1,47 inça çıkıyor. Pro model titanyum ve seramik kombinasyonunu koruyor, ayrıca EKG sensörü ekliyor.",
+      "İki model de 466x466 piksel çözünürlüklü, 3.000 nit tepe parlaklığına ulaşan AMOLED panel kullanıyor. Sensör tarafında kalp atış hızı, SpO2 ve cilt sıcaklığı ölçümü standart; GPS, NFC, mikrofon ve hoparlör de her iki modelde mevcut. 110'dan fazla spor modu destekleniyor, bisiklet kullanıcıları artık rotayı telefondan planlayıp saate aktarabiliyor.",
+      "En dikkat çekici yeniliklerden biri Pro Ski Mode. Bu özellik kayak rotalarını gösterebiliyor, G kuvveti gibi verileri kaydedebiliyor. Pil ömrü tarafında Huawei, hafif kullanımda 21 güne, normal kullanımda 12 güne, her zaman açık ekran etkinken 7 güne kadar dayanım vaat ediyor.",
+      "Fiyatlar Çin'de Watch GT 7 için 41 mm'de 1.588 yuan, 46 mm'de 1.688 yuandan başlıyor; Pro model 2.688 yuandan (yaklaşık 399 dolar) satışa sunuluyor. Küresel satış tarihi ve Türkiye fiyatları henüz açıklanmadı."
+    ]
+  },
+  {
+    id:'samsung-galaxy-tab-s12-ultra-geekbench-sizintisi',
+    title:"Galaxy Tab S12 Ultra Geekbench'te Görüldü: Samsung Bu Kez MediaTek'e Geçiyor",
+    date:'2026-08-02', cat:'Tablet',
+    summary:"Samsung'un amiral gemi tableti Galaxy Tab S12 Ultra, Geekbench'te SM-X946B model numarasıyla ortaya çıktı. Sızıntı, tabletin bu kez Qualcomm yerine MediaTek Dimensity 9500 kullanacağını gösteriyor.",
+    relatedProductId: null,
+    body: [
+      "Samsung'un bir sonraki amiral gemi tableti Galaxy Tab S12 Ultra, resmi tanıtımından haftalar önce Geekbench veritabanında ortaya çıktı. SM-X946B model numaralı cihaz, bir önceki nesil Galaxy Tab S11 Ultra'nın SM-X936B numarasıyla neredeyse birebir örtüşüyor; bu da sızıntının gerçekliğine dair güçlü bir işaret.",
+      "Asıl sürpriz işlemci tarafında. Listeleme tek çekirdekte 2.424, çok çekirdekte 8.446 puan gösteriyor. Çekirdek yapısı (bir ana, üç performans, dört verimlilik çekirdeği) ve 4,21 GHz tepe hızı, Qualcomm'un son iki nesil amiral gemi çipini tamamen devre dışı bırakıyor. Bunun yerine MediaTek'in henüz duyurulmamış Dimensity 9500'üne işaret ediyor. Samsung'un tarihsel olarak Qualcomm silikonu kullandığı bir ürün için bu, dikkat çekici bir yön değişikliği.",
+      "Test edilen birimde 12 GB RAM bulunuyor; bu, bir önceki Ultra modelin giriş seviyesi bellek yapılandırmasıyla aynı. Samsung'un alışılmış stratejisini sürdürüp daha yüksek performans isteyenler için 16 GB'lık bir versiyon da sunması bekleniyor.",
+      "Yazılım tarafında cihazın kutudan Android 17 tabanlı One UI 9 ile çıkması öngörülüyor. Sızan tasarım görselleri, ön kamera için ekran deliği yerine bir önceki nesilden tanıdık gelen çentik yapısının korunacağını gösteriyor. Samsung alışılmış takvimine sadık kalırsa Tab S12 Ultra'nın Eylül ayında Galaxy S26 FE ile birlikte tanıtılması bekleniyor."
+    ]
+  },
+  {
+    id:'lg-oled-w6-wallpaper-tv-turkiyede',
+    title:"Dünyanın En İnce Kablosuz OLED TV'si Türkiye'de: LG OLED evo W6",
+    date:'2026-08-08', cat:'Televizyon',
+    summary:"LG, sadece 9 mm kalınlığındaki kablosuz OLED evo W6 Wallpaper TV'yi Türkiye'de satışa sundu. 77 ve 83 inç seçenekleriyle gelen model, görüntü ve sesi kablosuz olarak ekrana aktarıyor.",
+    relatedProductId: null,
+    body: [
+      "LG, duvarla neredeyse bütünleşen ultra ince TV kategorisindeki iddiasını Türkiye pazarına taşıdı. Yeni OLED evo W6 Wallpaper TV, 77 ve 83 inç ekran seçenekleriyle satışa sunuldu. Modelin en dikkat çekici özelliği, sadece 9 mm kalınlığındaki gövdesi.",
+      "Bu inceliği mümkün kılan şey, TV panelinin görüntü ve ses işleme donanımından ayrılması. LG'nin True Wireless teknolojisi sayesinde görüntü ve ses, ayrı bir kutu olan Zero Connect Box üzerinden kablosuz şekilde ekrana aktarılıyor. Sonuç olarak televizyonun bulunduğu duvarda kablo karmaşası neredeyse tamamen ortadan kalkıyor.",
+      "LG, 31 Ağustos 2026'ya kadar W6 satın alan kullanıcılara Sound Suite M7 kablosuz hoparlör setini hediye ediyor. Bu, hem lansman kampanyası hem de markanın ekosistem odaklı satış stratejisinin bir parçası.",
+      "Wallpaper serisi geleneksel olarak LG'nin en premium ve en pahalı TV hattı olarak konumlanıyor; W6 de bu çizgiyi sürdürüyor. Duvara neredeyse yapışan tasarımı, özellikle salon estetiğine önem veren ve TV'yi görünür bir cihaz olmaktan çıkarmak isteyen kullanıcıları hedefliyor."
+    ]
   }
 ];
 

@@ -131,10 +131,12 @@ drop policy if exists "requests_admin_delete" on product_requests;
 create policy "requests_admin_delete" on product_requests
   for delete using (auth.role() = 'authenticated');
 
--- ---- 5) news (haberler — admin panelinden CRUD) -----------------------
+-- ---- 5) news (haberler — admin panelinden CRUD, ayrıca yarı-otonom agent) --
 -- id = URL slug'ının kendisi (örn. "google-pixel-11-serisi-tanitildi").
 -- body: paragraf dizisi (jsonb array of text) — admin formunda boş satırla
 -- ayrılan paragraflar otomatik diziye çevrilir.
+-- pending_review: agent'ın bulup yazdığı ama admin henüz onaylamadığı haberler
+-- true kalır — public_read policy'si bunları göstermez, sadece admin görür.
 create table if not exists news (
   id                 text primary key,
   title              text not null,
@@ -143,19 +145,26 @@ create table if not exists news (
   summary            text default '',
   body               jsonb not null default '[]'::jsonb,
   related_product_id text references products(id) on delete set null,
+  pending_review     boolean not null default false,
   deleted            boolean not null default false,
   created_at         timestamptz not null default now()
 );
 
 create index if not exists news_date_idx on news (date desc);
 create index if not exists news_deleted_idx on news (deleted);
+create index if not exists news_pending_review_idx on news (pending_review);
 
 alter table news enable row level security;
 
--- Herkes (anon dahil) silinmemiş haberleri okuyabilir.
+-- Herkes (anon dahil) silinmemiş VE onaylanmış haberleri okuyabilir.
 drop policy if exists "news_public_read" on news;
 create policy "news_public_read" on news
-  for select using (deleted = false);
+  for select using (deleted = false and pending_review = false);
+
+-- Admin: onay bekleyenler dahil hepsini görebilir (review kuyruğu için).
+drop policy if exists "news_admin_read_all" on news;
+create policy "news_admin_read_all" on news
+  for select using (auth.role() = 'authenticated');
 
 -- Sadece giriş yapmış (admin) kullanıcı ekleyip/güncelleyip/silebilir (soft-delete dahil).
 drop policy if exists "news_admin_write" on news;
@@ -163,6 +172,15 @@ create policy "news_admin_write" on news
   for all
   using (auth.role() = 'authenticated')
   with check (auth.role() = 'authenticated');
+
+-- Haber agent'ı (kimliksiz/anon, GitHub Actions'tan çalışır) SADECE onay
+-- bekleyen taslak ekleyebilir — asla direkt yayınlayamaz, güncelleyemez,
+-- silemez. Agent'ın kimlik bilgisi sızsa bile en fazla "spam taslak"
+-- oluşturabilir, siteye zarar veremez.
+drop policy if exists "news_agent_insert_pending" on news;
+create policy "news_agent_insert_pending" on news
+  for insert
+  with check (pending_review = true and deleted = false);
 
 -- ============================================================
 -- Kurulum burada bitmiyor — sırada 2 manuel adım var (aşağıya bak).

@@ -74,7 +74,10 @@ function rowToNews(row){
 }
 
 async function fetchNewsFromSupabase(){
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/news?deleted=eq.false&select=*&order=date.desc`, {
+  // Not: pending_review=eq.false burada iki kat güvenlik — RLS zaten anon
+  // kullanıcıya onay bekleyen taslakları göstermiyor, ama açıkça filtrelemek
+  // kodu okuyan biri için niyeti netleştiriyor.
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/news?deleted=eq.false&pending_review=eq.false&select=*&order=date.desc`, {
     headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` }
   });
   if(!res.ok){

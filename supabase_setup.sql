@@ -147,7 +147,12 @@ create table if not exists news (
   related_product_id text references products(id) on delete set null,
   pending_review     boolean not null default false,
   deleted            boolean not null default false,
-  created_at         timestamptz not null default now()
+  created_at         timestamptz not null default now(),
+  -- GEO kuralları (Faz 1): AI motorlarının alıntılayabileceği yapılandırılmış alanlar.
+  tldr               text default '',
+  table_data         jsonb default '[]'::jsonb,
+  faq                jsonb default '[]'::jsonb,
+  conclusion         text default ''
 );
 
 create index if not exists news_date_idx on news (date desc);

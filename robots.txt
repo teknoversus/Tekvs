@@ -2,4 +2,53 @@ User-agent: *
 Disallow: /admin.html
 Allow: /
 
+# LLM'ler için özet site haritası (öneri aşaması bir standart, resmi robots.txt
+# yönergesi değil ama keşfedilebilirlik için burada belirtiliyor):
+# https://teknoversus.com.tr/llms.txt
+
+# ---- AI motorları açıkça karşılanıyor ----
+# Amaç: ChatGPT, Perplexity, Google AI Overviews gibi yerlerde görünürlük.
+# Hem "eğitim" hem "canlı arama/alıntı" botları izinli — sadece arama
+# botlarını bırakıp eğitim botlarını engellemek görünürlüğü azaltır.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI (Gemini/Vertex eğitimi — normal Googlebot/arama sıralamasını etkilemez)
+User-agent: Google-Extended
+Allow: /
+
+# Diğer büyük AI/veri botları
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: Amazonbot
+Allow: /
+
 Sitemap: https://teknoversus.com.tr/sitemap.xml

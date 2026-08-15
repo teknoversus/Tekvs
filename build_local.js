@@ -6,6 +6,11 @@ const fs = require('fs');
 const { generateSite } = require('./lib/generate-site');
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { generateNews } = require('./lib/generate-news');
+const { generateSubcategories, buildSubcatMap } = require('./lib/generate-subcategories');
+const { generateBuyingGuides } = require('./lib/generate-buying-guides');
+const { generateTopicalGuides } = require('./lib/generate-topical-guides');
+const { generateReviews } = require('./lib/generate-reviews');
+const { generateBrandPages } = require('./lib/generate-brand-pages');
 
 const sharedSrc = fs.readFileSync('shared.js', 'utf8');
 const PALETTE_MAP = {'--c1':'#2B6CB0','--c2':'#B23A5C','--c3':'#B8790F','--c4':'#1F7A6C','--c5':'#6B4C9A','--c6':'#4A5568','--c7':'#9A4B2F'};
@@ -27,12 +32,33 @@ const colorFor = vm.runInContext('colorFor', context);
 const fmtDate = vm.runInContext('fmtDate', context);
 const computeScores = vm.runInContext('computeScores', context);
 const productSlug = vm.runInContext('productSlug', context);
+const prosConsFor = vm.runInContext('prosConsFor', context);
 
-generateSite({ products: SEED, CATS, ICONS, colorFor, fmtDate, computeScores, productSlug, rootDir: __dirname });
+// Faz 2/3 hedef ürün listeleri — artık TÜM kataloğu kapsıyor (157 ürün).
+// Yeni ürün eklendiğinde otomatik olarak dahil olur, elle liste güncellemeye gerek yok.
+const FAZ2_TARGET_IDS = SEED.filter(p => !p.upcoming).map(p => p.id);
+const FAZ3_TARGET_IDS = SEED.filter(p => !p.upcoming).map(p => p.id);
+
+const subcatMap = buildSubcatMap(SEED);
+
+generateSite({ products: SEED, CATS, ICONS, colorFor, fmtDate, computeScores, productSlug, rootDir: __dirname,
+  reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap });
 
 const categories = [...new Set(SEED.filter(p => !p.upcoming).map(p => p.cat))];
 generateComparisons({ products: SEED, colorFor, computeScores, categories, neighborCount: 2, rootDir: __dirname });
 
 generateNews({ news: NEWS_SEED, products: SEED, productSlug, rootDir: __dirname });
 
-console.log('✓ Yerel tam build tamamlandı (ürünler + karşılaştırmalar + haberler).');
+generateSubcategories({ products: SEED, productSlug, rootDir: __dirname });
+
+// Faz 2: en yüksek trafik potansiyelli 31 ürün için "alınır mı" + "fiyat/performans mı" sayfaları
+generateBuyingGuides({ products: SEED, prosConsFor, computeScores, targetIds: FAZ2_TARGET_IDS, rootDir: __dirname });
+
+generateTopicalGuides({ rootDir: __dirname });
+
+// Faz 3: 28 ürün için 12 bölümlü tam inceleme (kategori çeşitliliği gözetilerek)
+generateReviews({ products: SEED, prosConsFor, computeScores, targetIds: FAZ3_TARGET_IDS, rootDir: __dirname });
+
+generateBrandPages({ products: SEED, computeScores, rootDir: __dirname });
+
+console.log('✓ Yerel tam build tamamlandı (ürünler + karşılaştırmalar + haberler + alt kategoriler + rehberler + incelemeler + marka sayfaları).');

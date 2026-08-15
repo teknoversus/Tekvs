@@ -15,6 +15,14 @@ const path = require('path');
 const { generateSite } = require('./lib/generate-site');
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { generateNews } = require('./lib/generate-news');
+const { generateSubcategories, buildSubcatMap } = require('./lib/generate-subcategories');
+const { generateBuyingGuides } = require('./lib/generate-buying-guides');
+const { generateTopicalGuides } = require('./lib/generate-topical-guides');
+const { generateReviews } = require('./lib/generate-reviews');
+const { generateBrandPages } = require('./lib/generate-brand-pages');
+
+// Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
+// ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
 
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://qsetmleywkhjcntajphx.supabase.co';
 const SUPABASE_KEY = process.env.SUPABASE_KEY || 'sb_publishable_z74ZnvDgMWR7JzQDezgdqg_G_eh3e5B';
@@ -41,6 +49,7 @@ function loadHelpers(){
     fmtDate: vm.runInContext('fmtDate', context),
     computeScores: vm.runInContext('computeScores', context),
     productSlug: vm.runInContext('productSlug', context),
+    prosConsFor: vm.runInContext('prosConsFor', context),
   };
 }
 
@@ -70,6 +79,10 @@ function rowToNews(row){
     date: row.date, summary: row.summary || '',
     body: Array.isArray(row.body) ? row.body : [],
     relatedProductId: row.related_product_id || null,
+    tldr: row.tldr || '',
+    table: Array.isArray(row.table_data) ? row.table_data : [],
+    faq: Array.isArray(row.faq) ? row.faq : [],
+    conclusion: row.conclusion || '',
   };
 }
 
@@ -99,7 +112,13 @@ async function main(){
   }
 
   const helpers = loadHelpers();
-  generateSite({ products, ...helpers, rootDir });
+  // Rehber/inceleme sayfaları artık TÜM (upcoming olmayan) kataloğu kapsıyor —
+  // yeni ürün eklendiğinde otomatik dahil olur, elle liste güncellemeye gerek yok.
+  const FAZ2_TARGET_IDS = products.filter(p => !p.upcoming).map(p => p.id);
+  const FAZ3_TARGET_IDS = FAZ2_TARGET_IDS;
+  const subcatMap = buildSubcatMap(products);
+  generateSite({ products, ...helpers, rootDir,
+    reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap });
 
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({
@@ -113,6 +132,21 @@ async function main(){
     console.log(`→ ${news.length} haber bulundu.`);
     generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
   }
+
+  console.log('→ Alt kategori sayfaları üretiliyor...');
+  generateSubcategories({ products, productSlug: helpers.productSlug, rootDir });
+
+  console.log('→ "Alınır mı" / "Fiyat-performans" rehber sayfaları üretiliyor...');
+  generateBuyingGuides({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ2_TARGET_IDS, rootDir });
+
+  console.log('→ Konu kümesi (topical authority) rehberleri üretiliyor...');
+  generateTopicalGuides({ rootDir });
+
+  console.log('→ İnceleme sayfaları üretiliyor...');
+  generateReviews({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ3_TARGET_IDS, rootDir });
+
+  console.log('→ Marka sayfaları üretiliyor...');
+  generateBrandPages({ products, computeScores: helpers.computeScores, rootDir });
 
   console.log('✓ Build tamamlandı.');
 }

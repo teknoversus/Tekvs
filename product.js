@@ -64,8 +64,14 @@ async function initProductPage(){
     scoreEl.style.display = 'inline-block';
   }
 
-  const hist = generatePriceHistory(p);
+  const hist = (await loadRealPriceHistory(PRODUCT_ID)) || generatePriceHistory(p);
   const canvas = document.getElementById('priceChart');
+  const chartNote = document.getElementById('chartNote');
+  if(chartNote){
+    chartNote.textContent = hist && hist.isReal
+      ? 'Gerçek, haftalık kaydedilen fiyat verisine dayanır.'
+      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); henüz yeterli gerçek veri birikmedi.';
+  }
   if(hist && canvas && window.Chart){
     const color = colorFor(p.cat);
     const ctx = canvas.getContext('2d');

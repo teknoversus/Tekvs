@@ -55,7 +55,10 @@ jobs:
             **/.github/**
             **/node_modules/**
             **/lib/**
+            **/scripts/**
+            **/docs/**
             build.js
+            build_local.js
             gen_product_pages.js
             gen_product_images.js
             package.json
@@ -63,5 +66,7 @@ jobs:
             seed_products.sql
             seed_products_amazon.sql
             supabase_setup.sql
+            migration_*.sql
+            update_*.sql
             AUTOMATION.md
             README.md

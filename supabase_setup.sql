@@ -187,6 +187,32 @@ create policy "news_agent_insert_pending" on news
   for insert
   with check (pending_review = true and deleted = false);
 
+-- ---- 6) price_history (Faz 7: gerçek fiyat geçmişi) --------------------
+-- Haftalık kaydedilir (bkz. scripts/record-price-snapshots.js +
+-- .github/workflows/price-snapshot.yml). Ürün sayfasındaki fiyat grafiği
+-- yeterli veri (2+ farklı gün) birikince otomatik olarak buna geçer.
+create table if not exists price_history (
+  id           bigint generated always as identity primary key,
+  product_id   text not null references products(id) on delete cascade,
+  price        numeric not null,
+  recorded_at  date not null default current_date,
+  unique(product_id, recorded_at)
+);
+
+create index if not exists price_history_product_idx on price_history (product_id, recorded_at);
+
+alter table price_history enable row level security;
+
+drop policy if exists "price_history_public_read" on price_history;
+create policy "price_history_public_read" on price_history
+  for select using (true);
+
+-- Sadece haftalık kayıt script'i (kimliksiz/anon) ekleyebilir; kimse
+-- (admin dahil) geçmiş fiyat kayıtlarını güncelleyip/silemez.
+drop policy if exists "price_history_insert_only" on price_history;
+create policy "price_history_insert_only" on price_history
+  for insert with check (true);
+
 -- ============================================================
 -- Kurulum burada bitmiyor — sırada 2 manuel adım var (aşağıya bak).
 -- ============================================================

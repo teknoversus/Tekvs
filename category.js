@@ -20,6 +20,9 @@ let favOnly = false;
 let sortMode = 'date_desc';
 let searchIds = null;
 let detailChart = null;
+let priceMin = null;
+let priceMax = null;
+let brandFilter = new Set(); // boşsa tüm markalar gösterilir
 
 async function init(){
   products = await loadSharedProducts();
@@ -27,8 +30,17 @@ async function init(){
   favorites = await getFavorites();
   handleShareLinkFromURL();
   renderCatNav();
+  renderBrandFilterChips();
+  renderSearchSuggestions();
   render();
   renderRecentlyViewedInto('recentlyViewedStrip', products, null);
+}
+
+function renderSearchSuggestions(){
+  const el = document.getElementById('productSuggestions');
+  if(!el) return;
+  const catProducts = products.filter(p => !p.upcoming && p.cat === CATEGORY_FIXED);
+  el.innerHTML = catProducts.map(p => `<option value="${p.name.replace(/"/g,'&quot;')}"></option>`).join('');
 }
 
 function renderCatNav(){
@@ -175,12 +187,63 @@ function render(){
     base = sortProducts(base);
   }
   if(favOnly) base = base.filter(p => favorites.includes(p.id));
+  if(priceMin != null || priceMax != null){
+    base = base.filter(p => {
+      const price = parsePrice(p);
+      if(price == null) return true; // fiyatı bilinmeyen ürünü filtre dışı bırakma
+      if(priceMin != null && price < priceMin) return false;
+      if(priceMax != null && price > priceMax) return false;
+      return true;
+    });
+  }
+  if(brandFilter.size > 0){
+    base = base.filter(p => brandFilter.has(brandOf(p)));
+  }
 
   document.getElementById('mainGrid').innerHTML = base.length
     ? base.map(p=>cardHTML(p)).join('')
     : '<p style="color:var(--ink-soft);font-size:14px;">Bu aramaya veya filtreye uygun ürün bulunamadı.</p>';
 
   updateCompareBar();
+}
+
+// Marka adını ürün adının ilk kelimesinden çıkarır (generate-brand-pages.js
+// ile aynı mantık — tutarlılık için).
+const BRAND_FOLD = { 'MacBook':'Apple','iPhone':'Apple','AirPods':'Apple','iPad':'Apple','General':'General Mobile' };
+function brandOf(p){ const first = p.name.split(' ')[0]; return BRAND_FOLD[first] || first; }
+
+function renderBrandFilterChips(){
+  const el = document.getElementById('brandFilterChips');
+  if(!el) return;
+  const catProducts = products.filter(p => !p.upcoming && p.cat === CATEGORY_FIXED);
+  const brandCounts = {};
+  catProducts.forEach(p => { const b = brandOf(p); brandCounts[b] = (brandCounts[b]||0)+1; });
+  const brands = Object.keys(brandCounts).sort((a,b) => brandCounts[b]-brandCounts[a]);
+  el.innerHTML = brands.map(b => `<label style="display:inline-flex;align-items:center;gap:4px;margin:0 10px 6px 0;font-size:12.5px;cursor:pointer;">
+    <input type="checkbox" onchange="toggleBrandFilter('${b.replace(/'/g,"\\'")}')" ${brandFilter.has(b)?'checked':''} /> ${b} (${brandCounts[b]})
+  </label>`).join('');
+}
+
+function toggleBrandFilter(brand){
+  if(brandFilter.has(brand)) brandFilter.delete(brand);
+  else brandFilter.add(brand);
+  render();
+}
+
+function applyPriceFilter(){
+  const minVal = document.getElementById('priceMinInput').value;
+  const maxVal = document.getElementById('priceMaxInput').value;
+  priceMin = minVal ? parseFloat(minVal) : null;
+  priceMax = maxVal ? parseFloat(maxVal) : null;
+  render();
+}
+
+function clearAllFilters(){
+  priceMin = null; priceMax = null; brandFilter.clear();
+  const minEl = document.getElementById('priceMinInput'); if(minEl) minEl.value = '';
+  const maxEl = document.getElementById('priceMaxInput'); if(maxEl) maxEl.value = '';
+  renderBrandFilterChips();
+  render();
 }
 
 async function toggleFavorite(id){

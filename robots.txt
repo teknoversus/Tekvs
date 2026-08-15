@@ -51,4 +51,12 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Diffbot (yapılandırılmış veri / RAG besleme servisi)
+User-agent: Diffbot
+Allow: /
+
 Sitemap: https://teknoversus.com.tr/sitemap.xml

@@ -84,7 +84,8 @@
     <div class="chips" id="catChipsNav"></div>
 
     <div class="search-box">
-      <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz dizüstü'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz dizüstü'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <datalist id="productSuggestions"></datalist>
       <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
     </div>
     <div class="search-status" id="searchStatus"></div>
@@ -102,6 +103,21 @@
           <option value="price_desc">Fiyat: Yüksekten düşüğe</option>
           <option value="views_desc">Görüntülenme: Çoktan aza</option>
         </select>
+      </div>
+    </div>
+
+    <div class="toolbar" style="align-items:flex-start;flex-wrap:wrap;gap:16px;margin-top:8px;">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <span style="font-size:12.5px;font-weight:600;color:var(--ink-soft);">Fiyat aralığı:</span>
+        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <span style="color:var(--ink-soft);">–</span>
+        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <button class="btn btn-outline btn-sm" onclick="applyPriceFilter()">Uygula</button>
+        <button class="btn btn-outline btn-sm" onclick="clearAllFilters()">Filtreleri Temizle</button>
+      </div>
+      <div style="flex:1;min-width:220px;">
+        <span style="font-size:12.5px;font-weight:600;color:var(--ink-soft);display:block;margin-bottom:6px;">Marka:</span>
+        <div id="brandFilterChips"></div>
       </div>
     </div>
 

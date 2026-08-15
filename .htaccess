@@ -39,6 +39,9 @@
 # Sunucu imzasını gizle (Apache sürüm bilgisi vb.)
 ServerSignature Off
 
+# Özel 404 sayfası
+ErrorDocument 404 /404.html
+
 # ============================================================
 # Performans — sıkıştırma ve tarayıcı önbelleği
 # ============================================================

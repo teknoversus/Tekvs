@@ -20,6 +20,8 @@ const { generateBuyingGuides } = require('./lib/generate-buying-guides');
 const { generateTopicalGuides } = require('./lib/generate-topical-guides');
 const { generateReviews } = require('./lib/generate-reviews');
 const { generateBrandPages } = require('./lib/generate-brand-pages');
+const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
+const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -102,6 +104,32 @@ async function fetchNewsFromSupabase(){
   return rows.map(rowToNews);
 }
 
+// Onaylanmış (approved=true) yorumlardan ürün başına {count, average} özeti çıkarır.
+// GERÇEK kullanıcı verisi olmadan AggregateRating YAZILMAZ — hiç yorumu olmayan
+// bir ürün için schema.org AggregateRating eklemek yanıltıcı/kural ihlali olur.
+async function fetchRatingsSummary(){
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/ratings?approved=eq.true&select=product_id,stars`, {
+    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` }
+  });
+  if(!res.ok){
+    console.warn('UYARI: Supabase\'den yorum verisi çekilemedi — AggregateRating eklenmeyecek.');
+    return {};
+  }
+  const rows = await res.json();
+  const byProduct = {};
+  rows.forEach(r => {
+    if(!byProduct[r.product_id]) byProduct[r.product_id] = [];
+    byProduct[r.product_id].push(r.stars);
+  });
+  const summary = {};
+  Object.entries(byProduct).forEach(([pid, stars]) => {
+    const count = stars.length;
+    const avg = stars.reduce((a,b) => a+b, 0) / count;
+    summary[pid] = { count, average: Math.round(avg * 10) / 10 };
+  });
+  return summary;
+}
+
 async function main(){
   console.log('→ Supabase\'den canlı ürün verisi çekiliyor...');
   const products = await fetchProductsFromSupabase();
@@ -117,8 +145,10 @@ async function main(){
   const FAZ2_TARGET_IDS = products.filter(p => !p.upcoming).map(p => p.id);
   const FAZ3_TARGET_IDS = FAZ2_TARGET_IDS;
   const subcatMap = buildSubcatMap(products);
+  console.log('→ Onaylanmış yorum özeti çekiliyor (AggregateRating için)...');
+  const ratingsSummary = await fetchRatingsSummary();
   generateSite({ products, ...helpers, rootDir,
-    reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap });
+    reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap, ratingsSummary });
 
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({
@@ -134,7 +164,7 @@ async function main(){
   }
 
   console.log('→ Alt kategori sayfaları üretiliyor...');
-  generateSubcategories({ products, productSlug: helpers.productSlug, rootDir });
+  generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
 
   console.log('→ "Alınır mı" / "Fiyat-performans" rehber sayfaları üretiliyor...');
   generateBuyingGuides({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ2_TARGET_IDS, rootDir });
@@ -142,11 +172,17 @@ async function main(){
   console.log('→ Konu kümesi (topical authority) rehberleri üretiliyor...');
   generateTopicalGuides({ rootDir });
 
+  console.log('→ Konu kümesi destek makaleleri üretiliyor...');
+  generateClusterArticles({ rootDir });
+
   console.log('→ İnceleme sayfaları üretiliyor...');
   generateReviews({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ3_TARGET_IDS, rootDir });
 
   console.log('→ Marka sayfaları üretiliyor...');
   generateBrandPages({ products, computeScores: helpers.computeScores, rootDir });
+
+  console.log('→ Marka vs marka sayfaları üretiliyor...');
+  generateBrandVsBrandPages({ products, computeScores: helpers.computeScores, rootDir });
 
   console.log('✓ Build tamamlandı.');
 }

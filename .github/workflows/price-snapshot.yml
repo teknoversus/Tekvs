@@ -1,0 +1,33 @@
+name: Fiyat geçmişi anlık görüntüsü (haftalık)
+
+# Her ürünün o anki fiyatını price_history tablosuna kaydeder. Zamanla
+# (birkaç hafta/ay içinde) ürün sayfalarındaki fiyat grafiği gerçek
+# veriye dayanmaya başlar; yeterli veri birikene kadar sayfa simüle
+# edilmiş grafiği göstermeye devam eder (bkz. shared.js/product.js).
+#
+# Bu workflow SİTEYİ DEPLOY ETMEZ — sadece veri kaydeder. Fiyat
+# grafiği zaten client-side (tarayıcıda) Supabase'den canlı okunuyor,
+# ayrı bir build/deploy tetiklemeye gerek yok.
+on:
+  schedule:
+    # Her Pazartesi 06:00 UTC (Türkiye saatiyle 09:00)
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}
+
+jobs:
+  record-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu çek
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fiyat anlık görüntüsünü kaydet
+        run: node scripts/record-price-snapshots.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}

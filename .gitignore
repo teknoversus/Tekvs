@@ -1,0 +1,32 @@
+# ============================================================
+# TeknoVersus — depoya girmeyecek dosyalar
+#
+# ÖNEMLİ: Aşağıdaki klasörler ve dosyalar her deploy'da GitHub Actions
+# tarafından build.js ile Supabase verisinden SIFIRDAN yeniden üretiliyor
+# (bkz. .github/workflows/deploy.yml). Bu yüzden depoya konmalarına gerek
+# yok — koymak sadece her push'u 1200+ dosya taşımak zorunda bırakıyor.
+#
+# Yerelde build_local.js çalıştırdığında bu klasörler oluşacak, bu normal;
+# git bunları görmezden gelecek.
+# ============================================================
+
+# --- Üretilen sayfa klasörleri ---
+urun/
+karsilastir/
+rehber/
+inceleme/
+kategori/
+marka/
+marka-karsilastir/
+haberler/
+
+# --- Üretilen tekil dosyalar ---
+sitemap.xml
+haberler.xml
+karsilastirmalar.html
+yakinda-cikacak.html
+
+# --- Bağımlılıklar / yerel ---
+node_modules/
+.DS_Store
+*.log

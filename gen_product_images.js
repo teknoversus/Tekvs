@@ -60,6 +60,7 @@ const context = {
 };
 vm.createContext(context);
 vm.runInContext(sharedSrc, context);
+vm.runInContext(fs.readFileSync(path.join(__dirname, 'seed-data.js'), 'utf8'), context); // SEED artık ayrı dosyada
 const SEED = vm.runInContext('SEED', context);
 const colorFor = vm.runInContext('colorFor', context);
 const productSlug = vm.runInContext('productSlug', context);

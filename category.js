@@ -81,26 +81,95 @@ async function runSmartSearch(){
       statusEl.innerHTML = `"${q}" için yapay zekâ ${ids.length} sonuç buldu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     } else { throw new Error('boş sonuç'); }
   }catch(e){
-    const kw = q.toLowerCase();
-    const matches = products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED && (
-      p.name.toLowerCase().includes(kw) ||
-      (p.blurb||'').toLowerCase().includes(kw) ||
-      Object.entries(p.specs||{}).some(([k,v]) => (k+' '+v).toLowerCase().includes(kw))
-    ));
+    // ---- Yedek arama: yapay zekâ yoksa/başarısızsa ----
+    // Basit "includes" yerine TOKEN + BULANIK eşleştirme kullanıyoruz.
+    // Gerçek arama kayıtları gösterdi ki kullanıcılar sık yazım hatası
+    // yapıyor ("samsun galaxy" -> Samsung Galaxy) ve kısmi model numarası
+    // giriyor ("65u95a" -> Vestel 65UA9500). Tam eşleşme bunları kaçırıyordu.
+    const matches = fuzzySearch(q, products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED));
     searchIds = matches.map(p=>p.id);
     if(searchIds.length){
-      statusEl.innerHTML = `Yapay zekâ aramasına şu an ulaşılamadı, basit kelime aramasıyla ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+      statusEl.innerHTML = `Yapay zekâ aramasına şu an ulaşılamadı, kelime aramasıyla ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     } else {
-      logMissedSearch(q);
-      const suggestions = products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED)
-        .sort((a,b) => (scores[b.id]||0) - (scores[a.id]||0)).slice(0,4);
-      searchIds = suggestions.map(p=>p.id);
-      statusEl.innerHTML = suggestions.length
-        ? `"${q}" için tam eşleşme yok — bu kategoride bunlara göz atabilirsin: <button onclick="clearSmartSearch()">Aramayı temizle</button>`
-        : `Sonuç bulunamadı. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+      // Bu kategoride yok — TÜM katalogda ara, EN ÇOK sonucu olan kategoriye yönlendir.
+      const otherCat = fuzzySearch(q, products.filter(p => !p.upcoming && p.cat!==CATEGORY_FIXED));
+      if(otherCat.length){
+        const counts = {};
+        otherCat.forEach(p => { counts[p.cat] = (counts[p.cat]||0)+1; });
+        const bestCat = Object.keys(counts).sort((a,b) => counts[b]-counts[a])[0];
+        const slug = SLUG_MAP[bestCat];
+        statusEl.innerHTML = `"${q}" bu kategoride yok ama <b>${bestCat}</b> kategorisinde ${counts[bestCat]} sonuç var: <a href="${slug}.html" style="color:var(--c1);font-weight:600;">${bestCat} sayfasına git →</a> <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+        const suggestions = products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED)
+          .sort((a,b) => (scores[b.id]||0) - (scores[a.id]||0)).slice(0,4);
+        searchIds = suggestions.map(p=>p.id);
+      } else {
+        logMissedSearch(q);
+        const suggestions = products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED)
+          .sort((a,b) => (scores[b.id]||0) - (scores[a.id]||0)).slice(0,4);
+        searchIds = suggestions.map(p=>p.id);
+        statusEl.innerHTML = suggestions.length
+          ? `"${q}" için tam eşleşme yok — bu kategoride bunlara göz atabilirsin: <button onclick="clearSmartSearch()">Aramayı temizle</button>`
+          : `Sonuç bulunamadı. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+      }
     }
   }
   render();
+}
+
+// Yazım hatasına ve kısmi girişe toleranslı arama.
+// Türkçe karakterleri sadeleştirir, sorguyu kelimelere böler, her kelime
+// için ürün metninde "yaklaşık" eşleşme arar ve skora göre sıralar.
+function searchNormalize(s){
+  const trMap={'ı':'i','İ':'i','ş':'s','Ş':'s','ğ':'g','Ğ':'g','ü':'u','Ü':'u','ö':'o','Ö':'o','ç':'c','Ç':'c'};
+  return String(s||'').split('').map(ch=>trMap[ch]!==undefined?trMap[ch]:ch).join('')
+    .toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+}
+
+// İki kelime "yeterince benzer" mi? (1 harf eksik/fazla/yanlış toleransı)
+function tokenSimilar(token, word){
+  if(word.includes(token) || token.includes(word)) return true;
+  if(Math.abs(token.length - word.length) > 2) return false;
+  if(token.length < 4) return false; // çok kısa kelimelerde bulanıklık yanlış sonuç üretir
+  // Basit Levenshtein (mesafe <= 1 kabul)
+  let i=0, j=0, diff=0;
+  while(i < token.length && j < word.length){
+    if(token[i] === word[j]){ i++; j++; continue; }
+    diff++;
+    if(diff > 1) return false;
+    if(token.length > word.length) i++;
+    else if(word.length > token.length) j++;
+    else { i++; j++; }
+  }
+  return diff + (token.length - i) + (word.length - j) <= 1;
+}
+
+function fuzzySearch(query, pool){
+  const qTokens = searchNormalize(query).split(/\s+/).filter(t => t.length > 1);
+  if(!qTokens.length) return [];
+
+  const scored = [];
+  pool.forEach(p => {
+    const nameNorm = searchNormalize(p.name);
+    const nameWords = nameNorm.split(/[^a-z0-9]+/).filter(Boolean);
+    const restNorm = searchNormalize((p.blurb||'') + ' ' + Object.entries(p.specs||{}).map(([k,v])=>k+' '+v).join(' '));
+
+    let score = 0, matchedTokens = 0;
+    qTokens.forEach(t => {
+      if(nameNorm.includes(t))                            { score += 10; matchedTokens++; }  // isimde tam
+      else if(nameWords.some(w => tokenSimilar(t, w)))     { score += 6;  matchedTokens++; }  // isimde bulanık (yazım hatası)
+      else if(t.length >= 4 && restNorm.includes(t))       { score += 1;  matchedTokens++; }  // özellik/açıklamada — zayıf
+    });
+
+    // Sorgunun en az yarısı eşleşmeli; tek kelimelik sorguda o kelime eşleşmeli.
+    // Bu, "tecno spark 50" gibi sorgularda '50' rakamının her ürüne uymasını
+    // ve alakasız 48 sonuç dönmesini engelliyor.
+    if(matchedTokens < Math.ceil(qTokens.length / 2)) return;
+    if(score < 6) return; // sadece özellik metninde geçen zayıf eşleşmeleri ele
+
+    scored.push({ p, score });
+  });
+
+  return scored.sort((a,b) => b.score - a.score).slice(0, 12).map(x => x.p);
 }
 
 function clearSmartSearch(){

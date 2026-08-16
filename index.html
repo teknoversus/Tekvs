@@ -1148,7 +1148,7 @@ async function renderTrending(){
       : '<p style="font-size:13px;color:var(--bad);grid-column:1/-1;">Görüntülenme verisi şu anda yüklenemedi (bağlantı sorunu olabilir) — sayfayı yenilemeyi dene.</p>';
     return;
   }
-  grid.innerHTML = top.map(p => cardHTML(p, false)).join('');
+  grid.innerHTML = top.map(p => cardHTML(p, new Set())).join('');
 }
 
 // ---- yapay zekâ destekli akıllı arama ----
@@ -1269,6 +1269,10 @@ function heartIcon(filled){
 }
 
 function cardHTML(p, newIds){
+  // Savunmaci kontrol: cagiran taraf Set disinda bir sey (false, undefined,
+  // dizi) gonderirse .has() cagrisi TypeError firlatiyordu ve tum bolum
+  // cokuyordu. Artik guvenli bir Set'e normalize ediliyor.
+  if(!(newIds instanceof Set)) newIds = new Set(Array.isArray(newIds) ? newIds : []);
   const color = colorFor(p.cat);
   const specEntries = Object.entries(p.specs || {}).slice(0,4);
   const isFav = favorites.includes(p.id);

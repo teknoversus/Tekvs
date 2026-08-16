@@ -84,7 +84,7 @@
     <div class="chips" id="catChipsNav"></div>
 
     <div class="search-box">
-      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz dizüstü'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz dizüstü'" onkeydown="if(event.key==='Enter') runSmartSearch()" aria-label="Ürün ara"/>
       <datalist id="productSuggestions"></datalist>
       <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
     </div>
@@ -95,7 +95,7 @@
         <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
       </div>
       <div class="toolbar-left">
-        <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()" aria-label="Ürünleri sırala">
           <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
           <option value="score_desc">Skor: Yüksekten düşüğe</option>
           <option value="date_asc">Tarih: Eskiden yeniye</option>
@@ -109,9 +109,9 @@
     <div class="toolbar" style="align-items:flex-start;flex-wrap:wrap;gap:16px;margin-top:8px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <span style="font-size:12.5px;font-weight:600;color:var(--ink-soft);">Fiyat aralığı:</span>
-        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" aria-label="En düşük fiyat" />
         <span style="color:var(--ink-soft);">–</span>
-        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" aria-label="En yüksek fiyat" />
         <button class="btn btn-outline btn-sm" onclick="applyPriceFilter()">Uygula</button>
         <button class="btn btn-outline btn-sm" onclick="clearAllFilters()">Filtreleri Temizle</button>
       </div>
@@ -135,7 +135,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1599</span><span class="spec-pill">Ekran (inç): 14.2</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h11')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h11')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -155,7 +155,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1599</span><span class="spec-pill">Ekran (inç): 14.2</span><span class="spec-pill">Pil (saat): 22</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h13')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h13')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -175,7 +175,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1999</span><span class="spec-pill">Ekran (inç): 14.2</span><span class="spec-pill">Pil (saat): 17</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h15')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h15')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -195,7 +195,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1099</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h12')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h12')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -215,7 +215,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1199</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h14')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h14')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -235,7 +235,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 13.3</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h16')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h16')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -255,7 +255,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 67999</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s1')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s1')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -267,12 +267,12 @@
   <div class="wrap" id="recentlyViewedStrip"></div>
   <!-- POPULER_KARSILASTIRMALAR_START -->
     <div style="margin:6px 0 22px;">
-      <h2 style="font-size:15px;margin:0 0 10px;">Popüler Karşılaştırmalar</h2>
+      <h2 style="font-size:15px;margin:0 0 10px;">Bu Kategoride En Çok Hangi Ürünler Karşılaştırılıyor?</h2>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <a class="chip-filter" href="karsilastir/apple-macbook-pro-16-m3-pro-vs-macbook-air-m2-13.html">Apple MacBook Pro 16&quot; (M3 Pro) vs MacBook Air (M2, 13&quot;)</a>
+        <a class="chip-filter" href="karsilastir/macbook-pro-14-m3-vs-macbook-pro-14-m4.html">MacBook Pro 14&quot; (M3) vs MacBook Pro 14&quot; (M4)</a>
         <a class="chip-filter" href="karsilastir/asus-rog-strix-g16-vs-samsung-galaxy-book4.html">Asus ROG Strix G16 vs Samsung Galaxy Book4</a>
         <a class="chip-filter" href="karsilastir/lenovo-ideapad-slim-3-vs-monster-tulpar-t5-v22-1.html">Lenovo IdeaPad Slim 3 vs Monster Tulpar T5 V22.1</a>
-        <a class="chip-filter" href="karsilastir/hp-elitebook-840-g10-vs-macbook-air-m1-13.html">HP EliteBook 840 G10 vs MacBook Air (M1, 13&quot;)</a>
       </div>
     </div>
     <!-- POPULER_KARSILASTIRMALAR_END -->

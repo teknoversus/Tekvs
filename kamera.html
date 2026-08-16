@@ -83,7 +83,7 @@
     <div class="chips" id="catChipsNav"></div>
 
     <div class="search-box">
-      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz kamera'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz kamera'" onkeydown="if(event.key==='Enter') runSmartSearch()" aria-label="Ürün ara"/>
       <datalist id="productSuggestions"></datalist>
       <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
     </div>
@@ -94,7 +94,7 @@
         <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
       </div>
       <div class="toolbar-left">
-        <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()" aria-label="Ürünleri sırala">
           <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
           <option value="score_desc">Skor: Yüksekten düşüğe</option>
           <option value="date_asc">Tarih: Eskiden yeniye</option>
@@ -108,9 +108,9 @@
     <div class="toolbar" style="align-items:flex-start;flex-wrap:wrap;gap:16px;margin-top:8px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <span style="font-size:12.5px;font-weight:600;color:var(--ink-soft);">Fiyat aralığı:</span>
-        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" aria-label="En düşük fiyat" />
         <span style="color:var(--ink-soft);">–</span>
-        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" aria-label="En yüksek fiyat" />
         <button class="btn btn-outline btn-sm" onclick="applyPriceFilter()">Uygula</button>
         <button class="btn btn-outline btn-sm" onclick="clearAllFilters()">Filtreleri Temizle</button>
       </div>
@@ -134,7 +134,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1599</span><span class="spec-pill">Çözünürlük (MP): 40</span><span class="spec-pill">Video: 6K30</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h30')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h30')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -154,7 +154,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 2499</span><span class="spec-pill">Çözünürlük (MP): 33</span><span class="spec-pill">Video: 4K60</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h32')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h32')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -174,7 +174,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 2499</span><span class="spec-pill">Çözünürlük (MP): 24</span><span class="spec-pill">Video: 4K60</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h31')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h31')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -186,7 +186,7 @@
   <div class="wrap" id="recentlyViewedStrip"></div>
   <!-- POPULER_KARSILASTIRMALAR_START -->
     <div style="margin:6px 0 22px;">
-      <h2 style="font-size:15px;margin:0 0 10px;">Popüler Karşılaştırmalar</h2>
+      <h2 style="font-size:15px;margin:0 0 10px;">Bu Kategoride En Çok Hangi Ürünler Karşılaştırılıyor?</h2>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <a class="chip-filter" href="karsilastir/nikon-z6-iii-vs-sony-alpha-a6400.html">Nikon Z6 III vs Sony Alpha a6400</a>
         <a class="chip-filter" href="karsilastir/canon-eos-r50-vs-sony-alpha-a6400.html">Canon EOS R50 vs Sony Alpha a6400</a>

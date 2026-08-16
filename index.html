@@ -73,7 +73,7 @@
 <div class="wrap">
   <div class="cat-nav" id="catNav"></div>
   <div class="search-box">
-    <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz telefon' veya '50 bin TL altı laptop'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+    <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz telefon' veya '50 bin TL altı laptop'" onkeydown="if(event.key==='Enter') runSmartSearch()" aria-label="Ürün ara"/>
     <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
   </div>
   <div class="search-status" id="searchStatus"></div>
@@ -101,7 +101,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 67999</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s1')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s1')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -121,7 +121,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 86299</span><span class="spec-pill">Ekran (inç): 6.9</span><span class="spec-pill">Pil (mAh): 5000</span><span class="spec-pill">Kamera (MP): 200</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s2')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s2')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -141,7 +141,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 58299</span><span class="spec-pill">Ekran (inç): 11</span><span class="spec-pill">Depolama (GB): 256</span><span class="spec-pill">RAM (GB): 12</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s3')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s3')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -161,7 +161,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 107999</span><span class="spec-pill">Ekran (inç): 6.9</span><span class="spec-pill">Kamera (MP): 48</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s4')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s4')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -214,7 +214,7 @@
         </div>
         <div class="toolbar-left">
           <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
-          <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+          <select class="sortSelect" id="sortSelect" onchange="onSortChange()" aria-label="Ürünleri sırala">
             <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
             <option value="score_desc">Skor: Yüksekten düşüğe</option>
             <option value="date_asc">Tarih: Eskiden yeniye</option>
@@ -239,7 +239,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1299</span><span class="spec-pill">Ekran (inç): 6.9</span><span class="spec-pill">Kamera (MP): 200</span><span class="spec-pill">RAM (GB): 12</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h2')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h2')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -259,7 +259,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1599</span><span class="spec-pill">Ekran (inç): 14.2</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h11')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h11')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -279,7 +279,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 249</span><span class="spec-pill">Pil (saat): 6</span><span class="spec-pill">Ağırlık (g): 5.3</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h17')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h17')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -299,7 +299,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 11</span><span class="spec-pill">Depolama (GB): 256</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h20')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h20')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -319,7 +319,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 799</span><span class="spec-pill">Pil (saat): 36</span><span class="spec-pill">Su Geçirmezlik: 100m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h26')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h26')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -339,7 +339,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1599</span><span class="spec-pill">Çözünürlük (MP): 40</span><span class="spec-pill">Video: 6K30</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h30')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h30')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -359,7 +359,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1299</span><span class="spec-pill">Ekran (inç): 6.8</span><span class="spec-pill">Kamera (MP): 200</span><span class="spec-pill">RAM (GB): 12</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h3')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h3')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -379,7 +379,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1599</span><span class="spec-pill">Ekran (inç): 14.2</span><span class="spec-pill">Pil (saat): 22</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h13')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h13')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -399,7 +399,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 799</span><span class="spec-pill">Ekran (inç): 11</span><span class="spec-pill">Depolama (GB): 128</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h21')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h21')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -419,7 +419,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 799</span><span class="spec-pill">Ekran (inç): 11</span><span class="spec-pill">Depolama (GB): 128</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h22')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h22')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -439,7 +439,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1199</span><span class="spec-pill">Ekran (inç): 6.8</span><span class="spec-pill">Kamera (MP): 200</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h5')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h5')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -459,7 +459,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1199</span><span class="spec-pill">Ekran (inç): 6.8</span><span class="spec-pill">Kamera (MP): 108</span><span class="spec-pill">RAM (GB): 12</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h9')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h9')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -479,7 +479,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1999</span><span class="spec-pill">Ekran (inç): 14.2</span><span class="spec-pill">Pil (saat): 17</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h15')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h15')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -499,7 +499,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 349</span><span class="spec-pill">Pil (saat): 30</span><span class="spec-pill">Ağırlık (g): 254</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h19')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h19')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -519,7 +519,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1199</span><span class="spec-pill">Ekran (inç): 6.8</span><span class="spec-pill">Kamera (MP): 108</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h7')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h7')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -539,7 +539,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 30</span><span class="spec-pill">Ağırlık (g): 250</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h18')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h18')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -559,7 +559,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 6.3</span><span class="spec-pill">Kamera (MP): 48</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h1')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h1')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -579,7 +579,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 6.1</span><span class="spec-pill">Kamera (MP): 48</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h4')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h4')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -599,7 +599,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1099</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h12')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h12')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -619,7 +619,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 1199</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h14')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h14')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -639,7 +639,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 6.1</span><span class="spec-pill">Kamera (MP): 48</span><span class="spec-pill">RAM (GB): 6</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h6')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h6')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -659,7 +659,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 2499</span><span class="spec-pill">Çözünürlük (MP): 33</span><span class="spec-pill">Video: 4K60</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h32')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h32')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -679,7 +679,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 6.1</span><span class="spec-pill">Kamera (MP): 12</span><span class="spec-pill">RAM (GB): 6</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h8')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h8')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -699,7 +699,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 999</span><span class="spec-pill">Ekran (inç): 13.3</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h16')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h16')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -719,7 +719,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 67999</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 16</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s1')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s1')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -739,7 +739,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 86299</span><span class="spec-pill">Ekran (inç): 6.9</span><span class="spec-pill">Pil (mAh): 5000</span><span class="spec-pill">Kamera (MP): 200</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s2')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s2')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -759,7 +759,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 58299</span><span class="spec-pill">Ekran (inç): 11</span><span class="spec-pill">Depolama (GB): 256</span><span class="spec-pill">RAM (GB): 12</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s3')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s3')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -779,7 +779,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 13999</span><span class="spec-pill">Pil (saat): 8</span><span class="spec-pill">Ağırlık (g): 5.5</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s5')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s5')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -799,7 +799,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 107999</span><span class="spec-pill">Ekran (inç): 6.9</span><span class="spec-pill">Kamera (MP): 48</span><span class="spec-pill">RAM (GB): 8</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s4')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s4')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -819,7 +819,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 18589</span><span class="spec-pill">Pil (saat): 24</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s6')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s6')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -839,7 +839,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 799</span><span class="spec-pill">Ekran (inç): 6.1</span><span class="spec-pill">Kamera (MP): 12</span><span class="spec-pill">RAM (GB): 4</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h10')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h10')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -859,7 +859,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 599</span><span class="spec-pill">Ekran (inç): 10.9</span><span class="spec-pill">Depolama (GB): 64</span><span class="spec-pill">RAM (GB): 4</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h23')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h23')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -879,7 +879,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h24')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h24')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -899,7 +899,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h25')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h25')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -919,7 +919,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h27')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h27')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -939,7 +939,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h28')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h28')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -959,7 +959,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h29')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h29')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -979,7 +979,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 2499</span><span class="spec-pill">Çözünürlük (MP): 24</span><span class="spec-pill">Video: 4K60</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h31')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h31')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -1287,7 +1287,7 @@ function cardHTML(p, newIds){
     <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
+        <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
         Karşılaştır
       </label>
       <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>

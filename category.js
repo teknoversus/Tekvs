@@ -238,7 +238,7 @@ function cardHTML(p){
     <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
+        <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
         Karşılaştır
       </label>
       <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>

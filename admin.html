@@ -76,8 +76,8 @@
   <div style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;">
     <h3 style="margin:0 0 4px;">Yönetim Paneli Girişi</h3>
     <p style="font-size:12.5px;color:var(--ink-soft);margin:0 0 16px;">Supabase'de oluşturduğun admin hesabıyla giriş yap.</p>
-    <div class="field"><label>E-posta</label><input id="loginEmail" type="email" placeholder="admin@ornek.com" /></div>
-    <div class="field"><label>Şifre</label><input id="loginPassword" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter') doLogin()" /></div>
+    <div class="field"><label>E-posta</label><input id="loginEmail" type="email" placeholder="admin@ornek.com" aria-label="E-posta adresi" /></div>
+    <div class="field"><label>Şifre</label><input id="loginPassword" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter') doLogin()" aria-label="Parola" /></div>
     <div id="loginError" style="color:var(--bad);font-size:12.5px;margin-bottom:10px;display:none;"></div>
     <button class="btn btn-dark" style="width:100%;" onclick="doLogin()" id="loginBtn">Giriş Yap</button>
   </div>
@@ -110,7 +110,7 @@
   <div id="productsPanel">
     <div class="stat-cards" id="adminStats"></div>
     <button class="btn btn-dark" style="margin-bottom:16px;" onclick="openAdd()">+ Yeni ürün ekle</button>
-    <input class="admin-search" id="adminSearch" placeholder="Ürün adı veya kategoriye göre ara…" oninput="renderAdminList()" />
+    <input class="admin-search" id="adminSearch" placeholder="Ürün adı veya kategoriye göre ara…" oninput="renderAdminList()" aria-label="Yönetim panelinde ürün ara" />
     <div class="cat-chips" id="catChips"></div>
     <div id="adminProductList"></div>
   </div>
@@ -150,12 +150,12 @@
 <div class="modal-overlay" id="addOverlay">
   <div class="modal">
     <div class="modal-head"><h3 id="addModalTitle">Yeni ürün ekle</h3><button class="modal-close" onclick="closeAdd()">×</button></div>
-    <div class="field"><label>Ürün adı</label><input id="fName" placeholder="örn. Pixel 10 Pro" /></div>
-    <div class="field"><label>Kategori</label><select id="fCat" onchange="if(!editingId) fillSpecTemplate(this.value)"></select></div>
-    <div class="field"><label>Kısa açıklama</label><input id="fBlurb" placeholder="Tek cümlelik özet" /></div>
-    <div class="field"><label>Çıkış / eklenme tarihi</label><input id="fDate" type="date" /></div>
-    <div class="field"><label>Satış linki (opsiyonel)</label><input id="fLink" placeholder="https://..." /></div>
-    <label class="chk"><input type="checkbox" id="fUpcoming"/> Henüz çıkmadı — "Beklenenler" sekmesinde göster</label>
+    <div class="field"><label>Ürün adı</label><input id="fName" placeholder="örn. Pixel 10 Pro" aria-label="Ürün adı" /></div>
+    <div class="field"><label>Kategori</label><select id="fCat" onchange="if(!editingId) fillSpecTemplate(this.value)" aria-label="Kategori"></select></div>
+    <div class="field"><label>Kısa açıklama</label><input id="fBlurb" placeholder="Tek cümlelik özet" aria-label="Kısa açıklama" /></div>
+    <div class="field"><label>Çıkış / eklenme tarihi</label><input id="fDate" type="date" aria-label="Çıkış tarihi" /></div>
+    <div class="field"><label>Satış linki (opsiyonel)</label><input id="fLink" placeholder="https://..." aria-label="Ürün bağlantısı" /></div>
+    <label class="chk"><input type="checkbox" id="fUpcoming" aria-label="Yakında çıkacak ürün"/> Henüz çıkmadı — "Beklenenler" sekmesinde göster</label>
     <label style="font-size:12.5px;font-weight:600;color:var(--ink-soft);">Özellikler (etiket : değer)</label>
     <div id="specRows"></div>
     <button class="btn btn-outline" style="margin:8px 0 16px;" onclick="addSpecRow()">+ Özellik satırı</button>
@@ -168,15 +168,15 @@
 <div class="modal-overlay" id="newsOverlay">
   <div class="modal">
     <div class="modal-head"><h3 id="newsModalTitle">Yeni haber ekle</h3><button class="modal-close" onclick="closeAddNews()">×</button></div>
-    <div class="field"><label>Başlık</label><input id="nTitle" placeholder="örn. Google Pixel 11 Serisi Tanıtıldı" oninput="if(!editingNewsId) document.getElementById('nSlugPreview').textContent = slugify(this.value) + '.html'" /></div>
-    <div class="field" id="nSlugField" style="display:none;"><label>URL (otomatik, düzenlenemez)</label><input id="nSlugPreview" disabled style="color:var(--ink-soft);" /></div>
-    <div class="field"><label>Kategori</label><select id="nCat"></select></div>
-    <div class="field"><label>Tarih</label><input id="nDate" type="date" /></div>
-    <div class="field"><label>Kısa özet (liste kartında ve arama motorunda görünür)</label><textarea id="nSummary" rows="2" placeholder="1-2 cümlelik özet"></textarea></div>
-    <div class="field"><label>İlgili ürün (opsiyonel)</label><select id="nRelatedProduct"><option value="">— Yok —</option></select></div>
+    <div class="field"><label>Başlık</label><input id="nTitle" placeholder="örn. Google Pixel 11 Serisi Tanıtıldı" oninput="if(!editingNewsId) document.getElementById('nSlugPreview').textContent = slugify(this.value) + '.html'" aria-label="Haber başlığı" /></div>
+    <div class="field" id="nSlugField" style="display:none;"><label>URL (otomatik, düzenlenemez)</label><input id="nSlugPreview" disabled style="color:var(--ink-soft);" aria-label="Otomatik oluşturulan sayfa adresi" /></div>
+    <div class="field"><label>Kategori</label><select id="nCat" aria-label="Haber kategorisi"></select></div>
+    <div class="field"><label>Tarih</label><input id="nDate" type="date" aria-label="Haber tarihi" /></div>
+    <div class="field"><label>Kısa özet (liste kartında ve arama motorunda görünür)</label><textarea id="nSummary" rows="2" placeholder="1-2 cümlelik özet" aria-label="Haber özeti"></textarea></div>
+    <div class="field"><label>İlgili ürün (opsiyonel)</label><select id="nRelatedProduct" aria-label="İlgili ürün"><option value="">— Yok —</option></select></div>
     <div class="field">
       <label>Haber metni (her paragrafı BOŞ SATIRLA ayır)</label>
-      <textarea id="nBody" rows="10" placeholder="Birinci paragraf...&#10;&#10;İkinci paragraf...&#10;&#10;Üçüncü paragraf..."></textarea>
+      <textarea id="nBody" rows="10" placeholder="Birinci paragraf...&#10;&#10;İkinci paragraf...&#10;&#10;Üçüncü paragraf..." aria-label="Haber metni"></textarea>
     </div>
     <button class="btn btn-dark" id="submitNewsBtn" onclick="submitNews()">Yayınla</button>
     <p style="font-size:11.5px;color:var(--ink-soft);margin-top:10px;">
@@ -397,7 +397,7 @@ function populateCatSelect(){
 function addSpecRow(k,v){
   const row = document.createElement('div');
   row.className = 'spec-input-row';
-  row.innerHTML = `<input placeholder="Etiket (örn. Pil)" class="specKey" value="${k||''}"/><input placeholder="Değer (örn. 5000 mAh)" class="specVal" value="${v||''}"/>`;
+  row.innerHTML = `<input placeholder="Etiket (örn. Pil)" class="specKey" value="${k||''}" aria-label="Özellik adı"/><input placeholder="Değer (örn. 5000 mAh)" class="specVal" value="${v||''}" aria-label="Özellik değeri"/>`;
   document.getElementById('specRows').appendChild(row);
 }
 

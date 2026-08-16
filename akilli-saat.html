@@ -83,7 +83,7 @@
     <div class="chips" id="catChipsNav"></div>
 
     <div class="search-box">
-      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz akıllı saat'" onkeydown="if(event.key==='Enter') runSmartSearch()"/>
+      <input id="searchInput" list="productSuggestions" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz akıllı saat'" onkeydown="if(event.key==='Enter') runSmartSearch()" aria-label="Ürün ara"/>
       <datalist id="productSuggestions"></datalist>
       <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
     </div>
@@ -94,7 +94,7 @@
         <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
       </div>
       <div class="toolbar-left">
-        <select class="sortSelect" id="sortSelect" onchange="onSortChange()">
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()" aria-label="Ürünleri sırala">
           <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
           <option value="score_desc">Skor: Yüksekten düşüğe</option>
           <option value="date_asc">Tarih: Eskiden yeniye</option>
@@ -108,9 +108,9 @@
     <div class="toolbar" style="align-items:flex-start;flex-wrap:wrap;gap:16px;margin-top:8px;">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <span style="font-size:12.5px;font-weight:600;color:var(--ink-soft);">Fiyat aralığı:</span>
-        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <input type="number" id="priceMinInput" placeholder="Min ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" aria-label="En düşük fiyat" />
         <span style="color:var(--ink-soft);">–</span>
-        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" />
+        <input type="number" id="priceMaxInput" placeholder="Max ₺" style="width:90px;padding:6px 8px;border:1.5px solid var(--line-strong);border-radius:6px;font-size:13px;" aria-label="En yüksek fiyat" />
         <button class="btn btn-outline btn-sm" onclick="applyPriceFilter()">Uygula</button>
         <button class="btn btn-outline btn-sm" onclick="clearAllFilters()">Filtreleri Temizle</button>
       </div>
@@ -134,7 +134,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 799</span><span class="spec-pill">Pil (saat): 36</span><span class="spec-pill">Su Geçirmezlik: 100m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h26')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h26')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -154,7 +154,7 @@
     <div class="card-specs"><span class="spec-pill">Fiyat (₺): 18589</span><span class="spec-pill">Pil (saat): 24</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('s6')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('s6')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -174,7 +174,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h24')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h24')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -194,7 +194,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h25')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h25')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -214,7 +214,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h27')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h27')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -234,7 +234,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h28')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h28')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -254,7 +254,7 @@
     <div class="card-specs"><span class="spec-pill">Çıkış Fiyatı ($): 399</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">Su Geçirmezlik: 50m</span></div>
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" onchange="toggleSelect('h29')" />
+        <input type="checkbox" aria-label="Bu ürünü karşılaştırmaya ekle" onchange="toggleSelect('h29')" />
         Karşılaştır
       </label>
       <span class="view-count"></span>
@@ -266,7 +266,7 @@
   <div class="wrap" id="recentlyViewedStrip"></div>
   <!-- POPULER_KARSILASTIRMALAR_START -->
     <div style="margin:6px 0 22px;">
-      <h2 style="font-size:15px;margin:0 0 10px;">Popüler Karşılaştırmalar</h2>
+      <h2 style="font-size:15px;margin:0 0 10px;">Bu Kategoride En Çok Hangi Ürünler Karşılaştırılıyor?</h2>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <a class="chip-filter" href="karsilastir/amazfit-gts-4-vs-apple-watch-ultra.html">Amazfit GTS 4 vs Apple Watch Ultra</a>
         <a class="chip-filter" href="karsilastir/garmin-forerunner-165-vs-huawei-watch-gt-5.html">Garmin Forerunner 165 vs Huawei Watch GT 5</a>

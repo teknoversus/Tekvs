@@ -45,7 +45,7 @@ const FAZ3_TARGET_IDS = SEED.filter(p => !p.upcoming).map(p => p.id);
 
 const subcatMap = buildSubcatMap(SEED);
 
-generateSite({ products: SEED, CATS, ICONS, colorFor, fmtDate, computeScores, productSlug, rootDir: __dirname,
+generateSite({ products: SEED, CATS, ICONS, colorFor, fmtDate, computeScores, productSlug, prosConsFor, rootDir: __dirname,
   reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap });
 
 const categories = [...new Set(SEED.filter(p => !p.upcoming).map(p => p.cat))];

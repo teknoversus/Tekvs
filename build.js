@@ -149,6 +149,8 @@ async function main(){
   const ratingsSummary = await fetchRatingsSummary();
   generateSite({ products, ...helpers, rootDir,
     reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap, ratingsSummary });
+  // Not: helpers içinde prosConsFor zaten var (loadHelpers'ta çıkarılıyor),
+  // spread ile generateSite'a otomatik geçiyor.
 
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({

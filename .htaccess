@@ -19,7 +19,11 @@
   # Kullanılmayan tarayıcı izinlerini kapat (kamera/mikrofon/konum kullanılmıyor)
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
 
-  # Content-Security-Policy — sitenin GERÇEKTEN kullandığı kaynaklara göre:
+  # Content-Security-Policy — sitenin GERÇEKTEN kullandığı kaynaklara göre.
+  # NOT: AdSense eklendikten sonra genişletildi. script-src hâlâ sıkı (bilinen
+  # alan adları), ama img-src/frame-src 'https:' kabul ediyor çünkü reklam
+  # görselleri ve iframe'leri rastgele reklamveren alan adlarından geliyor ve
+  # önceden listelenemiyor. Görsel/iframe kod çalıştırmadığı için risk düşük.
   # cdnjs (Chart.js), Google Fonts, Google Analytics, Unsplash (kategori
   # banner görselleri), Supabase (admin.html girişi + Amazon linkleri).
   # 'unsafe-inline' script-src'te var çünkü site build sürecinde sayfa
@@ -27,7 +31,7 @@
   # bir CSP'nin sağladığı XSS korumasını biraz azaltıyor ama diğer başlıklar
   # (clickjacking, MIME sniffing, HSTS) tam korumada; ilerde script'leri
   # ayrı .js dosyalarına taşırsak 'unsafe-inline' kaldırılıp sıkılaştırılabilir.
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.googletagmanager.com; connect-src 'self' https://qsetmleywkhjcntajphx.supabase.co https://www.google-analytics.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://adservice.google.com https://www.google.com https://fundingchoicesmessages.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self' https:; connect-src 'self' https://qsetmleywkhjcntajphx.supabase.co https://www.google-analytics.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://ep1.adtrafficquality.google https://csi.gstatic.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
 
   # Admin sayfasını arama motorlarından gizle — netlify.toml'daki ölü
   # ayarın YERİNE gerçek, çalışan bir koruma (bkz. AUTOMATION.md notu).

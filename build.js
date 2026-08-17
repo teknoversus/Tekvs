@@ -22,6 +22,7 @@ const { generateReviews } = require('./lib/generate-reviews');
 const { generateBrandPages } = require('./lib/generate-brand-pages');
 const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
+const { refreshCategoryCards } = require('./lib/refresh-category-cards');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -167,6 +168,8 @@ async function main(){
 
   console.log('→ Alt kategori sayfaları üretiliyor...');
   generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
+
+  refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir });
 
   console.log('→ "Alınır mı" / "Fiyat-performans" rehber sayfaları üretiliyor...');
   generateBuyingGuides({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ2_TARGET_IDS, rootDir });

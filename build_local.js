@@ -13,6 +13,7 @@ const { generateReviews } = require('./lib/generate-reviews');
 const { generateBrandPages } = require('./lib/generate-brand-pages');
 const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
+const { refreshCategoryCards } = require('./lib/refresh-category-cards');
 
 const sharedSrc = fs.readFileSync('shared.js', 'utf8');
 const seedDataSrc = fs.readFileSync('seed-data.js', 'utf8'); // SEED/NEWS_SEED artık ayrı dosyada
@@ -54,6 +55,8 @@ generateComparisons({ products: SEED, colorFor, computeScores, categories, neigh
 generateNews({ news: NEWS_SEED, products: SEED, productSlug, rootDir: __dirname });
 
 generateSubcategories({ products: SEED, productSlug, computeScores, rootDir: __dirname });
+
+refreshCategoryCards({ products: SEED, colorFor, fmtDate, computeScores, ICONS, rootDir: __dirname });
 
 // Faz 2: en yüksek trafik potansiyelli 31 ürün için "alınır mı" + "fiyat/performans mı" sayfaları
 generateBuyingGuides({ products: SEED, prosConsFor, computeScores, targetIds: FAZ2_TARGET_IDS, rootDir: __dirname });

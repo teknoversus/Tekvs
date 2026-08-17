@@ -14,6 +14,7 @@ const { generateBrandPages } = require('./lib/generate-brand-pages');
 const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 const { refreshCategoryCards } = require('./lib/refresh-category-cards');
+const { generateLandingPages } = require('./lib/generate-landing-pages');
 
 const sharedSrc = fs.readFileSync('shared.js', 'utf8');
 const seedDataSrc = fs.readFileSync('seed-data.js', 'utf8'); // SEED/NEWS_SEED artık ayrı dosyada
@@ -71,5 +72,7 @@ generateReviews({ products: SEED, prosConsFor, computeScores, targetIds: FAZ3_TA
 generateBrandPages({ products: SEED, computeScores, rootDir: __dirname });
 
 generateBrandVsBrandPages({ products: SEED, computeScores, rootDir: __dirname });
+
+generateLandingPages({ products: SEED, computeScores, rootDir: __dirname });
 
 console.log('✓ Yerel tam build tamamlandı (ürünler + karşılaştırmalar + haberler + alt kategoriler + rehberler + incelemeler + marka sayfaları).');

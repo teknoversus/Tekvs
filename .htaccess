@@ -46,6 +46,13 @@ ServerSignature Off
 # Özel 404 sayfası
 ErrorDocument 404 /404.html
 
+# --- Kalıcı yönlendirmeler ---
+# Marka karşılaştırma URL'leri artık alfabetik sırayla üretiliyor
+# (bkz. lib/generate-brand-vs-brand.js). Google'ın daha önce indekslediği
+# ters sıralı adresler 301 ile doğru adrese yönlendiriliyor; böylece
+# hem 404 hatası hem de biriken tarama değeri kaybı önleniyor.
+Redirect 301 /marka-karsilastir/vestel-vs-tcl-televizyon.html /marka-karsilastir/tcl-vs-vestel-televizyon.html
+
 # ============================================================
 # Performans — sıkıştırma ve tarayıcı önbelleği
 # ============================================================

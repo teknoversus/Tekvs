@@ -24,6 +24,7 @@ const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 const { refreshCategoryCards } = require('./lib/refresh-category-cards');
 const { generateLandingPages } = require('./lib/generate-landing-pages');
+const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -191,6 +192,16 @@ async function main(){
   generateBrandVsBrandPages({ products, computeScores: helpers.computeScores, rootDir });
 
   generateLandingPages({ products, computeScores: helpers.computeScores, rootDir });
+
+  // ---- IndexNow bildirimi ----
+  // Sitemap tamamen üretildikten sonra Bing/Yandex'e "işte güncel URL
+  // listesi" diye bildiriyoruz. Bu, Google'ı etkilemez (IndexNow'u
+  // kullanmıyor) ama Bing'in hızlı taraması üzerinden ChatGPT arama ve
+  // Copilot görünürlüğüne doğrudan katkı sağlıyor. Başarısız olursa build'i
+  // DURDURMUYORUZ — ikincil bir sinyal, deploy'u engellememeli.
+  console.log('→ IndexNow\'a bildiriliyor...');
+  const sitemapUrls = extractSitemapUrls(rootDir);
+  await pingIndexNow(sitemapUrls);
 
   console.log('✓ Build tamamlandı.');
 }

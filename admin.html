@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TeknoVersus — Yönetim Paneli</title>
 <meta name="robots" content="noindex, nofollow" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
   :root{
@@ -105,6 +106,7 @@
     <div class="admin-tab" id="tabNews" onclick="switchAdminTab('news')">Haberler</div>
     <div class="admin-tab" id="tabReviews" onclick="switchAdminTab('reviews')">Yorumlar<span class="badge" id="pendingBadge" style="display:none;">0</span></div>
     <div class="admin-tab" id="tabRequests" onclick="switchAdminTab('requests')">Talepler<span class="badge" id="requestsBadge" style="display:none;">0</span></div>
+    <div class="admin-tab" id="tabCsv" onclick="switchAdminTab('csv')">CSV</div>
   </div>
 
   <div id="productsPanel">
@@ -130,6 +132,9 @@
     </div>
 
     <button class="btn btn-dark" style="margin-bottom:16px;" onclick="openAddNews()">+ Yeni haber ekle</button>
+    <label style="display:inline-flex;align-items:center;gap:6px;margin-left:12px;font-size:12.5px;color:var(--ink-soft);cursor:pointer;">
+      <input type="checkbox" id="newsSortByViews" onchange="renderAdminNewsList()" /> Görüntülenmeye göre sırala
+    </label>
     <div id="adminNewsList"></div>
   </div>
 
@@ -143,6 +148,59 @@
       Ziyaretçilerin arayıp kataloğunda bulamadığı ürün istekleri — hangi ürünleri eklemen gerektiğine dair fikir verir.
     </p>
     <div id="requestsList"></div>
+  </div>
+
+  <div id="csvPanel" style="display:none;">
+    <p style="font-size:12.5px;color:var(--ink-soft);margin-bottom:14px;">
+      Ürünleri toplu düzenlemek için CSV indir, Excel/Google Sheets'te değiştir, geri yükle.
+      Yeni bir şey uygulanmadan önce her zaman bir <strong>önizleme</strong> gösterilir — hiçbir şey
+      onaylamadan Supabase'e yazılmaz.
+    </p>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:4px;" id="catCsvButtons"></div>
+    <div style="font-size:11.5px;color:var(--ink-soft);margin-top:6px;">Her kategorinin özellik sütunları farklı olduğu için ayrı ayrı iniyor — "Fiyat (₺)" her zaman en soldaki sütun.</div>
+
+    <div style="margin-top:20px;padding:14px 16px;background:#F0F7FF;border:1px solid #B8D4F0;border-radius:10px;font-size:12.5px;line-height:1.7;">
+      <strong>Nasıl kullanılır:</strong>
+      <ol style="margin:6px 0 0;padding-left:18px;">
+        <li>Yukarıdan düzenlemek istediğin kategorinin CSV'sini indir (örn. sadece "Telefon").</li>
+        <li>Excel veya Google Sheets'te aç — her özellik (Fiyat, RAM, Kamera vb.) <strong>kendi sütununda</strong>, doğrudan düzenlenebilir. JSON falan yok.</li>
+        <li><strong>Silmek istediğin</strong> bir ürün varsa, o satırın <code>Sil</code> sütununa <code>EVET</code> yaz. Başka hiçbir şeye dokunma — CSV'de olmayan/eksik bırakılan ürünler SİLİNMEZ, sadece "Sil=EVET" işaretli olanlar silinir.</li>
+        <li>Yeni ürün eklemek için <code>id</code> sütununu boş bırak, diğer alanları doldur. Yeni bir özellik eklemek istersen sağa yeni bir sütun aç, başlığı istediğin özellik adı olsun (örn. "Renk").</li>
+        <li><strong>Fiyat sütununun başlığını değiştirme</strong> — tam olarak <code>Fiyat (₺)</code> kalmalı. Farklı bir isim (örn. "Fiyat ($)", "Price") kullanırsan o satır için içe aktarma reddedilir; bu, geçmişte yaşadığımız fiyat/skor karmaşasının bir daha olmaması için bilerek konmuş bir kilit.</li>
+        <li>Dosyayı kaydet, aşağıya sürükle.</li>
+      </ol>
+    </div>
+
+    <div id="csvDropZone" style="margin-top:20px;border:2px dashed var(--line-strong);border-radius:10px;padding:32px;text-align:center;cursor:pointer;"
+         onclick="document.getElementById('csvFileInput').click()"
+         ondragover="event.preventDefault(); this.style.background='#F0F7FF';"
+         ondragleave="this.style.background='';"
+         ondrop="handleCsvDrop(event)">
+      <div style="font-size:14px;color:var(--ink-soft);">Düzenlediğin CSV dosyasını buraya sürükle, ya da tıklayıp seç</div>
+      <input type="file" id="csvFileInput" accept=".csv" style="display:none;" onchange="handleCsvFile(this.files[0])" aria-label="CSV dosyası seç" />
+    </div>
+
+    <div id="csvPreviewArea" style="display:none;margin-top:20px;">
+      <div id="csvErrorBox" style="display:none;background:#FDEAEA;border:1px solid #E08A8A;border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px;color:#8A2020;"></div>
+      <div id="csvSummaryBox" style="display:none;">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;">
+          <div style="background:#EAF6F0;border:1px solid #A8DDBF;border-radius:8px;padding:10px 14px;font-size:13px;"><strong id="csvCountNew">0</strong> yeni ürün</div>
+          <div style="background:#EAF1FB;border:1px solid #A8C6EF;border-radius:8px;padding:10px 14px;font-size:13px;"><strong id="csvCountUpdate">0</strong> güncellenecek</div>
+          <div style="background:#FDEAEA;border:1px solid #E8A8A8;border-radius:8px;padding:10px 14px;font-size:13px;"><strong id="csvCountDelete">0</strong> silinecek</div>
+          <div style="background:#F5F5F0;border:1px solid var(--line-strong);border-radius:8px;padding:10px 14px;font-size:13px;"><strong id="csvCountNoop">0</strong> değişiklik yok</div>
+        </div>
+        <div id="csvDiffTable" style="max-height:400px;overflow-y:auto;border:1px solid var(--line);border-radius:8px;"></div>
+        <div id="csvDeleteConfirmBox" style="display:none;margin-top:14px;padding:12px 14px;background:#FDEAEA;border:1px solid #E08A8A;border-radius:8px;font-size:13px;">
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+            <input type="checkbox" id="csvDeleteConfirmCheck" />
+            <span><strong id="csvDeleteConfirmText"></strong> ürünü silmek istediğimi onaylıyorum.</span>
+          </label>
+        </div>
+        <button class="btn btn-dark" id="csvApplyBtn" style="margin-top:16px;" onclick="applyCsvImport()">Onayla ve Uygula</button>
+        <button class="btn btn-outline" style="margin-top:16px;" onclick="cancelCsvImport()">İptal</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -189,6 +247,7 @@
 <script src="shared.js"></script>
 <script>
 let products = [];
+let newsViewCounts = {}; // haber id -> goruntulenme sayisi (getAllNewsViewCounts ile doldurulur)
 let editingId = null;
 
 // ---- Supabase Auth (gerçek giriş) ----
@@ -319,13 +378,16 @@ function switchAdminTab(tab){
   document.getElementById('tabNews').classList.toggle('active', tab === 'news');
   document.getElementById('tabReviews').classList.toggle('active', tab === 'reviews');
   document.getElementById('tabRequests').classList.toggle('active', tab === 'requests');
+  document.getElementById('tabCsv').classList.toggle('active', tab === 'csv');
   document.getElementById('productsPanel').style.display = tab === 'products' ? '' : 'none';
   document.getElementById('newsPanel').style.display = tab === 'news' ? '' : 'none';
   document.getElementById('reviewsPanel').style.display = tab === 'reviews' ? '' : 'none';
   document.getElementById('requestsPanel').style.display = tab === 'requests' ? '' : 'none';
+  document.getElementById('csvPanel').style.display = tab === 'csv' ? '' : 'none';
   if(tab === 'news') renderAdminNewsList();
   if(tab === 'reviews') renderReviewsPanel();
   if(tab === 'requests') renderRequestsPanel();
+  if(tab === 'csv') renderCategoryCsvButtons();
 }
 
 async function renderRequestsPanel(){
@@ -451,6 +513,271 @@ function openAdd(id){
   document.getElementById('addOverlay').classList.add('show');
 }
 function closeAdd(){ document.getElementById('addOverlay').classList.remove('show'); editingId = null; }
+
+// ============================================================
+// CSV içe/dışa aktarma sistemi.
+//
+// TASARIM KARARLARI (bilerek):
+//  - Silme, CSV'de EKSİK olan ürünü silmez (bu, yanlış/eksik bir CSV
+//    yüklendiğinde tüm kataloğu silebilirdi). Sadece "Sil" sütununa
+//    açıkça "EVET" yazılan satır silinir.
+//  - Silme her zaman SOFT-DELETE (deleted=true) — mevcut
+//    deleteProductShared() fonksiyonu üzerinden, geri döndürülebilir.
+//  - Fiyat sütunu adı TAM OLARAK "Fiyat (₺)" değilse içe aktarma
+//    tamamen reddedilir. Bu, geçmişte yaşanan (bazı ürünlerde dolar,
+//    bazılarında TL fiyat alanı olması yüzünden TÜM skorların bozulduğu)
+//    sorunun bir daha yaşanmaması için konmuş kilit.
+//  - Hiçbir satır, kullanıcı "Onayla ve Uygula"ya basmadan Supabase'e
+//    yazılmaz — her zaman önce önizleme.
+// ============================================================
+
+const CSV_FIXED_COLS = ['id','Sil','name','cat','blurb','link','addedAt','upcoming'];
+let csvParsedDiff = null; // { yeni:[], guncelle:[], sil:[], hatalar:[] }
+
+// Her kategorinin özellik alanları FARKLI (Telefon'da "Kamera (MP)" var,
+// Televizyon'da yok — tersi de geçerli). Tek bir CSV'de bunları JSON içine
+// tıkıştırmak Excel'de düzenlemesi zahmetli ve hataya açık oluyordu. Bunun
+// yerine HER KATEGORİ KENDİ CSV'sine sahip; sütunlar o kategorideki
+// ürünlerde GERÇEKTEN kullanılan özellik alanlarının birleşimi — yani
+// her hücre doğrudan düzenlenebilir, JSON yazmaya hiç gerek yok.
+function specColumnsForCat(cat){
+  const keys = new Set();
+  products.filter(p => p.cat === cat).forEach(p => Object.keys(p.specs || {}).forEach(k => keys.add(k)));
+  // Fiyat her zaman en başta gelsin — Excel'de en görünür sütun olsun.
+  const arr = [...keys].sort();
+  const fiyatIdx = arr.indexOf('Fiyat (₺)');
+  if(fiyatIdx > 0){ arr.splice(fiyatIdx, 1); arr.unshift('Fiyat (₺)'); }
+  return arr;
+}
+
+function downloadCategoryCsv(cat){
+  const specCols = specColumnsForCat(cat);
+  const rows = products.filter(p => p.cat === cat).map(p => {
+    const row = {
+      id: p.id, Sil: '', name: p.name, cat: p.cat,
+      blurb: p.blurb || '', link: p.link || '',
+      addedAt: (p.addedAt || '').slice(0,10),
+      upcoming: p.upcoming ? 'TRUE' : 'FALSE',
+    };
+    specCols.forEach(k => { row[k] = (p.specs && p.specs[k] != null) ? p.specs[k] : ''; });
+    return row;
+  });
+  const csv = Papa.unparse(rows, { columns: [...CSV_FIXED_COLS, ...specCols] });
+  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' }); // BOM: Excel Türkçe karakterleri doğru göstersin
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'teknoversus-' + cat.toLowerCase().replace(/ı/g,'i').replace(/ş/g,'s').replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ö/g,'o').replace(/ç/g,'c').replace(/\s+/g,'-') + '.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function renderCategoryCsvButtons(){
+  const el = document.getElementById('catCsvButtons');
+  if(!el) return;
+  el.innerHTML = CATS.map(cat => {
+    const sayi = products.filter(p => p.cat === cat).length;
+    return `<button class="btn btn-outline" onclick="downloadCategoryCsv('${cat.replace(/'/g,"\\'")}')">⬇ ${cat} (${sayi})</button>`;
+  }).join('');
+}
+
+function handleCsvDrop(ev){
+  ev.preventDefault();
+  ev.currentTarget.style.background = '';
+  const f = ev.dataTransfer.files[0];
+  if(f) handleCsvFile(f);
+}
+
+function handleCsvFile(file){
+  if(!file) return;
+  Papa.parse(file, {
+    header: true,
+    skipEmptyLines: true,
+    encoding: 'UTF-8',
+    complete: (res) => processCsvRows(res.data, res.meta.fields || []),
+    error: (err) => showCsvError('Dosya okunamadı: ' + err.message)
+  });
+}
+
+function showCsvError(msg){
+  document.getElementById('csvPreviewArea').style.display = '';
+  document.getElementById('csvErrorBox').style.display = '';
+  document.getElementById('csvErrorBox').innerHTML = '<strong>İçe aktarma durduruldu:</strong><br>' + msg;
+  document.getElementById('csvSummaryBox').style.display = 'none';
+}
+
+function processCsvRows(rows, fields){
+  document.getElementById('csvPreviewArea').style.display = '';
+  document.getElementById('csvErrorBox').style.display = 'none';
+
+  if(!fields.includes('id') || !fields.includes('name') || !fields.includes('cat')){
+    showCsvError('CSV beklenen sütunları içermiyor (id, name, cat gerekli). İndirdiğin dosyanın yapısını bozmamış olduğundan emin ol.');
+    return;
+  }
+
+  // Özellik (spec) sütunları: CSV_FIXED_COLS dışında kalan HER sütun,
+  // o kategorinin bir özelliği olarak doğrudan alınıyor. Artık JSON YOK —
+  // "RAM (GB)" gibi bir sütun varsa, hücredeki değer direkt specs['RAM (GB)']
+  // oluyor. Boş hücreler o üründe o özelliğin olmadığı anlamına gelir,
+  // atlanır (specs'e eklenmez).
+  const specCols = fields.filter(f => !CSV_FIXED_COLS.includes(f) && f !== 'specs_json');
+
+  const CAT_LIST = CATS; // ['Telefon','Dizüstü',...] — sayfada zaten yüklü
+  const mevcutById = {}; products.forEach(p => mevcutById[p.id] = p);
+  const gorulenId = new Set();
+
+  const yeni = [], guncelle = [], sil = [], hatalar = [];
+
+  rows.forEach((row, i) => {
+    const satirNo = i + 2; // CSV'de 1. satır başlık
+    const id = (row.id || '').trim();
+    const silIsareti = (row.Sil || '').trim().toUpperCase() === 'EVET';
+    const name = (row.name || '').trim();
+    const cat = (row.cat || '').trim();
+
+    if(!name && !id){ return; } // tamamen boş satır, sessizce atla
+
+    if(!name){ hatalar.push(`Satır ${satirNo}: ürün adı (name) boş.`); return; }
+    if(!CAT_LIST.includes(cat)){ hatalar.push(`Satır ${satirNo}: kategori "${cat}" tanınmıyor. Geçerli: ${CAT_LIST.join(', ')}.`); return; }
+
+    const specs = {};
+    specCols.forEach(k => {
+      const v = (row[k] || '').toString().trim();
+      if(v) specs[k] = v;
+    });
+
+    // ---- KİLİT: Fiyat sütunu adı kontrolü ----
+    // Kullanıcı Excel'de sütun başlığını yanlışlıkla değiştirmiş olabilir
+    // (örn. "Fiyat (₺)" -> "Fiyat ($)" veya "Price"). Bu durumda fiyat verisi
+    // YANLIŞ ANAHTAR ALTINDA gelir ve skor hesaplaması bu ürünü görmezden
+    // gelip bozuk sonuç üretir — daha önce tam olarak bu yüzden tüm skorlar
+    // bozulmuştu. O yüzden burada sıkı kontrol var.
+    const fiyatBenzeriSutunlar = specCols.filter(k => /fiyat|price|\$/i.test(k) && k !== 'Fiyat (₺)');
+    if(fiyatBenzeriSutunlar.length){
+      hatalar.push(`Satır ${satirNo} (${name}): "${fiyatBenzeriSutunlar[0]}" adlı bir sütun var — fiyat sütununun adı tam olarak "Fiyat (₺)" olmalı. Sütun başlığını değiştirmiş olabilirsin, indirdiğin dosyadaki orijinal başlığı geri koy.`);
+      return;
+    }
+
+    if(id){
+      if(gorulenId.has(id)){ hatalar.push(`Satır ${satirNo}: "${id}" id'si CSV içinde birden fazla kez geçiyor.`); return; }
+      gorulenId.add(id);
+    }
+
+    const yeniUrun = {
+      id: id || ('p_' + Date.now() + '_' + i),
+      name, cat,
+      blurb: (row.blurb || '').trim(),
+      link: (row.link || '').trim(),
+      addedAt: row.addedAt ? new Date(row.addedAt).toISOString() : new Date().toISOString(),
+      upcoming: (row.upcoming || '').trim().toUpperCase() === 'TRUE',
+      specs
+    };
+
+    if(silIsareti){
+      if(id && mevcutById[id]) sil.push({ id, name: mevcutById[id].name });
+      else hatalar.push(`Satır ${satirNo}: "Sil=EVET" işaretli ama bu id ("${id}") mevcut ürünlerde bulunamadı.`);
+      return;
+    }
+
+    if(id && mevcutById[id]){
+      // Değişiklik var mı diye kontrol et — yoksa "değişiklik yok" say
+      const eski = mevcutById[id];
+      const ayni = eski.name === yeniUrun.name && eski.cat === yeniUrun.cat &&
+                   (eski.blurb||'') === yeniUrun.blurb && (eski.link||'') === yeniUrun.link &&
+                   !!eski.upcoming === yeniUrun.upcoming &&
+                   JSON.stringify(eski.specs||{}) === JSON.stringify(yeniUrun.specs);
+      if(ayni) return; // noop, listeye eklenmiyor
+      guncelle.push(yeniUrun);
+    } else {
+      yeni.push(yeniUrun);
+    }
+  });
+
+  const noopSayisi = rows.length - yeni.length - guncelle.length - sil.length - hatalar.length;
+  csvParsedDiff = { yeni, guncelle, sil, hatalar };
+
+  document.getElementById('csvCountNew').textContent = yeni.length;
+  document.getElementById('csvCountUpdate').textContent = guncelle.length;
+  document.getElementById('csvCountDelete').textContent = sil.length;
+  document.getElementById('csvCountNoop').textContent = Math.max(0, noopSayisi);
+
+  if(hatalar.length){
+    document.getElementById('csvErrorBox').style.display = '';
+    document.getElementById('csvErrorBox').innerHTML = '<strong>' + hatalar.length + ' hata bulundu — bunlar düzeltilmeden hiçbir şey uygulanmaz:</strong><ul style="margin:8px 0 0;padding-left:18px;">' +
+      hatalar.map(h => '<li>' + h.replace(/</g,'&lt;') + '</li>').join('') + '</ul>';
+  }
+
+  document.getElementById('csvSummaryBox').style.display = '';
+  document.getElementById('csvApplyBtn').disabled = hatalar.length > 0;
+  document.getElementById('csvApplyBtn').style.opacity = hatalar.length > 0 ? '0.5' : '1';
+
+  // Silme onay kutusu — 1+ silme varsa göster, açıkça onaylanmadan buton çalışmaz
+  const delBox = document.getElementById('csvDeleteConfirmBox');
+  if(sil.length > 0){
+    delBox.style.display = '';
+    document.getElementById('csvDeleteConfirmText').textContent = sil.length + ' adet';
+    document.getElementById('csvDeleteConfirmCheck').checked = false;
+  } else {
+    delBox.style.display = 'none';
+  }
+
+  renderCsvDiffTable(yeni, guncelle, sil);
+}
+
+function renderCsvDiffTable(yeni, guncelle, sil){
+  const rows = [];
+  yeni.forEach(p => rows.push({tip:'yeni', renk:'#EAF6F0', etiket:'YENİ', p}));
+  guncelle.forEach(p => rows.push({tip:'guncelle', renk:'#EAF1FB', etiket:'GÜNCELLE', p}));
+  sil.forEach(p => rows.push({tip:'sil', renk:'#FDEAEA', etiket:'SİL', p}));
+
+  if(!rows.length){
+    document.getElementById('csvDiffTable').innerHTML = '<div style="padding:16px;font-size:13px;color:var(--ink-soft);">Değişiklik bulunamadı.</div>';
+    return;
+  }
+
+  document.getElementById('csvDiffTable').innerHTML = rows.map(r => `
+    <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line);background:${r.renk};">
+      <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;background:rgba(0,0,0,0.08);">${r.etiket}</span>
+      <span style="font-size:13px;flex:1;">${(r.p.name||'').replace(/</g,'&lt;')}</span>
+      <span style="font-size:11px;color:var(--ink-soft);">${r.p.cat||r.p.id||''}</span>
+    </div>
+  `).join('');
+}
+
+function cancelCsvImport(){
+  csvParsedDiff = null;
+  document.getElementById('csvPreviewArea').style.display = 'none';
+  document.getElementById('csvFileInput').value = '';
+}
+
+async function applyCsvImport(){
+  if(!csvParsedDiff || csvParsedDiff.hatalar.length) return;
+  const { yeni, guncelle, sil } = csvParsedDiff;
+
+  if(sil.length > 0 && !document.getElementById('csvDeleteConfirmCheck').checked){
+    alert('Silme işlemini onaylamak için kutucuğu işaretlemelisin.');
+    return;
+  }
+
+  const btn = document.getElementById('csvApplyBtn');
+  btn.disabled = true; btn.textContent = 'Uygulanıyor…';
+
+  let basarili = 0, basarisiz = 0;
+  for(const p of [...yeni, ...guncelle]){
+    const ok = await saveProductShared(p);
+    if(ok) basarili++; else basarisiz++;
+  }
+  for(const s of sil){
+    const ok = await deleteProductShared(s.id);
+    if(ok) basarili++; else basarisiz++;
+  }
+
+  alert(`Tamamlandı: ${basarili} işlem başarılı${basarisiz ? ', ' + basarisiz + ' başarısız' : ''}.`);
+  cancelCsvImport();
+  products = await loadSharedProducts();
+  renderAdminList();
+  btn.disabled = false; btn.textContent = 'Onayla ve Uygula';
+}
 
 async function submitProduct(){
   const name = document.getElementById('fName').value.trim();
@@ -663,23 +990,31 @@ async function submitNews(){
 
 function adminNewsRowHTML(n){
   const relatedProduct = n.relatedProductId ? products.find(p => p.id === n.relatedProductId) : null;
+  const gVal = newsViewCounts[n.id];
+  const gorunum = (gVal != null) ? `<strong style="color:var(--ink);">👁 ${gVal}</strong>` : '—';
   return `
     <div class="admin-row">
       <span class="name">${n.title}</span>
-      <span class="meta">${n.cat} · ${n.date || ''}${relatedProduct ? ' · İlgili: ' + relatedProduct.name : ''} · <code style="font-size:11px;">haberler/${n.id}.html</code></span>
+      <span class="meta">${n.cat} · ${n.date || ''}${relatedProduct ? ' · İlgili: ' + relatedProduct.name : ''} · ${gorunum} görüntülenme · <code style="font-size:11px;">haberler/${n.id}.html</code></span>
       <button class="admin-edit" onclick="openAddNews('${n.id}')">Düzenle</button>
       <button class="admin-remove" onclick="adminRemoveNews('${n.id}')">Kaldır</button>
     </div>`;
 }
 
-function renderAdminNewsList(){
+async function renderAdminNewsList(){
   renderPendingNewsList();
   const list = document.getElementById('adminNewsList');
   if(!news.length){
     list.innerHTML = '<p style="color:var(--ink-soft);font-size:13px;">Henüz haber eklenmedi.</p>';
     return;
   }
-  const sorted = [...news].sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  // Goruntulenme sayilari her acilista taze cekiliyor (admin nadiren
+  // acilan bir panel, performans endisesi yok).
+  newsViewCounts = await getAllNewsViewCounts();
+  const siraliMi = document.getElementById('newsSortByViews')?.checked;
+  const sorted = [...news].sort((a,b) => siraliMi
+    ? (newsViewCounts[b.id]||0) - (newsViewCounts[a.id]||0)
+    : (b.date||'').localeCompare(a.date||''));
   list.innerHTML = sorted.map(adminNewsRowHTML).join('');
 }
 

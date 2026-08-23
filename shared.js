@@ -252,6 +252,31 @@ async function incrementViews(id){
   return r.ok ? next : null;
 }
 
+// ---- Haber görüntülenmeleri (ürünlerdeki 'views' ile aynı desen, ayrı tablo) ----
+async function getNewsViews(newsId){
+  const r = await sbFetch('/rest/v1/news_views?news_id=eq.'+encodeURIComponent(newsId)+'&select=count');
+  return (r.ok && r.data && r.data.length) ? r.data[0].count : 0;
+}
+
+async function incrementNewsViews(newsId){
+  const cur = await getNewsViews(newsId);
+  const next = cur + 1;
+  const r = await sbFetch('/rest/v1/news_views', {
+    method: 'POST',
+    headers: { 'Prefer': 'resolution=merge-duplicates,return=minimal' },
+    body: JSON.stringify({ news_id: newsId, count: next })
+  });
+  return r.ok ? next : null;
+}
+
+async function getAllNewsViewCounts(){
+  const out = {};
+  const r = await sbFetch('/rest/v1/news_views?select=news_id,count');
+  if(r.ok && r.data) r.data.forEach(row => { out[row.news_id] = row.count; });
+  Object.defineProperty(out, '_ok', { value: r.ok, enumerable: false });
+  return out;
+}
+
 async function getAllViewCounts(products){
   const out = {};
   products.forEach(p => out[p.id] = 0);

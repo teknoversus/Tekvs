@@ -42,7 +42,19 @@ async function initProductPage(){
 
   const count = await incrementViews(PRODUCT_ID);
   const vEl = document.getElementById('viewCountLabel');
-  if(vEl) vEl.textContent = (count != null ? count : '?') + ' görüntülenme';
+  const vSep = document.getElementById('viewCountSep');
+  // Sayaç yalnızca GERÇEK görüntülenme varsa gösterilir. Yeni bir sayfada
+  // "0 görüntülenme" yazmak güvenilirlik algısını zayıflatıyor; veri yoksa
+  // hiçbir şey göstermemek daha dürüst ve daha iyi görünüyor.
+  if(vEl){
+    if(count != null && count > 0){
+      vEl.textContent = count + ' görüntülenme';
+      if(vSep) vSep.style.display = '';
+    } else {
+      vEl.textContent = '';
+      if(vSep) vSep.style.display = 'none';
+    }
+  }
 
   const favBtn = document.getElementById('favBtn');
   if(favBtn){

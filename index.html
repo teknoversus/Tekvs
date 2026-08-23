@@ -152,6 +152,13 @@
       <div>
         <div class="section-label">Otomatik Güncellenen</div>
         <h2 class="section-title">Katalogda Neler Var?</h2>
+<div class="acc-block" id="accStats">
+  <button type="button" class="acc-toggle" onclick="toggleAcc('accStats')" aria-expanded="false" style="width:100%;text-align:left;background:var(--bg-soft,#F7F7F5);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);">
+    Katalogda neler var, veriyi nereden alıyoruz?
+    <span class="acc-icon" style="transition:transform .15s;">▾</span>
+  </button>
+  <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
+    <div style="padding-top:14px;">
 <p style="font-size:14px;line-height:1.7;color:var(--ink-soft);max-width:680px;margin:0 0 14px;">
   TeknoVersus kataloğunda 7 kategoride 171 ürün bulunuyor. Aşağıdaki tablo her kategorideki
   model sayısını ve güncel fiyat aralığını gösteriyor. Fiyatlar Türkiye perakende piyasasından
@@ -198,8 +205,18 @@
   Sorularınız ve düzeltme talepleriniz için:
   <a href="mailto:teknoversus@teknoversus.com.tr">teknoversus@teknoversus.com.tr</a>
 </p>
+    </div>
+  </div>
+</div>
 
-<h2 class="section-title">Sıkça Sorulan Sorular</h2>
+
+<div class="acc-block" id="accFaq">
+  <button type="button" class="acc-toggle" onclick="toggleAcc('accFaq')" aria-expanded="false" style="width:100%;text-align:left;background:var(--bg-soft,#F7F7F5);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);">
+    Sıkça sorulan sorular
+    <span class="acc-icon" style="transition:transform .15s;">▾</span>
+  </button>
+  <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
+    <div style="padding-top:14px;">
 <dl style="font-size:14px;line-height:1.7;max-width:680px;margin-bottom:20px;">
   <dt style="font-weight:600;margin-top:14px;">TeknoVersus ürün satıyor mu?</dt>
   <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. TeknoVersus bir karşılaştırma ve inceleme sitesidir. Satın alma bağlantıları Amazon'a yönlendirir; satış, kargo ve iade süreçleri satıcıya aittir.</dd>
@@ -212,6 +229,10 @@
   <dt style="font-weight:600;margin-top:14px;">Markalar sıralamayı etkileyebilir mi?</dt>
   <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. Skor tamamen otomatik hesaplanır. Hiçbir ticari anlaşma bir ürünün skorunu veya listelerdeki sırasını değiştiremez.</dd>
 </dl>
+    </div>
+  </div>
+</div>
+
 
 <h2 class="section-title">Bu Ay Hangi Yeni Ürünler Çıktı?</h2>
       </div>
@@ -354,8 +375,7 @@
       </div>
 
       <div class="grid" id="mainGrid">
-<!-- KATALOG_KARTLAR_START -->
-  <div class="card" onclick="openDetail('x14')">
+<!-- KATALOG_KARTLAR_START -->  <div class="card" onclick="openDetail('x14')">
     
     <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('x14')" title="Favorilere ekle" aria-label="Acer Aspire 5 ürününü favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
     <div class="card-icon" style="background:#B23A5C22;color:#B23A5C;">
@@ -507,6 +527,10 @@
       <span class="view-count"></span>
     </div>
   </div>
+
+</div>
+<div id="katalogFazlasi" style="display:none;">
+  <div class="grid">
   <div class="card" onclick="openDetail('x29')">
     
     <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('x29')" title="Favorilere ekle" aria-label="Huawei MatePad 11.5 ürününü favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
@@ -3604,7 +3628,15 @@
       <span class="view-count"></span>
     </div>
   </div>
-<!-- KATALOG_KARTLAR_END -->
+
+  </div>
+</div>
+<div style="text-align:center;margin:20px 0;">
+  <button type="button" class="btn btn-outline" id="katalogAcButon" onclick="katalogGenislet()">
+    Tümünü gör (163 ürün daha)
+  </button>
+</div>
+<div class="grid" style="display:none;"><!-- KATALOG_KARTLAR_END -->
     </div>
     </div>
 
@@ -3726,6 +3758,36 @@ let favOnly = false;
 let sortMode = 'date_desc';
 let searchIds = null;
 let detailChart = null;
+
+// ---- Anasayfa akordeon (istatistik/kaynaklar + SSS) ----
+// İçerik HER ZAMAN DOM'da kalır (arama motorları/AI özetleri okumaya devam
+// eder), sadece görsel olarak katlanıp açılıyor. display:none KULLANMIYORUZ;
+// max-height ile yapılan bu desen Google'ın FAQ/accordion içeriği için
+// resmi olarak tanıdığı ve indekslediği standart yöntemdir.
+function toggleAcc(id){
+  const blok = document.getElementById(id);
+  const body = blok.querySelector('.acc-body');
+  const icon = blok.querySelector('.acc-icon');
+  const btn = blok.querySelector('.acc-toggle');
+  const acik = body.style.maxHeight && body.style.maxHeight !== '0px';
+  if(acik){
+    body.style.maxHeight = '0px';
+    icon.style.transform = 'rotate(0deg)';
+    btn.setAttribute('aria-expanded', 'false');
+  } else {
+    body.style.maxHeight = body.scrollHeight + 'px';
+    icon.style.transform = 'rotate(180deg)';
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+// ---- Katalog ızgarası: "Tümünü gör" ----
+// Kalan ürünler zaten DOM'da (gizli) — buton sadece görünürlüğü açıyor,
+// yeni bir istek/veri çekme yapmıyor.
+function katalogGenislet(){
+  document.getElementById('katalogFazlasi').style.display = '';
+  document.getElementById('katalogAcButon').style.display = 'none';
+}
 
 async function init(){
   products = await loadSharedProducts();

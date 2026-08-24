@@ -531,6 +531,19 @@ function closeAdd(){ document.getElementById('addOverlay').classList.remove('sho
 //    yazılmaz — her zaman önce önizleme.
 // ============================================================
 
+// Excel/Sheets bazen tarihi beklenmedik bir bicimde kaydedebiliyor
+// (orn. "23.08.2026" gibi Turkce format) — new Date() bunu tanimayip
+// "Invalid Date" uretebiliyor, .toISOString() de bu durumda hata
+// FIRLATIP butun islemi durduruyordu (sessizce basarisiz oluyordu).
+// Artik gecersiz/eksik tarihte BUGUNUN tarihi kullaniliyor, hata firlatmiyor.
+function safeIsoDate(val){
+  if(val){
+    const d = new Date(val);
+    if(!isNaN(d.getTime())) return d.toISOString();
+  }
+  return new Date().toISOString();
+}
+
 const CSV_FIXED_COLS = ['id','Sil','name','cat','blurb','link','addedAt','upcoming'];
 let csvParsedDiff = null; // { yeni:[], guncelle:[], sil:[], hatalar:[] }
 
@@ -668,7 +681,7 @@ function processCsvRows(rows, fields){
       name, cat,
       blurb: (row.blurb || '').trim(),
       link: (row.link || '').trim(),
-      addedAt: row.addedAt ? new Date(row.addedAt).toISOString() : new Date().toISOString(),
+      addedAt: safeIsoDate(row.addedAt),
       upcoming: (row.upcoming || '').trim().toUpperCase() === 'TRUE',
       specs
     };
@@ -796,7 +809,7 @@ async function submitProduct(){
   const id = editingId || ('p_'+Date.now());
   const product = {
     id, name, cat, blurb, specs, link,
-    addedAt: dateVal ? new Date(dateVal).toISOString() : new Date().toISOString(),
+    addedAt: safeIsoDate(dateVal),
     upcoming
   };
   await saveProductShared(product);

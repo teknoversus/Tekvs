@@ -23,6 +23,7 @@ const { generateBrandPages } = require('./lib/generate-brand-pages');
 const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 const { refreshCategoryCards } = require('./lib/refresh-category-cards');
+const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-karsilastirmalar');
 const { generateLandingPages } = require('./lib/generate-landing-pages');
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
 
@@ -170,6 +171,8 @@ async function main(){
 
   console.log('→ Alt kategori sayfaları üretiliyor...');
   generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
+
+  generatePopulerKarsilastirmalar({ products, computeScores: helpers.computeScores, rootDir });
 
   refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir });
 

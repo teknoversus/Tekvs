@@ -14,6 +14,7 @@ const { generateBrandPages } = require('./lib/generate-brand-pages');
 const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 const { refreshCategoryCards } = require('./lib/refresh-category-cards');
+const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-karsilastirmalar');
 const { generateLandingPages } = require('./lib/generate-landing-pages');
 
 const sharedSrc = fs.readFileSync('shared.js', 'utf8');
@@ -56,6 +57,8 @@ generateComparisons({ products: SEED, colorFor, computeScores, categories, neigh
 generateNews({ news: NEWS_SEED, products: SEED, productSlug, rootDir: __dirname });
 
 generateSubcategories({ products: SEED, productSlug, computeScores, rootDir: __dirname });
+
+generatePopulerKarsilastirmalar({ products: SEED, computeScores, rootDir: __dirname });
 
 refreshCategoryCards({ products: SEED, colorFor, fmtDate, computeScores, ICONS, rootDir: __dirname });
 

@@ -607,7 +607,42 @@ function handleCsvFile(file){
     header: true,
     skipEmptyLines: true,
     encoding: 'UTF-8',
-    complete: (res) => processCsvRows(res.data, res.meta.fields || []),
+    complete: (res) => {
+      // PapaParse, bir satırdaki alan sayısı başlıktan farklıysa
+      // (TooManyFields / TooFewFields) bunu res.errors içinde bildirir.
+      // Bu, RENK gibi virgüllü bir hücrenin yanlışlıkla tırnaklanmadığı
+      // her türlü sütun kayması senaryosunu YAKALAR — kaynağı ne olursa
+      // olsun (Excel, Gemini, elle düzenleme). Önceden bu hatalar hiç
+      // okunmuyordu, bu yüzden kayma sessizce Supabase'e gidebilirdi.
+      // Fazla/eksik alan hatalarının HEPSİ tehlikeli değil: "yakında
+      // çıkacak" ürünlerde satır sonunda fazladan bir-iki BOŞ virgül
+      // kalması zararsızdır (hiçbir gerçek değer yanlış yere sızmamıştır).
+      // Sadece fazla alanlardan EN AZ BİRİ dolu bir değer içeriyorsa bu
+      // gerçek bir sütun kayması olur ve hata sayılır.
+      const satirHatalari = (res.errors || []).filter(e => {
+        if(e.type !== 'FieldMismatch') return false;
+        const satirVerisi = res.data[e.row];
+        if(!satirVerisi) return true; // veri okunamadıysa güvenli tarafta kal
+        const fazlaAlanlar = satirVerisi['__parsed_extra'] || [];
+        const gercekVeriVar = Array.isArray(fazlaAlanlar) && fazlaAlanlar.some(v => (v||'').toString().trim() !== '');
+        return gercekVeriVar;
+      });
+      if(satirHatalari.length){
+        const ornekler = satirHatalari.slice(0, 8).map(e => {
+          const satirNo = e.row + 2; // Papa 0-index + baslik satiri
+          const ad = (res.data[e.row] && res.data[e.row].name) || '(isim okunamadi)';
+          return `Satır ${satirNo} (${ad}): sütun sayısı uyuşmuyor — ${e.message}. Muhtemelen bir hücrede (örn. "Renk") virgül var ama tırnaklanmamış.`;
+        });
+        showCsvError(
+          `<strong>${satirHatalari.length} satırda sütun kayması tespit edildi</strong> — bunlar CSV'nin bozuk olduğu anlamına gelir, hiçbir şey uygulanmayacak:<ul style="margin:8px 0 0;padding-left:18px;">` +
+          ornekler.map(o => '<li>' + o.replace(/</g,'&lt;') + '</li>').join('') +
+          (satirHatalari.length > 8 ? `<li>...ve ${satirHatalari.length-8} satır daha</li>` : '') +
+          '</ul>'
+        );
+        return; // processCsvRows'a hiç gitme — kaynağında durdur
+      }
+      processCsvRows(res.data, res.meta.fields || []);
+    },
     error: (err) => showCsvError('Dosya okunamadı: ' + err.message)
   });
 }
@@ -653,11 +688,36 @@ function processCsvRows(rows, fields){
     if(!name){ hatalar.push(`Satır ${satirNo}: ürün adı (name) boş.`); return; }
     if(!CAT_LIST.includes(cat)){ hatalar.push(`Satır ${satirNo}: kategori "${cat}" tanınmıyor. Geçerli: ${CAT_LIST.join(', ')}.`); return; }
 
+    // "upcoming" SADECE True/False/boş olabilir. Bu, sütun kaymasını
+    // yakalamak için EN GÜVENİLİR kontrol noktası: PapaParse'ın
+    // FieldMismatch kontrolü sütun SAYISI doğruyken içerik kaydığında
+    // (örn. bir sütun tamamen atlanıp geri kalanı bir kademe kaydığında)
+    // hata vermiyordu, ve kayan sayısal değerler (örn. "5.0") "Fiyat
+    // sayısal mı" kontrolünü de atlatabiliyordu — çünkü onlar da sayı.
+    // Ama "upcoming" alanına ASLA sayı/metin gelemez, sadece True/False/
+    // boş gelebilir; başka bir şey görürsek bu kesin bir kayma kanıtıdır.
+    const upcomingHam = (row.upcoming || '').trim();
+    if(upcomingHam && !['TRUE','FALSE'].includes(upcomingHam.toUpperCase())){
+      hatalar.push(`Satır ${satirNo} (${name}): "upcoming" sütununda "${upcomingHam}" gibi geçersiz bir değer var — sadece True/False olabilir. Bu genelde bir sütunun atlanıp geri kalan tüm değerlerin kaymasından kaynaklanır; satırın tamamını kontrol et.`);
+      return;
+    }
+
     const specs = {};
     specCols.forEach(k => {
       const v = (row[k] || '').toString().trim();
       if(v) specs[k] = v;
     });
+
+    // Fiyat SAYISAL olmali. Excel'de metin icindeki apostrof/virgul CSV
+    // ayracini bozup sutunlarin kaymasina yol acabiliyor (orn. bir metin
+    // hucresindeki virgul, hucreyi ikiye bolup sonraki sutunlara tasabiliyor).
+    // Bu durumda "Fiyat (₺)" sutununa "True" gibi anlamsiz bir metin
+    // sizabiliyor - sutun adi dogru oldugu icin onceki kilit bunu
+    // yakalamiyordu. Buradaki kontrol, DEGERIN kendisini dogruluyor.
+    if(specs['Fiyat (₺)'] && !/^[\d.,]+$/.test(specs['Fiyat (₺)'])){
+      hatalar.push(`Satır ${satirNo} (${name}): "Fiyat (₺)" alanında sayısal olmayan bir değer var ("${specs['Fiyat (₺)']}"). Bu genelde bir hücredeki virgül/apostrof yüzünden sütunların kaymasından kaynaklanır — o satırı Excel'de kontrol et.`);
+      return;
+    }
 
     // ---- KİLİT: Fiyat sütunu adı kontrolü ----
     // Kullanıcı Excel'de sütun başlığını yanlışlıkla değiştirmiş olabilir
@@ -676,25 +736,36 @@ function processCsvRows(rows, fields){
       gorulenId.add(id);
     }
 
-    const yeniUrun = {
-      id: id || ('p_' + Date.now() + '_' + i),
-      name, cat,
-      blurb: (row.blurb || '').trim(),
-      link: (row.link || '').trim(),
-      addedAt: safeIsoDate(row.addedAt),
-      upcoming: (row.upcoming || '').trim().toUpperCase() === 'TRUE',
-      specs
-    };
-
     if(silIsareti){
       if(id && mevcutById[id]) sil.push({ id, name: mevcutById[id].name });
       else hatalar.push(`Satır ${satirNo}: "Sil=EVET" işaretli ama bu id ("${id}") mevcut ürünlerde bulunamadı.`);
       return;
     }
 
-    if(id && mevcutById[id]){
+    const varOlanUrun = id ? mevcutById[id] : null;
+
+    // KISMİ GÜNCELLEME: Bu bir GÜNCELLEMEYSE (ürün zaten varsa), CSV'de BOŞ
+    // bırakılan özellik hücreleri "bu alanı SİL" değil "bu alana DOKUNMA"
+    // anlamına gelir. Eski specs ile CSV'den gelen (dolu) specs birleştirilir;
+    // CSV'de dolu olan alanlar üzerine yazar, CSV'de boş/eksik olanlar eski
+    // değerini korur. Bu olmadan, kullanıcı "sadece fiyatı güncelleyeyim"
+    // diye düşünüp diğer hücreleri boş bıraktığında o ürünün TÜM diğer
+    // özellikleri sessizce silinmiş oluyordu.
+    const finalSpecs = varOlanUrun ? { ...(varOlanUrun.specs || {}), ...specs } : specs;
+
+    const yeniUrun = {
+      id: id || ('p_' + Date.now() + '_' + i),
+      name, cat,
+      blurb: (row.blurb || '').trim() || (varOlanUrun ? (varOlanUrun.blurb||'') : ''),
+      link: (row.link || '').trim() || (varOlanUrun ? (varOlanUrun.link||'') : ''),
+      addedAt: row.addedAt ? safeIsoDate(row.addedAt) : (varOlanUrun ? varOlanUrun.addedAt : safeIsoDate(null)),
+      upcoming: (row.upcoming || '').trim().toUpperCase() === 'TRUE',
+      specs: finalSpecs
+    };
+
+    if(varOlanUrun){
       // Değişiklik var mı diye kontrol et — yoksa "değişiklik yok" say
-      const eski = mevcutById[id];
+      const eski = varOlanUrun;
       const ayni = eski.name === yeniUrun.name && eski.cat === yeniUrun.cat &&
                    (eski.blurb||'') === yeniUrun.blurb && (eski.link||'') === yeniUrun.link &&
                    !!eski.upcoming === yeniUrun.upcoming &&
@@ -804,7 +875,11 @@ async function submitProduct(){
   document.querySelectorAll('#specRows .spec-input-row').forEach(row=>{
     const k = row.querySelector('.specKey').value.trim();
     const v = row.querySelector('.specVal').value.trim();
-    if(k) specs[k]=v;
+    // Hem etiket HEM deger dolu olmali. Sadece etiketi kontrol etmek,
+    // formun kategoriye gore onceden doldurdugu ama kullanicinin
+    // doldurmadigi alanlari da "var ama bos" olarak kaydediyordu -
+    // urun sayfasinda anlamsiz bos satirlar olarak gorunuyordu.
+    if(k && v) specs[k]=v;
   });
   const id = editingId || ('p_'+Date.now());
   const product = {

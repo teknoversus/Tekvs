@@ -333,11 +333,7 @@
       <a class="chip-filter" href="karsilastir/apple-macbook-pro-16-m3-pro-vs-macbook-air-m2-13.html">Apple MacBook Pro 16&quot; (M3 Pro) vs MacBook Air (M2, 13&quot;)</a>
       <a class="chip-filter" href="karsilastir/iphone-16-vs-iphone-16-pro.html">iPhone 16 vs iPhone 16 Pro</a>
       <a class="chip-filter" href="karsilastir/apple-ipad-mini-7-nesil-vs-honor-magicpad-4.html">Apple iPad mini (7. Nesil) vs Honor MagicPad 4</a>
-      <a class="chip-filter" href="karsilastir/airpods-pro-2-nesil-vs-bose-quietcomfort-ultra-earbuds.html">AirPods Pro (2. Nesil) vs Bose QuietComfort Ultra Earbuds</a>
-      <a class="chip-filter" href="karsilastir/amazfit-gts-4-vs-apple-watch-ultra.html">Amazfit GTS 4 vs Apple Watch Ultra</a>
-      <a class="chip-filter" href="karsilastir/lg-43ur78-vs-vestel-55ua9540.html">LG 43UR78 vs Vestel 55UA9540</a>
-      <a class="chip-filter" href="karsilastir/nikon-z6-iii-vs-sony-alpha-a6400.html">Nikon Z6 III vs Sony Alpha a6400</a>
-      <a class="chip-filter" href="populer-karsilastirmalar.html" style="font-weight:600;">⚡ Amiral Gemisi Karşılaştırmaları →</a>
+      <a class="chip-filter" href="populer-karsilastirmalar.html" style="font-weight:600;color:var(--c1);">Tümünü gör →</a>
     </div>
   </section>
   <!-- POPULER_KARSILASTIRMALAR_END -->
@@ -365,16 +361,19 @@
           <div class="chips" id="catChips" style="margin-bottom:0;"></div>
         </div>
         <div class="toolbar-left">
-          <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
-          <select class="sortSelect" id="sortSelect" onchange="onSortChange()" aria-label="Ürünleri sırala">
-            <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
-            <option value="score_desc">Skor: Yüksekten düşüğe</option>
-            <option value="date_asc">Tarih: Eskiden yeniye</option>
-            <option value="price_asc">Fiyat: Düşükten yükseğe</option>
-            <option value="price_desc">Fiyat: Yüksekten düşüğe</option>
-            <option value="views_desc">Görüntülenme: Çoktan aza</option>
-          </select>
+          <button class="chip-filter" onclick="toggleFilterPanel()" aria-expanded="false" aria-controls="hiddenFilterPanel">Filtrele</button>
         </div>
+      </div>
+      <div id="hiddenFilterPanel" style="display:none;padding:8px 0 4px;">
+        <button class="chip-filter" id="favToggle" onclick="toggleFavOnly()">♥ Sadece favorilerim</button>
+        <select class="sortSelect" id="sortSelect" onchange="onSortChange()" aria-label="Ürünleri sırala">
+          <option value="date_desc" selected>Tarih: Yeniden eskiye</option>
+          <option value="score_desc">Skor: Yüksekten düşüğe</option>
+          <option value="date_asc">Tarih: Eskiden yeniye</option>
+          <option value="price_asc">Fiyat: Düşükten yükseğe</option>
+          <option value="price_desc">Fiyat: Yüksekten düşüğe</option>
+          <option value="views_desc">Görüntülenme: Çoktan aza</option>
+        </select>
       </div>
 
       <div class="grid" id="mainGrid">
@@ -3902,6 +3901,14 @@ function setTab(t){
 }
 
 function onSortChange(){ sortMode = document.getElementById('sortSelect').value; render(); }
+
+function toggleFilterPanel(){
+  const panel = document.getElementById('hiddenFilterPanel');
+  const btn = event.currentTarget;
+  const acik = panel.style.display !== 'none';
+  panel.style.display = acik ? 'none' : 'block';
+  btn.setAttribute('aria-expanded', acik ? 'false' : 'true');
+}
 
 function toggleFavOnly(){
   favOnly = !favOnly;

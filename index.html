@@ -3741,6 +3741,8 @@
 </div>
 
 <script src="shared.js"></script>
+<script src="nlp-parser.js"></script>
+<script src="product-filter.js"></script>
 <script>
 
 let products = []; // init() az sonra gerçek veriyle dolduracak
@@ -3835,49 +3837,29 @@ async function runSmartSearch(){
   const statusEl = document.getElementById('searchStatus');
   if(!q){ searchIds = null; statusEl.innerHTML = ''; render(); return; }
 
-  statusEl.innerHTML = 'Yapay zekâ kataloğu tarıyor…';
-  const catalogForAI = products.filter(p=>!p.upcoming).map(p => ({id:p.id, name:p.name, cat:p.cat, blurb:p.blurb, specs:p.specs}));
-
+  // ============================================================
+  // ÜCRETSİZ, API'SİZ, TAMAMEN YEREL arama akışı (Faz 2).
+  // Eski davranış: doğrudan tarayıcıdan api.anthropic.com'a fetch
+  // atıyordu (CSP tarafından engelleniyordu, hiç çalışmıyordu).
+  // Yeni davranış: nlp-parser.js (kriter çıkarma) + product-filter.js
+  // (deterministik filtre + computeScores ile sıralama). Hiçbir ağ
+  // isteği yok, hiçbir API anahtarı yok.
+  // ============================================================
   try{
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1000,
-        messages: [{
-          role: "user",
-          content: `Aşağıda bir ürün kataloğu JSON olarak verilmiştir. Kullanıcının doğal dilde yazdığı arama isteğine en uygun ürünleri, en alakalıdan en az alakalıya doğru sıralayarak SADECE ürün id'lerinden oluşan geçerli bir JSON dizisi olarak döndür. Başka hiçbir açıklama, markdown ya da ek metin ekleme. Örnek çıktı formatı: ["s2","h3"]\n\nKullanıcının isteği: "${q}"\n\nKatalog:\n${JSON.stringify(catalogForAI)}`
-        }]
-      })
-    });
-    const data = await response.json();
-    const text = (data.content || []).map(b => b.text || '').join('');
-    const clean = text.replace(/```json|```/g, '').trim();
-    const ids = JSON.parse(clean);
-    if(Array.isArray(ids) && ids.length){
-      searchIds = ids;
-      statusEl.innerHTML = `"${q}" için yapay zekâ ${ids.length} sonuç buldu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
-    } else { throw new Error('boş sonuç'); }
-  }catch(e){
-    const kw = q.toLowerCase();
-    const matches = products.filter(p => !p.upcoming && (
-      p.name.toLowerCase().includes(kw) ||
-      (p.blurb||'').toLowerCase().includes(kw) ||
-      p.cat.toLowerCase().includes(kw) ||
-      Object.entries(p.specs||{}).some(([k,v]) => (k+' '+v).toLowerCase().includes(kw))
-    ));
-    searchIds = matches.map(p=>p.id);
+    const criteria = extractCriteriaLocally(q);
+    const results = filterAndRankProducts(criteria, products, scores);
+    searchIds = results.map(p => p.id);
     if(searchIds.length){
-      statusEl.innerHTML = `Yapay zekâ aramasına şu an ulaşılamadı, basit kelime aramasıyla ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+      statusEl.innerHTML = `"${q}" için ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     } else {
       logMissedSearch(q);
-      const suggestions = suggestFallbackProducts(q, products, scores);
-      searchIds = suggestions.map(p=>p.id);
-      statusEl.innerHTML = suggestions.length
-        ? `"${q}" için kataloğumuzda tam eşleşme yok — bunlara göz atabilirsin: <button onclick="clearSmartSearch()">Aramayı temizle</button>`
-        : `Sonuç bulunamadı. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+      statusEl.innerHTML = `Aradığınız kriterlere uygun ürün bulunamadı. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     }
+  }catch(e){
+    // Ham JS/teknik hata kullanıcıya ASLA gösterilmez — temiz bir
+    // mesajla, arama öncesi duruma güvenle dönülür.
+    searchIds = null;
+    statusEl.innerHTML = `Arama sırasında bir sorun oluştu, lütfen farklı bir ifadeyle tekrar dene. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
   }
   render();
 }

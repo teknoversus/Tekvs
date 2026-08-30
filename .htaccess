@@ -3,6 +3,17 @@
 # mod_headers gerektirir (çoğu cPanel hosting'de zaten aktif).
 # ============================================================
 
+# ============================================================
+# TeknoVersus — Karakter kodlaması (encoding) düzeltmesi
+# .txt dosyaları (llms.txt, robots.txt vb.) Content-Type header'ında
+# charset belirtmeden gidiyordu; X-Content-Type-Options: nosniff ile
+# birleşince bazı tarayıcılar UTF-8 baytlarını yanlış yorumlayıp
+# Türkçe karakterleri bozuk gösterebiliyordu.
+# ============================================================
+<IfModule mod_mime.c>
+  AddType 'text/plain; charset=UTF-8' .txt
+</IfModule>
+
 <IfModule mod_headers.c>
   # HSTS — HTTPS'e zorla, 1 yıl (alt domainler dahil)
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"

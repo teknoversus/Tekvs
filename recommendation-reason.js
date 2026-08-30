@@ -42,13 +42,21 @@ function rrBuildCandidates(product, criteria, score){
   const candidates = [];
   const specs = product.specs || {};
 
-  // 1) BÜTÇE — kullanıcı belirttiyse ve gerçek fiyat verisi varsa, en öncelikli
+  // 1) BÜTÇE — kullanıcı belirttiyse ve gerçek fiyat verisi varsa, en öncelikli.
+  // DÜZELTME: hem min hem max varsa (aralık sorgusu, örn. "15-25 bin arası")
+  // İKİSİ BİRDEN tek bir cümlede belirtilir — önceki hali sadece max'ı
+  // gösteriyordu, alt sınır bilgisi kayboluyordu. Tek taraflı bütçelerde
+  // ("50 bin altında", "20 bine kadar") mevcut davranış AYNEN korunuyor.
   if(criteria && (criteria.budget_max != null || criteria.budget_min != null)){
     const price = rrGetPrice(product);
     if(price != null){
-      if(criteria.budget_max != null && price <= criteria.budget_max){
+      const inMax = criteria.budget_max == null || price <= criteria.budget_max;
+      const inMin = criteria.budget_min == null || price >= criteria.budget_min;
+      if(criteria.budget_min != null && criteria.budget_max != null && inMin && inMax){
+        candidates.push(`${rrFormatTL(criteria.budget_min)} – ${rrFormatTL(criteria.budget_max)} fiyat aralığına uygun (${rrFormatTL(price)}).`);
+      } else if(criteria.budget_max != null && inMax){
         candidates.push(`Belirttiğin ${rrFormatTL(criteria.budget_max)} bütçenin altında (${rrFormatTL(price)}).`);
-      } else if(criteria.budget_min != null && price >= criteria.budget_min){
+      } else if(criteria.budget_min != null && inMin){
         candidates.push(`Belirttiğin ${rrFormatTL(criteria.budget_min)} ve üzeri bütçe aralığında (${rrFormatTL(price)}).`);
       }
     }
@@ -137,6 +145,18 @@ function rrBuildCandidates(product, criteria, score){
       candidates.push(`${inch}" ekran boyutuna sahip.`);
     } else if(hz != null && hz > 60){
       candidates.push(`${hz} Hz yenileme hızlı ekranı, akıcı görüntü isteyen kullanıcılar için avantaj sağlıyor.`);
+    }
+  }
+
+  if(useCases.includes('student') && product.cat === 'Dizüstü'){
+    // Uydurma bir "öğrenci skoru" değil — gerçek ağırlık/pil/fiyat
+    // verilerinden en az birini bulup, en somut olanı gerekçeye yazar.
+    const weight = rrGetNumeric(product, 'Ürünün Ağırlığı (g)');
+    const battery = rrGetNumeric(product, 'Pil (saat)');
+    if(weight != null){
+      candidates.push(`${weight} g ağırlığıyla taşınabilir, öğrenci kullanımı için pratik bir seçenek.`);
+    } else if(battery != null){
+      candidates.push(`${battery} saat pil ömrüyle gün boyu kullanım için uygun.`);
     }
   }
 

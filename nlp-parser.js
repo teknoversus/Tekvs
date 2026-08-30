@@ -39,6 +39,10 @@ const NLP_USE_CASE_KEYWORDS = {
   video_editing: ['video düzenleme', 'kurgu'],
   portability: ['hafif', 'taşınabilir', 'küçük'],
   durability: ['dayanıklı', 'su geçirmez', 'sağlam'],
+  // Faz 6A: "öğrenci" — uydurma bir performans kavramı DEĞİL, sadece
+  // katalogda GERÇEKTEN var olan 3 alanın (ağırlık, pil, fiyat)
+  // birleşimi — bkz. product-filter.js pfStudentScore().
+  student: ['öğrenci', 'öğrenciler', 'üniversite öğrencisi', 'okul için'],
 };
 
 /**

@@ -144,6 +144,50 @@ function pfDisplayScore(p, categoryPool){
 }
 
 /**
+ * "Öğrenci için" uygunluk (0-100). UYDURMA BİR PERFORMANS KAVRAMI DEĞİL —
+ * sadece katalogda GERÇEKTEN var olan 3 alanın (ağırlık, pil-saat, fiyat)
+ * kategori-içi normalize edilmiş ortalaması. Mantık: öğrenci kullanımı
+ * için hafiflik, uzun pil ömrü ve uygun fiyat genelde tercih sebebidir —
+ * bu, YAYGIN VE MAKUL bir varsayım, katalog dışı bir iddia değil.
+ *
+ * SADECE Dizüstü kategorisinde anlamlı (bu 3 alanın hepsi güvenilir
+ * şekilde bir arada sadece bu kategoride var, doğrulandı). Diğer
+ * kategorilerde 0 döner — zorla skor üretilmiyor.
+ */
+function pfStudentScore(p, categoryPool){
+  if(p.cat !== 'Dizüstü') return 0;
+  const weight = pfGetNumericSpec(p, 'Ürünün Ağırlığı (g)');
+  const battery = pfGetNumericSpec(p, 'Pil (saat)');
+  const price = pfGetPrice(p);
+  if(weight == null && battery == null && price == null) return 0;
+
+  const pool = categoryPool.filter(x => x.cat === 'Dizüstü');
+  const normalizeInverse = (val, getter) => { // düşük değer = yüksek puan (ağırlık, fiyat)
+    if(val == null) return null;
+    const vals = pool.map(x => getter(x)).filter(v => v != null);
+    if(vals.length < 2) return 50;
+    const min = Math.min(...vals), max = Math.max(...vals);
+    return Math.round((1 - (val - min) / ((max - min) || 1)) * 100);
+  };
+  const normalize = (val, getter) => { // yüksek değer = yüksek puan (pil)
+    if(val == null) return null;
+    const vals = pool.map(x => getter(x)).filter(v => v != null);
+    if(vals.length < 2) return 50;
+    const min = Math.min(...vals), max = Math.max(...vals);
+    return Math.round(((val - min) / ((max - min) || 1)) * 100);
+  };
+
+  const scores = [
+    normalizeInverse(weight, x => pfGetNumericSpec(x, 'Ürünün Ağırlığı (g)')),
+    normalize(battery, x => pfGetNumericSpec(x, 'Pil (saat)')),
+    normalizeInverse(price, x => pfGetPrice(x)),
+  ].filter(s => s != null);
+
+  if(!scores.length) return 0;
+  return Math.round(scores.reduce((a,b) => a+b, 0) / scores.length);
+}
+
+/**
  * Kriterlere göre kataloğu filtreler ve computeScores()'a (ya da
  * fiyat sıralamasına) göre sıralar. Ürün bulunamazsa boş dizi döner
  * — hata fırlatmaz.
@@ -224,6 +268,7 @@ function filterAndRankProducts(criteria, products, scores){
       if(uc === 'camera') bonus += pfCameraScore(p, fullCatalog);
       if(uc === 'battery') bonus += pfBatteryScore(p, fullCatalog);
       if(uc === 'display') bonus += pfDisplayScore(p, fullCatalog);
+      if(uc === 'student') bonus += pfStudentScore(p, fullCatalog);
       if(uc === 'performance' && PF_PERF){
         if(p.cat === 'Telefon' || p.cat === 'Tablet'){
           bonus += PF_PERF.getCpuTierScore(p.specs['İşlemci'], fullCatalog.filter(x=>x.cat===p.cat), 'İşlemci');
@@ -269,5 +314,5 @@ function filterAndRankProducts(criteria, products, scores){
 }
 
 if(typeof module !== 'undefined' && module.exports){
-  module.exports = { filterAndRankProducts, pfGetPrice, pfGetNumericSpec, pfGamingScore, pfCameraScore, pfBatteryScore, pfDisplayScore };
+  module.exports = { filterAndRankProducts, pfGetPrice, pfGetNumericSpec, pfGamingScore, pfCameraScore, pfBatteryScore, pfDisplayScore, pfStudentScore };
 }

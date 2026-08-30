@@ -19,10 +19,8 @@ let selected = new Set();
 let favOnly = false;
 let sortMode = 'date_desc';
 let searchIds = null;
+let lastSearchCriteria = null; // Faz 6B: gerekçe motoru için, index.html ile aynı mekanizma
 let detailChart = null;
-let priceMin = null;
-let priceMax = null;
-let brandFilter = new Set(); // boşsa tüm markalar gösterilir
 
 async function init(){
   products = await loadSharedProducts();
@@ -30,17 +28,8 @@ async function init(){
   favorites = await getFavorites();
   handleShareLinkFromURL();
   renderCatNav();
-  renderBrandFilterChips();
-  renderSearchSuggestions();
   render();
   renderRecentlyViewedInto('recentlyViewedStrip', products, null);
-}
-
-function renderSearchSuggestions(){
-  const el = document.getElementById('productSuggestions');
-  if(!el) return;
-  const catProducts = products.filter(p => !p.upcoming && p.cat === CATEGORY_FIXED);
-  el.innerHTML = catProducts.map(p => `<option value="${p.name.replace(/"/g,'&quot;')}"></option>`).join('');
 }
 
 function renderCatNav(){
@@ -54,126 +43,47 @@ function renderCatNav(){
 async function runSmartSearch(){
   const q = document.getElementById('searchInput').value.trim();
   const statusEl = document.getElementById('searchStatus');
-  if(!q){ searchIds = null; statusEl.innerHTML = ''; render(); return; }
+  if(!q){ searchIds = null; lastSearchCriteria = null; statusEl.innerHTML = ''; render(); return; }
 
-  statusEl.innerHTML = 'Yapay zekâ kataloğu tarıyor…';
-  const catalogForAI = products.filter(p=>!p.upcoming && p.cat===CATEGORY_FIXED).map(p => ({id:p.id, name:p.name, blurb:p.blurb, specs:p.specs}));
-
+  // ============================================================
+  // Faz 6B: index.html'deki Faz 2-6A ücretsiz/yerel mimarisiyle
+  // BİREBİR AYNI akış. Eski davranış (bu dosyaya özgü) doğrudan
+  // tarayıcıdan api.anthropic.com'a fetch atıyordu — CSP tarafından
+  // engelleniyordu, hiç çalışmıyordu. Artık nlp-parser.js +
+  // product-filter.js + performance-data.js + recommendation-reason.js
+  // kullanılıyor, hiçbir ağ isteği yok.
+  //
+  // KATEGORİ BAĞLAMI KORUMASI: kullanıcı ne yazarsa yazsın (örn.
+  // "laptop" kelimesi geçse bile), kriterin category alanı HER ZAMAN
+  // bu sayfanın CATEGORY_FIXED'ine zorlanıyor — kategori sayfasının
+  // bağlamı asla kırılmıyor, kategori dışı ürün hiç gösterilmiyor.
+  // ============================================================
   try{
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1000,
-        messages: [{
-          role: "user",
-          content: `Aşağıda "${CATEGORY_FIXED}" kategorisine ait bir ürün kataloğu JSON olarak verilmiştir. Kullanıcının doğal dilde yazdığı arama isteğine en uygun ürünleri, en alakalıdan en az alakalıya doğru sıralayarak SADECE ürün id'lerinden oluşan geçerli bir JSON dizisi olarak döndür. Başka hiçbir açıklama, markdown ya da ek metin ekleme. Örnek çıktı formatı: ["s2","h3"]\n\nKullanıcının isteği: "${q}"\n\nKatalog:\n${JSON.stringify(catalogForAI)}`
-        }]
-      })
-    });
-    const data = await response.json();
-    const text = (data.content || []).map(b => b.text || '').join('');
-    const clean = text.replace(/```json|```/g, '').trim();
-    const ids = JSON.parse(clean);
-    if(Array.isArray(ids) && ids.length){
-      searchIds = ids;
-      statusEl.innerHTML = `"${q}" için yapay zekâ ${ids.length} sonuç buldu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
-    } else { throw new Error('boş sonuç'); }
-  }catch(e){
-    // ---- Yedek arama: yapay zekâ yoksa/başarısızsa ----
-    // Basit "includes" yerine TOKEN + BULANIK eşleştirme kullanıyoruz.
-    // Gerçek arama kayıtları gösterdi ki kullanıcılar sık yazım hatası
-    // yapıyor ("samsun galaxy" -> Samsung Galaxy) ve kısmi model numarası
-    // giriyor ("65u95a" -> Vestel 65UA9500). Tam eşleşme bunları kaçırıyordu.
-    const matches = fuzzySearch(q, products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED));
-    searchIds = matches.map(p=>p.id);
+    const criteria = extractCriteriaLocally(q);
+    criteria.category = CATEGORY_FIXED;
+    lastSearchCriteria = criteria;
+    const results = filterAndRankProducts(criteria, products, scores);
+    searchIds = results.map(p => p.id);
     if(searchIds.length){
-      statusEl.innerHTML = `Yapay zekâ aramasına şu an ulaşılamadı, kelime aramasıyla ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
+      statusEl.innerHTML = `"${q}" için ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     } else {
-      // Bu kategoride yok — TÜM katalogda ara, EN ÇOK sonucu olan kategoriye yönlendir.
-      const otherCat = fuzzySearch(q, products.filter(p => !p.upcoming && p.cat!==CATEGORY_FIXED));
-      if(otherCat.length){
-        const counts = {};
-        otherCat.forEach(p => { counts[p.cat] = (counts[p.cat]||0)+1; });
-        const bestCat = Object.keys(counts).sort((a,b) => counts[b]-counts[a])[0];
-        const slug = SLUG_MAP[bestCat];
-        statusEl.innerHTML = `"${q}" bu kategoride yok ama <b>${bestCat}</b> kategorisinde ${counts[bestCat]} sonuç var: <a href="${slug}.html" style="color:var(--c1);font-weight:600;">${bestCat} sayfasına git →</a> <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
-        const suggestions = products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED)
-          .sort((a,b) => (scores[b.id]||0) - (scores[a.id]||0)).slice(0,4);
-        searchIds = suggestions.map(p=>p.id);
-      } else {
-        logMissedSearch(q);
-        const suggestions = products.filter(p => !p.upcoming && p.cat===CATEGORY_FIXED)
-          .sort((a,b) => (scores[b.id]||0) - (scores[a.id]||0)).slice(0,4);
-        searchIds = suggestions.map(p=>p.id);
-        statusEl.innerHTML = suggestions.length
-          ? `"${q}" için tam eşleşme yok — bu kategoride bunlara göz atabilirsin: <button onclick="clearSmartSearch()">Aramayı temizle</button>`
-          : `Sonuç bulunamadı. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
-      }
+      logMissedSearch(q);
+      statusEl.innerHTML = `Aradığınız kriterlere uygun ürün bulunamadı. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     }
+  }catch(e){
+    // Ham JS/teknik hata kullanıcıya ASLA gösterilmez — temiz bir
+    // mesajla, arama öncesi duruma güvenle dönülür (index.html ile
+    // birebir aynı davranış, teknik hata product_requests'e yazılmaz).
+    searchIds = null;
+    lastSearchCriteria = null;
+    statusEl.innerHTML = `Arama sırasında bir sorun oluştu, lütfen farklı bir ifadeyle tekrar dene. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
   }
   render();
 }
 
-// Yazım hatasına ve kısmi girişe toleranslı arama.
-// Türkçe karakterleri sadeleştirir, sorguyu kelimelere böler, her kelime
-// için ürün metninde "yaklaşık" eşleşme arar ve skora göre sıralar.
-function searchNormalize(s){
-  const trMap={'ı':'i','İ':'i','ş':'s','Ş':'s','ğ':'g','Ğ':'g','ü':'u','Ü':'u','ö':'o','Ö':'o','ç':'c','Ç':'c'};
-  return String(s||'').split('').map(ch=>trMap[ch]!==undefined?trMap[ch]:ch).join('')
-    .toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-}
-
-// İki kelime "yeterince benzer" mi? (1 harf eksik/fazla/yanlış toleransı)
-function tokenSimilar(token, word){
-  if(word.includes(token) || token.includes(word)) return true;
-  if(Math.abs(token.length - word.length) > 2) return false;
-  if(token.length < 4) return false; // çok kısa kelimelerde bulanıklık yanlış sonuç üretir
-  // Basit Levenshtein (mesafe <= 1 kabul)
-  let i=0, j=0, diff=0;
-  while(i < token.length && j < word.length){
-    if(token[i] === word[j]){ i++; j++; continue; }
-    diff++;
-    if(diff > 1) return false;
-    if(token.length > word.length) i++;
-    else if(word.length > token.length) j++;
-    else { i++; j++; }
-  }
-  return diff + (token.length - i) + (word.length - j) <= 1;
-}
-
-function fuzzySearch(query, pool){
-  const qTokens = searchNormalize(query).split(/\s+/).filter(t => t.length > 1);
-  if(!qTokens.length) return [];
-
-  const scored = [];
-  pool.forEach(p => {
-    const nameNorm = searchNormalize(p.name);
-    const nameWords = nameNorm.split(/[^a-z0-9]+/).filter(Boolean);
-    const restNorm = searchNormalize((p.blurb||'') + ' ' + Object.entries(p.specs||{}).map(([k,v])=>k+' '+v).join(' '));
-
-    let score = 0, matchedTokens = 0;
-    qTokens.forEach(t => {
-      if(nameNorm.includes(t))                            { score += 10; matchedTokens++; }  // isimde tam
-      else if(nameWords.some(w => tokenSimilar(t, w)))     { score += 6;  matchedTokens++; }  // isimde bulanık (yazım hatası)
-      else if(t.length >= 4 && restNorm.includes(t))       { score += 1;  matchedTokens++; }  // özellik/açıklamada — zayıf
-    });
-
-    // Sorgunun en az yarısı eşleşmeli; tek kelimelik sorguda o kelime eşleşmeli.
-    // Bu, "tecno spark 50" gibi sorgularda '50' rakamının her ürüne uymasını
-    // ve alakasız 48 sonuç dönmesini engelliyor.
-    if(matchedTokens < Math.ceil(qTokens.length / 2)) return;
-    if(score < 6) return; // sadece özellik metninde geçen zayıf eşleşmeleri ele
-
-    scored.push({ p, score });
-  });
-
-  return scored.sort((a,b) => b.score - a.score).slice(0, 12).map(x => x.p);
-}
-
 function clearSmartSearch(){
   searchIds = null;
+  lastSearchCriteria = null;
   document.getElementById('searchInput').value = '';
   document.getElementById('searchStatus').innerHTML = '';
   render();
@@ -220,11 +130,17 @@ function heartIcon(filled){
     : `<svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg>`;
 }
 
-function cardHTML(p){
+function cardHTML(p, reasons){
   const color = colorFor(p.cat);
   const specEntries = Object.entries(p.specs || {}).slice(0,4);
   const isFav = favorites.includes(p.id);
   const s = scores[p.id];
+  const reasonsHTML = (Array.isArray(reasons) && reasons.length)
+    ? `<div class="card-reasons" onclick="event.stopPropagation()">
+        <div class="card-reasons-title">Neden öneriyoruz?</div>
+        ${reasons.map(r => `<div class="card-reason-item">✓ ${r}</div>`).join('')}
+      </div>`
+    : '';
   return `
   <div class="card" onclick="openDetail('${p.id}')">
     <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('${p.id}')" title="Favorilere ekle">${heartIcon(isFav)}</button>
@@ -236,9 +152,10 @@ function cardHTML(p){
     ${s!=null ? `<span class="score-pill" style="background:${scoreColor(s)}22;color:${scoreColor(s)};">Skor: ${s}</span>` : ''}
     <div class="card-blurb">${p.blurb||''}</div>
     <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
+    ${reasonsHTML}
     <div class="card-foot">
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
+        <input type="checkbox" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
         Karşılaştır
       </label>
       <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>
@@ -256,63 +173,18 @@ function render(){
     base = sortProducts(base);
   }
   if(favOnly) base = base.filter(p => favorites.includes(p.id));
-  if(priceMin != null || priceMax != null){
-    base = base.filter(p => {
-      const price = parsePrice(p);
-      if(price == null) return true; // fiyatı bilinmeyen ürünü filtre dışı bırakma
-      if(priceMin != null && price < priceMin) return false;
-      if(priceMax != null && price > priceMax) return false;
-      return true;
-    });
-  }
-  if(brandFilter.size > 0){
-    base = base.filter(p => brandFilter.has(brandOf(p)));
-  }
 
   document.getElementById('mainGrid').innerHTML = base.length
-    ? base.map(p=>cardHTML(p)).join('')
+    ? base.map(p => cardHTML(
+        p,
+        // Faz 6B: gerekçeler SADECE akıllı arama sonuçlarında (index.html
+        // ile birebir aynı mantık) — normal kategori gezinmesinde hiç
+        // hesaplanmaz, mevcut görünüm korunur.
+        searchIds ? generateRecommendationReasons(p, lastSearchCriteria, scores[p.id]) : null
+      )).join('')
     : '<p style="color:var(--ink-soft);font-size:14px;">Bu aramaya veya filtreye uygun ürün bulunamadı.</p>';
 
   updateCompareBar();
-}
-
-// Marka adını ürün adının ilk kelimesinden çıkarır (generate-brand-pages.js
-// ile aynı mantık — tutarlılık için).
-const BRAND_FOLD = { 'MacBook':'Apple','iPhone':'Apple','AirPods':'Apple','iPad':'Apple','General':'General Mobile' };
-function brandOf(p){ const first = p.name.split(' ')[0]; return BRAND_FOLD[first] || first; }
-
-function renderBrandFilterChips(){
-  const el = document.getElementById('brandFilterChips');
-  if(!el) return;
-  const catProducts = products.filter(p => !p.upcoming && p.cat === CATEGORY_FIXED);
-  const brandCounts = {};
-  catProducts.forEach(p => { const b = brandOf(p); brandCounts[b] = (brandCounts[b]||0)+1; });
-  const brands = Object.keys(brandCounts).sort((a,b) => brandCounts[b]-brandCounts[a]);
-  el.innerHTML = brands.map(b => `<label style="display:inline-flex;align-items:center;gap:4px;margin:0 10px 6px 0;font-size:12.5px;cursor:pointer;">
-    <input type="checkbox" onchange="toggleBrandFilter('${b.replace(/'/g,"\\'")}')" ${brandFilter.has(b)?'checked':''} /> ${b} (${brandCounts[b]})
-  </label>`).join('');
-}
-
-function toggleBrandFilter(brand){
-  if(brandFilter.has(brand)) brandFilter.delete(brand);
-  else brandFilter.add(brand);
-  render();
-}
-
-function applyPriceFilter(){
-  const minVal = document.getElementById('priceMinInput').value;
-  const maxVal = document.getElementById('priceMaxInput').value;
-  priceMin = minVal ? parseFloat(minVal) : null;
-  priceMax = maxVal ? parseFloat(maxVal) : null;
-  render();
-}
-
-function clearAllFilters(){
-  priceMin = null; priceMax = null; brandFilter.clear();
-  const minEl = document.getElementById('priceMinInput'); if(minEl) minEl.value = '';
-  const maxEl = document.getElementById('priceMaxInput'); if(maxEl) maxEl.value = '';
-  renderBrandFilterChips();
-  render();
 }
 
 async function toggleFavorite(id){

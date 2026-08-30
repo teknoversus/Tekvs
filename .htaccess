@@ -15,6 +15,18 @@
   AddCharset UTF-8 .txt
 </IfModule>
 
+# EK DÜZELTME: Yukarıdaki mod_mime direktifleri, cPanel'in kendi sistem
+# seviyesi MIME type tanımı (.txt -> text/plain, charset'siz) tarafından
+# geçersiz kılınıyordu (canlı testte doğrulandı — AddType/AddCharset
+# etkisizdi). mod_headers ile Content-Type'ı HTTP yanıtının son aşamasında
+# doğrudan ve koşulsuz zorluyoruz; bu, MIME type belirleme sürecinden
+# tamamen bağımsız çalışır.
+<IfModule mod_headers.c>
+  <FilesMatch "\.txt$">
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </FilesMatch>
+</IfModule>
+
 <IfModule mod_headers.c>
   # HSTS — HTTPS'e zorla, 1 yıl (alt domainler dahil)
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"

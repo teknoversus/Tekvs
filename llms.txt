@@ -1,13 +1,13 @@
 # TeknoVersus
 
-> Türkiye pazarına yönelik, gerçek ürün verileriyle çalışan teknoloji karşılaştırma ve inceleme sitesi. Telefon, dizüstü bilgisayar, kulaklık, kamera, akıllı saat, tablet ve televizyon kategorilerinde 157+ ürünü fiyat/performans skoruna göre karşılaştırır.
+> Türkiye pazarına yönelik, gerçek ürün verileriyle çalışan teknoloji karşılaştırma ve inceleme sitesi. Telefon, dizüstü bilgisayar, kulaklık, kamera, akıllı saat, tablet ve televizyon kategorilerinde <!-- LLMS_STATS_START -->210+<!-- LLMS_STATS_END --> ürünü fiyat/performans skoruna göre karşılaştırır.
 
 TeknoVersus, Amazon Ortaklık Programı üzerinden satış komisyonu kazanır (affiliate link'ler `tag=teknoversus-21` ile işaretlidir). Tüm fiyat ve özellik verileri üretici kaynaklarından derlenmiştir. İncelemeler ve alım rehberleri, ürünün teknik özelliklerinin kategori ortalamasıyla veri odaklı karşılaştırılmasına dayanır — elle/laboratuvar testi değildir, her sayfada bu açıkça belirtilir. Haberler birden fazla kaynaktan derlenip özgün Türkçe metinle özetlenir, doğrudan çeviri/alıntı içermez.
 
 ## Ana Bölümler
 
 - [Anasayfa](https://teknoversus.com.tr/): Kategori bazlı ürün kataloğu, filtreleme ve fiyat/performans skorlaması
-- [Karşılaştırmalar](https://teknoversus.com.tr/karsilastirmalar.html): 290+ yan yana ürün karşılaştırması; arama kutusu ve herhangi iki ürünü anında kıyaslayan canlı araç dahil
+- [Karşılaştırmalar](https://teknoversus.com.tr/karsilastirmalar.html): <!-- LLMS_STATS_START -->453+<!-- LLMS_STATS_END --> yan yana ürün karşılaştırması; arama kutusu ve herhangi iki ürünü anında kıyaslayan canlı araç dahil
 - [Haberler](https://teknoversus.com.tr/haberler.html): Güncel teknoloji haberleri, kaynak derlemesi + özgün özet
 - [Yakında Çıkacak Ürünler](https://teknoversus.com.tr/yakinda-cikacak.html): Henüz piyasaya çıkmamış, resmi olarak duyurulan modeller
 
@@ -25,9 +25,9 @@ Her kategori, alt kümelere ayrılmıştır (`/kategori/[alt-kategori].html`, ö
 
 ## Ürün Bazlı İçerik
 
-Kataloğumuzdaki 157 ürünün her biri için üç ayrı sayfa üretilir:
+Kataloğumuzdaki <!-- LLMS_STATS_START -->210<!-- LLMS_STATS_END --> ürünün her biri için üç ayrı sayfa üretilir:
 
-- Tam özellik sayfası: `/urun/[ürün-slug].html`
+- Tam özellik sayfası: `/urun/<!-- LLMS_STATS_START -->samsung-galaxy-a26-5g-p_a26_5g.html<!-- LLMS_STATS_END -->`
 - "Alınır mı?" ve "Fiyat/Performans" değerlendirmesi: `/rehber/[ürün-slug]-alinir-mi.html`, `/rehber/[ürün-slug]-fiyat-performans.html`
 - 12 bölümlü tam inceleme (kimler almalı/almamalı, tasarım, ekran, performans, kamera, pil, artı/eksi, son karar): `/inceleme/[ürün-slug]-inceleme.html`
 

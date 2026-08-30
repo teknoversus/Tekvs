@@ -13,6 +13,16 @@
 // gibi yanlış bir varsayım yapılmasını engelliyor.
 // ============================================================
 
+// Faz 4: gerçek CPU/GPU performans katmanı. Tarayıcıda global olarak
+// yüklü (index.html script sırası: performance-data.js önce), Node
+// test ortamında require ile.
+let PF_PERF;
+if(typeof require !== 'undefined'){
+  try{ PF_PERF = require('./performance-data.js'); }catch(e){ PF_PERF = null; }
+} else if(typeof window !== 'undefined'){
+  PF_PERF = { getGpuInfo, getCpuInfo, getCpuTierScore, getGpuTierScore };
+}
+
 function pfGetPrice(p){
   const raw = p.specs && p.specs['Fiyat (₺)'];
   if(raw == null) return null;
@@ -54,9 +64,19 @@ function pfGetNumericSpec(p, key){
  */
 function pfGamingScore(p, categoryPool){
   if(p.cat === 'Dizüstü'){
-    const gpu = String(p.specs['Ekran Kartı'] || '').toLowerCase();
-    if(!gpu) return 0;
-    return gpu.includes('entegre') ? 20 : 90; // dedike GPU açıkça ayırt edilebiliyor
+    const gpuText = p.specs['Ekran Kartı'];
+    if(!gpuText) return 0;
+    if(PF_PERF){
+      // Faz 4: entegre/dedike ikili ayrımı yerine, dedike GPU'lar
+      // arasında GERÇEK model sıralamasına göre ince ayrım (RTX 4070
+      // en yüksek, RTX 3050 4GB en düşük dedike). Entegre GPU'lar hâlâ
+      // en altta (Faz 3'teki davranış korunuyor, sadece hassaslaştırıldı).
+      const info = PF_PERF.getGpuInfo(gpuText);
+      if(info.tier === 'entegre') return 20;
+      if(info.tier === 'dedike') return 60 + PF_PERF.getGpuTierScore(gpuText) * 0.4; // 60-100 arası
+      return 30; // bilinmeyen/tespit edilemeyen model — ne çok düşük ne uydurma yüksek
+    }
+    return gpuText.toLowerCase().includes('entegre') ? 20 : 90;
   }
   if(p.cat === 'Telefon'){
     const hz = pfGetNumericSpec(p, 'Yenileme Hızı (Hz)');
@@ -176,8 +196,26 @@ function filterAndRankProducts(criteria, products, scores){
     pool = pool.filter(p => !p.name.toLowerCase().includes(b));
   }
 
-  // 5) use_case bonusu — artık "var/yok" değil, GERÇEK normalize
-  // skorlar kullanılıyor (bkz. pfGamingScore/pfCameraScore/vb.)
+  // 4b) Doğrudan GPU/CPU model sorgusu (Faz 4) — "RTX 4060 laptop",
+  // "Snapdragon 8 Elite telefon" gibi sorgularda GERÇEKTEN o modeli
+  // taşıyan ürünlere filtrelenir (metin eşleşmesi, uydurma değil).
+  if(criteria.gpu_model){
+    const g = criteria.gpu_model.toLowerCase();
+    pool = pool.filter(p => String(p.specs['Ekran Kartı']||'').toLowerCase().includes(g));
+  }
+  if(criteria.cpu_model){
+    const cModel = criteria.cpu_model.toLowerCase();
+    pool = pool.filter(p => String(p.specs['İşlemci']||'').toLowerCase().includes(cModel));
+  }
+
+  // 5) use_case bonusu — GERÇEK normalize skorlar kullanılıyor.
+  // "performance" (Faz 4) KATEGORİYE GÖRE farklı davranır:
+  //  - Telefon/Tablet: sadece CPU tier skoru
+  //  - Dizüstü: CPU + GPU (GPU biraz daha ağırlıklı, çünkü "güçlü laptop"
+  //    denince genelde oyun/grafik performansı kastedilir)
+  //  - Kulaklık/Televizyon/Kamera/Akıllı Saat: performance kriteri HİÇ
+  //    uygulanmaz (bu kategorilerde CPU/GPU kavramı anlamlı değil,
+  //    uydurma bir skor üretmemek için sessizce 0 döner)
   const useCaseBonus = (p) => {
     if(!criteria.use_case || !criteria.use_case.length) return 0;
     let bonus = 0;
@@ -186,6 +224,16 @@ function filterAndRankProducts(criteria, products, scores){
       if(uc === 'camera') bonus += pfCameraScore(p, fullCatalog);
       if(uc === 'battery') bonus += pfBatteryScore(p, fullCatalog);
       if(uc === 'display') bonus += pfDisplayScore(p, fullCatalog);
+      if(uc === 'performance' && PF_PERF){
+        if(p.cat === 'Telefon' || p.cat === 'Tablet'){
+          bonus += PF_PERF.getCpuTierScore(p.specs['İşlemci'], fullCatalog.filter(x=>x.cat===p.cat), 'İşlemci');
+        } else if(p.cat === 'Dizüstü'){
+          const cpuScore = PF_PERF.getCpuTierScore(p.specs['İşlemci'], fullCatalog.filter(x=>x.cat==='Dizüstü'), 'İşlemci');
+          const gpuScore = PF_PERF.getGpuTierScore(p.specs['Ekran Kartı']);
+          bonus += cpuScore * 0.4 + gpuScore * 0.6; // "güçlü laptop" -> GPU biraz daha belirleyici
+        }
+        // Kulaklık/Televizyon/Kamera/Akıllı Saat: bilerek 0 (CPU/GPU kavramı yok)
+      }
       if(uc === 'portability' && pfGetNumericSpec(p,'Ürünün Ağırlığı (g)') != null) bonus += 20;
       if(uc === 'durability' && p.specs['Su Geçirmezlik'] && p.specs['Su Geçirmezlik'] !== 'Yok') bonus += 20;
     }

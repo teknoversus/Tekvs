@@ -91,12 +91,44 @@ function nlpParseTurkishNumber(raw){
  * Destekler: "X ile Y arasında", "X-Y arası", "X altında"/"en fazla X",
  * "X üzerinde"/"en az X", tek başına bir sayı (max olarak alınır).
  */
+// Model adı bağlamındaki sayıların bütçe ile karıştırılmasını önlemek
+// için kullanılan kalıp: bu kelimelerden HEMEN SONRA gelen sayı(lar)
+// bütçe aramasından tamamen çıkarılır. Dar bir "sadece RTX" yaması
+// değil — CPU/GPU marka/aile isimlerinin TAMAMINI kapsayan bir liste
+// (katalogdan doğrulanmış gerçek marka/aile adları).
+const NLP_MODEL_NAME_CONTEXT = /\b(rtx|gtx|snapdragon|ryzen|core\s*i\d|core\s*ultra|apple\s*m|apple\s*a|dimensity|helio|exynos|tensor|unisoc)\b[\s\-]*\d+(\s*(elite|gen\s*\d+|pro|plus|ultra|max|hx|h|u|p))?/gi;
+
+function nlpExtractGpuModel(query){
+  const m = query.match(/\b(rtx|gtx)\s*(\d{3,4})/i);
+  if(m) return `${m[1].toUpperCase()} ${m[2]}`;
+  return null;
+}
+
+function nlpExtractCpuModel(query){
+  // Snapdragon (yeni nesil: "8 Elite", "8 Gen 3" gibi)
+  let m = query.match(/snapdragon\s*(\d+)\s*(elite(\s*gen\s*\d+)?|gen\s*\d+|\+)?/i);
+  if(m) return `Snapdragon ${m[0].replace(/snapdragon\s*/i,'').trim()}`;
+  // Apple A/M serisi
+  m = query.match(/apple\s*(a|m)\s*(\d+)\s*(pro|max|ultra)?/i);
+  if(m) return `Apple ${m[1].toUpperCase()}${m[2]}${m[3]?' '+m[3]:''}`.trim();
+  // Ryzen
+  m = query.match(/ryzen\s*(\d+)/i);
+  if(m) return `Ryzen ${m[1]}`;
+  return null;
+}
 function nlpExtractBudget(query){
-  // KRİTİK DÜZELTME: "512 GB depolamalı" veya "16 GB RAM" gibi ifadelerdeki
-  // sayılar, başka bir teknik birime (GB/TB/MP/inç/Hz) ait olduğu için
-  // bütçe aramasına HİÇ girmemeli — aksi halde "512 GB" yanlışlıkla
-  // "512 TL bütçe" olarak yorumlanır (gerçek testte tam bu hata bulundu).
-  let q = query.toLowerCase().replace(/\d+\s*(?:gb|tb|mp|inç|inc|hz|mah|w)\b/g, '');
+  // KRİTİK DÜZELTME (iki katman):
+  // 1) "512 GB depolamalı" gibi birim-etiketli sayılar bütçe değildir.
+  // 2) "Snapdragon 8 Elite", "RTX 4060" gibi CPU/GPU MODEL ADI
+  //    bağlamındaki sayılar da bütçe değildir — bu, dar bir "sadece RTX"
+  //    yaması değil, katalogdaki TÜM CPU/GPU marka/aile isimlerini
+  //    kapsayan genel bir bağlam kuralı (NLP_MODEL_NAME_CONTEXT).
+  //    Gerçek testte "Snapdragon 8 Elite" → budget_max:8,
+  //    "RTX 4060" → budget_max:4060 gibi yanlış sonuçlar bulunup
+  //    bu kuralla kökten düzeltildi.
+  let q = query.toLowerCase()
+    .replace(/\d+\s*(?:gb|tb|mp|inç|inc|hz|mah|w)\b/g, '')
+    .replace(NLP_MODEL_NAME_CONTEXT, '');
   q = q.replace(/\blira\b/g, 'tl'); // "lira" -> "tl" eş anlamlı, tek noktadan işlensin
   const numToken = '(\\d+(?:[.,]\\d+)*\\s*(?:bin|milyon|k)?)';
 
@@ -246,6 +278,8 @@ function extractCriteriaLocally(query){
     use_case: nlpExtractUseCases(query),
     min_ram_gb: nlpExtractRam(query),
     min_storage_gb: nlpExtractStorage(query),
+    gpu_model: nlpExtractGpuModel(query),
+    cpu_model: nlpExtractCpuModel(query),
     preferred_brand: brand.preferred_brand,
     excluded_brand: brand.excluded_brand,
     sort_preference: nlpExtractSort(query),
@@ -254,5 +288,5 @@ function extractCriteriaLocally(query){
 }
 
 if(typeof module !== 'undefined' && module.exports){
-  module.exports = { extractCriteriaLocally, nlpParseTurkishNumber, nlpExtractBudget, nlpExtractCategory, nlpExtractUseCases, nlpExtractSort, nlpExtractBrand, nlpExtractRam, nlpExtractStorage };
+  module.exports = { extractCriteriaLocally, nlpParseTurkishNumber, nlpExtractBudget, nlpExtractCategory, nlpExtractUseCases, nlpExtractSort, nlpExtractBrand, nlpExtractRam, nlpExtractStorage, nlpExtractGpuModel, nlpExtractCpuModel };
 }

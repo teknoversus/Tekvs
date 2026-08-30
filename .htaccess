@@ -12,6 +12,7 @@
 # ============================================================
 <IfModule mod_mime.c>
   AddType 'text/plain; charset=UTF-8' .txt
+  AddCharset UTF-8 .txt
 </IfModule>
 
 <IfModule mod_headers.c>

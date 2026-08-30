@@ -556,8 +556,21 @@ function computeScores(products){
         sum += norm; count++;
       });
       const perfAvg = count ? sum / count : 0.5;
+      // BUG 1 DÜZELTMESİ (Faz 7C): Önceki davranışta fiyatı olmayan
+      // ürün (p.__price null) priceFactor=1 (VARSAYILAN, cezasız)
+      // alıyordu — bu, "fiyatı bilinmiyor" ürünü "en ucuz ürünle eşit"
+      // gibi değerlendirip yapay olarak çok yüksek skora (gerçek
+      // örnek: 100) çıkarıyordu. Artık fiyatı bilinmeyen ürün
+      // priceFactor=0 alıyor — bu, "fiyat/performans değerlendirilemez"
+      // durumunu en düşük ham skorla temsil ediyor. Fiyatlı ürünlerin
+      // birbirine göre priceFactor hesaplaması HİÇ DEĞİŞMEDİ (minPrice/
+      // kendi fiyatı oranı aynen korunuyor), yani mevcut sıralama
+      // etkilenmiyor. Ürün katalogdan silinmiyor, sadece computeScores()
+      // çıktısında (ve ona bağlı "best_match" sıralamalarında) en düşük
+      // sıraya düşüyor — doğrudan model/kategori/GB gibi filtrelerde
+      // hâlâ görünebiliyor.
       let priceFactor = 1;
-      if(minPrice != null && p.__price) priceFactor = minPrice / p.__price;
+      if(minPrice != null) priceFactor = p.__price ? (minPrice / p.__price) : 0;
       p.__rawScore = perfAvg * priceFactor;
     });
 

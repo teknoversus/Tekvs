@@ -38,6 +38,33 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
+      # ============================================================
+      # GEÇİCİ TEŞHİS ADIMI — Faz 8 sitemap kök neden araştırması içindir.
+      # Sorun netleştikten sonra bu adım workflow'dan kaldırılabilir.
+      # Amaç: build.js'in ürettiği sitemap.xml'in GERÇEK içeriğini,
+      # FTP'ye gitmeden ÖNCE, Actions logunda görmek.
+      # ============================================================
+      - name: "[GEÇİCİ] Sitemap içeriğini FTP'den önce logla"
+        run: |
+          echo "===== Sitemap.xml toplam satır sayısı ====="
+          wc -l sitemap.xml
+          echo ""
+          echo "===== karsilastir/ URL sayısı ====="
+          grep -c "karsilastir/" sitemap.xml || echo "0 (hiç yok)"
+          echo ""
+          echo "===== Tab S10 FE / FE+ yeni URL'si sitemap'te var mı ====="
+          grep "samsung-galaxy-tab-s10-fe-n10-vs-samsung-galaxy-tab-s10-fe-n11" sitemap.xml && echo "BULUNDU ✅" || echo "BULUNAMADI ❌"
+          echo ""
+          echo "===== Z Flip7 / Z Fold7 yeni URL'si sitemap'te var mı ====="
+          grep "samsung-galaxy-z-flip7-p_zflip7-vs-samsung-galaxy-z-fold7-p_zfold7" sitemap.xml && echo "BULUNDU ✅" || echo "BULUNAMADI ❌"
+          echo ""
+          echo "===== Eski self-comparison hâlâ var mı ====="
+          grep "samsung-galaxy-tab-s10-fe-vs-samsung-galaxy-tab-s10-fe.html" sitemap.xml && echo "HÂLÂ VAR ⚠️" || echo "YOK (temizlenmiş) ✅"
+          echo ""
+          echo "===== sitemap.xml dosyasının tam yolu ve boyutu ====="
+          ls -la sitemap.xml
+          pwd
+
       - name: FTP ile hosting'e yükle
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -55,10 +82,7 @@ jobs:
             **/.github/**
             **/node_modules/**
             **/lib/**
-            **/scripts/**
-            **/docs/**
             build.js
-            build_local.js
             gen_product_pages.js
             gen_product_images.js
             package.json
@@ -66,7 +90,5 @@ jobs:
             seed_products.sql
             seed_products_amazon.sql
             supabase_setup.sql
-            migration_*.sql
-            update_*.sql
             AUTOMATION.md
             README.md

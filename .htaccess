@@ -414,3 +414,43 @@ Redirect 301 /karsilastir/xiaomi-pad-6-vs-xiaomi-redmi-pad-2-pro.html /karsilast
 # ============================================
 # END FAZ 8 — 301 COMPARISON URL MIGRATION
 # ============================================
+
+# ============================================
+# FAZ 9 — MÜKERRER ÜRÜN 301 REDIRECT
+# Faz 7C'de temizlenen 26 mükerrer telefon kaydı (aynı CSV'nin
+# yanlışlıkla iki kez yüklenmesinden kaynaklanan çift kayıtlar).
+# Silinen (deleted=true) eski ID'li ürün sayfalarından, tutulan
+# (geçerli) ID'li sayfalara yönlendirme — Google Search Console'da
+# 'farklı canonical seçildi' olarak görülen indeksleme sorununu
+# çözmek içindir. Mapping, Faz 7C'deki temizlik SQL'inin kendi
+# yorumlarından (tutulan id bilgisi) çıkarılmıştır — tahmin değil.
+# ============================================
+Redirect 301 /urun/google-pixel-9-p_1787681315164_68.html /urun/google-pixel-9-p_1787680633621_68.html
+Redirect 301 /urun/honor-magic7-pro-p_1787681315164_70.html /urun/honor-magic7-pro-p_1787680633621_70.html
+Redirect 301 /urun/xiaomi-redmi-note-14-pro-p_1787681315164_71.html /urun/xiaomi-redmi-note-14-pro-p_1787680633621_71.html
+Redirect 301 /urun/xiaomi-15-p_1787681315164_65.html /urun/xiaomi-15-p_1787680633621_65.html
+Redirect 301 /urun/oneplus-13-p_1787681315164_67.html /urun/oneplus-13-p_1787680633621_67.html
+Redirect 301 /urun/google-pixel-9-pro-p_1787681315164_69.html /urun/google-pixel-9-pro-p_1787680633621_69.html
+Redirect 301 /urun/vivo-v40-p_1787681315164_73.html /urun/vivo-v40-p_1787680633621_73.html
+Redirect 301 /urun/xiaomi-15-pro-p_1787681315164_66.html /urun/xiaomi-15-pro-p_1787680633621_66.html
+Redirect 301 /urun/realme-13-pro-p_1787681315164_72.html /urun/realme-13-pro-p_1787680633621_72.html
+Redirect 301 /urun/nothing-phone-2a-p_1787681315164_74.html /urun/nothing-phone-2a-p_1787680633621_74.html
+Redirect 301 /urun/tecno-phantom-x2-pro-p_1787681315164_76.html /urun/tecno-phantom-x2-pro-p_1787680633621_76.html
+Redirect 301 /urun/tecno-pova-6-pro-p_1787681315164_78.html /urun/tecno-pova-6-pro-p_1787680633621_78.html
+Redirect 301 /urun/tecno-camon-30-premier-p_1787681315164_75.html /urun/tecno-camon-30-premier-p_1787680633621_75.html
+Redirect 301 /urun/tecno-spark-20-pro-p_1787681315164_77.html /urun/tecno-spark-20-pro-p_1787680633621_77.html
+Redirect 301 /urun/xiaomi-14-ultra-p_1787681315164_79.html /urun/xiaomi-14-ultra-p_1787680633621_79.html
+Redirect 301 /urun/redmi-note-13-pro-p_1787681315164_81.html /urun/redmi-note-13-pro-p_1787680633621_81.html
+Redirect 301 /urun/redmi-note-13-pro-p_1787681315164_80.html /urun/redmi-note-13-pro-p_1787680633621_80.html
+Redirect 301 /urun/redmi-13c-p_1787681315164_82.html /urun/redmi-13c-p_1787680633621_82.html
+Redirect 301 /urun/oppo-reno-12-pro-p_1787681315164_84.html /urun/oppo-reno-12-pro-p_1787680633621_84.html
+Redirect 301 /urun/realme-gt-6-p_1787681315164_86.html /urun/realme-gt-6-p_1787680633621_86.html
+Redirect 301 /urun/oppo-find-x7-ultra-p_1787681315164_83.html /urun/oppo-find-x7-ultra-p_1787680633621_83.html
+Redirect 301 /urun/oppo-a60-p_1787681315164_85.html /urun/oppo-a60-p_1787680633621_85.html
+Redirect 301 /urun/realme-c67-p_1787681315164_87.html /urun/realme-c67-p_1787680633621_87.html
+Redirect 301 /urun/reeder-s19-max-pro-s-p_1787681315164_88.html /urun/reeder-s19-max-pro-s-p_1787680633621_88.html
+Redirect 301 /urun/poco-f6-pro-p_1787681315164_90.html /urun/poco-f6-pro-p_1787680633621_90.html
+Redirect 301 /urun/reeder-p13-blue-max-l-p_1787681315164_89.html /urun/reeder-p13-blue-max-l-p_1787680633621_89.html
+# ============================================
+# END FAZ 9 — MÜKERRER ÜRÜN 301 REDIRECT
+# ============================================

@@ -5,11 +5,12 @@
     --c1:#2B6CB0; --c2:#B23A5C; --c3:#B8790F; --c4:#1F7A6C; --c5:#6B4C9A; --c6:#4A5568; --c7:#9A4B2F;
     --good:#1F7A6C; --mid:#B8790F; --bad:#B23A5C;
     --yellow:#EFB123;
-    --radius:12px;
+    --radius:12px; --radius-sm:8px; --radius-lg:16px;
     --shadow-sm:0 1px 2px rgba(20,26,20,.05), 0 1px 1px rgba(20,26,20,.04);
     --shadow-md:0 8px 24px rgba(20,26,20,.09), 0 2px 6px rgba(20,26,20,.05);
     --shadow-lg:0 20px 48px rgba(20,26,20,.14), 0 6px 16px rgba(20,26,20,.07);
     --ease:cubic-bezier(.2,.8,.2,1);
+    --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px; --sp-7:48px; --sp-8:64px;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
@@ -234,6 +235,22 @@
 
   /* Erişilebilirlik: klavye odak halkası */
   a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--c1);outline-offset:2px;border-radius:4px;}
+
+  /* Faz 11B — Comparison sayfası: büyük skor karşılaştırması */
+  .cmp-score-hero{display:flex;align-items:center;justify-content:center;gap:var(--sp-5);margin:var(--sp-4) 0;padding:var(--sp-4) var(--sp-3);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);}
+  .cmp-score-side{flex:1;text-align:center;min-width:0;}
+  .cmp-score-num{font-family:'Oswald',sans-serif;font-weight:700;font-size:44px;line-height:1;}
+  .cmp-score-side.is-winner .cmp-score-num{font-size:52px;}
+  .cmp-score-name{font-size:12.5px;color:var(--ink-soft);margin-top:var(--sp-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .cmp-score-vs{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;color:var(--ink-soft);letter-spacing:.05em;flex-shrink:0;}
+  .cmp-visual{border-radius:var(--radius);padding:var(--sp-3);margin-bottom:var(--sp-3);display:flex;align-items:center;justify-content:center;min-height:120px;}
+  .cmp-visual svg{max-width:100%;height:auto;}
+  @media(max-width:520px){
+    .cmp-score-num{font-size:32px;}
+    .cmp-score-side.is-winner .cmp-score-num{font-size:38px;}
+    .cmp-score-hero{gap:var(--sp-3);padding:var(--sp-3) var(--sp-2);}
+    .cmp-visual{min-height:90px;}
+  }
 
   /* Erişilebilirlik: hareket hassasiyeti olan kullanıcılar için tüm animasyon/geçişleri kapat */
   @media (prefers-reduced-motion: reduce){

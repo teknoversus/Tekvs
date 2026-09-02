@@ -12,7 +12,7 @@
 const vm = require('vm');
 const fs = require('fs');
 const path = require('path');
-const { generateSite } = require('./lib/generate-site');
+const { generateSite, illustrationFor } = require('./lib/generate-site');
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { generateNews } = require('./lib/generate-news');
 const { generateSubcategories, buildSubcatMap } = require('./lib/generate-subcategories');
@@ -159,7 +159,7 @@ async function main(){
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({
     products, colorFor: helpers.colorFor, computeScores: helpers.computeScores,
-    categories, neighborCount: 2, rootDir,
+    categories, neighborCount: 2, rootDir, illustrationFor,
   });
 
   console.log('→ Supabase\'den haber verisi çekiliyor...');

@@ -99,16 +99,8 @@ async function initProductPage(){
     });
   }
 
-  // Artı / eksi kutusu — kategori ortalamasına göre veriden hesaplanır
-  const catProducts = products.filter(x => x.cat === p.cat);
-  const { pros, cons } = prosConsFor(p, catProducts);
-  const pcEl = document.getElementById('prosConsBox');
-  if(pcEl && (pros.length || cons.length)){
-    pcEl.innerHTML = `<div class="proscons">
-      <div class="col pros"><h4>Artılar</h4><ul>${pros.length ? pros.map(x=>`<li>${x}</li>`).join('') : '<li>Belirgin bir öne çıkan yön yok</li>'}</ul></div>
-      <div class="col cons"><h4>Eksiler</h4><ul>${cons.length ? cons.map(x=>`<li>${x}</li>`).join('') : '<li>Belirgin bir zayıf yön yok</li>'}</ul></div>
-    </div>`;
-  }
+  // Not: Artı/eksi kutusu artık server-side render ediliyor (Faz 11B) —
+  // burada tekrar üretmiyoruz, HTML'de zaten hazır geliyor.
 
   // Benzer ürünler kutucuklarındaki görüntülenme sayılarını canlandır
   document.querySelectorAll('.similar-card[data-id]').forEach(async el => {

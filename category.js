@@ -138,9 +138,11 @@ function heartIcon(filled){
 
 function cardHTML(p, reasons){
   const color = colorFor(p.cat);
-  const specEntries = Object.entries(p.specs || {}).slice(0,4);
+  const priceEntries = Object.entries(p.specs || {}).filter(([k]) => /fiyat/i.test(k));
+  const otherSpecs = Object.entries(p.specs || {}).filter(([k]) => !/fiyat/i.test(k)).slice(0,3);
   const isFav = favorites.includes(p.id);
   const s = scores[p.id];
+  const priceText = priceEntries.length ? priceEntries[0][1] : 'Fiyat bilgisi yok';
   const reasonsHTML = (Array.isArray(reasons) && reasons.length)
     ? `<div class="card-reasons" onclick="event.stopPropagation()">
         <div class="card-reasons-title">Neden öneriyoruz?</div>
@@ -148,24 +150,30 @@ function cardHTML(p, reasons){
       </div>`
     : '';
   return `
-  <div class="card" onclick="openDetail('${p.id}')">
-    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('${p.id}')" title="Favorilere ekle">${heartIcon(isFav)}</button>
+  <div class="card">
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('${p.id}')" aria-label="${p.name} ürününü favorilere ekle" title="Favorilere ekle">${heartIcon(isFav)}</button>
     <div class="card-icon" style="background:${color}22;color:${color};">
       <svg width="24" height="24" viewBox="0 0 24 24">${ICONS[p.cat]||''}</svg>
     </div>
     <div class="card-cat">${p.cat} · Çıkış: ${fmtDate(p.addedAt)}</div>
-    <a class="card-name" href="${productUrl(p)}" onclick="event.stopPropagation()">${p.name}</a>
-    ${s!=null ? `<span class="score-pill" style="background:${scoreColor(s)}22;color:${scoreColor(s)};">Skor: ${s}</span>` : ''}
+    <a class="card-name" href="${productUrl(p)}">${p.name}</a>
+    <div class="card-score-price">
+      ${s!=null ? `<span class="card-score" style="color:${scoreColor(s)};">${s}<small>/100</small></span>` : `<span class="card-score card-score-empty">—</span>`}
+      <span class="card-price${priceEntries.length?'':' card-price-empty'}">${priceText}</span>
+    </div>
     <div class="card-blurb">${p.blurb||''}</div>
-    <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
+    <div class="card-specs">${otherSpecs.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
     ${reasonsHTML}
-    <div class="card-foot">
+    <div class="card-actions">
+      <a class="btn-card-primary" href="${productUrl(p)}">İncele →</a>
       <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
+        <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
         Karşılaştır
       </label>
+    </div>
+    <div class="card-foot">
       <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>
-      <a class="buy-link" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored" onclick="event.stopPropagation()">Satın Al →</a>
+      <a class="buy-link" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored">Satın Al →</a>
     </div>
   </div>`;
 }

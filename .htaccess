@@ -454,3 +454,19 @@ Redirect 301 /urun/reeder-p13-blue-max-l-p_1787681315164_89.html /urun/reeder-p1
 # ============================================
 # END FAZ 9 — MÜKERRER ÜRÜN 301 REDIRECT
 # ============================================
+
+# ============================================
+# FAZ 10 — REDMI 13C DUPLICATE ÜRÜN 301
+# "Redmi 13C" (p_1787680633621_82) ile "Xiaomi Redmi 13C" (y11) aynı
+# fiziksel ürün olarak tespit edildi (Faz 10B-10D). y11 daha eski
+# (2023-11-01 vs 2026-08-25) ve daha fazla comparison referansına
+# sahip olduğu için tutuldu, diğeri soft-delete edilecek.
+# NOT: Bu ürünün 4 eski comparison ilişkisi (Faz 10G'de generator'ın
+# skor-bazlı komşuluk mantığı incelenerek) y11 için YENİDEN
+# OLUŞMAYACAĞI kanıtlandığından, comparison URL'lerine BİLİNÇLİ
+# OLARAK 301 eklenmedi — 404 kalmaları öngörülüyor.
+# ============================================
+Redirect 301 /urun/redmi-13c-p_1787680633621_82.html /urun/xiaomi-redmi-13c-y11.html
+# ============================================
+# END FAZ 10 — REDMI 13C DUPLICATE ÜRÜN 301
+# ============================================

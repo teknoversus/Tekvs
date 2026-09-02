@@ -19,6 +19,8 @@ let selected = new Set();
 let favOnly = false;
 let sortMode = 'date_desc';
 let searchIds = null;
+let currentPage = 1;
+const PAGE_SIZE = 24;
 let lastSearchCriteria = null; // Faz 6B: gerekçe motoru için, index.html ile aynı mekanizma
 let detailChart = null;
 
@@ -43,7 +45,7 @@ function renderCatNav(){
 async function runSmartSearch(){
   const q = document.getElementById('searchInput').value.trim();
   const statusEl = document.getElementById('searchStatus');
-  if(!q){ searchIds = null; lastSearchCriteria = null; statusEl.innerHTML = ''; render(); return; }
+  if(!q){ searchIds = null; lastSearchCriteria = null; currentPage = 1; statusEl.innerHTML = ''; render(); return; }
 
   // ============================================================
   // Faz 6B: index.html'deki Faz 2-6A ücretsiz/yerel mimarisiyle
@@ -64,6 +66,7 @@ async function runSmartSearch(){
     lastSearchCriteria = criteria;
     const results = filterAndRankProducts(criteria, products, scores);
     searchIds = results.map(p => p.id);
+    currentPage = 1;
     if(searchIds.length){
       statusEl.innerHTML = `"${q}" için ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     } else {
@@ -76,6 +79,7 @@ async function runSmartSearch(){
     // birebir aynı davranış, teknik hata product_requests'e yazılmaz).
     searchIds = null;
     lastSearchCriteria = null;
+    currentPage = 1;
     statusEl.innerHTML = `Arama sırasında bir sorun oluştu, lütfen farklı bir ifadeyle tekrar dene. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
   }
   render();
@@ -84,15 +88,17 @@ async function runSmartSearch(){
 function clearSmartSearch(){
   searchIds = null;
   lastSearchCriteria = null;
+  currentPage = 1;
   document.getElementById('searchInput').value = '';
   document.getElementById('searchStatus').innerHTML = '';
   render();
 }
 
-function onSortChange(){ sortMode = document.getElementById('sortSelect').value; render(); }
+function onSortChange(){ sortMode = document.getElementById('sortSelect').value; currentPage = 1; render(); }
 
 function toggleFavOnly(){
   favOnly = !favOnly;
+  currentPage = 1;
   document.getElementById('favToggle').classList.toggle('active', favOnly);
   render();
 }
@@ -174,8 +180,16 @@ function render(){
   }
   if(favOnly) base = base.filter(p => favorites.includes(p.id));
 
-  document.getElementById('mainGrid').innerHTML = base.length
-    ? base.map(p => cardHTML(
+  // Faz 11C: filtrele/sırala TAMAMLANDIKTAN sonra sayfala — DOM'a hiçbir
+  // zaman tüm kategori değil, sadece aktif sayfanın PAGE_SIZE kadar
+  // ürünü yazılır (önceki davranış: 200+ ürün aynı anda DOM'daydı).
+  const totalPages = Math.max(1, Math.ceil(base.length / PAGE_SIZE));
+  if(currentPage > totalPages) currentPage = totalPages;
+  if(currentPage < 1) currentPage = 1;
+  const pageItems = base.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+
+  document.getElementById('mainGrid').innerHTML = pageItems.length
+    ? pageItems.map(p => cardHTML(
         p,
         // Faz 6B: gerekçeler SADECE akıllı arama sonuçlarında (index.html
         // ile birebir aynı mantık) — normal kategori gezinmesinde hiç
@@ -184,7 +198,40 @@ function render(){
       )).join('')
     : '<p style="color:var(--ink-soft);font-size:14px;">Bu aramaya veya filtreye uygun ürün bulunamadı.</p>';
 
+  renderPagination(totalPages, base.length);
   updateCompareBar();
+}
+
+function renderPagination(totalPages, totalCount){
+  const el = document.getElementById('paginationBox');
+  if(!el) return;
+  if(totalPages <= 1){ el.innerHTML = ''; return; }
+
+  function pageBtn(n){
+    return `<button class="page-btn${n===currentPage?' active':''}" onclick="goToPage(${n})" ${n===currentPage?'aria-current="page"':''}>${n}</button>`;
+  }
+  // 50+ sayfa olabileceği için numaraları kısalt: 1 2 3 … 8 9
+  let nums = [];
+  const windowSize = 1;
+  for(let i=1;i<=totalPages;i++){
+    if(i===1 || i===totalPages || Math.abs(i-currentPage)<=windowSize) nums.push(i);
+    else if(nums[nums.length-1] !== '…') nums.push('…');
+  }
+  const numsHTML = nums.map(n => n==='…' ? `<span class="page-ellipsis">…</span>` : pageBtn(n)).join('');
+
+  el.innerHTML = `
+    <button class="page-btn page-nav" onclick="goToPage(${currentPage-1})" ${currentPage<=1?'disabled':''} aria-label="Önceki sayfa">‹ Önceki</button>
+    ${numsHTML}
+    <button class="page-btn page-nav" onclick="goToPage(${currentPage+1})" ${currentPage>=totalPages?'disabled':''} aria-label="Sonraki sayfa">Sonraki ›</button>
+  `;
+}
+
+function goToPage(n){
+  if(n < 1 || n === currentPage) return;
+  currentPage = n;
+  render();
+  const grid = document.getElementById('mainGrid');
+  if(grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 async function toggleFavorite(id){

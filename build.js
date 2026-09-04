@@ -160,7 +160,7 @@ async function main(){
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({
     products, colorFor: helpers.colorFor, computeScores: helpers.computeScores,
-    categories, neighborCount: 2, rootDir, illustrationFor,
+    categories, neighborCount: 2, rootDir, illustrationFor, prosConsFor: helpers.prosConsFor,
   });
   linkHeroComparisons({ rootDir });
 

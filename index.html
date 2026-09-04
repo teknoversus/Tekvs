@@ -17,7 +17,7 @@
   "inLanguage": "tr"
 }
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="TeknoVersus" />
 <meta property="og:locale" content="tr_TR" />
@@ -4540,7 +4540,10 @@ async function init(){
   render();
   renderCatNavStrip();
   renderRecentlyViewedInto('recentlyViewedStrip', products, null);
-  renderTrending();
+  // Performans: "En Çok Bakılan" bölümü sayfanın çok aşağısında, kritik
+  // render'ın bir parçası değil — bu isteği sayfa tam yüklendikten sonraya
+  // erteliyoruz (views API çağrısı önceden kritik yol gecikmesine neden oluyordu).
+  window.addEventListener('load', () => renderTrending());
   if(new URLSearchParams(location.search).get('finder') === '1') openFinder();
 }
 

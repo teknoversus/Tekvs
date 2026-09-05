@@ -11,6 +11,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://teknoversus.com.tr/#website",
   "name": "TeknoVersus",
   "url": "https://teknoversus.com.tr/",
   "description": "Ürün karşılaştırma ve puanlama platformu",
@@ -34,6 +35,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://teknoversus.com.tr/#organization",
   "name": "TeknoVersus",
   "url": "https://teknoversus.com.tr/",
   "logo": "https://teknoversus.com.tr/assets/logo.png",
@@ -41,7 +43,7 @@
   "description": "Türkiye pazarındaki teknoloji ürünlerini fiyat/performans skoruna göre karşılaştıran bağımsız karşılaştırma ve inceleme sitesi.",
   "email": "teknoversus@teknoversus.com.tr",
   "areaServed": { "@type": "Country", "name": "Türkiye" },
-  "founder": { "@type": "Person", "name": "Sinan Tanrı" },
+  "founder": { "@id": "https://teknoversus.com.tr/#person" },
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer support",
@@ -54,13 +56,14 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
+  "@id": "https://teknoversus.com.tr/#webpage",
   "name": "TeknoVersus — Teknoloji Ürünleri Karşılaştırma Kataloğu",
   "description": "Türkiye pazarındaki 171 teknoloji ürününü fiyat/performans skoruna göre karşılaştıran bağımsız katalog.",
   "url": "https://teknoversus.com.tr/",
   "inLanguage": "tr-TR",
-  "isPartOf": { "@type": "WebSite", "name": "TeknoVersus", "url": "https://teknoversus.com.tr/" },
-  "author": { "@type": "Person", "name": "Sinan Tanrı", "url": "https://teknoversus.com.tr/hakkimizda.html" },
-  "publisher": { "@type": "Organization", "name": "TeknoVersus", "url": "https://teknoversus.com.tr/" },
+  "isPartOf": { "@id": "https://teknoversus.com.tr/#website" },
+  "author": { "@id": "https://teknoversus.com.tr/#person" },
+  "publisher": { "@id": "https://teknoversus.com.tr/#organization" },
   "dateModified": "2026-08-18",
   "about": [
     { "@type": "Thing", "name": "Cep telefonu" },
@@ -80,9 +83,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://teknoversus.com.tr/#person",
   "name": "Sinan Tanrı",
   "jobTitle": "Kurucu ve Baş Editör",
-  "worksFor": { "@type": "Organization", "name": "TeknoVersus", "url": "https://teknoversus.com.tr/" },
+  "worksFor": { "@id": "https://teknoversus.com.tr/#organization" },
   "url": "https://teknoversus.com.tr/hakkimizda.html",
   "email": "teknoversus@teknoversus.com.tr",
   "knowsAbout": ["Teknoloji ürün karşılaştırması", "Cep telefonu", "Dizüstü bilgisayar", "Tüketici elektroniği"]
@@ -92,6 +96,7 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://teknoversus.com.tr/#faq",
   "mainEntity": [
     { "@type": "Question", "name": "TeknoVersus ürün satıyor mu?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır. TeknoVersus bir karşılaştırma ve inceleme sitesidir. Satın alma bağlantıları Amazon'a yönlendirir; satış, kargo ve iade süreçleri satıcıya aittir." } },
     { "@type": "Question", "name": "Fiyat/performans skoru nasıl hesaplanıyor?", "acceptedAnswer": { "@type": "Answer", "text": "Ürünün sayısal teknik özellikleri kategori içinde 0-1 arasında normalize edilir, ortalaması alınır ve kategorideki en ucuz ürünün fiyatına oranlanır. Sonuç 100 üzerinden ölçeklenir." } },

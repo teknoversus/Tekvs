@@ -16,6 +16,69 @@ const NLP_VALID_CATEGORIES = ['Telefon','Dizüstü','Kulaklık','Kamera','Akıll
 
 // Kategori eş anlamlıları — gerçek CATS listesine eşleniyor.
 // Sadece yaygın, açık eş anlamlılar; belirsiz/uydurma eşleme yok.
+// Faz: gerçek katalogdaki marka isimlerinden çıkarılmış liste. Bir marka
+// birden fazla "görünen isimle" aranabilir (örn. Apple ürünleri genelde
+// "Apple" kelimesini taşımaz, direkt "iPhone"/"MacBook" diye başlar).
+const NLP_BRAND_ALIASES = {
+  'apple': ['apple', 'iphone', 'macbook', 'airpods', 'ipad'],
+  'samsung': ['samsung', 'galaxy'],
+  'xiaomi': ['xiaomi'],
+  'redmi': ['redmi'],
+  'poco': ['poco'],
+  'honor': ['honor'],
+  'huawei': ['huawei'],
+  'oppo': ['oppo'],
+  'vivo': ['vivo'],
+  'realme': ['realme'],
+  'nothing': ['nothing'],
+  'oneplus': ['oneplus'],
+  'motorola': ['motorola'],
+  'nubia': ['nubia'],
+  'zte': ['zte'],
+  'general mobile': ['general mobile', 'general'],
+  'reeder': ['reeder'],
+  'tecno': ['tecno'],
+  'infinix': ['infinix'],
+  'casper': ['casper'],
+  'tcl': ['tcl'],
+  'iffalcon': ['iffalcon'],
+  'vestel': ['vestel'],
+  'regal': ['regal'],
+  'grundig': ['grundig'],
+  'hisense': ['hisense'],
+  'philips': ['philips'],
+  'toshiba': ['toshiba'],
+  'lg': ['lg'],
+  'asus': ['asus'],
+  'acer': ['acer'],
+  'dell': ['dell'],
+  'lenovo': ['lenovo'],
+  'hp': ['hp'],
+  'msi': ['msi'],
+  'monster': ['monster'],
+  'google': ['google'],
+  'sony': ['sony'],
+  'canon': ['canon'],
+  'nikon': ['nikon'],
+  'fujifilm': ['fujifilm'],
+  'gopro': ['gopro'],
+  'dji': ['dji'],
+  'insta360': ['insta360'],
+  'panasonic': ['panasonic'],
+  'jbl': ['jbl'],
+  'anker': ['anker'],
+  'beats': ['beats'],
+  'marshall': ['marshall'],
+  'skullcandy': ['skullcandy'],
+  'edifier': ['edifier'],
+  'bose': ['bose'],
+  'garmin': ['garmin'],
+  'fitbit': ['fitbit'],
+  'amazfit': ['amazfit'],
+  'polar': ['polar'],
+  'amazon': ['amazon'],
+};
+
 const NLP_CATEGORY_SYNONYMS = {
   'Telefon': ['telefon','cep telefonu','akıllı telefon','smartphone'],
   'Dizüstü': ['dizüstü','laptop','notebook','bilgisayar'],
@@ -135,6 +198,14 @@ function nlpExtractBudget(query){
   return { budget_min: null, budget_max: null };
 }
 
+function nlpExtractBrand(query){
+  const q = query.toLowerCase();
+  for(const [brand, aliases] of Object.entries(NLP_BRAND_ALIASES)){
+    if(aliases.some(a => q.includes(a))) return brand;
+  }
+  return null;
+}
+
 function nlpExtractCategory(query){
   const q = query.toLowerCase();
   for(const [cat, synonyms] of Object.entries(NLP_CATEGORY_SYNONYMS)){
@@ -174,7 +245,7 @@ function extractCriteriaLocally(query){
     budget_min: budget.budget_min,
     budget_max: budget.budget_max,
     use_case: nlpExtractUseCases(query),
-    preferred_brand: null,
+    preferred_brand: nlpExtractBrand(query),
     excluded_brand: null,
     sort_preference: nlpExtractSort(query),
     requested_count: 4,
@@ -182,5 +253,5 @@ function extractCriteriaLocally(query){
 }
 
 if(typeof module !== 'undefined' && module.exports){
-  module.exports = { extractCriteriaLocally, nlpParseTurkishNumber, nlpExtractBudget, nlpExtractCategory, nlpExtractUseCases, nlpExtractSort };
+  module.exports = { extractCriteriaLocally, nlpParseTurkishNumber, nlpExtractBudget, nlpExtractCategory, nlpExtractBrand, nlpExtractUseCases, nlpExtractSort, NLP_BRAND_ALIASES };
 }

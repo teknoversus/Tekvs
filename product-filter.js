@@ -23,6 +23,24 @@ if(typeof require !== 'undefined'){
   PF_PERF = { getGpuInfo, getCpuInfo, getCpuTierScore, getGpuTierScore };
 }
 
+// nlp-parser.js'teki marka takma adları listesi — bazı markaların
+// (örn Apple) ürün isimleri markanın kendi adını taşımaz ("iPhone 15"
+// içinde "apple" geçmez). Bu liste olmadan marka filtresi bu tür
+// aramalarda 0 sonuç döner.
+let PF_BRAND_ALIASES = null;
+if(typeof require !== 'undefined'){
+  try{ PF_BRAND_ALIASES = require('./nlp-parser.js').NLP_BRAND_ALIASES; }catch(e){ PF_BRAND_ALIASES = null; }
+} else if(typeof window !== 'undefined' && typeof NLP_BRAND_ALIASES !== 'undefined'){
+  PF_BRAND_ALIASES = NLP_BRAND_ALIASES;
+}
+function pfBrandMatches(name, brand){
+  const n = name.toLowerCase();
+  if(PF_BRAND_ALIASES && PF_BRAND_ALIASES[brand]){
+    return PF_BRAND_ALIASES[brand].some(alias => n.includes(alias));
+  }
+  return n.includes(brand);
+}
+
 function pfGetPrice(p){
   const raw = p.specs && p.specs['Fiyat (₺)'];
   if(raw == null) return null;
@@ -230,14 +248,14 @@ function filterAndRankProducts(criteria, products, scores){
     });
   }
 
-  // 4) Marka (dahil/hariç)
+  // 4) Marka (dahil/hariç) — alias listesiyle eşleşiyor (yukarı bakınız)
   if(criteria.preferred_brand){
     const b = criteria.preferred_brand.toLowerCase();
-    pool = pool.filter(p => p.name.toLowerCase().includes(b));
+    pool = pool.filter(p => pfBrandMatches(p.name, b));
   }
   if(criteria.excluded_brand){
     const b = criteria.excluded_brand.toLowerCase();
-    pool = pool.filter(p => !p.name.toLowerCase().includes(b));
+    pool = pool.filter(p => !pfBrandMatches(p.name, b));
   }
 
   // 4b) Doğrudan GPU/CPU model sorgusu (Faz 4) — "RTX 4060 laptop",

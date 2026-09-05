@@ -1,4 +1,13 @@
 # ============================================================
+# TeknoVersus — Dizin listelemeyi kapat (directory listing)
+# /karsilastir/, /urun/ gibi klasörlere doğrudan girildiğinde
+# sunucunun ham dosya listesini göstermesini engeller. Bu, diğer
+# tüm kurallardan tamamen bağımsız, global bir ayardır — hiçbir
+# redirect/rewrite kuralıyla çakışmaz.
+# ============================================================
+Options -Indexes
+
+# ============================================================
 # TeknoVersus — Güvenlik başlıkları (Apache / cPanel)
 # mod_headers gerektirir (çoğu cPanel hosting'de zaten aktif).
 # ============================================================

@@ -12,7 +12,7 @@
 const vm = require('vm');
 const fs = require('fs');
 const path = require('path');
-const { generateSite, illustrationFor } = require('./lib/generate-site');
+const { generateSite, illustrationFor, productImageFor } = require('./lib/generate-site');
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { linkHeroComparisons } = require('./lib/link-hero-comparisons');
 const { generateNews } = require('./lib/generate-news');
@@ -160,7 +160,7 @@ async function main(){
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({
     products, colorFor: helpers.colorFor, computeScores: helpers.computeScores,
-    categories, neighborCount: 2, rootDir, illustrationFor, prosConsFor: helpers.prosConsFor,
+    categories, neighborCount: 2, rootDir, illustrationFor, productImageFor, prosConsFor: helpers.prosConsFor,
   });
   linkHeroComparisons({ rootDir });
 

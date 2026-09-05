@@ -12,9 +12,24 @@
 const vm = require('vm');
 const fs = require('fs');
 const path = require('path');
-const { generateSite } = require('./lib/generate-site');
+const { generateSite, illustrationFor, productImageFor } = require('./lib/generate-site');
 const { generateComparisons } = require('./lib/generate-comparisons');
+const { linkHeroComparisons } = require('./lib/link-hero-comparisons');
 const { generateNews } = require('./lib/generate-news');
+const { generateSubcategories, buildSubcatMap } = require('./lib/generate-subcategories');
+const { generateBuyingGuides } = require('./lib/generate-buying-guides');
+const { generateTopicalGuides } = require('./lib/generate-topical-guides');
+const { generateReviews } = require('./lib/generate-reviews');
+const { generateBrandPages } = require('./lib/generate-brand-pages');
+const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
+const { generateClusterArticles } = require('./lib/generate-cluster-articles');
+const { refreshCategoryCards } = require('./lib/refresh-category-cards');
+const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-karsilastirmalar');
+const { generateLandingPages } = require('./lib/generate-landing-pages');
+const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
+
+// Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
+// ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
 
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://qsetmleywkhjcntajphx.supabase.co';
 const SUPABASE_KEY = process.env.SUPABASE_KEY || 'sb_publishable_z74ZnvDgMWR7JzQDezgdqg_G_eh3e5B';
@@ -41,6 +56,7 @@ function loadHelpers(){
     fmtDate: vm.runInContext('fmtDate', context),
     computeScores: vm.runInContext('computeScores', context),
     productSlug: vm.runInContext('productSlug', context),
+    prosConsFor: vm.runInContext('prosConsFor', context),
   };
 }
 
@@ -75,11 +91,18 @@ function rowToNews(row){
     date: row.date, summary: row.summary || '',
     body: Array.isArray(row.body) ? row.body : [],
     relatedProductId: row.related_product_id || null,
+    tldr: row.tldr || '',
+    table: Array.isArray(row.table_data) ? row.table_data : [],
+    faq: Array.isArray(row.faq) ? row.faq : [],
+    conclusion: row.conclusion || '',
   };
 }
 
 async function fetchNewsFromSupabase(){
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/news?deleted=eq.false&select=*&order=date.desc`, {
+  // Not: pending_review=eq.false burada iki kat güvenlik — RLS zaten anon
+  // kullanıcıya onay bekleyen taslakları göstermiyor, ama açıkça filtrelemek
+  // kodu okuyan biri için niyeti netleştiriyor.
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/news?deleted=eq.false&pending_review=eq.false&select=*&order=date.desc`, {
     headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` }
   });
   if(!res.ok){
@@ -89,6 +112,32 @@ async function fetchNewsFromSupabase(){
   }
   const rows = await res.json();
   return rows.map(rowToNews);
+}
+
+// Onaylanmış (approved=true) yorumlardan ürün başına {count, average} özeti çıkarır.
+// GERÇEK kullanıcı verisi olmadan AggregateRating YAZILMAZ — hiç yorumu olmayan
+// bir ürün için schema.org AggregateRating eklemek yanıltıcı/kural ihlali olur.
+async function fetchRatingsSummary(){
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/ratings?approved=eq.true&select=product_id,stars`, {
+    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` }
+  });
+  if(!res.ok){
+    console.warn('UYARI: Supabase\'den yorum verisi çekilemedi — AggregateRating eklenmeyecek.');
+    return {};
+  }
+  const rows = await res.json();
+  const byProduct = {};
+  rows.forEach(r => {
+    if(!byProduct[r.product_id]) byProduct[r.product_id] = [];
+    byProduct[r.product_id].push(r.stars);
+  });
+  const summary = {};
+  Object.entries(byProduct).forEach(([pid, stars]) => {
+    const count = stars.length;
+    const avg = stars.reduce((a,b) => a+b, 0) / count;
+    summary[pid] = { count, average: Math.round(avg * 10) / 10 };
+  });
+  return summary;
 }
 
 async function main(){
@@ -101,13 +150,24 @@ async function main(){
   }
 
   const helpers = loadHelpers();
-  generateSite({ products, ...helpers, rootDir });
+  // Rehber/inceleme sayfaları artık TÜM (upcoming olmayan) kataloğu kapsıyor —
+  // yeni ürün eklendiğinde otomatik dahil olur, elle liste güncellemeye gerek yok.
+  const FAZ2_TARGET_IDS = products.filter(p => !p.upcoming).map(p => p.id);
+  const FAZ3_TARGET_IDS = FAZ2_TARGET_IDS;
+  const subcatMap = buildSubcatMap(products);
+  console.log('→ Onaylanmış yorum özeti çekiliyor (AggregateRating için)...');
+  const ratingsSummary = await fetchRatingsSummary();
+  generateSite({ products, ...helpers, rootDir,
+    reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap, ratingsSummary });
+  // Not: helpers içinde prosConsFor zaten var (loadHelpers'ta çıkarılıyor),
+  // spread ile generateSite'a otomatik geçiyor.
 
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
   generateComparisons({
     products, colorFor: helpers.colorFor, computeScores: helpers.computeScores,
-    categories, neighborCount: 2, rootDir,
+    categories, neighborCount: 2, rootDir, illustrationFor, productImageFor, prosConsFor: helpers.prosConsFor,
   });
+  linkHeroComparisons({ rootDir });
 
   console.log('→ Supabase\'den haber verisi çekiliyor...');
   const news = await fetchNewsFromSupabase();
@@ -115,6 +175,43 @@ async function main(){
     console.log(`→ ${news.length} haber bulundu.`);
     generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
   }
+
+  console.log('→ Alt kategori sayfaları üretiliyor...');
+  generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
+
+  generatePopulerKarsilastirmalar({ products, computeScores: helpers.computeScores, rootDir });
+
+  refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir });
+
+  console.log('→ "Alınır mı" / "Fiyat-performans" rehber sayfaları üretiliyor...');
+  generateBuyingGuides({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ2_TARGET_IDS, rootDir });
+
+  console.log('→ Konu kümesi (topical authority) rehberleri üretiliyor...');
+  generateTopicalGuides({ rootDir });
+
+  console.log('→ Konu kümesi destek makaleleri üretiliyor...');
+  generateClusterArticles({ rootDir });
+
+  console.log('→ İnceleme sayfaları üretiliyor...');
+  generateReviews({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ3_TARGET_IDS, rootDir });
+
+  console.log('→ Marka sayfaları üretiliyor...');
+  generateBrandPages({ products, computeScores: helpers.computeScores, rootDir });
+
+  console.log('→ Marka vs marka sayfaları üretiliyor...');
+  generateBrandVsBrandPages({ products, computeScores: helpers.computeScores, rootDir });
+
+  generateLandingPages({ products, computeScores: helpers.computeScores, rootDir });
+
+  // ---- IndexNow bildirimi ----
+  // Sitemap tamamen üretildikten sonra Bing/Yandex'e "işte güncel URL
+  // listesi" diye bildiriyoruz. Bu, Google'ı etkilemez (IndexNow'u
+  // kullanmıyor) ama Bing'in hızlı taraması üzerinden ChatGPT arama ve
+  // Copilot görünürlüğüne doğrudan katkı sağlıyor. Başarısız olursa build'i
+  // DURDURMUYORUZ — ikincil bir sinyal, deploy'u engellememeli.
+  console.log('→ IndexNow\'a bildiriliyor...');
+  const sitemapUrls = extractSitemapUrls(rootDir);
+  await pingIndexNow(sitemapUrls);
 
   console.log('✓ Build tamamlandı.');
 }

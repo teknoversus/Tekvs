@@ -249,6 +249,8 @@ function extractCriteriaLocally(query){
     excluded_brand: null,
     sort_preference: nlpExtractSort(query),
     requested_count: 4,
+    raw_query: query, // marka çıktıktan sonra kalan model kodunu
+                       // (örn "Xiaomi 17T" -> "17t") aramak için saklanıyor
   };
 }
 

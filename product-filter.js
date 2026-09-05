@@ -252,6 +252,22 @@ function filterAndRankProducts(criteria, products, scores){
   if(criteria.preferred_brand){
     const b = criteria.preferred_brand.toLowerCase();
     pool = pool.filter(p => pfBrandMatches(p.name, b));
+
+    // Marka çıktıktan sonra sorguda kalan kelimeler varsa (örn "Xiaomi
+    // 17T" -> marka "xiaomi" çıkarıldıktan sonra "17t" kalıyor), bu
+    // muhtemelen bir model kodu — ürün isminde bu kalan metni arayıp
+    // eşleşen varsa sadece onları tutuyoruz. Eşleşme yoksa (örn sadece
+    // "Xiaomi" yazılmışsa, kalan metin boşsa) marka filtresiyle yetinip
+    // tüm marka ürünlerini gösteriyoruz — davranış bozulmuyor.
+    if(criteria.raw_query && PF_BRAND_ALIASES && PF_BRAND_ALIASES[b]){
+      let remainder = criteria.raw_query.toLowerCase();
+      PF_BRAND_ALIASES[b].forEach(alias => { remainder = remainder.split(alias).join(' '); });
+      remainder = remainder.trim();
+      if(remainder){
+        const modelMatches = pool.filter(p => p.name.toLowerCase().includes(remainder));
+        if(modelMatches.length) pool = modelMatches;
+      }
+    }
   }
   if(criteria.excluded_brand){
     const b = criteria.excluded_brand.toLowerCase();

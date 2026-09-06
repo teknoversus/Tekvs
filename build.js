@@ -26,6 +26,7 @@ const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 const { refreshCategoryCards } = require('./lib/refresh-category-cards');
 const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-karsilastirmalar');
 const { generateLandingPages } = require('./lib/generate-landing-pages');
+const { generateFiyatPerformansIndeksi } = require('./lib/generate-fiyat-performans-indeksi');
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
@@ -202,6 +203,9 @@ async function main(){
   generateBrandVsBrandPages({ products, computeScores: helpers.computeScores, rootDir });
 
   generateLandingPages({ products, computeScores: helpers.computeScores, rootDir });
+
+  console.log('→ Fiyat/Performans İndeksi (linkable asset) üretiliyor...');
+  generateFiyatPerformansIndeksi({ products, computeScores: helpers.computeScores, productSlug: helpers.productSlug, rootDir });
 
   // ---- IndexNow bildirimi ----
   // Sitemap tamamen üretildikten sonra Bing/Yandex'e "işte güncel URL

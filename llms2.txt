@@ -1,0 +1,49 @@
+# TeknoVersus
+
+> Türkiye pazarına yönelik, gerçek ürün verileriyle çalışan teknoloji karşılaştırma ve inceleme sitesi. Telefon, dizüstü bilgisayar, kulaklık, kamera, akıllı saat, tablet ve televizyon kategorilerinde <!-- LLMS_PRODUCT_COUNT_START -->210+<!-- LLMS_PRODUCT_COUNT_END --> ürünü fiyat/performans skoruna göre karşılaştırır.
+
+TeknoVersus, Amazon Ortaklık Programı üzerinden satış komisyonu kazanır (affiliate link'ler `tag=teknoversus-21` ile işaretlidir). Tüm fiyat ve özellik verileri üretici kaynaklarından derlenmiştir. İncelemeler ve alım rehberleri, ürünün teknik özelliklerinin kategori ortalamasıyla veri odaklı karşılaştırılmasına dayanır — elle/laboratuvar testi değildir, her sayfada bu açıkça belirtilir. Haberler birden fazla kaynaktan derlenip özgün Türkçe metinle özetlenir, doğrudan çeviri/alıntı içermez.
+
+## Ana Bölümler
+
+- [Anasayfa](https://teknoversus.com.tr/): Kategori bazlı ürün kataloğu, filtreleme ve fiyat/performans skorlaması
+- [Karşılaştırmalar](https://teknoversus.com.tr/karsilastirmalar.html): <!-- LLMS_COMPARISON_COUNT_START -->453+<!-- LLMS_COMPARISON_COUNT_END --> yan yana ürün karşılaştırması; arama kutusu ve herhangi iki ürünü anında kıyaslayan canlı araç dahil
+- [Haberler](https://teknoversus.com.tr/haberler.html): Güncel teknoloji haberleri, kaynak derlemesi + özgün özet
+- [Yakında Çıkacak Ürünler](https://teknoversus.com.tr/yakinda-cikacak.html): Henüz piyasaya çıkmamış, resmi olarak duyurulan modeller
+
+## Kategoriler
+
+- [Telefon](https://teknoversus.com.tr/telefon.html)
+- [Dizüstü Bilgisayar](https://teknoversus.com.tr/dizustu.html)
+- [Kulaklık](https://teknoversus.com.tr/kulaklik.html)
+- [Kamera](https://teknoversus.com.tr/kamera.html)
+- [Akıllı Saat](https://teknoversus.com.tr/akilli-saat.html)
+- [Tablet](https://teknoversus.com.tr/tablet.html)
+- [Televizyon](https://teknoversus.com.tr/televizyon.html)
+
+Her kategori, alt kümelere ayrılmıştır (`/kategori/[alt-kategori].html`, örn. iphone.html, oyun-laptoplari.html, anc-kulaklik.html) ve markaya göre gruplanmıştır (`/marka/[marka]-[kategori].html`, örn. samsung-telefon.html).
+
+## Ürün Bazlı İçerik
+
+Kataloğumuzdaki <!-- LLMS_PRODUCT_COUNT_START -->210+<!-- LLMS_PRODUCT_COUNT_END --> ürünün her biri için üç ayrı sayfa üretilir:
+
+- Tam özellik sayfası: `/urun/<!-- LLMS_PRODUCT_URL_START -->zte-red-magic-11-air-z14.html<!-- LLMS_PRODUCT_URL_END -->`
+- "Alınır mı?" ve "Fiyat/Performans" değerlendirmesi: `/rehber/[ürün-slug]-alinir-mi.html`, `/rehber/[ürün-slug]-fiyat-performans.html`
+- 12 bölümlü tam inceleme (kimler almalı/almamalı, tasarım, ekran, performans, kamera, pil, artı/eksi, son karar): `/inceleme/[ürün-slug]-inceleme.html`
+
+## Rehberler
+
+Kategori bazlı "nasıl seçilir" temel rehberleri:
+
+- [Telefon Nasıl Seçilir?](https://teknoversus.com.tr/rehber/telefon-nasil-secilir.html)
+- [Dizüstü Bilgisayar Nasıl Seçilir?](https://teknoversus.com.tr/rehber/dizustu-bilgisayar-nasil-secilir.html)
+- [Kulaklık Nasıl Seçilir?](https://teknoversus.com.tr/rehber/kulaklik-nasil-secilir.html)
+- [Fotoğraf Makinesi Nasıl Seçilir?](https://teknoversus.com.tr/rehber/kamera-nasil-secilir.html)
+- [Akıllı Saat Nasıl Seçilir?](https://teknoversus.com.tr/rehber/akilli-saat-nasil-secilir.html)
+- [Tablet Nasıl Seçilir?](https://teknoversus.com.tr/rehber/tablet-nasil-secilir.html)
+- [Televizyon Nasıl Seçilir?](https://teknoversus.com.tr/rehber/televizyon-nasil-secilir.html)
+
+## Optional
+
+- [Gizlilik Politikası](https://teknoversus.com.tr/gizlilik-politikasi.html)
+- [Site Haritası (XML)](https://teknoversus.com.tr/sitemap.xml)

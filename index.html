@@ -17,6 +17,7 @@
   "inLanguage": "tr"
 }
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="TeknoVersus" />
 <meta property="og:locale" content="tr_TR" />
@@ -4141,24 +4142,6 @@ function openCompare(){
 function closeCompare(){ document.getElementById('cmpOverlay').classList.remove('show'); }
 
 // ---- ürün detay modalı ----
-// Chart.js sadece kullanıcı bir ürün kartına tıklayıp detay modalını
-// açtığında (fiyat grafiği çizilmesi gerektiğinde) yüklenir — sayfa ilk
-// açıldığında hiç indirilmez. Bu, PageSpeed'in "kullanılmayan JavaScript"
-// uyarısını gideriyor: çoğu ziyaretçi hiç bir karta tıklamayabilir.
-let chartJsLoadPromise = null;
-function loadChartJs(){
-  if(window.Chart) return Promise.resolve();
-  if(chartJsLoadPromise) return chartJsLoadPromise;
-  chartJsLoadPromise = new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
-    script.onload = () => resolve();
-    script.onerror = () => { chartJsLoadPromise = null; reject(new Error('Chart.js yüklenemedi')); };
-    document.head.appendChild(script);
-  });
-  return chartJsLoadPromise;
-}
-
 async function openDetail(id){
   const p = products.find(x=>x.id===id);
   if(!p) return;
@@ -4203,18 +4186,13 @@ async function openDetail(id){
 
   const hist = generatePriceHistory(p);
   if(detailChart){ detailChart.destroy(); detailChart = null; }
-  if(hist){
-    try {
-      await loadChartJs();
-      const ctx = document.getElementById('priceChart').getContext('2d');
-      detailChart = new Chart(ctx, {
-        type: 'line',
-        data: { labels: hist.labels, datasets: [{ label: `Fiyat (${hist.currency})`, data: hist.data, borderColor: color, backgroundColor: color+'22', fill:true, tension:.3 }] },
-        options: { plugins:{ legend:{ display:false } }, scales:{ y:{ ticks:{ callback:v=>hist.currency+v } } } }
-      });
-    } catch(e) {
-      console.warn('Fiyat grafiği yüklenemedi:', e);
-    }
+  if(hist && window.Chart){
+    const ctx = document.getElementById('priceChart').getContext('2d');
+    detailChart = new Chart(ctx, {
+      type: 'line',
+      data: { labels: hist.labels, datasets: [{ label: `Fiyat (${hist.currency})`, data: hist.data, borderColor: color, backgroundColor: color+'22', fill:true, tension:.3 }] },
+      options: { plugins:{ legend:{ display:false } }, scales:{ y:{ ticks:{ callback:v=>hist.currency+v } } } }
+    });
   }
 }
 function closeDetail(){

@@ -3971,13 +3971,18 @@ function cardHTML(p, newIds){
     ${s!=null ? `<span class="score-pill" style="background:${scoreColor(s)}22;color:${scoreColor(s)};">Skor: ${s}</span>` : ''}
     <div class="card-blurb">${p.blurb||''}</div>
     <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
-    <div class="card-foot">
-      <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
-        Karşılaştır
-      </label>
-      <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>
-      <a class="buy-link" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored" onclick="event.stopPropagation()">Satın Al →</a>
+    <div class="card-foot" style="display:flex;flex-direction:column;gap:8px;">
+      <div style="display:flex;gap:8px;align-items:center;">
+        <a class="incele-link" href="${productUrl(p)}" onclick="event.stopPropagation()" style="flex:1;background:#2B6CB0;color:#fff;text-align:center;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">İncele →</a>
+        <label class="compare-check" onclick="event.stopPropagation()" style="white-space:nowrap;">
+          <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
+          Karşılaştır
+        </label>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>
+        <a class="buy-link" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored" onclick="event.stopPropagation()">Satın Al →</a>
+      </div>
     </div>
   </div>`;
 }

@@ -3751,6 +3751,7 @@ let products = []; // init() az sonra gerçek veriyle dolduracak
 let scores = {};
 let favorites = [];
 let viewCounts = {};
+let ratingsSummary = {};
 let selected = new Set();
 let activeCat = 'Tümü';
 let activeTab = 'catalog';
@@ -3793,6 +3794,7 @@ async function init(){
   products = await loadSharedProducts();
   scores = computeScores(products);
   favorites = await getFavorites();
+  ratingsSummary = await getAllRatingsSummary();
   handleShareLinkFromURL();
   render();
   renderCatNavStrip();
@@ -3969,6 +3971,7 @@ function cardHTML(p, newIds){
     <div class="card-cat">${p.cat} · Çıkış: ${fmtDate(p.addedAt)}</div>
     <a class="card-name" href="${productUrl(p)}" onclick="event.stopPropagation()">${p.name}</a>
     ${s!=null ? `<span class="score-pill" style="background:${scoreColor(s)}22;color:${scoreColor(s)};">Skor: ${s}</span>` : ''}
+    ${ratingsSummary[p.id] ? `<span class="rating-pill" style="font-size:12px;color:var(--ink-soft);margin-left:6px;">★ ${ratingsSummary[p.id].average} (${ratingsSummary[p.id].count})</span>` : ''}
     <div class="card-blurb">${p.blurb||''}</div>
     <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
     <div class="card-foot" style="display:flex;flex-direction:column;gap:8px;">

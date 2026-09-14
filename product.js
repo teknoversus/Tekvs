@@ -42,19 +42,7 @@ async function initProductPage(){
 
   const count = await incrementViews(PRODUCT_ID);
   const vEl = document.getElementById('viewCountLabel');
-  const vSep = document.getElementById('viewCountSep');
-  // Sayaç yalnızca GERÇEK görüntülenme varsa gösterilir. Yeni bir sayfada
-  // "0 görüntülenme" yazmak güvenilirlik algısını zayıflatıyor; veri yoksa
-  // hiçbir şey göstermemek daha dürüst ve daha iyi görünüyor.
-  if(vEl){
-    if(count != null && count > 0){
-      vEl.textContent = count + ' görüntülenme';
-      if(vSep) vSep.style.display = '';
-    } else {
-      vEl.textContent = '';
-      if(vSep) vSep.style.display = 'none';
-    }
-  }
+  if(vEl) vEl.textContent = (count != null ? count : '?') + ' görüntülenme';
 
   const favBtn = document.getElementById('favBtn');
   if(favBtn){
@@ -76,14 +64,8 @@ async function initProductPage(){
     scoreEl.style.display = 'inline-block';
   }
 
-  const hist = (await loadRealPriceHistory(PRODUCT_ID)) || generatePriceHistory(p);
+  const hist = generatePriceHistory(p);
   const canvas = document.getElementById('priceChart');
-  const chartNote = document.getElementById('chartNote');
-  if(chartNote){
-    chartNote.textContent = hist && hist.isReal
-      ? 'Gerçek, haftalık kaydedilen fiyat verisine dayanır.'
-      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); henüz yeterli gerçek veri birikmedi.';
-  }
   if(hist && canvas && window.Chart){
     const color = colorFor(p.cat);
     const ctx = canvas.getContext('2d');
@@ -99,8 +81,16 @@ async function initProductPage(){
     });
   }
 
-  // Not: Artı/eksi kutusu artık server-side render ediliyor (Faz 11B) —
-  // burada tekrar üretmiyoruz, HTML'de zaten hazır geliyor.
+  // Artı / eksi kutusu — kategori ortalamasına göre veriden hesaplanır
+  const catProducts = products.filter(x => x.cat === p.cat);
+  const { pros, cons } = prosConsFor(p, catProducts);
+  const pcEl = document.getElementById('prosConsBox');
+  if(pcEl && (pros.length || cons.length)){
+    pcEl.innerHTML = `<div class="proscons">
+      <div class="col pros"><h4>Artılar</h4><ul>${pros.length ? pros.map(x=>`<li>${x}</li>`).join('') : '<li>Belirgin bir öne çıkan yön yok</li>'}</ul></div>
+      <div class="col cons"><h4>Eksiler</h4><ul>${cons.length ? cons.map(x=>`<li>${x}</li>`).join('') : '<li>Belirgin bir zayıf yön yok</li>'}</ul></div>
+    </div>`;
+  }
 
   // Benzer ürünler kutucuklarındaki görüntülenme sayılarını canlandır
   document.querySelectorAll('.similar-card[data-id]').forEach(async el => {
@@ -131,6 +121,8 @@ async function initRatings(p){
     const summaryHTML = count
       ? `<div class="ratings-summary"><span class="stars">${pdStarsHTML(avg)}</span> ${avg} / 5 · ${count} değerlendirme</div>`
       : `<div class="ratings-summary">Henüz değerlendirme yok — ilk yorumu sen yaz.</div>`;
+    const heroEl = document.getElementById('heroRatingSummary');
+    if(heroEl) heroEl.textContent = count ? `★ ${avg}/5 (${count} değerlendirme)` : '';
     const listHTML = list.slice().reverse().slice(0,20).map(r => `
       <div class="review-item">
         <div class="meta"><span class="stars">${pdStarsHTML(r.stars)}</span> — ${r.name || 'Anonim'}</div>

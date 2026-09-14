@@ -287,6 +287,26 @@ async function getAllViewCounts(products){
 }
 
 // ---- Puan / yorum ----
+// Tüm ürünlerin puan özetini TEK sorguda çeker (kart rozetleri için —
+// her kart için ayrı sorgu atmak yerine, tek seferde tüm onaylı yorumları
+// çekip ürün bazında grupluyoruz).
+async function getAllRatingsSummary(){
+  const r = await sbFetch('/rest/v1/ratings?approved=eq.true&select=product_id,stars');
+  if(!r.ok || !r.data) return {};
+  const byProduct = {};
+  r.data.forEach(row => {
+    if(!byProduct[row.product_id]) byProduct[row.product_id] = [];
+    byProduct[row.product_id].push(row.stars);
+  });
+  const summary = {};
+  Object.entries(byProduct).forEach(([pid, stars]) => {
+    const count = stars.length;
+    const avg = stars.reduce((a,b) => a+b, 0) / count;
+    summary[pid] = { count, average: Math.round(avg * 10) / 10 };
+  });
+  return summary;
+}
+
 async function getRatings(id){
   // Halka açık sayfalarda sadece ONAYLANMIŞ yorumlar gösterilir.
   const r = await sbFetch('/rest/v1/ratings?product_id=eq.'+encodeURIComponent(id)+'&approved=eq.true&select=*&order=created_at.asc');

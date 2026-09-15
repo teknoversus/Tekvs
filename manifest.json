@@ -1,0 +1,26 @@
+{
+  "name": "TeknoVersus - Teknoloji Ürün Karşılaştırma",
+  "short_name": "TeknoVersus",
+  "description": "Türkiye pazarındaki teknoloji ürünlerini fiyat/performans skoruna göre karşılaştıran bağımsız katalog.",
+  "start_url": "/?pwa=1",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#2B6CB0",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

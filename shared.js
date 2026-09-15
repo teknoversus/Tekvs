@@ -718,3 +718,19 @@ async function renderRecentlyViewedInto(containerId, allProducts, excludeId){
     }).join('') +
     '</div>';
 }
+
+// ---- PWA: Service Worker kaydı ----
+// typeof kontrolleri: shared.js hem tarayıcıda hem build.js'nin Node.js VM
+// ortamında (helpers çıkarmak için) çalıştırılıyor — o ortamda navigator/
+// window gerçek tarayıcı nesneleri değil, bu yüzden koşulsuz çağrı build'i
+// bozar.
+if(typeof window !== 'undefined' && typeof navigator !== 'undefined' && 'serviceWorker' in navigator){
+  window.addEventListener('load', () => {
+    const swPath = location.pathname.includes('/urun/') || location.pathname.includes('/inceleme/')
+      || location.pathname.includes('/rehber/') || location.pathname.includes('/liste/')
+      ? '../sw.js' : './sw.js';
+    navigator.serviceWorker.register(swPath).catch(() => {
+      // Sessizce başarısız ol — PWA olmadan da site normal çalışmaya devam etmeli.
+    });
+  });
+}

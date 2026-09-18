@@ -162,7 +162,7 @@
   <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
     <div style="padding-top:14px;">
 <p style="font-size:14px;line-height:1.7;color:var(--ink-soft);max-width:680px;margin:0 0 14px;">
-  TeknoVersus kataloğunda 7 kategoride 671 ürün bulunuyor. Aşağıdaki tablo her kategorideki
+  TeknoVersus kataloğunda 7 kategoride <span id="catalogTotalCount">671</span> ürün bulunuyor. Aşağıdaki tablo her kategorideki
   model sayısını ve güncel fiyat aralığını gösteriyor. Fiyatlar Türkiye perakende piyasasından
   derlenir ve düzenli olarak elle doğrulanır.
 </p>
@@ -172,7 +172,7 @@
     <th style="text-align:left;padding:8px 10px;">Model</th>
     <th style="text-align:left;padding:8px 0;">Fiyat aralığı</th>
   </tr></thead>
-  <tbody>
+  <tbody id="catalogStatsBody">
     <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="telefon.html">Telefon</a></td><td style="padding:7px 10px;">118</td><td style="padding:7px 0;">3.999 – 129.999 ₺</td></tr>
     <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="dizustu.html">Dizüstü Bilgisayar</a></td><td style="padding:7px 10px;">124</td><td style="padding:7px 0;">15.449 – 525.999 ₺</td></tr>
     <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="tablet.html">Tablet</a></td><td style="padding:7px 10px;">85</td><td style="padding:7px 0;">3.800 – 73.822 ₺</td></tr>
@@ -3807,6 +3807,41 @@ function katalogGenislet(){
   document.getElementById('katalogAcButon').style.display = 'none';
 }
 
+// Ana sayfadaki "Katalogda Neler Var" bölümünü, her yüklemede gerçek
+// `products` verisinden yeniden hesaplar — statik/elle güncellenen bir
+// sayı olmadığı için, yeni ürün eklendikçe otomatik güncel kalır.
+function updateCatalogStats(){
+  const real = products.filter(p => !p.upcoming);
+  const totalEl = document.getElementById('catalogTotalCount');
+  if(totalEl) totalEl.textContent = real.length;
+
+  const byCat = {};
+  real.forEach(p => {
+    if(!byCat[p.cat]) byCat[p.cat] = [];
+    const price = p.specs && p.specs['Fiyat (₺)'] ? Number(p.specs['Fiyat (₺)']) : null;
+    byCat[p.cat].push(price);
+  });
+
+  const catConfig = [
+    ['Telefon', 'telefon.html'], ['Dizüstü', 'dizustu.html'], ['Tablet', 'tablet.html'],
+    ['Kulaklık', 'kulaklik.html'], ['Akıllı Saat', 'akilli-saat.html'],
+    ['Televizyon', 'televizyon.html'], ['Kamera', 'kamera.html'],
+  ];
+  const labelMap = {'Dizüstü': 'Dizüstü Bilgisayar'};
+  const fmt = n => Math.round(n).toLocaleString('tr-TR');
+
+  const body = document.getElementById('catalogStatsBody');
+  if(!body) return;
+  const rows = catConfig.map(([cat, href], i) => {
+    const prices = (byCat[cat] || []).filter(p => p != null && !isNaN(p));
+    const count = (byCat[cat] || []).length;
+    const range = prices.length ? `${fmt(Math.min(...prices))} – ${fmt(Math.max(...prices))} ₺` : '—';
+    const borderStyle = i === catConfig.length - 1 ? '' : 'border-bottom:1px solid var(--line);';
+    return `<tr style="${borderStyle}"><td style="padding:7px 10px 7px 0;"><a href="${href}">${labelMap[cat] || cat}</a></td><td style="padding:7px 10px;">${count}</td><td style="padding:7px 0;">${range}</td></tr>`;
+  }).join('');
+  body.innerHTML = rows;
+}
+
 async function init(){
   products = await loadSharedProducts();
   scores = computeScores(products);
@@ -3814,6 +3849,7 @@ async function init(){
   ratingsSummary = await getAllRatingsSummary();
   handleShareLinkFromURL();
   render();
+  updateCatalogStats();
   renderCatNavStrip();
   renderRecentlyViewedInto('recentlyViewedStrip', products, null);
   renderTrending();

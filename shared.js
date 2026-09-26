@@ -542,7 +542,15 @@ function computeScores(products){
       const priceKey = Object.keys(specs).find(k => /fiyat/i.test(k));
       const raw = priceKey ? specs[priceKey] : null;
       const num = raw ? parseFloat(raw.toString().replace(/[^\d.,]/g,'').replace(',','.')) : NaN;
-      p.__price = isNaN(num) ? null : num;
+      // BUG DÜZELTMESİ (27 Eylül 2026): Fiyatı "0" (veya negatif) olarak
+      // kaydedilmiş — genelde eksik/bozuk veriden kaynaklanan — TEK bir ürün,
+      // minPrice=0 yapıp priceFactor = minPrice/p.__price hesabını (0/fiyat=0)
+      // kategorideki TÜM ürünler için sıfırlıyordu. Bu yüzden az önce fiyatı
+      // gayet normal olan onlarca dizüstü/telefon "Fiyat/Performans Skoru: 0"
+      // gösteriyordu. Artık 0 ve altı fiyatlar da "bilinmiyor" (null) sayılıyor
+      // — tıpkı hiç fiyat girilmemiş ürün gibi davranıyor, tek başına
+      // kategoriyi bozamıyor.
+      p.__price = (isNaN(num) || num <= 0) ? null : num;
     });
     const prices = list.map(p => p.__price).filter(v => v != null);
     const minPrice = prices.length ? Math.min(...prices) : null;

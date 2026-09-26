@@ -3779,6 +3779,11 @@ let favOnly = false;
 let sortMode = 'date_desc';
 let searchIds = null;
 let detailChart = null;
+// Faz 12: anasayfa kataloğu artık kategori sayfalarıyla (category.js) AYNI
+// sayfalama mantığını kullanıyor — önceden burada hiç sayfalama yoktu,
+// aktif filtreye uyan TÜM ürünler (bazen 100+) tek seferde DOM'a yazılıyordu.
+let currentPage = 1;
+const PAGE_SIZE = 24;
 
 // ---- Anasayfa akordeon (istatistik/kaynaklar + SSS) ----
 // İçerik HER ZAMAN DOM'da kalır (arama motorları/AI özetleri okumaya devam
@@ -3800,14 +3805,6 @@ function toggleAcc(id){
     icon.style.transform = 'rotate(180deg)';
     btn.setAttribute('aria-expanded', 'true');
   }
-}
-
-// ---- Katalog ızgarası: "Tümünü gör" ----
-// Kalan ürünler zaten DOM'da (gizli) — buton sadece görünürlüğü açıyor,
-// yeni bir istek/veri çekme yapmıyor.
-function katalogGenislet(){
-  document.getElementById('katalogFazlasi').style.display = '';
-  document.getElementById('katalogAcButon').style.display = 'none';
 }
 
 // Ana sayfadaki "Katalogda Neler Var" bölümünü, her yüklemede gerçek
@@ -3895,6 +3892,7 @@ async function renderTrending(){
 async function runSmartSearch(){
   const q = document.getElementById('searchInput').value.trim();
   const statusEl = document.getElementById('searchStatus');
+  currentPage = 1;
   if(!q){ searchIds = null; statusEl.innerHTML = ''; render(); return; }
 
   statusEl.innerHTML = 'Yapay zekâ kataloğu tarıyor…';
@@ -3946,6 +3944,7 @@ async function runSmartSearch(){
 
 function clearSmartSearch(){
   searchIds = null;
+  currentPage = 1;
   document.getElementById('searchInput').value = '';
   document.getElementById('searchStatus').innerHTML = '';
   render();
@@ -3956,7 +3955,7 @@ function renderChips(){
   const cats = ['Tümü', ...CATS];
   el.innerHTML = cats.map(c => `<button class="chip-filter ${c===activeCat?'active':''}" onclick="setCat('${c}')">${c}</button>`).join('');
 }
-function setCat(c){ activeCat = c; render(); }
+function setCat(c){ activeCat = c; currentPage = 1; render(); }
 
 function setTab(t){
   activeTab = t;
@@ -3967,10 +3966,11 @@ function setTab(t){
   if(t==='upcoming') renderUpcoming();
 }
 
-function onSortChange(){ sortMode = document.getElementById('sortSelect').value; render(); }
+function onSortChange(){ sortMode = document.getElementById('sortSelect').value; currentPage = 1; render(); }
 
 function toggleFavOnly(){
   favOnly = !favOnly;
+  currentPage = 1;
   document.getElementById('favToggle').classList.toggle('active', favOnly);
   render();
 }
@@ -4064,11 +4064,64 @@ function render(){
   let filtered = base.filter(p => activeCat==='Tümü' || p.cat===activeCat);
   if(favOnly) filtered = filtered.filter(p => favorites.includes(p.id));
 
-  document.getElementById('mainGrid').innerHTML = filtered.length
-    ? filtered.map(p=>cardHTML(p,newIds)).join('')
+  // Faz 12: filtrele/sırala TAMAMLANDIKTAN sonra sayfala — category.js'teki
+  // (Faz 11C) mantıkla birebir aynı. DOM'a her zaman sadece aktif sayfanın
+  // PAGE_SIZE kadar ürünü yazılır.
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if(currentPage > totalPages) currentPage = totalPages;
+  if(currentPage < 1) currentPage = 1;
+  const pageItems = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+
+  document.getElementById('mainGrid').innerHTML = pageItems.length
+    ? pageItems.map(p=>cardHTML(p,newIds)).join('')
     : '<p style="color:var(--ink-soft);font-size:14px;">Bu aramaya, kategoriye veya filtreye uygun ürün bulunamadı.</p>';
 
+  renderKatalogPagination(totalPages);
   updateCompareBar();
+}
+
+// Ana sayfanın statik HTML şablonunda eskiden "Tümünü gör" ile açılan gizli
+// bir kart yığını (katalogFazlasi) vardı — artık gerçek sayfalama olduğu
+// için gereksiz. paginationBox'ı şablonu elle değiştirmeden, güvenli şekilde
+// ilk render'da bir kereliğine mainGrid'in hemen ardına ekliyoruz.
+function ensurePaginationBox(){
+  let el = document.getElementById('paginationBox');
+  if(!el){
+    const grid = document.getElementById('mainGrid');
+    grid.insertAdjacentHTML('afterend', '<div id="paginationBox" class="pagination" role="navigation" aria-label="Sayfalama"></div>');
+    el = document.getElementById('paginationBox');
+  }
+  return el;
+}
+
+function renderKatalogPagination(totalPages){
+  const el = ensurePaginationBox();
+  if(totalPages <= 1){ el.innerHTML = ''; return; }
+
+  function pageBtn(n){
+    return `<button class="page-btn${n===currentPage?' active':''}" onclick="goToKatalogPage(${n})" ${n===currentPage?'aria-current="page"':''}>${n}</button>`;
+  }
+  let nums = [];
+  const windowSize = 1;
+  for(let i=1;i<=totalPages;i++){
+    if(i===1 || i===totalPages || Math.abs(i-currentPage)<=windowSize) nums.push(i);
+    else if(nums[nums.length-1] !== '…') nums.push('…');
+  }
+  const numsHTML = nums.map(n => n==='…' ? `<span class="page-ellipsis">…</span>` : pageBtn(n)).join('');
+
+  el.innerHTML = `
+    <button class="page-btn page-nav" onclick="goToKatalogPage(${currentPage-1})" ${currentPage<=1?'disabled':''} aria-label="Önceki sayfa">‹ Önceki</button>
+    ${numsHTML}
+    <button class="page-btn page-nav" onclick="goToKatalogPage(${currentPage+1})" ${currentPage>=totalPages?'disabled':''} aria-label="Sonraki sayfa">Sonraki ›</button>
+  `;
+}
+
+function goToKatalogPage(n){
+  if(n < 1 || n === currentPage) return;
+  currentPage = n;
+  render();
+  const grid = document.getElementById('mainGrid');
+  if(grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function renderUpcoming(){

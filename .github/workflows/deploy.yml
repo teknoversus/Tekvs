@@ -114,6 +114,27 @@ jobs:
           ls -la sitemap.xml
           pwd
 
+      # ============================================================
+      # GEÇİCİ TEK SEFERLİK ADIM — 27 Eylül 2026, /karsilastir/ 404 kök nedeni.
+      # build.js her seferinde doğru şekilde ~1982 karşılaştırma dosyası
+      # üretiyor (bkz. _deploy_debug.txt) ama FTP-Deploy-Action bunları
+      # yıllar/aylar önceki bozuk bir deploy'dan kalma .ftp-deploy-sync-state.json
+      # kayıt dosyasına güvenip "zaten yüklü" sanıp atlıyor olabilir — bu dosya
+      # gerçek sunucu içeriğini değil, action'ın KENDİ kaydını yansıtıyor.
+      # Bu adım, o kayıt dosyasını sunucudan siler; bir sonraki FTP adımı böylece
+      # her dosyayı gerçek içerikle karşılaştırıp eksik olanları (muhtemelen
+      # /karsilastir/ klasörünün tamamını) sıfırdan yükleyecek. Bu, sunucudaki
+      # başka hiçbir dosyayı SİLMEZ — sadece action'ın kendi defterini sıfırlar.
+      # Bir sonraki deploy başarılı olup doğrulandıktan sonra bu adım kaldırılacak.
+      # ============================================================
+      - name: "[GEÇİCİ, TEK SEFERLİK] FTP senkronizasyon kaydını sıfırla"
+        run: |
+          curl -v --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
+            -Q "-DELE ${{ secrets.FTP_SERVER_DIR }}.ftp-deploy-sync-state.json" \
+            "ftp://${{ secrets.FTP_SERVER }}${{ secrets.FTP_SERVER_DIR }}" || true
+          echo "(Yukarıdaki komut dosya yoksa/farklı yoldaysa hata verebilir, bu ADIMI BAŞARISIZ SAYMIYORUZ — asıl amaç aşağıdaki FTP adımının tam senkronizasyon yapmasını sağlamak.)"
+        continue-on-error: true
+
       - name: FTP ile hosting'e yükle
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

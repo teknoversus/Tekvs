@@ -717,6 +717,69 @@ function heartIcon(filled){
 }
 
 // ============================================================
+// cardHTML() — 27 Eylül 2026 (Faz 13, gelişim raporu madde "kart
+// tasarımının birleştirilmesi"): index.html ve category.js'de GÖRSEL
+// OLARAK FARKLI iki ayrı kart tasarımı vardı (index.html: "score-pill" +
+// tıklayınca açılan hızlı önizleme modalı; category.js: "card-score-price"
+// bloğu + doğrudan ürün sayfasına giden linkler, "Satın Al" linkli).
+// Kategori sayfalarının tasarımı standart seçildi: daha güçlü skor
+// gösterimi (büyük puan + fiyat aynı blokta), net bir "İncele" CTA'sı ve
+// zaten iki yerde (canlı kategori render + statik SEO kartları) kullanılan
+// tasarım. Ana sayfanın "karta tıkla → modal aç" davranışı bilinçli olarak
+// kaldırıldı — artık her yerde ürün adı/"İncele" linkine tıklamak doğrudan
+// ürün sayfasına götürüyor, siteye tek bir tutarlı etkileşim modeli geldi.
+// `opts`: { newIds: Set (ana sayfa "YENİ" rozeti), reasons: string[]
+// (akıllı arama gerekçeleri, sadece category.js'te kullanılıyor) }.
+// ============================================================
+function cardHTML(p, opts){
+  opts = opts || {};
+  const newIds = opts.newIds instanceof Set ? opts.newIds : new Set(Array.isArray(opts.newIds) ? opts.newIds : []);
+  const reasons = opts.reasons;
+  const color = colorFor(p.cat);
+  const priceEntries = Object.entries(p.specs || {}).filter(([k]) => /fiyat/i.test(k));
+  const otherSpecs = Object.entries(p.specs || {}).filter(([k]) => !/fiyat/i.test(k)).slice(0,3);
+  const isFav = favorites.includes(p.id);
+  const s = scores[p.id];
+  const priceText = priceEntries.length ? priceEntries[0][1] : 'Fiyat bilgisi yok';
+  const rating = (typeof ratingsSummary !== 'undefined' && ratingsSummary[p.id]) ? ratingsSummary[p.id] : null;
+  const reasonsHTML = (Array.isArray(reasons) && reasons.length)
+    ? `<div class="card-reasons" onclick="event.stopPropagation()">
+        <div class="card-reasons-title">Neden öneriyoruz?</div>
+        ${reasons.map(r => `<div class="card-reason-item">✓ ${r}</div>`).join('')}
+      </div>`
+    : '';
+  return `
+  <div class="card">
+    ${newIds.has(p.id) ? '<span class="badge-new">YENİ</span>' : ''}
+    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('${p.id}')" aria-label="${p.name} ürününü favorilere ekle" title="Favorilere ekle">${heartIcon(isFav)}</button>
+    <div class="card-icon" style="background:${color}22;color:${color};">
+      <svg width="24" height="24" viewBox="0 0 24 24">${ICONS[p.cat]||''}</svg>
+    </div>
+    <div class="card-cat">${p.cat} · Çıkış: ${fmtDate(p.addedAt)}</div>
+    <a class="card-name" href="${productUrl(p)}">${p.name}</a>
+    <div class="card-score-price">
+      ${s!=null ? `<span class="card-score" style="color:${scoreColor(s)};">${s}<small>/100</small></span>` : `<span class="card-score card-score-empty">—</span>`}
+      <span class="card-price${priceEntries.length?'':' card-price-empty'}">${priceText}</span>
+    </div>
+    ${rating ? `<div class="card-rating" style="font-size:12px;color:var(--ink-soft);margin:-2px 0 4px;">★ ${rating.average} (${rating.count})</div>` : ''}
+    <div class="card-blurb">${p.blurb||''}</div>
+    <div class="card-specs">${otherSpecs.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
+    ${reasonsHTML}
+    <div class="card-actions">
+      <a class="btn-card-primary" href="${productUrl(p)}">İncele →</a>
+      <label class="compare-check" onclick="event.stopPropagation()">
+        <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
+        Karşılaştır
+      </label>
+    </div>
+    <div class="card-foot">
+      <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>
+      <a class="buy-link" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored" onclick="event.stopPropagation()">Satın Al →</a>
+    </div>
+  </div>`;
+}
+
+// ============================================================
 // Ürün detay sayfaları (urun/*.html) için slug/URL yardımcıları
 // ============================================================
 function slugify(name){

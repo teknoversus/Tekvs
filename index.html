@@ -3885,7 +3885,7 @@ async function renderTrending(){
       : '<p style="font-size:13px;color:var(--bad);grid-column:1/-1;">Görüntülenme verisi şu anda yüklenemedi (bağlantı sorunu olabilir) — sayfayı yenilemeyi dene.</p>';
     return;
   }
-  grid.innerHTML = top.map(p => cardHTML(p, new Set())).join('');
+  grid.innerHTML = top.map(p => cardHTML(p, {})).join('');
 }
 
 // ---- yapay zekâ destekli akıllı arama ----
@@ -3978,43 +3978,9 @@ function toggleFavOnly(){
 // parsePrice/sortProducts/scoreColor/heartIcon artık shared.js'te (Faz 13,
 // 27 Eylül 2026) — category.js ile birebir aynı kopya buradaydı, tekilleştirildi.
 
-function cardHTML(p, newIds){
-  // Savunmaci kontrol: cagiran taraf Set disinda bir sey (false, undefined,
-  // dizi) gonderirse .has() cagrisi TypeError firlatiyordu ve tum bolum
-  // cokuyordu. Artik guvenli bir Set'e normalize ediliyor.
-  if(!(newIds instanceof Set)) newIds = new Set(Array.isArray(newIds) ? newIds : []);
-  const color = colorFor(p.cat);
-  const specEntries = Object.entries(p.specs || {}).slice(0,4);
-  const isFav = favorites.includes(p.id);
-  const s = scores[p.id];
-  return `
-  <div class="card" onclick="openDetail('${p.id}')">
-    ${newIds.has(p.id) ? '<span class="badge-new">YENİ</span>' : ''}
-    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('${p.id}')" title="Favorilere ekle">${heartIcon(isFav)}</button>
-    <div class="card-icon" style="background:${color}22;color:${color};">
-      <svg width="24" height="24" viewBox="0 0 24 24">${ICONS[p.cat]||''}</svg>
-    </div>
-    <div class="card-cat">${p.cat} · Çıkış: ${fmtDate(p.addedAt)}</div>
-    <a class="card-name" href="${productUrl(p)}" onclick="event.stopPropagation()">${p.name}</a>
-    ${s!=null ? `<span class="score-pill" style="background:${scoreColor(s)}22;color:${scoreColor(s)};">Skor: ${s}</span>` : ''}
-    ${ratingsSummary[p.id] ? `<span class="rating-pill" style="font-size:12px;color:var(--ink-soft);margin-left:6px;">★ ${ratingsSummary[p.id].average} (${ratingsSummary[p.id].count})</span>` : ''}
-    <div class="card-blurb">${p.blurb||''}</div>
-    <div class="card-specs">${specEntries.map(([k,v])=>`<span class="spec-pill">${k}: ${v}</span>`).join('')}</div>
-    <div class="card-foot" style="display:flex;flex-direction:column;gap:8px;">
-      <div style="display:flex;gap:8px;align-items:center;">
-        <a class="incele-link" href="${productUrl(p)}" onclick="event.stopPropagation()" style="flex:1;background:#2B6CB0;color:#fff;text-align:center;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">İncele →</a>
-        <label class="compare-check" onclick="event.stopPropagation()" style="white-space:nowrap;">
-          <input type="checkbox" aria-label="${p.name} ürününü karşılaştırmaya ekle" ${selected.has(p.id)?'checked':''} onchange="toggleSelect('${p.id}')" />
-          Karşılaştır
-        </label>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <span class="view-count">${viewCounts[p.id] ? viewCounts[p.id]+' görüntülenme' : ''}</span>
-        <a class="buy-link" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored" onclick="event.stopPropagation()">Satın Al →</a>
-      </div>
-    </div>
-  </div>`;
-}
+// cardHTML() artık shared.js'te (Faz 13, 27 Eylül 2026) — kategori
+// sayfalarıyla aynı, tek bir kart tasarımı kullanılıyor. Bu sayfadaki
+// çağrılar `newIds` Set'ini `{newIds}` opts nesnesiyle iletiyor.
 
 function render(){
   renderChips();
@@ -4022,7 +3988,7 @@ function render(){
   const sortedByDate = [...catalog].sort((a,b)=> new Date(b.addedAt) - new Date(a.addedAt));
   const newIds = new Set(sortedByDate.slice(0, 4).map(p=>p.id));
 
-  document.getElementById('newGrid').innerHTML = sortedByDate.slice(0,4).map(p=>cardHTML(p,newIds)).join('');
+  document.getElementById('newGrid').innerHTML = sortedByDate.slice(0,4).map(p=>cardHTML(p,{newIds})).join('');
 
   let base = catalog;
   if(searchIds){
@@ -4043,7 +4009,7 @@ function render(){
   const pageItems = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
 
   document.getElementById('mainGrid').innerHTML = pageItems.length
-    ? pageItems.map(p=>cardHTML(p,newIds)).join('')
+    ? pageItems.map(p=>cardHTML(p,{newIds})).join('')
     : '<p style="color:var(--ink-soft);font-size:14px;">Bu aramaya, kategoriye veya filtreye uygun ürün bulunamadı.</p>';
 
   renderKatalogPagination(totalPages);

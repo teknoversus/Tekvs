@@ -24,14 +24,251 @@ const PAGE_SIZE = 24;
 let lastSearchCriteria = null; // Faz 6B: gerekçe motoru için, index.html ile aynı mekanizma
 let detailChart = null;
 
+// Faz 14: fiyat aralığı + marka filtreleri. HTML'deki #priceMinInput,
+// #priceMaxInput, #brandFilterChips, applyPriceFilter()/clearAllFilters()
+// onclick'leri zaten vardı ama arkalarında hiçbir implementasyon yoktu
+// (çağrıldıklarında sessizce "function is not defined" hatası veriyorlardı) —
+// burada gerçek işlevleri eklendi.
+let priceMin = null;
+let priceMax = null;
+let activeBrands = new Set();
+
+// Faz 14: kart/tablo görünüm anahtarı. Tablo, aynı filtrelenmiş/sıralanmış
+// veriyi (mevcut sortSelect + fiyat/marka filtreleri) tablo halinde gösterir —
+// ayrı bir sıralama/filtre motoru YOK, tek kaynak (`render()`daki `base`)
+// korunuyor.
+let viewMode = 'grid';
+
 async function init(){
   products = await loadSharedProducts();
   scores = computeScores(products);
   favorites = await getFavorites();
   handleShareLinkFromURL();
   renderCatNav();
+  renderBrandChips();
+  injectViewToggle();
+  injectFinder();
   render();
   renderRecentlyViewedInto('recentlyViewedStrip', products, null);
+}
+
+// ============================================================
+// Faz 14: Ürün Bulucu (mini anket). index.html'deki "Bana Uygun Ürünü Bul"
+// akışıyla AYNI mantık (bütçe terzili + öncelik sıralaması) — kategori
+// sayfasında kategori zaten sabit olduğu için 1. adım (kategori seçimi)
+// atlanıyor, doğrudan bütçe sorusuyla başlıyor. Önceden kategori
+// sayfalarındaki "Bulucu" linki kullanıcıyı index.html'e yönlendirip
+// kategori bağlamını kaybettiriyordu (index.html?finder=1 kategori
+// bilgisi taşımıyordu) — artık sayfadan hiç çıkmadan, doğrudan bu
+// kategorinin ürünleri arasında çalışıyor.
+// ============================================================
+let finderState = { budget: null, priority: null };
+
+function injectFinder(){
+  if(document.getElementById('finderOverlay')) return;
+  const overlay = document.createElement('div');
+  overlay.className = 'finder-overlay';
+  overlay.id = 'finderOverlay';
+  overlay.innerHTML = `
+  <div class="finder-box">
+    <div class="modal-head" style="margin-bottom:10px;">
+      <h3>${CATEGORY_FIXED} — Bana Uygun Ürünü Bul</h3>
+      <button class="modal-close" onclick="closeFinder()">×</button>
+    </div>
+    <div class="finder-step active" data-step="2">
+      <p style="font-size:13.5px;color:var(--ink-soft);margin-bottom:14px;">Bütçen nasıl?</p>
+      <button class="finder-opt" onclick="finderSetBudget('low')">Uygun fiyatlı — bütçe öncelikli</button>
+      <button class="finder-opt" onclick="finderSetBudget('mid')">Orta seviye — dengeli</button>
+      <button class="finder-opt" onclick="finderSetBudget('high')">Bütçe önemli değil — en iyisi</button>
+    </div>
+    <div class="finder-step" data-step="3">
+      <p style="font-size:13.5px;color:var(--ink-soft);margin-bottom:14px;">Senin için en önemlisi ne?</p>
+      <button class="finder-opt" onclick="finderSetPriority('score')">Genel fiyat/performans</button>
+      <button class="finder-opt" onclick="finderSetPriority('new')">En güncel model</button>
+      <button class="finder-opt" onclick="finderSetPriority('popular')">En çok tercih edilen</button>
+    </div>
+    <div class="finder-step" data-step="4">
+      <p style="font-size:13.5px;color:var(--ink-soft);margin-bottom:14px;">Sana en uygun olanlar:</p>
+      <div id="finderResults"></div>
+      <button class="btn btn-outline" style="margin-top:6px;" onclick="resetFinder()">Baştan başla</button>
+    </div>
+  </div>`;
+  document.body.appendChild(overlay);
+
+  // Sayfadaki mevcut "Bulucu" linkini (nav'da index.html?finder=1'e giden)
+  // yakalayıp yerinde açılan bu anketle değiştir — kategori bağlamı korunur.
+  document.querySelectorAll('a[href="index.html?finder=1"]').forEach(a => {
+    a.addEventListener('click', e => { e.preventDefault(); openFinder(); });
+  });
+}
+
+function openFinder(){
+  finderState = { budget: null, priority: null };
+  goToFinderStep(2);
+  document.getElementById('finderOverlay').classList.add('open');
+}
+function closeFinder(){
+  document.getElementById('finderOverlay').classList.remove('open');
+}
+function resetFinder(){ openFinder(); }
+
+function goToFinderStep(n){
+  document.querySelectorAll('.finder-step').forEach(el => el.classList.toggle('active', el.getAttribute('data-step') == n));
+}
+
+function finderSetBudget(b){ finderState.budget = b; goToFinderStep(3); }
+
+async function finderSetPriority(p){
+  finderState.priority = p;
+  goToFinderStep(4);
+
+  let pool = categoryProducts();
+
+  if(finderState.budget && pool.length >= 3){
+    const withPrice = pool.map(prod => ({ p: prod, val: parsePrice(prod) }))
+      .filter(x => x.val != null).sort((a,b) => a.val - b.val);
+    if(withPrice.length >= 3){
+      const third = Math.ceil(withPrice.length/3);
+      let slice;
+      if(finderState.budget === 'low') slice = withPrice.slice(0, third);
+      else if(finderState.budget === 'high') slice = withPrice.slice(-third);
+      else slice = withPrice.slice(third, withPrice.length-third).length ? withPrice.slice(third, withPrice.length-third) : withPrice;
+      pool = slice.map(x => x.p);
+    }
+  }
+
+  let sorted;
+  if(finderState.priority === 'new'){
+    sorted = [...pool].sort((a,b) => new Date(b.addedAt)-new Date(a.addedAt));
+  } else if(finderState.priority === 'popular'){
+    const counts = await getAllViewCounts(pool);
+    sorted = [...pool].sort((a,b) => (counts[b.id]||0)-(counts[a.id]||0));
+  } else {
+    sorted = [...pool].sort((a,b) => (scores[b.id]||0)-(scores[a.id]||0));
+  }
+
+  const results = sorted.slice(0,3);
+  const box = document.getElementById('finderResults');
+  if(!results.length){
+    box.innerHTML = '<p style="font-size:13px;color:var(--ink-soft);">Bu kritere uyan ürün bulunamadı, biraz daha geniş seçim dene.</p>';
+    return;
+  }
+  box.innerHTML = results.map(p => `
+    <a class="finder-result-card" href="${productUrl(p)}">
+      <div style="font-weight:700;font-size:14.5px;">${p.name}</div>
+      <div style="font-size:12px;color:var(--ink-soft);margin-top:2px;">${p.cat}${scores[p.id]!=null ? ' · Skor: '+scores[p.id] : ''}</div>
+    </a>`).join('');
+}
+
+function categoryProducts(){
+  return products.filter(p => !p.upcoming && p.cat === CATEGORY_FIXED);
+}
+
+function renderBrandChips(){
+  const el = document.getElementById('brandFilterChips');
+  if(!el) return;
+  const brands = [...new Set(categoryProducts().map(brandFor))].sort((a,b)=>a.localeCompare(b,'tr'));
+  el.innerHTML = brands.map(b => `<button type="button" class="chip-filter${activeBrands.has(b)?' active':''}" onclick="toggleBrand('${b.replace(/'/g,"\\'")}')">${b}</button>`).join('') || '<span style="font-size:12.5px;color:var(--ink-soft);">Marka bilgisi yok</span>';
+}
+
+function toggleBrand(brand){
+  if(activeBrands.has(brand)) activeBrands.delete(brand); else activeBrands.add(brand);
+  currentPage = 1;
+  renderBrandChips();
+  render();
+}
+
+function applyPriceFilter(){
+  const minV = parseFloat(document.getElementById('priceMinInput').value);
+  const maxV = parseFloat(document.getElementById('priceMaxInput').value);
+  priceMin = isNaN(minV) ? null : minV;
+  priceMax = isNaN(maxV) ? null : maxV;
+  currentPage = 1;
+  render();
+}
+
+function clearAllFilters(){
+  priceMin = null; priceMax = null;
+  activeBrands.clear();
+  favOnly = false;
+  searchIds = null;
+  lastSearchCriteria = null;
+  currentPage = 1;
+  const minEl = document.getElementById('priceMinInput'); if(minEl) minEl.value = '';
+  const maxEl = document.getElementById('priceMaxInput'); if(maxEl) maxEl.value = '';
+  const favBtn = document.getElementById('favToggle'); if(favBtn) favBtn.classList.remove('active');
+  const searchInput = document.getElementById('searchInput'); if(searchInput) searchInput.value = '';
+  const statusEl = document.getElementById('searchStatus'); if(statusEl) statusEl.innerHTML = '';
+  renderBrandChips();
+  render();
+}
+
+// Kart gridinin hemen üstüne "Kart / Tablo" görünüm anahtarı ve tablonun
+// kendi konteynerini ekler — 7 kategori sayfasının statik HTML'i elle
+// DEĞİŞTİRİLMEDEN (her sayfada birebir aynı olduğu için tek noktadan,
+// JS'ten) enjekte edilir.
+function injectViewToggle(){
+  const grid = document.getElementById('mainGrid');
+  if(!grid || document.getElementById('viewToggle')) return;
+  const toggle = document.createElement('div');
+  toggle.id = 'viewToggle';
+  toggle.style.cssText = 'display:flex;gap:6px;margin:10px 0;';
+  toggle.innerHTML = `
+    <button type="button" class="btn btn-outline btn-sm active" id="viewToggleGrid" onclick="setViewMode('grid')">▦ Kart</button>
+    <button type="button" class="btn btn-outline btn-sm" id="viewToggleTable" onclick="setViewMode('table')">☰ Tablo</button>
+  `;
+  grid.parentNode.insertBefore(toggle, grid);
+  const tableWrap = document.createElement('div');
+  tableWrap.id = 'tableView';
+  tableWrap.style.display = 'none';
+  tableWrap.style.overflowX = 'auto';
+  grid.parentNode.insertBefore(tableWrap, grid.nextSibling);
+}
+
+function setViewMode(mode){
+  viewMode = mode;
+  document.getElementById('viewToggleGrid').classList.toggle('active', mode==='grid');
+  document.getElementById('viewToggleTable').classList.toggle('active', mode==='table');
+  document.getElementById('mainGrid').style.display = mode==='grid' ? '' : 'none';
+  document.getElementById('tableView').style.display = mode==='table' ? '' : 'none';
+  render();
+}
+
+// Tablodaki tüm ürünlerin spec sütunlarının birleşimini değil, kategori
+// genelinde en yaygın (en çok üründe dolu) ilk birkaç spec'i seçer — aksi
+// halde tablo çok geniş/boş hücre dolu olurdu.
+function topSpecKeys(list, n){
+  const counts = {};
+  list.forEach(p => Object.keys(p.specs||{}).forEach(k => {
+    if(/fiyat/i.test(k)) return;
+    counts[k] = (counts[k]||0) + 1;
+  }));
+  return Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,n).map(x=>x[0]);
+}
+
+function renderTable(list){
+  const el = document.getElementById('tableView');
+  if(!el) return;
+  if(!list.length){ el.innerHTML = ''; return; }
+  const specKeys = topSpecKeys(list, 3);
+  const rows = list.map(p => {
+    const price = parsePrice(p);
+    return `<tr onclick="openDetail('${p.id}')" style="cursor:pointer;">
+      <td style="padding:8px 10px 8px 0;font-weight:600;">${p.name}</td>
+      <td style="padding:8px 10px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;">${price ? price.toLocaleString('tr-TR')+' ₺' : '—'}</td>
+      <td style="padding:8px 10px;font-family:'IBM Plex Mono',monospace;color:${scoreColor(scores[p.id]||0)};">${scores[p.id] ?? '—'}</td>
+      ${specKeys.map(k => `<td style="padding:8px 10px;font-size:12.5px;color:var(--ink-soft);">${(p.specs||{})[k] ?? '—'}</td>`).join('')}
+    </tr>`;
+  }).join('');
+  el.innerHTML = `<table class="detail-specs-table" style="width:100%;min-width:520px;">
+    <thead><tr style="text-align:left;border-bottom:1.5px solid var(--line-strong);">
+      <th style="padding:8px 10px 8px 0;">Ürün</th>
+      <th style="padding:8px 10px;">Fiyat</th>
+      <th style="padding:8px 10px;">Skor</th>
+      ${specKeys.map(k => `<th style="padding:8px 10px;">${k}</th>`).join('')}
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
 }
 
 function renderCatNav(){
@@ -119,6 +356,9 @@ function render(){
     base = sortProducts(base);
   }
   if(favOnly) base = base.filter(p => favorites.includes(p.id));
+  if(priceMin != null) base = base.filter(p => { const v = parsePrice(p); return v != null && v >= priceMin; });
+  if(priceMax != null) base = base.filter(p => { const v = parsePrice(p); return v != null && v <= priceMax; });
+  if(activeBrands.size) base = base.filter(p => activeBrands.has(brandFor(p)));
 
   // Faz 11C: filtrele/sırala TAMAMLANDIKTAN sonra sayfala — DOM'a hiçbir
   // zaman tüm kategori değil, sadece aktif sayfanın PAGE_SIZE kadar
@@ -137,6 +377,8 @@ function render(){
         { reasons: searchIds ? generateRecommendationReasons(p, lastSearchCriteria, scores[p.id]) : null }
       )).join('')
     : '<p style="color:var(--ink-soft);font-size:14px;">Bu aramaya veya filtreye uygun ürün bulunamadı.</p>';
+
+  if(viewMode === 'table') renderTable(pageItems);
 
   renderPagination(totalPages, base.length);
   updateCompareBar();
@@ -317,7 +559,7 @@ async function openDetail(id){
     </div>
     <div class="chart-wrap">
       <canvas id="priceChart" height="140"></canvas>
-      <div class="chart-note">Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.</div>
+      <div class="chart-note" id="chartNote">Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.</div>
     </div>
     <h4 style="font-size:14px;margin-bottom:4px;">Bunlara da bak</h4>
     <div class="similar-row">
@@ -327,8 +569,14 @@ async function openDetail(id){
   document.getElementById('detailOverlay').classList.add('show');
   render();
 
-  const hist = generatePriceHistory(p);
+  const hist = await getPriceHistory(p);
   if(detailChart){ detailChart.destroy(); detailChart = null; }
+  const noteEl = document.getElementById('chartNote');
+  if(noteEl && hist){
+    noteEl.textContent = hist.isReal
+      ? 'Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.'
+      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.';
+  }
   if(hist && window.Chart){
     const ctx = document.getElementById('priceChart').getContext('2d');
     detailChart = new Chart(ctx, {

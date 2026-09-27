@@ -637,6 +637,19 @@ async function loadRealPriceHistory(productId){
   };
 }
 
+// Fiyat geçmişi grafiği için tek giriş noktası: önce Supabase'deki GERÇEK
+// price_history verisini dener (haftalık kaydedilir), yeterli veri yoksa
+// (2'den az farklı gün) temsili/simüle edilmiş veriye düşer. Çağıran taraf
+// dönen { isReal } alanına bakarak grafiğin altındaki notu buna göre
+// yazdırmalı — gerçek veri varken "temsilidir" demek yanıltıcı olurdu,
+// veri yokken "gerçek veriye dayanır" demek de öyle.
+async function getPriceHistory(product){
+  const real = await loadRealPriceHistory(product.id);
+  if(real) return real;
+  const sim = generatePriceHistory(product);
+  return sim ? Object.assign(sim, { isReal: false }) : null;
+}
+
 function generatePriceHistory(product){
   const specs = product.specs || {};
   const priceKey = Object.keys(specs).find(k => /fiyat/i.test(k));
@@ -683,6 +696,15 @@ function fmtDate(iso){
 // içindeki `scores`/`favorites` gibi — aynı örtük paylaşılan-global
 // deseniyle çalışıyor).
 // ============================================================
+// Marka çıkarımı — lib/generate-site.js'teki sunucu tarafı mantığıyla
+// BİREBİR AYNI (tek istisna listesi burada tutulur, kart/tablo/filtre
+// gibi istemci tarafı kullanımlar için).
+const BRAND_EXCEPTIONS = { 'iphone':'Apple', 'macbook':'Apple', 'airpods':'Apple' };
+function brandFor(p){
+  const firstWord = (p.name.split(' ')[0] || '').toLowerCase();
+  return BRAND_EXCEPTIONS[firstWord] || p.name.split(' ')[0];
+}
+
 function parsePrice(p){
   const specs = p.specs || {};
   const key = Object.keys(specs).find(k=>/fiyat/i.test(k));

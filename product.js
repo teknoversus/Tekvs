@@ -64,8 +64,14 @@ async function initProductPage(){
     scoreEl.style.display = 'inline-block';
   }
 
-  const hist = generatePriceHistory(p);
+  const hist = await getPriceHistory(p);
   const canvas = document.getElementById('priceChart');
+  const noteEl = document.getElementById('chartNote');
+  if(noteEl && hist){
+    noteEl.textContent = hist.isReal
+      ? 'Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.'
+      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.';
+  }
   if(hist && canvas && window.Chart){
     const color = colorFor(p.cat);
     const ctx = canvas.getContext('2d');

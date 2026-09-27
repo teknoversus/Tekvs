@@ -4227,7 +4227,7 @@ async function openDetail(id){
     </div>
     <div class="chart-wrap">
       <canvas id="priceChart" height="140"></canvas>
-      <div class="chart-note">Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.</div>
+      <div class="chart-note" id="chartNote">Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.</div>
     </div>
     <h4 style="font-size:14px;margin-bottom:4px;">Bunlara da bak</h4>
     <div class="similar-row">
@@ -4237,8 +4237,14 @@ async function openDetail(id){
   document.getElementById('detailOverlay').classList.add('show');
   render(); // görüntülenme sayısını kartlarda da yansıt
 
-  const hist = generatePriceHistory(p);
+  const hist = await getPriceHistory(p);
   if(detailChart){ detailChart.destroy(); detailChart = null; }
+  const noteEl = document.getElementById('chartNote');
+  if(noteEl && hist){
+    noteEl.textContent = hist.isReal
+      ? 'Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.'
+      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.';
+  }
   if(hist && window.Chart){
     const ctx = document.getElementById('priceChart').getContext('2d');
     detailChart = new Chart(ctx, {

@@ -673,6 +673,50 @@ function fmtDate(iso){
 }
 
 // ============================================================
+// Kart render yardımcıları — 27 Eylül 2026 (Faz 13) öncesinde index.html
+// ve category.js'in her ikisinde de BİREBİR AYNI kopyalanmış haldeydi
+// (kopyala-yapıştır); biri değişince diğerinin unutulması riski vardı.
+// Artık tek kaynak burası. sortProducts() bilerek çağıran sayfanın kendi
+// üst-seviye `sortMode`/`scores`/`viewCounts` değişkenlerine bakıyor —
+// hem index.html hem category.js bu isimlerle aynı state'i tutuyor, bu
+// yüzden davranış değişmedi (diğer paylaşılan fonksiyonlar da — cardHTML
+// içindeki `scores`/`favorites` gibi — aynı örtük paylaşılan-global
+// deseniyle çalışıyor).
+// ============================================================
+function parsePrice(p){
+  const specs = p.specs || {};
+  const key = Object.keys(specs).find(k=>/fiyat/i.test(k));
+  if(!key) return null;
+  const n = parseFloat((specs[key]||'').toString().replace(/[^\d.,]/g,'').replace(',','.'));
+  return isNaN(n) ? null : n;
+}
+
+function sortProducts(list){
+  const arr = [...list];
+  switch(sortMode){
+    case 'date_desc': return arr.sort((a,b)=> new Date(b.addedAt)-new Date(a.addedAt));
+    case 'date_asc': return arr.sort((a,b)=> new Date(a.addedAt)-new Date(b.addedAt));
+    case 'price_asc': return arr.sort((a,b)=> (parsePrice(a)??Infinity) - (parsePrice(b)??Infinity));
+    case 'price_desc': return arr.sort((a,b)=> (parsePrice(b)??-Infinity) - (parsePrice(a)??-Infinity));
+    case 'views_desc': return arr.sort((a,b)=> (viewCounts[b.id]||0) - (viewCounts[a.id]||0));
+    case 'score_desc':
+    default: return arr.sort((a,b)=> (scores[b.id]||0) - (scores[a.id]||0));
+  }
+}
+
+function scoreColor(s){
+  if(s>=70) return 'var(--good)';
+  if(s>=40) return 'var(--mid)';
+  return 'var(--bad)';
+}
+
+function heartIcon(filled){
+  return filled
+    ? `<svg viewBox="0 0 24 24" fill="#B23A5C"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg>`;
+}
+
+// ============================================================
 // Ürün detay sayfaları (urun/*.html) için slug/URL yardımcıları
 // ============================================================
 function slugify(name){

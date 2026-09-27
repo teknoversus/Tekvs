@@ -59,6 +59,35 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
       # ============================================================
+      # GEÇİCİ TEŞHİS ADIMI #2 — 27 Eylül 2026, /karsilastir/ 404 kök nedeni.
+      # Actions ham logları bu ortamdan okunamıyor, bu yüzden teşhis çıktısını
+      # doğrudan siteye (FTP exclude listesinde olmayan bir .txt dosyasına)
+      # yazıp buradan HTTP ile okuyoruz. Sorun netleştikten sonra kaldırılacak.
+      # ============================================================
+      - name: "[GEÇİCİ] Karşılaştırma üretim teşhisini siteye yaz"
+        run: |
+          {
+            echo "build zamanı (UTC): $(date -u)"
+            echo "commit: ${{ github.sha }}"
+            echo ""
+            echo "=== karsilastir/ klasöründeki dosya sayısı ==="
+            ls karsilastir 2>/dev/null | wc -l || echo "KLASÖR YOK"
+            echo ""
+            echo "=== sitemap.xml içindeki karsilastir/ URL sayısı ==="
+            grep -c "karsilastir/" sitemap.xml || echo 0
+            echo ""
+            echo "=== sitemap.xml toplam boyutu ==="
+            wc -c < sitemap.xml
+            echo ""
+            echo "=== karsilastir/ klasöründen 5 örnek dosya adı ==="
+            ls karsilastir 2>/dev/null | head -5 || echo "YOK"
+            echo ""
+            echo "=== karsilastirmalar.html içindeki karsilastir/ link sayısı ==="
+            grep -o 'karsilastir/[a-zA-Z0-9_.-]*\.html' karsilastirmalar.html 2>/dev/null | sort -u | wc -l
+          } > _deploy_debug.txt
+          cat _deploy_debug.txt
+
+      # ============================================================
       # GEÇİCİ TEŞHİS ADIMI — Faz 8 sitemap kök neden araştırması içindir.
       # Sorun netleştikten sonra bu adım workflow'dan kaldırılabilir.
       # Amaç: build.js'in ürettiği sitemap.xml'in GERÇEK içeriğini,

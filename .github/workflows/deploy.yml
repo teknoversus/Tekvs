@@ -11,11 +11,31 @@ on:
     types: [supabase-update]
   workflow_dispatch: {}
 
-# Aynı anda birden fazla tetikleme gelirse (örn. admin panelinden art arda birkaç
-# ürün eklenirse), sadece en son çalışmayı tamamla — öncekileri iptal et.
+# 27 Eylül 2026 kök neden analizi: Supabase webhook'u products tablosunda HER
+# satır değişikliğinde (insert/update/delete) AYRI AYRI dispatch gönderiyor —
+# debounce/batch yok. Toplu bir güncelleme (örn. tüm ürünlerin fiyatının
+# yenilendiği bir işlem) saniyeler içinde onlarca dispatch'e yol açabiliyor
+# (örn. 27 Eylül 16:24:45-50 arası, 5 saniyede 40+ run tetiklendi).
+#
+# ESKİ AYAR (cancel-in-progress: true) bu senaryoda YIKICI: her yeni webhook,
+# hâlâ FTP transferi yapmakta olan bir önceki run'ı ORTASINDA öldürüyordu.
+# FTP transferi atomik değil — iptal edilen bir run, sunucuda YARIM KALMIŞ,
+# tutarsız bir dosya durumu bırakıyor (bazı dosyalar güncel, bazıları eski/
+# eksik). GitHub Actions geçmişinde bu yüzden bazı commit'lerde 80 run'dan
+# sadece 2'si tamamlanabilmiş — 78'i FTP transferi sırasında kesilmiş.
+# Bu, canlı sitede /karsilastir/ sayfalarının çoğunun 404 vermesinin VE
+# sitemap.xml'in eksik kalmasının doğrudan nedeniydi (AdSense'in "yapısal
+# istikrar yok / düşük değerli içerik" tespitiyle örtüşüyor).
+#
+# YENİ AYAR (cancel-in-progress: false): çalışan bir run artık ASLA
+# öldürülmüyor, güvenle bitiyor. Bu sırada gelen yeni tetiklemeler kuyruğa
+# alınır — GitHub bu concurrency group için aynı anda sadece TEK bir run'ı
+# kuyrukta tutar, art arda gelen fazla tetiklemeler otomatik olarak
+# birbirinin yerine geçer (en güncel olan kuyrukta kalır). Sonuç: FTP
+# transferi asla yarıda kesilmez, ama site yine de en güncel veriyle biter.
 concurrency:
   group: teknoversus-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:

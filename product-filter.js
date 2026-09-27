@@ -45,7 +45,15 @@ function pfGetPrice(p){
   const raw = p.specs && p.specs['Fiyat (₺)'];
   if(raw == null) return null;
   const n = parseFloat(String(raw).replace(/[^\d.]/g, ''));
-  return Number.isFinite(n) ? n : null;
+  // BUG DÜZELTMESİ (27 Eylül 2026): shared.js'teki computeScores() ile AYNI
+  // sorun buradaydı — fiyatı "0" (bozuk/eksik veriden kaynaklanan) olan bir
+  // ürün geçerli bir sayı (0) olarak dönüyordu. Bunun etkisi: bütçe
+  // filtresinde (budget_max) her sorguyu geçiyor ve en ucuz ürün gibi öne
+  // çıkıyor; pfStudentScore() içindeki min-max normalizasyonunda da bu ürün
+  // yapay olarak "min fiyat" oluyor ve aynı kategorideki diğer ürünlerin
+  // fiyat alt-skorunu bozuyor. Artık 0 ve altı fiyatlar da "bilinmiyor"
+  // (null) sayılıyor — hiç fiyat girilmemiş ürün gibi davranıyor.
+  return (Number.isFinite(n) && n > 0) ? n : null;
 }
 
 function pfGetNumericSpec(p, key){

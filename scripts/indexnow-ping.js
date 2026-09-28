@@ -28,6 +28,25 @@ function extractSitemapUrls(rootDir){
   const sitemapPath = path.join(rootDir, 'sitemap.xml');
   if(!fs.existsSync(sitemapPath)) return [];
   const xml = fs.readFileSync(sitemapPath, 'utf8');
+
+  // 28 Eylül 2026: sitemap.xml artık (WAF'ın büyük yanıtları kesmesi nedeniyle)
+  // gerçek sayfa URL'lerini değil, parça dosyalarını (sitemap-1.xml, sitemap-2.xml, ...)
+  // listeleyen bir "sitemap index" olabiliyor (bkz. lib/split-sitemap.js). Bu
+  // durumda her parçayı yerelde okuyup içindeki GERÇEK sayfa URL'lerini topluyoruz.
+  if(xml.includes('<sitemapindex')){
+    const chunkLocs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+    const urls = [];
+    chunkLocs.forEach(loc => {
+      const fileName = loc.split('/').pop();
+      const chunkPath = path.join(rootDir, fileName);
+      if(fs.existsSync(chunkPath)){
+        const chunkXml = fs.readFileSync(chunkPath, 'utf8');
+        urls.push(...[...chunkXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]));
+      }
+    });
+    return urls;
+  }
+
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
 }
 

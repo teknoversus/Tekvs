@@ -22,8 +22,10 @@ haberler/
 
 # --- Üretilen tekil dosyalar ---
 sitemap.xml
+sitemap-*.xml
 haberler.xml
 karsilastirmalar.html
+karsilastirmalar-*.html
 yakinda-cikacak.html
 
 # --- Bağımlılıklar / yerel ---

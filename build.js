@@ -28,6 +28,7 @@ const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-kars
 const { generateLandingPages } = require('./lib/generate-landing-pages');
 const { generateFiyatPerformansIndeksi } = require('./lib/generate-fiyat-performans-indeksi');
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
+const { splitSitemap } = require('./lib/split-sitemap');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -206,6 +207,12 @@ async function main(){
 
   console.log('→ Fiyat/Performans İndeksi (linkable asset) üretiliyor...');
   generateFiyatPerformansIndeksi({ products, computeScores: helpers.computeScores, productSlug: helpers.productSlug, rootDir });
+
+  // ---- sitemap.xml'i WAF limiti altında kalacak parçalara böl ----
+  // TÜM generate-*.js modülleri sitemap.xml'i tamamladıktan sonra, en son adım
+  // olarak çalışmalı (bkz. lib/split-sitemap.js'teki kök neden açıklaması).
+  console.log('→ sitemap.xml parçalara bölünüyor (hosting WAF limiti için)...');
+  splitSitemap({ rootDir });
 
   // ---- IndexNow bildirimi ----
   // Sitemap tamamen üretildikten sonra Bing/Yandex'e "işte güncel URL

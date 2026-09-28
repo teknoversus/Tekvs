@@ -105,26 +105,47 @@ jobs:
       # BAŞARISIZ işaretler — böylece sessiz bir FTP başarısızlığı bir daha
       # fark edilmeden geçmez.
       # ============================================================
-      - name: Deploy sonrası doğrulama (sitemap.xml boyut kontrolü)
+      - name: Deploy sonrası doğrulama (sitemap.xml / sitemap-1.xml boyut kontrolü)
         run: |
-          LOCAL_SIZE=$(wc -c < sitemap.xml)
-          echo "Yerel (build'in ürettiği) sitemap.xml boyutu: $LOCAL_SIZE byte"
+          # 28 Eylül 2026: sitemap.xml artık (WAF'ın büyük yanıtları kesmesi nedeniyle,
+          # bkz. lib/split-sitemap.js) küçük bir "sitemap index" dosyası — asıl URL
+          # verisini taşıyan sitemap-1.xml (varsa) ile birlikte ikisini de kontrol ediyoruz.
+          check_file () {
+            local FILE="$1"
+            if [ ! -f "$FILE" ]; then
+              echo "→ $FILE yerelde yok, atlanıyor."
+              return 0
+            fi
+            local LOCAL_SIZE
+            LOCAL_SIZE=$(wc -c < "$FILE")
+            echo "Yerel $FILE boyutu: $LOCAL_SIZE byte"
 
-          LIVE_SIZE=$(curl -sS -o /tmp/live-sitemap.xml -w "%{size_download}" "https://teknoversus.com.tr/sitemap.xml?cachebust=$(date +%s)" || echo "0")
-          echo "Canlı sitemap.xml boyutu: $LIVE_SIZE byte"
+            local LIVE_SIZE
+            LIVE_SIZE=$(curl -sS -o /tmp/live-check.xml -w "%{size_download}" "https://teknoversus.com.tr/$FILE?cachebust=$(date +%s)" || echo "0")
+            echo "Canlı $FILE boyutu: $LIVE_SIZE byte"
 
-          if [ "$LIVE_SIZE" -eq 0 ]; then
-            echo "::error::Canlı sitemap.xml hiç indirilemedi — site erişilemez olabilir."
+            if [ "$LIVE_SIZE" -eq 0 ]; then
+              echo "::error::Canlı $FILE hiç indirilemedi — site erişilemez olabilir."
+              return 1
+            fi
+
+            # %20'den fazla küçükse (FTP eksik/kısmi yüklemiş veya WAF kesmiş olabilir) uyar ve başarısız say.
+            local DIFF_PERCENT=$(( (LOCAL_SIZE - LIVE_SIZE) * 100 / LOCAL_SIZE ))
+            echo "Fark yüzdesi: %$DIFF_PERCENT (yerelin canlıdan ne kadar büyük olduğu)"
+
+            if [ "$DIFF_PERCENT" -gt 20 ]; then
+              echo "::error::Canlı $FILE, build'in ürettiğinden çok daha küçük (%$DIFF_PERCENT fark). FTP yüklemesi eksik kalmış ya da hosting WAF'ı yanıtı kesiyor olabilir — deploy'u başarısız işaretliyorum."
+              return 1
+            fi
+
+            echo "✅ Canlı $FILE, build çıktısıyla makul ölçüde eşleşiyor."
+            return 0
+          }
+
+          FAILED=0
+          check_file "sitemap.xml" || FAILED=1
+          check_file "sitemap-1.xml" || FAILED=1
+
+          if [ "$FAILED" -eq 1 ]; then
             exit 1
           fi
-
-          # %20'den fazla küçükse (FTP eksik/kısmi yüklemiş olabilir) uyar ve başarısız say.
-          DIFF_PERCENT=$(( (LOCAL_SIZE - LIVE_SIZE) * 100 / LOCAL_SIZE ))
-          echo "Fark yüzdesi: %$DIFF_PERCENT (yerelin canlıdan ne kadar büyük olduğu)"
-
-          if [ "$DIFF_PERCENT" -gt 20 ]; then
-            echo "::error::Canlı sitemap.xml, build'in ürettiğinden çok daha küçük (%$DIFF_PERCENT fark). FTP yüklemesi eksik kalmış olabilir — deploy'u başarısız işaretliyorum, lütfen 'FTP ile hosting'e yükle' adımının verbose logunu kontrol edin."
-            exit 1
-          fi
-
-          echo "✅ Canlı sitemap.xml, build çıktısıyla makul ölçüde eşleşiyor."

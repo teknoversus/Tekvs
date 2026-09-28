@@ -3764,7 +3764,6 @@
   </div>
 </div>
 
-<script src="shared.js"></script>
 <script>
 
 let products = []; // init() az sonra gerçek veriyle dolduracak
@@ -4333,33 +4332,57 @@ async function finderSetPriority(p){
 
 function resetFinder(){ openFinder(); }
 
-// 28 Eylül 2026: hosting WAF'ı shared.js yanıtını ara sıra (büyük ihtimalle
-// sayfa yüklenirken oluşan eşzamanlı istek yoğunluğuna bağlı olarak) yarıda
-// kesiyor — bu da cardHTML gibi dosya sonuna yakın tanımların hiç
-// çalışmamasına, dolayısıyla kategori filtrelerinin/ürün kartlarının
-// görünmemesine yol açabiliyor. init() çağırmadan önce shared.js'in
-// TAMAMEN yüklendiğini doğruluyoruz; değilse sayfayı otomatik yeniden
-// yükleyip düzelmesini sağlamayı deniyoruz (en fazla 2 kez).
+// 28 Eylül 2026: hosting WAF'ı shared.js yanıtını (dosya boyutundan bağımsız,
+// büyük ihtimalle sayfa yüklenirken oluşan eşzamanlı istek yoğunluğuna bağlı
+// olarak) ara sıra yarıda kesiyor — bu da cardHTML gibi dosya sonuna yakın
+// tanımların hiç çalışmamasına, dolayısıyla kategori filtrelerinin/ürün
+// kartlarının görünmemesine yol açabiliyor. Bu yüzden shared.js'i sayfanın
+// EN BAŞINDA statik <script src> ile DEĞİL, sayfanın diğer tüm kaynakları
+// (görsel/reklam/CSS) bittikten SONRA (window 'load') dinamik olarak
+// yüklüyoruz — canlı ortamda izole istekler bu şekilde güvenilir şekilde
+// tam geliyor (yoğun eşzamanlı yük yokken). Yine de eksik gelirse sayfayı
+// otomatik yeniden yüklemeyi dener (en fazla 2 kez, sonsuz döngü koruması
+// sessionStorage ile).
 (function(){
+  function tvInjectScript(src){
+    return new Promise(function(resolve){
+      var s = document.createElement('script');
+      s.src = src;
+      s.onload = function(){ resolve(true); };
+      s.onerror = function(){ resolve(false); };
+      document.head.appendChild(s);
+    });
+  }
   function tvSharedLoaded(){
     return !!(window.__tvLoaded && window.__tvLoaded.shared && typeof cardHTML === 'function');
   }
-  if(tvSharedLoaded()){
-    init();
-    renderCookieBanner('gizlilik-politikasi.html');
-    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
-    return;
-  }
-  var attempts = 0;
-  try{ attempts = parseInt(sessionStorage.getItem('tvReloadAttempts')||'0',10); }catch(e){}
-  if(attempts < 2){
-    try{ sessionStorage.setItem('tvReloadAttempts', String(attempts+1)); }catch(e){}
-    location.reload();
-  }else{
-    console.error('TeknoVersus: shared.js tekrar denemelere rağmen eksik yüklendi, kısmi işlevsellikle devam ediliyor.');
-    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+  function tvFinish(){
     if(typeof init === 'function') init();
     if(typeof renderCookieBanner === 'function') renderCookieBanner('gizlilik-politikasi.html');
+  }
+  function tvBoot(){
+    tvInjectScript('shared.js').then(function(){
+      if(tvSharedLoaded()){
+        try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+        tvFinish();
+        return;
+      }
+      var attempts = 0;
+      try{ attempts = parseInt(sessionStorage.getItem('tvReloadAttempts')||'0',10); }catch(e){}
+      if(attempts < 2){
+        try{ sessionStorage.setItem('tvReloadAttempts', String(attempts+1)); }catch(e){}
+        location.reload();
+      }else{
+        console.error('TeknoVersus: shared.js tekrar denemelere rağmen eksik yüklendi, kısmi işlevsellikle devam ediliyor.');
+        try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+        tvFinish();
+      }
+    });
+  }
+  if(document.readyState === 'complete'){
+    tvBoot();
+  } else {
+    window.addEventListener('load', tvBoot);
   }
 })();
 </script>

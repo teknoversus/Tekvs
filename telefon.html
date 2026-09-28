@@ -2024,40 +2024,66 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="shared.js"></script>
 <script>const CATEGORY_FIXED = 'Telefon';</script>
-<script src="nlp-parser.js"></script>
-<script src="performance-data.js"></script>
-<script src="product-filter.js"></script>
-<script src="recommendation-reason.js"></script>
-<script src="category.js"></script>
 <script>
 (function(){
+  var TV_SCRIPTS = ['shared.js','nlp-parser.js','performance-data.js','product-filter.js','recommendation-reason.js','category.js'];
+  function tvInjectScript(src){
+    return new Promise(function(resolve){
+      var s = document.createElement('script');
+      s.src = src;
+      s.onload = function(){ resolve(true); };
+      s.onerror = function(){ resolve(false); };
+      document.head.appendChild(s);
+    });
+  }
   function tvAllLoaded(){
     var m = window.__tvLoaded || {};
     return !!(m.shared && m.nlpParser && m.performanceData && m.productFilter && m.recommendationReason && m.category);
   }
-  if(tvAllLoaded()){
-    init();
-    renderCookieBanner('gizlilik-politikasi.html');
-    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
-    return;
+  function tvLoadAll(){
+    var i = 0;
+    function next(){
+      if(i >= TV_SCRIPTS.length) return Promise.resolve(tvAllLoaded());
+      return tvInjectScript(TV_SCRIPTS[i++]).then(next);
+    }
+    return next();
   }
-  // 28 Eylül 2026: sayfa betiklerinden biri (hosting WAF'ının ara sıra yanıtı
-  // kesmesi yüzünden) eksik yüklendi — ürün kartları hiç görünmeyebilir ya da
-  // filtre/kıyaslama gibi özellikler çalışmayabilir. Sayfayı otomatik olarak
-  // yeniden yükleyip düzelmesini sağlamayı dene (en fazla 2 kez, sonsuz
-  // döngüye girmemek için).
-  var attempts = 0;
-  try{ attempts = parseInt(sessionStorage.getItem('tvReloadAttempts')||'0',10); }catch(e){}
-  if(attempts < 2){
-    try{ sessionStorage.setItem('tvReloadAttempts', String(attempts+1)); }catch(e){}
-    location.reload();
-  }else{
-    console.error('TeknoVersus: sayfa betikleri tekrar denemelere rağmen eksik yüklendi, kısmi işlevsellikle devam ediliyor.');
-    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+  function tvFinish(){
     if(typeof init === 'function') init();
     if(typeof renderCookieBanner === 'function') renderCookieBanner('gizlilik-politikasi.html');
+  }
+  function tvBoot(){
+    tvLoadAll().then(function(ok){
+      if(ok){
+        try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+        tvFinish();
+        return;
+      }
+      // 28 Eylül 2026: hosting WAF'ı bu betiklerden birini (büyük ihtimalle
+      // sayfa yüklenirken oluşan eşzamanlı istek yoğunluğuna bağlı olarak)
+      // ara sıra yarıda kesiyor. Betikleri sayfanın diğer tüm kaynakları
+      // (görsel/reklam/CSS) bittikten SONRA (window 'load') tek tek
+      // yüklemek bu riski büyük ölçüde azaltıyor — canlı ortamda izole
+      // istekler bu şekilde güvenilir şekilde tam geliyor. Yine de eksik
+      // gelirse sayfayı otomatik yeniden yüklemeyi dene (en fazla 2 kez,
+      // sonsuz döngü koruması sessionStorage ile).
+      var attempts = 0;
+      try{ attempts = parseInt(sessionStorage.getItem('tvReloadAttempts')||'0',10); }catch(e){}
+      if(attempts < 2){
+        try{ sessionStorage.setItem('tvReloadAttempts', String(attempts+1)); }catch(e){}
+        location.reload();
+      } else {
+        console.error('TeknoVersus: sayfa betikleri tekrar denemelere rağmen eksik yüklendi, kısmi işlevsellikle devam ediliyor.');
+        try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+        tvFinish();
+      }
+    });
+  }
+  if(document.readyState === 'complete'){
+    tvBoot();
+  } else {
+    window.addEventListener('load', tvBoot);
   }
 })();
 </script>

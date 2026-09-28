@@ -58,83 +58,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
-      # ============================================================
-      # GEÇİCİ TEŞHİS ADIMI #2 — 27 Eylül 2026, /karsilastir/ 404 kök nedeni.
-      # Actions ham logları bu ortamdan okunamıyor, bu yüzden teşhis çıktısını
-      # doğrudan siteye (FTP exclude listesinde olmayan bir .txt dosyasına)
-      # yazıp buradan HTTP ile okuyoruz. Sorun netleştikten sonra kaldırılacak.
-      # ============================================================
-      - name: "[GEÇİCİ] Karşılaştırma üretim teşhisini siteye yaz"
-        run: |
-          {
-            echo "build zamanı (UTC): $(date -u)"
-            echo "commit: ${{ github.sha }}"
-            echo ""
-            echo "=== karsilastir/ klasöründeki dosya sayısı ==="
-            ls karsilastir 2>/dev/null | wc -l || echo "KLASÖR YOK"
-            echo ""
-            echo "=== sitemap.xml içindeki karsilastir/ URL sayısı ==="
-            grep -c "karsilastir/" sitemap.xml || echo 0
-            echo ""
-            echo "=== sitemap.xml toplam boyutu ==="
-            wc -c < sitemap.xml
-            echo ""
-            echo "=== karsilastir/ klasöründen 5 örnek dosya adı ==="
-            ls karsilastir 2>/dev/null | head -5 || echo "YOK"
-            echo ""
-            echo "=== karsilastirmalar.html içindeki karsilastir/ link sayısı ==="
-            grep -o 'karsilastir/[a-zA-Z0-9_.-]*\.html' karsilastirmalar.html 2>/dev/null | sort -u | wc -l
-          } > _deploy_debug.txt
-          cat _deploy_debug.txt
-
-      # ============================================================
-      # GEÇİCİ TEŞHİS ADIMI — Faz 8 sitemap kök neden araştırması içindir.
-      # Sorun netleştikten sonra bu adım workflow'dan kaldırılabilir.
-      # Amaç: build.js'in ürettiği sitemap.xml'in GERÇEK içeriğini,
-      # FTP'ye gitmeden ÖNCE, Actions logunda görmek.
-      # ============================================================
-      - name: "[GEÇİCİ] Sitemap içeriğini FTP'den önce logla"
-        run: |
-          echo "===== Sitemap.xml toplam satır sayısı ====="
-          wc -l sitemap.xml
-          echo ""
-          echo "===== karsilastir/ URL sayısı ====="
-          grep -c "karsilastir/" sitemap.xml || echo "0 (hiç yok)"
-          echo ""
-          echo "===== Tab S10 FE / FE+ yeni URL'si sitemap'te var mı ====="
-          grep "samsung-galaxy-tab-s10-fe-n10-vs-samsung-galaxy-tab-s10-fe-n11" sitemap.xml && echo "BULUNDU ✅" || echo "BULUNAMADI ❌"
-          echo ""
-          echo "===== Z Flip7 / Z Fold7 yeni URL'si sitemap'te var mı ====="
-          grep "samsung-galaxy-z-flip7-p_zflip7-vs-samsung-galaxy-z-fold7-p_zfold7" sitemap.xml && echo "BULUNDU ✅" || echo "BULUNAMADI ❌"
-          echo ""
-          echo "===== Eski self-comparison hâlâ var mı ====="
-          grep "samsung-galaxy-tab-s10-fe-vs-samsung-galaxy-tab-s10-fe.html" sitemap.xml && echo "HÂLÂ VAR ⚠️" || echo "YOK (temizlenmiş) ✅"
-          echo ""
-          echo "===== sitemap.xml dosyasının tam yolu ve boyutu ====="
-          ls -la sitemap.xml
-          pwd
-
-      # ============================================================
-      # GEÇİCİ TEK SEFERLİK ADIM — 27 Eylül 2026, /karsilastir/ 404 kök nedeni.
-      # build.js her seferinde doğru şekilde ~1982 karşılaştırma dosyası
-      # üretiyor (bkz. _deploy_debug.txt) ama FTP-Deploy-Action bunları
-      # yıllar/aylar önceki bozuk bir deploy'dan kalma .ftp-deploy-sync-state.json
-      # kayıt dosyasına güvenip "zaten yüklü" sanıp atlıyor olabilir — bu dosya
-      # gerçek sunucu içeriğini değil, action'ın KENDİ kaydını yansıtıyor.
-      # Bu adım, o kayıt dosyasını sunucudan siler; bir sonraki FTP adımı böylece
-      # her dosyayı gerçek içerikle karşılaştırıp eksik olanları (muhtemelen
-      # /karsilastir/ klasörünün tamamını) sıfırdan yükleyecek. Bu, sunucudaki
-      # başka hiçbir dosyayı SİLMEZ — sadece action'ın kendi defterini sıfırlar.
-      # Bir sonraki deploy başarılı olup doğrulandıktan sonra bu adım kaldırılacak.
-      # ============================================================
-      - name: "[GEÇİCİ, TEK SEFERLİK] FTP senkronizasyon kaydını sıfırla"
-        run: |
-          curl -v --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
-            -Q "-DELE ${{ secrets.FTP_SERVER_DIR }}.ftp-deploy-sync-state.json" \
-            "ftp://${{ secrets.FTP_SERVER }}${{ secrets.FTP_SERVER_DIR }}" || true
-          echo "(Yukarıdaki komut dosya yoksa/farklı yoldaysa hata verebilir, bu ADIMI BAŞARISIZ SAYMIYORUZ — asıl amaç aşağıdaki FTP adımının tam senkronizasyon yapmasını sağlamak.)"
-        continue-on-error: true
-
       - name: FTP ile hosting'e yükle
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -146,17 +69,15 @@ jobs:
           # kendi sistem klasörleri) her deploy'da dokunma — sadece fark eden
           # dosyaları yükler/siler, tamamen silip yeniden yüklemez.
           dangerous-clean-slate: false
-          # 27 Eylül 2026 teşhisi: build.js sitemap.xml'i doğru üretiyordu
-          # (2694 karşılaştırma URL'si, 1.4MB) ama canlıdaki dosya çok daha
-          # küçüktü (~66KB) — yani FTP transferi bu dosyayı (ve muhtemelen
-          # başka büyük/çok sayıda dosyayı) sessizce atlamış olmalı.
-          # FTP-Deploy-Action'ın bilinen bir sorunu: dosya yükleme hataları
-          # workflow'u "başarısız" olarak işaretlemeyebiliyor (bkz.
-          # github.com/SamKirkland/FTP-Deploy-Action/issues/144 ve #190).
-          # Varsayılan `timeout` sadece 30 saniye — binlerce dosya + 1.4MB'lık
-          # bir dosya bu sürede bitmeyip sessizce başarısız olabilir.
-          # `verbose` log-level ile bundan sonra gerçek hatayı Actions
-          # logunda görebileceğiz.
+          # 27 Eylül 2026 kök neden analizi (çözüldü): canlı sitede
+          # /karsilastir/ ve /inceleme/ sayfalarının büyük kısmı kayboluyordu.
+          # Sebep FTP transferi DEĞİLDİ — hosting'in Imunify360 güvenlik
+          # taraması, build.js'in ürettiği çok sayıda benzer şablonlu statik
+          # sayfayı "php.tool.spam" imzasıyla yanlış pozitif eşleştirip
+          # gerçek zamanlı olarak siliyordu (bkz. Alastyr destek talebi).
+          # Alastyr hesaptan Imunify360 korumasını kaldırdı, sorun bu şekilde
+          # kalıcı olarak çözüldü. `timeout`/`verbose` teşhis sürecinden
+          # kalma, zararsız olduğu için bırakıldı.
           timeout: 120000
           log-level: verbose
           exclude: |

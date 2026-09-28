@@ -196,3 +196,10 @@ function generateRecommendationReasons(product, criteria, score){
 if(typeof module !== 'undefined' && module.exports){
   module.exports = { generateRecommendationReasons };
 }
+
+// Bkz. shared.js sonundaki not — hosting WAF'ının ara sıra yanıtları kesmesine
+// karşı bütünlük kontrolü.
+if(typeof window !== 'undefined'){
+  window.__tvLoaded = window.__tvLoaded || {};
+  window.__tvLoaded.recommendationReason = true;
+}

@@ -358,3 +358,10 @@ function filterAndRankProducts(criteria, products, scores){
 if(typeof module !== 'undefined' && module.exports){
   module.exports = { filterAndRankProducts, pfGetPrice, pfGetNumericSpec, pfGamingScore, pfCameraScore, pfBatteryScore, pfDisplayScore, pfStudentScore };
 }
+
+// Bkz. shared.js sonundaki not — hosting WAF'ının ara sıra yanıtları kesmesine
+// karşı bütünlük kontrolü.
+if(typeof window !== 'undefined'){
+  window.__tvLoaded = window.__tvLoaded || {};
+  window.__tvLoaded.productFilter = true;
+}

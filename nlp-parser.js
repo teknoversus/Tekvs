@@ -257,3 +257,10 @@ function extractCriteriaLocally(query){
 if(typeof module !== 'undefined' && module.exports){
   module.exports = { extractCriteriaLocally, nlpParseTurkishNumber, nlpExtractBudget, nlpExtractCategory, nlpExtractBrand, nlpExtractUseCases, nlpExtractSort, NLP_BRAND_ALIASES };
 }
+
+// Bkz. shared.js sonundaki not — hosting WAF'ının ara sıra yanıtları kesmesine
+// karşı bütünlük kontrolü.
+if(typeof window !== 'undefined'){
+  window.__tvLoaded = window.__tvLoaded || {};
+  window.__tvLoaded.nlpParser = true;
+}

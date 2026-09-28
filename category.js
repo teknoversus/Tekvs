@@ -593,5 +593,13 @@ function closeDetail(){
 
 document.getElementById('burgerBtn').addEventListener('click', ()=> document.getElementById('navLinks').classList.toggle('open'));
 
-init();
-renderCookieBanner('gizlilik-politikasi.html');
+// 28 Eylül 2026: init() çağrısı artık BURADA değil, bu dosyayı yükleyen HTML
+// sayfasının kendi inline <script>'inde (category.js'ten SONRA) yapılıyor —
+// bkz. o script'teki bütünlük kontrolü. Neden: hosting WAF'ı bu dosyanın
+// kendisini ara sıra keserse, kontrol kodu da BU dosyanın içinde olsaydı o da
+// hiç çalışmazdı. Kontrol kodunun ayrı bir kaynakta (HTML'in kendi inline
+// script'i) olması, category.js kesilse bile devreye girebilmesini sağlıyor.
+if(typeof window !== 'undefined'){
+  window.__tvLoaded = window.__tvLoaded || {};
+  window.__tvLoaded.category = true;
+}

@@ -4333,8 +4333,35 @@ async function finderSetPriority(p){
 
 function resetFinder(){ openFinder(); }
 
-init();
-renderCookieBanner('gizlilik-politikasi.html');
+// 28 Eylül 2026: hosting WAF'ı shared.js yanıtını ara sıra (büyük ihtimalle
+// sayfa yüklenirken oluşan eşzamanlı istek yoğunluğuna bağlı olarak) yarıda
+// kesiyor — bu da cardHTML gibi dosya sonuna yakın tanımların hiç
+// çalışmamasına, dolayısıyla kategori filtrelerinin/ürün kartlarının
+// görünmemesine yol açabiliyor. init() çağırmadan önce shared.js'in
+// TAMAMEN yüklendiğini doğruluyoruz; değilse sayfayı otomatik yeniden
+// yükleyip düzelmesini sağlamayı deniyoruz (en fazla 2 kez).
+(function(){
+  function tvSharedLoaded(){
+    return !!(window.__tvLoaded && window.__tvLoaded.shared && typeof cardHTML === 'function');
+  }
+  if(tvSharedLoaded()){
+    init();
+    renderCookieBanner('gizlilik-politikasi.html');
+    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+    return;
+  }
+  var attempts = 0;
+  try{ attempts = parseInt(sessionStorage.getItem('tvReloadAttempts')||'0',10); }catch(e){}
+  if(attempts < 2){
+    try{ sessionStorage.setItem('tvReloadAttempts', String(attempts+1)); }catch(e){}
+    location.reload();
+  }else{
+    console.error('TeknoVersus: shared.js tekrar denemelere rağmen eksik yüklendi, kısmi işlevsellikle devam ediliyor.');
+    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+    if(typeof init === 'function') init();
+    if(typeof renderCookieBanner === 'function') renderCookieBanner('gizlilik-politikasi.html');
+  }
+})();
 </script>
 </body>
 </html>

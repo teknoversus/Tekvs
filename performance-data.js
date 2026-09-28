@@ -146,3 +146,10 @@ function getGpuTierScore(gpuText){
 if(typeof module !== 'undefined' && module.exports){
   module.exports = { getGpuInfo, getCpuInfo, getCpuTierScore, getGpuTierScore, GPU_RANK_ORDER };
 }
+
+// Bkz. shared.js sonundaki not — hosting WAF'ının ara sıra yanıtları kesmesine
+// karşı bütünlük kontrolü.
+if(typeof window !== 'undefined'){
+  window.__tvLoaded = window.__tvLoaded || {};
+  window.__tvLoaded.performanceData = true;
+}

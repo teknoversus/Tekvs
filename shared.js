@@ -871,3 +871,15 @@ if(typeof window !== 'undefined' && typeof navigator !== 'undefined' && 'service
     });
   });
 }
+
+// ============================================================
+// 28 Eylül 2026: hosting WAF'ı bazı yanıtları (dosya boyutundan bağımsız,
+// büyük ihtimalle sayfa yüklenirken oluşan eşzamanlı istek yoğunluğuna bağlı
+// olarak) ARA SIRA KESİYOR — bu da shared.js'in yarım inmesine ve
+// cardHTML/CATS gibi dosya sonuna yakın tanımların hiç çalışmamasına yol
+// açabiliyor. Bu satıra ulaşıldıysa dosya SONUNA KADAR eksiksiz çalıştı
+// demektir — sayfa sonundaki bütünlük kontrolü bunu kullanır.
+if(typeof window !== 'undefined'){
+  window.__tvLoaded = window.__tvLoaded || {};
+  window.__tvLoaded.shared = true;
+}

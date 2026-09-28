@@ -627,5 +627,30 @@
 <script src="product-filter.js"></script>
 <script src="recommendation-reason.js"></script>
 <script src="category.js"></script>
+<script>
+(function(){
+  function tvAllLoaded(){
+    var m = window.__tvLoaded || {};
+    return !!(m.shared && m.nlpParser && m.performanceData && m.productFilter && m.recommendationReason && m.category);
+  }
+  if(tvAllLoaded()){
+    init();
+    renderCookieBanner('gizlilik-politikasi.html');
+    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+    return;
+  }
+  var attempts = 0;
+  try{ attempts = parseInt(sessionStorage.getItem('tvReloadAttempts')||'0',10); }catch(e){}
+  if(attempts < 2){
+    try{ sessionStorage.setItem('tvReloadAttempts', String(attempts+1)); }catch(e){}
+    location.reload();
+  }else{
+    console.error('TeknoVersus: sayfa betikleri tekrar denemelere rağmen eksik yüklendi, kısmi işlevsellikle devam ediliyor.');
+    try{ sessionStorage.removeItem('tvReloadAttempts'); }catch(e){}
+    if(typeof init === 'function') init();
+    if(typeof renderCookieBanner === 'function') renderCookieBanner('gizlilik-politikasi.html');
+  }
+})();
+</script>
 </body>
 </html>

@@ -40,16 +40,23 @@ let activeBrands = new Set();
 let viewMode = 'grid';
 
 async function init(){
-  products = await loadSharedProducts();
-  scores = computeScores(products);
-  favorites = await getFavorites();
-  handleShareLinkFromURL();
-  renderCatNav();
-  renderBrandChips();
-  injectViewToggle();
-  injectFinder();
-  render();
-  renderRecentlyViewedInto('recentlyViewedStrip', products, null);
+  // 2 Ekim 2026: HER adım kendi try/catch'inde, veri yükleme adımları da
+  // dahil. Hosting WAF'ı bu sayfanın bağımlı scriptlerinden birini (shared.js,
+  // product-filter.js, ...) ara sıra kesiyor; kesinti NEREYE denk gelirse
+  // gelsin (brandFor, cardHTML, computeScores, getFavorites — hangisi
+  // tanımsız kalırsa), o fonksiyonu çağıran adım artık SADECE kendini
+  // durduruyor, diğer BAĞIMSIZ adımlar yine de çalışıyor. Önceden TEK bir
+  // yakalanmamış hata init()'in TAMAMINI durduruyordu.
+  try{ products = await loadSharedProducts(); }catch(e){ console.error('loadSharedProducts() başarısız:', e); products = products || []; }
+  try{ scores = computeScores(products); }catch(e){ console.error('computeScores() başarısız:', e); scores = scores || {}; }
+  try{ favorites = await getFavorites(); }catch(e){ console.error('getFavorites() başarısız:', e); favorites = favorites || []; }
+  try{ handleShareLinkFromURL(); }catch(e){ console.error('handleShareLinkFromURL() başarısız:', e); }
+  try{ renderCatNav(); }catch(e){ console.error('renderCatNav() başarısız:', e); }
+  try{ renderBrandChips(); }catch(e){ console.error('renderBrandChips() başarısız:', e); }
+  try{ injectViewToggle(); }catch(e){ console.error('injectViewToggle() başarısız:', e); }
+  try{ injectFinder(); }catch(e){ console.error('injectFinder() başarısız:', e); }
+  try{ render(); }catch(e){ console.error('render() başarısız:', e); }
+  try{ renderRecentlyViewedInto('recentlyViewedStrip', products, null); }catch(e){ console.error('renderRecentlyViewedInto() başarısız:', e); }
 }
 
 // ============================================================

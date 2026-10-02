@@ -3842,16 +3842,26 @@ function updateCatalogStats(){
 }
 
 async function init(){
-  products = await loadSharedProducts();
-  scores = computeScores(products);
-  favorites = await getFavorites();
-  ratingsSummary = await getAllRatingsSummary();
-  handleShareLinkFromURL();
-  render();
-  updateCatalogStats();
-  renderCatNavStrip();
-  renderRecentlyViewedInto('recentlyViewedStrip', products, null);
-  renderTrending();
+  // 2 Ekim 2026: HER adım kendi try/catch'inde, veri yükleme adımları da
+  // dahil. Hosting WAF'ı shared.js'i ara sıra kesiyor (bkz. tvBoot); kesinti
+  // dosyanın NERESİNE denk gelirse gelsin (cardHTML, getFavorites,
+  // getAllRatingsSummary, computeScores — hangisi tanımsız kalırsa), o
+  // fonksiyonu çağıran satır artık SADECE kendi adımını durduruyor, diğer
+  // BAĞIMSIZ adımlar (örn. "Katalogda Neler Var" sayısı sadece `products`
+  // verisine bakar, cardHTML'e ihtiyacı yok) yine de çalışıp güncel kalıyor.
+  // Önceden TEK bir yakalanmamış hata init()'in TAMAMINI durduruyordu — yeni
+  // ürün eklenince "Katalogda Neler Var" sayısının eski kalması gibi,
+  // görünüşte ilgisiz bugların asıl sebebi buydu.
+  try{ products = await loadSharedProducts(); }catch(e){ console.error('loadSharedProducts() başarısız:', e); products = products || []; }
+  try{ scores = computeScores(products); }catch(e){ console.error('computeScores() başarısız:', e); scores = scores || {}; }
+  try{ favorites = await getFavorites(); }catch(e){ console.error('getFavorites() başarısız:', e); favorites = favorites || []; }
+  try{ ratingsSummary = await getAllRatingsSummary(); }catch(e){ console.error('getAllRatingsSummary() başarısız:', e); ratingsSummary = ratingsSummary || {}; }
+  try{ handleShareLinkFromURL(); }catch(e){ console.error('handleShareLinkFromURL() başarısız:', e); }
+  try{ render(); }catch(e){ console.error('render() başarısız:', e); }
+  try{ updateCatalogStats(); }catch(e){ console.error('updateCatalogStats() başarısız:', e); }
+  try{ renderCatNavStrip(); }catch(e){ console.error('renderCatNavStrip() başarısız:', e); }
+  try{ renderRecentlyViewedInto('recentlyViewedStrip', products, null); }catch(e){ console.error('renderRecentlyViewedInto() başarısız:', e); }
+  try{ renderTrending(); }catch(e){ console.error('renderTrending() başarısız:', e); }
   if(new URLSearchParams(location.search).get('finder') === '1') openFinder();
 }
 

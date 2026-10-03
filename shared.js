@@ -134,12 +134,37 @@ function loadSeedDataScript(){
 }
 
 async function loadSharedProducts(){
-  const r = await sbFetch('/rest/v1/products?deleted=eq.false&select=*&order=added_at.desc');
-  if(!r.ok || !r.data || !r.data.length){
+  // 3 Ekim 2026 kök neden notu: PostgREST (Supabase'in REST katmanı)
+  // varsayılan olarak TEK istekte en fazla 1000 satır döndürür (db
+  // max_rows ayarı) — Range header'ı olmadan yapılan bu sorgu, katalog
+  // 1000 ürünü geçtiği anda en ESKİ eklenen ürünleri (added_at.desc
+  // sıralamasında 1000. satırdan sonra kalanları) SESSİZCE kesiyordu.
+  // "Kamera bölümündeki tüm ürünler kayboldu" şikayetinin asıl sebebi
+  // buydu: kataloğa yeni bir telefon eklenip toplam ürün sayısı 1000'i
+  // geçtiğinde, kataloğun en eski eklenen kategorisi olan Kamera'nın
+  // TAMAMI bu sınırın dışında kaldı. CSV import'un ya da bir render
+  // hatasının hiçbir ilgisi yoktu; veri Supabase'de hep sağlamdı. Artık
+  // Range header'ıyla sayfalayarak TÜM ürünleri (kaç tane olursa olsun)
+  // çekiyoruz.
+  const PAGE_SIZE = 1000;
+  let all = [];
+  let offset = 0;
+  for(let guard = 0; guard < 50; guard++){ // 50 sayfa (50.000 ürün) güvenlik sınırı
+    const r = await sbFetch('/rest/v1/products?deleted=eq.false&select=*&order=added_at.desc', {
+      headers: { 'Range-Unit': 'items', 'Range': `${offset}-${offset + PAGE_SIZE - 1}` }
+    });
+    if(!r.ok || !r.data){
+      break; // bu sayfa başarısız oldu — elimizdeki önceki sayfalarla devam
+    }
+    all = all.concat(r.data);
+    if(r.data.length < PAGE_SIZE) break; // son sayfaya ulaşıldı
+    offset += PAGE_SIZE;
+  }
+  if(!all.length){
     await loadSeedDataScript(); // veritabanı boşsa/erişilemezse örnek katalog
     return [...SEED];
   }
-  return r.data.map(rowToProduct);
+  return all.map(rowToProduct);
 }
 
 async function saveProductShared(product){

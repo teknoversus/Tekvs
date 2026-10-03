@@ -146,6 +146,21 @@ jobs:
           check_file "sitemap.xml" || FAILED=1
           check_file "sitemap-1.xml" || FAILED=1
 
+          # 3 Ekim 2026 kök neden analizi: shared.js, 28 Eylül'deki bir deploy'da
+          # FTP yüklemesi YARIM kalmış (41198 → 31784 byte) ve o tarihten beri
+          # git'te değişmediği için FTP-Deploy-Action'ın fark tabanlı senkronu
+          # bozuk kopyayı AYLARCA fark etmeden canlıda bırakmış — cardHTML/
+          # brandFor gibi dosya sonuna yakın tüm tanımlar canlıda hiç yoktu.
+          # Sitemap kontrolü bunu yakalamıyordu çünkü sadece sitemap.xml'e
+          # bakıyordu. Artık sayfaların <script> ile dinamik yüklediği TÜM
+          # paylaşılan betikler her deploy'da aynı şekilde kontrol ediliyor.
+          check_file "shared.js" || FAILED=1
+          check_file "nlp-parser.js" || FAILED=1
+          check_file "performance-data.js" || FAILED=1
+          check_file "product-filter.js" || FAILED=1
+          check_file "recommendation-reason.js" || FAILED=1
+          check_file "category.js" || FAILED=1
+
           if [ "$FAILED" -eq 1 ]; then
             exit 1
           fi

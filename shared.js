@@ -3,6 +3,17 @@
 // Bu dosya hem index.html hem de admin.html tarafından <script src="shared.js">
 // ile paylaşılır. Ürün verisi, depolama yardımcıları, skor hesaplama ve
 // basit yardımcı fonksiyonlar burada tanımlanır.
+//
+// 3 Ekim 2026 kök neden notu: canlıdaki shared.js, 28 Eylül'deki deploy'dan
+// (commit 8151290) sonra FTP yüklemesi sırasında YARIM kalmış (41198 byte
+// yerine 31784 byte) ve bu dosya o tarihten beri git'te değişmediği için
+// FTP-Deploy-Action'ın fark tabanlı senkronu onu BİR DAHA ASLA yeniden
+// yüklememiş — yani "ara sıra WAF kesiyor" sorunuymuş gibi görünen durumun
+// gerçek sebebi, cardHTML/brandFor gibi dosya sonuna yakın tüm tanımların
+// ayLARCA canlıda tamamen eksik olmasıydı. Bu satır dosya içeriğini
+// değiştirerek bir sonraki deploy'un bu dosyayı eksiksiz yeniden
+// yüklemesini zorluyor; deploy.yml'e eklenen boyut kontrolü de bunun bir
+// daha fark edilmeden tekrarlanmasını önlüyor.
 // ============================================================
 
 const CATS = ['Telefon','Dizüstü','Kulaklık','Kamera','Akıllı Saat','Tablet','Televizyon'];

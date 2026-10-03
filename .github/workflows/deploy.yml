@@ -58,6 +58,55 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
 
+      # ============================================================
+      # 3 Ekim 2026 kök neden analizi: canlıdaki shared.js, 15 Eylül'den
+      # kalma bozuk/eski bir kopyada hosting'in (LiteSpeed/Alastyr) sunucu
+      # taraflı sayfa önbelleğinde HAFTALARCA takılı kalmış — her yeni
+      # deploy dosyayı sunucuda doğru şekilde güncellese de, önbellek hiç
+      # temizlenmediği için ziyaretçiler query string'siz "shared.js" isteği
+      # attığında eski/bozuk içerik dönüyordu (cardHTML/brandFor gibi dosya
+      # sonundaki tüm tanımlar canlıda aylarca tamamen eksikti — kategori
+      # sayfalarında ürün kartlarının render edilememesinin asıl sebebi
+      # buydu, CSV import'un hiçbir ilgisi yoktu). Çözüm: bu paylaşılan
+      # betiklere yapılan HER referansa, her deploy'da değişen bir
+      # ?v=<commit-sha> sorgu dizesi ekliyoruz — önbellek anahtarı artık
+      # her deploy'da otomatik değişiyor, sunucu önbelleğini elle
+      # temizlemeye hiç gerek kalmıyor.
+      - name: Paylaşılan script referanslarına cache-busting versiyonu ekle
+        env:
+          DEPLOY_VERSION: ${{ github.sha }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, re, pathlib
+
+          version = os.environ['DEPLOY_VERSION']
+          bust_files = [
+              'shared.js', 'nlp-parser.js', 'performance-data.js',
+              'product-filter.js', 'recommendation-reason.js',
+              'category.js', 'product.js',
+          ]
+
+          skip_dirs = {'.git', '.github', 'node_modules', 'lib'}
+          changed = 0
+          for path in pathlib.Path('.').rglob('*.html'):
+              if any(part in skip_dirs for part in path.parts):
+                  continue
+              text = path.read_text(encoding='utf-8')
+              original = text
+              for fname in bust_files:
+                  pattern = re.compile(r'(["\'])(\.\./)?' + re.escape(fname) + r'\1')
+
+                  def repl(m, fname=fname):
+                      quote, prefix = m.group(1), m.group(2) or ''
+                      return f'{quote}{prefix}{fname}?v={version}{quote}'
+
+                  text = pattern.sub(repl, text)
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed += 1
+          print(f'{changed} HTML dosyasında script referansları versiyonlandı (v={version}).')
+          PYEOF
+
       - name: FTP ile hosting'e yükle
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

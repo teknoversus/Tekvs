@@ -1048,7 +1048,7 @@ async function adminRemoveProduct(id){
 // ---- Haberler ----
 function populateNewsSelects(){
   const catSel = document.getElementById('nCat');
-  catSel.innerHTML = CATS.map(c => `<option value="${c}">${c}</option>`).join('');
+  catSel.innerHTML = NEWS_CATS.map(c => `<option value="${c}">${c}</option>`).join('');
   const prodSel = document.getElementById('nRelatedProduct');
   const opts = products.map(p => `<option value="${p.id}">${p.name}${p.upcoming ? ' (beklenen)' : ''}</option>`).join('');
   prodSel.innerHTML = '<option value="">— Yok —</option>' + opts;
@@ -1160,10 +1160,14 @@ function parseBulkNewsText(raw){
   blocks.forEach((block, idx) => {
     const lines = block.split('\n');
     const fields = {};
+    // Alan (Başlık/Kategori/...) satırları arasına kullanıcının boş satır bırakması
+    // ÇOK YAYGIN (okunabilirlik için doğal bir refleks) — bu yüzden alan bölümünde
+    // boş satırları ATLIYORUZ, sadece "tanınan bir alan satırı değil" durumunda
+    // alan bölümünü bitirip kalan her şeyi haber metni (body) sayıyoruz.
     let i = 0;
     for(; i < lines.length; i++){
       const line = lines[i];
-      if(line.trim() === ''){ i++; break; }
+      if(line.trim() === '') continue;
       const m = line.match(/^([^:]+):\s*(.*)$/);
       if(!m){ break; }
       // NOT: .toLowerCase() Türkçe "İ"yi normalde "i̇" (noktalı, 2 karakter) yapar, "i" değil —
@@ -1186,7 +1190,7 @@ function parseBulkNewsText(raw){
     }
 
     let cat = fields.cat;
-    if(!cat || !CATS.includes(cat)){
+    if(!cat || !NEWS_CATS.includes(cat)){
       warnings.push(cat ? `Kategori "${cat}" tanınmadı, "${CATS[0]}" kullanıldı.` : `Kategori belirtilmedi, "${CATS[0]}" kullanıldı.`);
       cat = CATS[0];
     }

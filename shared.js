@@ -17,6 +17,12 @@
 // ============================================================
 
 const CATS = ['Telefon','Dizüstü','Kulaklık','Kamera','Akıllı Saat','Tablet','Televizyon'];
+// Haberler SADECE bu listeyi kullanır — "Teknoloji" bir ÜRÜN kategorisi değil
+// (kendi kataloğu/kategori sayfası/karşılaştırması yok), sadece genel teknoloji
+// haberlerini (örn. NVIDIA'nın yapay zeka platformu) sınıflandırmak için var.
+// Bu yüzden CATS'e EKLENMEDİ — eklenirse ürün ekleme formunda da (fCat) seçenek
+// olarak çıkardı, anasayfa/katalog kategori filtrelerine de sızardı.
+const NEWS_CATS = [...CATS, 'Teknoloji'];
 
 const ICONS = {
   'Telefon':'<rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="18.3" r="0.8" fill="currentColor"/>',

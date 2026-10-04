@@ -68,8 +68,21 @@ Options -Indexes
 
   # Admin sayfasını arama motorlarından gizle — netlify.toml'daki ölü
   # ayarın YERİNE gerçek, çalışan bir koruma (bkz. AUTOMATION.md notu).
+  #
+  # DENEYSEL (4 Ekim 2026): admin.html, diğer paylaşılan dosyalar (shared.js,
+  # styles.css) gibi ?v=hash cache-busting kapsamında DEĞİL — doğrudan URL'den
+  # açılıyor. Hosting'in (Alastyr/LiteSpeed) kendi sunucu seviyesi önbelleği
+  # (max-age=3600, ExpiresByType text/html "access plus 0 seconds" ayarına
+  # rağmen) admin panelindeki bir düzeltmenin canlıya çıktıktan sonra bir
+  # süre eski haliyle görünmesine yol açıyor. Bu header bunu önlemeyi
+  # deniyor — ama shared.js'te AYNI sınıf sorun .htaccess header'larıyla
+  # çözülemedi (çözüm query-string cache-busting oldu), o yüzden bunun
+  # kesin işe yarayacağının garantisi yok. İşe yaramazsa admin panelini
+  # her deploy'dan sonra sert yenileme (Ctrl+Shift+R) ile açmak gerekir.
   <FilesMatch "^admin\.html$">
     Header always set X-Robots-Tag "noindex, nofollow, noarchive"
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header always set Pragma "no-cache"
   </FilesMatch>
 </IfModule>
 

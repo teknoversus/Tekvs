@@ -68,23 +68,42 @@ jobs:
       # sonundaki tüm tanımlar canlıda aylarca tamamen eksikti — kategori
       # sayfalarında ürün kartlarının render edilememesinin asıl sebebi
       # buydu, CSV import'un hiçbir ilgisi yoktu). Çözüm: bu paylaşılan
-      # betiklere yapılan HER referansa, her deploy'da değişen bir
-      # ?v=<commit-sha> sorgu dizesi ekliyoruz — önbellek anahtarı artık
-      # her deploy'da otomatik değişiyor, sunucu önbelleğini elle
-      # temizlemeye hiç gerek kalmıyor.
+      # betiklere yapılan HER referansa bir ?v=... sorgu dizesi ekliyoruz.
+      #
+      # 4 Ekim 2026 düzeltmesi: versiyon ilk halde HER deploy'da değişen
+      # commit SHA'sıydı — bu da sadece TEK bir ürün eklense bile (ör. tek
+      # bir telefon) sitedeki TÜM sayfaların (binlerce urun/*.html,
+      # karsilastir/*.html, haberler/*.html dahil) içeriğini değiştirip
+      # FTP-Deploy-Action'ın fark tabanlı senkronunu her seferinde TÜM
+      # siteyi yeniden yüklemeye zorluyordu — bu da normal bir ürün
+      # eklemesini bile 15-80+ dakikaya çıkarıyordu. Artık her dosyanın
+      # versiyonu commit SHA'sı değil, o dosyanın KENDİ İÇERİK HASH'İ —
+      # yani shared.js/styles.css gibi dosyalar değişmediği sürece onlara
+      # yapılan referanslar da (dolayısıyla o referansı taşıyan HTML
+      # sayfaları da) deploy'dan deploy'a birebir aynı kalıyor, FTP sadece
+      # GERÇEKTEN değişen sayfaları (ör. yeni eklenen ürünün sayfası)
+      # yüklüyor. shared.js/styles.css gerçekten değiştiğinde ise hash'i
+      # değişir, TÜM site bir kerelik yeniden senkronize olur — bu doğru
+      # ve nadir bir durum.
       - name: Paylaşılan script referanslarına cache-busting versiyonu ekle
-        env:
-          DEPLOY_VERSION: ${{ github.sha }}
         run: |
           python3 - <<'PYEOF'
-          import os, re, pathlib
+          import re, pathlib, hashlib
 
-          version = os.environ['DEPLOY_VERSION']
           bust_files = [
               'shared.js', 'nlp-parser.js', 'performance-data.js',
               'product-filter.js', 'recommendation-reason.js',
               'category.js', 'product.js', 'styles.css',
           ]
+
+          # Her dosyanın versiyonu KENDİ içerik hash'i (ilk 10 hex karakter) —
+          # commit SHA değil. Böylece bu dosyalardan biri değişmediği sürece
+          # ona olan referanslar da değişmiyor.
+          versions = {}
+          for fname in bust_files:
+              p = pathlib.Path(fname)
+              if p.exists():
+                  versions[fname] = hashlib.sha1(p.read_bytes()).hexdigest()[:10]
 
           skip_dirs = {'.git', '.github', 'node_modules', 'lib'}
           changed = 0
@@ -93,10 +112,10 @@ jobs:
                   continue
               text = path.read_text(encoding='utf-8')
               original = text
-              for fname in bust_files:
+              for fname, version in versions.items():
                   pattern = re.compile(r'(["\'])(\.\./)?' + re.escape(fname) + r'\1')
 
-                  def repl(m, fname=fname):
+                  def repl(m, fname=fname, version=version):
                       quote, prefix = m.group(1), m.group(2) or ''
                       return f'{quote}{prefix}{fname}?v={version}{quote}'
 
@@ -104,7 +123,9 @@ jobs:
               if text != original:
                   path.write_text(text, encoding='utf-8')
                   changed += 1
-          print(f'{changed} HTML dosyasında script referansları versiyonlandı (v={version}).')
+          print(f'{changed} HTML dosyasında script/style referansları versiyonlandı.')
+          for fname, version in versions.items():
+              print(f'  {fname} -> v={version}')
           PYEOF
 
       - name: FTP ile hosting'e yükle

@@ -67,6 +67,12 @@
   .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;}
   .chip-filter{font-size:13px;font-weight:500;border:1.5px solid var(--line-strong);background:var(--surface);border-radius:20px;padding:7px 14px;cursor:pointer;color:var(--ink-soft);display:flex;align-items:center;gap:5px;}
   .chip-filter.active{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+  /* 4 Ekim 2026: kategori sayfalarındaki marka filtre kutusu (#brandFilterChips,
+     category.js → renderBrandChips() tarafından dolduruluyor) kendi flex
+     container'ı olmadığı için, içindeki her .chip-filter (display:flex olduğu
+     için blok seviyesinde) alt alta diziliyordu. .chips ile aynı kurali
+     veriyoruz ki markalar yan yana sığdıkça sarsın. */
+  #brandFilterChips{display:flex;gap:8px;flex-wrap:wrap;}
 
   .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;justify-content:space-between;}
   .toolbar-left{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}

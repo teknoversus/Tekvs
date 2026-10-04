@@ -83,7 +83,7 @@ jobs:
           bust_files = [
               'shared.js', 'nlp-parser.js', 'performance-data.js',
               'product-filter.js', 'recommendation-reason.js',
-              'category.js', 'product.js',
+              'category.js', 'product.js', 'styles.css',
           ]
 
           skip_dirs = {'.git', '.github', 'node_modules', 'lib'}
@@ -209,6 +209,7 @@ jobs:
           check_file "product-filter.js" || FAILED=1
           check_file "recommendation-reason.js" || FAILED=1
           check_file "category.js" || FAILED=1
+          check_file "styles.css" || FAILED=1
 
           if [ "$FAILED" -eq 1 ]; then
             exit 1

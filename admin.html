@@ -40,6 +40,12 @@
   .modal-overlay{position:fixed;inset:0;background:rgba(27,33,29,.55);display:none;align-items:flex-start;justify-content:center;padding:24px 16px;overflow-y:auto;z-index:80;}
   .modal-overlay.show{display:flex;}
   .modal{background:var(--surface);border-radius:14px;max-width:640px;width:100%;padding:24px;margin-top:20px;}
+  .modal.modal-wide{max-width:860px;}
+  .bulk-news-preview-item{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;font-size:12.5px;}
+  .bulk-news-preview-item .bn-title{font-weight:600;font-size:13.5px;margin-bottom:3px;}
+  .bulk-news-preview-item .bn-meta{color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;font-size:11px;}
+  .bulk-news-preview-item .bn-warn{color:#B8790F;margin-top:4px;}
+  .bulk-news-error-item{border:1px solid #E8A8A8;background:#FDEAEA;border-radius:8px;padding:10px 12px;margin-bottom:8px;font-size:12.5px;color:#8A2020;}
   .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
   .modal-close{background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink-soft);}
   .field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;}
@@ -137,6 +143,7 @@
     </div>
 
     <button class="btn btn-dark" style="margin-bottom:16px;" onclick="openAddNews()">+ Yeni haber ekle</button>
+    <button class="btn btn-outline" style="margin-bottom:16px;margin-left:8px;" onclick="openBulkNews()">+ Toplu haber ekle</button>
     <label style="display:inline-flex;align-items:center;gap:6px;margin-left:12px;font-size:12.5px;color:var(--ink-soft);cursor:pointer;">
       <input type="checkbox" id="newsSortByViews" onchange="renderAdminNewsList()" /> Görüntülenmeye göre sırala
     </label>
@@ -246,6 +253,43 @@
       Kaydettiğinde haber, sitedeki <code>haberler.html</code> listesine ve seçtiğin varsa ilgili ürün sayfasına
       otomatik bağlanır. Sayfanın kendisi bir sonraki build'de üretilir (elle FTP/HTML işi yok).
     </p>
+  </div>
+</div>
+
+<!-- Bulk add news modal -->
+<div class="modal-overlay" id="bulkNewsOverlay">
+  <div class="modal modal-wide">
+    <div class="modal-head"><h3>Toplu haber ekle</h3><button class="modal-close" onclick="closeBulkNews()">×</button></div>
+    <div style="margin-bottom:14px;padding:12px 14px;background:#F0F7FF;border:1px solid #B8D4F0;border-radius:10px;font-size:12px;line-height:1.7;">
+      <strong>Format:</strong> Her haberi <code>Başlık:</code> satırıyla başlat, altına istersen
+      <code>Kategori:</code>, <code>Tarih:</code> (YYYY-AA-GG), <code>Özet:</code>, <code>İlgili Ürün:</code>
+      (ürün adının tamamı) satırlarını ekle. Bir boş satır bırak, sonrasına haber metnini yaz — paragrafları
+      boş satırla ayır. Bir haberi bitirdiğinde tek satıra <code>---</code> yazıp bir sonraki haberi altına ekle.
+      Kategori/tarih/özet/ilgili ürün opsiyoneldir, sadece Başlık ve haber metni zorunlu.
+      <div style="margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:11px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 10px;white-space:pre-wrap;">Başlık: Google Pixel 11 Serisi Tanıtıldı
+Kategori: Telefon
+Tarih: 2026-10-04
+Özet: Google yeni amiral gemisini tanıttı.
+İlgili Ürün: Google Pixel 11 Pro
+
+İlk paragraf buraya.
+
+İkinci paragraf buraya.
+---
+Başlık: İkinci haberin başlığı
+...</div>
+    </div>
+    <div class="field"><label>Haberler</label><textarea id="bulkNewsInput" rows="14" placeholder="Başlık: ...&#10;&#10;Haber metni...&#10;---&#10;Başlık: ...&#10;&#10;Haber metni..." aria-label="Toplu haber metni"></textarea></div>
+    <button class="btn btn-dark" onclick="previewBulkNews()">Önizle</button>
+    <button class="btn btn-outline" style="margin-left:8px;" onclick="closeBulkNews()">İptal</button>
+
+    <div id="bulkNewsPreviewArea" style="display:none;margin-top:18px;">
+      <div id="bulkNewsErrorsBox" style="display:none;margin-bottom:10px;"></div>
+      <div id="bulkNewsSummaryLine" style="font-size:13px;font-weight:600;margin-bottom:10px;"></div>
+      <div id="bulkNewsPreviewList" style="max-height:360px;overflow-y:auto;"></div>
+      <button class="btn btn-dark" id="bulkNewsPublishBtn" style="margin-top:14px;" onclick="submitBulkNews()">Hepsini Yayınla</button>
+      <span id="bulkNewsPublishStatus" style="margin-left:10px;font-size:12.5px;color:var(--ink-soft);"></span>
+    </div>
   </div>
 </div>
 
@@ -1079,6 +1123,148 @@ async function submitNews(){
   }
   closeAddNews();
   renderAdminNewsList();
+}
+
+// ---- Haberler: Toplu Ekle ----
+// Her sitede üretilen haber hâlâ kendi ayrı haberler/[slug].html sayfasına
+// kavuşuyor (generate-news.js, Supabase'deki kayıt sayısına göre); bu sadece
+// admin panelindeki giriş yöntemini hızlandırıyor — tek tek modal açmak yerine
+// birden fazla haberi bir kerede yapıştırıp aynı anda yayınlamayı sağlıyor.
+let bulkParsedNewsItems = [];
+
+function openBulkNews(){
+  document.getElementById('bulkNewsInput').value = '';
+  document.getElementById('bulkNewsPreviewArea').style.display = 'none';
+  document.getElementById('bulkNewsPublishStatus').textContent = '';
+  bulkParsedNewsItems = [];
+  document.getElementById('bulkNewsOverlay').classList.add('show');
+}
+function closeBulkNews(){ document.getElementById('bulkNewsOverlay').classList.remove('show'); }
+
+const BULK_NEWS_FIELD_MAP = {
+  'başlık': 'title', 'baslik': 'title', 'title': 'title',
+  'kategori': 'cat', 'category': 'cat',
+  'tarih': 'date', 'date': 'date',
+  'özet': 'summary', 'ozet': 'summary', 'summary': 'summary',
+  'ilgili ürün': 'relatedProduct', 'ilgili urun': 'relatedProduct', 'related': 'relatedProduct'
+};
+
+// Yapıştırılan metni ayrı haberlere ve her haberin alanlarına ayırır.
+// Her blok tek satırlık "---" ile bölünür; blok içinde üstteki "Anahtar: değer"
+// satırları (ilk boş satıra kadar) alan olarak okunur, kalanı haber metni olur.
+function parseBulkNewsText(raw){
+  const blocks = raw.replace(/\r\n/g, '\n').split(/^\s*-{3,}\s*$/m).map(b => b.trim()).filter(Boolean);
+  const items = [];
+  const errors = [];
+  const usedIds = new Set();
+  blocks.forEach((block, idx) => {
+    const lines = block.split('\n');
+    const fields = {};
+    let i = 0;
+    for(; i < lines.length; i++){
+      const line = lines[i];
+      if(line.trim() === ''){ i++; break; }
+      const m = line.match(/^([^:]+):\s*(.*)$/);
+      if(!m){ break; }
+      // NOT: .toLowerCase() Türkçe "İ"yi normalde "i̇" (noktalı, 2 karakter) yapar, "i" değil —
+      // bu yüzden önce İ/I karakterlerini elle normalize ediyoruz (slugify()'daki tr haritasıyla aynı sorun).
+      const normKey = m[1].trim().replace(/İ/g,'i').replace(/I/g,'ı').toLowerCase();
+      const key = BULK_NEWS_FIELD_MAP[normKey];
+      if(!key){ break; }
+      fields[key] = m[2].trim();
+    }
+    const bodyRaw = lines.slice(i).join('\n').trim();
+    const warnings = [];
+
+    if(!fields.title){
+      errors.push({ idx, message: `${idx+1}. blok: "Başlık:" satırı bulunamadı, bu blok atlandı.` });
+      return;
+    }
+    if(!bodyRaw){
+      errors.push({ idx, message: `${idx+1}. blok ("${fields.title}"): haber metni boş, bu blok atlandı.` });
+      return;
+    }
+
+    let cat = fields.cat;
+    if(!cat || !CATS.includes(cat)){
+      warnings.push(cat ? `Kategori "${cat}" tanınmadı, "${CATS[0]}" kullanıldı.` : `Kategori belirtilmedi, "${CATS[0]}" kullanıldı.`);
+      cat = CATS[0];
+    }
+
+    let date = fields.date;
+    if(!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)){
+      if(date) warnings.push(`Tarih "${date}" tanınmadı (YYYY-AA-GG bekleniyor), bugünün tarihi kullanıldı.`);
+      date = new Date().toISOString().slice(0,10);
+    }
+
+    let relatedProductId = null;
+    if(fields.relatedProduct){
+      const match = products.find(p => p.name.toLowerCase() === fields.relatedProduct.toLowerCase());
+      if(match) relatedProductId = match.id;
+      else warnings.push(`İlgili ürün "${fields.relatedProduct}" katalogda bulunamadı, boş bırakıldı.`);
+    }
+
+    const body = bodyRaw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+    let base = slugify(fields.title);
+    let id = base, n = 2;
+    while(news.some(x => x.id === id) || pendingNews.some(x => x.id === id) || usedIds.has(id)){ id = `${base}-${n}`; n++; }
+    usedIds.add(id);
+
+    items.push({ id, title: fields.title, cat, date, summary: fields.summary || '', relatedProductId, body, pendingReview: false, warnings });
+  });
+  return { items, errors };
+}
+
+function previewBulkNews(){
+  const raw = document.getElementById('bulkNewsInput').value;
+  const { items, errors } = parseBulkNewsText(raw);
+  bulkParsedNewsItems = items;
+
+  const errorsBox = document.getElementById('bulkNewsErrorsBox');
+  if(errors.length){
+    errorsBox.style.display = '';
+    errorsBox.innerHTML = errors.map(e => `<div class="bulk-news-error-item">${e.message}</div>`).join('');
+  } else {
+    errorsBox.style.display = 'none';
+    errorsBox.innerHTML = '';
+  }
+
+  document.getElementById('bulkNewsSummaryLine').textContent =
+    items.length ? `${items.length} haber yayınlanmaya hazır.` : 'Yayınlanabilir haber bulunamadı — formatı kontrol et.';
+
+  document.getElementById('bulkNewsPreviewList').innerHTML = items.map(it => `
+    <div class="bulk-news-preview-item">
+      <div class="bn-title">${it.title}</div>
+      <div class="bn-meta">${it.cat} · ${it.date} · ${it.body.length} paragraf${it.relatedProductId ? ' · İlgili: ' + products.find(p=>p.id===it.relatedProductId).name : ''} · haberler/${it.id}.html</div>
+      ${it.warnings.length ? `<div class="bn-warn">⚠ ${it.warnings.join(' ')}</div>` : ''}
+    </div>`).join('');
+
+  document.getElementById('bulkNewsPreviewArea').style.display = '';
+  document.getElementById('bulkNewsPublishBtn').disabled = !items.length;
+  document.getElementById('bulkNewsPublishStatus').textContent = '';
+}
+
+async function submitBulkNews(){
+  if(!bulkParsedNewsItems.length) return;
+  const statusEl = document.getElementById('bulkNewsPublishStatus');
+  const btn = document.getElementById('bulkNewsPublishBtn');
+  btn.disabled = true;
+  let okCount = 0, failCount = 0;
+  for(const item of bulkParsedNewsItems){
+    statusEl.textContent = `Yayınlanıyor... (${okCount + failCount + 1}/${bulkParsedNewsItems.length})`;
+    const ok = await saveNewsShared(item);
+    if(ok){ okCount++; news.unshift(item); } else { failCount++; }
+  }
+  statusEl.textContent = failCount
+    ? `${okCount} haber yayınlandı, ${failCount} haber kaydedilemedi (bağlantıyı kontrol edip o haberleri tekrar dene).`
+    : `${okCount} haber başarıyla yayınlandı.`;
+  btn.disabled = false;
+  renderAdminNewsList();
+  if(!failCount){
+    bulkParsedNewsItems = [];
+    setTimeout(closeBulkNews, 1200);
+  }
 }
 
 function adminNewsRowHTML(n){

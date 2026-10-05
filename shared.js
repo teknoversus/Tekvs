@@ -594,8 +594,11 @@ function computeScores(products){
       // kategoriyi bozamıyor.
       p.__price = (isNaN(num) || num <= 0) ? null : num;
     });
-    const prices = list.map(p => p.__price).filter(v => v != null);
-    const minPrice = prices.length ? Math.min(...prices) : null;
+    const prices = list.map(p => p.__price).filter(v => v != null).sort((x,y) => x-y);
+    // 5 Ekim 2026 skor revizyonu: Referans fiyat artık kategorideki en ucuz ürün
+    // değil, fiyatların %10'luk dilimi. Böylece tek bir çok ucuz (ve genelde eski)
+    // ürün tüm kategorinin skorlarını ezemiyor.
+    const minPrice = prices.length ? prices[Math.floor(prices.length * 0.1)] : null;
 
     // performans özelliklerini (fiyat hariç, sayısal) topla
     // Not: Genişlik/Uzunluk gibi salt fiziksel boyut bilgileri "daha iyi/kötü" bir performans
@@ -640,8 +643,13 @@ function computeScores(products){
       // sıraya düşüyor — doğrudan model/kategori/GB gibi filtrelerde
       // hâlâ görünebiliyor.
       let priceFactor = 1;
-      if(minPrice != null) priceFactor = p.__price ? (minPrice / p.__price) : 0;
-      p.__rawScore = perfAvg * priceFactor;
+      // 5 Ekim 2026: Eski formül (perf × minFiyat/fiyat) fiyat oranını doğrusal
+      // kullandığı için kategorideki en ucuz ürün hep ~100 alıyor, amiral gemileri
+      // (ör. iPhone 17 Pro Max = 4) ise yok sayılıyordu. Yeni formül: performans
+      // ^1.5 (güçlü ürünü daha çok ödüllendirir) × fiyat oranı ^0.3 (fiyat etkisi
+      // yumuşatılmış, oran en fazla 1 ile sınırlı).
+      if(minPrice != null) priceFactor = p.__price ? Math.min(1, minPrice / p.__price) : 0;
+      p.__rawScore = Math.pow(perfAvg, 1.5) * Math.pow(priceFactor, 0.3);
     });
 
     const maxRaw = Math.max(...list.map(p => p.__rawScore), 0.0001);

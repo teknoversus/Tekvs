@@ -48,7 +48,7 @@
     {
       "@type": "Question",
       "name": "Fiyat/performans skoru nasıl hesaplanıyor?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Skor, her kategori içinde ayrı hesaplanır. Ürünün sayısal teknik özellikleri kategori içindeki en düşük ve en yüksek değerlere göre 0-1 arasında normalize edilir, bunların ortalaması performans puanını verir. Bu puan, kategorideki en ucuz ürünün fiyatının ilgili ürünün fiyatına oranıyla çarpılır. Sonuç, kategorinin en yüksek puanı 100 olacak şekilde ölçeklenir." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Skor, her kategori içinde ayrı hesaplanır. Ürünün sayısal teknik özellikleri kategori içindeki en düşük ve en yüksek değerlere göre 0-1 arasında normalize edilir, bunların ortalaması performans puanını verir. Performans puanı güçlendirilir (1,5. kuvvet), kategorinin uygun fiyat referansının ürün fiyatına oranı yumuşatılarak (0,3. kuvvet) bununla çarpılır. Sonuç, kategorinin en yüksek puanı 100 olacak şekilde ölçeklenir." }
     },
     {
       "@type": "Question",
@@ -120,7 +120,8 @@
     <li>Ağırlık ve kalınlık gibi <strong>düşük olması iyi olan</strong> değerlerde ölçek ters çevrilir.</li>
     <li>Genişlik ve uzunluk gibi salt fiziksel boyutlar skorlamaya <strong>dahil edilmez</strong>, çünkü bunlar "daha iyi/daha kötü" bir eksen oluşturmaz.</li>
     <li>Normalize edilmiş değerlerin ortalaması ürünün performans puanını verir.</li>
-    <li>Bu puan, <strong>kategorideki en ucuz ürünün fiyatı ÷ ürünün fiyatı</strong> oranıyla çarpılır. Böylece aynı performansı daha ucuza veren ürün öne çıkar.</li>
+    <li>Performans puanı <strong>1,5. kuvvete</strong> yükseltilir; böylece gerçekten güçlü ürünler öne çıkar.</li>
+    <li>Bu değer, <strong>kategorinin uygun fiyat referansı (fiyatların alt %10'luk dilimi) ÷ ürünün fiyatı</strong> oranının <strong>0,3. kuvvetiyle</strong> çarpılır. Fiyat etkisi bilerek yumuşatılmıştır: aynı performansı daha ucuza veren ürün avantaj kazanır, ama tek bir çok ucuz ürün tüm kategoriyi ezmez ve amiral gemileri yok sayılmaz.</li>
     <li>Son olarak kategorideki en yüksek sonuç 100 kabul edilerek tüm puanlar ölçeklenir.</li>
   </ol>
   <p style="font-size:13.5px;line-height:1.7;color:var(--ink-soft);">Bu yöntemin doğal sonucu: skor <strong>göreli</strong>dir. 100 puan "kusursuz ürün" demek değil, "bu kategoride fiyatına göre en verimli" demektir. Kategoriye yeni ürün eklendiğinde tüm skorlar yeniden hesaplanır.</p>

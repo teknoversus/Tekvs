@@ -48,7 +48,7 @@
     {
       "@type": "Question",
       "name": "Fiyat/performans skoru nasıl hesaplanıyor?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Skor, her kategori içinde ayrı hesaplanır. Ürünün sayısal teknik özellikleri kategori içindeki en düşük ve en yüksek değerlere göre 0-1 arasında normalize edilir, bunların ortalaması performans puanını verir. Performans puanı güçlendirilir (1,5. kuvvet), kategorinin uygun fiyat referansının ürün fiyatına oranı yumuşatılarak (0,3. kuvvet) bununla çarpılır. Sonuç, kategorinin en yüksek puanı 100 olacak şekilde ölçeklenir." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Skor, her kategori içinde ayrı hesaplanır. Kategorinin belirleyici özellikleri (örneğin telefonda işlemci sınıfı, RAM, pil, ekran paneli, kamera) önem derecesine göre ağırlıklandırılır ve 0-1 arasında bir performans puanı elde edilir. Bu puanın 1,5. kuvveti, kategorinin uygun fiyat referansının ürün fiyatına oranının 0,35. kuvveti ve çıkış tarihine bağlı bir güncellik çarpanı ile çarpılır. Sonuç, kategorinin en yüksek puanı 100 olacak şekilde ölçeklenir." }
     },
     {
       "@type": "Question",
@@ -116,12 +116,14 @@
   <p style="font-size:14px;line-height:1.7;">Skor otomatik hesaplanır ve elle müdahale edilmez. Yöntem şu adımlardan oluşur:</p>
   <ol style="font-size:13.5px;line-height:1.9;padding-left:20px;">
     <li>Hesaplama <strong>her kategori içinde ayrı</strong> yapılır. Bir telefon sadece diğer telefonlarla kıyaslanır.</li>
-    <li>Ürünün sayısal teknik özellikleri (pil, RAM, ekran, kamera vb.) kategorideki en düşük ve en yüksek değere göre 0 ile 1 arasında normalize edilir.</li>
-    <li>Ağırlık ve kalınlık gibi <strong>düşük olması iyi olan</strong> değerlerde ölçek ters çevrilir.</li>
-    <li>Genişlik ve uzunluk gibi salt fiziksel boyutlar skorlamaya <strong>dahil edilmez</strong>, çünkü bunlar "daha iyi/daha kötü" bir eksen oluşturmaz.</li>
-    <li>Normalize edilmiş değerlerin ortalaması ürünün performans puanını verir.</li>
-    <li>Performans puanı <strong>1,5. kuvvete</strong> yükseltilir; böylece gerçekten güçlü ürünler öne çıkar.</li>
-    <li>Bu değer, <strong>kategorinin uygun fiyat referansı (fiyatların alt %10'luk dilimi) ÷ ürünün fiyatı</strong> oranının <strong>0,3. kuvvetiyle</strong> çarpılır. Fiyat etkisi bilerek yumuşatılmıştır: aynı performansı daha ucuza veren ürün avantaj kazanır, ama tek bir çok ucuz ürün tüm kategoriyi ezmez ve amiral gemileri yok sayılmaz.</li>
+    <li>Her kategoride yalnızca <strong>gerçekten belirleyici özellikler</strong> hesaba katılır ve bunlar <strong>önem derecesine göre ağırlıklandırılır</strong>. Örneğin telefonda işlemci sınıfı en yüksek ağırlığa sahiptir; ardından RAM, pil, kamera, yenileme hızı ve ekran paneli gelir. Kulaklıkta aktif gürültü engelleme, televizyonda panel türü, kamerada sensör boyutu en ağır kalemlerdir.</li>
+    <li>Sayısal özellikler (pil, RAM, depolama vb.) kategorideki en düşük ve en yüksek değere göre 0 ile 1 arasında normalize edilir. RAM ve depolama gibi katlanarak artan değerlerde logaritmik ölçek kullanılır.</li>
+    <li>İşlemci ve ekran kartı için <strong>benchmark puanı uydurulmaz</strong>; üreticinin kendi segment sınıflandırması esas alınır (örneğin Snapdragon 8 serisi amiral gemisi, 7 serisi üst-orta, 6 serisi orta, 4 serisi giriş sınıfıdır).</li>
+    <li>Ekran boyutu, ürün ağırlığı ve kamera sayısı gibi <strong>tercihe bağlı</strong> değerler çoğu kategoride skora dahil edilmez; bunlar yalnızca bilgi amaçlı gösterilir.</li>
+    <li>Bir ürünün bir özelliği girilmemişse o özellik kategori ortalaması kabul edilir; eksik veri ürüne ne avantaj ne dezavantaj sağlar.</li>
+    <li>Ağırlıklı ortalama ürünün performans puanını verir. Bu puan <strong>1,5. kuvvete</strong> yükseltilir; böylece gerçekten güçlü ürünler öne çıkar.</li>
+    <li>Sonuç, <strong>kategorinin uygun fiyat referansı (fiyatların alt %10'luk dilimi) ÷ ürünün fiyatı</strong> oranının <strong>0,35. kuvvetiyle</strong> çarpılır. Fiyat etkisi bilerek yumuşatılmıştır: aynı performansı daha ucuza veren ürün avantaj kazanır, ama tek bir çok ucuz ürün tüm kategoriyi ezmez.</li>
+    <li><strong>Güncellik çarpanı</strong> uygulanır: çıkış tarihi kategorinin en yeni ürününden 1 yıldan eskiyse her yıl için küçük bir indirim yapılır (kategoriye göre yılda %3 ile %7 arası, en fazla %40).</li>
     <li>Son olarak kategorideki en yüksek sonuç 100 kabul edilerek tüm puanlar ölçeklenir.</li>
   </ol>
   <p style="font-size:13.5px;line-height:1.7;color:var(--ink-soft);">Bu yöntemin doğal sonucu: skor <strong>göreli</strong>dir. 100 puan "kusursuz ürün" demek değil, "bu kategoride fiyatına göre en verimli" demektir. Kategoriye yeni ürün eklendiğinde tüm skorlar yeniden hesaplanır.</p>

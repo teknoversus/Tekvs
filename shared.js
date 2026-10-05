@@ -540,7 +540,7 @@ function prosConsFor(product, categoryProducts){
     const avg = otherVals.reduce((a,b)=>a+b,0) / otherVals.length;
     if(avg === 0) return;
     const diffPct = (myVal - avg) / avg;
-    const lowerIsBetter = /ağırlık|gram|kalınlık/i.test(key);
+    const lowerIsBetter = /ağırlı[kğ]|gram|kalınlık/i.test(key);
     const better = lowerIsBetter ? diffPct < -0.08 : diffPct > 0.08;
     const worse = lowerIsBetter ? diffPct > 0.08 : diffPct < -0.08;
     if(better) pros.push(`${key}: kategori ortalamasının üzerinde (${product.specs[key]})`);
@@ -570,86 +570,433 @@ function prosConsFor(product, categoryProducts){
 // Not: Bu, girilen özellik değerlerinin ürünler arasında göreli normalizasyonuyla
 // otomatik hesaplanan yaklaşık bir gösterge niteliğindedir; bağımsız bir laboratuvar
 // benchmark'ı ya da nesnel bir performans testi DEĞİLDİR.
+//
+// 5 Ekim 2026 — AĞIRLIKLI SKOR REVİZYONU
+// Eski yöntem "sayıya çevrilebilen her özelliği" eşit ağırlıkla ortalıyor ve
+// (kategorinin en ucuz ürününün fiyatı ÷ ürün fiyatı) ile DOĞRUSAL çarpıyordu.
+// Sonuçlar: (1) kategorinin en ucuz, genelde yıllar önce çıkmış ürünü 100 alıyor,
+// amiral gemileri tek haneli skorlarda kalıyordu; (2) "Webcam: 12MP / 1080p",
+// "Bağlantı Noktaları: 2x ...", "Çözünürlük: 2560x1664" gibi metinlerin İLK sayısı
+// performans sanılıyordu; (3) işlemci, ekran paneli, ANC gibi asıl belirleyici
+// özellikler metin olduğu için HİÇ sayılmıyordu; (4) /ağırlık/ deseni "Ürünün
+// Ağırlığı (g)" anahtarını yakalamadığı için AĞIR ürün daha iyi sayılıyordu.
+//
+// Yeni yöntem:
+//   performans = kategoriye özel, AĞIRLIKLI özellik ortalaması (aşağıdaki tablo)
+//   ham skor   = performans^1.5 × (referans fiyat ÷ fiyat)^0.35 × güncellik
+//   skor       = ham ÷ kategorinin en yüksek hamı × 100
+// - Referans fiyat: kategorideki fiyatların alt %10'luk dilimi (tek bir çok ucuz
+//   ürün kategoriyi ezemesin diye), oran en fazla 1.
+// - Güncellik: çıkış tarihi (addedAt) kategorinin en yeni ürününe göre 1 yıldan
+//   eskiyse yıl başına küçük bir indirim, en fazla %40.
+// - İşlemci / ekran kartı için BENCHMARK PUANI UYDURULMAZ; üreticinin KENDİ
+//   segment sınıflandırması kullanılır (ör. Snapdragon 8 = amiral, 7 = üst-orta,
+//   6 = orta, 4 = giriş). Nesil farkını güncellik çarpanı karşılar.
+// - Eksik özellik, o özelliğin kategori ortalamasıyla doldurulur (ne ödül ne ceza).
+// - Tabloda olmayan (ileride eklenecek) bir kategori için eski genel yönteme
+//   (tüm sayısal özellikler, eşit ağırlık) düşülür.
 // ============================================================
+const SCORE_PERF_EXP = 1.5;
+const SCORE_PRICE_EXP = 0.35;
+const SCORE_AGE_FLOOR = 0.6;
+// Yıl başına güncellik indirimi (ilk 1 yıl indirimsiz)
+const SCORE_AGE_RATE = { 'Telefon':0.07, 'Tablet':0.06, 'Dizüstü':0.06, 'Akıllı Saat':0.06, 'Televizyon':0.05, 'Kulaklık':0.04, 'Kamera':0.03 };
+
+function scoreNum(v){
+  if(v === undefined || v === null) return null;
+  const n = parseFloat(String(v).replace(',', '.'));
+  return isNaN(n) ? null : n;
+}
+function scoreYesNo(v){
+  const t = String(v||'').trim().toLowerCase();
+  if(/^var/.test(t)) return 1;
+  if(/^yok/.test(t)) return 0;
+  return null;
+}
+// Mobil işlemci — üreticinin kendi segment sınıfı (0-1)
+function scoreCpuMobile(v){
+  const t = String(v||'').toLowerCase();
+  if(!t) return null;
+  if(/apple\s*a\d+/.test(t)) return 1;
+  if(/apple\s*m\d+/.test(t)) return 1;
+  if(/snapdragon/.test(t)){
+    if(/8\s*elite/.test(t)) return 1;
+    if(/8s\s*gen/.test(t)) return 0.85;
+    if(/8\+?\s*gen/.test(t)) return 1;
+    if(/7\+\s*gen/.test(t)) return 0.75;
+    if(/7s\s*gen/.test(t)) return 0.55;
+    if(/7\s*gen/.test(t)) return 0.65;
+    if(/6s?\s*gen/.test(t)) return 0.4;
+    if(/4s?\s*gen/.test(t)) return 0.2;
+    const m = t.match(/snapdragon\s*(\d)\d{2}/);
+    if(m){ const s = +m[1]; return s >= 8 ? 1 : s === 7 ? 0.6 : s === 6 ? 0.35 : s === 4 ? 0.15 : 0.05; }
+    return null;
+  }
+  let m = t.match(/dimensity\s*(\d+)/);
+  if(m){ const n = +m[1]; return n >= 9000 ? 1 : n >= 8000 ? 0.75 : n >= 7000 ? 0.55 : n >= 6000 ? 0.35 : n >= 1000 ? 0.7 : n >= 900 ? 0.5 : 0.4; }
+  m = t.match(/(?:helio|mediatek)\s*g(\d+)/);
+  if(m){ const n = +m[1]; return n >= 90 ? 0.3 : n >= 70 ? 0.25 : 0.15; }
+  if(/helio/.test(t)) return 0.15;
+  m = t.match(/exynos\s*(\d+)/);
+  if(m){ const n = +m[1]; if((n >= 2000 && n < 3000) || n >= 9000 || (n >= 980 && n < 1000)) return 1; if(n >= 1000 && n < 2000) return (n % 100) >= 80 ? 0.55 : 0.4; return 0.2; }
+  if(/tensor/.test(t)) return 0.9;
+  m = t.match(/kirin\s*(\d+)/);
+  if(m){ const n = +m[1]; return (n >= 9000 || (n >= 950 && n < 1000)) ? 1 : n >= 800 ? 0.5 : n >= 700 ? 0.35 : 0.2; }
+  if(/unisoc|spreadtrum|tiger|sc98/.test(t)) return /t[78]\d\d/.test(t) ? 0.25 : 0.15;
+  return null;
+}
+// Tablet: Apple M masaüstü sınıfı çip (1), A-serisi bir alt sınıf
+function scoreCpuTablet(v){
+  const t = String(v||'').toLowerCase();
+  if(/apple\s*m\d+/.test(t)) return 1;
+  if(/apple\s*a\d+/.test(t)) return 0.85;
+  return scoreCpuMobile(v);
+}
+// Dizüstü işlemci — seri (i5/i7/Ryzen 7...) × güç sınıfı (U/P/H/HX)
+function scoreCpuLaptop(v){
+  const t = String(v||'').toLowerCase();
+  if(!t) return null;
+  if(/apple\s*m\d+/.test(t)) return /max|ultra/.test(t) ? 1 : /pro/.test(t) ? 0.9 : 0.75;
+  if(/snapdragon\s*x/.test(t)) return /elite/.test(t) ? 0.75 : 0.6;
+  let base = null;
+  if(/celeron|pentium|athlon|\bn\d{2,3}\b/.test(t)) return 0.1;
+  if(/ryzen\s*(\d)/.test(t)){ const s = +t.match(/ryzen\s*(\d)/)[1]; base = s >= 9 ? 1 : s === 7 ? 0.75 : s === 5 ? 0.5 : 0.3; }
+  else if(/i9|ultra\s*9|core\s*9/.test(t)) base = 1;
+  else if(/i7|ultra\s*7|core\s*7/.test(t)) base = 0.75;
+  else if(/i5|ultra\s*5|core\s*5/.test(t)) base = 0.5;
+  else if(/i3|core\s*3/.test(t)) base = 0.3;
+  if(base == null) return null;
+  const sm = t.match(/\d{3,5}([a-z]{1,2})\d?\b/);
+  const suf = sm ? sm[1] : '';
+  const mult = suf === 'hx' ? 1.1 : /^h/.test(suf) ? 1 : suf === 'p' ? 0.9 : (/^u/.test(suf) || /^g/.test(suf)) ? 0.8 : 0.9;
+  return Math.min(1, base * mult);
+}
+// Dizüstü ekran kartı — NVIDIA'nın kendi model segmenti; entegre ayrı sınıf
+function scoreGpuLaptop(v){
+  const t = String(v||'').toLowerCase();
+  if(!t) return null;
+  let m = t.match(/rtx\s*(\d)0(\d)0/);
+  if(m){
+    const gen = +m[1], cls = +m[2];
+    const c = cls >= 9 ? 1 : cls === 8 ? 0.97 : cls === 7 ? 0.9 : cls === 6 ? 0.8 : 0.68;
+    return Math.max(0.5, Math.min(1, c + (gen - 4) * 0.03));
+  }
+  if(/gtx/.test(t)) return 0.5;
+  if(/radeon\s*rx/.test(t)) return 0.75;
+  if(/arc\s*a\d{3}/.test(t)) return 0.55;
+  if(/apple/.test(t)) return /max|ultra/.test(t) ? 0.7 : /pro/.test(t) ? 0.6 : 0.45;
+  if(/uhd/.test(t)) return 0.12;
+  if(/iris|radeon|arc|entegre|integrated|dahili/.test(t)) return 0.25;
+  return null;
+}
+function scoreIp(v){
+  const t = String(v||'').toUpperCase();
+  if(!t.trim()) return null;
+  let best = null;
+  const re = /IP[0-9X]([0-9X])/g; let m;
+  while((m = re.exec(t))){ const d = m[1] === 'X' ? 0 : +m[1]; best = Math.max(best == null ? 0 : best, d); }
+  if(best == null) return (/^YOK/.test(t.trim()) || t.trim() === '-') ? 0 : null;
+  return best >= 8 ? 1 : best === 7 ? 0.85 : best === 6 ? 0.6 : best === 5 ? 0.5 : best === 4 ? 0.35 : 0.2;
+}
+function scorePanelMobile(v){
+  const t = String(v||'').toLowerCase();
+  if(/ltpo/.test(t)) return 1;
+  if(/oled/.test(t)) return 0.9;
+  if(/mini.?led/.test(t)) return 0.8;
+  if(/lcd|ips|tft|pls/.test(t)) return 0.4;
+  return null;
+}
+function scorePanelLaptop(v){
+  const t = String(v||'').toLowerCase();
+  if(/oled/.test(t)) return 1;
+  if(/mini.?led/.test(t)) return 0.9;
+  if(/ips|retina/.test(t)) return 0.6;
+  if(/\btn\b|\bva\b/.test(t)) return 0.3;
+  return null;
+}
+function scorePanelTv(v){
+  const t = String(v||'').toLowerCase();
+  if(/oled/.test(t)) return 1;
+  if(/mini.?led|neo\s*qled/.test(t)) return 0.85;
+  if(/qled|qned|uled/.test(t)) return 0.6;
+  if(/nanocell/.test(t)) return 0.5;
+  if(/led|lcd/.test(t)) return 0.3;
+  return null;
+}
+function scorePixels(v){
+  const m = String(v||'').match(/(\d{3,5})\s*[x×]\s*(\d{3,5})/i);
+  return m ? (+m[1]) * (+m[2]) : null;
+}
+function scoreCellular(v){
+  const t = String(v||'').toLowerCase();
+  if(/5g/.test(t)) return 1;
+  if(/4g|lte/.test(t)) return 0.3;
+  return null;
+}
+function scoreHdr(v){
+  const t = String(v||'').toLowerCase();
+  if(!t.trim()) return null;
+  const dv = /dolby\s*vision/.test(t), hp = /hdr10\+/.test(t);
+  return dv && hp ? 1 : dv ? 0.8 : hp ? 0.6 : /hdr|hlg/.test(t) ? 0.3 : 0;
+}
+function scoreSensorSize(v){
+  const t = String(v||'').toLowerCase().trim();
+  if(/full\s*frame|tam\s*kare|orta\s*format/.test(t)) return 1;
+  if(/aps-?c/.test(t)) return 0.7;
+  if(/four\s*thirds|4\/3/.test(t)) return 0.55;
+  if(/^1\s*("|''|inç|inch)/.test(t)) return 0.4;
+  if(/^1\/\d/.test(t)) return 0.2;
+  return null;
+}
+function scoreVideo(v){
+  const t = String(v||'').toLowerCase();
+  const m = t.match(/(\d)\s*k\s*(\d{2,3})?/);
+  if(m) return (+m[1]) + (m[2] ? Math.min(120, +m[2]) / 60 : 0.5);
+  if(/1080/.test(t)) return 2.5;
+  return null;
+}
+function scoreIsoMax(v){
+  const nums = (String(v||'').split('(')[0].match(/\d+/g) || []).map(Number);
+  return nums.length ? Math.max(...nums) : null;
+}
+function scoreGps(v){
+  const t = String(v||'').toLowerCase();
+  if(/çift/.test(t)) return 1;
+  if(/^\s*var/.test(t)) return 0.7;
+  if(/^\s*yok/.test(t)) return 0;
+  return null;
+}
+function scoreSensors(v){
+  const t = String(v||'').toLowerCase();
+  if(!t.trim()) return null;
+  const groups = [/kalp/, /spo2/, /ekg/, /sıcaklık/, /stres|iletkenli/, /empedans|bia/];
+  return Math.min(1, groups.filter(r => r.test(t)).length / 4);
+}
+function scoreWaterMeters(v){
+  const t = String(v||'').toLowerCase();
+  let best = null;
+  let m = t.match(/(\d+)\s*atm/); if(m) best = +m[1] * 10;
+  m = t.match(/(\d+)\s*m\b/); if(m) best = Math.max(best || 0, +m[1]);
+  return best;
+}
+// Akıllı saat platformu: uygulama mağazalı tam akıllı saat sistemi mi, kapalı sistem mi
+function scoreWatchOs(v){
+  const t = String(v||'').toLowerCase();
+  if(!t.trim()) return null;
+  if(/watchos|wear\s*os/.test(t)) return 1;
+  if(/harmony|zepp|garmin|polar|tizen|one\s*ui/.test(t)) return 0.6;
+  return 0.3;
+}
+function scoreCaseMaterial(v){
+  const t = String(v||'').toLowerCase();
+  if(/titanyum/.test(t)) return 1;
+  if(/çelik|seramik|safir/.test(t)) return 0.8;
+  if(/alüminyum/.test(t)) return 0.5;
+  if(/polimer|plastik|reçine/.test(t)) return 0.2;
+  return null;
+}
+function scoreFastCharge(v){
+  const m = String(v||'').replace(/,/g, '.').match(/([\d.]+)\s*dk\s*=\s*([\d.]+)\s*saat/i);
+  return m && +m[1] > 0 ? (+m[2] * 60) / (+m[1]) : null;
+}
+function scorePen(v){
+  const t = String(v||'').toLowerCase();
+  if(/^\s*var/.test(t)) return /dahil/.test(t) ? 1 : 0.7;
+  if(/^\s*yok/.test(t)) return 0;
+  return null;
+}
+function scoreWeather(v){
+  const t = String(v||'').toLowerCase();
+  if(!t.trim()) return null;
+  if(/^\s*yok/.test(t) || t.trim() === '-') return 0;
+  if(/korumalı|dayanıklı|geçirmez|ip\d/.test(t)) return 1;
+  return null;
+}
+
+// Kategoriye özel özellik tablosu.
+//   k: özellik anahtarı deseni · w: ağırlık · x: değer çıkarıcı (varsayılan: sayı)
+//   s: 'log' | 'lin' (kategori içi min-max) | 'abs' (çıkarıcı zaten 0-1 veriyor)
+//   inv: düşük olan daha iyi
+const SCORE_FEATURES = {
+  'Telefon': [
+    { k:/^İşlemci/i, w:3, x:scoreCpuMobile, s:'abs' },
+    { k:/^RAM/i, w:1.5, s:'log' },
+    { k:/^Depolama/i, w:1, s:'log' },
+    { k:/^Pil \(mAh\)/i, w:1.5, s:'lin' },
+    { k:/^(Arka )?Kamera \(MP\)/i, w:1, s:'log' },
+    { k:/^Ön Kamera \(MP\)/i, w:0.5, s:'log' },
+    { k:/^Yenileme Hızı/i, w:1, s:'lin' },
+    { k:/^Ekran Türü/i, w:1, x:scorePanelMobile, s:'abs' },
+    { k:/^Piksel Yoğunluğu/i, w:0.5, s:'lin' },
+    { k:/^Su Geçirmezlik/i, w:0.5, x:scoreIp, s:'abs' },
+    { k:/^Hücresel Teknoloji/i, w:0.5, x:scoreCellular, s:'abs' }
+  ],
+  'Dizüstü': [
+    { k:/^İşlemci/i, w:3, x:scoreCpuLaptop, s:'abs' },
+    { k:/^Ekran Kartı/i, w:1.5, x:scoreGpuLaptop, s:'abs' },
+    { k:/^RAM/i, w:2, s:'log' },
+    { k:/^Depolama/i, w:1, s:'log' },
+    { k:/^Pil \(saat\)/i, w:1.5, s:'lin' },
+    { k:/^Yenileme Hızı/i, w:0.75, s:'lin' },
+    { k:/^Ekran Türü/i, w:0.5, x:scorePanelLaptop, s:'abs' },
+    { k:/^Çözünürlük/i, w:0.75, x:scorePixels, s:'log' },
+    { k:/Ağırlı[kğ]/i, w:0.75, s:'lin', inv:true }
+  ],
+  'Tablet': [
+    { k:/^İşlemci/i, w:2.5, x:scoreCpuTablet, s:'abs' },
+    { k:/^RAM/i, w:1.5, s:'log' },
+    { k:/^Depolama/i, w:1, s:'log' },
+    { k:/^Pil \(mAh\)/i, w:1, s:'lin' },
+    { k:/^Yenileme Hızı/i, w:1, s:'lin' },
+    { k:/^Ekran Türü/i, w:1, x:scorePanelMobile, s:'abs' },
+    { k:/^Çözünürlük/i, w:0.75, x:scorePixels, s:'log' },
+    { k:/^(Arka )?Kamera \(MP\)/i, w:0.25, s:'log' },
+    { k:/^Ön Kamera \(MP\)/i, w:0.25, s:'log' },
+    { k:/^Kalem Desteği/i, w:0.5, x:scorePen, s:'abs' }
+  ],
+  'Kulaklık': [
+    { k:/Gürültü Engelleme|ANC/i, w:3, x:scoreYesNo, s:'abs' },
+    { k:/^Pil \(saat\)/i, w:1.5, s:'log' },
+    { k:/^Bluetooth( Versiyonu)?$/i, w:0.75, s:'lin' },
+    { k:/^Su\/Ter Direnci|^Su Geçirmezlik/i, w:0.75, x:scoreIp, s:'abs' },
+    { k:/^Kablosuz Şarj/i, w:0.5, x:scoreYesNo, s:'abs' },
+    { k:/^Hızlı Şarj/i, w:0.5, x:scoreFastCharge, s:'log' }
+  ],
+  'Akıllı Saat': [
+    { k:/^Pil \(saat\)/i, w:1.5, s:'log' },
+    { k:/^İşletim Sistemi/i, w:1.5, x:scoreWatchOs, s:'abs' },
+    { k:/^GPS/i, w:1.5, x:scoreGps, s:'abs' },
+    { k:/^Sensörler/i, w:1.5, x:scoreSensors, s:'abs' },
+    { k:/^Su Geçirmezlik/i, w:0.75, x:scoreWaterMeters, s:'lin' },
+    { k:/^Ekran Türü/i, w:0.75, x:scorePanelMobile, s:'abs' },
+    { k:/^Kasa Malzemesi/i, w:0.5, x:scoreCaseMaterial, s:'abs' }
+  ],
+  'Televizyon': [
+    { k:/^Ekran Türü/i, w:3, x:scorePanelTv, s:'abs' },
+    { k:/^Yenileme Hızı/i, w:2, s:'lin' },
+    { k:/^Ekran \(inç\)/i, w:2, s:'lin' },
+    { k:/^HDR/i, w:1, x:scoreHdr, s:'abs' },
+    { k:/^Ses Çıkış Gücü/i, w:0.75, s:'lin' }
+  ],
+  'Kamera': [
+    { k:/^Sensör Boyutu/i, w:3, x:scoreSensorSize, s:'abs' },
+    { k:/^Çözünürlük \(MP\)/i, w:1.5, s:'log' },
+    { k:/^Video/i, w:1.5, x:scoreVideo, s:'lin' },
+    { k:/^ISO/i, w:0.75, x:scoreIsoMax, s:'log' },
+    { k:/^Su\/Toz Direnci/i, w:0.5, x:scoreWeather, s:'abs' }
+  ]
+};
+
+// Bir ürünün, tablodaki bir özellik için ham değerini bulur (yoksa null)
+function scoreFeatureRaw(p, f){
+  const specs = p.specs || {};
+  const keys = Object.keys(specs);
+  for(let i = 0; i < keys.length; i++){
+    if(!f.k.test(keys[i])) continue;
+    const val = f.x ? f.x(specs[keys[i]]) : scoreNum(specs[keys[i]]);
+    if(val != null && !isNaN(val)) return val;
+  }
+  return null;
+}
+
+// Kategoriye özel ağırlıklı performans (0-1). Dönüş: { id: perf }
+function scoreWeightedPerf(list, features){
+  const cols = features.map(f => {
+    let vals = list.map(p => scoreFeatureRaw(p, f));
+    if(f.s === 'log') vals = vals.map(v => (v != null && v > 0) ? Math.log(v) : null);
+    const present = vals.filter(v => v != null);
+    if(!present.length) return null; // bu kategoride bu özellik hiç girilmemiş
+    let norm;
+    if(f.s === 'abs'){
+      norm = vals.map(v => v == null ? null : Math.max(0, Math.min(1, v)));
+    } else {
+      const min = Math.min(...present), max = Math.max(...present);
+      if(max === min) return null; // herkes aynı → ayırt edici değil
+      norm = vals.map(v => v == null ? null : (v - min) / (max - min));
+    }
+    if(f.inv) norm = norm.map(v => v == null ? null : 1 - v);
+    const have = norm.filter(v => v != null);
+    const mean = have.reduce((a,b) => a+b, 0) / have.length;
+    return { w: f.w, norm, mean };
+  }).filter(Boolean);
+
+  const out = {};
+  list.forEach((p, i) => {
+    let sum = 0, wsum = 0;
+    cols.forEach(c => { const v = c.norm[i] == null ? c.mean : c.norm[i]; sum += v * c.w; wsum += c.w; });
+    out[p.id] = wsum ? sum / wsum : 0.5;
+  });
+  return out;
+}
+
+// Tabloda olmayan kategoriler için eski genel yöntem (eşit ağırlık)
+function scoreGenericPerf(list){
+  const perfKeys = new Set();
+  list.forEach(p => Object.keys(p.specs || {}).forEach(k => {
+    if(/fiyat/i.test(k)) return;
+    if(/genişlik \(mm\)|uzunluk \(mm\)/i.test(k)) return;
+    if(scoreNum(p.specs[k]) != null) perfKeys.add(k);
+  }));
+  const ranges = {};
+  perfKeys.forEach(k => {
+    const vals = list.map(p => scoreNum((p.specs||{})[k])).filter(v => v != null);
+    if(vals.length) ranges[k] = { min: Math.min(...vals), max: Math.max(...vals) };
+  });
+  const out = {};
+  list.forEach(p => {
+    let sum = 0, count = 0;
+    perfKeys.forEach(k => {
+      const v = scoreNum((p.specs||{})[k]);
+      if(v == null) return;
+      const { min, max } = ranges[k];
+      let norm = max === min ? 1 : (v - min) / (max - min);
+      if(/ağırlı[kğ]|kalınlık/i.test(k)) norm = 1 - norm; // düşük olan daha iyi
+      sum += norm; count++;
+    });
+    out[p.id] = count ? sum / count : 0.5;
+  });
+  return out;
+}
+
 function computeScores(products){
   const scored = products.filter(p => !p.upcoming);
   const byCat = {};
   scored.forEach(p => { (byCat[p.cat] = byCat[p.cat] || []).push(p); });
 
   const scores = {};
-  Object.values(byCat).forEach(list => {
-    // fiyatı bul ve ayıkla
+  Object.keys(byCat).forEach(cat => {
+    const list = byCat[cat];
+    // fiyatı bul ve ayıkla. 0 ve altı fiyat "bilinmiyor" sayılır (27 Eylül 2026
+    // düzeltmesi: tek bir 0 ₺'lik kayıt tüm kategoriyi sıfırlıyordu).
     list.forEach(p => {
       const specs = p.specs || {};
       const priceKey = Object.keys(specs).find(k => /fiyat/i.test(k));
       const raw = priceKey ? specs[priceKey] : null;
       const num = raw ? parseFloat(raw.toString().replace(/[^\d.,]/g,'').replace(',','.')) : NaN;
-      // BUG DÜZELTMESİ (27 Eylül 2026): Fiyatı "0" (veya negatif) olarak
-      // kaydedilmiş — genelde eksik/bozuk veriden kaynaklanan — TEK bir ürün,
-      // minPrice=0 yapıp priceFactor = minPrice/p.__price hesabını (0/fiyat=0)
-      // kategorideki TÜM ürünler için sıfırlıyordu. Bu yüzden az önce fiyatı
-      // gayet normal olan onlarca dizüstü/telefon "Fiyat/Performans Skoru: 0"
-      // gösteriyordu. Artık 0 ve altı fiyatlar da "bilinmiyor" (null) sayılıyor
-      // — tıpkı hiç fiyat girilmemiş ürün gibi davranıyor, tek başına
-      // kategoriyi bozamıyor.
       p.__price = (isNaN(num) || num <= 0) ? null : num;
     });
     const prices = list.map(p => p.__price).filter(v => v != null).sort((x,y) => x-y);
-    // 5 Ekim 2026 skor revizyonu: Referans fiyat artık kategorideki en ucuz ürün
-    // değil, fiyatların %10'luk dilimi. Böylece tek bir çok ucuz (ve genelde eski)
-    // ürün tüm kategorinin skorlarını ezemiyor.
-    const minPrice = prices.length ? prices[Math.floor(prices.length * 0.1)] : null;
+    const refPrice = prices.length ? prices[Math.floor(prices.length * 0.1)] : null;
 
-    // performans özelliklerini (fiyat hariç, sayısal) topla
-    // Not: Genişlik/Uzunluk gibi salt fiziksel boyut bilgileri "daha iyi/kötü" bir performans
-    // ekseni olmadığı için skorlamaya dahil edilmez, sadece bilgi amaçlı gösterilir.
-    const perfKeys = new Set();
-    list.forEach(p => Object.keys(p.specs || {}).forEach(k => {
-      if(/fiyat/i.test(k)) return;
-      if(/genişlik \(mm\)|uzunluk \(mm\)/i.test(k)) return;
-      const v = parseFloat((p.specs[k]||'').toString().replace(',','.'));
-      if(!isNaN(v)) perfKeys.add(k);
-    }));
-    const ranges = {};
-    perfKeys.forEach(k => {
-      const vals = list.map(p => parseFloat((p.specs[k]||'').toString().replace(',','.'))).filter(v => !isNaN(v));
-      if(vals.length) ranges[k] = { min: Math.min(...vals), max: Math.max(...vals) };
-    });
+    const perf = SCORE_FEATURES[cat] ? scoreWeightedPerf(list, SCORE_FEATURES[cat]) : scoreGenericPerf(list);
+
+    // Güncellik: kategorinin en yeni ürününe göre yaş (build ve tarayıcı aynı
+    // sonucu versin diye "bugün" değil, verinin kendisi referans alınır).
+    const times = list.map(p => p.addedAt ? new Date(p.addedAt).getTime() : NaN).filter(t => !isNaN(t));
+    const newest = times.length ? Math.max(...times) : null;
+    const ageRate = SCORE_AGE_RATE[cat] != null ? SCORE_AGE_RATE[cat] : 0.05;
 
     list.forEach(p => {
-      let sum = 0, count = 0;
-      perfKeys.forEach(k => {
-        const raw = p.specs[k];
-        if(raw === undefined) return;
-        const v = parseFloat(raw.toString().replace(',', '.'));
-        if(isNaN(v)) return;
-        const { min, max } = ranges[k];
-        let norm = max === min ? 1 : (v - min) / (max - min);
-        if(/ağırlık|kalınlık/i.test(k)) norm = 1 - norm; // düşük olan daha iyi
-        sum += norm; count++;
-      });
-      const perfAvg = count ? sum / count : 0.5;
-      // BUG 1 DÜZELTMESİ (Faz 7C): Önceki davranışta fiyatı olmayan
-      // ürün (p.__price null) priceFactor=1 (VARSAYILAN, cezasız)
-      // alıyordu — bu, "fiyatı bilinmiyor" ürünü "en ucuz ürünle eşit"
-      // gibi değerlendirip yapay olarak çok yüksek skora (gerçek
-      // örnek: 100) çıkarıyordu. Artık fiyatı bilinmeyen ürün
-      // priceFactor=0 alıyor — bu, "fiyat/performans değerlendirilemez"
-      // durumunu en düşük ham skorla temsil ediyor. Fiyatlı ürünlerin
-      // birbirine göre priceFactor hesaplaması HİÇ DEĞİŞMEDİ (minPrice/
-      // kendi fiyatı oranı aynen korunuyor), yani mevcut sıralama
-      // etkilenmiyor. Ürün katalogdan silinmiyor, sadece computeScores()
-      // çıktısında (ve ona bağlı "best_match" sıralamalarında) en düşük
-      // sıraya düşüyor — doğrudan model/kategori/GB gibi filtrelerde
-      // hâlâ görünebiliyor.
+      // Fiyatı bilinmeyen ürün "fiyat/performans değerlendirilemez" → 0 (Faz 7C).
       let priceFactor = 1;
-      // 5 Ekim 2026: Eski formül (perf × minFiyat/fiyat) fiyat oranını doğrusal
-      // kullandığı için kategorideki en ucuz ürün hep ~100 alıyor, amiral gemileri
-      // (ör. iPhone 17 Pro Max = 4) ise yok sayılıyordu. Yeni formül: performans
-      // ^1.5 (güçlü ürünü daha çok ödüllendirir) × fiyat oranı ^0.3 (fiyat etkisi
-      // yumuşatılmış, oran en fazla 1 ile sınırlı).
-      if(minPrice != null) priceFactor = p.__price ? Math.min(1, minPrice / p.__price) : 0;
-      p.__rawScore = Math.pow(perfAvg, 1.5) * Math.pow(priceFactor, 0.3);
+      if(refPrice != null) priceFactor = p.__price ? Math.min(1, refPrice / p.__price) : 0;
+      let ageFactor = 1;
+      const t = p.addedAt ? new Date(p.addedAt).getTime() : NaN;
+      if(newest != null && !isNaN(t)){
+        const years = (newest - t) / (365.25 * 24 * 3600 * 1000);
+        ageFactor = Math.max(SCORE_AGE_FLOOR, 1 - ageRate * Math.max(0, years - 1));
+      }
+      p.__rawScore = Math.pow(perf[p.id], SCORE_PERF_EXP) * Math.pow(priceFactor, SCORE_PRICE_EXP) * ageFactor;
     });
 
     const maxRaw = Math.max(...list.map(p => p.__rawScore), 0.0001);

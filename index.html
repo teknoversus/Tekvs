@@ -152,131 +152,6 @@
 </div>
 
 <main class="wrap">
-  <section class="section" id="katalog-ozet">
-    <div class="section-head">
-      <div>
-        <div class="section-label">Otomatik Güncellenen</div>
-        <h2 class="section-title">Katalogda Neler Var?</h2>
-<div class="acc-block" id="accStats">
-  <button type="button" class="acc-toggle" onclick="toggleAcc('accStats')" aria-expanded="false" style="width:100%;text-align:left;background:var(--bg-soft,#F7F7F5);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);">
-    Katalogda neler var, veriyi nereden alıyoruz?
-    <span class="acc-icon" style="transition:transform .15s;">▾</span>
-  </button>
-  <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
-    <div style="padding-top:14px;">
-<p style="font-size:14px;line-height:1.7;color:var(--ink-soft);max-width:680px;margin:0 0 14px;">
-  TeknoVersus kataloğunda 7 kategoride <span id="catalogTotalCount">816</span> ürün bulunuyor. Aşağıdaki tablo her kategorideki
-  model sayısını ve güncel fiyat aralığını gösteriyor. Fiyatlar Türkiye perakende piyasasından
-  derlenir ve düzenli olarak elle doğrulanır.
-</p>
-<table style="width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;max-width:680px;">
-  <thead><tr style="border-bottom:2px solid var(--line);">
-    <th style="text-align:left;padding:8px 10px 8px 0;">Kategori</th>
-    <th style="text-align:left;padding:8px 10px;">Model</th>
-    <th style="text-align:left;padding:8px 0;">Fiyat aralığı</th>
-  </tr></thead>
-  <tbody id="catalogStatsBody">
-    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="telefon.html" title="Telefon Karşılaştırma ve Fiyatları">Telefon</a></td><td style="padding:7px 10px;">118</td><td style="padding:7px 0;">3.999 – 129.999 ₺</td></tr>
-    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="dizustu.html" title="Dizüstü Bilgisayar Karşılaştırma ve Fiyatları">Dizüstü Bilgisayar</a></td><td style="padding:7px 10px;">124</td><td style="padding:7px 0;">15.449 – 525.999 ₺</td></tr>
-    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="tablet.html" title="Tablet Karşılaştırma ve Fiyatları">Tablet</a></td><td style="padding:7px 10px;">85</td><td style="padding:7px 0;">3.800 – 73.822 ₺</td></tr>
-    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="kulaklik.html" title="Kulaklık Karşılaştırma ve Fiyatları">Kulaklık</a></td><td style="padding:7px 10px;">59</td><td style="padding:7px 0;">718 – 29.819 ₺</td></tr>
-    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="akilli-saat.html" title="Akıllı Saat Karşılaştırma ve Fiyatları">Akıllı Saat</a></td><td style="padding:7px 10px;">123</td><td style="padding:7px 0;">1.499 – 59.617 ₺</td></tr>
-    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="televizyon.html" title="Televizyon Karşılaştırma ve Fiyatları">Televizyon</a></td><td style="padding:7px 10px;">62</td><td style="padding:7px 0;">5.887 – 163.999 ₺</td></tr>
-    <tr><td style="padding:7px 10px 7px 0;"><a href="kamera.html" title="Kamera Karşılaştırma ve Fiyatları">Kamera</a></td><td style="padding:7px 10px;">100</td><td style="padding:7px 0;">6.499 – 377.999 ₺</td></tr>
-  </tbody>
-</table>
-
-<h2 class="section-title">Kategori Seçim Rehberleri</h2>
-<p style="font-size:14px;color:var(--ink-soft);max-width:680px;margin-bottom:12px;">
-  Hangi ürünün size uygun olduğuna karar vermeden önce, kategori bazlı seçim kriterlerini ve
-  terimleri açıkladığımız rehberlerimize göz atabilirsiniz.
-</p>
-<div style="display:flex;flex-wrap:wrap;gap:8px;max-width:680px;margin-bottom:24px;">
-  <a class="chip-filter" href="rehber/telefon-nasil-secilir.html" title="Telefon Seçim Rehberi">Telefon Nasıl Seçilir?</a>
-  <a class="chip-filter" href="rehber/dizustu-bilgisayar-nasil-secilir.html" title="Dizüstü Bilgisayar Seçim Rehberi">Dizüstü Nasıl Seçilir?</a>
-  <a class="chip-filter" href="rehber/tablet-nasil-secilir.html" title="Tablet Seçim Rehberi">Tablet Nasıl Seçilir?</a>
-  <a class="chip-filter" href="rehber/kulaklik-nasil-secilir.html" title="Kulaklık Seçim Rehberi">Kulaklık Nasıl Seçilir?</a>
-  <a class="chip-filter" href="rehber/kamera-nasil-secilir.html" title="Kamera Seçim Rehberi">Kamera Nasıl Seçilir?</a>
-  <a class="chip-filter" href="rehber/akilli-saat-nasil-secilir.html" title="Akıllı Saat Seçim Rehberi">Akıllı Saat Nasıl Seçilir?</a>
-  <a class="chip-filter" href="rehber/televizyon-nasil-secilir.html" title="Televizyon Seçim Rehberi">Televizyon Nasıl Seçilir?</a>
-</div>
-
-<h2 class="section-title">Verileri Nereden Alıyoruz?</h2>
-<ul style="font-size:14px;line-height:1.9;color:var(--ink-soft);max-width:680px;padding-left:20px;margin-bottom:8px;">
-  <li><strong>Teknik özellikler:</strong> Üreticilerin resmi ürün sayfaları — örneğin
-    <a href="https://www.apple.com/tr/" target="_blank" rel="noopener noreferrer nofollow">Apple</a>,
-    <a href="https://www.samsung.com/tr/" target="_blank" rel="noopener noreferrer nofollow">Samsung</a>,
-    <a href="https://www.mi.com/tr/" target="_blank" rel="noopener noreferrer nofollow">Xiaomi</a> ve
-    <a href="https://www.sony.com.tr/" target="_blank" rel="noopener noreferrer nofollow">Sony</a>.
-    Her ürün sayfasında ilgili üreticinin resmi sitesine bağlantı verilir.</li>
-  <li><strong>Standartlar:</strong> Su/toz direnci için
-    <a href="https://www.iec.ch/homepage" target="_blank" rel="noopener noreferrer nofollow">IEC 60529 (IP kodları)</a>,
-    ekran teknolojileri için <a href="https://www.vesa.org/" target="_blank" rel="noopener noreferrer nofollow">VESA</a>,
-    kablosuz ses için <a href="https://www.bluetooth.com/" target="_blank" rel="noopener noreferrer nofollow">Bluetooth SIG</a> tanımları esas alınır.</li>
-  <li><strong>Fiyatlar:</strong> Türkiye perakende piyasası, düzenli elle doğrulama ile güncellenir.
-    Anlık piyasa değişimlerini yansıtmayabilir.</li>
-  <li><strong>Skor:</strong> Otomatik hesaplanır, hiçbir marka ödeme yaparak sıralamasını değiştiremez.
-    Yöntemin tamamı <a href="hakkimizda.html">Hakkımızda</a> sayfasında açıklanmıştır.</li>
-</ul>
-<p style="font-size:13px;color:var(--ink-soft);max-width:680px;margin-bottom:20px;">
-  Katalogda ayrıca 382 ürün karşılaştırması, 171 inceleme ve 364 alım rehberi bulunuyor.
-  İçerik <span rel="author"><strong>Sinan Tanrı</strong></span> tarafından hazırlanır ve düzenli olarak güncellenir
-  (<a href="hakkimizda.html">editoryal ilkeler</a>).
-  Sorularınız ve düzeltme talepleriniz için:
-  <a href="mailto:teknoversus@teknoversus.com.tr">teknoversus@teknoversus.com.tr</a>
-</p>
-    </div>
-  </div>
-</div>
-
-
-<div class="acc-block" id="accFaq">
-  <button type="button" class="acc-toggle" onclick="toggleAcc('accFaq')" aria-expanded="false" style="width:100%;text-align:left;background:var(--bg-soft,#F7F7F5);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);">
-    Sıkça sorulan sorular
-    <span class="acc-icon" style="transition:transform .15s;">▾</span>
-  </button>
-  <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
-    <div style="padding-top:14px;">
-<dl style="font-size:14px;line-height:1.7;max-width:680px;margin-bottom:20px;">
-  <dt style="font-weight:600;margin-top:14px;">TeknoVersus ürün satıyor mu?</dt>
-  <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. TeknoVersus bir karşılaştırma ve inceleme sitesidir. Satın alma bağlantıları Amazon'a yönlendirir; satış, kargo ve iade süreçleri satıcıya aittir.</dd>
-  <dt style="font-weight:600;margin-top:14px;">Fiyat/performans skoru nasıl hesaplanıyor?</dt>
-  <dd style="margin:4px 0 0;color:var(--ink-soft);">Ürünün sayısal teknik özellikleri kategori içinde 0-1 arasında normalize edilir, ortalaması alınır ve kategorideki en ucuz ürünün fiyatına oranlanır. Sonuç 100 üzerinden ölçeklenir. Yöntemin tamamı <a href="hakkimizda.html">Hakkımızda</a> sayfasında.</dd>
-  <dt style="font-weight:600;margin-top:14px;">Ürünler test ediliyor mu?</dt>
-  <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. Değerlendirmeler üreticinin resmi teknik verilerinin kategori ortalamasıyla karşılaştırılmasına dayanır; laboratuvar testi yapılmaz. Bu, her inceleme sayfasında açıkça belirtilir.</dd>
-  <dt style="font-weight:600;margin-top:14px;">Fiyatlar ne sıklıkla güncelleniyor?</dt>
-  <dd style="margin:4px 0 0;color:var(--ink-soft);">Fiyatlar Türkiye perakende piyasasından elle doğrulanarak güncellenir. Anlık piyasa hareketlerini yansıtmayabilir; kesin fiyat için satıcı sayfasına bakmanızı öneririz.</dd>
-  <dt style="font-weight:600;margin-top:14px;">Markalar sıralamayı etkileyebilir mi?</dt>
-  <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. Skor tamamen otomatik hesaplanır. Hiçbir ticari anlaşma bir ürünün skorunu veya listelerdeki sırasını değiştiremez.</dd>
-</dl>
-    </div>
-  </div>
-</div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- POPULER_KARSILASTIRMALAR_START -->
-  <section class="section" id="karsilastirmalar">
-    <div class="section-head">
-      <div>
-        <div class="section-label">Kafa Kafaya</div>
-        <h2 class="section-title">Hangi Ürünler Birbiriyle Karşılaştırılıyor?</h2>
-      </div>
-    </div>
-    <div class="wrap" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
-      <a class="chip-filter" href="karsilastir/apple-macbook-pro-16-m3-pro-vs-macbook-air-m2-13.html">Apple MacBook Pro 16&quot; (M3 Pro) vs MacBook Air (M2, 13&quot;)</a>
-      <a class="chip-filter" href="karsilastir/iphone-16-vs-iphone-16-pro.html">iPhone 16 vs iPhone 16 Pro</a>
-      <a class="chip-filter" href="karsilastir/apple-ipad-mini-7-nesil-vs-honor-magicpad-4.html">Apple iPad mini (7. Nesil) vs Honor MagicPad 4</a>
-      <a class="chip-filter" href="karsilastir/airpods-pro-2-nesil-vs-bose-quietcomfort-ultra-earbuds.html">AirPods Pro (2. Nesil) vs Bose QuietComfort Ultra Earbuds</a>
-      <a class="chip-filter" href="karsilastir/amazfit-gts-4-vs-apple-watch-ultra.html">Amazfit GTS 4 vs Apple Watch Ultra</a>
-      <a class="chip-filter" href="karsilastir/lg-43ur78-vs-vestel-55ua9540.html">LG 43UR78 vs Vestel 55UA9540</a>
-      <a class="chip-filter" href="karsilastir/nikon-z6-iii-vs-sony-alpha-a6400.html">Nikon Z6 III vs Sony Alpha a6400</a>
-    </div>
-  </section>
-  <!-- POPULER_KARSILASTIRMALAR_END -->
 
   <section class="section" id="katalog">
     <div class="section-head">
@@ -3680,6 +3555,132 @@
     </div>
   </div>
 <!-- YENI_KARTLAR_END -->
+    </div>
+  </section>
+
+  <!-- POPULER_KARSILASTIRMALAR_START -->
+  <section class="section" id="karsilastirmalar">
+    <div class="section-head">
+      <div>
+        <div class="section-label">Kafa Kafaya</div>
+        <h2 class="section-title">Hangi Ürünler Birbiriyle Karşılaştırılıyor?</h2>
+      </div>
+    </div>
+    <div class="wrap" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
+      <a class="chip-filter" href="karsilastir/apple-macbook-pro-16-m3-pro-vs-macbook-air-m2-13.html">Apple MacBook Pro 16&quot; (M3 Pro) vs MacBook Air (M2, 13&quot;)</a>
+      <a class="chip-filter" href="karsilastir/iphone-16-vs-iphone-16-pro.html">iPhone 16 vs iPhone 16 Pro</a>
+      <a class="chip-filter" href="karsilastir/apple-ipad-mini-7-nesil-vs-honor-magicpad-4.html">Apple iPad mini (7. Nesil) vs Honor MagicPad 4</a>
+      <a class="chip-filter" href="karsilastir/airpods-pro-2-nesil-vs-bose-quietcomfort-ultra-earbuds.html">AirPods Pro (2. Nesil) vs Bose QuietComfort Ultra Earbuds</a>
+      <a class="chip-filter" href="karsilastir/amazfit-gts-4-vs-apple-watch-ultra.html">Amazfit GTS 4 vs Apple Watch Ultra</a>
+      <a class="chip-filter" href="karsilastir/lg-43ur78-vs-vestel-55ua9540.html">LG 43UR78 vs Vestel 55UA9540</a>
+      <a class="chip-filter" href="karsilastir/nikon-z6-iii-vs-sony-alpha-a6400.html">Nikon Z6 III vs Sony Alpha a6400</a>
+    </div>
+  </section>
+  <!-- POPULER_KARSILASTIRMALAR_END -->
+
+  <section class="section" id="katalog-ozet">
+    <div class="section-head">
+      <div>
+        <div class="section-label">Otomatik Güncellenen</div>
+        <h2 class="section-title">Katalogda Neler Var?</h2>
+<div class="acc-block" id="accStats">
+  <button type="button" class="acc-toggle" onclick="toggleAcc('accStats')" aria-expanded="false" style="width:100%;text-align:left;background:var(--bg-soft,#F7F7F5);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);">
+    Katalogda neler var, veriyi nereden alıyoruz?
+    <span class="acc-icon" style="transition:transform .15s;">▾</span>
+  </button>
+  <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
+    <div style="padding-top:14px;">
+<p style="font-size:14px;line-height:1.7;color:var(--ink-soft);max-width:680px;margin:0 0 14px;">
+  TeknoVersus kataloğunda 7 kategoride <span id="catalogTotalCount">816</span> ürün bulunuyor. Aşağıdaki tablo her kategorideki
+  model sayısını ve güncel fiyat aralığını gösteriyor. Fiyatlar Türkiye perakende piyasasından
+  derlenir ve düzenli olarak elle doğrulanır.
+</p>
+<table style="width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;max-width:680px;">
+  <thead><tr style="border-bottom:2px solid var(--line);">
+    <th style="text-align:left;padding:8px 10px 8px 0;">Kategori</th>
+    <th style="text-align:left;padding:8px 10px;">Model</th>
+    <th style="text-align:left;padding:8px 0;">Fiyat aralığı</th>
+  </tr></thead>
+  <tbody id="catalogStatsBody">
+    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="telefon.html" title="Telefon Karşılaştırma ve Fiyatları">Telefon</a></td><td style="padding:7px 10px;">118</td><td style="padding:7px 0;">3.999 – 129.999 ₺</td></tr>
+    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="dizustu.html" title="Dizüstü Bilgisayar Karşılaştırma ve Fiyatları">Dizüstü Bilgisayar</a></td><td style="padding:7px 10px;">124</td><td style="padding:7px 0;">15.449 – 525.999 ₺</td></tr>
+    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="tablet.html" title="Tablet Karşılaştırma ve Fiyatları">Tablet</a></td><td style="padding:7px 10px;">85</td><td style="padding:7px 0;">3.800 – 73.822 ₺</td></tr>
+    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="kulaklik.html" title="Kulaklık Karşılaştırma ve Fiyatları">Kulaklık</a></td><td style="padding:7px 10px;">59</td><td style="padding:7px 0;">718 – 29.819 ₺</td></tr>
+    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="akilli-saat.html" title="Akıllı Saat Karşılaştırma ve Fiyatları">Akıllı Saat</a></td><td style="padding:7px 10px;">123</td><td style="padding:7px 0;">1.499 – 59.617 ₺</td></tr>
+    <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 10px 7px 0;"><a href="televizyon.html" title="Televizyon Karşılaştırma ve Fiyatları">Televizyon</a></td><td style="padding:7px 10px;">62</td><td style="padding:7px 0;">5.887 – 163.999 ₺</td></tr>
+    <tr><td style="padding:7px 10px 7px 0;"><a href="kamera.html" title="Kamera Karşılaştırma ve Fiyatları">Kamera</a></td><td style="padding:7px 10px;">100</td><td style="padding:7px 0;">6.499 – 377.999 ₺</td></tr>
+  </tbody>
+</table>
+
+<h2 class="section-title">Kategori Seçim Rehberleri</h2>
+<p style="font-size:14px;color:var(--ink-soft);max-width:680px;margin-bottom:12px;">
+  Hangi ürünün size uygun olduğuna karar vermeden önce, kategori bazlı seçim kriterlerini ve
+  terimleri açıkladığımız rehberlerimize göz atabilirsiniz.
+</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;max-width:680px;margin-bottom:24px;">
+  <a class="chip-filter" href="rehber/telefon-nasil-secilir.html" title="Telefon Seçim Rehberi">Telefon Nasıl Seçilir?</a>
+  <a class="chip-filter" href="rehber/dizustu-bilgisayar-nasil-secilir.html" title="Dizüstü Bilgisayar Seçim Rehberi">Dizüstü Nasıl Seçilir?</a>
+  <a class="chip-filter" href="rehber/tablet-nasil-secilir.html" title="Tablet Seçim Rehberi">Tablet Nasıl Seçilir?</a>
+  <a class="chip-filter" href="rehber/kulaklik-nasil-secilir.html" title="Kulaklık Seçim Rehberi">Kulaklık Nasıl Seçilir?</a>
+  <a class="chip-filter" href="rehber/kamera-nasil-secilir.html" title="Kamera Seçim Rehberi">Kamera Nasıl Seçilir?</a>
+  <a class="chip-filter" href="rehber/akilli-saat-nasil-secilir.html" title="Akıllı Saat Seçim Rehberi">Akıllı Saat Nasıl Seçilir?</a>
+  <a class="chip-filter" href="rehber/televizyon-nasil-secilir.html" title="Televizyon Seçim Rehberi">Televizyon Nasıl Seçilir?</a>
+</div>
+
+<h2 class="section-title">Verileri Nereden Alıyoruz?</h2>
+<ul style="font-size:14px;line-height:1.9;color:var(--ink-soft);max-width:680px;padding-left:20px;margin-bottom:8px;">
+  <li><strong>Teknik özellikler:</strong> Üreticilerin resmi ürün sayfaları — örneğin
+    <a href="https://www.apple.com/tr/" target="_blank" rel="noopener noreferrer nofollow">Apple</a>,
+    <a href="https://www.samsung.com/tr/" target="_blank" rel="noopener noreferrer nofollow">Samsung</a>,
+    <a href="https://www.mi.com/tr/" target="_blank" rel="noopener noreferrer nofollow">Xiaomi</a> ve
+    <a href="https://www.sony.com.tr/" target="_blank" rel="noopener noreferrer nofollow">Sony</a>.
+    Her ürün sayfasında ilgili üreticinin resmi sitesine bağlantı verilir.</li>
+  <li><strong>Standartlar:</strong> Su/toz direnci için
+    <a href="https://www.iec.ch/homepage" target="_blank" rel="noopener noreferrer nofollow">IEC 60529 (IP kodları)</a>,
+    ekran teknolojileri için <a href="https://www.vesa.org/" target="_blank" rel="noopener noreferrer nofollow">VESA</a>,
+    kablosuz ses için <a href="https://www.bluetooth.com/" target="_blank" rel="noopener noreferrer nofollow">Bluetooth SIG</a> tanımları esas alınır.</li>
+  <li><strong>Fiyatlar:</strong> Türkiye perakende piyasası, düzenli elle doğrulama ile güncellenir.
+    Anlık piyasa değişimlerini yansıtmayabilir.</li>
+  <li><strong>Skor:</strong> Otomatik hesaplanır, hiçbir marka ödeme yaparak sıralamasını değiştiremez.
+    Yöntemin tamamı <a href="hakkimizda.html">Hakkımızda</a> sayfasında açıklanmıştır.</li>
+</ul>
+<p style="font-size:13px;color:var(--ink-soft);max-width:680px;margin-bottom:20px;">
+  Katalogda ayrıca 382 ürün karşılaştırması, 171 inceleme ve 364 alım rehberi bulunuyor.
+  İçerik <span rel="author"><strong>Sinan Tanrı</strong></span> tarafından hazırlanır ve düzenli olarak güncellenir
+  (<a href="hakkimizda.html">editoryal ilkeler</a>).
+  Sorularınız ve düzeltme talepleriniz için:
+  <a href="mailto:teknoversus@teknoversus.com.tr">teknoversus@teknoversus.com.tr</a>
+</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="acc-block" id="accFaq">
+  <button type="button" class="acc-toggle" onclick="toggleAcc('accFaq')" aria-expanded="false" style="width:100%;text-align:left;background:var(--bg-soft,#F7F7F5);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink);">
+    Sıkça sorulan sorular
+    <span class="acc-icon" style="transition:transform .15s;">▾</span>
+  </button>
+  <div class="acc-body" style="max-height:0;overflow:hidden;transition:max-height .2s ease;">
+    <div style="padding-top:14px;">
+<dl style="font-size:14px;line-height:1.7;max-width:680px;margin-bottom:20px;">
+  <dt style="font-weight:600;margin-top:14px;">TeknoVersus ürün satıyor mu?</dt>
+  <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. TeknoVersus bir karşılaştırma ve inceleme sitesidir. Satın alma bağlantıları Amazon'a yönlendirir; satış, kargo ve iade süreçleri satıcıya aittir.</dd>
+  <dt style="font-weight:600;margin-top:14px;">Fiyat/performans skoru nasıl hesaplanıyor?</dt>
+  <dd style="margin:4px 0 0;color:var(--ink-soft);">Ürünün sayısal teknik özellikleri kategori içinde 0-1 arasında normalize edilir, ortalaması alınır ve kategorideki en ucuz ürünün fiyatına oranlanır. Sonuç 100 üzerinden ölçeklenir. Yöntemin tamamı <a href="hakkimizda.html">Hakkımızda</a> sayfasında.</dd>
+  <dt style="font-weight:600;margin-top:14px;">Ürünler test ediliyor mu?</dt>
+  <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. Değerlendirmeler üreticinin resmi teknik verilerinin kategori ortalamasıyla karşılaştırılmasına dayanır; laboratuvar testi yapılmaz. Bu, her inceleme sayfasında açıkça belirtilir.</dd>
+  <dt style="font-weight:600;margin-top:14px;">Fiyatlar ne sıklıkla güncelleniyor?</dt>
+  <dd style="margin:4px 0 0;color:var(--ink-soft);">Fiyatlar Türkiye perakende piyasasından elle doğrulanarak güncellenir. Anlık piyasa hareketlerini yansıtmayabilir; kesin fiyat için satıcı sayfasına bakmanızı öneririz.</dd>
+  <dt style="font-weight:600;margin-top:14px;">Markalar sıralamayı etkileyebilir mi?</dt>
+  <dd style="margin:4px 0 0;color:var(--ink-soft);">Hayır. Skor tamamen otomatik hesaplanır. Hiçbir ticari anlaşma bir ürünün skorunu veya listelerdeki sırasını değiştiremez.</dd>
+</dl>
+    </div>
+  </div>
+</div>
+
+
+      </div>
     </div>
   </section>
 

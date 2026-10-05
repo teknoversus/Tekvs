@@ -4111,20 +4111,30 @@ async function toggleFavorite(id){
 function renderHeroDuel(){
   const box = document.getElementById('heroDuel');
   if(!box) return;
-  const pool = products.filter(p => !p.upcoming && scores[p.id] > 0);
-  if(pool.length < 2) return;
-  const best = pool.slice().sort((a,b) => scores[b.id]-scores[a.id])[0];
-  const rival = pool.filter(p => p.cat===best.cat && p.id!==best.id).sort((a,b) => scores[b.id]-scores[a.id])[0];
-  if(!rival) return;
+  const priceOf = p => parseFloat(String((p.specs||{})['Fiyat (₺)']||'').replace(/[^\d.]/g,'')) || 0;
+  // Amiral gemisi = kategorisinin en pahalı ürünleri (fiyatı bilinen, çıkmış olanlar).
+  // Her sayfa yüklemesinde rastgele bir kategori ve o kategorinin amiral gemileri arasından rastgele iki ürün seçilir.
+  const real = products.filter(p => !p.upcoming && priceOf(p) > 0 && scores[p.id] > 0);
+  const byCat = {};
+  real.forEach(p => { (byCat[p.cat] = byCat[p.cat] || []).push(p); });
+  const cats = Object.keys(byCat).filter(c => byCat[c].length >= 2);
+  if(!cats.length) return;
+  const cat = cats[Math.floor(Math.random()*cats.length)];
+  const sortedByPrice = byCat[cat].sort((x,y) => priceOf(y)-priceOf(x));
+  const flagships = sortedByPrice.slice(0, Math.min(6, Math.max(2, Math.ceil(sortedByPrice.length * 0.25))));
+  for(let i = flagships.length-1; i > 0; i--){ const j = Math.floor(Math.random()*(i+1)); [flagships[i], flagships[j]] = [flagships[j], flagships[i]]; }
+  const best = flagships[0], rival = flagships[1];
   const mk = (tag, cls, txt, parent) => { const e = document.createElement(tag); if(cls) e.className = cls; if(txt!=null) e.textContent = txt; if(parent) parent.appendChild(e); return e; };
+  const fmtPrice = p => Math.round(priceOf(p)).toLocaleString('tr-TR') + ' ₺';
+  const winner = scores[best.id] >= scores[rival.id] ? best : rival;
   const side = (p, cls) => {
-    const d = mk('div', 'duel-side '+cls);
+    const d = mk('div', 'duel-side '+cls+(p === winner ? ' duel-win' : ''));
     mk('div', 'duel-cat', p.cat.toUpperCase(), d);
     mk('div', 'duel-name', p.name, d);
     mk('div', 'duel-score', String(Math.round(scores[p.id])), d);
-    const specs = Object.keys(p.specs||{}).filter(k => k !== 'Fiyat (₺)').slice(0,2);
     const ul = mk('div', 'duel-specs', null, d);
-    specs.forEach(k => mk('span', null, k+': '+p.specs[k], ul));
+    mk('span', 'duel-price', fmtPrice(p), ul);
+    Object.keys(p.specs||{}).filter(k => k !== 'Fiyat (₺)').slice(0,1).forEach(k => mk('span', null, k+': '+p.specs[k], ul));
     return d;
   };
   box.textContent = '';
@@ -4137,7 +4147,6 @@ function renderHeroDuel(){
   btn.onclick = () => { selected = new Set([best.id, rival.id]); updateCompareBar(); openCompare(); };
   box.hidden = false;
 }
-
 function toggleSelect(id){
   if(selected.has(id)){
     selected.delete(id);

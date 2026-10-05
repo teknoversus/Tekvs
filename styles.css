@@ -320,8 +320,9 @@
   .duel-b{border-left:0;border-radius:0 18px 18px 0;text-align:right;}
   .duel-cat{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#8FA195;}
   .duel-name{font-family:'Oswald',sans-serif;font-size:20px;line-height:1.15;margin:8px 0 12px;overflow-wrap:anywhere;}
-  .duel-score{font-family:'Oswald',sans-serif;font-size:56px;line-height:1;color:#35C2A8;}
-  .duel-b .duel-score{color:#8FA195;}
+  .duel-score{font-family:'Oswald',sans-serif;font-size:56px;line-height:1;color:#8FA195;}
+  .duel-win .duel-score{color:#35C2A8;}
+  .duel-price{color:#EFB123;font-weight:600;}
   .duel-specs{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:#C5D1C9;margin-top:10px;}
   .duel-vs{position:absolute;left:50%;top:50%;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--yellow);color:#0E1411;font-family:'Oswald',sans-serif;font-size:19px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px #0E1411;}
   .duel-btn{display:block;width:100%;margin-top:14px;background:#fff;color:#0E1411;font-family:'Inter',sans-serif;font-weight:600;font-size:14px;padding:13px;border:none;border-radius:10px;cursor:pointer;}

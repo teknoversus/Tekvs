@@ -295,3 +295,42 @@
       scroll-behavior: auto !important;
     }
   }
+
+  /* ---- Anasayfa hero: koyu bant + öne çıkan karşılaştırma kartı (tasarım "C · Karma") ---- */
+  .hero.hero-dark{position:relative;overflow:hidden;background:#0E1411;color:#E8EEE9;text-align:left;padding:56px 0 100px;border-radius:0 0 40px 40px;}
+  .hero-dark::before{content:"";position:absolute;top:-220px;left:50%;margin-left:-500px;width:1000px;height:640px;border-radius:50%;background:radial-gradient(closest-side,rgba(53,194,168,.24),rgba(53,194,168,0));pointer-events:none;}
+  .hero-dark::after{content:"";position:absolute;bottom:-200px;right:-120px;width:520px;height:420px;border-radius:50%;background:radial-gradient(closest-side,rgba(239,177,35,.18),rgba(239,177,35,0));pointer-events:none;}
+  .hero-grid{position:relative;z-index:1;display:flex;gap:48px;align-items:center;}
+  .hero-text{flex:1 1 0;min-width:0;}
+  .hero-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#35C2A8;margin-bottom:14px;}
+  .hero.hero-dark h1{font-size:clamp(32px,4.3vw,56px);line-height:1.06;margin-bottom:16px;background:none;color:#E8EEE9;-webkit-text-fill-color:currentColor;}
+  .hero.hero-dark h1 span{color:var(--yellow);}
+  .hero.hero-dark p{color:#9DAEA2;margin:0 0 26px;max-width:540px;font-size:15.5px;line-height:1.65;}
+  .hero.hero-dark p strong{color:#E8EEE9;}
+  .hero.hero-dark .hero-cta{justify-content:flex-start;}
+  .btn.btn-yellow{background:var(--yellow);color:#0E1411;}
+  .btn.btn-yellow:hover{filter:brightness(1.06);}
+  .btn.btn-ghost-dark{background:transparent;color:#E8EEE9;border:1px solid #2C3B33;}
+  .btn.btn-ghost-dark:hover{border-color:#35C2A8;color:#35C2A8;}
+  .hero-duel{flex:0 0 440px;position:relative;}
+  .hero-duel[hidden]{display:none;}
+  .duel-row{position:relative;display:flex;align-items:stretch;}
+  .duel-side{flex:1;min-width:0;background:#16201B;border:1px solid #2C3B33;padding:22px 18px;}
+  .duel-a{border-radius:18px 0 0 18px;}
+  .duel-b{border-left:0;border-radius:0 18px 18px 0;text-align:right;}
+  .duel-cat{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#8FA195;}
+  .duel-name{font-family:'Oswald',sans-serif;font-size:20px;line-height:1.15;margin:8px 0 12px;overflow-wrap:anywhere;}
+  .duel-score{font-family:'Oswald',sans-serif;font-size:56px;line-height:1;color:#35C2A8;}
+  .duel-b .duel-score{color:#8FA195;}
+  .duel-specs{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:#C5D1C9;margin-top:10px;}
+  .duel-vs{position:absolute;left:50%;top:50%;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--yellow);color:#0E1411;font-family:'Oswald',sans-serif;font-size:19px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px #0E1411;}
+  .duel-btn{display:block;width:100%;margin-top:14px;background:#fff;color:#0E1411;font-family:'Inter',sans-serif;font-weight:600;font-size:14px;padding:13px;border:none;border-radius:10px;cursor:pointer;}
+  .duel-btn:hover{filter:brightness(.95);}
+  /* kategori kartları koyu bandın üzerine biner */
+  .hero-dark + .wrap .cat-nav{position:relative;z-index:2;margin-top:-52px;margin-bottom:0;padding-bottom:26px;}
+  .hero-dark + .wrap .cat-nav a{box-shadow:0 12px 28px rgba(20,26,20,.12);}
+  @media(max-width:900px){
+    .hero.hero-dark{padding:36px 0 84px;}
+    .hero-grid{flex-direction:column;align-items:stretch;gap:28px;}
+    .hero-duel{flex:0 0 auto;width:100%;}
+  }

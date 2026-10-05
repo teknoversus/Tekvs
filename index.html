@@ -131,14 +131,18 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <h1>Ürünleri karşılaştır,<br/>doğru karar ver.</h1>
-    <p><strong>TeknoVersus</strong>, Türkiye pazarındaki teknoloji ürünlerini fiyat/performans skoruna göre yan yana karşılaştıran bağımsız bir karşılaştırma ve inceleme sitesidir. Telefon, dizüstü bilgisayar, kulaklık, kamera, akıllı saat, tablet ve televizyon kategorilerinde ürünleri özellik özellik kıyaslar; her ürün için alım rehberi ve inceleme sunar.</p>
-    <div class="hero-cta">
-      <button class="btn btn-dark" onclick="document.getElementById('katalog').scrollIntoView({behavior:'smooth'})">Kataloğa göz at</button>
-      <button class="btn btn-outline" onclick="openFinder()">Bana Uygun Ürünü Bul</button>
+<section class="hero hero-dark">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="hero-eyebrow">BAĞIMSIZ · FİYAT / PERFORMANS SKORU</div>
+      <h1>Ürünleri karşılaştır,<br/><span>doğru karar ver.</span></h1>
+      <p><strong>TeknoVersus</strong>, Türkiye pazarındaki teknoloji ürünlerini fiyat/performans skoruna göre yan yana karşılaştıran bağımsız bir karşılaştırma ve inceleme sitesidir. Telefon, dizüstü bilgisayar, kulaklık, kamera, akıllı saat, tablet ve televizyon kategorilerinde ürünleri özellik özellik kıyaslar; her ürün için alım rehberi ve inceleme sunar.</p>
+      <div class="hero-cta">
+        <button class="btn btn-yellow" onclick="document.getElementById('katalog').scrollIntoView({behavior:'smooth'})">Kataloğa göz at</button>
+        <button class="btn btn-ghost-dark" onclick="openFinder()">Bana Uygun Ürünü Bul</button>
+      </div>
     </div>
+    <div class="hero-duel" id="heroDuel" hidden aria-label="Öne çıkan karşılaştırma"></div>
   </div>
 </section>
 
@@ -3868,6 +3872,7 @@ async function init(){
   try{ render(); }catch(e){ console.error('render() başarısız:', e); }
   try{ updateCatalogStats(); }catch(e){ console.error('updateCatalogStats() başarısız:', e); }
   try{ renderCatNavStrip(); }catch(e){ console.error('renderCatNavStrip() başarısız:', e); }
+  try{ renderHeroDuel(); }catch(e){ console.error('renderHeroDuel() başarısız:', e); }
   try{ renderRecentlyViewedInto('recentlyViewedStrip', products, null); }catch(e){ console.error('renderRecentlyViewedInto() başarısız:', e); }
   try{ renderTrending(); }catch(e){ console.error('renderTrending() başarısız:', e); }
   if(new URLSearchParams(location.search).get('finder') === '1') openFinder();
@@ -4100,6 +4105,37 @@ async function toggleFavorite(id){
   else favorites.push(id);
   render();
   await saveFavorites(favorites);
+}
+
+// ---- Hero: öne çıkan "kafa kafaya" kartı (gerçek katalog verisinden) ----
+function renderHeroDuel(){
+  const box = document.getElementById('heroDuel');
+  if(!box) return;
+  const pool = products.filter(p => !p.upcoming && scores[p.id] > 0);
+  if(pool.length < 2) return;
+  const best = pool.slice().sort((a,b) => scores[b.id]-scores[a.id])[0];
+  const rival = pool.filter(p => p.cat===best.cat && p.id!==best.id).sort((a,b) => scores[b.id]-scores[a.id])[0];
+  if(!rival) return;
+  const mk = (tag, cls, txt, parent) => { const e = document.createElement(tag); if(cls) e.className = cls; if(txt!=null) e.textContent = txt; if(parent) parent.appendChild(e); return e; };
+  const side = (p, cls) => {
+    const d = mk('div', 'duel-side '+cls);
+    mk('div', 'duel-cat', p.cat.toUpperCase(), d);
+    mk('div', 'duel-name', p.name, d);
+    mk('div', 'duel-score', String(Math.round(scores[p.id])), d);
+    const specs = Object.keys(p.specs||{}).filter(k => k !== 'Fiyat (₺)').slice(0,2);
+    const ul = mk('div', 'duel-specs', null, d);
+    specs.forEach(k => mk('span', null, k+': '+p.specs[k], ul));
+    return d;
+  };
+  box.textContent = '';
+  const row = mk('div', 'duel-row', null, box);
+  row.appendChild(side(best, 'duel-a'));
+  mk('div', 'duel-vs', 'VS', row);
+  row.appendChild(side(rival, 'duel-b'));
+  const btn = mk('button', 'duel-btn', 'Karşılaştırmayı aç →', box);
+  btn.type = 'button';
+  btn.onclick = () => { selected = new Set([best.id, rival.id]); updateCompareBar(); openCompare(); };
+  box.hidden = false;
 }
 
 function toggleSelect(id){

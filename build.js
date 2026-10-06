@@ -59,6 +59,7 @@ function loadHelpers(){
     computeScores: vm.runInContext('computeScores', context),
     productSlug: vm.runInContext('productSlug', context),
     prosConsFor: vm.runInContext('prosConsFor', context),
+    cardSpecEntries: vm.runInContext('cardSpecEntries', context),
   };
 }
 
@@ -183,7 +184,7 @@ async function main(){
 
   generatePopulerKarsilastirmalar({ products, computeScores: helpers.computeScores, rootDir });
 
-  refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir });
+  refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir, cardSpecEntries: helpers.cardSpecEntries });
 
   console.log('→ "Alınır mı" / "Fiyat-performans" rehber sayfaları üretiliyor...');
   generateBuyingGuides({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ2_TARGET_IDS, rootDir });

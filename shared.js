@@ -592,7 +592,11 @@ function prosConsFor(product, categoryProducts){
 // - İşlemci / ekran kartı için BENCHMARK PUANI UYDURULMAZ; üreticinin KENDİ
 //   segment sınıflandırması kullanılır (ör. Snapdragon 8 = amiral, 7 = üst-orta,
 //   6 = orta, 4 = giriş). Nesil farkını güncellik çarpanı karşılar.
-// - Eksik özellik, o özelliğin kategori ortalamasıyla doldurulur (ne ödül ne ceza).
+// - Eksik ("Belirtilmemiş") özellik, kategori ortalamasının %70'i varsayılır;
+//   özelliklerinin ağırlıkça %60'ından azı bilinen ürünün performansı ayrıca
+//   kademeli düşürülür (verisi olmayan ürün ortalama sayılıp öne çıkmasın).
+// - Sayısal özelliklerde %5-%95 dilimleri sınır alınır ve akla yatkın aralık
+//   dışındaki değerler (veri hatası) yok sayılır.
 // - Tabloda olmayan (ileride eklenecek) bir kategori için eski genel yönteme
 //   (tüm sayısal özellikler, eşit ağırlık) düşülür.
 // ============================================================
@@ -660,7 +664,7 @@ function scoreCpuLaptop(v){
   if(/snapdragon\s*x/.test(t)) return /elite/.test(t) ? 0.75 : 0.6;
   let base = null;
   if(/celeron|pentium|athlon|\bn\d{2,3}\b/.test(t)) return 0.1;
-  if(/ryzen\s*(\d)/.test(t)){ const s = +t.match(/ryzen\s*(\d)/)[1]; base = s >= 9 ? 1 : s === 7 ? 0.75 : s === 5 ? 0.5 : 0.3; }
+  if(/ryzen\s*(?:ai\s*)?(\d)/.test(t)){ const s = +t.match(/ryzen\s*(?:ai\s*)?(\d)/)[1]; base = s >= 9 ? 1 : s === 7 ? 0.75 : s === 5 ? 0.5 : 0.3; }
   else if(/i9|ultra\s*9|core\s*9/.test(t)) base = 1;
   else if(/i7|ultra\s*7|core\s*7/.test(t)) base = 0.75;
   else if(/i5|ultra\s*5|core\s*5/.test(t)) base = 0.5;
@@ -688,6 +692,12 @@ function scoreGpuLaptop(v){
   if(/uhd/.test(t)) return 0.12;
   if(/iris|radeon|arc|entegre|integrated|dahili/.test(t)) return 0.25;
   return null;
+}
+// Ağırlık (g). 20'den küçük değer kg girilmiş sayılır (ör. "2.6" → 2600 g).
+function scoreWeightGrams(v){
+  const n = scoreNum(v);
+  if(n == null || n <= 0) return null;
+  return n < 20 ? n * 1000 : n;
 }
 function scoreIp(v){
   const t = String(v||'').toUpperCase();
@@ -820,34 +830,37 @@ function scoreWeather(v){
 const SCORE_FEATURES = {
   'Telefon': [
     { k:/^İşlemci/i, w:3, x:scoreCpuMobile, s:'abs' },
-    { k:/^RAM/i, w:1.5, s:'log' },
-    { k:/^Depolama/i, w:1, s:'log' },
-    { k:/^Pil \(mAh\)/i, w:1.5, s:'lin' },
-    { k:/^(Arka )?Kamera \(MP\)/i, w:1, s:'log' },
-    { k:/^Ön Kamera \(MP\)/i, w:0.5, s:'log' },
-    { k:/^Yenileme Hızı/i, w:1, s:'lin' },
+    { k:/^RAM \(GB\)/i, w:1.5, s:'log', ok:[1,32] },
+    { k:/^Depolama/i, w:1, s:'log', ok:[8,2048] },
+    { k:/^Pil \(mAh\)/i, w:1.5, s:'lin', ok:[1000,15000] },
+    { k:/^(Arka )?Kamera \(MP\)/i, w:1, s:'log', ok:[2,250] },
+    { k:/^Ön Kamera \(MP\)/i, w:0.5, s:'log', ok:[1,100] },
+    { k:/^Yenileme Hızı/i, w:1, s:'lin', ok:[30,240] },
     { k:/^Ekran Türü/i, w:1, x:scorePanelMobile, s:'abs' },
-    { k:/^Piksel Yoğunluğu/i, w:0.5, s:'lin' },
+    { k:/^Piksel Yoğunluğu/i, w:0.5, s:'lin', ok:[100,900] },
     { k:/^Su Geçirmezlik/i, w:0.5, x:scoreIp, s:'abs' },
     { k:/^Hücresel Teknoloji/i, w:0.5, x:scoreCellular, s:'abs' }
   ],
   'Dizüstü': [
     { k:/^İşlemci/i, w:3, x:scoreCpuLaptop, s:'abs' },
     { k:/^Ekran Kartı/i, w:1.5, x:scoreGpuLaptop, s:'abs' },
-    { k:/^RAM/i, w:2, s:'log' },
-    { k:/^Depolama/i, w:1, s:'log' },
-    { k:/^Pil \(saat\)/i, w:1.5, s:'lin' },
-    { k:/^Yenileme Hızı/i, w:0.75, s:'lin' },
+    { k:/^RAM \(GB\)/i, w:2, s:'log', ok:[2,256] },
+    { k:/^Depolama/i, w:1, s:'log', ok:[32,16384] },
+    { w:1.5, any:[
+      { k:/^Pil \(saat\)/i, s:'lin', ok:[1,40] },
+      { k:/^Pil Kapasitesi \(Wh\)/i, s:'lin', ok:[20,130] }
+    ] },
+    { k:/^Yenileme Hızı/i, w:0.75, s:'lin', ok:[30,600] },
     { k:/^Ekran Türü/i, w:0.5, x:scorePanelLaptop, s:'abs' },
     { k:/^Çözünürlük/i, w:0.75, x:scorePixels, s:'log' },
-    { k:/Ağırlı[kğ]/i, w:0.75, s:'lin', inv:true }
+    { k:/Ağırlı[kğ]/i, w:0.75, x:scoreWeightGrams, s:'lin', inv:true, ok:[500,6000] }
   ],
   'Tablet': [
     { k:/^İşlemci/i, w:2.5, x:scoreCpuTablet, s:'abs' },
-    { k:/^RAM/i, w:1.5, s:'log' },
-    { k:/^Depolama/i, w:1, s:'log' },
-    { k:/^Pil \(mAh\)/i, w:1, s:'lin' },
-    { k:/^Yenileme Hızı/i, w:1, s:'lin' },
+    { k:/^RAM \(GB\)/i, w:1.5, s:'log', ok:[1,32] },
+    { k:/^Depolama/i, w:1, s:'log', ok:[8,2048] },
+    { k:/^Pil \(mAh\)/i, w:1, s:'lin', ok:[2000,20000] },
+    { k:/^Yenileme Hızı/i, w:1, s:'lin', ok:[30,240] },
     { k:/^Ekran Türü/i, w:1, x:scorePanelMobile, s:'abs' },
     { k:/^Çözünürlük/i, w:0.75, x:scorePixels, s:'log' },
     { k:/^(Arka )?Kamera \(MP\)/i, w:0.25, s:'log' },
@@ -887,44 +900,97 @@ const SCORE_FEATURES = {
   ]
 };
 
-// Bir ürünün, tablodaki bir özellik için ham değerini bulur (yoksa null)
+// "Belirtilmemiş", "-", boş vb. → veri yok. (6 Ekim 2026: toplu içe aktarılan
+// ürünlerde alanların çoğu "Belirtilmemiş" metniyle geliyor.)
+function specValueMissing(v){
+  const t = String(v == null ? '' : v).trim().toLowerCase();
+  return !t || /^(belirtilmemiş|belirtilmemis|bilinmiyor|bilgi yok|yok bilgi|-|—|–|n\/a|null|undefined)$/.test(t);
+}
+
+// Bir ürünün, tablodaki bir özellik için ham değerini bulur (yoksa null).
+// f.ok = [alt, üst]: akla yatkın aralık. Dışındaki değer (ör. "Depolama: 8 GB"
+// olarak yanlış ayrıştırılmış ekran kartı belleği) veri hatası sayılıp yok kabul edilir.
 function scoreFeatureRaw(p, f){
   const specs = p.specs || {};
   const keys = Object.keys(specs);
   for(let i = 0; i < keys.length; i++){
     if(!f.k.test(keys[i])) continue;
+    if(specValueMissing(specs[keys[i]])) continue;
     const val = f.x ? f.x(specs[keys[i]]) : scoreNum(specs[keys[i]]);
-    if(val != null && !isNaN(val)) return val;
+    if(val == null || isNaN(val)) continue;
+    if(f.ok && (val < f.ok[0] || val > f.ok[1])) continue;
+    return val;
   }
   return null;
 }
 
+function scoreQuantile(sorted, q){
+  const pos = (sorted.length - 1) * q, lo = Math.floor(pos), hi = Math.ceil(pos);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (pos - lo);
+}
+
+// Tek bir özelliğin kategori içi 0-1 sütunu (ürün sırasıyla); ayırt edici değilse null
+function scoreColumn(list, f){
+  let vals = list.map(p => scoreFeatureRaw(p, f));
+  if(f.s === 'log') vals = vals.map(v => (v != null && v > 0) ? Math.log(v) : null);
+  const present = vals.filter(v => v != null);
+  if(!present.length) return null; // bu kategoride bu özellik hiç girilmemiş
+  let norm;
+  if(f.s === 'abs'){
+    norm = vals.map(v => v == null ? null : Math.max(0, Math.min(1, v)));
+  } else {
+    // Uç değerler (çoğu zaman veri hatası) tüm kategorinin ölçeğini bozmasın diye
+    // yeterli ürün varsa %5-%95 dilimleri sınır alınır, dışı kırpılır.
+    const sorted = [...present].sort((x,y) => x-y);
+    let lo = sorted[0], hi = sorted[sorted.length-1];
+    if(sorted.length >= 10){
+      const qlo = scoreQuantile(sorted, 0.05), qhi = scoreQuantile(sorted, 0.95);
+      if(qhi > qlo){ lo = qlo; hi = qhi; }
+    }
+    if(hi === lo) return null; // herkes aynı → ayırt edici değil
+    norm = vals.map(v => v == null ? null : Math.max(0, Math.min(1, (v - lo) / (hi - lo))));
+  }
+  if(f.inv) norm = norm.map(v => v == null ? null : 1 - v);
+  return norm;
+}
+
+// Bilinmeyen özellik: kategori ortalamasının bu kadarı varsayılır (eksik veri ödül olmasın)
+const SCORE_MISSING_FACTOR = 0.7;
+// Ağırlıkça en az bu oranda özellik biliniyorsa güven tamdır; altı kademeli düşürülür
+const SCORE_FULL_COVERAGE = 0.6;
+
 // Kategoriye özel ağırlıklı performans (0-1). Dönüş: { id: perf }
+// Yan etki: p.__scoreCoverage = bilinen özelliklerin ağırlıkça oranı (0-1).
 function scoreWeightedPerf(list, features){
   const cols = features.map(f => {
-    let vals = list.map(p => scoreFeatureRaw(p, f));
-    if(f.s === 'log') vals = vals.map(v => (v != null && v > 0) ? Math.log(v) : null);
-    const present = vals.filter(v => v != null);
-    if(!present.length) return null; // bu kategoride bu özellik hiç girilmemiş
     let norm;
-    if(f.s === 'abs'){
-      norm = vals.map(v => v == null ? null : Math.max(0, Math.min(1, v)));
+    if(f.any){
+      // Aynı şeyin alternatif gösterimleri (ör. pil: saat VEYA Wh) — hangisi varsa o
+      const subs = f.any.map(sf => scoreColumn(list, sf)).filter(Boolean);
+      if(!subs.length) return null;
+      norm = list.map((_, i) => { for(let j = 0; j < subs.length; j++){ if(subs[j][i] != null) return subs[j][i]; } return null; });
     } else {
-      const min = Math.min(...present), max = Math.max(...present);
-      if(max === min) return null; // herkes aynı → ayırt edici değil
-      norm = vals.map(v => v == null ? null : (v - min) / (max - min));
+      norm = scoreColumn(list, f);
     }
-    if(f.inv) norm = norm.map(v => v == null ? null : 1 - v);
+    if(!norm) return null;
     const have = norm.filter(v => v != null);
+    if(!have.length) return null;
     const mean = have.reduce((a,b) => a+b, 0) / have.length;
     return { w: f.w, norm, mean };
   }).filter(Boolean);
 
+  const totalW = cols.reduce((a,c) => a + c.w, 0);
   const out = {};
   list.forEach((p, i) => {
-    let sum = 0, wsum = 0;
-    cols.forEach(c => { const v = c.norm[i] == null ? c.mean : c.norm[i]; sum += v * c.w; wsum += c.w; });
-    out[p.id] = wsum ? sum / wsum : 0.5;
+    let sum = 0, known = 0;
+    cols.forEach(c => {
+      if(c.norm[i] == null) sum += c.mean * SCORE_MISSING_FACTOR * c.w;
+      else { sum += c.norm[i] * c.w; known += c.w; }
+    });
+    const coverage = totalW ? known / totalW : 0;
+    const confidence = 0.5 + 0.5 * Math.min(1, coverage / SCORE_FULL_COVERAGE);
+    p.__scoreCoverage = coverage;
+    out[p.id] = totalW ? (sum / totalW) * confidence : 0.5;
   });
   return out;
 }
@@ -1150,13 +1216,47 @@ function heartIcon(filled){
 // `opts`: { newIds: Set (ana sayfa "YENİ" rozeti), reasons: string[]
 // (akıllı arama gerekçeleri, sadece category.js'te kullanılıyor) }.
 // ============================================================
+// Kartın altındaki 3 özellik etiketi. 6 Ekim 2026'ya kadar "ilk 3 özellik"
+// gösteriliyordu; toplu içe aktarılan ürünlerde bu "VRR / Renk / Wi-Fi:
+// Belirtilmemiş" çıkıyordu. Artık kategoriye göre en anlamlı özellikler
+// öncelik sırasıyla seçilir, değeri girilmemiş olanlar atlanır.
+const CARD_SPEC_PRIORITY = {
+  'Dizüstü': [/^İşlemci/i, /^RAM \(GB\)/i, /^Ekran Kartı/i, /^Depolama/i, /^Ekran \(inç\)/i, /^Yenileme Hızı/i],
+  'Telefon': [/^İşlemci/i, /^RAM \(GB\)/i, /^Depolama/i, /^Pil \(mAh\)/i, /^(Arka )?Kamera \(MP\)/i, /^Ekran \(inç\)/i],
+  'Tablet': [/^İşlemci/i, /^RAM \(GB\)/i, /^Depolama/i, /^Ekran \(inç\)/i, /^Pil \(mAh\)/i],
+  'Kulaklık': [/Gürültü Engelleme|ANC/i, /^Pil \(saat\)/i, /^Bluetooth Versiyonu/i, /^Bluetooth$/i, /^Su\/Ter Direnci|^Su Geçirmezlik/i],
+  'Akıllı Saat': [/^Pil \(saat\)/i, /^GPS/i, /^Su Geçirmezlik/i, /^Ekran Türü/i],
+  'Televizyon': [/^Ekran \(inç\)/i, /^Ekran Türü/i, /^Yenileme Hızı/i, /^HDR/i],
+  'Kamera': [/^Sensör Boyutu/i, /^Çözünürlük \(MP\)/i, /^Video/i]
+};
+function cardSpecEntries(p, limit){
+  limit = limit || 3;
+  const entries = Object.entries((p && p.specs) || {})
+    .filter(([k, v]) => !/fiyat/i.test(k) && !specValueMissing(v));
+  const picked = [];
+  (CARD_SPEC_PRIORITY[p.cat] || []).forEach(re => {
+    if(picked.length >= limit) return;
+    const hit = entries.find(e => re.test(e[0]) && picked.indexOf(e) === -1);
+    if(hit) picked.push(hit);
+  });
+  if(picked.length < limit){
+    const noise = /genişlik|uzunluk|kalınlık|piksel|renk|konektör|güvenlik|bağlantı|hücresel|sim |flash|webcam|klavye|kamera sayısı|notu|ağırlı/i;
+    entries.forEach(e => {
+      if(picked.length >= limit || picked.indexOf(e) !== -1) return;
+      if(noise.test(e[0]) || String(e[1]).length > 40) return;
+      picked.push(e);
+    });
+  }
+  return picked;
+}
+
 function cardHTML(p, opts){
   opts = opts || {};
   const newIds = opts.newIds instanceof Set ? opts.newIds : new Set(Array.isArray(opts.newIds) ? opts.newIds : []);
   const reasons = opts.reasons;
   const color = colorFor(p.cat);
   const priceEntries = Object.entries(p.specs || {}).filter(([k]) => /fiyat/i.test(k));
-  const otherSpecs = Object.entries(p.specs || {}).filter(([k]) => !/fiyat/i.test(k)).slice(0,3);
+  const otherSpecs = cardSpecEntries(p, 3);
   const isFav = favorites.includes(p.id);
   const s = scores[p.id];
   const priceText = priceEntries.length ? priceEntries[0][1] : 'Fiyat bilgisi yok';

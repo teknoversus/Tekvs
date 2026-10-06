@@ -4234,7 +4234,7 @@ function openCompare(){
     winnerBox.style.display = 'none';
   }
 
-  const allKeys = [...new Set(list.flatMap(p=>Object.keys(p.specs||{})))];
+  const allKeys = [...new Set(list.flatMap(p=>Object.keys(p.specs||{})))].filter(key => list.some(p => !specValueMissing(p.specs[key])));
   const body = document.getElementById('cmpBody');
   body.innerHTML = allKeys.map(key=>{
     const nums = list.map(p=>({id:p.id, v:parseFloat((p.specs[key]||'').toString().replace(',','.'))})).filter(x=>!isNaN(x.v));
@@ -4246,9 +4246,9 @@ function openCompare(){
       const n = nums.find(x=>x.id===p.id);
       let pct = 8;
       if(n){ pct = max===min ? 100 : ((n.v-min)/(max-min))*100; if(lowerBetter) pct = 100-pct; pct = Math.max(pct,6); }
-      return `<div class="cmp-seg" style="flex:${pct};background:${colorMap[p.id]};opacity:${raw?0.35+0.65*pct/100:0.15}"></div>`;
+      return `<div class="cmp-seg" style="flex:${pct};background:${colorMap[p.id]};opacity:${!specValueMissing(raw)?0.35+0.65*pct/100:0.15}"></div>`;
     }).join('');
-    const vals = list.map(p=>`<span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink-soft);margin-right:14px;">${p.specs[key]||'—'}</span>`).join('');
+    const vals = list.map(p=>`<span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink-soft);margin-right:14px;">${specValueMissing(p.specs[key]) ? '—' : p.specs[key]}</span>`).join('');
     return `<div class="cmp-row"><strong style="font-size:13.5px;">${key}</strong><div style="margin:4px 0;">${vals}</div><div class="cmp-track">${segs}</div></div>`;
   }).join('');
 
@@ -4266,7 +4266,7 @@ async function openDetail(id){
 
   const color = colorFor(p.cat);
   const s = scores[id];
-  const specRows = Object.entries(p.specs||{}).map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+  const specRows = Object.entries(p.specs||{}).filter(([,v])=>!specValueMissing(v)).map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('');
 
   const similar = products.filter(x=>!x.upcoming && x.cat===p.cat && x.id!==p.id)
     .sort((a,b)=> Math.abs((scores[a.id]||0)-(s||0)) - Math.abs((scores[b.id]||0)-(s||0)))

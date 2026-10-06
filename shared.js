@@ -904,7 +904,7 @@ const SCORE_FEATURES = {
 // ürünlerde alanların çoğu "Belirtilmemiş" metniyle geliyor.)
 function specValueMissing(v){
   const t = String(v == null ? '' : v).trim().toLowerCase();
-  return !t || /^(belirtilmemiş|belirtilmemis|bilinmiyor|bilgi yok|yok bilgi|-|—|–|n\/a|null|undefined)$/.test(t);
+  return !t || /^(belirtilmemiş|belirtilmemis|henüz doğrulanmadı|henuz dogrulanmadi|bilinmiyor|bilgi yok|yok bilgi|-|—|–|n\/a|null|undefined)$/.test(t);
 }
 
 // Bir ürünün, tablodaki bir özellik için ham değerini bulur (yoksa null).

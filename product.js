@@ -42,7 +42,7 @@ async function initProductPage(){
 
   const count = await incrementViews(PRODUCT_ID);
   const vEl = document.getElementById('viewCountLabel');
-  if(vEl) vEl.textContent = (count != null ? count : '?') + ' görüntülenme';
+  if(vEl && count != null && count > 0) vEl.textContent = ' · ' + count + ' görüntülenme';
 
   const favBtn = document.getElementById('favBtn');
   if(favBtn){
@@ -64,14 +64,14 @@ async function initProductPage(){
     scoreEl.style.display = 'inline-block';
   }
 
+  // Yalnızca kaydedilmiş GERÇEK fiyat geçmişi varsa grafik gösterilir
+  // (simüle edilmiş eğri 7 Ekim 2026'da kaldırıldı — bkz. shared.js getPriceHistory).
   const hist = await getPriceHistory(p);
   const canvas = document.getElementById('priceChart');
   const noteEl = document.getElementById('chartNote');
-  if(noteEl && hist){
-    noteEl.textContent = hist.isReal
-      ? 'Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.'
-      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.';
-  }
+  const chartWrap = canvas ? canvas.closest('.chart-wrap') : null;
+  if(chartWrap) chartWrap.style.display = hist ? '' : 'none';
+  if(noteEl && hist) noteEl.textContent = 'Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.';
   if(hist && canvas && window.Chart){
     const color = colorFor(p.cat);
     const ctx = canvas.getContext('2d');

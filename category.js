@@ -564,9 +564,9 @@ async function openDetail(id){
       <a class="btn btn-dark" style="display:inline-block;text-decoration:none;" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored">Amazon'da Satın Al →</a>
       <a class="btn btn-outline" style="display:inline-block;text-decoration:none;" href="${productUrl(p)}">Tam sayfayı görüntüle →</a>
     </div>
-    <div class="chart-wrap">
+    <div class="chart-wrap" id="priceChartWrap" style="display:none;">
       <canvas id="priceChart" height="140"></canvas>
-      <div class="chart-note" id="chartNote">Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.</div>
+      <div class="chart-note" id="chartNote">Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.</div>
     </div>
     <h4 style="font-size:14px;margin-bottom:4px;">Bunlara da bak</h4>
     <div class="similar-row">
@@ -578,12 +578,8 @@ async function openDetail(id){
 
   const hist = await getPriceHistory(p);
   if(detailChart){ detailChart.destroy(); detailChart = null; }
-  const noteEl = document.getElementById('chartNote');
-  if(noteEl && hist){
-    noteEl.textContent = hist.isReal
-      ? 'Gerçek fiyat geçmişi — TeknoVersus tarafından haftalık kaydedilen fiyat verisine dayanır.'
-      : 'Fiyat geçmişi temsilidir (simüle edilmiştir); gerçek bir tarihsel fiyat veri kaynağına dayanmaz.';
-  }
+  const chartWrap = document.getElementById('priceChartWrap');
+  if(chartWrap) chartWrap.style.display = hist ? '' : 'none';
   if(hist && window.Chart){
     const ctx = document.getElementById('priceChart').getContext('2d');
     detailChart = new Chart(ctx, {

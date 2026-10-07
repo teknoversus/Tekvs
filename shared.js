@@ -139,6 +139,8 @@ function loadSeedDataScript(){
   return _seedDataPromise;
 }
 
+const TV_IS_ADMIN_PAGE = typeof location !== 'undefined' && /admin/i.test(location.pathname || '');
+
 async function loadSharedProducts(){
   // 3 Ekim 2026 kök neden notu: PostgREST (Supabase'in REST katmanı)
   // varsayılan olarak TEK istekte en fazla 1000 satır döndürür (db
@@ -168,9 +170,12 @@ async function loadSharedProducts(){
   }
   if(!all.length){
     await loadSeedDataScript(); // veritabanı boşsa/erişilemezse örnek katalog
-    return [...SEED];
+    return TV_IS_ADMIN_PAGE ? [...SEED] : prepareProducts(SEED);
   }
-  return all.map(rowToProduct);
+  // Admin paneli HAM veriyi görür (düzenleyip geri kaydettiği için); diğer
+  // tüm sayfalar gösterime hazırlanmış (yer tutucusuz, iç notsuz) veriyi alır.
+  const list = all.map(rowToProduct);
+  return TV_IS_ADMIN_PAGE ? list : prepareProducts(list);
 }
 
 async function saveProductShared(product){
@@ -526,13 +531,36 @@ async function getRecentlyViewed(){
 // Not: Pazarlama iddiası değildir; sadece girilen sayısal özelliklerin
 // kategori içi göreli karşılaştırmasıdır.
 // ============================================================
+// Artı/eksi maddesinin okunur Türkçe metni. Etiketteki birim ("RAM (GB)")
+// değere taşınır ("16 GB"); "düşük olan iyi" özelliklerde (ağırlık, kalınlık,
+// tepki süresi) "ortalamanın üzerinde" yerine doğru yönü söyleyen ifade kullanılır.
+function prosConsLabel(key){
+  const m = String(key).match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+  const rawLabel = (m ? m[1] : String(key)).replace(/^Ürünün\s+/i, '').trim();
+  // Cümle düzeni: "Pil Kapasitesi" → "Pil kapasitesi"; kısaltmalar ("RAM", "GPU TGP") korunur.
+  const label = rawLabel.split(' ').map((w, i) => (i === 0 || /^[A-ZÇĞİÖŞÜ0-9\/.-]{2,}$/.test(w)) ? w : w.charAt(0).toLocaleLowerCase('tr-TR') + w.slice(1)).join(' ');
+  return { label, unit: m ? m[2].trim() : '' };
+}
+function prosConsValue(key, raw){
+  const { unit } = prosConsLabel(key);
+  const v = String(raw).trim();
+  const lead = v.match(/^\d+(?:[.,]\d+)?/); // "19.5 (standlı)" → "19.5 kg"
+  return (unit && lead) ? `${lead[0]} ${unit}` : v;
+}
 function prosConsFor(product, categoryProducts){
   const others = categoryProducts.filter(p => p.id !== product.id && !p.upcoming);
   const pros = [], cons = [];
   if(!others.length) return { pros, cons };
 
-  const specKeys = Object.keys(product.specs || {}).filter(k => !/fiyat/i.test(k) && !/genişlik \(mm\)|uzunluk \(mm\)/i.test(k));
+  // Kıyaslanması anlamlı olmayan alanlar: fiyat (ayrıca ele alınır), gövde
+  // en/boy, ekran boyutu (büyük = iyi değil, farklı ürün sınıfı), adet/sayı
+  // alanları ve aralık bildiren metinler.
+  const SKIP = /fiyat|genişlik \(mm\)|uzunluk \(mm\)|^ekran \(inç\)|sayısı|adaptör|iso aralığı|notu$/i;
+  const specKeys = Object.keys(product.specs || {}).filter(k => !SKIP.test(k));
   specKeys.forEach(key => {
+    if(specValueMissing(product.specs[key])) return;
+    // Televizyonda ağırlık/kalınlık ekran boyutuna bağlıdır; artı ya da eksi sayılmaz.
+    if(product.cat === 'Televizyon' && /ağırlı[kğ]|kalınlık/i.test(key)) return;
     const myVal = parseFloat(String(product.specs[key]).replace(',', '.'));
     if(isNaN(myVal)) return;
     const otherVals = others.map(p => parseFloat(String((p.specs||{})[key]||'').replace(',', '.'))).filter(v => !isNaN(v));
@@ -540,11 +568,18 @@ function prosConsFor(product, categoryProducts){
     const avg = otherVals.reduce((a,b)=>a+b,0) / otherVals.length;
     if(avg === 0) return;
     const diffPct = (myVal - avg) / avg;
-    const lowerIsBetter = /ağırlı[kğ]|gram|kalınlık/i.test(key);
+    const lowerIsBetter = /ağırlı[kğ]|gram|kalınlık|tepki süresi/i.test(key);
     const better = lowerIsBetter ? diffPct < -0.08 : diffPct > 0.08;
     const worse = lowerIsBetter ? diffPct > 0.08 : diffPct < -0.08;
-    if(better) pros.push(`${key}: kategori ortalamasının üzerinde (${product.specs[key]})`);
-    else if(worse) cons.push(`${key}: kategori ortalamasının altında (${product.specs[key]})`);
+    if(!better && !worse) return;
+    const { label } = prosConsLabel(key);
+    const val = prosConsValue(key, product.specs[key]);
+    let text;
+    if(/ağırlı[kğ]|gram/i.test(key)) text = `Kategori ortalamasından daha ${better ? 'hafif' : 'ağır'} (${val})`;
+    else if(/kalınlık/i.test(key)) text = `Kategori ortalamasından daha ${better ? 'ince' : 'kalın'} (${val})`;
+    else if(lowerIsBetter) text = `${label} kategori ortalamasından ${better ? 'düşük' : 'yüksek'} (${val})`;
+    else text = `${label} kategori ortalamasının ${better ? 'üzerinde' : 'altında'} (${val})`;
+    (better ? pros : cons).push(text);
   });
 
   // Fiyat konumu
@@ -554,8 +589,8 @@ function prosConsFor(product, categoryProducts){
     const otherPrices = others.map(p => {
       const pk = Object.keys(p.specs||{}).find(k => /fiyat/i.test(k));
       return pk ? parseFloat(String(p.specs[pk]).replace(/[^\d.,]/g,'').replace(',', '.')) : NaN;
-    }).filter(v => !isNaN(v));
-    if(!isNaN(myPrice) && otherPrices.length >= 2){
+    }).filter(v => !isNaN(v) && v > 0);
+    if(!isNaN(myPrice) && myPrice > 0 && otherPrices.length >= 2){
       const avgPrice = otherPrices.reduce((a,b)=>a+b,0)/otherPrices.length;
       if(myPrice < avgPrice * 0.9) pros.push('Kategori ortalamasına göre daha uygun fiyatlı');
       else if(myPrice > avgPrice * 1.15) cons.push('Kategori ortalamasına göre daha yüksek fiyatlı');
@@ -1073,21 +1108,11 @@ function computeScores(products){
 }
 
 // ============================================================
-// Basit deterministik sözde-rastgele üretici (fiyat geçmişi simülasyonu için)
-// Not: Gerçek bir tarihsel fiyat API'sine bağlı değiliz; bu grafik TEMSİLİDİR,
-// mevcut fiyattan geriye doğru makul bir dalgalanma üretir. UI'da açıkça
-// "temsili/simüle edilmiş" olarak etiketlenir.
+// Fiyat geçmişi
 // ============================================================
-function seededRandom(seedStr){
-  let h = 0;
-  for(let i=0;i<seedStr.length;i++){ h = (h*31 + seedStr.charCodeAt(i)) >>> 0; }
-  return function(){ h = (h*1664525 + 1013904223) >>> 0; return h / 4294967296; };
-}
-
 // Gerçek fiyat geçmişini Supabase'den çeker (price_history tablosu,
 // haftalık kaydedilir — bkz. scripts/record-price-snapshots.js).
-// Yeterli veri yoksa (2'den az farklı gün) null döner, çağıran taraf
-// simüle edilmiş grafiğe düşer.
+// Yeterli veri yoksa (2'den az kayıt) null döner; grafik alanı gösterilmez.
 async function loadRealPriceHistory(productId){
   const r = await sbFetch('/rest/v1/price_history?product_id=eq.'+encodeURIComponent(productId)+'&select=price,recorded_at&order=recorded_at.asc');
   if(!r.ok || !r.data || r.data.length < 2) return null;
@@ -1100,38 +1125,16 @@ async function loadRealPriceHistory(productId){
   };
 }
 
-// Fiyat geçmişi grafiği için tek giriş noktası: önce Supabase'deki GERÇEK
-// price_history verisini dener (haftalık kaydedilir), yeterli veri yoksa
-// (2'den az farklı gün) temsili/simüle edilmiş veriye düşer. Çağıran taraf
-// dönen { isReal } alanına bakarak grafiğin altındaki notu buna göre
-// yazdırmalı — gerçek veri varken "temsilidir" demek yanıltıcı olurdu,
-// veri yokken "gerçek veriye dayanır" demek de öyle.
+// Fiyat geçmişi grafiği için tek giriş noktası.
+// 7 Ekim 2026: SİMÜLASYON KALDIRILDI. Gerçek veri yokken mevcut fiyattan geriye
+// doğru üretilmiş "temsili" bir eğri göstermek, altına not düşülse bile, bir fiyat
+// karşılaştırma sitesinde güveni zedeliyor (AdSense "düşük değerli içerik" reddi
+// sonrası gözden geçirme). Artık yalnızca kaydedilmiş gerçek fiyat geçmişi
+// döner; yoksa null döner ve çağıran taraf grafik alanını hiç göstermez.
 async function getPriceHistory(product){
-  const real = await loadRealPriceHistory(product.id);
-  if(real) return real;
-  const sim = generatePriceHistory(product);
-  return sim ? Object.assign(sim, { isReal: false }) : null;
+  return await loadRealPriceHistory(product.id);
 }
 
-function generatePriceHistory(product){
-  const specs = product.specs || {};
-  const priceKey = Object.keys(specs).find(k => /fiyat/i.test(k));
-  const base = priceKey ? parseFloat((specs[priceKey]||'0').toString().replace(/[^\d.,]/g,'').replace(',','.')) : null;
-  if(!base) return null;
-  const rand = seededRandom(product.id);
-  const labels = ['6 ay önce','5 ay önce','4 ay önce','3 ay önce','2 ay önce','1 ay önce','Bugün'];
-  const data = [];
-  let price = base * (1 + rand()*0.16 + 0.04);
-  for(let i=0;i<labels.length;i++){
-    if(i === labels.length-1){ price = base; }
-    else{
-      const remaining = labels.length - 1 - i;
-      price = price - (price-base)/(remaining+1) * (0.5 + rand()*0.6);
-    }
-    data.push(Math.round(price));
-  }
-  return { labels, data, currency: priceKey && priceKey.includes('₺') ? '₺' : '$' };
-}
 
 function getPalette(){
   return ['--c1','--c2','--c3','--c4','--c5','--c6','--c7'].map(v => getComputedStyle(document.documentElement).getPropertyValue(v).trim());
@@ -1249,6 +1252,146 @@ function cardSpecEntries(p, limit){
   }
   return picked;
 }
+
+// ============================================================
+// VERİ HİJYENİ (7 Ekim 2026) — AdSense "düşük değerli içerik" reddi sonrası.
+//
+// Toplu içe aktarılan ürünlerde veritabanındaki ham kayıt, ziyaretçiye
+// gösterilmemesi gereken şeyler içeriyor:
+//   - "Belirtilmemiş" / "Henüz doğrulanmadı" yer tutucuları (özellik değeri,
+//     açıklama cümlesi ve hatta satın alma linki olarak),
+//   - "Yeni Alanlar Notu" gibi editör içi not sütunları (ASIN, kaynak notu),
+//   - yanlış sütuna kaymış paragraflar (ör. "Pil Kapasitesi (Wh)" hücresinde
+//     ürün açıklaması, "İşlemci" hücresinde ürün başlığının tamamı),
+//   - "kaynak listede belirtilen yapılandırmayı tanımlar" gibi, içe aktarma
+//     betiğinin ürettiği şablon açıklama cümleleri.
+// prepareProduct() bunları GÖSTERİM ÖNCESİNDE ayıklar. Veritabanındaki kayıt
+// DEĞİŞMEZ; admin paneli ham veriyi görmeye devam eder (bkz. loadSharedProducts).
+// Hem tarayıcıda hem build.js'te aynı fonksiyon çalışır — statik HTML ile
+// tarayıcıda çizilen kartlar birbirini tutar.
+// ============================================================
+const INTERNAL_SPEC_KEY_RE = /^(yeni alanlar notu|kaynak|kaynak notu|not|notlar|doğrulama notu|asin)$/i;
+const NUMERIC_UNIT_KEY_RE = /\((gb|tb|mb|wh|mah|w|mp|nit|mm|g|kg|hz|inç|ms|tops|ppi|saat)\)\s*$/i;
+
+// Değer, bulunduğu sütuna ait olamayacak kadar bozuk mu? (hücre kayması)
+function specValueBroken(key, value){
+  const k = String(key || '').trim();
+  const v = String(value == null ? '' : value).trim();
+  if(!v) return false;
+  // Sayısal birimli sütunda sayıyla başlamayan uzun metin ya da her hâlükârda paragraf
+  if(NUMERIC_UNIT_KEY_RE.test(k) && ((v.length > 40 && !/^[\d~≈<>]/.test(v)) || v.length > 90)) return true;
+  // İşlemci / ekran kartı sütununa ürün başlığının tamamı yazılmış
+  if(/^([iİ]şlemci|ekran kartı)$/i.test(k) && (v.length > 70 || /dizüstü bilgisayar|taşınabilir bilgisayar|\bnotebook\b|\bssd\b/i.test(v))) return true;
+  // Liste niteliğinde olmayan bir sütunda paragraf
+  if(!/bağlantı noktaları|sensörler|video|güvenlik|kamera/i.test(k) && v.length > 180) return true;
+  return false;
+}
+
+// Gösterime hazır özellik nesnesi: iç notlar, yer tutucular ve bozuk hücreler yok.
+function sanitizeSpecs(specs){
+  const out = {};
+  Object.keys(specs || {}).forEach(k => {
+    const v = specs[k];
+    if(INTERNAL_SPEC_KEY_RE.test(String(k).trim())) return;
+    if(specValueMissing(v)) return;
+    if(specValueBroken(k, v)) return;
+    out[k] = v;
+  });
+  return out;
+}
+
+const BLURB_PLACEHOLDER_RE = /belirtilmemiş|henüz doğrulanmadı|bilinmiyor\b/i;
+// İçe aktarma betiğinin ürettiği, bilgi taşımayan şablon cümlelerin izleri.
+const BLURB_TEMPLATE_RE = /kaynak (liste|bilgi)|çok satanlar|yeni çıkanlar|listede (verildiği|yer aldığı)|bilgisi öne çıkıyor|belirgin teknik özellikleri|üzerinden değerlendirilebilir|değerlendirilebilecek bir|bilgisi sunuluyor|teknik ayrıntı|kullanım karakterini|olarak belirtiliyor|sistem belleğini belirliy|ana ekran bil|birlikte ele alındığında|bilgileri (kaynak|listede)|iletişim altyapısını|teknoversus'ta model adı/i;
+
+function splitSentences(text){
+  const t = String(text || '');
+  const out = [];
+  const re = /[.!?…]+["”')]*\s+(?=[A-ZÇĞİÖŞÜ0-9"“(])/g;
+  let start = 0, m;
+  while((m = re.exec(t))){
+    // "12. Nesil", "2. Nesil" gibi sıra sayıları cümle sonu değildir.
+    if(m[0].charAt(0) === '.' && /\d/.test(t.charAt(m.index - 1))) continue;
+    out.push(t.slice(start, m.index + m[0].length).trim());
+    start = m.index + m[0].length;
+  }
+  const rest = t.slice(start).trim();
+  if(rest) out.push(rest);
+  return out;
+}
+
+// "RAM (GB)": "16" → "16 GB RAM"; "İşlemci": "Apple M3" → "Apple M3 işlemci".
+// Yalnızca ürünün KAYITLI özelliklerini cümleye döker; yeni bilgi üretmez.
+function specPhrase(key, value){
+  const k = String(key || '').trim();
+  const v = String(value == null ? '' : value).trim();
+  if(!v || /^(yok|hayır)$/i.test(v)) return '';
+  const m = k.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+  const label = (m ? m[1] : k).trim();
+  const unit = m ? m[2].trim() : '';
+  const isNum = /^[\d.,]+$/.test(v);
+  let val = (unit && isNum) ? `${v} ${unit}` : v;
+  if(/^depolama$/i.test(label) && isNum){
+    const n = parseFloat(v.replace(',', '.'));
+    val = (n >= 1024 && n % 1024 === 0) ? `${n / 1024} TB` : `${v} GB`;
+  }
+  if(/^(var|evet)$/i.test(v)) return label;
+  if(/^[iİ]şlemci$/i.test(label)) return `${val} işlemci`;
+  if(/^ekran kartı$/i.test(label)) return /graphics|grafik|entegre|paylaşımlı/i.test(val) ? val : `${val} ekran kartı`;
+  if(/^ram$/i.test(label)) return `${val} RAM`;
+  if(/^ekran türü$/i.test(label)) return `${val} ekran`;
+  if(/^ekran$/i.test(label)) return `${val} ekran`;
+  if(/^sensör boyutu$/i.test(label)) return `${val} sensör`;
+  if(/^pil( kapasitesi)?$/i.test(label)) return `${val} pil`;
+  // Genel durum: değer + (kısaltma değilse küçük harfle başlayan) etiket
+  const lowered = label.split(' ').map(w => /^[A-ZÇĞİÖŞÜ0-9\/.-]{2,}$/.test(w) ? w : w.charAt(0).toLocaleLowerCase('tr-TR') + w.slice(1)).join(' ');
+  return `${val} ${lowered}`;
+}
+
+// Ürünün öne çıkan (kategoriye göre öncelikli) özelliklerinden tek cümlelik özet.
+function specSummary(p){
+  const parts = cardSpecEntries(p, 5).map(e => specPhrase(e[0], e[1])).filter(Boolean);
+  if(parts.length < 2) return '';
+  const s = parts.join(', ');
+  return s.charAt(0).toLocaleUpperCase('tr-TR') + s.slice(1) + '.';
+}
+
+// Açıklama (blurb) temizliği:
+// - Yer tutucu ya da içe aktarma şablonu izi taşıyan açıklama, ürünün kayıtlı
+//   özelliklerinden üretilen kısa özetle değiştirilir (özet kurulamıyorsa
+//   sorunlu cümleler atılır).
+// - 500 karakter sınırında yarıda kesilmiş son cümle atılır.
+function cleanBlurb(p){
+  const raw = String((p && p.blurb) || '').replace(/\s+/g, ' ').trim();
+  if(!raw) return '';
+  if(BLURB_PLACEHOLDER_RE.test(raw) || BLURB_TEMPLATE_RE.test(raw)){
+    const sum = specSummary(p);
+    if(sum) return sum;
+  }
+  const sentences = splitSentences(raw).filter(s => !BLURB_PLACEHOLDER_RE.test(s) && !BLURB_TEMPLATE_RE.test(s));
+  if(sentences.length > 1 && raw.length >= 400){
+    const last = sentences[sentences.length - 1];
+    if(!/[.!?]["”')]*$/.test(last) || /(\.\.\.|…|,\.)$/.test(last)) sentences.pop();
+  }
+  return sentences.join(' ').trim();
+}
+
+function prepareProduct(p){
+  if(!p) return p;
+  const q = Object.assign({}, p);
+  q.specs = sanitizeSpecs(p.specs);
+  // Ham özellikler (numaralandırılamaz): YALNIZCA karşılaştırma çiftlerinin
+  // seçimi için saklanır. Çift seçimi URL kalıcılığı gereği eski skor
+  // formülüne ve o formülün gördüğü ham veriye bağlı (bkz.
+  // lib/generate-comparisons.js legacyPairScores) — temizlenmiş veriyle
+  // hesaplansaydı farklı çiftler çıkar, mevcut /karsilastir/ adresleri 404 olurdu.
+  Object.defineProperty(q, 'rawSpecs', { value: p.rawSpecs || p.specs || {}, enumerable: false });
+  const link = String(p.link || '').trim();
+  q.link = /^https?:\/\//i.test(link) ? link : ''; // "Belirtilmemiş" gibi değerler link değildir
+  q.blurb = cleanBlurb(q);
+  return q;
+}
+function prepareProducts(list){ return (list || []).map(prepareProduct); }
 
 function cardHTML(p, opts){
   opts = opts || {};

@@ -60,6 +60,9 @@ function loadHelpers(){
     productSlug: vm.runInContext('productSlug', context),
     prosConsFor: vm.runInContext('prosConsFor', context),
     cardSpecEntries: vm.runInContext('cardSpecEntries', context),
+    // Gösterim öncesi veri hijyeni (yer tutucular, iç notlar, bozuk hücreler,
+    // şablon açıklamalar) — tarayıcıdaki ile AYNI fonksiyon (bkz. shared.js).
+    prepareProducts: vm.runInContext('prepareProducts', context),
   };
 }
 
@@ -77,14 +80,27 @@ function rowToProduct(row){
 }
 
 async function fetchProductsFromSupabase(){
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/products?deleted=eq.false&select=*&order=added_at.desc`, {
-    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` }
-  });
-  if(!res.ok){
-    const text = await res.text().catch(() => '');
-    throw new Error(`Supabase'den ürün çekilemedi (HTTP ${res.status}): ${text}`);
+  // PostgREST tek istekte en fazla 1000 satır döndürür. Tarayıcı tarafı
+  // (shared.js loadSharedProducts) bunu 3 Ekim 2026'da sayfalayarak çözmüştü;
+  // build tarafı tek istekle kalmıştı — katalog 1000'i geçtiği anda en eski
+  // ürünlerin sayfaları sessizce üretilmeyecekti. Aynı sayfalama burada da var.
+  const PAGE_SIZE = 1000;
+  let rows = [];
+  for(let offset = 0, guard = 0; guard < 50; guard++, offset += PAGE_SIZE){
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/products?deleted=eq.false&select=*&order=added_at.desc`, {
+      headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Range-Unit': 'items', Range: `${offset}-${offset + PAGE_SIZE - 1}` }
+    });
+    if(!res.ok){
+      if(offset === 0){
+        const text = await res.text().catch(() => '');
+        throw new Error(`Supabase'den ürün çekilemedi (HTTP ${res.status}): ${text}`);
+      }
+      break; // sonraki sayfa yok (ör. 416) — elimizdeki satırlarla devam
+    }
+    const page = await res.json();
+    rows = rows.concat(page);
+    if(page.length < PAGE_SIZE) break;
   }
-  const rows = await res.json();
   return rows.map(rowToProduct);
 }
 
@@ -145,14 +161,16 @@ async function fetchRatingsSummary(){
 
 async function main(){
   console.log('→ Supabase\'den canlı ürün verisi çekiliyor...');
-  const products = await fetchProductsFromSupabase();
-  console.log(`→ ${products.length} ürün bulundu.`);
+  const rawProducts = await fetchProductsFromSupabase();
+  console.log(`→ ${rawProducts.length} ürün bulundu.`);
 
-  if(!products.length){
+  if(!rawProducts.length){
     console.warn('UYARI: Supabase\'de hiç ürün bulunamadı — sitemap/urun sayfaları boş kalabilir. seed_products.sql çalıştırıldı mı?');
   }
 
   const helpers = loadHelpers();
+  // Tüm üreticiler ham veritabanı kaydını değil, gösterime hazırlanmış ürünü alır.
+  const products = helpers.prepareProducts(rawProducts);
   // Rehber/inceleme sayfaları artık TÜM (upcoming olmayan) kataloğu kapsıyor —
   // yeni ürün eklendiğinde otomatik dahil olur, elle liste güncellemeye gerek yok.
   const FAZ2_TARGET_IDS = products.filter(p => !p.upcoming).map(p => p.id);

@@ -31,7 +31,7 @@ vm.createContext(context);
 vm.runInContext(sharedSrc, context);
 vm.runInContext(seedDataSrc, context);
 
-const SEED = vm.runInContext('SEED', context);
+const SEED = vm.runInContext('prepareProducts', context)(vm.runInContext('SEED', context));
 const NEWS_SEED = vm.runInContext('NEWS_SEED', context);
 const CATS = vm.runInContext('CATS', context);
 const ICONS = vm.runInContext('ICONS', context);

@@ -1,0 +1,137 @@
+{
+ "slug": "bluetooth-kulaklik-tek-taraf-calismiyor",
+ "title": "Bluetooth Kulaklığın Bir Tarafı Çalışmıyor: Neden ve Çözüm Sırası",
+ "description": "Kablosuz kulaklığın tek tarafından ses gelmiyor veya kısık mı? Pil, ses dengesi, kir, eşleşme ve arıza ihtimallerini doğru sırayla eleyin.",
+ "tldr": "Önce sessiz tarafın pilini ve telefondaki ses dengesi ayarını kontrol edin, sonra hoparlör ızgarasını ve şarj kontaklarını temizleyin. Sorun sürerse iki kulaklığı kutuya koyup yeniden başlatın, olmazsa telefondaki kaydı silip kulaklığı fabrika ayarlarına döndürün. Bir taraf hiçbir cihazda ses vermiyor ya da şarj olmuyorsa arıza büyük olasılıkla donanımsaldır ve garanti kapsamında servise gitmelidir.",
+ "intro": [
+  "Şarkı başladı ama yalnızca sağ kulaktan geliyor. Sol kulaklığı çıkarıp takıyorsunuz, yine sessiz. Kablosuz kulak içi kulaklıklarda bu, en sık karşılaşılan şikâyetlerden biridir ve nedeni her zaman arıza değildir. Boşalmış bir pil, kulak kiriyle tıkanmış bir ızgara ya da telefonda yanlışlıkla kaydırılmış bir denge ayarı aynı belirtiyi verir.",
+  "Bu sorunu çözmenin en kısa yolu, olasılıkları en kolay kontrol edilenden başlayarak elemektir. Aşağıdaki sıra, birkaç dakikalık kontrollerle başlayıp sıfırlamaya ve gerekirse servise uzanıyor."
+ ],
+ "sections": [
+  {
+   "h": "Önce belirtiyi netleştirin: sessiz mi, kısık mı, kesik kesik mi?",
+   "p": [
+    "Tek taraf sorunu tek bir arıza değildir; belirtiye göre olası neden değişir. Bir tarafın hiç ses vermemesi genellikle pil veya bağlantıyla ilgilidir. Sesin gelip daha kısık ve boğuk olması çoğu zaman fiziksel tıkanmaya işaret eder. Sesin aralıklarla kesilmesi ise kablosuz bağlantının zayıfladığını gösterir.",
+    "Kontrol ederken telefonun Bluetooth menüsüne de bakın. Bazı telefonlar iki kulaklığın pil seviyesini ayrı ayrı gösterir; bir tarafın pili görünmüyorsa o taraf bağlantıda değildir."
+   ],
+   "table": {
+    "head": [
+     "Belirti",
+     "En olası neden",
+     "İlk yapılacak kontrol"
+    ],
+    "rows": [
+     [
+      "Bir taraf tamamen sessiz",
+      "Boş pil veya iki taraf arasındaki bağlantının kopması",
+      "Kutuya koyup şarj edin, pil seviyesine bakın"
+     ],
+     [
+      "Bir taraf belirgin kısık veya boğuk",
+      "Hoparlör ızgarasında kir, kulak kiri, yanlış silikon uç",
+      "Izgarayı ve ucu temizleyin"
+     ],
+     [
+      "İki taraf arasında ses dengesiz",
+      "Telefondaki denge ayarı",
+      "Erişilebilirlik menüsündeki ses dengesini ortalayın"
+     ],
+     [
+      "Bir taraf aralıklarla kesiliyor",
+      "Zayıf sinyal, telefonun cebe göre konumu",
+      "Telefonu kulaklığın olduğu tarafa yaklaştırın"
+     ],
+     [
+      "Bir taraf kutuda şarj olmuyor",
+      "Kirli kontak veya pil arızası",
+      "Kontakları temizleyin, kutuyu şarj edin"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Pil ve şarj kontaklarını kontrol edin",
+   "p": [
+    "İki kulaklık aynı anda doldurulsa bile aynı hızda boşalmaz. Telefon görüşmesinde mikrofonu kullanılan taraf ya da tek kulaklıkla dinlediğiniz taraf daha çabuk biter. Bir taraf sessiz kaldığında ilk yapılacak iş onu kutuya koyup birkaç dakika beklemek ve telefonun gösterdiği pil seviyesine bakmaktır.",
+    "Kulaklık kutuya konduğu halde şarj ışığı yanmıyorsa veya pil seviyesi artmıyorsa kontaklara bakın. Kulaklığın altındaki ve kutudaki küçük metal kontaklarda biriken kir, ter tuzu ya da kulak kiri akımın geçmesini engeller. Kuru, tüy bırakmayan bir bez veya kuru bir pamuklu çubukla nazikçe silin. Sıvı temizleyiciyi doğrudan kontaklara ya da kutunun içine dökmeyin."
+   ]
+  },
+  {
+   "h": "Telefonun ses dengesi ve mono ayarına bakın",
+   "p": [
+    "Erişilebilirlik menüsündeki sol-sağ ses dengesi kaydırıcısı yanlışlıkla bir tarafa kaymışsa o taraf kısık ya da sessiz duyulur. iPhone'da bu ayar Ayarlar > Erişilebilirlik > Ses/Görsel bölümündedir. Android'de genellikle Ayarlar > Erişilebilirlik altında “Ses ayarı” veya “İşitme geliştirmeleri” gibi bir başlıktadır; menü adı markaya göre değişir. Kaydırıcıyı tam ortaya getirin.",
+    "Aynı menüdeki “Mono ses” seçeneği teşhis için de işe yarar. Mono açıkken iki kanal birleştirilip iki kulağa aynı ses gönderilir. Bazı şarkılarda bazı enstrümanlar yalnızca bir kanala kaydedildiği için “bir taraftan vokal gelmiyor” izlenimi oluşabilir; mono açınca bu fark kayboluyorsa kulaklıkta sorun yoktur, kayıt böyledir."
+   ]
+  },
+  {
+   "h": "Hoparlör ızgarasını ve silikon ucu temizleyin",
+   "p": [
+    "Bir tarafın daha kısık ve boğuk duyulması çoğu zaman donanım arızası değil, tıkanmadır. Kulak içi kulaklıkların ses çıkışındaki ince ızgara zamanla kulak kiriyle dolar ve ses fiziksel olarak engellenir. Izgarayı ışığa tutup bakarsanız koyu bir tabaka görebilirsiniz.",
+    "Silikon ucu çıkarıp hafif sabunlu suyla yıkayın ve tamamen kurumasını bekleyin. Izgarayı ise kuru, yumuşak bir fırçayla dışarı doğru fırçalayın. İğne, kürdan gibi sivri cisimleri ızgaranın içine sokmayın; ızgarayı delip hoparlöre zarar verebilirsiniz. Su veya alkolü ızgaraya akıtmayın; kulaklık suya dayanıklı olsa bile sıvı hoparlör zarına ulaşabilir."
+   ]
+  },
+  {
+   "h": "Kulaklıkları yeniden eşitleme ve sıfırlama sırası",
+   "p": [
+    "Kablosuz kulak içi kulaklıkların bir kısmında telefon yalnızca bir kulaklıkla konuşur, o kulaklık da sesi diğerine aktarır. Yeni tasarımlarda iki taraf telefona ayrı ayrı bağlanabilir. Her iki durumda da iki taraf arasındaki bağ koptuğunda bir kulaklık sessiz kalır. Aşağıdaki adımlar bu bağı en hafiften en kapsamlıya doğru yeniler."
+   ],
+   "ol": [
+    "İki kulaklığı da kutuya koyun, kapağı kapatın ve en az 10-15 saniye bekleyin. Kapağı açıp ikisini birlikte çıkarın.",
+    "Telefonda Bluetooth'u kapatıp açın ve kulaklığı listeden yeniden seçin.",
+    "Sessiz kulaklığı tek başına takıp telefonun onu görüp görmediğine bakın.",
+    "Telefondaki kulaklık kaydını silin (“unut”), kulaklığı üreticinin yöntemiyle fabrika ayarlarına döndürün ve iki taraf kutudayken yeniden eşleştirin.",
+    "Üreticinin uygulaması varsa kulaklık yazılımını güncelleyin; iki kulaklıkta farklı yazılım sürümü olması eşleşme sorununa yol açabilir.",
+    "Kulaklığı başka bir telefon veya bilgisayarla deneyin. Sorun orada da sürüyorsa kaynak kulaklıktır."
+   ],
+   "note": "Kulaklığı sıfırlarken iki tarafın da kutuda olduğundan emin olun. Yalnızca çalışan taraf kutudayken yapılan sıfırlama, sessiz tarafı eşleşmenin dışında bırakabilir."
+  },
+  {
+   "h": "Ne zaman yetkili servise gitmelisiniz?",
+   "p": [
+    "Yukarıdaki adımların hepsinden sonra bir taraf farklı cihazlarda da ses vermiyorsa, kutuda şarj olmuyorsa ya da çalışırken cızırtı ve çatırtı yapıyorsa sorun donanımsaldır. Kulaklığın sıvıyla temas ettiği, düştüğü veya aşırı sıcakta kaldığı bir dönemden sonra başlayan sorunlar da genellikle bu gruba girer.",
+    "Garanti süresi içindeyseniz fatura veya garanti belgesiyle satıcıya ya da yetkili servise başvurun. Birçok marka tek kulaklık veya yalnızca kutu için yedek parça değişimi sunar; bu, setin tamamını yenilemekten daha az masraflı olabilir. Kulaklığı açmayı denemeyin: içteki küçük lityum pil delinirse ısınabilir, ayrıca açılmış kulaklık garanti dışında kalır. Şişme, ısınma veya koku fark ederseniz cihazı şarja takmayı bırakın."
+   ]
+  },
+  {
+   "h": "Tek taraf sorununda sık yapılan hatalar",
+   "p": [
+    "Bazı müdahaleler sorunu çözmek yerine büyütür. Özellikle temizlik ve sıfırlama sırasında şu hatalardan kaçının."
+   ],
+   "list": [
+    "Kulak kiriyle tıkanmış ızgarayı sivri bir cisimle kazımak.",
+    "Kontakları ıslak bezle silip kurumadan kutuya koymak.",
+    "Sessiz tarafı hiç kontrol etmeden doğrudan sıfırlamaya geçmek; çoğu zaman sorun yalnızca boş pildir.",
+    "Telefondaki ses dengesi ayarını gözden kaçırmak.",
+    "Garanti süresi dolmadan kulaklığı açmak ya da yetkisiz serviste pil değiştirtmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Kulaklığın bir tarafını tek başına kullanabilir miyim?",
+   "a": "Birçok modern kulak içi kulaklık tek kulaklık kullanımına izin verir, diğer taraf kutudayken de ses çalar. Bazı eski veya basit modellerde ise yalnızca ana kulaklık tek başına çalışır. Kendi modelinizin kılavuzunda “tek kulaklık modu” bilgisine bakın."
+  },
+  {
+   "q": "Sadece kaybolan ya da bozulan tek kulaklığı satın alabilir miyim?",
+   "a": "Bazı markalar yetkili servisleri üzerinden tek kulaklık veya şarj kutusu satar. Yeni parçanın mevcut parçayla eşleştirilmesi gerekir; bu işlem genellikle kutuda sıfırlama yapılarak gerçekleştirilir. Taklit veya farklı modele ait parçalar eşleşmeyebilir."
+  },
+  {
+   "q": "Bir taraf diğerinden hep daha çabuk bitiyor, bu arıza mı?",
+   "a": "Mutlaka değil. Görüşmelerde mikrofonu kullanılan veya daha çok takılan taraf daha çabuk boşalır. Ancak kullanım eşit olduğu halde fark giderek büyüyorsa o taraftaki pil daha hızlı yıpranıyor olabilir; garanti süresindeyseniz servise sorun."
+  },
+  {
+   "q": "Sıfırlamadan sonra iki taraf ayrı cihazlar gibi görünüyor, ne yapmalıyım?",
+   "a": "Bu, iki kulaklığın birbirine eşleşmeden telefona bağlandığını gösterir. Telefondaki iki kaydı da silin, kulaklıkları birlikte kutuya koyup sıfırlamayı tekrarlayın ve ikisini aynı anda kutudan çıkararak tek cihaz olarak eşleştirin."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Sony Xperia Yardım Kılavuzu: Erişilebilirlik ayarları (mono ses ve ses dengesi)",
+   "u": "https://helpguide.sony.net/mobile/xperia-1m7/v1/en/contents/accessibility_settings.html"
+  },
+  {
+   "t": "Apple Destek: AirPods'u yeniden başlatma, eşleştirmeyi kaldırma veya sıfırlama",
+   "u": "https://support.apple.com/guide/airpods/iph561965261/web"
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "slug": "amoled-vs-lcd-fark",
+ "title": "AMOLED mi LCD mi? Ekran Panel Türleri Arasındaki Fark",
+ "description": "AMOLED ile LCD arasındaki fark nedir? Kontrast, pil tüketimi, ekran yanması, PWM titremesi ve güneş altında görünürlük açısından iki paneli karşılaştırdık.",
+ "tldr": "AMOLED panelde her piksel kendi ışığını üretir ve siyah gösterirken tamamen söner; bu da derin siyah, yüksek kontrast ve koyu temada pil tasarrufu sağlar. LCD ise arkadan sürekli yanan bir aydınlatma kullanır; ekran yanması riski taşımaz ve genellikle daha ucuzdur ama siyahları gri görünür. Film izleyen ve koyu tema kullananlar için AMOLED, bütçe ve uzun süre sabit görüntü gösterilen kullanımlarda LCD öne çıkar.",
+ "intro": [
+  "Telefon karşılaştırırken teknik özelliklerde AMOLED, Super AMOLED, OLED, IPS LCD gibi farklı ifadelerle karşılaşırsınız. Mağazada iki telefonu yan yana koyduğunuzda biri daha canlı görünür ama bu farkın nereden geldiği ve günlük kullanımda size neye mal olacağı ilk bakışta anlaşılmaz.",
+  "Aşağıda iki teknolojinin nasıl çalıştığını sade bir dille anlatıyor, pil, göz konforu, dayanıklılık ve dış mekânda görünürlük gibi pratik farkları tek tek ele alıyoruz. Aynı bilgiler tablet, dizüstü ve televizyon seçerken de işinize yarar."
+ ],
+ "sections": [
+  {
+   "h": "LCD nasıl çalışır?",
+   "p": [
+    "LCD ekranda görüntüyü oluşturan sıvı kristaller kendi başına ışık üretmez. Panelin arkasında sürekli yanan bir LED aydınlatma katmanı bulunur; sıvı kristaller bu ışığın geçişini piksel piksel ayarlar, renk filtreleri de kırmızı, yeşil ve mavi tonları oluşturur.",
+    "Siyah göstermek için kristallerin ışığı tamamen kesmesi gerekir, ama bu hiçbir zaman kusursuz olmaz. Karanlık bir odada siyah ekrana baktığınızda hafif gri bir parıltı görmenizin nedeni budur. Telefon ve dizüstülerde en yaygın LCD türü IPS'tir; IPS paneller geniş görüş açısı ve tutarlı renkleriyle bilinir.",
+    "Bazı tablet, dizüstü ve televizyonlarda Mini LED adı verilen, arka aydınlatmayı yüzlerce ya da binlerce küçük bölgeye ayıran LCD'ler kullanılır. Bu bölgeler ayrı ayrı kısılabildiği için siyahlar normal LCD'ye göre çok daha koyu olur, fakat parlak bir nesnenin çevresinde hafif hale görülebilir."
+   ]
+  },
+  {
+   "h": "AMOLED nasıl çalışır?",
+   "p": [
+    "AMOLED, aktif matrisli organik ışık yayan diyot anlamına gelir. Burada arka aydınlatma yoktur; her alt piksel, içindeki organik malzemeden akım geçtiğinde kendi ışığını üretir. Her pikseli, panelin arkasındaki ince film transistör katmanı ayrı ayrı yönetir.",
+    "Bir piksel siyah göstereceği zaman tamamen kapanır. Bu yüzden AMOLED ekranda siyah gerçekten siyahtır ve kontrast oranı teorik olarak sonsuz kabul edilir. Gece karanlık bir odada telefonu açtığınızda ekran kenarlarının çerçeveyle birleşmiş gibi görünmesi bundandır.",
+    "Super AMOLED, Dynamic AMOLED, Super Retina XDR gibi adlar, markaların OLED panellerine verdiği ticari isimlerdir. Telefonlarda kullanılan OLED panellerin neredeyse tamamı aktif matrislidir; dolayısıyla OLED ve AMOLED ifadeleri pratikte aynı teknolojiyi anlatır."
+   ]
+  },
+  {
+   "h": "Günlük kullanımda hangi farkları hissedersiniz?",
+   "p": [
+    "Kontrast ve siyahlar: Film izlerken veya karanlık oyun sahnelerinde fark en çok burada görülür. AMOLED'de siyah çerçeveler kaybolur, LCD'de ise karanlık sahneler hafif gri bir tül altındaymış gibi durur.",
+    "Pil tüketimi: AMOLED'de koyu pikseller enerji harcamadığı için koyu tema ve siyah arka planlı uygulamalar pil tasarrufu sağlar. Beyaz ağırlıklı sayfalarda bu avantaj azalır. LCD'de arka aydınlatma her durumda yandığı için koyu tema pil ömrüne belirgin bir katkı yapmaz.",
+    "Ek özellikler: Ekran içi optik parmak izi okuyucular ve sürekli açık ekran (always-on display) gibi özellikler pratikte OLED panellerle birlikte gelir. LTPO teknolojili OLED paneller ise yenileme hızını içeriğe göre çok düşük değerlere indirerek akıcılık ile pil ömrü arasında denge kurar.",
+    "Güneş altında görünürlük: İlk nesil AMOLED ekranlar dış mekânda LCD'lere göre zor okunuyordu. Yeni nesil OLED paneller yüksek tepe parlaklığıyla bu farkı büyük ölçüde kapattı; bugün dış mekân görünürlüğünü panel türünden çok, o modelin parlaklık değeri belirler."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "AMOLED / OLED",
+     "LCD (IPS)"
+    ],
+    "rows": [
+     [
+      "Işık kaynağı",
+      "Her piksel kendi ışığını üretir",
+      "Arkada sürekli yanan aydınlatma"
+     ],
+     [
+      "Siyah seviyesi",
+      "Gerçek siyah, piksel kapanır",
+      "Koyu gri, ışık sızıntısı olabilir"
+     ],
+     [
+      "Koyu temada pil",
+      "Belirgin tasarruf",
+      "Belirgin fark yok"
+     ],
+     [
+      "Ekran yanması",
+      "Uzun süreli sabit görüntüde risk var",
+      "Kalıcı yanma riski yok"
+     ],
+     [
+      "Düşük parlaklıkta titreme",
+      "Birçok modelde PWM ile kısma",
+      "Çoğunlukla daha az sorun, model bağımlı"
+     ],
+     [
+      "Ekran içi optik parmak izi",
+      "Desteklenir",
+      "Pratikte kullanılmaz"
+     ],
+     [
+      "Maliyet ve ekran değişimi",
+      "Genellikle daha pahalı",
+      "Genellikle daha uygun"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Ekran yanması (burn-in) ne kadar gerçek bir risk?",
+   "p": [
+    "OLED'deki organik malzemeler zamanla yıpranır ve sürekli yanan pikseller diğerlerinden daha hızlı eskir. Durum çubuğu, navigasyon tuşları veya bir uygulamanın sabit menüsü yıllarca aynı yerde kalırsa, açık renkli bir ekranda bu öğelerin soluk izi görülebilir. Buna ekran yanması denir ve kalıcıdır.",
+    "Normal telefon kullanımında görüntü sürekli değiştiği için çoğu kullanıcı bu sorunu yaşamaz. Risk; telefonu navigasyon cihazı olarak arabada saatlerce kullananlarda, en yüksek parlaklıkta aynı oyunu uzun süre oynayanlarda veya cihazı mağaza vitrininde ya da kasada sabit ekranla çalıştıranlarda artar. Üreticiler piksel kaydırma gibi önlemler alır; siz de otomatik parlaklığı açık tutarak ve ekran zaman aşımını kısa ayarlayarak riski azaltabilirsiniz.",
+    "LCD'de kalıcı yanma oluşmaz. Bazı LCD'lerde kısa süreli görüntü kalıntısı görülebilir ama bu genellikle ekran bir süre farklı içerik gösterdiğinde kaybolur."
+   ],
+   "note": "Garanti kapsamında ekran yanmasının nasıl değerlendirildiği üreticiye göre değişir. Uzun süre sabit görüntü göstereceğiniz bir kullanım planlıyorsanız garanti belgesindeki ekran maddelerini okuyun."
+  },
+  {
+   "h": "PWM titremesi ve göz konforu",
+   "p": [
+    "Birçok OLED ekran, özellikle düşük parlaklıkta, pikselleri insan gözünün fark edemeyeceği hızda açıp kapatarak kısar. Bu yönteme PWM (darbe genişlik modülasyonu) denir. Çoğu kişi bunu hiç hissetmez, ancak titremeye hassas olan bazı kullanıcılar karanlıkta düşük parlaklıkta uzun süre bakınca göz yorgunluğu veya baş ağrısı yaşadığını belirtir.",
+    "Bazı üreticiler daha yüksek frekanslı PWM ya da düşük parlaklıkta titremeyi azaltan bir ayar sunar; bu ayar genellikle Ekran menüsünde göz konforu veya titreme azaltma gibi adlarla yer alır. Daha önce bir OLED telefonda bu tür şikâyetleriniz olduysa, model incelemelerinde PWM frekansı bilgisine bakmanız veya mağazada cihazı düşük parlaklıkta denemeniz yararlı olur. LCD'lerin çoğu bu konuda daha az sorun çıkarır, fakat PWM kullanan LCD'ler de vardır."
+   ]
+  },
+  {
+   "h": "Hangi kullanıcıya hangisi uygun?",
+   "p": [
+    "Film ve dizi izliyor, koyu tema kullanıyor, fotoğrafları canlı görmek ve pil ömründen biraz daha kazanmak istiyorsanız AMOLED size daha çok şey sunar. Orta ve üst segment telefonların büyük bölümü zaten OLED panelle gelir.",
+    "Bütçeniz sınırlıysa, telefonu yıllarca aynı uygulamayı ekranda tutacak şekilde kullanacaksanız (kurye, taksi, navigasyon) veya PWM titremesine hassassanız iyi bir IPS LCD mantıklı bir tercihtir. Ekran kırılması durumunda değişim maliyetinin genellikle daha düşük olması da LCD'nin pratik bir artısıdır."
+   ],
+   "list": [
+    "Panel türünden önce parlaklık (nit), çözünürlük ve yenileme hızı değerlerini birlikte değerlendirin.",
+    "Mağazada iki cihazı aynı parlaklıkta, hem beyaz bir web sayfasında hem de koyu bir videoda karşılaştırın.",
+    "Ekranı yandan da izleyin; ucuz LCD'lerde açı değiştikçe renkler solar, OLED'de ise hafif bir renk kayması görülebilir."
+   ]
+  },
+  {
+   "h": "Sık karşılaşılan yanlış bilgiler",
+   "p": [
+    "AMOLED her durumda daha az pil harcar fikri doğru değildir. Beyaz ağırlıklı içerikte bir OLED panel, eşdeğer bir LCD kadar ya da ondan daha fazla enerji harcayabilir. Tasarruf, koyu içerik oranı arttıkça büyür.",
+    "Ekran yanması birkaç ayda olur düşüncesi de abartılıdır. Normal kullanımda bu sorun yıllar içinde ve yoğun sabit görüntüyle ortaya çıkar. Öte yandan LCD hiç eskimez demek de yanlıştır; LCD'lerde de arka aydınlatma zamanla parlaklık kaybedebilir ve kenarlarda ışık sızması görülebilir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "AMOLED mi LCD mi daha iyi?",
+   "a": "Görüntü kalitesinde, özellikle kontrast ve siyah seviyesinde AMOLED öndedir. LCD ise ekran yanması riski taşımaz ve genellikle daha uygun fiyatlıdır. Seçim; kullanım alışkanlığınıza, bütçenize ve titremeye hassasiyetinize göre yapılmalıdır."
+  },
+  {
+   "q": "Koyu tema her telefonda pil tasarrufu sağlar mı?",
+   "a": "Hayır. Koyu tema yalnızca OLED ekranlarda belirgin tasarruf sağlar, çünkü siyah pikseller kapanır. LCD'de arka aydınlatma sürekli yandığı için koyu temanın pile etkisi sınırlıdır."
+  },
+  {
+   "q": "AMOLED ekranda yanma oluştuysa düzelir mi?",
+   "a": "Gerçek ekran yanması kalıcıdır ve yazılımla tamamen giderilemez. Hafif ve geçici görüntü kalıntıları ise ekran bir süre farklı içerik gösterdiğinde kaybolabilir. Kalıcı iz belirginse ekranın yetkili serviste değiştirilmesi gerekir."
+  },
+  {
+   "q": "OLED ile AMOLED aynı şey mi?",
+   "a": "Telefonlar için pratikte aynı şeydir. AMOLED, OLED'in her pikseli ayrı ayrı yöneten aktif matrisli türüdür ve telefonlardaki OLED panellerin neredeyse tamamı bu yapıdadır. Super AMOLED gibi adlar ise markaların ticari isimleridir."
+  },
+  {
+   "q": "Mini LED ekran OLED mi?",
+   "a": "Hayır. Mini LED, arka aydınlatması çok sayıda küçük bölgeye ayrılmış bir LCD türüdür. Siyahları normal LCD'den daha iyidir ama pikselleri tek tek kapatabilen OLED kadar kusursuz değildir; parlak nesnelerin çevresinde hafif hale görülebilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: AMOLED",
+   "u": "https://en.wikipedia.org/wiki/AMOLED"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "slug": "kayip-android-telefon-nasil-bulunur",
+ "title": "Kayıp Android Telefon Nasıl Bulunur? Find Hub ve Yapılacaklar",
+ "description": "Kayıp veya çalıntı Android telefonu Find Hub ile bulma, çaldırma, kilitleme ve silme; önceden açılması gereken ayarlar ve Türkiye'de IMEI bildirimi.",
+ "tldr": "Başka bir cihazdan google.com/android/find adresine aynı Google hesabıyla girin veya Find Hub uygulamasını kullanın; telefonu haritada görebilir, sessizdeyken bile çaldırabilir, kilitleyebilir ya da silebilirsiniz. Bunun için telefonun açık, internete bağlı, Google hesabına giriş yapılmış ve Find Hub'ın açık olması gerekir. Çalındıysa hattı kapattırın, emniyete bildirin ve e-Devlet üzerinden kayıp-çalıntı ihbarı yapın.",
+ "intro": [
+  "Ceplerinizi üçüncü kez yokladınız, çantayı boşalttınız, arabanın koltuk aralarına baktınız ve telefon yok. Böyle anlarda panik, en işe yarar adımları atlamanıza yol açabiliyor. Oysa Android telefonlarda Google hesabına bağlı ücretsiz bir bulma hizmeti varsayılan olarak açık geliyor ve çoğu durumda telefonu birkaç dakika içinde haritada görebiliyorsunuz.",
+  "Google bu hizmetin adını 2025'te Cihazımı Bul'dan (Find My Device) Find Hub olarak değiştirdi; bazı telefonlarda ve menülerde eski adı hâlâ görebilirsiniz. Aşağıda telefon kaybolduğunda hangi sırayla hareket etmeniz gerektiğini, Find Hub'ın seçeneklerini, telefon kapalıysa ne olacağını ve çalınma durumunda Türkiye'de atılması gereken resmi adımları anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Telefon kaybolduğunda ilk yapılacaklar",
+   "p": [
+    "İlk dakikalarda amaç telefonun nerede olduğunu anlamak ve gerekiyorsa verilerinizi korumaktır. Telefonu evde ya da arabada kaybettiğinizi düşünüyorsanız sesli çaldırma çoğu zaman yeterlidir. Dışarıda kaybolduysa konumu görmek ve ekranı kilitlemek önceliklidir."
+   ],
+   "ol": [
+    "Başka bir telefondan numaranızı arayın; telefon yakındaysa sesini duyabilirsiniz.",
+    "Bir bilgisayar veya başka bir telefondan google.com/android/find adresine gidin ya da Find Hub uygulamasını açın ve kayıp telefondaki Google hesabıyla giriş yapın.",
+    "Listeden kayıp telefonu seçin ve haritadaki konumuna bakın.",
+    "Telefon yakındaysa Ses çal seçeneğini kullanın.",
+    "Konum tanımadığınız bir yerdeyse telefonu kayıp olarak işaretleyip kilitleyin ve ekrana ulaşabileceğiniz bir numara yazın.",
+    "Telefonun çalındığından eminseniz aşağıdaki resmi adımlara geçin; silme işlemini en son seçenek olarak düşünün."
+   ],
+   "note": "Bir arkadaşınızın telefonunu kullanıyorsanız Find Hub uygulamasında konuk olarak giriş yapın ve işiniz bitince oturumu kapatın."
+  },
+  {
+   "h": "Find Hub'daki seçenekler ne işe yarar?",
+   "p": [
+    "Find Hub'da kayıp cihazı seçtiğinizde birkaç uzaktan işlem görürsünüz. Google'ın yardım sayfasına göre seçeneklerin işleyişi aşağıdaki gibidir; düğme adları uygulama sürümüne göre küçük farklar gösterebilir.",
+    "Konum harita üzerinde yaklaşık olarak gösterilir. Kalabalık bir apartmanda veya alışveriş merkezinde konum birkaç on metre sapabilir; bu yüzden haritadaki noktayı kesin adres olarak değil, arama bölgesi olarak değerlendirin."
+   ],
+   "table": {
+    "head": [
+     "Seçenek",
+     "Ne yapar?",
+     "Ne zaman kullanılır?"
+    ],
+    "rows": [
+     [
+      "Ses çal",
+      "Telefonu sessiz veya titreşim modunda olsa bile beş dakika boyunca tam sesle çaldırır",
+      "Telefon evde, ofiste veya arabada kaybolduysa"
+     ],
+     [
+      "Kayıp olarak işaretle",
+      "Telefonu mevcut ekran kilidiyle kilitler, bildirimleri ve hızlı erişimi kapatır, ekrana mesaj ve iletişim numarası ekler",
+      "Telefon dışarıda kaybolduysa veya çalındığından şüpheleniyorsanız"
+     ],
+     [
+      "Fabrika ayarlarına sıfırla",
+      "Telefondaki verileri kalıcı olarak siler; hafıza kartı silinmeyebilir",
+      "Telefonu geri alma ihtimali kalmadıysa ve veriler hassassa"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Find Hub'ın çalışması için gereken şartlar",
+   "p": [
+    "Google'a göre bir cihazı bulabilmek, kilitleyebilmek veya silebilmek için telefonun açık olması, mobil veri veya Wi-Fi'ye bağlı olması, bir Google hesabında oturum açılmış olması, Find Hub'ın açık olması ve Google Play'de görünür olması gerekir. Find Hub, telefona Google hesabı eklendiğinde kendiliğinden açılır; yine de kapatılmış olabileceği için bugün kontrol etmeye değer.",
+    "Ayarlar'da arama çubuğuna Find Hub (eski telefonlarda Cihazımı Bul) yazarak ilgili sayfaya ulaşabilirsiniz; Pixel'lerde bu ayar Güvenlik ve gizlilik altındaki cihaz bulucular bölümünde, birçok telefonda ise Ayarlar > Google altında yer alır. Konumun da açık olması gerekir.",
+    "Telefonunuzda bir PIN, desen veya şifre bulunması da önemli. Hem kayıp olarak işaretleme bu kilidi kullanır hem de Find Hub ağından yardım almak için ekran kilidi gerekir."
+   ],
+   "list": [
+    "Find Hub uygulamasını yedek bir cihaza (tablet, eşinizin telefonu) yükleyin ve bir kez giriş yapın.",
+    "Google hesabınız için iki adımlı doğrulamanın yedek kodlarını bir yere not edin; telefon kaybolunca doğrulama kodu alamayabilirsiniz.",
+    "Kullanılabiliyorsa Ayarlar > Google > Tüm hizmetler altındaki hırsızlık koruması seçeneklerini açın; telefon elden kapılıp götürüldüğünde ekranı kilitleyen ve internetten uzun süre koparıldığında kilitleyen özellikler burada bulunur.",
+    "Samsung kullanıyorsanız markanın Samsung hesabıyla çalışan kendi bulma hizmetini de ayrıca etkinleştirebilirsiniz."
+   ]
+  },
+  {
+   "h": "Telefon kapalıysa veya internete bağlı değilse",
+   "p": [
+    "Telefonun şarjı bittiyse ya da biri onu kapattıysa anlık konum genellikle görülemez. Find Hub bu durumda telefonun bildirdiği son konumu gösterebilir; bu da en azından aramaya nereden başlayacağınızı söyler.",
+    "Google, Find Hub ağıyla çevredeki uyumlu Android cihazların Bluetooth üzerinden kayıp cihazların konumunu şifreli şekilde bildirmesini sağlıyor. Bazı yeni Pixel modelleri, gerekli ayarlar önceden açıksa kapandıktan sonra da birkaç saat boyunca bu ağ üzerinden bulunabiliyor. Bu özelliğin hangi modellerde çalıştığı değişebilir; telefonunuzun Find Hub ayarlarında çevrimdışı bulma seçeneğinin açık olduğunu kontrol edin.",
+    "Kayıp olarak işaretleme ve sıfırlama gibi işlemler, telefon yeniden internete bağlandığında uygulanır. Telefon uzun süre kapalı kalırsa bu işlemler bekler."
+   ]
+  },
+  {
+   "h": "Telefon çalındıysa Türkiye'de atılması gereken adımlar",
+   "p": [
+    "Telefonunuzun çalındığından eminseniz haritada gördüğünüz adrese kendiniz gitmeyin. Konum bilgisini ve ekran görüntüsünü kolluk birimine iletin. Aşağıdaki adımlar hem hattınızı ve hesaplarınızı korur hem de cihazın başka biri tarafından kullanılmasını zorlaştırır."
+   ],
+   "ol": [
+    "Operatörünüzü arayıp hattınızı kapattırın; aynı numarayla yeni SIM kart çıkarabilirsiniz. Bu, SMS ile gelen doğrulama kodlarının başkasının eline geçmesini önler.",
+    "En yakın emniyet veya jandarma birimine giderek şikâyette bulunun. Marka, model, IMEI numarası, olay yeri ve saati sorulur; düzenlenen tutanak sigorta başvurusu için de gerekir.",
+    "e-Devlet üzerinden kayıp-çalıntı ihbar bildirimi yapın. Bu bildirimle cihazın IMEI numarası Türkiye'deki şebekelerde iletişime kapatılır.",
+    "Google hesabınızın, e-posta, sosyal medya ve bankacılık hesaplarınızın şifrelerini başka bir cihazdan değiştirin; bankanızı bilgilendirin.",
+    "Telefonu bulamayacağınızı düşünüyorsanız Find Hub'dan sıfırlama işlemini başlatın."
+   ],
+   "note": "IMEI numarası telefonun kutusunda ve faturada yazar; telefon elinizdeyken *#06# tuşlayarak da görebilirsiniz. Bu numarayı bugünden bir yere not edin."
+  },
+  {
+   "h": "Uzaktan silme ne zaman yapılmalı?",
+   "p": [
+    "Fabrika ayarlarına sıfırlama geri alınamaz ve Google'a göre telefon silindikten sonra Find Hub'da konumu artık görülemez. Bu yüzden silme işlemi, bulma ihtimali tükendiğinde başvurulacak son adımdır. Telefonu kilitlemek çoğu durumda verilerinizi korumak için yeterlidir, çünkü ekran kilidi olmadan içeriğe erişilemez.",
+    "Telefonda iş yazışmaları, kimlik belgeleri fotoğrafları gibi hassas veriler varsa ve telefonun geri dönme ihtimali düşükse silmeyi geciktirmeyin. Silme işleminden sonra telefon, sahibinin Google hesabı girilmeden yeniden kurulamaz; bu da çalınan cihazın kullanılmasını zorlaştırır."
+   ]
+  },
+  {
+   "h": "Kayıp telefon ararken yapılan yaygın hatalar",
+   "p": [
+    "Telaşla yapılan bazı şeyler, telefonu bulma şansını azaltır ya da sizi riske atar."
+   ],
+   "list": [
+    "Haritada görünen adrese yalnız gidip telefonu geri istemek.",
+    "Telefonu bulmadan hemen önce uzaktan silmek ve konumu takip etme imkânını kaybetmek.",
+    "Hattı kapattırmayı geciktirip SMS doğrulama kodlarını açıkta bırakmak.",
+    "IMEI numarasını hiç not etmemiş olmak.",
+    "Telefon bulunduktan sonra şifreleri değiştirmeyi ihmal etmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Telefonum kapalıysa yine de bulunabilir mi?",
+   "a": "Anlık konum genellikle görülemez, ancak Find Hub telefonun bildirdiği son konumu gösterebilir. Bazı yeni Pixel modelleri gerekli ayarlar açıksa kapandıktan sonra birkaç saat Find Hub ağı üzerinden bulunabilir. Telefon tekrar açılıp internete bağlandığında konum güncellenir."
+  },
+  {
+   "q": "Find Hub ile Cihazımı Bul aynı şey mi?",
+   "a": "Evet. Google, Cihazımı Bul (Find My Device) hizmetinin adını 2025'te Find Hub olarak değiştirdi. Web adresi ve işlevleri aynı şekilde çalışıyor; bazı telefonlarda menülerde eski adı görebilirsiniz."
+  },
+  {
+   "q": "Telefonum kaybolduktan sonra Find Hub'ı açabilir miyim?",
+   "a": "Hayır, ayar telefonun kendisinde açılır; telefon elinizde değilken açamazsınız. Find Hub, Google hesabı eklendiğinde varsayılan olarak açılır, ama kapatılmışsa kayıp sonrası işe yaramaz. Bu yüzden ayarı şimdiden kontrol etmeniz gerekir."
+  },
+  {
+   "q": "Fabrika ayarlarına sıfırladıktan sonra telefonu takip edebilir miyim?",
+   "a": "Hayır. Google'a göre cihaz silindikten sonra konumu Find Hub'da görünmez. Bu yüzden sıfırlamayı, telefonu geri alma ihtimali kalmadığında yapın."
+  },
+  {
+   "q": "Çalınan telefonun IMEI'si nasıl kapatılır?",
+   "a": "e-Devlet üzerinden kayıp-çalıntı ihbar bildirimi yaparak cihazın IMEI numarasının Türkiye'deki şebekelerde iletişime kapatılmasını sağlayabilirsiniz. Ayrıca emniyete şikâyette bulunmanız ve operatörden hattınızı kapattırmanız gerekir. Bu işlemler için IMEI numarasını bilmeniz gerekir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Google Android Yardım: Kayıp bir Android cihazı bulma, kilitleme veya silme",
+   "u": "https://support.google.com/android/answer/6160491?hl=en-GB"
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "slug": "ip-koruma-sinifi-nedir",
+ "title": "IP Koruma Sınıfı Nedir? IP54, IP67, IP68 ve IP69 Farkı",
+ "description": "IP koruma sınıfındaki rakamlar ne anlama gelir? IP54, IP67, IP68 ve IP69 farkı, test koşulları, su direncinin sınırları ve ıslanan telefonda yapılacaklar.",
+ "tldr": "IP kodu, bir cihazın toza ve suya karşı ne kadar korunduğunu gösteren, IEC 60529 standardında tanımlanmış bir sınıflandırmadır. İlk rakam katı cisim ve toz, ikinci rakam su korumasını gösterir. IP68 gibi bir değer suya dayanıklılık anlamına gelir, su geçirmezlik değil: test temiz ve durgun suda, belirli derinlik ve sürede yapılır ve sıvı hasarı çoğu zaman garanti dışında kalır.",
+ "intro": [
+  "Telefon kutusunda ya da ürün sayfasında IP68 yazdığını görüp telefonu havuza sokmanın sorun olmayacağını düşünenlerin sayısı az değildir. Oysa bu iki karakter ve iki rakam, laboratuvarda belirli koşullarda yapılmış testlerin özetidir. Deniz suyu, havuz kloru, sıcak duş buharı ya da yere düşmüş bir telefonun yıpranmış contaları bu testlerin parçası değildir.",
+  "Aşağıda IP kodunun nasıl okunduğunu, telefon, kulaklık ve akıllı saatlerde sık görülen sınıfların gerçekte neyi garanti ettiğini ve cihazınız ıslandığında ne yapmanız gerektiğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "IP kodu nasıl okunur?",
+   "p": [
+    "IP, İngilizce Ingress Protection, yani giriş koruması ifadesinin kısaltmasıdır. Uluslararası Elektroteknik Komisyonu'nun IEC 60529 standardında tanımlanır. Kodda IP harflerinden sonra iki rakam gelir. İlk rakam 0 ile 6 arasındadır ve katı cisimlere ve toza karşı korumayı gösterir. İkinci rakam 0 ile 9 arasındadır ve suya karşı korumayı gösterir.",
+    "Rakamlardan biri yerine X yazıyorsa, örneğin IPX4 ya da IP5X, o konuda test yapılmadığı veya yeterli veri olmadığı anlamına gelir. IPX4 bir kulaklık su sıçramalarına karşı test edilmiştir ama toz koruması hakkında bir şey söylemez. Bu, cihazın tozdan hiç korunmadığı demek değildir; sadece bu konuda sınıflandırma yapılmamıştır."
+   ],
+   "table": {
+    "head": [
+     "Rakam",
+     "İlk rakam: toz ve katı cisim",
+     "İkinci rakam: su"
+    ],
+    "rows": [
+     [
+      "4",
+      "1 mm'den büyük cisimlere karşı korumalı",
+      "Her yönden su sıçramasına dayanıklı"
+     ],
+     [
+      "5",
+      "Toza karşı korumalı: bir miktar toz girebilir ama çalışmayı bozmaz",
+      "Düşük basınçlı su jetine dayanıklı"
+     ],
+     [
+      "6",
+      "Toz geçirmez: toz girişi yok",
+      "Güçlü su jetine dayanıklı"
+     ],
+     [
+      "7",
+      "Tanımlı değil",
+      "1 metreye kadar 30 dakika geçici daldırma"
+     ],
+     [
+      "8",
+      "Tanımlı değil",
+      "1 metreden derin, üreticinin belirlediği derinlik ve sürede sürekli daldırma"
+     ],
+     [
+      "9",
+      "Tanımlı değil",
+      "Yüksek sıcaklık ve yüksek basınçlı yakın mesafe su püskürtmesi"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Telefon ve aksesuarlarda sık görülen sınıflar",
+   "p": [
+    "IP54 ve IP55 genellikle giriş ve orta segment telefonlarda, bazı tabletlerde görülür. Toz girişini sınırlar, yağmur damlasına ve su sıçramasına dayanır; ama suya daldırılmak için test edilmemiştir. Yağmurda telefonla konuşmak sorun olmaz, lavaboya düşmesi ise risklidir.",
+    "IP67, toz geçirmezlik ve kısa süreli daldırma demektir. Standarttaki test 30 dakika sürer ve cihaz en alt noktası yüzeyin 1 metre altında olacak şekilde tutulur. IP68'de ise derinlik ve süre üreticiye bırakılır; bu nedenle IP68 yazan iki telefonun dayanıklılığı birbirinden farklı olabilir. Üreticinin teknik özellik sayfasında genellikle derinlik ve süre ayrıca belirtilir, ör. belirli bir metre derinlikte 30 dakika.",
+    "IP69, 80 °C civarında sıcak suyun çok yüksek basınçla ve yakın mesafeden püskürtüldüğü bir testi ifade eder. Eskiden daha çok endüstriyel ve otomotiv ekipmanında görülen bu sınıf, son yıllarda bazı dayanıklı ve üst segment telefonlarda da yer almaya başladı. IP69K ise aslında karayolu taşıtları için tanımlanmış ISO 20653 standardından gelir."
+   ]
+  },
+  {
+   "h": "IP68, IP65'i de kapsar mı?",
+   "p": [
+    "Kapsamaz ve bu en az bilinen ayrıntıdır. Su koruması IPX6'ya kadar birbirini kapsayacak şekilde düşünülse de 7, 8 ve 9 seviyeleri farklı test türleridir. Daldırma testi durgun suyu ölçer; su jeti testi ise yönlü ve basınçlı suyu. Bir cihaz 1,5 metre durgun suya dayanıp basınçlı bir duş başlığının ya da hortumun suyuna dayanmayabilir.",
+    "Her iki test türünü de geçen cihazlarda bu durum eğik çizgiyle gösterilir; örneğin IP65/IP68. Teknik özelliklerde yalnızca IP68 görüyorsanız cihazın basınçlı suya karşı test edildiğini varsaymayın."
+   ]
+  },
+  {
+   "h": "Laboratuvar ile gerçek hayat arasındaki fark",
+   "p": [
+    "IP testleri yeni, hasarsız cihazlarla, temiz ve oda sıcaklığındaki suda yapılır. Gerçek kullanımda koşullar çoğu zaman daha zorludur."
+   ],
+   "list": [
+    "Deniz suyu ve havuz suyu: Tuz ve klor contalara ve metal bağlantı noktalarına zarar verebilir. Bu sularla temas ederse cihazı üreticinin önerdiği şekilde tatlı suyla durulayın ve kurutun.",
+    "Sıcak su, sauna ve buhar: Sıcaklık contaların genleşmesine neden olur, buhar ise daha kolay içeri sızar.",
+    "Sabunlu su, şampuan, içecekler: Suyun yüzey gerilimini değiştiren sıvılar daha kolay sızabilir; şekerli içecekler kurudukça yapışkan kalıntı bırakır.",
+    "Düşme ve yaşlanma: Darbe, ekran çatlağı ve zamanla yıpranan yapıştırıcılar korumayı azaltır. Ekran veya batarya değişimi gibi açma gerektiren onarımlardan sonra da koruma ilk günkü seviyede olmayabilir.",
+    "Hareketli su: Dalga, şelale ya da su kayağı gibi basınçlı su, durgun daldırma testinin kapsamı dışındadır."
+   ],
+   "note": "Birçok üretici sıvı hasarını garanti kapsamı dışında tutar. IP sınıfı yüksek olsa bile telefonu bilerek suya sokmadan önce kendi cihazınızın garanti koşullarını okuyun."
+  },
+  {
+   "h": "Telefonunuz ıslandıysa ne yapmalısınız?",
+   "p": [
+    "IP sınıflı bir telefon bile ıslandıktan sonra birkaç basit kurala uyulmazsa zarar görebilir. Aşağıdaki sıra hem IP sınıfı olan hem de olmayan cihazlar için güvenli bir başlangıçtır."
+   ],
+   "ol": [
+    "Telefonu sudan hemen çıkarın ve şarj kablosu takılıysa çıkarın.",
+    "Dış yüzeyi yumuşak ve tüy bırakmayan bir bezle silin. Deniz, havuz ya da içecek temas ettiyse üreticinizin önerisine uygun şekilde temiz tatlı suyla hafifçe durulayıp yeniden silin.",
+    "Şarj girişini aşağı bakacak şekilde tutup hafifçe vurarak içindeki suyu boşaltın. Girişe pamuklu çubuk, kağıt ya da sivri bir cisim sokmayın.",
+    "Telefonu kuru ve havadar bir yerde bekletin. Saç kurutma makinesi, kalorifer, fırın gibi ısı kaynaklarından ve basınçlı havadan uzak durun; ısı contalara ve bataryaya zarar verebilir.",
+    "Pirinç torbasına koymayın. Apple da bu yöntemi önermiyor; pirinç tozu ve küçük taneler girişlere dolabilir.",
+    "Şarj girişi tamamen kuruyana kadar kablolu şarj etmeyin. iPhone ve bazı Android telefonlar girişte sıvı algıladığında uyarı verir; uyarı geçene kadar bekleyin.",
+    "Ses boğuk geliyorsa hoparlör ve mikrofon deliklerindeki su kurudukça ses genellikle düzelir."
+   ],
+   "note": "Telefon ısınıyorsa, kasası şişmiş görünüyorsa, ekranda lekeler veya kamera lensinin içinde buğu varsa telefonu kullanmayı ve şarj etmeyi bırakın. Su ve lityum iyon batarya bir araya geldiğinde kısa devre riski oluşabilir. Telefonu kendiniz açmayın; yetkili servise götürün."
+  },
+  {
+   "h": "Alırken IP sınıfını nasıl değerlendirmeli?",
+   "p": [
+    "IP sınıfı, cihazın kaza anlarında ne kadar şans tanıdığını gösterir. Telefonu mutfakta, banyoda, yağmurda ya da şantiye ve tarla gibi tozlu ortamlarda kullanıyorsanız en az IP67 güvence sağlar. Yalnızca yağmur ve terden korunma istiyorsanız IP54 ve üzeri çoğu durumda yeterlidir."
+   ],
+   "list": [
+    "Kulaklıklar: Spor için alacaksanız ter ve yağmur için IPX4 genellikle yeterlidir; şarj kutusunun koruma sınıfı kulaklıktan farklı olabilir, kutuyu kuru tutun.",
+    "Akıllı saatler: Bunlarda su direnci çoğu zaman IP yerine ATM ya da metre cinsinden ve ISO 22810 gibi farklı standartlarla verilir. Yüzmede kullanacaksanız üreticinin yüzme için açıkça uygun dediği modelleri seçin.",
+    "Tabletler ve dizüstüler: Çoğunda IP sınıfı yoktur. Bu, dökülen bir sıvının ciddi hasar verebileceği anlamına gelir.",
+    "Teknik özellik sayfasında IP sınıfının yanında derinlik ve süre bilgisi verilip verilmediğine bakın; IP68 için bu bilgi asıl farkı gösterir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "IP68 telefonu havuza sokabilir miyim?",
+   "a": "IP68 testi temiz ve durgun suda, üreticinin belirttiği derinlik ve sürede yapılır. Havuz suyundaki klor, atlama ve yüzme sırasındaki basınç bu testin dışında kalır. Sıvı hasarı çoğu zaman garanti kapsamında olmadığı için telefonu bilerek havuza sokmamak daha güvenlidir."
+  },
+  {
+   "q": "IP derecesi olmayan telefon suya dayanıksız mı demek?",
+   "a": "Her zaman değil. Üretici cihazı bu standarda göre test ettirmemiş veya sınıf beyan etmemiş olabilir; bazı modellerde içeride sıçramaya karşı contalar bulunabilir. Ancak resmi bir koruma beyanı olmadığı için ıslanmaya karşı daha dikkatli olmanız gerekir."
+  },
+  {
+   "q": "IP67 ile IP68 arasındaki fark büyük mü?",
+   "a": "İkisi de toz geçirmezdir ve daldırma testinden geçer. IP67'nin koşulları standartta sabittir: 1 metreye kadar 30 dakika. IP68'de koşulları üretici belirler ve genellikle daha derin ya da daha uzun bir testtir. Günlük kazalarda ikisi arasındaki pratik fark çoğu zaman küçüktür."
+  },
+  {
+   "q": "Servise giden telefonun IP koruması korunur mu?",
+   "a": "Telefonun açılmasını gerektiren onarımlarda contaların ve yapıştırıcıların doğru yenilenmesi gerekir. Yetkili servisler genellikle üreticinin parçalarını ve yöntemlerini kullanır, ancak onarım sonrası korumanın ilk günkü gibi olduğunu varsaymamak daha doğrudur. Onarımı yapan servise suya dayanıklılık testi yapıp yapmadıklarını sorabilirsiniz."
+  },
+  {
+   "q": "IP sınıfı zamanla azalır mı?",
+   "a": "Contalar ve yapıştırıcılar normal kullanım, sıcaklık değişimleri ve darbelerle zamanla yıpranabilir. Bu yüzden birkaç yıllık ya da düşmüş bir telefonun koruması yeni bir cihazınkiyle aynı olmayabilir. Eski telefonlarda suyla temas konusunda daha temkinli davranın."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: IP code (IEC 60529)",
+   "u": "https://en.wikipedia.org/wiki/IP_code"
+  }
+ ]
+}

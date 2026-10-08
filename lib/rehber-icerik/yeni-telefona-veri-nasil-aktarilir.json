@@ -1,0 +1,166 @@
+{
+ "slug": "yeni-telefona-veri-nasil-aktarilir",
+ "title": "Yeni Telefona Kişiler, WhatsApp ve Veriler Nasıl Aktarılır?",
+ "description": "Android'den Android'e, iPhone'dan iPhone'a ve platformlar arası geçişte kişileri, WhatsApp sohbetlerini ve fotoğrafları kayıpsız taşıma adımları.",
+ "tldr": "Kişileri Google veya iCloud hesabında senkronize ederseniz yeni telefonda aynı hesapla giriş yapmanız yeterli olur. Diğer veriler için en kolay yol, yeni telefonun ilk kurulumundaki aktarım ekranıdır: iPhone'da Hızlı Başlangıç, Samsung'da Smart Switch, Android'den iPhone'a Move to iOS. WhatsApp aynı numarayla, kurulumda QR kodla ya da yedekten taşınır.",
+ "intro": [
+  "Yeni telefonun kutusunu açtığınızda ilk düşünce genellikle kişilerin ve WhatsApp yazışmalarının kaybolup kaybolmayacağıdır. İyi haber şu ki, doğru sırayla ilerlerseniz neredeyse her şey eski telefondan yeni telefona taşınabiliyor. Kötü haber ise bazı aktarımların yalnızca ilk kurulum sırasında yapılabilmesi; bu adımı atlarsanız telefonu sıfırlamak zorunda kalabilirsiniz.",
+  "Aşağıda önce eski telefonda yapmanız gereken hazırlığı, ardından geçiş türüne göre hangi aracı kullanacağınızı, kişileri ve WhatsApp'ı adım adım nasıl taşıyacağınızı anlatıyoruz. Son bölümlerde otomatik aktarılmayan verileri ve takıldığınızda deneyebileceklerinizi bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Eski telefonda yapılması gereken hazırlık",
+   "p": [
+    "Aktarımın büyük kısmı, eski telefonun düzgün çalışmasına ve verilerin doğru yerde durmasına bağlı. Bu yüzden yeni telefonu açmadan önce eski telefonda birkaç kontrol yapın. Eski telefonu sıfırlamak ya da satmak için aktarımın tamamlandığından ve yeni telefonda her şeyi kontrol ettiğinizden emin olana kadar bekleyin."
+   ],
+   "ol": [
+    "Her iki telefonu da şarj edin; aktarım sırasında prize takılı tutmak en güvenlisidir.",
+    "Eski telefonun işletim sistemini ve WhatsApp'ı güncelleyin.",
+    "Kişilerin hangi hesapta kayıtlı olduğunu kontrol edin (Google, iCloud, telefon belleği ya da SIM kart).",
+    "Google hesabınızın veya Apple Kimliğinizin şifresini bildiğinizden emin olun; yeni telefonda sorulacak.",
+    "WhatsApp'ta bir sohbet yedeği alın (Ayarlar > Sohbetler > Sohbet yedeği).",
+    "İki adımlı doğrulama için kullandığınız kimlik doğrulayıcı uygulamaların aktarım veya yedekleme seçeneğini önceden ayarlayın.",
+    "Yeni telefonda eski telefondaki verilere yetecek boş alan olduğunu kontrol edin."
+   ]
+  },
+  {
+   "h": "Hangi geçiş için hangi araç?",
+   "p": [
+    "Kullanacağınız yöntem, eski ve yeni telefonun işletim sistemine göre değişir. Üreticilerin kendi araçları, uygulamaları, fotoğrafları, mesajları ve ayarları toplu halde taşıdığı için önce bunları deneyin. Menü ve uygulama adları sürüme göre küçük farklar gösterebilir."
+   ],
+   "table": {
+    "head": [
+     "Geçiş",
+     "Önerilen yöntem",
+     "Ne zaman yapılır?"
+    ],
+    "rows": [
+     [
+      "Android'den Android'e",
+      "Kurulumdaki uygulama ve veri kopyalama ekranı (kablolu veya kablosuz); Samsung'a geçişte Smart Switch",
+      "İlk kurulumda; Smart Switch sonradan da kullanılabilir"
+     ],
+     [
+      "iPhone'dan iPhone'a",
+      "Hızlı Başlangıç veya iCloud yedeğinden geri yükleme",
+      "İlk kurulumda"
+     ],
+     [
+      "Android'den iPhone'a",
+      "Android'e yüklenen Move to iOS uygulaması",
+      "Yalnızca iPhone'un ilk kurulumunda"
+     ],
+     [
+      "iPhone'dan Android'e",
+      "Android kurulumundaki kopyalama adımı (kabloyla) veya Samsung'da Smart Switch",
+      "İlk kurulumda"
+     ]
+    ]
+   },
+   "list": [
+    "Hızlı Başlangıç: Eski iPhone'da Wi-Fi ve Bluetooth açık olmalı; iki cihaz yan yana ve prize takılı tutulmalı. Verileri iCloud'dan indirmeyi veya doğrudan eski iPhone'dan aktarmayı seçebilirsiniz.",
+    "Smart Switch: Yeni Galaxy'de Veri al, eski telefonda Veri gönder seçilir; kablosuz, USB kablosu ya da bilgisayar üzerinden çalışır ve iPhone'dan da veri alabilir.",
+    "Move to iOS: iPhone kurulumunda Android'den seçeneğini işaretleyin, iPhone'da çıkan kodu Android'deki uygulamaya girin. Kurulum bittiyse iPhone'u sıfırlamanız ya da verileri elle taşımanız gerekir."
+   ]
+  },
+  {
+   "h": "Kişileri kaybetmeden taşımak",
+   "p": [
+    "Kişilerin yeni telefona geçmemesinin en yaygın nedeni, yıllar önce telefon belleğine veya SIM karta kaydedilmiş olmaları. Bu kişiler bir hesaba bağlı olmadığı için yeni telefonda kendiliğinden görünmez. Android'de Kişiler uygulamasını açıp bir kişinin hangi hesapta kayıtlı olduğuna bakabilirsiniz; varsa cihaz veya SIM kişilerini Google hesabına taşıma ya da dışa aktarma seçeneği genellikle Kişiler uygulamasının ayarlarındadır.",
+    "iPhone'da Ayarlar'da adınıza dokunup iCloud bölümünde Kişiler'in açık olduğundan emin olun. Bu ayar açıksa yeni iPhone'da aynı Apple Kimliği ile giriş yaptığınızda kişiler gelir. Platform değiştiriyorsanız Move to iOS ve Android kurulumundaki aktarım araçları kişileri de taşır; alternatif olarak kişileri vCard (.vcf) dosyası olarak dışa aktarıp yeni telefonda içe aktarabilirsiniz.",
+    "Aktarımdan sonra birkaç kişiyi rastgele arayın, özellikle uzun süredir değişmemiş eski numaralara bakın. Eksik görürseniz eski telefonu sıfırlamadan önce fark etmiş olursunuz."
+   ]
+  },
+  {
+   "h": "WhatsApp sohbetlerini aktarma adımları",
+   "p": [
+    "WhatsApp aktarımında tek değişmez kural, yeni telefonda aynı telefon numarasıyla giriş yapmaktır. Yöntem ise geçiş türüne göre değişir. Android yedekleri Google Drive'da, iPhone yedekleri iCloud'da tutulur ve bu yedekler platformlar arasında geri yüklenemez. Bu yüzden Android ile iPhone arasında geçişte yedek değil, doğrudan aktarım kullanılır.",
+    "Aynı platformda (Android'den Android'e veya iPhone'dan iPhone'a) en pratik yol QR kodla doğrudan aktarımdır. Yeni telefona WhatsApp'ı kurup aynı numarayı doğrulayın, eski cihazdan aktarma seçeneğini seçin ve ekranda çıkan QR kodu eski telefonla okutun. İki telefon aktarım bitene kadar açık ve yakın kalmalı. iPhone'da bu seçenek eski telefonda Ayarlar > Sohbetler altında da bulunur."
+   ],
+   "ol": [
+    "Android'den iPhone'a: iPhone'un ilk kurulumunda Move to iOS ile veri taşırken aktarılacak veriler arasında WhatsApp'ı seçin. Kurulum bitince iPhone'a WhatsApp'ı yükleyip aynı numarayla giriş yapın ve aktarımı tamamlama istemini onaylayın.",
+    "iPhone'dan Android'e: Yeni Android telefonun ilk kurulumunda başka bir telefondan veri kopyalamayı seçin, iki telefonu uygun bir kabloyla bağlayın ve uygulamalar arasında WhatsApp'ın seçili olduğundan emin olun. Ardından WhatsApp'ı açıp aynı numarayla giriş yapın.",
+    "Yedekten geri yükleme (aynı platformda): Yeni telefona WhatsApp'ı kurup aynı numarayı doğrulayın; yedek bulunduğunda Geri yükle seçeneği sunulur. Bu seçenek yalnızca ilk kurulumda gelir ve yedek tarihinden sonraki mesajlar aktarılmaz."
+   ],
+   "note": "Android'de WhatsApp yedekleri Google hesabınızın depolama alanından yer kullanır. Alan doluysa yedek alınamayabilir; aktarımdan önce yedeğin tarihini kontrol edin."
+  },
+  {
+   "h": "Otomatik taşınmayan veya ek adım isteyen veriler",
+   "p": [
+    "Toplu aktarım araçları çok şeyi taşısa da bazı veriler güvenlik veya teknik nedenlerle ayrıca ilgilenmenizi gerektirir. Bunları eski telefonu sıfırlamadan önce gözden geçirin."
+   ],
+   "list": [
+    "Kimlik doğrulayıcı uygulamalar: Kodlar her zaman otomatik taşınmaz. Uygulamanın kendi aktarma veya bulut yedekleme özelliğini kullanın; aksi halde hesaplara giriş yapamayabilirsiniz.",
+    "Banka uygulamaları: Çoğu banka, güvenlik nedeniyle yeni cihazı yeniden tanımlamanızı ister; SMS ile doğrulama gerekebilir, bu yüzden hattınız yanınızda olsun.",
+    "iMessage: iPhone'dan Android'e geçiyorsanız eski iPhone'da Mesajlar ayarlarından iMessage'ı kapatın. Aksi halde iPhone kullanan kişilerin mesajları size ulaşmayabilir.",
+    "eSIM: eSIM'ler aktarım araçlarıyla her durumda taşınmaz; operatörünüzün yönlendirmesiyle yeni telefona yeniden tanımlatmanız gerekebilir.",
+    "Satın alınmış müzik, kitap ve kopya korumalı içerikler: Platform değiştirirken bunları ilgili hizmetin uygulamasıyla yeniden indirmeniz gerekir.",
+    "Oyun ilerlemesi ve not uygulamaları: Uygulamanın kendi hesabına bağlı değilse ilerleme taşınmayabilir."
+   ]
+  },
+  {
+   "h": "Aktarım çalışmazsa ne yapmalı?",
+   "p": [
+    "Aktarımın yarıda kesilmesi ya da telefonların birbirini bulamaması sık görülür. Sorunu çoğunlukla aşağıdaki sırayla çözebilirsiniz."
+   ],
+   "ol": [
+    "İki telefonu da yeniden başlatın ve aktarımı baştan başlatın.",
+    "Kablosuz aktarım takılıyorsa kablolu yöntemi deneyin; daha hızlı ve kararlıdır.",
+    "Wi-Fi ve Bluetooth'un açık olduğunu, telefonların yan yana durduğunu kontrol edin.",
+    "Eski telefondaki aktarım uygulamasının (Smart Switch, Move to iOS) ve işletim sisteminin güncel olduğundan emin olun.",
+    "Yeni telefonda yeterli boş alan olmadığı uyarısı çıkıyorsa eski telefondaki büyük videoları önce buluta veya bilgisayara alın.",
+    "Hâlâ başarısız oluyorsa verileri parça parça taşıyın: kişiler hesap senkronizasyonuyla, fotoğraflar bulut veya bilgisayarla, WhatsApp kendi aktarım aracıyla.",
+    "Eski telefon açılmıyor veya ekranı çalışmıyorsa veri kurtarma için yetkili servise başvurun; kendi başınıza açmaya çalışmayın."
+   ]
+  },
+  {
+   "h": "Geçişte en sık yapılan hatalar",
+   "p": [
+    "Veri kaybı genellikle aktarım aracı yüzünden değil, sıralama hatalarından kaynaklanır. Aşağıdakilerden kaçınırsanız geçiş çoğu zaman sorunsuz biter."
+   ],
+   "list": [
+    "Yeni telefonun kurulumunu aktarım adımını atlayarak hızlıca bitirmek.",
+    "Eski telefonu aktarım kontrol edilmeden sıfırlamak veya satmak.",
+    "WhatsApp'ta farklı bir numarayla giriş yapmak.",
+    "Kimlik doğrulayıcı kodlarını taşımadan eski telefonu silmek.",
+    "Eski bir WhatsApp yedeğine güvenip son haftaların mesajlarını kaybetmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "WhatsApp sohbetleri Android'den iPhone'a aktarılabilir mi?",
+   "a": "Evet. iPhone'un ilk kurulumunda Android'e yüklenen Move to iOS uygulamasıyla aktarım yaparken WhatsApp'ı seçmeniz gerekir. Google Drive'daki WhatsApp yedeği iPhone'a geri yüklenemez. Kurulum tamamlandıysa bu aktarım için iPhone'u sıfırlamanız gerekir."
+  },
+  {
+   "q": "Kişiler telefon değiştirince neden kayboluyor?",
+   "a": "Genellikle bu kişiler telefon belleğine veya SIM karta kaydedilmiştir ve bir Google ya da iCloud hesabıyla senkronize değildir. Aktarımdan önce bu kişileri hesabınıza taşıyın veya vCard dosyası olarak dışa aktarın."
+  },
+  {
+   "q": "Kurulumu bitirdim, aktarımı sonradan yapabilir miyim?",
+   "a": "Bazı yöntemler yalnızca ilk kurulumda çalışır; Move to iOS ve iPhone'dan Android'e WhatsApp aktarımı bunlara örnektir. Samsung'da Smart Switch sonradan da açılabilir. İlk kurulum gerektiren yöntemler için telefonu sıfırlayıp kurulumu baştan yapmanız gerekir."
+  },
+  {
+   "q": "Aktarım ne kadar sürer?",
+   "a": "Süre, taşınan veri miktarına ve bağlantı türüne göre değişir. Birkaç gigabaytlık veri kısa sürede biterken, büyük fotoğraf ve video arşivleri uzun sürebilir. Kablolu bağlantı genellikle kablosuzdan hızlıdır; aktarım boyunca telefonları prize takılı tutun."
+  },
+  {
+   "q": "Eski telefonu ne zaman sıfırlamalıyım?",
+   "a": "Yeni telefonda kişileri, WhatsApp geçmişini, fotoğrafları, banka ve kimlik doğrulayıcı uygulamalarını kontrol ettikten sonra. Sıfırlamadan önce Google hesabından ve Apple Kimliği'nden çıkış yapın; aksi halde yeni sahibi telefonu kurarken hesap kilidine takılabilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: Hızlı Başlangıç ile yeni iPhone'a veri aktarma",
+   "u": "https://support.apple.com/102659"
+  },
+  {
+   "t": "Apple Destek: Android'den iPhone'a geçiş",
+   "u": "https://support.apple.com/118670"
+  },
+  {
+   "t": "Samsung Destek: Smart Switch ile veri aktarma ve yedekleme",
+   "u": "https://www.samsung.com/ae/support/apps-services/how-to-transfer-and-backup-data-using-smart-switch-on-a-galaxy-phone/"
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "slug": "laptop-harici-ekrana-nasil-baglanir",
+ "title": "Laptop Harici Monitöre veya Projektöre Nasıl Bağlanır?",
+ "description": "HDMI, USB-C ve Thunderbolt ile dizüstünü monitöre ya da projektöre bağlama adımları, Windows ve macOS ayarları, görüntü gelmezse yapılacaklar.",
+ "tldr": "Dizüstünüzdeki görüntü çıkışını (HDMI, görüntü destekli USB-C veya Thunderbolt) belirleyip monitörün girişine uygun kabloyla bağlayın. Windows'ta Windows + P ile Çoğalt ya da Genişlet modunu seçin, macOS'ta Sistem Ayarları > Ekranlar bölümünü kullanın. Görüntü gelmiyorsa önce monitörün giriş kaynağını, sonra kabloyu ve portu kontrol edin.",
+ "intro": [
+  "Toplantı odasında projektöre bağlanmanız gerekiyor, ama kablo takıldığı hâlde perdede “Sinyal yok” yazıyor. Ya da evde ikinci bir monitörle çalışmak istiyorsunuz ve laptopunuzda HDMI bile yok, yalnızca birkaç USB-C girişi var. Bu iki durum da çoğu zaman birkaç dakikada çözülür; yeter ki hangi portun görüntü taşıdığını ve işletim sisteminin hangi ayarı beklediğini bilin.",
+  "Aşağıda önce bağlantı türlerini ve kablo seçimini, ardından Windows ve macOS için adımları anlatıyoruz. Son bölümlerde görüntü gelmediğinde hangi sırayla ilerlemeniz gerektiğini ve sorunun ne zaman donanımsal olabileceğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Laptopunuzdaki port görüntü taşıyor mu?",
+   "p": [
+    "En yaygın görüntü çıkışı HDMI'dır. HDMI'nın sürümü, ulaşabileceğiniz çözünürlük ve yenileme hızını belirler: HDMI 1.4 4K çözünürlükte en fazla 30 Hz verir, HDMI 2.0 4K 60 Hz'e, HDMI 2.1 ise 4K 120 Hz ve 8K 60 Hz'e kadar çıkar. 4K bir monitörde fare imlecinin takıldığını hissediyorsanız sebep çoğu zaman 30 Hz sınırıdır.",
+    "USB-C girişlerinin hepsi görüntü vermez. Görüntü aktarımı için portun DisplayPort Alternate Mode (kısaca DP Alt Mode) desteklemesi gerekir. Thunderbolt portları da görüntü taşır; Thunderbolt, aynı kablo üzerinden veri, DisplayPort sinyali ve çoğu zaman şarjı birlikte iletebilir. Portun yanında küçük bir DisplayPort simgesi (D harfine benzeyen işaret) ya da şimşek simgesi varsa büyük ihtimalle görüntü desteklidir. Simge yoksa laptopun kullanım kılavuzuna veya üreticinin teknik özellikler sayfasına bakın."
+   ],
+   "table": {
+    "head": [
+     "Bağlantı",
+     "Ne taşır",
+     "Dikkat edilecek nokta"
+    ],
+    "rows": [
+     [
+      "HDMI",
+      "Görüntü ve ses",
+      "Sürüm (1.4 / 2.0 / 2.1) yenileme hızını sınırlar"
+     ],
+     [
+      "USB-C (DP Alt Mode)",
+      "Görüntü, ses, veri; bazen şarj",
+      "Her USB-C portu görüntü vermez"
+     ],
+     [
+      "Thunderbolt (USB-C biçimli)",
+      "Görüntü, veri, şarj, zincirleme bağlantı",
+      "Bazı modellerde birden fazla ekran sürebilir"
+     ],
+     [
+      "DisplayLink'li USB dock",
+      "Yazılımla sıkıştırılmış görüntü",
+      "Sürücü kurulumu gerekir; oyunda gecikme olabilir"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Doğru kabloyu ve adaptörü seçmek",
+   "p": [
+    "Kabloyu iki ucun neye ihtiyaç duyduğuna göre seçin: laptopta USB-C, monitörde HDMI varsa USB-C'den HDMI'ya kablo ya da adaptör gerekir. Monitörde USB-C girişi varsa tek bir USB-C kablosu hem görüntüyü hem de bazen laptopun şarjını taşıyabilir; bunun için kablonun da görüntü aktarımını desteklemesi şarttır. Yalnızca şarj için üretilmiş ince USB-C kablolar görüntü taşımayabilir.",
+    "Adaptör alırken çıkış tarafındaki HDMI sürümüne bakın. 4K 60 Hz istiyorsanız adaptörün bunu açıkça belirtmesi gerekir; birçok ucuz adaptör 4K'yı yalnızca 30 Hz'de verir."
+   ],
+   "list": [
+    "Monitör 4K ve 60 Hz ise: HDMI 2.0 veya üzeri ya da DisplayPort üzerinden bağlantı.",
+    "Tek kabloyla şarj ve görüntü isteniyorsa: monitörün USB-C girişinin güç verme (Power Delivery) desteği olup olmadığına bakın.",
+    "Birden fazla monitör için dock kullanılacaksa: dock'un laptopunuzun port türüyle (Thunderbolt mu, standart USB-C mi) uyumlu olduğunu doğrulayın."
+   ]
+  },
+  {
+   "h": "Windows'ta adım adım bağlantı",
+   "p": [
+    "Windows 10 ve 11 çoğu monitörü kablo takılır takılmaz algılar. Algılamazsa ya da görüntü istediğiniz gibi değilse aşağıdaki adımları izleyin. Menü adları Windows sürümüne ve dil paketine göre biraz farklı olabilir."
+   ],
+   "ol": [
+    "Monitörü veya projektörü açın ve kabloyu önce ekrana, sonra laptopa takın.",
+    "Monitörün menüsünden doğru giriş kaynağını (HDMI 1, HDMI 2, USB-C gibi) seçin.",
+    "Windows + P tuşlarına basın ve modu seçin: Yalnızca bilgisayar ekranı, Çoğalt, Genişlet veya Yalnızca ikinci ekran.",
+    "Masaüstünde boş bir alana sağ tıklayıp Görüntü ayarları'nı açın (Ayarlar > Sistem > Ekran).",
+    "İkinci ekran listede yoksa Birden çok ekran bölümünü açıp Algıla düğmesine tıklayın.",
+    "Tanımla düğmesiyle hangi ekranın 1, hangisinin 2 olduğunu görün; kutucukları sürükleyerek ekranları masadaki fiziksel yerleşime göre dizin.",
+    "Her ekranı seçip çözünürlüğü önerilen (yerel) değere, yenileme hızını da Gelişmiş ekran ayarları'ndan monitörün desteklediği en yüksek değere getirin."
+   ],
+   "note": "Kablosuz bir ekrana ya da Miracast destekli bir televizyona yansıtmak için Windows + K kısayolu kullanılır; bu yöntem kablolu bağlantıya göre daha fazla gecikme yaşatır."
+  },
+  {
+   "h": "macOS'ta harici ekran ayarları",
+   "p": [
+    "Mac'te monitör takıldığında görüntü genelde kendiliğinden gelir. Düzenleme için Apple menüsü > Sistem Ayarları > Ekranlar bölümüne gidin. Burada ekranı yansıtma ya da genişletme, ana ekranı seçme ve çözünürlüğü değiştirme seçenekleri bulunur.",
+    "Apple çipli MacBook'larda desteklenen harici ekran sayısı çipe göre değişir. Temel M1 ve M2 çipli modeller yerleşik olarak tek harici ekranı destekler. Temel M3'lü MacBook Air iki harici ekranı yalnızca kapak kapalıyken ve macOS 14.6 veya sonrasında kullanabilir. Pro ve Max çipler daha fazla ekran sürer. Kendi modelinizin sınırını Apple'ın teknik özellikler sayfasında kontrol edin."
+   ],
+   "note": "Bir dock ya da adaptör, Mac'in yerleşik ekran sınırını aşmanızı sağlamaz. Bu sınırın ötesine yalnızca DisplayLink gibi sürücü kullanan USB çözümleriyle geçilebilir."
+  },
+  {
+   "h": "Projektöre bağlanırken farklı olanlar",
+   "p": [
+    "Projektörde en sık karşılaşılan sorun yanlış kaynak seçimidir. Uzaktan kumandadaki Source ya da Input düğmesiyle kablonun takılı olduğu girişi seçin. Toplantı odalarında duvardaki HDMI prizinin projektörde hangi girişe bağlı olduğu genellikle girişin yanında yazılıdır.",
+    "Sunum yapacaksanız iki mod işinize yarar. Çoğalt modunda perdede ve laptopta aynı görüntü olur; neyin gösterildiğini kontrol etmek kolaydır. Genişlet modunda ise PowerPoint gibi programlar sunucu görünümünü laptopta, slaytı perdede gösterebilir. Çoğalt modunda görüntü bulanıklaşıyorsa sebep, iki ekranın farklı yerel çözünürlüğe sahip olmasıdır; bu durumda Genişlet'e geçip projektörü kendi çözünürlüğüne ayarlayın."
+   ]
+  },
+  {
+   "h": "Görüntü gelmiyorsa: hangi sırayla denemelisiniz?",
+   "p": [
+    "Sorunu en ucuz ve hızlı kontrolden başlayarak daraltın. Her adımdan sonra ekranı yeniden kontrol edin; bir değişikliği geri almadan diğerine geçmeyin."
+   ],
+   "ol": [
+    "Monitörün ya da projektörün doğru giriş kaynağında olduğunu doğrulayın.",
+    "Kabloyu iki uçtan da çıkarıp yeniden takın; adaptör kullanıyorsanız adaptörü de çıkarıp takın.",
+    "Windows + P ile modu Çoğalt veya Genişlet'e alın; ardından Görüntü ayarları'nda Algıla'ya basın.",
+    "Laptopta başka bir porta (örneğin diğer USB-C girişine) geçin.",
+    "Farklı bir kablo deneyin; kabloyu başka bir cihazla test etmek sorunun kablodan mı monitörden mi kaynaklandığını ayırır.",
+    "Windows'ta Windows + Ctrl + Shift + B kısayoluyla grafik sürücüsünü yeniden başlatın; ekran bir an kararıp geri gelir, açık programlar kapanmaz.",
+    "Grafik sürücüsünü laptop üreticisinin destek sayfasından ya da Windows Update üzerinden güncelleyin, sonra bilgisayarı yeniden başlatın.",
+    "Monitörü başka bir bilgisayara bağlayın; orada da görüntü yoksa sorun monitördedir."
+   ]
+  },
+  {
+   "h": "Görüntü bulanık, titrek ya da ses yanlış yerden geliyorsa",
+   "p": [
+    "Bulanık yazılar genellikle yanlış çözünürlükten kaynaklanır. Ekranı yerel çözünürlüğüne ayarlayın, yazılar küçük kalıyorsa çözünürlüğü değil ölçeklendirme oranını (örneğin yüzde 125 ya da 150) değiştirin. Görüntü ara ara gidip geliyorsa kablo veya adaptör, seçtiğiniz çözünürlük ve yenileme hızı için gereken bant genişliğini taşıyamıyor olabilir; yenileme hızını bir kademe düşürüp deneyin.",
+    "HDMI ve görüntü destekli USB-C ses de taşır. Ses monitörden çıkıyor ama siz laptopun hoparlörünü ya da kulaklığınızı istiyorsanız çıkış cihazını elle değiştirin. Windows'ta görev çubuğundaki hoparlör simgesinden, macOS'ta Sistem Ayarları > Ses > Çıkış bölümünden seçim yapabilirsiniz. Hoparlörü olmayan monitörlerde ses bazen yine monitöre yönlenir ve hiç duyulmaz; bu durumda da aynı yerden doğru cihazı seçin."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar ve servise gitmeniz gereken durumlar",
+   "p": [
+    "Birçok bağlantı sorunu cihazdan değil, varsayımdan kaynaklanır. Aşağıdaki hataları ele aldıktan sonra sorun sürüyorsa donanım tarafına bakmak gerekir."
+   ],
+   "list": [
+    "Her USB-C portunun görüntü verdiğini varsaymak; bazı laptoplarda yalnızca bir port görüntü destekler.",
+    "Yalnızca şarj için tasarlanmış USB-C kablosuyla monitör bağlamaya çalışmak.",
+    "4K monitörde 60 Hz beklerken HDMI 1.4 port ya da 30 Hz'lik adaptör kullanmak.",
+    "Projektörün kaynak seçimini kontrol etmeden laptop ayarlarıyla uğraşmak.",
+    "Dock'un sürücüsünü kurmadan DisplayLink tabanlı bir istasyonun çalışmasını beklemek."
+   ],
+   "note": "Port takılan kabloyu tutmuyor, yerinde oynuyor ya da içinde yanık izi veya kırık bir pim görüyorsanız bağlantıyı zorlamayın. Bilinen sağlam bir kablo ve monitörle de görüntü alamıyorsanız laptopu garanti belgesiyle yetkili servise götürün; portu kendiniz açıp onarmaya çalışmak garantiyi geçersiz kılabilir."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Laptopumda HDMI yok, harici monitöre nasıl bağlanırım?",
+   "a": "Görüntü destekli bir USB-C veya Thunderbolt portunuz varsa USB-C'den HDMI'ya ya da USB-C'den DisplayPort'a kablo veya adaptör kullanabilirsiniz. Portun görüntü verip vermediğini yanındaki simgeden ya da üreticinin teknik özellikler sayfasından kontrol edin."
+  },
+  {
+   "q": "Çoğalt ile Genişlet arasındaki fark nedir?",
+   "a": "Çoğalt modunda iki ekranda da aynı görüntü olur; sunumlar için pratiktir. Genişlet modunda ikinci ekran masaüstünüzün devamı olur ve iki ekrana farklı pencereler yerleştirebilirsiniz."
+  },
+  {
+   "q": "4K monitörüm neden 30 Hz'de kalıyor?",
+   "a": "Kablo, adaptör ya da laptopun HDMI portu 4K 60 Hz için gereken bant genişliğini desteklemiyor olabilir. HDMI 1.4 4K'da 30 Hz ile sınırlıdır; HDMI 2.0 veya DisplayPort üzerinden bağlanmak bu sınırı kaldırır."
+  },
+  {
+   "q": "Laptop kapağı kapalıyken harici ekranı kullanabilir miyim?",
+   "a": "Çoğu laptopta evet, ama genellikle laptopun şarja takılı olması ve harici klavye ile fare bağlanmış olması gerekir. Windows'ta Güç seçeneklerinde kapak kapatıldığında ne yapılacağını Hiçbir şey yapma olarak ayarlamanız gerekebilir."
+  },
+  {
+   "q": "Birden fazla harici monitör bağlayabilir miyim?",
+   "a": "Bu, laptopunuzun grafik biriminin ve portlarının kaç ekranı desteklediğine bağlıdır. Thunderbolt'lu birçok Windows laptop birden fazla ekran sürebilir; temel M1 ve M2 çipli MacBook'lar ise yerleşik olarak tek harici ekranla sınırlıdır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Lenovo Destek: Windows'ta birden fazla monitör kurma ve kullanma",
+   "u": "https://support.lenovo.com/vc/en/solutions/ht004036"
+  },
+  {
+   "t": "BenQ: HDMI kablo bant genişliği ve sürüm farkları",
+   "u": "https://www.benq.com/en-us/knowledge-center/knowledge/does-hdmi-cable-bandwidth-matter.html"
+  },
+  {
+   "t": "Plugable: Apple çiplerde harici ekran desteği",
+   "u": "https://kb.plugable.com/en_US/understanding-external-display-support-on-apple-m1-m2-m3-and-m4-chips"
+  },
+  {
+   "t": "Acroname: USB-C alternatif modları",
+   "u": "https://acroname.com/blog/what-are-usb-c-alternate-modes"
+  }
+ ]
+}

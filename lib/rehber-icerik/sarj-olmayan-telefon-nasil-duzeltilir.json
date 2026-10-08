@@ -1,0 +1,167 @@
+{
+ "slug": "sarj-olmayan-telefon-nasil-duzeltilir",
+ "title": "Telefon Şarj Olmuyor mu? Adım Adım Kontrol ve Çözümler",
+ "description": "Telefon şarj olmuyor, yavaş şarj oluyor ya da yüzde 80'de takılıyorsa: kablo, port, nem uyarısı ve pil kontrolleri; servise gitme zamanı.",
+ "tldr": "Önce sorunun aksesuarda mı telefonda mı olduğunu ayırın: başka bir kablo, adaptör ve prizle deneyin. Ardından şarj portundaki kiri metal olmayan bir araçla nazikçe temizleyin, telefonu yeniden başlatın ve en az 30 dakika şarjda bekletin. Nem uyarısı varsa telefon kuruyana kadar kablolu şarj etmeyin; bu adımlar işe yaramazsa yetkili servise başvurun.",
+ "intro": [
+  "Akşam telefonu şarja takıp sabah yüzde 12 ile uyanmak, ya da kabloyu biraz oynatınca şarjın gelip gitmesi çok can sıkıcı. Çoğu zaman suçlu telefonun kendisi değil; yıpranmış bir kablo, cepten gelen tüylerle dolmuş bir şarj girişi ya da telefonun pili korumak için bilinçli olarak şarjı yavaşlatması.",
+  "Aşağıdaki adımlar en olası ve en kolay kontrol edilen nedenden başlayıp daha ciddi olasılıklara doğru ilerliyor. Sırayla gittiğinizde, sorunun evde çözülebilir mi yoksa servis gerektiren bir arıza mı olduğunu kısa sürede anlarsınız."
+ ],
+ "sections": [
+  {
+   "h": "Belirtiye göre olası neden",
+   "p": [
+    "Şarj sorununun nasıl göründüğü, nereden başlamanız gerektiği konusunda iyi bir ipucu verir. Aşağıdaki tablo yaygın belirtileri ve en sık karşılaşılan nedenleri özetliyor."
+   ],
+   "table": {
+    "head": [
+     "Belirti",
+     "En olası neden",
+     "İlk deneme"
+    ],
+    "rows": [
+     [
+      "Hiç şarj olmuyor, simge çıkmıyor",
+      "Kablo, adaptör veya priz arızası; tamamen boşalmış pil",
+      "Başka kablo ve adaptör, 30 dakika bekleme"
+     ],
+     [
+      "Kablo oynayınca şarj kesiliyor",
+      "Portta kir birikimi veya hasarlı kablo ucu",
+      "Port temizliği, başka kablo"
+     ],
+     [
+      "Şarj çok yavaş",
+      "Düşük güçlü adaptör, uyumsuz kablo, ısınma",
+      "Uygun watt değerinde USB PD adaptör"
+     ],
+     [
+      "Yüzde 80 civarında duruyor",
+      "Pil koruma veya optimize şarj ayarı, sıcaklık",
+      "Ayarı kontrol etme, telefonu serin yere alma"
+     ],
+     [
+      "Nem veya sıvı uyarısı",
+      "Şarj girişinde su veya ter",
+      "Kurumasını bekleme, kablosuz şarj"
+     ],
+     [
+      "Şarj oluyor ama hızla bitiyor",
+      "Yaşlanmış pil veya arka planda tüketim",
+      "Pil sağlığı ve pil kullanımı ekranı"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Adım adım kontrol sırası",
+   "p": [
+    "Apple'ın şarj sorunları için önerdiği sıra, Android telefonlarda da büyük ölçüde geçerli. Her adımdan sonra telefonu tekrar şarja takıp birkaç dakika gözlemleyin. Pil tamamen boşaldıysa ekranda bir şey görünmesi birkaç dakika sürebilir; hemen sonuç beklemeyin."
+   ],
+   "ol": [
+    "Telefonu farklı bir prize takın; uzatma kablosu veya çoklu priz kullanıyorsanız doğrudan duvar prizini deneyin.",
+    "Kablo ve adaptörde kırık, ezik, bükülmüş uç veya renk değişimi olup olmadığına bakın. Hasarlı aksesuarı kullanmayı bırakın.",
+    "Başka bir kablo ve adaptörle deneyin. Başka cihazda sorunsuz çalıştığını bildiğiniz bir set, sorunu hızlıca ayırır.",
+    "Kablonun telefona ve adaptöre sıkıca oturduğundan emin olun. Kılıf girişi engelliyorsa kılıfı çıkarın.",
+    "Şarj girişini bir el feneriyle kontrol edin ve gerekiyorsa aşağıdaki bölümdeki gibi temizleyin.",
+    "Telefonu yeniden başlatın.",
+    "Telefonu yaklaşık 30 dakika şarjda bırakın.",
+    "Telefon hâlâ açılmıyorsa zorla yeniden başlatmayı deneyin ve 30 dakika daha şarjda bekletin.",
+    "Bunlara rağmen şarj olmuyorsa yetkili servise başvurun."
+   ],
+   "note": "Zorla yeniden başlatma tuş kombinasyonu modele göre değişir. Yeni iPhone'larda ses açma, ardından ses kısma tuşuna basıp bırakın ve Apple logosu görünene kadar yan tuşu basılı tutun. Android'de çoğu modelde güç ve ses kısma tuşlarını birlikte uzun süre basılı tutmak işe yarar; kesin kombinasyon için üreticinin kılavuzuna bakın."
+  },
+  {
+   "h": "Şarj girişini güvenli şekilde temizleme",
+   "p": [
+    "Telefonu cepte taşırken giriş zamanla tüy ve tozla dolar. Kablo her takıldığında bu kir biraz daha dibe sıkışır ve fişin tam oturmasını engeller. Belirtisi, kablonun eskisi kadar “tık” diye oturmaması ve hafif oynatınca şarjın kesilmesidir.",
+    "Temizlikten önce telefonu kapatın ve kabloyu çıkarın. Girişin içine bir fener tutup bakın. Kir görüyorsanız ince, metal olmayan bir araçla (plastik bir kürdan ya da tahta kürdan gibi) girişin kenarlarından nazikçe kazıyarak dışarı alın. Ortadaki pin dizisine bastırmayın. Metal iğne, ataş veya SIM çıkarma iğnesi kullanmak pinleri kısa devre yaptırabilir ya da bükebilir.",
+    "Temizlik sonrası kabloyu takıp oturmasını kontrol edin. Giriş içinde gözle görülür bir hasar, kararma veya gevşeklik varsa daha fazla kurcalamayın; port değişimi servis işidir."
+   ]
+  },
+  {
+   "h": "Nem veya sıvı algılandı uyarısı çıkıyorsa",
+   "p": [
+    "Suya dayanıklı birçok telefon, şarj girişinde nem algıladığında kablolu şarjı durdurur ve uyarı gösterir. Bu bir arıza değil, pinlerin korozyona uğramasını önleyen bir korumadır. Apple, ıslakken şarj etmenin konnektör pinlerinde korozyona ve kalıcı hasara yol açabileceğini belirtiyor.",
+    "Kabloyu çıkarın, telefonu giriş aşağı bakacak şekilde avucunuza hafifçe vurarak fazla suyu boşaltın ve hava alan kuru bir yerde bekletin. Samsung, suyun genellikle bir iki saat içinde buharlaştığını; Apple ise tamamen kurumanın 24 saate kadar sürebileceğini belirtiyor. Telefon tuzlu suya veya başka bir sıvıya maruz kaldıysa Samsung tatlı suyla durulayıp yumuşak bir bezle kurulamayı öneriyor.",
+    "Bu sürede telefonunuz kablosuz şarjı destekliyorsa ve arka yüzü kuruysa kablosuz şarj kullanabilirsiniz."
+   ],
+   "list": [
+    "Saç kurutma makinesi veya başka bir ısı kaynağı kullanmayın.",
+    "Girişe basınçlı hava tutmayın, pamuklu çubuk veya kâğıt peçete sokmayın.",
+    "Telefonu pirince gömmeyin; Apple, pirinç parçacıklarının cihaza zarar verebileceği uyarısında bulunuyor.",
+    "Uyarı her ortamda ve her kabloyla sürekli çıkıyorsa giriş hasarlı olabilir; servise başvurun."
+   ]
+  },
+  {
+   "h": "Şarj oluyor ama yavaş ya da yüzde 80'de duruyor",
+   "p": [
+    "Telefon yüzde 80 civarında bekleyip sonra devam ediyorsa büyük ihtimalle bir pil koruma özelliği çalışıyordur. iPhone'daki Optimize Edilmiş Pil Şarjı, uzun bir şarj süresi öngördüğünde yüzde 80'in üzerini sabaha erteler; iPhone 15 ve sonrasında ayrıca bir şarj sınırı ayarı bulunur. Android markalarında da şarjı yüzde 80 veya 85 civarında sınırlayan ya da sabaha doğru tamamlayan ayarlar var; menü adları markaya göre değişir. Pil ısındığında da telefon şarjı geçici olarak sınırlayabilir.",
+    "Şarjın genel olarak yavaş olması ise çoğunlukla adaptörle ilgilidir. Telefonların hızlı şarjı belirli bir güç değeri ve protokol ister; eski bir 5 W'lık adaptör veya bilgisayarın USB girişi telefonu çok yavaş doldurur. USB-C telefonlar için USB Power Delivery destekli ve telefonunuzun desteklediği güce uygun bir adaptör, kablonun da bu gücü taşıyabilen sağlam bir kablo olması gerekir. Şarj sırasında oyun oynamak veya navigasyon kullanmak da şarj hızını düşürür."
+   ]
+  },
+  {
+   "h": "Ne zaman yetkili servise gitmelisiniz?",
+   "p": [
+    "Farklı kablo ve adaptörle denediğiniz, girişi temizlediğiniz, telefonu yeniden başlattığınız ve uzun süre şarjda beklettiğiniz halde sonuç alamıyorsanız sorun büyük ihtimalle şarj girişinde, şarj devresinde ya da pildedir. Bu parçalar yetkili serviste değiştirilir.",
+    "Telefonu kendiniz açmaya çalışmayın. Modern telefonlar yapıştırıcıyla kapatılır; açma işlemi su dayanıklılığını bozar ve yetkisiz müdahale garantinin geçersiz sayılmasına yol açabilir. Pil hasar görürse yangın riski oluşur."
+   ],
+   "list": [
+    "Gövdede veya ekranda kalkma, şişkinlik görürseniz şarj etmeyi hemen bırakın.",
+    "Şarj girişinde yanık izi, erime veya yanık kokusu varsa kullanmayın.",
+    "Şarj sırasında telefon olağandışı derecede ısınıyorsa kabloyu çıkarın.",
+    "Pil sağlığı ekranında servis önerisi veya düşük pil kapasitesi uyarısı görüyorsanız pil değişimi için randevu alın."
+   ]
+  },
+  {
+   "h": "Şarj sorunlarına yol açan yaygın hatalar",
+   "p": [
+    "Şarj sorunlarının bir kısmı, kullanım alışkanlıklarıyla önlenebilir. Aşağıdaki hatalar hem aksesuarların hem de şarj girişinin ömrünü kısaltır."
+   ],
+   "list": [
+    "Kabloyu fişten değil, kablodan çekerek çıkarmak.",
+    "Sertifikasız, çok ucuz adaptör ve kablolar kullanmak.",
+    "Telefonu yatakta, yastık altında şarj etmek.",
+    "Port temizliğinde iğne veya ataş kullanmak.",
+    "Nem uyarısını atlayıp ıslak telefonu kabloyla şarj etmek.",
+    "Şarj yüzde 80'de durduğu için pil arızası olduğunu düşünüp gereksiz değişime gitmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Telefon şarja takılı ama yüzde artmıyor, ne yapmalıyım?",
+   "a": "Önce başka bir kablo, adaptör ve prizle deneyin, ardından şarj girişini kontrol edin ve telefonu yeniden başlatın. Telefonu en az 30 dakika şarjda bırakın. Şarj sırasında yoğun kullanım varsa harcanan enerji gelen enerjiye yakın olabilir; telefonu bir süre kullanmadan bekletin."
+  },
+  {
+   "q": "Şarj girişini kendim temizleyebilir miyim?",
+   "a": "Telefon kapalıyken ince, metal olmayan bir araçla girişin kenarlarından nazikçe temizleyebilirsiniz. Metal iğne veya ataş kullanmayın, pinlere bastırmayın. Girişte hasar veya gevşeklik görürseniz servise başvurun."
+  },
+  {
+   "q": "Telefonum neden yüzde 80'de şarjı durduruyor?",
+   "a": "Büyük ihtimalle pil ömrünü uzatmak için tasarlanmış optimize şarj veya şarj sınırı özelliği açıktır. Telefon ısındığında da şarj geçici olarak sınırlanabilir. Pil ayarlarından bu özelliği kontrol edebilirsiniz; tam dolu şarja ihtiyacınız yoksa açık bırakmak pil için daha iyidir."
+  },
+  {
+   "q": "Nem uyarısı çıkarken şarj etmek tehlikeli mi?",
+   "a": "Islak girişle kablolu şarj, pinlerde korozyona ve kalıcı hasara yol açabilir. Telefonu kuru ve hava alan bir yerde bekletin; Apple tamamen kurumanın 24 saate kadar sürebileceğini belirtiyor. Bu sürede arka yüzü kuruysa kablosuz şarj kullanabilirsiniz."
+  },
+  {
+   "q": "Hızlı şarj pile zarar verir mi?",
+   "a": "Üreticiler hızlı şarjı pil sıcaklığını izleyerek ve pil dolmaya yaklaştıkça hızı düşürerek tasarlar. Pili en çok yıpratan şey yüksek sıcaklıktır; bu yüzden hızlı şarj sırasında telefonu kılıfsız ve serin bir yerde bırakmak iyi bir alışkanlıktır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: iPhone şarj olmuyorsa",
+   "u": "https://support.apple.com/en-me/108805"
+  },
+  {
+   "t": "Apple Destek: iPhone'da sıvı algılama uyarısı görürseniz",
+   "u": "https://support.apple.com/en-me/102643"
+  },
+  {
+   "t": "Samsung Destek: Şarj girişinde nem algılanırsa ne yapılmalı",
+   "u": "https://www.samsung.com/uk/support/mobile-devices/what-to-do-if-your-water-resistant-phone-or-tablet-detects-moisture-in-the-charging-port"
+  }
+ ]
+}

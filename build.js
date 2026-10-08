@@ -208,7 +208,7 @@ async function main(){
   generateBuyingGuides({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ2_TARGET_IDS, rootDir });
 
   console.log('→ Konu kümesi (topical authority) rehberleri üretiliyor...');
-  generateTopicalGuides({ rootDir });
+  generateTopicalGuides({ rootDir, products, computeScores: helpers.computeScores, productSlug: helpers.productSlug });
 
   console.log('→ Konu kümesi destek makaleleri üretiliyor...');
   generateClusterArticles({ rootDir });

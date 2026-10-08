@@ -1,0 +1,134 @@
+{
+ "slug": "telefonu-tv-ye-nasil-yansitilir",
+ "title": "Telefon Ekranı TV'ye Nasıl Yansıtılır? Android ve iPhone",
+ "description": "Android ve iPhone ekranını TV'ye kablosuz ya da kabloyla aktarma adımları, Cast ile yansıtma farkı ve bağlantı kurulmazsa yapılacaklar.",
+ "tldr": "Android'de Hızlı Ayarlar'daki Ekran Yayını ya da Smart View gibi seçenekle, iPhone'da Denetim Merkezi'ndeki Ekran Yansıtma ile AirPlay destekli TV'ye bağlanırsınız. Kablosuz yöntemlerde telefon ve TV aynı Wi-Fi ağında olmalıdır. Video izlemek için uygulamanın kendi Cast veya AirPlay düğmesi, tüm ekranı yansıtmaktan daha akıcı çalışır.",
+ "intro": [
+  "Tatil fotoğraflarını ailece büyük ekranda bakmak, telefondaki bir sunumu toplantı odasındaki TV'ye aktarmak ya da TV'de uygulaması olmayan bir yayını izlemek için telefon ekranını TV'ye yansıtmak en pratik yoldur. Ancak 'yansıtma' tek bir teknoloji değil: Android'de Google Cast ve Miracast, iPhone'da AirPlay, bir de kablolu bağlantı seçenekleri var.",
+  "Hangi yöntemin işe yarayacağı telefonunuza ve TV'nizin desteklediği protokole bağlı. Aşağıda önce iki temel kavramı ayırıyor, sonra her platform için adımları ve sorun giderme sırasını veriyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Yansıtma ile içerik gönderme (Cast) arasındaki fark",
+   "p": [
+    "Ekran yansıtmada telefonun ekranında ne varsa TV'de de o görünür; bildirimler, klavye ve gelen mesajlar dahil. Telefon görüntüyü sürekli kodlayıp gönderdiği için pil daha hızlı biter ve hızlı hareketli sahnelerde takılma olabilir.",
+    "İçerik göndermede (YouTube veya Netflix'teki Cast simgesi, iPhone'da uygulama içi AirPlay düğmesi) telefon yalnızca 'şu videoyu oynat' komutunu iletir. TV videoyu internetten kendisi çeker. Telefonu bu sırada başka işler için kullanabilir, hatta kilitleyebilirsiniz. Film ve dizi izlerken bu yöntem çoğu zaman daha kaliteli ve kararlı sonuç verir."
+   ],
+   "table": {
+    "head": [
+     "Yöntem",
+     "Nasıl çalışır",
+     "Ne zaman uygun"
+    ],
+    "rows": [
+     [
+      "Uygulama içi Cast / AirPlay",
+      "TV içeriği doğrudan internetten oynatır",
+      "Film, dizi, YouTube"
+     ],
+     [
+      "Tam ekran yansıtma (kablosuz)",
+      "Telefon ekranı canlı olarak TV'ye aktarılır",
+      "Fotoğraf, sunum, uygulaması olmayan içerik"
+     ],
+     [
+      "Kablolu (USB-C/Lightning - HDMI)",
+      "Görüntü kablo ile doğrudan gider",
+      "Wi-Fi olmayan ortam, düşük gecikme gereken durumlar"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Android telefondan TV'ye yansıtma adımları",
+   "p": [
+    "Android'de seçeneğin adı üreticiye göre değişir: Google Pixel'de 'Ekran Yayını' (Screen Cast), Samsung Galaxy'de 'Smart View', bazı markalarda 'Kablosuz ekran' veya 'Yansıt'. Google TV ve Chromecast Google Cast protokolünü kullanır; bazı TV'ler ise Miracast tabanlı yansıtmayı kabul eder."
+   ],
+   "ol": [
+    "Telefonu ve TV'yi aynı Wi-Fi ağına bağlayın. TV'de, yansıtma özelliği ayrı bir giriş olarak sunuluyorsa (ör. 'Screen Mirroring' kaynağı) onu açın.",
+    "Ekranın üstünden aşağı iki kez kaydırarak Hızlı Ayarlar'ı açın. Ekran Yayını veya Smart View kutucuğu yoksa düzenleme (kalem) simgesinden ekleyin.",
+    "Kutucuğa dokunun ve listede çıkan TV'yi seçin; telefonda çıkan izin uyarısını onaylayın.",
+    "TV'de kısa bir süre siyah ekran görülebilir, ardından telefon ekranı belirir.",
+    "Kutucuk hiç yoksa ve TV'niz Google TV veya Chromecast ise Google Home uygulamasında TV'yi seçip 'Ekranımı yayınla' seçeneğini kullanın.",
+    "Bitirmek için aynı kutucuğa ya da bildirimdeki 'Bağlantıyı kes' seçeneğine dokunun."
+   ]
+  },
+  {
+   "h": "iPhone'dan TV'ye AirPlay ile yansıtma",
+   "p": [
+    "iPhone ekranı Apple TV cihazına veya AirPlay destekli akıllı TV'ye yansıtılabilir. 2019'dan bu yana Samsung, LG, Sony gibi birçok üretici bazı modellerine AirPlay 2 desteği ekledi; ancak bu her modelde yoktur. TV'nizin teknik özelliklerinde AirPlay ibaresini arayın."
+   ],
+   "ol": [
+    "iPhone'u, Apple TV veya AirPlay destekli TV ile aynı Wi-Fi ağına bağlayın.",
+    "Denetim Merkezi'ni açın: Face ID'li modellerde sağ üst köşeden aşağı, Ana Ekran düğmeli modellerde alttan yukarı kaydırın.",
+    "Ekran Yansıtma düğmesine dokunun ve listeden TV'nizi seçin.",
+    "TV ekranında bir AirPlay kodu çıkarsa bu kodu iPhone'a girin.",
+    "Durdurmak için Denetim Merkezi'nde Ekran Yansıtma > Yansıtmayı Durdur'a dokunun."
+   ],
+   "note": "AirPlay desteği olmayan bir Android TV'ye iPhone ekranını yerleşik yöntemlerle kablosuz yansıtamazsınız. Bu durumda kablolu adaptör ya da TV'ye takılan bir Apple TV cihazı çözüm olur."
+  },
+  {
+   "h": "Kablolu bağlantı: USB-C veya Lightning'den HDMI'a",
+   "p": [
+    "Wi-Fi olmayan bir otel odasında ya da gecikmenin önemli olduğu durumlarda kablo daha güvenilirdir. Ancak her USB-C telefon görüntü çıkışı vermez. Telefonun USB-C bağlantı noktasının DisplayPort Alt Mode gibi bir video çıkışı desteği olması gerekir; bu özellik genellikle üst segment modellerde bulunur ve teknik özelliklerde belirtilir. Destek yoksa adaptör takılı olsa bile TV'de görüntü çıkmaz.",
+    "USB-C girişli iPhone modelleri uygun bir USB-C - HDMI adaptörle, Lightning girişli modeller ise Apple'ın Lightning Digital AV Adaptörü ile bağlanabilir. Kabloyu taktıktan sonra TV'de doğru HDMI girişini seçmeyi unutmayın; görüntü gelmemesinin en sık nedeni budur."
+   ]
+  },
+  {
+   "h": "Yansıtma çalışmıyorsa izlenecek sıra",
+   "p": [
+    "Bağlantı kurulamadığında aşağıdaki adımları sırayla deneyin. Her adımdan sonra tekrar bağlanmayı deneyin."
+   ],
+   "ol": [
+    "Telefonun mobil veride değil, TV ile aynı Wi-Fi ağında olduğunu kontrol edin. Çift bantlı modemlerde 2,4 GHz ve 5 GHz ağlar farklı adlarla yayın yapıyorsa ikisini de aynı ağa alın.",
+    "Misafir ağı kullanıyorsanız ana ağa geçin; misafir ağları cihazların birbirini görmesini çoğu zaman engeller.",
+    "Telefonda VPN açıksa kapatın.",
+    "TV'yi fişten çekip bir dakika bekleyin, modemi de yeniden başlatın.",
+    "TV'nin ve telefonun yazılımını güncelleyin.",
+    "Belirli bir uygulamada siyah ekran görüyorsanız sorun bağlantıda değil telif korumasındadır; tam ekran yansıtma yerine uygulamanın kendi Cast veya AirPlay düğmesini kullanın."
+   ],
+   "note": "Hiçbir cihaz TV'yi bulamıyor ve TV'nin ağ bağlantısı da sorunluysa önce TV'nin internete bağlanıp bağlanmadığını kontrol edin. Ağ menüsü boş geliyor ya da kablosuz ağlar hiç listelenmiyorsa donanımsal arıza olabilir; yetkili servise başvurun."
+  },
+  {
+   "h": "Sık yapılan hatalar ve pratik ipuçları",
+   "p": [
+    "Yansıtmayı her gün kullananların fark ettiği birkaç ayrıntı, deneyimi belirgin şekilde iyileştirir."
+   ],
+   "list": [
+    "Video izlerken tam ekran yansıtma kullanmak: Görüntü daha düşük kalitede gelir, telefon ısınır. Uygulama içi Cast düğmesini tercih edin.",
+    "Bildirimleri kapatmamak: Sunum sırasında gelen özel mesajlar TV'de herkesin önüne düşer. Rahatsız Etme modunu açın.",
+    "Telefonu dik tutup TV'de küçük görüntü görmek: Fotoğraf ve video için telefonu yatay çevirin.",
+    "Uzun yansıtmada telefonu şarja takmamak: Sürekli görüntü kodlama pili belirgin şekilde tüketir.",
+    "Oyun için kablosuz yansıtmaya güvenmek: Gecikme hissedilir; mümkünse kablolu bağlantı kullanın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Yansıtma için telefon ve TV'nin aynı Wi-Fi'da olması şart mı?",
+   "a": "Google Cast ve AirPlay için evet, iki cihaz aynı yerel ağda olmalıdır. Miracast tabanlı bazı bağlantılar doğrudan Wi-Fi ile kurulabilir ama bu her cihazda desteklenmez. Kablolu adaptör kullanıyorsanız Wi-Fi gerekmez."
+  },
+  {
+   "q": "iPhone'u Samsung veya LG TV'ye yansıtabilir miyim?",
+   "a": "TV'niz AirPlay destekliyorsa evet; birçok yeni Samsung ve LG modelinde bu destek var. TV listede görünmüyorsa modelin teknik özelliklerinde AirPlay olup olmadığını kontrol edin ve TV yazılımını güncelleyin."
+  },
+  {
+   "q": "Yansıtırken neden görüntü takılıyor?",
+   "a": "Wi-Fi sinyali zayıf olabilir ya da ağda yoğun trafik vardır. Modeme yaklaşmak, 5 GHz ağa geçmek ve video için uygulama içi Cast kullanmak takılmayı genellikle azaltır."
+  },
+  {
+   "q": "Netflix'i yansıtınca siyah ekran çıkıyor, neden?",
+   "a": "Bazı yayın uygulamaları telif koruması nedeniyle tam ekran yansıtmada görüntü göstermez. Uygulamanın içindeki Cast veya AirPlay simgesini kullanın ya da doğrudan TV'nin kendi uygulamasını açın."
+  },
+  {
+   "q": "Akıllı olmayan TV'ye telefon yansıtılabilir mi?",
+   "a": "TV'de HDMI girişi varsa evet. Bir Chromecast, Google TV Streamer ya da Apple TV gibi bir medya oynatıcıyı HDMI'a takarak kablosuz yansıtma ekleyebilir veya video çıkışı destekleyen telefonu kabloyla bağlayabilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek - AirPlay ile video aktarma veya ekran yansıtma",
+   "u": "https://support.apple.com/102661"
+  }
+ ]
+}

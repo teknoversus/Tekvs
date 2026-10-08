@@ -1,0 +1,148 @@
+{
+ "slug": "islemci-nesli-nasil-anlasilir",
+ "title": "İşlemci Nesli Nasıl Anlaşılır? Intel ve AMD Model Numaraları",
+ "description": "Core i5-1235U, Core Ultra 7 155H, Ryzen 5 7520U: laptop işlemci adlarındaki rakam ve harflerin anlamı, nesil tuzakları ve alırken bakılacaklar.",
+ "tldr": "Eski Intel adlarında tireden sonraki ilk iki rakam nesli gösterir (Core i5-1235U = 12. nesil), sondaki harf ise güç sınıfını. Yeni Core Ultra adlarında ilk rakam seriyi belirtir. AMD'nin dört haneli adlarında ilk rakam yalnızca çıkış yılını gösterir; mimariyi üçüncü rakamdan okumanız gerekir. Karar verirken nesil kadar harf sonekine ve bağımsız testlere bakın.",
+ "intro": [
+  "Mağazada yan yana duran iki laptoptan birinde Ryzen 5 7520U, diğerinde Ryzen 5 7640U yazıyor. İkisi de “7000 serisi” gibi görünüyor, ama aralarında birkaç mimari nesil fark var. Intel tarafında ise bir süre önce i5, i7 adları yerini Core Ultra 5, Core Ultra 7 gibi adlara bıraktı ve eski nesil numarası kalktı.",
+  "İşlemci adını okuyabilmek, aynı fiyat aralığındaki modelleri karşılaştırırken eski bir işlemciyi yeni sanmanızı önler. Aşağıda Intel ve AMD'nin laptop işlemcilerinde kullandığı adlandırma düzenlerini örneklerle çözüyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Klasik Intel adları: Core i5-1235U nasıl okunur?",
+   "p": [
+    "Intel'in 2023'e kadar kullandığı düzende ad dört parçadan oluşur. “Core i5” performans kademesini gösterir; i3 giriş, i5 orta, i7 ve i9 üst kademedir. Tireden sonraki rakamların ilk ikisi nesildir: 1235U'da “12”, işlemcinin 12. nesil olduğunu söyler. 9. nesle kadar nesil tek rakamla yazıldığı için i5-8250U gibi adlarda nesli ilk rakamdan okursunuz.",
+    "Kalan rakamlar aynı nesil içindeki modeli belirtir; genel olarak büyük sayı daha üst modeldir. En sondaki harf ise işlemcinin hangi güç sınıfı için tasarlandığını gösterir ve laptopta en az nesil kadar önemlidir."
+   ],
+   "list": [
+    "U: Düşük güç tüketimi, ince ve hafif laptoplar, uzun pil ömrü.",
+    "P: 12. ve 13. nesilde U ile H arasında kalan, ince ama daha güçlü modeller için sınıf.",
+    "H: Yüksek performans; oyun ve iş istasyonu laptopları.",
+    "HX: En yüksek güç sınıfı; büyük soğutmalı oyun ve iş istasyonu laptopları.",
+    "K ve F: Masaüstü işlemcilerde görülür; K kilidi açık (hız aşırtmaya uygun), F dahili grafik birimi olmayan modeldir."
+   ]
+  },
+  {
+   "h": "Yeni Intel adları: Core Ultra ve seri numarası",
+   "p": [
+    "Intel, Meteor Lake mimarisiyle birlikte “i” harfini ve nesil numarasını bıraktı. Core Ultra 7 155H gibi bir adda “7” kademeyi, ilk rakam olan “1” ise Seri 1'i gösterir; sonraki iki rakam modeli, harf yine güç sınıfını belirtir. Seri 2 işlemciler 2 ile (Core Ultra 7 258V, Core Ultra 9 285H gibi), Seri 3 işlemciler 3 ile başlar. V soneki, belleğin işlemci paketine dahil edildiği ince ve verimli laptop işlemcilerini işaret eder.",
+    "Seri 3'te (Panther Lake) bir değişiklik daha var: güçlü dahili grafik birimine sahip modeller Core Ultra X7 ve Core Ultra X9 gibi “X” ile adlandırılıyor. Aynı seride X'siz Core Ultra 5 338H gibi modeller de bulunuyor; bunlarda grafik birimi daha küçüktür.",
+    "Dikkat edilmesi gereken bir ayrıntı: “Ultra” kelimesi olmayan Core 5 ve Core 7 işlemciler de var (Core 7 150U gibi). Bunlar Core Ultra'larla benzer numaralar taşısa da daha eski bir mimariye dayanır. Ürün sayfasında “Ultra” kelimesinin olup olmadığına bakın."
+   ]
+  },
+  {
+   "h": "AMD Ryzen'de dört haneli numaralar ve mimari tuzağı",
+   "p": [
+    "AMD, 2023'ten itibaren laptop işlemcilerinde dört rakam ve bir harften oluşan bir düzen kullandı. Burada ilk rakam nesil değil, ürün yılıdır: 7 = 2023, 8 = 2024. İkinci rakam kademeyi (Ryzen 3, 5, 7, 9), üçüncü rakam mimariyi (Zen 2, Zen 3, Zen 4 gibi), dördüncü rakam ise aynı mimari içinde alt (0) ya da üst (5) modeli gösterir.",
+    "Tuzak tam olarak burada: aynı “7000” yılına ait Ryzen 5 7520U, üçüncü rakamı 2 olduğu için Zen 2 mimarisini kullanır; Ryzen 5 7640U ise Zen 4'tür. Yani yalnızca ilk rakama bakarak iki işlemcinin aynı nesil olduğunu düşünmek yanıltıcıdır. Sondaki harf de Intel'e benzer şekilde güç sınıfını gösterir: U düşük güç, HS ince performans laptopları, HX ise en yüksek güç sınıfıdır.",
+    "AMD daha sonra Ryzen AI 300 serisine geçti (Ryzen AI 9 HX 370 gibi). Bu seride Zen 5 mimarisi ve yapay zekâ işleri için ayrı bir NPU birimi bulunur. U, H ve HS sonekleri kaldırıldı; güç sınırını laptop üreticisi belirliyor. HX ifadesi serinin en üst modellerini işaret ediyor. 2026'da bu düzeni sürdüren Ryzen AI 400 serisi (Ryzen AI 9 HX 470 gibi) piyasaya çıktı."
+   ],
+   "table": {
+    "head": [
+     "Model",
+     "Nasıl okunur",
+     "Ne anlama gelir"
+    ],
+    "rows": [
+     [
+      "Intel Core i5-1235U",
+      "12 = nesil, 35 = model, U = düşük güç",
+      "12. nesil, ince laptop işlemcisi"
+     ],
+     [
+      "Intel Core Ultra 7 155H",
+      "7 = kademe, 1 = Seri 1, H = yüksek performans",
+      "Core Ultra ilk seri, performans laptopu"
+     ],
+     [
+      "Intel Core Ultra 7 258V",
+      "2 = Seri 2, V = paket içi bellekli verimli sınıf",
+      "İnce ve uzun pil ömürlü laptoplar"
+     ],
+     [
+      "AMD Ryzen 5 7520U",
+      "7 = 2023, 5 = Ryzen 5, 2 = Zen 2, 0 = alt model",
+      "Yeni yıl, eski mimari"
+     ],
+     [
+      "AMD Ryzen 7 7745HX",
+      "7 = 2023, 7 = Ryzen 7, 4 = Zen 4, 5 = üst model",
+      "Zen 4, en yüksek güç sınıfı"
+     ],
+     [
+      "AMD Ryzen AI 9 HX 370",
+      "AI 300 serisi, 9 = kademe, HX = serinin üstü",
+      "Zen 5 ve NPU içeren seri"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Kendi işlemcinizi nasıl öğrenirsiniz?",
+   "p": [
+    "Windows'ta Ayarlar > Sistem > Hakkında bölümünde Cihaz belirtimleri altında işlemcinin tam adı yazar. Görev Yöneticisi'ni (Ctrl + Shift + Esc) açıp Performans sekmesinde CPU'yu seçtiğinizde de adı, çekirdek ve iş parçacığı sayısını görebilirsiniz. Mac'te Apple menüsü > Bu Mac Hakkında penceresinde çip adı (M1, M2, M3 gibi) yer alır.",
+    "Tam adı öğrendikten sonra üreticinin ürün sayfasında modeli aratarak çekirdek sayısını, mimarisini ve çıkış tarihini görebilirsiniz. Mağazadaki etiketlerde bazen yalnızca “Intel Core i5” yazar; bu bilgi tek başına yeterli değildir, satıcıdan model numarasının tamamını isteyin."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "İşlemci adları karmaşık olduğu için bazı kısa yol kuralları dolaşır. Bunların bir kısmı çoğu zaman doğru olsa da her durumda geçerli değildir."
+   ],
+   "list": [
+    "“i7 her zaman i5'ten hızlıdır.” Yeni nesil bir i5, birkaç nesil eski bir i7'yi geçebilir; U soneki taşıyan bir i7, H soneki taşıyan bir i5'ten yavaş olabilir.",
+    "“Yeni nesil her zaman daha iyidir.” Genellikle verim artar, ama eski nesil bir H veya HX işlemci yeni nesil bir U işlemciden daha yüksek çok çekirdekli performans verebilir.",
+    "“Intel'in 13. nesli ile AMD'nin 7000 serisi aynı döneme aittir, eşittir.” Markaların numaraları birbirine karşılık gelmez; karşılaştırma için bağımsız testlere bakmak gerekir.",
+    "“Aynı işlemci her laptopta aynı performansı verir.” Laptop üreticisinin belirlediği güç sınırı ve soğutma sistemi, aynı işlemcinin performansını belirgin şekilde değiştirebilir."
+   ]
+  },
+  {
+   "h": "Laptop alırken işlemci adına göre nasıl karar verilir?",
+   "p": [
+    "Önce soneke bakarak kullanım amacınızla eşleştirin. Ofis, okul ve web için U, V ya da soneksiz verimli işlemciler pil ömrü ve sessizlik açısından avantajlıdır. Oyun, video kurgusu veya 3D işler için H ve HX sınıfı daha uygundur, ama bu laptoplar genellikle daha ağır olur ve fanları daha çok çalışır.",
+    "Ardından mimariyi ve çıkış yılını kontrol edin; özellikle AMD'de üçüncü rakama, Intel'de “Ultra” ifadesine dikkat edin. Son olarak aynı laptop modelinin bağımsız incelemelerine bakın. İşlemcinin ne kadar güçlü olduğunu en iyi o işlemciyi taşıyan laptopun gerçek testleri gösterir, çünkü soğutma ve güç ayarları sonucu etkiler. Apple tarafında durum daha basittir: M1, M2, M3 gibi rakam nesli gösterir, Pro ve Max ise aynı neslin daha güçlü sürümleridir."
+   ],
+   "note": "Snapdragon X gibi ARM tabanlı işlemcilerle gelen Windows laptoplarda bazı eski programlar, sürücüler ve oyunlar çalışmayabilir ya da öykünme ile daha yavaş çalışabilir. Kullandığınız özel yazılımların uyumluluğunu satın almadan önce kontrol edin."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Core i5-1235U'daki 12 ne anlama gelir?",
+   "a": "İşlemcinin 12. nesil Intel Core olduğunu gösterir. 35 aynı nesil içindeki modeli, sondaki U harfi ise düşük güç tüketimli ince laptoplar için tasarlandığını belirtir."
+  },
+  {
+   "q": "Core Ultra 7, Core i7'nin yeni adı mı?",
+   "a": "Kademe olarak benzer bir yere denk gelir, ama Core Ultra adı yeni mimarileri ve yeni bir numaralandırma düzenini ifade eder. Core Ultra'da nesil yerine seri numarası kullanılır; Core Ultra 7 155H Seri 1, Core Ultra 7 258V Seri 2'dir."
+  },
+  {
+   "q": "AMD Ryzen 7000 serisinin hepsi aynı nesil mi?",
+   "a": "Hayır. Dört haneli adlarda ilk rakam yalnızca ürün yılını gösterir. Mimariyi üçüncü rakam belirtir; Ryzen 5 7520U Zen 2, Ryzen 5 7640U ise Zen 4 mimarisini kullanır."
+  },
+  {
+   "q": "Eski nesil H işlemci mi, yeni nesil U işlemci mi?",
+   "a": "Ağır işlerde, yani oyun, kurgu veya derleme gibi uzun süreli yüklerde eski nesil H işlemci daha güçlü olabilir. Pil ömrü, sessizlik ve hafiflik önceliğinizse yeni nesil U işlemci genellikle daha mantıklıdır."
+  },
+  {
+   "q": "NPU ne işe yarar, şart mı?",
+   "a": "NPU, yapay zekâ tabanlı işleri, örneğin görüntülü görüşmede arka plan bulanıklaştırmayı düşük güçle yapmak için ayrılmış bir birimdir. Windows'un bazı yapay zekâ özellikleri belirli NPU gücü ister; bu özellikleri kullanmayacaksanız işlemci seçiminde belirleyici değildir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "PCWorld: AMD'nin mobil Ryzen adlandırma düzeni",
+   "u": "https://www.pcworld.com/article/1063208/amd-mobile-ryzen-naming-scheme.html"
+  },
+  {
+   "t": "PCWorld: Intel Core Ultra Seri 3 adlarının anlamı",
+   "u": "https://www.pcworld.com/article/3023938/intels-core-ultra-series-3-cpu-names-are-different-now-heres-what-they-mean.html"
+  },
+  {
+   "t": "Fossbytes: Intel Core ve Core Ultra adlandırması",
+   "u": "https://fossbytes.com/new-intel-core-ultra-naming-explained/"
+  },
+  {
+   "t": "Club386: AMD Ryzen AI 300 serisi",
+   "u": "https://www.club386.com/amd-ryzen-ai-300-series-is-so-much-more-than-its-50-tops-npu/"
+  }
+ ]
+}

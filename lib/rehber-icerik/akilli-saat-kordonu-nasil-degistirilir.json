@@ -1,0 +1,152 @@
+{
+ "slug": "akilli-saat-kordonu-nasil-degistirilir",
+ "title": "Akıllı Saat Kordonu Nasıl Değiştirilir? Ölçü ve Uyumluluk",
+ "description": "Hızlı bırakma pimli, markaya özel kilitli ve klasik pimli kordonlar adım adım nasıl değiştirilir? Doğru genişliği ölçme ve sık yapılan hatalar.",
+ "tldr": "Önce saatinizin hangi bağlantı sistemini kullandığını belirleyin: hızlı bırakma pimi, markaya özel kilit (ör. Apple Watch) veya alet gerektiren klasik pim. Yeni kordonun hem bağlantı genişliği (mm) hem de bağlantı tipi saatinizle aynı olmalı; taktıktan sonra kordonu çekerek yerine oturduğunu kontrol edin.",
+ "intro": [
+  "Yaz aylarında terleyen silikon kordonu, kışın deri bir kordonla değiştirmek ya da yıpranmış kordonu yenilemek istediğinizde ilk sorun genellikle aynıdır: Kordon nasıl çıkıyor ve hangi kordon bu saate oturuyor? Akıllı saatlerde tek bir standart yoktur; aynı mağaza rafındaki iki kordon görünüşte benzese de biri saatinize hiç takılmayabilir.",
+  "Aşağıda önce saatinizin bağlantı tipini nasıl tanıyacağınızı, ardından her tip için değiştirme adımlarını, doğru ölçüyü bulmayı ve kordon yerinden çıkarsa ne yapmanız gerektiğini anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Saatinizin bağlantı tipini nasıl tanırsınız?",
+   "p": [
+    "Saati ekranı aşağı bakacak şekilde yumuşak bir yüzeye koyun ve kordonun gövdeye birleştiği noktaya bakın. Kordonun iç yüzünde, gövdeye yakın kısımda küçük bir çıkıntı ya da tırnak görüyorsanız büyük olasılıkla hızlı bırakma pimi vardır. Gövdenin arka yüzünde kordon yuvalarının arasında küçük bir düğme varsa markaya özel bir kilit sistemi söz konusudur. Hiçbiri yoksa klasik saatlerdeki gibi alet gerektiren yaylı pim kullanılıyordur.",
+    "Emin olamıyorsanız saatin kılavuzuna veya üreticinin destek sayfasına bakın. Kılavuzda kordon genişliği ve uyumlu kordon tipi genellikle teknik özellikler bölümünde yazar."
+   ],
+   "table": {
+    "head": [
+     "Bağlantı tipi",
+     "Nasıl tanınır?",
+     "Alet gerekir mi?"
+    ],
+    "rows": [
+     [
+      "Hızlı bırakma pimi",
+      "Kordonun iç yüzünde küçük kaydırma tırnağı",
+      "Hayır"
+     ],
+     [
+      "Markaya özel kilit (ör. Apple Watch)",
+      "Gövde arkasında kordon bırakma düğmesi",
+      "Hayır"
+     ],
+     [
+      "Markaya özel klips (ör. Garmin QuickFit)",
+      "Kordon ucunda gövdeye geçen sert bir klips",
+      "Hayır"
+     ],
+     [
+      "Klasik yaylı pim",
+      "Tırnak ve düğme yok, pim gövdeye gömülü",
+      "Evet, pim çıkarma aleti"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Hızlı bırakma pimli kordon nasıl değiştirilir?",
+   "p": [
+    "Pek çok Android uyumlu saat ve bazı spor saatleri, saat sektöründe yaygın olan standart hızlı bırakma pimlerini kullanır. Bu sistemde kordonun içindeki yaylı pim, küçük bir tırnakla geri çekilir."
+   ],
+   "ol": [
+    "Saati ekranı aşağı bakacak şekilde temiz, yumuşak bir bezin üzerine koyun.",
+    "Kordonun iç yüzündeki tırnağı tırnağınızla gövdenin ortasına doğru kaydırın; pim geri çekilir.",
+    "Tırnağı tutarken kordonu gövdeden dışarı doğru eğerek çıkarın.",
+    "Yeni kordonun pimini önce tırnağı olmayan uçtan gövdedeki deliğe yerleştirin.",
+    "Tırnağı kaydırarak pimi geri çekin, kordonu yerine hizalayın ve tırnağı bırakın.",
+    "Kordonu hafifçe çekerek pimin iki deliğe de oturduğunu kontrol edin. Aynı işlemi diğer parça için tekrarlayın."
+   ]
+  },
+  {
+   "h": "Apple Watch kordonu nasıl değiştirilir?",
+   "p": [
+    "Apple Watch, gövdenin içine kayan kendine özgü bir kordon sistemi kullanır. Apple'ın destek sayfasındaki adımlar şöyledir:"
+   ],
+   "ol": [
+    "Saati ekranı aşağı bakacak şekilde temiz ve yumuşak bir yüzeye koyun.",
+    "Gövdenin arkasındaki kordon bırakma düğmesini basılı tutun ve kordonu yana kaydırarak çıkarın. Çıkmazsa düğmeye yeniden basıp basılı tutun.",
+    "Yeni kordonu, üzerindeki yazı size bakacak şekilde yuvaya kaydırın; bir tık hissedip duymalısınız.",
+    "Kordonun yerine kilitlendiğini kontrol edin: Düğmeye basmadan serbestçe kaymamalıdır."
+   ],
+   "note": "Apple, kordonu yuvaya zorlamamanızı ve yerinde kaymaya devam eden bir kordonla saati takmamanızı önerir. Tık sesi gelmezse kordonu sağa sola kaydırıp ortalayın."
+  },
+  {
+   "h": "Doğru ölçüyü nasıl bulursunuz?",
+   "p": [
+    "Standart pimli saatlerde belirleyici ölçü, kordonun gövdeye bağlandığı noktanın genişliğidir. Bu değer milimetre cinsinden verilir; akıllı saatlerde 20 mm ve 22 mm en sık karşılaşılan ölçülerdir. Ölçüyü kılavuzdan öğrenmek en güvenli yoldur. Kılavuz yoksa iki bağlantı kulağının iç kenarları arasını cetvelle ölçebilirsiniz.",
+    "Apple Watch'ta ise ölçü değil kasa grubu önemlidir. Apple'a göre 38, 40 ve 41 mm kasalar için yapılan kordonlar birbirleriyle; 42, 44 ve 45 mm kasalar için yapılanlar da birbirleriyle uyumludur. 46 mm ve 49 mm kasalar 44, 45 ve 46 mm kordonlarıyla kullanılabilir. Yeni nesil modellerde kasa boyutlarının adlandırılması değişebildiği için satın almadan önce Apple'ın güncel uyumluluk listesine bakın.",
+    "Bilek çevresi de ikinci bir ölçüdür. Kordonlar genellikle küçük ve büyük bilek seçenekleriyle satılır; ürün açıklamasında hangi bilek çevresine uyduğu yazar."
+   ]
+  },
+  {
+   "h": "Kordon malzemesi kullanımı nasıl etkiler?",
+   "p": [
+    "Spor ve yüzme için silikon veya floroelastomer gibi suya dayanıklı malzemeler uygundur. Deri, metal örgü ve bağlantılı metal kordonlar şık görünür ama ter ve suyla temasta yıpranabilir. Apple, kendi deri ve bazı metal kordonlarının suya dayanıklı olmadığını belirtir.",
+    "Metal kordonların bir başka etkisi de şarj sırasında görülebilir: Bazı üreticiler kalın kılıfların ve metal kordonların kablosuz şarjı zorlaştırabileceğini belirtir. Kordon değiştirdikten sonra şarj yavaşladıysa bu olasılığı da göz önünde bulundurun."
+   ]
+  },
+  {
+   "h": "Kordon takılmıyor veya yerinden çıkıyorsa ne yapmalısınız?",
+   "p": [
+    "Kordonun takılmaması çoğu zaman yanlış ölçüden ya da yanlış bağlantı tipinden kaynaklanır. Aşağıdaki sırayı izleyin; sorun devam ederse kordonu kullanmayın, çünkü düşen bir saat ekran ve gövde hasarına uğrayabilir."
+   ],
+   "ol": [
+    "Kordonun genişliğini ve bağlantı tipini saatin kılavuzuyla karşılaştırın.",
+    "Pimin iki ucunun da gövdedeki deliklere girdiğini, ışığa tutarak kontrol edin.",
+    "Markaya özel sistemlerde kordonu ortalayıp yeniden kaydırın veya klipsi bastırarak tık sesini bekleyin.",
+    "Pim eğilmişse veya yayı zayıflamışsa pimi ya da kordonu değiştirin.",
+    "Gövdedeki pim deliği veya kilit mekanizması hasarlıysa yetkili servise başvurun; gövdeye sert aletle müdahale çizik ve garanti sorununa yol açabilir."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Kordon değiştirmek basit bir işlem olsa da bazı hatalar saati düşürmenize veya gövdeyi çizmenize neden olabilir."
+   ],
+   "list": [
+    "Saati sert bir masa üzerinde çevirmek ve ekranı çizmek.",
+    "Klasik pimi tornavida veya bıçak ucuyla çıkarmaya çalışmak; bunun yerine pim çıkarma aleti kullanın.",
+    "Tokalı ve delikli parçaları yanlış uçlara takmak; bu durumda kordonu bağladığınızda toka bileğin yanlış tarafında kalır ve saati takmak zorlaşır.",
+    "Takılan kordonu çekerek kontrol etmeden saati koşuya veya yüzmeye çıkarmak.",
+    "Ucuz kordonlarda pimlerin kısa veya zayıf olduğunu fark etmeden kullanmak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her kordon her saate takılabilir mi?",
+   "a": "Hayır. Kordonun hem genişliği hem de bağlantı tipi saatinizle uyumlu olmalıdır. Standart hızlı bırakma pimli bir kordon, markaya özel kilit sistemi olan bir saate takılamaz."
+  },
+  {
+   "q": "Kordon değiştirmek garantiyi etkiler mi?",
+   "a": "Kordonun üreticinin tarif ettiği şekilde değiştirilmesi normal kullanım sayılır. Ancak gövdeye sert aletle müdahale sırasında oluşan çizik veya kırık genellikle garanti kapsamında değerlendirilmez."
+  },
+  {
+   "q": "Üçüncü parti kordon saatime zarar verir mi?",
+   "a": "Doğru ölçüde ve kaliteli bir kordon saate zarar vermez. Risk, zayıf pimli veya kötü işlenmiş kordonların saati düşürmesidir. Bazı ucuz malzemeler hassas ciltte tahrişe de yol açabilir."
+  },
+  {
+   "q": "Kordon ciltte kızarıklık yapıyorsa ne yapmalıyım?",
+   "a": "Kordonu ve bileğinizi düzenli olarak temizleyip kurulayın, kordonu biraz gevşetin ve gerekirse farklı bir malzemeye geçin. Kızarıklık geçmiyorsa saati çıkarın ve bir hekime danışın."
+  },
+  {
+   "q": "Kordon ölçüsünü nereden öğrenebilirim?",
+   "a": "En güvenilir kaynak, saatin kılavuzundaki teknik özellikler bölümü veya üreticinin destek sayfasıdır. Kılavuz yoksa bağlantı kulaklarının iç kenarları arasını milimetrik cetvelle ölçebilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: Apple Watch kordonunu değiştirme",
+   "u": "https://support.apple.com/en-mk/108908"
+  },
+  {
+   "t": "Garmin Venu 2 Plus Kılavuzu: Kordonları değiştirme",
+   "u": "https://www8.garmin.com/manuals-apac/webhelp/venu2plus/EN-SG/GUID-B5D9FAEC-EBA2-4C79-9C12-1BF665E4059E-8872.html"
+  },
+  {
+   "t": "Apple Destek: Apple Watch'ın suya dayanıklılığı",
+   "u": "https://support.apple.com/en-gb/109522"
+  }
+ ]
+}

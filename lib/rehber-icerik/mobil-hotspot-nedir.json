@@ -1,0 +1,154 @@
+{
+ "slug": "mobil-hotspot-nedir",
+ "title": "Mobil Hotspot Nedir? Telefondan İnternet Paylaşımı Rehberi",
+ "description": "Mobil hotspot nedir, iPhone ve Android'de nasıl açılır, ne kadar veri ve pil harcar? Bağlantı sorunlarında izlenecek adımlar ve güvenlik ayarları.",
+ "tldr": "Mobil hotspot, telefonun mobil veri bağlantısını Wi-Fi, USB ya da Bluetooth üzerinden başka cihazlarla paylaşmasını sağlar. Paylaşılan her megabayt telefonun kendi paketinden düşer ve özellik açıkken pil belirgin biçimde daha hızlı biter. Güçlü bir şifre koyup işiniz bitince kapatmak en önemli iki alışkanlıktır.",
+ "intro": [
+  "Otel Wi-Fi'ı çalışmıyor, trende dizüstünüzden bir dosya göndermeniz gerekiyor ya da evde internet kesildi ve çocuğun ödevi tablette bekliyor. Böyle anlarda cebinizdeki telefon küçük bir modem gibi davranabilir. Bu özelliğe mobil hotspot, Türkçe arayüzlerde ise markaya göre Kişisel Erişim Noktası, Mobil Erişim Noktası ya da Hotspot ve internet paylaşımı denir.",
+  "Aşağıda özelliğin nasıl çalıştığını, iPhone ve Android'de nereden açıldığını, veri ve pil tüketimini nasıl kontrol altında tutacağınızı ve bağlantı kurulamadığında hangi sırayla ilerlemeniz gerektiğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Mobil hotspot nasıl çalışır?",
+   "p": [
+    "Telefonunuz operatörden 4.5G ya da 5G üzerinden internet alır. Hotspot açıldığında telefon aynı anda küçük bir Wi-Fi yayıncısına dönüşür: kendi adıyla bir ağ yayınlar, bu ağa bağlanan cihazların trafiğini toplar ve mobil hat üzerinden dışarı gönderir. Bağlanan dizüstü ya da tablet için bu, sıradan bir ev modemine bağlanmaktan farksızdır.",
+    "Paylaşım üç yoldan yapılabilir. Wi-Fi en yaygın ve en pratik olanıdır. USB kablosuyla paylaşım, telefonu aynı anda şarj ettiği ve kablosuz parazitten etkilenmediği için masa başında daha kararlı çalışır. Bluetooth ise en yavaş seçenektir ama çok az enerji harcar; yalnızca e-posta ya da mesajlaşma gibi hafif işler için uygundur."
+   ],
+   "table": {
+    "head": [
+     "Yöntem",
+     "Hız ve kararlılık",
+     "Pil etkisi",
+     "Ne zaman tercih edilir"
+    ],
+    "rows": [
+     [
+      "Wi-Fi",
+      "Yüksek, ortamdaki parazitten etkilenebilir",
+      "En yüksek",
+      "Birden fazla cihaz, kısa süreli kullanım"
+     ],
+     [
+      "USB kablo",
+      "Yüksek ve kararlı",
+      "Telefon kablodan beslendiği için düşük",
+      "Tek dizüstü, uzun çalışma oturumu"
+     ],
+     [
+      "Bluetooth",
+      "Düşük",
+      "Düşük",
+      "Mesajlaşma, e-posta gibi hafif trafik"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "iPhone ve Android'de hotspot nasıl açılır?",
+   "p": [
+    "Menü adları marka, model ve yazılım sürümüne göre farklı olabilir. Aşağıdaki yollar en yaygın arayüzlerde geçerlidir; bulamazsanız Ayarlar uygulamasının arama kutusuna erişim noktası ya da hotspot yazmanız yeterli olur."
+   ],
+   "ol": [
+    "iPhone: Ayarlar > Kişisel Erişim Noktası yolunu izleyin (bazı sürümlerde Ayarlar > Hücresel > Kişisel Erişim Noktası). Başkalarının katılmasına izin veren anahtarı açın ve Wi-Fi şifresini buradan değiştirin. Apple'a göre şifre en az sekiz karakter olmalıdır.",
+    "Samsung Galaxy: Ayarlar > Bağlantılar > Mobil Erişim Noktası ve Bağlantı Paylaşımı bölümüne girin, Mobil Erişim Noktası anahtarını açın. Ağ adı ve şifre, anahtarın yazısına dokunduğunuzda açılan ekrandadır.",
+    "Google Pixel ve yalın Android: Ayarlar > Ağ ve internet > Hotspot ve internet paylaşımı > Wi-Fi hotspot yolunu kullanın. Aynı ekranda USB ve Bluetooth paylaşımı da bulunur.",
+    "Bağlanacak cihazda Wi-Fi listesini açın, telefonunuzun ağ adını seçin ve şifreyi girin. iPhone'da ağ adı, telefonun Genel > Hakkında bölümündeki cihaz adıyla aynıdır.",
+    "İşiniz bittiğinde paylaşımı kapatın. Apple, USB ile bağlıyken paylaşımın kabloyu çıkarsanız bile açık kalabileceğini, kapatmazsanız bilgisayarın her şarjda yeniden bağlanabileceğini belirtiyor."
+   ],
+   "note": "Hotspot seçeneği gri görünüyorsa önce mobil verinin açık olduğundan emin olun. Hattınızda internet paylaşımı kısıtlıysa seçenek hiç görünmeyebilir."
+  },
+  {
+   "h": "Ne kadar veri harcar ve paket nasıl korunur?",
+   "p": [
+    "Hotspot üzerinden geçen her şey telefonunuzun paketinden düşer. Sorun şu ki dizüstü bilgisayarlar telefonlar kadar veri tasarruflu davranmaz. Windows ya da macOS, bağlandığı ağı ev interneti sanıp arka planda büyük bir sistem güncellemesi, bulut eşitlemesi ya da oyun platformu güncellemesi başlatabilir. Bir saatlik e-posta işi için bağlandığınızda paketin önemli bir kısmının gitmesi bu yüzden sık rastlanan bir durumdur.",
+    "Operatörlerin tarifeleri de belirleyicidir. Bazı paketlerde paylaşım normal internetinizden düşer, bazılarında ayrı bir sınır ya da ek ücret olabilir. Google ve Apple da destek sayfalarında bazı operatörlerin paylaşımı sınırlayabildiğini veya ek ücret alabildiğini not ediyor. Uzun süre hotspot kullanacaksanız tarifenizin ayrıntılarını operatörünüzün uygulamasından kontrol edin."
+   ],
+   "list": [
+    "Windows'ta bağlandığınız hotspot ağını tarifeli bağlantı olarak işaretleyin; böylece büyük güncellemeler ertelenir.",
+    "Bulut eşitleme uygulamalarını (OneDrive, Google Drive, Dropbox vb.) hotspot süresince duraklatın.",
+    "Video görüşmede kamerayı gerekmedikçe kapatın; görüntü, sesten çok daha fazla veri harcar.",
+    "Telefonun veri kullanım ekranından hotspot trafiğini ayrı izleyin; çoğu Android sürümünde paylaşım ayrı bir kalem olarak görünür."
+   ]
+  },
+  {
+   "h": "Pil ve ısınma: telefonu nasıl yormadan kullanırsınız?",
+   "p": [
+    "Hotspot açıkken telefon hem mobil modemi hem de Wi-Fi vericisini sürekli çalıştırır. Bu yüzden ekran kapalı olsa bile pil, normal bekleme durumuna göre çok daha hızlı azalır. Çekim gücünün zayıf olduğu yerlerde (trende, bodrum katında, kırsal alanda) modem daha fazla güç harcadığı için tüketim ve ısınma artar.",
+    "Uzun bir çalışma oturumunda telefonu şarja takmak mantıklıdır, ancak şarj ve yoğun veri aktarımı birlikte ciddi ısı üretir. Telefonu yastık, koltuk ya da kılıf içinde bırakmayın; düz ve serin bir yüzeye koyun. Telefon aşırı ısındığında sistem performansı ve şarj hızını kendiliğinden düşürebilir. Mümkünse USB paylaşımını seçin: hem bağlantı daha kararlı olur hem de telefon kablodan beslenir."
+   ]
+  },
+  {
+   "h": "Hotspot güvenliği için yapılması gerekenler",
+   "p": [
+    "Şifresiz bırakılmış bir hotspot, kafede ya da otobüste yanınızdaki herkese açık bir kapı demektir. İzinsiz bağlanan biri paketinizi tüketebilir; aynı ağdaki cihazlar arasında paylaşım açıksa dosyalarınıza erişmeye de çalışabilir. Pixel gibi bazı cihazlarda güvenlik ayarı Yok olarak seçilebiliyor; bu seçeneği kullanmamanız gerekir."
+   ],
+   "list": [
+    "Tahmin edilmesi zor, en az 8 karakterli bir şifre kullanın; cihaz adınız veya doğum tarihiniz gibi bilgilerden kaçının.",
+    "Güvenlik türü seçilebiliyorsa WPA3 ya da WPA2 seçin. Eski bir cihaz bağlanamıyorsa geçici olarak WPA2/WPA3 karışık moda geçin.",
+    "Ağ adına adınızı, soyadınızı ya da telefon numaranızı yazmayın.",
+    "Bağlı cihaz listesini ara ara kontrol edin; tanımadığınız bir cihaz görürseniz şifreyi değiştirin.",
+    "Otomatik kapanma seçeneği varsa açık tutun; Pixel'de hotspot, bağlı cihaz kalmadığında kendiliğinden kapanabiliyor."
+   ]
+  },
+  {
+   "h": "Bağlantı kurulamıyorsa hangi sırayla denemeli?",
+   "p": [
+    "Sorunların çoğu birkaç basit adımla çözülür. Aşağıdaki sırayı izlemek, gereksiz ayar karmaşasından kurtarır."
+   ],
+   "ol": [
+    "Telefonun kendisinde internet olup olmadığını kontrol edin: tarayıcıda bir sayfa açın. Telefon internete çıkamıyorsa sorun hotspot'ta değil, hatta veya kapsama alanındadır.",
+    "Veri tasarrufu modunu kapatın. Google, Wi-Fi ile paylaşımdan önce Veri Tasarrufu'nun kapatılmasını öneriyor; düşük güç modları da paylaşımı kısıtlayabilir.",
+    "Bağlanan cihazda ağı unutun ve şifreyi yeniden girin. Şifreyi yakın zamanda değiştirdiyseniz eski kayıt bağlantıyı engelleyebilir.",
+    "Bant ayarını değiştirin. 5 GHz daha hızlıdır ama eski dizüstüler ve bazı akıllı cihazlar bu bandı görmez. Android'de bandı 2,4 GHz'e çekin; iPhone'da Kişisel Erişim Noktası ekranındaki uyumluluğu artırma seçeneğini açın.",
+    "Her iki cihazı da yeniden başlatın ve yazılım güncellemelerini yükleyin. Apple da sorun giderme için bu adımı öneriyor.",
+    "Telefonun ağ ayarlarını sıfırlayın. Bu işlem kayıtlı Wi-Fi şifrelerini ve Bluetooth eşleşmelerini siler; önce önemli şifreleri not alın.",
+    "Seçenek hiç görünmüyorsa ya da paylaşım her seferinde kesiliyorsa operatörünüzü arayıp hattınızda internet paylaşımının açık olup olmadığını sorun."
+   ],
+   "note": "Ağ ayarlarını sıfırlamak ve operatörle görüşmek sorunu çözmüyor, telefon kendi Wi-Fi'ına da bağlanamıyorsa Wi-Fi donanımında arıza olabilir. Bu durumda telefonu açmaya çalışmadan yetkili servise götürün; garanti süresindeyse fatura veya garanti belgesini yanınıza alın."
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Hotspot basit bir özellik gibi görünse de birkaç alışkanlık paketin ve pilin boşa gitmesine neden olur."
+   ],
+   "list": [
+    "Paylaşımı açık unutmak: telefon cebinizde pil harcamaya ve bağlı kalan cihazlara veri vermeye devam eder.",
+    "Dizüstünü tarifeli bağlantı olarak işaretlemeden bağlamak: arka plan güncellemeleri paketi hızla eritir.",
+    "Telefonu kılıf içinde, şarjda ve güneş altında hotspot olarak kullanmak: ısınma hem hızı düşürür hem de bataryayı uzun vadede yıpratır.",
+    "Hotspot'u kalıcı ev interneti yerine koymak: kısa süreli çözüm olarak iyidir, ancak sürekli kullanımda veri limitleri ve batarya yıpranması sorun çıkarır. Uzun süreli ihtiyaçta ayrı bir mobil modem veya sabit bağlantı daha uygundur."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Hotspot'a aynı anda kaç cihaz bağlanabilir?",
+   "a": "Bu sınır telefon modeline, yazılıma ve operatöre göre değişir. Google, Pixel'de Wi-Fi hotspot'un 10 cihaza kadar veri paylaşabildiğini belirtiyor; Apple ise sayının operatöre ve iPhone modeline bağlı olduğunu söylüyor. Pratikte cihaz sayısı arttıkça her birinin aldığı hız düşer."
+  },
+  {
+   "q": "Hotspot kullanmak ek ücrete tabi mi?",
+   "a": "Tarifeye bağlıdır. Bazı paketlerde paylaşım normal internet kotanızdan düşer, bazılarında ayrı bir sınır ya da ek ücret bulunabilir. Kesin bilgi için operatörünüzün uygulamasındaki tarife ayrıntılarına veya müşteri hizmetlerine başvurun."
+  },
+  {
+   "q": "Hotspot hızı neden telefondaki hızdan düşük?",
+   "a": "Wi-Fi bağlantısı ek bir aşama ekler ve ortamdaki diğer ağlardan etkilenir. Bağlanan cihaz telefondan uzaktaysa veya 2,4 GHz bandı kalabalıksa hız düşer. Telefonu bağlanan cihaza yaklaştırmak, 5 GHz bandını seçmek ya da USB paylaşımına geçmek genellikle farkı azaltır."
+  },
+  {
+   "q": "Mac'i Android telefonun hotspot'una kablo ile bağlayabilir miyim?",
+   "a": "Google'ın Pixel destek sayfasına göre Mac bilgisayarlar Android telefonla USB üzerinden internet paylaşımı yapamıyor; macOS Monterey ve sonrası Bluetooth paylaşımını da desteklemiyor. Bu eşleşmede Wi-Fi hotspot kullanmanız gerekir."
+  },
+  {
+   "q": "Hotspot sürekli kullanılırsa bataryaya zarar verir mi?",
+   "a": "Hotspot doğrudan zarar vermez, ancak uzun süre yüksek ısıda çalışmak lityum iyon bataryaları daha hızlı yıpratır. Telefonu serin bir yerde tutmak, kılıfı çıkarmak ve mümkünse USB paylaşımı kullanmak yükü azaltır. Batarya şişmesi fark ederseniz telefonu kullanmayı bırakıp yetkili servise başvurun."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: iPhone veya iPad'in Kişisel Erişim Noktasına bağlanma",
+   "u": "https://support.apple.com/en-au/111785"
+  },
+  {
+   "t": "Google Pixel Yardım: İnternet paylaşımı ve hotspot",
+   "u": "https://support.google.com/pixelphone/answer/2812516?hl=en-GB"
+  }
+ ]
+}

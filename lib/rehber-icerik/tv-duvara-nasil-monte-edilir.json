@@ -1,0 +1,141 @@
+{
+ "slug": "tv-duvara-nasil-monte-edilir",
+ "title": "TV Duvara Nasıl Monte Edilir? VESA, Duvar Tipi ve Güvenlik",
+ "description": "TV duvar montajında VESA ölçüsünü okuma, aparat ve dübel seçimi, adım adım kurulum ve düşme riskini önleyen güvenlik kontrolleri.",
+ "tldr": "Önce TV'nin arkasındaki VESA delik ölçüsünü ve ağırlığını öğrenip bu ikisine uygun, taşıma kapasitesi TV'den yüksek bir aparat seçin. Aparatı duvar tipine uygun dübelle, kablo ve boru olmadığından emin olduğunuz bir noktaya sabitleyin. TV'yi en az iki kişiyle asın; duvarınızın taşıyıcılığından emin değilseniz profesyonel montaj yaptırın.",
+ "intro": [
+  "Duvara monte edilmiş bir TV salonda yer açar, küçük çocukların sehpadaki TV'yi devirme riskini ortadan kaldırır ve izleme açısını daha rahat ayarlamanıza izin verir. Öte yandan yanlış dübel ya da zayıf bir duvar, onlarca kiloluk bir ekranın aylar sonra aniden düşmesine yol açabilir.",
+  "Bu iş bir matkap ve birkaç vidadan ibaret görünse de üç kararı doğru vermek gerekiyor: TV'ye uyan aparat, duvara uyan sabitleme ve doğru yükseklik. Aşağıda bu kararları ve kurulum adımlarını, en çok hata yapılan noktaları da işaretleyerek anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "VESA ölçüsü nedir, TV'nizinkini nasıl öğrenirsiniz?",
+   "p": [
+    "VESA, ekranların arkasındaki montaj vida deliklerinin yerleşimini tanımlayan bir standarttır (resmi adı Flat Display Mounting Interface). Ölçü milimetre cinsinden 'yatay x dikey' olarak yazılır: 200 x 200, 300 x 300, 400 x 400 gibi. Bu, deliklerin merkezden merkeze uzaklığıdır.",
+    "Ölçüyü TV'nin kullanım kılavuzunda, üreticinin ürün sayfasındaki teknik özelliklerde ya da şerit metreyle doğrudan deliklerin merkezleri arasını ölçerek öğrenebilirsiniz. Aparat kutusunda 'desteklenen VESA aralığı' yazar; TV'nizin ölçüsü bu aralıkta olmalıdır. Standart, üreticilerin bazı modellerde ondan sapabildiğini de kabul eder; bu yüzden her zaman kendi modelinizin belgesine bakın."
+   ],
+   "table": {
+    "head": [
+     "VESA sınıfı",
+     "Delik düzeni",
+     "Vida",
+     "Standarttaki ağırlık sınırı"
+    ],
+    "rows": [
+     [
+      "MIS-D",
+      "75 x 75 veya 100 x 100 mm",
+      "M4",
+      "14 kg'a kadar"
+     ],
+     [
+      "MIS-E",
+      "200 x 100 mm",
+      "M4",
+      "yaklaşık 23,7 kg'a kadar"
+     ],
+     [
+      "MIS-F",
+      "200 x 200 mm ve üzeri, 100/200 mm'lik artışlarla",
+      "M6 veya M8",
+      "yaklaşık 113 kg'a kadar"
+     ]
+    ]
+   },
+   "note": "Tablodaki ağırlıklar standardın üst sınırıdır, aparatınızın kapasitesi değildir. Asıl bakmanız gereken, aparat kutusunda yazan azami taşıma kapasitesidir ve bu değer TV'nin ağırlığından yüksek olmalıdır."
+  },
+  {
+   "h": "Aparat türünü seçmek: sabit, eğimli ya da hareketli kol",
+   "p": [
+    "Sabit aparatlar TV'yi duvara en yakın konumda tutar, en az parçaya sahiptir ve duvara binen kaldıraç etkisi en düşüktür. Eğimli aparatlar ekranı aşağı doğru birkaç derece yatırarak yüksekte asılan TV'lerde yansımayı ve boyun açısını azaltır.",
+    "Hareketli (kollu) aparatlar TV'yi duvardan çekip sağa sola çevirmenize izin verir; köşeye yakın oturma düzenlerinde ya da açık mutfaktan da izlenmek istenen TV'lerde işe yarar. Ancak kol açıldığında TV'nin ağırlığı duvardan uzaklaşır ve vidalara binen çekme kuvveti belirgin şekilde artar. Bu yüzden hareketli aparatı yalnızca beton veya dolu tuğla gibi sağlam duvarlara, üreticinin önerdiği dübel sayısı eksiksiz kullanılarak takın."
+   ]
+  },
+  {
+   "h": "Duvar tipine göre sabitleme",
+   "p": [
+    "Aparatın kapasitesi ne kadar yüksek olursa olsun, sistem en zayıf halkası kadar güçlüdür ve bu çoğu zaman duvardır. Matkapla deneme deliği açtığınızda çıkan tozun rengi ve matkabın ilerleme hissi duvar tipi hakkında fikir verir: Beton gri ve sert, tuğla kırmızımsı, gazbeton beyaz ve yumuşak, alçıpan ise ince bir katmandan sonra boşluğa düşer."
+   ],
+   "list": [
+    "Betonarme duvar: En güvenli seçenektir. Darbeli matkap ve beton için uygun dübel kullanılır. İçinde demir donatıya denk gelirseniz deliği birkaç santim kaydırın.",
+    "Dolu tuğla: Standart dübellerle genellikle yeterli taşıma sağlar.",
+    "Delikli (boşluklu) tuğla: Kısa dübel boşluğa denk gelip tutmayabilir. Daha uzun, boşluklu malzeme için tasarlanmış dübel ya da kimyasal dübel tercih edilir.",
+    "Gazbeton: Yumuşak ve gözenekli olduğu için sıradan dübel zamanla gevşeyebilir. Gazbeton için üretilmiş özel dübeller kullanılmalıdır.",
+    "Alçıpan: Tek başına ağır TV taşımaya uygun değildir. Türkiye'de alçıpan duvarlar çoğunlukla metal profiller üzerine kurulur. Montaj ya arkadaki taşıyıcı duvara uzanan uzun bağlantılarla ya da önceden güçlendirilmiş bir bölgeye yapılmalıdır. Emin değilseniz bu duvar tipinde profesyonel destek alın."
+   ]
+  },
+  {
+   "h": "Doğru yükseklik ve konum",
+   "p": [
+    "Genel kural, oturduğunuz yerden bakarken ekranın ortasının göz hizanıza yakın olmasıdır. Kanepede oturan bir yetişkinin göz hizası çoğu evde yerden yaklaşık bir metre civarındadır, ama koltuğunuzun yüksekliği farklı olabilir; montajdan önce oturup ölçmek en doğrusudur. TV'yi şömine üstü gibi yüksek bir noktaya asmak uzun izlemelerde boynu yorar ve ekranın altından gelen ısı elektroniğe zarar verebilir.",
+    "Konumu belirlerken pencerenin karşısına denk gelmemesine, prizin ve anten ya da ağ çıkışının kablo uzunluğu içinde kalmasına dikkat edin. Bu noktada en kritik kontrol, delik açılacak yerde elektrik kablosu veya su borusu olmadığından emin olmaktır."
+   ],
+   "note": "Prizlerin ve anahtarların tam üstü ve altı, elektrik kablolarının en sık geçtiği hatlardır. Bu bölgelerde delmeyin; mümkünse bir duvar tarayıcı (kablo/boru dedektörü) kullanın. Delmeden önce ilgili sigortayı kapatmak ek bir güvenlik önlemidir."
+  },
+  {
+   "h": "Adım adım montaj",
+   "p": [
+    "Aşağıdaki adımlar genel bir akıştır. Aparatın kendi kurulum kılavuzu her zaman önceliklidir; vida boyları ve dübel sayıları modele göre değişir."
+   ],
+   "ol": [
+    "TV'nin altlığını sökün. TV'yi temiz, düz ve yumuşak bir yüzeye kılavuzun önerdiği şekilde yatırın; ince panellerde ekrana baskı uygulamayın.",
+    "Aparatın TV'ye takılan kollarını, VESA deliklerine uygun boydaki vidalarla bağlayın. Vida, deliğe zorlamadan girmeli ve sonuna kadar oturmalıdır. Çok uzun vida TV'nin içine zarar verebilir, çok kısa vida yeterli diş tutmaz. Arkası kavisli TV'lerde aparatla gelen ara parçaları (spacer) kullanın.",
+    "Duvar plakasını işaretlediğiniz yüksekliğe koyun, su terazisiyle hizalayıp delik yerlerini işaretleyin.",
+    "Delik yerlerinde kablo ve boru olmadığını tekrar kontrol edin, duvar tipine uygun uçla delin.",
+    "Dübelleri yerleştirip duvar plakasını sıkın. Plakayı elinizle çekip zorlayarak hiç oynamadığından emin olun.",
+    "TV'yi iki kişiyle kaldırın ve kolları duvar plakasına asın. Büyük ekranlarda üç kişi daha güvenlidir.",
+    "Aparatın emniyet vidalarını veya kilit mekanizmasını takın. Bu adım atlanırsa TV bir darbeyle yerinden çıkabilir.",
+    "Kabloları bağlayın, TV'nin düz durduğunu kontrol edip son ayarı yapın."
+   ]
+  },
+  {
+   "h": "Kablo gizleme ve elektrik güvenliği",
+   "p": [
+    "Kabloları duvara yapıştırılan bir kablo kanalı içinde toplamak en basit ve güvenli yoldur. Duvar içinden geçirme ise elektrik tesisatına dokunmak anlamına gelir. TV'nin normal güç kablosunu ya da uzatma kablosunu duvarın içine gömmek güvenli değildir; doğru yöntem, TV'nin arkasına denk gelecek şekilde tesisata uygun bir priz eklenmesidir. Bu işi bir elektrikçiye yaptırın.",
+    "HDMI ve anten kabloları için duvar içinden geçen boru ve kapaklı geçiş plakaları kullanılabilir. Bu düşük voltajlı kabloları güç hattıyla aynı boruya koymamak parazit ve güvenlik açısından daha doğrudur."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar ve ne zaman profesyonel destek alınmalı",
+   "p": [
+    "Duvar montajında sorunların çoğu ilk gün değil, aylar içinde ortaya çıkar. Aşağıdaki hatalar en sık karşılaşılanlardır."
+   ],
+   "list": [
+    "Aparatla gelen plastik dübelleri duvar tipine bakmadan kullanmak.",
+    "TV'nin ağırlığına göre değil, ekran boyutuna göre aparat seçmek.",
+    "Emniyet vidasını veya kilit pimini takmamak.",
+    "Hareketli kolu tam açık konumda sürekli bırakmak; bu, dübellere sürekli yüksek yük bindirir.",
+    "Tek başına asmaya çalışmak; hem TV'nin düşmesi hem sırt sakatlanması riski taşır."
+   ],
+   "note": "Duvarınızın tipinden emin değilseniz, alçıpan veya gazbeton duvara büyük bir TV asacaksanız ya da kablo için tesisata müdahale gerekiyorsa, satıcının veya üreticinin yetkili montaj hizmetinden ya da deneyimli bir ustadan destek alın. Bazı üreticiler, kurulum hatasından kaynaklanan hasarı garanti kapsamı dışında tutabilir."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her duvara TV asılabilir mi?",
+   "a": "Hayır. Beton ve dolu tuğla duvarlar uygundur; delikli tuğla ve gazbeton özel dübel ister. Alçıpan tek başına ağır yük taşımaz, arkadaki taşıyıcıya ya da güçlendirilmiş bir bölgeye sabitleme gerekir."
+  },
+  {
+   "q": "TV'min VESA ölçüsünü nasıl bulurum?",
+   "a": "Kullanım kılavuzuna veya üreticinin ürün sayfasındaki teknik özelliklere bakın. Belge yoksa TV'nin arkasındaki dört montaj deliğinin merkezleri arasını yatay ve dikey olarak milimetre cinsinden ölçün."
+  },
+  {
+   "q": "Aparat 'evrensel' yazıyor, her TV'ye uyar mı?",
+   "a": "Evrensel ifadesi geniş bir VESA aralığını desteklediğini gösterir, her TV'ye uyduğunu değil. TV'nizin VESA ölçüsünün aparatın aralığında olduğunu ve ağırlığının aparatın taşıma kapasitesinin altında kaldığını ayrıca kontrol edin."
+  },
+  {
+   "q": "Duvara monte etmek TV'nin garantisini bozar mı?",
+   "a": "TV'nin VESA deliklerine uygun bir aparat takmak genellikle garantiyi etkilemez. Ancak montaj sırasında oluşan düşme, ezilme veya kırılma hasarları garanti kapsamı dışında kalabilir; ayrıntı için garanti belgenize bakın."
+  },
+  {
+   "q": "TV'yi ne kadar yükseğe asmalıyım?",
+   "a": "Oturduğunuz yerden ekranın ortası göz hizanıza yakın olmalıdır. Bunu kendi koltuğunuzda oturup ölçerek belirleyin; daha yükseğe asmanız gerekiyorsa eğimli aparat boyun açısını azaltır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Ergotron - VESA Standard",
+   "u": "https://www.ergotron.com/en-us/support/vesa-standard"
+  }
+ ]
+}

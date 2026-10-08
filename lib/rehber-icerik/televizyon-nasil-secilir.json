@@ -1,0 +1,290 @@
+{
+ "slug": "televizyon-nasil-secilir",
+ "title": "Televizyon Nasıl Seçilir? Ekran Boyutu, Panel ve Özellik Rehberi",
+ "description": "Oda mesafesine göre ekran boyutu, OLED, Mini LED ve QLED farkı, HDR, 120 Hz, HDMI 2.1 ve uydu alıcısı: TV alırken bakmanız gerekenler.",
+ "tldr": "Önce oturduğunuz mesafeye göre ekran boyutunu belirleyin: 4K bir televizyonda ekran köşegeninin 1 ile 1,5 katı mesafe genel bir başlangıç noktasıdır. Sonra odanın ışığına göre panel tipini seçin; karanlık odada OLED, gün ışığı alan salonda parlaklığı yüksek Mini LED veya QLED öne çıkar. Oyun konsolu kullanıyorsanız yerel 120 Hz panel ve HDMI 2.1 özelliklerine, uydudan yayın izliyorsanız dahili uydu alıcısı ve TKGS desteğine bakın.",
+ "intro": [
+  "Televizyon, evde en uzun süre kullanılan elektronik ürünlerden biridir; bir kez alınır ve çoğu zaman yıllarca değiştirilmez. Mağazada ise her model parlak demo videolarıyla, birbirine benzeyen kısaltmalarla ve 'yapay zeka destekli görüntü' gibi iddialarla sunulur. Mağaza ışığında en canlı görünen televizyon, sizin salonunuzda en iyi sonuç veren televizyon olmayabilir.",
+  "İyi seçimin anahtarı, kendi koşullarınızı bilmektir: oturduğunuz yer ile duvar arasındaki mesafe, odanın gün içindeki ışığı, en çok ne izlediğiniz ve televizyona hangi cihazları bağlayacağınız. Aşağıda bu soruları sırayla ele alıyor, teknik terimleri sade dille açıklıyor ve mağazaya gitmeden önce elinizde olması gereken kontrol listesini veriyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Ekran boyutu: oturma mesafenize göre hesaplayın",
+   "p": [
+    "Ekran boyutu inç cinsinden köşegen uzunluğudur; bir inç 2,54 cm'dir. Bu yüzden 55 inçlik bir televizyonun köşegeni yaklaşık 140 cm, 65 inçlik bir televizyonunki yaklaşık 165 cm'dir. Mesafe hesabında bu santimetre değeri kullanılır.",
+    "Sinema ve yayın standartları açı üzerinden öneri verir. SMPTE karışık kullanım için ekranın görüş alanınızın yaklaşık 30 derecesini kaplamasını, ağırlıklı olarak film izleyenler için ise SMPTE ve THX yaklaşık 40 dereceyi önerir. Bunu pratiğe döken yaygın bir kural, 4K televizyonlarda ekran köşegeninin 1 ile 1,5 katı mesafede oturmaktır. Full HD ekranlarda pikseller daha erken seçildiği için bu oran 1,5 ile 2,5 kat arasına çıkar.",
+    "Eski rehberlerde verilen 'mesafe ekranın 2-3 katı olmalı' gibi kurallar, düşük çözünürlüklü tüplü ve HD televizyon döneminden kalmadır. 4K bir ekranda bu kurallar gereğinden küçük ekran seçmenize yol açar. Pratikte insanların televizyon aldıktan birkaç hafta sonra 'keşke bir boy büyük alsaydım' demesi, tersinden çok daha sık rastlanan bir durumdur. Yine de ekranın tamamını görmek için başınızı çevirmeniz gerekiyorsa ya da altyazıyı okumak için gözünüzü gezdirmek zorunda kalıyorsanız sınırı aşmışsınız demektir."
+   ],
+   "table": {
+    "head": [
+     "Ekran boyutu",
+     "Köşegen (yaklaşık)",
+     "4K için önerilen oturma mesafesi (1-1,5 kat)"
+    ],
+    "rows": [
+     [
+      "43 inç",
+      "109 cm",
+      "1,1 - 1,6 m"
+     ],
+     [
+      "50 inç",
+      "127 cm",
+      "1,3 - 1,9 m"
+     ],
+     [
+      "55 inç",
+      "140 cm",
+      "1,4 - 2,1 m"
+     ],
+     [
+      "65 inç",
+      "165 cm",
+      "1,65 - 2,5 m"
+     ],
+     [
+      "75 inç",
+      "191 cm",
+      "1,9 - 2,9 m"
+     ]
+    ]
+   },
+   "note": "Mesafeyi göz kararı değil, metreyle ölçün: oturduğunuz koltukta başınızın olduğu nokta ile televizyonun duracağı duvar arasındaki uzaklığa bakın. Duvar ünitesinin genişliğini ve ayak aralığını da not alın; bazı modellerin ayakları ekranın iki ucundadır."
+  },
+  {
+   "h": "Panel teknolojileri: LED, QLED, Mini LED ve OLED farkı",
+   "p": [
+    "Piyasadaki televizyonlar iki ana gruba ayrılır. İlki LCD tabanlı televizyonlardır: ekranın arkasında bir LED aydınlatma bulunur, LCD katmanı da bu ışığı geçirip keserek görüntüyü oluşturur. 'LED TV' adıyla satılan modeller bu gruptadır. QLED, bu yapıya kuantum nokta adı verilen bir renk katmanı ekler ve daha geniş, daha doygun renkler sağlar. Mini LED ise arka aydınlatmada çok daha küçük ve çok sayıda LED kullanır; ekranın farklı bölgeleri ayrı ayrı karartılabildiği için kontrast belirgin şekilde artar.",
+    "İkinci grup OLED'dir. OLED'de arka aydınlatma yoktur; her piksel kendi ışığını üretir ve siyah gereken yerde tamamen kapanır. Bu sayede gerçek siyah, çok yüksek kontrast ve geniş görüş açısı elde edilir. Buna karşılık OLED panellerin tam ekran parlaklığı, iyi bir Mini LED'e göre genellikle daha düşüktür. Uzun süre aynı sabit görüntü (kanal logosu, haber bandı, oyun arayüzü) gösterildiğinde kalıcı iz (burn-in) riski de vardır; üreticiler piksel kaydırma ve panel yenileme gibi önlemler alsa da bu risk tamamen ortadan kalkmaz.",
+    "LCD tarafında panel tipi de önemlidir. VA paneller daha yüksek kontrast ve daha derin siyah sunar ama yandan bakıldığında renkler soluklaşır. IPS paneller geniş görüş açısına sahiptir ama siyahlar grimsi görünür. Geniş bir L koltuktan izleyen kalabalık aileler için görüş açısı, karanlıkta film izleyen biri için kontrast daha belirleyicidir. Üreticiler panel tipini her zaman açıkça yazmaz; bağımsız inceleme siteleri bu bilgiyi genellikle verir."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "LED (standart LCD)",
+     "QLED / Mini LED",
+     "OLED"
+    ],
+    "rows": [
+     [
+      "Siyah seviyesi",
+      "Grimsi siyah",
+      "İyi; Mini LED'de bölgesel karartmayla çok iyi",
+      "Gerçek siyah"
+     ],
+     [
+      "Parlaklık",
+      "Orta",
+      "Yüksek",
+      "Orta-yüksek; tam ekran parlaklıkta daha sınırlı"
+     ],
+     [
+      "Parlak odaya uygunluk",
+      "Orta",
+      "Çok uygun",
+      "Işık kontrol edilebiliyorsa uygun"
+     ],
+     [
+      "Görüş açısı",
+      "Panel tipine bağlı (IPS geniş, VA dar)",
+      "Panel tipine bağlı",
+      "Çok geniş"
+     ],
+     [
+      "Sabit görüntüde iz riski",
+      "Yok denecek kadar az",
+      "Yok denecek kadar az",
+      "Var, önlemlerle azaltılmış"
+     ],
+     [
+      "Segment",
+      "Giriş ve orta",
+      "Orta ve üst",
+      "Üst"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Odanızın ışığı panel seçimini nasıl etkiler?",
+   "p": [
+    "Güneye bakan, büyük pencereli bir salonda öğleden sonra maç izliyorsanız ekranın parlaklığı ve yansımayı ne kadar bastırdığı her şeyden önemlidir. Bu koşulda yüksek parlaklığa ulaşabilen Mini LED ve QLED modeller avantajlıdır. Parlak ekran yüzeyleri karanlıkta daha canlı görünse de gündüz pencereyi aynalayabilir; mümkünse televizyonu mağazada ışığa karşı açılarda da inceleyin.",
+    "Perdeli bir salonda ya da çoğunlukla akşam izlenen bir odada OLED'in sağladığı kontrast farkı belirgin şekilde hissedilir. Karanlık sahnelerin yoğun olduğu dizi ve filmlerde LCD ekranlarda gri bir pus ya da parlak altyazıların çevresinde hale oluşabilir; OLED'de bu sorun yoktur.",
+    "Mutfak, yatak odası ya da çalışma odası gibi küçük alanlarda ise ışıktan çok mesafe ve kullanım kolaylığı belirleyicidir. Bu odalarda giriş seviyesindeki 32-43 inçlik modeller çoğu ihtiyacı karşılar."
+   ]
+  },
+  {
+   "h": "Çözünürlük ve HDR: 4K, 8K ve HDR formatları ne anlama gelir?",
+   "p": [
+    "Çözünürlük ekrandaki piksel sayısıdır. 4K (3840 x 2160), 40 inç ve üzeri televizyonlarda artık standarttır. 8K modeller dört kat daha fazla piksel sunar ama 8K içerik çok sınırlıdır ve normal oturma mesafesinde fark çoğu izleyici tarafından ayırt edilmez. 32 inç ve altındaki ekranlarda HD ya da Full HD çözünürlük hâlâ yaygındır ve bu boyutta makul bir tercihtir.",
+    "HDR (yüksek dinamik aralık), görüntünün en karanlık ve en parlak noktaları arasındaki farkı genişleterek güneş yansıması, ışık kaynakları ve karanlık sahnelerde daha gerçekçi bir görüntü sağlar. Yaygın formatlar HDR10, HDR10+, Dolby Vision ve HLG'dir. HDR10 tüm içerik için sabit ayar bilgisi taşır. HDR10+ ve Dolby Vision ise sahneden sahneye değişen ayar bilgisi (dinamik meta veri) taşır ve parlaklığı sınırlı ekranlarda daha dengeli sonuç verir. HLG daha çok canlı yayınlarda kullanılır.",
+    "Bir televizyonun HDR desteklemesi, HDR'yi iyi göstereceği anlamına gelmez. Parlaklığı düşük, bölgesel karartması olmayan bir ekran HDR sinyalini kabul eder ama sonuç SDR'den çok farklı görünmeyebilir, hatta daha karanlık görünebilir. HDR için asıl belirleyici olan, panelin parlaklık kapasitesi ve kontrastıdır."
+   ]
+  },
+  {
+   "h": "Yenileme hızı, HDMI 2.1 ve oyun özellikleri",
+   "p": [
+    "Yenileme hızı, ekranın saniyede kaç kez yenilendiğidir. Standart televizyonlarda yerel (native) yenileme hızı 50/60 Hz, daha üst modellerde 100/120 Hz'dir. 120 Hz panel, hızlı spor yayınlarında ve özellikle oyunlarda daha akıcı ve daha net hareket sağlar. Kutularda görülen çok yüksek 'hareket oranı' rakamları genellikle görüntü işleme ile elde edilen pazarlama değerleridir; teknik özellikler tablosunda panelin yerel yenileme hızına bakın.",
+    "HDMI 2.1, HDMI Forum'un yayımladığı ve 48 Gbps'ye kadar bant genişliği tanımlayan standarttır. Bu sayede 4K çözünürlükte 120 Hz görüntü taşınabilir. Oyuncular için önemli diğer HDMI 2.1 özellikleri şunlardır: VRR (değişken yenileme hızı) ekranın konsoldan gelen kare hızına uyum sağlamasıyla görüntü yırtılmasını azaltır. ALLM (otomatik düşük gecikme modu) konsol açıldığında televizyonu otomatik olarak oyun moduna geçirir. eARC ise Dolby Atmos gibi yüksek çözünürlüklü ses formatlarını soundbar ya da ses sistemine iletir.",
+    "Bir televizyonun 'HDMI 2.1' etiketi taşıması, bu özelliklerin hepsini her girişte sunduğu anlamına gelmez. Bazı modellerde dört HDMI girişinden yalnızca bir ya da ikisi 4K 120 Hz destekler; bu giriş eARC girişiyle aynı olabilir. Konsol ve soundbar birlikte kullanılacaksa hangi girişin hangi özelliği desteklediğini teknik özellik sayfasından kontrol edin. 4K 120 Hz için kablonun da Ultra High Speed HDMI sertifikalı olması gerekir."
+   ]
+  },
+  {
+   "h": "Akıllı TV yazılımı, uydu alıcısı ve bağlantılar",
+   "p": [
+    "Akıllı televizyonlarda kullanılan işletim sistemi (Google TV, Samsung'da Tizen, LG'de webOS ve diğer üreticilerin kendi sistemleri) uygulama desteğini, menü hızını ve güncelleme süresini belirler. İzlediğiniz yerli ve yabancı yayın platformlarının uygulamasının o sistemde bulunduğundan emin olun. Giriş segmentindeki bazı modellerde işlemci yavaş kalabilir ve menüde gezinmek zamanla can sıkıcı hale gelir. Bu durumda harici bir medya oynatıcı da çözüm olabilir.",
+    "Türkiye'de birçok ev yayını uydudan izler. Dahili uydu alıcısı (DVB-S2) bulunan bir televizyon, çanak kablosunu doğrudan takmanıza izin verir ve ayrı bir uydu kutusuna gerek bırakmaz. Türkiye pazarı için üretilmiş birçok modelde bulunan TKGS (Türksat Kanal Güncelleme Sistemi) desteği ise frekans değişikliklerinde kanal listesini otomatik günceller. Yurt dışından getirilen ya da farklı pazar için üretilmiş modellerde bu özellikler bulunmayabilir.",
+    "Bağlantı tarafında HDMI giriş sayısı, USB girişleri, optik ses çıkışı, Ethernet girişi ve Bluetooth desteğine bakın. Duvara montaj yapacaksanız televizyonun VESA montaj ölçüsünü ve askı aparatının taşıma kapasitesini kontrol edin; ağır modellerde alçıpan duvar için uygun dübel ve montaj gerekir."
+   ]
+  },
+  {
+   "h": "Ses: dahili hoparlör yeterli mi?",
+   "p": [
+    "İnce kasalı televizyonlarda hoparlörlere ayrılan yer çok sınırlıdır. Bu yüzden diyaloglar özellikle aksiyon sahnelerinde patlama ve müziğin arasında kaybolabilir. Haber, dizi ve gündüz kuşağı izleyen biri için dahili ses çoğu zaman yeterlidir. Film ve maç atmosferi isteyenler ise bir soundbar ile belirgin bir fark hisseder.",
+    "Soundbar bağlayacaksanız HDMI ARC ya da eARC girişi en pratik yoldur; televizyon kumandasıyla ses kontrol edilebilir. Dolby Atmos gibi çok kanallı ses formatlarını kayıpsız iletmek için eARC gerekir. Optik çıkış daha eski ve basit bir alternatiftir. Bluetooth hoparlör ya da kulaklık bağlantısı ise kolaydır ama görüntü ile ses arasında hissedilir bir gecikme oluşabilir."
+   ]
+  },
+  {
+   "h": "Kullanım senaryosuna göre öneriler",
+   "p": [
+    "Aynı bütçeyle farklı ihtiyaçlar için farklı televizyonlar doğru seçim olabilir. Aşağıdaki öneriler başlangıç noktasıdır; mesafe ve oda ışığıyla birlikte değerlendirin."
+   ],
+   "list": [
+    "Konsol oyuncusu: Yerel 120 Hz panel, HDMI 2.1 üzerinden 4K 120 Hz, VRR ve ALLM desteği öncelikli olsun. Oyun modunda düşük giriş gecikmesi için bağımsız ölçümlere bakın. Uzun saatler sabit arayüzlü oyun oynuyorsanız OLED'deki iz riskini de hesaba katın.",
+    "Film ve dizi tutkunu: Karanlık ya da loş bir odada izliyorsanız OLED ya da bölgesel karartması güçlü bir Mini LED, Dolby Vision veya HDR10+ desteği ve eARC ile soundbar bağlantısı öne çıkar.",
+    "Spor izleyen ve gündüz kullanan aile: Yüksek parlaklık, iyi hareket netliği ve geniş görüş açısı önemlidir. Kanal logosu ve skor tabelası sürekli ekranda kalacağı için LCD tabanlı bir model daha rahat bir seçimdir.",
+    "Yaşlı kullanıcı: Sade menü, büyük ve tuşlu kumanda, dahili uydu alıcısı ve TKGS desteği, kurulumdan sonra kanal listesinin kendiliğinden güncellenmesini sağlar. Ekran boyutunu oturma mesafesine göre büyük tutmak altyazı ve haber bantlarını okumayı kolaylaştırır.",
+    "Öğrenci, yurt veya küçük daire: 32-43 inç bir ekran, akıllı TV özellikleri ya da harici bir medya oynatıcı çoğu ihtiyacı karşılar. Bilgisayarı HDMI ile bağlayıp ikinci ekran olarak kullanmak da mümkündür.",
+    "Yatak odası ve mutfak: Küçük boyut, duvara montaj imkânı ve hızlı açılan bir arayüz yeterlidir; burada üst segment görüntü özelliklerine para ayırmak gerekmez."
+   ]
+  },
+  {
+   "h": "Teknik terimlerin sade açıklaması",
+   "p": [
+    "Ürün sayfalarında sık geçen kısaltmaların ne anlama geldiğini bilmek, iki modeli karşılaştırırken neye bakacağınızı netleştirir."
+   ],
+   "table": {
+    "head": [
+     "Terim",
+     "Ne anlama gelir?"
+    ],
+    "rows": [
+     [
+      "Yerel yenileme hızı",
+      "Panelin saniyedeki gerçek yenilenme sayısı (50/60 Hz veya 100/120 Hz)"
+     ],
+     [
+      "Bölgesel karartma (local dimming)",
+      "Arka aydınlatmanın bölgeler halinde kısılıp açılması; LCD'de kontrastı artırır"
+     ],
+     [
+      "HDR10 / HDR10+ / Dolby Vision",
+      "Yüksek dinamik aralık formatları; son ikisi sahneye göre değişen ayar bilgisi taşır"
+     ],
+     [
+      "VRR",
+      "Ekranın konsol ya da bilgisayardan gelen değişken kare hızına uyum sağlaması"
+     ],
+     [
+      "ALLM",
+      "Oyun konsolu açıldığında televizyonun otomatik olarak düşük gecikme moduna geçmesi"
+     ],
+     [
+      "eARC",
+      "HDMI üzerinden yüksek kaliteli sesi soundbar veya ses sistemine gönderen bağlantı"
+     ],
+     [
+      "DVB-S2",
+      "Uydu yayınlarını almak için kullanılan dijital yayın standardı; dahili uydu alıcısı anlamına gelir"
+     ],
+     [
+      "TKGS",
+      "Türksat Kanal Güncelleme Sistemi; frekans değişikliklerinde kanal listesini otomatik günceller"
+     ],
+     [
+      "VESA",
+      "Duvar askı aparatlarının televizyona hangi vida aralığıyla bağlanacağını belirleyen ölçü"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "En sık yapılan satın alma hataları",
+   "p": [
+    "Televizyon alışverişinde pişmanlığın büyük kısmı birkaç tekrarlayan hatadan kaynaklanır. Bunları önceden bilmek, mağazada daha bilinçli soru sormanızı sağlar."
+   ],
+   "list": [
+    "Mağaza ışığında, demo videosuyla karar vermek. Mağaza modları parlaklığı ve renk doygunluğunu aşırı yükseltir; evdeki görüntü farklı olur.",
+    "Oturma mesafesini ölçmeden boyut seçmek ve gereğinden küçük ekran almak.",
+    "Kutudaki yüksek 'hareket oranı' değerini panelin yerel yenileme hızı sanmak.",
+    "HDMI 2.1 etiketini görüp konsolun takılacağı girişin 4K 120 Hz destekleyip desteklemediğine bakmamak.",
+    "Uydu yayını izlenen bir evde dahili uydu alıcısı ve TKGS desteğini kontrol etmemek.",
+    "Duvar ünitesinin genişliğini, ayakların konumunu ve televizyonun ağırlığını hesaba katmamak.",
+    "Garanti belgesini, faturayı ve yetkili servis ağını sormadan, özellikle yurt dışı kaynaklı ürün almak."
+   ]
+  },
+  {
+   "h": "Mağazaya gitmeden önce kontrol listesi",
+   "p": [
+    "Aşağıdaki maddeleri cevaplayarak gittiğinizde seçenekler birkaç modele iner ve satış danışmanının yönlendirmesine daha az bağımlı kalırsınız."
+   ],
+   "list": [
+    "Oturma mesafesi metreyle ölçüldü mü ve buna göre ekran boyutu aralığı belirlendi mi?",
+    "Oda gündüz güneş alıyor mu, yoksa izleme çoğunlukla akşam mı yapılıyor?",
+    "Panel türü (OLED, Mini LED, QLED, LED) ve LCD ise panel tipi (VA/IPS) biliniyor mu?",
+    "Panelin yerel yenileme hızı 60 Hz mi, 120 Hz mi?",
+    "Desteklenen HDR formatları hangileri?",
+    "Oyun konsolu varsa 4K 120 Hz, VRR ve ALLM destekleyen HDMI girişi hangisi?",
+    "Soundbar bağlanacaksa eARC destekli giriş var mı?",
+    "Dahili uydu alıcısı (DVB-S2) ve TKGS desteği var mı?",
+    "Kullandığınız yayın platformlarının uygulamaları akıllı TV sisteminde mevcut mu?",
+    "Duvar montajı için VESA ölçüsü ve ağırlık uygun mu, ayaklar ünitenize sığıyor mu?",
+    "Garanti süresi, yetkili servis ve kurulum hizmeti netleştirildi mi?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "OLED mi, Mini LED mi daha iyi?",
+   "a": "Karanlık veya loş bir odada film ve dizi izliyorsanız OLED'in gerçek siyahı ve kontrastı öne çıkar. Gün ışığı alan bir salonda, uzun saatler sabit logolu yayın izliyorsanız yüksek parlaklığa ulaşan ve iz riski taşımayan Mini LED daha rahat bir seçimdir."
+  },
+  {
+   "q": "Kaç inç televizyon almalıyım?",
+   "a": "4K bir televizyon için ekran köşegeninin 1 ile 1,5 katı mesafe iyi bir başlangıçtır. Örneğin 2,1 metreden izliyorsanız 55 inç alt sınır, 65 inç ise rahatça kullanılabilecek bir boyuttur. Mesafeyi mutlaka metreyle ölçün."
+  },
+  {
+   "q": "8K televizyon almaya değer mi?",
+   "a": "Şu an 8K içerik çok sınırlıdır ve normal oturma mesafesinde 4K ile farkı ayırt etmek zordur. Aynı bütçeyi daha iyi bir panel, daha yüksek parlaklık ya da daha büyük bir 4K ekrana ayırmak genellikle daha belirgin bir kazanç sağlar."
+  },
+  {
+   "q": "OLED televizyonda ekran yanması gerçekten sorun mu?",
+   "a": "Uzun süre aynı sabit görüntüyü gösterdiğinizde kalıcı iz oluşabilir. Üreticilerin piksel kaydırma ve panel yenileme gibi önlemleri riski azaltır. İçeriği çeşitli olan normal kullanımda sorun nadirdir; günde saatlerce aynı haber kanalını açık tutan kullanıcılar için ise LCD tabanlı modeller daha güvenlidir."
+  },
+  {
+   "q": "Uydu alıcısı olmayan televizyonda Türksat yayınlarını izleyebilir miyim?",
+   "a": "Evet, ayrı bir uydu alıcısı kutusu bağlayarak izleyebilirsiniz. Ancak bu durumda iki kumanda kullanırsınız ve kanal güncellemeleri kutunun menüsünden yapılır. Dahili uydu alıcısı ve TKGS'li bir televizyon bu işi tek cihazda çözer."
+  },
+  {
+   "q": "Televizyonun kendi hoparlörü yeterli mi?",
+   "a": "Haber ve dizi gibi konuşma ağırlıklı içerik için çoğu zaman yeterlidir. Film, maç ve müzik için ince kasalı televizyonların sesi sınırlı kalır; eARC ile bağlanan bir soundbar belirgin fark yaratır."
+  },
+  {
+   "q": "Oyun için hangi özelliklere bakmalıyım?",
+   "a": "Yerel 120 Hz panel, HDMI 2.1 üzerinden 4K 120 Hz, VRR ve ALLM desteği öncelikli özelliklerdir. Bu özelliklerin hangi HDMI girişlerinde sunulduğunu da kontrol edin; bazı modellerde tüm girişler aynı yetenekte değildir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "What Hi-Fi: TV izleme mesafesi nasıl hesaplanır",
+   "u": "https://www.whathifi.com/advice/how-to-calculate-the-right-viewing-distance-for-your-tv"
+  },
+  {
+   "t": "HDMI.org: HDMI 2.1 özellikleri",
+   "u": "https://hdmi.org/blog/detail/121"
+  },
+  {
+   "t": "Arçelik: Türksat frekans değişikliği ve kanal güncelleme",
+   "u": "https://www.arcelik.com.tr/blog/turksat-frekans-degisikligi-kanal-guncelleme"
+  }
+ ]
+}

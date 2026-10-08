@@ -1,0 +1,155 @@
+{
+ "slug": "bluetooth-kulaklik-nasil-sifirlanir",
+ "title": "Bluetooth Kulaklık Nasıl Sıfırlanır? Fabrika Ayarına Dönüş Adımları",
+ "description": "Bluetooth kulaklığa ne zaman reset atılır, yeniden başlatmadan farkı ne? Kutu düğmesi, uygulama ve AirPods adımları, işe yaramazsa yapılacaklar.",
+ "tldr": "Sıfırlamadan önce kulaklığı eşleştiği cihazlarda “unutun”, sonra üreticinin yöntemini uygulayın: çoğu kulak içi modelde kulaklıklar kutudayken kapak açıkken kutu düğmesine 10-15 saniye basılı tutulur ve ışık renk değiştirir. Fabrika sıfırlaması tüm eşleştirme kayıtlarını ve kişisel ayarları siler; bu yüzden basit bağlantı sorunlarında önce yeniden başlatmayı deneyin.",
+ "intro": [
+  "Kulaklık telefonda “bağlı” görünüyor ama ses gelmiyor, iki kulaklık birbirini bulamıyor ya da ikinci el aldığınız bir kulaklık önceki sahibinin telefonunu arıyor. Bu durumların ortak çözümü çoğu zaman fabrika sıfırlamasıdır. Sıfırlama, kulaklığın hafızasındaki eşleştirme kayıtlarını ve ayarları silip onu kutudan ilk çıktığı hale döndürür.",
+  "Ancak sıfırlama ilk başvurulacak adım değil, son adımlardan biridir. Aşağıda hangi sorunun gerçekten sıfırlama gerektirdiğini, yaygın kulaklık tiplerinde bunun nasıl yapıldığını ve işlem sonuç vermezse hangi sırayla ilerlemeniz gerektiğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Yeniden başlatma, eşleştirmeyi kaldırma ve fabrika sıfırlaması aynı şey değil",
+   "p": [
+    "Bu üç işlem sıkça karıştırılır ama etkileri farklıdır. Yeniden başlatma kulaklığın yazılımını kapatıp açar; hiçbir kayıt silinmez. Kulak içi modellerde bu genellikle kulaklıkları kutuya koyup kapağı en az 10 saniye kapalı tutmakla olur. Kafa üstü modellerde güç düğmesiyle kapatıp açmak yeterlidir.",
+    "Eşleştirmeyi kaldırmak (“unutmak”) telefon ya da bilgisayar tarafında yapılır. Cihaz, kulaklıkla paylaştığı bağlantı anahtarını siler. Kulaklık ise o cihazı hâlâ hatırlayabilir. Fabrika sıfırlaması ise kulaklık tarafındaki tüm kayıtları siler: eşleştiği cihaz listesi, ekolayzer ayarları, dokunma kontrolü atamaları ve bazı modellerde cihaz adı varsayılana döner."
+   ],
+   "table": {
+    "head": [
+     "İşlem",
+     "Nerede yapılır",
+     "Neyi siler",
+     "Ne zaman tercih edilir"
+    ],
+    "rows": [
+     [
+      "Yeniden başlatma",
+      "Kulaklıkta",
+      "Hiçbir şeyi",
+      "Anlık takılma, ses kesilmesi"
+     ],
+     [
+      "Eşleştirmeyi kaldırma",
+      "Telefonda / bilgisayarda",
+      "Yalnızca o cihazdaki kaydı",
+      "Tek bir cihazla bağlanamama"
+     ],
+     [
+      "Fabrika sıfırlaması",
+      "Kulaklıkta",
+      "Tüm eşleştirmeleri ve kişisel ayarları",
+      "Kalıcı bağlantı sorunu, devir, iki tarafın birbirini bulamaması"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Hangi durumlarda sıfırlama gerçekten gerekir?",
+   "p": [
+    "Sıfırlama kayıtlarla ilgili sorunları çözer, donanım arızasını çözmez. Kulaklık hiç şarj olmuyorsa ya da bir taraftan cızırtı geliyorsa sıfırlamanın etkisi olmaz. Buna karşılık hafızadaki eski ya da bozulmuş bir eşleştirme kaydı yüzünden ortaya çıkan sorunlar genellikle sıfırlamayla düzelir.",
+    "Kulaklığı satacak, hediye edecek veya ikinci el aldıysanız da sıfırlama yapın. Aksi halde kulaklık açıldığında önceki sahibinin cihazına bağlanmaya çalışabilir. AirPods gibi bir hesaba bağlanan modellerde önceki sahibin kulaklığı kendi hesabından da kaldırması gerekebilir."
+   ],
+   "list": [
+    "Kulaklık telefonda listeleniyor ama bağlanmıyor ya da bağlanıp hemen kopuyor.",
+    "Telefon değiştirdiniz ve yeni cihaz kulaklığı hiç göremiyor.",
+    "Kulak içi modelde iki kulaklık birbirine bağlanmıyor, ayrı ayrı cihaz olarak görünüyor.",
+    "Bir yazılım güncellemesinden sonra dokunma kontrolleri veya bağlantı tutarsız çalışıyor.",
+    "Kulaklık el değiştirecek."
+   ]
+  },
+  {
+   "h": "Sıfırlamaya başlamadan önce yapılacak hazırlık",
+   "p": [
+    "Önce kulaklığın daha önce eşleştiği her cihazda kaydı silin. Bunu yapmazsanız sıfırlamadan sonra telefon eski anahtarla bağlanmaya çalışır ve “bağlanamadı” hatası alırsınız. iPhone'da Ayarlar > Bluetooth bölümünde kulaklık adının yanındaki bilgi simgesine dokunup “Bu Aygıtı Unut” seçilir. Android'de Ayarlar > Bağlı cihazlar (Samsung'da Bağlantılar > Bluetooth) altında kulaklığın yanındaki dişli simgesinden “Unut” ya da “Eşleşmeyi kaldır” seçilir. Windows 11'de Ayarlar > Bluetooth ve cihazlar bölümünde cihazın menüsünden “Cihazı kaldır” kullanılır. Menü adları markaya ve yazılım sürümüne göre farklı olabilir.",
+    "Kulaklığın ve kutunun şarjının en az yarı dolu olduğundan emin olun. Bazı modeller düşük pilde sıfırlama komutunu kabul etmez, bazıları da işlem ortasında kapanabilir. Üreticinin uygulamasında ekolayzer veya kontrol ayarlarınız varsa not alın; sıfırlamadan sonra bunları yeniden yapmanız gerekecek."
+   ]
+  },
+  {
+   "h": "Yaygın kulaklık tiplerinde sıfırlama adımları",
+   "p": [
+    "Üreticiler farklı tuş kombinasyonları kullanır, ama yöntemler birkaç ana gruba ayrılır. Aşağıdaki adımlar şarj kutusunda düğme bulunan kulak içi modeller için en yaygın yöntemdir. Kendi modelinizin kılavuzunda süre veya ışık rengi farklıysa kılavuzu esas alın."
+   ],
+   "ol": [
+    "İki kulaklığı da şarj kutusuna yerleştirin ve kapağı kapatın; yaklaşık 30 saniye bekleyin.",
+    "Kapağı açın, kulaklıkları kutudan çıkarmayın.",
+    "Kutunun arkasındaki ya da içindeki düğmeye basılı tutun. Çoğu modelde bu süre 10-15 saniyedir.",
+    "Durum ışığının renk değiştirmesini veya belirli bir düzende yanıp sönmesini bekleyin, sonra düğmeyi bırakın.",
+    "Kapağı kapatıp yeniden açın; kulaklık eşleştirme moduna geçmiş olmalı.",
+    "Telefonunuzda Bluetooth listesinden kulaklığı yeniden eşleştirin."
+   ],
+   "note": "Kutusunda düğme olmayan kulak içi modellerde sıfırlama genellikle kulaklıklardaki dokunmatik yüzeylere birlikte uzun basarak ya da üreticinin uygulamasından yapılır. Kafa üstü modellerde ise çoğunlukla güç düğmesiyle başka bir düğmeye (ör. ses veya ANC düğmesi) aynı anda basılı tutmak gerekir."
+  },
+  {
+   "h": "AirPods ve uygulamayla sıfırlanan modeller",
+   "p": [
+    "Apple'ın destek sayfasına göre ayar düğmesi olan AirPods ve AirPods Pro modellerinde kulaklıklar kutuya konup kapak kapatılır, 30 saniye beklenir, kapak açılır ve kutunun arkasındaki ayar düğmesine yaklaşık 15 saniye basılı tutulur. Işık önce kehribar renginde, sonra beyaz yanıp söner. Ayar düğmesi olmayan yeni nesil kutularda düğme yerine, kapak açıkken kutunun ön yüzüne üç kez çift dokunulur (AirPods 4 ve sonrası, AirPods Pro 3). AirPods Max'te ise sağ kulaktaki Digital Crown ile dinleme modu düğmesine birlikte yaklaşık 15 saniye basılır.",
+    "Samsung, Sony, JBL gibi birçok markanın mobil uygulamasında da “fabrika ayarlarına sıfırla” veya “kulaklıkları sıfırla” seçeneği bulunur. Uygulama yöntemi, hangi düğmeye ne kadar basılacağını hatırlamanızı gerektirmediği için daha az hataya açıktır. Ancak kulaklık telefona bağlanamıyorsa uygulama da ona ulaşamaz; o durumda fiziksel düğme yöntemine dönmeniz gerekir."
+   ]
+  },
+  {
+   "h": "Sıfırlama işe yaramazsa hangi sırayla ilerlemeli?",
+   "p": [
+    "Işık beklenen şekilde değişmediyse işlem büyük ihtimalle gerçekleşmemiştir. En sık neden düğmeye yeterince uzun basılmaması ya da kulaklıkların kutuya tam oturmamasıdır. Kulaklıkları çıkarıp şarj kontaklarını kuru, tüy bırakmayan bir bezle silin ve tekrar deneyin."
+   ],
+   "ol": [
+    "Kutuyu kabloyla prize takın ve en az 15-20 dakika şarj edin, sonra sıfırlamayı tekrarlayın.",
+    "Kulaklıkların kutudaki yuvalara tam oturduğunu, kutu ışığının şarj gösterdiğini kontrol edin.",
+    "Telefonda Bluetooth'u kapatıp açın, gerekirse telefonu yeniden başlatın.",
+    "Farklı bir telefon veya bilgisayarla eşleştirmeyi deneyin; sorun tek cihazdaysa o cihazın Bluetooth ayarları sıfırlanabilir.",
+    "Üreticinin uygulaması varsa kulaklığın yazılımını güncelleyin ve sıfırlamayı uygulama üzerinden yapın."
+   ]
+  },
+  {
+   "h": "Ne zaman yetkili servise başvurmalı?",
+   "p": [
+    "Kutu hiç ışık vermiyorsa, kulaklıklardan biri kutuda şarj olmuyorsa ya da sıfırlamadan sonra bir taraf hiçbir cihazda görünmüyorsa sorun büyük olasılıkla donanımsaldır. Bu noktadan sonra tekrar tekrar sıfırlamak bir şey değiştirmez. Kutunun veya kulaklığın şişmesi, aşırı ısınması ya da yanık kokusu varsa cihazı şarja takmayı bırakın; lityum pillerde bu belirtiler güvenlik riski taşır.",
+    "Türkiye'de satılan ürünlerde garanti belgesi veya faturayla yetkili servise ya da satıcıya başvurabilirsiniz. Kulaklığı kendiniz açmaya çalışmayın: kulak içi modeller genellikle yapıştırılarak kapatılır, açmak hem garantiyi geçersiz kılar hem de pile zarar verebilir."
+   ]
+  },
+  {
+   "h": "Sık yapılan sıfırlama hataları",
+   "p": [
+    "Sıfırlamanın çoğu başarısızlığı birkaç basit hatadan kaynaklanır. Bunları baştan bilmek aynı işlemi defalarca tekrarlamanızı önler."
+   ],
+   "list": [
+    "Telefonda eski kaydı silmeden yeniden eşleştirmeye çalışmak.",
+    "Düğmeyi ışık değişmeden bırakmak ya da kapağı işlem sırasında kapatmak.",
+    "Yalnızca bir kulaklık kutudayken sıfırlamak; birçok modelde iki taraf da kutuda olmalıdır.",
+    "Başka bir modelin videosundaki tuş kombinasyonunu denemek.",
+    "Basit bir kopmada yeniden başlatmayı denemeden doğrudan fabrika ayarına dönmek ve kişisel ayarları kaybetmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Kulaklığı sıfırlarsam ne kaybederim?",
+   "a": "Eşleştiği cihazların listesi silinir, ekolayzer, dokunma kontrolleri gibi uygulama üzerinden yaptığınız ayarlar varsayılana döner. Kulaklıkta müzik ya da kişisel dosya saklanmadığı için veri kaybı bu kayıtlarla sınırlıdır. Yazılım sürümü genellikle düşmez."
+  },
+  {
+   "q": "Sıfırlamanın tamamlandığını nasıl anlarım?",
+   "a": "Çoğu modelde durum ışığı renk değiştirir veya farklı bir düzende yanıp söner, ardından kulaklık eşleştirme moduna geçer. Telefonun Bluetooth listesinde kulaklık yeniden “yeni cihaz” olarak görünüyorsa işlem başarılı olmuştur."
+  },
+  {
+   "q": "Kutusunu kaybettiğim kulak içi kulaklığı sıfırlayabilir miyim?",
+   "a": "Birçok modelde sıfırlama kutu üzerinden yapıldığı için zorlaşır. Bazı markalar kulaklıktaki dokunmatik yüzeylere uzun basma ya da uygulama üzerinden sıfırlama imkânı sunar. Bu seçenek yoksa yedek kutu için yetkili servise danışmanız gerekir."
+  },
+  {
+   "q": "İkinci el AirPods aldım, sıfırlamak yeterli mi?",
+   "a": "Fabrika sıfırlaması eşleştirmeleri siler, ancak kulaklık önceki sahibin Apple hesabına kayıtlıysa bazı özellikler engellenebilir. Satıcıdan kulaklığı “Bul” uygulamasındaki hesabından kaldırmasını isteyin, ardından sıfırlayıp kendi cihazınıza eşleştirin."
+  },
+  {
+   "q": "Sık sık sıfırlamak kulaklığa zarar verir mi?",
+   "a": "Sıfırlama yalnızca kayıtları sildiği için donanıma zarar vermez. Yine de sürekli sıfırlama ihtiyacı duyuyorsanız asıl nedeni arayın: güncel olmayan yazılım, çok sayıda eşleştirilmiş cihaz ya da donanım arızası olabilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: AirPods'u yeniden başlatma, eşleştirmeyi kaldırma veya sıfırlama",
+   "u": "https://support.apple.com/guide/airpods/iph561965261/web"
+  },
+  {
+   "t": "Google Android Yardım: Android'de Bluetooth sorunlarını düzeltme",
+   "u": "https://support.google.com/android/answer/9769184?hl=en"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "slug": "tv-wifiye-nasil-baglanir",
+ "title": "Akıllı TV Wi-Fi'a Nasıl Bağlanır? Menü Yolları ve Çözümler",
+ "description": "Samsung, LG ve Google TV'yi Wi-Fi'a bağlama adımları, ağ listede çıkmazsa ya da bağlantı kopuyorsa sırayla denenecek çözümler.",
+ "tldr": "TV'nin ağ ayarlarından kablosuz bağlantıyı seçin, listeden ev ağınızı bulun ve şifreyi büyük-küçük harfe dikkat ederek girin. Ağ listede yoksa TV'nin 5 GHz desteklemiyor olabileceğini düşünüp 2,4 GHz ağı deneyin. Bağlantı sürekli kopuyorsa modemi yeniden başlatmak, TV'yi modeme yaklaştırmak ya da Ethernet kablosu kullanmak en etkili çözümlerdir.",
+ "intro": [
+  "Akıllı TV'nin uygulamaları, yazılım güncellemeleri ve ekran yansıtma özelliği internet bağlantısı olmadan çalışmaz. TV'yi ilk kurarken sihirbaz sizi ağ ekranına getirir, ama bu adımı atladıysanız, modeminizi değiştirdiyseniz ya da Wi-Fi şifreniz yenilendiyse bağlantıyı menüden yeniden kurmanız gerekir.",
+  "Menü yolları markaya ve TV'nin üretim yılına göre değişir. Aşağıda en yaygın platformların güncel yollarını, bağlantı kurulamadığında izlenecek sırayı ve kablolu bağlantının ne zaman daha mantıklı olduğunu bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Bağlanmadan önce hazırlamanız gerekenler",
+   "p": [
+    "Wi-Fi ağınızın adını ve şifresini doğru bildiğinizden emin olun. Şifreler büyük-küçük harfe duyarlıdır; LG de destek sayfasında bunu ayrıca vurguluyor. Şifreyi modemin altındaki etiketten okuyorsanız, servis sağlayıcınız ya da siz şifreyi sonradan değiştirmiş olabilir.",
+    "Modeminiz 2,4 GHz ve 5 GHz bantlarını ayrı adlarla yayınlıyorsa iki ağ adı göreceksiniz (ör. adının sonunda '5G' olan). 5 GHz daha hızlıdır ama duvarlardan geçerken daha çok zayıflar; 2,4 GHz daha uzağa ulaşır ama komşu ağlardan daha çok etkilenir. Modeme yakın bir TV için 5 GHz, birkaç oda uzaktaki bir TV için 2,4 GHz genellikle daha kararlıdır."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "2,4 GHz",
+     "5 GHz"
+    ],
+    "rows": [
+     [
+      "Menzil ve duvar geçişi",
+      "Daha iyi",
+      "Daha zayıf"
+     ],
+     [
+      "Hız",
+      "Daha düşük",
+      "Daha yüksek"
+     ],
+     [
+      "Parazit",
+      "Komşu ağlar ve mikrodalga fırından daha çok etkilenir",
+      "Daha az etkilenir"
+     ],
+     [
+      "TV desteği",
+      "Neredeyse tüm akıllı TV'ler",
+      "Bazı eski veya giriş segmenti modellerde yok"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Samsung, LG ve Google TV'de Wi-Fi menü yolları",
+   "p": [
+    "Aşağıdaki yollar üreticilerin destek sayfalarındaki güncel adlandırmalardır. TV'nizin yazılım sürümü farklıysa seçenek adları birebir aynı olmayabilir; 'Ağ', 'Bağlantı' veya 'İnternet' geçen başlıkları arayın."
+   ],
+   "list": [
+    "Samsung (yeni modeller): Ayarlar > Tüm Ayarlar > Bağlantı > Ağ > Ağ Ayarları > Kablosuz. Bazı modellerde yol Ayarlar > Genel > Ağ şeklindedir.",
+    "LG, 2021 ve sonrası (webOS 6.0+): Ayarlar > Tüm Ayarlar > Genel > Ağ > İnternet Bağlantısı > Wi-Fi Bağlantısı.",
+    "LG, 2020 (webOS 5.0): Ayarlar > Tüm Ayarlar > Bağlantı > Ağ Bağlantı Ayarları > Wi-Fi Bağlantısı.",
+    "LG, 2019 ve öncesi: Ayarlar > Tüm Ayarlar > Bağlantı (veya Ağ) > Wi-Fi Bağlantısı.",
+    "Google TV ve Android TV (Sony, TCL, Philips vb.): Ayarlar menüsünde Ağ ve İnternet bölümü."
+   ]
+  },
+  {
+   "h": "Adım adım kablosuz bağlantı",
+   "p": [
+    "Menüye ulaştıktan sonraki akış markadan bağımsız olarak hemen hemen aynıdır."
+   ],
+   "ol": [
+    "Kablosuz (Wi-Fi) seçeneğini açın; TV yakındaki ağları tarayıp listeler.",
+    "Listeden kendi ağınızı seçin. Ağınız görünmüyorsa listeyi yenileyin ya da 'Ağ ekle' seçeneğiyle ağ adını (SSID) elle yazın.",
+    "Ekrandaki klavyeyle şifreyi girin. Çoğu TV'de şifreyi göster seçeneği vardır; yazım hatası olup olmadığını görmek için açın.",
+    "Bağlantı testi tamamlanana kadar bekleyin. Samsung'da Ağ Durumu ekranı TV'nin internete çıkıp çıkmadığını ayrıca gösterir.",
+    "Bağlandıktan sonra bir uygulama açıp video oynatarak bağlantının gerçekten çalıştığını doğrulayın.",
+    "Fırsat bulmuşken yazılım güncellemesini kontrol edin; ağ uyumluluğu sorunları güncellemelerle düzeltilebilir."
+   ],
+   "note": "Modeminizde WPS düğmesi varsa bazı TV'lerde şifre girmeden bağlanabilirsiniz: TV'de WPS seçeneğini başlatın ve iki dakika içinde modemin WPS düğmesine basın."
+  },
+  {
+   "h": "Bağlantı kurulmuyorsa izlenecek sorun giderme sırası",
+   "p": [
+    "Sorunun TV'de mi, modemde mi, yoksa servis sağlayıcıda mı olduğunu ayırmak için aşağıdaki sırayı izleyin. Bu sıra Samsung ve LG'nin önerdiği adımlarla örtüşür."
+   ],
+   "ol": [
+    "Aynı ağa bağlı telefon veya bilgisayarın internete çıkıp çıkmadığını kontrol edin. Hiçbiri çıkamıyorsa sorun TV'de değil, modemde ya da hattadır.",
+    "Modemi, varsa ayrı router'ı ve TV'yi kapatın, fişten çekip en az bir dakika bekleyin, sonra önce modemi açın.",
+    "Ağınız listede yoksa 2,4 GHz ağına bağlanmayı deneyin; bazı TV modelleri 5 GHz'i desteklemez.",
+    "Telefonunuzda mobil erişim noktası (hotspot) açıp TV'yi ona bağlayın. Bağlanıyorsa TV sağlamdır, sorun modem ayarlarında veya servis sağlayıcıdadır.",
+    "TV'nin ağ ayarlarını sıfırlayın. Samsung'da bunun için Ağı Sıfırla seçeneği bulunur; ardından ağı baştan kurun.",
+    "Modem arayüzünde MAC filtreleme ya da bağlı cihaz sınırı gibi bir kısıtlama olup olmadığına bakın; bilmiyorsanız servis sağlayıcınıza sorun."
+   ],
+   "note": "TV hiçbir kablosuz ağı listelemiyorsa, Wi-Fi menüsü boş ya da gri (devre dışı) görünüyorsa, LG'nin de belirttiği gibi TV'nin servise ihtiyacı olabilir. Garanti kapsamındaysa yetkili servise başvurun."
+  },
+  {
+   "h": "Bağlantı var ama sık kopuyor ya da yavaş",
+   "p": [
+    "Akşam maçı izlerken görüntünün sık sık takılması genellikle sinyal zayıflığından ya da ağdaki yoğunluktan kaynaklanır. TV ile modem arasında birden fazla duvar, metal dolap veya akvaryum varsa sinyal belirgin şekilde düşer. TV'nin bir dolabın içinde ya da duvara çok yakın durması da yerleşik antenin performansını azaltır.",
+    "İlk deneme olarak modemi daha açık ve yüksek bir noktaya taşıyın. Wi-Fi güçlendirici (repeater) menzili artırabilir, ancak LG'nin de belirttiği gibi hızı düşürebilir ve kararsızlığa yol açabilir. Evde mesh sistemi varsa TV'ye en yakın düğümün yerleşimini kontrol edin. 4K içerik izliyorsanız yayın servisinin yardım sayfasında önerilen bağlantı hızını, TV'nin ağ testindeki değerle karşılaştırın."
+   ]
+  },
+  {
+   "h": "Ne zaman Ethernet kablosu tercih edilmeli?",
+   "p": [
+    "TV modemle aynı odadaysa ya da duvardan ağ prizi geçiyorsa, Ethernet kablosu Wi-Fi'nin tüm belirsizliklerini ortadan kaldırır. Kabloyu TV'nin LAN girişine takın ve ağ ayarlarından kablolu bağlantıyı seçin; çoğu TV bağlantıyı otomatik algılar.",
+    "Modem uzaktaysa ve kablo çekmek mümkün değilse, elektrik hattı üzerinden veri taşıyan powerline adaptörleri bir ara çözümdür; performansları evin elektrik tesisatına göre değişir. Samsung, bazı modellerin kablolu bağlantıyı desteklemediğini belirttiği için TV'nizde LAN girişi olduğunu önceden kontrol edin."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "TV ev ağımı listede göstermiyor, neden?",
+   "a": "En sık neden, ağın 5 GHz bandında olması ve TV'nin bu bandı desteklememesidir. 2,4 GHz ağı deneyin. Ağ adınız gizliyse 'Ağ ekle' seçeneğiyle adını elle girmeniz gerekir."
+  },
+  {
+   "q": "Şifreyi doğru giriyorum ama bağlanmıyor, ne yapmalıyım?",
+   "a": "Büyük-küçük harf ve benzer görünen karakterleri (0 ile O, l ile I) kontrol edin. Şifreyi göster seçeneğini açın. Sorun sürerse modemi ve TV'yi yeniden başlatıp tekrar deneyin."
+  },
+  {
+   "q": "Kablolu bağlantı Wi-Fi'dan daha mı iyidir?",
+   "a": "Kararlılık açısından genellikle evet. Ethernet; duvar, mesafe ve komşu ağ paraziti gibi etkenlerden etkilenmez. 4K yayın ve çevrim içi oyunda takılmaları belirgin şekilde azaltabilir."
+  },
+  {
+   "q": "TV'yi telefonumun hotspot'una bağlayabilir miyim?",
+   "a": "Evet, TV bunu normal bir Wi-Fi ağı gibi görür. Ancak video yayını çok veri tükettiği için mobil tarifenizin kotasını hızla doldurabilir. Bu yöntemi daha çok arıza tespiti için kullanın."
+  },
+  {
+   "q": "TV bağlı görünüyor ama uygulamalar açılmıyor, neden?",
+   "a": "TV yerel ağa bağlı ama internete çıkamıyor olabilir. Ağ durumu ekranını kontrol edin, modemi yeniden başlatın ve TV'nin tarih-saat ayarının doğru olduğundan emin olun. Sorun tek bir uygulamadaysa o uygulamayı güncelleyin veya yeniden yükleyin."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Samsung Avustralya - Connect your Samsung TV to the Internet",
+   "u": "https://www.samsung.com/au/support/tv-audio-video/connect-your-samsung-tv-to-the-internet/"
+  },
+  {
+   "t": "LG - LG TV internet bağlantı sorunlarını giderme",
+   "u": "https://www.lg.com/us/support/help-library/lg-tv-how-to-fix-internet-connection-issues--20155140875834"
+  }
+ ]
+}

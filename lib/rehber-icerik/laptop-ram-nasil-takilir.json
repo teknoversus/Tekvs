@@ -1,0 +1,159 @@
+{
+ "slug": "laptop-ram-nasil-takilir",
+ "title": "Dizüstü Bilgisayara RAM Nasıl Takılır? Adım Adım Rehber",
+ "description": "Laptopa RAM eklemeden önce uyumluluğu nasıl kontrol edersiniz, kapak nasıl açılır, modül nasıl takılır? Adım adım anlatım, sorun giderme ve güvenlik.",
+ "tldr": "Önce dizüstünüzde boş veya değiştirilebilir bir SO-DIMM yuvası olup olmadığını ve hangi bellek türünü (DDR4 ya da DDR5) desteklediğini doğrulayın; ince modellerde RAM çoğu zaman anakarta lehimlidir. Uygunsa cihazı tamamen kapatıp prizden çekin, statik elektriğinizi boşaltın, alt kapağı açın ve modülü çentiği hizalayarak yaklaşık 30 derece açıyla yuvaya sürüp klipsler kilitlenene kadar bastırın.",
+ "intro": [
+  "Tarayıcıda birkaç sekme ve bir toplantı uygulaması açınca dizüstünüz takılmaya başlıyorsa, RAM eklemek cihazın ömrünü birkaç yıl uzatabilecek en ucuz yükseltmelerden biridir. İşlem genellikle bir tornavida ve yarım saatlik dikkatli bir çalışma ister.",
+  "Ancak her dizüstü yükseltmeye uygun değildir ve yanlış modül almak en sık yapılan hatadır. Bu yüzden aşağıda önce uyumluluğu nasıl kontrol edeceğinizi, sonra takma adımlarını, en sonda da cihaz açılmazsa izlemeniz gereken sırayı anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Dizüstünüzün RAM'i yükseltilebilir mi?",
+   "p": [
+    "Dizüstülerde bellek üç şekilde karşınıza çıkar. İlki, çıkarılıp takılabilen SO-DIMM modüllerdir; klasik yükseltme yalnızca bunlarda mümkündür. İkincisi, LPDDR türünde ve doğrudan anakarta lehimlenmiş bellektir; ince ve hafif modellerin çoğunda bulunur ve kullanıcı tarafından değiştirilemez. Bazı modellerde ikisi bir arada olur: Belirli bir miktar bellek lehimlidir, yanında ise tek bir boş SO-DIMM yuvası bulunur.",
+    "Üçüncü ve daha yeni bir seçenek, JEDEC tarafından standartlaştırılan CAMM2 ve LPCAMM2 modülleridir. Bunlar yuvaya kenarından takılmaz, anakarta vidalarla sabitlenir ve şimdilik sınırlı sayıda modelde kullanılır. Apple'ın M serisi işlemcili Mac'lerinde ise bellek işlemciyle aynı paketin içindedir ve sonradan artırılamaz."
+   ],
+   "list": [
+    "Windows'ta Görev Yöneticisi'ni (Ctrl + Shift + Esc) açın, Performans sekmesinde Bellek'i seçin. Sağ alttaki Kullanılan yuvalar ve Form faktörü bilgileri kaç yuvanın dolu olduğunu ve modül tipini gösterir.",
+    "Üreticinin destek sitesinde modelinizin kullanım kılavuzunu veya servis kılavuzunu açın; desteklenen en yüksek bellek miktarı, yuva sayısı ve bellek türü burada yazar.",
+    "Yuva sayısı 0 görünüyorsa veya kılavuzda bellek için on board (anakarta entegre) ifadesi geçiyorsa yükseltme yapılamaz."
+   ]
+  },
+  {
+   "h": "Doğru RAM modülünü seçmek",
+   "p": [
+    "SO-DIMM modülleri nesillere göre fiziksel olarak farklıdır: DDR3 modüller 204, DDR4 modüller 260, DDR5 modüller 262 pinlidir ve çentik konumları da farklıdır. Yani DDR4 yuvaya DDR5 modül takılamaz; zorlamak hem modüle hem yuvaya zarar verir.",
+    "Hız değerini (MT/s veya MHz) mevcut bellekle ve dizüstünün desteklediği değerle eşleştirmeye çalışın. Daha hızlı bir modül genellikle çalışır ama sistem, desteklediği en yüksek hıza veya yavaş olan modülün hızına iner. Çift kanal çalışmadan tam verim almak için iki yuvaya aynı kapasite ve hızda modül takmak en garantili yoldur."
+   ],
+   "table": {
+    "head": [
+     "Durum",
+     "Ne alınmalı?",
+     "Dikkat"
+    ],
+    "rows": [
+     [
+      "İki yuva, biri boş",
+      "Mevcut modülle aynı tür, kapasite ve hızda tek modül",
+      "Farklı kapasite de çalışır ama çift kanal kısmen devreye girer"
+     ],
+     [
+      "İki yuva, ikisi de dolu",
+      "Hedef kapasitenin yarısı kadar iki eş modül (kit)",
+      "Eski modüller çıkarılır"
+     ],
+     [
+      "Lehimli bellek + tek boş yuva",
+      "Lehimli bellekle aynı hızda bir modül",
+      "En iyi sonuç için lehimli kapasiteyle eş kapasite seçin"
+     ],
+     [
+      "Tüm bellek lehimli",
+      "Yükseltme yapılamaz",
+      "Gerekirse depolama yükseltmesine bakın"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Hazırlık ve güvenlik: başlamadan önce",
+   "p": [
+    "Bellek modülleri statik elektriğe hassastır. Halı üzerinde yürüdükten sonra bir modüle dokunmanız, gözle görülmeyen bir hasara neden olabilir. Bu yüzden halı olmayan, düz ve iyi aydınlatılmış bir masada çalışın; mümkünse antistatik bileklik kullanın ya da işleme başlamadan önce boyasız topraklı bir metal yüzeye dokunun.",
+    "Garanti şartlarını da kontrol edin. Bazı üreticiler belleği kullanıcının değiştirebileceği parça olarak kabul eder, bazıları ise kapağın açılmasını garanti dışı sayabilir. Emin değilseniz yükseltmeyi yetkili serviste yaptırmak garantinizi korur."
+   ],
+   "list": [
+    "Küçük yıldız (Phillips) tornavida; bazı modellerde Torx uç gerekir",
+    "Plastik kapak açma aleti veya eski bir plastik kart; metal tornavidayla kasayı kaldırmayın",
+    "Vidaları ayrı tutmak için küçük bir kap; vidaların uzunlukları farklı olabilir",
+    "Önemli dosyalarınızın güncel bir yedeği"
+   ]
+  },
+  {
+   "h": "Adım adım RAM takma",
+   "p": [
+    "Aşağıdaki adımlar SO-DIMM yuvalı çoğu dizüstü için geçerlidir. Kapak yapısı ve pil bağlantısı modele göre değiştiği için servis kılavuzunuzdaki sırayı esas alın."
+   ],
+   "ol": [
+    "Bilgisayarı uyku moduna değil, tamamen kapatın. Windows'ta Shift tuşuna basılı tutarak Kapat'a tıklamak hızlı başlatmayı atlayıp tam kapanma sağlar.",
+    "Şarj adaptörünü ve tüm USB aygıtlarını çıkarın. Pil dışarıdan çıkarılabiliyorsa çıkarın.",
+    "Cihazı ekran kapalı şekilde, altına yumuşak bir bez sererek ters çevirin. Alt kapaktaki tüm vidaları sökün; lastik ayakların veya etiketlerin altında gizli vida olup olmadığını kılavuzdan kontrol edin.",
+    "Plastik aletle kapağı bir köşeden başlayarak yavaşça ayırın. Klipsler direnç gösterirse zorlamayın, gözden kaçan bir vida olabilir.",
+    "Servis kılavuzu öneriyorsa iç pil konnektörünü anakarttan ayırın veya BIOS'taki pil devre dışı bırakma seçeneğini kullanın. Ardından topraklı bir metal yüzeye dokunarak statik elektriğinizi boşaltın.",
+    "RAM yuvasını bulun; bazen ince bir metal kalkan veya film altında olur. Eski modülü çıkaracaksanız yuvanın iki yanındaki metal klipsleri dışa doğru açın; modül yaklaşık 30 derece yukarı kalkar, kenarından tutarak düz bir şekilde çekin.",
+    "Yeni modülü yalnızca kenarlarından tutun, altın renkli kontaklara dokunmayın. Modülün altındaki çentiği yuvadaki çıkıntıyla hizalayın.",
+    "Modülü yaklaşık 30 derece açıyla yuvaya sonuna kadar itin; doğru oturduğunda kontaklar neredeyse tamamen yuvanın içinde kalır.",
+    "Modülü düz konuma gelene kadar aşağı bastırın; iki yandaki klipsler tık sesiyle kilitlenmelidir.",
+    "Pil konnektörünü ayırdıysanız geri takın, kapağı kapatın ve vidaları yerlerine takın. Adaptörü bağlayıp cihazı açın."
+   ],
+   "note": "Yeni bellekle ilk açılış normalden uzun sürebilir ve ekran bir süre siyah kalabilir; sistem belleği tanıyıp ayarlarken bu olağandır. Birkaç dakika bekleyin, hemen güç düğmesine basılı tutarak kapatmayın."
+  },
+  {
+   "h": "Belleğin doğru çalıştığını nasıl doğrularsınız?",
+   "p": [
+    "Windows açıldıktan sonra Görev Yöneticisi'nde Performans > Bellek ekranına dönün. Toplam bellek, kullanılan yuva sayısı ve hız değerinin beklediğiniz gibi olup olmadığına bakın. Ayarlar > Sistem > Hakkında bölümünde de yüklü RAM miktarı yazar. Bellek yuvası bulunan bazı eski Intel tabanlı Mac'lerde ise yüklü bellek Bu Mac Hakkında ekranında görünür.",
+    "Bellekte gizli bir hata olup olmadığını görmek için Windows'un yerleşik Windows Bellek Tanılama aracını kullanabilirsiniz. Başlat menüsüne mdsched yazın, Şimdi yeniden başlat ve sorunları denetle seçeneğini seçin. Bilgisayar yeniden başlarken test çalışır, sonuç Windows açıldığında bildirim olarak gösterilir."
+   ]
+  },
+  {
+   "h": "Bilgisayar açılmıyor veya bellek görünmüyorsa",
+   "p": [
+    "RAM sonrası sorunların çok büyük kısmı modülün tam oturmamasından kaynaklanır. Aşağıdaki sırayı izleyin ve her adımdan sonra cihazı deneyin."
+   ],
+   "ol": [
+    "Cihazı tekrar kapatıp adaptörü çıkarın, modülü çıkarıp yeniden takın. Kontakların yuvaya tamamen girdiğinden ve iki klipsin de kilitlendiğinden emin olun.",
+    "Yalnızca yeni modülle, sonra yalnızca eski modülle açmayı deneyin. Hangi modülde sorun olduğunu böyle ayırırsınız.",
+    "Tek modülü sırayla her iki yuvada deneyin; arızalı bir yuva da olasıdır.",
+    "Modülün türünü ve hızını kılavuzdaki desteklenen değerlerle yeniden karşılaştırın. Destek sitesinde bellek uyumluluğunu iyileştiren bir BIOS güncellemesi olup olmadığına bakın.",
+    "Güç ışığı yanıp sönüyor veya cihaz bip sesi veriyorsa bu bir hata kodudur; kodun anlamını üreticinin destek sayfasında modelinize göre arayın.",
+    "Bu adımlara rağmen cihaz açılmıyorsa veya kapağı açarken bir konnektör ya da kablo zarar gördüyse yetkili servise başvurun."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "list": [
+    "Masaüstü bilgisayar için üretilmiş uzun DIMM modül almak: Dizüstüler daha kısa SO-DIMM kullanır.",
+    "DDR nesline bakmadan, yalnızca kapasiteye göre modül seçmek",
+    "Cihazı uyku modundayken veya adaptör takılıyken açmak",
+    "Kapağı metal tornavidayla kaldırıp kasayı veya iç kabloları çizmek",
+    "Klipsler kilitlenmeden kapağı kapatmak; modül yarım oturmuş kalır",
+    "Desteklenen en yüksek bellek miktarını aşan bir modül almak"
+   ],
+   "p": [
+    "Bu hataların çoğu, işe başlamadan önce servis kılavuzunu açıp model numaranıza göre doğru modülü seçerek önlenebilir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her dizüstüde RAM değiştirilebilir mi?",
+   "a": "Hayır. İnce ve hafif modellerin çoğunda bellek anakarta lehimlidir ve değiştirilemez. Apple'ın M serisi Mac'lerinde de bellek yükseltilemez. Alım yapmadan önce Görev Yöneticisi'ndeki yuva bilgisine ve üreticinin kılavuzuna bakın."
+  },
+  {
+   "q": "Farklı hızda iki RAM modülü birlikte kullanılabilir mi?",
+   "a": "Aynı nesilden oldukları sürece genellikle birlikte çalışırlar, ancak sistem yavaş olan modülün hızına iner. Uyumluluk sorunu yaşamamak için mevcut modülle aynı hızda ve kapasitede bir modül seçmek en güvenli yoldur."
+  },
+  {
+   "q": "RAM yükseltmesi garantiyi bozar mı?",
+   "a": "Üreticiye ve garanti şartlarına göre değişir. Bazı markalar belleği kullanıcının değiştirebileceği parça olarak tanımlar, bazıları kapağın açılmasını garanti dışı sayabilir. Emin değilseniz garanti belgesini okuyun veya işlemi yetkili servise yaptırın."
+  },
+  {
+   "q": "Yeni RAM taktıktan sonra ekran neden bir süre siyah kalıyor?",
+   "a": "Sistem yeni belleği ilk açılışta tanıyıp zamanlama ayarlarını yapar; bu işlem özellikle DDR5'li cihazlarda bir iki dakika sürebilir. Bu sürede cihazı zorla kapatmayın. Uzun süre görüntü gelmezse modülün oturmasını kontrol edin."
+  },
+  {
+   "q": "8 GB'tan 16 GB'a çıkmak fark yaratır mı?",
+   "a": "Çok sekmeli tarayıcı, toplantı uygulamaları ve ofis programlarını birlikte kullanıyorsanız belirgin fark yaratır; uygulamalar arası geçişler akıcılaşır. Yavaşlığın nedeni eski bir mekanik disk veya ısınma ise yalnızca RAM eklemek yeterli olmaz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: DIMM (SO-DIMM türleri)",
+   "u": "https://en.wikipedia.org/wiki/DIMM"
+  },
+  {
+   "t": "Wikipedia: CAMM bellek modülü",
+   "u": "https://en.wikipedia.org/wiki/CAMM_(memory_module)"
+  }
+ ]
+}

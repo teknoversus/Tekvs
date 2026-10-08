@@ -1,0 +1,154 @@
+{
+ "slug": "aynasiz-kamerada-lens-nasil-degistirilir",
+ "title": "Aynasız Kamerada Lens Nasıl Değiştirilir? Toz Kaçırmadan Adımlar",
+ "description": "Aynasız kamerada lens değiştirirken sensörü tozdan nasıl korursunuz? Hizalama işareti, dönüş yönü, takılan lens ve dışarıda değişim için adımlar.",
+ "tldr": "Kamerayı kapatın, yeni lensin arka kapağını önceden gevşetin, kamerayı lens yuvası aşağı bakacak şekilde tutup eski lensi bırakma düğmesine basarak çıkarın, yeni lensi hizalama işaretlerini eşleştirip klik sesi gelene kadar çevirin. İşlemi birkaç saniyede, rüzgârsız bir yerde tamamlamak sensöre toz girmesini büyük ölçüde önler.",
+ "intro": [
+  "Aynasız kameralarda lensi çıkardığınız anda sensör doğrudan açıkta kalır. DSLR'lerde sensörün önünde ayna ve kapalı perde bulunurken, aynasız gövdelerin çoğunda lens yuvasından baktığınızda sensörü görürsünüz. Bu yüzden lens değişimi basit bir işlem olsa da yapılış biçimi, ileride sensör temizliğine ne kadar sık ihtiyaç duyacağınızı doğrudan etkiler.",
+  "Yeni bir kamera aldıysanız ya da ilk kez ikinci bir lens edindiyseniz, aşağıdaki adımlar hem lensi doğru takmanızı hem de sensörü korumanızı sağlar. Gezide, düğünde ya da sahilde değişim yapmanız gerektiğinde işinize yarayacak pratik önerileri de bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Değişimden önce neleri hazırlamalısınız?",
+   "p": [
+    "Lens değişimini hızlı yapmanın sırrı, gövdeyi açmadan önce her şeyi hazır etmektir. Yeni lensi çantadan çıkarın, ön kapağını takılı bırakın ve arka kapağını yarım tur gevşetin ki tek hareketle çıkabilsin. Böylece gövde açıkken çantanın içinde lens aramak zorunda kalmazsınız.",
+    "Değişimi mümkünse kapalı ya da rüzgârdan korunan bir yerde yapın. Dışarıdaysanız sırtınızı rüzgâra verin, bir araç içi ya da bina girişi gibi korunaklı bir noktayı tercih edin. Masa üzerinde çalışıyorsanız lensleri yuvarlanamayacak şekilde yatırın."
+   ],
+   "list": [
+    "Gövde kapağı veya takılacak lens el altında",
+    "Yeni lensin arka kapağı gevşetilmiş",
+    "Çıkarılacak lens için arka kapak hazır",
+    "Kamera askısı boynunuzda veya bileğinizde, düşme riskine karşı"
+   ]
+  },
+  {
+   "h": "Adım adım lens değiştirme",
+   "p": [
+    "Aşağıdaki adımlar Sony, Canon, Nikon, Fujifilm, Panasonic ve OM System gibi markaların aynasız gövdelerinde genel olarak aynıdır. Hizalama işaretinin rengi ve dönüş yönü markaya göre değişir; bu farkları bir sonraki bölümde açıkladık."
+   ],
+   "ol": [
+    "Kamerayı kapatın. Sony kılavuzları da lens takıp çıkarmadan önce kameranın kapatılmasını ister.",
+    "Kamerayı lens yuvası yere bakacak şekilde, bir elinizle gövdeden tutun. Böylece açılan yuvaya yukarıdan toz düşmez.",
+    "Diğer elinizle lensi zum veya odak halkasından değil, sabit gövdesinden kavrayın.",
+    "Gövdedeki lens bırakma düğmesine basılı tutun ve lensi durana kadar çevirin, ardından düz bir hareketle çekip çıkarın.",
+    "Çıkardığınız lensi bir kenara koymadan önce arka kapağını hemen takın.",
+    "Yeni lensin arka kapağını çıkarın. Lens üzerindeki hizalama işaretini gövdedeki işaretle aynı hizaya getirin.",
+    "Lensi düz tutarak yuvaya oturtun ve bırakma düğmesine basmadan, klik sesi gelip kilitlenene kadar çevirin. Sony, bu sırada lensin gövdeye hafifçe bastırılarak yavaşça çevrilmesini önerir.",
+    "Lensin kilitlendiğinden emin olmak için hafifçe ters yöne çevirmeyi deneyin; dönmüyorsa doğru takılmıştır. Kamerayı açıp ekranda lens bilgisinin veya diyafram değerinin göründüğünü kontrol edin."
+   ],
+   "note": "Gövde ne kadar kısa süre açık kalırsa o kadar iyidir. Pratik yaptığınızda tüm değişim birkaç saniye sürer."
+  },
+  {
+   "h": "Hizalama işaretleri ve dönüş yönü markaya göre farklıdır",
+   "p": [
+    "Her lens yuvasında gövde ve lens üzerinde eşleştirilmesi gereken bir işaret vardır. Sony E yuvasında bu işaret beyazdır. Canon RF lenslerde genellikle kırmızı bir nokta kullanılır. Diğer markalarda beyaz nokta, kabarık işaret ya da çizgi görebilirsiniz. Lensinizdeki işaret ile gövdedeki işaretin rengi ve şekli aynı olmalıdır.",
+    "Dönüş yönü de standart değildir. Sony kılavuzu, kamerayı kendinize doğru tutarken lensin saat yönünde çevrilerek takıldığını belirtir. Nikon Z yuvasında ise lensin ön tarafından bakıldığında saat yönünün tersine çevrilerek kilitlendiği belirtilir. Bu yüzden başka bir markadan geçtiyseniz alışkanlıkla zorlamayın; lens hafifçe dönmüyorsa yönü değiştirin."
+   ],
+   "table": {
+    "head": [
+     "Kontrol noktası",
+     "Doğru durum",
+     "Sorun olduğunu gösteren belirti"
+    ],
+    "rows": [
+     [
+      "Hizalama",
+      "Lens yuvaya hiç dirençsiz oturur",
+      "Lens yuvaya tam girmiyor veya eğik duruyor"
+     ],
+     [
+      "Dönüş",
+      "Hafif bir hareketle döner",
+      "Zorlamak gerekiyor"
+     ],
+     [
+      "Kilit",
+      "Belirgin bir klik sesi veya hissi",
+      "Lens ters yöne serbestçe dönüyor"
+     ],
+     [
+      "İletişim",
+      "Ekranda diyafram değeri ve lens bilgisi görünür",
+      "Ekranda lens takılı olmadığına dair bir uyarı çıkar veya diyafram değeri görünmez"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Dışarıda, tozlu ve nemli ortamda lens değişimi",
+   "p": [
+    "Sahil, şantiye, çöl gezisi ya da rüzgârlı bir tepe, lens değişimi için en riskli yerlerdir. Kum taneleri tozdan çok daha serttir ve sensörün önündeki koruyucu camı çizebilir. Böyle ortamlarda mümkünse çekime başlamadan önce gün boyu kullanacağınız lensi takın ve değişim yapmamaya çalışın.",
+    "Değişim yapmanız gerekiyorsa rüzgâra sırtınızı dönün, kamerayı göğsünüze yakın ve aşağı bakar şekilde tutun, gerekirse bir ceket veya çantanın içinde işlemi tamamlayın. Kışın soğuk dış ortamdan sıcak bir mekâna girdiğinizde lens ve gövdede yoğuşma oluşabilir; bu durumda değişimi hemen yapmak yerine ekipmanın ortam sıcaklığına alışmasını beklemek nemin içeri girmesini önler."
+   ]
+  },
+  {
+   "h": "Lens takılmıyor veya tanınmıyorsa ne yapmalı?",
+   "p": [
+    "Lensin takılmaması çoğu zaman basit bir hizalama sorunundan kaynaklanır. Aşağıdaki sırayla ilerleyin ve hiçbir adımda güç uygulamayın; Sony kılavuzu da lens takılırken zorlanmaması gerektiğini açıkça belirtir."
+   ],
+   "ol": [
+    "Lensi çıkarın, hizalama işaretlerinin aynı renk ve konumda olduğunu kontrol edip yeniden deneyin.",
+    "Takarken bırakma düğmesine basmadığınızdan emin olun.",
+    "Lensin bu gövdenin yuvasına uygun olup olmadığını kontrol edin. Aynı markanın eski DSLR lensleri farklı yuvaya sahiptir ve aynasız gövdeye ancak uyumlu bir adaptörle takılabilir.",
+    "Lens takılıyor ama kamera tanımıyorsa kamerayı kapatıp lensi çıkarın ve yeniden takın.",
+    "Lens ve gövdedeki elektrik kontaklarını kontrol edin. Görünür kir varsa kuru, tüy bırakmayan bir mikrofiber bezle nazikçe silin; kontakları sert cisimle kazımayın.",
+    "Kamera ve lens için güncel bir yazılım (firmware) sürümü olup olmadığını üreticinin destek sayfasından kontrol edin; özellikle yeni çıkan lensler güncelleme gerektirebilir.",
+    "Sorun başka bir lensle de devam ediyorsa veya kontaklar eğilmiş, kırılmış görünüyorsa kullanmayı bırakıp yetkili servise başvurun."
+   ]
+  },
+  {
+   "h": "Sık yapılan lens değiştirme hataları",
+   "p": [
+    "Lens değişimindeki hataların çoğu acele ve alışkanlıktan kaynaklanır. Aşağıdakilerden kaçınmak hem sensörü hem de lens yuvasını korur."
+   ],
+   "list": [
+    "Kamerayı yuva yukarı bakacak şekilde tutmak: düşen toz doğrudan sensöre gider.",
+    "Gövdeyi kapaksız bırakıp çantada lens aramak.",
+    "Lensi zum veya odak halkasından tutarak çevirmek: Sony bunun yapılmamasını önerir, halka mekanizması zorlanabilir.",
+    "Çıkarılan lensi arka kapağı takılmadan masaya veya çantaya koymak: arka cam çizilir ve kontaklar kirlenir.",
+    "Takarken bırakma düğmesine basılı tutmak: lens kilitlenmez ve düşebilir.",
+    "Kamera açıkken değişim yapmak.",
+    "Arka kapakları birbirine geçirilmeden çantada gezdirmek: kapakların içinde biriken toz bir sonraki takışta gövdeye taşınır."
+   ]
+  },
+  {
+   "h": "Lens değişimi sonrası kısa kontrol",
+   "p": [
+    "Değişimden sonra birkaç saniye ayırıp kısa bir kontrol yapmak, çekim sırasında sürprizlerle karşılaşmanızı önler. Kamerayı açtığınızda ekranda lensin odak uzaklığı veya diyafram değeri görünmeli, otomatik odak düzgün çalışmalıdır.",
+    "Sık lens değiştiriyorsanız ara sıra kapalı diyaframla beyaz bir yüzeyin fotoğrafını çekip toz kontrolü yapın. Toz görürseniz önce kameranın sensör temizleme modunu, ardından fırçasız el pompasını deneyin. Bu konuyu sensör temizliği rehberimizde ayrıntılı anlattık."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Lens değiştirirken kamerayı kapatmak şart mı?",
+   "a": "Sony gibi üreticiler kılavuzlarında lens takıp çıkarmadan önce kameranın kapatılmasını ister. Kapatmak, lens ile gövde arasındaki elektrik bağlantısı kesilirken sorun yaşanma ihtimalini azaltır ve yanlışlıkla deklanşöre basılmasını önler. Bunu her değişimde alışkanlık hâline getirmek en güvenli yoldur."
+  },
+  {
+   "q": "Lens takarken zorlanıyorsa ne yapmalıyım?",
+   "a": "Zorlamayın. Lensi çıkarıp hizalama işaretlerini yeniden eşleştirin ve bırakma düğmesine basmadan tekrar deneyin. Doğru hizalanmış bir lens dirençsiz oturur ve hafif bir hareketle döner; hâlâ takılmıyorsa lensin bu yuvaya uygun olup olmadığını kontrol edin."
+  },
+  {
+   "q": "Kameramı lenssiz saklayabilir miyim?",
+   "a": "Gövde kapağı takılıysa saklayabilirsiniz. Kapak, sensörü tozdan ve darbelerden korur. Lenssiz gövdeyi kapaksız bırakmak ise tozlanmaya en hızlı yoldan davetiye çıkarır."
+  },
+  {
+   "q": "Başka markanın lensini aynasız kameramda kullanabilir miyim?",
+   "a": "Bazı durumlarda uyumlu bir adaptörle mümkündür, ancak otomatik odak, görüntü sabitleme ve diyafram kontrolü her kombinasyonda tam çalışmayabilir. Adaptör kullanacaksanız hangi işlevlerin desteklendiğini adaptör üreticisinin uyumluluk listesinden kontrol edin."
+  },
+  {
+   "q": "Arka lens kapağı kaybolursa ne olur?",
+   "a": "Lensin arka camı ve elektrik kontakları korumasız kalır, bu da çizilme ve kirlenme riskini artırır. Arka kapaklar lens yuvası tipine göre ayrı satılır; kendi lens yuvanıza uygun olanı edinin."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Sony Yardım Kılavuzu: Lens takma ve çıkarma",
+   "u": "https://helpguide.sony.net/ilc/2620/v1/en/contents/0003D_attatch_lens.html"
+  },
+  {
+   "t": "Wikipedia: Nikon Z-mount",
+   "u": "https://en.wikipedia.org/wiki/Nikon_Z-mount"
+  }
+ ]
+}

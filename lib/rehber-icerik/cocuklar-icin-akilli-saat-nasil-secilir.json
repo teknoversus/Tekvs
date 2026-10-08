@@ -1,0 +1,137 @@
+{
+ "slug": "cocuklar-icin-akilli-saat-nasil-secilir",
+ "title": "Çocuklar İçin Akıllı Saat Nasıl Seçilir? Güvenlik ve Gizlilik Rehberi",
+ "description": "Çocuk akıllı saati alırken SIM ve operatör uyumu, konum doğruluğu, ebeveyn uygulaması, veri gizliliği ve dayanıklılıkta nelere bakmalısınız?",
+ "tldr": "Çocuk saatinde belirleyici olan; SIM veya eSIM ile telefondan bağımsız arama yapabilmesi, GPS destekli konum takibi ve yalnızca izin verilen kişilerle iletişime izin veren bir ebeveyn uygulamasıdır. Bunlar kadar önemli bir konu da gizliliktir: uzaktan dinleme özelliği olan, verinin nerede saklandığını açıklamayan veya güncelleme almayan modellerden uzak durun.",
+ "intro": [
+  "Çocuğunuz okula tek başına yürümeye başladığında ya da parkta gözünüzün önünden uzaklaştığında aklınıza gelen ilk soru genellikle şudur: Ona telefon mu almalı, yoksa daha sınırlı bir cihaz mı? Çocuk akıllı saatleri tam bu ara noktayı hedefler. Sosyal medya ve internet tarayıcısı yoktur, ama sizi arayabilir, konumunu paylaşabilir ve acil durumda tek tuşla yardım isteyebilir.",
+  "Ne var ki bu saatler, çocuğunuzun konumunu ve sesini sürekli olarak bir sunucuya taşıyan cihazlardır. Bu yüzden seçim yaparken yalnızca ekran boyutuna veya renge değil, operatör uyumuna, konum doğruluğuna ve verinin kimin elinde olduğuna da bakmanız gerekir. Aşağıda bu kararları sırayla ele alıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Çocuk saatini yetişkin akıllı saatinden ayıran ne?",
+   "p": [
+    "Yetişkinler için tasarlanan akıllı saatlerin çoğu, telefonun bir uzantısı gibi çalışır: Bildirimleri gösterir, sağlık verisi toplar, ama telefon yanınızda değilse yapabildikleri azalır. Çocuk saatlerinde ise mantık terstir. Çocuğun telefonu yoktur; saat kendi SIM kartı ya da eSIM profiliyle şebekeye bağlanır ve tek başına arama yapar.",
+    "Yönetim de çocuğun elinde değil, sizin telefonunuzdaki ebeveyn uygulamasındadır. Rehbere kimin ekleneceğine, saatin ne zaman sessize alınacağına ve konum bilgisinin ne sıklıkla gönderileceğine siz karar verirsiniz. Bazı büyük markalar da yetişkin saatlerini ebeveyn telefonu üzerinden çocuk için kurma imkânı sunar; Apple'ın Aile Kurulumu bunun bir örneğidir, ancak hücresel model gerektirir ve her ülkede ya da her operatörde desteklenmez."
+   ]
+  },
+  {
+   "h": "SIM, eSIM ve operatör uyumluluğu nasıl kontrol edilir?",
+   "p": [
+    "Saatin hangi hat türüyle çalıştığını satın almadan önce öğrenin. Bazı modeller standart nano SIM kabul eder, bazıları yalnızca eSIM ile çalışır, bazıları ise belirli bir operatörün sunduğu özel saat hattına bağlıdır. eSIM'li bir modelde operatörünüzün o cihaz için eSIM profili verip vermediğini sormanız gerekir.",
+    "Şebeke desteği de önemlidir. 4G'yi destekleyen bir saatte sesli aramanın 4G üzerinden yapılabilmesi için VoLTE desteği gerekir; ürün sayfasında yalnızca 4G yazması bunu garanti etmez. Yurt dışından getirilen ya da resmi distribütör dışından alınan SIM'li cihazlar Türkiye'de IMEI kaydı gerektirebilir; kayıt yapılmazsa cihaz bir süre sonra şebekeye kapatılabilir."
+   ],
+   "note": "Kampanyalı bir operatör paketiyle gelen saatlerde taahhüt süresini ve hattın başka saatte kullanılıp kullanılamayacağını sözleşmeden kontrol edin."
+  },
+  {
+   "h": "Konum takibi ne kadar doğru olur?",
+   "p": [
+    "Saatler konumu üç farklı yolla belirleyebilir ve çoğu bunları birlikte kullanır. Açık havada en isabetli sonucu uydu konumu (GPS ve benzeri sistemler) verir. Kapalı alanlarda saat çevredeki Wi-Fi ağlarından ya da baz istasyonlarından tahmin yürütür; bu tahmin bir okul binası ile yan sokak arasındaki farkı her zaman ayırt edemeyebilir.",
+    "Konum güncelleme sıklığı da pille doğrudan bağlantılıdır. Konumu birkaç dakikada bir göndermek pili hızla tüketir; daha seyrek ayar ise pili korur ama haritada gördüğünüz nokta güncel olmayabilir. İyi bir ebeveyn uygulaması, son konumun ne zaman alındığını ve tahmini sapma payını ekranda gösterir."
+   ],
+   "table": {
+    "head": [
+     "Konum yöntemi",
+     "Nerede iyi çalışır?",
+     "Zayıf yanı"
+    ],
+    "rows": [
+     [
+      "Uydu (GPS vb.)",
+      "Açık alan, sokak, park",
+      "Bina içinde sinyal zayıflar, pil tüketimi yüksektir"
+     ],
+     [
+      "Wi-Fi tabanlı",
+      "Şehir içi, kapalı alan",
+      "Çevrede bilinen ağ yoksa sonuç vermez"
+     ],
+     [
+      "Baz istasyonu",
+      "Her yerde kaba tahmin",
+      "Sapma yüzlerce metreyi bulabilir"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Ebeveyn uygulamasında hangi özellikler gerçekten işe yarar?",
+   "p": [
+    "Uygulamayı, saat kadar dikkatli inceleyin; çünkü günlük olarak kullanacağınız şey odur. Mümkünse satın almadan önce uygulama mağazasındaki son güncelleme tarihine ve uygulamanın Türkçe desteğine bakın.",
+    "Aşağıdaki özellikler çocuk saatinden beklenen temel güvenlik işlevlerini karşılar:"
+   ],
+   "list": [
+    "İzinli kişi listesi: Saat yalnızca sizin eklediğiniz numaraları arayabilmeli ve yalnızca onlardan arama kabul etmeli.",
+    "Güvenli bölge bildirimi: Çocuk belirlediğiniz bir alanın (okul, ev) dışına çıktığında haber verir.",
+    "Okul modu veya sessiz saatler: Ders saatlerinde ekranı ve oyunları kısıtlar.",
+    "SOS tuşu: Basılı tutulduğunda önceden belirlenen kişileri sırayla arar ve konum gönderir.",
+    "Saatin çıkarıldığını veya pilinin azaldığını bildiren uyarılar."
+   ]
+  },
+  {
+   "h": "Gizlilik ve veri güvenliği: En çok göz ardı edilen konu",
+   "p": [
+    "Çocuk saatleri geçmişte ciddi güvenlik açıklarıyla gündeme geldi. Norveç Tüketici Konseyi 2017'de yayımladığı incelemede, test edilen bazı modellerin araya girme saldırılarına açık olduğunu ve konum verisini şifrelemeden gönderdiğini raporladı. Aynı yıl Almanya'da Federal Şebeke Ajansı (Bundesnetzagentur), çocuğun çevresini fark ettirmeden dinlemeye imkân veren saatleri izinsiz verici cihaz sayarak satışını yasakladı ve bu saatleri alan ailelerden cihazları imha etmelerini istedi.",
+    "Bu örnekler, seçim yaparken sorulması gereken soruları netleştiriyor. Saatin uzaktan dinleme veya habersiz arama başlatma özelliği varsa bu bir artı değil, risktir. Üreticinin gizlilik politikasında verilerin hangi ülkede saklandığı, ne kadar süre tutulduğu ve hesabın silinmesiyle birlikte silinip silinmediği açıkça yazmalıdır. Türkiye'de kişisel verilerin işlenmesi 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındadır; Türkiye'de satış yapan resmi distribütörlerin aydınlatma metni sunması beklenir."
+   ],
+   "list": [
+    "Ebeveyn uygulamasına güçlü ve başka yerde kullanmadığınız bir şifre verin.",
+    "Saatin ve uygulamanın güncelleme alıp almadığını kontrol edin; yıllardır güncellenmeyen uygulamalar açıkları kapatmaz.",
+    "Kullanmadığınız özellikleri (fotoğraf paylaşımı, yabancılarla arkadaşlık ekleme gibi) kapatın.",
+    "Saati ikinci el satarken veya başkasına verirken uygulamadan cihaz bağlantısını kaldırın ve fabrika ayarlarına döndürün."
+   ]
+  },
+  {
+   "h": "Dayanıklılık, su direnci ve pil ömrü",
+   "p": [
+    "Çocuk saatleri düşer, çarpar ve sık sık suyla temas eder. Ürün sayfasında IP67 ya da IP68 gibi bir koruma kodu görmek el yıkama ve yağmur için güven verir; ancak havuzda yüzme için üreticinin bunu açıkça desteklediğini belirtmesi gerekir. Kordonun kolay değişebilir olması da işe yarar, çünkü çocuk kordonları erişkinlerinkinden daha hızlı yıpranır.",
+    "Pil konusunda gerçekçi olun. Sürekli 4G bağlantısı ve sık konum gönderimi pili gün içinde bitirebilir. Saat okul dönüşünde boşalıyorsa en kritik anda konum alamazsınız. Her akşam aynı yerde şarja takma alışkanlığı kazandırmak ve uygulamadaki düşük pil uyarısını açık tutmak bu riski azaltır."
+   ]
+  },
+  {
+   "h": "Satın alırken sık yapılan hatalar",
+   "p": [
+    "Ailelerin en sık yaşadığı sorunlar, saatin kendisinden çok kurulum ve beklentiyle ilgilidir. Aşağıdaki hatalardan kaçınmak, saatin kutudan çıktıktan sonra çekmecede unutulmasını önler."
+   ],
+   "list": [
+    "Operatör ve hat türünü kontrol etmeden almak, sonra hattın çalışmadığını fark etmek.",
+    "Okulun saat kuralını sormamak; bazı okullar ders sırasında arama özelliği olan cihazlara izin vermez.",
+    "Saatin kamerasını, sesli mesajlaşmasını ve oyunlarını açık bırakıp ders saatlerini kısıtlamamak.",
+    "Konum takibini tek güvenlik önlemi saymak; çocukla güvenli bölge, yabancılarla konuşma ve SOS tuşunun ne zaman kullanılacağı konuşulmalı.",
+    "Ucuz ama markası belirsiz modellerde uygulamanın kim tarafından yönetildiğini sorgulamamak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Çocuk akıllı saatinde SIM kart zorunlu mu?",
+   "a": "Telefondan bağımsız arama ve her yerde konum takibi istiyorsanız evet, SIM ya da eSIM gerekir. Yalnızca Bluetooth ile çalışan modeller, çocuğun yanında eşleştirilmiş bir telefon olmadığında arama yapamaz ve konum bildiremez."
+  },
+  {
+   "q": "Kaç yaşındaki bir çocuk için saat uygundur?",
+   "a": "Kesin bir yaş sınırı yoktur; belirleyici olan çocuğun ne kadar süre gözetiminiz dışında kaldığıdır. Okula yalnız gidip gelmeye başlayan ilkokul çağı en yaygın kullanım dönemidir. Saati vermeden önce SOS tuşunu ve aramayı birlikte denemeniz faydalı olur."
+  },
+  {
+   "q": "Haritada görünen konum neden bazen yanlış çıkıyor?",
+   "a": "Çocuk kapalı bir alandaysa saat uydu sinyali alamaz ve konumu Wi-Fi ya da baz istasyonundan tahmin eder. Bu tahmin yüzlerce metre sapabilir. Uygulamada konumu anlık yenileme seçeneği varsa onu kullanın ve son güncelleme saatine bakın."
+  },
+  {
+   "q": "Uzaktan dinleme özelliği olan saat almak doğru mu?",
+   "a": "Önerilmez. Bu özellik çocuğun ve çevresindekilerin haberi olmadan ses kaydına imkân verir; Almanya bu nedenle bu tür saatlerin satışını yasaklamıştır. Hesabınız ele geçirilirse aynı imkân başkasının eline de geçebilir."
+  },
+  {
+   "q": "Saatin topladığı veriler nerede saklanıyor?",
+   "a": "Bu üreticiye göre değişir ve gizlilik politikasında yazmalıdır. Verilerin hangi ülkede tutulduğunu, ne kadar saklandığını ve hesabı sildiğinizde ne olduğunu açıkça belirtmeyen ürünlerden kaçının."
+  }
+ ],
+ "sources": [
+  {
+   "t": "WeLiveSecurity: Almanya'da dinleme özellikli çocuk saatleri yasağı",
+   "u": "https://www.welivesecurity.com/deutsch/2017/11/29/kinder-smartwatches-mit-abhoerfunktion-in-deutschland-verboten/"
+  },
+  {
+   "t": "Apple Destek: Aile üyesi için Apple Watch kurulumu",
+   "u": "https://support.apple.com/en-la/109036"
+  }
+ ]
+}

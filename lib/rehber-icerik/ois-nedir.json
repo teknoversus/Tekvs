@@ -1,0 +1,123 @@
+{
+ "slug": "ois-nedir",
+ "title": "OIS Nedir? Optik Görüntü Sabitleme Nasıl Çalışır, Ne İşe Yarar?",
+ "description": "OIS (optik görüntü sabitleme) telefonda nasıl çalışır, gece fotoğrafında ve videoda ne fark yaratır? Alırken nelere bakılmalı, yanlış bilinenler neler?",
+ "tldr": "OIS, el titremesini algılayıp lensi ya da sensörü ters yönde fiziksel olarak hareket ettiren donanımsal bir sabitleme sistemidir. En büyük faydası düşük ışıkta daha uzun pozlamaya izin vermesi ve yakınlaştırılmış çekimlerde bulanıklığı azaltmasıdır. Hareket eden özneyi dondurmaz ve yürürken çekilen videoyu tek başına pürüzsüz yapmaz.",
+ "intro": [
+  "Akşam yemeğinde loş bir restoranda çektiğiniz fotoğrafta yüzler hafif bulanık mı çıkıyor? Telefonu ne kadar sabit tuttuğunuzu düşünseniz de nabzınız, nefesiniz ve deklanşöre dokunuşunuz kamerayı milimetrenin altında da olsa oynatır. Işık azaldıkça kamera daha uzun süre ışık toplamak zorunda kalır ve bu küçük titremeler fotoğrafa iz bırakır.",
+  "OIS (Optical Image Stabilization, optik görüntü sabitleme) bu sorunu donanımla çözmeye çalışır. Telefon teknik özelliklerinde sık geçen bu kısaltmanın tam olarak ne yaptığını, ne yapamadığını ve satın alırken nasıl değerlendirmeniz gerektiğini aşağıda bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "OIS nasıl çalışır?",
+   "p": [
+    "Sistemin üç parçası vardır: hareketi ölçen bir sensör, kararı veren bir denetleyici ve lensi ya da sensörü kaydıran küçük motorlar. Telefonun içindeki jiroskop, cihazın yukarı-aşağı ve sağa-sola eğilmesini çok kısa aralıklarla ölçer. Denetleyici bu hareketin görüntüyü ne kadar kaydıracağını hesaplar ve mıknatıs ile bobinden oluşan küçük aktüatörlere komut verir. Lens grubu ya da sensör, titremenin tersi yönünde hareket ederek görüntünün sensör üzerinde aynı yerde kalmasını sağlar.",
+    "Bu düzeltme deklanşöre bastığınız an değil, kamera açık olduğu sürece sürekli yapılır. Bu yüzden OIS'in etkisini vizörde de görebilirsiniz: yakınlaştırılmış bir sahnede OIS'li kamerada görüntü daha az zıplar."
+   ]
+  },
+  {
+   "h": "Lens kaydırma ve sensör kaydırma arasındaki fark",
+   "p": [
+    "Telefonlarda iki temel yaklaşım kullanılır. Lens kaydırmalı OIS'te sensör yerinde durur, lens grubunun bir kısmı hareket eder. Bu, en yaygın ve en eski çözümdür. Sensör kaydırmalı sistemde ise lens sabittir, sensörün kendisi hareket eder. Sensör kaydırmanın avantajı, görüntüyü kendi ekseni etrafında döndüren hareketleri (roll) de düzeltebilmesidir; klasik lens kaydırmalı sistemler genellikle yalnızca eğilme ve sapma hareketlerini telafi eder.",
+    "Bazı üreticiler lens ve sensörü bir arada hareket ettiren, gimbal benzeri modüller de kullanmıştır. Pazarlama adları farklı olsa da hepsi aynı ilkeye dayanır: titremeyi fiziksel olarak karşılamak. Teknik özellik sayfasında yalnızca OIS yazıyorsa hangi yöntemin kullanıldığını çoğu zaman bilemezsiniz; bu, pratikte en önemli ayrıntı da değildir."
+   ],
+   "table": {
+    "head": [
+     "Yöntem",
+     "Ne hareket eder?",
+     "Güçlü yanı",
+     "Sınırı"
+    ],
+    "rows": [
+     [
+      "Lens kaydırmalı OIS",
+      "Lens grubu",
+      "Yaygın, olgun teknoloji",
+      "Dönme hareketini sınırlı düzeltir"
+     ],
+     [
+      "Sensör kaydırmalı OIS",
+      "Görüntü sensörü",
+      "Dönme hareketini de düzeltebilir",
+      "Büyük sensörlerde hareket alanı kısıtlı"
+     ],
+     [
+      "EIS (yazılımsal)",
+      "Hiçbir parça; görüntü kırpılıp hizalanır",
+      "Ek donanım gerektirmez, büyük salınımları da yumuşatır",
+      "Görüş açısını daraltır, kare içi bulanıklığı gideremez"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Pratikte ne fark eder?",
+   "p": [
+    "OIS'in en belirgin katkısı düşük ışıktadır. Kamera bir kareyi daha uzun pozlama süresiyle çekebildiğinde daha fazla ışık toplar, ISO'yu daha az yükseltmek zorunda kalır ve görüntüde daha az gren olur. Gece modundaki çok kareli çekimlerde de her bir karenin daha net olması, birleştirilmiş sonucun detayını artırır.",
+    "İkinci büyük fark telefoto kamerada ortaya çıkar. Yakınlaştırma, el titremesini de büyütür; 3x ya da 5x bir kamerada küçük bir sarsıntı bile kadrajı belirgin biçimde kaydırır. Bu yüzden telefoto kameralarda OIS, ana kameradaki kadar, hatta daha fazla önem taşır.",
+    "Videoda OIS, elde tutarken oluşan küçük ve hızlı titremeleri yok eder. Yürürken oluşan büyük ve yavaş salınımlar ise çoğunlukla OIS'in hareket alanını aşar; bunları yazılımsal sabitleme (EIS) toplar. Bu nedenle iyi sabitlenmiş telefon videolarının çoğu iki sistemin birlikte çalışmasıyla elde edilir."
+   ]
+  },
+  {
+   "h": "OIS'in yapamadıkları ve yaygın yanlış bilinenler",
+   "p": [
+    "OIS yalnızca kameranın hareketini telafi eder. Önünüzde koşan çocuk, sallanan yaprak ya da dans eden biri pozlama süresince hareket ediyorsa bulanık çıkar. Bunu önlemenin tek yolu daha kısa pozlama, yani daha fazla ışık ya da daha yüksek ISO'dur."
+   ],
+   "list": [
+    "OIS varsa tripoda gerek yoktur: Yanlış. Birkaç saniyelik gece ya da gökyüzü çekimlerinde OIS'in düzeltebileceği sınır aşılır; sabit bir yüzey ya da tripod yine fark yaratır.",
+    "OIS her kamerada vardır: Yanlış. Aynı telefonda ana kamerada OIS bulunup ultra geniş açı kamerada bulunmaması çok yaygındır.",
+    "OIS görüntü kalitesini artırır: Dolaylı olarak doğru. OIS çözünürlüğü veya sensörü değiştirmez; sadece bulanıklık riskini azaltarak kameranın daha düşük ISO ve daha uzun pozlama kullanmasına imkan tanır.",
+    "OIS ile EIS aynı şeydir: Yanlış. Biri donanımsal, diğeri yazılımsaldır ve birbirini tamamlar."
+   ]
+  },
+  {
+   "h": "Telefon alırken OIS için nelere bakmalı?",
+   "p": [
+    "Teknik özellik sayfasında OIS ifadesinin hangi kameranın yanında yazdığını okuyun. Yalnızca OIS yazması, bunun bütün kameralarda olduğu anlamına gelmez. Gece fotoğrafı ve video çekimi sizin için önemliyse en az ana kamerada OIS bulunmalıdır."
+   ],
+   "list": [
+    "Ana kamera: Gece ve iç mekan fotoğrafları için OIS'in en çok işe yaradığı yer.",
+    "Telefoto kamera: Yakınlaştırma sık kullanıyorsanız burada OIS olması titremeyi belirgin azaltır.",
+    "Ultra geniş açı: Geniş açı titremeyi doğal olarak daha az gösterir; burada OIS bulunmaması daha az sorun yaratır.",
+    "Video sabitleme modları: OIS'e ek olarak hangi çözünürlük ve kare hızında elektronik sabitlemenin çalıştığına bakın; bazı telefonlarda en yüksek çözünürlükte sabitleme kapalıdır.",
+    "Mağazada deneme: Kamerayı en yüksek yakınlaştırmaya getirip vizörün ne kadar zıpladığını izleyin; kısa bir yürüyüş videosu çekip karşılaştırın."
+   ]
+  },
+  {
+   "h": "OIS'li kamerada dikkat edilmesi gereken kullanım riskleri",
+   "p": [
+    "OIS hareketli parçalar içerdiği için sürekli ve şiddetli titreşimden etkilenebilir. Apple, destek belgelerinde yüksek güçlü motosiklet motorlarının ürettiği yoğun titreşimlere uzun süre doğrudan maruz kalmanın iPhone kameralarındaki OIS ve kapalı döngü otomatik odak sistemlerinin performansını düşürebileceğini belirtiyor. Bu ilke diğer markaların OIS'li kameraları için de mantıklı bir önlemdir: telefonu motosiklette gidona sert bir tutucuyla sabitlemek yerine titreşim sönümleyici bir tutucu kullanmak daha güvenlidir.",
+    "Kamera açıldığında hafif bir tıkırtı duymak ya da telefonu sallayınca kamera modülünden ses gelmesi, bazı OIS modüllerinde normal olabilir; lens kapalıyken serbest kalan parçalar hareket eder. Ancak fotoğraflar sürekli titrek çıkıyorsa, vizör kendiliğinden titriyorsa veya odak bir türlü oturmuyorsa modülde arıza olabilir."
+   ],
+   "note": "Kamera modülü arızalarında telefonu kendiniz açmayın. İç parçalara müdahale garantiyi geçersiz kılabilir ve su geçirmezlik contalarını bozabilir. Garanti belgesiyle yetkili servise başvurun."
+  }
+ ],
+ "faq": [
+  {
+   "q": "OIS bütçe telefonlarda da bulunur mu?",
+   "a": "Uzun süre yalnızca üst segmentte bulunan OIS, zamanla orta segment ana kameralara da yayıldı. Giriş segmentinde ise hâlâ sık rastlanmaz ve sabitleme çoğunlukla yazılımsal yapılır. Bu yüzden her modelin teknik özelliklerine ayrı ayrı bakmak gerekir."
+  },
+  {
+   "q": "OIS mi daha önemli, büyük sensör mü?",
+   "a": "İkisi farklı sorunları çözer. Büyük sensör aynı sürede daha fazla ışık toplar; OIS ise daha uzun pozlamanın bulanık çıkmasını engeller. Gece çekimlerinde en iyi sonuçlar genellikle ikisinin birlikte bulunduğu kameralardan gelir."
+  },
+  {
+   "q": "OIS'li telefonla çekilen video neden yine de sallanıyor?",
+   "a": "OIS küçük ve hızlı titremeleri düzeltmek için tasarlanmıştır. Yürürken oluşan büyük salınımlar onun hareket alanını aşar. Kamera ayarlarında video sabitlemenin açık olduğundan emin olun ve gerekiyorsa telefonun aksiyon veya süper sabit modunu deneyin."
+  },
+  {
+   "q": "Kamera uygulamasında OIS'i kapatabilir miyim?",
+   "a": "Çoğu telefonda OIS kullanıcıya açık bir ayar olarak sunulmaz ve sürekli çalışır. Kapatılabilen genellikle video için elektronik sabitlemedir. Tripodla uzun pozlama yapılan modlarda bazı telefonlar sabitlemeyi kendiliğinden ayarlar."
+  },
+  {
+   "q": "Manyetik telefon tutucular OIS'e zarar verir mi?",
+   "a": "Üreticilerin genel uyarıları daha çok şiddetli ve sürekli titreşim üzerinedir. Araç içinde kullanılan standart manyetik tutucularla ilgili, ilgili markanın kendi kullanım kılavuzundaki uyarıları kontrol etmek en doğru yoldur. Motosiklet gibi yoğun titreşimli ortamlarda titreşim sönümleyici tutucu tercih edin."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: Image stabilization",
+   "u": "https://en.wikipedia.org/wiki/Image_stabilization"
+  }
+ ]
+}

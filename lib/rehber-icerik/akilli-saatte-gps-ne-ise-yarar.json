@@ -1,0 +1,140 @@
+{
+ "slug": "akilli-saatte-gps-ne-ise-yarar",
+ "title": "Akıllı Saatte GPS Ne İşe Yarar? Dahili, Bağlı ve Çift Bant GPS",
+ "description": "Akıllı saatte dahili GPS ile telefona bağlı GPS arasındaki fark, çift bant GNSS'in ne kazandırdığı, pil etkisi ve doğru kayıt için pratik ipuçları.",
+ "tldr": "Dahili GPS'li bir akıllı saat, telefonu yanınıza almadan koşu, yürüyüş ve bisiklet rotanızı, mesafenizi ve hızınızı kaydeder. GPS'siz ya da yalnızca telefona bağlı GPS sunan saatler bu veriyi telefondan alır; telefon yoksa mesafe adım sayısından tahmin edilir. Çift bant GNSS, binalar ve ağaçlar arasında daha düzgün bir rota çizer ama pili daha hızlı tüketir.",
+ "intro": [
+  "Sabah koşusuna telefonu cebinizde zıplatmadan çıkmak istiyorsanız saatin GPS özelliği sizin için asıl satın alma kriteridir. Teknik özellik tablolarında “GPS”, “bağlı GPS”, “GNSS” ya da “çift frekans” gibi ifadeler yan yana görünür ve aralarındaki fark ilk bakışta anlaşılmaz.",
+  "Aşağıda saatin konumu nasıl bulduğunu, bu farklı ifadelerin pratikte ne anlama geldiğini ve kendi kullanımınız için hangisinin yeterli olduğunu sade bir dille bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Saat konumunu nasıl buluyor?",
+   "p": [
+    "GPS, ABD'nin işlettiği uydu tabanlı konumlama sistemidir. Uydular sürekli olarak kendi konumlarını ve saat bilgisini yayınlar; saatin içindeki alıcı, en az dört uydudan gelen sinyallerin ulaşma süresini karşılaştırarak bulunduğu noktayı hesaplar. Saat uyduya bir şey göndermez, yalnızca dinler. Bu yüzden GPS kullanmak için internet ya da mobil hat gerekmez.",
+    "GPS tek sistem değildir. Rusya'nın GLONASS'ı, Avrupa Birliği'nin Galileo'su ve Çin'in BeiDou'su da küresel sistemlerdir; Japonya'nın QZSS'i ise bölgesel çalışır. Bunların hepsine birden GNSS (küresel uydu navigasyon sistemi) denir. Bir saat birden fazla sistemi dinleyebiliyorsa görebildiği uydu sayısı artar, bu da özellikle dar sokaklarda konumun daha kararlı olmasını sağlar."
+   ]
+  },
+  {
+   "h": "Dahili GPS, bağlı GPS ve GPS'siz saat arasındaki fark",
+   "p": [
+    "Ürün sayfalarında en çok karıştırılan nokta, saatin konumu kendisi mi bulduğu yoksa telefondan mı aldığıdır. Bağlı GPS (connected GPS) özelliği olan saat, egzersiz sırasında telefonun konum verisini Bluetooth üzerinden kullanır. Telefon cebinizdeyse rota yine kaydedilir; telefonu evde bırakırsanız kaydedilmez.",
+    "GPS'siz saatlerde mesafe, adım sayısı ve adım uzunluğu tahminiyle hesaplanır. Düz ve tempolu bir yürüyüşte bu tahmin kabul edilebilir olabilir; ama interval antrenmanında, yokuşta ya da tempo değiştikçe sapma büyür. Rota haritası da oluşmaz."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "Dahili GPS",
+     "Bağlı GPS",
+     "GPS yok"
+    ],
+    "rows": [
+     [
+      "Telefonsuz rota kaydı",
+      "Var",
+      "Yok",
+      "Yok"
+     ],
+     [
+      "Mesafe ve hız kaynağı",
+      "Uydu konumu",
+      "Telefonun uydu konumu",
+      "Adım sayısı tahmini"
+     ],
+     [
+      "Saatin pil tüketimi",
+      "En yüksek",
+      "Daha düşük, yük telefona geçer",
+      "En düşük"
+     ],
+     [
+      "Kime uygun",
+      "Telefonsuz koşan, yürüyüşe çıkan",
+      "Zaten telefonla çıkan",
+      "Günlük adım ve bildirim takibi isteyen"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Pratikte GPS size ne kazandırır?",
+   "p": [
+    "En belirgin fark özgürlüktür. Dahili GPS'li bir saatle sahil yolunda 10 kilometre koşup döndüğünüzde rotayı, kilometre başına temponuzu ve yükseklik değişimini telefonla eşitlediğinizde haritada görürsünüz. Bisiklette anlık hız, yürüyüşte geri dönüş yönü, yüzme destekli saatlerde açık suda kulaç mesafesi gibi veriler de bu konuma dayanır.",
+    "Bazı saatler, kaydedilen rotayı geri takip etme veya önceden yüklenen bir parkuru izleme gibi navigasyon özellikleri sunar. Bu özellikler doğrudan dahili GPS'e bağlıdır. GPS'in bir diğer faydası da güvenliktir: bazı modellerde düşme algılama veya acil durum özelliği, hücresel bağlantı varsa konum bilgisini paylaşabilir. Bu özelliklerin varlığı model ve bölgeye göre değişir, satın almadan önce kontrol edin."
+   ]
+  },
+  {
+   "h": "Çift bant (çok frekanslı) GNSS ne fark ettirir?",
+   "p": [
+    "Klasik alıcılar uydulardan tek bir frekansta sinyal alır. Yüksek binalar, köprüler ve sık ağaçlar sinyali keser ya da yüzeylerden yansıtarak alıcıya gecikmeyle ulaştırır. Bu yansıma etkisine çok yollu yayılım (multipath) denir ve şehir merkezinde rotanızın binaların içinden geçiyormuş gibi zikzak çizmesinin başlıca nedenidir.",
+    "Çift bant veya çok frekanslı alıcılar aynı uydudan iki farklı frekansta sinyal alır. ABD'nin resmi GPS bilgi sitesi, iki frekans kullanmanın atmosferin neden olduğu sinyal bozulmalarını düzelterek doğruluğu artırdığını belirtir. Saat üreticileri de bu modun ormanlık alanlarda ve yüksek yapıların yanında hataları daha iyi filtrelediğini söyler. Bedeli pil ömrüdür: aynı saatte çift bant mod, tek frekanslı moda göre belirgin şekilde daha fazla enerji harcar. Bazı saatler ortama göre bu modu otomatik açıp kapatır."
+   ],
+   "note": "ABD'nin resmi GPS bilgi kaynağına göre GPS'li akıllı telefonlar açık gökyüzünde tipik olarak yaklaşık 4,9 metre yarıçap içinde doğrudur; binalar, köprüler ve ağaçların yanında doğruluk düşer. Saatlerde de durum benzerdir."
+  },
+  {
+   "h": "Satın alırken neye bakmalı?",
+   "p": [
+    "İhtiyacınızı kullanım alışkanlığınız belirler. Haftada birkaç kez telefonla yürüyüşe çıkıyorsanız bağlı GPS yeterli olabilir. Telefonsuz koşuyor, dağ yürüyüşü yapıyor ya da bisikletle uzun tur atıyorsanız dahili GPS şarttır."
+   ],
+   "list": [
+    "Teknik özelliklerde “dahili GPS” veya “built-in GPS” ifadesini arayın; yalnızca “bağlı GPS” yazıyorsa saat telefona muhtaçtır.",
+    "Desteklenen sistemlere bakın: GPS'in yanında Galileo, GLONASS veya BeiDou desteği şehirde kararlılığa katkı sağlar.",
+    "Uzun etkinlik yapıyorsanız üreticinin GPS açıkken verdiği pil süresine bakın. Bu süre, akıllı saat modundaki gün sayısından çok farklıdır.",
+    "Şehir içinde yüksek binalar arasında ya da ormanlık patikada koşuyorsanız çift bant desteği fark yaratır.",
+    "Rota yükleme, geri takip veya harita gibi navigasyon özellikleri istiyorsanız bunların modelde gerçekten bulunduğunu kontrol edin."
+   ]
+  },
+  {
+   "h": "Daha doğru kayıt için pratik ipuçları",
+   "p": [
+    "GPS'li saatlerde yaşanan sorunların çoğu donanımdan değil, kaydı başlatma alışkanlığından kaynaklanır. Birkaç basit adım, rotanın başında görülen sapmaları ve eksik mesafeyi büyük ölçüde azaltır."
+   ],
+   "ol": [
+    "Egzersizden önce saati telefonla eşitleyin. Pek çok saat bu sırada uyduların konum tahmin verilerini indirir ve ilk konum bulma süresi kısalır.",
+    "Egzersiz uygulamasını açın ve saat konum bulduğunu bildirene kadar açık gökyüzü altında bekleyin, sonra başlatın.",
+    "İlk konumu ağaç altında veya bina girişinde değil, açık bir alanda aldırın.",
+    "Saati bileğin üst tarafında ve kol yenine gömülmeyecek şekilde takın.",
+    "Rota sürekli kopuyorsa saatin yazılımını güncelleyin ve uydu sistemi ayarını (ör. yalnızca GPS yerine tüm sistemler) değiştirmeyi deneyin."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "“GPS internet harcar” düşüncesi yanlıştır; uydu sinyali almak veri kullanmaz. Harita karolarını indirmek veya rotayı buluta yüklemek ise veri harcar. Benzer şekilde “GPS'li saat her yerde çalışır” da doğru değildir: kapalı spor salonunda, tünelde ve metroda uydu sinyali alınamaz. Koşu bandında saatler mesafeyi bilekteki hareket algılayıcılarından tahmin eder.",
+    "Son olarak, GPS açık kalsa bile saat sürekli konumunuzu birilerine göndermez. Konum, siz egzersiz başlattığınızda kaydedilir ve eşitleme sırasında hesabınıza aktarılır. Paylaşım ayarlarını uygulamanın gizlilik bölümünden kontrol edebilirsiniz."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "GPS'li saat telefon olmadan çalışır mı?",
+   "a": "Evet. Dahili GPS'li saat, telefon yanınızda olmadan rota, mesafe ve hız kaydeder. Kayıt, daha sonra telefonla eşitlediğinizde uygulamaya aktarılır."
+  },
+  {
+   "q": "GPS açıkken saatin pili ne kadar dayanır?",
+   "a": "Modelden modele çok değişir. Üreticiler genellikle “GPS modunda” ayrı bir pil süresi verir ve bu süre günlük kullanım süresinden çok daha kısadır. Çift bant mod açıkken süre daha da kısalır."
+  },
+  {
+   "q": "Koşu bandında GPS işe yarar mı?",
+   "a": "Hayır, kapalı alanda uydu sinyali alınamaz. Saatler koşu bandında mesafeyi hareket algılayıcılarından tahmin eder; bazı modellerde koşu sonunda gerçek mesafeyi girerek kalibre etme seçeneği bulunur."
+  },
+  {
+   "q": "Saatimin rotası neden binaların içinden geçiyor?",
+   "a": "Yüksek yapılar uydu sinyalini keser ve yansıtır. Bu, şehir merkezinde rotada zikzaklara yol açar. Tüm uydu sistemlerini açmak veya destekleniyorsa çift bant modu kullanmak bu sapmayı azaltır."
+  },
+  {
+   "q": "GNSS ile GPS aynı şey mi?",
+   "a": "GPS, ABD'nin sistemidir; GNSS ise GPS, GLONASS, Galileo ve BeiDou gibi tüm uydu navigasyon sistemlerinin ortak adıdır. Saatlerde “GNSS” ifadesi genellikle birden fazla sistemi desteklediği anlamına gelir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "GPS.gov — GPS Accuracy",
+   "u": "https://archive.gps.gov/systems/gps/performance/accuracy/"
+  },
+  {
+   "t": "Garmin — SatIQ ve çok bantlı GNSS teknolojisi",
+   "u": "https://www.garmin.com/en-SG/blog/outdoor/garmins-satiq-and-multi-band-gnss-technology/"
+  }
+ ]
+}

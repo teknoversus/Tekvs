@@ -1,0 +1,167 @@
+{
+ "slug": "telefon-asiri-isinma-nasil-onlenir",
+ "title": "Telefon Neden Isınır? Aşırı Isınmayı Önleme ve Çözüm Adımları",
+ "description": "Telefon oyunda, şarjda ya da güneşte neden ısınır, ne zaman tehlikelidir? Hemen yapılacaklar, sorun giderme sırası ve servise gitme işaretleri.",
+ "tldr": "Oyun, video çekimi, navigasyon, şarj ve sıcak ortam telefonun ısınmasının en yaygın nedenleridir; çoğu durumda telefon kendini yavaşlatarak korur. Isınan telefonu şarjdan çıkarıp kılıfını alın ve gölgede soğumaya bırakın. Telefon boştayken ya da kapalıyken ısınıyorsa veya pil şişmişse kullanmayı bırakıp yetkili servise başvurun.",
+ "intro": [
+  "Yazın arabada navigasyon açıkken ekranın kararması, uzun bir oyun seansının ortasında görüntünün takılmaya başlaması ya da sabah şarjdan aldığınız telefonun elinizi yakacak kadar sıcak olması tanıdık durumlar. Telefonlar ince gövdelerinde fan taşımaz; ürettikleri ısıyı yalnızca gövde ve ekran üzerinden dağıtabilirler. Bu yüzden belli bir ısınma normaldir.",
+  "Asıl soru, ısınmanın ne zaman sıradan bir yük tepkisi, ne zaman bir arızanın işareti olduğu. Aşağıda önce ikisini nasıl ayırt edeceğinizi, ardından ısınan telefona hemen ne yapmanız gerektiğini, kalıcı çözümleri ve servise gitmeniz gereken durumları anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Normal ısınma ile sorunlu ısınma nasıl ayırt edilir?",
+   "p": [
+    "Telefonun ağır bir iş yaparken ısınması beklenen bir durumdur. İşlemci yüksek hızda çalıştığında, ekran tam parlaklıktayken ya da pil hızlı şarj olurken ortaya çıkan ısı gövdeye yayılır. İş bittiğinde telefon birkaç dakika içinde soğumaya başlar. Sorunlu ısınmada ise ortada belirgin bir yük yoktur: telefon cebinizde, ekranı kapalıyken bile sıcaktır ve pil normalden çok daha hızlı biter.",
+    "Telefonlar aşırı ısındığında kendini korumak için performansı düşürür (bu davranışa termal kısıtlama, İngilizcede thermal throttling denir). Apple, iPhone'un çok ısındığında şarjı yavaşlatabileceğini veya durdurabileceğini, ekranı karartabileceğini, hücresel sinyalin zayıflayabileceğini ve kamera flaşının geçici olarak devre dışı kalabileceğini belirtiyor. Android telefonlar da benzer korumalar uygular; bazı modeller ekranda bir sıcaklık uyarısı gösterir."
+   ],
+   "table": {
+    "head": [
+     "Belirti",
+     "Muhtemelen normal",
+     "Kontrol edilmeli"
+    ],
+    "rows": [
+     [
+      "Ne zaman ısınıyor?",
+      "Oyun, video çekimi, navigasyon, şarj sırasında",
+      "Ekran kapalıyken, boşta beklerken"
+     ],
+     [
+      "Ne kadar sürüyor?",
+      "İş bitince birkaç dakikada soğuyor",
+      "Saatlerce sıcak kalıyor"
+     ],
+     [
+      "Pil durumu",
+      "Yoğun kullanımla orantılı tüketim",
+      "Kullanılmadan hızla bitiyor"
+     ],
+     [
+      "Gövde",
+      "Düzgün, kapak ve ekran yerinde",
+      "Ekran kalkmış, arka kapak şişmiş"
+     ],
+     [
+      "Koku ve ses",
+      "Yok",
+      "Yanık kokusu, cızırtı"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Telefonları en çok ne ısıtır?",
+   "p": [
+    "Isınmanın nedenleri çoğu zaman birbirine eklenir. Tek başına sorun çıkarmayan bir oyun seansı, şarj kablosu takılıyken ve güneş alan bir masada oynandığında telefonu kısa sürede koruma moduna sokabilir. Apple'ın destek sayfası da ilk kurulum, yedekten geri yükleme ve büyük yazılım güncellemeleri sırasında telefonun ısınabileceğini, sıcak ortamın uzun kullanımla birleşmesinin ise en riskli tablo olduğunu belirtiyor."
+   ],
+   "list": [
+    "Grafik gücü isteyen oyunlar ve uzun süreli kamera kullanımı, özellikle 4K video kaydı.",
+    "Arabada güneş altında araç tutucuda çalışan navigasyon; hem güneş hem GPS hem ekran parlaklığı aynı anda yük bindirir.",
+    "Şarj olurken ağır kullanım; şarj devresinin ve işlemcinin ısısı birleşir. Kablosuz şarj, kabloluya göre daha fazla ısı üretir.",
+    "Yeni telefon kurulumu, yedekten geri yükleme ve büyük sistem güncellemeleri; telefon arka planda fotoğrafları işler ve uygulamaları indirir.",
+    "Zayıf şebeke çeken yerler; telefon sinyal bulmak için modemi daha çok çalıştırır.",
+    "Hava akışını engelleyen kalın kılıflar ve yastık, battaniye gibi yüzeyler.",
+    "Hatalı çalışan bir uygulamanın arka planda işlemciyi sürekli meşgul etmesi."
+   ]
+  },
+  {
+   "h": "Telefon çok ısındığında hemen ne yapmalı?",
+   "p": [
+    "Telefon elinizde rahatsız edici derecede sıcaksa ya da ekranda sıcaklık uyarısı çıktıysa amaç, ısı üreten işleri durdurup telefonun doğal yolla soğumasını sağlamaktır. Aşağıdaki sırayı izleyin."
+   ],
+   "ol": [
+    "Şarj kablosunu çıkarın veya telefonu kablosuz şarj cihazından alın.",
+    "Açık oyunu, kamerayı ya da video uygulamasını kapatın.",
+    "Kılıfı çıkarın ve telefonu doğrudan güneş almayan, serin bir yüzeye bırakın.",
+    "Gerekmiyorsa ekran parlaklığını düşürün; çok ısındıysa telefonu birkaç dakikalığına kapatın.",
+    "Arabadaysanız telefonu ön camın arkasından alıp klima çıkışına yakın, gölgede bir yere koyun.",
+    "Telefon normal sıcaklığa döndükten sonra şarja ve kullanıma devam edin."
+   ],
+   "note": "Telefonu soğutmak için buzdolabına, dondurucuya koymayın ya da üzerine soğuk su dökmeyin. Ani sıcaklık değişimi cihazın içinde yoğuşmaya yol açabilir; sıvı hasarı da çoğu üreticide garanti dışıdır."
+  },
+  {
+   "h": "Isınmayı azaltan alışkanlıklar ve ayarlar",
+   "p": [
+    "Apple, iPhone için ortam sıcaklığının 0 ile 35 °C arasında olduğu koşulları ideal kullanım aralığı olarak veriyor ve çok sıcak ortamda kullanımın pil ömrünü kalıcı olarak kısaltabileceğini belirtiyor. Kapalı bir arabanın içi yazın bu aralığın çok üzerine çıkabilir. Telefonu güneş altında arabada bırakmamak, ısınma ve pil sağlığı için yapabileceğiniz en etkili şeylerden biridir.",
+    "Oyun oynarken grafik ayarlarını ve kare hızını bir kademe düşürmek, telefonun termal kısıtlamaya girmeden daha uzun süre akıcı çalışmasını sağlar. Birçok Android telefonda oyun modu veya performans profili bulunur; dengeli profil çoğu oyunda yeterlidir. Uzun video çekiminde gereksizse 4K 60 fps yerine 4K 30 fps veya 1080p seçmek ısıyı belirgin şekilde azaltır.",
+    "Şarj alışkanlıkları da önemli. Oyun ya da navigasyon sırasında şarj etmek yerine öncesinde şarj edin. Gece şarjında telefonu yastık altına değil, sert ve açık bir yüzeye bırakın. Pil koruma ve uyarlanabilir şarj gibi ayarlar, pili uzun süre yüzde 100'de bekletmeyerek ısınmayı ve yaşlanmayı azaltır; menü adları markaya göre değişir."
+   ],
+   "list": [
+    "Pil kullanımı ekranında arka planda beklenmedik ölçüde tüketim yapan uygulamaları kontrol edin.",
+    "Kullanmadığınız uygulamaların konum ve arka plan izinlerini kısıtlayın.",
+    "Sistem ve uygulamaları güncel tutun; bazı ısınma sorunları güncellemelerle düzeltilir.",
+    "Kalın veya deri kılıf kullanıyorsanız yoğun kullanım sırasında çıkarın."
+   ]
+  },
+  {
+   "h": "Telefon sebepsiz yere ısınıyorsa: sorun giderme sırası",
+   "p": [
+    "Ağır bir iş yapmadığınız halde telefon sürekli sıcaksa, sorunu basitten karmaşığa doğru elemek en verimli yoldur. Her adımdan sonra bir süre bekleyip durumu gözlemleyin."
+   ],
+   "ol": [
+    "Son günlerde büyük bir güncelleme veya yeni telefon kurulumu yaptıysanız bir iki gün bekleyin; arka plandaki işler bitince ısınma çoğunlukla geçer.",
+    "Telefonu yeniden başlatın. Takılı kalmış bir işlem bu şekilde sonlanır.",
+    "Ayarlar'daki pil kullanımı ekranından en çok tüketen uygulamayı bulun; şüpheli uygulamayı güncelleyin, verilerini temizleyin ya da kaldırıp deneyin.",
+    "Android'de telefonu güvenli modda başlatın (çoğu modelde kapatma menüsündeki Kapat seçeneğine uzun basarak). Güvenli modda ısınma geçiyorsa sorun sonradan yüklenen bir uygulamadadır.",
+    "Sistem güncellemesi bekliyorsa yükleyin.",
+    "Sorun sürerse verilerinizi yedekleyip fabrika ayarlarına sıfırlamayı son yazılım çözümü olarak deneyin.",
+    "Sıfırlama sonrası da ısınma devam ediyorsa donanım arızası ihtimali yüksektir; yetkili servise başvurun."
+   ]
+  },
+  {
+   "h": "Ne zaman yetkili servise gitmelisiniz?",
+   "p": [
+    "Bazı belirtiler yazılımla çözülemeyecek bir donanım sorununa, özellikle pile işaret eder. Lityum iyon piller hasar gördüğünde şişebilir ve bu durum yangın riski taşır. Aşağıdaki işaretlerden birini görürseniz telefonu şarj etmeyi bırakın ve yetkili servise götürün.",
+    "Telefonu kendiniz açmaya çalışmayın. Şişmiş bir pile baskı uygulamak veya delmek tehlikelidir; ayrıca yetkisiz açma, garantinin geçersiz sayılmasına yol açabilir."
+   ],
+   "list": [
+    "Ekranın veya arka kapağın kalkması, gövdede şişkinlik.",
+    "Telefon kapalıyken ya da ekranı kapalı beklerken belirgin ısınma.",
+    "Yanık kokusu, cızırtı sesi veya şarj girişinde renk değişimi.",
+    "Sıfırlama sonrasında da devam eden ısınma ve hızlı pil tükenmesi.",
+    "Telefonun sıcaklık uyarısıyla sık sık kendini kapatması."
+   ]
+  },
+  {
+   "h": "Isınma konusunda sık yapılan hatalar",
+   "p": [
+    "Isınmayla mücadelede bazı yaygın alışkanlıklar ya işe yaramaz ya da yeni sorunlar çıkarır. Uygulama mağazalarındaki “telefon soğutucu” uygulamaları çoğunlukla yalnızca arka plandaki uygulamaları kapatır; sistem bunları zaten kendisi yönetir ve sık sık kapatıp açmak tersine daha fazla enerji harcatabilir."
+   ],
+   "list": [
+    "Telefonu buzdolabında veya buzlu suyla soğutmaya çalışmak.",
+    "Isınan telefonu şarjda bırakmaya devam etmek.",
+    "Güneş alan araç konsolunda veya torpidoda telefon unutmak.",
+    "Sertifikasız, düşük kaliteli şarj adaptörü ve kablo kullanmak.",
+    "Şişmiş pile rağmen telefonu kullanmayı sürdürmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Telefonun ısınması zararlı mı?",
+   "a": "Kısa süreli ve yükle orantılı ısınma zararlı değildir; telefon gerekirse performansını düşürerek kendini korur. Sık ve uzun süreli yüksek sıcaklık ise pilin kalıcı olarak daha hızlı yaşlanmasına yol açabilir. Sorun, telefonun boştayken de ısınmasıyla başlar."
+  },
+  {
+   "q": "Telefon şarj olurken neden daha çok ısınıyor?",
+   "a": "Şarj işlemi ısı üretir; hızlı şarjda ve kablosuz şarjda bu ısı daha fazladır. Aynı anda oyun oynamak ya da video izlemek, işlemcinin ısısını da ekler. Yoğun kullanımdan önce şarj etmek ve şarj sırasında kılıfı çıkarmak ısınmayı azaltır."
+  },
+  {
+   "q": "Isınan telefon neden yavaşlıyor?",
+   "a": "Telefon sıcaklığı güvenli sınırda tutmak için işlemci hızını, ekran parlaklığını ve şarj hızını düşürür. Bu, donanımı korumak için tasarlanmış bir davranıştır. Telefon soğuyunca performans normale döner."
+  },
+  {
+   "q": "Telefonu buzdolabına koyarak soğutabilir miyim?",
+   "a": "Hayır, bu önerilmez. Ani soğuma telefonun içinde nem yoğuşmasına neden olabilir ve sıvı hasarı çoğu üreticide garanti kapsamı dışındadır. Telefonu gölgede, serin bir yüzeyde kendi kendine soğumaya bırakmak yeterlidir."
+  },
+  {
+   "q": "Kılıf telefonun ısınmasını etkiler mi?",
+   "a": "Kalın, hava geçirmeyen veya deri kılıflar ısının gövdeden dağılmasını yavaşlatır. Günlük kullanımda büyük fark yaratmasa da oyun, uzun video çekimi ve hızlı şarj sırasında kılıfı çıkarmak telefonun daha çabuk soğumasına yardım eder."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: iPhone veya iPad çok ısınırsa ya da soğursa",
+   "u": "https://support.apple.com/118431"
+  }
+ ]
+}

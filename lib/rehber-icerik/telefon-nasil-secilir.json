@@ -1,0 +1,248 @@
+{
+ "slug": "telefon-nasil-secilir",
+ "title": "Telefon Nasıl Seçilir? Kullanıma Göre Adım Adım Rehber",
+ "description": "İşlemci, RAM, ekran, kamera, pil, güncelleme süresi ve garanti: telefon alırken neye bakmalı, hangi rakamlar yanıltır? Kontrol listesiyle anlattık.",
+ "tldr": "Önce telefonu ne için kullanacağınızı ve segmentinizi belirleyin, sonra o kullanımı doğrudan etkileyen özelliklere odaklanın. Megapiksel ve mAh gibi tek rakamlar yerine sensör boyutu, OIS, yazılım güncelleme süresi, depolama tipi ve resmi garanti gibi uzun vadede fark yaratan ayrıntılara bakın.",
+ "intro": [
+  "Telefon vitrininde her model kendini en güçlü rakamla tanıtıyor: 200 MP kamera, 6000 mAh pil, 144 Hz ekran. Oysa iki yıl sonra telefonunuzdan memnun olup olmayacağınızı çoğu zaman bu rakamlar değil, kutuda yazmayan ayrıntılar belirliyor. Kaç yıl güncelleme alacağı, depolamanın ne kadar hızlı olduğu, kameranın düşük ışıkta nasıl davrandığı ve arızalandığında hangi servise gideceğiniz bunların başında geliyor.",
+  "Aşağıdaki bölümler, bir telefonun teknik sayfasını okurken hangi satırın sizin kullanımınız için önemli olduğunu ayırt etmenize yardım etmek için hazırlandı. Önce ihtiyacınızı netleştiriyoruz, sonra parçaları tek tek ele alıyoruz. Sonda kullanıcı tipine göre öneriler, sık yapılan hatalar ve mağazaya götürebileceğiniz bir kontrol listesi bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "İlk adım: telefonu ne için kullanacağınızı yazın",
+   "p": [
+    "Telefon seçerken en sık yapılan hata, özellik listesinden başlamak. Daha sağlıklı yol, son birkaç ayda telefonunuzla en çok ne yaptığınızı düşünmek. Gün boyu WhatsApp, Instagram ve haritalar mı kullanıyorsunuz, yoksa her akşam bir saat rekabetçi oyun mu oynuyorsunuz? Çocuğunuzun okul gösterisini gece salonda mı çekiyorsunuz, yoksa telefon çoğunlukla masada şarjda mı duruyor?",
+    "Bu soruların cevabı, bütçenizi nereye harcayacağınızı belirler. Giriş segmentinde üretici her şeyden biraz kısar; orta segmentte genellikle iki üç alanda güçlü, diğerlerinde ortalama modeller bulunur; üst segmentte ise kamera, ekran ve güncelleme süresi birlikte yükselir. Orta segmentte doğru seçim, sizin için önemli olan iki üç alanda güçlü olan modeli bulmaktır.",
+    "Pratik bir yöntem: kâğıda en önemli üç ihtiyacınızı yazın ve her modeli önce bu üç başlıkta karşılaştırın. Örneğin “uzun pil, iyi gece fotoğrafı, uzun güncelleme” diyen biri için 144 Hz ekran ya da oyun modu ikinci planda kalır."
+   ],
+   "list": [
+    "Hafif kullanım: mesajlaşma, arama, sosyal medya, haritalar, bankacılık.",
+    "Orta kullanım: bunlara ek olarak sık fotoğraf ve video, birkaç uygulama arasında sürekli geçiş, ara sıra oyun.",
+    "Ağır kullanım: uzun oyun seansları, 4K video çekimi ve düzenleme, telefonu iş için ana cihaz olarak kullanma."
+   ]
+  },
+  {
+   "h": "İşlemci, RAM ve depolama: hangi rakam neyi etkiler?",
+   "p": [
+    "İşlemci (yonga seti) telefonun genel hızını, oyun performansını, kamera işleme gücünü ve ısınma davranışını belirler. Aynı markanın farklı serileri arasında büyük fark olabilir; bu yüzden “sekiz çekirdekli” gibi genel ifadeler pek bir şey söylemez. Modelin kullandığı yonga setinin adını not edip bağımsız incelemelerdeki uzun süreli performans ve ısınma testlerine bakmak daha sağlıklıdır. Kısa bir benchmark puanı, telefonun yirmi dakikalık oyun sonunda nasıl davrandığını göstermez.",
+    "RAM, aynı anda açık tutulabilen uygulama sayısını etkiler. Android tarafında 8 GB, çoğu kullanıcı için rahat bir seviyedir; yoğun çoklu görev yapanlar ve oyuncular 12 GB ve üzerinden fayda görebilir. 4 GB'lık modellerde arka plandaki uygulamalar sık kapanır, kameradan galeriye dönerken bile yeniden yükleme görebilirsiniz. iPhone'larda bellek yönetimi farklı çalıştığı için RAM rakamını Android modelleriyle doğrudan kıyaslamak doğru olmaz.",
+    "Depolamada iki şeye bakın: kapasite ve tip. 128 GB, fotoğraflarını düzenli olarak buluta yedekleyen biri için çoğu zaman yeterlidir; çok video çekenler, büyük oyun kuranlar ve buluta güvenmeyenler 256 GB'ı düşünmeli. Tip tarafında UFS depolama, giriş segmentinde hâlâ görülen eMMC'ye göre belirgin şekilde hızlıdır; uygulama açılışı, güncelleme kurulumu ve uzun video kaydında farkı hissedersiniz. Hafıza kartı yuvası artık yalnızca bazı modellerde var, yani ihtiyacınız varsa teknik sayfada bunu ayrıca kontrol edin."
+   ],
+   "note": "Sistem dosyaları depolamanın bir kısmını baştan kaplar. Kutuda 128 GB yazan bir telefonda kullanabileceğiniz alan bundan daha azdır."
+  },
+  {
+   "h": "Ekran: panel tipi, yenileme hızı ve parlaklık",
+   "p": [
+    "Telefon ekranlarında iki ana panel tipi var: LCD ve OLED (markalar AMOLED, Super AMOLED, LTPO OLED gibi adlar kullanır). OLED'de her piksel kendi ışığını ürettiği için siyahlar gerçekten siyah görünür, kontrast yüksektir ve karanlık temada pil tasarrufu sağlanır. LCD ise giriş segmentinde daha yaygındır, genellikle daha ucuzdur ve bazı kullanıcıların hassas olduğu düşük parlaklıktaki titreşimi (PWM) çoğu zaman göstermez.",
+    "Yenileme hızı, ekranın saniyede kaç kez yenilendiğini anlatır. 90 veya 120 Hz bir ekranda kaydırma ve animasyonlar 60 Hz'e göre daha akıcı görünür; bir kez alıştıktan sonra 60 Hz'e dönmek çoğu kişiye takılır. Yüksek yenileme hızı pili biraz daha fazla tüketir; LTPO gibi değişken yenileme hızlı paneller ise sabit içerikte hızı düşürerek bu farkı azaltır.",
+    "Parlaklık için teknik sayfada iki değer görebilirsiniz: tepe parlaklık ve sürekli (tam ekran) parlaklık. Tepe değer genellikle ekranın küçük bir bölümünde, kısa süre için ölçülür. Güneş altında haritaya bakan biri için sürekli parlaklık ve bağımsız incelemelerdeki dış mekân testleri daha anlamlıdır."
+   ]
+  },
+  {
+   "h": "Kamera: megapikselin söylemedikleri",
+   "p": [
+    "Bir kameranın kalitesini belirleyen ilk etken, sensörün fiziksel boyutudur. Büyük sensör daha fazla ışık toplar; bu da gece çekimlerinde daha az gren ve daha doğal renk demektir. Teknik sayfada sensör boyutu 1/1.3 inç veya 1/2.76 inç gibi kesirlerle yazılır; paydadaki sayı küçüldükçe sensör büyür. Yüksek megapikselli küçük sensörler çoğu zaman pikselleri birleştirerek (piksel birleştirme) 12 ya da 50 MP'lik fotoğraf üretir, yani 200 MP rakamı günlük kullanımda doğrudan daha iyi fotoğraf anlamına gelmez.",
+    "İkinci kritik özellik optik görüntü sabitleme (OIS). OIS, el titremesini lensi ya da sensörü fiziksel olarak hareket ettirerek dengeler; gece çekiminde ve videoda belirgin fark yaratır. Yazılımsal sabitleme (EIS) de işe yarar ama görüntüyü bir miktar kırparak çalışır.",
+    "Ek kameralara da dikkat edin. Gerçek bir telefoto lens, uzaktaki konuyu kaliteden fazla ödün vermeden yaklaştırır; birçok telefonda ise “2x” yakınlaştırma ana sensörden kırpma ile yapılır. 2 MP makro ve derinlik kameraları çoğu zaman kamera sayısını artırmak için eklenir ve pratikte nadiren kullanılır. Üç kameralı bir model yerine iyi bir ana kamera ve kullanılabilir bir geniş açı kamerası olan model daha iyi bir tercih olabilir.",
+    "Video çekiyorsanız 4K 60 fps desteğine, ön kameranın 4K çekip çekmediğine ve tüm lenslerde sabitlemenin çalışıp çalışmadığına bakın. Kamera karşılaştırmasında en güvenilir kaynak, aynı sahnede çekilmiş örnek fotoğraflardır."
+   ]
+  },
+  {
+   "h": "Pil ve şarj: mAh, şarj hızı ve pilin yaşlanması",
+   "p": [
+    "Pil kapasitesi (mAh) önemli ama tek başına pil ömrünü belirlemez. Aynı kapasitede iki telefondan biri, daha verimli işlemcisi ve ekranı sayesinde günü rahatça bitirirken diğeri akşam şarj isteyebilir. Bazı markalar silisyum-karbon anotlu pillerle aynı gövdeye daha yüksek kapasite sığdırmaya başladı; bu nedenle benzer kalınlıktaki telefonlar arasında kapasite farkı büyüyebiliyor. En güvenilir ölçü, bağımsız incelemelerdeki ekran açık kalma süresi ve karma kullanım testleridir.",
+    "Şarj hızı watt (W) ile ifade edilir. Ancak yüksek hızlar çoğu zaman yalnızca markanın kendi adaptörü ve kablosuyla elde edilir; standart USB Power Delivery adaptörle daha düşük hızda şarj olur. Birçok üretici artık kutudan adaptör çıkarmıyor; satın alırken kutu içeriğini kontrol edin ve gerekiyorsa uyumlu bir adaptörü bütçenize ekleyin.",
+    "Lityum iyon piller zamanla kapasite kaybeder. Bunu yavaşlatmak için birçok telefonda şarjı yüzde 80 civarında sınırlayan ya da gece şarjını sabaha doğru tamamlayan pil koruma ayarları bulunur; adları markaya göre değişir. Uzun süre kullanmayı planlıyorsanız bu ayarın varlığı ve pil değişiminin yetkili serviste yapılabilmesi değerli ayrıntılardır."
+   ]
+  },
+  {
+   "h": "Yazılım güncelleme süresi: telefonun gerçek ömrü",
+   "p": [
+    "Bir telefonun kaç yıl güvenle kullanılabileceğini büyük ölçüde güncelleme politikası belirler. İşletim sistemi güncellemeleri yeni özellikler getirir, güvenlik güncellemeleri ise bankacılık ve kişisel veriler açısından kritik açıkları kapatır. Güvenlik güncellemesi almayan bir telefon çalışmaya devam eder ama zamanla risk taşır, bazı uygulamalar da eski sürümleri desteklemeyi bırakır.",
+    "Üreticiler arasında fark büyük. Google, Pixel 8 ve sonrası için yedi yıl; Samsung ise Galaxy S24 serisinden itibaren amiral gemisi modellerinde yedi yıl işletim sistemi ve güvenlik güncellemesi taahhüt ediyor. Giriş segmentindeki birçok modelde bu süre çok daha kısa olabiliyor. Apple resmi bir süre ilan etmese de iPhone'lar genellikle uzun yıllar iOS güncellemesi alıyor.",
+    "Satın almadan önce üreticinin ilgili model için açıkladığı güncelleme süresini arayın ve sürenin telefonun piyasaya çıkış tarihinden itibaren saydığını hesaba katın. Bir yıl önce çıkmış bir modeli alıyorsanız, kalan süre o kadar kısalmıştır."
+   ]
+  },
+  {
+   "h": "Dayanıklılık, garanti ve servis",
+   "p": [
+    "IP koruma sınıfı, IEC 60529 standardına göre toz ve suya karşı dayanıklılığı anlatır. İlk rakam tozu, ikinci rakam suyu gösterir. IP68'de 6 toza karşı tam koruma, 8 ise üreticinin belirttiği derinlik ve sürede suya batırılmaya dayanıklılık demektir. Testler tatlı suda yapılır; deniz suyu, havuz suyu, sıcak duş buharı ve basınçlı su bu kapsamın dışındadır. Contalar zamanla ve tamir sonrasında zayıflayabilir, ayrıca birçok üretici sıvı hasarını garanti dışı sayar. IP68'i bir sigorta değil, kazaya karşı ek bir güvence olarak görün.",
+    "Garanti tarafında Türkiye'de tüketici ürünleri için yasal garanti süresi en az iki yıldır. Asıl fark, garantinin kimin tarafından verildiğinde ortaya çıkar. Üreticinin Türkiye'deki resmi distribütörü garantisi ile ithalatçı firma garantisi arasında yetkili servis erişimi, parça bulunabilirliği ve onarım süresi açısından fark olabilir. Faturada ve garanti belgesinde bu bilgiyi kontrol edin.",
+    "Yurt dışından getirilen telefonlar için ayrı bir kural var: bu cihazların IMEI kaydının, Türkiye'ye giriş tarihinden itibaren 120 gün içinde yapılması gerekir; kayıt yapılmazsa cihaz şebekede kullanılamaz hale gelir. İkinci el telefon alırken de e-Devlet'teki IMEI sorgulama hizmetiyle cihazın kayıtlı olup olmadığını ve kayıp-çalıntı durumunu kontrol edebilirsiniz. Telefonun IMEI numarasını *#06# tuşlayarak görebilirsiniz."
+   ]
+  },
+  {
+   "h": "Bağlantı ve küçük ama önemli özellikler",
+   "p": [
+    "Türkiye'de 5G hizmeti 2026'da kademeli olarak başladı. Telefonu birkaç yıl kullanmayı düşünüyorsanız 5G desteği artık değerlendirilmesi gereken bir özellik. eSIM desteği, fiziksel SIM kart taşımadan hat kullanmanızı sağlar; Türkiye'deki operatörler eSIM hizmeti veriyor. Çift SIM kullanıyorsanız modelin iki fiziksel SIM mi, yoksa bir fiziksel ve bir eSIM mi desteklediğine bakın.",
+    "NFC; bankanın desteğine bağlı olarak temassız ödeme, bazı ulaşım kartlarının uygulama üzerinden yüklenmesi ve kulaklık eşleştirme gibi işlerde kullanılır ve giriş segmentindeki bazı modellerde bulunmayabilir. Ayrıca kulaklık girişi, stereo hoparlör, titreşim motorunun kalitesi ve parmak izi okuyucunun konumu gibi ayrıntılar, teknik sayfada küçük görünse de günlük kullanımda sıkça fark edilir."
+   ]
+  },
+  {
+   "h": "Kullanıcı tipine göre neye öncelik vermeli?",
+   "p": [
+    "Aşağıdaki tablo, farklı kullanıcı tiplerinin hangi özelliklere öncelik vermesinin daha mantıklı olduğunu özetliyor. Bu bir model önerisi değil; katalogda filtreleme yaparken hangi kriterleri öne almanız gerektiğini gösteren bir başlangıç noktası."
+   ],
+   "table": {
+    "head": [
+     "Kullanıcı",
+     "Öncelik verin",
+     "İkinci planda kalabilir"
+    ],
+    "rows": [
+     [
+      "Öğrenci",
+      "Pil ömrü, 8 GB RAM, en az 128 GB UFS depolama, uzun güncelleme süresi",
+      "Telefoto kamera, kablosuz şarj"
+     ],
+     [
+      "Oyuncu",
+      "Uzun süreli performans ve ısınma testleri, 120 Hz ve üzeri ekran, 12 GB RAM, hızlı şarj",
+      "Kamera sayısı, ince gövde"
+     ],
+     [
+      "Fotoğraf ve video",
+      "Büyük ana sensör, OIS, gerçek telefoto, 4K 60 fps, 256 GB depolama",
+      "Çok yüksek yenileme hızı"
+     ],
+     [
+      "Ofis ve iş",
+      "Güvenlik güncellemesi süresi, çift SIM veya eSIM, iyi mikrofon, güvenilir pil",
+      "Oyun performansı"
+     ],
+     [
+      "Yaşlı kullanıcı",
+      "Büyük ve parlak ekran, yüksek sesli hoparlör, sade arayüz, kolay erişilebilir servis",
+      "Yüksek işlemci gücü, çoklu kamera"
+     ],
+     [
+      "Çocuk veya yedek telefon",
+      "Dayanıklı gövde, ebeveyn denetimi desteği, yeterli güncelleme süresi",
+      "Üst segment kamera ve ekran"
+     ]
+    ]
+   },
+   "list": [
+    "Yaşlı kullanıcılar için hem Android hem iOS'ta büyük yazı, basitleştirilmiş ana ekran ve acil durum kişisi ayarları bulunur; mağazada bu ayarları birlikte açıp denemek seçimi kolaylaştırır.",
+    "Oyuncular için en yüksek benchmark puanı değil, telefonun uzun oyunda performansını ne kadar koruduğu önemlidir; ısınan bir telefon birkaç dakika sonra işlemci hızını düşürür."
+   ]
+  },
+  {
+   "h": "Teknik terimlerin sade karşılıkları",
+   "p": [
+    "Teknik sayfada sık karşılaşacağınız terimlerin ne anlama geldiğini ve pratikte neyi değiştirdiğini aşağıda bulabilirsiniz."
+   ],
+   "table": {
+    "head": [
+     "Terim",
+     "Ne demek?",
+     "Pratikte etkisi"
+    ],
+    "rows": [
+     [
+      "OIS",
+      "Lensi veya sensörü fiziksel olarak hareket ettirerek titremeyi dengeler",
+      "Daha net gece fotoğrafı, daha stabil video"
+     ],
+     [
+      "UFS / eMMC",
+      "Dahili depolama tipleri; UFS daha yeni ve hızlıdır",
+      "Uygulama açılışı ve dosya kopyalama hızı"
+     ],
+     [
+      "LTPO",
+      "Yenileme hızını içeriğe göre değiştirebilen ekran teknolojisi",
+      "Akıcılığı korurken pil tasarrufu"
+     ],
+     [
+      "PWM",
+      "OLED ekranlarda parlaklığı ışığı hızla açıp kapatarak düşürme yöntemi",
+      "Hassas kişilerde düşük parlaklıkta göz yorgunluğu"
+     ],
+     [
+      "IP68",
+      "IEC 60529'a göre toza tam ve suya batırılmaya dayanıklılık",
+      "Kazaya karşı koruma; garanti kapsamı değildir"
+     ],
+     [
+      "USB PD",
+      "USB-C üzerinden hızlı şarj için ortak standart",
+      "Farklı marka adaptörlerle uyumlu şarj"
+     ],
+     [
+      "eSIM",
+      "Telefona gömülü, uzaktan yüklenen dijital SIM",
+      "Fiziksel kart olmadan hat kullanımı"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Telefon alırken en sık yapılan hatalar",
+   "p": [
+    "Bu hataların ortak noktası, tek bir rakamın ya da kısa bir deneyimin karar üzerinde fazla etkili olması. Mağazada telefonu birkaç dakika elinize almak ekranın ve tasarımın hissini anlamak için iyidir, ama pil ve ısınma gibi konular ancak uzun testlerde ortaya çıkar."
+   ],
+   "list": [
+    "Kamerayı megapiksele, pili yalnızca mAh'ye göre değerlendirmek.",
+    "Güncelleme süresini hiç sormamak; birkaç yıl sonra güvenlik güncellemesi almayan bir telefonla kalmak.",
+    "Depolamada ve RAM'de fazla tasarruf yapıp telefonu ikinci yılında yavaş ve dolu hale getirmek.",
+    "Garantinin türüne ve yetkili servis erişimine bakmamak.",
+    "Yurt dışından alınan telefonun IMEI kaydını ve maliyetini hesaba katmamak.",
+    "Kutudan adaptör çıkmadığını kurulum günü fark etmek.",
+    "Bir yıl önce çıkmış modeli alırken kalan güncelleme süresinin kısaldığını göz ardı etmek.",
+    "Kullanmayacağınız bir özellik (ör. çok yüksek yenileme hızı veya 8K video) için bütçenin önemli bir kısmını ayırmak."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "p": [
+    "Mağazaya gitmeden ya da sepeti onaylamadan önce aşağıdaki maddelerin her birine cevabınız olsun. Cevaplayamadığınız madde varsa, bağımsız incelemelere ve üreticinin teknik sayfasına dönün."
+   ],
+   "list": [
+    "Kullanımımın en önemli üç ihtiyacı belli mi ve bu model bunlarda güçlü mü?",
+    "Yonga setinin adı ve uzun süreli performans/ısınma testleri incelendi mi?",
+    "RAM en az 8 GB (Android) ve depolama ihtiyacıma uygun mu, depolama tipi UFS mi?",
+    "Ana kamerada OIS var mı, sensör boyutu ve örnek gece fotoğrafları incelendi mi?",
+    "Bağımsız pil testlerinde ekran açık kalma süresi yeterli mi?",
+    "Üreticinin bu model için açıkladığı güncelleme süresi ne kadar ve ne kadarı kaldı?",
+    "IP sınıfı ne, sıvı hasarı garanti kapsamında mı?",
+    "Garanti resmi distribütör mü, ithalatçı firma mı; yakınımda yetkili servis var mı?",
+    "Kutudan şarj adaptörü çıkıyor mu, çıkmıyorsa uyumlu adaptör var mı?",
+    "5G, eSIM ve NFC ihtiyacım varsa model bunları destekliyor mu?",
+    "İkinci el veya yurt dışı cihazsa IMEI kaydı e-Devlet'ten kontrol edildi mi?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Telefonda kaç megapiksel kamera yeterli?",
+   "a": "Megapiksel tek başına kaliteyi belirlemez. Büyük sensörlü ve OIS'li 50 MP bir kamera, küçük sensörlü 200 MP bir kameradan özellikle gece çekimlerinde daha iyi sonuç verebilir. Karar verirken sensör boyutuna, OIS'e ve aynı sahnede çekilmiş örnek fotoğraflara bakın."
+  },
+  {
+   "q": "Android telefon için kaç GB RAM gerekir?",
+   "a": "Çoğu kullanıcı için 8 GB rahat bir seviyedir. Yoğun oyun oynayan veya çok sayıda uygulamayı aynı anda açık tutanlar 12 GB ve üzerinden fayda görür. 4 GB'lık modellerde arka plandaki uygulamalar sık kapanabilir."
+  },
+  {
+   "q": "128 GB depolama yeterli mi?",
+   "a": "Fotoğraflarını düzenli olarak buluta yedekleyen ve büyük oyun kurmayan biri için çoğu zaman yeterlidir. Çok video çekiyorsanız veya buluta güvenmiyorsanız 256 GB daha rahat eder. Sistem dosyalarının alanın bir kısmını kapladığını da hesaba katın."
+  },
+  {
+   "q": "IP68 telefon suya düşerse garanti kapsar mı?",
+   "a": "Birçok üretici sıvı hasarını garanti dışı sayar. IP68, tatlı suda ve üreticinin belirttiği koşullarda yapılan testlere dayanır; deniz suyu, havuz suyu ve sıcak buhar bu kapsamda değildir. Bu yüzden IP68'i kazaya karşı ek güvence olarak görmek gerekir."
+  },
+  {
+   "q": "Yazılım güncelleme süresi neden önemli?",
+   "a": "Güvenlik güncellemeleri, bankacılık ve kişisel verileri tehdit eden açıkları kapatır. Güncelleme almayan bir telefon çalışmaya devam eder ama zamanla risk taşır ve bazı uygulamalar eski sürümleri desteklemeyi bırakır. Süre üreticiye ve modele göre birkaç yıldan yedi yıla kadar değişebilir."
+  },
+  {
+   "q": "Yurt dışından telefon almak mantıklı mı?",
+   "a": "Bu cihazların Türkiye'ye girişten itibaren 120 gün içinde IMEI kaydının yapılması ve kayıt harcının ödenmesi gerekir. Ayrıca garanti ve yetkili servis desteği Türkiye'de geçerli olmayabilir. Toplam maliyeti ve servis erişimini hesapladıktan sonra karar vermek daha doğru olur."
+  }
+ ],
+ "sources": [
+  {
+   "t": "PwC Türkiye: IMEI kayıt ücreti ve kaydın nasıl yapıldığı",
+   "u": "https://www.pwc.com.tr/imei-kayit-ucreti-ne-kadar-ve-nasil-odenir"
+  }
+ ]
+}

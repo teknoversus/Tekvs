@@ -1,0 +1,170 @@
+{
+ "slug": "laptop-pil-sagligi-nasil-kontrol-edilir",
+ "title": "Dizüstü Bilgisayarda Pil Sağlığı Nasıl Kontrol Edilir?",
+ "description": "Windows'ta powercfg pil raporu, macOS'ta Pil Sağlığı ve döngü sayısı ile laptop pilinin gerçek kapasitesini öğrenin; değişim zamanını doğru belirleyin.",
+ "tldr": "Windows'ta Komut İstemi'ne powercfg /batteryreport yazarak pilin tasarım kapasitesini ve şu anki tam şarj kapasitesini gösteren bir rapor alırsınız; ikisini oranlayınca pil sağlığı yüzdesi çıkar. macOS'ta Sistem Ayarları > Pil bölümündeki Pil Sağlığı durumu ve Sistem Bilgisi'ndeki döngü sayısı aynı işi görür. Pil şişmişse ölçüm yapmadan kullanımı bırakıp servise başvurun.",
+ "intro": [
+  "Yeni aldığınızda bütün gün giden dizüstünüz artık öğleden sonra prize muhtaç kalıyorsa, ilk soru şudur: Pil mi yıprandı, yoksa arka planda çalışan bir şey mi enerjiyi tüketiyor? İkinci el bir dizüstü almayı düşünüyorsanız da satıcının pil iyidir sözü yerine elle tutulur bir rakam görmek istersiniz.",
+  "İki durumda da ek program kurmanız gerekmez. Windows ve macOS, pilin bugün ne kadar enerji tutabildiğini ve kaç şarj döngüsünden geçtiğini gösteren yerleşik araçlara sahiptir. Aşağıda bu araçları adım adım kullanmayı, çıkan rakamları yorumlamayı ve hangi noktada servise gitmeniz gerektiğini anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Pil sağlığı neyi ölçer?",
+   "p": [
+    "Dizüstü pilleri lityum iyon veya lityum polimer hücrelerden oluşur ve her şarj-deşarj döngüsünde kimyasal olarak bir miktar yıpranır. Pil sağlığı, pilin bugün tam doluyken tutabildiği enerjinin, fabrikadan çıktığındaki tasarım kapasitesine oranıdır. Örneğin tasarım kapasitesi 60.000 mWh olan bir pil bugün 48.000 mWh tutabiliyorsa sağlığı yüzde 80'dir.",
+    "Döngü sayısı ise pilin toplamda kaç tam şarj eşdeğerinden geçtiğini gösterir. Bir gün yüzde 50, ertesi gün yüzde 50 kullanıp şarj etmek tek bir döngü sayılır. Isı da yıpranmayı hızlandırır; sıcak bir ortamda sürekli yüzde 100'de bekleyen bir pil, serin ortamda orta seviyede tutulan bir pile göre daha çabuk kapasite kaybeder."
+   ]
+  },
+  {
+   "h": "Windows'ta powercfg ile pil raporu nasıl alınır?",
+   "p": [
+    "Windows 10 ve 11'de yerleşik powercfg aracı, pilin geçmişini ve kapasitesini HTML formatında bir rapora döker. Komut, raporu o anda bulunduğunuz klasöre kaydeder; dosyayı kolay bulmak için doğrudan masaüstüne kaydettirmek daha pratiktir."
+   ],
+   "ol": [
+    "Başlat menüsüne cmd yazın ve Komut İstemi'ni açın. Çoğu sistemde yönetici yetkisi gerekmez; komut hata verirse Komut İstemi'ne sağ tıklayıp Yönetici olarak çalıştır seçeneğiyle yeniden deneyin.",
+    "Şu komutu yazıp Enter'a basın: powercfg /batteryreport /output \"%USERPROFILE%\\Desktop\\pil-raporu.html\"",
+    "Komut, raporun kaydedildiği yolu ekrana yazar. Masaüstünde oluşan pil-raporu.html dosyasını çift tıklayarak tarayıcıda açın.",
+    "Installed batteries (Yüklü piller) bölümünde DESIGN CAPACITY (tasarım kapasitesi) ve FULL CHARGE CAPACITY (tam şarj kapasitesi) satırlarını bulun. Rapor başlıkları sistem diline göre Türkçe veya İngilizce görünebilir.",
+    "Tam şarj kapasitesini tasarım kapasitesine bölüp 100 ile çarpın. Çıkan sonuç pil sağlığı yüzdesidir. Aynı bölümde CYCLE COUNT satırında döngü sayısı da yer alır; bazı modellerde bu değer boş görünebilir.",
+    "Battery capacity history (Pil kapasitesi geçmişi) tablosuna bakarak kapasitenin aylar içinde nasıl düştüğünü, Battery life estimates (Pil ömrü tahminleri) bölümünde de tam şarjla tahmini kullanım süresini görebilirsiniz."
+   ],
+   "note": "Komutu PowerShell'de çalıştırırsanız %USERPROFILE% ifadesi açılmaz. Bu durumda yalnızca powercfg /batteryreport yazın ve komutun ekrana yazdığı yoldaki dosyayı açın."
+  },
+  {
+   "h": "macOS'ta pil sağlığı ve döngü sayısı nasıl görülür?",
+   "p": [
+    "Apple, pil durumunu doğrudan sistem ayarlarında gösterir ve üçüncü parti uygulamaların ölçümlerinin doğru olmayabileceğini belirtir. Bu yüzden önce macOS'un kendi ekranlarına bakmak en güvenilir yoldur."
+   ],
+   "ol": [
+    "macOS Ventura ve sonrasında Apple menüsünden Sistem Ayarları'nı açın, kenar çubuğunda Pil'i seçin.",
+    "Pil Sağlığı satırında Normal veya Servis Önerilir durumunu görürsünüz. Yanındaki bilgi düğmesine tıklayarak ayrıntılara ulaşabilirsiniz.",
+    "Döngü sayısı için Option tuşunu basılı tutarak Apple menüsüne tıklayın ve Sistem Bilgisi'ni seçin.",
+    "Donanım başlığı altında Güç'e tıklayın. Pil Bilgisi bölümündeki Döngü Sayısı satırı pilin kaç döngüden geçtiğini gösterir.",
+    "Daha eski macOS sürümlerinde Option tuşunu basılı tutup menü çubuğundaki pil simgesine tıklayın; burada Yakında Değiştirin, Şimdi Değiştirin veya Pile Servis Gerekli gibi uyarılar görünebilir."
+   ],
+   "list": [
+    "Apple, M1 ve sonrası MacBook Air ile 2020 ve sonrası MacBook Pro modelleri için pil döngü sınırını 1000 olarak belirtir. Bu sayıya ulaşıldığında en iyi performans için pil değişimi önerilir.",
+    "Servis Önerilir durumu, pilin yeniyken olduğundan daha az şarj tuttuğu veya normal çalışmadığı anlamına gelir. Cihazı kullanmaya devam edebilirsiniz; kısalan kullanım süresi sizi rahatsız ediyorsa servise başvurmanız yeterlidir."
+   ]
+  },
+  {
+   "h": "Üretici uygulamaları ve şarj sınırlama ayarları",
+   "p": [
+    "Birçok Windows dizüstü üreticisi, kendi uygulamasında pil durumunu gösterir ve şarjı belirli bir yüzdede durduran bir ayar sunar. Cihaz çoğunlukla prize takılı masada kullanılıyorsa bu ayarı açmak, pilin sürekli yüzde 100'de bekleyerek yıpranmasını yavaşlatır. Özellik adları ve konumları modele ve uygulama sürümüne göre değişebilir."
+   ],
+   "list": [
+    "Lenovo: Lenovo Vantage içinde Güç bölümünde koruma modu (Conservation Mode) veya şarj eşiği ayarı",
+    "ASUS: MyASUS uygulamasında Battery Health Charging veya pil bakım modu; oyun modellerinde Armoury Crate",
+    "Dell: Dell Power Manager uygulamasında Primarily AC Use ve özel şarj modu; bazı modellerde BIOS içinde de bulunur",
+    "HP: İş modellerinde BIOS içindeki Battery Health Manager",
+    "Acer ve MSI: Acer Care Center veya Acer Sense içinde şarj sınırı; MSI Center içinde Battery Master",
+    "Mac: Sistem Ayarları > Pil > Pil Sağlığı ayrıntılarında bulunan Optimize Edilmiş Pil Şarjı, alışkanlıklarınıza göre yüzde 80'in üzerindeki şarjı geciktirir"
+   ]
+  },
+  {
+   "h": "Sonuçları nasıl yorumlamalısınız?",
+   "p": [
+    "Pil sağlığı yüzde 80'in üzerindeyse pil hâlâ makul durumdadır; kullanım süreniz kısalmışsa nedeni büyük ihtimalle arka plan uygulamaları, yüksek ekran parlaklığı veya güç modudur. Yüzde 80'in altına inen pillerde kullanım süresi belirgin şekilde kısalır ve bu, değişim için yaygın kabul gören bir eşiktir. Yüzde 60 civarı ve altında pil günlük kullanımda yetersiz kalmaya başlar.",
+    "Yeni bir dizüstünde pil sağlığının yüzde 100'ün birkaç puan altında veya üstünde görünmesi normaldir; pil ölçer devresi ölçümü tahminle yapar. Tek bir ölçüme değil, kapasite geçmişindeki eğilime bakın. Birkaç ay içinde ani ve büyük bir düşüş, pilde veya şarj devresinde sorun olabileceğine işaret eder."
+   ],
+   "table": {
+    "head": [
+     "Ölçülen değer",
+     "Ne anlama gelir?",
+     "Ne yapmalı?"
+    ],
+    "rows": [
+     [
+      "Yüzde 90 ve üzeri",
+      "Pil yeni ya da az yıpranmış",
+      "Herhangi bir işlem gerekmez"
+     ],
+     [
+      "Yüzde 80-90",
+      "Normal yaşlanma",
+      "Şarj sınırlama ayarını açmayı düşünün"
+     ],
+     [
+      "Yüzde 60-80",
+      "Kullanım süresi belirgin kısalmış",
+      "İhtiyaca göre değişimi planlayın"
+     ],
+     [
+      "Yüzde 60'ın altı veya servis uyarısı",
+      "Pil ömrünün sonuna yaklaşmış",
+      "Yetkili serviste değişim fiyatı alın"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Rapor alınamıyor veya değerler tutarsızsa ne yapmalı?",
+   "p": [
+    "Ölçüm adımları çalışmazsa sorunu aşağıdaki sırayla daraltmak, gereksiz servis masrafının önüne geçer."
+   ],
+   "ol": [
+    "Komutu yazım hatası olmadan, Komut İstemi'nde ve gerekiyorsa yönetici olarak yeniden çalıştırın.",
+    "Raporda pil hiç görünmüyorsa Aygıt Yöneticisi'nde Piller başlığına bakın; burada bir uyarı işareti varsa sürücüyü kaldırıp bilgisayarı yeniden başlatın.",
+    "Üreticinin destek sitesinden BIOS ve yonga seti güncellemelerini kontrol edin; pil yönetimi bu yazılımlara bağlıdır.",
+    "Kapasite değerleri her ölçümde çok farklı çıkıyorsa üreticinin kendi tanılama aracını (örneğin önyüklemede çalışan donanım testi) kullanın.",
+    "Bu adımlardan sonra pil hâlâ tanınmıyorsa veya bilgisayar prizden çıkınca hemen kapanıyorsa yetkili servise başvurun."
+   ]
+  },
+  {
+   "h": "Ne zaman ölçümü bırakıp doğrudan servise gitmelisiniz?",
+   "p": [
+    "Lityum iyon piller şiştiğinde içlerindeki gaz kasayı zorlar. Touchpad'in yukarı kalkması, klavyenin kabarması, alt kapakta aralık oluşması veya cihazın masada sallanması şişmenin tipik belirtileridir. Bu durumda bilgisayarı şarj etmeyi ve kullanmayı bırakın, serin ve yanmaz bir yüzeye koyun.",
+    "Şişmiş bir pili kendiniz sökmeye, bastırmaya veya delmeye çalışmayın; hasarlı hücre ısınabilir ve yangın riski oluşturur. Garantisi devam eden cihazlarda kapağı açmak garanti dışı kalmanıza da neden olabilir. Cihazı yetkili servise götürün ve eski pilin uygun şekilde geri dönüşüme verilmesini isteyin."
+   ]
+  },
+  {
+   "h": "Pil sağlığını korurken sık yapılan hatalar",
+   "list": [
+    "Dizüstünü yatak veya yorgan üzerinde kullanmak: Hava kanalları kapanır, ısınan pil daha hızlı yıpranır.",
+    "Masada hep prize takılı kullanıp şarj sınırlama ayarını açmamak: Pil sürekli yüzde 100'de ve sıcakta bekler.",
+    "Pili sık sık yüzde 0'a kadar boşaltmak: Lityum iyon piller derin deşarjı sevmez; eski nikel pillere ait tam boşaltma alışkanlığı gereksizdir.",
+    "Uzun süre kullanılmayacak cihazı tam dolu veya tamamen boş bırakmak: Depolama için yaklaşık yarı dolu bırakmak daha uygundur.",
+    "Orijinal olmayan, güç değeri uyumsuz adaptör kullanmak: Yetersiz adaptör şarjı yavaşlatır, kalitesiz adaptör ise güvenlik riski taşır."
+   ],
+   "p": [
+    "Bu alışkanlıkları düzeltmek yıpranmış bir pili geri getirmez, ancak yeni ya da az kullanılmış bir pilin sağlıklı kalacağı süreyi uzatır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "powercfg pil raporu nereye kaydediliyor?",
+   "a": "Rapor, komutu çalıştırdığınız klasöre kaydedilir ve tam yol ekrana yazılır. Yönetici olarak açılan Komut İstemi'nde bu genellikle C:\\Windows\\System32 klasörüdür. Dosyayı kolay bulmak için /output parametresiyle masaüstüne kaydettirebilirsiniz."
+  },
+  {
+   "q": "Pil sağlığı yüzde kaça düşünce değiştirilmeli?",
+   "a": "Yaygın kabul gören eşik, tasarım kapasitesinin yüzde 80'inin altına düşmesidir. Asıl ölçüt ise sizin ihtiyacınızdır; cihazı çoğunlukla prize takılı kullanıyorsanız yüzde 70'lerdeki bir pil de işinizi görebilir. Şişme veya servis uyarısı varsa yüzdeye bakmadan değiştirin."
+  },
+  {
+   "q": "Üçüncü parti pil uygulamalarına güvenebilir miyim?",
+   "a": "Bu uygulamalar genellikle işletim sisteminin sunduğu verileri farklı biçimde gösterir. Apple, kendi pil sağlığı bilgisinin esas alınmasını ve üçüncü parti uygulamaların doğru olmayabileceğini belirtir. Windows'ta powercfg raporu ve üreticinin kendi uygulaması öncelikli kaynak olmalıdır."
+  },
+  {
+   "q": "Döngü sayısı bilinmeyen ikinci el dizüstü alırken neye bakmalıyım?",
+   "a": "Satıcıdan powercfg raporunu veya Mac'te Sistem Bilgisi'ndeki döngü sayısını göstermesini isteyin. Tasarım ve tam şarj kapasitesi arasındaki oranı kendiniz hesaplayın. Kasada şişme belirtisi olup olmadığını da masaya koyarak kontrol edin."
+  },
+  {
+   "q": "Pil kalibrasyonu yapmak pil sağlığını artırır mı?",
+   "a": "Hayır. Kalibrasyon, pil ölçerin kalan şarjı daha doğru tahmin etmesine yardım edebilir ama pilin kimyasal kapasitesini geri getirmez. Bazı üreticiler bunu yalnızca ölçüm tutarsızlığında önerir; düzenli olarak yapılması gerekmez."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Microsoft Learn: powercfg komut satırı seçenekleri",
+   "u": "https://learn.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options"
+  },
+  {
+   "t": "Apple Destek: Mac dizüstü bilgisayarlarda pil döngü sayısı",
+   "u": "https://support.apple.com/en-gb/102888"
+  },
+  {
+   "t": "Apple Destek: Mac dizüstüde Servis Önerilir uyarısı",
+   "u": "https://support.apple.com/en-au/108376"
+  }
+ ]
+}

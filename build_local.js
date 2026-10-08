@@ -65,7 +65,7 @@ refreshCategoryCards({ products: SEED, colorFor, fmtDate, computeScores, ICONS, 
 // Faz 2: en yüksek trafik potansiyelli 31 ürün için "alınır mı" + "fiyat/performans mı" sayfaları
 generateBuyingGuides({ products: SEED, prosConsFor, computeScores, targetIds: FAZ2_TARGET_IDS, rootDir: __dirname });
 
-generateTopicalGuides({ rootDir: __dirname });
+generateTopicalGuides({ rootDir: __dirname, products: SEED, computeScores, productSlug });
 
 generateClusterArticles({ rootDir: __dirname });
 

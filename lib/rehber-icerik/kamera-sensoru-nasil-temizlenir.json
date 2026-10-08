@@ -1,0 +1,124 @@
+{
+ "slug": "kamera-sensoru-nasil-temizlenir",
+ "title": "Kamera Sensörü Nasıl Temizlenir? Toz Testi ve Güvenli Adımlar",
+ "description": "Fotoğraflarınızda hep aynı yerde koyu lekeler mi var? Sensördeki tozu nasıl tespit edeceğinizi, hangi adımları hangi sırayla deneyeceğinizi anlattık.",
+ "tldr": "Önce kameranın kendi sensör temizleme modunu çalıştırın, ardından fırçasız bir el pompasıyla kamera hafifçe aşağı bakarken sensöre hava üfleyin. Basınçlı hava spreyi, fırça ve ev tipi temizlik ürünleri kullanmayın. Hava ile çıkmayan yapışkan lekeler için ıslak temizlik risklidir; deneyiminiz yoksa kamerayı yetkili servise götürün.",
+ "intro": [
+  "Açık gökyüzü fotoğraflarınızda her karede aynı noktada beliren gri, yuvarlak lekeler görüyorsanız sorun büyük olasılıkla lenste değil sensördedir. Değiştirilebilir lensli kameralarda lens her çıkarıldığında gövdenin içi açık havaya maruz kalır ve zamanla toz zerreleri sensörün önündeki koruyucu cama yapışır.",
+  "Sensör temizliği doğru sırayla yapıldığında çoğu kullanıcının evde güvenle halledebileceği bir iştir. Yanlış malzemeyle yapıldığında ise onarımı pahalı bir hasara yol açabilir. Aşağıda tozu nasıl tespit edeceğinizi, hangi yöntemi ne zaman deneyeceğinizi ve işi nerede servise bırakmanız gerektiğini adım adım bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Lekenin sensörde olduğundan nasıl emin olursunuz?",
+   "p": [
+    "Lens üzerindeki kir genellikle görüntünün geneline yayılan bir puslanma ya da kontrast kaybı yaratır. Sensördeki toz ise keskin kenarlı veya yumuşak, koyu, küçük lekeler olarak görünür ve lensi değiştirseniz bile aynı yerde kalır. Bu ayrım, gereksiz yere sensöre müdahale etmemeniz için önemlidir.",
+    "Basit bir test yapabilirsiniz: Kamerayı diyafram öncelikli moda (A veya Av) alın, diyaframı f/16 veya daha kapalı bir değere ayarlayın ve düz bir beyaz duvarın ya da bulutsuz gökyüzünün fotoğrafını çekin. Odaklamanın net olması gerekmez. Fotoğrafı bilgisayarda büyüterek inceleyin; kapalı diyafram tozu belirgin hâle getirir. Görüntünün sağ üstündeki leke, gerçekte sensörün sol alt tarafındadır çünkü lens görüntüyü ters çevirir."
+   ],
+   "note": "Geniş diyaframla (f/2.8 gibi) çekilen fotoğraflarda toz çoğu zaman görünmez. Toz yalnızca kapalı diyaframda görünüyorsa ve işinizi etkilemiyorsa acele etmenize gerek yok."
+  },
+  {
+   "h": "Başlamadan önce hazırlık ve malzemeler",
+   "p": [
+    "Sensör çok hassas bir yüzeydir. Canon kılavuzları sensör yüzeyinin son derece hassas olduğunu vurgular ve manuel temizlik için tam şarjlı pil kullanılmasını ister. Sony de temizlik öncesinde pilin yeterli doluluk seviyesinde olmasını şart koşar. Bunun nedeni, DSLR'lerde temizlik sırasında aynanın kalkık, perdenin açık tutulmasıdır; işlem ortasında güç kesilirse perde kapanır ve hem perdeye hem sensöre zarar verebilir."
+   ],
+   "list": [
+    "Tam şarjlı pil",
+    "Kamera için üretilmiş, ucunda fırça olmayan lastik el pompası (blower)",
+    "Gövde kapağı ve lensin arka kapağı",
+    "Rüzgârsız, tozsuz, iyi aydınlatılmış bir oda; mümkünse halı ve kumaş yüzeylerden uzak bir masa",
+    "Islak temizlik düşünüyorsanız: sensör boyutunuza uygun genişlikte tek kullanımlık sensör çubukları ve bunlarla uyumlu sensör temizleme sıvısı"
+   ]
+  },
+  {
+   "h": "Adım adım güvenli sensör temizliği",
+   "p": [
+    "Aşağıdaki sıra, en az riskli yöntemden başlayıp yalnızca gerektiğinde bir sonraki adıma geçmenizi sağlar. Menü adları markaya ve modele göre farklı olabilir; Sony'de Kurulum menüsünde “Temizleme Modu”, Canon'da “Sensör temizleme” altında “Şimdi temizle” ve “Manuel temizle”, Nikon'da “Görüntü sensörünü temizle” gibi adlarla karşılaşırsınız. Kendi modelinizin kullanım kılavuzunu kontrol edin."
+   ],
+   "ol": [
+    "Pilin tam dolu olduğundan emin olun ve lens takılıyken kameranın otomatik sensör temizleme işlevini menüden çalıştırın. Sensör kısa süre titreşerek gevşek tozu silkeler.",
+    "Toz testini tekrarlayın. Lekeler kaybolduysa işlem bitmiştir; çoğu durumda bu adım yeterli olur.",
+    "Lekeler duruyorsa kameranızın manuel temizlik moduna geçin. Aynasız kameralarda bu genellikle kameranın kapatılıp lensin çıkarılmasıyla yapılır; DSLR'lerde menüden manuel temizlik seçilince ayna kalkar ve perde açılır.",
+    "Lensi çıkarın ve kamerayı sensör hafifçe aşağı bakacak biçimde tutun. Böylece üflediğiniz toz yerçekimiyle dışarı düşer.",
+    "El pompasının ucunu gövdenin lens yuvasından içeri sokmadan, sensöre değdirmeden birkaç kısa ve orta şiddette hava verin. Çok sert üflemeyin; Sony bunun kamera içine zarar verebileceği uyarısını yapar.",
+    "İşlemi kısa tutun, ardından lensi veya gövde kapağını hemen takın. DSLR'de manuel temizlik modunu menüden sonlandırıp kamerayı kapatın.",
+    "Toz testini tekrar yapın. Lekeler azaldıysa bir tur daha üfleyebilirsiniz. Hiç değişmediyse leke yapışkan ya da yağlı olabilir; bir sonraki bölüme geçin."
+   ]
+  },
+  {
+   "h": "Hava ile çıkmayan lekeler: ıslak temizlik ve riskleri",
+   "p": [
+    "Polen, yağ zerresi veya nem kurusu gibi yapışkan kirler hava ile çıkmaz. Bu durumda tek kullanımlık sensör çubukları ve uygun sıvı ile yapılan ıslak temizlik gerekir. Çubuk sensör boyutunuza uygun genişlikte olmalı, sıvı çubuğa az miktarda damlatılmalı ve çubuk sensör üzerinde tek yönde, hafif baskıyla bir kez geçirilmelidir. Aynı çubuk ikinci kez kullanılmaz.",
+    "Islak temizliğin riski, sensör yüzeyine sert bir parçacığı sürükleyerek çizik bırakmak ya da sıvı izi bırakmaktır. Canon ve Sony kılavuzları, el pompasıyla çıkmayan kirler için kullanıcıya servis noktasına başvurmasını önerir. Bu konuda deneyiminiz yoksa, özellikle kamera garanti kapsamındaysa, ıslak temizliği yetkili servise bırakmak daha mantıklıdır. Kullanıcı kaynaklı fiziksel hasarın garanti kapsamı dışında kalabileceğini de göz önünde bulundurun."
+   ]
+  },
+  {
+   "h": "Sensöre zarar veren yaygın hatalar",
+   "p": [
+    "Sensör hasarlarının çoğu, iyi niyetle ama yanlış araçla yapılan temizlikten kaynaklanır. Aşağıdaki hatalardan kaçınmak, temizlik adımları kadar önemlidir."
+   ],
+   "list": [
+    "Basınçlı hava spreyi kullanmak: Canon, basınçlı hava veya gazın sensöre zarar verebileceğini, püskürtülen gazın sensör üzerinde donarak çizik yapabileceğini belirtir.",
+    "Ucunda fırça olan pompa kullanmak: fırça kılları sensörü çizebilir ve yağ taşıyabilir.",
+    "Ağızla üflemek: tükürük zerreleri sensörü toz olduğundan çok daha zor temizlenir hâle getirir.",
+    "Pompanın ucunu lens yuvasının içine sokmak: uç sensöre veya iç parçalara çarpabilir.",
+    "Kulak çubuğu, mendil, gözlük bezi veya alkollü ev ürünleriyle silmek: tüy, çizik ve leke bırakabilir.",
+    "Temizlik sırasında kamerayı kapatmak ya da pil ve kart kapağını açmak: DSLR'lerde perde aniden kapanabilir.",
+    "Rüzgârlı balkonda veya kumlu ortamda temizlik yapmak: temizlediğiniz anda yeni toz girer."
+   ]
+  },
+  {
+   "h": "Sorun geçmezse: sorun giderme sırası ve servis zamanı",
+   "p": [
+    "Temizlikten sonra lekeler hâlâ görünüyorsa, sırayla şunları kontrol edin. Önce testi farklı bir lensle tekrarlayın; leke lense ait olabilir. Ardından lensin arka camını ve vizör ya da ekran gibi yüzeyleri ayrı ayrı kontrol edin. Vizördeki toz yalnızca bakarken görünür, fotoğrafa yansımaz.",
+    "Lekeler tam olarak aynı yerde kalıyorsa ve hava ile değişmiyorsa sensöre yapışmış bir kir vardır. Fotoğraflarda çizgi şeklinde bir iz, renkli lekeler ya da sabit parlak noktalar görüyorsanız bu, temizlikle çözülebilecek bir durum olmayabilir; sensör veya koruyucu cam hasarı ya da elektronik bir sorun söz konusu olabilir."
+   ],
+   "list": [
+    "Islak temizlikten sonra izler veya çizgiler kaldıysa",
+    "Sensör yüzeyinde gözle görülebilen bir çizik ya da çatlak varsa",
+    "Kamera yere düştükten veya ıslandıktan sonra lekeler ortaya çıktıysa",
+    "Sensör temizleme modu hata veriyor ya da hiç çalışmıyorsa",
+    "Kamera garanti kapsamındaysa ve kendi müdahalenizin garantiyi etkilemesini istemiyorsanız"
+   ],
+   "note": "Bu durumlarda kamerayı markanın Türkiye'deki yetkili servisine götürün ve garanti belgenizi yanınızda bulundurun."
+  },
+  {
+   "h": "Toz birikimini azaltan alışkanlıklar",
+   "p": [
+    "Sensörü ne kadar az açarsanız o kadar az temizlemeniz gerekir. Lens değişimini kısa sürede, kamera aşağı bakarken ve korunaklı bir yerde yapmak en etkili önlemdir. Lensi çıkardığınızda gövdeyi hiçbir zaman kapaksız bırakmayın; kullanmadığınız lenslerin arka kapaklarını da takılı tutun.",
+    "Kamera çantasının iç bölmelerini ara sıra silkeleyip temizlemek, lens arka kapaklarının içinde biriken tozu üfleyerek almak da işe yarar. Kameranızda kapanırken sensörü otomatik temizleme seçeneği varsa açık tutabilirsiniz. Bazı aynasız modellerde kapandığında perdeyi sensörün önüne indiren bir ayar bulunur; varsa lens değişimi sırasında ek koruma sağlar."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Sensör ne sıklıkla temizlenmeli?",
+   "a": "Belirli bir takvim yoktur; sıklık, lens değiştirme alışkanlığınıza ve çektiğiniz ortama bağlıdır. Toz testinde veya fotoğraflarınızda lekeler görmeye başladığınızda temizlik yapın. Kumlu, tozlu ortamlarda çok çekim yapıyorsanız daha sık kontrol etmeniz gerekir."
+  },
+  {
+   "q": "Basınçlı hava spreyi neden kullanılmamalı?",
+   "a": "Spreyin basıncı sensöre ve kamera içindeki parçalara zarar verebilir. Canon'un kılavuzu ayrıca püskürtülen gazın sensör yüzeyinde donarak çizik bırakabileceğini belirtir. Sony de su damlacıkları saçabileceği gerekçesiyle sprey tipi üfleyicileri önermez."
+  },
+  {
+   "q": "Sensör temizleme modu tozu neden her zaman temizlemiyor?",
+   "a": "Bu mod sensörü titreştirerek yalnızca gevşek tozu silkeler. Nem, yağ veya polen gibi yapışkan kirler titreşimle kopmaz. Bu durumda el pompası, o da yetmezse ıslak temizlik ya da servis gerekir."
+  },
+  {
+   "q": "Aynasız kamerada sensör DSLR'ye göre daha mı çabuk tozlanır?",
+   "a": "Aynasız gövdelerde lens çıkarıldığında sensör ile dış ortam arasında ayna bulunmaz, bu yüzden sensör daha doğrudan açıkta kalır. Buna karşılık sensöre erişmek ve temizlemek de daha kolaydır. Lens değişimini dikkatli yapmak her iki tür için de en iyi korumadır."
+  },
+  {
+   "q": "Lekeleri fotoğraf düzenleme programıyla silmek yeterli olur mu?",
+   "a": "Az sayıda fotoğrafta leke düzeltme aracı işe yarar ve sensöre dokunmadığınız için risk yoktur. Ancak toz her yeni fotoğrafta tekrar çıkacağı için kalıcı çözüm değildir. Bazı markalar toz konumunu kaydedip yazılımla silmeye yarayan toz verisi özelliği sunar; bunu kılavuzunuzda kontrol edebilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Sony Yardım Kılavuzu: Temizleme Modu",
+   "u": "https://helpguide.sony.net/ilc/2450/v1/en/contents/0601_cleaning_mode.html"
+  },
+  {
+   "t": "Canon Destek: Manuel Sensör Temizliği",
+   "u": "https://in.canon/en/support/8203786300"
+  }
+ ]
+}

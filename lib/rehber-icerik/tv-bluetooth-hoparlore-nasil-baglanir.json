@@ -1,0 +1,112 @@
+{
+ "slug": "tv-bluetooth-hoparlore-nasil-baglanir",
+ "title": "TV Bluetooth Hoparlöre Nasıl Bağlanır? Adımlar ve Gecikme Sorunu",
+ "description": "Samsung, LG ve Google TV'de Bluetooth hoparlör eşleştirme adımları, cihaz listede çıkmazsa yapılacaklar ve ses gecikmesini azaltma yolları.",
+ "tldr": "Hoparlörü eşleştirme moduna alın, ardından TV'nin ses çıkışı ya da Bluetooth menüsünden cihazı seçip eşleştirin. TV'nizde Bluetooth yoksa kulaklık veya optik çıkışa takılan harici bir Bluetooth verici kullanabilirsiniz. Dudak senkronu kayıyorsa TV'nin ses gecikmesi ayarını ya da düşük gecikmeli bir bağlantıyı deneyin.",
+ "intro": [
+  "TV'nin kendi hoparlörü ince kasaya sığdırılmak zorunda olduğu için diyaloglar çoğu zaman boğuk çıkar. Evdeki taşınabilir Bluetooth hoparlör ya da soundbar bu açığı kapatabilir; üstelik kablo çekmeden. Gece geç saatte başkalarını rahatsız etmeden izlemek için Bluetooth kulaklık bağlamak isteyenler de aynı menüyü kullanır.",
+  "Aşağıda en yaygın üç TV platformu için eşleştirme adımlarını, Bluetooth'u olmayan TV'ler için çözümü ve Bluetooth ses aktarımının en bilinen sorunu olan gecikmeyi nasıl azaltabileceğinizi bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Başlamadan önce: TV'nizde Bluetooth ses çıkışı var mı?",
+   "p": [
+    "Her akıllı TV Bluetooth üzerinden ses gönderemez. Bazı modellerde Bluetooth yalnızca kumanda bağlantısı için bulunur. Samsung'un destek sayfası da tüm Samsung TV'lerin Bluetooth bağlantısını desteklemediğini, bazılarının ses cihazlarını kabul edip klavye veya oyun kumandasını kabul etmediğini açıkça belirtiyor.",
+    "En hızlı kontrol yolu, TV'nin ses ayarlarında 'Bluetooth' geçen bir seçenek aramaktır. Bulamazsanız modelinizin teknik özellik sayfasına ya da kullanım kılavuzuna bakın. Hoparlör tarafında ise cihazın şarjlı olduğundan ve başka bir telefona bağlı olmadığından emin olun; hoparlör zaten bir telefona bağlıysa çoğu zaman TV'nin listesinde görünmez."
+   ]
+  },
+  {
+   "h": "Samsung, LG ve Google TV'de eşleştirme adımları",
+   "p": [
+    "Önce hoparlörü eşleştirme moduna alın. Bu genellikle Bluetooth ya da güç düğmesini birkaç saniye basılı tutmakla olur ve bir ışığın hızlı yanıp sönmesiyle anlaşılır. Ardından TV'de aşağıdaki yolu izleyin. Menü adları markaya, model yılına ve yazılım sürümüne göre farklı olabilir."
+   ],
+   "ol": [
+    "Samsung (2016 ve sonrası Tizen modeller): Ayarlar > Ses > Ses Çıkışı > Bluetooth Hoparlör Listesi yolunu açın, listeden hoparlörü seçin ve 'Eşleştir ve bağlan' deyin.",
+    "Google TV (Sony, TCL, Philips ve diğer Google TV'ler): Ana ekranda profil simgesi > Ayarlar > Kumanda ve Aksesuarlar > Kumanda veya aksesuar eşleştir yolunu izleyin, cihazı seçip eşleştirme isteğini onaylayın.",
+    "LG (webOS): Ayarlar menüsünde Ses > Ses Çıkışı bölümüne girin ve Bluetooth cihazı seçeneğinden hoparlörü arayın. webOS sürümüne göre seçeneğin adı ve yeri değişebilir.",
+    "Bağlantı kurulduktan sonra TV'de kısa bir video açıp sesin hoparlörden geldiğini doğrulayın.",
+    "Ses seviyesini önce TV kumandasıyla, gerekirse hoparlörün kendi düğmeleriyle ayarlayın; bazı modellerde iki seviye birbirinden bağımsızdır."
+   ],
+   "note": "Samsung, eşleşmiş cihazların TV açıldığında genellikle kendiliğinden yeniden bağlandığını belirtiyor. TV sesini tekrar kendi hoparlöründen almak istiyorsanız hoparlörü kapatın ya da ses çıkışını TV Hoparlörü olarak değiştirin."
+  },
+  {
+   "h": "TV'de Bluetooth yoksa: harici verici ile bağlantı",
+   "p": [
+    "Bluetooth'u olmayan bir TV'ye kablosuz hoparlör bağlamak için 'Bluetooth ses vericisi' (transmitter) denen küçük bir aparat kullanılır. Verici, TV'nin 3,5 mm kulaklık çıkışına ya da optik (Toslink) ses çıkışına takılır, sesi alıp Bluetooth'a çevirir. Optik çıkış kullanıyorsanız TV'nin dijital ses çıkış formatını PCM yapmanız gerekebilir; aksi halde bazı vericiler Dolby sinyalini tanımaz ve ses gelmez.",
+    "Dikkat edilecek bir nokta: TV'nin USB girişine takılan Bluetooth dongle'lar genellikle ses çıkışı olarak tanınmaz. Samsung bunu destek sayfasında 'USB Bluetooth verici alıcılar desteklenmez' diye açıkça yazıyor. Verici alırken TV'nizdeki çıkış türüyle uyumlu olanı seçin; USB'den yalnızca güç alan ama sesi kulaklık ya da optik çıkıştan alan modeller sorunsuz çalışır."
+   ]
+  },
+  {
+   "h": "Ses gecikmesi neden olur, nasıl azaltılır?",
+   "p": [
+    "Bluetooth sesi sıkıştırarak gönderir. Bu sıkıştırma ve tamponlama, görüntüyle ses arasında fark edilebilir bir gecikme yaratabilir. Haber spikerinin dudakları sesten önce kıpırdıyorsa yaşadığınız şey budur. Gecikmenin miktarı, iki cihazın ortak desteklediği kodeke bağlıdır.",
+    "En yaygın ve her cihazda bulunan SBC kodeki iki yüz milisaniye mertebesinde gecikme üretebilir. aptX Low Latency gibi düşük gecikme için tasarlanmış kodekler bu süreyi kırk milisaniye civarına indirir; ancak hem verici hem alıcı aynı kodeki desteklemiyorsa bağlantı SBC'ye geri döner. TV'lerin çoğu yalnızca SBC ya da SBC ile AAC sunar, bu yüzden düşük gecikmeli kodek genellikle harici verici kullanıldığında devreye girer."
+   ],
+   "list": [
+    "TV'nin ses ayarlarında 'AV senkronizasyonu', 'ses gecikmesi' ya da 'dudak senkronu' adlı bir ayar varsa önce onu deneyin.",
+    "Oyun modunu açmak görüntü işlemeyi kısaltır, ama Bluetooth gecikmesini tek başına çözmez.",
+    "Oyun oynuyorsanız ya da gecikmeye hassassanız soundbar için HDMI ARC/eARC veya optik kablo daha doğru tercihtir.",
+    "Hoparlörü TV'ye yakın konumlandırın; araya giren duvarlar ve mikrodalga fırın gibi 2,4 GHz parazit kaynakları kopmalara neden olabilir."
+   ]
+  },
+  {
+   "h": "Bağlanmıyorsa izlenecek sorun giderme sırası",
+   "p": [
+    "Sorunların büyük kısmı birkaç basit adımla çözülür. Aşağıdaki sırayı izlemek, gereksiz yere sıfırlama yapmanızı önler."
+   ],
+   "ol": [
+    "Hoparlörün gerçekten eşleştirme modunda olduğunu kontrol edin; ışık yavaş yanıp sönüyorsa çoğu zaman sadece açıktır, eşleştirme modunda değildir.",
+    "Hoparlörün yakındaki telefon veya tablete otomatik bağlanmadığından emin olun; o cihazlarda Bluetooth'u geçici olarak kapatın.",
+    "TV'yi ve hoparlörü kapatıp açın. Samsung da cihaz listede çıkmazsa ikisini kapatıp yeniden açmayı öneriyor.",
+    "Daha önce eşleşmiş ama artık çalışmayan kaydı TV'nin cihaz listesinden silin, hoparlörün eşleşme hafızasını kılavuzundaki yöntemle temizleyin ve baştan eşleştirin.",
+    "TV yazılımını güncelleyin; Bluetooth ses uyumluluğu güncellemelerle iyileşebilir.",
+    "Farklı bir Bluetooth kulaklık veya hoparlörle deneyin. O da bağlanmıyorsa sorun TV tarafındadır."
+   ],
+   "note": "Hiçbir Bluetooth cihazı listede görünmüyorsa ve TV'nin bu özelliği desteklediğinden eminseniz, sorun donanımsal olabilir. Garanti süresi içindeyse kendiniz müdahale etmeden yetkili servise başvurun."
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Bluetooth bağlantısı kurulduğu halde sorun yaşayanların çoğu aynı birkaç noktada takılıyor."
+   ],
+   "list": [
+    "Aynı anda iki ses cihazı bağlamaya çalışmak: Google'ın destek sayfasına göre Google TV'ye birden fazla Bluetooth cihazı bağlanabilir, ancak aynı anda yalnızca bir ses cihazı kullanılabilir.",
+    "TV hoparlörü ile Bluetooth hoparlörün birlikte çalacağını sanmak: Çoğu TV ses çıkışını tek bir yere yönlendirir.",
+    "Soundbar'ı varken HDMI ARC yerine Bluetooth ile bağlamak: Bu durumda çok kanallı ses ve Dolby formatları kullanılamaz.",
+    "Hoparlörün pil tasarrufu modunu göz ardı etmek: Uzun sessiz sahnelerde bazı hoparlörler uyku moduna geçip bağlantıyı koparır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "TV'ye aynı anda iki Bluetooth kulaklık bağlanabilir mi?",
+   "a": "Çoğu TV aynı anda tek bir Bluetooth ses cihazına izin verir. Google TV için Google bunu açıkça belirtiyor. İki kişi kulaklıkla izleyecekse çift çıkışlı harici bir Bluetooth verici kullanmak daha pratik bir çözümdür."
+  },
+  {
+   "q": "Bluetooth hoparlör mü, soundbar mı daha iyi?",
+   "a": "Amaç sadece daha yüksek ve net ses ise taşınabilir hoparlör iş görür. Film ve dizide çok kanallı ses, düşük gecikme ve TV kumandasıyla ses kontrolü istiyorsanız HDMI ARC ile bağlanan bir soundbar daha uygundur."
+  },
+  {
+   "q": "Hoparlör bağlı ama ses gelmiyor, neden?",
+   "a": "TV'nin ses çıkışı hâlâ TV hoparlörü olarak seçili olabilir; ses çıkışı menüsünü kontrol edin. Hoparlörün kendi ses seviyesi kısık ya da sessizde de olabilir. Harici verici kullanıyorsanız optik çıkışın PCM formatına ayarlı olduğundan emin olun."
+  },
+  {
+   "q": "Bluetooth bağlantısı sesin kalitesini düşürür mü?",
+   "a": "Bluetooth sesi sıkıştırdığı için kablolu bağlantıya göre bir miktar kayıp vardır. TV izlerken bu çoğu kişi için belirgin değildir; asıl hissedilen sorun ses kalitesinden çok gecikmedir."
+  },
+  {
+   "q": "Eski bir tüplü ya da Bluetooth'suz LCD TV'ye hoparlör bağlanabilir mi?",
+   "a": "TV'de kulaklık ya da RCA ses çıkışı varsa, bu çıkışa uygun bir Bluetooth verici ile bağlanabilir. Çıkış yoksa Bluetooth ile bağlamanın pratik bir yolu bulunmaz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Samsung UK - How to connect Bluetooth devices to your Samsung TV",
+   "u": "https://www.samsung.com/uk/support/tv-audio-video/how-to-connect-bluetooth-devices-to-your-samsung-tv"
+  },
+  {
+   "t": "Google - Connect Bluetooth devices to Google streaming devices",
+   "u": "https://support.google.com/chromecast/answer/14632555"
+  }
+ ]
+}

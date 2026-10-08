@@ -1,0 +1,140 @@
+{
+ "slug": "iso-nedir-fotografcilik",
+ "title": "ISO Nedir? Fotoğrafçılıkta ISO Değeri Nasıl Ayarlanır",
+ "description": "ISO kameranızda neyi değiştirir, gürültü nereden gelir, hangi durumda hangi ISO seçilir? Pozlama üçgeni, otomatik ISO ayarı ve sık yapılan hatalar.",
+ "tldr": "ISO, sensörden gelen sinyalin ne kadar yükseltileceğini belirleyen parlaklık ayarıdır. Düşük ISO parlak ortamda en temiz sonucu verir; yüksek ISO karanlıkta hızlı enstantane kullanmanızı sağlar ama gürültü artar. Gürültünün asıl kaynağı sensöre az ışık düşmesidir, ISO bu zayıf sinyali görünür hale getirir.",
+ "intro": [
+  "Kapalı bir spor salonunda çocuğunuzun basketbol maçını çekiyorsunuz. Enstantaneyi hızlı tutunca fotoğraflar karanlık çıkıyor, yavaşlatınca oyuncular bulanıklaşıyor. Bu noktada çözüm genellikle ISO değerini yükseltmektir. Ama ne kadar yükseltmeli, fotoğraf ne kadar bozulur ve otomatik ISO bu işi sizin yerinize yapabilir mi?",
+  "ISO, diyafram ve enstantaneyle birlikte pozlamayı belirleyen üç ayardan biridir. Diğer ikisinden farkı, sensöre düşen ışık miktarını değiştirmemesidir. Aşağıda ISO'nun gerçekte ne yaptığını, pratikte nasıl ayarlanacağını ve sık tekrarlanan yanlışları ele alıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "ISO tam olarak neyi değiştirir?",
+   "p": [
+    "Adını Uluslararası Standartlar Örgütü'nden (ISO) alan bu değer, filmli fotoğraf döneminde filmin ışığa duyarlılığını gösteriyordu. Dijital kameralar için aynı ölçek ISO 12232 standardıyla tanımlanır; böylece farklı kameraların ISO değerleri, filmdeki karşılıklarına benzer bir parlaklık sonucu verir.",
+    "Dijital kamerada ISO'yu yükseltmek sensörün fiziksel duyarlılığını değiştirmez. Sensör aynı ışığı toplar; kamera bu sinyali dijitale çevirmeden önce elektronik olarak yükseltir ve görüntüyü işlerken parlaklığı buna göre ayarlar. Yani ISO, bir mikrofonun kazanç düğmesine benzer: sesi yükseltir, ama sessiz bir odadaki fısıltıyı netleştirmez, uğultuyu da birlikte büyütür."
+   ]
+  },
+  {
+   "h": "Pozlama üçgeni: ISO, diyafram ve enstantane",
+   "p": [
+    "Bir fotoğrafın parlaklığını üç ayar birlikte belirler. Diyafram ve enstantane sensöre ulaşan ışık miktarını değiştirir; ISO ise ulaşan ışığın ne kadar yükseltileceğini. Her ayarın parlaklık dışında bir yan etkisi vardır ve doğru seçim, hangi yan etkiyi kabul edebileceğinize bağlıdır.",
+    "ISO değerini iki katına çıkarmak (örneğin 400'den 800'e) parlaklığı bir durak artırır. Bu, enstantaneyi yarı süreye indirdiğinizde kaybettiğiniz ışığı telafi eder. Pratikte ISO genellikle en son ayarlanan değişkendir: önce istediğiniz diyafram ve enstantaneyi seçer, kalan açığı ISO ile kapatırsınız."
+   ],
+   "table": {
+    "head": [
+     "Ayar",
+     "Parlaklığı nasıl değiştirir",
+     "Yan etkisi"
+    ],
+    "rows": [
+     [
+      "Diyafram (f değeri)",
+      "Lens açıklığıyla gelen ışığı değiştirir",
+      "Alan derinliği; düşük f değeri arka planı bulanıklaştırır"
+     ],
+     [
+      "Enstantane hızı",
+      "Işığın sensöre düştüğü süreyi değiştirir",
+      "Hareket bulanıklığı veya donma, el titremesi"
+     ],
+     [
+      "ISO",
+      "Sensörden gelen sinyali yükseltir",
+      "Yüksek değerlerde gürültü, renk ve dinamik aralık kaybı"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Gürültü gerçekte nereden geliyor?",
+   "p": [
+    "Yüksek ISO'lu fotoğrafların grenli görünmesinin asıl nedeni, o fotoğraf çekilirken sensöre az ışık düşmüş olmasıdır. Işık doğası gereği düzensiz gelir; az ışık toplandığında bu düzensizlik görüntüde rastgele noktalar olarak belirir. Buna sensörün kendi elektronik gürültüsü de eklenir.",
+    "ISO'yu yükseltmek bu durumu yaratmaz, görünür kılar. Bu yüzden karanlık bir sahnede ISO'yu düşük tutup fotoğrafı karanlık çekmek, sonra bilgisayarda aydınlatmak çoğu kamerada daha temiz bir sonuç vermez; bazı kameralarda gölgelerde daha fazla gürültü bile çıkarır. Doğru yaklaşım, mümkün olduğunca fazla ışık toplamaya çalışmak (daha geniş diyafram, kabul edilebilir en yavaş enstantane) ve kalan farkı ISO ile kapatmaktır."
+   ],
+   "note": "Aynı ISO değeri farklı kameralarda farklı gürültü üretir. Sensör boyutu, sensör teknolojisi ve görüntü işleme belirleyicidir; bir kamerada kabul edilebilir olan ISO 6400 bir başkasında fazla gürültülü olabilir."
+  },
+  {
+   "h": "Hangi durumda hangi ISO? Pratik başlangıç değerleri",
+   "p": [
+    "Aşağıdaki değerler kesin kurallar değil, makul başlangıç noktalarıdır. Kameranızın sınırlarını öğrenmek için aynı sahneyi farklı ISO'larda çekip bilgisayarda yüzde yüz büyütmede karşılaştırmak en sağlıklı yöntemdir."
+   ],
+   "list": [
+    "Güneşli dış mekân: Kameranızın en düşük doğal değeri, çoğu modelde ISO 100 civarı.",
+    "Bulutlu hava veya gölge: ISO 200 ile 400 arası.",
+    "Aydınlık iç mekân, gün ışığı alan oda: ISO 400 ile 1600 arası.",
+    "Spor salonu, konser, akşam yemeği: Hareketi dondurmak için ISO 1600 ile 6400 arası veya üstü.",
+    "Tripodla gece manzarası: Hareket yoksa düşük ISO ve uzun pozlama; ISO'yu yükseltmenize gerek kalmaz."
+   ]
+  },
+  {
+   "h": "Otomatik ISO nasıl ayarlanır?",
+   "p": [
+    "Otomatik ISO, ISO'yu siz yerine kameranın seçmesidir; ancak sınırlarını siz belirleyebilirsiniz. Bu özellikle ışığın sürekli değiştiği düğün, sokak ya da etkinlik çekimlerinde çok kullanışlıdır. Menü adları markaya göre farklıdır; genellikle çekim menüsünde ISO ayarları ya da ISO otomatik ayar başlığı altında bulunur."
+   ],
+   "ol": [
+    "Çekim modunu diyafram önceliği (A veya Av) ya da manuel (M) olarak seçin.",
+    "ISO'yu Auto konumuna getirin ve ISO ayarları menüsünü açın.",
+    "Üst sınırı, kameranızda kabul edilebilir bulduğunuz en yüksek değere ayarlayın.",
+    "Varsa en yavaş enstantane hızı sınırını belirleyin; hareketli konular için daha hızlı, durağan konular için daha yavaş bir değer seçin.",
+    "Manuel modda pozlama telafisi otomatik ISO ile çalışıyorsa, parlaklığı telafi düğmesiyle ince ayarlayın."
+   ]
+  },
+  {
+   "h": "Kamera alırken yüksek ISO performansına nasıl bakılır?",
+   "p": [
+    "Teknik tablolarda yazan en yüksek ISO değeri, o değerde kullanılabilir fotoğraf alacağınız anlamına gelmez. Bir kameranın 100 binlerin üzerinde ISO sunması, pazarlama açısından etkileyici dursa da asıl soru, sizin kabul edebileceğiniz gürültü seviyesine hangi değerde ulaştığıdır.",
+    "Karar verirken üretici örneklerine değil, bağımsız incelemelerdeki aynı sahnenin farklı ISO'larda çekildiği karşılaştırmalara bakın. Sensör boyutu burada en güçlü göstergedir: aynı nesildeki kameralar arasında büyük sensörlü olan, genellikle yüksek ISO'da daha temiz kalır. Video çekecekseniz bazı modellerde bulunan çift doğal ISO özelliği, karanlıkta daha temiz bir ikinci başlangıç noktası sunabilir."
+   ],
+   "list": [
+    "Kullanacağınız ISO aralığındaki örnek fotoğraflara bakın, en yüksek değere değil.",
+    "Aynı kadrajda farklı kameraları karşılaştıran incelemeleri tercih edin.",
+    "Görüntü sabitleme ve parlak lenslerin, ISO'yu yükseltme ihtiyacını azalttığını hesaba katın."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "ISO hakkında film döneminden kalan ya da eksik anlaşılan birkaç fikir hâlâ dolaşıyor."
+   ],
+   "list": [
+    "\"ISO sensörün ışığa duyarlılığını artırır.\" Dijital kamerada sensör aynı kalır; değişen, sinyalin yükseltilme miktarıdır.",
+    "\"Her zaman en düşük ISO kullanılmalı.\" Düşük ISO için enstantaneyi fazla yavaşlatıp bulanık bir fotoğraf çekmek, biraz gürültülü ama net bir fotoğraftan daha kötüdür.",
+    "\"Genişletilmiş ISO değerleri normal değerler gibidir.\" Menüde L ya da H gibi işaretlerle gösterilen uç değerler çoğu zaman yazılımsal işlemle elde edilir; dinamik aralık veya görüntü kalitesi kaybı daha belirgin olabilir.",
+    "\"Telefonun gece modu yüksek ISO'dan ibarettir.\" Telefonlar genellikle birden fazla kareyi birleştirerek gürültüyü azaltır; tek kareli yüksek ISO çekimden farklı bir yöntemdir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Yüksek ISO neden gürültülü görüntü verir?",
+   "a": "Yüksek ISO'ya genellikle ışığın az olduğu durumlarda ihtiyaç duyulur. Az ışıkta sensörün yakaladığı sinyal zayıftır ve doğal düzensizlikler oransal olarak büyüktür. ISO bu sinyali yükseltirken gürültüyü de görünür hale getirir."
+  },
+  {
+   "q": "ISO'yu otomatik mi manuel mi ayarlamalıyım?",
+   "a": "Işığın sık değiştiği durumlarda üst sınırı ve en yavaş enstantaneyi belirlenmiş otomatik ISO çok işe yarar. Stüdyo, manzara ya da tripodla çekim gibi kontrollü ortamlarda manuel ISO daha öngörülebilir sonuç verir."
+  },
+  {
+   "q": "Kameramın en düşük ISO değeri neden 100 değil de 64 ya da 200?",
+   "a": "Her sensörün en iyi sonuç verdiği bir doğal değer aralığı vardır ve üreticiler en düşük değeri buna göre belirler. Bu farklı başlangıç değerleri tek başına bir kalite göstergesi değildir; önemli olan kameranın kendi aralığındaki davranışıdır."
+  },
+  {
+   "q": "ISO video çekiminde de aynı şekilde mi çalışır?",
+   "a": "Temel mantık aynıdır. Ancak videoda enstantane hızı kare hızına bağlı olarak sınırlı bir aralıkta tutulur. Bu yüzden karanlık ortamda parlaklığı korumak için ISO'ya fotoğraftan daha sık başvurmak gerekir."
+  },
+  {
+   "q": "Gürültüyü sonradan azaltmak mümkün mü?",
+   "a": "Evet, fotoğraf düzenleme programlarındaki gürültü azaltma araçları belirgin iyileşme sağlar. RAW dosyalarla çalışmak daha fazla esneklik verir. Yine de aşırı gürültü azaltma, ince ayrıntıları ve dokuyu silerek yapay bir görünüm oluşturabilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: Film speed",
+   "u": "https://en.wikipedia.org/wiki/Film_speed"
+  },
+  {
+   "t": "ISO: ISO 12232 standardının güncellenmesi hakkında duyuru",
+   "u": "https://www.iso.org/news/ref2375.html"
+  }
+ ]
+}

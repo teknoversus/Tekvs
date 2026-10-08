@@ -1,0 +1,156 @@
+{
+ "slug": "aksiyon-kamerasi-zorlu-kosul-ipuclari",
+ "title": "Aksiyon Kamerası Su Altında, Soğukta ve Sıcakta Nasıl Kullanılır?",
+ "description": "Aksiyon kamerasını denizde, karda, kumda ve yaz sıcağında sorunsuz kullanmak için adım adım hazırlık, bakım, sorun giderme ve servis zamanı.",
+ "tldr": "Suya girmeden önce kapak contalarını kontrol edip kameranın kılıfsız derinlik sınırını aşmayın, tuzlu sudan sonra tatlı suyla durulayın. Soğukta pil hızla düşer; yedek pili vücut sıcaklığında tutun. Sıcakta ısınma kapanmalarını çözünürlüğü düşürüp ekranı kapatarak azaltabilirsiniz.",
+ "intro": [
+  "Aksiyon kameraları dayanıklı diye satılır ve gerçekten de sıradan bir fotoğraf makinesinin dayanamayacağı yerlere girerler. Ama bu dayanıklılığın sınırları ve koşulları var. Su geçirmezlik, contaların temiz ve kapakların tam kapalı olmasına bağlıdır. Pil, soğukta gücünü kaybeder. Küçük gövde, sıcakta ısıyı dışarı atmakta zorlanır.",
+  "Kameranızı dalışa, kayak pistine, çöl turuna ya da ağustos güneşi altında bisiklet sürüşüne götürmeden önce yapmanız gerekenleri, çekim sırasında dikkat edeceklerinizi ve sonrasında bakım adımlarını aşağıda sırayla bulacaksınız. Sayısal değerler modele göre değiştiği için her zaman kendi kameranızın kılavuzuyla karşılaştırın."
+ ],
+ "sections": [
+  {
+   "h": "Kameranızın su sınırını öğrenin: kılıfsız ve kılıflı derinlik",
+   "p": [
+    "Her aksiyon kamerasının üreticinin belirttiği, kılıfsız kullanım için bir derinlik sınırı vardır. Örneğin bazı yaygın modeller ek kılıf olmadan yaklaşık 10 metreye kadar su geçirmez olarak tanımlanır; aynı üreticinin koruyucu dalış kılıfıyla bu sınır onlarca metreye çıkar. Sizin modelinizin değerini kılavuzdan ya da üreticinin destek sayfasından kontrol edin.",
+    "Bu değerler sakin suda, belirli bir süre için yapılan testlere dayanır. Yüksekten suya atlamak, jet ski ya da sörf sırasında dalgaya çarpmak gibi ani basınç değişimleri kameranın maruz kaldığı basıncı kısa süreliğine artırabilir. Sınıra yakın kullanacaksanız kılıf kullanmak daha güvenlidir."
+   ],
+   "table": {
+    "head": [
+     "Ortam",
+     "Ana risk",
+     "Alınacak önlem"
+    ],
+    "rows": [
+     [
+      "Havuz, sığ deniz",
+      "Açık kalan kapak, contaya giren kıl veya kum",
+      "Suya girmeden kapakları tek tek kontrol edin"
+     ],
+     [
+      "Dalış, derin su",
+      "Kılıfsız sınırın aşılması",
+      "Üreticinin dalış kılıfını kullanın"
+     ],
+     [
+      "Tuzlu su",
+      "Contalarda tuz birikmesi",
+      "Kullanım sonrası tatlı suda durulayın"
+     ],
+     [
+      "Kar, kayak",
+      "Pilin hızla düşmesi, yoğuşma",
+      "Yedek pili cepte sıcak tutun, ısı geçişini yavaşlatın"
+     ],
+     [
+      "Kum, toz",
+      "Contalara ve düğmelere sıkışan partiküller",
+      "Kapakları kumlu ortamda açmayın"
+     ],
+     [
+      "Yaz sıcağı",
+      "Aşırı ısınma ve otomatik kapanma",
+      "Çözünürlüğü düşürün, gölgede bekletin"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Suya girmeden önce kontrol sırası",
+   "p": [
+    "Su hasarının çoğu, suyun içinde değil, kıyıda yapılan küçük bir ihmalden kaynaklanır. Aşağıdaki adımları her suya girişten önce, birkaç saniye ayırarak uygulayın."
+   ],
+   "ol": [
+    "Pil ve kart kapağını açın; conta yüzeyinde kum, saç, tuz kristali veya çizik olup olmadığına bakın.",
+    "Kirlenme varsa yumuşak, tüy bırakmayan bir bezle silin; sert bir cisimle kazımayın.",
+    "Kapağı kapatıp kilit mandalının sonuna kadar oturduğundan emin olun; aradan ışık ya da boşluk görünmemeli.",
+    "Dalış kılıfı kullanıyorsanız önce kılıfı kamerasız olarak birkaç dakika lavaboda ya da kovada batırıp içine su girip girmediğini test edin.",
+    "Kılıf içinde buğulanma yaşıyorsanız üreticinin buğu önleyici şeritlerini yerleştirin ve kılıfı kuru, serin bir ortamda kapatın.",
+    "Dokunmatik ekranın su altında güvenilir çalışmayabileceğini hesaba katarak çekim modunu suya girmeden ayarlayın."
+   ],
+   "note": "Kamera ıslak ya da kumluyken pil ve kart kapağını asla açmayın. Önce durulayıp tamamen kurutun."
+  },
+  {
+   "h": "Tuzlu sudan ve kumdan sonra bakım adımları",
+   "p": [
+    "Deniz suyu kuruduğunda geride tuz kristalleri bırakır. Bu kristaller conta kenarlarına, düğme boşluklarına ve mikrofon deliklerine yerleşir, zamanla contanın tam oturmasını engeller. Kum da benzer şekilde davranır."
+   ],
+   "ol": [
+    "Kapaklar kapalıyken kamerayı ılık değil, oda sıcaklığındaki tatlı suda birkaç dakika bekletin ya da musluk altında durulayın.",
+    "Su içindeyken düğmelere birkaç kez basarak aralardaki tuz ve kumu çözün.",
+    "Yumuşak bir bezle dış yüzeyi kurulayın; mikrofon ve hoparlör deliklerine bez sokmayın, bırakın kendi kendine kurusun.",
+    "Kamerayı doğal ortamda, doğrudan güneş ya da kalorifer üstü olmadan kurumaya bırakın; saç kurutma makinesi kullanmayın.",
+    "Tamamen kuruduktan sonra kapağı açıp contayı ve pil yuvasını kontrol edin.",
+    "Lens kapağında tuz lekesi kaldıysa lens temizleme beziyle silin; bazı modellerde lens kapağı değiştirilebilir."
+   ]
+  },
+  {
+   "h": "Soğuk havada pil ve yoğuşma",
+   "p": [
+    "Lityum iyon piller düşük sıcaklıkta kimyasal tepkimeleri yavaşladığı için daha az güç verir. Kamera pilin aslında hâlâ dolu olduğu halde düşük gösterip kapanabilir. Pil ısındığında kapasitenin önemli bir bölümü geri gelir; yani soğuk pil çoğu zaman bozuk değildir, yalnızca soğuktur.",
+    "Kayak ve dağ çekimlerinde yedek pilleri iç cebinizde, vücut ısınıza yakın taşıyın ve kameradakiyle sırayla değiştirin. Bazı üreticiler soğuk hava için özel pil sunar; örneğin GoPro, Enduro pilin standart pile göre yaklaşık eksi 10 dereceye kadar belirgin şekilde daha iyi performans verdiğini belirtiyor. Kameranızla uyumlu bir seçenek olup olmadığına bakın.",
+    "Soğuktan sıcak bir kafeye girdiğinizde kameranın soğuk yüzeyinde ve içinde yoğuşma oluşabilir. Bunu yavaşlatmak için kamerayı içeri girmeden kapalı bir poşete ya da çantaya koyun ve oda sıcaklığına gelene kadar açmayın."
+   ]
+  },
+  {
+   "h": "Sıcakta ısınma kapanmaları nasıl azaltılır?",
+   "p": [
+    "Küçük bir gövde içinde yüksek çözünürlüklü video işleyen bir işlemci ciddi ısı üretir. Hareket halindeyken (bisiklet, motosiklet) hava akışı bu ısıyı taşır; aynı kamera tripod üzerinde, güneş altında ve rüzgârsız bir ortamda çok daha çabuk ısınır. Kameranın kendini kapatması bir arıza değil, koruma önlemidir.",
+    "Isınma uyarısı aldığınızda şu sırayla müdahale edin: önce çözünürlüğü veya kare hızını bir kademe düşürün, sonra arka ve ön ekranları kapatın ya da kısa sürede kararmaya ayarlayın, ardından Wi-Fi, Bluetooth ve GPS gibi kullanmadığınız bağlantıları kapatın. Mola verirken kamerayı gölgeye alın. Sıcak kamerayı soğutmak için buzdolabına koymak ya da soğuk suya atmak gibi ani sıcaklık değişimlerinden kaçının."
+   ]
+  },
+  {
+   "h": "Sorunlar çözülmezse ne yapmalı, ne zaman servise gitmeli?",
+   "p": [
+    "Bazı belirtiler basit ayarlarla düzelmez ve kameranın içine su girdiğine ya da pilin zarar gördüğüne işaret eder. Bu durumda kullanmaya devam etmek sorunu büyütebilir."
+   ],
+   "list": [
+    "Lensin iç tarafında kurumayan buğu, ekran altında su lekesi ya da pil yuvasında nem görürseniz kamerayı kapatın, pili çıkarın ve şarja takmayın.",
+    "Pil şişmiş, kapak zor kapanıyor ya da pil ısınıp kokuyorsa kullanmayın; yanmaz bir yüzeyde bekletip uygun atık noktasına teslim edin.",
+    "Isınma uyarısı serin ortamda ve düşük ayarlarda da sürüyorsa önce yazılımı güncelleyin, devam ederse servise başvurun.",
+    "Su hasarı birçok üreticide garanti kapsamı dışında tutulabilir; garanti belgenizdeki koşulları okuyun ve kamerayı kendiniz açmayın.",
+    "Yetkili servise götürürken arızanın hangi koşulda başladığını (derinlik, sıcaklık, mod) not edin; teşhisi hızlandırır."
+   ]
+  },
+  {
+   "h": "Zorlu koşullarda en sık yapılan hatalar",
+   "p": [
+    "Deneyimli kullanıcıların bile düştüğü birkaç tuzak var. Bunların çoğu, kameranın dayanıklı olduğu varsayımıyla yapılan küçük ihmaller."
+   ],
+   "list": [
+    "Kumsalda kart değiştirmek için kapağı açmak.",
+    "Tuzlu sudan sonra kamerayı çantaya atıp günler sonra temizlemek.",
+    "Kaplıca, sauna ya da çok sıcak suda kullanmak; sıcaklık contaları ve yapıştırıcıları zorlar.",
+    "Soğukta kamerayı kapalı bir çantada bekletip yedek pili de aynı soğuk ortamda tutmak.",
+    "Su altında renklerin solduğunu görüp kamerayı suçlamak; derinlik arttıkça kırmızı ışık suda hızla azalır, bu yüzden üreticilerin su altı filtreleri ya da renk modları vardır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her aksiyon kamerası kılıfsız su altında kullanılabilir mi?",
+   "a": "Hayır. Pek çok yeni model belirli bir derinliğe kadar kılıfsız su geçirmezdir, ama eski modellerin bir kısmı ve bazı 360 derece kameralar farklı sınırlara sahiptir. Kendi modelinizin değerini kılavuzdan kontrol edin; dalış için üreticinin kılıfını kullanın."
+  },
+  {
+   "q": "Soğukta pil ömrünü uzatmanın bir yolu var mı?",
+   "a": "Yedek pilleri vücudunuza yakın bir cepte taşıyın, kamerayı çekim aralarında montunuzun içine alın ve ekran ile kablosuz bağlantıları kapatın. Varsa üreticinin soğuk havaya uygun pilini kullanmak da fark yaratır."
+  },
+  {
+   "q": "Dalış kılıfının içi neden buğulanıyor?",
+   "a": "Kılıfı nemli ve sıcak havada kapatıp soğuk suya girdiğinizde içerideki nem camda yoğuşur. Kılıfı serin ve kuru bir ortamda kapatmak ve buğu önleyici şerit kullanmak bu sorunu büyük ölçüde azaltır."
+  },
+  {
+   "q": "Kameraya su girdiyse pirinç içine koymak işe yarar mı?",
+   "a": "Pirinç nemi beklenenden yavaş çeker ve tozu cihaza taşıyabilir. Kamerayı kapatın, pili çıkarın, kapakları açık bırakarak kuru ve havadar bir yerde bekletin ve yetkili servise danışın. Şarja takarak çalışıp çalışmadığını denemeyin."
+  },
+  {
+   "q": "Aşırı ısınan kamera kalıcı hasar görür mü?",
+   "a": "Kameralar kritik sıcaklığa ulaşmadan kendini kapatacak şekilde tasarlanır, bu yüzden tek tek ısınma kapanmaları genellikle kalıcı hasar bırakmaz. Ancak sürekli yüksek sıcaklıkta çalışmak pilin yaşlanmasını hızlandırır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "GoPro: Enduro soğuk hava pili ürün açıklaması",
+   "u": "https://gopro.com/en/ca/shop/mounts-accessories/enduro-extended-cold-weather-battery-2-pack/ADBAT-211.html"
+  }
+ ]
+}

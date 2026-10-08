@@ -1,0 +1,133 @@
+{
+ "slug": "kamera-pil-omru-nasil-uzatilir",
+ "title": "Fotoğraf Makinesi Pil Ömrü Nasıl Uzatılır? Ayarlar ve Alışkanlıklar",
+ "description": "Fotoğraf makinenizin bir şarjla daha çok kare çekmesi için hangi ayarları değiştirmeli, pili nasıl saklamalı, ne zaman yenilemeli? Adım adım rehber.",
+ "tldr": "Pil tüketiminin büyük kısmı kameranın açık kaldığı süreden, ekran ve vizörden, sabitleme ile sürekli odaktan ve kablosuz bağlantılardan gelir. Otomatik kapanma süresini kısaltmak, kullanmadığınız bağlantıları kapatmak ve yedek pili sıcak tutmak en hızlı kazanımı sağlar. Pil ömrünün kısalması sürüyorsa pil yaşlanmış olabilir.",
+ "intro": [
+  "Düğün çekiminin ortasında, gün batımına on dakika kala ya da tatilin son gününde pil uyarısının yanıp sönmesi hemen her fotoğrafçının yaşadığı bir an. Kutudaki kare sayısına bakıp beklediğinizden çok daha az çekebildiğinizi fark ettiyseniz bunun genellikle bir nedeni vardır ve çoğu zaman ayarlarla düzeltilebilir.",
+  "Aşağıda önce kameranın enerjiyi nereye harcadığını, ardından uygulanacak ayarları adım adım ele alıyoruz. Menü adları markaya ve modele göre değişir; burada en yaygın karşılıkları kullandık. Kendi kameranızda bulamadığınız seçenek için kılavuzdaki dizinde benzer anahtar kelimeleri arayın."
+ ],
+ "sections": [
+  {
+   "h": "Kutudaki kare sayısı neden tutmuyor?",
+   "p": [
+    "Üreticilerin verdiği pil başına kare sayısı genellikle CIPA adlı Japon kamera kuruluşunun test yöntemine dayanır. Bu testte belirli aralıklarla kare çekilir, kamera düzenli aralıklarla açılıp kapatılır ve ölçüm oda sıcaklığında, tam dolu pille, varsayılan ayarlarda yapılır. Örneğin Sony kılavuzlarında ölçümün 25 derecede ve her 30 saniyede bir kare çekilerek yapıldığı belirtilir.",
+    "Gerçek kullanım bundan çok farklı olabilir. Kamerayı uzun süre açık bırakıp az kare çekiyorsanız sayı düşer; seri çekimde kısa sürede yüzlerce kare alıyorsanız kutudaki değeri aşabilirsiniz. Bu yüzden CIPA değerini mutlak bir söz değil, modelleri birbiriyle kıyaslamak için ortak bir ölçü olarak görün."
+   ]
+  },
+  {
+   "h": "Enerjiyi en çok ne tüketir?",
+   "p": [
+    "Kamerada sürekli çalışan birkaç sistem vardır ve pilin büyük kısmı bunlara gider. Hangisinin sizin çekim tarzınızda baskın olduğunu bilmek, nereden tasarruf edeceğinizi gösterir."
+   ],
+   "table": {
+    "head": [
+     "Bileşen",
+     "Neden tüketir",
+     "Ne yapılabilir"
+    ],
+    "rows": [
+     [
+      "Ekran ve elektronik vizör",
+      "Kamera açık kaldıkça sürekli görüntü üretir",
+      "Parlaklığı ve yenileme hızını düşürün, otomatik kararmayı kısaltın"
+     ],
+     [
+      "Görüntü sabitleme",
+      "Sensörü veya lens grubunu sürekli hareket ettirir",
+      "Tripod kullanırken kapatın"
+     ],
+     [
+      "Sürekli otofokus",
+      "Lens motoru durmadan çalışır",
+      "Durağan konuda tek seferlik odağa geçin"
+     ],
+     [
+      "Wi-Fi, Bluetooth, GPS",
+      "Telefonla bağlantıyı arka planda sürdürür",
+      "Gerekmediğinde kapatın"
+     ],
+     [
+      "Video kaydı",
+      "İşlemci ve sensör kesintisiz çalışır, ısı üretir",
+      "Gerekmiyorsa daha düşük çözünürlük veya kare hızı seçin"
+     ]
+    ]
+   },
+   "note": "Ekran yerine vizör kullanmanın her modelde tasarruf sağladığı yaygın bir inanıştır, ama bazı kameralarda vizör modunda çekilebilen kare sayısı ekran moduna göre daha düşüktür. Kılavuzunuzda iki mod için verilen CIPA değerlerini karşılaştırın."
+  },
+  {
+   "h": "Pil ömrünü uzatan ayarlar, adım adım",
+   "p": [
+    "Aşağıdaki adımlar en çok kazanç sağlayandan daha az sağlayana doğru sıralandı. Hepsini birden uygulamak zorunda değilsiniz; çekim tarzınıza uyanları seçin."
+   ],
+   "ol": [
+    "Güç tasarrufu veya otomatik kapanma süresini kısaltın (çoğu menüde Ayarlar > Güç tasarrufu ya da Enerji tasarrufu altında bulunur).",
+    "Kamera menüsündeki uçak modu benzeri seçenekle ya da tek tek Wi-Fi, Bluetooth ve konum bilgisini kapatın; özellikle telefona sürekli bağlı kalma ayarını kapatın.",
+    "Ekran parlaklığını manuel olarak ortama yetecek seviyeye çekin; varsa vizörün yüksek yenileme hızı veya performans modunu standart moda alın.",
+    "Göz sensörünün ekran ile vizör arasında sürekli geçiş yapmasını istemiyorsanız ekranı ya da vizörü sabit seçin.",
+    "Tripodla çekim yaparken görüntü sabitlemeyi kapatın.",
+    "Durağan konularda sürekli otofokus yerine tek seferlik otofokus kullanın; deklanşöre yarım basılmadan odaklama yapan ön odak seçeneğini kapatın.",
+    "Çekim sonrası her kareyi uzun süre ekranda gösteren önizleme süresini kısaltın ya da kapatın.",
+    "Kamerayı çekimler arasında kapatın; modern kameralar saniyeler içinde açılır."
+   ]
+  },
+  {
+   "h": "Yedek pil mi, USB ile güç mü?",
+   "p": [
+    "Uzun çekim günlerinde ayar yapmak tek başına yetmez. İki temel yol vardır: yanınızda yedek pil taşımak ya da kamerayı USB üzerinden beslemek. Yeni kameraların bir kısmı USB-C üzerinden hem şarj olur hem de çalışırken güç alabilir; bazıları ise yalnızca kapalıyken şarj olur. Kılavuzda USB güç kaynağı ya da USB güç beslemesi başlığına bakarak kendi modelinizi kontrol edin.",
+    "Orijinal olmayan pillerde dikkatli olun. Bazı kameralar bu pillerle kalan şarjı doğru göstermez ya da hiç kabul etmez. Daha önemlisi, koruma devresi zayıf pillerde ısınma ve şişme riski daha yüksek olabilir. Uyumluluk ve güvenlik belgesi net olmayan pillerden kaçının."
+   ]
+  },
+  {
+   "h": "Soğuk havada ve uzun süre saklarken",
+   "p": [
+    "Lityum iyon piller soğukta daha az güç verir ve kamera pil doluyken bile boş uyarısı verebilir. Yedek pilleri iç cebinizde, vücut sıcaklığına yakın taşıyın ve kameradaki pil zayıfladığında onlarla değiştirin. Çıkardığınız soğuk pil ısındığında kapasitesinin bir kısmını geri kazanır.",
+    "Kamerayı haftalarca kullanmayacaksanız pili gövdeden çıkarın; bazı kameralar kapalıyken bile çok az akım çeker. Pili tamamen dolu ya da tamamen boş bırakmak yerine kısmi şarjla, serin ve kuru bir yerde saklamak lityum iyon piller için genel olarak önerilir. Üreticinizin kılavuzunda farklı bir talimat varsa ona uyun. Pili sıcak bir arabada ya da güneş alan bir rafta bırakmayın."
+   ]
+  },
+  {
+   "h": "Ayarlar işe yaramıyorsa: sorun giderme sırası",
+   "p": [
+    "Tüm ayarları yaptığınız halde pil hâlâ çabuk bitiyorsa aşağıdaki sırayla ilerleyin. Her adımdan sonra bir çekim günü deneyip farkı gözleyin."
+   ],
+   "ol": [
+    "Kamera yazılımını üreticinin sitesinden güncelleyin; bazı güncellemeler güç yönetimini iyileştirir.",
+    "Pil temas noktalarını kuru bir bezle temizleyin, kirli temas yanlış seviye göstergesine yol açabilir.",
+    "Varsa menüdeki pil bilgisi ekranından pilin sağlık ya da yaşlanma durumunu kontrol edin.",
+    "Başka bir pille deneyin; sorun yalnızca bir pilde varsa o pil yaşlanmıştır.",
+    "Ayarları varsayılana sıfırlayıp tekrar deneyin; unutulmuş bir arka plan özelliği sorunu çözebilir.",
+    "Sorun her pilde ve sıfırlamadan sonra da sürüyorsa kamera kapalıyken akım çekiyor olabilir; bu durumda yetkili servise başvurun."
+   ],
+   "note": "Şişmiş, çatlamış ya da şarj sırasında aşırı ısınan pili kullanmayın ve zorlayarak yuvadan çıkarmaya çalışmayın. Kamerayı yetkili servise götürün; pili evsel atıkla değil, pil toplama noktasına bırakın."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Vizör kullanmak gerçekten pil tasarrufu sağlar mı?",
+   "a": "Modele göre değişir. Bazı kameralarda vizör ekrandan daha az tüketir, bazılarında ise üreticinin ölçümü vizör modunda daha az kare gösterir. Kılavuzdaki ekran ve vizör için ayrı verilen değerleri karşılaştırarak kendi kameranız için doğru cevabı bulabilirsiniz."
+  },
+  {
+   "q": "Yedek pil taşımak yerine powerbank kullanılabilir mi?",
+   "a": "Kameranız çalışırken USB üzerinden güç alabiliyorsa evet; uzun video ya da hızlandırılmış çekimlerde pratik bir çözümdür. Yalnızca kapalıyken şarj olan modellerde powerbank, çekimler arasında şarj için işe yarar ama yedek pilin yerini tutmaz."
+  },
+  {
+   "q": "Kamera pili kaç yıl dayanır?",
+   "a": "Kesin bir süre vermek mümkün değil; şarj döngüsü sayısına, sıcaklığa ve saklama koşullarına bağlıdır. Kapasitenin zamanla azalması normaldir. Aynı ayarlarla eskisinden belirgin şekilde daha az kare çekiyorsanız yeni bir pil düşünmenin zamanı gelmiştir."
+  },
+  {
+   "q": "Pili tamamen bitirip mi şarj etmeliyim?",
+   "a": "Lityum iyon pillerde buna gerek yoktur ve sık sık tam boşaltmak pili yıpratabilir. Uygun olduğunda şarj etmeniz yeterlidir. Bazı kameraların pil göstergesinin kalibrasyonu için kılavuzda özel bir öneri varsa ona uyun."
+  },
+  {
+   "q": "Video çekerken pil neden çok daha hızlı bitiyor?",
+   "a": "Video kaydında sensör, işlemci, sabitleme ve sürekli odak aynı anda ve kesintisiz çalışır, ayrıca ısı üretir. Yüksek çözünürlük ve kare hızı bu yükü artırır. Gerekmiyorsa daha düşük bir video ayarı seçmek kayıt süresini uzatır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Sony Yardım Kılavuzu: Pil ömrü ve kaydedilebilir görüntü sayısı",
+   "u": "https://helpguide.sony.net/ilc/2020/v1/en/contents/TP1000138646.html"
+  }
+ ]
+}

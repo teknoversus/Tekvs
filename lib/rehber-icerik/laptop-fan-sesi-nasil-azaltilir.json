@@ -1,0 +1,156 @@
+{
+ "slug": "laptop-fan-sesi-nasil-azaltilir",
+ "title": "Laptop Fan Sesi Nasıl Azaltılır? Nedenleri ve Çözüm Sırası",
+ "description": "Laptop fanı neden bağırır, hangisi normaldir? Arka plan işlemlerini bulma, güç modu, toz temizliği ve servis gerektiren durumlar adım adım.",
+ "tldr": "Fan sesinin çoğu ısıdan gelir; ısıyı artıran şey ya yoğun bir arka plan işlemi, ya tıkanmış hava kanalı ya da yumuşak zemindir. Önce Görev Yöneticisi'nde işlemciyi meşgul eden programı bulun, sonra güç modunu dengeli ya da verimli moda alın ve havalandırmayı tozdan temizleyin. Tıkırtı veya sürtünme sesi varsa sorun mekaniktir ve servis gerektirir.",
+ "intro": [
+  "Akşam bir dizi açtınız, ekranda yalnızca video oynuyor, ama laptopun fanı uçak kalkıyormuş gibi ses çıkarıyor. Ya da cihaz yeniyken sessiz çalışırken bir yıl sonra en basit işte bile fan devreye giriyor. Bu iki durumun sebepleri farklıdır ve çözümleri de farklıdır.",
+  "Fan, işlemci ve ekran kartının sıcaklığına göre devir ayarlar. Yani fanı susturmanın yolu fanı zorla yavaşlatmak değil, ısıyı ya azaltmak ya da dışarı daha rahat atmaktır. Aşağıdaki adımlar en kolaydan en zahmetliye doğru sıralandı."
+ ],
+ "sections": [
+  {
+   "h": "Hangi fan sesi normal, hangisi değil?",
+   "p": [
+    "Oyun oynarken, video dışa aktarırken ya da büyük bir güncelleme kurulurken fanın hızlanması normaldir; bu sırada duyduğunuz düzgün, hışırtıya benzer bir hava sesidir. İş bittikten bir iki dakika sonra sesin azalması gerekir. Özellikle ince ve hafif laptoplarda soğutma sistemi küçük olduğu için yük altında yüksek fan sesi tasarımın bir parçasıdır.",
+    "Normal olmayan sesler ise başka türlüdür: tıkırtı, sürtünme, vızıltı ya da devir değişmediği hâlde dalgalanan bir uğultu. Bu sesler genellikle fanın yatağının aşındığını, kanatların bir yere değdiğini ya da fana bir parçanın sıkıştığını gösterir. Bu durumda yazılımsal ayarlar işe yaramaz."
+   ],
+   "table": {
+    "head": [
+     "Belirti",
+     "Muhtemel neden",
+     "İlk yapılacak"
+    ],
+    "rows": [
+     [
+      "Boşta bile sürekli yüksek devir",
+      "Arka plan işlemi veya toz",
+      "Görev Yöneticisi'ni kontrol edin"
+     ],
+     [
+      "Yalnızca yatakta ya da kucakta artıyor",
+      "Alt hava girişleri kapanıyor",
+      "Sert, düz zemine alın"
+     ],
+     [
+      "Yıllar içinde giderek artan ses",
+      "Toz birikimi, kurumuş termal macun",
+      "Temizlik, gerekirse servis"
+     ],
+     [
+      "Tıkırtı, sürtünme sesi",
+      "Fan yatağı veya kanat sorunu",
+      "Yetkili servis"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Önce fanı çalıştıran programı bulun",
+   "p": [
+    "Laptop boştayken fan dönüyorsa büyük ihtimalle bir program işlemciyi meşgul ediyordur. Windows'ta Ctrl + Shift + Esc ile Görev Yöneticisi'ni açın ve İşlemler sekmesinde CPU sütununa tıklayıp listeyi sıralayın. Ekran kartını kullanan bir süreç varsa GPU sütunu da aynı şekilde sıralanabilir.",
+    "Mac'te Uygulamalar > İzlenceler klasöründeki Etkinlik Monitörü'nü açın ve CPU sekmesine bakın. Pencerenin altında sistemin, uygulamaların ve boşta kalan kapasitenin yüzdesi görünür; listede yüksek yüzdeyle en üstte duran uygulama ilk şüphelinizdir.",
+    "Sık rastlanan suçlular şunlardır: çok sayıda açık tarayıcı sekmesi (özellikle video veya reklam içeren sayfalar), arka planda çalışan bulut eşitleme, antivirüs taraması, Windows güncellemesinin kurulumu ve dosya dizinleme. Güncelleme ya da tarama kendiliğinden biter; bir tarayıcı sekmesi ise siz kapatana kadar işlemciyi yorar."
+   ]
+  },
+  {
+   "h": "Kullanım ortamını düzeltin",
+   "p": [
+    "Birçok laptop havayı alttan alır ve yandan ya da arkadan verir. Yatak, yorgan, kanepe ya da kucak bu girişleri kapatır; içerideki sıcaklık yükselir ve fan daha hızlı dönmek zorunda kalır. Laptopu masa gibi sert, düz bir yüzeyde kullanmak tek başına belirgin fark yaratabilir.",
+    "Arka kısmı hafifçe yükselten bir stand, alt tarafta hava dolaşımını artırır. Fanlı soğutucu altlıklar bazı modellerde birkaç derece kazandırır, ama hava girişleri altlığın fanlarıyla hizalı değilse etkisi sınırlı kalır. Yaz aylarında güneş alan bir masada ya da kalorifer yanında çalışmak da aynı sonucu doğurur, çünkü fan ancak ortam havasının sıcaklığına kadar soğutabilir."
+   ]
+  },
+  {
+   "h": "Güç modunu ve üretici yazılımını ayarlayın",
+   "p": [
+    "Windows 11'de Ayarlar > Sistem > Güç ve pil bölümünde Güç modu seçeneği bulunur: En iyi güç verimliliği, Dengeli ve En iyi performans. En iyi performans modunda işlemci daha uzun süre yüksek hızda çalışır ve fan daha çok devreye girer. Günlük işler için Dengeli ya da En iyi güç verimliliği genellikle yeterlidir. Menü adları Windows sürümüne göre küçük farklılıklar gösterebilir.",
+    "Birçok üretici kendi kontrol yazılımında sessiz, dengeli ve performans gibi soğutma profilleri sunar; Lenovo Vantage, MyASUS ve MSI Center bunlara örnektir. Sessiz profil, işlemcinin güç sınırını düşürerek fan devrini azaltır. Ağır işlerde biraz yavaşlama olur, ama yazı, tarayıcı ve video için fark çoğu zaman hissedilmez.",
+    "Oyunlarda kare hızını monitörünüzün yenileme hızıyla sınırlamak da işe yarar. 60 Hz bir ekranda saniyede 150 kare üretmek ekran kartını boşuna zorlar; oyun içinden ya da ekran kartı yazılımından kare sınırı koymak ısıyı ve sesi düşürür."
+   ]
+  },
+  {
+   "h": "Havalandırma ızgaralarını güvenle temizleyin",
+   "p": [
+    "Toz, soğutma bloğunun ince kanatçıkları arasında keçe gibi birikir ve havanın geçişini engeller. Dışarıdan yapılan basınçlı hava temizliği bu birikimin bir kısmını alabilir."
+   ],
+   "ol": [
+    "Laptopu tamamen kapatın (uyku modu değil) ve şarj kablosunu çıkarın.",
+    "Hava giriş ve çıkış ızgaralarını bulun; genelde altta, yanda ve menteşe tarafındadır.",
+    "Basınçlı hava spreyini dik tutun ve kısa, aralıklı püskürtmelerle tozu ızgaradan dışarı doğru üfleyin.",
+    "Fanı görebiliyorsanız, temizlik sırasında bir kürdan ya da plastik bir çubukla hafifçe sabitleyin; fanın hava akımıyla çok hızlı dönmesine izin vermeyin.",
+    "Elektrikli süpürgeyi doğrudan ızgaraya dayamayın; hem fanı aşırı döndürür hem de statik elektrik riski taşır.",
+    "Temizlikten sonra laptopu açın ve aynı işte fan sesinin değişip değişmediğini karşılaştırın."
+   ],
+   "note": "Hava akımıyla çok hızlı dönen fan motoru akım üretebilir ve anakarttaki bileşenleri zorlayabilir; fan yatağı da zarar görebilir. Alt kapağı açmak bazı üreticilerde garanti koşullarını etkiler; açmadan önce garanti belgenizi kontrol edin."
+  },
+  {
+   "h": "Sorun sürüyorsa hangi sırayla ilerlemeli?",
+   "p": [
+    "Adımları sırayla deneyin ve her birinden sonra aynı koşulda, örneğin aynı video ya da aynı oyunla, sesi karşılaştırın."
+   ],
+   "ol": [
+    "Görev Yöneticisi veya Etkinlik Monitörü'nde yüksek işlemci kullanan programı kapatın.",
+    "Laptopu sert, düz bir yüzeye alın.",
+    "Güç modunu Dengeli ya da verimli moda, üretici yazılımındaki profili sessiz moda getirin.",
+    "Windows ve sürücü güncellemelerini tamamlayıp bilgisayarı yeniden başlatın; bazı üreticiler fan davranışını BIOS güncellemeleriyle iyileştirir.",
+    "Havalandırma ızgaralarını basınçlı havayla temizleyin.",
+    "Cihaz birkaç yaşındaysa ve ses hâlâ yüksekse iç temizlik ve termal macun yenilemesi için servise başvurun."
+   ]
+  },
+  {
+   "h": "Ne zaman yetkili servise gitmelisiniz?",
+   "p": [
+    "İşlemci ile soğutucu arasındaki termal macun yıllar içinde kuruyabilir ve ısı aktarımı zayıflar. İç temizlik ve macun yenilemesi kapağın açılmasını, bazen soğutucunun sökülmesini gerektirir. Garanti süresi devam eden bir cihazda bunu yetkili servise yaptırmak hem garantiyi korur hem de vida, şerit kablo ve statik elektrik kaynaklı hasar riskini ortadan kaldırır.",
+    "Tıkırtı ya da sürtünme sesi, fanın hiç dönmemesi, laptopun aşırı ısınıp kendiliğinden kapanması veya alt yüzeyin elle tutulamayacak kadar ısınması doğrudan servis gerektiren belirtilerdir. Fanı yazılımla tamamen durdurmaya çalışmayın; ısı koruması devreye girene kadar bileşenler gereksiz yere yüksek sıcaklıkta çalışır."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Fan sesini azaltmaya çalışırken yapılan bazı şeyler sorunu büyütür. En sık görülenler şunlar:"
+   ],
+   "list": [
+    "Fanı basınçlı havayla serbestçe döndürmek ya da süpürgeyle çekmek.",
+    "Laptopu kılıfın veya çantanın içindeyken çalışır bırakmak.",
+    "Üçüncü taraf programlarla fan devrini elle çok düşük bir değere sabitlemek.",
+    "Sürekli En iyi performans modunda kalmak ve günlük işlerde de işlemciyi tam güçte çalıştırmak.",
+    "Garanti süresi içinde alt kapağı açıp iç temizliği kendi başına yapmak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Laptop fanının sürekli dönmesi zarar verir mi?",
+   "a": "Fan dönerek cihazı korur; dönmesi tek başına zararlı değildir. Ancak boşta bile sürekli yüksek devirde dönüyorsa bir arka plan işlemi ya da tıkanmış hava kanalı vardır ve bu durum fan yatağının daha hızlı aşınmasına yol açabilir."
+  },
+  {
+   "q": "Soğutucu altlık gerçekten işe yarar mı?",
+   "a": "Laptopun altını yükselttiği için hava girişini rahatlatır ve bazı modellerde birkaç derece fark yaratır. Fanların laptopun hava girişleriyle hizalı olmadığı modellerde etkisi sınırlı kalır; asıl sorun toz ya da arka plan işlemiyse altlık çözüm olmaz."
+  },
+  {
+   "q": "Fan temizliği ne sıklıkla yapılmalı?",
+   "a": "Bu, ortamın tozuna ve evcil hayvan olup olmadığına bağlıdır. Dışarıdan ızgara temizliğini birkaç ayda bir yapabilirsiniz; fan sesi giderek artıyorsa iç temizliğin zamanı gelmiş olabilir."
+  },
+  {
+   "q": "Yeni laptopumun fanı neden ilk günlerde çok çalışıyor?",
+   "a": "İlk kurulumdan sonra sistem güncellemeleri, dosya dizinleme ve bulut eşitleme gibi işler arka planda bir süre yoğun çalışır. Bu işler tamamlandığında fan sesi genellikle normale döner."
+  },
+  {
+   "q": "Fan sesini tamamen sıfırlamak mümkün mü?",
+   "a": "Fanı olan bir laptopta yük altında fan sesini tamamen ortadan kaldırmak mümkün değildir, çünkü ısının dışarı atılması gerekir. Sessiz profil, düşük güç modu ve temiz bir soğutma sistemiyle günlük işlerde sesi belirgin biçimde azaltabilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "XMG Destek: Laptop fanlarının basınçlı havayla temizlenmesi",
+   "u": "https://help.xmg.gg/hc/en-gb/articles/17843170658205"
+  },
+  {
+   "t": "Pureinfotech: Windows 11'de güç modunu değiştirme",
+   "u": "https://pureinfotech.com/change-power-mode-windows-11/"
+  },
+  {
+   "t": "Apple: Etkinlik Monitörü'nde CPU etkinliğini görüntüleme",
+   "u": "https://support.apple.com/guide/activity-monitor/actmntr43452"
+  }
+ ]
+}

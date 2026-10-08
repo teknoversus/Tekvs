@@ -1,0 +1,143 @@
+{
+ "slug": "akilli-saat-saglik-olcumleri-ne-kadar-dogru",
+ "title": "Akıllı Saatin Sağlık Ölçümleri Ne Kadar Doğru?",
+ "description": "Nabız, SpO2, EKG, uyku ve stres ölçümleri nasıl çalışır, ne zaman yanılır? Akıllı saat verisini doğru yorumlamak ve hekime ne zaman gitmek gerekir?",
+ "tldr": "Dinlenirken ölçülen nabız genellikle makul doğruluktadır; yoğun hareket, gevşek takılan saat ve soğuk hava bu doğruluğu düşürür. SpO2, uyku ve stres değerleri tahmine dayanır ve trend takibi içindir. Akıllı saat tıbbi tanı cihazı değildir; belirtiniz varsa ya da ölçümler sizi endişelendiriyorsa saatin sonucuna bakmadan hekime başvurun.",
+ "intro": [
+  "Gece uyandığınızda saatinizin uyku skorunuzu düşük gösterdiğini ya da merdiven çıkarken nabzınızın beklenmedik ölçüde yükseldiğini görmek kaygı verici olabilir. Ama bu sayıların nasıl üretildiğini bilmek, hangisine ne kadar güvenebileceğinizi anlamanızı kolaylaştırır.",
+  "Aşağıda en yaygın sağlık ölçümlerinin arkasındaki yöntemi, hangi koşullarda yanıldığını ve verileri nasıl kullanmanın mantıklı olduğunu anlatıyoruz. Bu yazı tıbbi tavsiye değildir; sağlıkla ilgili kararlarınızı bir hekimle birlikte vermelisiniz."
+ ],
+ "sections": [
+  {
+   "h": "Nabız sensörü nasıl çalışır ve ne zaman yanılır?",
+   "p": [
+    "Saatlerin çoğu fotopletismografi (PPG) adı verilen bir yöntem kullanır. Saatin arkasındaki ışık kaynakları cilde ışık gönderir, sensörler de geri yansıyan ışığı ölçer. Kalp her attığında bilekteki kan hacmi kısa süreliğine değişir ve yansıyan ışık miktarı da buna göre dalgalanır. Saat bu dalgalanmanın ritminden nabzınızı hesaplar.",
+    "Bu yöntem otururken veya yürürken genellikle iyi sonuç verir. Ancak kolunuzu hızla salladığınız veya sıktığınız sporlarda, örneğin ağırlık çalışması, tenis ya da boks gibi aktivitelerde hareketin kendisi sinyali bozabilir. Saat bilekte gevşekse, cilt soğuksa ve kan akışı azalmışsa ya da saatin altında dövme varsa ölçüm zorlaşır. Antrenmanda daha güvenilir nabız istiyorsanız, saatin desteklediği bir göğüs bandı kullanabilirsiniz."
+   ],
+   "list": [
+    "Saati bilek kemiğinin bir parmak üstüne, kayıp oynamayacak ama sıkmayacak şekilde takın.",
+    "Antrenman sırasında kordonu biraz sıkılaştırıp antrenman sonrasında gevşetin.",
+    "Sensör camını ter ve losyon kalıntısından temizleyin."
+   ]
+  },
+  {
+   "h": "SpO2 (kan oksijeni) ölçümüne ne kadar güvenilir?",
+   "p": [
+    "Kan oksijeni ölçümü de ışıkla yapılır; kırmızı ve kızılötesi ışığın oksijenli ve oksijensiz kanda farklı emilmesinden yararlanılır. Parmak ucu oksimetreleri ışığı parmağın içinden geçirirken, saat bilekteki yansımadan tahmin yürütür. Bu fark, saatlerin ölçümü daha sık başarısız olmasına ve sapma göstermesine yol açabilir.",
+    "Tıbbi parmak ucu oksimetrelerinde bile doğruluk her koşulda aynı değildir. ABD Gıda ve İlaç Dairesi (FDA), dolaşım bozukluğu, cilt pigmentasyonu, cilt kalınlığı, cilt sıcaklığı, sigara kullanımı ve oje gibi etkenlerin oksimetre sonuçlarını etkileyebileceği konusunda uyarıda bulunmuştur. FDA, tezgâh üstü satılan ve spor ya da genel sağlıklı yaşam amacıyla pazarlanan oksimetrelerin tıbbi amaçlı olmadığını da belirtir. Akıllı saatlerdeki SpO2 özellikleri genellikle bu ikinci gruptadır."
+   ],
+   "note": "Nefes darlığı, göğüs ağrısı, dudaklarda morarma veya bilinç bulanıklığı gibi belirtileriniz varsa saatin gösterdiği değer ne olursa olsun acil yardım çağırın."
+  },
+  {
+   "h": "Akıllı saatteki EKG ne yapabilir, ne yapamaz?",
+   "p": [
+    "Bazı saatler, saatin bileğe değen arka yüzündeki elektrot ile düğme veya çerçevedeki elektrot arasında, vücudunuz üzerinden kapanan bir devre kurarak tek derivasyonlu EKG kaydı alır. Siz parmağınızı saatin düğmesine veya çerçevesine koyduğunuzda kayıt başlar; Apple Watch'ta bu süre 30 saniyedir. Hastanede çekilen 12 derivasyonlu EKG ise kalbin elektriksel etkinliğine on iki farklı açıdan bakar.",
+    "Bu yüzden saatteki EKG'nin amacı dardır. Apple, kendi EKG uygulamasının atriyal fibrilasyon (AFib) belirtilerini sınıflandırabildiğini, ancak kalp krizini, kan pıhtısını, inmeyi, yüksek tansiyonu veya diğer ritim bozukluklarını tespit edemediğini açıkça belirtir. Uygulama 22 yaş altındaki kullanıcılar için tasarlanmamıştır ve her ülkede kullanıma açık değildir. Diğer markaların EKG özellikleri de benzer sınırlamalara sahiptir; bazıları belirli telefon markalarıyla eşleştirme gerektirir."
+   ],
+   "note": "Göğüs ağrısı, baskı veya kalp krizi şüphesinde saatle ölçüm yapmaya çalışmayın; hemen 112'yi arayın."
+  },
+  {
+   "h": "Uyku, stres ve kalori değerleri nasıl hesaplanır?",
+   "p": [
+    "Uyku evreleri, stres skoru ve harcanan kalori doğrudan ölçülmez; hareket, nabız ve kalp hızı değişkenliği gibi verilerden algoritmalarla tahmin edilir. Uyku laboratuvarında yapılan polisomnografi ise beyin dalgalarını, göz hareketlerini ve solunumu doğrudan kaydeder. Saatin derin uyku dediği süre ile laboratuvar sonucu aynı gece için farklı çıkabilir.",
+    "Bu tahminler yine de işe yarar. Aynı saati her gece aynı şekilde taktığınızda, haftalar içindeki değişimi görmek mümkündür. Örneğin geç saatte kafein aldığınız günlerde dinlenik nabzınızın yüksek seyrettiğini fark edebilirsiniz. Değerli olan tek bir gecenin sayısı değil, uzun süreli eğilimdir. Farklı markaların skorlarını birbiriyle kıyaslamak ise anlamlı değildir, çünkü her üretici kendi formülünü kullanır."
+   ]
+  },
+  {
+   "h": "Hangi ölçüm ne kadar güvenilir? Karşılaştırma",
+   "p": [
+    "Aşağıdaki tablo, yaygın ölçümlerin nasıl üretildiğini ve nasıl kullanılması gerektiğini özetler. Doğruluk modelden modele ve kişiden kişiye değişir; tablo genel bir yönlendirmedir."
+   ],
+   "table": {
+    "head": [
+     "Ölçüm",
+     "Nasıl elde edilir?",
+     "Makul kullanım"
+    ],
+    "rows": [
+     [
+      "Dinlenik nabız",
+      "Işık sensörü (PPG)",
+      "Günlük ve haftalık eğilim takibi"
+     ],
+     [
+      "Antrenman nabzı",
+      "PPG, isteğe bağlı göğüs bandı",
+      "Yoğunluk takibi; ani sıçramalarda göğüs bandı daha güvenilir"
+     ],
+     [
+      "SpO2",
+      "Kırmızı ve kızılötesi ışık yansıması",
+      "Genel eğilim; tıbbi karar için değil"
+     ],
+     [
+      "EKG (tek derivasyon)",
+      "İki elektrot arası kayıt",
+      "Ritim bozukluğu şüphesini hekime taşımak"
+     ],
+     [
+      "Uyku evreleri",
+      "Hareket ve nabız verisinden tahmin",
+      "Uyku düzeni alışkanlıklarını izlemek"
+     ],
+     [
+      "Stres skoru",
+      "Kalp hızı değişkenliğinden tahmin",
+      "Kişisel farkındalık"
+     ],
+     [
+      "Kalori",
+      "Nabız, hareket ve kişisel bilgilerden tahmin",
+      "Kaba karşılaştırma; diyet hesabı için temkinli"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Tansiyon ve diğer yeni özellikler hakkında bilmeniz gerekenler",
+   "p": [
+    "Bazı yeni saatler tansiyon tahmini, cilt sıcaklığı veya düzensiz ritim bildirimleri gibi özellikler sunar. Bu özellikler ülkeye göre farklı onay süreçlerinden geçer ve bazı ülkelerde kapalı olabilir. Tansiyon tahmini sunan modellerin bir kısmı, düzenli aralıklarla kol manşonlu bir tansiyon aletiyle kalibrasyon ister.",
+    "Bu bildirimleri bir uyarı ışığı gibi düşünün: Saat bir şeyden şüphelendiğinde sizi hekime yönlendirir, ama sizi sağlıklı ilan etmez. Saatin hiçbir uyarı vermemesi, bir sorun olmadığı anlamına gelmez."
+   ]
+  },
+  {
+   "h": "Verileri hekiminizle nasıl paylaşmalısınız?",
+   "p": [
+    "Saatinizin verileri, şikâyetlerinizin ne zaman başladığını hatırlamanıza ve hekime somut bir zaman çizelgesi sunmanıza yardımcı olabilir. Pek çok sağlık uygulaması EKG kayıtlarını veya özet raporları PDF olarak dışa aktarmanıza izin verir.",
+    "Paylaşırken verinin bir tüketici cihazından geldiğini belirtin ve kararı hekiminizin vermesine izin verin. Saatin gösterdiği değere dayanarak ilaç dozunu değiştirmek veya kendi kendinize ilaç bırakmak tehlikelidir. Sağlık verilerinizi üçüncü taraf uygulamalarla paylaşmadan önce gizlilik ayarlarını da gözden geçirin."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Akıllı saat tıbbi cihaz yerine geçer mi?",
+   "a": "Hayır. Bazı özellikler belirli ülkelerde düzenleyici onay almış olsa da saat, hekim muayenesinin ve tanı amaçlı tıbbi cihazların yerini tutmaz. Şüpheli bir sonuç veya belirti olduğunda hekime başvurmalısınız."
+  },
+  {
+   "q": "Nabız ölçümü neden antrenmanda tutarsız çıkıyor?",
+   "a": "Kolun hızlı hareketi, saatin bilekte kayması ve kasların sıkışması ışık sensörünün sinyalini bozabilir. Kordonu antrenmanda biraz sıkılaştırmak veya saatinizin desteklediği bir göğüs bandı kullanmak tutarlılığı artırır."
+  },
+  {
+   "q": "SpO2 değerim düşük çıktı, ne yapmalıyım?",
+   "a": "Önce oturup dinlenin, saatin doğru takıldığından emin olun ve ölçümü tekrarlayın; bilekten yapılan ölçümler sık sapabilir. Nefes darlığı veya başka belirtileriniz varsa ya da düşük değerler tekrarlıyorsa saatin sonucuna güvenmeden hekime başvurun."
+  },
+  {
+   "q": "Saatim AFib uyarısı verdi, ne anlama geliyor?",
+   "a": "Saat, kaydettiği ritmin atriyal fibrilasyonla uyumlu olabileceğini düşünüyor demektir; bu bir tanı değildir. Kaydı saklayın ve bir hekime, tercihen kardiyoloğa gösterin. Göğüs ağrısı veya bayılma hissi varsa acil yardım çağırın."
+  },
+  {
+   "q": "Farklı markaların uyku skorlarını karşılaştırabilir miyim?",
+   "a": "Anlamlı olmaz. Her üretici farklı sensörler ve kendi algoritmasını kullanır. En doğru yaklaşım, aynı cihazla uzun süre ölçüm yapıp kendi değerlerinizdeki değişime bakmaktır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: Apple Watch'ta EKG uygulaması",
+   "u": "https://support.apple.com/en-us/120278"
+  },
+  {
+   "t": "FDA: Pulse oksimetrelerin doğruluğu ve sınırlamaları",
+   "u": "https://www.fda.gov/news-events/fda-brief/fda-brief-fda-warns-about-limitations-and-accuracy-pulse-oximeters"
+  }
+ ]
+}

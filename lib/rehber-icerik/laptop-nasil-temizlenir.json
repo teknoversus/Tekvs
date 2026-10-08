@@ -1,0 +1,161 @@
+{
+ "slug": "laptop-nasil-temizlenir",
+ "title": "Laptop Ekranı, Klavyesi ve Gövdesi Nasıl Temizlenir?",
+ "description": "Dizüstü ekranını, klavyeyi, touchpad'i ve portları zarar vermeden temizleme adımları; hangi temizleyici kullanılır, sıvı dökülünce ne yapılır.",
+ "tldr": "Laptopu kapatıp şarjdan çıkarın, ekranı yalnızca su ile hafifçe nemlendirilmiş tüy bırakmayan bir mikrofiber bezle silin; sıvıyı hiçbir zaman doğrudan cihaza püskürtmeyin. Klavye aralıkları ve ızgaralar için basınçlı hava, gövde için hafif nemli bez yeterlidir. Aseton, çamaşır suyu, hidrojen peroksit ve aşındırıcı ürünler kaplamalara zarar verir.",
+ "intro": [
+  "Ekrandaki parmak izleri, klavyede biriken kırıntılar ve touchpad'in yağlanıp parlaması, laptopu her gün kullanan herkesin karşılaştığı şeyler. Bunları temizlemek basit görünür, ama yanlış bez ya da yanlış sprey ekranın yansıma önleyici kaplamasını kalıcı olarak lekeleyebilir, klavyenin altına kaçan sıvı ise anakarta ulaşabilir.",
+  "Aşağıda ekran, klavye, gövde ve portlar için ayrı ayrı adımlar, hangi temizleyicilerin güvenli olduğunu gösteren bir tablo ve laptopun üzerine bir şey döküldüğünde yapılacakları bulacaksınız. Üreticinizin kendi talimatı varsa her zaman önceliği ona verin."
+ ],
+ "sections": [
+  {
+   "h": "Başlamadan önce hazırlık",
+   "p": [
+    "Laptopu uyku moduna almak yerine tamamen kapatın ve şarj adaptörünü çıkarın. Kapalı ve siyah bir ekranda lekeler çok daha kolay görünür; ayrıca temizlik sırasında yanlışlıkla tuşlara basıp bir şeyi silme ya da gönderme riski ortadan kalkar. USB bellek, fare alıcısı, kulaklık gibi takılı her şeyi de çıkarın.",
+    "Malzemeleri önceden hazırlayın; elinizin altında olmayan bir şeyi ararken kağıt havluya uzanmak en sık yapılan hatalardan biridir."
+   ],
+   "list": [
+    "İki adet temiz, tüy bırakmayan mikrofiber bez (biri nemli, biri kuru kullanım için)",
+    "Saf su ya da musluk suyu (kireçli bölgelerde saf su iz bırakmaz)",
+    "Basınçlı hava spreyi",
+    "Yumuşak kıllı küçük bir fırça (temiz bir boya fırçası ya da makyaj fırçası olabilir)",
+    "İnatçı lekeler için, üreticiniz izin veriyorsa yüzde 70 izopropil alkol"
+   ]
+  },
+  {
+   "h": "Ekranı çizmeden ve lekelemeden silmek",
+   "p": [
+    "Laptop ekranlarının çoğunda yansımayı azaltan ince bir kaplama bulunur. Bu kaplama sert bezlere, kağıt havluya ve sert kimyasallara karşı hassastır. Bastırarak değil, bezin kendi ağırlığına yakın hafif bir baskıyla silin."
+   ],
+   "ol": [
+    "Önce kuru mikrofiber bezle ekranın üzerindeki tozu tek yönde, hafifçe alın; toz zerrecikleri bastırarak silindiğinde kaplamayı çizebilir.",
+    "Lekeler kaldıysa ikinci bezi suyla hafifçe nemlendirin; bez ıslak değil, yalnızca nemli olmalı.",
+    "Ekranı üstten alta ya da soldan sağa düz hareketlerle silin; kenarlardaki çerçeveye su birikmemesine dikkat edin.",
+    "Kuru bezle kalan nemi alın ve kapağı kapatmadan önce ekranın tamamen kurumasını bekleyin.",
+    "Parmak izi ya da yağ lekesi geçmiyorsa ve üreticiniz izin veriyorsa, bezi yüzde 70 izopropil alkolle nemlendirip aynı işlemi tekrarlayın."
+   ],
+   "note": "Apple, Mac ekranları için suyla nemlendirilmiş bezi, inatçı lekeler için yüzde 70 izopropil alkollü bezi önerir ve ekranda aseton içeren temizleyicilerin kullanılmamasını ister. Mat nano doku kaplamalı ekranlar için ayrı talimat vardır; kendi modelinizin talimatını kontrol edin."
+  },
+  {
+   "h": "Hangi temizleyiciler güvenli, hangileri değil?",
+   "p": [
+    "Market raflarındaki her “ekran temizleyici” laptop için uygun değildir. Etiketinde aseton, amonyak, çamaşır suyu ya da hidrojen peroksit geçen ürünleri ekranda ve gövdede kullanmayın. Aerosol spreyler ve aşındırıcı krem temizleyiciler de kaplamaya ve boyaya zarar verebilir."
+   ],
+   "table": {
+    "head": [
+     "Malzeme",
+     "Ekran",
+     "Gövde ve klavye"
+    ],
+    "rows": [
+     [
+      "Suyla nemlendirilmiş mikrofiber bez",
+      "Uygun",
+      "Uygun"
+     ],
+     [
+      "Yüzde 70 izopropil alkol (beze uygulanmış)",
+      "Üretici izin veriyorsa",
+      "Üretici izin veriyorsa"
+     ],
+     [
+      "Amonyaklı cam temizleyici",
+      "Kullanmayın",
+      "Kullanmayın"
+     ],
+     [
+      "Aseton, çamaşır suyu, hidrojen peroksit",
+      "Kullanmayın",
+      "Kullanmayın"
+     ],
+     [
+      "Kağıt havlu, peçete",
+      "Kullanmayın",
+      "Kaçının"
+     ],
+     [
+      "Doğrudan cihaza püskürtülen sprey",
+      "Kullanmayın",
+      "Kullanmayın"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Klavye ve touchpad temizliği",
+   "p": [
+    "Klavye, laptopun en kirli bölümüdür; tuş aralarına kırıntı, toz ve saç girer, tuşların üzeri de el yağıyla parlar. Laptop klavyelerinin tuşları ince klipslerle tutturulur; tuşları sökmeye çalışmak bu klipsleri kırabilir."
+   ],
+   "ol": [
+    "Laptopu kapalıyken açın, ekranı tutarak cihazı hafifçe yana ve öne eğin ve kırıntıların düşmesi için hafifçe vurun.",
+    "Basınçlı hava spreyini dik tutarak tuş aralarına kısa püskürtmeler yapın; tuşların bir kenarından diğerine doğru ilerleyin.",
+    "Yumuşak fırçayla tuş kenarlarında kalan tozu alın.",
+    "Nemli mikrofiber bezle tuşların üstünü silin; bezin tuş aralarına su bırakmadığından emin olun.",
+    "Touchpad'i aynı nemli bezle silin, ardından kuru bezle kurulayın."
+   ]
+  },
+  {
+   "h": "Gövde, portlar ve havalandırma ızgaraları",
+   "p": [
+    "Gövdenin dış yüzeyi için hafif nemli bez yeterlidir. Alüminyum gövdelerde parmak izleri kuru bezle de büyük ölçüde gider; plastik gövdelerde kirli kenar ve köşeler için bezi parmağınıza sarıp silebilirsiniz. Kumaş ya da deri kaplı yüzeylerde alkol kullanmayın, rengi ve dokuyu bozabilir.",
+    "USB, HDMI ve şarj girişlerine sıvı ya da bez sokmayın. Girişlerdeki tozu basınçlı havayla, kısa püskürtmelerle dışarı atın. Havalandırma ızgaralarını da aynı şekilde temizleyebilirsiniz; ızgaranın arkasında fan varsa, havanın fanı çok hızlı döndürmemesi için kısa aralıklı püskürtün. Fan sesi ya da ısınma şikâyetiniz varsa iç temizlik ayrı bir konudur ve kapak açmayı gerektirir."
+   ]
+  },
+  {
+   "h": "Laptopun üzerine sıvı döküldüğünde ne yapmalı?",
+   "p": [
+    "Klavyeye çay, kahve ya da su döküldüğünde ilk dakikalar önemlidir. Elektrik akımı sıvıyla birleştiğinde kısa devre riski oluşur; şekerli ve sütlü içecekler ise kuruduktan sonra da iz ve korozyon bırakır."
+   ],
+   "ol": [
+    "Laptopu hemen kapatın; gerekirse güç düğmesine basılı tutarak zorla kapatın.",
+    "Şarj kablosunu ve takılı tüm cihazları çıkarın.",
+    "Laptopu kapağı açık, ters V şeklinde (klavye aşağı bakacak biçimde) yerleştirerek sıvının dışarı akmasını sağlayın.",
+    "Dış yüzeydeki sıvıyı emici bir bezle alın; saç kurutma makinesiyle sıcak hava vermeyin.",
+    "Cihazı açmayı denemeden yetkili servise başvurun; özellikle şekerli içeceklerde iç temizlik gerekir."
+   ],
+   "note": "Sıvı içeri kaçtıktan sonra laptopu “kurudu mu” diye açmak, kısa devre hasarını büyütebilir. Apple gibi bazı üreticiler sıvı hasarını garanti kapsamı dışında tutar; kendi garanti belgenizdeki koşulları kontrol edin."
+  },
+  {
+   "h": "Sık yapılan temizlik hataları",
+   "p": [
+    "Temizlik sırasında oluşan hasarların çoğu, kısa yoldan sonuç almaya çalışırken ortaya çıkar. Aşağıdakilerden kaçınmak ekranın ve klavyenin ömrünü uzatır."
+   ],
+   "list": [
+    "Temizleyiciyi doğrudan ekrana ya da klavyeye püskürtmek.",
+    "Ekranı kağıt havlu, mutfak bezi veya tişört ucuyla silmek.",
+    "Islak mendil ya da sünger gibi su damlatan malzemeler kullanmak.",
+    "Kapağı kapatırken klavyenin üzerinde bez, kalem ya da kırıntı bırakmak; ekran tuşlara değerek iz alabilir.",
+    "Laptop açık ve şarja takılıyken temizlik yapmak.",
+    "Klavye tuşlarını sökmeye çalışmak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Laptop ekranını ıslak mendille silebilir miyim?",
+   "a": "Önerilmez. Islak mendiller hem fazla sıvı bırakır hem de içlerinde ekran kaplamasına uygun olmayan katkı maddeleri bulunabilir. Suyla hafifçe nemlendirilmiş mikrofiber bez daha güvenlidir."
+  },
+  {
+   "q": "Alkolle ekran temizlenir mi?",
+   "a": "Bu üreticiye bağlıdır. Apple, inatçı lekeler için yüzde 70 izopropil alkolle nemlendirilmiş bez kullanılabileceğini belirtir; diğer üreticilerin talimatı farklı olabilir. Alkolü hiçbir zaman doğrudan ekrana dökmeyin, yalnızca beze uygulayın."
+  },
+  {
+   "q": "Laptop ne sıklıkla temizlenmeli?",
+   "a": "Ekranı ve klavyeyi kirlendikçe silmek yeterlidir; her gün kullanılan bir cihazda haftada bir hafif temizlik çoğu kişi için uygundur. Klavye aralarına ve ızgaralara basınçlı hava temizliğini birkaç ayda bir yapabilirsiniz."
+  },
+  {
+   "q": "Ekrandaki klavye izleri nasıl çıkar?",
+   "a": "Kapak kapandığında tuşlara değen ekranda yağ izleri oluşur. Bunlar çoğunlukla nemli mikrofiber bezle çıkar. Kaplamaya işlemiş kalıcı izler temizlikle geçmez; önlemek için tuşları düzenli silin ve kapağı kapatmadan önce klavyede bir şey bırakmayın."
+  },
+  {
+   "q": "Klavyeye su döktüm ama laptop çalışıyor, sorun var mı?",
+   "a": "Çalışıyor olması hasar olmadığı anlamına gelmez; sıvı zamanla korozyona yol açabilir. Laptopu kapatıp şarjdan çıkarın, ters V şeklinde bekletin ve iç kontrol için yetkili servise başvurun."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: Apple ürünlerinizi temizleme",
+   "u": "https://support.apple.com/en-ie/HT204172"
+  }
+ ]
+}

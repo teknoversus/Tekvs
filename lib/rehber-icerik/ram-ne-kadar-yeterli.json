@@ -1,0 +1,140 @@
+{
+ "slug": "ram-ne-kadar-yeterli",
+ "title": "Telefonda ve Bilgisayarda RAM Ne Kadar Yeterli?",
+ "description": "Telefon ve dizüstü için kaç GB RAM gerekir? Kullanım tipine göre RAM miktarı, sanal RAM, lehimli bellek ve RAM kullanımını kontrol etme yolları.",
+ "tldr": "Telefonda günlük kullanım için 6-8 GB, ağır oyun ve yoğun çoklu görev için 8-12 GB RAM rahat bir aralıktır. Dizüstü bilgisayarda 8 GB yalnızca hafif kullanımı taşır; çok sekmeli tarayıcı ve ofis işi için 16 GB, video kurgu ve sanal makine için 32 GB daha doğru bir hedeftir. Dizüstünde RAM çoğu zaman sonradan artırılamadığı için ilk alımda bir kademe yukarı bakmak mantıklıdır.",
+ "intro": [
+  "Bir telefonun kutusunda 8 GB, bir dizüstünün etiketinde 16 GB yazıyor ve hangisinin size yeteceğini kestirmek zor. Satış ekranlarında RAM çoğu zaman depolama alanıyla yan yana yazıldığı için bu iki değer sık sık birbirine karışıyor.",
+  "Aşağıda RAM'in ne işe yaradığını, eksik olduğunda hangi belirtilerin ortaya çıktığını ve telefon ile bilgisayar için kullanım tipine göre makul miktarları bulacaksınız. Ayrıca kendi cihazınızda RAM'in gerçekten yetip yetmediğini nasıl kontrol edeceğinizi de anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "RAM ne işe yarar, depolama alanından farkı nedir?",
+   "p": [
+    "RAM, cihazın o anda üzerinde çalıştığı verileri tuttuğu hızlı ve geçici bellektir. Bir uygulamayı açtığınızda gerekli dosyalar depolamadan RAM'e yüklenir; işlemci bu verilere RAM üzerinden çok daha hızlı erişir. Cihaz kapandığında RAM'deki her şey silinir.",
+    "Depolama alanı (telefonda 128 GB, 256 GB gibi yazan değer; bilgisayarda SSD) ise fotoğraflarınızın, uygulamalarınızın ve belgelerinizin kalıcı olarak durduğu yerdir. Kısacası depolama bir arşiv dolabı, RAM ise üzerinde çalıştığınız masa gibidir. Masa küçükse dosyaları sürekli dolaba geri koyup tekrar çıkarmanız gerekir; cihaz da bu sırada yavaşlar.",
+    "Bu yüzden 256 GB depolamalı ama 4 GB RAM'li bir telefon, fotoğraf saklamakta rahat olsa da uygulamalar arasında geçişte zorlanabilir."
+   ]
+  },
+  {
+   "h": "RAM yetmediğinde hangi belirtiler görülür?",
+   "p": [
+    "RAM yetersizliği genellikle cihazın tamamen durması şeklinde değil, küçük ama tekrar eden aksaklıklar şeklinde kendini gösterir. Belirtileri tanırsanız, yavaşlığın kaynağının RAM mi yoksa başka bir sorun mu olduğunu ayırt etmeniz kolaylaşır."
+   ],
+   "list": [
+    "Telefonda kameraya geçip mesajlaşma uygulamasına döndüğünüzde uygulamanın baştan yüklenmesi, yazdığınız taslağın kaybolması",
+    "Oyundan çıkıp bir mesaja bakıp geri döndüğünüzde oyunun yeniden başlaması",
+    "Bilgisayarda tarayıcıda arka plandaki sekmelerin tıklandığında yeniden yüklenmesi",
+    "Birkaç program açıkken pencereler arasında geçişte takılma ve diskin sürekli çalışması",
+    "Windows'ta Görev Yöneticisi'nde bellek kullanımının sürekli yüzde 85-90'ın üzerinde durması"
+   ],
+   "note": "Yavaşlığın tek nedeni RAM değildir. Dolmuş depolama, eski bir mekanik disk (HDD) veya ısınan bir işlemci de benzer belirtiler verir. Önce aşağıdaki kontrol yöntemleriyle RAM'in gerçekten dolup dolmadığına bakın."
+  },
+  {
+   "h": "Telefonda kaç GB RAM yeterli?",
+   "p": [
+    "Telefonlarda RAM ihtiyacını belirleyen asıl şey, aynı anda kaç uygulamayı arka planda canlı tutmak istediğinizdir. Arama, mesajlaşma ve ara sıra sosyal medya kullanan biri için 4 GB hâlâ iş görebilir; ancak bu seviyede uygulamalar sık sık yeniden yüklenir ve güncellemelerle birlikte cihaz birkaç yıl içinde zorlanmaya başlar.",
+    "Sosyal medya, navigasyon, müzik ve kamerayı gün içinde sürekli birlikte kullanan çoğu kişi için 6-8 GB rahat bir aralıktır. Grafik açısından ağır oyunlar oynuyorsanız, oyunu arka plana alıp geri dönmek istiyorsanız veya telefonu 4-5 yıl kullanmayı planlıyorsanız 8-12 GB daha uzun soluklu bir tercih olur. Bunun üzerindeki miktarlar, sıradan kullanımda hissedilir bir fark yaratmaz.",
+    "iPhone'lar aynı sınıftaki Android telefonlara göre genellikle daha az RAM ile satılır. iOS uygulamaların arka planda nasıl tutulacağını farklı yönettiği için iPhone ile Android'i yalnızca RAM rakamına bakarak karşılaştırmak doğru sonuç vermez."
+   ]
+  },
+  {
+   "h": "Dizüstü ve masaüstü bilgisayarda kaç GB RAM gerekir?",
+   "p": [
+    "Windows 11'in resmi alt sınırı 4 GB'tır, fakat bu yalnızca sistemin açılabilmesi için gereken miktardır. 8 GB ile e-posta, belge düzenleme ve birkaç sekmeli tarayıcı kullanımı yürür; ancak toplantı uygulaması, onlarca sekme ve bir ofis programı aynı anda açıldığında bellek hızla dolar.",
+    "Bu nedenle yeni alınacak bir dizüstü için 16 GB, ofis, öğrenci ve genel kullanımda en dengeli seçimdir. Video kurgu, büyük fotoğraf arşivleriyle çalışma, sanal makine, yazılım geliştirme ortamları veya yerel yapay zekâ araçları kullanıyorsanız 32 GB daha uygun olur. Oyun için 16 GB çoğu oyunda yeterlidir; oyun açıkken yayın yapmak veya arka planda tarayıcı tutmak istiyorsanız 32 GB tercih edilebilir.",
+    "Apple'ın M serisi işlemcili Mac'lerinde bellek, işlemci ile grafik birimi arasında paylaşılan birleşik bellek (unified memory) olarak çalışır. Bu mimari belleği verimli kullansa da ekran kartının da aynı havuzdan pay aldığını unutmadan, ağır işler için bir kademe yüksek bellek seçmek yine mantıklıdır."
+   ],
+   "table": {
+    "head": [
+     "Kullanım",
+     "Telefon",
+     "Dizüstü / masaüstü"
+    ],
+    "rows": [
+     [
+      "Temel (arama, mesaj, e-posta, belge)",
+      "4-6 GB",
+      "8 GB"
+     ],
+     [
+      "Günlük karma kullanım, çok sekmeli tarayıcı",
+      "6-8 GB",
+      "16 GB"
+     ],
+     [
+      "Oyun",
+      "8-12 GB",
+      "16 GB, yayın yapılacaksa 32 GB"
+     ],
+     [
+      "Video/fotoğraf düzenleme, sanal makine",
+      "8-12 GB",
+      "32 GB ve üzeri"
+     ],
+     [
+      "Uzun yıllar kullanım hedefi",
+      "8 GB ve üzeri",
+      "16 GB ve üzeri"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Sanal RAM, lehimli bellek ve çift kanal: alırken bilmeniz gerekenler",
+   "p": [
+    "Birçok Android telefonda RAM Plus, sanal RAM veya bellek genişletme adıyla bir özellik bulunur. Bu özellik depolama alanının bir bölümünü RAM gibi kullanır. Depolama, gerçek RAM'den çok daha yavaş olduğu için bu ek alan arka plandaki uygulamaları biraz daha uzun tutmaya yardım eder ama gerçek RAM'in yerini tutmaz. Kutudaki 8+8 GB gibi ifadelerde yalnızca ilk rakamı dikkate alın.",
+    "İnce dizüstülerin büyük bölümünde RAM, LPDDR türünde ve anakarta lehimlidir; yani sonradan artırılamaz. Satın almadan önce ürün sayfasında veya üreticinin teknik belgesinde bellek yuvası (SO-DIMM) olup olmadığına bakın. Yuva yoksa ihtiyacınızı birkaç yıl sonrasına göre hesaplayın.",
+    "Dahili grafik birimi kullanan dizüstülerde grafik işlemcisi de sistem RAM'ini kullanır. Bu cihazlarda belleğin çift kanal çalışması, yani tek bir büyük modül yerine iki eş modül ya da çift kanal destekli lehimli bellek kullanılması, oyun ve grafik işlerinde fark yaratır. RAM hızı (DDR4, DDR5 ve MT/s değeri) ikincil bir ölçüttür; önce miktar yeterli olmalıdır."
+   ]
+  },
+  {
+   "h": "Cihazınızda RAM'in yetip yetmediğini nasıl kontrol edersiniz?",
+   "p": [
+    "Yeni cihaz almadan önce mevcut cihazınızın gerçekten RAM sıkıntısı çekip çekmediğine bakmak, doğru miktarı seçmenin en sağlam yoludur. Her zamanki iş yükünüzü açın ve birkaç dakika kullandıktan sonra aşağıdaki ekranlara bakın. Menü adları işletim sistemi sürümüne ve markaya göre farklı olabilir."
+   ],
+   "list": [
+    "Windows: Ctrl + Shift + Esc ile Görev Yöneticisi'ni açın, Performans sekmesinde Bellek'i seçin. Kullanım sürekli yüzde 85'in üzerindeyse ve sistem yavaşlıyorsa daha fazla RAM işinize yarar.",
+    "macOS: Etkinlik Monitörü'nü açıp Bellek sekmesindeki Bellek Baskısı grafiğine bakın. Grafik sürekli sarı veya kırmızıysa bellek yetersiz kalıyordur; yeşil ise sorun yoktur.",
+    "Android: Samsung'da Ayarlar içindeki Pil ve cihaz bakımı bölümünde Bellek ekranı vardır; diğer markalarda Geliştirici seçenekleri altındaki bellek veya çalışan hizmetler bölümü kullanılabilir.",
+    "iPhone: iOS, RAM kullanımını kullanıcıya göstermez. Uygulamaların sık yeniden yüklenmesi tek pratik göstergedir."
+   ]
+  },
+  {
+   "h": "RAM hakkında yaygın yanlış bilinenler",
+   "p": [
+    "Boş RAM, iyi RAM değildir. Modern işletim sistemleri boşta kalan belleği önbellek olarak kullanır; bu yüzden Android veya macOS'ta RAM'in büyük kısmının dolu görünmesi tek başına sorun değildir. Önemli olan, bellek dolduğunda cihazın yavaşlayıp yavaşlamadığıdır.",
+    "RAM temizleyici uygulamalar telefonu hızlandırmaz. Arka plandaki uygulamaları zorla kapatmak, onları bir sonraki açılışta baştan yüklenmeye zorlar ve bu da hem süre hem pil kaybettirir. Benzer şekilde, son uygulamalar ekranını sürekli temizlemek de çoğu zaman fayda yerine zarar getirir.",
+    "Daha fazla RAM, işlemciyi hızlandırmaz. 16 GB yeterli olan bir iş yükünde 32 GB'a çıkmak hissedilir bir hız farkı yaratmaz; aradaki bütçeyi daha iyi bir işlemciye, SSD'ye veya ekrana ayırmak çoğu zaman daha çok işe yarar."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Telefonda 4 GB RAM yeterli mi?",
+   "a": "Yalnızca arama, mesajlaşma ve hafif internet kullanımı için yeterli olabilir. Birden fazla uygulama arasında sık geçiş yapıyorsanız uygulamalar yeniden yüklenir ve cihaz birkaç yıl içinde zorlanır. Uzun süre kullanmayı düşünüyorsanız 6-8 GB daha rahat bir başlangıçtır."
+  },
+  {
+   "q": "Dizüstü bilgisayarda 8 GB RAM yeterli mi?",
+   "a": "Belge, e-posta ve az sekmeli tarayıcı kullanımı için yeter. Toplantı uygulaması, çok sekmeli tarayıcı ve ofis programları birlikte açıldığında bellek dolmaya başlar. Yeni alınacak bir dizüstü için 16 GB daha dengeli bir tercihtir, özellikle RAM lehimliyse."
+  },
+  {
+   "q": "Telefondaki sanal RAM gerçek RAM gibi çalışır mı?",
+   "a": "Hayır. Sanal RAM depolama alanının bir bölümünü bellek gibi kullanır ve gerçek RAM'den çok daha yavaştır. Arka plandaki uygulamaları biraz daha uzun tutmaya yardım eder ama fiziksel RAM'in yerini tutmaz."
+  },
+  {
+   "q": "Farklı markalardan RAM aynı bilgisayarda kullanılabilir mi?",
+   "a": "Aynı nesil (örneğin ikisi de DDR5) ve aynı form faktöründe oldukları sürece genellikle çalışır. Hızları farklıysa sistem yavaş olanın hızına iner. Sorunsuz çift kanal çalışma için aynı kapasite ve hızda modül kullanmak en garantili yoldur."
+  },
+  {
+   "q": "Mac'te 8 GB birleşik bellek Windows'taki 16 GB'a eşit mi?",
+   "a": "Bu şekilde bire bir eşitlemek doğru değildir. macOS belleği verimli yönetir, ancak birleşik bellek grafik birimiyle de paylaşılır. Çok sekmeli kullanım ve yaratıcı işler için Mac'te de 16 GB daha rahat bir seçimdir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: DIMM (SO-DIMM pin sayıları)",
+   "u": "https://en.wikipedia.org/wiki/DIMM"
+  }
+ ]
+}

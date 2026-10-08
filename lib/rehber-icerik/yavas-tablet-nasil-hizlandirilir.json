@@ -1,0 +1,116 @@
+{
+ "slug": "yavas-tablet-nasil-hizlandirilir",
+ "title": "Yavaşlayan Tablet Nasıl Hızlandırılır? Adım Adım Çözüm",
+ "description": "Tabletiniz geç açılıyor, uygulamalar takılıyorsa: depolama, güncelleme, arka plan uygulamaları ve sıfırlama adımlarını doğru sırayla uygulayın.",
+ "tldr": "Yavaşlamanın en sık nedenleri dolmuş depolama, arka planda çalışan uygulamalar ve eskimiş yazılımdır. Önce yeniden başlatın, en az yüzde 10-15 boş alan bırakın, sistemi ve uygulamaları güncelleyin; bunlar yetmezse yedek alıp fabrika ayarlarına dönün.",
+ "intro": [
+  "Aldığınız ilk aylarda akıcı çalışan tablet, bir-iki yıl sonra uygulama açarken bekletmeye, klavye gecikmeye, video başlatırken takılmaya başlayabilir. Bu çoğu zaman donanımın bozulduğu anlamına gelmez. Zamanla biriken dosyalar, arka planda sessizce çalışan uygulamalar ve yeni yazılımların eski donanımdan daha fazlasını istemesi bir araya gelince tablet ağırlaşır.",
+  "Aşağıdaki adımlar en zahmetsizden en kapsamlıya doğru sıralandı. Her adımdan sonra tableti birkaç saat normal kullanın ve fark olup olmadığına bakın. Böylece sorunun kaynağını da öğrenmiş olursunuz. Menü adları Android sürümüne, üreticinin arayüzüne (Samsung One UI, Xiaomi HyperOS gibi) ve iPadOS sürümüne göre farklı olabilir; en yaygın yolları verdik."
+ ],
+ "sections": [
+  {
+   "h": "Tablet neden zamanla yavaşlar?",
+   "p": [
+    "Tabletlerdeki depolama birimi flash bellektir. Flash bellek neredeyse dolduğunda yazma işlemleri yavaşlar; işletim sistemi de geçici dosyalar, önbellek ve güncellemeler için yer bulmakta zorlanır. Galeri, WhatsApp medya klasörü ve indirilen dosyalar bu alanı fark ettirmeden doldurur.",
+    "İkinci neden bellek (RAM) baskısıdır. RAM az olduğunda sistem arka plandaki uygulamaları kapatıp yeniden açmak zorunda kalır. Bir uygulamaya döndüğünüzde sayfanın baştan yüklenmesi bu durumun tipik işaretidir. Üçüncü neden ise yazılımın büyümesidir: uygulamalar her güncellemede yeni özellik ekler, eski işlemci aynı işi daha uzun sürede yapar.",
+    "Pil de hızı etkileyebilir. Yıpranmış pillerde bazı cihazlar ani kapanmaları önlemek için işlemci performansını sınırlayabilir. Isı da benzer etki yapar: tablet yatakta, kılıf içinde ya da güneş altında ısındığında işlemci kendini yavaşlatır."
+   ]
+  },
+  {
+   "h": "Hızlı etki eden ilk adımlar",
+   "p": [
+    "Bu adımlar veri silmez ve on dakikadan kısa sürer. Çoğu kullanıcıda gözle görülür fark bu aşamada ortaya çıkar."
+   ],
+   "ol": [
+    "Tableti tamamen kapatıp açın. Haftalarca yeniden başlatılmamış bir cihazda takılı kalmış işlemler ve dolmuş önbellek temizlenir.",
+    "Depolama durumuna bakın. Android'de Ayarlar > Depolama (Samsung'da Ayarlar > Pil ve cihaz bakımı > Depolama), iPad'de Ayarlar > Genel > iPad Saklama Alanı yolunu izleyin. Toplam kapasitenin en az yüzde 10-15'i boş kalsın.",
+    "Büyük dosyaları temizleyin: indirilenler klasöründeki eski kurulum dosyaları, mesajlaşma uygulamalarının sakladığı videolar ve çevrimdışı indirilmiş diziler genelde en çok yer kaplayan kalemlerdir.",
+    "Kullanmadığınız uygulamaları kaldırın. Sadece simgeyi ana ekrandan kaldırmak yetmez; uygulamayı tamamen silin.",
+    "İşletim sistemi güncellemesini kontrol edin: Android'de Ayarlar > Sistem > Sistem güncellemesi (Samsung'da Ayarlar > Yazılım güncelleme), iPad'de Ayarlar > Genel > Yazılım Güncellemesi.",
+    "Uygulama mağazasından tüm uygulamaları güncelleyin. Eski sürümlü bir uygulamanın hatası tüm cihazı yavaşlatabilir."
+   ],
+   "note": "Güncellemeyi pil en az yüzde 50 doluyken ya da şarja takılıyken yapın. Güncelleme sırasında cihazın kapanması yazılımın bozulmasına yol açabilir."
+  },
+  {
+   "h": "Arka plan uygulamaları ve ana ekran yükü",
+   "p": [
+    "Son kullanılan uygulamalar ekranındaki kartları sürekli kapatmak, sanıldığı kadar fayda sağlamaz. Android ve iPadOS bu uygulamaları zaten askıya alır; her seferinde baştan açmak işlemciye ve pile daha fazla yük bindirebilir. Asıl sorun, arka planda gerçekten çalışmaya devam eden uygulamalardır: sürekli konum isteyen, senkronizasyon yapan ya da bildirim gönderen uygulamalar.",
+    "Android'de Ayarlar > Pil bölümünde hangi uygulamanın ne kadar enerji harcadığını görebilirsiniz. Az kullandığınız ama listede üst sıralarda duran bir uygulama varsa, arka plan kullanımını kısıtlayın ya da kaldırın. iPad'de Ayarlar > Genel > Arka Planda Uygulama Yenileme bölümünden gerekmeyen uygulamaları kapatabilirsiniz.",
+    "Canlı duvar kağıtları, çok sayıda widget ve üçüncü parti 'temizleyici' ya da 'hızlandırıcı' uygulamalar da yük oluşturur. Temizleyici uygulamalar çoğu zaman sistemin zaten yaptığı işi tekrarlar, üstüne reklam ve arka plan servisi ekler. Bunları kaldırmak çoğu durumda hızlandırır."
+   ]
+  },
+  {
+   "h": "Android'de ek ayarlar: önbellek, animasyon ve güvenli mod",
+   "p": [
+    "Belirli bir uygulama yavaşsa, o uygulamanın önbelleğini temizleyin: Ayarlar > Uygulamalar > ilgili uygulama > Depolama > Önbelleği temizle. 'Verileri temizle' seçeneği ise oturum bilgilerini ve ayarları da siler; ona ancak sorun çözülmezse başvurun.",
+    "Arayüz geçişlerini daha çevik hissettirmek için animasyon sürelerini kısaltabilirsiniz. Ayarlar > Telefon/Tablet hakkında > Yazılım bilgileri bölümünde 'Yapım numarası' satırına yedi kez dokunarak Geliştirici seçenekleri açılır. Burada pencere animasyonu, geçiş animasyonu ve animatör süresi ölçeklerini 0,5x yapmak cihazı gerçekten hızlandırmaz ama beklemeyi azaltır. Geliştirici seçeneklerindeki diğer ayarlara dokunmayın.",
+    "Yavaşlığın bir uygulamadan kaynaklanıp kaynaklanmadığını anlamak için güvenli modu deneyin. Çoğu Android tablette güç menüsünde 'Kapat' seçeneğine basılı tutunca güvenli mod önerisi çıkar. Güvenli modda yalnızca sistem uygulamaları çalışır. Tablet bu modda akıcıysa sorun sonradan yüklediğiniz bir uygulamadadır; en son yüklenenlerden başlayarak kaldırın."
+   ]
+  },
+  {
+   "h": "Isı, pil ve şarj alışkanlıkları",
+   "p": [
+    "Tablet ısınınca işlemci frekansını düşürür. Oyun oynarken ya da şarjdayken video izlerken yavaşlama artıyorsa ısı büyük olasılıkla etkendir. Kalın kılıfı çıkarıp tableti sert bir zemine koyun ve şarj olurken ağır işlerden kaçının.",
+    "Pil sağlığı düşmüş cihazlarda performans dalgalanabilir. iPad'lerde pil sağlığı menüsü modele göre değişir; Android'de bazı üreticiler pil durumunu Pil veya Cihaz bakımı bölümünde gösterir. Pil hızla bitiyor, yüzde 20 civarında aniden kapanıyor ya da kasa hafifçe kabarıyorsa pili değiştirme zamanı gelmiş olabilir."
+   ],
+   "note": "Ekranı kasadan ayıran, kabaran ya da sıcak olmadığı halde şişkin görünen bir pil tehlikelidir. Tableti şarja takmayın, bastırmayın ve yetkili servise götürün. Pili kendiniz değiştirmeye çalışmak hem yangın riski hem de garanti kaybı demektir."
+  },
+  {
+   "h": "Son çare: fabrika ayarlarına sıfırlama",
+   "p": [
+    "Yukarıdaki adımlar işe yaramadıysa, fabrika ayarlarına dönmek yıllar içinde birikmiş ayar ve dosya karmaşasını temizler. Bu işlem tüm verileri siler; önce yedek almanız şart.",
+    "Yedekten geri yüklerken tüm uygulamaları otomatik geri getirmek yerine yalnızca gerçekten kullandıklarınızı kurmak, sıfırlamanın faydasını uzun süre korur."
+   ],
+   "ol": [
+    "Fotoğraf ve videoları buluta (Google Fotoğraflar, iCloud) ya da bilgisayara yedekleyin.",
+    "Android'de Ayarlar > Google > Yedekleme, iPad'de Ayarlar > [adınız] > iCloud > iCloud Yedekleme bölümünden yedeği başlatın.",
+    "Google hesabı ya da Apple Kimliği şifrenizi bildiğinizden emin olun. Sıfırlama sonrası cihaz bu hesabı soracaktır.",
+    "Android'de Ayarlar > Sistem > Sıfırlama seçenekleri > Tüm verileri sil (Samsung'da Genel yönetim > Sıfırla), iPad'de Ayarlar > Genel > Aktar veya iPad'i Sıfırla > Tüm İçerikleri ve Ayarları Sil.",
+    "Kurulumdan sonra tableti birkaç gün az uygulamayla kullanın ve hızı gözlemleyin."
+   ]
+  },
+  {
+   "h": "Hangi durumda yetkili servise gitmelisiniz?",
+   "p": [
+    "Fabrika ayarlarından sonra bile tablet takılıyor, kendi kendine yeniden başlıyor ya da dokunmatik geç tepki veriyorsa sorun donanımsal olabilir. Depolama biriminde arıza, aşırı ısınma ya da yıpranmış pil bu belirtileri verir. Garanti süresi içindeyseniz garanti belgesi ve faturayla üreticinin yetkili servisine başvurun; yetkisiz serviste açılan cihazlar garanti kapsamından çıkabilir.",
+    "Bazen sorunun cevabı tamir değildir. Üreticinin artık güncelleme yayımlamadığı, 2-3 GB RAM'li ve doluluk sorunu yaşayan bir tablet, en sade haliyle bile güncel uygulamaları zorlanarak çalıştırabilir. Böyle bir cihazı video izleme, e-kitap ya da çocuk tableti gibi hafif işlere ayırmak mantıklı bir seçenektir."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Yavaşlama şikayetinde en çok zaman kaybettiren yanlışlar şunlardır:"
+   ],
+   "list": [
+    "Mağazadan 'RAM temizleyici' veya 'hızlandırıcı' uygulama yüklemek. Bu uygulamalar genelde yük ekler.",
+    "Depolamayı son birkaç yüz MB'a kadar doldurup güncelleme yapmaya çalışmak.",
+    "Yedek almadan sıfırlamak ve fotoğrafları kaybetmek.",
+    "Güncellemeleri ertelemek. Performans ve güvenlik düzeltmeleri bu güncellemelerle gelir.",
+    "Isınan tableti yastık ya da battaniye üzerinde şarj ederken kullanmak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Fabrika ayarlarına sıfırlamak tableti hızlandırır mı?",
+   "a": "Uzun süre kullanılmış ve dolmuş cihazlarda genelde belirgin fark yaratır, çünkü biriken dosyalar ve hatalı ayarlar temizlenir. Ancak donanım yetersizliğini ya da yıpranmış pili düzeltmez. Tüm veriler silindiği için önce yedek almalısınız."
+  },
+  {
+   "q": "Düşük RAM'li tablet neden daha çok yavaşlar?",
+   "a": "RAM, açık uygulamaların geçici olarak tutulduğu bellektir. Az olduğunda sistem arka plandaki uygulamaları kapatır ve geri döndüğünüzde onları baştan yükler. Bu da her geçişte bekleme olarak hissedilir."
+  },
+  {
+   "q": "Hafıza kartı takmak tableti hızlandırır mı?",
+   "a": "Dolu dahili belleği rahatlatmak için fotoğraf, video ve müzikleri karta taşımak işe yarar. Uygulamaları karta taşımak ise genelde önerilmez, çünkü kartlar dahili bellekten yavaştır ve uygulamalar daha geç açılabilir."
+  },
+  {
+   "q": "Son uygulamaları sürekli kapatmalı mıyım?",
+   "a": "Gerek yoktur. Sistem kullanılmayan uygulamaları zaten askıya alır. Yalnızca donmuş ya da hatalı çalışan bir uygulamayı kapatmanız yeterlidir."
+  },
+  {
+   "q": "Güncelleme sonrası tablet yavaşladı, ne yapmalıyım?",
+   "a": "Büyük güncellemelerden sonra sistem arka planda uygulamaları yeniden düzenler; bu birkaç gün sürebilir. Bu sürede tableti şarja takılı ve Wi-Fi'ye bağlı bırakın. Sorun bir haftadan sonra sürerse önbellek temizliği ve gerekirse sıfırlama deneyin."
+  }
+ ],
+ "sources": []
+}

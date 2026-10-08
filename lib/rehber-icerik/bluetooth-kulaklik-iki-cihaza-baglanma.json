@@ -1,0 +1,142 @@
+{
+ "slug": "bluetooth-kulaklik-iki-cihaza-baglanma",
+ "title": "Bluetooth Kulaklık İki Cihaza Aynı Anda Nasıl Bağlanır? (Multipoint)",
+ "description": "Multipoint nedir, kulaklığınız destekliyor mu, nasıl açılır? Telefon ve bilgisayar arasında geçişin gerçekte nasıl çalıştığı ve sınırları.",
+ "tldr": "Kulaklık multipoint destekliyorsa iki cihaza ayrı ayrı eşleştirilir, gerekiyorsa üreticinin uygulamasından “iki cihaza bağlan” seçeneği açılır ve ikisi de aynı anda bağlı kalır. Ses genellikle tek seferde yalnızca bir cihazdan gelir; gelen arama ise çalan müziğin önüne geçer. Multipoint desteği yazılımla sonradan eklenmediği sürece olmayan bir kulaklığa ayarla kazandırılamaz.",
+ "intro": [
+  "Dizüstü bilgisayarda bir video toplantısındasınız, telefonunuz çalıyor. Kulaklığı bilgisayardan koparıp telefona bağlamak yarım dakikanızı alır ve çoğu zaman arama o arada kaçar. Multipoint, kulaklığın iki cihaza aynı anda bağlı kalarak bu geçişi sizin yerinize yapmasıdır.",
+  "Bu özellik pazarlama metinlerinde sıkça “iki cihaza bağlanma” diye geçse de nasıl çalıştığı ve sınırları pek anlatılmaz. Aşağıda kulaklığınızın bunu destekleyip desteklemediğini nasıl anlayacağınızı, kurulumu, günlük kullanımda neyin beklenip neyin beklenmemesi gerektiğini ve sık görülen sorunları ele alıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Multipoint tam olarak ne yapar?",
+   "p": [
+    "Multipoint, tek bir Bluetooth kulaklığın en az iki kaynak cihazla (ör. telefon ve dizüstü bilgisayar) aynı anda bağlantıyı açık tutmasıdır. Kulaklık iki cihazı da dinler; hangisinde ses başlarsa ya da hangisine arama gelirse ona yönelir. Siz menüye girip bağlantı değiştirmezsiniz.",
+    "Önemli bir ayrıntı: Multipoint, iki cihazdan aynı anda ses karıştırmak anlamına gelmez. Çoğu kulaklık aynı anda yalnızca bir kaynaktan müzik çalar, diğerini bekleme durumunda tutar. Bilgisayarda müzik açıkken telefonda video başlatırsanız ne olacağı modele göre değişir: bazı modeller yeni sese geçer, bazıları ilk kaynağın bitmesini bekler.",
+    "Multipoint özelliği kulaklıkta bulunur. Telefon veya bilgisayarın ayrıca özel bir desteğe ihtiyacı yoktur; standart Bluetooth ses ve görüşme profillerini desteklemeleri yeterlidir."
+   ]
+  },
+  {
+   "h": "Multipoint ile Apple'ın otomatik geçişi arasındaki fark",
+   "p": [
+    "AirPods kullanıcılarının gördüğü otomatik geçiş farklı bir mekanizmadır. Apple'a göre bu özellik AirPods 2 ve sonrası, tüm AirPods Pro ve AirPods Max modellerinde, aynı Apple hesabıyla oturum açılmış iPhone, iPad, Mac ve Apple Watch arasında çalışır. Kulaklık aynı anda iki cihaza bağlı kalmaz; hesabınız üzerinden hangi cihazı kullandığınızı algılayıp bağlantıyı oraya taşır.",
+    "Bu nedenle otomatik geçiş yalnızca Apple ekosisteminde işe yarar. Windows bilgisayar ile iPhone arasında AirPods'un kendiliğinden geçiş yapmasını beklemeyin; bu senaryoda klasik multipoint destekleyen bir kulaklık daha uygundur."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "Klasik multipoint",
+     "Apple otomatik geçiş"
+    ],
+    "rows": [
+     [
+      "Aynı anda bağlı cihaz",
+      "Genellikle iki",
+      "Bir (bağlantı taşınır)"
+     ],
+     [
+      "Cihaz markası",
+      "Fark etmez",
+      "Yalnızca Apple cihazlar, aynı hesap"
+     ],
+     [
+      "Gelen aramada davranış",
+      "Kulaklık aramanın geldiği cihaza yönelir",
+      "Arama sırasında otomatik geçiş yapılmaz"
+     ],
+     [
+      "Kurulum",
+      "İki cihaza ayrı eşleştirme, bazen uygulamada ayar",
+      "Bir cihaza eşleştirme yeterli"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Kulaklığınız multipoint destekliyor mu?",
+   "p": [
+    "En güvenilir yol ürünün kullanım kılavuzu veya üreticinin teknik özellik sayfasıdır. “Multipoint”, “çoklu nokta bağlantısı”, “iki cihaza aynı anda bağlantı” ya da “dual connection” ifadelerini arayın. “Birden fazla cihazı hafızada tutar” ifadesi multipoint değildir; bu yalnızca kulaklığın kayıt tutabildiği anlamına gelir.",
+    "Bazı modellerde özellik kutudan çıktığında yoktur, sonradan bir yazılım güncellemesiyle eklenir. Bu yüzden kulaklığınızın uygulamasında güncelleme olup olmadığına bakmak da işe yarar. Destek yoksa telefon veya bilgisayar tarafında yapılacak bir ayarla bu özellik kazandırılamaz."
+   ]
+  },
+  {
+   "h": "Multipoint nasıl kurulur?",
+   "p": [
+    "Kurulum markaya göre küçük farklar gösterse de temel sıra aynıdır. Bazı kulaklıklarda multipoint varsayılan olarak açıktır, bazılarında uygulamadan açılması gerekir. Sony'nin destek belgelerinde örneğin uygulamadaki “2 cihaza aynı anda bağlan” ayarının açılması isteniyor."
+   ],
+   "ol": [
+    "Kulaklığı eşleştirme moduna alın ve birinci cihaza (ör. telefon) normal şekilde eşleştirin.",
+    "Üreticinin uygulaması varsa bu cihazda açın ve multipoint, çoklu bağlantı veya benzeri adlı seçeneği etkinleştirin.",
+    "Kulaklığı yeniden eşleştirme moduna alın. Bazı modellerde bunun için birinci cihazda Bluetooth'u geçici olarak kapatmak gerekir.",
+    "İkinci cihazın (ör. dizüstü bilgisayar) Bluetooth menüsünden kulaklığı eşleştirin.",
+    "Birinci cihazda Bluetooth'u yeniden açın ve listeden kulaklığa dokunarak bağlanın.",
+    "Her iki cihazda da kulaklığın “bağlı” göründüğünü kontrol edin; bir cihazda müzik başlatıp diğerinden test araması yaparak geçişi deneyin."
+   ]
+  },
+  {
+   "h": "Günlük kullanımda neler beklenmeli?",
+   "p": [
+    "Multipoint açıkken müzik, en son ses çalan cihazdan gelir. Kaynağı değiştirmek için çoğu modelde önce çalan cihazda sesi durdurup sonra diğerinde başlatmanız gerekir. Bilgisayarda bildirim sesleri, sistem uyarıları gibi kısa sesler de bağlantıyı kendine çekebilir; bu durumu yaşıyorsanız bilgisayarın bildirim seslerini kısmak işe yarar.",
+    "Aramalarda kulaklık genellikle aramanın geldiği cihaza geçer, arama bitince çoğu zaman önceki müziğe döner. Kulaklığın hafızasında ikiden fazla cihaz kayıtlı olabilir; üçüncü bir cihaz bağlandığında bazı modeller en uzun süredir kullanılmayanı bağlantıdan düşürür."
+   ],
+   "note": "Multipoint bazı modellerde yüksek çözünürlüklü kodeklerle birlikte çalışmaz. Sony'nin belgelerine göre örneğin iki cihaza bağlantı açıkken LDAC kullanılamaz ve kulaklık AAC veya SBC'ye geçer. Ses kalitesi sizin için öncelikliyse bu kısıtı kulaklığınızın kılavuzunda kontrol edin."
+  },
+  {
+   "h": "Multipoint düzgün çalışmıyorsa sorun giderme",
+   "p": [
+    "En sık şikâyet, kulaklığın cihazlardan birine yeniden bağlanmamasıdır. Bu genellikle ikinci cihazın eşleştirme sırasında birinciyi bağlantıdan düşürmesinden kaynaklanır ve elle yeniden bağlanmakla çözülür. Kalıcı sorunlarda aşağıdaki sırayı deneyin."
+   ],
+   "ol": [
+    "Uygulamada multipoint seçeneğinin hâlâ açık olduğunu kontrol edin; bazı güncellemeler ayarı sıfırlayabilir.",
+    "Kulaklığın yazılımını ve uygulamayı güncelleyin.",
+    "Bilgisayarda kulaklığın çıkış aygıtı olarak seçili olduğundan emin olun.",
+    "Her iki cihazda da kulaklık kaydını silin, kulaklığı fabrika ayarlarına döndürün ve iki cihazı sırayla yeniden eşleştirin.",
+    "Sorun yalnızca bir cihazla yaşanıyorsa o cihazın Bluetooth sürücüsünü veya işletim sistemini güncelleyin."
+   ]
+  },
+  {
+   "h": "Kulaklık seçerken multipoint için nelere bakmalı?",
+   "p": [
+    "Gün içinde telefon ile iş bilgisayarı arasında gidip geliyorsanız multipoint, satın alma listenizde üst sıralarda yer almalı. Yalnızca telefonla müzik dinliyorsanız bu özelliğe para ödemeniz gerekmez."
+   ],
+   "list": [
+    "Ürün sayfasında multipoint açıkça yazıyor mu, yoksa yalnızca “çoklu cihaz hafızası” mı belirtiliyor?",
+    "Multipoint açıkken hangi kodeklerin kullanılabildiği belirtiliyor mu?",
+    "Özelliği yönetmek için bir uygulama gerekiyor mu ve uygulama telefonunuzda çalışıyor mu?",
+    "Apple cihazlarınız arasında geçiş yetiyorsa, otomatik geçişi destekleyen bir model yeterli olabilir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Multipoint ile iki telefondan aynı anda müzik dinleyebilir miyim?",
+   "a": "Hayır. Multipoint iki cihazla bağlantıyı açık tutar ama ses aynı anda yalnızca birinden gelir. İki cihazın sesini karıştırmak bu özelliğin amacı değildir."
+  },
+  {
+   "q": "Multipoint pil ömrünü kısaltır mı?",
+   "a": "İki bağlantıyı açık tutmak kulaklığın biraz daha fazla iş yapması demektir, bu yüzden bir miktar ek tüketim beklenebilir. Farkın büyüklüğü modele göre değişir; ikinci cihaza ihtiyaç duymadığınız günlerde özelliği kapatarak kendi kullanımınızda karşılaştırabilirsiniz."
+  },
+  {
+   "q": "AirPods'u Windows bilgisayar ve iPhone arasında otomatik geçirebilir miyim?",
+   "a": "Apple'ın otomatik geçişi yalnızca aynı Apple hesabıyla oturum açılmış Apple cihazlar arasında çalışır. Windows bilgisayara geçmek için kulaklığı o bilgisayarın Bluetooth menüsünden elle bağlamanız gerekir."
+  },
+  {
+   "q": "Multipoint açıkken ses neden ara sıra kesiliyor?",
+   "a": "Kulaklık iki bağlantıyı aynı anda yönettiği için kalabalık radyo ortamlarında veya cihazlardan biri uzaktayken kısa kesintiler görülebilir. Cihazları kulaklığa yakın tutmak, yazılımı güncellemek ve kullanmadığınız cihazı bağlantıdan çıkarmak genellikle yardımcı olur."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: AirPods'u başka bir aygıta geçirme",
+   "u": "https://support.apple.com/104988"
+  },
+  {
+   "t": "Sony Yardım Kılavuzu: Kulaklığı 2 cihaza aynı anda bağlama (WH-1000XM4)",
+   "u": "https://helpguide.sony.net/mdr/wh1000xm4/v1/en/contents/TP0002935899.html"
+  },
+  {
+   "t": "SoundGuys: Bluetooth multipoint nasıl çalışır",
+   "u": "https://www.soundguys.com/bluetooth-multipitoint-explained-28601/"
+  }
+ ]
+}

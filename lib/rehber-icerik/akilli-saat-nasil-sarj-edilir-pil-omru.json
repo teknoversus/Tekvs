@@ -1,0 +1,154 @@
+{
+ "slug": "akilli-saat-nasil-sarj-edilir-pil-omru",
+ "title": "Akıllı Saat Nasıl Şarj Edilir? Pil Ömrünü Uzatmanın Yolları",
+ "description": "Akıllı saatinizi doğru şarj etme adımları, şarj olmuyorsa kontrol sırası, günlük pil süresini uzatan ayarlar ve bataryayı yıpratan alışkanlıklar.",
+ "tldr": "Saatinizi kendi şarj yuvası veya manyetik kablosuyla, kontakları temiz ve kuru, düz ve havadar bir yüzeyde şarj edin. Günlük pil süresini en çok ekranın sürekli açık kalması, GPS ve sık bildirimler kısaltır; bataryanın uzun vadeli sağlığını ise en çok ısı yıpratır.",
+ "intro": [
+  "Akıllı saatin pili, telefonunkinden çok daha küçüktür. Bu yüzden bir ayarın açık kalması ya da şarj yuvasına yanlış oturtulması, sabah saatinizi yüzde 20 pille bulmanıza yetebilir. Öte yandan saatin pili değiştirilmesi kolay bir parça değildir; batarya yıprandığında çoğu zaman servis ya da yeni saat gündeme gelir.",
+  "Bu nedenle iki ayrı konuyu birbirinden ayırmak gerekir: Bir şarjla saatin kaç saat dayandığı ve bataryanın yıllar içinde ne kadar kapasite kaybettiği. Aşağıda önce doğru şarj adımlarını, ardından her iki konuyu iyileştiren ayarları ve alışkanlıkları ele alıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Akıllı saat adım adım nasıl şarj edilir?",
+   "p": [
+    "Akıllı saatlerin büyük çoğunluğu, saatin arka yüzündeki metal kontaklara manyetik olarak oturan bir kablo veya kablosuz bir şarj yuvasıyla şarj edilir. Marka ve modele göre küçük farklar olsa da temel adımlar aynıdır."
+   ],
+   "ol": [
+    "Saatin arka yüzünü ve şarj yuvasını kuru, tüy bırakmayan bir bezle silin. Ter, toz veya su kalıntısı temas sorununa yol açabilir.",
+    "Şarj aletini düz ve havadar bir yüzeye yerleştirin; yastık, yorgan veya doğrudan güneş alan pencere önü uygun değildir.",
+    "Kabloyu üreticinin önerdiği güçte bir USB adaptörüne, adaptörü de prize takın. Bilgisayar USB portları veya çok girişli hub'lar yetersiz güç verebilir.",
+    "Saatin arka yüzünü şarj yuvasına yerleştirin; mıknatıs saati hizalayacaktır. Kalın kılıf veya metal kordon varsa çıkarın.",
+    "Ekranda şarj simgesinin belirdiğini ya da bir ses duyulduğunu kontrol edin. Simge görünmüyorsa saati kaldırıp yeniden oturtun.",
+    "Şarj tamamlanınca saati yuvadan alın. Gece boyunca şarjda kalması modern saatlerde sorun değildir; saat dolduğunda şarjı kendisi yönetir."
+   ],
+   "note": "Kablosuz şarj yuvaları genellikle suya dayanıklı değildir. Saat su geçirmez olsa bile ıslakken şarja takmayın."
+  },
+  {
+   "h": "Saat şarj olmuyorsa hangi sırayla kontrol etmelisiniz?",
+   "p": [
+    "Şarj sorunlarının çoğu donanım arızasından değil, temas ve güç kaynağından kaynaklanır. Aşağıdaki sırayı izlemek, gereksiz yere servise gitmenizi önler."
+   ],
+   "ol": [
+    "Kontakları ve şarj yuvasını temizleyin. Sabun veya alkol yerine kuru, gerekirse hafif nemli bir bez kullanın ve iyice kurulayın.",
+    "Farklı bir priz ve üreticinin önerdiği adaptörle deneyin. Samsung, Galaxy Watch kablosuz şarj yuvaları için en az 5V/2A Power Delivery destekli adaptör önerir.",
+    "Üçüncü parti bir şarj aleti kullanıyorsanız orijinal aleti deneyin; bazı uyumsuz aletler saati şarj etmez veya çok yavaş eder.",
+    "Saat çok sıcak ya da soğuksa oda sıcaklığına gelmesini bekleyin. Apple, saatin iç sıcaklığını düzenlemek için şarjı yavaşlatabileceğini veya durdurabileceğini belirtir.",
+    "Saati şarj yuvasında en az 30 dakika bekletip ardından yeniden başlatmayı deneyin. Pili tamamen biten saatlerde şarj simgesinin görünmesi birkaç dakika sürebilir.",
+    "Yazılım güncellemesi bekliyorsa yükleyin; bazı şarj ve pil hataları güncellemeyle giderilir."
+   ]
+  },
+  {
+   "h": "Günlük pil süresini en çok ne kısaltır?",
+   "p": [
+    "Pil tüketimini belirleyen başlıca etkenler ekran, konum ve kablosuz bağlantılardır. Sabah yürüyüşünde GPS'li antrenman kaydı başlattıysanız ve bitirmeyi unuttuysanız, saatin öğleden sonra kapanması şaşırtıcı değildir. Aşağıdaki tablo, en etkili ayarları ve ödünleşimlerini özetler."
+   ],
+   "table": {
+    "head": [
+     "Ayar veya kullanım",
+     "Pil etkisi",
+     "Ne yapabilirsiniz?"
+    ],
+    "rows": [
+     [
+      "Sürekli açık ekran (AOD)",
+      "Yüksek",
+      "Kapatın veya yalnızca bileği kaldırınca açılmasını seçin"
+     ],
+     [
+      "Ekran parlaklığı",
+      "Orta-yüksek",
+      "Otomatik parlaklığı açın, maksimumda tutmayın"
+     ],
+     [
+      "GPS'li antrenman kaydı",
+      "Yüksek",
+      "Yalnızca dış mekan antrenmanında kullanın, bitince kaydı durdurun"
+     ],
+     [
+      "Sık nabız ve SpO2 ölçümü",
+      "Orta",
+      "Ölçüm aralığını seyrekleştirin veya uykuda kapatın"
+     ],
+     [
+      "Tüm telefon bildirimleri",
+      "Orta",
+      "Yalnızca önemli uygulamaların saate yansımasına izin verin"
+     ],
+     [
+      "Hücresel bağlantı (LTE)",
+      "Yüksek",
+      "Telefon yanınızdayken saat zaten Bluetooth kullanır; zayıf çekimde LTE'yi kapatın"
+     ],
+     [
+      "Hareketli saat kadranları",
+      "Düşük-orta",
+      "Sade, koyu renkli kadran seçin"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Güç tasarrufu modları ne işe yarar?",
+   "p": [
+    "Çoğu akıllı saat, pil azaldığında veya uzun bir günde kullanabileceğiniz bir tasarruf modu sunar. Bu mod genellikle sürekli açık ekranı, arka plan ölçümlerini ve bazı kablosuz bağlantıları kısıtlar. Apple Watch'ta Düşük Güç Modu Denetim Merkezi'nden açılabilir ve pil yüzde 80'e ulaştığında kendiliğinden kapanır. Wear OS ve diğer işletim sistemlerinde mod adları farklıdır; ayarlarda pil veya güç başlığı altında bulunur.",
+    "Bazı saatlerde tasarruf modu saati yalnızca zaman gösteren bir cihaza dönüştürür ve bildirimleri tamamen keser. Uzun bir seyahat öncesinde hangi özelliklerin kapandığını bilmek için modu bir kez evde denemeniz faydalı olur."
+   ]
+  },
+  {
+   "h": "Batarya sağlığını uzun vadede nasıl korursunuz?",
+   "p": [
+    "Lityum iyon bataryalar her şarj döngüsünde bir miktar kapasite kaybeder; bu kaçınılmazdır. Ancak bu kaybı hızlandıran en önemli etken yüksek sıcaklıktır. Apple, Apple Watch için 0 ile 35 derece arasındaki ortam sıcaklığını ideal aralık olarak belirtir. Yaz günü güneş altındaki araç torpidosunda kalan bir saat, bu aralığın çok üzerine çıkabilir.",
+    "Pili sürekli yüzde 100'de bekletmek de yaşlanmayı hızlandırabilir. Bu yüzden bazı üreticiler akıllı şarj özellikleri sunar. Apple Watch'ta Ayarlar > Pil > Pil Sağlığı altında Optimize Edilmiş Pil Şarjı açıldığında saat şarj alışkanlığınızı öğrenir ve ihtiyacınız olana kadar yüzde 80'in üzerine çıkmayı geciktirebilir. Android tabanlı saatlerde benzer seçenekler marka uygulamasında veya saatin pil ayarlarında yer alabilir; menü adları markaya göre farklıdır."
+   ],
+   "list": [
+    "Saati sıcak ortamda, güneş altında veya yastık altında şarj etmeyin.",
+    "Uzun süre kullanmayacaksanız saati yaklaşık yarı dolu olarak serin bir yerde saklayın.",
+    "Pili sık sık tamamen bitirmekten kaçının.",
+    "Üretici onayı olmayan, ucuz şarj aletlerinden uzak durun."
+   ]
+  },
+  {
+   "h": "Ne zaman yetkili servise gitmelisiniz?",
+   "p": [
+    "Bazı belirtiler kullanıcı ayarlarıyla düzeltilemez ve güvenlik riski taşıyabilir. Saatin arka kapağı veya ekranı kabarıyor, gövdeden ayrılıyorsa batarya şişmiş olabilir. Bu durumda saati şarja takmayın, kullanmayı bırakın ve yetkili servise başvurun. Saati kendiniz açmaya çalışmak hem garantiyi geçersiz kılabilir hem de şişmiş bataryanın delinmesi gibi ciddi riskler doğurur.",
+    "Şarj sırasında saatin elle tutulamayacak kadar ısınması, yanık kokusu, tüm adımlara rağmen hiç şarj olmaması ya da pilin birkaç saatte bitmesi de servis gerektiren durumlardır. Servise giderken fatura veya garanti belgenizi yanınızda bulundurun."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Saatimi her gece şarja takmak zararlı mı?",
+   "a": "Hayır. Modern akıllı saatler dolduğunda şarjı kendileri yönetir. Optimize edilmiş şarj gibi bir özellik varsa açık tutmak, pilin uzun süre yüzde 100'de beklemesini azaltarak yıpranmayı yavaşlatır."
+  },
+  {
+   "q": "Telefon şarj aletimle saatimi şarj edebilir miyim?",
+   "a": "Saatin kendi şarj yuvası veya kablosunu, uygun güçteki bir USB adaptörüne takarak kullanabilirsiniz. Saati telefonların kablosuz şarj pedine koymak ise çoğu modelde çalışmaz, çünkü saatler genellikle kendine özel şarj sistemine sahiptir."
+  },
+  {
+   "q": "Şarj simgesi çıkıyor ama yüzde artmıyor, neden?",
+   "a": "Kontaklar kirliyse veya adaptör yetersiz güç veriyorsa saat çok yavaş şarj olabilir. Saat aşırı sıcaksa da şarj yavaşlayabilir veya durabilir. Kontakları temizleyip farklı bir adaptörle ve serin bir ortamda deneyin."
+  },
+  {
+   "q": "GPS neden bu kadar çok pil tüketiyor?",
+   "a": "GPS alıcısı uydulardan sürekli sinyal almak ve konumu hesaplamak için ekrandan bağımsız olarak çalışır. Antrenman sırasında ekranın sık uyanması ve nabız sensörünün daha sık ölçüm yapması da tüketimi artırır."
+  },
+  {
+   "q": "Akıllı saatin pili değiştirilebilir mi?",
+   "a": "Pek çok modelde pil yapıştırılmış ve gövdeye sızdırmazlık contalarıyla kapatılmıştır. Değişim mümkünse yetkili servis tarafından yapılmalıdır; yetkisiz açma su direncini bozabilir ve garantiyi geçersiz kılabilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Watch Kullanma Kılavuzu: Apple Watch'ı şarj etme",
+   "u": "https://support.apple.com/guide/watch/apd2b717523a/watchos"
+  },
+  {
+   "t": "Apple Destek: Apple Watch çalışma sıcaklıkları",
+   "u": "https://support.apple.com/en-au/108766"
+  },
+  {
+   "t": "Samsung Destek: Galaxy Watch şarj sorunları için ipuçları",
+   "u": "https://www.samsung.com/ca/support/mobile-devices/slow-or-interrupted-charging-issues-samsung-galaxy-watch/"
+  }
+ ]
+}

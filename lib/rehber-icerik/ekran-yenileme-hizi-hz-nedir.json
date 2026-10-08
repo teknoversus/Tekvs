@@ -1,0 +1,145 @@
+{
+ "slug": "ekran-yenileme-hizi-hz-nedir",
+ "title": "Ekran Yenileme Hızı (Hz) Nedir? 60Hz, 90Hz, 120Hz Farkı",
+ "description": "Ekran yenileme hızı nedir, 60Hz ile 120Hz arasındaki fark nerede hissedilir, pil ömrünü nasıl etkiler? LTPO, dokunma örnekleme hızı ve ayarlar.",
+ "tldr": "Yenileme hızı, ekranın görüntüyü saniyede kaç kez tazelediğini gösterir. 120Hz ekran, 60Hz'e göre kaydırmada, menü geçişlerinde ve desteklenen oyunlarda gözle görülür biçimde daha akıcıdır; ama daha fazla enerji harcar. Uyarlanabilir yenileme hızına sahip ekranlar, bu farkı içeriğe göre hızı düşürerek dengeler.",
+ "intro": [
+  "Yeni bir telefona geçtiğinizde Instagram akışını kaydırırken ekranın sanki parmağınıza yapışmış gibi aktığını hissettiyseniz, büyük olasılıkla daha yüksek bir yenileme hızına geçmişsinizdir. Eski telefona geri döndüğünüzde ise aynı hareket takılıyormuş gibi gelir. Bu farkın kaynağı ekranın saniyede kaç kez yeni bir görüntü çizdiğidir.",
+  "Telefon, tablet, dizüstü ve monitör özelliklerinde Hz olarak yazılan bu değerin ne anlama geldiğini, nerede işe yarayıp nerede yaramadığını ve pil ömrüyle ilişkisini aşağıda bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Yenileme hızı ne demek?",
+   "p": [
+    "Ekranlar hareketli görüntüyü, art arda gösterilen durağan karelerle oluşturur. Yenileme hızı, ekranın bu kareleri saniyede en fazla kaç kez değiştirebildiğini gösterir ve hertz (Hz) ile ölçülür. 60Hz bir ekran görüntüyü saniyede 60 kez, 120Hz bir ekran 120 kez tazeler.",
+    "Bunu kareler arasındaki süre olarak da düşünebilirsiniz. 60Hz'de her kare yaklaşık 16,7 milisaniye ekranda kalır, 120Hz'de bu süre yaklaşık 8,3 milisaniyeye iner. Kaydırdığınız bir metin her karede daha küçük adımlarla ilerler; göz bunu daha pürüzsüz ve daha net bir hareket olarak algılar."
+   ],
+   "table": {
+    "head": [
+     "Yenileme hızı",
+     "Kare başına süre",
+     "Nerede yaygın",
+     "Pratik etki"
+    ],
+    "rows": [
+     [
+      "60Hz",
+      "Yaklaşık 16,7 ms",
+      "Giriş segmenti telefonlar, standart monitörler",
+      "Günlük kullanım için yeterli, en düşük enerji tüketimi"
+     ],
+     [
+      "90Hz",
+      "Yaklaşık 11,1 ms",
+      "Bazı giriş ve orta segment telefonlar",
+      "Kaydırmada belirgin akıcılık artışı"
+     ],
+     [
+      "120Hz",
+      "Yaklaşık 8,3 ms",
+      "Orta ve üst segment telefonlar, tabletler, bazı dizüstüler",
+      "Arayüzde ve desteklenen oyunlarda çok akıcı"
+     ],
+     [
+      "144Hz ve üzeri",
+      "Yaklaşık 6,9 ms ve altı",
+      "Oyuncu telefonları, oyuncu monitörleri ve dizüstüleri",
+      "Hızlı oyunlarda fark eder, günlük kullanımda fark azalır"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Yenileme hızı ile kare hızı (FPS) aynı şey mi?",
+   "p": [
+    "Hayır. Yenileme hızı ekranın kapasitesidir; kare hızı (FPS) ise içeriği üreten uygulamanın ya da videonun saniyede kaç kare gönderdiğidir. Akıcılığı hissetmeniz için ikisinin de yüksek olması gerekir.",
+    "Bir oyun 60 FPS ile sınırlıysa 120Hz ekranda da 60 FPS akıcılığında görünür. Filmler ve diziler genellikle saniyede 24, 25 ya da 30 kareyle çekilir; YouTube videolarının bir kısmı 60 kare olur. Bu yüzden yüksek yenileme hızı video izlerken çoğu zaman fark yaratmaz. Asıl farkı arayüzde, web sayfalarında, sosyal medya akışında ve yüksek kare hızını destekleyen oyunlarda görürsünüz."
+   ]
+  },
+  {
+   "h": "Dokunma örnekleme hızıyla karıştırmayın",
+   "p": [
+    "Özellikle oyuncu telefonlarında 240Hz, 360Hz gibi çok daha yüksek değerler görebilirsiniz. Bunlar çoğu zaman yenileme hızı değil, dokunma örnekleme hızıdır: ekranın dokunuşunuzu saniyede kaç kez kontrol ettiği. Yüksek dokunma örnekleme hızı, dokunuşun algılanmasındaki gecikmeyi azaltır ve hızlı oyunlarda tepkiyi iyileştirebilir; ancak görüntünün akıcılığını değiştirmez.",
+    "Teknik özellik tablosunda iki değer yan yana yazılabilir. Satın alırken akıcılık için yenileme hızına, oyun tepkisi için dokunma örnekleme hızına bakın."
+   ]
+  },
+  {
+   "h": "Uyarlanabilir yenileme hızı ve LTPO",
+   "p": [
+    "Ekranı sürekli 120Hz'de çalıştırmak, ekran sürücüsünün ve grafik işlemcinin daha fazla çalışması demektir. Bu nedenle çoğu telefon içerik durağanken yenileme hızını düşürür. Eski ve daha basit çözümler birkaç sabit değer arasında geçiş yapar, örneğin kaydırırken 120Hz, durağan ekranda 60Hz.",
+    "LTPO (düşük sıcaklıkta polikristal oksit) adı verilen ekran altyapısı, bu ayarlamayı çok daha geniş bir aralıkta yapabilir. LTPO panellerde yenileme hızı içerik durağanken 1Hz'e kadar inebilir. Bu, özellikle her zaman açık ekran ve bir sayfayı okurken uzun süre kıpırdamadan beklediğiniz durumlarda enerji tasarrufu sağlar. Teknik özelliklerde 1-120Hz gibi bir aralık görüyorsanız bu genellikle LTPO ya da benzeri bir teknolojiye işaret eder."
+   ]
+  },
+  {
+   "h": "Pil ömrüne etkisi ve ayarlar",
+   "p": [
+    "Yüksek yenileme hızı pil tüketimini artırır, ancak bu artışın büyüklüğü modelden modele değişir. Uyarlanabilir yenileme hızına sahip bir telefonda fark, sürekli yüksek hızda çalışan bir ekrana göre daha küçüktür. Bataryanız gün sonunu getirmekte zorlanıyorsa yenileme hızını 60Hz'e sabitlemek denemeye değer bir ayardır.",
+    "Menü adları markaya ve yazılım sürümüne göre değişebilir. Yaygın yollar şunlardır:"
+   ],
+   "list": [
+    "Samsung Galaxy: Ayarlar > Ekran > Pürüzsüz Hareket. Adaptif seçeneği gerektiğinde hızı 120Hz'e kadar çıkarır, Standart seçeneği 60Hz'de tutar.",
+    "Google Pixel: Ayarlar > Ekran bölümündeki Smooth Display (akıcı ekran) seçeneği; kapatıldığında ekran 60Hz'e sınırlanır.",
+    "Diğer Android markaları: Ayarlar > Ekran altında Yenileme hızı veya Ekran yenileme hızı gibi bir seçenek bulunur.",
+    "iPhone (ProMotion ekranlı modeller): Ayrı bir Hz ayarı yoktur; Ayarlar > Erişilebilirlik > Hareket altındaki kare hızını sınırlama seçeneği ekranı en fazla 60 kareyle sınırlar. Düşük Güç Modu da yenileme hızını düşürür.",
+    "Android'de gerçek değeri görmek için Geliştirici seçenekleri içindeki yenileme hızını gösterme seçeneğini açabilirsiniz; ekranın köşesinde anlık değer görünür."
+   ]
+  },
+  {
+   "h": "Telefon, monitör veya TV alırken nelere bakmalı?",
+   "p": [
+    "Yenileme hızı tek başına ekran kalitesini belirlemez; parlaklık, renk doğruluğu, panel türü ve çözünürlükle birlikte değerlendirilmelidir. Yine de kullanım biçiminize göre öncelik verebilirsiniz."
+   ],
+   "list": [
+    "Günlük kullanım ve sosyal medya: 90Hz veya 120Hz, 60Hz'e göre belirgin fark yaratır; 120Hz'in üstü çoğu kullanıcı için ayırt edilmesi zor bir kazanımdır.",
+    "Rekabetçi mobil oyun: Oynadığınız oyunların yüksek kare hızını destekleyip desteklemediğini kontrol edin; desteklemiyorsa 144Hz ekranın faydası sınırlı kalır.",
+    "Pil öncelikliyse: Uyarlanabilir yenileme hızı ya da LTPO bulunan modelleri tercih edin.",
+    "Bilgisayar monitörü: Yüksek yenileme hızından yararlanmak için ekran kartının o kare hızını üretebilmesi ve bağlantı kablosunun (HDMI ya da DisplayPort sürümü) o değeri taşıyabilmesi gerekir.",
+    "Televizyon: Bazı üreticilerin pazarlama adlarıyla verdiği hareket değerleri panelin gerçek yenileme hızından yüksek olabilir; teknik özelliklerde panelin yerel (native) yenileme hızını arayın."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "Yenileme hızı reklamlarda öne çıkarıldığı için bazı yanlış beklentiler oluşur."
+   ],
+   "list": [
+    "Yüksek Hz daha keskin görüntü demektir: Hayır. Çözünürlük ve renkler değişmez; yalnızca hareketin akıcılığı artar.",
+    "120Hz ekranda videolar daha akıcı görünür: Genellikle hayır. Video kendi kare hızıyla oynatılır.",
+    "120Hz ekran her zaman 120Hz'de çalışır: Hayır. Çoğu telefon pil tasarrufu için hızı içeriğe göre düşürür; bazı uygulamalar da kendi kare hızlarını sınırlar.",
+    "Yüksek Hz gözü daha çok yorar: Bu yönde bir genelleme doğru değildir. Göz yorgunluğu daha çok parlaklık, ekran süresi ve kullanım alışkanlıklarıyla ilgilidir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "60Hz ile 120Hz arasındaki fark her zaman fark edilir mi?",
+   "a": "Kaydırma, menü geçişleri ve yüksek kare hızlı oyunlarda çoğu kişi farkı hemen görür. Durağan bir fotoğrafa bakarken, kitap okurken ya da video izlerken pratikte fark yoktur. Bir kez yüksek hıza alıştıktan sonra 60Hz ekran daha takılgan gelebilir."
+  },
+  {
+   "q": "120Hz ekran pil ömrünü ne kadar kısaltır?",
+   "a": "Etkisi ekran teknolojisine, yazılıma ve kullanım biçimine göre değiştiği için tek bir oran vermek doğru olmaz. Sürekli yüksek hızda çalışan ekranlar daha fazla tüketir; uyarlanabilir ya da LTPO ekranlarda fark daha küçüktür. Kendi telefonunuzda birkaç gün 60Hz, birkaç gün yüksek hızda kullanıp pil istatistiklerini karşılaştırmak en güvenilir ölçüdür."
+  },
+  {
+   "q": "Oyunlarda 120Hz'den yararlanmak için ne gerekir?",
+   "a": "Oyunun yüksek kare hızını desteklemesi ve oyun içi ayarlardan bu seçeneğin açılması gerekir. İşlemci o kare hızını sürekli üretemiyorsa ya da telefon ısınıp performansı düşürüyorsa ekran kapasitesinin altında kalırsınız."
+  },
+  {
+   "q": "Telefonumun ekranı kaç Hz, nasıl öğrenirim?",
+   "a": "En kolay yol üreticinin teknik özellik sayfasına bakmaktır. Android'de Geliştirici seçeneklerindeki yenileme hızını gösterme ayarı anlık değeri ekrana yansıtır. Ekran ayarlarında yenileme hızı seçeneği hiç yoksa telefon büyük olasılıkla 60Hz bir ekrana sahiptir."
+  },
+  {
+   "q": "Dizüstü bilgisayarda yüksek yenileme hızı işe yarar mı?",
+   "a": "Oyun oynuyorsanız ve ekran kartı yüksek kare hızı üretebiliyorsa belirgin fark yaratır. Ofis işlerinde de imleç ve kaydırma daha akıcı görünür ama zorunlu değildir. Windows'ta Ayarlar > Sistem > Ekran > Gelişmiş ekran bölümünden yenileme hızının en yüksek değere ayarlı olduğunu kontrol etmek faydalıdır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Android Authority: What is an LTPO display?",
+   "u": "https://www.androidauthority.com/what-is-ltpo-display-3055301/"
+  },
+  {
+   "t": "Samsung Türkiye Destek: Galaxy telefonda ekran yenileme hızı ayarı",
+   "u": "https://www.samsung.com/tr/support/mobile-devices/how-do-i-set-the-screen-refresh-rate-on-a-galaxy-phone"
+  }
+ ]
+}

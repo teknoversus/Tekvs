@@ -1,0 +1,152 @@
+{
+ "slug": "hafiza-karti-formatlamasi-neden-onemli",
+ "title": "Hafıza Kartı Formatlaması Neden Önemli? Kamerada Doğru Yöntem",
+ "description": "Hafıza kartını neden kamera içinde formatlamalısınız, silmekten farkı nedir, verileri gerçekten siler mi? Kart hatalarını önlemenin yollarını anlattık.",
+ "tldr": "Kartı kullanacağınız kameranın kendi menüsünden formatlamak, dosya sistemini ve klasör yapısını o kameranın beklediği biçimde kurar; bu da kart hatası ve tanınmama sorunlarını azaltır. Formatlama karttaki tüm fotoğrafları siler, bu yüzden önce yedek alın. Normal formatlama verileri tamamen yok etmez; kartı başkasına verecekseniz tam silme seçeneğini kullanın.",
+ "intro": [
+  "Düğün çekiminin ortasında kameranın “Kart hatası” uyarısı vermesi, fotoğrafçıların en çok korktuğu anlardan biridir. Bu tür sorunların bir kısmı kartın kendisinden değil, kartın nasıl hazırlandığından ve nasıl kullanıldığından kaynaklanır. Formatlama, bu riskleri azaltan basit ama çoğu zaman göz ardı edilen bir alışkanlıktır.",
+  "Aşağıda formatlamanın teknik olarak ne yaptığını, neden bilgisayar yerine kamerada yapılmasının önerildiğini, dosya silmekten farkını ve yanlışlıkla formatladığınız bir kartta ne yapmanız gerektiğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Formatlama teknik olarak ne yapar?",
+   "p": [
+    "Bir hafıza kartı, üzerindeki verileri bir dosya sistemiyle düzenler. Dosya sistemi, hangi fotoğrafın kartın hangi bölgesinde durduğunu gösteren bir dizin gibidir. Formatlama bu dizini sıfırdan oluşturur: eski kayıtları kaldırır, kartı boş görünecek hâle getirir ve kameranın yeni dosyalar yazacağı temiz bir yapı kurar.",
+    "Kameralar bu sırada fotoğraf klasörlerini de kendi düzenine göre oluşturur. Çoğu dijital kamera fotoğrafları DCIM adlı bir klasörün altına kaydeder ve markaya özgü alt klasörler, ayar dosyaları ekleyebilir. Kart kamera içinde formatlandığında bu yapı baştan doğru kurulur."
+   ]
+  },
+  {
+   "h": "Neden bilgisayarda değil, kamerada formatlamalısınız?",
+   "p": [
+    "Canon'un kullanım kılavuzları, kart yeni olduğunda ya da başka bir kamera veya bilgisayarda formatlandıysa kartın o kamerada formatlanmasını önerir. Aynı kılavuz kart dolduğunda veya kartla ilgili bir hata göründüğünde de formatlamayı tavsiye eder. Bu yaklaşım diğer markaların kılavuzlarında da yaygındır.",
+    "Bilgisayarın formatlama aracı kartı sizin seçtiğiniz ya da işletim sisteminin varsayılan ayarlarıyla hazırlar. Bu ayarlar SD kart standardının öngördüğü yapıyla her zaman birebir uyuşmayabilir. SD Association da işletim sistemlerine gömülü formatlama araçlarının SD kartlar için kendi aracı kadar titizlikle test edilmediğini belirtir. Kamera ise kartı kendi beklediği dosya sistemiyle hazırlar, bu da uyumluluk sorunlarını en aza indirir.",
+    "Bir kartı farklı kameralar arasında taşıyorsanız, her kamera değişiminde kartı yeni kamerada formatlamak iyi bir alışkanlıktır. Bir kameranın oluşturduğu klasör yapısı başka bir kamerada bazen sorunlara yol açabilir."
+   ]
+  },
+  {
+   "h": "Kartın kapasitesine göre dosya sistemi",
+   "p": [
+    "SD kartlar kapasiteye göre farklı sınıflara ayrılır ve her sınıf için standart bir dosya sistemi vardır. Canon kılavuzu SDHC kartların FAT32, SDXC kartların exFAT ile formatlandığını belirtir. Bu ayrımın pratik bir sonucu vardır: FAT32'de tek bir dosya 4 GB'ı geçemez. exFAT kartlarda ise uzun videolar tek dosya olarak kaydedilebilir."
+   ],
+   "table": {
+    "head": [
+     "Kart türü",
+     "Kapasite aralığı",
+     "Standart dosya sistemi",
+     "Pratik not"
+    ],
+    "rows": [
+     [
+      "SD (SDSC)",
+      "2 GB'a kadar",
+      "FAT12 / FAT16",
+      "Eski cihazlarda görülür"
+     ],
+     [
+      "SDHC",
+      "2 GB üzeri, 32 GB'a kadar",
+      "FAT32",
+      "Tek dosya en fazla 4 GB olabilir"
+     ],
+     [
+      "SDXC",
+      "32 GB üzeri, 2 TB'a kadar",
+      "exFAT",
+      "Uzun videolar tek dosya kaydedilebilir"
+     ]
+    ]
+   },
+   "note": "Canon kılavuzu, kamerada exFAT ile formatlanmış SDXC kartların bazı eski bilgisayar ve kart okuyucularca tanınmayabileceğini hatırlatır. Kart okuyucunuz kartı görmüyorsa önce okuyucunun SDXC desteğini kontrol edin."
+  },
+  {
+   "h": "Kamerada kart nasıl formatlanır?",
+   "p": [
+    "Menü adı markaya göre değişir: “Kartı formatla”, “Biçimlendir”, “Format” veya “Formatlama” gibi ifadelerle genellikle Kurulum ya da Ayarlar menüsünde yer alır. İki kart yuvalı kameralarda formatlanacak yuvayı seçmeniz istenir. Aşağıdaki adımlar genel bir çerçevedir; kendi modelinizin kılavuzunu da kontrol edin."
+   ],
+   "ol": [
+    "Karttaki fotoğraf ve videoları bilgisayara veya bulut depolamaya aktarın, ardından dosyaların açıldığını kontrol edin.",
+    "Kameranın pilinin yeterli dolulukta olduğundan emin olun.",
+    "Kartı kameraya takın ve kamerayı açın.",
+    "Ayarlar veya Kurulum menüsünden formatlama seçeneğini bulun.",
+    "İki yuva varsa doğru yuvayı seçin ve onaylayın.",
+    "Kameranız düşük seviye veya tam formatlama seçeneği sunuyorsa ve kart yavaşladıysa ya da kartı başkasına verecekseniz bu seçeneği işaretleyin.",
+    "İşlem bitene kadar kamerayı kapatmayın, kartı çıkarmayın ve pil kapağını açmayın."
+   ]
+  },
+  {
+   "h": "Formatlamak ile dosya silmek arasındaki fark",
+   "p": [
+    "Kamerada “Tümünü sil” seçeneği yalnızca fotoğraf dosyalarını kaldırır. Dosya sisteminin kendisi, klasörler ve kamera tarafından korumaya alınmış dosyalar yerinde kalır. Zamanla tek tek silinen ve yeniden yazılan dosyalar kartta parçalı bir yerleşime yol açabilir. SD Association da uzun kullanımda dosyaların parçalanabileceğini ve yeniden formatlamanın kartın güvenilirliğini ve performansını toparlayabileceğini belirtir.",
+    "Formatlama ise dosya sistemini sıfırdan kurar. Canon kılavuzunun belirttiği gibi korumaya alınmış görüntüler de dahil olmak üzere karttaki her şey silinir. Bu yüzden birçok fotoğrafçı, dosyaları yedekledikten sonra kartı silmek yerine kamerada formatlamayı tercih eder."
+   ]
+  },
+  {
+   "h": "Formatlama verileri gerçekten yok eder mi?",
+   "p": [
+    "Hayır, en azından normal formatlama yok etmez. Canon kılavuzu, kartın formatlanmasının veya verilerin silinmesinin verileri tamamen yok etmediğini açıkça belirtir. Normal formatlama yalnızca dizini sıfırlar; fotoğrafların ham verisi, üzerine yeni veri yazılana kadar kartta kalabilir.",
+    "Kartı satacak, başkasına verecek ya da atacaksanız kameranızdaki düşük seviye formatlama seçeneğini veya SD Association'ın SD Memory Card Formatter aracındaki üzerine yazma (overwrite) seçeneğini kullanın. Bu seçenekler kartın tüm alanına yeniden yazdığı için daha uzun sürer. Canon, kişisel verilerin söz konusu olduğu durumlarda kartın fiziksel olarak imha edilmesini de önerir."
+   ]
+  },
+  {
+   "h": "Yanlışlıkla formatladıysanız veya kart hatası alıyorsanız",
+   "p": [
+    "Normal formatlama verileri hemen silmediği için yanlışlıkla formatlanmış bir karttan kurtarma çoğu zaman mümkündür, ancak bunun garantisi yoktur. En önemli kural, karta yeni hiçbir şey yazmamaktır. Kamerada tek bir fotoğraf çekmek bile kurtarılabilecek bir dosyanın üzerine yazabilir.",
+    "Kart hatası alıyorsanız ve kartta önemli dosyalar varsa formatlamadan önce verileri kurtarmayı deneyin; formatlama sorunu çözebilir ama verileri kurtarmayı zorlaştırır. Aşağıdaki sırayla ilerleyin."
+   ],
+   "ol": [
+    "Kartı hemen kameradan çıkarın ve kullanmayı bırakın.",
+    "Kartın yan tarafındaki kilit anahtarını kilit konumuna alın; böylece bilgisayar karta yazamaz.",
+    "Kartı farklı bir kart okuyucuyla bilgisayarda açmayı deneyin. Dosyalar görünüyorsa hemen kopyalayın.",
+    "Dosyalar görünmüyorsa güvenilir bir veri kurtarma yazılımıyla kartı tarayın ve kurtarılan dosyaları karta değil bilgisayara kaydedin.",
+    "Kart bilgisayarda hiç görünmüyorsa, fiziksel hasar belirtisi varsa veya veriler çok değerliyse kendiniz uğraşmak yerine profesyonel bir veri kurtarma hizmetine başvurun.",
+    "Verileri kurtardıktan sonra kartı kamerada formatlayın. Hata tekrarlanıyorsa kartı önemli çekimlerde kullanmayın ve yenisiyle değiştirin."
+   ]
+  },
+  {
+   "h": "Karttan kaynaklı sorunları azaltan alışkanlıklar",
+   "p": [
+    "Formatlama tek başına her sorunu çözmez, ama iyi kullanım alışkanlıklarıyla birleştiğinde kart hatası riskini belirgin şekilde azaltır. Aşağıdaki maddeler, kartı ve fotoğraflarınızı korumak için uygulanması kolay adımlardır."
+   ],
+   "list": [
+    "Her önemli çekimden önce, yedeği aldığınız kartı kamerada formatlayın.",
+    "Kartı kamera açıkken veya kamera yazma işlemi yaparken çıkarmayın; kart erişim ışığının sönmesini bekleyin.",
+    "Kartı bilgisayardan çıkarırken işletim sisteminin güvenli çıkarma seçeneğini kullanın.",
+    "Kart doluyken çekime devam etmek yerine yedek kart bulundurun; tek bir yüksek kapasiteli karta tüm çekimi bağlamak yerine birkaç kart kullanmak riski dağıtır.",
+    "İki yuvalı kameralarda yedekleme (aynı anda iki karta kayıt) seçeneğini değerlendirin.",
+    "Fotoğrafları kart üzerinde doğrudan düzenlemek yerine önce bilgisayara kopyalayın, düzenlemeyi kopya üzerinde yapın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Kartı her çekimden önce formatlamalı mıyım?",
+   "a": "Zorunlu değildir, ama dosyaları güvenle yedekledikten sonra önemli çekimlerden önce kartı kamerada formatlamak kart hatası riskini azaltan iyi bir alışkanlıktır. Yedeğiniz yoksa formatlamayın; önce dosyaların bilgisayarda açıldığını kontrol edin."
+  },
+  {
+   "q": "Telefonda kullandığım microSD kartı kamerada kullanabilir miyim?",
+   "a": "Kamera microSD destekliyorsa ya da uygun bir adaptörle SD yuvasına takılıyorsa kullanabilirsiniz. Telefon karta kendi klasörlerini ve dosyalarını yazmış olacağı için önce verileri yedekleyip kartı kamerada formatlamanız önerilir. Kartın hız sınıfının kameranın video modları için yeterli olduğunu da kontrol edin."
+  },
+  {
+   "q": "Kamerada formatladığım kartı bilgisayar görmüyor, neden?",
+   "a": "32 GB'ın üzerindeki SDXC kartlar kamerada exFAT ile formatlanır. Bazı eski işletim sistemleri ve kart okuyucular exFAT'ı veya SDXC'yi tanımayabilir. Güncel bir kart okuyucu kullanmak ve işletim sisteminizin güncel olduğundan emin olmak çoğu durumda sorunu çözer."
+  },
+  {
+   "q": "Hızlı formatlama ile düşük seviye formatlama arasındaki fark nedir?",
+   "a": "Hızlı ya da normal formatlama yalnızca dosya sistemini yeniden kurar ve birkaç saniye sürer. Düşük seviye formatlama, Canon kılavuzunun anlattığı gibi kartın tüm kaydedilebilir alanını formatlar, bu yüzden daha uzun sürer. Kart yavaşladığında veya verileri tamamen silmek istediğinizde düşük seviye seçeneği tercih edilir."
+  },
+  {
+   "q": "Kartı bilgisayarda formatlamam gerekirse ne kullanmalıyım?",
+   "a": "SD Association, SD kartlar için kendi ücretsiz aracı olan SD Memory Card Formatter'ı önerir; bu araç kartın kapasitesine uygun dosya sistemini otomatik seçer. Yine de kartı bir kamerada kullanacaksanız, son formatlamayı o kamerada yapmak en güvenli yoldur."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Canon Kullanım Kılavuzu: Kart Formatlama",
+   "u": "https://cam.start.canon/en/C012/manual/html/UG-08_Set-up_0070.html"
+  },
+  {
+   "t": "SD Association: SD Memory Card Formatter",
+   "u": "https://www.sdcard.org/press/thoughtleadership/the-sd-memory-card-formatterhow-this-handy-tool-solves-your-memory-card-formatting-needs/"
+  }
+ ]
+}

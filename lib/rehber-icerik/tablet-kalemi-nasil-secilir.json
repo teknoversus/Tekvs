@@ -1,0 +1,156 @@
+{
+ "slug": "tablet-kalemi-nasil-secilir",
+ "title": "Tablet Kalemi (Stylus) Nasıl Seçilir? Uyumluluk ve Ayar Rehberi",
+ "description": "Apple Pencil, S Pen, USI ve pasif kalemler arasındaki fark nedir? Tabletinize uyan kalemi seçme ve kayma sorunlarını giderme yolları.",
+ "tldr": "Kalem seçiminde ilk kriter tabletinizin hangi kalem teknolojisini desteklediğidir: iPad'ler yalnızca belirli Apple Pencil modelleriyle, Galaxy Tab S serisi S Pen ile, birçok Chromebook ve bazı Android tabletler USI ile tam çalışır. Basınç ve avuç içi algılama yalnızca uyumlu aktif kalemlerde vardır; pasif kalem sadece parmağın yerini tutar.",
+ "intro": [
+  "Tablet kalemi almak isteyen biri genellikle iki sorunla karşılaşır: raflarda aynı görünen ama fiyatı birbirinden çok farklı kalemler ve 'her tablete uyar' diye satılan ama basınca hiç tepki vermeyen modeller. Aradaki farkın kaynağı kalemin görünüşü değil, tabletin ekranında kullanılan algılama teknolojisidir.",
+  "Ders notu almak, PDF imzalamak, eskiz çizmek ya da profesyonel illüstrasyon yapmak farklı kalem özellikleri gerektirir. Aşağıda kalem türlerini, uyumluluğu nasıl kontrol edeceğinizi ve kalem doğru yere yazmıyorsa neler yapabileceğinizi bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Pasif ve aktif kalem arasındaki fark",
+   "p": [
+    "Pasif (kapasitif) kalem, ucu iletken kauçuk ya da örgü kumaştan yapılmış basit bir çubuktur. Ekran onu parmak gibi algılar. Pil, eşleştirme ya da uygulama gerektirmez ve her dokunmatik ekranda çalışır. Buna karşılık ucu kalın olduğu için ince yazıda isabet zayıftır, basınç algılanmaz ve avucunuzu ekrana dayadığınızda tablet onu da dokunuş sayabilir.",
+    "Aktif kalem ise ekranla elektronik olarak haberleşir. Tablet kalemin ucunun yerini, ne kadar bastırdığınızı ve çoğu modelde eğim açısını algılar. Kalem algılandığında avuç içi dokunuşları yok sayılır (palm rejection). Not alırken bileğinizi ekrana dayayabilmeniz ve çizgi kalınlığının bastırmaya göre değişmesi bu sayede olur.",
+    "Aktif kalemlerin kendi içinde de farklı protokolleri vardır ve bu protokoller birbiriyle uyumlu değildir. Tabletin hangisini desteklediğini bilmeden alınan aktif kalem, çoğu zaman hiç çalışmaz ya da pasif kalem gibi davranır."
+   ]
+  },
+  {
+   "h": "Başlıca kalem teknolojileri ve hangi tabletlerde çalıştıkları",
+   "p": [
+    "Apple Pencil yalnızca iPad'lerle çalışır, ama her Apple Pencil her iPad'e uymaz. Apple'ın uyumluluk sayfasında birinci nesil, ikinci nesil, USB-C ve Pro modelleri ayrı iPad listeleriyle verilir. Örneğin Apple Pencil Pro belirli yeni iPad Pro, iPad Air ve iPad mini modelleriyle sınırlıdır; bazı iPad'lerde birinci nesil kalemin eşleşip şarj olması için USB-C adaptörü gerekir. Satın almadan önce iPad'inizin tam model adını (Ayarlar > Genel > Hakkında) bu listeyle karşılaştırın.",
+    "Samsung'un S Pen'i, Galaxy Tab S serisindeki Wacom tabanlı elektromanyetik algılama katmanıyla çalışır. Yazma işlevi bu katmanın ürettiği alanla beslenir. Samsung'un destek sayfasına göre bazı modellerde kalem tabletin arkasındaki yuvaya konduğunda kendiliğinden eşleşir ve şarj olur; şarj ve Bluetooth uzaktan kumanda gibi ek özellikler içindir. Daha yeni bazı serilerde S Pen'de Bluetooth desteği bulunmuyor. Galaxy Tab A gibi giriş serisi modellerin çoğunda ise S Pen desteği yoktur.",
+    "USI (Universal Stylus Initiative), farklı üreticilerin aynı kalemi kullanabilmesi için geliştirilmiş açık bir standarttır. Google, Lenovo, Samsung ve Intel gibi şirketler destekler. Birçok Chromebook ve bazı Android tabletler USI kalemle çalışır. 2022'de yayımlanan USI 2.0, 4096 seviyeye kadar basınç hassasiyeti ve gelişmiş eğim desteği getirdi. Bazı eski USI 1.0 kalemlerin USI 2.0 ekranlarla sorun çıkarabildiği bildiriliyor. Windows tabletlerde ise çoğunlukla Microsoft Pen Protocol (MPP) kullanılır.",
+    "Bunların dışında Lenovo, Xiaomi, Huawei gibi üreticilerin yalnızca kendi tablet serileriyle çalışan kalemleri vardır. Bu kalemler çoğu zaman aynı markanın eski ya da başka serideki tabletinde bile çalışmaz."
+   ],
+   "table": {
+    "head": [
+     "Kalem türü",
+     "Çalıştığı cihazlar",
+     "Basınç / eğim",
+     "Güç kaynağı"
+    ],
+    "rows": [
+     [
+      "Pasif (kapasitif)",
+      "Her dokunmatik ekran",
+      "Yok",
+      "Gerekmez"
+     ],
+     [
+      "Apple Pencil (modele göre)",
+      "Yalnızca uyumlu iPad modelleri",
+      "Var (Apple Pencil USB-C modelinde basınç algılama yok)",
+      "Dahili pil"
+     ],
+     [
+      "Samsung S Pen",
+      "S Pen destekli Galaxy Tab modelleri",
+      "Var",
+      "Yazma için ekran katmanı; ek özellikler için pil"
+     ],
+     [
+      "USI kalem",
+      "USI destekli Chromebook ve tabletler",
+      "Var (USI 2.0'da 4096 seviyeye kadar)",
+      "Pil"
+     ],
+     [
+      "Markaya özel kalem",
+      "Aynı markanın belirli tablet serileri",
+      "Var",
+      "Genelde dahili pil"
+     ]
+    ]
+   },
+   "note": "Kalem kutusundaki 'universal' yazısı genellikle pasif kalem ya da yalnızca birkaç tablette çalışan bir model anlamına gelir. Ürün sayfasında tabletinizin model numarası açıkça yazmıyorsa uyumlu saymayın."
+  },
+  {
+   "h": "Kullanım amacına göre hangi özellikler önemli?",
+   "p": [
+    "Not alma ve ders çalışma için öncelik avuç içi algılama, düşük gecikme ve kalemin elde rahat durmasıdır. Basınç seviyesinin 2048 ya da 4096 olması bu kullanımda pratikte fark yaratmaz. Tabletin kenarına manyetik tutunan ve orada şarj olan bir kalem, çantada kaybolma ve şarjı unutma sorununu azaltır.",
+    "Çizim ve illüstrasyon için basınç ve eğim desteği belirleyicidir. Eğim, gölgelendirmede kalemi yatırarak geniş çizgi çekmenizi sağlar. Burada üretici kalemleri, uygulamalarla (Procreate, Clip Studio Paint, Krita gibi) en sorunsuz çalışan seçenektir.",
+    "Sadece menülerde gezinmek, form imzalamak ya da çocuğun boyama yapması için pasif kalem yeterli olabilir. Ancak avucunuzu ekrana koyduğunuzda istenmeyen çizgiler oluşacağını bilerek almalısınız."
+   ],
+   "list": [
+    "Uç yedeği: Kalem uçları zamanla aşınır; yedek uçların kolay bulunup bulunmadığına bakın.",
+    "Şarj yöntemi: Manyetik, USB-C kablolu ya da şarjsız kullanım seçenekleri günlük pratikliği etkiler.",
+    "Kısayol düğmesi: Silgi, geri al veya ekran görüntüsü gibi işlevler için düğme ya da sıkma hareketi işe yarar.",
+    "Ekran koruyucu: Kağıt dokulu koruyucular yazma hissini değiştirir ama ucu daha hızlı aşındırabilir."
+   ]
+  },
+  {
+   "h": "Kalemi eşleştirme ve ilk ayarlar",
+   "p": [
+    "Kurulum kalem türüne göre değişir. Menü adları marka ve sürüme göre farklı olabilir; aşağıda en yaygın yollar var."
+   ],
+   "ol": [
+    "Apple Pencil: Modelinize göre kalemi iPad'in yanındaki manyetik alana yerleştirin ya da USB-C ile bağlayın, ekranda çıkan eşleştirme isteğini onaylayın. Ayarlar > Apple Pencil bölümünden çift dokunma ve sıkma gibi hareketleri ayarlayın.",
+    "Samsung S Pen: Kalemi tabletteki yuvaya ya da manyetik alana yerleştirin. Ayarlar > Gelişmiş özellikler > S Pen bölümünden Hava komutu, ekran kapalıyken not alma ve el yazısını metne çevirme gibi ayarları düzenleyin.",
+    "USI ve Bluetooth'lu kalemler: Kalemi açın ya da düğmesine basılı tutarak eşleştirme moduna alın, tabletin Bluetooth menüsünden ekleyin. Bazı USI kalemlerde ayrı eşleştirme gerekmez; ekrana dokunmak yeterlidir.",
+    "Not uygulamanızda 'yalnızca kalemle çiz' seçeneğini açın. Böylece parmakla kaydırırken yanlışlıkla çizgi oluşmaz."
+   ]
+  },
+  {
+   "h": "Kalem yanlış yere yazıyorsa ya da tepki vermiyorsa",
+   "p": [
+    "iPad ve Galaxy Tab gibi tabletlerin çoğunda kullanıcıya açık bir kalem kalibrasyon menüsü yoktur; hizalama fabrikada yapılır. Windows tabletlerde ise Denetim Masası'ndaki Tablet PC Ayarları bölümünde 'Kalibre et' seçeneği bulunur. Android ve iPad'de kayma ya da kopukluk yaşıyorsanız sorun genellikle kalibrasyon değil, aşağıdaki nedenlerden biridir."
+   ],
+   "ol": [
+    "Ucun gevşek olup olmadığını kontrol edin; Apple Pencil ve birçok kalemde uç vidalıdır ve gevşeyince çizgiler kesik çıkar.",
+    "Aşınmış ucu değiştirin. Ucu düzleşmiş kalem, ekranda imlecin olduğu yerden biraz kayık çizebilir.",
+    "Kalın ya da kalitesiz ekran koruyucu kullanıyorsanız onu çıkarıp deneyin.",
+    "Kalemin şarjını kontrol edin, gerekiyorsa tam şarj edin.",
+    "Bluetooth listesinden kalemi kaldırıp yeniden eşleştirin; Samsung'da S Pen ayarlarındaki üç nokta menüsünden S Pen'i sıfırlayabilirsiniz.",
+    "Tabletin ve not uygulamasının güncel olduğundan emin olun, ardından tableti yeniden başlatın.",
+    "Sorun yalnızca tek uygulamada varsa başka bir uygulamada deneyin; uygulama ayarlarındaki el yazısı ya da avuç içi seçenekleri soruna yol açıyor olabilir."
+   ],
+   "note": "Kalem birden fazla tablette ve temiz uçla da çalışmıyorsa ya da tabletin ekranının yalnızca belirli bir bölgesinde tepki vermiyorsa arıza kalemde veya ekran sayısallaştırıcısında olabilir. Bu durumda garanti belgesiyle yetkili servise başvurun."
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "'Basınç seviyesi ne kadar yüksekse o kadar iyi' düşüncesi yaygındır. Oysa 2048 ile 4096 seviye arasındaki farkı çoğu kullanıcı hissetmez; gecikme, uç sürtünmesi ve uygulamanın basınç eğrisi deneyimi daha çok belirler.",
+    "Bir diğer yanlış, aynı markanın tüm kalemlerinin tüm tabletlerinde çalışacağı varsayımıdır. Apple Pencil Pro eski iPad'lerde, birinci nesil Apple Pencil yeni iPad Pro'larda çalışmaz. Samsung'un da S Pen desteği olmayan tablet serileri vardır.",
+    "Son olarak, aktif kalemin tableti 'çizim tableti' yapacağı düşüncesi her zaman doğru değildir. Ekran yenileme hızı, ekranın yansıması ve kullanılan uygulama da çizim deneyimini etkiler."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her tablette stylus kullanılabilir mi?",
+   "a": "Pasif kalem her dokunmatik ekranda çalışır, ama yalnızca parmağın yerini tutar. Basınç ve avuç içi algılama için tabletin desteklediği aktif kalem teknolojisine uygun bir kalem gerekir."
+  },
+  {
+   "q": "Android tablette Apple Pencil çalışır mı?",
+   "a": "Hayır. Apple Pencil yalnızca uyumlu iPad modelleriyle çalışacak şekilde tasarlanmıştır. Android tabletlerde en fazla ucu ekrana değen pasif bir çubuk gibi davranabilir."
+  },
+  {
+   "q": "S Pen'in şarjı bitince yazmaya devam eder mi?",
+   "a": "S Pen'in yazma işlevi tabletin ekranındaki elektromanyetik katmanla çalışır. Şarj, Bluetooth üzerinden çalışan uzaktan kumanda gibi ek özellikler içindir. Yeni bazı modellerde Bluetooth özelliği zaten bulunmuyor."
+  },
+  {
+   "q": "Kalemim çizgileri kesik kesik çiziyor, neden olabilir?",
+   "a": "En sık neden gevşemiş ya da aşınmış uçtur. Ardından kalemin şarjına, kalın ekran koruyucuya ve uygulama güncellemesine bakın. Sorun devam ederse kalemi yeniden eşleştirin."
+  },
+  {
+   "q": "Ders notu için pahalı kalem şart mı?",
+   "a": "Şart değil, ama avuç içi algılama not alma deneyimini çok değiştirir. Tabletiniz bir aktif kalem standardını destekliyorsa, o standarda uygun giriş seviyesi bir kalem not almak için genellikle yeterlidir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: Apple Pencil uyumluluğu",
+   "u": "https://support.apple.com/en-au/HT211029"
+  },
+  {
+   "t": "Samsung Destek: S Pen'i Galaxy tabletle eşleştirme ve şarj etme",
+   "u": "https://www.samsung.com/us/support/answer/ANS10003419"
+  },
+  {
+   "t": "Wikipedia: Universal Stylus Initiative",
+   "u": "https://en.wikipedia.org/wiki/Universal_Stylus_Initiative"
+  }
+ ]
+}

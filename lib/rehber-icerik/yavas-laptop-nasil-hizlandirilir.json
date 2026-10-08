@@ -1,0 +1,140 @@
+{
+ "slug": "yavas-laptop-nasil-hizlandirilir",
+ "title": "Yavaşlayan Dizüstü Bilgisayar Nasıl Hızlandırılır?",
+ "description": "Laptopunuz yavaşladıysa nedeni bulun: başlangıç uygulamaları, dolu disk, güç modu, ısınma ve donanım. Windows ve macOS için adım adım hızlandırma rehberi.",
+ "tldr": "Önce Görev Yöneticisi'nde işlemci, bellek ve diskten hangisinin sürekli dolu olduğuna bakın; çözüm bu cevaba göre değişir. Gereksiz başlangıç uygulamalarını kapatmak, sistem diskinde boş alan açmak ve güç modunu kontrol etmek çoğu yavaşlamayı giderir. Cihazda hâlâ mekanik disk (HDD) varsa SSD'ye geçmek, tek başına en büyük farkı yaratan yükseltmedir.",
+ "intro": [
+  "Açılması dakikalar süren, tarayıcıda yeni sekme açarken duraksayan ya da bir dosyayı kaydederken donan bir dizüstü, işinizi yapmanın önüne geçer. Çoğu kişi ilk iş olarak yeni bir bilgisayar almayı düşünür; oysa yavaşlığın önemli bir kısmı yazılım kaynaklıdır ve ücretsiz adımlarla düzelir.",
+  "Burada yapılacak en verimli şey, rastgele ipuçları denemek yerine yavaşlığın nereden geldiğini bulmaktır. Aşağıdaki sıra, en kolay ve en etkili adımlardan başlayıp donanım yükseltmesine ve servis kararına kadar ilerler. Menü adları Windows ve macOS sürümüne göre küçük farklılıklar gösterebilir."
+ ],
+ "sections": [
+  {
+   "h": "Yavaşlığın kaynağını Görev Yöneticisi ile bulun",
+   "p": [
+    "Windows'ta Ctrl + Shift + Esc ile Görev Yöneticisi'ni açın ve bilgisayarı yavaş hissettiğiniz bir anda İşlemler sekmesine bakın. Sütun başlıklarına tıklayarak işlemleri CPU, Bellek ve Disk kullanımına göre sıralayabilirsiniz. Performans sekmesi ise bu değerleri grafikle gösterir.",
+    "Disk sürekli yüzde 100'e yakınsa ve Performans > Disk ekranında tür olarak HDD yazıyorsa, darboğaz büyük ihtimalle mekanik disktir. Bellek sürekli yüzde 85-90'ın üzerindeyse çok fazla uygulama açıktır veya RAM yetersizdir. CPU hiçbir şey yapmazken bile yüksekse arka planda bir güncelleme, tarama veya istenmeyen bir yazılım çalışıyor olabilir.",
+    "Mac'te aynı iş için Etkinlik Monitörü'nü kullanın. CPU sekmesinde en çok kaynak tüketen işlemleri, Bellek sekmesinde Bellek Baskısı grafiğini kontrol edin; grafik sarı veya kırmızıysa bellek yetmiyordur."
+   ]
+  },
+  {
+   "h": "Ücretsiz hızlandırma adımları: Windows",
+   "p": [
+    "Aşağıdaki adımları sırayla uygulayın ve her birinden sonra farkı gözlemleyin. Böylece hangi adımın işe yaradığını da öğrenmiş olursunuz."
+   ],
+   "ol": [
+    "Bilgisayarı yeniden başlatın. Haftalarca uyku modunda kalan bir sistemde biriken işlemler ve bekleyen güncellemeler yeniden başlatmayla temizlenir.",
+    "Başlangıç uygulamalarını azaltın: Windows 11'de Ayarlar > Uygulamalar > Başlangıç, Windows 10'da Görev Yöneticisi'nin Başlangıç sekmesi. Sohbet, oyun mağazası, bulut eşitleme gibi her açılışta gerekmeyen uygulamaları kapatın; güvenlik yazılımını ve dokunmatik yüzey, ses gibi donanım sürücülerinin yardımcılarını açık bırakın.",
+    "Sistem diskinde boş alan açın: Ayarlar > Sistem > Depolama ekranında geçici dosyaları ve temizleme önerilerini inceleyin. Depolama Algılayıcısı'nı açarak geçici dosyaların ve geri dönüşüm kutusunun düzenli temizlenmesini sağlayabilirsiniz. Sistem diskinin tamamen dolmaması, özellikle SSD'lerde performans için önemlidir.",
+    "Kullanmadığınız programları kaldırın: Ayarlar > Uygulamalar > Yüklü uygulamalar listesinde, üreticinin önceden yüklediği deneme sürümü yazılımlar ve unuttuğunuz araçlar arka planda kaynak harcıyor olabilir.",
+    "Güç modunu kontrol edin: Ayarlar > Sistem > Güç ve pil bölümünde Güç modu en iyi güç verimliliğine ayarlıysa işlemci bilerek yavaşlatılır. Prize takılıyken dengeli veya en iyi performans seçeneğini kullanın. Çoğu dizüstünün pildeyken prizdekinden daha yavaş çalıştığını da hesaba katın.",
+    "Windows Update'i ve sürücüleri güncelleyin; özellikle ekran kartı, yonga seti ve BIOS güncellemelerini üreticinin destek sitesinden kontrol edin.",
+    "Zararlı yazılım taraması yapın: Windows Güvenliği > Virüs ve tehdit koruması > Tarama seçenekleri altında Tam tarama'yı çalıştırın. Şüpheniz sürüyorsa aynı ekrandaki Microsoft Defender Çevrimdışı tarama seçeneğini kullanın.",
+    "Tarayıcıyı düzenleyin: Kullanmadığınız eklentileri kaldırın, onlarca sekmeyi açık tutmak yerine yer imlerine ekleyin. Chrome ve Edge'deki bellek tasarrufu ya da uyku sekmeleri özelliği, arka plandaki sekmelerin belleği serbest bırakmasını sağlar."
+   ]
+  },
+  {
+   "h": "Ücretsiz hızlandırma adımları: macOS",
+   "p": [
+    "Mac'lerde de mantık aynıdır: Gereksiz açılış öğelerini azaltın, diskte yer açın ve kaynak tüketen işlemi bulun. Spotlight dizinleme veya büyük bir sistem güncellemesinden sonra ilk birkaç saat yavaşlık görülmesi normaldir; bu süre geçtikten sonra değerlendirme yapın."
+   ],
+   "list": [
+    "Sistem Ayarları > Genel > Giriş Öğeleri bölümünde, oturum açıldığında başlayan ve arka planda çalışmasına izin verilen uygulamaları gözden geçirin.",
+    "Sistem Ayarları > Genel > Depolama bölümündeki önerileri inceleyin; büyük dosyaları, eski iOS yedeklerini ve indirilenler klasörünü temizleyin.",
+    "Etkinlik Monitörü'nde sürekli yüksek CPU kullanan bir uygulama varsa onu güncelleyin veya kaldırın.",
+    "Sistem Ayarları > Genel > Yazılım Güncelleme ile macOS'u güncel tutun."
+   ]
+  },
+  {
+   "h": "Isınma ve fan: performansı sessizce düşüren etken",
+   "p": [
+    "Dizüstü işlemcileri belirli bir sıcaklığı aştığında kendini korumak için hızını düşürür. Bu yüzden bir oyun ya da video dışa aktarımı ilk dakikalarda akıcıyken sonra belirgin şekilde yavaşlıyorsa ve fan sesi sürekli yüksekse, sorun yazılımda değil soğutmada olabilir.",
+    "Cihazı yatak, yorgan veya kucak gibi hava kanallarını kapatan yüzeylerde kullanmayın; sert bir masa ya da yükseltici stant kullanın. Hava giriş ve çıkış ızgaralarında toz birikmesi de soğutmayı zayıflatır. Izgaraları dışarıdan kısa basınçlı hava darbeleriyle temizleyebilirsiniz; fan pervanesini aşırı hızda döndürmemek için üflerken fanı plastik bir aletle sabit tutun."
+   ],
+   "note": "Kasayı açıp fanı veya termal macunu kendiniz değiştirmek, garanti kapsamındaki cihazlarda garanti dışı kalmanıza yol açabilir. Garantili bir cihazda içeriden temizlik ve termal bakım için yetkili servise başvurun."
+  },
+  {
+   "h": "Donanım yükseltmesi ne zaman mantıklı?",
+   "p": [
+    "Yazılım adımlarından sonra yavaşlık sürüyorsa, darboğazı yaratan donanımı yükseltmek gerekir. Görev Yöneticisi'nde gördüğünüz tablo hangi yükseltmenin işe yarayacağını gösterir.",
+    "Mekanik diskli bir dizüstüde SSD'ye geçmek açılışı, program yüklemeyi ve dosya aramayı kat kat hızlandırır; çünkü SSD'nin hareketli parçası yoktur ve rastgele erişim hızı çok yüksektir. Bellek sürekli doluysa ve cihazda boş veya değiştirilebilir bir RAM yuvası varsa 8 GB'tan 16 GB'a çıkmak çok sekmeli kullanımda belirgin rahatlama sağlar. İşlemci her işte yüzde 100'e dayanıyorsa ise dizüstülerde işlemci değiştirilemediği için yeni cihaz düşünmek gerekir."
+   ],
+   "table": {
+    "head": [
+     "Belirti",
+     "Olası neden",
+     "Çözüm"
+    ],
+    "rows": [
+     [
+      "Disk sürekli yüzde 100, tür HDD",
+      "Mekanik disk darboğazı",
+      "SSD'ye geçiş"
+     ],
+     [
+      "Bellek sürekli yüzde 85 üzeri",
+      "RAM yetersiz veya çok uygulama açık",
+      "Uygulama azaltma, mümkünse RAM ekleme"
+     ],
+     [
+      "İlk dakikalar hızlı, sonra yavaş; fan yüksek",
+      "Isınma kaynaklı hız düşürme",
+      "Hava kanallarını açma, toz temizliği, servis bakımı"
+     ],
+     [
+      "Boştayken CPU yüksek",
+      "Arka plan işlemi veya zararlı yazılım",
+      "İşlemi bulma, tam tarama"
+     ],
+     [
+      "Pildeyken yavaş, prizde normal",
+      "Güç tasarrufu ayarları",
+      "Güç modunu ayarlama"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Hiçbiri işe yaramazsa: sıfırlama ve servis",
+   "p": [
+    "Tüm adımlara rağmen sistem yavaşsa, yıllar içinde biriken yazılım sorunları için Windows'u sıfırlamak etkili bir son çaredir. Ayarlar > Sistem > Kurtarma > Bu bilgisayarı sıfırla yolunu izleyin; dosyalarımı koru seçeneği kişisel dosyaları tutar ama yüklü programları kaldırır. Başlamadan önce önemli dosyalarınızı harici bir diske veya buluta yedekleyin.",
+    "Aşağıdaki durumlarda ise yazılım adımlarıyla uğraşmak yerine cihazı yetkili servise götürün: Mekanik diskten tıkırtı sesleri geliyorsa, sık sık mavi ekran hatası alıyorsanız, fan temizliğe rağmen sürekli tam hızda dönüyorsa, kasa aşırı ısınıyorsa veya pil şişmesi nedeniyle touchpad ya da kapak kabarmışsa. Bu belirtiler donanım arızasına işaret eder ve veri kaybı ya da güvenlik riski taşır."
+   ]
+  },
+  {
+   "h": "Hızlandırmaya çalışırken sık yapılan hatalar",
+   "list": [
+    "Kayıt defteri temizleyici veya RAM hızlandırıcı programlar kurmak: Hissedilir fayda sağlamazlar, bazıları sisteme zarar verir veya istenmeyen yazılım içerir.",
+    "Aynı anda iki ayrı antivirüs programı çalıştırmak: Birbirleriyle çakışıp sistemi daha da yavaşlatırlar.",
+    "Windows Update'i veya Windows Güvenliği'ni kapatmak: Kısa vadede kaynak kazandırmaz, güvenlik açığı bırakır.",
+    "SSD'yi üçüncü parti araçlarla birleştirmeye (defrag) çalışmak: SSD'ler birleştirmeye ihtiyaç duymaz; Windows'un Sürücüleri iyileştir aracı SSD'yi zaten uygun şekilde yönetir.",
+    "Başlangıç listesinde tanımadığınız her şeyi kapatmak: Dokunmatik yüzey, ses veya klavye kısayollarını yöneten yardımcıları kapatmak bu özellikleri bozabilir."
+   ],
+   "p": [
+    "Bir ayarı değiştirmeden önce ne işe yaradığından emin değilseniz, adını internette aratmak ve değişiklikleri tek tek yapmak geri dönüşü kolaylaştırır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "SSD yükseltmesi gerçekten fark yaratır mı?",
+   "a": "Cihazınızda mekanik disk (HDD) varsa evet, genellikle yapılabilecek en etkili tek yükseltmedir. Açılış, program yükleme ve dosya arama süreleri belirgin şekilde kısalır. Cihaz zaten SSD kullanıyorsa daha hızlı bir SSD'nin günlük kullanımdaki etkisi sınırlıdır."
+  },
+  {
+   "q": "Başlangıç programlarını nasıl kapatırım?",
+   "a": "Windows 11'de Ayarlar > Uygulamalar > Başlangıç yolundan, Windows 10'da Görev Yöneticisi'nin Başlangıç sekmesinden uygulamaları devre dışı bırakabilirsiniz. Mac'te Sistem Ayarları > Genel > Giriş Öğeleri bölümünü kullanın. Güvenlik yazılımını ve donanım yardımcılarını açık bırakın."
+  },
+  {
+   "q": "Laptop pildeyken neden daha yavaş çalışıyor?",
+   "a": "Çoğu dizüstü pil ömrünü uzatmak için pildeyken işlemci ve ekran kartının gücünü sınırlar. Windows'ta Ayarlar > Sistem > Güç ve pil bölümündeki güç modu bu davranışı etkiler. Performans gerektiren işleri adaptör takılıyken yapmak daha iyi sonuç verir."
+  },
+  {
+   "q": "Windows'u sıfırlamak dosyalarımı siler mi?",
+   "a": "Dosyalarımı koru seçeneğini seçerseniz kişisel dosyalarınız kalır ama yüklü programlar kaldırılır. Her şeyi kaldır seçeneği ise tüm verileri siler. Her iki durumda da işlemden önce önemli dosyalarınızı yedeklemeniz gerekir."
+  },
+  {
+   "q": "Yavaşlık için yeni bilgisayar almak ne zaman daha mantıklı?",
+   "a": "İşlemci sıradan işlerde bile sürekli tam yükteyse, RAM lehimli ve yetersizse veya cihaz artık güncel işletim sistemi güncellemelerini alamıyorsa yükseltme seçenekleri tükenmiş demektir. Bu durumda onarım maliyetini yeni cihazla karşılaştırmak daha doğru olur."
+  }
+ ],
+ "sources": []
+}

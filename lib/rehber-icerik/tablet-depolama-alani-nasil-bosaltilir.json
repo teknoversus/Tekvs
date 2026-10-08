@@ -1,0 +1,145 @@
+{
+ "slug": "tablet-depolama-alani-nasil-bosaltilir",
+ "title": "Tablette Depolama Alanı Nasıl Boşaltılır? iPad ve Android",
+ "description": "Tablette yer açmanın doğru sırası: depolama analizi, önbellek, fotoğrafları güvenle buluta taşıma, indirilenler ve microSD. iPad ve Android adımları.",
+ "tldr": "Önce Ayarlar'daki depolama ekranından yeri neyin kapladığına bakın. Ardından kullanmadığınız uygulamaları kaldırın veya boşaltın, video ve müzik uygulamalarındaki indirmeleri temizleyin, yedeği alınmış fotoğrafları cihazdan güvenli şekilde kaldırın ve çöp kutularını boşaltın. iCloud veya Google Fotoğraflar senkronizasyonu açıkken galeriden silmenin yedeği de silebileceğine dikkat edin.",
+ "intro": [
+  "“Depolama alanı dolu” uyarısı genellikle en kötü anda gelir: bir uygulama güncellemesi inmez, ekran kaydı yarıda kesilir ya da tablet belirgin şekilde yavaşlar. İlk refleks rastgele uygulama silmek olur, ama çoğu zaman yeri kaplayan şey sandığınız yer değildir.",
+  "Aşağıdaki sıra, en çok yer açan ve en az veri kaybı riski taşıyan adımlarla başlıyor. iPad (iPadOS) ve Android tabletler için menü yollarını ayrı ayrı verdik; menü adları marka ve yazılım sürümüne göre farklı olabilir."
+ ],
+ "sections": [
+  {
+   "h": "Önce ölçün: Yeri ne kaplıyor?",
+   "p": [
+    "Hangi kategorinin şiştiğini görmeden temizlik yapmak, saatlerce küçük dosya silip birkaç yüz megabayt kazanmakla sonuçlanabilir. Depolama ekranı size uygulamaları boyuta göre sıralar ve çoğu zaman öneriler de sunar.",
+    "iPad'de bu ekranda uygulamaların yanında “Sistem” ve diğer sistem verileri de görünür. Apple'a göre önbellek ve geçici dosyalar bu kategoride yer alabilir ve depolama azaldığında sistem bunları kendisi siler; kullanıcı tarafından tek dokunuşla silinemez. Bu bölüm büyük görünüyorsa önce diğer adımlara odaklanın."
+   ],
+   "table": {
+    "head": [
+     "İşlem",
+     "iPad (iPadOS)",
+     "Android (genel)",
+     "Samsung Galaxy Tab"
+    ],
+    "rows": [
+     [
+      "Depolama özeti",
+      "Ayarlar > Genel > iPad Saklama Alanı",
+      "Ayarlar > Depolama",
+      "Ayarlar > Cihaz bakımı > Depolama"
+     ],
+     [
+      "Uygulama önbelleği",
+      "Uygulamanın kendi ayarlarından; sistem gerektiğinde siler",
+      "Ayarlar > Uygulamalar > [uygulama] > Depolama > Önbelleği temizle",
+      "Ayarlar > Uygulamalar > [uygulama] > Depolama > Önbelleği temizle"
+     ],
+     [
+      "Kullanılmayan uygulama",
+      "Uygulamayı boşalt (verisi kalır) veya sil",
+      "Kaldır veya arşivle (destekleyen sürümlerde)",
+      "Kaldır"
+     ],
+     [
+      "Silinen dosyalar",
+      "Fotoğraflar > Son Silinenler",
+      "Uygulama içi Çöp Kutusu",
+      "Galeri ve Dosyalarım > Çöp Kutusu"
+     ]
+    ]
+   },
+   "note": "Samsung'da “Cihaz bakımı” menüsü bazı sürümlerde “Pil ve cihaz bakımı” adını taşır. Türkçe menü adları yazılım sürümüne göre küçük farklılıklar gösterebilir."
+  },
+  {
+   "h": "Uygulamaları boşaltın, önbelleği temizleyin",
+   "p": [
+    "En çok yer kaplayan uygulamalar genellikle oyunlar, video düzenleme uygulamaları, mesajlaşma uygulamaları ve çevrimdışı içerik tutan yayın servisleridir. Bir yıldır açmadığınız bir oyun birkaç gigabayt tutuyor olabilir.",
+    "iPad'de bir uygulamayı “boşaltmak” (İngilizce arayüzde Offload App), uygulamanın kendisini kaldırırken belgelerini ve verilerini saklar; uygulamayı yeniden indirdiğinizde kaldığınız yerden devam edersiniz. Silmek ise uygulamayı ve verilerini birlikte kaldırır. Depolama ekranındaki önerilerde kullanılmayan uygulamaları otomatik boşaltma seçeneği de bulunabilir.",
+    "Android'de “Önbelleği temizle” yalnızca geçici verileri siler; uygulama bir sonraki açılışta biraz yavaş açılabilir. “Depolamayı temizle” veya “Verileri temizle” ise uygulamanın tüm verisini kalıcı olarak siler ve uygulamayı ilk kurulum haline döndürür. Bu ikisini karıştırmamak, giriş bilgilerinizi ve oyun ilerlemenizi korur."
+   ],
+   "ol": [
+    "Depolama ekranında uygulamaları boyuta göre sıralayın.",
+    "Son birkaç aydır açmadığınız büyük uygulamaları belirleyin.",
+    "iPad'de bunları boşaltın; Android'de kaldırın. Satın aldığınız ücretli uygulamaları daha sonra yeniden ücret ödemeden indirebilirsiniz.",
+    "Sık kullandığınız ama şişmiş uygulamalarda (tarayıcı, sosyal medya) önce önbelleği temizleyin.",
+    "Mesajlaşma uygulamalarının kendi depolama yönetimi bölümünden büyük medya dosyalarını gözden geçirin."
+   ]
+  },
+  {
+   "h": "Fotoğraf ve videoları güvenle taşıyın",
+   "p": [
+    "Fotoğraf ve video, özellikle tabletle ekran kaydı veya 4K video çekiyorsanız, en hızlı büyüyen kategoridir. Bunları buluta taşımak çok yer açar, ama yanlış yöntem veri kaybına yol açabilir.",
+    "iCloud Fotoğrafları veya Google Fotoğraflar senkronizasyonu açıkken galeriden bir fotoğrafı silmek, onu çoğu durumda bulut yedeğinden ve diğer cihazlarınızdan da siler. Yer açmak için bu yüzden silmek yerine uygulamaların sunduğu özel seçenekleri kullanın. Google Fotoğraflar'daki cihazda yer açma seçeneği, yalnızca yedeği alınmış öğeleri cihazdan kaldırır. Android'in Ayarlar > Depolama bölümündeki akıllı depolama özelliği de depolama dolmak üzereyken yedeklenmiş fotoğraf ve videoları otomatik temizleyebilir. iPad'de ise iCloud Fotoğrafları ayarlarındaki depolamayı optimize etme seçeneği, tam çözünürlüklü dosyaları bulutta tutup cihazda daha küçük sürümler saklar."
+   ],
+   "note": "Bir şey silmeden önce yedeğin gerçekten tamamlandığını bulut uygulamasından kontrol edin. Bulut kotası doluysa yedekleme durmuş olabilir."
+  },
+  {
+   "h": "İndirilenler, çöp kutuları ve gereksiz dosyalar",
+   "p": [
+    "Çevrimdışı izlemek için indirilen diziler, müzik listeleri ve podcast bölümleri unutulmaya en yatkın dosyalardır. Video ve müzik uygulamalarının “İndirilenler” bölümüne girip izlediğiniz bölümleri kaldırın; bazı uygulamalarda izlenen bölümleri otomatik silme seçeneği de bulunur.",
+    "Silinen dosyalar hemen yok olmaz. iPad'de Fotoğraflar uygulamasındaki “Son Silinenler” albümü, Samsung tabletlerde Galeri ve Dosyalarım uygulamalarındaki Çöp Kutusu, silinen öğeleri bir süre saklar. Yer açmak için bu kutuları boşaltmanız gerekir; ama boşalttıktan sonra geri alma şansınız kalmaz.",
+    "Android'de Google'ın Files uygulamasındaki Temizle bölümü gereksiz dosyaları, kopyaları, ekran görüntülerini ve büyük dosyaları kategoriler halinde listeler. Gereksiz dosya temizliği kalıcıdır ama uygulama ayarlarınızı değiştirmez. Tarayıcının indirilenler klasöründe yıllar önce açılmış PDF ve kurulum dosyaları da çoğu zaman sessizce birikir."
+   ]
+  },
+  {
+   "h": "microSD kart ve harici depolama",
+   "p": [
+    "Kart yuvası olan Android tabletlerde fotoğraf, video ve belgeleri microSD karta taşımak dahili depolamayı rahatlatır. Samsung tabletlerde Dosyalarım uygulamasında dosyalara basılı tutup “Taşı” ile karta aktarabilirsiniz. Bazı uygulamalar da Ayarlar > Uygulamalar > [uygulama] > Depolama > Değiştir yoluyla karta taşınabilir; bu seçenek görünmüyorsa uygulama karta taşınmayı desteklemiyordur.",
+    "iPad'lerde microSD yuvası yoktur, ama USB-C girişli modellerde harici SSD veya bellek takıp Dosyalar uygulamasıyla videoları ve belgeleri dışarı aktarabilirsiniz. Karta veya harici diske taşıdığınız dosyaların ikinci bir yedeğini almak iyi bir alışkanlıktır; kartlar ve taşınabilir diskler de arızalanabilir."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar ve son çare",
+   "p": [
+    "Yer açarken yapılan hataların çoğu geri dönüşü olmayan silmelerle ilgilidir. Aşağıdakilerden kaçınmak, kaybedilen bir fotoğraf albümü veya oyun kaydıyla uğraşmanızı önler."
+   ],
+   "list": [
+    "Senkronizasyonu açık bir hesapta galeriden toplu silme yapmak.",
+    "“Verileri temizle” ile “Önbelleği temizle”yi karıştırmak.",
+    "Üçüncü taraf “temizleyici” ve “hızlandırıcı” uygulamalar kurmak: Sistemin zaten yaptığı işi tekrarlar, çoğu reklam gösterir ve geniş izinler ister.",
+    "Depolamayı tamamen doldurmak: Neredeyse dolu bir tablet güncelleme yükleyemez ve yavaşlar; bir miktar boş alan bırakın."
+   ],
+   "note": "Tüm adımlardan sonra depolama hâlâ dolu görünüyorsa, tableti yeniden başlatıp birkaç saat bekleyin; sistem geçici dosyaları sonradan temizleyebilir. Sorun sürerse yedek alıp fabrika ayarlarına sıfırlamak son çaredir. Tablet açılmıyor, sürekli yeniden başlıyor veya depolama hatası veriyorsa yetkili servise başvurun."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Önbellek temizlemek uygulama verilerini siler mi?",
+   "a": "Hayır. Android'de “Önbelleği temizle” yalnızca geçici dosyaları siler; giriş bilgileriniz ve ayarlarınız kalır. “Depolamayı temizle” veya “Verileri temizle” ise uygulamanın tüm verisini kalıcı olarak siler."
+  },
+  {
+   "q": "iPad'de “Sistem Verisi” neden bu kadar büyük?",
+   "a": "Bu kategori önbellekleri, günlükleri, dil ve ses dosyalarını ve diğer sistem verilerini içerir. Apple'a göre depolama azaldığında iPad önbellek ve geçici dosyaları kendisi siler; bu alanı elle silmenin bir yolu yoktur. Uygulama boşaltma ve indirme temizliği gibi adımlarla genel alanı rahatlatabilirsiniz."
+  },
+  {
+   "q": "Fotoğrafları buluta yükledikten sonra tabletten silersem kaybolur mu?",
+   "a": "Senkronizasyon açıksa galeriden silmek bulut kopyasını da silebilir. Bunun yerine Google Fotoğraflar'ın cihazda yer açma seçeneğini veya iCloud'un depolamayı optimize etme ayarını kullanın."
+  },
+  {
+   "q": "Temizleyici uygulamalar işe yarar mı?",
+   "a": "Çoğu, sistemin ve Google Files gibi resmi araçların yaptığı işi tekrarlar. Reklam ve izin talepleri nedeniyle performansı ve gizliliği olumsuz etkileyebilir; yerleşik araçlar yeterlidir."
+  },
+  {
+   "q": "Tabletin ne kadarını boş bırakmalıyım?",
+   "a": "Kesin bir sınır yok, ama yazılım güncellemeleri ve uygulama güncellemeleri geçici alan ister. Depolamanın tamamen dolmasına izin vermemek, güncellemelerin sorunsuz yüklenmesini sağlar."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple — iPhone ve iPad'de saklama alanını denetleme",
+   "u": "https://support.apple.com/en-gb/ht201656"
+  },
+  {
+   "t": "Google — Android cihazınızda yer açma",
+   "u": "https://support.google.com/android/answer/7431795?hl=en"
+  },
+  {
+   "t": "Samsung — Telefon veya tabletinizde depolama alanı boşaltma",
+   "u": "https://www.samsung.com/us/support/answer/ANS10002029/"
+  },
+  {
+   "t": "Google — Files uygulamasında gereksiz dosyaları temizleme",
+   "u": "https://support.google.com/files/answer/9713869?hl=en"
+  }
+ ]
+}

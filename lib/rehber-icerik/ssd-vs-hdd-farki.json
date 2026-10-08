@@ -1,0 +1,144 @@
+{
+ "slug": "ssd-vs-hdd-farki",
+ "title": "SSD mi HDD mi? Farkları ve Hangisini Seçmelisiniz",
+ "description": "SSD ile HDD nasıl çalışır, gerçek kullanımda ne fark eder? SATA ve NVMe ayrımı, dayanıklılık, yaygın yanlışlar ve laptop alırken bakılacaklar.",
+ "tldr": "SSD veriyi hareketli parçası olmayan flash bellek çiplerinde, HDD ise dönen manyetik plakalarda saklar. Bu yüzden SSD'li bir bilgisayar çok daha hızlı açılır, programları daha çabuk başlatır, sessiz ve darbelere karşı daha dayanıklıdır. Sistem diski için SSD seçin; HDD'yi yalnızca ucuza büyük arşiv alanı gerektiğinde, ikinci disk ya da harici yedek olarak düşünün.",
+ "intro": [
+  "İki laptop aynı işlemciye ve aynı belleğe sahip, ama biri açılışta masaüstüne çabucak gelirken diğeri dakikalarca diskin ışığını yakıp bekletiyor. Aradaki fark çoğu zaman depolama birimindedir. Bir bilgisayarın “kasıyor” hissi vermesinin en yaygın nedenlerinden biri hâlâ HDD kullanmasıdır.",
+  "SSD ve HDD arasındaki farkı anlamak hem yeni bir laptop seçerken hem de eski bir cihazı canlandırmayı düşünürken işinize yarar. Aşağıda iki teknolojinin nasıl çalıştığını, günlük kullanımda neyi değiştirdiğini ve SSD'ler arasındaki SATA ile NVMe farkını sade bir dille anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "HDD ve SSD veriyi nasıl saklar?",
+   "p": [
+    "HDD (sabit disk), birbirinin üstüne dizilmiş, manyetik kaplamalı plakalardan oluşur. Plakalar dakikada binlerce kez döner; bir kolun ucundaki okuma yazma kafası, istenen verinin bulunduğu noktaya gidip okumayı yapar. Laptoplarda kullanılan 2,5 inçlik HDD'ler genellikle dakikada 5400 ya da 7200 devirle döner.",
+    "SSD (katı hal sürücü) ise veriyi NAND flash bellek çiplerinde tutar. İçinde dönen ya da hareket eden parça yoktur; bir denetleyici çip, verinin hangi bellek hücresinde olduğunu bilir ve doğrudan oraya erişir. Telefonunuzdaki depolama da benzer bir flash teknolojisine dayanır.",
+    "Bu mekanik fark, hızdaki farkın asıl kaynağıdır. HDD'de kafanın doğru yere gitmesi ve plakanın doğru noktayı kafanın altına getirmesi milisaniyeler sürer. SSD'de bu bekleme yoktur. İşletim sistemi açılırken binlerce küçük dosya dağınık noktalardan okunur; HDD burada her dosya için bekler, SSD ise beklemez."
+   ]
+  },
+  {
+   "h": "Günlük kullanımda ne fark eder?",
+   "p": [
+    "Farkı en çok bilgisayarın açılışında, program başlatırken, dosya ararken ve büyük klasörleri kopyalarken hissedersiniz. HDD'li bir laptopta tarayıcıyı açıp birkaç sekmeyle çalışmaya başlamak bile disk yükü yüzünden takılabilirken, SSD'de aynı işler akıcıdır. Windows güncellemeleri de SSD'de çok daha kısa sürer.",
+    "Oyunlarda SSD, yükleme ekranlarını kısaltır ve açık dünya oyunlarında doku yüklenirken yaşanan takılmaları azaltır. Ancak saniyedeki kare sayısını belirleyen ekran kartı ve işlemcidir; SSD'ye geçmek FPS'i doğrudan artırmaz.",
+    "Ses ve dayanıklılık da önemli farklardır. HDD çalışırken hafif bir dönme ve tıkırtı sesi çıkarır; SSD tamamen sessizdir. HDD'li bir laptop çalışırken düşerse kafa plakaya çarpabilir ve veri kaybı yaşanabilir. SSD'de hareketli parça olmadığı için bu tür darbelere karşı çok daha dayanıklıdır."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "HDD",
+     "SATA SSD",
+     "NVMe SSD"
+    ],
+    "rows": [
+     [
+      "Çalışma şekli",
+      "Dönen manyetik plaka",
+      "Flash bellek, SATA arayüzü",
+      "Flash bellek, PCIe arayüzü"
+     ],
+     [
+      "Arayüz sınırı",
+      "Mekanik yapı belirler",
+      "SATA III: yaklaşık 600 MB/s",
+      "PCIe nesline göre katlanarak artar"
+     ],
+     [
+      "Açılış ve program başlatma",
+      "Yavaş",
+      "Hızlı",
+      "Hızlı"
+     ],
+     [
+      "Darbeye dayanıklılık",
+      "Düşük (çalışırken)",
+      "Yüksek",
+      "Yüksek"
+     ],
+     [
+      "Ses",
+      "Dönme ve tıkırtı sesi",
+      "Sessiz",
+      "Sessiz"
+     ],
+     [
+      "Aynı kapasite için maliyet",
+      "En düşük",
+      "Orta",
+      "Orta ile yüksek"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "SSD'ler arasındaki fark: SATA ve NVMe",
+   "p": [
+    "Her SSD aynı hızda değildir. SATA SSD'ler eski sabit disklerin kullandığı SATA arayüzünü kullanır; SATA III'ün bant genişliği 6 Gb/s, yani yaklaşık 600 MB/s ile sınırlıdır. NVMe SSD'ler ise doğrudan PCIe hattına bağlanır. Dört hatlı bir PCIe 4.0 bağlantı, teorik olarak SATA'nın on katından fazla bant genişliği sunar ve her yeni PCIe nesli bu değeri yaklaşık iki katına çıkarır.",
+    "Burada karıştırılan bir nokta var: M.2 bir protokol değil, bir boyut ve bağlantı biçimidir. M.2 yuvasına hem SATA hem NVMe SSD üretilir ve bu ikisi her yuvada birbirinin yerine kullanılamaz. Laptopunuza SSD ekleyecekseniz yuvanın hangisini desteklediğini kullanım kılavuzundan ya da üreticinin destek sayfasından kontrol edin.",
+    "Günlük işlerde SATA SSD ile NVMe SSD arasındaki fark, HDD ile herhangi bir SSD arasındaki fark kadar büyük hissedilmez. NVMe'nin üstünlüğü büyük video dosyaları, sık yapılan büyük kopyalamalar ve ağır proje dosyalarında belirginleşir."
+   ]
+  },
+  {
+   "h": "Dayanıklılık ve veri güvenliği",
+   "p": [
+    "Flash bellek hücreleri sınırlı sayıda yazma döngüsüne dayanır. Üreticiler bunu genellikle TBW (toplam yazılabilir terabayt) değeriyle belirtir. Normal ofis, okul ve eğlence kullanımında bu sınıra yaklaşmak oldukça zordur; çok yoğun video kurgusu veya sürekli büyük veri yazan işler yapıyorsanız TBW değerine bakmak anlamlıdır.",
+    "Arıza biçimleri farklıdır. HDD'ler bozulmaya yaklaşırken çoğu zaman tıkırtı, yavaşlama veya okunamayan dosyalarla işaret verir. SSD'ler ise bazen hiçbir uyarı vermeden erişilemez hâle gelebilir. Ayrıca SSD'lerde silinen dosyalar, sistemin TRIM komutuyla boş alanları temizlemesi nedeniyle HDD'ye göre çok daha zor kurtarılır. Bu nedenle disk türü ne olursa olsun önemli dosyaların düzenli yedeğini alın."
+   ],
+   "note": "HDD'li bir bilgisayar düzenli olarak tıkırtı sesi çıkarıyor ya da dosyaları açarken donuyorsa vakit kaybetmeden yedek alın. Diski açmaya çalışmayın; veri kurtarma gerekiyorsa profesyonel bir veri kurtarma hizmetine başvurun."
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "SSD'ler hakkında hâlâ eski dönemlerden kalma bazı inanışlar dolaşıyor. Bunlar karar verirken yanlış yönlendirebilir."
+   ],
+   "list": [
+    "“SSD'ler çabuk bozulur.” Erken dönem SSD'ler için kısmen doğruydu; bugünkü SSD'ler normal kullanımda yıllarca sorunsuz çalışacak dayanıklılıkla üretilir.",
+    "“SSD'yi de birleştirmek (defrag) gerekir.” Gerekmez. Windows, SSD'yi tanır ve birleştirme yerine TRIM tabanlı iyileştirme yapar; bunu elle yönetmenize gerek yoktur.",
+    "“Her M.2 SSD NVMe'dir.” M.2 bir biçimdir; SATA protokolünü kullanan M.2 SSD'ler de vardır.",
+    "“SSD takarsam oyunlarda FPS artar.” Yükleme süreleri kısalır, ama kare hızı ekran kartı ve işlemciye bağlıdır.",
+    "“HDD artık tamamen gereksiz.” Aynı kapasite için hâlâ en düşük maliyetli seçenektir; arşiv ve yedek için mantıklıdır."
+   ]
+  },
+  {
+   "h": "Laptop alırken depolama tarafında neye bakmalı?",
+   "p": [
+    "Sistem diskinin SSD olması bugün bir laptop için temel beklenti olmalıdır. Teknik özelliklerde yalnızca “512 GB” gibi bir kapasite yazıyorsa türünü de kontrol edin; mümkünse NVMe ibaresini arayın. Kapasite seçerken işletim sistemi ve güncellemelerin de yer kapladığını hesaba katın. SSD neredeyse dolduğunda performansı düşebilir, bu yüzden bir miktar boş alan bırakmak iyi bir alışkanlıktır.",
+    "Bazı ince laptoplarda ve MacBook'larda depolama anakarta lehimlidir ve sonradan büyütülemez. Bu tür modellerde ihtiyacınızdan biraz fazlasını baştan almak daha güvenlidir. M.2 yuvası olan modellerde ise ileride daha büyük bir SSD'ye geçmek ya da ikinci bir yuva varsa ek disk takmak mümkündür. Bazı uygun fiyatlı SSD'ler kısa işlerde hızlıdır, ama çok büyük dosya kopyalamalarında önbellekleri dolunca belirgin şekilde yavaşlayabilir; büyük video dosyalarıyla çalışıyorsanız incelemelerde uzun kopyalama testlerine bakın."
+   ],
+   "list": [
+    "Sistem diski SSD mi? Mümkünse NVMe mi?",
+    "Kapasite, programlarınız ve dosyalarınız için yeterli boşluk bırakıyor mu?",
+    "Depolama lehimli mi, yoksa M.2 yuvasıyla değiştirilebilir mi?",
+    "Büyük arşiv için harici bir HDD ya da bulut yedeği planınız var mı?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Eski laptopuma SSD takarsam hızlanır mı?",
+   "a": "HDD'li eski bir laptopta SSD'ye geçmek açılış ve program başlatma sürelerini belirgin şekilde kısaltır. Laptopunuzun hangi bağlantıyı (2,5 inç SATA ya da M.2) desteklediğini önce kontrol edin; işlem garanti süresindeki cihazlarda yetkili serviste yapılmalıdır."
+  },
+  {
+   "q": "SSD'nin ömrü ne kadar?",
+   "a": "Bu, SSD'nin TBW değerine ve ne kadar veri yazdığınıza bağlıdır. Normal ofis, okul ve eğlence kullanımında çoğu SSD laptopun kullanım ömrü boyunca bu sınıra yaklaşmaz."
+  },
+  {
+   "q": "Hem SSD hem HDD olan laptop mantıklı mı?",
+   "a": "İşletim sistemi ve programlar SSD'de, büyük arşiv dosyaları HDD'de olacak şekilde kullanıldığında mantıklıdır. Taşınabilirlik ve pil ömrü önemliyse tek bir yeterli kapasiteli SSD ve harici yedek genellikle daha pratik bir çözümdür."
+  },
+  {
+   "q": "NVMe SSD, SATA SSD'den ne kadar hızlı?",
+   "a": "Teorik bant genişliği açısından NVMe çok daha hızlıdır; SATA yaklaşık 600 MB/s ile sınırlıyken NVMe bu sınırın çok üzerine çıkar. Günlük kullanımda fark daha küçük hissedilir, büyük dosya işlemlerinde ise belirginleşir."
+  },
+  {
+   "q": "SSD'den silinen dosyalar kurtarılabilir mi?",
+   "a": "HDD'ye göre çok daha zordur, çünkü sistem TRIM komutuyla silinen alanları kısa süre içinde temizler. Bu yüzden SSD kullanıyorsanız düzenli yedek almak özellikle önemlidir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "IBM: NVMe ve SATA karşılaştırması",
+   "u": "https://www.ibm.com/topics/nvme-vs-sata"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "slug": "smart-tv-nedir",
+ "title": "Smart TV (Akıllı TV) Nedir? Neler Yapar, Nelere Bakılır?",
+ "description": "Akıllı TV'nin nasıl çalıştığı, Tizen, webOS ve Google TV farkları, alırken bakılacak noktalar ve sık karıştırılan konular sade bir dille.",
+ "tldr": "Smart TV, kendi işletim sistemi olan ve internete bağlanıp YouTube, Netflix gibi uygulamaları ek bir cihaz olmadan çalıştırabilen televizyondur. Samsung'da Tizen, LG'de webOS, Sony ve TCL gibi markalarda Google TV yaygındır. Alırken ekran kalitesi kadar işletim sisteminin akıcılığına, uygulama desteğine ve güncelleme alıp almadığına da bakmak gerekir.",
+ "intro": [
+  "Mağazada artık 'akıllı olmayan' TV bulmak neredeyse imkânsız. Bu yüzden asıl soru 'Smart TV almalı mıyım?' değil, 'akıllı özellikler pratikte ne işime yarar ve modeller arasında bu açıdan ne fark var?' sorusu.",
+  "Akıllı TV, ekranın arkasında küçük bir bilgisayar barındıran televizyondur. Bu bilgisayarın işlemcisi, belleği ve işletim sistemi; uygulamaların ne kadar hızlı açılacağını, kaç yıl güncel kalacağını ve hangi servisleri izleyebileceğinizi belirler. Aşağıda bu parçaların nasıl çalıştığını ve satın alırken neye dikkat etmeniz gerektiğini anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Akıllı TV nasıl çalışır?",
+   "p": [
+    "Klasik bir televizyon yalnızca anten, uydu veya HDMI'dan gelen görüntüyü gösterir. Akıllı TV'de buna ek olarak bir işlemci (SoC), bellek, depolama alanı, Wi-Fi ve Ethernet bağlantısı ile bunları yöneten bir işletim sistemi bulunur. Telefonunuzdaki gibi bir uygulama mağazası vardır; uygulamalar buradan indirilir ve güncellenir.",
+    "Netflix'te bir diziyi açtığınızda video internet üzerinden TV'ye gelir, TV'nin işlemcisi bu sıkıştırılmış veriyi çözer ve ekrana verir. Bu yüzden akıllı TV'de iki ayrı kalite katmanı vardır: Panelin görüntü kalitesi ve bu küçük bilgisayarın akıcılığı. Panelinin çok iyi olduğu ama menülerinde gezinirken takılan bir TV, günlük kullanımda yorucu olabilir."
+   ]
+  },
+  {
+   "h": "İşletim sistemleri: Tizen, webOS, Google TV ve diğerleri",
+   "p": [
+    "Hangi uygulamaları kullanabileceğiniz, menünün nasıl göründüğü ve telefonla ne kadar kolay etkileşeceği büyük ölçüde işletim sistemine bağlıdır. Markalar genellikle tek bir sisteme bağlıdır, bazıları ise farklı serilerde farklı sistemler kullanır."
+   ],
+   "table": {
+    "head": [
+     "İşletim sistemi",
+     "Geliştirici",
+     "Hangi markalarda",
+     "Öne çıkan yanı"
+    ],
+    "rows": [
+     [
+      "Tizen",
+      "Samsung",
+      "Yalnızca Samsung",
+      "Samsung telefon ve SmartThings ekosistemiyle uyum"
+     ],
+     [
+      "webOS",
+      "LG",
+      "LG",
+      "İmleçli Magic Remote ile hızlı gezinme"
+     ],
+     [
+      "Google TV / Android TV",
+      "Google",
+      "Sony, TCL, Philips, Hisense'in bazı serileri ve diğerleri",
+      "Geniş uygulama mağazası, yerleşik Google Cast"
+     ],
+     [
+      "VIDAA",
+      "Hisense",
+      "Hisense",
+      "Hafif ve sade arayüz"
+     ],
+     [
+      "Fire TV",
+      "Amazon",
+      "Bazı marka ve pazarlarda",
+      "Amazon hizmetleriyle uyum"
+     ]
+    ]
+   },
+   "note": "Google TV, Android TV işletim sisteminin üzerine kurulan daha yeni bir arayüzdür. Uygulama uyumluluğu açısından ikisi büyük ölçüde aynıdır; fark, ana ekranın içerik önerilerini düzenleme biçimindedir."
+  },
+  {
+   "h": "Pratikte ne fark eder?",
+   "p": [
+    "Akıllı TV'nin günlük hayata en somut katkısı, yayın uygulamalarını ek kutu olmadan açabilmektir. YouTube, Netflix, Disney+, Prime Video ve yerel servisler çoğu platformda bulunur. Telefonla etkileşim de önemli bir fark yaratır: Google TV'lerde Google Cast yerleşik gelir, birçok yeni Samsung ve LG modeli AirPlay destekler.",
+    "Bunların yanında sesli arama, akıllı ev cihazlarını TV ekranından kontrol etme, telefonu kumanda olarak kullanma ve TV'yi uyandıran bildirimler gibi özellikler gelir. Hangilerinin çalışacağı hem markaya hem de modele göre değişir; ürün sayfasında bu özelliklerin tek tek yazıp yazmadığına bakın."
+   ],
+   "list": [
+    "Uygulama açılış süresi ve menü akıcılığı, işlemci ve belleğe bağlıdır.",
+    "Kumandadaki uygulama kısayol tuşları, sık kullandığınız servislere hızlı erişim sağlar.",
+    "HDMI-CEC sayesinde TV kumandası, bağlı soundbar ve oyun konsolunu da yönetebilir.",
+    "Yerleşik Chromecast veya AirPlay, telefondan içerik göndermeyi tek dokunuşa indirir."
+   ]
+  },
+  {
+   "h": "Alırken nelere bakmalı?",
+   "p": [
+    "Akıllı özellikler açısından iki TV'yi karşılaştırırken ekran boyutu ve çözünürlük kadar aşağıdaki noktalar da belirleyicidir."
+   ],
+   "list": [
+    "İzlediğiniz servisler: Sık kullandığınız yerel veya uluslararası uygulamaların o işletim sisteminde bulunduğunu mağazada ya da üreticinin sitesinde kontrol edin.",
+    "Telefonunuzla uyum: Android kullanıyorsanız Google Cast, iPhone kullanıyorsanız AirPlay desteği yansıtmayı kolaylaştırır.",
+    "Akıcılık: Mümkünse mağazada menülerde gezinip bir uygulamayı açıp kapatın; gecikme hemen hissedilir.",
+    "Bağlantılar: Wi-Fi standardı, Ethernet girişi ve Bluetooth ses desteği.",
+    "Güncelleme desteği: Üreticinin bu model serisine kaç yıl yazılım güncellemesi verdiği.",
+    "Gizlilik ayarları: İzleme verisi toplama ve reklam kişiselleştirme seçeneklerinin kapatılabilir olması."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "Akıllı TV'lerle ilgili bazı inanışlar satın alma kararını gereksiz yere etkileyebiliyor."
+   ],
+   "list": [
+    "'Akıllı TV internetsiz çalışmaz': Yanlış. Anten, uydu veya kablo yayını ve HDMI'dan gelen görüntü internet olmadan izlenir. İnternet yalnızca uygulamalar ve akıllı özellikler için gerekir.",
+    "'Daha pahalı TV'nin akıllı sistemi daha iyidir': Her zaman değil. Üst segment modeller genellikle daha güçlü işlemci kullansa da aynı markanın aynı işletim sistemi giriş modelinde de bulunur; akıcılığı belirleyen işlemci ve bellektir.",
+    "'Akıllı TV varsa medya oynatıcıya gerek yoktur': Çoğu kişi için doğrudur. Ancak TV'nin uygulama desteği yıllar içinde zayıflarsa, HDMI'a takılan bir medya oynatıcı TV'yi yeniden güncel hale getirebilir.",
+    "'Smart TV ile 4K TV aynı şeydir': Değildir. Akıllı olmak yazılımla, 4K olmak ekranın çözünürlüğüyle ilgilidir."
+   ]
+  },
+  {
+   "h": "Eski TV'yi akıllı hale getirmek ve uzun vadeli kullanım",
+   "p": [
+    "HDMI girişi olan her TV, bir medya oynatıcıyla akıllı hale getirilebilir. Google TV Streamer veya Chromecast, Apple TV ya da Fire TV Stick gibi cihazlar HDMI'a takılır, Wi-Fi'a bağlanır ve TV'ye kendi arayüzlerini getirir. Görüntü kalitesi yine TV'nin paneliyle sınırlıdır, ama uygulama desteği ve hız açısından yeni bir akıllı TV'ye yaklaşan bir deneyim sunar.",
+    "Akıllı TV'lerin zayıf noktası zamanla eskiyen yazılımdır. Birkaç yıl sonra bazı uygulamalar eski sürümleri desteklemeyi bırakabilir ya da menüler yavaşlayabilir. Bu durumda TV'yi değiştirmeden önce yazılım güncellemesini kontrol etmek, gereksiz uygulamaları kaldırmak ve gerekirse harici bir medya oynatıcı eklemek çoğu zaman yeterli olur."
+   ],
+   "note": "Akıllı TV'ler de internete bağlı her cihaz gibi güvenlik güncellemesine ihtiyaç duyar. Otomatik güncellemeyi açık tutun ve uygulamaları yalnızca TV'nin resmi mağazasından yükleyin."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Smart TV internet olmadan çalışır mı?",
+   "a": "Evet. Anten, uydu veya kablo yayınlarını ve HDMI ile bağlı cihazları internet olmadan kullanabilirsiniz. Yayın uygulamaları, yazılım güncellemeleri ve ekran yansıtma için internet gerekir."
+  },
+  {
+   "q": "Her akıllı TV'de Netflix ve YouTube var mı?",
+   "a": "Yaygın işletim sistemlerinin neredeyse tamamında bu uygulamalar bulunur ve çoğu zaman önceden yüklü gelir. Daha az bilinen platformlarda belirli bir yerel servis olmayabilir; alırken izlediğiniz servisleri tek tek kontrol edin."
+  },
+  {
+   "q": "Google TV ile Android TV arasındaki fark nedir?",
+   "a": "Google TV, Android TV altyapısı üzerine kurulan daha yeni bir arayüzdür. Uygulama mağazası ve Google Cast desteği ortaktır; Google TV'de ana ekran, farklı servislerdeki içerikleri bir arada öneren bir yapıya sahiptir."
+  },
+  {
+   "q": "Akıllı TV'm yavaşladı, ne yapabilirim?",
+   "a": "Yazılım güncellemesini kontrol edin, kullanmadığınız uygulamaları kaldırın ve TV'yi fişten çekip bir dakika sonra yeniden başlatın. Sorun sürerse ağ hızınızı test edin; yazılım artık çok ağır geliyorsa HDMI'a takılan bir medya oynatıcı pratik bir çözümdür."
+  },
+  {
+   "q": "Akıllı TV izleme alışkanlıklarımı topluyor mu?",
+   "a": "Birçok akıllı TV, izlenen içeriği tanıyarak öneri ve reklam kişiselleştirmesi yapan özellikler sunar. Bu özellikler genellikle ilk kurulumda onayınıza sunulur ve sonradan gizlilik veya genel ayarlar menüsünden kapatılabilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Best Buy Canada - Smart TV operating systems guide",
+   "u": "https://blog.bestbuy.ca/tv-audio/smart-tv/smart-tv-operating-systems-guide"
+  }
+ ]
+}

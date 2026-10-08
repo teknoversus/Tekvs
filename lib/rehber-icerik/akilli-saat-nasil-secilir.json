@@ -1,0 +1,227 @@
+{
+ "slug": "akilli-saat-nasil-secilir",
+ "title": "Akıllı Saat Nasıl Seçilir? Telefon Uyumu, Pil, Sensör ve Kullanım",
+ "description": "Akıllı saat alırken telefon uyumu, pil ömrü, ekran, GPS, su geçirmezlik ve sağlık sensörlerine nasıl bakılır? Senaryolar, hatalar ve kontrol listesi.",
+ "tldr": "İlk filtre telefonunuzdur: Apple Watch yalnızca iPhone ile, yeni nesil Wear OS saatlerin büyük kısmı yalnızca Android ile çalışır. Ardından ne kadar sık şarj etmeye razı olduğunuza ve saati ne için kullanacağınıza (bildirim, spor, sağlık takibi) göre kategori seçin. Ekran, GPS ve su geçirmezlik ayrıntıları bu iki karardan sonra gelir.",
+ "intro": [
+  "Akıllı saat rafına bakan biri aslında birbirinden çok farklı cihazlar görür: telefonun bileğe taşınmış küçük bir kopyası gibi çalışan saatler, iki haftada bir şarj edilen koşu saatleri, basit adım ve uyku takibi yapan bileklikler, çocuklar için konum takibi yapan modeller. Hepsi aynı adla satılsa da bir öğrencinin, maraton koşucusunun ve anne babasına saat almak isteyen birinin ihtiyaçları birbirine pek benzemez.",
+  "Bu rehber, seçimi doğru sırayla yapmanız için hazırlandı. Önce sizi baştan eleyecek kararları (telefon uyumu, kategori, şarj alışkanlığı), sonra teknik ayrıntıları (ekran, sensörler, GPS, su geçirmezlik, bağlantı) ele alıyoruz. Sonunda kullanım senaryolarına göre öneriler, sık yapılan hatalar ve mağazada işinize yarayacak bir kontrol listesi bulacaksınız. Güncel fiyat aralıkları sayfanın altında katalogdan otomatik olarak listelenir."
+ ],
+ "sections": [
+  {
+   "h": "İlk karar: saat telefonunuzla tam uyumlu mu?",
+   "p": [
+    "Akıllı saat, işlevlerinin büyük kısmını telefonunuz üzerinden yürütür: bildirimler, kurulum, güncellemeler ve sağlık verilerinin saklanması telefondaki uygulamadan geçer. Bu yüzden saatin hangi telefon işletim sistemiyle çalıştığı, diğer tüm özelliklerden önce gelir.",
+    "Apple Watch'u kurmak ve eşleştirmek için iPhone gerekir; Android telefonla kullanılamaz. Ters yönde de benzer bir durum var: Samsung, Galaxy Watch4 ve sonrası modellerin iOS ile uyumlu olmadığını belirtiyor. Google'ın Pixel Watch serisi de Android telefon gerektiriyor. Yani iPhone kullanıyorsanız Wear OS tabanlı yeni saatlerin büyük çoğunluğu sizin için seçenek değildir.",
+    "Garmin, Huawei, Amazfit gibi kendi yazılımını kullanan markaların saatleri genellikle hem Android hem iPhone ile çalışır. Ancak iPhone ile eşleştirildiklerinde bildirimlere hızlı yanıt verme gibi bazı özellikler kısıtlı olabilir. Satın almadan önce markanın destek sayfasında, kendi telefonunuzla hangi özelliklerin çalıştığını kontrol edin."
+   ],
+   "note": "Telefon değiştirmeyi düşünüyorsanız saati buna göre seçin. iPhone'dan Android'e geçtiğinizde Apple Watch'u kullanmaya devam edemezsiniz."
+  },
+  {
+   "h": "Akıllı saat mi, spor saati mi, akıllı bileklik mi?",
+   "p": [
+    "İkinci karar kategoridir. Tam özellikli akıllı saatler uygulama mağazası, sesli asistan, zengin bildirim ve ödeme gibi telefon benzeri işlevler sunar, ama sık şarj ister. Spor saatleri antrenman analizi, GPS doğruluğu ve uzun pil ömrüne odaklanır; uygulama seçenekleri daha sınırlıdır. Akıllı bileklikler ise küçük ekranla temel adım, nabız, uyku ve bildirim takibi yapar, hafif ve uzun dayanır.",
+    "Aşağıdaki tablo bu üç kategoriyi genel hatlarıyla karşılaştırıyor. Kategoriler arasındaki sınırlar giderek bulanıklaşıyor; bazı akıllı saatler uzun pil ömrü sunabiliyor, bazı spor saatleri de zengin akıllı özellikler ekliyor."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "Tam özellikli akıllı saat",
+     "Spor/outdoor saati",
+     "Akıllı bileklik"
+    ],
+    "rows": [
+     [
+      "Tipik şarj sıklığı",
+      "Her gün veya iki günde bir",
+      "Birkaç günden birkaç haftaya",
+      "Genellikle bir hafta veya daha uzun"
+     ],
+     [
+      "Ekran",
+      "Parlak, renkli AMOLED",
+      "AMOLED veya güneşte okunaklı MIP",
+      "Küçük AMOLED veya LCD"
+     ],
+     [
+      "Uygulama desteği",
+      "Geniş",
+      "Sınırlı, spora odaklı",
+      "Çok sınırlı"
+     ],
+     [
+      "Antrenman analizi",
+      "Temel ile orta düzey",
+      "Derinlemesine",
+      "Temel"
+     ],
+     [
+      "Dahili GPS",
+      "Çoğu modelde var",
+      "Hemen her modelde, bazılarında çift frekans",
+      "Çoğu modelde yok, telefona bağlı"
+     ],
+     [
+      "Kime uygun",
+      "Bildirim, ödeme, günlük kullanım",
+      "Koşu, bisiklet, dağ, triatlon",
+      "Basit takip, düşük bütçe"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Pil ömrü: şarj alışkanlığınızla eşleştirin",
+   "p": [
+    "Akıllı saat seçiminde en çok pişmanlık yaratan konu pil ömrüdür. Mağazada parlak ekranı ve akıcı arayüzü hoşunuza giden bir saat, her gece şarja takmanız gerektiğinde birkaç hafta içinde çekmeceye kalkabilir. Kendinize dürüstçe sorun: her akşam telefonla birlikte saati de şarj eder misiniz?",
+    "Pil ömrünü en çok etkileyen özellikler her zaman açık ekran (always-on), dahili GPS kullanımı, sürekli nabız ve oksijen ölçümü, LTE bağlantısı ve ekran parlaklığıdır. Üreticilerin verdiği gün sayısı genellikle belirli bir kullanım senaryosuna göre hesaplanır; her zaman açık ekranı açtığınızda ya da her gün GPS'li antrenman yaptığınızda bu süre belirgin şekilde kısalır.",
+    "Uyku takibi istiyorsanız saati gece de takacağınızı unutmayın. Bu durumda şarj için gün içinde, örneğin duş ve kahvaltı sırasında kısa bir zaman dilimi ayırmanız gerekir. Hızlı şarj destekleyen modeller bu düzeni kolaylaştırır."
+   ]
+  },
+  {
+   "h": "Ekran türü, parlaklık ve cam",
+   "p": [
+    "AMOLED ekranlarda her piksel kendi ışığını üretir; siyah pikseller kapalı kalır. Bu yüzden renkler canlı, kontrast yüksektir ve her zaman açık ekran modunda siyah arka planlı sade bir kadranla tüketim makul tutulabilir. LCD ekranlar arka aydınlatma kullandığı için her zaman açık modda daha fazla enerji harcar ve daha çok giriş segmentinde görülür.",
+    "Bazı spor saatlerinde kullanılan MIP (memory-in-pixel) ya da yansıtıcı ekranlar ortam ışığını kullanır; doğrudan güneşte çok okunaklıdır ve çok az enerji tüketir, ama renkleri soluktur ve karanlıkta arka ışık gerekir. Uzun dağ yürüyüşleri ve ultra mesafeler için bu bir avantajdır.",
+    "Ekran camı da önemlidir. Safir kristal çizilmeye karşı çok dayanıklıdır, sertleştirilmiş cam ise darbeye karşı daha esnek davranabilir. Saati iş yerinde masaya, spor salonunda ağırlıklara sık sık çarpıyorsanız cam türüne ve çerçevenin camdan yüksek olup olmadığına bakın."
+   ]
+  },
+  {
+   "h": "Sağlık sensörleri: ne ölçer, ne kadar güvenilir?",
+   "p": [
+    "Çoğu akıllı saat bileğin altındaki optik sensörle nabzı ölçer. Dinlenme halinde ve sabit tempolu yürüyüşte bu ölçüm genellikle tutarlıdır. Ani tempo değişimli antrenmanlarda, ağırlık kaldırırken ya da saat bilekte gevşek durduğunda sapmalar artar. Göğüs bandı, antrenmanda daha güvenilir bir nabız verisi isteyenler için hâlâ en yaygın çözümdür.",
+    "Kandaki oksijen doygunluğu (SpO2), cilt sıcaklığı, uyku evreleri ve bazı modellerde EKG gibi ölçümler eğilimleri izlemek için faydalıdır: bir hafta boyunca uykunuzun nasıl değiştiğini görmek ya da hastalık öncesi dinlenik nabzınızdaki artışı fark etmek gibi. Ancak tek bir ölçüm sonucu üzerinden karar vermek yanıltıcı olabilir. Ölçümler bileğin yapısından, cilt tonundan, dövmelerden ve saatin oturuşundan etkilenebilir."
+   ],
+   "note": "Akıllı saatler tıbbi teşhis cihazı değildir. Bazı özellikler belirli ülkelerde düzenleyici onayla sunulsa bile, ölçümlerinizde sizi endişelendiren bir sonuç görürseniz ya da kendinizi kötü hissediyorsanız saate değil, hekiminize başvurun."
+  },
+  {
+   "h": "GPS ve konum doğruluğu",
+   "p": [
+    "Koşu ya da bisiklet mesafenizi telefonsuz ölçmek istiyorsanız dahili GPS şarttır. Dahili GPS olmayan saatler ve bileklikler konumu telefondan alır; antrenmana telefonu da götürmeniz gerekir. Bazı modeller konumu yalnızca bağlı telefonun GPS'inden alır, bu da teknik tabloda bağlı GPS (connected GPS) olarak geçer.",
+    "Dahili GPS'li saatler arasında da doğruluk farkı vardır. Bazı üst segment spor saatleri, çift frekanslı (çok bantlı) uydu alıcısı kullanarak yüksek binalar arasında ve sık ağaçlı patikalarda daha tutarlı iz kaydedebilir. Şehirde yarışa hazırlanan bir koşucu için bu fark hissedilir; ara sıra parkta yürüyen biri içinse genellikle gerekmez. GPS'in pil ömrünü en çok tüketen özelliklerden biri olduğunu da hesaba katın."
+   ]
+  },
+  {
+   "h": "Su geçirmezlik: ATM, IP68 ve gerçek kullanım",
+   "p": [
+    "Akıllı saatlerde su geçirmezlik genellikle ATM ya da IP değeriyle belirtilir. ATM değeri laboratuvarda belirli bir basınca dayanıklılığı gösterir; 5 ATM, yüzeyde yüzme için yaygın kabul gören seviyedir. Ancak 5 ATM, saatin 50 metreye dalabileceği anlamına gelmez. IP68 ise toza ve üreticinin belirttiği koşullarda suya batırılmaya karşı korumayı anlatır, yüzme için tek başına yeterli bir gösterge değildir.",
+    "Apple, örneğin, Series 2 ve sonrası saatlerinin ISO 22810:2010 standardına göre 50 metre suya dayanıklılık derecesine sahip olduğunu, havuzda ya da denizde yüzme gibi sığ su etkinlikleri için uygun olduğunu, ama dalış ve yüksek hızlı suyla temas (su kayağı gibi) için uygun olmadığını belirtiyor. Aynı kaynak sabun, şampuan, losyon ve parfümün contaları olumsuz etkileyebileceği uyarısını da yapıyor. Dalış yapacaksanız EN13319 uyumluluğu ve üreticinin belirttiği derinlik sınırı olan bir model arayın."
+   ],
+   "note": "Su dayanıklılığı kalıcı değildir; darbe, düşme ve yaşlanmayla contalar zayıflayabilir. Sıcak duş ve saunada saati çıkarmak daha güvenlidir."
+  },
+  {
+   "h": "Bağlantı, ödeme ve yazılım desteği",
+   "p": [
+    "Bazı modellerin LTE ya da eSIM destekli sürümleri telefon yanınızda olmadan arama yapmanızı ve bildirim almanızı sağlar. Türkiye'de bu özelliği kullanabilmek için operatörünüzün saatinizin eSIM'ini desteklemesi gerekir; satın almadan önce operatörünüze ve saat platformuna danışın. LTE sürümler pil ömrünü de kısaltır.",
+    "Saatle temassız ödeme yapmak için saatte NFC bulunması yetmez; ödeme hizmetinin ülkenizde ve bankanızda desteklenmesi gerekir. Bu destek platforma ve bankaya göre değiştiği için, bu özellik sizin için önemliyse güncel durumu bankanızdan teyit edin.",
+    "Son olarak yazılım desteğine bakın. Üreticinin saati kaç yıl güncellemeye devam ettiği, yeni özelliklerin gelip gelmeyeceğini ve güvenlik açıklarının kapatılıp kapatılmayacağını belirler. Uygulama ekosistemi de önemlidir: kullandığınız müzik, harita ya da spor uygulamasının saatte çalışıp çalışmadığını kontrol edin."
+   ]
+  },
+  {
+   "h": "Kullanım senaryosuna göre öneriler",
+   "p": [
+    "Aşağıdaki öneriler belirli modeller değil, hangi özelliklere öncelik vermeniz gerektiğini gösteren yol işaretleridir."
+   ],
+   "list": [
+    "Öğrenci: Uzun pil ömrü, sağlam kasa ve bildirim yönetimi öne çıkar. Ders sırasında titreşimli alarm ve sessiz bildirim pratik olur. Akıllı bileklik ya da giriş segmenti bir akıllı saat çoğu zaman yeterlidir.",
+    "Ofis çalışanı: Takvim ve toplantı bildirimleri, hareketsizlik hatırlatıcısı ve iş kıyafetiyle uyumlu, değiştirilebilir kordon önemlidir. Telefonunuzla tam uyumlu bir platform seçmek bildirim deneyimini belirler.",
+    "Koşucu ve bisikletçi: Dahili GPS, güvenilir nabız ölçümü (gerekirse göğüs bandı desteği), antrenman yükü ve toparlanma verileri ve antrenmanları dışa aktarabilme önceliklidir.",
+    "Dağ ve outdoor kullanıcı: Uzun pil ömrü, güneşte okunaklı ekran, barometrik altimetre, harita ve geri dönüş rotası gibi navigasyon özellikleri, dayanıklı cam ve kasa arayın.",
+    "Yüzücü: En az 5 ATM ya da üreticinin yüzme için uygun dediği bir değer, havuz ve açık su yüzme modları ve ıslak ekranda düğmeyle kullanılabilme önemlidir.",
+    "Yaşlı kullanıcı: Büyük ve parlak ekran, sade arayüz, kolay şarj, düşme algılama ve acil durum araması gibi özellikler öne çıkar. Bu özelliklerin seçtiğiniz modelde ve Türkiye'de nasıl çalıştığını önceden kontrol edin ve kurulumu birlikte yapın.",
+    "Çocuk: Konum takibi, ebeveyn kontrolü ve sınırlı iletişim özelliklerine sahip çocuk saatleri ayrı bir kategoridir; yetişkin akıllı saatleri bu ihtiyacı farklı biçimde karşılar."
+   ]
+  },
+  {
+   "h": "Teknik terimlerin sade açıklaması",
+   "p": [
+    "Ürün sayfalarında sık geçen kısaltmaların ne anlama geldiğini bilmek, özellikleri karşılaştırmayı kolaylaştırır."
+   ],
+   "list": [
+    "AOD (Always-on Display): Bileğinizi kaldırmadan saatin görünür kaldığı her zaman açık ekran modu.",
+    "AMOLED: Her pikselin kendi ışığını ürettiği, canlı renkli ekran teknolojisi.",
+    "MIP: Ortam ışığını yansıtarak görüntü oluşturan, çok az enerji harcayan ekran türü.",
+    "ATM: Laboratuvarda ölçülen basınç dayanıklılığı; gerçek dalış derinliği değildir.",
+    "IP68: Toza karşı tam koruma ve üreticinin tanımladığı koşullarda suya batırılmaya dayanıklılık.",
+    "SpO2: Kandaki oksijen doygunluğunun optik yöntemle tahmini.",
+    "EKG: Kalbin elektriksel etkinliğini kaydeden ölçüm; saatlerde tek kanallı, sınırlı bir sürümüdür.",
+    "GNSS: GPS, GLONASS, Galileo gibi uydu konum sistemlerinin genel adı.",
+    "eSIM: Fiziksel SIM kart yerine cihaza gömülü, yazılımla etkinleştirilen hat.",
+    "NFC: Yakın alan iletişimi; temassız ödeme için gerekli donanım."
+   ]
+  },
+  {
+   "h": "En sık yapılan satın alma hataları",
+   "p": [
+    "Akıllı saat iadelerinin ve çekmecede unutulan saatlerin arkasında genellikle birkaç tekrar eden hata vardır."
+   ],
+   "list": [
+    "Telefon uyumunu kontrol etmemek ve saatin en önemli özelliklerinin sizin telefonunuzda çalışmadığını kurulumda öğrenmek.",
+    "Mağazadaki ilk izlenime göre seçip günlük şarj gereksinimini hesaba katmamak.",
+    "Kasa boyutunu bilek ölçüsüne göre seçmemek; büyük kasa ince bilekte uyku takibini ve konforu bozar.",
+    "Sağlık ölçümlerini tıbbi teşhis gibi yorumlamak ya da bu nedenle hekim kontrolünü ertelemek.",
+    "IP68'i yüzmeye uygunluk sanmak ve saati havuzda ya da denizde kullanmak.",
+    "Kordonun standart olup olmadığına bakmamak; bazı modellerde yalnızca markaya özel kordonlar takılabilir.",
+    "Temassız ödeme veya eSIM gibi özelliklerin Türkiye'de ve kendi bankanız ya da operatörünüzle çalışıp çalışmadığını sormamak."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "p": [
+    "Mağazada ya da sepette son kararı vermeden önce aşağıdaki maddeleri tek tek işaretleyin."
+   ],
+   "list": [
+    "Saat telefonumun işletim sistemiyle tam uyumlu mu ve istediğim özellikler bu telefonla çalışıyor mu?",
+    "Kategori ihtiyacıma uygun mu: akıllı saat, spor saati ya da bileklik?",
+    "Kendi kullanımımla (AOD, GPS, uyku takibi) gerçekçi pil ömrü ne kadar?",
+    "Ekran güneşte okunaklı mı, camı kullanımıma uygun mu?",
+    "Dahili GPS gerekli mi, varsa doğruluğu bağımsız incelemelerde nasıl?",
+    "Su dayanıklılığı yapacağım etkinliğe (duş, yüzme, dalış) uygun mu?",
+    "Kasa boyutu bileğime uygun mu, kordonu standart mı?",
+    "LTE, eSIM ve temassız ödeme Türkiye'de benim operatörüm ve bankamla çalışıyor mu?",
+    "Üretici kaç yıl yazılım güncellemesi veriyor?",
+    "Türkiye garantisi ve yetkili servis desteği var mı?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Apple Watch Android telefonla çalışır mı?",
+   "a": "Hayır. Apple Watch'un kurulumu ve eşleştirilmesi için iPhone gerekir. Android kullanıcıları Wear OS tabanlı saatlere ya da Garmin, Huawei, Amazfit gibi kendi yazılımını kullanan markalara yönelebilir."
+  },
+  {
+   "q": "Samsung Galaxy Watch iPhone ile kullanılabilir mi?",
+   "a": "Samsung, Galaxy Watch4 ve sonrası modellerin iOS ile uyumlu olmadığını belirtiyor. Eski bazı Samsung saatleri iPhone ile sınırlı işlevle eşleşebiliyordu, ancak yeni modeller için bu seçenek yok."
+  },
+  {
+   "q": "Akıllı saat pil ömrü neden bu kadar değişken?",
+   "a": "Pil ömrü ekran türüne, her zaman açık ekranın kullanılıp kullanılmamasına, GPS'li antrenman sıklığına, sürekli sağlık ölçümlerine ve LTE kullanımına bağlıdır. Aynı saat, sade kullanımda birkaç gün dayanırken yoğun kullanımda bir günü zor çıkarabilir."
+  },
+  {
+   "q": "Koşu için hangi özellikler önemli?",
+   "a": "Dahili GPS, tutarlı nabız ölçümü, göğüs bandı gibi harici sensör desteği, tempo ve adım sıklığı gibi koşu metrikleri ve uzun antrenmanlara yetecek pil önceliklidir. Yarışa hazırlanıyorsanız antrenman planı ve toparlanma verisi sunan spor saatleri daha fazla analiz sağlar."
+  },
+  {
+   "q": "Akıllı saatin sağlık ölçümlerine güvenebilir miyim?",
+   "a": "Uzun vadeli eğilimleri görmek için faydalıdır, ama saatler tıbbi teşhis cihazı değildir. Ölçümler saatin oturuşundan, hareketten ve cilt yapısından etkilenebilir. Endişe verici bir sonuç ya da belirti varsa hekime başvurun."
+  },
+  {
+   "q": "5 ATM saatle denize girebilir miyim?",
+   "a": "Üretici yüzme için uygun olduğunu belirtiyorsa yüzeyde yüzmek genellikle sorun değildir. Dalış, yüksekten atlama ve su kayağı gibi yüksek basınçlı kullanımlar ise ayrıca belirtilmedikçe uygun değildir. Tuzlu sudan sonra saati tatlı suyla durulayın."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: Apple Watch'u iPhone ile eşleme ve kurma",
+   "u": "https://support.apple.com/en-qa/guide/watch/apdde4d6f98e"
+  },
+  {
+   "t": "Apple Destek: Apple Watch'un suya dayanıklılığı",
+   "u": "https://support.apple.com/109522"
+  },
+  {
+   "t": "Samsung Destek: Akıllı saat ve telefon uyumluluğu",
+   "u": "https://www.samsung.com/ae/support/mobile-devices/samsung-smart-watch-and-phone-compatibility"
+  }
+ ]
+}

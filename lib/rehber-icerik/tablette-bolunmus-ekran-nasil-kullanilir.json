@@ -1,0 +1,123 @@
+{
+ "slug": "tablette-bolunmus-ekran-nasil-kullanilir",
+ "title": "Tablette Bölünmüş Ekran Nasıl Kullanılır? Android ve iPad Adımları",
+ "description": "İki uygulamayı tablette yan yana açmanın yolları: Samsung, saf Android ve iPadOS için adımlar, açılır pencere ve çalışmadığında yapılacaklar.",
+ "tldr": "Android tabletlerde son uygulamalar ekranında uygulama simgesine dokunup bölünmüş ekran seçeneğini seçerek ya da görev çubuğundan bir simgeyi ekranın kenarına sürükleyerek iki uygulamayı yan yana açabilirsiniz. iPadOS 26 ve sonrasında pencereli uygulama modu açıkken bir uygulamayı ekranın sol ya da sağ kenarına sürüklemek yeterlidir.",
+ "intro": [
+  "Bir tarafta ders videosu, diğer tarafta not uygulaması; bir yanda e-posta, öbür yanda takvim. Tableti telefondan ayıran en kullanışlı özelliklerden biri iki uygulamayı aynı anda görebilmektir. Buna rağmen birçok kullanıcı bu özelliği ya hiç bilmez ya da bir kez denedikten sonra nasıl açıldığını unutur.",
+  "Bölünmüş ekranın açılış yolu işletim sistemine, üreticinin arayüzüne ve sürüme göre değişir. Aşağıda Samsung One UI, Google'ın saf Android arayüzü ve iPadOS için adımları ayrı ayrı bulacaksınız. Menü adları cihazınızda biraz farklı olabilir; seçeneğin mantığı ise çoğu cihazda aynıdır."
+ ],
+ "sections": [
+  {
+   "h": "Samsung Galaxy Tab'da bölünmüş ekran ve açılır pencere",
+   "p": [
+    "Samsung tabletlerde iki yöntem öne çıkar: son uygulamalar ekranı ve Kenar paneli. Samsung'un destek sayfasında da belirtildiği gibi her uygulama bölünmüş ekranı desteklemez; desteklemeyen uygulamada seçenek görünmez ya da uyarı çıkar."
+   ],
+   "ol": [
+    "İlk uygulamayı açın, ardından son uygulamalar ekranını açın (gezinme çubuğundaki Son kullanılanlar tuşu ya da hareket gezintisinde alttan yukarı kaydırıp bekleme).",
+    "Uygulamanın önizlemesine değil, üstündeki küçük simgesine dokunun.",
+    "Açılan menüden 'Bölünmüş ekran görünümünde aç' seçeneğini seçin.",
+    "Ekranın diğer yarısında ikinci uygulamayı son uygulamalardan ya da uygulama listesinden seçin.",
+    "Ortadaki ayırıcı çizgiyi sürükleyerek alanları büyütüp küçültün. Çıkmak için ayırıcıyı ekranın kenarına kadar sürükleyin ya da ana ekran tuşuna basın."
+   ],
+   "list": [
+    "Açılır pencere: Aynı menüde 'Açılır pencere görünümünde aç' seçeneği uygulamayı küçük, taşınabilir bir pencerede açar. Hesap makinesi ya da mesajlaşma gibi kısa süreli işler için uygundur.",
+    "Kenar paneli: Ekranın kenarındaki tutamağı kaydırıp bir uygulamayı basılı tutarak ekrana sürüklediğinizde bölünmüş ekran ya da açılır pencere olarak açılır.",
+    "Uygulama çifti: Sık kullandığınız iki uygulamayı bölünmüş ekranda açtıktan sonra ayırıcıdaki üç nokta menüsünden yıldız simgesine dokunarak çifti ana ekrana ya da Kenar paneline kaydedebilirsiniz."
+   ]
+  },
+  {
+   "h": "Saf Android arayüzünde (Pixel Tablet ve benzerleri) bölünmüş ekran",
+   "p": [
+    "Google'ın kendi arayüzünü kullanan tabletlerde ve Android 12L ile gelen görev çubuğuna sahip birçok cihazda en hızlı yol görev çubuğudur. Google'ın Pixel Tablet destek sayfası aşağıdaki yolları anlatır; bazı adımlar yalnızca Android 15 ve sonrasında çalışır."
+   ],
+   "ol": [
+    "Herhangi bir uygulamayı açın.",
+    "Ekranın altından yavaşça yukarı kaydırarak görev çubuğunu gösterin.",
+    "Görev çubuğundaki bir uygulama simgesini basılı tutup ekranın sağ ya da sol kenarına sürükleyin.",
+    "Alternatif olarak Genel Bakış ekranında (son uygulamalar) bir uygulamanın simgesine dokunup bölme seçeneğini (İngilizce arayüzde Split) seçin, ardından ikinci uygulamaya dokunun.",
+    "Ayırıcının ortasına çift dokunarak uygulamaların yerini değiştirin; ayırıcıyı ekranın bir kenarına kadar sürükleyerek tek uygulamaya dönün."
+   ],
+   "note": "Xiaomi, Lenovo, Honor gibi üreticilerin arayüzlerinde seçenek adları farklı olabilir ('Ekranı böl', 'Çoklu pencere' gibi). Son uygulamalar ekranında uygulama kartını basılı tutmak ya da kartın üzerindeki simgeye dokunmak çoğu arayüzde aynı menüyü açar."
+  },
+  {
+   "h": "iPad'de iki uygulamayı yan yana açma",
+   "p": [
+    "iPadOS 26 ile Apple çoklu görev sistemini değiştirdi. Apple'ın destek sayfasına göre Ayarlar'daki çoklu görev bölümünden (İngilizce arayüzde Multitasking & Gestures) pencereli uygulama modunu seçtiğinizde uygulamaları Mac'teki gibi yeniden boyutlandırılabilir pencerelerde kullanabilirsiniz.",
+    "Bu modda bir uygulama tam ekrandayken Dock'tan, Uygulama Arşivi'nden ya da Spotlight aramasından ikinci bir uygulamayı ekranın sol veya sağ kenarına sürükleyin. İki pencere yan yana yerleşir; aradaki çubuğu sürükleyerek oranı değiştirebilirsiniz. Açık iki pencereyi ekranın karşı kenarlarına doğru kaydırmak da aynı sonucu verir.",
+    "iPadOS 26.0 ile kaldırılan Slide Over, iPadOS 26.2 ile geri geldi. Slide Over penceresi diğer pencerelerin üzerinde durur, ekranın kenarına itilip gerektiğinde geri çekilebilir.",
+    "iPadOS 18 ve daha eski sürümlerde ise uygulamanın üst ortasındaki üç noktalı çoklu görev düğmesine dokunup Split View simgesini seçer, ardından ikinci uygulamayı ana ekrandan ya da Dock'tan açarsınız. Sürümünüzü Ayarlar > Genel > Hakkında bölümünden öğrenebilirsiniz."
+   ]
+  },
+  {
+   "h": "Bölünmüş ekranı verimli kullanma önerileri",
+   "p": [
+    "Bölünmüş ekran, iki uygulamanın birbirini beslediği durumlarda en çok işe yarar. Ders videosu izlerken notu yan pencerede tutmak, bir web sayfasından alıntıyı belgeye sürüklemek ya da e-postadaki adresi harita uygulamasında açmak bu duruma örnektir. Birçok uygulama, metin ve görselleri bir pencereden diğerine sürükleyip bırakmayı destekler.",
+    "Ekran oranı da önemlidir. Yatay kullanımda 50/50 bölme iki geniş sütun verir; dikey kullanımda Samsung tabletlerde uygulamalar üst ve alt yarıya yerleşir ve her biri oldukça basık kalır. Okuma ağırlıklı işlerde yatay konum ve 60/40 ya da 70/30 oranı daha rahat bir düzen sunar.",
+    "Klavye ve fare bağlıysa bölünmüş ekran neredeyse dizüstü bilgisayar gibi çalışır. Pencereler arası geçiş fareyle çok daha hızlı olur."
+   ]
+  },
+  {
+   "h": "Bölünmüş ekran çalışmıyorsa sırasıyla deneyin",
+   "p": [
+    "Seçenek görünmüyor, uygulama bölünmüş ekranda açılmıyor ya da tablet kasıyorsa aşağıdaki sırayı izleyin."
+   ],
+   "ol": [
+    "Uygulamanın bölünmüş ekranı destekleyip desteklemediğine bakın. Bazı oyunlar, bankacılık ve video uygulamaları bu modu kapatır; başka bir uygulamayla deneyerek sorunun cihazda mı uygulamada mı olduğunu anlayın.",
+    "Samsung'da Ayarlar > Gelişmiş özellikler bölümündeki çoklu pencere ayarlarını kontrol edin. Burada çoklu pencere hareketleri ve desteklenmeyen uygulamaları zorla açma gibi seçenekler bulunabilir.",
+    "iPad'de Ayarlar'daki çoklu görev bölümünde pencereli uygulama modunun seçili olduğundan emin olun. Tam ekran uygulama modu seçiliyse uygulamalar yan yana açılmaz.",
+    "Sistem ve uygulama güncellemelerini yapın, ardından tableti yeniden başlatın.",
+    "Tablet bölünmüş ekranda belirgin şekilde kasıyorsa ağır uygulamalardan birini kapatın ve arka planda çalışan uygulamaları azaltın."
+   ],
+   "note": "Bölünmüş ekran yazılımsal bir özelliktir; çalışmaması genellikle ayar ya da uygulama kaynaklıdır. Ekranın bir yarısı dokunmaya tepki vermiyorsa ve sorun tam ekranda da sürüyorsa bu bir dokunmatik arızası olabilir ve yetkili serviste incelenmelidir."
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Bölünmüş ekran deneyimini bozan küçük alışkanlıklar şunlardır:"
+   ],
+   "list": [
+    "Uygulama önizlemesine basılı tutmak: Samsung'da menü, önizlemenin üstündeki küçük simgeye dokununca açılır.",
+    "Düşük RAM'li tablette iki oyun ya da iki video düzenleme uygulamasını yan yana açmak.",
+    "Dikey konumda çalışıp uygulamaların sıkışık görünmesinden şikayet etmek; yatay konum çoğu iş için daha uygundur.",
+    "Açılır pencereyi bölünmüş ekranla karıştırmak: açılır pencere diğer uygulamanın üstünü kapatır, bölünmüş ekran alanı paylaştırır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her uygulama bölünmüş ekranda çalışır mı?",
+   "a": "Hayır. Uygulama geliştiricisi bu modu kapatabilir; özellikle bazı oyunlar ve tam ekran çalışmak üzere tasarlanmış uygulamalar bölünmüş ekranda açılmaz. Bu uygulamalarda seçenek menüde görünmez ya da uyarı çıkar."
+  },
+  {
+   "q": "Bölünmüş ekran her tablette var mı?",
+   "a": "Güncel Android ve iPadOS sürümlerinin çoğunda bulunur. Çok eski sürümlerde ya da bazı giriş seviyesi modellerde üretici özelliği kısıtlamış olabilir. Ayrıca iPad'de mevcut seçenekler iPadOS sürümüne göre değişir."
+  },
+  {
+   "q": "Aynı anda üç uygulama açabilir miyim?",
+   "a": "Bazı Samsung tabletler bölünmüş ekranın üzerine açılır pencere ekleyerek ya da destekleyen modellerde ekranı üçe bölerek buna izin verir. iPadOS'ta pencereli uygulama modunda birden çok pencere açılabilir. Ancak her ek uygulama belleği zorlar."
+  },
+  {
+   "q": "Bölünmüş ekrandan nasıl çıkarım?",
+   "a": "Ortadaki ayırıcı çubuğu ekranın bir kenarına kadar sürüklediğinizde diğer uygulama tam ekran olur. Ana ekran tuşuna basmak ya da ana ekrana dönme hareketi de bölünmüş görünümü kapatır."
+  },
+  {
+   "q": "iPad'de Split View düğmesini bulamıyorum, neden?",
+   "a": "iPadOS 26 ile eski Split View düzeni yerini pencereli uygulama sistemine bıraktı. Uygulamaları yan yana açmak için Ayarlar'da pencereli uygulama modunu seçip bir uygulamayı ekranın kenarına sürüklemeniz gerekir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: iPadOS 26 ile iPad'de çoklu görev",
+   "u": "https://support.apple.com/en-ie/125309"
+  },
+  {
+   "t": "Google Pixel Tablet Yardım: Bölünmüş ekranı kullanma",
+   "u": "https://support.google.com/googlepixeltablet/answer/13555049?hl=en"
+  },
+  {
+   "t": "Samsung Destek: Galaxy tablette çoklu görev",
+   "u": "https://www.samsung.com/us/support/answer/ANS00076782/"
+  }
+ ]
+}

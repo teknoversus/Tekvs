@@ -1,0 +1,154 @@
+{
+ "slug": "kamera-sensor-boyutu-ne-ise-yarar",
+ "title": "Kamera Sensör Boyutu Ne İşe Yarar? Tam Kare, APS-C ve 1 İnç Farkı",
+ "description": "Sensör boyutu gürültüyü, dinamik aralığı, arka plan bulanıklığını ve lens seçimini nasıl etkiler? Tam kare, APS-C ve telefon sensörleri karşılaştırması.",
+ "tldr": "Büyük sensör, aynı pozlamada toplamda daha fazla ışık toplar; bu da düşük ışıkta daha az gürültü ve genellikle daha geniş dinamik aralık demektir. Aynı kadraj ve diyaframda daha sığ alan derinliği de verir. Ama gövde ve lensler büyür, ağırlaşır; her kullanıcı için en büyük sensör en doğru seçim değildir.",
+ "intro": [
+  "Kamera teknik özelliklerinde sensör boyutu genellikle küçük bir satırda geçer: tam kare, APS-C, 1 inç tipi, 1/1,3 inç. Bu satır, megapiksel sayısından çok daha fazlasını söyler. Karanlık bir konser salonunda ne kadar temiz fotoğraf çekebileceğinizi, portrede arka planın ne kadar yumuşayacağını, hatta çantanızın ne kadar ağır olacağını büyük ölçüde sensör boyutu belirler.",
+  "Bu sayfada sensör boyutunun neyi değiştirdiğini sade bir dille anlatıyor, yaygın formatları sayısal olarak karşılaştırıyor ve sık duyulan birkaç yanlış bilgiyi düzeltiyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Sensör ne yapar ve boyut neden önemlidir?",
+   "p": [
+    "Sensör, lensin oluşturduğu görüntüyü yakalayan, milyonlarca ışığa duyarlı hücreden (piksel) oluşan bir yüzeydir. Her piksel üzerine düşen ışığı elektrik sinyaline çevirir. Bu sinyal ne kadar güçlüyse, onu bozan rastgele dalgalanmalar, yani gürültü, o kadar az göze çarpar.",
+    "Aynı sahneyi aynı enstantane ve diyaframla çektiğinizde sensörün birim alanına düşen ışık aynıdır. Fark toplam alandadır: tam kare bir sensör, telefonlardaki küçük sensörlerden kat kat geniş olduğu için toplamda çok daha fazla ışık toplar. Fotoğrafı aynı boyutta izlediğinizde bu fazla ışık, daha temiz ve daha az gürültülü bir görüntü olarak karşınıza çıkar."
+   ]
+  },
+  {
+   "h": "Yaygın sensör formatları sayılarla",
+   "p": [
+    "Aşağıdaki tablo en sık karşılaşacağınız formatların yaklaşık ölçülerini ve kırpma çarpanlarını gösteriyor. Kırpma çarpanı, sensörün köşegeninin tam kareye göre kaç kat küçük olduğunu anlatır. Değerler üreticiye göre küçük farklar gösterebilir."
+   ],
+   "table": {
+    "head": [
+     "Format",
+     "Yaklaşık ölçü (mm)",
+     "Yaklaşık alan (mm²)",
+     "Kırpma çarpanı",
+     "Tipik kullanım"
+    ],
+    "rows": [
+     [
+      "Tam kare (35 mm)",
+      "36 × 24",
+      "864",
+      "1,0",
+      "Üst segment aynasız ve DSLR"
+     ],
+     [
+      "APS-C (Nikon, Sony, Fujifilm)",
+      "23,6 × 15,6",
+      "368",
+      "yaklaşık 1,5",
+      "Giriş ve orta segment aynasız"
+     ],
+     [
+      "APS-C (Canon)",
+      "22,3 × 14,9",
+      "332",
+      "yaklaşık 1,6",
+      "Canon giriş ve orta segment"
+     ],
+     [
+      "Dört Üçte (Mikro Dört Üçte)",
+      "17,3 × 13",
+      "225",
+      "2,0",
+      "Kompakt sistem kameraları"
+     ],
+     [
+      "1 inç tipi",
+      "13,2 × 8,8",
+      "116",
+      "yaklaşık 2,7",
+      "Üst sınıf kompakt, bazı telefonlar"
+     ],
+     [
+      "1/2,3 inç tipi",
+      "6,17 × 4,55",
+      "28,5",
+      "yaklaşık 5,6",
+      "Aksiyon kamerası, giriş kompakt"
+     ]
+    ]
+   },
+   "note": "Tam kare sensörün alanı, 1/2,3 inç tipindeki bir sensörün yaklaşık 30 katıdır. Bu fark, iki sistemin düşük ışık davranışının neden bu kadar ayrıştığını açıklar."
+  },
+  {
+   "h": "Pratikte ne fark eder?",
+   "p": [
+    "Düşük ışık: Akşam bir doğum günü partisinde, flaş kullanmadan çektiğinizi düşünün. Büyük sensörlü bir kamera daha düşük ISO ile ya da aynı ISO'da daha az grenle çekim yapmanızı sağlar. Küçük sensörde aynı sahne daha gürültülü olur ya da cihaz yazılımla gürültüyü temizlerken ince ayrıntıları da siler.",
+    "Dinamik aralık: Pencere önünde oturan birini çektiğinizde hem parlak dışarıyı hem de gölgedeki yüzü aynı karede tutabilmek dinamik aralığa bağlıdır. Daha büyük sensörler genellikle bu konuda daha fazla tolerans tanır; gölgeleri sonradan açtığınızda daha az gürültü belirir.",
+    "Alan derinliği: Aynı kadrajı ve aynı f değerini kullandığınızda büyük sensör daha sığ alan derinliği, yani daha bulanık bir arka plan verir. Portre ve ürün fotoğrafında istenen bu etki, manzarada ya da grup fotoğrafında herkesi net tutmak istediğinizde dezavantaja dönüşebilir."
+   ]
+  },
+  {
+   "h": "Kırpma çarpanı lens seçimini nasıl etkiler?",
+   "p": [
+    "Lensin üzerindeki odak uzaklığı değişmez, ama küçük sensör görüntünün yalnızca orta kısmını yakaladığı için görüş açısı daralır. APS-C bir gövdeye taktığınız 50 mm'lik lens, tam kare üzerindeki yaklaşık 75 mm'lik bir lensin kadrajını verir. Bu, uzak konuları çeken doğa ve spor fotoğrafçıları için avantaj olabilir.",
+    "Tersi de geçerlidir: geniş açı isteyen biri küçük sensörde daha kısa odak uzaklıklı lenslere ihtiyaç duyar. Bu yüzden bir sistem seçerken yalnızca gövdeye değil, o sensör boyutu için tasarlanmış lens yelpazesine de bakmak gerekir. Tam kare lensler genellikle daha büyük ve ağırdır."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "Sensör boyutu hakkında forumlarda sık tekrarlanan bazı ifadeler eksik ya da yanlıştır."
+   ],
+   "list": [
+    "\"1 inç sensör 1 inç genişliğindedir.\" Değildir. Bu adlandırma eski video kamera tüplerinden kalma bir gelenektir; 1 inç tipi bir sensörün köşegeni yaklaşık 16 mm'dir.",
+    "\"Daha çok megapiksel her zaman daha iyidir.\" Aynı sensöre daha fazla piksel sığdırmak ayrıntıyı artırabilir, ama toplam ışık miktarı sensör alanına bağlıdır; düşük ışık performansını sensör boyutu daha çok belirler.",
+    "\"Küçük sensör, doğası gereği daha fazla alan derinliği üretir.\" Aynı kadraj, aynı diyafram açıklığı çapı ve aynı enstantaneyle karşılaştırıldığında alan derinliği formatlar arasında eşitlenir. Fark, aynı f değerini kullandığımızda ortaya çıkar.",
+    "\"Büyük sensör otomatik olarak daha iyi fotoğraf demektir.\" Lens kalitesi, odak sistemi, görüntü işleme ve kullanıcının becerisi en az sensör kadar belirleyicidir."
+   ]
+  },
+  {
+   "h": "Telefonlar küçük sensörle nasıl rekabet ediyor?",
+   "p": [
+    "Telefonlar fiziksel sınırlarını yazılımla telafi eder. Deklanşöre bastığınızda telefon çoğu zaman birden fazla kare çekip bunları birleştirir; bu sayede gürültüyü azaltır ve dinamik aralığı genişletir. Portre modu ise arka plan bulanıklığını derinlik tahminiyle yapay olarak üretir.",
+    "Bu yöntemler gündelik çekimlerde oldukça ikna edici sonuç verir. Sınırları ise hızlı hareket eden konularda, çok karanlık ortamlarda ve saç teli gibi ince kenarlarda belirginleşir. Büyük sensörlü bir kamera bu durumlarda fiziksel olarak daha fazla bilgi yakalar."
+   ]
+  },
+  {
+   "h": "Kamera alırken sensör boyutuna nasıl bakmalı?",
+   "p": [
+    "Sensör boyutu, ihtiyacınızla ağırlık ve bütçe arasında bir dengedir. Aşağıdaki sorular hangi formatın size uyduğunu netleştirmeye yardımcı olur."
+   ],
+   "list": [
+    "Sık sık iç mekânda, gece ya da flaşsız çekim yapacak mısınız? Öyleyse büyük sensör daha fazla fark yaratır.",
+    "Kamerayı her gün yanınızda taşıyacak mısınız? Küçük format ve hafif lensler daha sık kullanılan bir kamera anlamına gelebilir.",
+    "Uzak konular mı çekiyorsunuz? Kırpma çarpanı, daha küçük ve hafif telefoto lenslerle aynı kadrajı sağlar.",
+    "Seçtiğiniz sistemin lens yelpazesi ihtiyacınızı karşılıyor mu?",
+    "Video çekecekseniz, kameranın videoda tüm sensörü mü yoksa kırpılmış bir bölümünü mü kullandığını kontrol edin."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Sensör boyutu megapiksel sayısından daha mı önemli?",
+   "a": "Düşük ışık performansı ve dinamik aralık söz konusu olduğunda genellikle evet. Megapiksel, büyük baskı ya da sonradan kırpma için ayrıntı sağlar. Ekranda izlenecek fotoğraflar için çoğu modern kameranın çözünürlüğü fazlasıyla yeterlidir."
+  },
+  {
+   "q": "Telefon kameraları neden ayrı kameralar kadar iyi değil?",
+   "a": "Telefon gövdesinin inceliği, sensör ve lens boyutunu sınırlar. Bu yüzden toplam toplanan ışık azdır. Telefonlar bunu çoklu kare birleştirme gibi yazılım teknikleriyle telafi eder, ama zor ışıkta ve hareketli konularda fiziksel sınır kendini gösterir."
+  },
+  {
+   "q": "APS-C mi tam kare mi almalıyım?",
+   "a": "Gündelik, seyahat ve hobi fotoğrafçılığı için APS-C çoğu kullanıcıya yeter ve daha hafif bir sistem sunar. Düzenli olarak karanlık ortamlarda çekim yapıyor ya da çok sığ alan derinliği arıyorsanız tam kare daha fazla esneklik verir."
+  },
+  {
+   "q": "Kırpma çarpanı lensin odak uzaklığını değiştirir mi?",
+   "a": "Hayır, lensin fiziksel odak uzaklığı aynı kalır. Değişen, sensörün yakaladığı görüş açısıdır. Eşdeğer odak uzaklığı, bu görüş açısını tam kare üzerindeki karşılığıyla ifade etmenin pratik bir yoludur."
+  },
+  {
+   "q": "Büyük sensörlü kamera daha mı ağır olur?",
+   "a": "Genellikle evet, ama en büyük fark gövdeden çok lenslerden gelir. Büyük sensörü kaplayacak görüntü dairesi için lenslerin de büyük olması gerekir. Hafiflik önceliğinizse lens seçeneklerini de hesaba katın."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: Image sensor format",
+   "u": "https://en.wikipedia.org/wiki/Image_sensor_format"
+  }
+ ]
+}

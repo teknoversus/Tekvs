@@ -1,0 +1,143 @@
+{
+ "slug": "tablete-harici-klavye-mouse-nasil-baglanir",
+ "title": "Tablete Harici Klavye ve Mouse Nasıl Bağlanır? Bluetooth ve USB",
+ "description": "Bluetooth ya da USB-C ile tablete klavye ve fare bağlama adımları, Türkçe Q/F düzen ayarı, imleç sorunları ve bağlantı kopmalarına çözümler.",
+ "tldr": "Bluetooth klavye ve fareyi eşleştirme moduna alıp tabletin Bluetooth menüsünden seçmeniz yeterlidir. USB-C girişli tabletlerde kablolu klavye ve fare doğrudan ya da bir USB-C/USB-A dönüştürücüyle takıldığında tanınır. Bağladıktan sonra fiziksel klavye ayarlarından Türkçe Q veya F düzenini seçmeyi unutmayın.",
+ "intro": [
+  "Tabletle uzun bir e-posta, ödev ya da rapor yazmaya çalışan herkes ekran klavyesinin ekranın yarısını kapattığını ve hızlı yazmaya izin vermediğini fark eder. Harici bir klavye ve fare bu sorunu çözer; tablet, hafif bir dizüstü bilgisayara yaklaşır.",
+  "Bağlantının kendisi genellikle birkaç dakika sürer. Asıl zaman kaybı, bağlantıdan sonra çıkan küçük sorunlarda yaşanır: tuşların yanlış harf yazması, imlecin görünmemesi ya da klavyenin birkaç dakikada bir kopması. Aşağıda hem bağlantı adımlarını hem de bu sorunların çözümlerini bulacaksınız. Menü adları markaya ve sürüme göre farklı olabilir."
+ ],
+ "sections": [
+  {
+   "h": "Hangi bağlantı türü size uygun?",
+   "p": [
+    "Bluetooth kablo gerektirmez ve tabletin şarj girişini boş bırakır. Buna karşılık klavye ve farenin pil ya da şarj takibi gerekir. Birden çok cihazla eşleşebilen (çoklu cihaz destekli) klavyeler, aynı klavyeyi tablet, telefon ve bilgisayar arasında bir tuşla değiştirmenize izin verir.",
+    "USB kablolu ya da USB alıcılı (dongle) aksesuarlar takıldığı anda çalışır, eşleştirme gerektirmez. Tabletin USB-C girişi bu sırada dolu kalır; şarj etmek isterseniz şarj girişli bir USB-C çoklayıcıya ihtiyaç duyarsınız. Bazı eski ya da giriş seviyesi tabletler bağlı USB cihazını beslemeyebilir; ürün özelliklerinde OTG (On-The-Go) desteğine bakın.",
+    "Üreticilerin kendi klavye kılıfları ise tabletin kenarındaki ya da arkasındaki temas noktalarından (pogo pin, Apple'da Smart Connector) bağlanır. Eşleştirme ve şarj gerektirmez ama yalnızca o tablet modeline uyar."
+   ],
+   "table": {
+    "head": [
+     "Bağlantı türü",
+     "Kurulum",
+     "Güç",
+     "Dikkat edilecek nokta"
+    ],
+    "rows": [
+     [
+      "Bluetooth",
+      "Tek seferlik eşleştirme",
+      "Aksesuarın kendi pili",
+      "Pil bitince kopar; çoklu cihaz desteği pratiklik sağlar"
+     ],
+     [
+      "USB-C kablolu",
+      "Tak ve kullan",
+      "Tabletten beslenir",
+      "Şarj girişini kullanır, tablet pilini biraz daha hızlı tüketir"
+     ],
+     [
+      "USB alıcılı (dongle)",
+      "Alıcıyı tak",
+      "Aksesuarın pili",
+      "Çoğu tablette USB-C/USB-A dönüştürücü gerekir"
+     ],
+     [
+      "Temas noktalı klavye kılıfı",
+      "Tableti kılıfa yerleştir",
+      "Tabletten beslenir",
+      "Yalnızca belirli tablet modelleriyle uyumlu"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Bluetooth klavye ve fareyi eşleştirme adımları",
+   "p": [
+    "Klavye ve fareyi ayrı ayrı eşleştirin. İkisini aynı anda eşleştirme moduna almak, hangisinin listede hangi adla göründüğünü karıştırmanıza neden olabilir."
+   ],
+   "ol": [
+    "Aksesuarı açın ve eşleştirme moduna alın. Çoğu modelde bunun için Bluetooth ya da kanal tuşuna birkaç saniye basılı tutulur; ışığın hızlı yanıp sönmesi eşleştirme modunu gösterir.",
+    "Android'de Ayarlar > Bağlı cihazlar > Yeni cihaz eşle (Samsung'da Ayarlar > Bağlantılar > Bluetooth) yolunu izleyin. iPad'de Ayarlar > Bluetooth bölümünü açın.",
+    "Aksesuarın adı listede (iPad'de Diğer Aygıtlar altında) göründüğünde dokunun.",
+    "Klavye bir kod isterse ekranda görünen rakamları klavyede yazıp Enter tuşuna basın. Apple'ın açıklamasına göre Magic Mouse ve Magic Trackpad kod isterse 0000 girilir.",
+    "Eşleşme tamamlandığında aksesuar Kayıtlı cihazlar (iPad'de Aygıtlarım) listesine geçer. Sonraki kullanımlarda açmanız yeterlidir."
+   ]
+  },
+  {
+   "h": "Kablolu ve USB alıcılı aksesuarları bağlama",
+   "p": [
+    "USB-C fişli klavye ya da fareyi doğrudan tabletin girişine takın. USB-A fişli bir aksesuar ya da alıcı kullanıyorsanız USB-C erkek / USB-A dişi dönüştürücü gerekir. Tablette bildirim çıkmasa bile klavyeye bir harf yazarak ya da fareyi oynatarak tanınıp tanınmadığını kontrol edin.",
+    "Klavye, fare ve şarjı birlikte kullanmak istiyorsanız güç girişli (PD destekli) bir USB-C çoklayıcı iş görür. Ucuz çoklayıcılarda tablet şarj olurken aksesuarlar kopabilir; bu durumda çoklayıcıyı tabletten önce prize bağlamak çoğu zaman sorunu giderir."
+   ]
+  },
+  {
+   "h": "Türkçe klavye düzeni ve imleç ayarları",
+   "p": [
+    "Bağladığınız klavye 'ı' yerine 'i', 'ş' yerine ';' yazıyorsa tablet klavyeyi İngilizce düzende kullanıyordur. Android'de Ayarlar > Sistem > Klavye > Fiziksel klavye (Samsung'da Ayarlar > Genel yönetim > Fiziksel klavye) bölümünde bağlı klavyeye dokunup klavyenizin üzerindeki harf dizilişine göre Türkçe Q ya da Türkçe F düzenini seçin. iPad'de aynı ayar Ayarlar > Genel > Klavye > Donanım Klavyesi altındadır.",
+    "Fare imleci iPad'de iPadOS 13.4 ve sonrasında desteklenir. Apple'ın destek sayfasına göre imlecin boyutu, rengi ve kaydırma hızı Ayarlar > Erişilebilirlik > İmleç Denetimi bölümünden, izleme hızı ise Ayarlar > Genel > İzleme Dörtgeni ve Fare bölümünden değiştirilir. Güncel Android sürümlerinde fare bağlandığında imleç kendiliğinden görünür; hız ayarı genellikle fiziksel klavye ya da fare ve izleme dörtgeni ayarlarındadır.",
+    "Samsung'un bazı üst segment tabletlerinde bulunan DeX modu, klavye ve fareyle kullanım için masaüstüne benzer bir arayüz açar. Pencereli uygulamalar ve görev çubuğu bu modda daha rahat kullanılır."
+   ]
+  },
+  {
+   "h": "Bağlantı sorunlarında izlenecek sıra",
+   "p": [
+    "Aksesuar görünmüyor, eşleşmiyor ya da sık kopuyorsa adımları sırayla deneyin. Çoğu sorun ilk üç adımda çözülür."
+   ],
+   "ol": [
+    "Aksesuarın pilini ya da şarjını kontrol edin. Zayıf pil, Bluetooth aksesuarlarda kopmaların en sık nedenidir.",
+    "Aksesuarın aynı anda telefonunuza ya da bilgisayarınıza bağlı olmadığından emin olun. Çoklu cihaz destekli klavyelerde doğru kanalın seçili olduğuna bakın.",
+    "Tabletin Bluetooth'unu kapatıp açın, ardından tableti yeniden başlatın.",
+    "Aksesuarı tabletin Bluetooth listesinden kaldırın (Android'de dişli simgesi > Eşlemeyi kaldır, iPad'de bilgi düğmesi > Bu Aygıtı Unut) ve baştan eşleştirin.",
+    "Kablosuz kulaklık, akıllı saat gibi başka Bluetooth cihazları sorun çıkarıyorsa onları geçici olarak kapatıp deneyin. Kablosuz alıcılı farelerde alıcıyı USB 3.0 girişlerinden ve Wi-Fi modeminden uzak tutmak parazitleri azaltabilir.",
+    "Kablolu aksesuarda başka bir dönüştürücü ya da kablo deneyin; aksesuarı bir bilgisayarda test ederek arızanın aksesuarda olup olmadığını anlayın.",
+    "Tabletin sistem güncellemesini yapın; klavye ve fare uyumluluğu güncellemelerle iyileşebilir."
+   ],
+   "note": "Aksesuar başka cihazlarda sorunsuz çalışıyor ama tabletin USB-C girişi hiçbir aksesuarı ve şarj kablosunu düzgün tanımıyorsa giriş arızalı ya da içinde kir birikmiş olabilir. Girişe metal cisim sokmayın; garanti belgesiyle yetkili servise başvurun."
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Harici klavye ve fare kullanımında en çok karşılaşılan yanlışlar şunlardır:"
+   ],
+   "list": [
+    "Klavyeyi bağlayıp düzen ayarını yapmamak ve Türkçe karakterlerin yanlış çıkmasını arıza sanmak.",
+    "Windows ya da Mac için tasarlanmış özel tuşların (medya, kısayol) tablette aynı şekilde çalışmasını beklemek.",
+    "USB-A alıcılı fareyi dönüştürücüsüz almak ve tablete takılamadığını sonradan fark etmek.",
+    "Klavye kılıfını tablet modelini kontrol etmeden almak; temas noktalarının yeri modele göre değişir.",
+    "Eşleştirme kodunu tablete yazmaya çalışmak; kod, bağlanmak istediğiniz klavyeye yazılır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her tablette fare imleci görünür mü?",
+   "a": "iPad'lerde iPadOS 13.4 ve sonrasında fare desteği vardır. Güncel Android tabletlerde fare bağlandığında imleç kendiliğinden görünür. Çok eski sürümlerde destek sınırlı olabilir."
+  },
+  {
+   "q": "Klavye kılıfı ile Bluetooth klavye arasında fark var mı?",
+   "a": "Klavye kılıfları tabletin temas noktalarından bağlanır, ayrı eşleştirme ve şarj gerektirmez ama yalnızca belirli modellere uyar. Bluetooth klavyeler her tablette kullanılabilir, kendi pilleriyle çalışır ve bir kez eşleştirilmeleri gerekir."
+  },
+  {
+   "q": "Tablete hem klavye hem fare aynı anda bağlanabilir mi?",
+   "a": "Evet. Bluetooth ile birden çok aksesuar aynı anda bağlanabilir. Tek USB-C girişli tablette kablolu iki aksesuar için USB çoklayıcı ya da tek alıcıyla çalışan klavye-fare seti gerekir."
+  },
+  {
+   "q": "Bilgisayar klavyesindeki Türkçe karakterler tablette neden yanlış çıkıyor?",
+   "a": "Tablet fiziksel klavye için varsayılan olarak İngilizce düzeni kullanıyor olabilir. Fiziksel klavye ayarlarından klavyenizin dizilişine uygun Türkçe Q ya da Türkçe F düzenini seçtiğinizde sorun çözülür."
+  },
+  {
+   "q": "Bluetooth klavye birkaç dakikada bir kopuyor, neden?",
+   "a": "Genellikle zayıf pil ya da klavyenin güç tasarrufu için uyku moduna geçmesi sebep olur. Pili yenileyin, başka cihazla eşleşmediğinden emin olun ve gerekirse eşleştirmeyi silip yeniden yapın."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: iPad ile Bluetooth fare veya izleme dörtgeni kullanma",
+   "u": "https://support.apple.com/105004"
+  },
+  {
+   "t": "Apple Destek: iPad'e Bluetooth fare veya izleme dörtgeni bağlama",
+   "u": "https://support.apple.com/en-ae/108938"
+  }
+ ]
+}

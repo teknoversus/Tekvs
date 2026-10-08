@@ -1,0 +1,150 @@
+{
+ "slug": "akilli-saat-telefona-nasil-eslestirilir",
+ "title": "Akıllı Saat Telefona Nasıl Eşleştirilir? Android ve iPhone",
+ "description": "Akıllı saati Android telefona veya iPhone'a adım adım eşleştirme, saat görünmüyorsa sorun giderme sırası ve saati satmadan önce eşleşmeyi kaldırma.",
+ "tldr": "Akıllı saatler çoğunlukla telefonun Bluetooth menüsünden değil, üreticinin uygulamasından eşleştirilir. Önce saatin telefonunuzla uyumlu olduğunu kontrol edin, uygulamayı kurun, Bluetooth ve gerekli izinleri açın, ardından uygulamadaki yeni cihaz ekleme adımlarını izleyin.",
+ "intro": [
+  "Yeni bir akıllı saati kutusundan çıkardığınızda çoğu kişinin ilk refleksi telefonun Bluetooth ayarlarını açıp saati aramaktır. Bu yöntem kulaklıklarda işe yarar, ama akıllı saatlerin büyük kısmında eşleştirme üreticinin uygulaması üzerinden yapılır. Bluetooth menüsünden kurulan bağlantı, bildirimleri ve sağlık verisi aktarımını çoğu zaman başlatmaz.",
+  "Aşağıda önce uyumluluğu nasıl kontrol edeceğinizi, ardından Android ve iPhone için eşleştirme adımlarını, sorun çıktığında hangi sırayla kontrol yapmanız gerektiğini ve saati satarken nelere dikkat etmeniz gerektiğini anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Önce uyumluluğu kontrol edin",
+   "p": [
+    "Her saat her telefonla çalışmaz. Apple Watch yalnızca iPhone ile eşleşir. Samsung'un Galaxy Watch4 ve sonraki modelleri Google Play hizmetlerine dayandığı için iPhone ile uyumlu değildir; Samsung'un destek sayfasına göre bu modeller için Android sürümü ve telefon belleği de belirli bir alt sınırın üzerinde olmalıdır. Garmin, Huawei ve benzeri markaların saatlerinin çoğu hem Android hem iPhone ile eşleşebilir, ancak bazı özellikler platforma göre kısıtlı kalabilir.",
+    "Saati almadan önce ürün sayfasında ya da üreticinin destek sitesinde desteklenen işletim sistemi sürümlerine bakın. Telefonunuzun güncel olması da önemlidir; eski bir sürümde uygulama hiç yüklenmeyebilir."
+   ],
+   "table": {
+    "head": [
+     "Saat platformu",
+     "Eşleştirme uygulaması",
+     "Uyumlu telefonlar"
+    ],
+    "rows": [
+     [
+      "Apple Watch",
+      "iPhone'daki Watch uygulaması",
+      "Yalnızca iPhone"
+     ],
+     [
+      "Samsung Galaxy Watch (Watch4 ve sonrası)",
+      "Galaxy Wearable",
+      "Android"
+     ],
+     [
+      "Diğer Wear OS saatleri",
+      "Üreticinin uygulaması veya Wear OS uygulaması",
+      "Android"
+     ],
+     [
+      "Garmin, Huawei ve benzeri",
+      "Garmin Connect, Huawei Health vb.",
+      "Çoğunlukla Android ve iPhone"
+     ]
+    ]
+   },
+   "note": "Uyumluluk listeleri güncellemelerle değişebilir. Satın almadan önce üreticinin güncel destek sayfasına bakın."
+  },
+  {
+   "h": "Android telefona eşleştirme adımları",
+   "p": [
+    "Menü adları markaya ve Android sürümüne göre değişebilir, ancak genel akış aşağıdaki gibidir. Saati tamamen şarj ederek başlamanız, kurulum sırasında yazılım güncellemesi inerse yarıda kalmasını önler."
+   ],
+   "ol": [
+    "Saati şarj edin ve açın. İlk açılışta ekranda dil seçimi veya telefon uygulamasını indirme yönlendirmesi görünür.",
+    "Telefonda Bluetooth'u açın. Android 12 ve sonrasında uygulama Yakındaki cihazlar iznini, daha eski sürümlerde ise konum iznini isteyebilir; bu izin olmadan saat bulunamaz.",
+    "Google Play Store'dan saatin üreticisine ait uygulamayı indirin ve açın.",
+    "Uygulamada cihaz ekle, yeni saat bağla veya benzeri bir seçeneğe dokunun ve listeden saatinizi seçin.",
+    "Telefonda ve saatte görünen eşleştirme kodunun aynı olduğunu kontrol edip onaylayın.",
+    "Uygulamanın istediği bildirim, kişi ve sağlık izinlerini gözden geçirin. İzin vermediğiniz özellikler saatte çalışmaz.",
+    "Kurulum sonunda önerilen yazılım güncellemesini, saat şarjdayken ve Wi-Fi'ye bağlıyken tamamlayın."
+   ]
+  },
+  {
+   "h": "iPhone'a eşleştirme adımları",
+   "p": [
+    "Apple Watch için eşleştirme Watch uygulaması üzerinden yapılır ve büyük ölçüde otomatiktir. Diğer marka saatleri iPhone'a bağlarken ise ilgili markanın App Store'daki uygulaması kullanılır."
+   ],
+   "ol": [
+    "iPhone'u güncel iOS sürümüne yükseltin ve Bluetooth ile Wi-Fi'yi açın.",
+    "Apple Watch'ı açın ve iPhone'un yanına getirin. iPhone'da eşleştirme ekranı belirdiğinde devam'a dokunun.",
+    "iPhone kamerasını saatin ekranındaki animasyonun üzerine tutun; kamera kullanılamıyorsa elle eşleştirme seçeneğini seçin.",
+    "Saati kendiniz için mi yoksa bir aile üyesi için mi kuracağınızı seçin, ardından ekrandaki adımlarla ayarları tamamlayın.",
+    "Başka marka bir saat kullanıyorsanız, App Store'dan üreticinin uygulamasını indirin ve uygulamadaki cihaz ekleme adımlarını izleyin. iPhone, Bluetooth erişimi için izin isteyecektir; bu izni verin."
+   ]
+  },
+  {
+   "h": "Saat listede görünmüyorsa ne yapmalısınız?",
+   "p": [
+    "Eşleştirme sorunlarının büyük kısmı izinlerden, eski bir eşleşme kaydından veya uygulamanın arka planda kapatılmasından kaynaklanır. Aşağıdaki sırayı izleyin ve her adımdan sonra yeniden deneyin."
+   ],
+   "ol": [
+    "Saat ile telefonu birbirine yakın tutun ve saatin şarjlı olduğundan emin olun.",
+    "Telefonun Bluetooth'unu kapatıp açın; uçak modunu açık bırakmadığınızdan emin olun.",
+    "Uygulamanın Bluetooth, Yakındaki cihazlar veya konum izinlerini telefon ayarlarından kontrol edin.",
+    "Saat daha önce başka bir telefona bağlandıysa saati fabrika ayarlarına döndürün; eski eşleşme yeni bağlantıyı engelleyebilir.",
+    "Telefonun Bluetooth ayarlarında saat kayıtlı görünüyorsa bu kaydı unutun ve eşleştirmeyi uygulamadan baştan başlatın.",
+    "Hem saati hem telefonu yeniden başlatın, uygulamayı güncelleyin.",
+    "Pil tasarrufu ayarlarında saat uygulamasının arka planda kısıtlanmadığından emin olun. Aksi halde bağlantı kurulsa bile sık kopabilir."
+   ]
+  },
+  {
+   "h": "Bağlantı sık kopuyorsa",
+   "p": [
+    "Eşleştirme tamamlandıktan sonra bildirimlerin gecikmesi veya saatin bağlantısız görünmesi, genellikle telefonun pil optimizasyonundan kaynaklanır. Bazı Android arayüzleri, uzun süre açılmayan uygulamaları arka planda kapatır. Saat uygulamasını pil optimizasyonu dışında bırakmak bu sorunu çoğu zaman giderir.",
+    "Bluetooth menzili duvarlar ve vücut nedeniyle azalır. Telefonu evin bir odasında bırakıp başka bir katta dolaşıyorsanız kopmalar normaldir. Hücresel modeller bu durumda kendi hattına geçebilir; Wi-Fi destekli saatler ise aynı ağa bağlıysa bildirim almayı sürdürebilir."
+   ]
+  },
+  {
+   "h": "Yeni telefona geçerken veya saati satarken",
+   "p": [
+    "Telefon değiştirirken saati yeni telefona taşımak için genellikle önce eski telefondaki eşleşmeyi kaldırmanız, ardından saati yeni telefonla baştan eşleştirmeniz gerekir. Sağlık ve antrenman verileriniz çoğu markada hesabınızda saklandığından, aynı hesapla giriş yaptığınızda geri gelir. Yine de geçiş öncesinde uygulamanın yedekleme ayarını kontrol edin.",
+    "Apple Watch'ta eşleşmeyi kaldırmak için iPhone'daki Watch uygulamasında Saatim sekmesinden Tüm Saatler'e girip saatin yanındaki bilgi düğmesine dokunun ve Apple Watch Eşleşmesini Kaldır'ı seçin. Apple'a göre bu işlem saati fabrika ayarlarına döndürür ve Etkinleştirme Kilidi'ni kaldırır. Saati yalnızca saatin kendi ayarlarından silerseniz Etkinleştirme Kilidi kalır ve yeni sahibi saati kullanamaz. Diğer markalarda da saati satmadan önce uygulamadan cihazı kaldırın ve saati sıfırlayın."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Eşleştirmede yaşanan sorunların bir kısmı, kurulum sırasında atlanan küçük adımlardan kaynaklanır."
+   ],
+   "list": [
+    "Saati uygulama yerine telefonun Bluetooth menüsünden eşleştirmeye çalışmak.",
+    "Kurulumda sorulan izinleri reddedip sonra bildirimlerin gelmediğinden şikâyet etmek.",
+    "İkinci el saati önceki sahibinin hesabından çıkarılmadan satın almak.",
+    "Kurulum sırasında saatin pilinin bitmesine izin vermek ve güncellemeyi yarıda bırakmak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Saatimi iPhone ile Android arasında taşıyabilir miyim?",
+   "a": "Markaya bağlıdır. Apple Watch yalnızca iPhone ile çalışır; Galaxy Watch4 ve sonraki Samsung saatleri ise iPhone ile uyumlu değildir. Garmin gibi bazı markalar her iki platformu destekler; geçiş için saati sıfırlayıp yeni telefonla baştan eşleştirmeniz gerekir."
+  },
+  {
+   "q": "Bir saati aynı anda iki telefona bağlayabilir miyim?",
+   "a": "Çoğu akıllı saat aynı anda tek bir telefonla çalışacak şekilde tasarlanmıştır. Saati başka bir telefona bağlamak genellikle mevcut eşleşmenin kaldırılmasını ve saatin sıfırlanmasını gerektirir."
+  },
+  {
+   "q": "Eşleştirme sırasında güncelleme neden bu kadar uzun sürüyor?",
+   "a": "Saat yazılım güncellemeleri genellikle telefon üzerinden Bluetooth veya Wi-Fi ile aktarılır ve kurulum sırasında saat birkaç kez yeniden başlayabilir. Saati şarjda bırakın, telefonu yakında tutun ve uygulamayı kapatmayın."
+  },
+  {
+   "q": "İkinci el aldığım saat eşleşmiyor, ne yapmalıyım?",
+   "a": "Saat önceki sahibinin hesabına bağlı olabilir. Apple Watch'ta Etkinleştirme Kilidi açıksa saati yalnızca önceki sahibi kaldırabilir. Satıcıdan saati hesabından çıkarmasını isteyin; bunu yapamıyorsa saati satın almaktan kaçının."
+  },
+  {
+   "q": "Eşleştirmeden sonra bildirimler gelmiyor, neden?",
+   "a": "Uygulamanın bildirim erişim izni kapalı olabilir veya telefonun pil optimizasyonu uygulamayı arka planda durduruyor olabilir. İzinleri ve pil ayarlarını kontrol edin, saat uygulamasında hangi uygulamaların bildirim gönderebileceğini seçin."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Samsung Destek: Galaxy Watch ile uyumlu telefonlar",
+   "u": "https://www.samsung.com/uk/support/mobile-devices/what-phones-are-compatible-with-the-galaxy-watch/"
+  },
+  {
+   "t": "Apple Destek: Apple Watch eşleşmesini kaldırma ve silme",
+   "u": "https://support.apple.com/en-au/108372"
+  }
+ ]
+}

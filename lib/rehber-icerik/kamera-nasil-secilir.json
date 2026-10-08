@@ -1,0 +1,226 @@
+{
+ "slug": "kamera-nasil-secilir",
+ "title": "Fotoğraf Makinesi Nasıl Seçilir? Aynasız, DSLR, Kompakt ve Aksiyon",
+ "description": "Aynasız mı DSLR mı, APS-C mi tam kare mi? Sensör, lens, video ve ergonomiyi kullanım amacınıza göre değerlendirmeniz için adım adım kamera seçim rehberi.",
+ "tldr": "Kamera seçimine model listesiyle değil, ne çekeceğinizle başlayın. Değiştirilebilir lensli bir sistem istiyorsanız bugün en geniş yeni gövde ve lens seçeneği aynasız kameralardadır; sensör boyutu düşük ışık ve arka plan bulanıklığını, lens seçimi ise sonucu gövdeden daha çok etkiler. Video çekecekseniz ısınma, görüntü sabitleme, mikrofon girişi ve döner ekranı megapikselden önce değerlendirin.",
+ "intro": [
+  "Telefon kameraları bu kadar gelişmişken ayrı bir fotoğraf makinesine gerçekten ihtiyacınız olup olmadığı makul bir sorudur. Cevap, neyi ve nasıl çektiğinize bağlıdır. Çocuğunuzun okul gösterisini salonun arkasından çekmek, kapalı spor salonunda hızlı hareketi dondurmak, uzaktaki bir kuşu kadraja almak ya da portrelerde arka planı doğal biçimde eritmek, büyük sensörlü ve değiştirilebilir lensli bir kameranın fark yarattığı durumlardır.",
+  "Bu rehber, kamera türlerini, sensör boyutlarını, lens sistemini ve video özelliklerini sade bir dille anlatır; ardından kullanım senaryonuza göre neye öncelik vermeniz gerektiğini, sık yapılan satın alma hatalarını ve mağazaya gitmeden önce kullanabileceğiniz bir kontrol listesini sunar. Sayfanın altında katalogdaki güncel fiyat aralıklarını da görebilirsiniz."
+ ],
+ "sections": [
+  {
+   "h": "Ayrı bir kameraya ihtiyacınız var mı?",
+   "p": [
+    "Telefonlar küçük sensörlerinin sınırlarını yoğun yazılım işlemesiyle aşar. Gün ışığında, geniş açıda ve sosyal medyada paylaşılacak fotoğraflarda sonuç çoğu kişi için yeterlidir. Fark; düşük ışıkta hareketli konularda, uzak konularda ve görüntüyü sonradan düzenlemek istediğinizde ortaya çıkar. Büyük bir sensör daha fazla ışık toplar, değiştirilebilir lens ise telefonun ulaşamayacağı odak uzaklıklarına ve geniş diyaframlara erişim sağlar.",
+    "Kamera almadan önce kendinize şu soruyu sorun: Telefonumla çektiğim fotoğraflarda beni en çok ne rahatsız ediyor? Cevap “karanlıkta bulanık çıkıyor”, “uzaktaki konuyu yakalayamıyorum” ya da “portrelerde arka plan yapay duruyor” ise bir kamera bu sorunları çözebilir. Cevap “çekmeyi unutuyorum” ise, yanınıza almayacağınız büyük bir kamera da sorunu çözmez; o durumda küçük ve cebe sığan bir model daha anlamlıdır."
+   ]
+  },
+  {
+   "h": "Kamera türleri: aynasız, DSLR, kompakt ve aksiyon kamera",
+   "p": [
+    "Aynasız (mirrorless) kameralar görüntüyü doğrudan sensörden alıp elektronik vizöre veya ekrana aktarır. Ayna mekanizması olmadığı için gövdeler genellikle daha ince olabilir, vizörde pozlamanın ve beyaz dengesinin sonucunu çekmeden önce görürsünüz. Büyük üreticiler son yıllarda yeni gövde ve lens geliştirmelerini ağırlıkla aynasız sistemlere kaydırdı; bu yüzden uzun vadede lens ekleyerek büyütmeyi düşündüğünüz bir sistem için aynasız kameralar daha geniş bir gelecek sunar.",
+    "DSLR'ler görüntüyü bir ayna ve prizma aracılığıyla optik vizöre yansıtır. Optik vizör gecikmesizdir ve çalışırken pil tüketmez, bu nedenle DSLR'ler genellikle şarj başına daha fazla kare çeker. İkinci el pazarında geniş bir gövde ve lens seçeneği bulunur; ancak yeni model ve yeni lens çıkışlarının azaldığını göz önünde bulundurmalısınız.",
+    "Kompakt kameralar sabit lenslidir ve cebe ya da küçük bir çantaya sığar. Telefona göre daha büyük sensör veya optik zum sunan modeller, yanında lens taşımak istemeyenler için iyi bir orta yoldur. Aksiyon kameralar ise küçük, dayanıklı ve çoğu zaman su geçirmez gövdelerde çok geniş açı ve güçlü elektronik sabitleme sunar; bisiklet, kayak, dalış gibi hareketli çekimler için tasarlanmışlardır."
+   ],
+   "table": {
+    "head": [
+     "Tür",
+     "Güçlü yanı",
+     "Zayıf yanı",
+     "Kimin için uygun"
+    ],
+    "rows": [
+     [
+      "Aynasız",
+      "Gelişmiş otomatik odak, elektronik vizörde önizleme, güncel lens sistemi",
+      "Elektronik vizör ve ekran nedeniyle pil tüketimi daha yüksek olabilir",
+      "Fotoğrafa ciddi başlayan, büyümek isteyen, video da çekecek kullanıcılar"
+     ],
+     [
+      "DSLR",
+      "Optik vizör, uzun pil ömrü, geniş ikinci el lens seçeneği",
+      "Yeni model ve lens çıkışı azalıyor, genelde daha hacimli",
+      "Optik vizör sevenler ve ikinci el ekipmanla başlamak isteyenler"
+     ],
+     [
+      "Kompakt",
+      "Taşınabilir, tek parça, lens derdi yok",
+      "Lens değişmez, sensörler genellikle daha küçük",
+      "Seyahat, günlük kullanım, sade kullanım isteyenler"
+     ],
+     [
+      "Aksiyon kamera",
+      "Dayanıklı, kompakt, çok geniş açı, güçlü sabitleme",
+      "Düşük ışıkta zayıf, optik zum yok, sabit geniş açı",
+      "Spor, su altı, araç ve kaska takılan çekimler"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Sensör boyutu sonucu nasıl etkiler?",
+   "p": [
+    "Sensör, ışığı görüntüye dönüştüren parçadır. Büyük sensör aynı koşulda daha fazla ışık toplar; bu genellikle yüksek ISO'da daha az gren, daha geniş dinamik aralık ve aynı kadrajda daha sığ alan derinliği, yani arka planın daha kolay bulanıklaşması anlamına gelir. Bunun karşılığında gövde ve özellikle lensler büyür, ağırlaşır ve daha pahalı hâle gelir.",
+    "Kırpma faktörü, bir sensörün 36 × 24 mm'lik tam kare (full frame) sensöre göre ne kadar küçük olduğunu gösterir. APS-C sensörlü bir kamerada 50 mm'lik lens, tam kare bir kameradaki yaklaşık 75–80 mm'lik lensin görüş açısını verir. Bu, uzak konular için avantaj, geniş açı çekimlerde ise dezavantajdır."
+   ],
+   "table": {
+    "head": [
+     "Sensör formatı",
+     "Kırpma faktörü (yaklaşık)",
+     "Tipik kullanım",
+     "Dikkat edilecek nokta"
+    ],
+    "rows": [
+     [
+      "Tam kare (full frame)",
+      "1×",
+      "Düşük ışık, portre, profesyonel kullanım",
+      "Gövde ve lensler daha büyük ve ağır"
+     ],
+     [
+      "APS-C",
+      "1,5× (Canon'da 1,6×)",
+      "Hobi ve yarı profesyonel kullanım, seyahat, spor",
+      "Geniş açı lens seçimine dikkat edin"
+     ],
+     [
+      "Micro Four Thirds",
+      "2×",
+      "Kompakt sistem, video, doğa çekimi",
+      "Sığ alan derinliği elde etmek daha zordur"
+     ],
+     [
+      "1 inç",
+      "2,7×",
+      "Gelişmiş kompakt kameralar",
+      "Telefonlardan büyük, APS-C'den küçük"
+     ]
+    ]
+   },
+   "note": "Sensör boyutu tek başına kaliteyi belirlemez. İyi bir lensle kullanılan APS-C kamera, zayıf bir lensle kullanılan tam kare kameradan daha iyi sonuç verebilir."
+  },
+  {
+   "h": "Lens sistemi: gövdeden daha uzun ömürlü yatırım",
+   "p": [
+    "Değiştirilebilir lensli bir kamera aldığınızda aslında bir lens yuvasına, yani bir sisteme giriyorsunuz. Gövdeleri birkaç yılda bir yenileyebilirsiniz ama iyi lensler çok daha uzun süre kullanılır. Bu yüzden markayı seçerken yalnızca gövdeye değil, o yuvada ihtiyacınız olan lenslerin bulunup bulunmadığına, üçüncü parti lens üreticilerinin bu yuvayı destekleyip desteklemediğine ve ikinci el lens pazarına da bakın.",
+    "Gövdeyle birlikte satılan kit lensler genellikle geniş açıdan kısa telefotoya uzanan, hafif ve ekonomik zumlardır. Başlamak için uygundurlar ama düşük ışıkta sınırlı kalırlar. Sabit odaklı (prime) bir lens, örneğin geniş diyaframlı 35 mm ya da 50 mm, iç mekânda ve portrede çoğu zaman en büyük kalite sıçramasını sağlar. Spor ve doğa için ise uzun telefoto zumlar gerekir; bunların boyutunu ve ağırlığını önceden kontrol edin."
+   ]
+  },
+  {
+   "h": "Teknik terimlerin sade açıklaması",
+   "p": [
+    "Ürün sayfalarındaki terimlerin çoğu, gerçekte birkaç temel soruya cevap verir: Ne kadar ışık toplar, ne kadar hızlı odaklar, ne kadar sabit tutar ve videoyu ne kadar uzun ve kaliteli çeker. Aşağıdaki liste en sık karşılaşacağınız terimleri özetler."
+   ],
+   "list": [
+    "Megapiksel: Görüntüdeki piksel sayısı. Büyük baskı ve sonradan kırpma için faydalıdır; düşük ışık performansını tek başına belirlemez.",
+    "ISO: Sensör sinyalinin ne kadar yükseltildiğini gösterir. Yüksek ISO karanlıkta çekmeyi sağlar ama gren artar.",
+    "IBIS (gövde içi sabitleme): Sensörü hareket ettirerek el titremesini dengeler; takılan her lensle çalışır.",
+    "OIS (optik sabitleme): Lensin içindeki optik elemanlarla titreşimi dengeler. Bazı gövdeler IBIS ile OIS'i birlikte kullanır.",
+    "EIS (elektronik sabitleme): Görüntüyü yazılımla kırpıp kaydırarak sabitler; özellikle aksiyon kameralarda ve videoda kullanılır.",
+    "EVF: Elektronik vizör. Gözünüzü dayadığınız küçük ekrandır; güneş altında arka ekrandan daha rahat kullanılır.",
+    "Konu algılamalı otomatik odak: Kameranın göz, yüz, hayvan veya araç gibi konuları tanıyıp takip etmesi.",
+    "RAW: İşlenmemiş sensör verisi. Düzenlemede beyaz dengesi ve pozlamada çok daha fazla esneklik sağlar, daha fazla yer kaplar.",
+    "Rolling shutter: Sensörün satır satır okunmasından doğan, hızlı hareketlerde dikey çizgilerin eğilmesi şeklinde görülen bozulma.",
+    "10 bit ve log profili: Videoda renk düzenlemesi için daha fazla bilgi saklayan kayıt seçenekleri; sonradan renk ayarı yapacaklar için anlamlıdır."
+   ]
+  },
+  {
+   "h": "Video çekecekseniz nelere bakmalı?",
+   "p": [
+    "Video için kamera seçerken çözünürlük kadar, o çözünürlükte ne kadar süre ve hangi koşulda kayıt yapılabildiği önemlidir. Bazı kompakt gövdeler sıcak havada veya uzun 4K kayıtlarda ısınarak kaydı durdurabilir. Konferans, düğün ya da uzun röportaj çekecekseniz ürün incelemelerinde ısınma ve kayıt süresi bilgisine özellikle bakın.",
+    "Kendinizi çekiyorsanız öne çevrilebilen ekran, harici mikrofon girişi ve güvenilir yüz/göz takibi gerekir. Elde yürürken çekim için gövde içi sabitleme veya iyi bir elektronik sabitleme fark yaratır; elektronik sabitleme görüntüyü bir miktar kırpar, bu yüzden geniş açılı bir lensle birlikte düşünülmelidir. Kartınızın da kameranın veri hızına yetişmesi gerekir. SD kartlardaki V30, V60, V90 gibi video hız sınıfı işaretleri, kartın garanti ettiği en düşük yazma hızını megabayt/saniye cinsinden gösterir; kameranın kılavuzunda hangi kayıt modunun hangi sınıfı istediği belirtilir."
+   ]
+  },
+  {
+   "h": "Kullanım senaryonuza göre öneriler",
+   "p": [
+    "Aynı bütçeyle farklı kullanıcılar için en doğru kamera farklıdır. Aşağıdaki öneriler, öncelikleri sıralamanıza yardımcı olmak içindir; belirli bir model yerine hangi özelliklere ağırlık vermeniz gerektiğini anlatır."
+   ],
+   "list": [
+    "Aile ve günlük anılar: Hızlı ve güvenilir otomatik odak, hafif gövde ve geniş açıdan kısa telefotoya uzanan bir kit lens. Sonradan iç mekân için geniş diyaframlı bir prime lens eklemek büyük fark yaratır.",
+    "Seyahat: Taşınabilirlik ilk sırada gelir. Küçük bir aynasız gövde ile geniş aralıklı tek bir zum ya da büyük sensörlü kompakt bir kamera, çantada taşımaktan vazgeçmeyeceğiniz bir çözüm sunar.",
+    "Vlog ve içerik üretimi: Öne dönen ekran, mikrofon girişi, iyi sabitleme, ısınma direnci ve geniş açılı lens. Megapiksel burada ikinci plandadır.",
+    "Spor, kuş ve doğa: Hızlı konu takipli otomatik odak, yüksek seri çekim hızı, iyi tutuşlu gövde ve uzun telefoto lens desteği. APS-C ve Micro Four Thirds'ün kırpma faktörü uzak konularda avantaj sağlar.",
+    "Fotoğraf öğrencisi veya yeni başlayan: Manuel kontrolleri kolay erişilebilen düğme ve kadranlar, RAW kayıt ve geniş lens sistemine sahip bir gövde. İkinci el bir gövdeye kaliteli bir prime lens eklemek iyi bir başlangıç olabilir.",
+    "Basit kullanım isteyen ve büyük yazı, az menü tercih edenler: Büyük ve net bir ekran, iyi otomatik modlar, hafif gövde ve telefona kolay aktarım. Bu kullanıcılar için büyük sensörlü kompakt kameralar çoğu zaman lens değiştirmekten daha pratiktir.",
+    "Su sporları, bisiklet ve kask çekimi: Aksiyon kamera; su geçirmezlik derinliğini, montaj aparatlarını ve pil ömrünü kontrol edin."
+   ]
+  },
+  {
+   "h": "Ergonomi, pil ve dayanıklılık",
+   "p": [
+    "Kağıt üzerinde en iyi görünen kamera, elinizde rahat değilse çantada kalır. Mümkünse mağazada gövdeyi elinize alın; parmaklarınızın tutamağa sığıp sığmadığına, sık kullanacağınız ayarlara (ISO, pozlama telafisi, odak noktası) düğmelerle hızlı ulaşıp ulaşamadığınıza ve vizöre gözlükle rahat bakıp bakamadığınıza dikkat edin.",
+    "Pil ömrü için üreticilerin verdiği şarj başına kare sayısı genellikle CIPA adlı standart test yöntemine göre ölçülür. Gerçek kullanımda, özellikle ekran ve kablosuz bağlantı açıkken bu sayı değişebilir; yedek pil almak çoğu kullanıcı için gereklidir. USB-C ile şarj ya da güç alabilen gövdeler seyahatte işinizi kolaylaştırır. Toz ve neme karşı yalıtım belirtilen gövdeler yağmurda ve tozlu ortamda daha güvenlidir, ancak bu yalıtım su geçirmezlik anlamına gelmez ve takılan lensin de yalıtımlı olması gerekir."
+   ]
+  },
+  {
+   "h": "En sık yapılan satın alma hataları",
+   "p": [
+    "Kamera alırken yapılan hataların çoğu, bir rakamı tek başına karşılaştırmaktan ya da toplam sistem maliyetini hesaba katmamaktan kaynaklanır. Aşağıdakiler en yaygın olanlardır."
+   ],
+   "list": [
+    "Megapiksele göre seçmek: Yüksek megapiksel düşük ışıkta veya hızlı konularda daha iyi sonuç garantisi vermez, dosyalar büyür ve daha hızlı kart, daha fazla depolama gerekir.",
+    "Bütçenin tamamını gövdeye harcamak: Lens, ikinci pil, hızlı hafıza kartı ve çanta için pay ayırmamak, kit lensle sınırlı kalmanıza yol açar.",
+    "Lens yuvasını araştırmamak: İleride almak istediğiniz lenslerin bu sistemde bulunup bulunmadığına bakmadan gövde seçmek.",
+    "Videoda ısınma ve kayıt süresini kontrol etmemek: Uzun kayıt yapacaksanız bu bilgi çözünürlükten daha önemlidir.",
+    "Boyut ve ağırlığı küçümsemek: Büyük bir telefoto lensle birlikte toplam ağırlığı taşıyıp taşımayacağınızı düşünmeden almak.",
+    "Garanti durumunu kontrol etmemek: Türkiye'de geçerli garanti belgesi ve yetkili servis desteği olmayan ürünlerde onarım süreci zorlaşabilir.",
+    "İkinci elde deklanşör sayısını ve sensörü kontrol etmemek: Kullanılmış gövdelerde deklanşör sayısını, sensörde çizik veya leke olup olmadığını ve lens yuvasının durumunu inceleyin."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "p": [
+    "Mağazaya veya sipariş sayfasına gitmeden önce aşağıdaki maddeleri tek tek yanıtlayın. Cevaplayamadığınız madde varsa, o konuyu netleştirmeden satın almayı ertelemek daha doğrudur."
+   ],
+   "list": [
+    "Kamerayı en çok ne çekmek için kullanacağım: insan, manzara, spor, hayvan, video?",
+    "Telefonumun bu işte yetersiz kaldığı somut durum ne?",
+    "Gövde ile birlikte gerçekten kullanacağım lens veya lensler belli mi?",
+    "Sensör boyutu, taşıyabileceğim ağırlık ve lens boyutlarıyla dengeli mi?",
+    "Video çekecek miyim; çekeceksem ısınma, mikrofon girişi, döner ekran ve sabitleme yeterli mi?",
+    "Ek pil, kameranın istediği hız sınıfında hafıza kartı ve koruyucu çanta bütçede var mı?",
+    "Gövdeyi elime aldım mı; tutuş, düğmeler ve vizör bana uygun mu?",
+    "Türkiye'de geçerli garanti ve yetkili servis desteği var mı?",
+    "İkinci el alıyorsam deklanşör sayısı, sensör ve lens yuvası kontrol edildi mi?",
+    "Fotoğrafları telefona veya bilgisayara aktarma yöntemi (uygulama, kart okuyucu) bana uygun mu?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Aynasız mı DSLR mı almalıyım?",
+   "a": "Yeni bir sisteme başlayacak ve zamanla lens ekleyecekseniz aynasız kameralar daha güncel otomatik odak ve daha geniş yeni lens seçeneği sunar. Optik vizörü seviyorsanız veya ikinci el ekipmanla düşük maliyetle başlamak istiyorsanız DSLR hâlâ işinizi görebilir. Karar verirken yeni lens çıkışlarının ağırlıkla aynasız sistemlerde olduğunu göz önünde bulundurun."
+  },
+  {
+   "q": "Tam kare (full frame) sensör şart mı?",
+   "a": "Şart değildir. APS-C ve Micro Four Thirds kameralar çoğu hobi ve yarı profesyonel kullanım için yeterli sonuç verir, üstelik gövde ve lensleri daha küçüktür. Tam kare, çok düşük ışıkta sık çekim yapıyorsanız veya en sığ alan derinliğini istiyorsanız belirgin avantaj sağlar."
+  },
+  {
+   "q": "Kaç megapiksel yeterli?",
+   "a": "Ekranda görüntüleme ve orta boy baskı için güncel kameraların büyük kısmının sunduğu çözünürlük yeterlidir. Daha yüksek megapiksel, büyük baskı ve sonradan çok kırpma yapacaksanız işe yarar. Düşük ışık ve hızlı konu takibi için sensör boyutu, lens ve otomatik odak daha belirleyicidir."
+  },
+  {
+   "q": "Kit lensle başlamak mantıklı mı?",
+   "a": "Evet, kit lens geniş bir odak aralığını hafif bir pakette sunduğu için başlangıç için uygundur. Bir süre kullandıktan sonra hangi odak uzaklığında çok çektiğinizi görürsünüz; ikinci lensi bu deneyime göre seçmek, baştan pahalı bir lens almaktan daha isabetli olur."
+  },
+  {
+   "q": "Vlog için ayrı bir kamera mı, telefon mu?",
+   "a": "Gün ışığında kısa içerikler için telefon çoğu zaman yeterlidir. Uzun çekim, iç mekân, arka plan bulanıklığı ve daha iyi ses kaydı istiyorsanız öne dönen ekranlı ve mikrofon girişli bir kamera fark yaratır. Isınma ve pil süresi, vlog kameralarında en çok dikkat edilmesi gereken konulardır."
+  },
+  {
+   "q": "İkinci el kamera alırken nelere dikkat etmeliyim?",
+   "a": "Deklanşör sayısını, sensörde çizik veya kalıcı leke olup olmadığını, lens yuvasında aşınma ya da gevşeklik bulunup bulunmadığını ve tüm düğmelerin çalıştığını kontrol edin. Mümkünse birkaç test fotoğrafı çekip bilgisayarda büyüterek inceleyin. Satıcıdan fatura veya garanti belgesi istemek, ürünün geçmişini anlamanızı kolaylaştırır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: 35 mm equivalent focal length (kırpma faktörleri)",
+   "u": "https://en.wikipedia.org/wiki/35_mm_equivalent_focal_length"
+  },
+  {
+   "t": "SD Association: SD Speed Class",
+   "u": "https://www.sdcard.org/consumers/speed-class/"
+  }
+ ]
+}

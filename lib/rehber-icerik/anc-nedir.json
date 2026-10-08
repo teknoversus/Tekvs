@@ -1,0 +1,141 @@
+{
+ "slug": "anc-nedir",
+ "title": "ANC Nedir? Aktif Gürültü Engelleme Nasıl Çalışır, Neyi Susturur?",
+ "description": "Aktif gürültü engelleme (ANC) nasıl çalışır, hangi sesleri bastırır, hangilerinde zayıf kalır? Kulaklık alırken ANC'de nelere bakmanız gerektiğini anlattık.",
+ "tldr": "ANC, kulaklıktaki mikrofonların dış gürültüyü dinleyip ona karşı ters fazlı bir ses üretmesiyle çalışır; iki dalga kulağınızda birbirini zayıflatır. Uçak motoru, otobüs uğultusu, klima gibi sürekli ve pes sesleri belirgin biçimde azaltır, konuşma ve ani tiz sesleri ise daha az bastırır. En iyi sonucu, kulağa iyi oturan bir kulaklıkla pasif yalıtım birlikte verir.",
+ "intro": [
+  "Metrobüste müzik sesini sonuna kadar açtığınız hâlde motor uğultusu hâlâ duyuluyorsa, ANC'li bir kulaklığın tam olarak bu sorunu çözmek için tasarlandığını bilmek işinize yarar. Ancak ANC sihirli bir sessizlik düğmesi değildir. Bazı sesleri neredeyse yok ederken, yanınızda konuşan birinin sesini ya da bir bebeğin ağlamasını ancak kısmen azaltır.",
+  "Aşağıda ANC'nin fiziksel olarak nasıl çalıştığını, ürün sayfalarında gördüğünüz “hibrit ANC”, “şeffaflık modu”, “uyarlanabilir ANC” gibi terimlerin ne anlama geldiğini ve satın alırken hangi noktaların gerçekten fark yarattığını sade bir dille bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "ANC fiziksel olarak nasıl çalışır?",
+   "p": [
+    "Ses, havada ilerleyen basınç dalgalarıdır. Bir dalganın tepe noktasıyla başka bir dalganın çukuru aynı anda üst üste gelirse, ikisi birbirini büyük ölçüde sönümler. Buna yıkıcı girişim denir ve ANC'nin temel fikri budur.",
+    "Kulaklıktaki mikrofonlar ortam sesini sürekli örnekler. Kulaklığın içindeki işlemci bu sesin tersi fazda bir “karşı ses” hesaplar ve hoparlörden müziğinizle birlikte çalar. Kulağınıza ulaşan dış gürültü ile bu karşı ses birbirini zayıflatır, geriye çok daha düşük bir uğultu kalır.",
+    "Bu hesaplama saniyenin binde biri gibi çok kısa sürelerde yapılmak zorundadır. Gürültü ne kadar düzenli ve tahmin edilebilirse, kulaklık onu o kadar isabetli bastırır. Bu yüzden ANC'nin başarısı, gürültünün türüne doğrudan bağlıdır."
+   ]
+  },
+  {
+   "h": "İleri beslemeli, geri beslemeli ve hibrit ANC farkı",
+   "p": [
+    "Ürün sayfalarında “hibrit ANC” ifadesini sıkça görürsünüz. Bu, mikrofonların nereye yerleştirildiğiyle ilgilidir. Dışarıya bakan mikrofon gürültüyü kulağa ulaşmadan önce yakalar; buna ileri beslemeli (feedforward) yapı denir. Kulak kanalına bakan mikrofon ise kulağınıza gerçekten ulaşan sesi ölçer ve hatayı düzeltir; buna geri beslemeli (feedback) yapı denir.",
+    "Apple da AirPods destek sayfasında bu ikili yapıyı anlatır: dışa bakan mikrofonlar dış sesleri algılar, içe bakan mikrofon kulağın içinde kalan istenmeyen sesi dinler ve kulaklık her ikisine karşı da önlem alır. Hibrit sistemler iki yaklaşımın güçlü yanlarını birleştirdiği için genelde daha geniş bir frekans aralığında etkili olur."
+   ],
+   "table": {
+    "head": [
+     "Yapı",
+     "Mikrofon konumu",
+     "Güçlü yanı",
+     "Zayıf yanı"
+    ],
+    "rows": [
+     [
+      "İleri beslemeli (feedforward)",
+      "Kulaklığın dış yüzeyi",
+      "Gürültüyü kulağa ulaşmadan önce yakalar",
+      "Rüzgâr sesine duyarlıdır, kulağa oturuşu kontrol edemez"
+     ],
+     [
+      "Geri beslemeli (feedback)",
+      "Kulak kanalına bakan iç taraf",
+      "Kulağa gerçekten ulaşan sesi düzeltir",
+      "Etkili olduğu frekans aralığı daha dardır"
+     ],
+     [
+      "Hibrit",
+      "Hem dışta hem içte",
+      "İkisinin avantajlarını birleştirir",
+      "Daha karmaşık ve genelde daha pahalı tasarımdır"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "ANC hangi sesleri iyi bastırır, hangilerinde zayıf kalır?",
+   "p": [
+    "ANC en iyi sonucu sürekli, tekdüze ve pes (düşük frekanslı) seslerde verir. Uçak kabinindeki motor uğultusu, otobüs ve metro gürültüsü, buzdolabı ya da klima vınlaması bu gruba girer. Bu seslerin dalga boyu uzundur ve zaman içinde fazla değişmez, bu yüzden karşı sesi doğru hesaplamak kolaydır.",
+    "İnsan sesi, klavye tıkırtısı, kapı çarpması veya köpek havlaması gibi ani ve tiz sesler ise çok hızlı değişir. Elektronik sistem bunlara yetişmekte zorlanır. Bu tür seslerde asıl işi kulaklığın pasif yalıtımı yapar: kulak yastıklarının kulağı ne kadar iyi sardığı ya da kulak içi ucun kanalı ne kadar iyi kapattığı.",
+    "Pratikte şöyle düşünebilirsiniz: ANC açıkken bir kafede motor sesi kaybolur ama yan masadaki sohbet hâlâ duyulur, yalnızca daha uzaktan geliyormuş gibi gelir. Bu bir arıza değil, teknolojinin doğal sınırıdır."
+   ],
+   "list": [
+    "İyi bastırdığı sesler: uçak ve araç motoru, tren uğultusu, klima, fan, buzdolabı, düzenli trafik gürültüsü",
+    "Kısmen azalttığı sesler: kalabalık uğultusu, uzaktan gelen konuşmalar",
+    "Zayıf kaldığı sesler: yakındaki konuşma, bebek ağlaması, korna, kapı çarpması, alarm"
+   ]
+  },
+  {
+   "h": "Pasif yalıtım ve kulağa oturuş neden bu kadar önemli?",
+   "p": [
+    "Aynı ANC sistemi, kulağa iyi oturmayan bir kulaklıkta belirgin biçimde daha zayıf çalışır. Kulak içi modellerde yanlış boy uç kullanmak ya da kulak üstü modellerde gözlük sapının yastığı aralaması, dış sesin kontrolsüz biçimde sızmasına yol açar. Bu sızıntı hem pasif yalıtımı bozar hem de ANC'nin hesapladığı karşı sesin isabetini düşürür.",
+    "Bazı üreticiler uygulamalarında “kulak ucu uyum testi” gibi bir kontrol sunar. Böyle bir seçenek varsa kullanın; yoksa farklı boy uçları deneyip bas seslerin en dolgun duyulduğu boyu seçmek pratik bir yöntemdir. Bas sesler belirgin şekilde zayıfsa, kulaklık büyük olasılıkla kanalı tam kapatmıyordur."
+   ],
+   "note": "ANC'den memnun kalmadıysanız önce kulak ucu boyunu değiştirip tekrar deneyin. Sorun çoğu zaman kulaklıkta değil, oturuştadır."
+  },
+  {
+   "h": "Şeffaflık modu ve uyarlanabilir ANC ne işe yarar?",
+   "p": [
+    "Şeffaflık (transparency, ambient) modu ANC'nin neredeyse tersidir: dış mikrofonların topladığı sesi kulağınıza bilinçli olarak verir. Kulaklığı çıkarmadan anons dinlemek, kasada kısa bir konuşma yapmak ya da yolda yürürken trafiği duymak için kullanılır. Bisiklet, scooter veya yaya olarak trafikteyken ANC yerine bu modu tercih etmek güvenliğiniz açısından önemlidir.",
+    "Uyarlanabilir ya da otomatik ANC, ortam gürültüsünü ölçüp bastırma gücünü kendisi ayarlar. Sessiz bir odada gereksiz işlem yapmayıp kalabalık bir istasyonda gücü artırır. Bazı modeller konuşmaya başladığınızı algılayıp müziği kısarak şeffaflık moduna da geçebilir. Bu özelliklerin adı ve ayarı markaya göre değişir, genellikle üreticinin eşlik uygulamasından yönetilir."
+   ]
+  },
+  {
+   "h": "ANC'nin pil ömrüne ve konfora etkisi",
+   "p": [
+    "ANC sürekli çalışan mikrofonlar ve işlemci gerektirdiği için ek enerji harcar. Bu nedenle üreticiler pil ömrünü çoğu zaman “ANC açık” ve “ANC kapalı” olarak iki ayrı değerle verir. Ürünleri karşılaştırırken her zaman ANC açık değerine bakın; uzun uçuşlarda gerçek kullanımınız o olacaktır.",
+    "Bazı kullanıcılar ANC açıkken kulaklarında hafif bir basınç ya da “tıkanma” hissi tarif eder. Bu hissin, pes seslerin aniden kaybolmasının algıda yarattığı bir etki olduğu düşünülür ve kişiden kişiye çok değişir. Rahatsız ediyorsa daha düşük ANC seviyesini ya da uyarlanabilir modu deneyebilirsiniz.",
+    "ANC'nin yararlı bir yan etkisi de vardır: gürültülü ortamda müziği daha düşük seste dinleyebilirsiniz. Motor uğultusunu bastırmak için sesi yükseltmek zorunda kalmamak, uzun süreli dinlemede kulak sağlığı açısından olumlu bir alışkanlıktır."
+   ]
+  },
+  {
+   "h": "ANC'li kulaklık alırken nelere bakmalı?",
+   "p": [
+    "Teknik veri sayfasında ANC'nin ne kadar iyi olduğunu gösteren standart bir ölçü yoktur. Üreticilerin verdiği “şu kadar desibel azaltma” rakamları farklı yöntemlerle ölçüldüğü için markalar arasında doğrudan karşılaştırılamaz. Bu yüzden aşağıdaki somut özelliklere bakmak daha güvenilir bir yoldur."
+   ],
+   "list": [
+    "Hibrit ANC olup olmadığı (iç ve dış mikrofon)",
+    "Kulak içi modellerde kutudan çıkan farklı boy uç sayısı, kulak üstü modellerde yastık yapısı",
+    "ANC açıkken verilen pil ömrü",
+    "Şeffaflık modunun bulunması ve tek dokunuşla açılıp açılmadığı",
+    "Uyarlanabilir ANC ve rüzgâr gürültüsü azaltma seçeneği",
+    "Eşlik uygulamasıyla ANC seviyesinin ayarlanabilmesi",
+    "Kullanım senaryonuza uygun form: uçakta uzun süre kulak üstü, sporda kulak içi daha pratiktir"
+   ]
+  },
+  {
+   "h": "ANC hakkında yaygın yanlış bilinenler",
+   "p": [
+    "En yaygın yanlış, ANC'nin her sesi sıfırlayacağı beklentisidir. Yukarıda anlatıldığı gibi teknoloji en çok pes ve sürekli seslerde etkilidir. İkinci yanlış, “ANC ses kalitesini bozar” düşüncesidir; iyi tasarlanmış modellerde etki çok azdır, ancak bazı kulaklıklar ANC açıkken ton dengesini hafifçe değiştirebilir. Bunu dinleyerek kendiniz karşılaştırabilirsiniz.",
+    "Üçüncü yanlış, telefon görüşmelerindeki “ENC” ya da “çağrı gürültü azaltma” özelliğini ANC ile karıştırmaktır. Çağrı gürültü azaltma, karşı tarafın sizin sesinizi daha temiz duyması için mikrofon sinyalini temizler; sizin duyduğunuz ortam gürültüsünü azaltmaz. Bir ürün yalnızca çağrı gürültü azaltma sunuyorsa, metroda motor uğultusunu bastırmasını beklemeyin."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "ANC kulak sağlığına zararlı mı?",
+   "a": "ANC'nin kulağa zarar verdiğine dair kabul görmüş bir bulgu yoktur. Aksine, gürültülü ortamda müziği daha düşük seste dinlemenize olanak tanıdığı için ses düzeyini makul tutmanıza yardımcı olabilir. Kulakta ağrı, çınlama ya da işitme kaybı fark ederseniz bunun nedenini bir hekime danışın."
+  },
+  {
+   "q": "ANC'yi müzik çalmadan kullanabilir miyim?",
+   "a": "Evet, çoğu ANC'li kulaklık müzik çalmadan da gürültü engelleme yapar. Uçakta uyumak ya da açık ofiste odaklanmak için bu şekilde kullanılabilir. Pil tükettiğini ve kulaklığın açık kalması gerektiğini göz önünde bulundurun."
+  },
+  {
+   "q": "ANC açıkken rüzgârda neden hışırtı duyuyorum?",
+   "a": "Dış mikrofonlara çarpan rüzgâr, sistemin gürültü sanıp işlemeye çalıştığı düzensiz bir sinyal üretir. Bazı modellerde rüzgâr gürültüsü azaltma modu bulunur. Böyle bir mod yoksa rüzgârlı havada ANC seviyesini düşürmek veya kapatmak hışırtıyı azaltır."
+  },
+  {
+   "q": "ANC ile pasif gürültü yalıtımı arasındaki fark nedir?",
+   "a": "Pasif yalıtım, kulak yastığı veya kulak içi ucun fiziksel olarak sesi engellemesidir ve elektrik gerektirmez. ANC ise mikrofon ve işlemciyle karşı ses üretir. Pasif yalıtım tiz seslerde, ANC pes seslerde daha etkilidir; iyi bir kulaklık ikisini birlikte kullanır."
+  },
+  {
+   "q": "Kulak içi mi kulak üstü mü ANC daha güçlü?",
+   "a": "Genel bir kural koymak zordur, çünkü sonuç tasarıma ve kulağa oturuşa bağlıdır. Kulak üstü modeller daha geniş yüzeyle daha fazla pasif yalıtım sağlayabilir, kulak içi modeller doğru uçla kanalı iyi kapatabilir. Mümkünse satın almadan önce kendi kulağınızda denemek en doğru karşılaştırmadır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: AirPods için Aktif Gürültü Engelleme ve Şeffaflık modları",
+   "u": "https://support.apple.com/en-kg/HT210643"
+  }
+ ]
+}

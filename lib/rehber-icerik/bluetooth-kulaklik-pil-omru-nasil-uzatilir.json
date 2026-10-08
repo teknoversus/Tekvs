@@ -1,0 +1,146 @@
+{
+ "slug": "bluetooth-kulaklik-pil-omru-nasil-uzatilir",
+ "title": "Bluetooth Kulaklığın Pil Ömrü Nasıl Uzatılır? Günlük ve Uzun Vadeli",
+ "description": "Kablosuz kulaklığın tek şarjda daha uzun gitmesi ve pilin yıllarca dayanması için ayarlar, şarj alışkanlıkları, saklama ve sıcaklık önerileri.",
+ "tldr": "Tek şarjda daha uzun kullanım için gürültü engellemeyi ve yüksek ses seviyesini gerektiğinde kullanın, kulaklık kullanılmadığında kutuya koyun. Pilin yıllar içinde daha az yıpranması için kulaklığı ve kutuyu sıcakta bırakmayın, uzun süre tam dolu ya da tamamen boş bekletmeyin ve varsa optimize şarj özelliğini açın. Kulak içi kulaklıkların pili çoğu zaman kullanıcı tarafından değiştirilemediği için bu alışkanlıklar cihazın toplam ömrünü belirler.",
+ "intro": [
+  "Kablosuz kulaklıkta “pil ömrü” iki ayrı şey anlamına gelir. Birincisi, bir şarjla kaç saat dinleyebildiğinizdir. İkincisi, pilin bir ya da iki yıl sonra hâlâ ilk günkü süreye yakın dayanıp dayanmadığıdır. İlki ayarlarla, ikincisi şarj ve saklama alışkanlıklarıyla ilgilidir.",
+  "Bu ayrım önemlidir, çünkü kulak içi kulaklıkların içindeki küçük piller telefondaki gibi kolayca değiştirilemez. Pil yıprandığında çoğu zaman kulaklığın kendisi ya da en azından bir tarafı yenilenir. Aşağıda önce günlük süreyi uzatan ayarları, sonra pilin yıllar içinde daha yavaş yıpranmasını sağlayan alışkanlıkları ele alıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Bir şarjla kullanım süresini en çok ne kısaltır?",
+   "p": [
+    "Üreticilerin kutuda yazdığı süreler belirli bir ses seviyesi ve ayarla ölçülür; gerçek kullanımda farklı sonuç almanız olağandır. Pili en çok tüketen özellikler sürekli çalışan işlemciler ve mikrofonlar gerektirenlerdir. Aktif gürültü engelleme (ANC) dış sesi sürekli dinleyip karşı sinyal ürettiği için ek güç çeker. Şeffaf mod da mikrofonları açık tutar.",
+    "Ses seviyesi yükseldikçe hoparlörü süren devre daha fazla güç harcar. Uzamsal ses, kafa takibi, sesli asistanın sürekli dinlemesi ve iki cihaza aynı anda bağlantı gibi özellikler de küçük ama sürekli bir yük ekler. Zayıf sinyalde kulaklığın bağlantıyı korumak için daha çok çalışması da tüketimi artırabilir."
+   ],
+   "table": {
+    "head": [
+     "Ayar veya özellik",
+     "Pile etkisi",
+     "Ne zaman kapatılabilir"
+    ],
+    "rows": [
+     [
+      "Aktif gürültü engelleme",
+      "Belirgin ek tüketim",
+      "Sessiz ev veya ofis ortamında"
+     ],
+     [
+      "Şeffaf mod",
+      "Mikrofonlar açık kalır",
+      "Çevreyi duymanız gerekmediğinde"
+     ],
+     [
+      "Yüksek ses seviyesi",
+      "Hoparlör daha çok güç çeker",
+      "Her zaman; işitme sağlığı için de"
+     ],
+     [
+      "Uzamsal ses / kafa takibi",
+      "Ek işlem yükü",
+      "Müzik ve podcast dinlerken"
+     ],
+     [
+      "Sesli asistan uyandırma kelimesi",
+      "Mikrofon sürekli dinler",
+      "Kullanmıyorsanız"
+     ],
+     [
+      "İki cihaza bağlantı (multipoint)",
+      "İki bağlantı açık tutulur",
+      "İkinci cihaza ihtiyaç olmayan günlerde"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Günlük kullanımda pili koruyan alışkanlıklar",
+   "p": [
+    "Ayarların yanı sıra kulaklığı nasıl kullandığınız da süreyi etkiler. Basit birkaç alışkanlık, gün sonunda kutuya fazladan şarj için koşmanızı önler."
+   ],
+   "list": [
+    "Kulaklığı çıkardığınızda masada bırakmak yerine kutuya koyun; çoğu model kutuda kapanır ve şarj olur.",
+    "Kulak algılama sensörü varsa açık tutun; kulaklık çıkarıldığında çalmayı durdurur.",
+    "Telefonu kulaklığa yakın tutun; arka cepte ya da çantanın dibinde kalan telefon bağlantıyı zorlar.",
+    "Kafa üstü modellerde kullanım bitince kulaklığı kapatın ya da kendi kılıfına koyun; bazı modeller kılıfta uyku moduna geçer.",
+    "Kulaklık yazılımını güncel tutun; güncellemeler bazen güç yönetimini iyileştirir."
+   ]
+  },
+  {
+   "h": "Pil neden yıpranır? Lityum pillerin hassas noktaları",
+   "p": [
+    "Kulaklıklarda kullanılan lityum iyon piller her şarj-deşarj döngüsünde kapasitelerinden bir miktar kaybeder; bu kaçınılmazdır. Ancak yıpranmanın hızı koşullara göre değişir. İki etken öne çıkar: sıcaklık ve pilin uzun süre yüksek şarj seviyesinde beklemesi. Bu ikisi birleştiğinde, yani pil sıcak bir ortamda tam dolu beklediğinde yıpranma hızlanır.",
+    "Pilin tamamen boşalana kadar kullanılması da derin döngü yaratır ve pili daha çok yorar. Kısmi şarj ve deşarjlar pil için daha az yıpratıcıdır. Bu yüzden eski nikel pillerden kalma “pili tamamen bitirip öyle şarj edin” tavsiyesi lityum piller için geçerli değildir."
+   ]
+  },
+  {
+   "h": "Şarj alışkanlıkları ve optimize şarj özelliği",
+   "p": [
+    "Kulaklığın sürekli kutuda yüzde yüzde beklemesi, uzun vadede pil için ideal değildir. Bazı üreticiler bu yüzden şarjı belirli bir seviyede durduran ya da kullanım alışkanlığınızı öğrenip tam doluluğu son ana bırakan özellikler sunar. Apple'a göre AirPods'un desteklenen modellerinde iPhone'da Ayarlar > AirPods adı > Pil bölümünden “Optimize Edilmiş Pil Şarjı” açılabilir; AirPods Pro 3'te bunun yerine kullanımınıza göre şarj sınırı belirleyen “Optimize Edilmiş Şarj Sınırı” bulunur. Diğer markaların uygulamalarında “pil koruma” ya da benzeri adla bir seçenek olup olmadığına bakın.",
+    "Şarj ederken de birkaç noktaya dikkat edin. Kutuyu üreticinin önerdiği güçte, güvenilir bir adaptör ve kabloyla şarj edin. Kablosuz şarj pedleri çalışırken ısı üretir; kutunun pedin üzerinde uzun süre ısınarak beklemesini önlemek için dolduğunda pedden alabilirsiniz. Şarj sırasında kutunun üzerine bir şey örtmeyin."
+   ],
+   "note": "Kutunun da kendi pili vardır ve kulaklıkları her şarj ettiğinde bir döngü harcar. Kutuyu sürekli boş halde taşımak, kulaklıkların da düşük pilde beklemesine yol açar."
+  },
+  {
+   "h": "Uzun süre kullanmayacaksanız nasıl saklamalı?",
+   "p": [
+    "Kulaklığı haftalarca kullanmayacaksanız, ne tamamen dolu ne de tamamen boş bırakın. Pil kaynakları uzun saklama için kısmi şarjı ve serin ortamı önerir; pratikte yaklaşık yarı dolu bir pil iyi bir başlangıçtır. Kulaklıkları kutuda, kutuyu da kuru ve oda sıcaklığında ya da biraz daha serin bir yerde tutun.",
+    "Uzun bekleme sırasında pil kendiliğinden yavaşça boşalır. Tamamen boşalmış bir pil bazı modellerde şarjı kabul etmekte zorlanabilir. Bu yüzden birkaç haftada bir kutuyu kontrol edip gerekiyorsa kısa bir süre şarj edin."
+   ],
+   "ol": [
+    "Kulaklıkları ve kutuyu yaklaşık yarı doluluğa getirin.",
+    "Kulaklıkları kutuya yerleştirip kapağı kapatın.",
+    "Kutuyu doğrudan güneş almayan, kuru ve serin bir çekmecede saklayın.",
+    "Birkaç haftada bir pil seviyesini kontrol edin, gerekirse kısa süre şarj edin.",
+    "Yeniden kullanmaya başlamadan önce tam şarj edin ve yazılım güncellemesi olup olmadığına bakın."
+   ]
+  },
+  {
+   "h": "Sıcaklık: arabada, güneşte ve sporda dikkat",
+   "p": [
+    "Yaz aylarında park halindeki arabanın torpidosu ya da güneş alan bir pencere önü, lityum piller için en zararlı yerlerdendir. Kısa süreli de olsa yüksek sıcaklık kalıcı kapasite kaybına yol açabilir. Kulaklığı arabada bırakmak zorundaysanız torpido yerine güneş görmeyen bir bölmeye koyun.",
+    "Soğuk havada ise pil geçici olarak daha az süre verir; kulaklık ısındığında normal performans döner. Spordan sonra terli kulaklığı doğrudan kutuya koymak kontakları ve kutuyu nemle karşı karşıya bırakır. Kulaklığı kuru bir bezle silip kuruduktan sonra kutuya yerleştirin."
+   ]
+  },
+  {
+   "h": "Pil yıprandığını nasıl anlarsınız, ne zaman servise gitmelisiniz?",
+   "p": [
+    "Kullanım alışkanlığınız değişmediği halde süre belirgin şekilde kısalmışsa, bir taraf diğerinden çok daha çabuk bitiyorsa ya da kulaklık yüzde yirmilerde birden kapanıyorsa pil yıpranmış olabilir. Önce yazılımı güncelleyin ve kulaklığı fabrika ayarlarına döndürüp gözlemleyin; yanlış pil göstergesi bazen yazılımdan kaynaklanır.",
+    "Kulaklığın veya kutunun şiştiğini, kapağın tam kapanmadığını, şarjda aşırı ısındığını ya da koku çıktığını fark ederseniz şarjı hemen bırakın ve cihazı yanıcı olmayan bir yüzeyde tutun. Garanti süresi içindeyseniz yetkili servise başvurun. Kulaklığı açıp pil değiştirmeyi denemeyin: kulak içi modeller genellikle yapıştırılarak kapatılır, açmak garantiyi bitirir ve pili delme riski taşır. Kullanılmaz hale gelen kulaklıkları evsel çöpe değil, elektronik atık veya pil toplama noktalarına bırakın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Kulaklığı her gece kutuda şarjda bırakmak zararlı mı?",
+   "a": "Kulaklıklar dolduğunda şarjı keser, bu yüzden aşırı şarj tehlikesi yoktur. Uzun vadede pili sürekli tam dolu tutmak yıpranmayı bir miktar hızlandırır; optimize şarj özelliği varsa açmak bu etkiyi azaltır. Asıl kaçınılması gereken, şarj sırasında ısınmadır."
+  },
+  {
+   "q": "Gürültü engellemeyi kapatınca pil ne kadar uzar?",
+   "a": "Fark modele göre değişir. Birçok üretici ürün sayfasında pil süresini ANC açık ve kapalı olarak ayrı ayrı verir; kendi kulaklığınız için en doğru bilgi bu değerlerdir. Sessiz ortamlarda ANC'yi kapatmak süreyi uzatır."
+  },
+  {
+   "q": "Yeni kulaklığı ilk kullanımda tamamen boşaltıp doldurmak gerekir mi?",
+   "a": "Hayır. Bu alışkanlık eski pil teknolojilerinden kalmıştır. Lityum iyon pillerde ilk kullanımda özel bir boşalt-doldur işlemine gerek yoktur; kulaklığı kutudan çıkarıp şarj edip kullanmaya başlayabilirsiniz."
+  },
+  {
+   "q": "Hızlı şarj pile zarar verir mi?",
+   "a": "Üreticinin desteklediği hızlı şarj, cihazın kendi şarj devresi tarafından yönetilir ve normal kullanım için tasarlanmıştır. Sorun genellikle kalitesiz adaptör ve kablolardan ya da şarj sırasında oluşan ısıdan çıkar. Güvenilir şarj ekipmanı kullanın ve kutuyu sıcak yüzeylerde şarj etmeyin."
+  },
+  {
+   "q": "Kulak içi kulaklığın pili değiştirilebilir mi?",
+   "a": "Çoğu modelde kullanıcı tarafından değiştirilemez. Bazı markalar yetkili servis üzerinden pil değişimi veya tek kulaklık değişimi sunar. Yetkisiz servislerde yapılan değişim garantiyi geçersiz kılar ve güvenlik riski taşıyabilir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple Destek: AirPods'u şarj etme ve optimize edilmiş pil şarjı",
+   "u": "https://support.apple.com/en-ng/guide/airpods/devde25a4bbe/web"
+  },
+  {
+   "t": "SeaComp: Lityum bazlı pillerin ömrünü uzatma",
+   "u": "https://www.seacomp.com/resources/how-to-prolong-lithium-based-battery-life"
+  }
+ ]
+}

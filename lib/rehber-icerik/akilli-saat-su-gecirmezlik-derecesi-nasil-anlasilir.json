@@ -1,0 +1,136 @@
+{
+ "slug": "akilli-saat-su-gecirmezlik-derecesi-nasil-anlasilir",
+ "title": "Akıllı Saatte Su Geçirmezlik Derecesi Nasıl Anlaşılır? IP68 ve 5ATM",
+ "description": "IP68, 5ATM, 10ATM ne demek? Akıllı saatinizle duşa, havuza ya da denize girip giremeyeceğinizi etiketteki kodlardan nasıl anlarsınız?",
+ "tldr": "IP kodu (ör. IP68) toz ve suya karşı korumayı laboratuvar koşullarında tanımlar; ATM değeri (ör. 5ATM) ise saatin dayandığı statik su basıncını gösterir. Yüzme için ATM değeri ve üreticinin açık izni belirleyicidir; 5ATM sığ suda yüzmeye uygundur ama dalış için uygun değildir.",
+ "intro": [
+  "Akıllı saatlerin kutusunda ya da ürün sayfasında genellikle iki farklı ifade yan yana görünür: IP68 ve 5ATM gibi. Biri toz ve su korumasından, diğeri basınçtan söz eder; ama hiçbiri tek başına saatle denize atlayıp atlayamayacağınızı söylemez. Üstelik suya dayanıklı bir saat bile yanlış kullanımda su alabilir.",
+  "Aşağıda bu kodların hangi standarttan geldiğini, testlerin gerçekte neyi ölçtüğünü ve günlük hayatta hangi aktivitenin hangi dereceyle uyumlu olduğunu sırasıyla açıklıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "IP kodu ne anlatır?",
+   "p": [
+    "IP (Ingress Protection) kodu, uluslararası IEC 60529 standardında tanımlanır. İki haneden oluşur: İlk hane katı cisimlere ve toza, ikinci hane suya karşı korumayı gösterir. IP68'deki 6, cihazın toz geçirmediğini; 8 ise üreticinin belirlediği koşullarda 1 metreden daha derin suya sürekli daldırılmaya dayandığını anlatır.",
+    "Burada iki ayrıntı önemlidir. Birincisi, IPX8 testinin derinliği ve süresi standartta sabit değildir; üretici belirler ve genellikle birkaç metreyle sınırlıdır. İkincisi, su haneleri birbirini kapsamaz. IPX7 (1 metre derinlikte 30 dakika) alan bir cihaz, güçlü su jetlerine karşı test edilen IPX5 veya IPX6 koşullarını otomatik olarak karşılamış sayılmaz. Bir kodun yanında X görüyorsanız (ör. IPX7), o kategori için test yapılmamış ya da beyan edilmemiş demektir."
+   ]
+  },
+  {
+   "h": "ATM ve metre değeri ne anlama geliyor?",
+   "p": [
+    "ATM (atmosfer) değeri saat sektöründen gelir ve suya dayanıklı saatler için ISO 22810:2010 standardıyla ilişkilidir. 1 ATM yaklaşık 10 metre su sütununun basıncına karşılık gelir; bu yüzden 5ATM bazen 50 metre olarak da yazılır. Ancak bu sayı, saatle 50 metreye inebileceğiniz anlamına gelmez.",
+    "Test, yeni üretilmiş saatlerde, durgun suda, tek seferlik ve statik basınçla yapılır. Kolunuzu suya hızla vurduğunuzda, tramplenden atladığınızda ya da jet ski kullanırken saate binen anlık basınç bu durgun testten farklıdır. Gerçek dalış saatleri için ayrı bir standart olan ISO 6425 vardır; bu standart en az 100 metre derinlik, termal şok ve yoğuşma testleri gibi çok daha sıkı koşullar ister."
+   ],
+   "table": {
+    "head": [
+     "Etiket",
+     "Uygun olduğu kullanım",
+     "Uygun olmadığı kullanım"
+    ],
+    "rows": [
+     [
+      "IP67 / IP68 (tek başına)",
+      "Yağmur, el yıkama, ter, kısa süreli kazara suya düşme",
+      "Yüzme (üretici ayrıca izin vermedikçe)"
+     ],
+     [
+      "3ATM (30 m)",
+      "Yağmur, sıçrama",
+      "Duş, yüzme, şnorkel"
+     ],
+     [
+      "5ATM (50 m)",
+      "Duş, sığ suda yüzme, havuz, şnorkel",
+      "Dalış, yüksek hızlı su sporları"
+     ],
+     [
+      "10ATM (100 m)",
+      "Yüzme, şnorkel, sörf gibi su sporları",
+      "Tüplü dalış (üretici ayrıca belirtmedikçe)"
+     ],
+     [
+      "ISO 6425 dalış saati",
+      "Tüplü dalış",
+      "Üreticinin belirttiği derinlik ve sıcaklık sınırlarının dışı"
+     ]
+    ]
+   },
+   "note": "Tablodaki eşleşmeler genel bir rehberdir. Saatinizin kılavuzunda yazan izinli aktiviteler her zaman önceliklidir."
+  },
+  {
+   "h": "Su direnci zamanla azalır mı?",
+   "p": [
+    "Evet. Su direncini sağlayan contalar ve yapıştırıcılar zamanla yaşlanır; darbeler, çizikler ve sıcaklık değişimleri bu süreci hızlandırır. Apple, kendi destek sayfasında su direncinin kalıcı bir özellik olmadığını, zamanla azalabileceğini ve saatin yeniden test edilip mühürlenemeyeceğini açıkça belirtir. Diğer üreticilerin kılavuzlarında da benzer uyarılar bulunur.",
+    "Pratikte bu şu demektir: Üç yıllık, ekranında çatlak olan ya da düşürülmüş bir saat, kutudan yeni çıktığı günkü korumayı sunmayabilir. Saatinizde ekran hasarı varsa suyla teması en aza indirin ve yetkili servise danışın."
+   ]
+  },
+  {
+   "h": "Hangi durumlar su direncini zorlar?",
+   "p": [
+    "Su geçirmezlik testleri temiz ve oda sıcaklığındaki suyla yapılır. Günlük hayatta saatiniz bundan daha zorlu koşullarla karşılaşabilir. Apple, yüzmeye uygun modelleri için bile sauna, buhar odası, yüksek hızlı su sporları ve yüksekten atlamaya karşı uyarır; sabun, şampuan, güneş kremi, parfüm ve losyon gibi maddelerin de su bariyerlerini etkileyebileceğini belirtir."
+   ],
+   "list": [
+    "Sıcak duş, sauna ve buhar odası: Isı contaları yumuşatır, buhar daha kolay sızar.",
+    "Sabunlu su ve şampuan: Contalar ve akustik membranlar üzerinde kalıntı bırakabilir.",
+    "Deniz suyu ve klorlu havuz suyu: Kullanımdan sonra saati tatlı suyla durulayıp tüy bırakmayan bir bezle kurulayın.",
+    "Hızlı su akışı: Su kayağı, jet ski veya tramplenden atlama anlık basıncı artırır.",
+    "Düğmelere su altında basmak: Bazı modellerde üretici bunu önermez; kılavuza bakın."
+   ]
+  },
+  {
+   "h": "Saati sudan sonra nasıl korumalısınız?",
+   "p": [
+    "Yüzmeye uygun saatlerin çoğunda su kilidi benzeri bir mod bulunur. Bu mod ekranı kilitleyerek dokunmatik yüzeyin su damlalarıyla yanlış komut almasını engeller. Apple Watch'ta yüzme antrenmanı başladığında su kilidi otomatik açılır; kilidi açarken saat bir dizi ses tonu çalarak hoparlördeki suyu dışarı atar. Diğer markalarda menü adları farklı olabilir.",
+    "Sudan çıktıktan sonra saati durulayın, kurulayın ve şarj etmeden önce şarj kontaklarının tamamen kuru olduğundan emin olun. Kordon da önemlidir: Deri, metal örgü ve bazı bağlantılı kordonlar suya dayanıklı değildir. Saat suya dayanıklı olsa bile bu kordonlarla yüzmek kordona zarar verebilir."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "Su geçirmezlik etiketleri pazarlama dilinde sık sık basitleştirildiği için bazı yanlış inanışlar yaygındır. En sık karşılaşılanlar şunlardır:"
+   ],
+   "list": [
+    "IP68 her durumda yüzmeye uygun demektir: Hayır. IP68 testinin koşulları üreticiye göre değişir ve hareketli suyu kapsamaz.",
+    "50 metre yazıyorsa 50 metreye dalabilirim: Hayır. Bu değer durgun sudaki tek seferlik basınç testinden gelir.",
+    "Su geçirmez saat, su hasarından garantiyle korunur: Çoğu üretici sıvı temasıyla oluşan hasarı garanti dışında sayabilir. Garanti belgenizi ve üreticinin koşullarını okuyun.",
+    "Bir kez su direnci olan saat hep öyle kalır: Contalar yaşlanır; düşme ve darbe korumayı azaltır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "5ATM olan bir saatle denize girebilir miyim?",
+   "a": "Sığ suda yüzme ve şnorkel için genellikle uygundur. Dalış, yüksekten atlama veya su kayağı gibi yüksek basınç oluşturan aktiviteler için uygun değildir. Denizden çıktıktan sonra saati tatlı suyla durulamanız tuzun contalara zarar vermesini azaltır."
+  },
+  {
+   "q": "IP68 ile 5ATM aynı şey mi?",
+   "a": "Hayır. IP68, IEC 60529 standardında toz ve suya karşı korumayı tanımlar; 5ATM ise saat standartlarına dayanan bir basınç değeridir. Pek çok akıllı saat ikisini birlikte belirtir. Yüzme kararı verirken ATM değeri ve kılavuzdaki izinli aktiviteler daha belirleyicidir."
+  },
+  {
+   "q": "Saatimle sıcak duş alabilir miyim?",
+   "a": "Pek çok üretici sıcak su, buhar ve sabunla teması önermez; ılık suyla kısa bir duş genellikle sorun çıkarmasa da contaları zamanla yıpratabilir. Saatinizin kılavuzunda duş hakkında ne yazdığına bakın ve şüphedeyseniz saati çıkarın."
+  },
+  {
+   "q": "Saatin içine su kaçtığını nasıl anlarım?",
+   "a": "Ekranın altında buğu veya damlacık, dokunmatik ekranın kendi kendine işlem yapması, hoparlör sesinin boğuklaşması ya da şarj sorunları belirti olabilir. Saati şarja takmayın, kapatın ve yetkili servise başvurun. Saati kendiniz açmaya çalışmak garantiyi geçersiz kılabilir."
+  },
+  {
+   "q": "Su direnci yeniden test ettirilebilir mi?",
+   "a": "Bu üreticiye göre değişir. Apple, Apple Watch'ın su direnci açısından yeniden test edilemeyeceğini veya mühürlenemeyeceğini belirtir. Diğer markalar için yetkili servise danışmanız gerekir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: IP Code (IEC 60529)",
+   "u": "https://en.wikipedia.org/wiki/IP_code"
+  },
+  {
+   "t": "Wikipedia: Water Resistant mark (ISO 22810, ISO 6425)",
+   "u": "https://en.wikipedia.org/wiki/Water_Resistant_mark"
+  },
+  {
+   "t": "Apple Destek: Apple Watch'ın suya dayanıklılığı",
+   "u": "https://support.apple.com/en-gb/109522"
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "slug": "spo2-olcumu-nedir",
+ "title": "SpO2 Ölçümü Nedir? Akıllı Saatler Kan Oksijenini Nasıl Ölçer",
+ "description": "SpO2 nedir, akıllı saat bileğinizden kan oksijenini nasıl tahmin eder, sonuçlar ne kadar güvenilir ve hangi durumda hekime başvurmalısınız?",
+ "tldr": "SpO2, kanınızdaki hemoglobinin yüzde kaçının oksijen taşıdığını gösteren bir tahmindir. Akıllı saatler bunu bileğe ışık gönderip geri yansıyan ışığı ölçerek hesaplar. Bu ölçüm genel bir eğilim fikri verir; akıllı saatler tıbbi cihaz değildir, şüpheli bir değer veya nefes darlığı gibi bir belirtide hekime başvurun.",
+ "intro": [
+  "Akıllı saatinizin sağlık uygulamasında “Kan oksijeni” ya da “SpO2” başlığı altında yüzde ile ifade edilen bir sayı görüyorsanız, bunun ne anlama geldiğini ve ne kadar ciddiye almanız gerektiğini sormanız doğal. Gece uykuda değerin birkaç puan düştüğünü görmek kaygı verebilir; sürekli yüksek görmek de yanlış bir güven duygusu yaratabilir.",
+  "Aşağıda SpO2 ölçümünün nasıl çalıştığını, bilekten yapılan ölçümün neden parmak ucu cihazlardan farklı sonuç verebileceğini ve hangi durumlarda saatin söylediğine değil, bedeninizin verdiği sinyallere güvenmeniz gerektiğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "SpO2 tam olarak neyi gösterir?",
+   "p": [
+    "Kırmızı kan hücrelerindeki hemoglobin, akciğerlerden aldığı oksijeni vücuda taşır. SpO2, hemoglobinin yüzde kaçının o anda oksijene bağlı olduğunu gösteren, ışıkla yapılan dolaylı bir tahmindir. Baştaki “Sp” harfleri değerin damardan kan alınarak değil, nabız oksimetresiyle ölçüldüğünü belirtir; hastanede kan gazı testiyle ölçülen değere SaO2 denir.",
+    "Akciğer hastalığı olmayan yetişkinlerde nabız oksimetresiyle ölçülen değerin genellikle yüzde 95 ile 99 arasında olduğu kabul edilir. Kronik akciğer hastalığı olan kişilerde hekimin belirlediği hedef aralık farklı olabilir. Bu yüzden tek bir sayıya bakıp kendinize tanı koymayın."
+   ],
+   "note": "Akıllı saatler ve bileklikler tıbbi cihaz değildir. Ölçümleri tanı ya da tedavi kararı için kullanmayın. Değerlerden veya kendinizi nasıl hissettiğinizden şüphe ediyorsanız hekime başvurun."
+  },
+  {
+   "h": "Işıkla oksijen ölçmek nasıl mümkün?",
+   "p": [
+    "Oksijen taşıyan hemoglobin ile oksijen taşımayan hemoglobin ışığı farklı emer. Oksijenli hemoglobin kızılötesi ışığı daha çok, oksijensiz hemoglobin ise kırmızı ışığı daha çok soğurur. Cihaz kırmızı ve kızılötesi ışık gönderip geri dönen miktarları karşılaştırarak oranı hesaplar.",
+    "İşin püf noktası nabızdır. Kalp her attığında atardamarlardaki kan hacmi kısa süreliğine artar. Cihaz, ışıktaki bu ritmik değişimi ayırarak deri, kemik ve toplardamar kanının etkisini dışarıda bırakmaya çalışır. Bu yöntemin genel adı fotopletismografidir (PPG); saatlerin nabız ölçümü de aynı ilkeye dayanır."
+   ]
+  },
+  {
+   "h": "Bilek ölçümü ile parmak ucu oksimetre arasındaki fark",
+   "p": [
+    "Parmak ucu oksimetreleri ışığı parmağın bir yüzünden gönderip öbür yüzünden okur; buna geçirgen ölçüm denir. Akıllı saatler ise ışığı gönderdikleri yüzeyden geri yansıyanı okur. Bilekte doku daha kalın, atardamar sinyali daha zayıftır ve saat hareket ettikçe sensörle cilt arasındaki temas değişir. Bu nedenle bilek ölçümü harekete ve saatin oturuşuna daha duyarlıdır.",
+    "ABD Gıda ve İlaç Dairesi (FDA), reçeteyle satılan oksimetrelerin klinik doğruluk testinden geçtiğini, genel sağlık ve spor amaçlı satılan cihazların ise tıbbi kullanım için tasarlanmadığını belirtir. Akıllı saatlerdeki ölçümler çoğunlukla bu ikinci gruba girer."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "Klinik parmak oksimetresi",
+     "Akıllı saat (bilek)"
+    ],
+    "rows": [
+     [
+      "Ölçüm şekli",
+      "Işık parmaktan geçer",
+      "Işık bilekten yansır"
+     ],
+     [
+      "Amaç",
+      "Hekim takibi, klinik kullanım",
+      "Genel sağlık ve eğilim takibi"
+     ],
+     [
+      "Harekete duyarlılık",
+      "Orta",
+      "Yüksek, ölçüm sırasında hareketsiz kalmak gerekir"
+     ],
+     [
+      "Sürekli gece takibi",
+      "Bazı modellerde",
+      "Yaygın, uyku boyunca aralıklı ölçüm"
+     ],
+     [
+      "Tanıda kullanım",
+      "Hekim değerlendirmesiyle",
+      "Uygun değil"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Sonucu hangi faktörler bozar?",
+   "p": [
+    "Tıbbi oksimetrelerde bile bazı durumlar ölçümü yanıltabilir; bilekte bu etkiler daha belirgin olabilir. FDA'nın uyarısında kötü kan dolaşımı, cilt pigmentasyonu ve kalınlığı, cilt sıcaklığı, sigara kullanımı ve oje doğruluğu etkileyen faktörler arasında sayılır."
+   ],
+   "list": [
+    "Hareket: Ölçüm sırasında kolu oynatmak en sık hata nedenidir.",
+    "Gevşek takılan saat: Sensör ile cilt arasına giren ışık sonucu bozar.",
+    "Soğuk eller ve kollar: Kış günü dışarıdan gelince kan akışı azalır, ölçüm düşük veya başarısız çıkabilir.",
+    "Koyu cilt tonu: Yapılan çalışmalar, bazı cihazların koyu ciltte düşük oksijen değerlerini olduğundan yüksek gösterebildiğini ortaya koymuştur.",
+    "Karbonmonoksit: Karbonmonoksite bağlanan hemoglobin, cihaz tarafından oksijenli gibi algılanabilir. Soba veya şofben kaynaklı zehirlenmede değer normal görünebilir."
+   ]
+  },
+  {
+   "h": "Doğru ölçüm almak için adımlar",
+   "p": [
+    "Anlık ölçüm yapacaksanız birkaç basit hazırlık, tekrarlanabilir sonuç almanızı sağlar. Menü adları markaya göre değişir; ölçüm genellikle saatteki “Kan Oksijeni” veya “SpO2” uygulamasından başlatılır."
+   ],
+   "ol": [
+    "Saati bilek kemiğinin biraz üstüne, sıkı ama rahatsız etmeyecek şekilde takın.",
+    "Oturun ve kolunuzu masaya veya kucağınıza, ekran yukarı bakacak şekilde düz koyun.",
+    "Ölçümü başlatın ve süre boyunca kolunuzu kıpırdatmadan, konuşmadan bekleyin.",
+    "Sonuç alınamazsa kolunuzu birkaç dakika ısıtıp tekrar deneyin.",
+    "Tek bir ölçüme değil, aynı koşullarda alınan birkaç ölçümün ortalamasına ve günler içindeki eğilime bakın."
+   ]
+  },
+  {
+   "h": "Gece ölçümleri ve uyku apnesi beklentisi",
+   "p": [
+    "Pek çok saat uyku sırasında aralıklı SpO2 ölçümü yapar. Uykuda değerlerin gündüze göre biraz daha düşük ve dalgalı olması olağandır; uykuda dönmek de ölçümleri bozar. Bu yüzden grafikte tek tek görülen kısa düşüşler tek başına bir anlam taşımaz.",
+    "Horlama, uykuda nefesin durduğunun başkası tarafından fark edilmesi, sabah yorgun uyanma ve gündüz uyuklama gibi belirtileriniz varsa saatin verisini hekiminize gösterebilirsiniz. Ancak uyku apnesi tanısı, hekimin yönlendirdiği uyku testiyle konur. Saatin “normal” göstermesi bu belirtileri görmezden gelmeniz için bir gerekçe değildir."
+   ]
+  },
+  {
+   "h": "Ne zaman hekime veya acile başvurmalı?",
+   "p": [
+    "Saat ne gösterirse göstersin, bedeninizin verdiği sinyaller önceliklidir. FDA da evde oksimetre kullananların yalnızca cihaz okumasına güvenmemesini, nefes darlığı ile yüzde, dudaklarda veya tırnaklarda morarma gibi belirtileri izlemesini önerir.",
+    "Nefes darlığı, göğüs ağrısı, dudaklarda morarma, bilinç bulanıklığı veya ani başlayan baş ağrısı ve bulantı (özellikle soba ya da şofben kullanılan bir ortamda) varsa beklemeden 112'yi arayın. Belirti olmadan tekrar eden düşük değerler görüyorsanız, saatin ekran görüntüleriyle birlikte aile hekiminize veya bir göğüs hastalıkları uzmanına başvurun."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Akıllı saat SpO2 ölçümü tıbbi cihaz kadar doğru mu?",
+   "a": "Hayır. Bilekten yansıyan ışıkla yapılan ölçüm, harekete ve saatin oturuşuna daha duyarlıdır. Akıllı saat ölçümleri genel sağlık takibi içindir, tanı için kullanılmamalıdır."
+  },
+  {
+   "q": "Saatim yüzde 93 gösterdi, endişelenmeli miyim?",
+   "a": "Önce kolunuzu sabit tutarak birkaç kez tekrar ölçün; tek bir düşük ölçüm çoğu zaman hareket veya soğuk cilt kaynaklıdır. Tekrar eden düşük değerler veya nefes darlığı gibi bir belirti varsa hekime başvurun."
+  },
+  {
+   "q": "Gece SpO2 değerimin düşmesi normal mi?",
+   "a": "Uykuda değerlerin hafifçe düşmesi ve dalgalanması olağandır, uykuda dönmek de ölçümü bozar. Horlama, nefes durması veya gün içi aşırı uyku hali gibi belirtileriniz varsa hekiminize danışın."
+  },
+  {
+   "q": "Karbonmonoksit zehirlenmesini akıllı saat fark eder mi?",
+   "a": "Hayır. Oksimetreler karbonmonoksite bağlı hemoglobini oksijenli gibi algılayabilir ve değer normal görünebilir. Baş ağrısı, bulantı ve baş dönmesi gibi belirtilerde ortamı havalandırıp 112'yi arayın; evde karbonmonoksit dedektörü kullanın."
+  },
+  {
+   "q": "SpO2 ölçümü pili çok tüketir mi?",
+   "a": "Anlık ölçüm etkisi küçüktür. Gece boyunca veya gün içinde sürekli arka plan ölçümü açıksa pil ömrü kısalabilir; çoğu saatte bu özelliği ayarlardan kapatabilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia — Pulse oximetry",
+   "u": "https://en.wikipedia.org/wiki/Pulse_oximetry"
+  },
+  {
+   "t": "FDA — Nabız oksimetrelerinin sınırlılıkları ve doğruluğu hakkında uyarı",
+   "u": "https://www.fda.gov/news-events/fda-brief/fda-brief-fda-warns-about-limitations-and-accuracy-pulse-oximeters"
+  },
+  {
+   "t": "Apple — Apple Watch'ta Kan Oksijeni uygulaması",
+   "u": "https://support.apple.com/en-me/guide/watch/apdaf17aa5ef/watchos"
+  }
+ ]
+}

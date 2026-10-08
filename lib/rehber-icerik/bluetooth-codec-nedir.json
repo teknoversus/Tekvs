@@ -1,0 +1,168 @@
+{
+ "slug": "bluetooth-codec-nedir",
+ "title": "Bluetooth Codec Nedir? SBC, AAC, aptX, LDAC ve LC3 Farkı",
+ "description": "SBC, AAC, aptX, LDAC ve LC3 arasındaki fark nedir? Codec'in kablosuz ses kalitesine etkisini ve telefonunuzda nasıl kontrol edeceğinizi anlattık.",
+ "tldr": "Bluetooth codec, sesin kablosuz aktarılmadan önce nasıl sıkıştırılacağını belirleyen yöntemdir. SBC her cihazda bulunan temel codec'tir; AAC iPhone'larda, aptX ve LDAC ise birçok Android telefonda daha yüksek veri hızı sunar. Hangi codec'in kullanılacağını telefon ve kulaklığın ortak desteklediği seçenek belirler.",
+ "intro": [
+  "İki kulaklığın sürücüleri ve ayarları aynı olsa bile, telefonunuzla aralarında hangi “dilin” konuşulduğu duyduğunuz sesi etkiler. Bu dil, Bluetooth codec'idir. Kablolu bağlantıda ses olduğu gibi aktarılırken, Bluetooth'un bant genişliği sınırlı olduğu için ses önce sıkıştırılır, kulaklıkta yeniden açılır.",
+  "Kutu üzerinde LDAC, aptX Adaptive ya da LE Audio logolarını gördüğünüzde bunların sizin telefonunuzla birlikte ne anlama geldiğini bilmek, hem yanlış beklentiden hem de gereksiz harcamadan korur. Aşağıda yaygın codec'leri, pratikteki farklarını ve telefonunuzda hangisinin çalıştığını nasıl kontrol edeceğinizi bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Codec ne yapar, ses neden sıkıştırılır?",
+   "p": [
+    "CD kalitesindeki bir müzik dosyası sıkıştırılmadan aktarıldığında saniyede yaklaşık 1,4 megabitlik veri gerektirir. Klasik Bluetooth ses bağlantısının (A2DP) pratikte taşıyabildiği veri bundan azdır. Sony'nin LDAC tanıtım sayfası da Bluetooth üzerinden ses aktarımında yaklaşık 1 Mbps'lik bir bant sınırından söz eder.",
+    "Codec bu yüzden sesi, insan kulağının en az fark edeceği bilgileri atarak küçültür. Bu işleme kayıplı sıkıştırma denir. Kullanılan yöntem ve ayrılan veri hızı ne kadar iyi olursa, sıkıştırmanın izleri o kadar az duyulur. Codec ayrıca gecikmeyi de etkiler: video izlerken dudak senkronu ya da oyunda ses gecikmesi codec ve cihazın işlemesiyle ilgilidir."
+   ]
+  },
+  {
+   "h": "Yaygın codec'ler tek tabloda",
+   "p": [
+    "Aşağıdaki tablo, üreticilerin ve teknik kaynakların verdiği temel değerleri özetler. Değerler codec'in üst sınırıdır; gerçek bağlantıda telefon, kulaklık ve ortamdaki parazit nedeniyle daha düşük bir hız kullanılabilir."
+   ],
+   "table": {
+    "head": [
+     "Codec",
+     "Geliştiren",
+     "Üst veri hızı",
+     "Öne çıkan özellik"
+    ],
+    "rows": [
+     [
+      "SBC",
+      "Bluetooth standardı",
+      "Yaklaşık 328 kbps (44,1 kHz)",
+      "Tüm Bluetooth ses cihazlarında bulunur"
+     ],
+     [
+      "AAC",
+      "MPEG standardı",
+      "Cihaza göre değişir",
+      "iPhone, iPad ve Mac'te SBC'den daha iyi seçenek"
+     ],
+     [
+      "aptX",
+      "Qualcomm",
+      "Yaklaşık 352 kbps, 16 bit",
+      "Birçok Android telefonda bulunur"
+     ],
+     [
+      "aptX HD",
+      "Qualcomm",
+      "576 kbps, 24 bit / 48 kHz",
+      "aptX'in daha yüksek çözünürlüklü sürümü"
+     ],
+     [
+      "aptX Adaptive",
+      "Qualcomm",
+      "Yaklaşık 279–420 kbps arası, değişken",
+      "Bağlantı koşuluna göre hızını ayarlar"
+     ],
+     [
+      "LDAC",
+      "Sony",
+      "990 kbps'ye kadar, 24 bit / 96 kHz",
+      "Android 8 ve sonrasında yaygın, en yüksek veri hızı"
+     ],
+     [
+      "LC3",
+      "Bluetooth SIG (LE Audio)",
+      "Değişken",
+      "Düşük veri hızında verimli, düşük gecikme hedefli"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "SBC ve AAC: herkesin ortak dili",
+   "p": [
+    "SBC (Subband Codec), Bluetooth ses aktarımının temel codec'idir ve Sony'nin destek belgelerinde de belirtildiği gibi tüm Bluetooth cihazları onu destekler. Telefon ile kulaklık başka bir ortak codec bulamazsa bağlantı SBC'ye düşer. Kötü bir codec değildir; yüksek ayarlarda gündelik dinleme için yeterli sonuç verebilir, ancak karmaşık parçalarda sıkıştırma izleri diğerlerine göre daha kolay duyulabilir.",
+    "AAC, müzik servislerinde de kullanılan bir sıkıştırma standardıdır. Apple cihazları kablosuz ses için yalnızca SBC ve AAC kullanır, bu yüzden iPhone kullanıyorsanız kulaklığın AAC desteği sizin için en önemli codec bilgisidir. Android tarafında AAC desteği ve kodlama başarımı telefondan telefona değişebilir; birçok Android kullanıcısı için aptX ya da LDAC daha belirleyicidir."
+   ]
+  },
+  {
+   "h": "aptX ailesi ve LDAC: yüksek veri hızı ne kazandırır?",
+   "p": [
+    "aptX, Qualcomm'un codec ailesidir. Temel aptX yaklaşık 352 kbps ile 16 bit ses taşır; aptX HD 576 kbps'ye ve 24 bit / 48 kHz çözünürlüğe çıkar. aptX Adaptive ise sabit bir hız yerine bağlantının o anki durumuna göre veri hızını ayarlar: kalabalık bir istasyonda bağlantıyı korumak için hızı düşürür, sakin bir odada yükseltir. Daha yeni aptX Lossless, uygun koşullarda CD kalitesinde (16 bit / 44,1 kHz) kayıpsız aktarım hedefler.",
+    "LDAC, Sony'nin geliştirdiği ve 990 kbps'ye kadar veri hızı sunan codec'tir. Sony'ye göre Android 8 ve sonraki sürümlerde kullanılabilir; bu yüzden markası ne olursa olsun birçok Android telefonda bulunur. LDAC genellikle 330, 660 ve 990 kbps gibi kademelerle ya da bağlantıya göre otomatik ayarlanan bir modla çalışır.",
+    "Yüksek veri hızı her zaman yüksek ses anlamına gelmez. 990 kbps kademesi, telefon cebinizdeyken ya da kalabalık bir ortamda kopmalara yol açabilir; bu durumda telefon hızı düşürür. Ayrıca dinlediğiniz kaynak düşük kaliteli bir akışsa, codec'in fazladan bant genişliği duyulur bir fark yaratmaz."
+   ]
+  },
+  {
+   "h": "LE Audio ve LC3 neyi değiştiriyor?",
+   "p": [
+    "LE Audio, Bluetooth'un düşük enerji (LE) altyapısı üzerine kurulan yeni ses mimarisidir ve LC3 (Low Complexity Communication Codec) onun temel codec'idir. LC3'ün amacı, düşük veri hızlarında bile SBC'ye göre daha iyi ses sunmak ve gecikmeyi azaltmaktır. Bu verimlilik, pil ömrünün kritik olduğu kulak içi kulaklıklar ve işitme cihazları için özellikle önemlidir.",
+    "LE Audio'dan yararlanmak için telefonun, kulaklığın ve telefonun yazılımının bu özelliği desteklemesi gerekir. Bir kulaklık LE Audio destekliyor olsa bile eski bir telefonla klasik bağlantıya, yani SBC veya AAC'ye geçer. Satın alırken “Bluetooth 5.3” gibi bir sürüm numarası tek başına LE Audio desteği anlamına gelmez; ürün sayfasında LE Audio ya da LC3 ifadesini ayrıca arayın."
+   ]
+  },
+  {
+   "h": "Telefonunuz hangi codec'i kullanıyor, nasıl kontrol edilir?",
+   "p": [
+    "iPhone'da codec seçimi yapılamaz ve gösterilmez; uyumlu kulaklıkta AAC, değilse SBC kullanılır. Android'de ise geliştirici seçenekleri üzerinden etkin codec'i görebilir ve bazı telefonlarda değiştirebilirsiniz. Menü adları markaya göre farklı olabilir, aşağıdaki adımlar en yaygın yoldur."
+   ],
+   "ol": [
+    "Kulaklığı telefona bağlayın ve müzik çalmaya başlayın.",
+    "Ayarlar > Telefon hakkında bölümüne girin. Samsung'da Yazılım bilgileri altında yer alır.",
+    "“Yapım numarası” satırına art arda yedi kez dokunun; geliştirici seçeneklerinin açıldığı bildirilir. Xiaomi'de bu satır işletim sistemi sürümüdür.",
+    "Ayarlar ana ekranına ya da Sistem menüsüne dönüp Geliştirici seçenekleri'ni açın.",
+    "“Bluetooth ses codec'i” satırını bulun. Ayarlar arama çubuğuna “codec” yazmak da işe yarar.",
+    "Bu satırda o anki codec görünür. Kulaklığın desteklemediği seçenekler gri ve seçilemez durumdadır.",
+    "LDAC kullanılıyorsa, hemen altındaki LDAC kalite satırından (adı telefona göre değişir) ses kalitesini veya bağlantı önceliğini seçebilirsiniz."
+   ],
+   "note": "Geliştirici seçeneklerindeki diğer ayarları ne işe yaradığını bilmeden değiştirmeyin. Codec seçimi kulaklık yeniden bağlandığında ya da telefon yeniden başlatıldığında varsayılana dönebilir."
+  },
+  {
+   "h": "Codec seçiminde yaygın yanlışlar",
+   "p": [
+    "En sık yapılan hata, kulaklığın kutusundaki codec'e bakıp telefonun desteğini kontrol etmemektir. LDAC destekli bir kulaklığı iPhone ile kullanırsanız bağlantı AAC ile kurulur; LDAC'nin size bir katkısı olmaz. Aynı şekilde aptX destekli bir kulaklık, aptX desteklemeyen bir telefonla SBC veya AAC kullanır.",
+    "İkinci yanlış, Bluetooth sürüm numarasını ses kalitesiyle eşitlemektir. Bluetooth 5.x daha iyi menzil ve verimlilik sağlayabilir ama hangi codec'in kullanılacağını belirlemez. Üçüncü yanlış ise yüksek veri hızlı codec'lerin “kayıpsız” olduğunu düşünmektir. LDAC ve aptX HD de kayıplı sıkıştırma yapar; kayıpsız hedefli seçenekler (aptX Lossless gibi) ayrıca belirtilir ve uyumlu donanım ister.",
+    "Son olarak, codec farkının her zaman duyulmadığını kabul etmek gerekir. Gürültülü bir otobüste, sıradan bir akış kalitesiyle dinlerken AAC ile LDAC arasındaki farkı ayırt etmek zordur. Codec, sessiz ortamda ve iyi kaynaklarla dinleyen biri için daha anlamlı bir seçim kriteridir."
+   ]
+  },
+  {
+   "h": "Kullanım senaryonuza göre hangi codec'e bakmalısınız?",
+   "p": [
+    "Codec'i tek başına değil, telefonunuz ve dinleme alışkanlığınızla birlikte düşünün. Aşağıdaki öneriler genel bir çerçeve sunar."
+   ],
+   "list": [
+    "iPhone kullanıcısıysanız: AAC desteği yeterlidir; aptX veya LDAC için ek ücret ödemenin anlamı yoktur.",
+    "Android'de yüksek kaliteli müzik dinliyorsanız: telefonunuzun desteklediği LDAC veya aptX HD/Adaptive seçeneklerine bakın.",
+    "Video ve oyunda gecikme sizi rahatsız ediyorsa: aptX Adaptive, LE Audio veya üreticinin “oyun modu” gibi düşük gecikme seçeneklerini arayın.",
+    "Pil ömrü önceliğinizse: yüksek veri hızlı modlar ek enerji harcayabilir; LE Audio destekli yeni cihazlar bu konuda avantaj sağlayabilir.",
+    "Birden fazla cihaz kullanıyorsanız: tüm cihazlarınızda ortak çalışan codec'i düşünün, çünkü en düşük ortak payda kullanılacaktır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "LDAC her telefonda çalışır mı?",
+   "a": "Hayır. Sony'ye göre LDAC Android 8 ve sonraki sürümleri çalıştıran telefonlarda kullanılabilir, ancak telefon üreticisinin bu desteği etkin bırakması gerekir. iPhone'lar LDAC desteklemez; LDAC'li bir kulaklık iPhone ile AAC veya SBC kullanır."
+  },
+  {
+   "q": "aptX ile LDAC arasındaki fark duyulur mu?",
+   "a": "Sessiz bir ortamda, yüksek kaliteli kaynakla ve iyi bir kulaklıkla bazı dinleyiciler fark duyabilir. Gürültülü ortamda veya standart akış kalitesinde fark çoğu zaman belirsizleşir. Kulaklığın akustik yapısı genellikle codec'ten daha büyük bir fark yaratır."
+  },
+  {
+   "q": "Kulaklığım neden bazen SBC'ye düşüyor?",
+   "a": "Telefon ve kulaklık ortak bir üst codec üzerinde anlaşamadığında ya da bağlantı zayıfladığında SBC kullanılabilir. Bazı kulaklıklarda uygulama içinden “bağlantı önceliği” seçilmişse yüksek kaliteli codec kapatılmış olabilir. Eşlik uygulamasının ses ayarlarını kontrol edin."
+  },
+  {
+   "q": "Bluetooth sürümü ses kalitesini belirler mi?",
+   "a": "Doğrudan belirlemez. Ses kalitesinde belirleyici olan kullanılan codec ve veri hızıdır. Bluetooth sürümü ise menzil, bağlantı kararlılığı ve LE Audio gibi yeni özelliklerin desteklenip desteklenmediğiyle ilgilidir."
+  },
+  {
+   "q": "Bilgisayarda codec seçebilir miyim?",
+   "a": "Bu, işletim sistemine ve Bluetooth donanımına bağlıdır. Windows ve macOS genellikle codec'i otomatik seçer ve kullanıcıya ayrıntılı ayar sunmaz. Mac'ler kablosuz ses için AAC kullanabilir; Windows bilgisayarlarda desteklenen codec'ler sürüme ve donanıma göre değişir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Sony: LDAC teknik bilgi sayfası",
+   "u": "https://sony.co.jp/en/Products/LDAC/info"
+  },
+  {
+   "t": "Sony Yardım Kılavuzu: Desteklenen codec'ler (SBC, AAC, LC3)",
+   "u": "https://helpguide.sony.net/mdr/3006/v1/en/contents/H053_Supported_codecs.html"
+  }
+ ]
+}

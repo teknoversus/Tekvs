@@ -1,0 +1,137 @@
+{
+ "slug": "vlog-icin-kamera-nasil-secilir",
+ "title": "Vlog İçin Kamera Nasıl Seçilir? Ekran, Odak, Ses ve Sabitleme",
+ "description": "Vlog kamerası seçerken döner ekran, yüz takibi, mikrofon girişi, sabitleme ve geniş açı neden sensörden önce gelir? Çekim tarzınıza göre net kriterler.",
+ "tldr": "Vlog için kamera seçerken önce kendinizi görebileceğiniz bir ekran, yüzünüzü güvenilir biçimde takip eden otofokus ve harici mikrofon takılabilen bir ses girişi arayın. Elde yürüyerek çekiyorsanız sabitleme ve geniş açılı lens, sensör boyutundan ve çözünürlükten daha çok fark yaratır.",
+ "intro": [
+  "Vlog çekmek, klasik video çekiminden farklı bir iş. Kamerayı çoğu zaman kendinize çevirir, kol mesafesinden konuşur, bir yandan yürür, bir yandan kadrajı kontrol edersiniz. Arkada kameranızı ayarlayan biri yoktur. Bu yüzden teknik veri sayfasında en parlak görünen özellikler, vlog için en işe yarayanlar olmayabilir.",
+  "Aşağıdaki bölümlerde bir vlog kamerasında neyin gerçekten fark yarattığını sırayla ele alıyoruz: ekran, odak, ses, sabitleme, lens açısı, güç ve aktarım. Sonunda da çekim tarzınıza göre hangi kamera tipinin size uyduğunu gösteren bir tablo var."
+ ],
+ "sections": [
+  {
+   "h": "Ekran kendinize dönebiliyor mu?",
+   "p": [
+    "Kendinizi çekerken kadrajda olup olmadığınızı, saçınızın ya da arka planın nasıl göründüğünü anlık görmek istersiniz. Bunun için ekranın öne doğru çevrilebilmesi gerekir. Sabit arka ekranlı bir kamerayla vlog çekmek mümkündür ama her çekimden sonra kaydı kontrol etmek zorunda kalırsınız.",
+    "Ekranlar iki ana tipte gelir. Yana açılıp dönen (vari-angle) ekran tamamen öne çevrilebilir ve vlog için en rahat olanıdır. Yalnızca yukarı-aşağı eğilen (tilt) ekranlar ise bazı modellerde öne bakacak kadar yukarı kalkar, ama kameranın üstüne mikrofon taktığınızda ekranın önünü kapatabilir."
+   ],
+   "note": "Mikrofonu flaş kızağına takmayı düşünüyorsanız, yukarı açılan ekranla mikrofonun çakışıp çakışmadığını satın almadan önce kontrol edin."
+  },
+  {
+   "h": "Otofokus yüzünüzü takip edebiliyor mu?",
+   "p": [
+    "Vlogda kamera ile yüzünüz arasındaki mesafe sürekli değişir. Bir ürünü kameraya gösterdiğinizde odağın ürüne, sonra tekrar yüzünüze dönmesi gerekir. Yüz ve göz algılamalı sürekli otofokus bu işi kendi başına yapar. Odak arayıp ileri geri giden (pompalama yapan) bir sistem ise kaydı izlenmez hale getirebilir.",
+    "Bazı kameralarda ürün tanıtımı için özel bir mod bulunur: kameraya bir nesne tuttuğunuzda odak hızla ona geçer, indirdiğinizde yüzünüze döner. Bu tür modların adı markaya göre değişir. Satın almadan önce inceleme videolarında kameranın odağı yüzden nesneye ne kadar sakin geçirdiğine bakmak, teknik tablodaki odak noktası sayısından daha öğreticidir."
+   ]
+  },
+  {
+   "h": "Ses: izleyiciyi en çabuk kaçıran kusur",
+   "p": [
+    "İzleyiciler biraz yumuşak bir görüntüyü çoğu zaman tolere eder; uğultulu, yankılı ya da rüzgârla boğulmuş bir sesi ise hemen fark eder. Kameraların dahili mikrofonları gövdenin üstünde, sizden uzakta ve her yönden ses alacak şekilde durur. Kalabalık bir sokakta ya da rüzgârlı bir sahilde bu yetersiz kalır.",
+    "Bu yüzden harici mikrofon takılabilen bir gövde tercih etmek, vlog için yapabileceğiniz en akıllıca seçimlerden biridir. En yaygın bağlantı 3,5 mm mikrofon girişidir. Bazı markalar flaş kızağı üzerinden dijital ses aktaran kendi aksesuar sistemlerini de sunar. Kablosuz yaka mikrofonu setlerinin alıcısı da genellikle 3,5 mm girişe ya da USB-C'ye bağlanır."
+   ],
+   "list": [
+    "3,5 mm mikrofon girişi: Çoğu harici mikrofon ve kablosuz set için temel şart.",
+    "Kulaklık çıkışı: Kayıt sırasında sesi dinleyip sorunu yerinde yakalamanızı sağlar.",
+    "Rüzgâr filtresi ve köpük/tüylü rüzgârlık: Dış mekânda dahili mikrofonu da kurtarabilir.",
+    "Manuel ses seviyesi ayarı: Otomatik seviye sessiz anlarda arka plan gürültüsünü yükseltebilir."
+   ]
+  },
+  {
+   "h": "Sabitleme: yürürken çekiyorsanız şart",
+   "p": [
+    "Kamerayı elinizde tutup yürürken her adım görüntüye sarsıntı olarak yansır. Bunu azaltmanın üç yolu vardır. Lens içi optik sabitleme (OIS) ve gövde içi sensör sabitleme (IBIS) hareketi mekanik olarak telafi eder. Elektronik sabitleme (EIS) ise görüntünün kenarlarını kırpıp kareyi yazılımla kaydırır.",
+    "Elektronik sabitlemenin bedeli kırpmadır: kadraj daralır, yani kamera size daha yakın çekiyormuş gibi görünür. Kol mesafesinden çekim yaparken bu, yüzünüzün kadrajı fazla doldurmasına neden olabilir. Bu yüzden elektronik sabitleme kullanacaksanız geniş açılı bir lensle başlamak gerekir. Mekanik ve elektronik sabitlemeyi birlikte kullanan kameralar yürüyüş çekimlerinde genellikle en akıcı sonucu verir."
+   ]
+  },
+  {
+   "h": "Lens açısı ve kırpma: kol mesafesi hesabı",
+   "p": [
+    "Kolunuzu uzattığınızda kamera yüzünüzden yaklaşık yarım metre ile bir metre arasında durur. Bu mesafede hem yüzünüzün hem de arkadaki mekânın görünmesi için geniş açılı bir lens gerekir. Pratikte tam kare eşdeğeri 16 ile 24 mm arası odak uzaklıkları vlog için sık tercih edilir.",
+    "Burada dikkat edilmesi gereken iki tuzak var. Birincisi sensör kırpma çarpanıdır: APS-C gövdeye takılan 16 mm'lik bir lens, tam kare eşdeğeri olarak yaklaşık 24 mm gibi davranır. İkincisi videoya özgü kırpmadır: bazı kameralar 4K ya da yüksek kare hızında sensörün yalnızca bir bölümünü kullanır. Elektronik sabitleme de eklenince geniş görünen bir lens beklediğinizden dar kalabilir. İnceleme yaparken kullanacağınız video modundaki kırpma oranını ayrıca kontrol edin."
+   ]
+  },
+  {
+   "h": "Güç, ısınma ve aktarım gibi pratik ayrıntılar",
+   "p": [
+    "Vlog çekim günleri uzun sürer. Kameranın USB-C üzerinden çalışırken güç alıp alamadığı önemlidir; bazı modeller yalnızca kapalıyken şarj olur. Çalışırken beslenebilen bir gövdede cebinizdeki powerbank, yedek pilin yerini kısmen tutabilir.",
+    "Küçük gövdeli kameralar uzun 4K kayıtlarda ısınıp kaydı durdurabilir. Yazın açık havada çekim yapacaksanız incelemelerde ısınma testlerine bakın. Ayrıca Wi-Fi ya da Bluetooth ile telefona hızlı aktarım ve kamerayı USB üzerinden web kamerası olarak kullanabilme, canlı yayın da yapan içerik üreticileri için işinizi kolaylaştırır."
+   ]
+  },
+  {
+   "h": "Hangi kamera tipi hangi vlog tarzına uyar?",
+   "p": [
+    "Tek bir doğru kamera yok; çektiğiniz içerik belirler. Aşağıdaki tablo kamera tiplerini vlog açısından kabaca karşılaştırıyor. Tek tek modeller arasında farklar olabileceğini akılda tutun."
+   ],
+   "table": {
+    "head": [
+     "Kamera tipi",
+     "Güçlü yanı",
+     "Zayıf yanı",
+     "Uygun vlog tarzı"
+    ],
+    "rows": [
+     [
+      "Akıllı telefon",
+      "Her zaman yanınızda, kolay paylaşım",
+      "Küçük sensör, ön kamera genelde daha zayıf",
+      "Günlük kısa vlog, başlangıç"
+     ],
+     [
+      "Kompakt vlog kamerası",
+      "Hafif, geniş açı, döner ekran, mikrofon girişi",
+      "Lens değişmez, düşük ışıkta sınırlı",
+      "Seyahat, sokak, günlük vlog"
+     ],
+     [
+      "Aynasız (değiştirilebilir lens)",
+      "Büyük sensör, lens esnekliği, arka plan bulanıklığı",
+      "Daha ağır, lens ile maliyet artar",
+      "Masa başı, ürün tanıtımı, sinematik vlog"
+     ],
+     [
+      "Aksiyon kamerası",
+      "Çok geniş açı, güçlü sabitleme, dayanıklılık",
+      "Küçük sensör, düşük ışıkta gürültü",
+      "Bisiklet, spor, su ve outdoor"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Sık yapılan seçim hataları",
+   "p": [
+    "Vlog kamerası alırken yapılan hataların çoğu, fotoğraf kriterleriyle video ihtiyacını karıştırmaktan kaynaklanır. Aşağıdakiler en sık karşılaşılanlar."
+   ],
+   "list": [
+    "Megapiksele bakarak seçmek: 4K video yaklaşık 8 megapiksellik kareden oluşur; fotoğraf çözünürlüğü vlog kalitesini belirlemez.",
+    "Lensi hesaba katmamak: Gövdeyle gelen kit lens, kol mesafesinde yeterince geniş olmayabilir.",
+    "Ağırlığı küçümsemek: Kol uzatarak dakikalarca çekim yapacaksınız; ağır gövde ve lens kombinasyonu kısa sürede yorar.",
+    "Sesi sonraya bırakmak: Mikrofon girişi olmayan bir gövdeye sonradan çözüm bulmak zordur.",
+    "Kırpma ve ısınmayı kontrol etmemek: Kâğıt üzerindeki 4K modu, kullanmak istediğiniz sabitleme ile birlikte dar ya da kısa süreli kalabilir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Vlog için sensör boyutu önemli mi?",
+   "a": "Önemli ama ilk sırada değil. Büyük sensör düşük ışıkta daha temiz görüntü ve daha belirgin arka plan bulanıklığı sağlar. Ancak ekran, otofokus ve ses girişi eksikse büyük sensörün avantajı çekim sırasında pek işe yaramaz."
+  },
+  {
+   "q": "Telefon kamerası vlog için yeterli mi?",
+   "a": "Başlangıç için çoğu zaman yeterlidir; özellikle arka kamerayla ve harici bir mikrofonla kullanıldığında. Daha uzun çekimler, düşük ışık, lens esnekliği ya da ayrı bir kayıt cihazı istediğinizde özel bir kamera fark yaratmaya başlar."
+  },
+  {
+   "q": "4K mi çekmeliyim, 1080p yeterli mi?",
+   "a": "Yalnızca sosyal medyada dikey kısa video paylaşıyorsanız 1080p çoğu durumda yeterlidir. 4K, sonradan kırpma ve yakınlaştırma payı verir ama dosya boyutunu, ısınmayı ve pil tüketimini artırır. Bilgisayarınızın 4K düzenlemeyi rahat kaldırıp kaldırmadığını da göz önüne alın."
+  },
+  {
+   "q": "Dahili mikrofon hiç işe yaramaz mı?",
+   "a": "Sessiz bir iç mekânda, kameraya yakın konuşurken kabul edilebilir sonuç verebilir. Rüzgâr, trafik ya da kalabalık olan yerlerde ise sesiniz arka plana karışır. Basit bir harici mikrofon ya da rüzgârlık bile belirgin iyileşme sağlar."
+  },
+  {
+   "q": "Elektronik sabitleme görüntü kalitesini düşürür mü?",
+   "a": "Kareyi kırptığı için kadraj daralır ve bazı kameralarda düşük ışıkta hafif bulanıklık ya da titreme izleri görülebilir. Gün ışığında yürüyüş çekimlerinde ise çoğu zaman sağladığı akıcılık bu bedelden ağır basar."
+  }
+ ],
+ "sources": []
+}

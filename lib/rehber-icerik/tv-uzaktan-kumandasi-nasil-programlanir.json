@@ -1,0 +1,152 @@
+{
+ "slug": "tv-uzaktan-kumandasi-nasil-programlanir",
+ "title": "TV Uzaktan Kumandası Nasıl Programlanır? Evrensel ve Orijinal",
+ "description": "Evrensel kumandayı kodla ya da otomatik aramayla TV'ye tanıtma, Samsung ve LG kumandalarını yeniden eşleştirme ve kumanda çalışmazsa yapılacaklar.",
+ "tldr": "Evrensel kumandalar iki yolla programlanır: kılavuzdaki marka kodunu girmek ya da kumandanın kodları sırayla denediği otomatik arama. Orijinal akıllı TV kumandaları ise programlanmaz, eşleştirilir; Samsung'da Geri ve Oynat/Duraklat, LG'de tekerlek (OK) tuşu bu iş için kullanılır.",
+ "intro": [
+  "Kumanda kaybolduğunda, köpek kemirdiğinde ya da TV, uydu alıcısı ve soundbar için masada üç ayrı kumanda biriktiğinde akla gelen çözüm evrensel kumandadır. Fakat raftan alınan kumanda kutudan çıktığı gibi çalışmaz; TV'nizin hangi kızılötesi komutları anladığını ona öğretmeniz gerekir.",
+  "Yeni nesil akıllı TV'lerde durum biraz farklı: Orijinal kumanda çoğu zaman Bluetooth ile çalışır ve pil değişiminden ya da yazılım güncellemesinden sonra bağlantıyı kaybedebilir. Bu durumda yapılacak şey programlama değil, yeniden eşleştirmedir. İki senaryoyu da adım adım ele alıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Kumandanız hangi türde: kızılötesi mi, Bluetooth mu?",
+   "p": [
+    "Klasik kumandalar kızılötesi (IR) ışıkla çalışır; TV'ye doğrultmanız gerekir ve araya bir engel girince komut ulaşmaz. Evrensel kumandaların neredeyse tamamı IR kullanır ve programlanan şey, hangi markanın hangi IR kod setini kullandığıdır.",
+    "Samsung'un Smart Remote'u, LG'nin Magic Remote'u ve birçok Google TV kumandası ise Bluetooth (veya radyo frekansı) ile bağlanır. Bu kumandalar TV'ye bir kez eşleştirilir; ses komutu ve imleç gibi özellikler bu bağlantı üzerinden çalışır. Bluetooth kumandayı bir evrensel kumandayla tamamen değiştirmek mümkün olsa da sesli arama ve fare imleci gibi özellikleri kaybedersiniz."
+   ],
+   "table": {
+    "head": [
+     "Kumanda türü",
+     "Bağlantı",
+     "Kurulum yöntemi"
+    ],
+    "rows": [
+     [
+      "Evrensel kumanda",
+      "Kızılötesi",
+      "Marka kodu girme veya otomatik kod arama"
+     ],
+     [
+      "Samsung Smart Remote",
+      "Bluetooth",
+      "TV'ye doğrultup tuş kombinasyonuyla eşleştirme"
+     ],
+     [
+      "LG Magic Remote",
+      "Kablosuz (RF / Bluetooth)",
+      "TV açıkken tekerlek (OK) tuşuyla kayıt"
+     ],
+     [
+      "Telefon uygulaması",
+      "Wi-Fi",
+      "Uygulamada TV'yi seçip ekrandaki kodu onaylama"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Evrensel kumandayı kod girerek programlama",
+   "p": [
+    "Kod listesi kumandanın kutusundaki kılavuzda ya da üreticinin web sitesinde bulunur. Her marka için genellikle birden fazla kod vardır, çünkü aynı marka farklı yıllarda farklı kod setleri kullanmış olabilir. Tuş adları kumanda üreticisine göre 'SETUP', 'SET' veya 'TV' olabilir; aşağıdaki adımlar yaygın akışı gösterir, ayrıntı için kendi kumandanızın kılavuzunu esas alın."
+   ],
+   "ol": [
+    "Kumandaya yeni pil takın ve TV'yi açın.",
+    "Kılavuzdan TV markanıza ait ilk kodu not edin.",
+    "Kumandadaki TV veya SETUP tuşunu, gösterge ışığı sabit yanana kadar basılı tutun.",
+    "Kodu sayı tuşlarıyla girin. Doğru giriş yapıldığında ışık genellikle söner veya bir kez yanıp söner.",
+    "Güç, ses ve kanal tuşlarıyla TV'yi test edin.",
+    "Bazı tuşlar çalışıp bazıları çalışmıyorsa aynı marka için listedeki bir sonraki kodu deneyin."
+   ]
+  },
+  {
+   "h": "Kod bilinmiyorsa: otomatik kod arama",
+   "p": [
+    "Markanız listede yoksa ya da kodların hiçbiri tam çalışmıyorsa otomatik arama devreye girer. Kumanda, hafızasındaki kodları tek tek gönderir; TV'nin kapandığı anda doğru kodu bulmuş olursunuz. Bu yöntem birkaç dakika sürebilir ve sabır ister. Aşağıdaki akış TCL'nin destek sayfasında anlatılan yönteme dayanır; tuş adları kumandaya göre değişebilir."
+   ],
+   "ol": [
+    "TV'yi açın ve kumandayı TV'ye doğrultun.",
+    "TV tuşunu, gösterge ışığı sabit yanana kadar basılı tutun.",
+    "TV tuşunu bırakmadan güç tuşuna da basılı tutun; ışık sönüp tekrar yandığında ikisini bırakın.",
+    "Kumandayı TV'ye doğrultarak güç tuşuna aralıklarla basın.",
+    "TV kapandığı anda Enter veya OK tuşuna basarak kodu kaydedin.",
+    "TV'yi yeniden açıp ses ve kanal tuşlarını deneyin."
+   ],
+   "note": "Otomatik aramada TV kapandıktan sonra güç tuşuna basmaya devam ederseniz kumanda bir sonraki koda geçer ve doğru kodu kaçırırsınız. TV kapanır kapanmaz kayıt tuşuna basın."
+  },
+  {
+   "h": "Orijinal akıllı TV kumandasını yeniden eşleştirme",
+   "p": [
+    "Pil değiştirdikten sonra tuşlara tepki vermeyen bir Samsung veya LG kumandası çoğu zaman bozuk değildir, sadece eşleşmesi düşmüştür. Samsung, Smart Remote'un aynı anda yalnızca bir TV ile çalışacak şekilde tasarlandığını, başka bir TV'de kullanmak için yeniden eşleştirilmesi gerektiğini belirtiyor."
+   ],
+   "list": [
+    "Samsung Smart Remote: Kumandayı TV'nin alt orta veya sağ alt kısmındaki sensöre doğrultun, Geri (Return) ve Oynat/Duraklat tuşlarına birlikte en az 3 saniye basılı tutun. Ekranda bağlantı mesajı çıkar.",
+    "LG Magic Remote: TV açıkken kumandayı TV'ye doğrultun ve tekerlek (OK) tuşuna basın. Olmazsa TV'yi kapatıp açarak tekrar deneyin. Kaydı sıfırlayıp yeniden yapmak için Ana Ekran ve Ayarlar tuşlarını 5 saniyeden uzun basılı tutun.",
+    "Google TV kumandaları: Eşleştirme yöntemi üreticiye göre değişir; TV'nin Ayarlar > Kumanda ve Aksesuarlar menüsü ya da kumandanın kılavuzu esas alınmalıdır."
+   ]
+  },
+  {
+   "h": "Kumanda yokken telefonu kumanda olarak kullanmak",
+   "p": [
+    "Kumanda kaybolduğunda en hızlı geçici çözüm telefondur. Samsung TV'ler SmartThings, LG TV'ler LG ThinQ, Google TV'ler ise Google TV veya Google Home uygulamasındaki kumanda ekranıyla kontrol edilebilir. Telefon ve TV'nin aynı Wi-Fi ağında olması gerekir; ilk bağlantıda TV ekranında çıkan kodu ya da onay isteğini kabul etmeniz istenir.",
+    "Bazı Android telefonlarda kızılötesi verici (IR blaster) bulunur. Bu telefonlar, üreticinin kumanda uygulamasıyla Wi-Fi'ye bağlı olmayan eski TV'leri de kontrol edebilir. Telefonunuzda IR verici olup olmadığını teknik özelliklerden kontrol edebilirsiniz."
+   ]
+  },
+  {
+   "h": "Kumanda hiç çalışmıyorsa sorun giderme sırası",
+   "p": [
+    "Programlamaya geçmeden önce kumandanın gerçekten sinyal gönderip göndermediğini anlamak zaman kazandırır."
+   ],
+   "ol": [
+    "Pilleri yenileriyle değiştirin. TCL de zayıf pilin programlamayı bozabileceğini belirtiyor.",
+    "Kızılötesi kumandanın ucunu telefon kamerasına doğrultup bir tuşa basın. Çoğu telefon kamerasında ucun yanıp söndüğü görülür; hiç ışık yoksa kumanda sinyal göndermiyordur.",
+    "TV'nin önündeki sensörün üstünü kapatan bir soundbar, dekor ya da yapışkan etiket olmadığından emin olun.",
+    "TV'yi fişten çekip bir dakika bekleyin ve tekrar takın; Bluetooth kumandalarda bu, eşleşme sorununu çoğu zaman çözer.",
+    "Eşleştirme veya programlama adımlarını baştan uygulayın.",
+    "Telefondaki uygulamayla TV'ye komut gidiyorsa ama kumandayla gitmiyorsa sorun kumandadadır; TV de tepki vermiyorsa TV'nin alıcısı arızalı olabilir."
+   ],
+   "note": "Kumandanın içinde sıvı teması varsa, tuşlar yapışıyorsa ya da pil yuvası oksitlenmişse kumandayı açmaya çalışmak yerine orijinal yedeğini yetkili servis veya üreticinin yedek parça kanalından temin edin."
+  },
+  {
+   "h": "Tek kumandayla birden çok cihazı yönetmek: HDMI-CEC",
+   "p": [
+    "TV'ye HDMI ile bağlı soundbar, oyun konsolu veya medya oynatıcıyı ayrıca programlamadan TV kumandasıyla yönetmenin yolu HDMI-CEC'tir. Bu özellik Samsung'da Anynet+, LG'de SIMPLINK, Sony'de BRAVIA Sync gibi farklı adlarla geçer ve genellikle TV'nin genel ya da harici cihaz ayarlarından açılır. Açıldığında TV'yi açınca soundbar da açılır, ses tuşu doğrudan soundbar'ı kontrol eder."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Evrensel kumanda her TV ile çalışır mı?",
+   "a": "Kızılötesi alıcısı olan TV'lerin büyük çoğunluğuyla temel işlevler (güç, ses, kanal, menü) çalışır. Ancak akıllı TV'lerdeki uygulama kısayolları, sesli arama ve imleç gibi özellikler evrensel kumandada genellikle bulunmaz."
+  },
+  {
+   "q": "TV markamın kodu listede yok, ne yapmalıyım?",
+   "a": "Otomatik kod arama yöntemini kullanın. Kumandanın üreticisinin web sitesinde güncel ve daha geniş bir kod listesi de olabilir. Hiçbiri çalışmazsa TV'nin kendi uygulamasıyla telefonu kumanda olarak kullanmak daha garantili bir çözümdür."
+  },
+  {
+   "q": "Samsung kumandam pil değiştirdikten sonra çalışmıyor, bozuldu mu?",
+   "a": "Büyük olasılıkla eşleşmesi düşmüştür. Kumandayı TV'ye doğrultup Geri ve Oynat/Duraklat tuşlarına birlikte en az 3 saniye basılı tutarak yeniden eşleştirin."
+  },
+  {
+   "q": "Kumanda bazı tuşlarda çalışıp bazılarında çalışmıyor, neden?",
+   "a": "Girilen kod markanın eski veya farklı bir model serisine ait olabilir. Aynı marka için listedeki diğer kodları sırayla deneyin; tüm tuşların çalıştığı kodu bulana kadar devam edin."
+  },
+  {
+   "q": "Telefonu kumanda yapmak için internet gerekir mi?",
+   "a": "Wi-Fi tabanlı uygulamalarda telefon ve TV'nin aynı yerel ağda olması gerekir. Telefonunuzda kızılötesi verici varsa ağ bağlantısı olmadan da TV'yi kontrol edebilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "TCL - How to Pair a Universal Remote to a TV",
+   "u": "https://support.tcl.com/en_CA/how-to-pair-universal-remote-to-a-tv"
+  },
+  {
+   "t": "Samsung - Connect the Samsung Smart Remote to your Samsung TV",
+   "u": "https://www.samsung.com/sg/support/tv-audio-video/connect-the-samsung-smart-remote-to-your-samsung-tv/"
+  },
+  {
+   "t": "LG - Magic Remote kayıt adımları",
+   "u": "https://www.lg.com/au/tv-accessories/lg-akb76036504"
+  }
+ ]
+}

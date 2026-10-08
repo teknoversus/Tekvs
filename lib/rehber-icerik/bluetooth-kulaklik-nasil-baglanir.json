@@ -1,0 +1,124 @@
+{
+ "slug": "bluetooth-kulaklik-nasil-baglanir",
+ "title": "Bluetooth Kulaklık Telefona ve Bilgisayara Nasıl Bağlanır?",
+ "description": "Android, iPhone, Windows ve Mac'te Bluetooth kulaklık eşleştirme adımları, hızlı eşleştirme özellikleri ve kulaklık listede görünmediğinde yapılacaklar.",
+ "tldr": "Kulaklığı eşleştirme moduna alın (genellikle kutu kapağını açmak ya da güç düğmesine birkaç saniye basılı tutmak yeterlidir), ardından telefon veya bilgisayarın Bluetooth menüsünden kulaklığın adını seçin. İlk eşleştirme bir kez yapılır; sonraki açılışlarda kulaklık son bağlandığı cihaza kendiliğinden bağlanır.",
+ "intro": [
+  "Yeni bir kablosuz kulaklığı kutusundan çıkardığınızda telefonla tanıştırmanız gerekir. Bu tanışmaya eşleştirme denir: iki cihaz bir güvenlik anahtarı paylaşır ve birbirini kaydeder. Bağlanma ise bu kayıt bir kez oluştuktan sonra her kullanımda kurulan bağlantıdır. Sorunların çoğu bu iki aşamanın karıştırılmasından çıkar.",
+  "Aşağıda önce kulaklığın eşleştirmeye nasıl hazırlanacağını, sonra Android, iPhone, Windows ve Mac'te izlenecek yolu, en sonda da kulaklık listede hiç görünmediğinde ya da bilgisayarda mikrofon sesi bozulduğunda neye bakacağınızı anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Kulaklık eşleştirme moduna nasıl alınır?",
+   "p": [
+    "Bir kulaklık yalnızca eşleştirme modundayken yeni cihazlara görünür. Bu modda kulaklık çevresine “buradayım” sinyali yayar ve durum ışığı çoğunlukla hızlı yanıp söner ya da iki renk arasında değişir. Kutudan ilk kez çıkan kulaklıkların çoğu bu moda kendiliğinden girer.",
+    "Daha önce bir cihaza eşleştirilmiş kulaklık ise açıldığında o cihazı arar ve yeni cihazlara görünmez. Bu durumda eşleştirme modunu elle başlatmanız gerekir. Yöntem modele göre değişir; aşağıdakiler en yaygın olanlardır."
+   ],
+   "list": [
+    "Kulak içi modeller: Kulaklıklar kutudayken kapağı açın ve kutudaki düğmeye ışık yanıp sönene kadar (genellikle birkaç saniye) basılı tutun.",
+    "Düğmesiz kutular: Kulaklıkları takıp her iki dokunmatik yüzeye birkaç saniye basılı tutun ya da kılavuzdaki hareketi uygulayın.",
+    "Kafa üstü modeller: Kulaklık kapalıyken güç düğmesine, ışık hızlı yanıp sönene kadar uzun basın.",
+    "Uygulaması olan modeller: Mevcut bağlantı üzerinden uygulamada “yeni cihaz ekle” veya “eşleştirme modu” seçeneği bulunabilir."
+   ]
+  },
+  {
+   "h": "Android telefonda eşleştirme",
+   "p": [
+    "Android'de menü adları üreticiye ve sürüme göre değişir, ancak mantık aynıdır. Google Pixel ve saf Android'e yakın arayüzlerde yol Ayarlar > Bağlı cihazlar > Yeni cihaz eşle şeklindedir. Samsung telefonlarda Ayarlar > Bağlantılar > Bluetooth bölümüne girersiniz. Hızlı yol olarak bildirim panelini aşağı çekip Bluetooth simgesine uzun basmak da bu ekranı açar."
+   ],
+   "ol": [
+    "Kulaklığı eşleştirme moduna alın ve telefona yakın tutun.",
+    "Bluetooth'u açın ve “Yeni cihaz eşle” ya da “Kullanılabilir cihazlar” listesini açın.",
+    "Listede kulaklığın adı göründüğünde dokunun.",
+    "Eşleştirme onayı isteniyorsa “Eşle” düğmesine basın.",
+    "Kulaklığın ayar simgesine (dişli) dokunup “Medya sesi” ve “Telefon sesi” seçeneklerinin açık olduğunu kontrol edin."
+   ],
+   "note": "Google'ın Hızlı Eşleme (Fast Pair) özelliğini destekleyen kulaklıklarda, kutu kapağını telefonun yanında açınca ekranın altında bir eşleştirme kartı çıkar; tek dokunuşla bağlanırsınız. Bu kart için Bluetooth ve konumun açık olması, telefonun da kulaklığa yakın olması gerekir."
+  },
+  {
+   "h": "iPhone ve iPad'de eşleştirme",
+   "p": [
+    "iPhone'da yol sadedir: Ayarlar > Bluetooth. Bluetooth açıkken kulaklık eşleştirme modundaysa “Diğer Aygıtlar” başlığı altında görünür; adına dokunmanız yeterlidir. Eşleşen kulaklık “Aygıtlarım” listesine taşınır.",
+    "AirPods ve Apple'ın Beats serisindeki bazı modeller farklı çalışır. Kulaklıklar kutudayken kapağı kilidi açık iPhone'un yanında açtığınızda ekranda bir kurulum animasyonu belirir ve “Bağlan” düğmesiyle işlem biter. Bu yolla eşleşen kulaklık, aynı Apple hesabıyla oturum açılmış diğer Apple cihazlarınızda da tanınır."
+   ]
+  },
+  {
+   "h": "Windows ve Mac bilgisayarda eşleştirme",
+   "p": [
+    "Windows 11'de en kısa yol Başlat > Ayarlar > Bluetooth ve cihazlar ekranıdır. Bluetooth'un açık olduğundan emin olduktan sonra “Cihaz ekle” düğmesine, açılan pencerede de “Bluetooth” seçeneğine tıklayın ve listeden kulaklığı seçin. Görev çubuğundaki hızlı ayarlarda Bluetooth kutucuğunun yanındaki oka tıklayarak da aynı listeye ulaşabilirsiniz.",
+    "Microsoft'un Swift Pair özelliğini destekleyen kulaklıklar eşleştirme moduna alındığında Windows ekranın köşesinde bir bildirim gösterir; “Bağlan” demek yeterlidir. Mac'te ise Apple menüsü > Sistem Ayarları > Bluetooth bölümünde yakındaki cihazlar listelenir; kulaklığın üzerine gelip “Bağlan” düğmesine tıklarsınız.",
+    "Bilgisayarınızda Bluetooth seçeneği hiç görünmüyorsa cihazda Bluetooth donanımı olmayabilir ya da sürücüsü yüklü değildir. Masaüstü bilgisayarlarda bu durum sık görülür; USB Bluetooth adaptörü bu açığı kapatır."
+   ]
+  },
+  {
+   "h": "Kulaklık listede görünmüyorsa ne yapmalı?",
+   "p": [
+    "En sık neden, kulaklığın aslında eşleştirme modunda olmamasıdır. Kulaklık yakındaki başka bir cihaza (tablet, eski telefon, televizyon) otomatik bağlanmış olabilir ve bu yüzden yeni cihazlara görünmez. Aşağıdaki sırayı izleyin."
+   ],
+   "ol": [
+    "Durum ışığına bakın; yavaş yanıp sönüyor ya da sabit yanıyorsa kulaklık başka bir cihaza bağlıdır. O cihazda Bluetooth'u kapatın.",
+    "Eşleştirme modunu yeniden başlatın ve kulaklığı telefona bir metreden yakın tutun.",
+    "Telefonda Bluetooth'u kapatıp açın; listeyi yenileyin.",
+    "Daha önce bu kulaklığı eşleştirdiyseniz telefondaki eski kaydı “unutun” ve baştan eşleştirin.",
+    "Kulaklığın şarjını kontrol edin; çok düşük pilde bazı modeller eşleştirme moduna girmez.",
+    "Hâlâ görünmüyorsa kulaklığı fabrika ayarlarına döndürün ve tekrar deneyin."
+   ]
+  },
+  {
+   "h": "Bağlandı ama ses yok ya da bilgisayarda ses kalitesi düştü",
+   "p": [
+    "Kulaklık bağlı göründüğü halde ses gelmiyorsa sesin başka bir çıkışa gitmesi muhtemeldir. Android'de bağlı cihaz ayarlarında “Medya sesi” kapalı olabilir. Windows'ta görev çubuğundaki ses simgesinden çıkış aygıtı olarak kulaklığı seçmeniz gerekebilir.",
+    "Bilgisayarda görüntülü görüşmeye geçtiğinizde müziğin bir anda boğuk ve telsiz gibi duyulması da yaygın bir şikâyettir. Klasik Bluetooth'ta kulaklığın mikrofonu açıldığında bağlantı, müzik profilinden (A2DP) görüşme profiline (HFP) geçer ve bu profil dar bant ses taşır. Windows bazen kulaklığı “Kulaklık” ve “Mikrofonlu kulaklık (eller serbest)” gibi iki ayrı aygıt olarak listeler. Toplantıda yüksek ses kalitesi istiyorsanız bilgisayarın kendi mikrofonunu ya da kablolu bir mikrofonu seçip kulaklığı yalnızca dinlemek için kullanabilirsiniz."
+   ]
+  },
+  {
+   "h": "Eşleştirmede sık yapılan hatalar",
+   "p": [
+    "Bağlantı sorunlarının bir kısmı kullanım alışkanlıklarından doğar. Aşağıdaki hatalardan kaçınmak, “bağlanmıyor” şikâyetlerinin büyük kısmını baştan önler."
+   ],
+   "list": [
+    "Kulaklığı her seferinde yeniden eşleştirmeye çalışmak; ilk eşleştirmeden sonra yalnızca Bluetooth'un açık olması yeterlidir.",
+    "Telefonda aynı kulaklığın birden fazla eski kaydını bırakmak.",
+    "Kulaklığın, evdeki başka bir cihaza otomatik bağlandığını fark etmemek.",
+    "Eşleştirme sırasında telefonla kulaklık arasına duvar veya metal yüzey koymak.",
+    "Yalnızca bir kulaklığı kutudan çıkarıp eşleştirmeye çalışmak; bazı modellerde ilk kurulumda ikisinin birden kutudan çıkarılması gerekir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Eşleştirme sırasında şifre isterse ne yazmalıyım?",
+   "a": "Modern kulaklıkların çoğu şifre sormaz. Soran eski veya bazı basit modellerde şifre genellikle 0000 ya da 1234'tür. Bu işe yaramazsa ürün kılavuzuna bakın."
+  },
+  {
+   "q": "Kulaklığı her açtığımda neden tekrar eşleştirmem gerekiyor?",
+   "a": "Normalde gerekmez. Bu durum telefonun kaydı silmesinden, kulaklığın hafızasının dolup eski kaydı atmasından ya da kulaklığın her açılışta sıfırlanmasından kaynaklanabilir. Telefondaki eski kayıtları temizleyip bir kez sıfırdan eşleştirin ve kulaklık yazılımını güncelleyin."
+  },
+  {
+   "q": "Bluetooth kulaklığı televizyona bağlayabilir miyim?",
+   "a": "Televizyonda Bluetooth ses çıkışı varsa evet; ses ayarlarında genellikle “Bluetooth ses cihazları” benzeri bir menü bulunur. Bluetooth'u olmayan televizyonlarda kulaklık çıkışına ya da optik çıkışa takılan bir Bluetooth verici kullanmak gerekir."
+  },
+  {
+   "q": "Bir kulaklık kaç cihaza eşleştirilebilir?",
+   "a": "Kulaklıklar genellikle birden fazla cihazı hafızasında tutar; kayıt sayısı modele göre değişir. Ancak hafızada kayıtlı olmak, aynı anda bağlı olmak demek değildir. Aynı anda iki cihaza bağlı kalabilmek için kulaklığın multipoint desteği olması gerekir."
+  },
+  {
+   "q": "Konum izni olmadan eşleştirme olmuyor, neden?",
+   "a": "Android'in bazı sürümlerinde yakındaki cihaz taraması ve Hızlı Eşleme kartı konum servislerine bağlıdır. Konumu açık tutmak bu taramayı mümkün kılar; eşleştirme bittikten sonra konumu kapatabilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Microsoft Destek: Windows'ta Bluetooth cihazı eşleştirme",
+   "u": "https://support.microsoft.com/windows/2be7b51f-6ae9-b757-a3b9-95ee40c3e242"
+  },
+  {
+   "t": "Google Android Yardım: Android'de Bluetooth sorunlarını düzeltme",
+   "u": "https://support.google.com/android/answer/9769184?hl=en"
+  },
+  {
+   "t": "Google Android Yardım: Yakındaki Bluetooth cihazlarını bulma ve kurma",
+   "u": "https://support.google.com/android/answer/9417604?hl=en"
+  }
+ ]
+}

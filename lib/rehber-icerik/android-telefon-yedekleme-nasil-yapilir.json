@@ -1,0 +1,162 @@
+{
+ "slug": "android-telefon-yedekleme-nasil-yapilir",
+ "title": "Android Telefon Nasıl Yedeklenir? Google ve Bilgisayar Yedeği",
+ "description": "Android'de Google yedeğini açma, fotoğrafları yedekleme, depolama alanını yönetme, bilgisayara yerel yedek alma ve geri yükleme adımları.",
+ "tldr": "Ayarlar > Google > Tüm hizmetler > Yedekleme yolundan Google yedeğini açın; uygulamalar ve verileri, arama geçmişi, kişiler, ayarlar ve SMS bu yedeğe girer. Fotoğraf ve videolar Google Fotoğraflar ile ayrıca yedeklenir. Ücretsiz 15 GB alan Gmail, Drive ve Fotoğraflar arasında paylaşıldığı için önemli dosyalarınızın bir kopyasını bilgisayarda da tutun.",
+ "intro": [
+  "Telefonun suya düşmesi, çalınması ya da bir güncellemenin ardından açılmaması, yedeği olmayan biri için yılların fotoğraflarını ve yazışmalarını kaybetmek anlamına gelebiliyor. Yedeği olan biri içinse aynı olay, yeni bir telefona birkaç saat içinde kaldığı yerden devam etmek demek.",
+  "Android'de yedekleme tek bir düğmeden ibaret değil. Google'ın cihaz yedeği, Google Fotoğraflar, WhatsApp'ın kendi yedeği ve üreticinin araçları farklı veri türlerini ayrı ayrı korur. Aşağıda hangi verinin nereye yedeklendiğini, yedeği nasıl açıp kontrol edeceğinizi, depolama alanını nasıl yöneteceğinizi ve yedeği nasıl geri yükleyeceğinizi anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Hangi veri nereye yedeklenir?",
+   "p": [
+    "Google'ın yardım sayfasına göre Google One yedeği her zaman uygulamaları ve uygulama verilerini, arama geçmişini, kişileri, cihaz ayarlarını, SMS ve MMS mesajlarını kapsar. Bazı veriler ise ilgili Google uygulaması üzerinden yedeklenir. Tüm uygulamalar verilerinin tamamını yedeklemeye izin vermez; bu yüzden oyun ilerlemesi veya not uygulamaları gibi verilerin kendi hesap sistemleri olup olmadığını ayrıca kontrol etmek gerekir."
+   ],
+   "table": {
+    "head": [
+     "Veri türü",
+     "Nasıl yedeklenir?",
+     "Dikkat edilecek nokta"
+    ],
+    "rows": [
+     [
+      "Uygulamalar ve uygulama verileri",
+      "Google cihaz yedeği",
+      "Her uygulama tüm verisini yedeklemez"
+     ],
+     [
+      "Kişiler",
+      "Google Kişiler senkronizasyonu",
+      "Telefon belleğindeki veya SIM'deki kişiler ayrıca geri yüklenmelidir"
+     ],
+     [
+      "SMS, MMS ve arama geçmişi",
+      "Google cihaz yedeği",
+      "RCS sohbetleri Google Mesajlar ile yedeklenir"
+     ],
+     [
+      "Fotoğraf ve videolar",
+      "Google Fotoğraflar yedeklemesi",
+      "Yedekleme açık değilse yalnızca telefonda kalır"
+     ],
+     [
+      "Belgeler ve indirilenler",
+      "Google Drive'a elle yükleme veya bilgisayar",
+      "Otomatik yedeklenmez"
+     ],
+     [
+      "WhatsApp sohbetleri",
+      "WhatsApp'ın Google hesabına yedeği",
+      "Google depolama alanından yer kullanır"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Google yedeğini açma ve kontrol etme adımları",
+   "p": [
+    "Menü adları marka ve Android sürümüne göre değişebilir. Bulamazsanız Ayarlar'daki arama çubuğuna “Yedekleme” yazmak en hızlı yoldur. Samsung gibi bazı markalarda yedekleme ayarları Hesaplar ve yedekleme başlığı altında, Google ve Samsung seçenekleriyle birlikte yer alır."
+   ],
+   "ol": [
+    "Ayarlar'ı açın ve Google (bazı sürümlerde Google hizmetleri) bölümüne girin.",
+    "Tüm hizmetler sekmesinde Yedekleme ve geri yükleme başlığı altındaki Yedekleme'ye dokunun.",
+    "Neyin yedekleneceğini seçin: Fotoğraflar ve videolar, Cihaz verileri ya da ikisi birden.",
+    "Google One ile yedekleme seçeneğini açın ve doğru Google hesabının seçili olduğunu kontrol edin.",
+    "İlk yedeği hemen almak için Şimdi yedekle'ye dokunun.",
+    "Yedek tamamlandıktan sonra Yedekleme ayrıntıları ekranında hangi verilerin yedeklendiğini ve son yedek zamanını kontrol edin."
+   ],
+   "note": "Google'a göre bir yedeğin tamamlanması 24 saate kadar sürebilir. İlk yedeği telefon Wi-Fi'ye bağlı ve şarjdayken başlatmak işi hızlandırır."
+  },
+  {
+   "h": "Fotoğraf ve videoları güvenceye almak",
+   "p": [
+    "Fotoğraflar çoğu kişi için telefondaki en değerli veridir ve cihaz yedeği bunları otomatik olarak kapsamaz. Google Fotoğraflar uygulamasında profil resminize dokunup yedekleme ayarlarına girerek yedeklemeyi açabilirsiniz. Açık olduğunda yeni çekilen fotoğraflar, telefon internete bağlandığında buluta yüklenir.",
+    "Yedekleme kalitesi için genellikle iki seçenek sunulur: orijinal kalite ve hafif sıkıştırılmış depolama tasarrufu seçeneği. İkisi de Google hesabınızın depolama alanından yer kullanır. Profesyonel amaçla çekim yapıyorsanız orijinal kaliteyi, alan sıkıntısı yaşıyorsanız depolama tasarrufunu seçebilirsiniz.",
+    "Mobil veri kotanız sınırlıysa ayarlardan yedeklemenin yalnızca Wi-Fi'de yapılmasını seçin. WhatsApp ve Telegram gibi uygulamaların klasörlerindeki görseller varsayılan olarak yedeklenmeyebilir; bu klasörleri cihazdaki klasörler bölümünden ayrıca yedeklemeye ekleyebilirsiniz."
+   ]
+  },
+  {
+   "h": "Depolama alanını yönetmek",
+   "p": [
+    "Her Google hesabı 15 GB ücretsiz alanla gelir ve bu alan Gmail, Google Drive ve Google Fotoğraflar arasında paylaşılır. Android'de WhatsApp yedekleri de bu alandan yer kullanır. Alan dolduğunda yeni fotoğraflar yedeklenmez, WhatsApp yedeği alınamaz ve bazı durumlarda e-posta alımı da etkilenir.",
+    "Alanı rahatlatmak için önce Google'ın depolama yönetimi ekranında en çok yer kaplayan öğelere bakın. Büyük ekli eski e-postalar, Drive'daki gereksiz dosyalar ve Fotoğraflar'daki bulanık ya da tekrarlanan çekimler genellikle ilk temizlenecek yerlerdir. Bu yeterli olmazsa ek depolama satın almak veya fotoğraf arşivinin bir kısmını bilgisayara taşımak seçenekleriniz arasında."
+   ]
+  },
+  {
+   "h": "Bilgisayara yerel yedek almak",
+   "p": [
+    "Bulut yedeği pratik ama tek kopyaya güvenmek risklidir. Hesabınıza erişimi kaybedebilir, alanınız dolabilir ya da bir dosyayı yanlışlıkla silip bu silmenin buluta da yansıdığını görebilirsiniz. Yaygın bir öneri, önemli verilerin en az iki farklı yerde saklanmasıdır.",
+    "Telefonu USB kablosuyla bilgisayara bağlayıp telefondaki bildirimden dosya aktarımını seçtiğinizde, telefon depolaması bilgisayarda bir sürücü gibi açılır. DCIM klasöründeki fotoğrafları, Download ve Documents klasörlerindeki belgeleri bu yolla kopyalayabilirsiniz. Mac kullanıyorsanız bu işlem için ek bir aktarım uygulaması gerekebilir.",
+    "Samsung kullanıcıları, Smart Switch'in bilgisayar sürümüyle telefonun daha geniş bir yedeğini bilgisayara alabilir ve daha sonra geri yükleyebilir. Diğer markaların da kendi bulut veya bilgisayar yedekleme araçları bulunabilir; telefonunuzun ayarlarındaki yedekleme bölümünde bunlar ayrıca listelenir."
+   ]
+  },
+  {
+   "h": "Yedeği yeni veya sıfırlanmış telefona geri yükleme",
+   "p": [
+    "Yedeği geri yüklemenin en kolay zamanı, yeni bir telefonun ya da fabrika ayarlarına döndürülmüş bir telefonun ilk kurulumudur. Kurulum sırasında Google hesabınızla giriş yaptığınızda yedekler listelenir ve hangi cihazın yedeğini kullanmak istediğinizi seçebilirsiniz. Google, geri yüklemenin tamamlanmasının 24 saate kadar sürebileceğini belirtiyor; uygulamalar arka planda inmeye devam eder.",
+    "Önemli bir sınır var: daha yeni bir Android sürümünden alınan yedek, daha eski bir Android sürümüne geri yüklenemez. Eksiksiz aktarım için yeni telefonun aynı veya daha yeni bir Android sürümünde olması gerekir. Google Fotoğraflar'daki fotoğraflar zaten bulutta olduğu için geri yükleme gerektirmez; aynı hesapla giriş yaptığınızda görünür."
+   ]
+  },
+  {
+   "h": "Yedekleme çalışmıyorsa ne yapmalı?",
+   "p": [
+    "Yedekleme ekranında son yedek tarihi eski görünüyorsa ya da hata mesajı alıyorsanız aşağıdaki sırayla ilerleyin."
+   ],
+   "ol": [
+    "Google hesabınızda yeterli boş alan olup olmadığını kontrol edin.",
+    "Telefonun Wi-Fi'ye bağlı ve şarjda olduğundan emin olun, ardından Şimdi yedekle'yi deneyin.",
+    "Google Play hizmetleri ve Google uygulamasının güncel olduğunu kontrol edin.",
+    "Telefonu yeniden başlatıp yedeklemeyi tekrar başlatın.",
+    "İş profili kullanılan veya şirkete ait cihazlarda Google yedeği kullanılamayabilir; bu durumda şirketinizin BT birimine danışın.",
+    "Sorun sürerse yedeklemeyi kapatıp yeniden açmayı deneyin; bunu yapmadan önce önemli fotoğraf ve dosyalarınızı bilgisayara kopyalayın."
+   ]
+  },
+  {
+   "h": "Yedeklemede sık yapılan hatalar",
+   "p": [
+    "Yedeklemeyle ilgili sorunların çoğu, yedeğin var olduğunu varsayıp hiç kontrol etmemekten doğar. Ayda bir kez yedekleme ayrıntıları ekranına bakmak bu riski büyük ölçüde azaltır."
+   ],
+   "list": [
+    "Cihaz yedeğinin fotoğrafları da kapsadığını düşünmek.",
+    "Google depolama alanı dolduğu halde uyarıları görmezden gelmek.",
+    "Kişileri yalnızca SIM karta veya telefon belleğine kaydetmek.",
+    "WhatsApp yedeğini kontrol etmeden telefonu sıfırlamak.",
+    "Tüm verileri tek bir bulut hesabında tutup bilgisayara hiç kopya almamak.",
+    "Telefonu satmadan önce yedeğin tamamlandığını doğrulamadan sıfırlamak."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Android yedekleme ücretsiz mi?",
+   "a": "Google yedeği ücretsizdir, ancak Google hesabınızın 15 GB ücretsiz alanını kullanır. Bu alan Gmail, Drive ve Fotoğraflar arasında paylaşılır. Alan yetmezse ek depolama satın alabilir ya da bir kısım veriyi bilgisayara taşıyabilirsiniz."
+  },
+  {
+   "q": "Fotoğraflarım Google yedeğine dahil mi?",
+   "a": "Fotoğraf ve videolar Google Fotoğraflar üzerinden yedeklenir. Yedekleme ayarlarında Fotoğraflar ve videolar seçeneğini açmanız ya da Google Fotoğraflar uygulamasında yedeklemeyi etkinleştirmeniz gerekir. Açık değilse fotoğraflar yalnızca telefonda kalır."
+  },
+  {
+   "q": "WhatsApp sohbetleri Android yedeğine giriyor mu?",
+   "a": "WhatsApp kendi yedeğini kullanır. WhatsApp'ta Ayarlar > Sohbetler > Sohbet yedeği bölümünden Google hesabına yedekleme yapılır ve bu yedek Google depolama alanınızdan yer kullanır. Yedeklemenin sıklığını aynı ekrandan ayarlayabilirsiniz."
+  },
+  {
+   "q": "Yedeğin gerçekten alındığını nasıl anlarım?",
+   "a": "Ayarlar'daki Yedekleme ekranında yedekleme ayrıntılarına bakın; burada hangi verilerin yedeklendiği ve son yedeğin zamanı görünür. Google Fotoğraflar'da da yedeklemenin tamamlandığını gösteren bir durum bilgisi bulunur."
+  },
+  {
+   "q": "Yeni telefon daha eski Android sürümündeyse yedek yüklenir mi?",
+   "a": "Google'a göre daha yeni bir Android sürümünden alınan yedek daha eski bir sürüme geri yüklenemez. Yeni telefonu önce güncellemek, mümkün değilse kişileri, fotoğrafları ve WhatsApp'ı kendi senkronizasyon yöntemleriyle ayrı ayrı taşımak gerekir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Google Android Yardım: Android cihazınızdaki verileri yedekleme veya geri yükleme",
+   "u": "https://support.google.com/android/answer/2819582?hl=en"
+  },
+  {
+   "t": "Samsung Destek: Smart Switch ile veri aktarma ve yedekleme",
+   "u": "https://www.samsung.com/ae/support/apps-services/how-to-transfer-and-backup-data-using-smart-switch-on-a-galaxy-phone/"
+  }
+ ]
+}

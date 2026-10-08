@@ -1,0 +1,139 @@
+{
+ "slug": "eis-nedir",
+ "title": "EIS Nedir? Elektronik Görüntü Sabitleme ve OIS'ten Farkı",
+ "description": "EIS (elektronik görüntü sabitleme) videoyu nasıl sabitler, neden görüş açısını daraltır, gece neden zorlanır? OIS ile farkı ve doğru kullanım ipuçları.",
+ "tldr": "EIS, videodaki sarsıntıyı yazılımla düzelten bir sabitleme yöntemidir: kamera görüntüyü biraz geniş yakalar, sonra her kareyi hareketin tersi yönünde kaydırıp kenarlarını kırpar. Ek donanım istemez ve yürürken oluşan büyük salınımlarda etkilidir; bedeli daha dar görüş açısı ve karanlıkta kare içi bulanıklıktır. En iyi sonuç OIS ile birlikte çalıştığında alınır.",
+ "intro": [
+  "Telefonunuzla yürürken çektiğiniz bir videoyu izlerken görüntünün beklediğinizden daha az sallandığını fark ettiyseniz bunun büyük kısmı muhtemelen EIS sayesindedir. EIS (Electronic Image Stabilization), kameranın hiçbir parçasını hareket ettirmeden, tamamen işlemci ve yazılım üzerinden çalışan bir sabitleme yöntemidir.",
+  "Ucuz ve etkili olduğu için giriş segmentinden üst segmente kadar neredeyse her telefonda bir biçimde bulunur. Ama bazı durumlarda görüntüyü bozabilir de. Nasıl çalıştığını bilmek, hangi modu ne zaman açacağınızı seçmenizi kolaylaştırır."
+ ],
+ "sections": [
+  {
+   "h": "EIS nasıl çalışır?",
+   "p": [
+    "EIS'in temel fikri bir pay bırakmaktır. Kamera, kaydedilecek videodan biraz daha geniş bir alanı sensörden okur. Telefonun jiroskobu her an cihazın nasıl hareket ettiğini kaydeder. Yazılım bu bilgiyi kullanarak her karede, titremeyi telafi edecek şekilde kırpma çerçevesini kaydırır. Sonuçta kenarlardaki pay feda edilir, ortadaki görüntü daha sabit görünür.",
+    "Telefon titreyip sağa kaydığında kırpma çerçevesi sola kayar ve izleyici kadrajın oynadığını fark etmez. Birçok telefon bu sırada CMOS sensörlerin satır satır okunmasından kaynaklanan eğilme ve jöle etkisini de azaltmaya çalışır. Bunların hepsi saniyede onlarca kez, kayıt sırasında gerçek zamanlı yapılır."
+   ]
+  },
+  {
+   "h": "EIS'in bedeli: görüş açısı, çözünürlük ve karanlık",
+   "p": [
+    "Kırpma payı bedavaya gelmez. EIS açıkken video, aynı kameranın sabitlemesiz görüntüsüne göre biraz daha dar görünür. Kalabalık bir odada herkesi kadraja sığdırmaya çalışırken bu fark hissedilir. Güçlü sabitleme modlarında kırpma daha da artar; bu modlar çoğu zaman en yüksek çözünürlükte çalışmaz ya da ultra geniş açı kamerayı kullanarak kaybı telafi eder.",
+    "Asıl zayıf nokta düşük ışıktır. EIS kareleri birbirine göre hizalar ama tek bir karenin içindeki bulanıklığı silemez. Karanlıkta kamera her kare için daha uzun pozlama yapar; bu sürede telefon titrerse kare içi bulanıklık oluşur. EIS kareleri sabitlediğinde arka plan yerinde dururken içindeki detaylar bulanıklaşıp netleşiyormuş gibi görünebilir. Gece çekilen videolarda görülen bu titrek bulanıklık, EIS'in tek başına yetmediği yerdir ve OIS'in değerini artırır."
+   ],
+   "note": "Gece video çekerken telefonu iki elle, dirseklerinizi gövdenize yaslayarak tutun ve adımlarınızı yavaşlatın. Bu, EIS'in düzeltmek zorunda kaldığı hareketi azaltır."
+  },
+  {
+   "h": "EIS, OIS ve hibrit sabitleme karşılaştırması",
+   "p": [
+    "OIS donanımsaldır; lensi ya da sensörü fiziksel olarak kaydırarak küçük ve hızlı titremeleri pozlama sırasında giderir. EIS yazılımsaldır; büyük ve yavaş salınımları kareler arasında yumuşatır. Birbirlerinin eksiklerini kapattıkları için üst segment telefonların çoğu ikisini birlikte kullanır. Bu birleşime genellikle hibrit sabitleme denir."
+   ],
+   "table": {
+    "head": [
+     "Özellik",
+     "EIS",
+     "OIS",
+     "Hibrit (OIS + EIS)"
+    ],
+    "rows": [
+     [
+      "Çalışma şekli",
+      "Görüntü kırpılıp kaydırılır",
+      "Lens veya sensör fiziksel olarak hareket eder",
+      "İkisi aynı anda"
+     ],
+     [
+      "Görüş açısı",
+      "Daralır",
+      "Değişmez",
+      "EIS açıkken daralır"
+     ],
+     [
+      "Yürürken video",
+      "Etkili",
+      "Tek başına sınırlı",
+      "En etkili"
+     ],
+     [
+      "Düşük ışıkta kare içi bulanıklık",
+      "Gideremez",
+      "Azaltır",
+      "Azaltır"
+     ],
+     [
+      "Ek donanım maliyeti",
+      "Yok",
+      "Var",
+      "Var"
+     ],
+     [
+      "Fotoğrafta katkı",
+      "Sınırlı, çoklu kare seçimiyle",
+      "Doğrudan",
+      "Doğrudan"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Fotoğrafta EIS işe yarar mı?",
+   "p": [
+    "EIS esas olarak bir video teknolojisidir. Fotoğrafta ise farklı bir yaklaşım kullanılır: telefon art arda birkaç kare çeker, en az titremiş olanları seçer ya da bunları hizalayıp birleştirir. Gece modlarının ve çoklu kare HDR'ın arkasında da benzer bir hizalama mantığı vardır.",
+    "Bu yöntem bulanıklık riskini azaltır ama OIS'in yerini tam tutmaz. Her bir kare kısa pozlamayla çekilmek zorunda kaldığı için daha fazla gren içerir; yazılım bunu temizlerken ince detaylar yumuşayabilir. OIS'siz bir telefonda gece fotoğrafının daha soluk ya da daha yapay görünmesinin bir nedeni budur."
+   ]
+  },
+  {
+   "h": "Telefonunuzda EIS'i doğru kullanmak",
+   "p": [
+    "Mod adları markaya ve yazılım sürümüne göre değişir. Kamera uygulamasının video ayarlarında genellikle bir video sabitleme anahtarı bulunur; bazı markalar ayrıca süper sabit ya da aksiyon modu gibi adlarla daha agresif bir sabitleme seçeneği sunar. Aşağıdaki sıra çoğu telefona uyar."
+   ],
+   "ol": [
+    "Kamera uygulamasını açıp video moduna geçin ve ayarlar simgesinden video sabitleme seçeneğinin açık olduğunu kontrol edin.",
+    "Seçtiğiniz çözünürlük ve kare hızında sabitlemenin desteklendiğinden emin olun; bazı telefonlar en yüksek çözünürlükte veya en yüksek kare hızında sabitlemeyi kapatır ya da gri gösterir.",
+    "Koşarken, bisiklet sürerken veya araçtan çekim yaparken güçlü sabitleme modunu deneyin; daha dar görüntüyü ve olası çözünürlük düşüşünü kabul edin.",
+    "Telefon tripod ya da sabit bir yüzey üzerindeyse sabitlemeyi kapatmayı deneyin; bazı durumlarda gereksiz düzeltme küçük kaymalara ve daha dar kadraja yol açar.",
+    "Karanlık ortamda güçlü sabitleme modlarından kaçının ve mümkünse OIS'li ana kamerayı kullanın."
+   ]
+  },
+  {
+   "h": "Yaygın yanlış bilinenler",
+   "p": [
+    "EIS hakkında en sık karşılaşılan yanlış anlamalar, teknik özellik sayfalarındaki kısa ifadelerden kaynaklanır."
+   ],
+   "list": [
+    "EIS kaliteyi düşürür: Kısmen. Kırpma nedeniyle görüş açısı daralır ve görüntü bir miktar büyütülebilir; iyi ışıkta bu fark çoğu kullanıcı için belirgin değildir. Karanlıkta ise kare içi bulanıklık görünür hale gelebilir.",
+    "EIS varsa OIS'e gerek yoktur: Yanlış. EIS kareler arasındaki hareketi düzeltir, pozlama sırasındaki titremeyi düzeltemez.",
+    "Telefonda EIS yazmıyorsa sabitleme yoktur: Çoğu zaman yanlış. Pek çok üretici yazılımsal sabitlemeyi teknik özelliklerde ayrıca belirtmez.",
+    "Ön kamerada da aynı sabitleme vardır: Her zaman değil. Ön kamerada sabitleme bazı modellerde yalnızca belirli çözünürlüklerde çalışır."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "EIS video kalitesini düşürür mü?",
+   "a": "İyi ışıkta genellikle fark edilir bir kalite kaybı yaratmaz; en belirgin etkisi görüş açısının biraz daralmasıdır. Düşük ışıkta ise kare içi bulanıklık daha görünür hale gelebilir. Güçlü sabitleme modları ayrıca çözünürlüğü sınırlayabilir."
+  },
+  {
+   "q": "EIS mi daha iyi OIS mi?",
+   "a": "Farklı işleri iyi yaparlar. OIS düşük ışıkta ve fotoğrafta, EIS yürürken çekilen videoda daha etkilidir. Video ve gece çekimini birlikte önemsiyorsanız ikisini birden sunan bir telefon arayın."
+  },
+  {
+   "q": "Video çekerken görüntü neden kenarlardan yakınlaşıyor?",
+   "a": "Sabitleme açıldığında ya da güçlü sabitleme moduna geçildiğinde kamera kırpma payı ayırır. Bu, görüntünün hafifçe yakınlaşmış gibi görünmesine neden olur. Daha geniş kadraj istiyorsanız sabitlemeyi kapatabilir ya da ultra geniş açı kameraya geçebilirsiniz."
+  },
+  {
+   "q": "Gece videolarındaki titrek bulanıklık neden oluyor?",
+   "a": "Karanlıkta her kare daha uzun pozlanır ve bu süredeki titreme karenin içine bulanıklık olarak işlenir. EIS kareleri hizaladığı için arka plan sabit kalır ama bu bulanıklık yerinde kalır. Daha yavaş hareket etmek, telefonu iki elle tutmak ve OIS'li kamerayı kullanmak etkisini azaltır."
+  },
+  {
+   "q": "Gimbal kullanırken EIS'i kapatmalı mıyım?",
+   "a": "Gimbal büyük hareketleri zaten mekanik olarak dengeler. Pek çok kullanıcı daha geniş kadraj için telefon sabitlemesini kapatmayı tercih eder. İki ayarla kısa bir test çekimi yapıp hangisinin daha doğal göründüğüne bakmak en sağlıklı yöntemdir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: Image stabilization",
+   "u": "https://en.wikipedia.org/wiki/Image_stabilization"
+  }
+ ]
+}

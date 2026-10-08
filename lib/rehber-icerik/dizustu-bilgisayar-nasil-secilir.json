@@ -1,0 +1,218 @@
+{
+ "slug": "dizustu-bilgisayar-nasil-secilir",
+ "title": "Dizüstü Bilgisayar Nasıl Seçilir? Kullanım Amacına Göre Rehber",
+ "description": "Dizüstü alırken işlemci, RAM, SSD, ekran, GPU, pil ve garantide neye bakmalı? Öğrenci, ofis ve oyun için öneriler ve kontrol listesi.",
+ "tldr": "Dizüstü seçimine teknik özelliklerden değil, cihazı ne için ve nerede kullanacağınızdan başlayın. Çoğu kullanıcı için güncel nesil bir işlemci, 16 GB RAM, en az 512 GB NVMe SSD ve iyi bir IPS ya da OLED ekran dengeli bir pakettir; oyun ve video kurgu için ayrı ekran kartı ve güçlü soğutma eklenir. RAM'in lehimli olup olmadığına, gerçek pil ömrüne ve Türkiye'de distribütör garantisi bulunup bulunmadığına mutlaka bakın.",
+ "intro": [
+  "Bir mağazanın dizüstü sayfasında aynı görünen iki cihaz arasında ciddi fark olabilir; aynı ekran kartı adını taşıyan iki model bile farklı performans verebilir. Teknik özellik tabloları uzadıkça hangi satırın sizin için önemli olduğunu ayırt etmek zorlaşır.",
+  "Bu rehber, bir dizüstüyü parça parça nasıl değerlendireceğinizi sade bir dille anlatıyor: işlemci adlarının ne söylediği, kaç GB RAM'e ihtiyacınız olduğu, ekranın hangi değerlerine bakılacağı, pil ömrü iddialarının nasıl okunacağı ve garanti tarafında nelere dikkat edileceği. Sonunda kullanım senaryolarına göre öneriler, en sık yapılan hatalar ve satın almadan önce gözden geçirebileceğiniz bir kontrol listesi bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "İlk adım: Dizüstüyü ne için ve nerede kullanacaksınız?",
+   "p": [
+    "Her teknik karar bu sorunun cevabına bağlıdır. Cihazı her gün çantada taşıyacak bir öğrenci ile masadan hiç kalkmayan bir oyun bilgisayarı arayan biri, aynı bütçeyle bambaşka modellere yönelmelidir. Taşınabilirlik ile performans çoğu zaman birbirinin karşısında durur: Güçlü işlemci ve ekran kartı daha fazla ısı üretir, bu da daha kalın kasa, daha büyük fan ve daha ağır adaptör demektir.",
+    "Satın almadan önce şu üç soruyu kendinize sorun: Cihazı haftada kaç gün prizden uzakta kullanacaksınız? En ağır işiniz ne olacak (belge, kod derleme, video kurgu, oyun)? Kaç yıl kullanmayı planlıyorsunuz? Bu cevaplar, aşağıdaki bölümlerde hangi özelliğe öncelik vereceğinizi belirler."
+   ]
+  },
+  {
+   "h": "İşlemci: Model adları ne anlatır?",
+   "p": [
+    "Dizüstülerde dört ana işlemci ailesiyle karşılaşırsınız: Intel Core ve Core Ultra, AMD Ryzen, Apple'ın M serisi ve Qualcomm Snapdragon X. Intel ve AMD işlemciler x86 mimarisini kullanır ve Windows yazılımlarıyla en geniş uyumu sağlar. Snapdragon X tabanlı Windows dizüstüler ARM mimarisindedir; pil ömründe güçlüdürler ancak bazı eski programlar, sürücüler ve özellikle bazı oyunlar öykünme ile çalışır ya da hiç çalışmaz. Kullandığınız özel bir yazılım varsa ARM uyumluluğunu önceden kontrol edin.",
+    "i5, i7 veya Ryzen 5, Ryzen 7 gibi etiketler tek başına yeterli bilgi vermez; işlemcinin nesli ve sonundaki harf daha belirleyicidir. Genel olarak U harfiyle biten işlemciler düşük güç tüketimli olup ince dizüstülerde kullanılır, H, HS veya HX ile bitenler ise daha yüksek performans ve daha fazla ısı demektir. Yeni nesil bir orta sınıf işlemci, birkaç nesil önceki üst sınıf bir işlemciyi geçebilir. Nesil numarasını nasıl okuyacağınızı işlemci nesli rehberimizde ayrıntılı anlattık.",
+    "Son dönem işlemcilerde NPU adı verilen, yapay zekâ işlerini düşük enerjiyle yapan bir birim de bulunur. Microsoft, Copilot+ PC etiketini 40 TOPS üzeri NPU'ya sahip cihazlara verir. Windows'taki bazı yeni yapay zekâ özelliklerini kullanmak istiyorsanız bu etikete bakabilirsiniz; bu özelliklere ihtiyacınız yoksa NPU gücü seçimde öncelikli bir ölçüt değildir."
+   ]
+  },
+  {
+   "h": "RAM ve depolama: Ne kadar yeterli?",
+   "p": [
+    "8 GB RAM; e-posta, belge ve az sekmeli tarayıcı için iş görür, fakat toplantı uygulaması ve onlarca sekme aynı anda açıldığında hızla dolar. Yeni alınan bir dizüstü için 16 GB, çoğu kullanıcıda birkaç yıl rahat kullanım sağlayan dengeli değerdir. Video kurgu, sanal makine ve büyük yazılım projeleri için 32 GB tercih edilmelidir.",
+    "Özellikle ince modellerde RAM anakarta lehimlidir ve sonradan artırılamaz. Bu durumda ihtiyacınızı bugüne göre değil, üç-dört yıl sonrasına göre seçin. Ürün sayfasında bellek yuvası (SO-DIMM) sayısı yazıyorsa daha düşük RAM'le başlayıp sonradan yükseltme şansınız olur.",
+    "Depolamada mekanik disk (HDD) yerine SSD şarttır; açılış, program yükleme ve dosya erişiminde fark çok büyüktür. NVMe SSD'ler, eski SATA SSD'lerden de belirgin şekilde hızlıdır. Kapasite olarak 256 GB, işletim sistemi ve güncellemelerle hızla dolar; 512 GB çoğu kullanıcı için daha gerçekçi bir alt sınırdır. Oyun ve video arşivi için 1 TB veya ek bir M.2 yuvası olan modeller avantaj sağlar."
+   ]
+  },
+  {
+   "h": "Ekran: Boyut, panel, parlaklık ve yenileme hızı",
+   "p": [
+    "13-14 inç ekranlar taşınabilirlik için idealdir; 15-16 inç, ekran alanı ile ağırlık arasında dengeli bir orta yoldur; 17 inç ve üzeri ise çoğunlukla masada kalan cihazlar içindir. Çözünürlükte Full HD (1920x1080) 14-15 inçte yeterli keskinlik verir; 14 inç ve üzeri ekranlarda 2K sınıfı çözünürlükler metni daha net gösterir.",
+    "Panel türü olarak IPS LCD geniş görüş açısı ve dengeli renk sunar. OLED paneller gerçek siyah ve yüksek kontrast sağlar, ancak uzun süre sabit görüntü gösterilen kullanımlarda ekran yanması riski taşır. Ucuz modellerde karşılaşılan TN paneller, yandan bakıldığında renkleri belirgin şekilde bozar.",
+    "Parlaklık, nit birimiyle verilir. İç mekânda 300 nit civarı rahat kullanım sağlar; pencere kenarında veya dış mekânda çalışacaksanız 400 nit ve üzeri tercih edin. Renk doğruluğu için sRGB kapsama oranına bakın; fotoğraf ve tasarım işlerinde yüzde 100'e yakın sRGB kapsamı aranır. Yüzde 45 NTSC gibi düşük değerler soluk renk anlamına gelir. Oyun oynayacaksanız 120 Hz ve üzeri yenileme hızı hareketi belirgin şekilde akıcılaştırır; ofis kullanımında bile kaydırma deneyimini iyileştirir."
+   ]
+  },
+  {
+   "h": "Ekran kartı: Dahili grafik mi, ayrı GPU mu?",
+   "p": [
+    "Dahili (entegre) grafik birimleri işlemcinin içindedir ve sistem RAM'ini kullanır. Video izleme, ofis, web ve hafif fotoğraf düzenleme için yeterlidir; yeni nesil dahili grafikler bazı hafif oyunları düşük ayarlarda da çalıştırabilir. Ayrı ekran kartı (NVIDIA GeForce RTX veya AMD Radeon) ise güncel oyunlar, 3D modelleme ve hızlı video dışa aktarımı için gereklidir.",
+    "Dizüstü ekran kartlarında yalnızca modele değil, üreticinin o karta ayırdığı güç sınırına (TGP, watt cinsinden) bakın. Aynı adı taşıyan bir ekran kartı ince bir kasada düşük güçle, kalın bir oyun kasasında yüksek güçle çalışabilir ve aradaki performans farkı hissedilir boyutta olabilir. Bu değer ürün sayfasında yazmıyorsa üreticinin teknik özellik belgesine veya bağımsız incelemelere bakın.",
+    "Ayrı ekran kartı daha fazla ısı, fan sesi ve pil tüketimi demektir. Oyun oynamayacak ve 3D iş yapmayacaksanız ayrı GPU için bütçe ayırmak yerine daha iyi bir ekran, daha fazla RAM veya daha hafif bir kasa seçmek genellikle daha akıllıca olur."
+   ]
+  },
+  {
+   "h": "Pil, ağırlık ve şarj",
+   "p": [
+    "Üreticilerin açıkladığı pil süreleri genellikle düşük parlaklıkta video oynatma gibi hafif testlerle ölçülür; gerçek karma kullanımda süre belirgin şekilde kısalır. Karşılaştırma yaparken pil kapasitesine (Wh) ve bağımsız incelemelerdeki web gezinme testlerine bakmak daha gerçekçi sonuç verir. ARM tabanlı Mac'ler ve Snapdragon X'li Windows dizüstüler bu alanda genellikle öne çıkar; güçlü ayrı ekran kartlı oyun dizüstüleri ise pilde kısa sürer.",
+    "Ağırlıkta yaklaşık 1,5 kg altı, her gün taşımak için rahattır. Ağırlığı değerlendirirken adaptörü de hesaba katın; oyun dizüstülerinin büyük adaptörleri çantada ciddi yük oluşturur. USB-C üzerinden Power Delivery ile şarj olabilen modeller, tek bir adaptörü telefon ve tabletle paylaşma kolaylığı sağlar. USB-C şarjda adaptörün güç değeri (W) dizüstünün ihtiyacını karşılamalıdır; yetersiz adaptör şarjı yavaşlatır veya kullanım sırasında pilin azalmasına yol açar."
+   ]
+  },
+  {
+   "h": "Bağlantı noktaları, kamera ve kablosuz bağlantı",
+   "p": [
+    "İnce dizüstülerde bağlantı noktası sayısı azalır ve çoğu zaman yalnızca USB-C kalır. Harici monitör, USB bellek, kart okuyucu ve kablolu ağ kullanıyorsanız ya bu portları barındıran bir model seçin ya da bir USB-C çoklayıcı (hub) bütçesi ayırın. Thunderbolt 4 ve USB4 portları 40 Gbps'e kadar veri aktarımı, harici ekran ve şarjı tek kabloda destekleyebilir; ancak her USB-C portu ekran çıkışı vermez, bunu teknik özelliklerde kontrol edin.",
+    "Kablosuz bağlantıda Wi-Fi 6 ve sonrası (6E, 7) yoğun ağlarda daha kararlı bağlantı sağlar; avantajı tam görmek için modeminizin de bu standardı desteklemesi gerekir. Sık görüntülü görüşme yapıyorsanız 1080p kamera ve gürültü engelleme özellikli mikrofonlar, 720p kameralara göre hissedilir fark yaratır. Windows Hello uyumlu kızılötesi kamera veya parmak izi okuyucu, şifre yazmadan hızlı oturum açmayı sağlar."
+   ]
+  },
+  {
+   "h": "Klavye, kasa, soğutma ve işletim sistemi",
+   "p": [
+    "Kâğıt üzerinde görünmeyen ama her gün hissedeceğiniz özellikler bunlardır. Klavyede tuş hissi, arka aydınlatma ve Türkçe Q klavye düzeni önemlidir; yurt dışı kaynaklı cihazlarda Türkçe karakterler tuşlarda bulunmayabilir. Touchpad'in geniş ve hassas olması, fare taşımadığınız günlerde fark yaratır. Metal kasa genellikle daha sağlam hisseder; plastik kasalar ise daha hafif ve ekonomik olabilir.",
+    "Soğutma sistemi, aynı işlemcinin farklı kasalarda farklı performans vermesinin ana nedenidir. İnce bir kasada ısınan işlemci hızını düşürür. Fan sesine hassassanız incelemelerde yük altındaki gürültü ölçümlerine bakın.",
+    "Türkiye'de bazı dizüstüler işletim sistemi yüklü olmadan, FreeDOS ile satılır. Bu modellerin fiyatı daha düşük görünse de Windows kullanacaksanız ayrıca lisans almanız gerekir; karşılaştırmayı buna göre yapın. macOS yalnızca Mac'lerde bulunur ve Apple ekosistemi (iPhone, iPad) ile sıkı uyum sağlar; ancak bazı mühendislik yazılımları ve oyunların macOS sürümü yoktur."
+   ]
+  },
+  {
+   "h": "Teknik terimlerin sade açıklaması",
+   "p": [
+    "Ürün sayfalarında en sık karşılaşacağınız kısaltmaların ne anlama geldiğini aşağıda kısaca topladık."
+   ],
+   "list": [
+    "TDP / TGP: İşlemcinin veya ekran kartının çalışırken harcamasına izin verilen güç. Yüksek değer, genellikle daha fazla performans ve daha fazla ısı demektir.",
+    "NVMe: SSD'nin hızlı PCIe hattı üzerinden çalıştığını gösteren arayüz. SATA SSD'lerden daha hızlıdır.",
+    "LPDDR / SO-DIMM: LPDDR lehimli ve az enerji harcayan bellektir; SO-DIMM ise çıkarılıp değiştirilebilen bellek modülüdür.",
+    "Nit: Ekran parlaklık birimi. Değer yükseldikçe ekran aydınlık ortamda daha okunaklı olur.",
+    "sRGB: Web ve çoğu içerik için kullanılan standart renk alanı. Kapsama oranı yükseldikçe renkler doğruya yaklaşır.",
+    "Hz (yenileme hızı): Ekranın saniyede kaç kez yenilendiği. 120 Hz ve üzeri hareketi daha akıcı gösterir.",
+    "USB-C PD: USB-C üzerinden şarj standardı. Dizüstünün bu yolla şarj olup olmayacağını gösterir.",
+    "NPU: Yapay zekâ işlemlerini düşük enerjiyle yapan işlemci birimi. Gücü TOPS ile ölçülür."
+   ]
+  },
+  {
+   "h": "Kullanım senaryosuna göre öneriler",
+   "p": [
+    "Aşağıdaki tablo, en yaygın kullanım tiplerine göre öncelik verilmesi gereken özellikleri özetler. Değerler başlangıç noktasıdır; bütçeniz ve kullanım sürenize göre bir kademe yukarı veya aşağı inebilirsiniz.",
+    "Öğrenciler için hafiflik, pil ömrü ve sağlam bir kasa çoğu zaman güçten daha önemlidir; ancak mühendislik, mimarlık veya grafik tasarım bölümlerinde kullanılan yazılımlar ayrı ekran kartı ve daha fazla RAM isteyebilir, bölümünüzün yazılım listesini önceden kontrol edin. Yaşlı kullanıcılar ve ev kullanımı için büyük ve parlak bir ekran, okunaklı bir klavye, sade bir kurulum ve yakında yetkili servis bulunması, işlemci gücünden çok daha belirleyicidir."
+   ],
+   "table": {
+    "head": [
+     "Kullanıcı",
+     "İşlemci ve GPU",
+     "RAM / SSD",
+     "Ekran",
+     "Öncelik"
+    ],
+    "rows": [
+     [
+      "Öğrenci",
+      "Güncel nesil U serisi, dahili grafik",
+      "16 GB / 512 GB",
+      "13-14 inç IPS veya OLED",
+      "Hafiflik, pil ömrü, dayanıklılık"
+     ],
+     [
+      "Ofis ve uzaktan çalışma",
+      "Güncel nesil orta sınıf, dahili grafik",
+      "16 GB / 512 GB",
+      "14-15 inç, mat yüzey",
+      "Klavye, kamera, port çeşitliliği"
+     ],
+     [
+      "Oyuncu",
+      "H/HX serisi, yüksek TGP'li ayrı GPU",
+      "16-32 GB / 1 TB",
+      "15-16 inç, 144 Hz ve üzeri",
+      "Soğutma, GPU gücü, ekran hızı"
+     ],
+     [
+      "İçerik üretici (foto/video)",
+      "Güçlü çok çekirdekli işlemci, ayrı GPU veya güçlü Apple M",
+      "32 GB / 1 TB ve üzeri",
+      "Yüksek sRGB / DCI-P3 kapsama",
+      "Renk doğruluğu, RAM, depolama"
+     ],
+     [
+      "Yazılım geliştirici",
+      "Çok çekirdekli güncel işlemci",
+      "32 GB / 1 TB",
+      "14-16 inç, yüksek çözünürlük",
+      "RAM, klavye, ekran alanı"
+     ],
+     [
+      "Yaşlı kullanıcı / ev",
+      "Güncel nesil giriş-orta sınıf",
+      "8-16 GB / 512 GB",
+      "15-16 inç, parlak IPS",
+      "Okunabilirlik, sadelik, servis erişimi"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Garanti, servis ve satın alma kanalı",
+   "p": [
+    "Türkiye'de tüketiciye satılan yeni ürünlerde yasal garanti süresi en az iki yıldır. Ancak garantiyi kimin verdiği de önemlidir: Distribütör veya ithalatçı garantili ürünlerde yetkili servis ağına kolayca ulaşırsınız. Resmi kanallar dışından gelen ürünlerde garanti, satıcı firma garantisi olabilir ve parça bulma, servis süresi gibi konularda sorun yaşayabilirsiniz. Ürün sayfasında garanti türünü ve faturanın kimin adına kesileceğini kontrol edin.",
+    "Şehrinizde markanın yetkili servisi olup olmadığına ve servisin cihazı yerinde mi yoksa merkeze gönderip mi onardığına bakın. İş için kullandığınız bir cihazda birkaç haftalık servis süresi ciddi bir sorundur; bazı markaların iş serisi modellerinde yerinde servis seçenekleri bulunur."
+   ]
+  },
+  {
+   "h": "Dizüstü alırken en sık yapılan hatalar",
+   "list": [
+    "Yalnızca işlemcinin i7 veya Ryzen 7 olmasına bakıp neslini ve güç sınıfını göz ardı etmek",
+    "8 GB lehimli RAM'li bir modeli, yıllarca kullanma planıyla almak",
+    "Aynı ekran kartı adını taşıyan iki modeli, güç sınırına (TGP) bakmadan eşit saymak",
+    "Ekranın parlaklık ve renk kapsama değerlerini kontrol etmemek; düşük NTSC değerli soluk paneller",
+    "Üreticinin açıkladığı pil süresini gerçek kullanım süresi sanmak",
+    "FreeDOS'lu bir modeli, Windows lisansı maliyetini hesaba katmadan karşılaştırmak",
+    "Oyun oynamayacağı hâlde ağır ve gürültülü bir oyun dizüstüsü almak",
+    "Garanti türünü, yetkili servis erişimini ve Türkçe klavye düzenini kontrol etmemek"
+   ],
+   "p": [
+    "Bu hataların ortak noktası, tek bir özelliğe odaklanıp cihazı bir bütün olarak değerlendirmemektir. Karşılaştırma yaparken en az iki bağımsız incelemede ekran, soğutma ve pil testlerine göz atmak bu riski azaltır."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "p": [
+    "Sepete eklemeden önce aşağıdaki maddeleri tek tek işaretleyin. Bir maddeye cevap veremiyorsanız ürün sayfasını, üreticinin teknik belgesini veya bağımsız bir incelemeyi kontrol edin."
+   ],
+   "list": [
+    "Cihazın ana kullanım amacını ve haftalık taşıma sıklığını belirledim.",
+    "İşlemcinin nesline ve güç sınıfına (U, H, HX vb.) baktım.",
+    "RAM en az 16 GB; değilse yükseltilebilir yuva var.",
+    "SSD NVMe ve en az 512 GB.",
+    "Ekran boyutu, çözünürlük, parlaklık (nit) ve renk kapsama değerleri ihtiyacıma uygun.",
+    "Oyun veya 3D iş için ayrı GPU ve TGP değeri yeterli; bu işleri yapmıyorsam gereksiz GPU'ya para vermiyorum.",
+    "Pil kapasitesini (Wh) ve bağımsız pil testlerini inceledim.",
+    "İhtiyacım olan portlar var; USB-C ile şarj ve ekran çıkışı destekleniyor.",
+    "Klavye Türkçe Q düzeninde.",
+    "İşletim sistemi yüklü mü, yoksa ayrıca lisans gerekiyor mu, öğrendim.",
+    "Garanti distribütör veya ithalatçı garantisi; yakınımda yetkili servis var."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Oyun için dizüstünde ayrı ekran kartı şart mı?",
+   "a": "Güncel ve grafik açısından ağır oyunlar için evet. Dahili grafikler hafif ve eski oyunları düşük ayarlarda çalıştırabilir, ancak yeni oyunlarda akıcı bir deneyim için ayrı bir GPU gerekir. Seçerken yalnızca kart modeline değil, üreticinin belirlediği güç sınırına (TGP) ve soğutmaya da bakın."
+  },
+  {
+   "q": "Öğrenci dizüstüsünde kaç GB RAM yeterli?",
+   "a": "Yeni alınacak bir öğrenci dizüstüsü için 16 GB, cihazın okul süresi boyunca rahat çalışmasını sağlar. RAM çoğu ince modelde lehimli olduğu için sonradan artırılamaz. Mühendislik, mimarlık veya video ağırlıklı bölümlerde 32 GB değerlendirilebilir."
+  },
+  {
+   "q": "SSD mi HDD mi tercih edilmeli?",
+   "a": "Sistem diski mutlaka SSD olmalıdır. SSD, açılış, program yükleme ve dosya erişiminde HDD'ye göre çok daha hızlıdır ve darbelere karşı daha dayanıklıdır. Büyük arşivler için harici bir HDD veya bulut depolama ek olarak kullanılabilir."
+  },
+  {
+   "q": "FreeDOS'lu dizüstü almak mantıklı mı?",
+   "a": "Zaten bir Windows lisansınız varsa veya Linux kullanacaksanız mantıklı olabilir. Windows kullanmayı planlıyorsanız lisans maliyetini ekleyerek işletim sistemi yüklü modellerle karşılaştırın. Kurulumu kendiniz yapmanız ve sürücüleri üreticinin sitesinden indirmeniz gerekeceğini de hesaba katın."
+  },
+  {
+   "q": "Snapdragon işlemcili Windows dizüstü alınır mı?",
+   "a": "Uzun pil ömrü ve sessiz çalışma istiyorsanız iyi bir seçenek olabilir. Ancak ARM mimarisi nedeniyle bazı eski programlar, özel sürücüler ve bazı oyunlar sorunlu çalışabilir veya hiç çalışmayabilir. Kullandığınız kritik yazılımların ARM için Windows desteğini satın almadan önce kontrol edin."
+  },
+  {
+   "q": "MacBook mu Windows dizüstü mü?",
+   "a": "iPhone ve iPad kullanıyorsanız, uzun pil ömrü ve sessiz çalışma önceliğinizse MacBook güçlü bir seçenektir. Belirli Windows yazılımlarına, oyunlara veya yükseltilebilir donanıma ihtiyacınız varsa Windows dizüstü daha esnektir. Mac'lerde RAM ve SSD sonradan artırılamadığı için yapılandırmayı ilk alımda doğru seçmek gerekir."
+  }
+ ],
+ "sources": []
+}

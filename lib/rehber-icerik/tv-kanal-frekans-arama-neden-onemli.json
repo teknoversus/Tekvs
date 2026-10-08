@@ -1,0 +1,152 @@
+{
+ "slug": "tv-kanal-frekans-arama-neden-onemli",
+ "title": "TV Kanalları Kayboldu mu? Kanal ve Frekans Arama Rehberi",
+ "description": "Uydu kanalları neden kaybolur? TKGS, otomatik ve ağ taraması, DiSEqC ayarı ve sinyal sorunlarında adım adım yapılacaklar.",
+ "tldr": "Uydu kanallarının toplu halde kaybolmasının en sık nedeni Türksat'ın yayınları başka frekanslara ya da uydulara taşımasıdır. TKGS destekli televizyonlar listeyi kendisi günceller; desteklemeyenlerde uydu kaynağında otomatik arama ya da ağ (şebeke) taraması yapmanız gerekir. Hiçbir kanal gelmiyorsa sorun büyük olasılıkla çanak, LNB veya kablodadır.",
+ "intro": [
+  "Akşam televizyonu açtığınızda bazı kanallarda 'Sinyal yok' yazısı görüyor ya da kanal listesinde boşluklar fark ediyorsanız, televizyonunuz büyük ihtimalle bozulmadı. Uydu yayınlarında kanallar zaman zaman başka frekanslara taşınır ve televizyon eski bilgiyle o kanalları bulamaz.",
+  "Bunun yakın bir örneği Ağustos 2026'da yaşandı: Teknolojik ömrünü tamamlayan Türksat 3A'daki yayınlar, 15'i 16'ya bağlayan gece aynı yörünge konumundaki diğer Türksat uydularına taşındı ve basına yansıyan bilgilere göre yüzlerce kanalın frekansı değişti. Bu tür geçişlerde çanağı çevirmeniz gerekmez; yapılması gereken, televizyona ya da uydu alıcısına kanalları yeniden buldurmaktır."
+ ],
+ "sections": [
+  {
+   "h": "Kanallar neden kaybolur?",
+   "p": [
+    "Türkiye'de uydudan izlenen ulusal kanalların çoğu 42 derece doğudaki Türksat uydularından yayın yapar. Her kanal, uydu üzerinde belirli bir frekans, polarizasyon ve sembol oranıyla yayın yapar. Televizyonunuz kanal listesini oluştururken bu bilgileri kaydeder. Yayıncı ya da uydu operatörü bir kanalı başka bir transpondere veya uyduya taşıdığında kayıtlı bilgi geçersiz kalır ve o kanal ekranınızda kaybolur.",
+    "Kanal kaybının tek nedeni frekans değişikliği değildir. Yoğun yağmur ve kar, uydu sinyalini geçici olarak zayıflatabilir; hava açılınca yayın kendiliğinden geri gelir. Çanağın rüzgarla kayması, LNB'nin (çanağın önündeki alıcı başlık) arızalanması, koaksiyel kablonun ezilmesi ya da konnektörün oksitlenmesi de kalıcı sinyal kaybına yol açar.",
+    "Belirtiye bakarak nedeni daraltabilirsiniz. Birkaç kanal kaybolduysa büyük olasılıkla frekans değişikliği vardır. Tüm kanallar aynı anda gittiyse sorun çanak, LNB, kablo ya da televizyonun kaynak ayarındadır."
+   ],
+   "table": {
+    "head": [
+     "Belirti",
+     "Olası neden",
+     "İlk yapılacak"
+    ],
+    "rows": [
+     [
+      "Yalnızca bazı kanallar yok",
+      "Frekans veya uydu değişikliği",
+      "TKGS güncellemesi ya da kanal arama"
+     ],
+     [
+      "Tüm kanallarda 'Sinyal yok'",
+      "Çanak, LNB, kablo ya da kaynak ayarı",
+      "Kaynağın Uydu seçili olduğunu ve kabloyu kontrol edin"
+     ],
+     [
+      "Görüntü yağmurda donuyor",
+      "Hava koşulu ya da zayıf sinyal",
+      "Hava açılınca tekrar deneyin; sürekliyse çanak ayarına baktırın"
+     ],
+     [
+      "Bazı kanallar donuk, bazıları net",
+      "Sınırda sinyal seviyesi",
+      "Sinyal kalitesini ayar menüsünden kontrol edin"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "TKGS nedir, televizyonunuzda var mı?",
+   "p": [
+    "TKGS, Türksat Kanal Güncelleme Sistemi'nin kısaltmasıdır. Destekleyen televizyon ve uydu alıcılarında, bir kanal frekans değiştirdiğinde ya da yeni kanal yayına başladığında kanal listesi kullanıcının bir şey yapmasına gerek kalmadan güncellenir. Ağustos 2026'daki geçişte de TKGS'li cihaz kullananların bir işlem yapmasına gerek olmadığı duyuruldu.",
+    "TKGS'nin cihazınızda olup olmadığını anlamak için kanal veya uydu ayarları menüsünde 'TKGS', 'Türksat Kanal Güncelleme' ya da 'Operatör' gibi bir seçenek arayın; kullanım kılavuzu da bunu belirtir. Türkiye pazarı için üretilmiş birçok televizyon ve alıcıda bulunur, yurt dışından getirilmiş cihazlarda ise bulunmayabilir. Varsa ayarın 'Açık' ya da 'Otomatik' olduğundan emin olun.",
+    "TKGS açıkken güncelleme sonrası kanal sıralamanız TKGS listesine göre yeniden düzenlenebilir. Kendi sıralamanızı korumak istiyorsanız cihazınızın TKGS ayarlarında güncellemenin nasıl uygulanacağını belirleyen bir seçenek olup olmadığına kullanım kılavuzundan bakın."
+   ]
+  },
+  {
+   "h": "Uydu kanallarını yeniden arama adımları",
+   "p": [
+    "Menü adları marka, model ve yazılım sürümüne göre farklıdır. Aşağıdaki sıra çoğu televizyonda geçerlidir; Arçelik'in yayımladığı rehberde de benzer bir yol izlenir."
+   ],
+   "ol": [
+    "Televizyonun kaynağını (giriş) Uydu olarak seçin. Kumandadaki Kaynak ya da Input tuşu bu menüyü açar.",
+    "Ayarlar > Kanallar (ya da Yayın) bölümüne girin ve Otomatik Kanal Arama seçeneğini bulun.",
+    "Cihaz bir operatör ya da arama modu soruyorsa Türksat veya TKGS seçeneğini işaretleyin.",
+    "Anten sisteminizi seçin: tek çanak ve tek LNB için çoğu zaman varsayılan ayar yeterlidir; çanakta birden fazla LNB varsa DiSEqC, apartman sisteminde tek kablo dağıtım varsa Tek Kablo (Unicable) seçeneği gerekir.",
+    "LNB veya uydu ayarları ekranında sinyal seviyesi ve kalite çubuklarını kontrol edin. Çubuklar boşsa aramaya geçmeden kablo ve çanak bağlantısını inceleyin.",
+    "Tara ya da Ara düğmesine basın ve işlem bitene kadar televizyonu kapatmayın. Arama birkaç dakikadan uzun sürebilir.",
+    "Arama bittiğinde listeyi kaydedin ve kaybolan kanalları kontrol edin."
+   ],
+   "note": "Kanal aramasından sonra kendi oluşturduğunuz favori listesi ya da kanal sıralaması silinebilir. Sık izlediğiniz kanalların numaralarını önceden not almak, sonrasında düzenlemeyi kolaylaştırır."
+  },
+  {
+   "h": "Ağ taraması ve manuel arama ne zaman gerekir?",
+   "p": [
+    "TKGS desteklemeyen cihazlarda otomatik arama bazen tüm transponderleri bulamaz. Bu durumda manuel arama menüsünde güncel bir Türksat frekansı girilip ağ taraması (şebeke taraması) seçeneği açılır. Ağ taraması, girilen frekanstaki yayından Türksat ağındaki diğer frekansların listesini alır ve hepsini tarar.",
+    "Manuel aramada kullanılacak frekans, polarizasyon ve sembol oranı bilgileri değişebildiği için bunları eski listelerden değil, Türksat'ın ya da izlemek istediğiniz kanalın güncel duyurusundan alın. Yanlış ya da eski bir değerle yapılan arama boş liste döndürür ve çoğu zaman donanım arızası sanılır.",
+    "Uydu alıcısı (set üstü kutu) kullanıyorsanız televizyonun değil, alıcının menüsünden arama yapmanız gerekir. Televizyon bu durumda yalnızca HDMI girişinden görüntü gösterir; televizyonda yapılan uydu araması alıcının listesini değiştirmez."
+   ]
+  },
+  {
+   "h": "Arama sonuç vermezse izlenecek sıra",
+   "p": [
+    "Arama tamamlandığı halde kanallar gelmiyorsa ya da hiçbir kanal bulunamıyorsa şu sırayla ilerleyin."
+   ],
+   "ol": [
+    "Televizyonun ve alıcının yazılımını güncelleyin. TKGS ve kanal listesi hataları yazılım güncellemeleriyle giderilebilir.",
+    "Uydu kablosunu televizyondan çıkarıp yeniden takın; F konnektörün sıkı oturduğundan ve ucundaki ince telin bükülmediğinden emin olun.",
+    "Çatı, balkon ya da cephedeki çanağın yerinden oynayıp oynamadığına, önünde yeni bir engel (ağaç dalı, iskele, tabela) olup olmadığına bakın.",
+    "Aynı çanağa bağlı başka bir televizyon ya da alıcı varsa onu kontrol edin. Diğer cihazda yayın varsa sorun sizin cihazınızda veya kablonuzdadır.",
+    "Apartman sisteminde (merkezi uydu dağıtımı) yalnızca sizin daireniz değil tüm bina etkileniyorsa site yönetimine ve sistemi kuran firmaya haber verin.",
+    "Yukarıdaki adımlar sonuç vermezse kanal listesini fabrika ayarlarına döndürüp aramayı baştan yapın."
+   ],
+   "note": "Çatıya ya da yüksek bir cepheye çıkıp çanağı kendiniz ayarlamaya çalışmayın; düşme riski ciddi bir tehlikedir. Çanak ayarı ve LNB değişimi için bir anten servisinden destek alın. Televizyonun uydu girişi hiçbir sinyali algılamıyorsa ve başka bir cihaz aynı kabloyla çalışıyorsa televizyonu garanti belgesiyle yetkili servise götürün."
+  },
+  {
+   "h": "Kablo ve karasal yayında durum",
+   "p": [
+    "Kablo televizyon aboneliğinde kanal düzeni operatörün sistemine bağlıdır. Operatör kanal planını değiştirdiğinde ya da yeni paket yayına aldığında televizyonda Kablo kaynağında otomatik arama yapmanız ya da operatörün verdiği alıcıyı yeniden başlatmanız gerekebilir. Operatörün müşteri hizmetleri, güncel arama ayarlarını en doğru veren kaynaktır.",
+    "Anten (karasal) yayın alanlarda vericide yapılan değişiklikler aynı şekilde yeniden arama gerektirir. Karasal yayınlarda bina anteninin yönü ve verici kapsama alanı sonucu doğrudan etkiler."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "p": [
+    "Kanal arama sırasında en çok zaman kaybettiren hatalar şunlardır:"
+   ],
+   "list": [
+    "Uydu alıcısı kullanırken aramayı televizyonun kendi menüsünden yapmak.",
+    "İnternetteki eski frekans listeleriyle manuel arama yapmak.",
+    "Kaynak olarak Uydu yerine Anten ya da Kablo seçiliyken arama yapmak.",
+    "Çok LNB'li sistemde DiSEqC ayarını yanlış porta bırakmak.",
+    "Yağmurlu havada sinyal kaybını arıza sanıp ayarları değiştirmek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Kanal arama işlemi televizyona zarar verir mi?",
+   "a": "Hayır. Kanal arama yalnızca kanal listesi verisini yeniler, donanıma bir etkisi yoktur. Tek yan etkisi, kendi oluşturduğunuz kanal sıralamasının ve favori listelerinin silinebilmesidir."
+  },
+  {
+   "q": "Frekans değişikliğinde çanağı çevirmem gerekir mi?",
+   "a": "Yayınlar aynı yörünge konumundaki uydular arasında taşındığında gerekmez. Ağustos 2026'daki Türksat 3A geçişinde de çanakların yeniden yönlendirilmesine gerek olmadığı açıklandı."
+  },
+  {
+   "q": "Otomatik arama yaptım ama bazı kanallar hâlâ yok, ne yapmalıyım?",
+   "a": "Önce ağ (şebeke) taramasını açarak aramayı tekrarlayın. Kanal hâlâ yoksa yayıncının duyurularını kontrol edin; kanal yayınını durdurmuş, başka uyduya geçmiş ya da yayın yaptığı transponder geçici olarak kapalı olabilir."
+  },
+  {
+   "q": "TKGS açıkken kanal sıramı nasıl korurum?",
+   "a": "Bazı cihazların TKGS ayarlarında güncellemenin otomatik mi yoksa onayla mı uygulanacağını belirleyen seçenekler bulunur; bunu kullanım kılavuzundan kontrol edin. Böyle bir seçenek yoksa güncellemeden sonra sıralamayı yeniden düzenlemeniz gerekir."
+  },
+  {
+   "q": "Yağmurda yayın neden kesiliyor?",
+   "a": "Yoğun yağmur ve kar, uydudan gelen sinyali zayıflatır. Hava düzelince yayın geri gelir. Hafif yağmurda bile kesilme yaşıyorsanız çanak ayarı ya da LNB zayıf olabilir; bir anten servisine ölçüm yaptırın."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Arçelik: Türksat frekans değişikliği ve kanal güncelleme",
+   "u": "https://www.arcelik.com.tr/blog/turksat-frekans-degisikligi-kanal-guncelleme"
+  },
+  {
+   "t": "Dünya: Türksat'ta 788 kanalın frekansı değişti",
+   "u": "https://www.dunya.com/gundem/bakani-uraloglu-turksatta-tarihi-geceyi-duyurdu-788-kanalin-frekansi-degisti-haberi-836396"
+  },
+  {
+   "t": "Wikipedia: Türksat 4A",
+   "u": "https://en.wikipedia.org/wiki/T%C3%BCrksat_4A"
+  }
+ ]
+}

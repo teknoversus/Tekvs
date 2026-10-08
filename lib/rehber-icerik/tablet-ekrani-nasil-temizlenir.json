@@ -1,0 +1,110 @@
+{
+ "slug": "tablet-ekrani-nasil-temizlenir",
+ "title": "Tablet Ekranı Nasıl Temizlenir? Güvenli Adımlar ve Hatalar",
+ "description": "Tablet ekranını kaplamaya zarar vermeden temizlemenin adımları: hangi bez, ne kadar nem, alkollü mendil ne zaman uygun ve nelerden kaçınmalısınız.",
+ "tldr": "Tableti kapatın, kablolarını çıkarın ve yumuşak, tüy bırakmayan bir mikrofiber bezle silin; inatçı lekede bezi saf suyla hafifçe nemlendirin. Dezenfeksiyon gerekiyorsa Apple ve Samsung yüzde 70 izopropil alkollü mendile izin veriyor, ama sprey, çamaşır suyu, cam temizleyici ve basınçlı hava kullanmayın. Sıvıyı hiçbir zaman doğrudan ekrana veya portlara uygulamayın.",
+ "intro": [
+  "Tablet ekranı telefondan daha büyük bir yüzey olduğu için parmak izi, yağ ve toz çok daha görünür olur. Mutfakta tarif okurken, çocuğun elinde çizgi film izlerken ya da yatakta kitap okurken ekran birkaç gün içinde bulanık görünmeye başlar.",
+  "Asıl soru, ekranı temizlerken parmak izini azaltan ince kaplamayı ve cihazın açıklıklarını nasıl koruyacağınız. Aşağıdaki adımlar üreticilerin kendi temizlik yönergelerine dayanıyor; hangi ürünün güvenli olduğunu, hangisinin zamanla zarar verdiğini de ayrıca bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "Ekranın üzerinde ne var ve neden dikkat gerekir?",
+   "p": [
+    "Tablet ekranlarının çoğunun üzerinde, yağı iten ince bir oleofobik kaplama bulunur. Parmak izinin kolay silinmesini ve parmağın camda rahat kaymasını bu katman sağlar. Kaplama zamanla doğal olarak aşınır; sert kimyasallar ve aşındırıcı bezler bu süreci hızlandırır.",
+    "İkinci risk sıvıdır. Hoparlör ızgaraları, mikrofon delikleri, şarj portu ve tuş boşlukları ekran kenarına yakındır. Ekrana doğrudan püskürtülen sıvı aşağı süzülüp bu açıklıklardan içeri girebilir. Suya dayanıklılık sınıfı olmayan tabletlerde bu, kalıcı arızaya yol açabilir."
+   ]
+  },
+  {
+   "h": "Adım adım tablet ekranı temizliği",
+   "p": [
+    "Bu sıralama hem günlük toz temizliği hem de haftalık detaylı temizlik için uygundur. Çoğu zaman ilk üç adım yeterli olur."
+   ],
+   "ol": [
+    "Tableti kapatın ve şarj kablosu, klavye, kalem gibi bağlı her şeyi çıkarın. Kapalı ekranda lekeler daha iyi görünür, dokunmalar da ayarları değiştirmez.",
+    "Kılıf varsa çıkarın; kenarda biriken kum ve kırıntı silerken ekranı çizebilir.",
+    "Kuru, temiz bir mikrofiber bezle ekranı hafif bastırarak, düz çizgiler halinde baştan aşağı silin.",
+    "Leke kalırsa bezin bir köşesini saf veya damıtılmış suyla hafifçe nemlendirin. Bez sızdırmayacak kadar nemli olmalı, ıslak değil.",
+    "Lekeli bölgeyi nemli kısımla silin, ardından bezin kuru tarafıyla hemen kurulayın.",
+    "Dezenfeksiyon gerekiyorsa yüzde 70 izopropil alkollü bir mendille sert yüzeyleri nazikçe silin ve kurumasını bekleyin.",
+    "Kenar ve köşeler için bezi parmağınıza sarın; açıklıkların içine bir şey sokmayın.",
+    "Ekran tamamen kuruduktan sonra kılıfı geri takıp tableti açın."
+   ],
+   "note": "Bezi her seferinde aynı tarafıyla kullanmayın. Bezde biriken kum taneleri ekranı çizebilir; mikrofiber bezleri yumuşatıcı kullanmadan yıkayın."
+  },
+  {
+   "h": "Alkol kullanılabilir mi? Üreticiler ne diyor?",
+   "p": [
+    "Alkolün kaplamaya zarar verdiği yaygın bir uyarıdır, ama üreticilerin güncel yönergeleri daha nüanslıdır. Apple, ürünlerinin sert ve gözeneksiz yüzeylerinin yüzde 70 izopropil alkollü mendil, yüzde 75 etil alkollü mendil veya Clorox dezenfektan mendille nazikçe silinebileceğini belirtir. Samsung da Galaxy cihazları için yüzde 70 izopropil veya etil alkol içeren dezenfektanlara izin verir.",
+    "Buradaki anahtar kelimeler “mendil” ve “nazikçe”. Alkollü mendil günlük temizlik malzemesi değil, dezenfeksiyon gerektiğinde kullanılacak bir seçenektir. Sık ve bastırarak alkolle silmek kaplamanın aşınmasını hızlandırabilir. Günlük kullanımda kuru veya hafif nemli mikrofiber bez yeterlidir."
+   ]
+  },
+  {
+   "h": "Kullanmamanız gereken ürünler",
+   "p": [
+    "Evdeki pek çok temizlik ürünü cam için tasarlanmıştır, ekran kaplaması için değil. Üreticilerin yönergelerinde açıkça kaçınılması istenen ürünler şunlardır:"
+   ],
+   "list": [
+    "Cam temizleyiciler ve genel ev temizleyicileri: Çoğu amonyak veya çözücü içerir.",
+    "Çamaşır suyu ve hidrojen peroksit içeren ürünler.",
+    "Aerosol spreyler ve doğrudan ekrana püskürtülen her tür sıvı.",
+    "Basınçlı hava: Hem Apple hem Samsung tablet temizliğinde basınçlı hava kullanılmamasını önerir.",
+    "Kağıt havlu, peçete, mutfak bezi ve sünger: Lifleri ve dokusu aşındırıcıdır.",
+    "Asetonlu oje çıkarıcı, sirke ve parfüm gibi rastgele çözücüler."
+   ]
+  },
+  {
+   "h": "Koruyucu cam, mat film ve kalem kullananlar için notlar",
+   "p": [
+    "Ekran koruyucu takılıysa aynı yöntemle koruyucunun üzerini temizlersiniz. Temperli camlarda adımlar aynıdır. Mat (kağıt hissi veren) filmler ise pürüzlü yüzeyleri nedeniyle kiri daha çok tutar; bunları kuru bezle düz hareketlerle silin. Alkollü mendil kullanmadan önce filmin paketindeki veya üreticisinin sitesindeki temizlik önerisine bakın, çünkü film yüzeyleri camdan farklı malzemelerden yapılır.",
+    "Koruyucunun kenarından içeri sıvı girerse film kalkabilir ve altında leke oluşur. Kenarlara yakın bölgelerde bezi daha kuru tutun. Kalem ucu ekranda iz bırakıyorsa bu genellikle ucun aşınmasından kaynaklanır; aşınmış ucu değiştirmek ekranı korur."
+   ]
+  },
+  {
+   "h": "Çocuk kullanımı ve yapışkan lekeler",
+   "p": [
+    "Çocukların kullandığı tabletlerde reçel, çikolata ya da oyun hamuru gibi yapışkan lekeler sık görülür. Bunları kuru bezle bastırarak silmeye çalışmak kiri yaymakla kalmaz, içindeki şeker kristalleri ekranı çizebilir. Önce bezi saf suyla nemlendirip lekenin üzerine birkaç saniye bastırarak yumuşatın, sonra tek yönde kaldırın.",
+    "Çocuk kılıflarının ekran kenarındaki çerçevesi kir biriktirir. Kılıfı haftada bir çıkarıp hem kılıfın iç yüzünü hem tabletin kenarlarını silmek, zamanla kenarda oluşan çizikleri önler."
+   ]
+  },
+  {
+   "h": "Temizlikten sonra sorun çıktıysa",
+   "p": [
+    "Temizlik sonrası dokunmatik tuhaf davranıyorsa, büyük ihtimalle ekranda nem kalmıştır. Tableti kapalı tutup birkaç dakika kurumasını bekleyin. Sorun sürerse tableti yeniden başlatın ve koruyucunun kenarlarının kalkıp kalkmadığına bakın.",
+    "Hoparlörden boğuk ses geliyorsa veya şarj portu şarjı algılamıyorsa içeri sıvı kaçmış olabilir. Tableti şarja takmayın, kapalı tutun ve kurumaya bırakın; pirinç içine gömmek gibi yöntemler toz ve nişasta parçacıklarını içeri sokabilir. Kuruduktan sonra da sorun devam ederse veya ekranda leke, renk değişimi görüyorsanız yetkili servise başvurun. Sıvı teması garanti kapsamı dışında sayılabilir; servise gitmeden önce garanti belgenizdeki koşullara bakın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Islak mendil ile tablet ekranı silinebilir mi?",
+   "a": "Bebek mendili veya genel amaçlı ıslak mendiller parfüm, yağ ve farklı kimyasallar içerebilir; ekranda iz bırakır ve önerilmez. Dezenfeksiyon için üreticilerin izin verdiği yüzde 70 izopropil alkollü mendiller nazikçe ve ara sıra kullanılabilir."
+  },
+  {
+   "q": "Gözlük temizleme spreyi kullanabilir miyim?",
+   "a": "Spreyi ekrana değil, en fazla beze sıkın ve içeriğini kontrol edin. Alkol veya amonyak içeren spreyler kaplamayı aşındırabilir. Çoğu durumda saf suyla hafif nemlendirilmiş mikrofiber bez yeterlidir."
+  },
+  {
+   "q": "Tablet ekranını ne sıklıkla temizlemeliyim?",
+   "a": "Kuru mikrofiber bezle günlük veya birkaç günde bir silmek yeterlidir. Nemli temizlik ve dezenfeksiyonu yalnızca gerektiğinde yapın; sık alkollü silme kaplamanın ömrünü kısaltabilir."
+  },
+  {
+   "q": "Tablet açıkken temizlenebilir mi?",
+   "a": "Üreticiler tabletin kapatılmasını ve kabloların çıkarılmasını önerir. Açık ekranda dokunmalar ayar değiştirebilir, ayrıca kapalı ve siyah ekranda lekeler daha kolay görünür."
+  },
+  {
+   "q": "Ekrandaki parmak izleri eskisinden daha çok kalıyor, neden?",
+   "a": "Oleofobik kaplama zamanla aşınır; sert kimyasallar ve aşındırıcı bezler bunu hızlandırır. Aşınmış kaplama evde geri getirilemez; oleofobik kaplamalı bir ekran koruyucu takmak pratik bir çözümdür."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Apple — Apple ürünlerinizi temizleme",
+   "u": "https://support.apple.com/103258"
+  },
+  {
+   "t": "Samsung — Galaxy cihazınızı nasıl temizlersiniz",
+   "u": "https://www.samsung.com/uk/support/mobile-devices/how-to-clean-your-galaxy-device/"
+  }
+ ]
+}

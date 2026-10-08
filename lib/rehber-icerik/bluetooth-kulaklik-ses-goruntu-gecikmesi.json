@@ -1,0 +1,143 @@
+{
+ "slug": "bluetooth-kulaklik-ses-goruntu-gecikmesi",
+ "title": "Bluetooth Kulaklıkta Ses-Görüntü Gecikmesi Neden Olur, Nasıl Azalır?",
+ "description": "Bluetooth kulaklıkta dudak senkronu neden kayar, oyunda gecikme neden daha belirgin? Gecikmenin kaynakları ve video, oyun, TV için pratik çözümler.",
+ "tldr": "Bluetooth, sesi kodlayıp paketler halinde gönderdiği ve alıcı taraf kesinti olmasın diye ara bellekte biriktirdiği için kablolu bağlantıya göre gecikme ekler. Video uygulamalarının çoğu bu gecikmeyi telafi eder, oyunlar ve canlı yayınlar ise edemez. Oyun modu, düşük gecikmeli kodekler, TV'deki ses senkronu ayarı ve güncel yazılım gecikmeyi azaltır; sıfır gecikme için kablo gerekir.",
+ "intro": [
+  "Dizide oyuncunun dudakları kıpırdıyor, ses bir an sonra geliyor. Ya da mobil oyunda ateş düğmesine bastığınız an ile silah sesini duyduğunuz an arasında küçük ama rahatsız edici bir boşluk var. Bu, Bluetooth kulaklıklarda sık karşılaşılan bir durumdur ve kulaklığın bozuk olduğu anlamına gelmez.",
+  "Gecikmenin bir kısmı Bluetooth'un çalışma biçiminden gelir ve tamamen ortadan kalkmaz. Ancak ne kadarının hissedileceği; kullandığınız uygulamaya, kodeğe, kulaklığın modlarına ve kaynak cihaza bağlıdır. Aşağıda gecikmenin nereden geldiğini ve hangi durumda neyi değiştirmenin işe yaradığını anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Gecikme hangi aşamalarda birikiyor?",
+   "p": [
+    "Kablolu kulaklıkta ses, elektrik sinyali olarak doğrudan hoparlöre gider. Bluetooth'ta ise ses önce telefonda sıkıştırılır, küçük paketlere bölünür, radyo dalgasıyla gönderilir, kulaklıkta çözülür ve ancak sonra çalınır. Her aşama birkaç milisaniye ekler.",
+    "En büyük payı genellikle ara bellek alır. Kulaklık, sinyal bir anlığına zayıfladığında ses kesilmesin diye gelen paketleri kısa bir süre biriktirir. Bu tampon ne kadar büyükse bağlantı o kadar kararlı, gecikme de o kadar fazladır. Kablosuz kulak içi modellerde sesin iki kulaklığa senkron dağıtılması da ek süre gerektirebilir."
+   ],
+   "list": [
+    "Kaynak cihazda sesin işlenmesi ve kodlanması",
+    "Kablosuz iletim ve kaybolan paketlerin yeniden gönderilmesi",
+    "Kulaklıktaki ara bellek (tampon)",
+    "Kodun çözülmesi ve gürültü engelleme gibi ses işleme adımları"
+   ]
+  },
+  {
+   "h": "Videoda sorun yok, oyunda var: telafi edilen ve edilemeyen gecikme",
+   "p": [
+    "Aynı kulaklıkla bir video uygulamasında dudak senkronu düzgünken bir oyunda gecikme hissetmeniz şaşırtıcı değildir. Telefonlar ve video oynatıcıların çoğu Bluetooth çıkışının gecikmesini hesaba katıp görüntüyü sese göre biraz geciktirebilir. Video önceden kaydedildiği için bu mümkündür; izleyen kişi farkı görmez.",
+    "Oyunda, görüntülü görüşmede veya müzik aleti çalma uygulamalarında ise ses, sizin hareketinize anında karşılık olarak üretilir. Görüntüyü geciktirmek oyunu oynanmaz hale getireceği için telafi yapılamaz ve Bluetooth gecikmesi olduğu gibi hissedilir. Bu yüzden “düşük gecikme” iddialarını değerlendirirken asıl ölçüt oyun ve canlı kullanımdır."
+   ],
+   "note": "Belirli bir uygulamada senkron kayıyorsa sorun kulaklıkta değil, o uygulamanın telafi desteğinde olabilir. Aynı videoyu başka bir oynatıcıda açarak karşılaştırın."
+  },
+  {
+   "h": "Kodek gecikmeyi ne kadar etkiler?",
+   "p": [
+    "Kodek, sesin nasıl sıkıştırılacağını belirleyen yöntemdir ve gecikmenin bir kısmından sorumludur. Kaynaklarda verilen değerler kulaklık, telefon ve ölçüm yöntemine göre geniş aralıkta değişir; aşağıdaki tablo yalnızca kodeklerin birbirine göre konumunu gösterir. Bir kodeğin kullanılabilmesi için hem telefonun hem kulaklığın onu desteklemesi gerekir; biri desteklemezse bağlantı SBC gibi ortak bir kodeğe düşer."
+   ],
+   "table": {
+    "head": [
+     "Kodek",
+     "Gecikme açısından konumu",
+     "Not"
+    ],
+    "rows": [
+     [
+      "SBC",
+      "Genellikle en yüksek",
+      "Her Bluetooth kulaklıkta bulunan temel kodek"
+     ],
+     [
+      "AAC",
+      "Uygulamaya göre değişir",
+      "iPhone'larda ana kodek"
+     ],
+     [
+      "aptX",
+      "SBC'den düşük",
+      "Qualcomm kodeği, Android cihazlarda yaygın"
+     ],
+     [
+      "aptX Adaptive",
+      "Düşük gecikme modunda yaklaşık 50-80 ms",
+      "Eski aptX Low Latency'nin yerini alıyor"
+     ],
+     [
+      "aptX Low Latency",
+      "40 ms'nin altı hedeflenir",
+      "İki uçta da destek gerekir, yeni ürünlerde azalıyor"
+     ]
+    ]
+   },
+   "list": [
+    "iPhone aptX desteklemez; iPhone'da gecikmeyi azaltmanın yolu kulaklığın kendi oyun moduna ve uygulamanın telafisine kalır.",
+    "Android'de bağlantının hangi kodeği kullandığını Geliştirici seçenekleri > Bluetooth ses kodeği satırında görebilirsiniz; liste telefon modeline göre değişir."
+   ]
+  },
+  {
+   "h": "Oyun modu ve düşük gecikme ayarları",
+   "p": [
+    "Birçok kulaklık uygulamasında “oyun modu”, “düşük gecikme modu” veya benzeri bir seçenek bulunur. Bu modlar genellikle ara belleği küçültür ve ses işleme adımlarını sadeleştirir. Karşılığında bağlantı kalabalık ortamlarda daha kolay kesilebilir, bazı modellerde ses kalitesi veya ekolayzer seçenekleri kısıtlanabilir.",
+    "Oyun oynayacaksanız bu modu açın, müzik dinlerken ise kapatın; böylece hem düşük gecikmeden hem de kararlı bağlantıdan yararlanırsınız. Rekabetçi oyunlarda hiçbir Bluetooth ayarı kablolu kulaklığın ya da oyun kulaklıklarındaki ayrı 2,4 GHz kablosuz alıcının yerini tutmaz."
+   ],
+   "ol": [
+    "Kulaklığın uygulamasını açın ve oyun veya düşük gecikme modunu etkinleştirin.",
+    "Oyunu yeniden başlatın; bazı oyunlar ses çıkışını yalnızca açılışta algılar.",
+    "Telefonla kulaklık arasındaki mesafeyi kısa tutun, telefonu arka cebe koymayın.",
+    "Kulaklık ve telefon yazılımını güncelleyin.",
+    "Gecikme sürüyorsa uygulamanın ses senkronu ayarı olup olmadığına bakın."
+   ]
+  },
+  {
+   "h": "Televizyon ve bilgisayarda gecikme",
+   "p": [
+    "Televizyonlarda Bluetooth kulaklık bağlandığında gecikme daha belirgin olabilir, çünkü TV'nin görüntü işleme süresi de hesaba girer. Birçok televizyonda ses ayarları altında “A/V senkronizasyonu”, “ses gecikmesi” veya “dudak senkronu” adlı bir seçenek bulunur. Sony'nin destek belgesine göre örneğin bu ayar kapalıyken Bluetooth ses görüntünün gerisinde kalabilir ve ayar bazı oyun modlarıyla aynı anda açılamaz. Menü adı ve yeri markaya göre değişir.",
+    "Bilgisayarda gecikme genellikle Bluetooth adaptörüne ve sürücüsüne bağlıdır. Eski veya dahili adaptörü zayıf dizüstülerde sürücüyü üreticinin sitesinden güncellemek fark yaratabilir. Kulaklığın mikrofonu aynı anda açıksa bağlantı görüşme profiline geçer; bu, ses kalitesini düşürdüğü gibi senkronu da etkileyebilir."
+   ]
+  },
+  {
+   "h": "Gecikmeyi azaltırken sık yapılan hatalar",
+   "p": [
+    "Gecikme sorunu çoğu zaman yanlış yerde aranır. Aşağıdaki hatalar boşa zaman kaybettirir ya da ses kalitesini gereksiz yere düşürür."
+   ],
+   "list": [
+    "Yalnızca tek bir uygulamada yaşanan senkron sorununu kulaklığa bağlamak.",
+    "Kulaklık ya da telefon desteklemediği halde geliştirici seçeneklerinden bir kodeği zorlamaya çalışmak; bağlantı yine ortak kodeğe döner.",
+    "Oyun modunu müzik dinlerken de açık bırakıp kesintilerden şikâyet etmek.",
+    "Kulaklığı satın alırken yalnızca kodek adına bakıp oyun modu ve uygulama desteğini kontrol etmemek.",
+    "Rekabetçi oyunlar için Bluetooth'tan kablolu bağlantıyla aynı tepkiyi beklemek."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Bluetooth gecikmesi tamamen sıfırlanabilir mi?",
+   "a": "Hayır. Sesin kodlanması, gönderilmesi ve tamponlanması fiziksel olarak zaman alır. Düşük gecikmeli kodekler ve oyun modları bu süreyi kısaltır ama sıfır gecikme yalnızca kablolu bağlantıyla elde edilir."
+  },
+  {
+   "q": "Bluetooth sürümü yükseldikçe gecikme azalır mı?",
+   "a": "Sürüm numarası tek başına gecikmeyi belirlemez. Asıl etkili olan kullanılan kodek, kulaklığın tampon ayarları ve yazılımıdır. Yeni sürümlerle gelen LE Audio gibi teknolojiler daha düşük gecikmeye imkân verse de bunun için telefonun da kulaklığın da bu teknolojiyi desteklemesi gerekir."
+  },
+  {
+   "q": "Gecikme neden bazen zamanla artıyor?",
+   "a": "Bazı kulaklıklar ve kodekler bağlantı kalitesine göre kendini ayarlar; sinyal zayıfladığında kesinti olmaması için kararlılığı öne alabilir. Telefonun vücudun öbür tarafında kalması veya kalabalık kablosuz ortamlar bu durumu tetikleyebilir. Kulaklığı kutuya koyup yeniden bağlamak ve telefonu yaklaştırmak çoğu zaman yardımcı olur."
+  },
+  {
+   "q": "Oyun için ayrı alıcılı kablosuz kulaklık mı, Bluetooth mu?",
+   "a": "Gecikmeye duyarlı oyunlar için USB alıcıyla çalışan 2,4 GHz kablosuz oyun kulaklıkları genellikle Bluetooth'tan daha düşük gecikme sunar. Bazı modeller her iki bağlantıyı da destekler; konsol veya bilgisayarda alıcıyı, telefonda Bluetooth'u kullanabilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "SoundGuys: aptX Adaptive nasıl çalışır",
+   "u": "https://soundguys.com/aptx-adaptive-explained-18768/"
+  },
+  {
+   "t": "Avantree Destek: Bluetooth kodeklerinin gecikme değerleri",
+   "u": "https://support.avantree.com/hc/en-us/articles/31257100736793-Different-Bluetooth-Codecs-Latency"
+  },
+  {
+   "t": "Android Authority: Android'in gizli Bluetooth kodek menüsü",
+   "u": "https://www.androidauthority.com/android-hidden-bluetooth-codec-menu-explained-3701480/"
+  }
+ ]
+}

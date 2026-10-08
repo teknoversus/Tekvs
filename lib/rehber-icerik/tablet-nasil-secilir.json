@@ -1,0 +1,197 @@
+{
+ "slug": "tablet-nasil-secilir",
+ "title": "Tablet Nasıl Seçilir? Ekran, Kalem, İşlemci ve Kullanım Amacı",
+ "description": "Tablet alırken ekran tipi, işletim sistemi, kalem desteği, depolama ve güncelleme süresine nasıl bakılır? Öğrenci, oyuncu ve ofis için öneriler.",
+ "tldr": "Tableti önce ne yapacağınıza göre seçin: video ve okuma için iyi bir ekran ve hoparlör, not ve çizim için uyumlu aktif kalem, ofis işi için klavye desteği ve çoklu pencere, oyun için güçlü işlemci ve yüksek yenileme hızı öncelikli olmalı. Ardından işletim sistemi ekosistemini, depolamayı ve üreticinin güncelleme süresini kontrol edin. En pahalı modeli değil, kullanım senaryonuzun darboğazını çözen modeli seçin.",
+ "intro": [
+  "Tablet, telefonla dizüstü arasında duran ama ikisinin de yerini tam tutmayan bir cihaz. Aynı vitrinde akşamları dizi izlemek için tasarlanmış giriş segment bir modelle, kalemiyle profesyonel çizim yapılan üst segment bir model yan yana durur ve teknik tabloda birbirine benzer sayılar görürsünüz.",
+  "Doğru seçimi yapmanın yolu, tabletle gününüzün hangi kısmını geçireceğinizi netleştirmek. Ders notu mu alacaksınız, çocuğunuz çizgi film mi izleyecek, yoksa yolda e-posta ve sunum mu hazırlayacaksınız? Aşağıda önce teknik terimleri sadeleştiriyor, ardından her kullanım senaryosu için neye öncelik vermeniz gerektiğini, sık yapılan hataları ve mağazaya götürebileceğiniz bir kontrol listesini veriyoruz."
+ ],
+ "sections": [
+  {
+   "h": "İlk soru: Tableti ne için kullanacaksınız?",
+   "p": [
+    "Tabletlerde fiyatı yükselten özellikler genellikle belirli kullanıcılar için anlam taşır. Profesyonel kalem desteği çizim yapmayan biri için, en güçlü işlemci de yalnızca video izleyen biri için karşılığı az olan bir harcamadır. Öte yandan doğru yerde kısılan bir özellik, cihazı birkaç ay sonra çekmeceye kaldırmanıza neden olabilir.",
+    "Kullanımınızı üç gruba ayırarak başlayın: tüketim (video, okuma, internet), üretkenlik (not, belge, sunum, çoklu pencere) ve yoğun iş yükü (oyun, video düzenleme, çizim). Çoğu kişi ilk gruptadır ve giriş ya da orta segment bir tablet bu iş için yeterlidir. İkinci ve üçüncü gruptaysanız kalem, klavye ve işlemci tercihleri belirleyici olur."
+   ]
+  },
+  {
+   "h": "Teknik terimler sade dille",
+   "p": [
+    "Ürün sayfalarında karşınıza çıkan terimlerin pratikte ne anlama geldiğini bilmek, pazarlama diliyle gerçek farkı ayırmanızı kolaylaştırır."
+   ],
+   "list": [
+    "IPS LCD: Arkadan aydınlatmalı panel. Renkleri dengeli ve geniş açıdan izlenebilir; karanlık sahnelerde siyahlar hafif gri görünebilir.",
+    "OLED / AMOLED: Her pikselin kendi ışığını ürettiği panel. Siyahlar gerçekten siyah, kontrast çok yüksektir; karanlık odada film izlerken fark edilir.",
+    "Yenileme hızı (Hz): Ekranın saniyede kaç kez güncellendiği. 60 Hz yeterlidir; 90 veya 120 Hz kaydırmayı, kalemle yazmayı ve uyumlu oyunları daha akıcı gösterir.",
+    "Piksel yoğunluğu (ppi): İnç başına piksel sayısı. Aynı çözünürlükte ekran büyüdükçe yoğunluk düşer, metinler biraz daha az keskin görünür.",
+    "Parlaklık (nit): Güneş alan bir balkonda veya pencere kenarında ekranın okunabilirliğini belirler.",
+    "Aktif kalem: Basınç ve eğim algılayan, ekranla elektronik olarak haberleşen kalem. Pasif (kapasitif) kalem ise parmak gibi davranır, basınç algılamaz.",
+    "RAM: Aynı anda açık tutulabilen uygulama miktarını etkiler. Az RAM'li tablette uygulamalar arasında geçişte sayfalar yeniden yüklenir.",
+    "Hücresel (LTE/5G) model: SIM kart takılabilen ve Wi-Fi olmadan internete bağlanabilen sürüm."
+   ]
+  },
+  {
+   "h": "İşletim sistemi ve ekosistem",
+   "p": [
+    "Tablet seçimini en uzun süre etkileyen karar işletim sistemidir. iPadOS çalıştıran iPad'ler, tablet için optimize edilmiş geniş bir uygulama kütüphanesine ve uzun yazılım desteğine sahiptir; iPhone ve Mac kullanıyorsanız dosya, fotoğraf ve mesaj paylaşımı daha akıcıdır. Android tabletlerde ise model ve fiyat çeşitliliği çok daha fazladır, microSD yuvası ve dosya yönetiminde esneklik daha yaygındır.",
+    "Android tarafında deneyim markaya göre değişir. Bazı üreticiler tablet için ek özellikler sunar; örneğin bazı Samsung tabletlerde masaüstüne benzer pencereli bir arayüz sağlayan DeX modu bulunur. Klavye ile tam Windows programları çalıştırmanız gerekiyorsa Windows tabletler (2'si 1 arada cihazlar) ayrı bir seçenektir; bunlar tablet uygulamalarında daha zayıf, masaüstü yazılımında güçlüdür.",
+    "Güncelleme süresi de bir o kadar önemlidir. Üreticiler, modellerine kaç yıl işletim sistemi ve güvenlik güncellemesi vereceklerini genellikle duyurur. Tableti uzun yıllar kullanmayı planlıyorsanız bu bilgiyi satın almadan önce üreticinin resmi sayfasından kontrol edin; güncelleme almayan bir tablet bankacılık ve okul uygulamalarında zamanla sorun çıkarabilir."
+   ],
+   "table": {
+    "head": [
+     "Kriter",
+     "iPadOS (iPad)",
+     "Android tablet",
+     "Windows tablet"
+    ],
+    "rows": [
+     [
+      "Tablet uygulaması çeşitliliği",
+      "Çok geniş, tablete uyarlanmış",
+      "Geniş, uygulamaya göre tablet uyumu değişir",
+      "Sınırlı; masaüstü programları güçlü"
+     ],
+     [
+      "Model ve segment çeşitliliği",
+      "Sınırlı sayıda seri",
+      "Çok geniş, giriş segmentten üst segmente",
+      "Çoğunlukla orta ve üst segment"
+     ],
+     [
+      "Depolama genişletme",
+      "microSD yok, USB-C ile harici disk",
+      "Birçok modelde microSD",
+      "microSD veya USB ile harici disk"
+     ],
+     [
+      "Yazılım güncelleme süresi",
+      "Genellikle uzun",
+      "Markaya ve segmente göre değişir",
+      "Windows güncelleme politikasına bağlı"
+     ],
+     [
+      "Kime uygun",
+      "Apple ekosistemi kullanan, uzun ömür isteyen",
+      "Esneklik ve geniş model seçeneği isteyen",
+      "Masaüstü yazılım çalıştırması gereken"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Ekran boyutu, panel ve en-boy oranı",
+   "p": [
+    "Tabletlerde ekran boyutu kabaca üç grupta toplanır: 8-9 inç civarı kompakt modeller tek elle tutulur ve yatakta kitap okumak için rahattır; 10-11 inç civarı modeller video, ders ve genel kullanım için dengelidir; 12 inç ve üzeri modeller ise çoklu pencere, belge düzenleme ve çizim için alan sağlar ama ağırdır ve çantada yer kaplar.",
+    "Panel tipinde video ve fotoğrafa önem veriyorsanız OLED ekranın kontrast farkı belirgindir. Uzun süre metin okuyacaksanız yüksek piksel yoğunluğu ve göz yormayan parlaklık ayarı daha önemlidir. Dışarıda kullanacaksanız ürün sayfasındaki parlaklık değerine bakın.",
+    "En-boy oranı çoğu zaman gözden kaçar. Daha geniş (16:10 gibi) ekranlar yatay video izlerken siyah şeritleri azaltır; daha kareye yakın (4:3 gibi) ekranlar ise dikey tutulduğunda belge ve kitap okumak, not almak için daha fazla kullanılabilir alan sunar. Mağazada iki tableti hem yatay hem dikey tutarak deneyin."
+   ]
+  },
+  {
+   "h": "Kalem, klavye ve aksesuar uyumu",
+   "p": [
+    "Not alma veya çizim planlıyorsanız kalem desteği teknik tablodaki en önemli satırdır. Aktif kalemler basınca göre çizgi kalınlığını değiştirir, avuç içini ekrana koyduğunuzda istem dışı çizgi oluşmasını engeller ve düşük gecikmeyle çalışır. Pasif kalemler ise parmağın yerini tutan uçlardır; menülerde gezinmek için yeterli, yazı ve çizim için yetersizdir.",
+    "Kalem uyumu modele özeldir. Aynı markanın bir kalemi o markanın her tabletinde çalışmayabilir; bazı modellerde kalem kutudan çıkar, bazılarında ayrıca satın alınır. Bu yüzden “kalem desteği var” ifadesiyle yetinmeyin, hangi kalem modeliyle uyumlu olduğunu ve kalemin kutuya dahil olup olmadığını kontrol edin. Kalem ucu zamanla aşınır; yedek uçların bulunabilirliği de uzun vadede önemlidir.",
+    "Klavye tarafında da durum benzer. Modele özel klavyeli kılıflar konektör veya manyetik bağlantıyla çalışır ve şarj gerektirmez; Bluetooth klavyeler ise her tabletle kullanılabilir ama ayrı şarj ister. Ofis işi için tableti dizüstü gibi kullanmayı düşünüyorsanız klavyenin dokunmatik yüzey içerip içermediğine de bakın."
+   ]
+  },
+  {
+   "h": "İşlemci, RAM ve depolama",
+   "p": [
+    "İşlemci ve RAM, tabletin bugün ne kadar akıcı olduğunu değil, birkaç yıl sonra nasıl hissettireceğini de belirler. Yalnızca video ve internet için giriş segment bir yonga yeterli olabilir; ama birden fazla uygulamayı yan yana kullanacak, video düzenleyecek veya yüksek grafikli oyun oynayacaksanız orta ve üst segment işlemci ile daha fazla RAM fark yaratır. Farklı markaların yongalarını isimden kıyaslamak zordur; aynı uygulamalarla yapılmış bağımsız test sonuçlarına bakmak daha güvenilirdir.",
+    "Depolamada kendinize şunu sorun: tablete çevrimdışı dizi indirecek, büyük oyunlar kuracak veya yüksek çözünürlüklü video çekecek misiniz? Giriş seviyesindeki kapasite, işletim sistemi ve birkaç büyük uygulamadan sonra hızla dolabilir. microSD yuvası olan bir Android tablette bu sorun kartla hafifletilebilir; iPad'lerde ise depolama sonradan artırılamaz, satın alırken doğru kapasiteyi seçmek gerekir. Tablette yer sorunu yaşıyorsanız depolama boşaltma rehberimizdeki adımlar işinize yarar."
+   ]
+  },
+  {
+   "h": "Bağlantı, pil ve diğer ayrıntılar",
+   "p": [
+    "Tableti çoğunlukla ev ve ofiste kullanacaksanız Wi-Fi modeli yeterlidir; yolda internet gerektiğinde telefonunuzun kişisel erişim noktasını kullanabilirsiniz. Sık seyahat ediyor ve telefona bağımlı kalmak istemiyorsanız hücresel model daha pratiktir. Yurt dışından SIM'li bir tablet getirmeyi düşünüyorsanız Türkiye'deki IMEI kayıt koşullarını önceden araştırın.",
+    "Pil kapasitesi (mAh) farklı işletim sistemleri ve ekranlar arasında doğrudan karşılaştırılamaz; aynı kapasitede bir tablet, daha verimli ekran ve işlemci sayesinde daha uzun dayanabilir. Üreticinin video oynatma süresini ve bağımsız pil testlerini birlikte değerlendirin. Şarj süresi için hem tabletin desteklediği şarj gücüne hem kutudan adaptör çıkıp çıkmadığına bakın.",
+    "Gözden kaçan diğer ayrıntılar şunlar: dört hoparlörlü modeller yatay video izlerken daha dolgun ses verir; ön kameranın yatay kenarda olması görüntülü görüşmede tableti klavyeyle kullanırken göz hizasını düzeltir; USB-C portunun harici ekrana görüntü verip vermediği ise sunum yapacaklar için önemlidir."
+   ]
+  },
+  {
+   "h": "Kullanım senaryosuna göre öneriler",
+   "p": [
+    "Aşağıdaki öneriler belirli model değil, öncelik sırası içerir. Kendi senaryonuzu bulduktan sonra teknik tabloda yalnızca o satırlara odaklanmanız karar vermeyi kolaylaştırır."
+   ],
+   "list": [
+    "Öğrenci: Ders notu için uyumlu aktif kalem, uzun pil ömrü ve 10-11 inç civarı ekran öncelikli. Kalemle PDF üzerine not alacaksanız dikey kullanımda rahat bir en-boy oranı işinizi kolaylaştırır.",
+    "Oyuncu: Orta veya üst segment işlemci, 90 Hz ve üzeri ekran, yeterli RAM ve depolama. Uzun oyunlarda ısınmayı ve performans düşüşünü bağımsız testlerden kontrol edin; oyun kumandası desteğine bakın.",
+    "Ofis ve iş: Klavyeli kılıf uyumu, çoklu pencere desteği, ofis uygulamalarının tablet sürümleri ve harici ekran bağlantısı. Yoğun masaüstü yazılımı gerekiyorsa dizüstü veya Windows tablet düşünün.",
+    "Çizim ve tasarım: Düşük gecikmeli aktif kalem, yüksek yenileme hızı, iyi renk doğruluğu ve 11 inç ve üzeri ekran. Kullanacağınız çizim uygulamasının o işletim sisteminde bulunduğunu doğrulayın.",
+    "Yaşlı kullanıcı: Büyük ve parlak ekran, yüksek sesli hoparlör, kolay kavranan gövde ve basit arayüz. Bazı üreticiler simgeleri ve yazıları büyüten basitleştirilmiş arayüz modları sunar; görüntülü görüşme için ön kamera kalitesi de önemlidir.",
+    "Çocuk: Dayanıklı kılıfla kullanıma uygun, giriş veya orta segment bir model genellikle yeterli. Ebeveyn denetimleri iPad'de Ekran Süresi, Android'de Google Family Link ile yönetilebilir.",
+    "Medya ve okuma: İyi ekran ve hoparlör en önemli iki özellik. Akşam karanlık odada izleyecekseniz OLED, uzun okuma için yüksek piksel yoğunluğu öne çıkar."
+   ]
+  },
+  {
+   "h": "En sık yapılan satın alma hataları",
+   "p": [
+    "Tablet alışverişinde pişmanlıkların çoğu, cihazın kötü olmasından değil, kullanım amacıyla uyuşmamasından kaynaklanır. Mağazada veya internette karar verirken şu hatalara dikkat edin."
+   ],
+   "list": [
+    "Yalnızca ekran boyutuna bakıp ağırlığı ve elde tutma rahatlığını göz ardı etmek.",
+    "“Kalem destekli” ifadesine güvenip hangi kalemle uyumlu olduğunu, kalemin kutuya dahil olup olmadığını kontrol etmemek.",
+    "Video ve fotoğraf biriktirecek bir kullanım için en düşük depolama seçeneğini almak; özellikle microSD yuvası olmayan modellerde bu sonradan düzeltilemez.",
+    "Yazılım güncelleme süresini sormamak ve birkaç yıl sonra uygulamaların desteği bırakmasıyla karşılaşmak.",
+    "Klavye ve kalem gibi aksesuarların toplam maliyetini hesaba katmadan karşılaştırma yapmak.",
+    "Tabletin dizüstünün tüm işlerini yapacağını varsaymak; kullandığınız masaüstü programlarının tablet sürümünü önceden kontrol etmemek.",
+    "Yurt dışından alınan cihazlarda yetkili servis garantisi ve IMEI kaydı gibi konuları araştırmamak."
+   ]
+  },
+  {
+   "h": "Mağazada denerken neye dikkat etmeli?",
+   "p": [
+    "Teknik tablo size ne kadar şey söylese de birkaç dakikalık deneme, tabletin elinizde nasıl hissettirdiğini gösterir. Mümkünse aday modelleri yan yana deneyin ve her birinde aynı işlemleri yapın.",
+    "Tableti bir elle, sonra iki elle birkaç dakika tutun; ağırlığın uzun süreli kullanımda bileğinizi yorup yormayacağını anlarsınız. Ekran parlaklığını en yükseğe çıkarıp beyaz bir web sayfasında renklerin ve kenar aydınlatmasının eşit olup olmadığına bakın, ardından koyu bir görselde siyahların ne kadar derin göründüğünü karşılaştırın.",
+    "Kalem kullanacaksanız ekrana el yazınızla birkaç satır yazın; çizginin kalemi ne kadar geriden takip ettiğini ve avuç içiniz ekrana değdiğinde istem dışı iz oluşup oluşmadığını gözlemleyin. Klavyeli kılıfı dizinizin üzerinde deneyin, çünkü bazı kılıflar masa üzerinde dengeli olsa da kucakta sallanır. Son olarak birkaç uygulamayı arka arkaya açıp kapatın ve aralarında geçiş yapın; uygulamaların baştan yüklenmesi, RAM'in sizin kullanımınıza dar gelebileceğinin işaretidir."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "p": [
+    "Aşağıdaki listeyi mağazaya veya alışveriş sitesine giderken yanınızda bulundurun. Her maddeye kendi kullanımınız için “önemli” ya da “önemsiz” diye not düşmek, karşılaştırmayı hızlandırır."
+   ],
+   "list": [
+    "Kullanım amacım net mi: tüketim, üretkenlik, oyun, çizim?",
+    "İşletim sistemi, mevcut telefon ve bilgisayarımla uyumlu mu?",
+    "Ekran boyutu ve ağırlık, tableti nasıl tutacağıma uygun mu?",
+    "Panel tipi, parlaklık ve yenileme hızı ihtiyacımı karşılıyor mu?",
+    "Kalem gerekiyorsa hangi kalemle uyumlu ve kutuya dahil mi?",
+    "Klavye gerekiyorsa modele özel klavye seçeneği var mı?",
+    "Depolama kapasitesi yeterli mi, microSD veya harici disk desteği var mı?",
+    "Üretici kaç yıl yazılım ve güvenlik güncellemesi vaat ediyor?",
+    "Wi-Fi mi, hücresel model mi gerekiyor?",
+    "Türkiye'de resmi garanti ve yetkili servis desteği var mı?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Tablette kalem desteği neden önemli?",
+   "a": "Not alma veya çizim yapacaksanız basıncı algılayan ve avuç içini ayırt eden aktif kalem, yazının ve çizginin kalitesini doğrudan belirler. Pasif kalemler yalnızca parmağın yerini tutar. Kalem uyumu modele özeldir, satın almadan önce kontrol edin."
+  },
+  {
+   "q": "Tablet klavyeyle dizüstünün yerini tutar mı?",
+   "a": "E-posta, belge düzenleme, sunum ve web tabanlı işler için klavyeli bir tablet yeterli olabilir. Masaüstü yazılımı, çok sayıda dosya ve programla aynı anda çalışmanız gerekiyorsa dizüstü veya Windows tablet daha uygundur."
+  },
+  {
+   "q": "Hücresel (SIM'li) tablet almaya değer mi?",
+   "a": "Tableti çoğunlukla Wi-Fi olan yerlerde kullanacaksanız gerekmez; telefonunuzun erişim noktası işinizi görür. Sık seyahat ediyor ve telefon pilini harcamak istemiyorsanız hücresel model pratik bir seçenektir."
+  },
+  {
+   "q": "OLED ekran mı, IPS LCD mi tercih etmeliyim?",
+   "a": "Karanlık ortamda film ve dizi izliyorsanız OLED'in derin siyahları ve yüksek kontrastı belirgin fark yaratır. Metin okuma ve genel kullanımda kaliteli bir IPS LCD de rahat bir deneyim sunar."
+  },
+  {
+   "q": "Çocuk için hangi özelliklere bakmalıyım?",
+   "a": "Dayanıklı bir kılıfla kullanılabilecek, giriş veya orta segment bir model çoğu çocuk için yeterlidir. Ebeveyn denetimi araçlarının (iPad'de Ekran Süresi, Android'de Google Family Link) kurulumunu ilk gün yapın ve göz sağlığı için mola sürelerini ayarlayın."
+  },
+  {
+   "q": "Tabletin yazılım güncellemesi alıp almadığını nereden öğrenirim?",
+   "a": "Üreticilerin çoğu, modeller için güncelleme sürelerini kendi resmi sayfalarında veya ürün duyurularında açıklar. Tableti ayarlardan kontrol ederek son güvenlik yaması tarihini de görebilirsiniz."
+  }
+ ],
+ "sources": []
+}

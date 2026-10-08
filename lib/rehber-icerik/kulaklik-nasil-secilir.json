@@ -1,0 +1,265 @@
+{
+ "slug": "kulaklik-nasil-secilir",
+ "title": "Kulaklık Nasıl Seçilir? Form, ANC, Codec ve Pil Ömrü Rehberi",
+ "description": "Kulak içi mi kulak üstü mü, ANC gerekli mi, hangi codec telefonunuzla uyumlu? Kullanım senaryosuna göre kulaklık seçimi ve kontrol listesi.",
+ "tldr": "Önce kulaklığı nerede kullanacağınıza göre formu seçin: taşınabilirlik için tam kablosuz kulak içi, uzun süreli konfor ve yalıtım için kulak çevresi model. Gürültülü ortamdaysanız ANC'ye, sık görüşme yapıyorsanız mikrofona, spor için IP koduna bakın. Codec seçimi telefonunuza bağlıdır: iPhone AAC kullanır, LDAC ve aptX ise yalnızca destekleyen Android telefonlarda işe yarar.",
+ "intro": [
+  "Kulaklık seçmek, teknik özellik listesinden çok kendi gününüzü düşünmekle başlar. Sabah metroda motor uğultusunu bastırmak isteyen biriyle akşam koşuya çıkarken trafik sesini duymak isteyen birinin ihtiyacı birbirinin tersidir. İkisine de aynı kulaklığı önermek, birini mutlaka hayal kırıklığına uğratır.",
+  "Bu rehberde önce kulaklık formlarını ve kablolu ile kablosuz arasındaki farkı ele alıyoruz. Ardından ANC, codec, pil ömrü, mikrofon ve su direnci gibi kutu üzerinde gördüğünüz terimlerin gerçekte ne anlama geldiğini açıklıyoruz. Sonda kullanım senaryolarına göre öneriler, en sık yapılan hatalar ve mağazaya ya da sepete gitmeden önce gözden geçirebileceğiniz bir kontrol listesi var."
+ ],
+ "sections": [
+  {
+   "h": "Önce formu seçin: kulak içi, kulak üstü, kulak çevresi ve açık kulak",
+   "p": [
+    "Kulaklığın biçimi; konforu, ses yalıtımını, taşınabilirliği ve kimin için uygun olduğunu diğer tüm özelliklerden daha fazla belirler. Tam kablosuz kulak içi modeller (TWS) cebe sığan şarj kutusuyla en taşınabilir seçenektir. Kulak çevresi (over-ear) modeller kulağın tamamını sarar; uzun süre takıldığında kulağa baskı yapmadıkları için masa başı çalışma ve uzun seyahatlerde rahattır, ama yer kaplarlar.",
+    "Kulak üstü (on-ear) modeller kulağın üzerine oturur; kulak çevresi modellere göre daha küçüktür, ama bazı kişilerde birkaç saat sonra kulak kepçesine baskı yapar. Açık kulak ve kemik iletimli modeller ise kulak kanalını kapatmaz; çevre sesini duymanız gereken koşu ve bisiklet gibi durumlar için tasarlanmıştır, buna karşılık bas performansı ve gürültülü ortamda anlaşılırlık sınırlıdır."
+   ],
+   "table": {
+    "head": [
+     "Form",
+     "Güçlü yanı",
+     "Zayıf yanı",
+     "Uygun olduğu kullanım"
+    ],
+    "rows": [
+     [
+      "Tam kablosuz kulak içi (TWS)",
+      "En taşınabilir, cebe sığar",
+      "Pil küçük, kaybolma riski",
+      "Günlük kullanım, toplu taşıma"
+     ],
+     [
+      "Boyun bantlı kulak içi",
+      "Düşme ve kaybolma riski düşük",
+      "Boyunda kablo ve bant",
+      "Spor, uzun yürüyüş"
+     ],
+     [
+      "Kulak üstü",
+      "Kulak çevresine göre küçük",
+      "Uzun kullanımda baskı yapabilir",
+      "Kısa süreli dinleme"
+     ],
+     [
+      "Kulak çevresi",
+      "Konfor, yalıtım, uzun pil",
+      "Hacimli, sıcak havada terletebilir",
+      "Ofis, uçak, ev"
+     ],
+     [
+      "Açık kulak / kemik iletimli",
+      "Çevre sesini duyurur",
+      "Zayıf bas, gürültüde zor duyulur",
+      "Koşu, bisiklet"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Kablolu mu, kablosuz mu?",
+   "p": [
+    "Kablolu kulaklıkların pili yoktur, şarj derdi ve kablosuz bağlantıdan kaynaklanan ses gecikmesi yaşatmaz. Birçok yeni telefonda 3,5 mm kulaklık girişi bulunmadığı için USB-C ya da Lightning girişli bir kablolu model veya bir dönüştürücü (içinde ses çipi bulunan küçük bir adaptör) gerekebilir. Bazı üst segment kulak çevresi kablolu modeller yüksek empedanslıdır; telefonun çıkışı bunları yeterince yüksek seviyede süremeyebilir ve ayrı bir kulaklık amfisi gerekebilir.",
+    "Kablosuz kulaklıklar hareket özgürlüğü sağlar ve çoğu ANC, uygulama üzerinden ses ayarı ve dokunmatik kontrol gibi özelliklerle gelir. Karşılığında iki sınırlamaları vardır: içlerindeki pil zamanla kapasite kaybeder ve tam kablosuz modellerin çoğunda pil değiştirilemez; ayrıca Bluetooth bağlantısı görüntü ile ses arasında küçük bir gecikme yaratabilir. Müzik ve video için bu gecikme genellikle telefon tarafından telafi edilir, ama hızlı tepki gerektiren oyunlarda hissedilebilir."
+   ]
+  },
+  {
+   "h": "ANC, şeffaflık modu ve pasif yalıtım",
+   "p": [
+    "Aktif gürültü engelleme (ANC), kulaklığın dış yüzündeki mikrofonların ortam sesini dinleyip bu sesin tersi olan bir dalga üretmesiyle çalışır; iki dalga birbirini kısmen sönümler. Bu yöntem en çok motor uğultusu, klima ve uçak kabini gibi sürekli ve düşük frekanslı seslerde etkilidir. Konuşma, kapı çarpması ve klavye tıkırtısı gibi ani ve tiz sesleri tamamen silmez, yalnızca azaltır.",
+    "Pasif yalıtım ise kulaklığın fiziksel olarak sesi engellemesidir. Kulak içi modellerde doğru boyutta silikon ya da köpük uç, kulak çevresi modellerde iyi oturan yastıklar ANC kadar önemlidir. Uç kulağınıza tam oturmuyorsa hem ANC zayıflar hem de bas sesler kaybolur. Bu yüzden kutudan çıkan farklı boyuttaki uçları denemek, kulaklığın performansını doğrudan değiştirir.",
+    "Şeffaflık (ortam sesi) modu, mikrofonlar aracılığıyla dışarıdaki sesi kulağınıza aktarır. Kulaklığı çıkarmadan anons dinlemek ya da kasada konuşmak için kullanışlıdır. Bazı kişiler ANC açıkken kulakta basınç hissi duyar; bu durumda ANC seviyesini ayarlayabilen modeller daha rahat olabilir."
+   ],
+   "note": "Trafikte yürürken, koşarken veya bisiklet sürerken ANC'yi kapatın ya da şeffaflık modunu kullanın. Korna ve araç seslerini duyamamak gerçek bir güvenlik riskidir."
+  },
+  {
+   "h": "Ses kalitesini gerçekte ne belirler?",
+   "p": [
+    "Kutudaki sayılar ses kalitesi hakkında sanıldığı kadar bilgi vermez. Sürücü (driver) çapı tek başına belirleyici değildir; küçük bir sürücü iyi ayarlanmış bir yapı içinde büyük bir sürücüden daha dengeli ses verebilir. “20 Hz – 20 kHz frekans aralığı” ifadesi neredeyse her kulaklıkta yazar ve hangi frekansların ne kadar güçlü verildiğini söylemez.",
+    "Pratikte sesi en çok etkileyen üç şey; üreticinin ses ayarı (bas ağırlıklı, dengeli ya da tiz vurgulu), kulağa oturma ve sızdırmazlık, ve uygulama üzerinden yapılabilen ekolayzer ayarıdır. Mümkünse satın almadan önce kendi bildiğiniz birkaç şarkıyla deneyin. Bağımsız incelemelerde yayımlanan frekans yanıtı grafikleri de farklı modelleri karşılaştırmak için kutu üzerindeki rakamlardan daha anlamlıdır.",
+    "Açık arkalı (open-back) kulak çevresi modeller sesi daha ferah ve geniş verir, ama hem dışarıya ses sızdırır hem de dış sesi engellemez. Bu yüzden ev ve sessiz stüdyo kullanımı içindir; ofiste ve toplu taşımada uygun değildir."
+   ]
+  },
+  {
+   "h": "Bluetooth codec'leri: kulaklığınız telefonunuzla uyumlu mu?",
+   "p": [
+    "Codec, sesin Bluetooth üzerinden gönderilmeden önce nasıl sıkıştırılacağını belirleyen yöntemdir. Belirli bir codec'in kullanılabilmesi için hem telefonun hem de kulaklığın onu desteklemesi gerekir; biri desteklemiyorsa bağlantı ortak desteklenen bir codec'e, çoğu zaman temel codec olan SBC'ye düşer.",
+    "iPhone'lar Bluetooth kulaklıklarla AAC ve SBC kullanır; aptX ve LDAC desteği yoktur. Dolayısıyla iPhone kullanıyorsanız kulaklığın LDAC desteği sizin için ek bir değer taşımaz. Android'de ise LDAC, Android 8.0'dan itibaren işletim sisteminin bir parçasıdır; aptX ailesi ise genellikle Qualcomm yongalı telefonlarda bulunur. LDAC en yüksek ayarında 990 kbps'e kadar veri taşıyabilir, ama bağlantı zayıfladığında daha düşük bit hızlarına iner."
+   ],
+   "table": {
+    "head": [
+     "Codec",
+     "Nerede bulunur",
+     "Ne zaman önemli"
+    ],
+    "rows": [
+     [
+      "SBC",
+      "Tüm Bluetooth ses cihazları",
+      "Ortak payda; her durumda çalışır"
+     ],
+     [
+      "AAC",
+      "iPhone, iPad, Mac ve birçok Android",
+      "Apple cihaz kullanıyorsanız"
+     ],
+     [
+      "aptX ailesi",
+      "Qualcomm destekli Android telefonlar",
+      "Destekleyen Android'de SBC'den daha yüksek kalite; bazı sürümleri düşük gecikme sunar"
+     ],
+     [
+      "LDAC",
+      "Android 8.0 ve sonrası",
+      "Yüksek çözünürlüklü dosya dinleyen Android kullanıcıları"
+     ],
+     [
+      "LC3 (LE Audio)",
+      "Yeni nesil Bluetooth LE Audio cihazları",
+      "Düşük güç tüketimi ve yeni özellikler; iki tarafın da desteği gerekir"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Pil ömrü ve şarj: hangi rakama bakmalı?",
+   "p": [
+    "Tam kablosuz kulaklıklarda iki ayrı süre yazılır: kulaklıkların tek şarjla çalışma süresi ve şarj kutusuyla birlikte toplam süre. Gün içinde kulaklığı uzun süre çıkarmadan kullanıyorsanız (uzun uçuş, tam gün ofis) asıl önemli olan tek şarj süresidir. Kutudaki toplam süre ise kaç günde bir prize gitmeniz gerektiğini gösterir.",
+    "Üreticilerin verdiği süreler genellikle orta ses seviyesinde ve belirli bir codec ile ölçülür. ANC açıkken, yüksek seste ya da LDAC gibi yüksek bit hızlı bir codec kullanırken pil daha çabuk biter; teknik özelliklerde ANC açık ve kapalı süreler ayrı ayrı veriliyorsa ANC açık rakamı esas alın.",
+    "Hızlı şarj, kutuya kısa süre takılan kulaklıklara bir süre daha kullanım kazandırır ve şarjı unutanlar için işe yarar; süreler modele göre değiştiği için teknik özelliklerde belirtilen değere bakın. Kablosuz şarj destekli kutular, şarj altlığı kullanıyorsanız pratiklik katar. Pil bir tüketim parçasıdır; zamanla kapasitesi azalır. Kulaklığı uzun süre tamamen boş bırakmamak ve sıcak araç içinde bırakmamak pilin yıpranmasını yavaşlatır."
+   ]
+  },
+  {
+   "h": "Bağlantı, kontrol ve mikrofon özellikleri",
+   "p": [
+    "Çoklu bağlantı (multipoint), kulaklığın aynı anda iki cihaza bağlı kalabilmesidir. Laptopta toplantıdayken telefona gelen çağrıyı aynı kulaklıkla açmak isteyenler için büyük kolaylıktır. Her kulaklıkta bulunmaz ve bazı modellerde uygulama üzerinden ayrıca açılması gerekir. Apple'ın kendi kulaklıklarında Apple cihazları arasında otomatik geçiş, Android'de ise Google Fast Pair ile hızlı eşleşme gibi ekosistem özellikleri de vardır; bu özellikler başka marka cihazlarda çalışmayabilir.",
+    "Kontroller dokunmatik ya da fiziksel düğme olabilir. Dokunmatik kontroller şıktır, ama kulaklığı yerleştirirken yanlışlıkla şarkıyı durdurmaya ya da çağrıyı reddetmeye yol açabilir. Eldivenle kullanacaksanız, yaşlı bir yakınınız için alıyorsanız veya spor sırasında kumanda edecekseniz fiziksel düğmeler daha güvenilirdir.",
+    "Mikrofon kalitesi kutu üzerinden en zor anlaşılan özelliktir. Kulak içi modellerde mikrofon ağzınızdan uzakta kaldığı için kalabalık ve rüzgârlı ortamlarda sesiniz karşı tarafa zayıf gidebilir. Sık görüşme yapıyorsanız incelemelerde gerçek ortam kaydı içeren mikrofon testlerine bakın; birden fazla mikrofon kullanan ve rüzgâr gürültüsünü azaltan modeller bu konuda daha iyi sonuç verir."
+   ]
+  },
+  {
+   "h": "Su ve ter direnci: IP kodlarını okumak",
+   "p": [
+    "IP kodundaki ilk rakam toza, ikinci rakam suya karşı korumayı gösterir. İlk rakamın yerinde X varsa bu, korumanın olmadığı anlamına gelmez; o alanda test yapılmadığını gösterir. IPX4 her yönden gelen su sıçramasına, IPX5 bir memeden püskürtülen su jetine dayanıklılığı ifade eder. IPX7 ise 1 metre derinliğe 30 dakika batırılmaya dayanıklılık testidir.",
+    "Önemli bir ayrıntı: IPX6'dan sonraki dereceler bir önceki dereceleri kapsamaz. IPX7 sertifikalı bir kulaklık, mutlaka su jetine de dayanıklı (IPX5) değildir; her iki teste de giren ürünler IPX5/IPX7 gibi çift kodla etiketlenir. Ayrıca derecelendirme çoğu zaman yalnızca kulaklıklar içindir; şarj kutusu genellikle suya dayanıklı değildir."
+   ],
+   "note": "Su direnci zamanla, contalar yıprandıkça azalabilir ve sıvı hasarı birçok üreticide garanti kapsamı dışındadır. Terli kulaklıkları kutuya koymadan önce şarj temas noktalarını kuru bir bezle silin."
+  },
+  {
+   "h": "Kulak sağlığı, konfor ve hijyen",
+   "p": [
+    "Dünya Sağlık Örgütü ile Uluslararası Telekomünikasyon Birliği'nin güvenli dinleme standardı, yetişkinler için haftalık güvenli ses dozunu 40 saat boyunca 80 desibel, çocuklar için ise 75 desibel olarak tanımlar. Ses yükseldikçe güvenli süre hızla kısalır. Telefonların çoğunda kulaklık ses seviyesini sınırlama ve haftalık dinleme dozunu gösterme özellikleri bulunur; menü adları markaya göre farklıdır, Ayarlar uygulamasında “ses” veya “kulaklık güvenliği” başlıklarında arayabilirsiniz.",
+    "Gürültülü ortamda ANC'nin bir faydası da sesi daha düşük seviyede dinlemenizi sağlamasıdır; arka plan gürültüsünü bastırmak için sesi açmanız gerekmez. Kulak içi uçları düzenli olarak çıkarıp temizleyin ve kulaklığınızı başkalarıyla paylaşmaktan kaçının.",
+    "Kulaklıklar tıbbi cihaz değildir. Bazı modellerdeki işitme ile ilgili özellikler bir hekim muayenesinin yerini tutmaz. Kulak çınlaması, işitme azalması ya da kulakta ağrı fark ederseniz bir kulak burun boğaz uzmanına başvurun."
+   ]
+  },
+  {
+   "h": "Teknik terimlerin sade açıklaması",
+   "p": [
+    "Ürün sayfalarında sık geçen terimlerin kısa karşılıkları aşağıda. Bu terimleri bilmek, farklı modellerin özellik listelerini karşılaştırmayı kolaylaştırır."
+   ],
+   "list": [
+    "TWS: Tam kablosuz; iki kulaklık arasında da kablo olmayan modeller.",
+    "ANC: Aktif gürültü engelleme; mikrofonlarla ortam sesini ölçüp ters dalgayla bastırma.",
+    "Şeffaflık modu: Dış sesin mikrofonlar aracılığıyla kulağa aktarılması.",
+    "Codec: Sesin Bluetooth üzerinden gönderilirken sıkıştırılma yöntemi (SBC, AAC, aptX, LDAC, LC3).",
+    "Multipoint: Aynı anda iki cihaza bağlı kalabilme.",
+    "Empedans: Kablolu kulaklığın elektriksel direnci; yüksek empedanslı modeller daha güçlü bir kaynak ister.",
+    "IP kodu: Toza ve suya karşı koruma derecesi.",
+    "Gecikme: Görüntü ile ses arasındaki zaman farkı; oyun ve video için önemlidir."
+   ]
+  },
+  {
+   "h": "Kullanım senaryosuna göre öneriler",
+   "p": [
+    "Aşağıdaki öneriler belirli modeller değil, hangi özelliklerin öne çıkması gerektiğini gösterir. Birden fazla senaryoya uyuyorsanız en çok zaman geçirdiğiniz durumu esas alın."
+   ],
+   "list": [
+    "Öğrenci: Giriş ya da orta segmentte, laptop ve telefon arasında geçiş için multipoint destekli, online derslerde anlaşılır mikrofonu olan bir TWS ya da hafif kulak çevresi model.",
+    "Toplu taşıma ve sık seyahat edenler: Güçlü ANC, şeffaflık modu ve uzun tek şarj süresi; uçakta uzun süre kullanacaksanız kulak çevresi form.",
+    "Sporcular: Kulakta sabit duran kanatçıklı ya da kulak kancalı model, en az IPX4, tercihen daha yüksek su direnci; dış mekânda koşanlar için açık kulak modeller.",
+    "Ofis ve evden çalışanlar: Uzun süreli konfor için kulak çevresi model, iyi mikrofon, multipoint ve kolay sessize alma kontrolü.",
+    "Oyuncular: Düşük gecikme için kablolu ya da 2,4 GHz kablosuz alıcılı oyuncu kulaklıkları; Bluetooth'ta oyun modu sunan modeller de bir seçenek.",
+    "Yaşlı kullanıcılar: Fiziksel düğmeli, kolay eşleşen, uzun süre rahat taşınabilen bir model; basitlik için kablolu kulak çevresi modeller de iyi bir tercih. İşitme kaybı varsa kulaklık yerine bir uzmanın önereceği işitme cihazı değerlendirilmelidir.",
+    "Müzik meraklıları: Telefonunuzun desteklediği en iyi codec'i destekleyen model; evde dinleyecekseniz açık arkalı kulak çevresi ya da kaliteli bir kablolu model.",
+    "Çocuklar: Ses seviyesi sınırlandırılabilen, küçük kafaya uygun, dayanıklı modeller; telefonda da ses sınırı açılmalıdır."
+   ]
+  },
+  {
+   "h": "En sık yapılan satın alma hataları",
+   "p": [
+    "Kulaklıktan memnun kalmamak çoğu zaman ürünün kötü olmasından değil, kullanıcıya uymamasından kaynaklanır. Aşağıdaki hatalar bu uyumsuzluğa yol açan tipik seçimlerdir."
+   ],
+   "list": [
+    "iPhone kullanırken LDAC ya da aptX desteği için ek bütçe ayırmak.",
+    "Yalnızca şarj kutusuyla birlikte toplam pil süresine bakıp tek şarj süresini gözden kaçırmak.",
+    "ANC'den uçak motoru dışında konuşmaları ve ani sesleri de tamamen silmesini beklemek.",
+    "Kulak içi kulaklığı kutudan çıkan uçla bırakıp farklı boyutları denememek; kötü oturan uç zayıf bas ve zayıf ANC demektir.",
+    "Spor için IP kodu olmayan bir model almak ya da IPX7'nin her türlü su temasını kapsadığını sanmak.",
+    "Görüşme yapan biri olarak mikrofon testine bakmadan yalnızca müzik performansına göre karar vermek.",
+    "Oyun için standart Bluetooth kulaklık alıp ses gecikmesiyle karşılaşmak."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "p": [
+    "Aşağıdaki soruların her birine net bir cevap verebiliyorsanız, seçeceğiniz model ihtiyacınıza büyük ihtimalle uyacaktır."
+   ],
+   "list": [
+    "Kulaklığı en çok nerede kullanacağım ve bu ortama hangi form uygun?",
+    "Gürültülü ortamda mıyım, ANC'ye gerçekten ihtiyacım var mı?",
+    "Telefonum hangi codec'leri destekliyor ve kulaklık bunlarla uyumlu mu?",
+    "Tek şarjla kaç saat kullanacağım; ANC açıkken pil süresi ne kadar?",
+    "İki cihaz arasında geçiş yapacak mıyım, multipoint var mı?",
+    "Sık görüşme yapıyor muyum, mikrofon testleri ne diyor?",
+    "Spor veya yağmur için hangi IP koduna ihtiyacım var?",
+    "Kontroller fiziksel mi dokunmatik mi, bana hangisi uygun?",
+    "Uygulama desteği, ekolayzer ve yazılım güncellemeleri var mı?",
+    "Garanti belgesi ve Türkiye'de yetkili servis desteği var mı?"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "ANC'li kulaklık almaya değer mi?",
+   "a": "Toplu taşıma, uçak, açık ofis gibi sürekli uğultunun olduğu ortamlarda sık bulunuyorsanız değer. Sessiz bir evde ya da ofiste çalışıyorsanız ANC'nin katkısı sınırlı kalır ve pil süresini de kısaltır."
+  },
+  {
+   "q": "iPhone için LDAC destekli kulaklık almak mantıklı mı?",
+   "a": "Hayır. iPhone'lar Bluetooth kulaklıklarla AAC ve SBC kullanır; LDAC ve aptX desteklemez. iPhone kullanıyorsanız AAC desteğine ve kulaklığın genel ses ayarına bakmanız yeterlidir."
+  },
+  {
+   "q": "Spor için hangi su direnci yeterli?",
+   "a": "Ter ve hafif yağmur için IPX4, daha yoğun su teması için IPX5 ve üzeri tercih edilebilir. IPX7 suya batırılmaya dayanıklılığı gösterir, ama su jetine dayanıklılığı otomatik olarak kapsamaz; yüzmek için ise ayrıca yüzmeye uygun olduğu belirtilen modeller gerekir."
+  },
+  {
+   "q": "Kulak içi mi kulak çevresi mi daha sağlıklı?",
+   "a": "Sağlık açısından belirleyici olan form değil, ses seviyesi ve dinleme süresidir. Kulak çevresi modeller kulak kanalına girmediği için bazı kişilere daha konforlu gelir; kulak içi modellerde ise uçların düzenli temizlenmesi hijyen açısından önemlidir."
+  },
+  {
+   "q": "Bluetooth kulaklıkta ses neden görüntüden geride kalıyor?",
+   "a": "Bluetooth ses aktarımında sıkıştırma ve iletim belirli bir gecikme yaratır. Video uygulamaları bunu genellikle telafi eder, ama oyunlarda hissedilebilir. Oyun modu sunan kulaklıklar, aptX'in düşük gecikmeli sürümleri veya kablolu bağlantı bu sorunu azaltır."
+  },
+  {
+   "q": "Tam kablosuz kulaklığın pili değiştirilebilir mi?",
+   "a": "Çoğu modelde pil kullanıcı tarafından değiştirilemez ve kapasite zamanla azalır. Bazı üreticiler servis üzerinden pil değişimi ya da tek kulaklık değişimi sunar; satın almadan önce yetkili servisin bu hizmeti verip vermediğini sorabilirsiniz."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Wikipedia: IP kodu (su ve toz koruma dereceleri)",
+   "u": "https://en.wikipedia.org/wiki/IP_code"
+  },
+  {
+   "t": "Wikipedia: LDAC codec",
+   "u": "https://en.wikipedia.org/wiki/LDAC_(codec)"
+  },
+  {
+   "t": "Dünya Sağlık Örgütü: Güvenli dinleme cihazları ve sistemleri standardı",
+   "u": "https://www.who.int/publications/i/item/9789241515276"
+  },
+  {
+   "t": "ListenUp: Bluetooth codec'leri",
+   "u": "https://listenup.com/blogs/posts/bluetooth-codecs-explained"
+  }
+ ]
+}

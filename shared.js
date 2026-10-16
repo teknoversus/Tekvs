@@ -1393,6 +1393,7 @@ function prepareProduct(p){
 }
 function prepareProducts(list){ return (list || []).map(prepareProduct); }
 
+function formatCardPrice(v){const s=String(v==null?'':v).trim();if(!/^[\d.,]+$/.test(s))return s;const t=/^\d{1,3}(\.\d{3})+(,\d+)?$/.test(s)?s.replace(/\./g,'').replace(',','.'):s.replace(',','.');const n=parseFloat(t);if(!isFinite(n)||n<=0)return s;return Math.round(n).toLocaleString('tr-TR')+' TL';}
 function cardHTML(p, opts){
   opts = opts || {};
   const newIds = opts.newIds instanceof Set ? opts.newIds : new Set(Array.isArray(opts.newIds) ? opts.newIds : []);
@@ -1402,7 +1403,7 @@ function cardHTML(p, opts){
   const otherSpecs = cardSpecEntries(p, 3);
   const isFav = favorites.includes(p.id);
   const s = scores[p.id];
-  const priceText = priceEntries.length ? priceEntries[0][1] : 'Fiyat bilgisi yok';
+  const priceText = priceEntries.length ? formatCardPrice(priceEntries[0][1]) : 'Fiyat bilgisi yok';
   const rating = (typeof ratingsSummary !== 'undefined' && ratingsSummary[p.id]) ? ratingsSummary[p.id] : null;
   const reasonsHTML = (Array.isArray(reasons) && reasons.length)
     ? `<div class="card-reasons" onclick="event.stopPropagation()">

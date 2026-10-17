@@ -16,6 +16,7 @@ const { generateSite, illustrationFor, productImageFor } = require('./lib/genera
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { linkHeroComparisons } = require('./lib/link-hero-comparisons');
 const { generateNews } = require('./lib/generate-news');
+const { updateHomeBlocks } = require('./lib/home-blocks');
 const { generateSubcategories, buildSubcatMap } = require('./lib/generate-subcategories');
 const { generateBuyingGuides } = require('./lib/generate-buying-guides');
 const { generateTopicalGuides } = require('./lib/generate-topical-guides');
@@ -196,6 +197,7 @@ async function main(){
     console.log(`→ ${news.length} haber bulundu.`);
     generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
   }
+  const homeNews = news || [];
 
   console.log('→ Alt kategori sayfaları üretiliyor...');
   generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
@@ -212,6 +214,8 @@ async function main(){
 
   console.log('→ Konu kümesi destek makaleleri üretiliyor...');
   generateClusterArticles({ rootDir });
+
+  updateHomeBlocks({ rootDir, news: homeNews });
 
   console.log('→ İnceleme sayfaları üretiliyor...');
   generateReviews({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ3_TARGET_IDS, rootDir });

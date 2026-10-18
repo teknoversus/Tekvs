@@ -561,7 +561,7 @@ async function openDetail(id){
     <p style="color:var(--ink-soft);font-size:14px;margin:12px 0;">${p.blurb||''}</p>
     <table class="detail-specs-table">${specRows}</table>
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;">
-      <a class="btn btn-dark" style="display:inline-block;text-decoration:none;" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored">Amazon'da Satın Al →</a>
+      <a class="btn btn-dark" style="display:inline-block;text-decoration:none;" href="${affiliateLink(p)}" target="_blank" rel="noopener noreferrer sponsored">${affiliateLabel(p)}</a>
       <a class="btn btn-outline" style="display:inline-block;text-decoration:none;" href="${productUrl(p)}">Tam sayfayı görüntüle →</a>
     </div>
     <div class="chart-wrap" id="priceChartWrap" style="display:none;">

@@ -1470,11 +1470,27 @@ function productUrl(p){
 // sayfaları bu mantığın aynısını build sırasında zaten uyguluyor — bu fonksiyon
 // index.html / category.js gibi istemci tarafında canlı render edilen kartlar içindir.
 const AMAZON_AFFILIATE_TAG = 'teknoversus-21';
+function amazonProductUrl(p){
+  const raw = (p && p.link ? String(p.link) : '').trim();
+  if(!raw) return null;
+  try{
+    const u = new URL(raw);
+    if(/(^|\.)amazon\.com\.tr$/i.test(u.hostname)){
+      u.searchParams.set('tag', AMAZON_AFFILIATE_TAG);
+      return u.toString();
+    }
+  }catch(e){}
+  return null;
+}
+
 function affiliateLink(p){
   if(!p) return '';
-  return p.link
-    ? p.link + (p.link.includes('?') ? '&' : '?') + `tag=${AMAZON_AFFILIATE_TAG}`
-    : `https://www.amazon.com.tr/s?k=${encodeURIComponent(p.name)}&tag=${AMAZON_AFFILIATE_TAG}`;
+  return amazonProductUrl(p)
+    || `https://www.amazon.com.tr/s?k=${encodeURIComponent(p.name)}&tag=${AMAZON_AFFILIATE_TAG}`;
+}
+
+function affiliateLabel(p){
+  return amazonProductUrl(p) ? "Amazon'da Satın Al →" : "Amazon'da Fiyatını Gör →";
 }
 
 // Son gezilenler şeridini verilen container'a basar.

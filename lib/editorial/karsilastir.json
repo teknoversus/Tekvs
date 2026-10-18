@@ -239,5 +239,125 @@
       }
     ],
     "sonuc": "Fiyatlar birbirine yakınsa Series 9 daha mantıklı. Series 8'i yalnızca belirgin şekilde ucuzsa tercih edin; ikinci el alıyorsanız pil sağlığını mutlaka kontrol edin."
+  },
+  "p_mid_03|samsung-galaxy-a37-5g": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Galaxy A37 5G mi, Redmi Note 14 Pro+ mı?",
+    "metin": [
+      "Bu iki telefon orta segmentte iki farklı yaklaşımı temsil ediyor. Galaxy A37 5G, 2026'da çıkan yeni bir model ve en büyük kozu uzun yazılım desteği: Samsung altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor. Redmi Note 14 Pro+ ise 2025 başında çıktı; donanım tarafında daha iddialı ama daha eski.",
+      "Redmi'nin öne çıkan yanları 200 MP ana kamera, 1,5K çözünürlüklü 120 Hz AMOLED ekran ve çok hızlı, 120 W HyperCharge şarj. Telefonu yarım saatten kısa sürede doldurmak mümkün. Snapdragon 7s Gen 3 işlemci günlük kullanımda ve orta seviye oyunlarda rahat.",
+      "Galaxy A37 5G ise 6,7 inç 120 Hz Super AMOLED ekran, optik görüntü sabitlemeli 50 MP ana kamera, 5000 mAh pil ve 45 W şarjla geliyor. Exynos 1480 işlemci günlük işler için yeterli. 7,4 mm kalınlığıyla ince; iki telefonda da IP68 koruma var."
+    ],
+    "secim": [
+      {
+        "urun": "samsung-galaxy-a37-5g",
+        "metin": "Telefonu 4–5 yıl kullanacaksanız ve düzenli güncelleme, Samsung servis ağı sizin için önemliyse."
+      },
+      {
+        "urun": "p_mid_03",
+        "metin": "Çok hızlı şarj, keskin ekran ve yüksek çözünürlüklü kamera istiyorsanız; fiyatı da A37'nin altındaysa."
+      }
+    ],
+    "sonuc": "Uzun vadeli kullanım için Galaxy A37, aynı paraya daha fazla donanım için Redmi Note 14 Pro+. Karar, telefonu kaç yıl kullanacağınıza bağlı."
+  },
+  "redmi-note-15-pro-5g-2026|samsung-galaxy-a37-5g": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Galaxy A37 5G mi, Redmi Note 15 Pro 5G mi?",
+    "metin": [
+      "İkisi de 2026'nın orta segment telefonları ve benzer fiyat aralığında karşılaşıyor. Redmi Note 15 Pro 5G donanımda daha cömert: 6,83 inç 1,5K AMOLED ekran, 200 MP ana kamera ve 6580 mAh gibi büyük bir pil. MediaTek Dimensity 7400-Ultra işlemci günlük kullanımda hızlı.",
+      "Galaxy A37 5G'nin kozları farklı: Samsung altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor, optik görüntü sabitlemeli 50 MP ana kamerası gün ışığında dengeli fotoğraflar çekiyor ve 7,4 mm kalınlığıyla daha ince. Ağırlık da 197 g'a karşı 210 g; Redmi'nin büyük pili elde hissediliyor.",
+      "Su ve toz korumasında ikisi de IP68 sınıfında. Pil ömrü önceliğinizse Redmi'nin daha büyük bataryası belirgin bir avantaj."
+    ],
+    "secim": [
+      {
+        "urun": "samsung-galaxy-a37-5g",
+        "metin": "Daha hafif bir telefon, uzun güncelleme desteği ve Samsung'un yazılım deneyimini istiyorsanız."
+      },
+      {
+        "urun": "redmi-note-15-pro-5g-2026",
+        "metin": "Büyük ekran, uzun pil ömrü ve yüksek çözünürlüklü kamera sizin için önemliyse."
+      }
+    ],
+    "sonuc": "Pil ve ekran için Redmi Note 15 Pro 5G, uzun ömürlü yazılım desteği ve hafiflik için Galaxy A37. Fiyat farkını da hesaba katarak seçin."
+  },
+  "redmi-15c-5g-2026|redmi-note-15-5g-2026": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Redmi 15C 5G mi, Redmi Note 15 5G mi?",
+    "metin": [
+      "İki telefon aynı markanın farklı basamakları. Redmi 15C 5G giriş seviyesi; Redmi Note 15 5G bir üst segment. Aradaki fiyat farkının karşılığını en çok ekranda görüyorsunuz.",
+      "Redmi 15C 5G'de 6,9 inç büyük bir LCD ekran var, ama çözünürlüğü HD+ (1600x720). Yazılar ve videolar Full HD ekranlar kadar keskin görünmüyor. Buna karşılık 6000 mAh pil, 3,5 mm kulaklık girişi ve IP64 toz-su sıçrama koruması var; MediaTek Dimensity 6300 işlemci temel kullanım için yeterli.",
+      "Redmi Note 15 5G'de AMOLED ekran var: daha canlı renkler, gerçek siyahlar ve daha yüksek çözünürlük. 108 MP ana kamera, 15C'deki 50 MP kameradan daha ayrıntılı fotoğraf çekiyor. Gövde de 7,94 mm ve 183,7 g ile 15C'den (8,2 mm, 211 g) belirgin şekilde ince ve hafif."
+    ],
+    "secim": [
+      {
+        "urun": "redmi-15c-5g-2026",
+        "metin": "En düşük bütçeyle 5G'li, büyük pilli bir telefon arıyorsanız; telefonu arama, mesaj ve sosyal medya için kullanacaksanız."
+      },
+      {
+        "urun": "redmi-note-15-5g-2026",
+        "metin": "Ekran kalitesi ve kamera sizin için önemliyse. Fiyat farkı, günlük kullanımda en çok baktığınız ekranda karşılığını veriyor."
+      }
+    ],
+    "sonuc": "Bütçeniz elveriyorsa Redmi Note 15 5G'yi alın; AMOLED ekran farkı her gün hissediliyor. Redmi 15C ise sınırlı bütçede uzun pil ömrü isteyenler için mantıklı."
+  },
+  "h2|poco-f9-ultra-2026": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: POCO F9 Ultra mı, Galaxy S25 Ultra mı?",
+    "metin": [
+      "POCO F9 Ultra, Xiaomi'nin performans odaklı POCO markasının en iddialı telefonu. Yeni Snapdragon 8 Elite Gen 5 işlemci, 6,9 inç ve çok yüksek yenileme hızlı AMOLED ekran ve 8050 mAh gibi çok büyük bir pille geliyor; 100 W şarjla da hızlı doluyor. Kamerada 200 MP ana, 50 MP periskop telefoto ve 50 MP ultra geniş açı var.",
+      "Galaxy S25 Ultra ise bir önceki neslin Snapdragon 8 Elite işlemcisini kullanıyor ama paketin tamamı daha olgun: S Pen, 5x optik zoomlu telefoto, titanyum kasa, yansımayı azaltan ekran kaplaması ve Samsung'un yedi yıllık güncelleme sözü. 218 g ile POCO'dan (235 g) daha hafif.",
+      "Kısacası POCO daha yeni işlemci, daha büyük pil ve daha hızlı şarj sunuyor; Samsung ise S Pen, uzun yazılım desteği ve daha yaygın servis ağıyla öne çıkıyor."
+    ],
+    "secim": [
+      {
+        "urun": "poco-f9-ultra-2026",
+        "metin": "Oyun performansı, pil ömrü ve hızlı şarj önceliğinizse; S Pen kullanmıyorsanız."
+      },
+      {
+        "urun": "h2",
+        "metin": "S Pen'e ihtiyacınız varsa, telefonu uzun yıllar kullanacaksanız ve daha hafif bir amiral gemisi istiyorsanız."
+      }
+    ],
+    "sonuc": "Saf performans ve pil için POCO F9 Ultra, eksiksiz bir amiral gemisi deneyimi ve uzun güncelleme desteği için Galaxy S25 Ultra."
+  },
+  "tv35|tv5": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iFFALCON 55U95A mı, TCL 55Q6C mi?",
+    "metin": [
+      "Önce bilinmesi gereken: iFFALCON, TCL'nin kendi markası. Bu yüzden iki televizyon benzer teknolojiyi kullanıyor. İkisinde de 55 inç 4K QD-Mini LED panel, 144 Hz yenileme hızı, Dolby Vision ve HDR10+ desteği ve 40 W ses çıkışı var.",
+      "Bu benzerlik nedeniyle resim kalitesinde gözle görülür bir fark beklemeyin. Mini LED arka aydınlatma sayesinde ikisi de parlak sahnelerde güçlü HDR görüntü veriyor ve standart LED televizyonlardan daha iyi kontrast sunuyor. 144 Hz panel, PS5 ve Xbox ile akıcı oyun için ideal.",
+      "Paneller VA tipinde: karşıdan bakınca kontrast güçlü, yan açılarda renkler biraz soluklaşıyor. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması bildirdi; yazılım güncellemeleriyle azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
+    ],
+    "secim": [
+      {
+        "urun": "tv35",
+        "metin": "TCL markasını ve daha uzun süredir piyasada olan Q6C serisini tercih ediyorsanız ya da fiyat farkı küçükse."
+      },
+      {
+        "urun": "tv5",
+        "metin": "Aynı özellikleri daha düşük fiyata istiyorsanız. Fiyat farkı belirginse mantıklı seçim bu."
+      }
+    ],
+    "sonuc": "Bu ikili arasında kararı fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın, hangisi daha ucuzsa onu alın."
+  },
+  "tv10|tv42": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: TCL 65Q6C mi, TCL 65T8D mi?",
+    "metin": [
+      "İkisi de TCL'nin 65 inç QD-Mini LED televizyonları ama farklı yıllardan. 65Q6C 2025 serisinden, 65T8D ise 2026 serisinden. İkisinde de Dolby Vision, HDR10+, Google TV ve Mini LED arka aydınlatma var.",
+      "Oyun oynayanlar için asıl fark yenileme hızında: Q6C 144 Hz panel kullanıyor, T8D ise 120 Hz. PS5 ve Xbox Series X en fazla 120 Hz verdiği için konsol oyuncuları bu farkı hissetmez; 144 Hz yalnızca güçlü bir bilgisayar bağlayanlar için anlam taşıyor. Ses tarafında Q6C 40 W, T8D 35 W çıkış gücüne sahip.",
+      "T8D daha yeni olduğu için daha güncel yazılımla ve daha uzun güncelleme desteğiyle geliyor. Q6C ise piyasada daha uzun süredir olduğu için fiyatı genelde daha cazip ve hakkında daha fazla kullanıcı yorumu var."
+    ],
+    "secim": [
+      {
+        "urun": "tv42",
+        "metin": "Bilgisayardan 144 Hz oyun oynayacaksanız ya da Q6C belirgin şekilde daha ucuzsa."
+      },
+      {
+        "urun": "tv10",
+        "metin": "Daha yeni bir model ve daha uzun yazılım desteği istiyorsanız; fiyat farkı küçükse."
+      }
+    ],
+    "sonuc": "Konsol oyuncusu ve film izleyici için iki model de yeterli; fiyatı uygun olanı seçin. Bilgisayar oyuncusuysanız 144 Hz'lik 65Q6C bir adım önde."
   }
 }

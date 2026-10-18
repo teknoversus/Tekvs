@@ -167,5 +167,101 @@
     "kimlerAlmali": "iPhone kullanan ve bildirim, spor takibi ve temel sağlık ölçümleri için uygun fiyatlı bir Apple Watch arayanlar.",
     "kimlerAlmamali": "Uzun yıllar kullanacak bir saat isteyenler ve uyku, döngü takibi için sıcaklık sensörüne ihtiyaç duyanlar.",
     "sonKarar": "Series 7'yi ikinci el olarak alacaksanız pil sağlığına bakın (yüzde 85 ve üzeri iyi). Fiyat farkı küçükse Series 9 veya daha yeni bir model daha uzun ömürlü olur."
+  },
+  "tv30": {
+    "tarih": "2026-10-18",
+    "kisa": "TCL 75C7L, 75 inç büyük ekranı, QD-Mini LED paneli ve 144 Hz yenileme hızıyla büyük salonlar ve oyuncular için güçlü bir televizyon. Büyük boyutu nedeniyle odanızın ölçülerini önceden kontrol etmeniz gerekiyor.",
+    "metin": [
+      "75 inç, salonda sinema hissi isteyenler için en popüler büyük boyut. 75C7L bu boyutu QD-Mini LED panelle birleştiriyor: Mini LED arka aydınlatma ekranı bölgeler halinde karartıp aydınlatabildiği için kontrast güçlü, parlak sahnelerde HDR etkisi belirgin. Dolby Vision ve HDR10+ desteği var.",
+      "144 Hz yenileme hızı oyun ve spor yayınlarında akıcılık sağlıyor; PS5 ve Xbox Series X ile 120 Hz oyun oynanabiliyor. 60 W ses çıkışı televizyon hoparlörü için güçlü; çoğu kullanıcı için ayrıca soundbar almak şart değil. Arayüz Google TV.",
+      "75 inç bir televizyon için önerilen izleme mesafesi yaklaşık 2,5–3 metre. Koltuğunuz ekrana daha yakınsa 65 inç modeller daha rahat olabilir. Duvara asacaksanız duvarın ve aparatın 75 inç ağırlığını taşıdığından emin olun."
+    ],
+    "kimlerAlmali": "Geniş salonu olanlar, film ve spor yayınını büyük ekranda izlemek isteyenler ve konsolla oyun oynayanlar.",
+    "kimlerAlmamali": "Küçük odada 2 metreden yakın oturanlar ve karanlık odada OLED seviyesinde siyah bekleyenler.",
+    "sonKarar": "TCL 75C7L, 75 inçte Mini LED görüntü ve 144 Hz isteyenler için alınır. Satın almadan önce 65 inç sürümüyle fiyat farkını da karşılaştırın."
+  },
+  "tv47": {
+    "tarih": "2026-10-18",
+    "kisa": "TCL 65T61C, 65 inç büyük ekranı uygun fiyata isteyenler için bütçe dostu bir QLED televizyon. Mini LED ve 120 Hz yok; günlük TV, dizi ve YouTube için yeterli, oyun ve HDR filmler için sınırlı.",
+    "metin": [
+      "65T61C'nin en büyük artısı fiyatına göre sunduğu ekran boyutu. 65 inç 4K QLED panel, standart LED televizyonlara göre daha canlı renkler veriyor. Google TV arayüzü sayesinde Netflix, YouTube, Disney+ ve diğer uygulamalar hazır geliyor; telefondan Chromecast ile görüntü aktarılabiliyor.",
+      "Sınırları da bilinmeli. Yenileme hızı 60 Hz; konsolda 120 Hz oyun oynanamıyor. HDR tarafında HDR10 ve HLG destekleniyor, Dolby Vision yok. Arka aydınlatma Mini LED değil, bu yüzden karanlık sahnelerde siyahlar üst modellerdeki kadar derin değil. 20 W ses çıkışı diyaloglar için yeterli, film için soundbar fark yaratır.",
+      "Arayanların sık sorduğu 'alınır mı' sorusunun cevabı beklentiye bağlı: büyük ekranda TV yayını, dizi ve YouTube izleyecekseniz evet. Oyun ve sinema deneyimi istiyorsanız biraz daha bütçeyle TCL'nin Mini LED'li Q6C veya C6K modellerine bakın."
+    ],
+    "kimlerAlmali": "Uygun bütçeyle 65 inç akıllı televizyon isteyenler; ağırlıklı olarak TV yayını, dizi ve YouTube izleyenler.",
+    "kimlerAlmamali": "Konsolda 120 Hz oyun oynamak isteyenler ve Dolby Vision ile en iyi HDR film deneyimini arayanlar.",
+    "sonKarar": "TCL 65T61C fiyatına göre alınır. Biraz daha bütçe ayırabilirseniz 144 Hz ve Mini LED'li modeller belirgin şekilde daha iyi görüntü sunuyor."
+  },
+  "tv29": {
+    "tarih": "2026-10-18",
+    "kisa": "TCL 65C8L, TCL'nin üst seviye 65 inç Mini LED televizyonlarından. SQD-Mini LED paneli, 144 Hz yenileme hızı ve güçlü ses sistemiyle OLED'e alternatif arayanlar için iddialı bir seçenek.",
+    "metin": [
+      "C8L, TCL'nin C serisinde C6 ve C7'nin üstünde konumlanıyor. TCL'nin SQD-Mini LED adını verdiği panel, daha fazla karartma bölgesi ve daha yüksek parlaklıkla standart Mini LED modellerden bir adım ileri gidiyor. Sonuç olarak aydınlık odada bile güçlü HDR görüntü ve iyi kontrast elde ediliyor; Dolby Vision ve HDR10+ desteği var.",
+      "144 Hz panel ve HDMI 2.1 girişler oyun için ideal. Ses sistemi bu serinin en güçlü yanlarından; televizyon hoparlörüyle yetinmek isteyenler için iyi bir seçenek. Arayüz Google TV.",
+      "Asıl soru OLED mi, Mini LED mi? Karanlık odada film izliyorsanız OLED hâlâ siyahlarda önde. Gündüz aydınlık bir salonda izliyorsanız C8L gibi parlak bir Mini LED daha iyi sonuç verir ve yanma (burn-in) riski taşımaz."
+    ],
+    "kimlerAlmali": "Aydınlık salonda izleyen, yüksek parlaklık ve güçlü HDR isteyen, konsol veya bilgisayarla oyun oynayan kullanıcılar.",
+    "kimlerAlmamali": "Bütçesi sınırlı olanlar; C6K ve Q6C gibi modeller fiyatın çok altında benzer bir deneyimin büyük kısmını sunuyor.",
+    "sonKarar": "TCL 65C8L, üst seviye Mini LED görüntü isteyenler için alınır. Aynı fiyat aralığındaki OLED modellerle izleme ortamınıza göre karşılaştırın."
+  },
+  "tv37": {
+    "tarih": "2026-10-18",
+    "kisa": "LG OLED65G64LW, LG'nin en üst seviye OLED serisi olan G serisinden. Yüksek parlaklığı, mükemmel siyahları ve duvara tam oturan tasarımıyla en iyi görüntüyü isteyenler için; fiyatı da buna göre yüksek.",
+    "metin": [
+      "G serisi, LG OLED'leri arasında en parlak panelleri kullanıyor. OLED'in sonsuz kontrastı ve gerçek siyahları korunurken parlaklığın da artması, bu televizyonu gündüz aydınlık odada da iyi bir seçim yapıyor; giriş seviyesi OLED'lerin en zayıf yönü burada büyük ölçüde ortadan kalkıyor. Dolby Vision, 144 Hz'e kadar yenileme hızı ve webOS arayüzü var.",
+      "Tasarım duvara montaj için düşünülmüş: televizyon duvara neredeyse boşluk bırakmadan oturuyor. Bazı ülkelerde ayak kutudan çıkmıyor ve ayrıca satılıyor; televizyonu sehpaya koyacaksanız satın alırken bunu kontrol edin. 60 W ses çıkışı televizyon hoparlörü için iyi seviyede.",
+      "Oyuncular için 144 Hz, düşük gecikme ve değişken yenileme hızı desteği önemli artılar. Fiyat farkını düşünenler için LG'nin C serisi daha düşük parlaklıkla benzer OLED deneyimini daha uygun fiyata sunuyor."
+    ],
+    "kimlerAlmali": "En iyi görüntüyü bütçe sınırı olmadan isteyenler, televizyonu duvara asacak olanlar ve hem film hem oyun için üst seviye OLED arayanlar.",
+    "kimlerAlmamali": "Bütçesine dikkat edenler; LG C serisi veya iyi bir Mini LED, fiyatın çok altında deneyimin büyük kısmını sunuyor.",
+    "sonKarar": "LG OLED65G64LW, en iyisini isteyenler için alınır. Parlaklık sizin için kritik değilse C serisiyle aradaki fiyat farkını değerlendirin."
+  },
+  "tv15": {
+    "tarih": "2026-10-18",
+    "kisa": "LG 55QNED87B6A, Mini LED arka aydınlatmalı, 144 Hz destekli 55 inç bir LG televizyon. webOS arayüzü ve Dolby Vision desteğiyle orta-üst segmentte dengeli bir seçim.",
+    "metin": [
+      "QNED, LG'nin LCD tabanlı televizyonları için kullandığı ad. 55QNED87B6A'da Mini LED arka aydınlatma var; bu sayede kontrast ve parlaklık standart LED modellere göre belirgin şekilde daha iyi. Dolby Vision ile Netflix ve Disney+'taki HDR içerikler iyi görünüyor; HDR10+ desteği ise yok.",
+      "Yenileme hızı 144 Hz'e kadar çıkıyor; konsol ve bilgisayar oyunları için iyi. Arayüz LG'nin webOS'u: hızlı ve kullanımı kolay, sihirli kumandası ekranda fare gibi imleç kullanmayı sağlıyor. 20 W ses çıkışı temel kullanım için yeterli.",
+      "Karar verirken aynı fiyat aralığındaki TCL ve iFFALCON Mini LED modelleriyle karşılaştırmanızı öneririz. Onlar genelde benzer paraya daha fazla özellik sunuyor; LG ise marka, arayüz ve servis tercihi olanlar için öne çıkıyor."
+    ],
+    "kimlerAlmali": "LG'nin webOS arayüzünü ve markasını tercih edenler, 55 inçte Mini LED görüntü ve 144 Hz oyun desteği isteyenler.",
+    "kimlerAlmamali": "Yalnızca fiyat/performansa bakanlar ve HDR10+ içerik izleyenler.",
+    "sonKarar": "LG 55QNED87B6A dengeli bir televizyon ve alınır. Fiyat farkı belirginse TCL'nin 55 inç Mini LED modellerine de bakın."
+  },
+  "tv16": {
+    "tarih": "2026-10-18",
+    "kisa": "iFFALCON 55U65A, 55 inç 4K QLED ekranı ve Google TV arayüzüyle bütçe dostu bir televizyon. Dolby Vision desteği fiyatına göre artı; 60 Hz panel nedeniyle oyun için sınırlı.",
+    "metin": [
+      "Önce marka sorusu: iFFALCON, TCL'nin kendi markası. 55U65A markanın uygun fiyatlı modeli. 55 inç 4K QLED panel, standart LED televizyonlara göre daha canlı renkler veriyor. Bu fiyat aralığında Dolby Vision ve HDR10+ desteğinin birlikte olması dikkat çekici.",
+      "Google TV arayüzü sayesinde Netflix, YouTube, Disney+ gibi uygulamalar hazır geliyor ve telefondan Chromecast ile görüntü aktarılabiliyor. 20 W ses çıkışı günlük kullanım için yeterli.",
+      "Panel 60 Hz; konsolda 120 Hz oyun oynanamıyor ve Mini LED arka aydınlatma yok. Bu yüzden HDR desteği olsa da parlaklık ve kontrast üst modellerdeki kadar güçlü değil. Oyun önceliğinizse aynı markanın 144 Hz'lik U95A serisine bakın."
+    ],
+    "kimlerAlmali": "Uygun fiyatlı, 55 inç bir akıllı TV arayanlar; ağırlıklı olarak dizi, film ve YouTube izleyenler.",
+    "kimlerAlmamali": "Konsolla oyun oynayanlar ve parlak odada güçlü HDR görüntü isteyenler.",
+    "sonKarar": "iFFALCON 55U65A, fiyatına göre iyi bir televizyon ve alınır. Oyun için biraz daha bütçeyle 55U95A daha doğru tercih."
+  },
+  "p_mid_02": {
+    "tarih": "2026-10-18",
+    "kisa": "Galaxy A36 5G, Samsung'un altı yıllık güncelleme sözü, AMOLED ekranı ve dengeli performansıyla orta segmentte güvenli bir seçim. Kamera ve işlemci rakiplerine göre iddialı değil.",
+    "metin": [
+      "A36 5G'nin en güçlü yanı uzun ömür. Samsung bu model için altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor; bu, orta segmentte nadir görülen bir destek süresi. Telefonu uzun yıllar kullanmak isteyenler için önemli bir avantaj.",
+      "Ekran 120 Hz Super AMOLED: renkler canlı, kaydırma akıcı. Snapdragon 6 Gen 3 işlemci sosyal medya, video ve günlük uygulamalarda rahat; ağır oyunlarda ise orta grafik ayarları gerekiyor. 5000 mAh pil normal kullanımda bir günü rahat çıkarıyor. IP67 su ve toz koruması var; 7,4 mm kalınlıkla ince bir telefon.",
+      "Kamera tarafında 50 MP ana kamera gün ışığında iyi sonuç veriyor, düşük ışıkta ise rakiplerin gerisinde kalabiliyor. Bu fiyat aralığında daha güçlü kamera veya daha hızlı şarj arıyorsanız Xiaomi ve POCO modelleri öne çıkabilir."
+    ],
+    "kimlerAlmali": "Telefonunu 4–5 yıl kullanmak isteyenler, Samsung'un yazılım ve servis ağını tercih edenler ve dengeli bir orta segment telefon arayanlar.",
+    "kimlerAlmamali": "Oyun performansını ve kamerayı öncelikli görenler; aynı fiyata daha güçlü işlemcili rakipler var.",
+    "sonKarar": "Galaxy A36 5G alınır, özellikle uzun güncelleme desteği sizin için önemliyse. Yeni nesil Galaxy A37 ile fiyat farkına da bakın."
+  },
+  "p_mid_04": {
+    "tarih": "2026-10-18",
+    "kisa": "POCO X7 Pro, güçlü MediaTek Dimensity 8400-Ultra işlemcisiyle orta segment fiyatına üst segment performans sunan bir telefon. Oyun oynayanlar için bu fiyatta en mantıklı seçeneklerden biri.",
+    "metin": [
+      "X7 Pro'nun en büyük kozu performans. Dimensity 8400-Ultra işlemci, bu fiyat aralığındaki çoğu rakibin çok önünde; popüler oyunları yüksek grafik ayarlarında akıcı oynatabiliyor. 12 GB RAM ve geniş depolama seçenekleriyle çoklu görevde de rahat.",
+      "Ekran 6,67 inç, 1,5K çözünürlüklü 120 Hz AMOLED; keskin ve canlı. Ana kamera 50 MP ve optik görüntü sabitlemeli; gün ışığında iyi fotoğraf çekiyor, ama kamera bu telefonun ana satış noktası değil. Hızlı şarj desteği sayesinde kısa sürede doluyor.",
+      "Yazılım Xiaomi'nin HyperOS arayüzü. Kurulumda gelen bazı ek uygulamaları kaldırmanız gerekebilir. Güncelleme süresi Samsung'un orta segment modellerinden daha kısa; telefonu çok uzun yıllar kullanmayı planlıyorsanız bunu hesaba katın."
+    ],
+    "kimlerAlmali": "Mobil oyun oynayanlar ve orta bütçeyle en yüksek performansı isteyenler.",
+    "kimlerAlmamali": "Kamerayı öncelikli görenler ve uzun yıllar güncelleme desteği isteyenler. Bu durumda Galaxy A serisi veya kamera odaklı modeller daha uygun.",
+    "sonKarar": "POCO X7 Pro, fiyat/performans arayanlar için alınır. Satın almadan önce POCO'nun daha yeni modelleriyle fiyat farkını da kontrol edin."
   }
 }

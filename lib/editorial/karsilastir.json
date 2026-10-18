@@ -1,0 +1,78 @@
+{
+  "_aciklama": "Elle yazılmış karşılaştırma değerlendirmeleri. Anahtar: iki ürün id'si, alfabetik sıralı, '|' ile. 'secim' içindeki 'urun' alanı ürün id'sidir. Fiyat yazmıyoruz; güncel fiyat sayfanın üstünde zaten gösteriliyor.",
+
+  "n7|n8": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iFFALCON 65U95A mı, TCL 65C6K mı?",
+    "metin": [
+      "Önce sık sorulan soruyu cevaplayalım: iFFALCON, TCL'nin kendi markası. Bu yüzden iki televizyon aynı aileden geliyor ve kâğıt üzerinde birbirine çok benziyor. İkisinde de 65 inç 4K QD-Mini LED panel, 144 Hz yenileme hızı, Dolby Vision ve HDR10+ desteği, HDMI 2.1 girişleri ve Google TV var. Ses tarafında da iki model 30 W çıkış gücünde.",
+      "Asıl fark yaşta ve fiyatta. TCL 65C6K, TCL'nin 2025 C6K serisinden; piyasada daha uzun süredir var, kullanıcı yorumu ve yazılım güncellemesi geçmişi daha fazla. iFFALCON 65U95A ise 2026 modeli olarak satılıyor ve genelde benzer donanımı daha uygun fiyata sunmayı hedefliyor. Panel teknolojisi aynı sınıfta olduğu için resim kalitesinde gözle görülür bir fark beklemeyin; iki modelde de yerel karartma sayesinde kontrast iyi, ama OLED seviyesinde siyah yok.",
+      "İkisi de VA tipi panel kullanıyor. Bu, karşıdan bakınca güçlü kontrast demek; ama televizyonu yan açılardan izleyecek geniş bir oturma düzeniniz varsa renkler soluklaşabilir. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması (ghosting) bildirdi; sonraki yazılım güncellemeleriyle bunun azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
+    ],
+    "secim": [
+      { "urun": "n8", "metin": "Daha uzun süredir satılan, yorumu ve güncelleme geçmişi bol bir model istiyorsanız ya da fiyat farkı birkaç bin TL'nin altındaysa." },
+      { "urun": "n7", "metin": "Aynı özellikleri daha düşük fiyata almak istiyorsanız. Fiyat farkı belirginse, aynı panel sınıfına daha az ödemiş olursunuz." }
+    ],
+    "sonuc": "Kısacası, bu ikili arasında kararı özellikler değil fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın; fark anlamlıysa ucuz olanı almak mantıklı."
+  },
+
+  "h3|s2": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Galaxy S24 Ultra mı, S26 Ultra mı?",
+    "metin": [
+      "İki nesil arasında telefonun karakteri değişmedi: ikisi de 200 MP ana kameralı, S Pen'li, IP68 korumalı ve 5000 mAh pilli büyük ekranlı amiral gemisi. Değişen şeyler daha çok günlük konforla ilgili.",
+      "S26 Ultra elde belirgin şekilde daha rahat: kalınlık 8,6 mm'den 7,9 mm'ye, ağırlık 232 g'dan 218 g'a iniyor. İşlemci Snapdragon 8 Gen 3'ten Snapdragon 8 Elite Gen 5'e geçiyor; günlük kullanımda ikisi de çok hızlı, fark daha çok ağır oyunlarda ve uzun vadede hissedilir. Ultra geniş açı kamera 12 MP'den 50 MP'ye çıktı ve kablolu şarj hızı 45 W'tan 60 W'a yükseldi.",
+      "S24 Ultra'nın kendine ait bir artısı da var: S Pen'i Bluetooth destekli. Kalemle uzaktan fotoğraf çekme ya da sunum kaydırma gibi hareketleri kullanıyorsanız bunu bilin; sonraki nesillerde S Pen'den Bluetooth kaldırıldı. Yazılım tarafında Samsung iki modele de yedi yıl güncelleme sözü verdi; S24 Ultra 2024'te çıktığı için bu süre onda daha erken bitecek."
+    ],
+    "secim": [
+      { "urun": "h3", "metin": "Amiral gemisi kamerası ve S Pen'i makul fiyata istiyorsanız. İndirimli bir S24 Ultra hâlâ çok güçlü ve önünde yıllarca güncelleme var." },
+      { "urun": "s2", "metin": "Telefonu 4–5 yıl kullanmayı planlıyorsanız, daha hafif bir gövde ve daha hızlı şarj sizin için önemliyse." }
+    ],
+    "sonuc": "Elinizde S24 Ultra varsa yükseltme zorunlu değil. Sıfırdan alıyorsanız aradaki fiyat farkına bakın: fark büyükse S24 Ultra, küçükse S26 Ultra daha doğru tercih."
+  },
+
+  "h1|h4": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iPhone 15 Pro mu, iPhone 16 Pro mu?",
+    "metin": [
+      "iPhone 15 Pro ile 16 Pro aynı ailenin art arda gelen iki nesli: ikisi de titanyum kasalı, 120 Hz ProMotion ekranlı, USB-C girişli ve 8 GB RAM sayesinde Apple Intelligence özelliklerini destekliyor. Yani 15 Pro alan biri yapay zekâ özelliklerinden mahrum kalmıyor.",
+      "16 Pro'daki farklar kamera ve ekranda toplanıyor. Ekran 6,1 inçten 6,3 inçe büyüdü. 5x optik telefoto, önceki nesilde yalnızca Pro Max'te vardı; 16 Pro ile küçük modele de geldi (15 Pro'da 3x). Ultra geniş açı kamera 12 MP'den 48 MP'ye çıktı, 4K 120 fps video kaydı eklendi ve yan tarafta fotoğraf çekmeyi hızlandıran Kamera Denetimi tuşu var. İşlemci A17 Pro'dan A18 Pro'ya geçti; Apple'ın verdiği değerlere göre pil ömrü de bir miktar uzadı.",
+      "15 Pro'nun artısı ise daha kompakt ve hafif olması: 187 g'a karşı 199 g. Küçük telefon seviyorsanız bu fark elde hissediliyor."
+    ],
+    "secim": [
+      { "urun": "h4", "metin": "Kompakt bir Pro iPhone istiyorsanız ve 5x zoom, 4K 120 fps video gibi özelliklere ihtiyacınız yoksa. Fiyatı belirgin şekilde düşükse iyi bir fırsat." },
+      { "urun": "h1", "metin": "Fotoğraf ve videoyu ciddiye alıyorsanız, uzak çekimlerde 5x zoom işinize yarayacaksa ve telefonu uzun yıllar kullanacaksanız." }
+    ],
+    "sonuc": "İki fiyat birbirine yakınsa 16 Pro'yu alın; daha yeni olduğu için güncelleme desteği de daha uzun sürecek. Fark büyükse 15 Pro hâlâ çok iyi bir telefon."
+  },
+
+  "n4|n6": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iPhone 15 mi, iPhone 17 mi?",
+    "metin": [
+      "Bu iki model arasında iki nesil var ve fark, standart iPhone'larda uzun süredir görmediğimiz kadar büyük. En önemlisi ekran: iPhone 15 60 Hz ekran kullanıyor, iPhone 17 ise ilk kez standart modele 120 Hz ProMotion ve her zaman açık ekran getiriyor. Kaydırırken, oyunda ve gündelik kullanımda akıcılık farkı ilk dakikadan hissediliyor. Ekran da 6,1 inçten 6,3 inçe büyüdü.",
+      "İkinci büyük fark yapay zekâ. Apple Intelligence en az 8 GB RAM istiyor; iPhone 15'te 6 GB olduğu için bu özellikler gelmiyor, iPhone 17'de geliyor. Bunlara A16'dan A19'a geçen işlemci, 12 MP'den 18 MP'ye çıkan ön kamera, 48 MP'ye yükselen ultra geniş açı ve 3349 mAh'den 3692 mAh'e çıkan pil ekleniyor. Başlangıç depolaması da 128 GB'tan 256 GB'a çıktı.",
+      "iPhone 15'in tarafında ise fiyat var. Arama, mesaj, sosyal medya ve fotoğraf için hâlâ hızlı ve yeterli; USB-C girişi ve 48 MP ana kamerası da var."
+    ],
+    "secim": [
+      { "urun": "n4", "metin": "Bütçeniz sınırlıysa, telefonu temel işler için kullanıyorsanız ve 60 Hz ekran sizi rahatsız etmiyorsa." },
+      { "urun": "n6", "metin": "Telefonu 4–5 yıl kullanmayı düşünüyorsanız. 120 Hz ekran, Apple Intelligence desteği ve daha uzun güncelleme ömrü aradaki farkı karşılıyor." }
+    ],
+    "sonuc": "Uzun vadede iPhone 17 daha mantıklı yatırım. iPhone 15'i yalnızca fiyat farkı sizin için gerçekten önemliyse tercih edin."
+  },
+
+  "h8|n2": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iPhone 13 mü, iPhone 13 Pro mu?",
+    "metin": [
+      "İki telefon da aynı A15 Bionic işlemciyi kullanıyor ve ikisi de güncel iOS sürümlerini almaya devam ediyor. Bu yüzden günlük hız farkı küçük. Ayrım ekranda ve kamerada.",
+      "iPhone 13 Pro, 120 Hz ProMotion ekranın geldiği ilk iPhone; iPhone 13 ise 60 Hz. Pro'da ayrıca 3x optik telefoto, makro çekim ve daha parlak ekran var; RAM de 4 GB yerine 6 GB. Buna karşılık iPhone 13 daha hafif (174 g'a karşı 204 g) ve renk seçenekleri daha fazla. İkisi de Lightning girişli; USB-C yok.",
+      "2026'da bu modelleri çoğunlukla ikinci el ya da yenilenmiş olarak bulacaksınız. Bu durumda pil sağlığı, modelden bile daha önemli: Ayarlar > Pil > Pil Sağlığı bölümünde yüzde 85'in altındaysa yakında pil değişimi gerekebilir, fiyatı buna göre değerlendirin."
+    ],
+    "secim": [
+      { "urun": "n2", "metin": "Temel kullanım için uygun fiyatlı, hafif bir iPhone arıyorsanız." },
+      { "urun": "h8", "metin": "Akıcı 120 Hz ekran ve uzağı yakınlaştıran telefoto kamera sizin için önemliyse, fiyat farkı da makulse." }
+    ],
+    "sonuc": "İkisi arasında fiyat farkı küçükse 13 Pro daha çok şey sunuyor. Fark büyükse ve ekran akıcılığını önemsemiyorsanız iPhone 13 yeterli."
+  }
+}

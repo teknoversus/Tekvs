@@ -1,6 +1,5 @@
 {
   "_aciklama": "Elle yazılmış karşılaştırma değerlendirmeleri. Anahtar: iki ürün id'si, alfabetik sıralı, '|' ile. 'secim' içindeki 'urun' alanı ürün id'sidir. Fiyat yazmıyoruz; güncel fiyat sayfanın üstünde zaten gösteriliyor.",
-
   "n7|n8": {
     "tarih": "2026-10-18",
     "baslik": "Editör Değerlendirmesi: iFFALCON 65U95A mı, TCL 65C6K mı?",
@@ -10,12 +9,17 @@
       "İkisi de VA tipi panel kullanıyor. Bu, karşıdan bakınca güçlü kontrast demek; ama televizyonu yan açılardan izleyecek geniş bir oturma düzeniniz varsa renkler soluklaşabilir. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması (ghosting) bildirdi; sonraki yazılım güncellemeleriyle bunun azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
     ],
     "secim": [
-      { "urun": "n8", "metin": "Daha uzun süredir satılan, yorumu ve güncelleme geçmişi bol bir model istiyorsanız ya da fiyat farkı birkaç bin TL'nin altındaysa." },
-      { "urun": "n7", "metin": "Aynı özellikleri daha düşük fiyata almak istiyorsanız. Fiyat farkı belirginse, aynı panel sınıfına daha az ödemiş olursunuz." }
+      {
+        "urun": "n8",
+        "metin": "Daha uzun süredir satılan, yorumu ve güncelleme geçmişi bol bir model istiyorsanız ya da fiyat farkı birkaç bin TL'nin altındaysa."
+      },
+      {
+        "urun": "n7",
+        "metin": "Aynı özellikleri daha düşük fiyata almak istiyorsanız. Fiyat farkı belirginse, aynı panel sınıfına daha az ödemiş olursunuz."
+      }
     ],
     "sonuc": "Kısacası, bu ikili arasında kararı özellikler değil fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın; fark anlamlıysa ucuz olanı almak mantıklı."
   },
-
   "h3|s2": {
     "tarih": "2026-10-18",
     "baslik": "Editör Değerlendirmesi: Galaxy S24 Ultra mı, S26 Ultra mı?",
@@ -25,12 +29,17 @@
       "S24 Ultra'nın kendine ait bir artısı da var: S Pen'i Bluetooth destekli. Kalemle uzaktan fotoğraf çekme ya da sunum kaydırma gibi hareketleri kullanıyorsanız bunu bilin; sonraki nesillerde S Pen'den Bluetooth kaldırıldı. Yazılım tarafında Samsung iki modele de yedi yıl güncelleme sözü verdi; S24 Ultra 2024'te çıktığı için bu süre onda daha erken bitecek."
     ],
     "secim": [
-      { "urun": "h3", "metin": "Amiral gemisi kamerası ve S Pen'i makul fiyata istiyorsanız. İndirimli bir S24 Ultra hâlâ çok güçlü ve önünde yıllarca güncelleme var." },
-      { "urun": "s2", "metin": "Telefonu 4–5 yıl kullanmayı planlıyorsanız, daha hafif bir gövde ve daha hızlı şarj sizin için önemliyse." }
+      {
+        "urun": "h3",
+        "metin": "Amiral gemisi kamerası ve S Pen'i makul fiyata istiyorsanız. İndirimli bir S24 Ultra hâlâ çok güçlü ve önünde yıllarca güncelleme var."
+      },
+      {
+        "urun": "s2",
+        "metin": "Telefonu 4–5 yıl kullanmayı planlıyorsanız, daha hafif bir gövde ve daha hızlı şarj sizin için önemliyse."
+      }
     ],
     "sonuc": "Elinizde S24 Ultra varsa yükseltme zorunlu değil. Sıfırdan alıyorsanız aradaki fiyat farkına bakın: fark büyükse S24 Ultra, küçükse S26 Ultra daha doğru tercih."
   },
-
   "h1|h4": {
     "tarih": "2026-10-18",
     "baslik": "Editör Değerlendirmesi: iPhone 15 Pro mu, iPhone 16 Pro mu?",
@@ -40,12 +49,17 @@
       "15 Pro'nun artısı ise daha kompakt ve hafif olması: 187 g'a karşı 199 g. Küçük telefon seviyorsanız bu fark elde hissediliyor."
     ],
     "secim": [
-      { "urun": "h4", "metin": "Kompakt bir Pro iPhone istiyorsanız ve 5x zoom, 4K 120 fps video gibi özelliklere ihtiyacınız yoksa. Fiyatı belirgin şekilde düşükse iyi bir fırsat." },
-      { "urun": "h1", "metin": "Fotoğraf ve videoyu ciddiye alıyorsanız, uzak çekimlerde 5x zoom işinize yarayacaksa ve telefonu uzun yıllar kullanacaksanız." }
+      {
+        "urun": "h4",
+        "metin": "Kompakt bir Pro iPhone istiyorsanız ve 5x zoom, 4K 120 fps video gibi özelliklere ihtiyacınız yoksa. Fiyatı belirgin şekilde düşükse iyi bir fırsat."
+      },
+      {
+        "urun": "h1",
+        "metin": "Fotoğraf ve videoyu ciddiye alıyorsanız, uzak çekimlerde 5x zoom işinize yarayacaksa ve telefonu uzun yıllar kullanacaksanız."
+      }
     ],
     "sonuc": "İki fiyat birbirine yakınsa 16 Pro'yu alın; daha yeni olduğu için güncelleme desteği de daha uzun sürecek. Fark büyükse 15 Pro hâlâ çok iyi bir telefon."
   },
-
   "n4|n6": {
     "tarih": "2026-10-18",
     "baslik": "Editör Değerlendirmesi: iPhone 15 mi, iPhone 17 mi?",
@@ -55,12 +69,17 @@
       "iPhone 15'in tarafında ise fiyat var. Arama, mesaj, sosyal medya ve fotoğraf için hâlâ hızlı ve yeterli; USB-C girişi ve 48 MP ana kamerası da var."
     ],
     "secim": [
-      { "urun": "n4", "metin": "Bütçeniz sınırlıysa, telefonu temel işler için kullanıyorsanız ve 60 Hz ekran sizi rahatsız etmiyorsa." },
-      { "urun": "n6", "metin": "Telefonu 4–5 yıl kullanmayı düşünüyorsanız. 120 Hz ekran, Apple Intelligence desteği ve daha uzun güncelleme ömrü aradaki farkı karşılıyor." }
+      {
+        "urun": "n4",
+        "metin": "Bütçeniz sınırlıysa, telefonu temel işler için kullanıyorsanız ve 60 Hz ekran sizi rahatsız etmiyorsa."
+      },
+      {
+        "urun": "n6",
+        "metin": "Telefonu 4–5 yıl kullanmayı düşünüyorsanız. 120 Hz ekran, Apple Intelligence desteği ve daha uzun güncelleme ömrü aradaki farkı karşılıyor."
+      }
     ],
     "sonuc": "Uzun vadede iPhone 17 daha mantıklı yatırım. iPhone 15'i yalnızca fiyat farkı sizin için gerçekten önemliyse tercih edin."
   },
-
   "h8|n2": {
     "tarih": "2026-10-18",
     "baslik": "Editör Değerlendirmesi: iPhone 13 mü, iPhone 13 Pro mu?",
@@ -70,9 +89,155 @@
       "2026'da bu modelleri çoğunlukla ikinci el ya da yenilenmiş olarak bulacaksınız. Bu durumda pil sağlığı, modelden bile daha önemli: Ayarlar > Pil > Pil Sağlığı bölümünde yüzde 85'in altındaysa yakında pil değişimi gerekebilir, fiyatı buna göre değerlendirin."
     ],
     "secim": [
-      { "urun": "n2", "metin": "Temel kullanım için uygun fiyatlı, hafif bir iPhone arıyorsanız." },
-      { "urun": "h8", "metin": "Akıcı 120 Hz ekran ve uzağı yakınlaştıran telefoto kamera sizin için önemliyse, fiyat farkı da makulse." }
+      {
+        "urun": "n2",
+        "metin": "Temel kullanım için uygun fiyatlı, hafif bir iPhone arıyorsanız."
+      },
+      {
+        "urun": "h8",
+        "metin": "Akıcı 120 Hz ekran ve uzağı yakınlaştıran telefoto kamera sizin için önemliyse, fiyat farkı da makulse."
+      }
     ],
     "sonuc": "İkisi arasında fiyat farkı küçükse 13 Pro daha çok şey sunuyor. Fark büyükse ve ekran akıcılığını önemsemiyorsanız iPhone 13 yeterli."
+  },
+  "n1|n6": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iPhone 11'den iPhone 17'ye geçmeye değer mi?",
+    "metin": [
+      "Bu karşılaştırmayı arayanların çoğu elinde iPhone 11 olan ve yenilemeyi düşünen kullanıcılar. Kısa cevap: evet, aradaki fark çok büyük. iPhone 11 2019 modeli; iPhone 17 ile arasında altı nesil var.",
+      "En belirgin fark ekranda. iPhone 11'de 6,1 inç LCD panel ve 60 Hz var; iPhone 17'de 6,3 inç OLED, 120 Hz ProMotion ve her zaman açık ekran. Siyahlar, parlaklık ve kaydırma akıcılığı başka bir sınıfta. Kamerada 12 MP'den 48 MP ana sensöre ve 48 MP ultra geniş açıya geçiliyor; ön kamera 18 MP oluyor. iPhone 11'de 5G yok, giriş Lightning; iPhone 17'de 5G ve USB-C var.",
+      "Yazılım tarafında iPhone 11 hâlâ güncelleme alıyor ama ömrünün sonuna yaklaşıyor ve Apple Intelligence özelliklerini hiç desteklemiyor. iPhone 17 hem bu özellikleri destekliyor hem de önünde uzun yıllar güncelleme var. Başlangıç depolaması da 64 GB'tan 256 GB'a çıkmış durumda."
+    ],
+    "secim": [
+      {
+        "urun": "n1",
+        "metin": "Yalnızca arama, mesaj ve temel uygulamalar için çok ucuz bir yedek telefon arıyorsanız. Ana telefon olarak artık önermiyoruz."
+      },
+      {
+        "urun": "n6",
+        "metin": "Telefonu birkaç yıl daha kullanmak istiyorsanız. Ekran, kamera, pil ve güncelleme süresinde iPhone 11'in çok önünde."
+      }
+    ],
+    "sonuc": "iPhone 11'den yükseltme yapacaksanız iPhone 17 doğru adres. Bütçe yetmiyorsa iPhone 15 veya 16 da büyük bir sıçrama olur; iPhone 11'i sıfırdan almanızı önermiyoruz."
+  },
+  "z1|z2": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Honor 600 Pro mu, Honor Magic8 Pro mu?",
+    "metin": [
+      "İkisi de Honor'un üst segment telefonları ama farklı hedefleri var. Magic8 Pro markanın amiral gemisi: Snapdragon 8 Elite Gen 5 işlemci, 6,71 inç LTPO OLED ekran ve 200 MP periskop telefoto kamerayla uzak çekimde iddialı. 600 Pro ise bir önceki neslin amiral işlemcisi Snapdragon 8 Elite'i daha uygun fiyata, daha kompakt bir gövdede sunuyor.",
+      "Honor 600 Pro'nun öne çıkan yanları: 6,57 inç ekranla elde daha kolay kullanılıyor, 200 MP ana kamera, 3,5x optik zoom yapan 50 MP periskop telefoto ve 80 W kablolu, 50 W kablosuz şarj var. Honor bu model için altı yıl işletim sistemi güncellemesi sözü veriyor. Magic8 Pro'da ise ekran daha büyük ve LTPO, pil kapasitesi daha yüksek, zoom kamerası daha güçlü.",
+      "İki telefonda da IP68, IP69 ve IP69K koruma var; yani suya ve tozun yanında yüksek basınçlı suya da dayanıklılar. Günlük kullanımda iki işlemci de çok hızlı; fark ağır oyunlarda ve uzun vadede hissedilir."
+    ],
+    "secim": [
+      {
+        "urun": "z2",
+        "metin": "Amiral gemisine yakın performansı daha uygun fiyata ve daha kompakt bir gövdede istiyorsanız."
+      },
+      {
+        "urun": "z1",
+        "metin": "En iyi zoom kamerasını, en büyük ekranı ve en güçlü işlemciyi istiyorsanız; fiyat farkı sizin için sorun değilse."
+      }
+    ],
+    "sonuc": "Çoğu kullanıcı için Honor 600 Pro fiyatına göre daha mantıklı. Fotoğrafta uzak çekim sizin için öncelikliyse Magic8 Pro'ya ödenen fark karşılığını verir."
+  },
+  "h3|z2": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Honor 600 Pro mu, Galaxy S24 Ultra mı?",
+    "metin": [
+      "Bu iki telefon benzer fiyat aralığında karşılaşıyor ama çok farklı kullanıcıları hedefliyor. Galaxy S24 Ultra büyük ekranlı, S Pen'li ve 5x zoom kameralı bir üretkenlik telefonu. Honor 600 Pro ise daha yeni bir işlemciyi (Snapdragon 8 Elite), daha büyük pili ve çok daha hızlı şarjı daha kompakt bir gövdede sunuyor.",
+      "Honor'un artıları: 80 W kablolu ve 50 W kablosuz şarj (S24 Ultra'da 45 W ve 15 W), IP68'e ek olarak IP69 koruma, 6,57 inç ekranla daha rahat tek el kullanımı ve 200 gram civarında ağırlık. S24 Ultra'nın artıları: kutudan çıkan S Pen, 6,8 inç QHD+ ekran, 5x optik zoom ve Samsung'un servis ağı ile yedi yıllık güncelleme sözü.",
+      "Kamera tarafında ikisinde de 200 MP ana sensör var. S24 Ultra daha uzun zoom sunuyor, Honor ise 3,5x periskop telefotoyla orta mesafede güçlü."
+    ],
+    "secim": [
+      {
+        "urun": "z2",
+        "metin": "Hızlı şarj, uzun pil ve daha yeni işlemci sizin için önemliyse; büyük ve ağır telefon sevmiyorsanız."
+      },
+      {
+        "urun": "h3",
+        "metin": "S Pen kullanıyorsanız, büyük ekranda çalışıyorsanız ve uzun süreli yazılım desteğini öncelikli görüyorsanız."
+      }
+    ],
+    "sonuc": "S Pen'e ihtiyacınız yoksa Honor 600 Pro günlük kullanımda daha pratik bir seçim. S Pen ve büyük ekran vazgeçilmezse S24 Ultra'yı alın."
+  },
+  "n3|n6": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iPhone 14 mü, iPhone 17 mi?",
+    "metin": [
+      "iPhone 14 ile iPhone 17 arasında üç nesil var ve fark, standart iPhone'larda son yılların en büyüğü. iPhone 14'te 60 Hz ekran, A15 işlemci, 12 MP ana kamera ve Lightning girişi var. iPhone 17 ise 120 Hz ProMotion ve her zaman açık ekran, A19 işlemci, 48 MP ana ve ultra geniş açı kameralar ve USB-C ile geliyor.",
+      "Önemli bir fark daha: iPhone 14'teki 6 GB RAM, Apple Intelligence özelliklerini desteklemiyor; iPhone 17'deki 8 GB RAM destekliyor. Ekran 6,1 inçten 6,3 inçe büyüyor, başlangıç depolaması 128 GB'tan 256 GB'a çıkıyor ve pil kapasitesi 3279 mAh'den 3692 mAh'e yükseliyor.",
+      "iPhone 14'ün avantajı fiyat. Günlük işler için hâlâ hızlı, kamerası gün ışığında iyi ve Kaza Algılama gibi güvenlik özellikleri var."
+    ],
+    "secim": [
+      {
+        "urun": "n3",
+        "metin": "Uygun fiyatlı bir iPhone arıyorsanız ve 60 Hz ekran ile Lightning girişi sizin için sorun değilse."
+      },
+      {
+        "urun": "n6",
+        "metin": "Telefonu uzun süre kullanacaksanız; akıcı ekran, Apple Intelligence ve daha iyi kamera için aradaki farkı ödemeye değer."
+      }
+    ],
+    "sonuc": "Fiyat farkı makulse iPhone 17'yi alın. iPhone 14'ü ancak belirgin şekilde ucuzsa ve temel kullanım için düşünüyorsanız tercih edin."
+  },
+  "h4|h6": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: iPhone 14 Pro mu, iPhone 15 Pro mu?",
+    "metin": [
+      "İki model dışarıdan çok benzer: 6,1 inç 120 Hz ProMotion ekran, Dynamic Island, 48 MP ana kamera ve 3x telefoto ikisinde de var. Farklar daha çok kasanın içinde ve elde hissediliyor.",
+      "iPhone 15 Pro titanyum kasaya geçti ve 206 g'dan 187 g'a hafifledi; elde fark açıkça hissediliyor. Lightning yerine USB-C geldi ve bu giriş hızlı veri aktarımını (USB 3) destekliyor. Sessize alma anahtarının yerini kişiselleştirilebilen Eylem tuşu aldı. İşlemci A16'dan A17 Pro'ya geçti.",
+      "En önemli fark yazılımda: Apple Intelligence için en az 8 GB RAM gerekiyor. iPhone 15 Pro'da 8 GB var ve bu özellikleri destekliyor; iPhone 14 Pro'da 6 GB var ve desteklemiyor. Telefonu birkaç yıl daha kullanacaksanız bu fark giderek daha önemli hale gelecek."
+    ],
+    "secim": [
+      {
+        "urun": "h6",
+        "metin": "Pro ekran ve kamerayı en uygun fiyata istiyorsanız ve yapay zekâ özellikleri sizin için önemli değilse."
+      },
+      {
+        "urun": "h4",
+        "metin": "Daha hafif bir telefon, USB-C ve Apple Intelligence desteği istiyorsanız. Uzun vadede daha doğru seçim."
+      }
+    ],
+    "sonuc": "İkisi arasında fiyat farkı küçükse iPhone 15 Pro'yu alın. 14 Pro'yu yalnızca ciddi bir fiyat avantajı varsa düşünün."
+  },
+  "h24|s6": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Apple Watch Series 10 mu, Series 11 mi?",
+    "metin": [
+      "Series 10 ile Series 11 arasındaki fark, Apple Watch tarihindeki en küçük yıllık farklardan biri. Kasa tasarımı, ekran ve işlemci aynı: ikisinde de S10 çip ve geniş açılı OLED ekran var. Sağlık sensörleri de büyük ölçüde aynı; kalp ritmi, EKG, kan oksijeni ve sıcaklık ölçümü ikisinde de mevcut.",
+      "Series 11'in getirdiği yenilikler şunlar: pil ömrü Apple'ın değerlerine göre 18 saatten 24 saate çıktı; bu, saati gece uyku takibi için takıp sabah şarj etmeden kullanmayı kolaylaştırıyor. Hücresel modellerde 5G desteği geldi. Alüminyum modellerde ekran camı Apple'a göre iki kat daha çizilmeye dayanıklı.",
+      "Uyku puanı gibi bazı yazılım özellikleri güncellemeyle Series 10'a da geldi. Bu yüzden iki saati yan yana kullanınca günlük deneyim çok benzer."
+    ],
+    "secim": [
+      {
+        "urun": "h24",
+        "metin": "İndirimli bulursanız. Aynı tasarım ve işlemciyi daha düşük fiyata alırsınız."
+      },
+      {
+        "urun": "s6",
+        "metin": "Pil ömrü sizin için önemliyse, uyku takibi yapıyorsanız ya da hücresel model alacaksanız."
+      }
+    ],
+    "sonuc": "Fiyatlar yakınsa Series 11'i alın; daha uzun pil ömrü günlük kullanımda hissedilir. Elinizde Series 10 varsa yükseltmeye gerek yok."
+  },
+  "h25|h27": {
+    "tarih": "2026-10-18",
+    "baslik": "Editör Değerlendirmesi: Apple Watch Series 8 mi, Series 9 mu?",
+    "metin": [
+      "Series 8 ile Series 9 aynı kasa tasarımını, aynı 18 saatlik pil ömrünü ve benzer sağlık sensörlerini paylaşıyor. Fark, Series 9'daki yeni işlemci ve onun getirdiği özelliklerde.",
+      "Series 9'daki S9 çip, saatin daha hızlı açılmasını ve uygulamaların daha akıcı çalışmasını sağlıyor. Bu çip sayesinde Çift Dokunuş hareketi geldi: işaret ve başparmağınızı iki kez birbirine dokundurarak çağrı cevaplayabilir, alarmı kapatabilirsiniz. Ekran parlaklığı 2000 nite çıktı; güneş altında okumak daha kolay. Siri bazı komutları internet olmadan cihaz üzerinde işleyebiliyor ve uyumlu iPhone'u bulmak için hassas konum bulma destekleniyor.",
+      "Series 8 ise sıcaklık sensörü, kaza algılama, EKG ve kan oksijeni gibi önemli sağlık özelliklerinin hepsine sahip. İkisi de güncel watchOS sürümlerini almaya devam ediyor."
+    ],
+    "secim": [
+      {
+        "urun": "h27",
+        "metin": "Temel sağlık ve spor takibi için uygun fiyatlı bir Apple Watch arıyorsanız."
+      },
+      {
+        "urun": "h25",
+        "metin": "Çift Dokunuş ve daha parlak ekranı kullanacaksanız; daha yeni olduğu için güncelleme desteği de daha uzun sürecek."
+      }
+    ],
+    "sonuc": "Fiyatlar birbirine yakınsa Series 9 daha mantıklı. Series 8'i yalnızca belirgin şekilde ucuzsa tercih edin; ikinci el alıyorsanız pil sağlığını mutlaka kontrol edin."
   }
 }

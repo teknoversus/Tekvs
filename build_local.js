@@ -48,13 +48,14 @@ const FAZ3_TARGET_IDS = SEED.filter(p => !p.upcoming).map(p => p.id);
 
 const subcatMap = buildSubcatMap(SEED);
 
+(async () => {
 generateSite({ products: SEED, CATS, ICONS, colorFor, fmtDate, computeScores, productSlug, prosConsFor, rootDir: __dirname,
   reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap });
 
 const categories = [...new Set(SEED.filter(p => !p.upcoming).map(p => p.cat))];
 generateComparisons({ products: SEED, colorFor, computeScores, categories, neighborCount: 2, rootDir: __dirname });
 
-generateNews({ news: NEWS_SEED, products: SEED, productSlug, rootDir: __dirname });
+await generateNews({ news: NEWS_SEED, products: SEED, productSlug, rootDir: __dirname });
 
 generateSubcategories({ products: SEED, productSlug, computeScores, rootDir: __dirname });
 
@@ -79,3 +80,4 @@ generateBrandVsBrandPages({ products: SEED, computeScores, rootDir: __dirname })
 generateLandingPages({ products: SEED, computeScores, rootDir: __dirname });
 
 console.log('✓ Yerel tam build tamamlandı (ürünler + karşılaştırmalar + haberler + alt kategoriler + rehberler + incelemeler + marka sayfaları).');
+})().catch(e => { console.error(e); process.exit(1); });

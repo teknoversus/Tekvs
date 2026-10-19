@@ -61,3 +61,4 @@ User-agent: Diffbot
 Allow: /
 
 Sitemap: https://teknoversus.com.tr/sitemap.xml
+Sitemap: https://teknoversus.com.tr/sitemap-news.xml

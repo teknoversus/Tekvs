@@ -115,6 +115,13 @@ function rowToNews(row){
     table: Array.isArray(row.table_data) ? row.table_data : [],
     faq: Array.isArray(row.faq) ? row.faq : [],
     conclusion: row.conclusion || '',
+    // Görsel + zaman alanları (migration_news_images.sql). Migration henüz
+    // çalıştırılmadıysa undefined gelir; generate-news eski davranışa düşer.
+    imageUrl: row.image_url || '',
+    imageAlt: row.image_alt || '',
+    imageCredit: row.image_credit || '',
+    publishedAt: row.published_at || row.created_at || null,
+    updatedAt: row.updated_at || null,
   };
 }
 
@@ -195,7 +202,7 @@ async function main(){
   const news = await fetchNewsFromSupabase();
   if(news !== null){
     console.log(`→ ${news.length} haber bulundu.`);
-    generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
+    await generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
   }
   const homeNews = news || [];
 

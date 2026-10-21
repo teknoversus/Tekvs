@@ -1,4 +1,5 @@
 {
+  "id": "/",
   "name": "TeknoVersus - Teknoloji Ürün Karşılaştırma",
   "short_name": "TeknoVersus",
   "description": "Türkiye pazarındaki teknoloji ürünlerini fiyat/performans skoruna göre karşılaştıran bağımsız katalog.",
@@ -9,18 +10,18 @@
   "background_color": "#ffffff",
   "theme_color": "#2B6CB0",
   "lang": "tr",
+  "dir": "ltr",
+  "categories": ["shopping", "news", "utilities"],
+  "prefer_related_applications": false,
   "icons": [
-    {
-      "src": "/assets/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/assets/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Karşılaştırmalar", "short_name": "Karşılaştır", "url": "/karsilastirmalar.html?pwa=1", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Haberler", "short_name": "Haberler", "url": "/haberler.html?pwa=1", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Telefonlar", "short_name": "Telefon", "url": "/telefon.html?pwa=1", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] }
   ]
 }

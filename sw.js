@@ -6,12 +6,19 @@
 // stok durumu ve yorumlar sürekli güncellenen canlı veriler. Bunları
 // önbelleklemek, kullanıcıya eski/yanlış fiyat göstermek gibi ciddi
 // bir güven sorununa yol açar.
-const CACHE_NAME = 'teknoversus-static-v1';
+//
+// Tek istisna: internet yokken bir sayfa açılmaya çalışılırsa, tarayıcının
+// hata ekranı yerine /offline.html gösterilir (sayfa yine ağdan istenir,
+// yalnızca istek başarısız olursa devreye girer).
+const CACHE_NAME = 'teknoversus-static-v2';
+const OFFLINE_URL = '/offline.html';
 const STATIC_ASSETS = [
   '/styles.css',
   '/shared.js',
+  '/pwa.js',
   '/assets/icon-192.png',
   '/assets/icon-512.png',
+  OFFLINE_URL,
 ];
 
 self.addEventListener('install', (event) => {
@@ -31,20 +38,32 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
+  const req = event.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  if (url.origin !== self.location.origin) return; // Supabase, Analytics, reklamlar: dokunma
+
+  // Sayfa açılışı: her zaman ağdan; ağ yoksa çevrimdışı sayfası.
+  if (req.mode === 'navigate') {
+    event.respondWith(
+      fetch(req).catch(() => caches.match(OFFLINE_URL))
+    );
+    return;
+  }
 
   // Sadece kendi statik varlıklarımız için cache-first, network fallback.
-  // HTML sayfaları, Supabase istekleri ve diğer her şey her zaman ağdan
-  // (network) gelir — hiçbir zaman önbellekten sunulmaz.
+  // (?v=... sürüm eki farklıysa önbellekte yoktur, ağdan gelir.)
   const isStaticAsset = STATIC_ASSETS.some((path) => url.pathname === path);
   if (!isStaticAsset) return; // tarayıcının normal davranışına bırak
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
+    caches.match(req).then((cached) => {
       if (cached) return cached;
-      return fetch(event.request).then((response) => {
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+      return fetch(req).then((response) => {
+        if (response && response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
+        }
         return response;
       });
     })

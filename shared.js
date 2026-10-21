@@ -1518,16 +1518,9 @@ async function renderRecentlyViewedInto(containerId, allProducts, excludeId){
 // ortamında (helpers çıkarmak için) çalıştırılıyor — o ortamda navigator/
 // window gerçek tarayıcı nesneleri değil, bu yüzden koşulsuz çağrı build'i
 // bozar.
-if(typeof window !== 'undefined' && typeof navigator !== 'undefined' && 'serviceWorker' in navigator){
-  window.addEventListener('load', () => {
-    const swPath = location.pathname.includes('/urun/') || location.pathname.includes('/inceleme/')
-      || location.pathname.includes('/rehber/') || location.pathname.includes('/liste/')
-      ? '../sw.js' : './sw.js';
-    navigator.serviceWorker.register(swPath).catch(() => {
-      // Sessizce başarısız ol — PWA olmadan da site normal çalışmaya devam etmeli.
-    });
-  });
-}
+// Service worker kaydı artık pwa.js'te (tüm sayfalara build sırasında eklenir,
+// kökten '/sw.js' olarak kaydeder — eski göreli yol /karsilastir/ ve
+// /haberler/ altında yanlış adrese gidiyordu).
 
 // ============================================================
 // 28 Eylül 2026: hosting WAF'ı bazı yanıtları (dosya boyutundan bağımsız,

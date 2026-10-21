@@ -29,6 +29,7 @@ const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-kars
 const { generateLandingPages } = require('./lib/generate-landing-pages');
 const { generateFiyatPerformansIndeksi } = require('./lib/generate-fiyat-performans-indeksi');
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
+const { injectPwaTags } = require('./lib/pwa-inject');
 const { splitSitemap } = require('./lib/split-sitemap');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
@@ -241,6 +242,9 @@ async function main(){
   // ---- sitemap.xml'i WAF limiti altında kalacak parçalara böl ----
   // TÜM generate-*.js modülleri sitemap.xml'i tamamladıktan sonra, en son adım
   // olarak çalışmalı (bkz. lib/split-sitemap.js'teki kök neden açıklaması).
+  // ---- PWA: manifest + pwa.js etiketlerini TÜM sayfalara ekle (en son, tüm HTML üretildikten sonra) ----
+  injectPwaTags({ rootDir });
+
   console.log('→ sitemap.xml parçalara bölünüyor (hosting WAF limiti için)...');
   splitSitemap({ rootDir });
 

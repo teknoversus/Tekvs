@@ -104,7 +104,7 @@ jobs:
           bust_files = [
               'shared.js', 'nlp-parser.js', 'performance-data.js',
               'product-filter.js', 'recommendation-reason.js',
-              'category.js', 'product.js', 'styles.css',
+              'category.js', 'product.js', 'styles.css', 'pwa.js',
           ]
 
           # Her dosyanın versiyonu KENDİ içerik hash'i (ilk 10 hex karakter) —
@@ -124,7 +124,7 @@ jobs:
               text = path.read_text(encoding='utf-8')
               original = text
               for fname, version in versions.items():
-                  pattern = re.compile(r'(["\'])(\.\./)?' + re.escape(fname) + r'\1')
+                  pattern = re.compile(r'(["\'])((?:\.\./)+|/)?' + re.escape(fname) + r'\1')
 
                   def repl(m, fname=fname, version=version):
                       quote, prefix = m.group(1), m.group(2) or ''

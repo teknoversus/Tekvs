@@ -223,7 +223,7 @@ async function main(){
   console.log('→ Konu kümesi destek makaleleri üretiliyor...');
   generateClusterArticles({ rootDir });
 
-  updateHomeBlocks({ rootDir, news: homeNews });
+  updateHomeBlocks({ rootDir, news: homeNews, products, computeScores: helpers.computeScores });
 
   console.log('→ İnceleme sayfaları üretiliyor...');
   generateReviews({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ3_TARGET_IDS, rootDir });

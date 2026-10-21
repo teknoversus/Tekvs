@@ -113,6 +113,87 @@
   gtag("js", new Date());
   gtag("config", "G-Q14VG0SB56");
 </script>
+<style>
+/* ===== Ana sayfa A tasarımı (21 Ekim 2026). Sadece ana sayfaya özel, styles.css'e dokunmaz. ===== */
+.ha-hero{background:#121A24;color:#fff;}
+.ha-hero-in{max-width:1120px;margin:0 auto;padding:48px 20px 44px;display:flex;flex-wrap:wrap;gap:36px;align-items:center;}
+.ha-hero-text{flex:1 1 400px;min-width:0;}
+.ha-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;color:#EFB123;}
+.ha-hero h1{font-family:'Oswald',sans-serif;font-weight:600;font-size:44px;line-height:1.08;margin:14px 0 16px;color:#fff;}
+.ha-hero h1 span{color:#EFB123;}
+.ha-hero-text p{margin:0;max-width:500px;color:#C3CDD8;font-size:15.5px;line-height:1.6;}
+.ha-hero-text p strong{color:#fff;}
+.ha-finder{display:inline-block;margin-top:16px;color:#F2C14E;font-weight:600;background:none;border:0;padding:10px 0;font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;}
+.ha-tool{flex:1 1 440px;min-width:0;background:#fff;color:var(--ink);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px;box-sizing:border-box;}
+.ha-tool-row{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;}
+.ha-field{flex:1 1 170px;display:flex;flex-direction:column;gap:6px;min-width:0;}
+.ha-field label{font-size:12.5px;font-weight:600;color:var(--ink-soft);}
+.ha-field input{height:48px;box-sizing:border-box;border:1px solid var(--line-strong);border-radius:10px;padding:0 14px;font:inherit;font-weight:600;width:100%;}
+.ha-vs{width:44px;height:44px;border-radius:50%;background:#EFB123;color:#1B211D;display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;margin-bottom:2px;flex:0 0 44px;}
+.ha-go{height:50px;border:0;border-radius:10px;background:#2B6CB0;color:#fff;font:inherit;font-weight:600;font-size:16px;cursor:pointer;}
+.ha-go:hover{background:#245C97;}
+.ha-tool-msg{font-size:13px;color:#B23A5C;min-height:0;}
+.ha-pop{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;align-items:center;}
+.ha-pop span{color:var(--ink-soft);}
+.ha-sec{padding-top:40px;}
+.ha-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px;margin-bottom:16px;}
+.ha-head h2{font-family:'Oswald',sans-serif;font-weight:600;font-size:28px;margin:4px 0 0;}
+.ha-head a{font-weight:600;}
+.ha-duels{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;}
+.ha-duel{text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;transition:box-shadow .15s ease,transform .15s ease;}
+.ha-duel:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.ha-duel-cat{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--ink-soft);}
+.ha-duel-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:center;}
+.ha-duel-name{font-weight:600;font-size:15px;line-height:1.3;}
+.ha-duel-score{font-family:'Oswald',sans-serif;font-size:32px;font-weight:600;}
+.ha-duel-score small{font-size:13px;color:var(--ink-soft);}
+.ha-duel-price{font-family:'IBM Plex Mono',monospace;font-size:13px;}
+.ha-duel-r{text-align:right;}
+.ha-duel-vs{font-family:'Oswald',sans-serif;color:var(--ink-soft);}
+.ha-duel-note{border-top:1px solid var(--line);padding-top:10px;font-size:13.5px;color:#3F4B43;line-height:1.5;}
+.ha-duel-cta{color:#2B6CB0;font-weight:600;font-size:14px;}
+.ha-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:12px;}
+.ha-cat{text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.ha-cat:hover{border-color:var(--line-strong);box-shadow:var(--shadow-sm);}
+.ha-cat-ic{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;}
+.ha-cat-name{font-weight:600;}
+.ha-cat-meta{font-size:12.5px;color:var(--ink-soft);}
+.ha-split{display:flex;flex-wrap:wrap;gap:28px;}
+.ha-main{flex:999 1 560px;min-width:0;}
+.ha-aside{flex:1 1 300px;min-width:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;align-self:flex-start;}
+.ha-lead{text-decoration:none;color:var(--ink);display:flex;flex-wrap:wrap;gap:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;}
+.ha-lead img,.ha-lead .ha-noimg{flex:1 1 260px;min-width:0;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:#1E2C3D;display:block;}
+.ha-lead-txt{flex:1 1 240px;display:flex;flex-direction:column;gap:8px;justify-content:center;}
+.ha-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);}
+.ha-lead-title{font-family:'Oswald',sans-serif;font-size:22px;font-weight:600;line-height:1.25;}
+.ha-lead-sum{font-size:14px;color:#3F4B43;line-height:1.55;}
+.ha-news{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px;}
+.ha-news a{text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;}
+.ha-news img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:#1E2C3D;display:block;}
+.ha-news-title{font-weight:600;font-size:14px;line-height:1.35;}
+.ha-aside h2{font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;margin:6px 0 4px;}
+.ha-aside-sub{font-size:13px;color:var(--ink-soft);margin-bottom:10px;}
+.ha-aside a.ha-ed{display:block;padding:12px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:14.5px;line-height:1.4;}
+.ha-aside a.ha-ed:hover{color:#2B6CB0;}
+.ha-method{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-wrap:wrap;gap:24px;}
+.ha-method h2{font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;margin:0 0 8px;}
+.ha-method p{margin:0;color:#3F4B43;line-height:1.6;font-size:14.5px;}
+.ha-method-grid{flex:2 1 460px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;}
+.ha-method-grid div{background:#F5F7F3;border-radius:12px;padding:16px;font-size:13.5px;color:#3F4B43;line-height:1.5;}
+.ha-method-grid strong{display:block;color:var(--ink);margin-bottom:4px;font-size:14.5px;}
+.ha-guides{display:flex;flex-wrap:wrap;gap:8px;}
+@media(max-width:720px){
+  .ha-hero-in{padding:28px 16px 24px;gap:20px;}
+  .ha-hero h1{font-size:34px;}
+  .ha-tool{padding:16px;}
+  .ha-vs{width:36px;height:36px;flex-basis:36px;font-size:13px;align-self:center;margin:0 auto;}
+  .ha-tool-row{flex-direction:column;align-items:stretch;gap:8px;}
+  .ha-field{flex:0 0 auto;}
+  .ha-hero-text p{font-size:14.5px;}
+  .ha-head h2{font-size:24px;}
+  .ha-method{padding:18px;}
+}
+</style>
 </head>
 <body>
 
@@ -120,42 +201,78 @@
   <div class="wrap nav">
     <div class="brand"><a href="index.html"><picture><source srcset="assets/logo-header.webp" type="image/webp"/><img src="assets/logo-header.png" class="brand-logo" alt="TeknoVersus logo" width="144" height="60" decoding="async"/></picture><span class="brand-text"><span class="tekno">TEKNO</span><span class="versus">VERSUS</span></span></a></div>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Anasayfa</a>
+      <a href="#karsilastir">Karşılaştır</a>
+      <a href="#kategoriler">Kategoriler</a>
       <a href="haberler.html">Haberler</a>
-      <a href="yakinda-cikacak.html">Yakında Çıkacak</a>
       <a href="karsilastirmalar.html">Karşılaştırmalar</a>
-      <a href="#yeni">Yeni Çıkanlar</a>
+      <a href="yakinda-cikacak.html">Yakında Çıkacak</a>
       <a href="#katalog">Katalog</a>
     </nav>
     <button class="burger" id="burgerBtn">☰</button>
   </div>
 </header>
 
-<section class="hero hero-dark">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <div class="hero-eyebrow">BAĞIMSIZ · FİYAT / PERFORMANS SKORU</div>
-      <h1>Ürünleri karşılaştır,<br/><span>doğru karar ver.</span></h1>
+<section class="ha-hero" id="karsilastir">
+  <div class="ha-hero-in">
+    <div class="ha-hero-text">
+      <div class="ha-eyebrow">BAĞIMSIZ · FİYAT / PERFORMANS SKORU</div>
+      <h1>İki ürün seç,<br/><span>farkı tek ekranda gör.</span></h1>
       <p><strong>TeknoVersus</strong>, Türkiye pazarındaki teknoloji ürünlerini fiyat/performans skoruna göre yan yana karşılaştıran bağımsız bir karşılaştırma ve inceleme sitesidir. Telefon, dizüstü bilgisayar, kulaklık, kamera, akıllı saat, tablet ve televizyon kategorilerinde ürünleri özellik özellik kıyaslar; her ürün için alım rehberi ve inceleme sunar.</p>
-      <div class="hero-cta">
-        <button class="btn btn-yellow" onclick="document.getElementById('katalog').scrollIntoView({behavior:'smooth'})">Kataloğa göz at</button>
-        <button class="btn btn-ghost-dark" onclick="openFinder()">Bana Uygun Ürünü Bul</button>
-      </div>
+      <button type="button" class="ha-finder" onclick="openFinder()">Ne alacağından emin değil misin? Bana uygun ürünü bul →</button>
     </div>
-    <div class="hero-duel" id="heroDuel" hidden aria-label="Öne çıkan karşılaştırma"></div>
+    <form class="ha-tool" id="haTool" aria-label="Karşılaştırma aracı" onsubmit="haCompare(event)" autocomplete="off">
+      <div class="ha-tool-row">
+        <div class="ha-field">
+          <label for="haP1">1. ürün</label>
+          <input id="haP1" list="haProducts" placeholder="örn. iPhone 17" required />
+        </div>
+        <div class="ha-vs" aria-hidden="true">VS</div>
+        <div class="ha-field">
+          <label for="haP2">2. ürün</label>
+          <input id="haP2" list="haProducts" placeholder="örn. Galaxy S26 Ultra" required />
+        </div>
+      </div>
+      <datalist id="haProducts"></datalist>
+      <button type="submit" class="ha-go">Karşılaştır</button>
+      <div class="ha-tool-msg" id="haToolMsg" role="status" aria-live="polite"></div>
+<!-- HOME_A_POP_START --><!-- HOME_A_POP_END -->
+    </form>
   </div>
+  <div class="hero-duel" id="heroDuel" hidden aria-hidden="true" style="display:none;"></div>
 </section>
 
-<div class="wrap">
-  <div class="cat-nav" id="catNav"></div>
-  <div class="search-box">
-    <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz telefon' veya '50 bin TL altı laptop'" onkeydown="if(event.key==='Enter') runSmartSearch()" aria-label="Ürün ara"/>
-    <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
-  </div>
-  <div class="search-status" id="searchStatus"></div>
-</div>
-
 <main class="wrap">
+
+<!-- HOME_A_DUELLO_START --><!-- HOME_A_DUELLO_END -->
+
+  <!-- (Popüler karşılaştırma bağlantıları: generate-comparisons.js katalog bölümünün hemen üstüne ekler) -->
+
+<!-- HOME_A_KATEGORI_START --><!-- HOME_A_KATEGORI_END -->
+
+<!-- HOME_HABER_REHBER_START --><!-- HOME_HABER_REHBER_END -->
+
+  <section class="ha-method" aria-labelledby="haMethodTitle">
+    <div style="flex:1 1 260px;">
+      <h2 id="haMethodTitle">Puanı nasıl hesaplıyoruz?</h2>
+      <p>Puan, ürünün teknik özelliklerinin aynı kategorideki rakiplerine ve Türkiye fiyatına göre değerlendirilmesidir. Markalardan ödeme alınmaz; hiçbir anlaşma skoru ya da sıralamayı değiştiremez.</p>
+      <a href="hakkimizda.html" style="display:inline-block;margin-top:10px;font-weight:600;">Yöntemimiz ve editoryal ilkeler</a>
+    </div>
+    <div class="ha-method-grid">
+      <div><strong>Üretici verisi</strong>Özellikler üreticilerin resmi teknik sayfalarından alınır.</div>
+      <div><strong>Türkiye fiyatı</strong>Yerel perakende fiyatları elle doğrulanarak güncellenir.</div>
+      <div><strong>Editör notu</strong>Öne çıkan ikililerde elle yazılmış yorum ve tavsiye bulunur.</div>
+    </div>
+  </section>
+
+  <div class="ha-sec" style="padding-top:44px;">
+    <div class="cat-nav" id="catNav"></div>
+    <div class="search-box">
+      <input id="searchInput" placeholder="Yapay zekâ ile ara — örn. 'pil ömrü uzun ucuz telefon' veya '50 bin TL altı laptop'" onkeydown="if(event.key==='Enter') runSmartSearch()" aria-label="Ürün ara"/>
+      <button class="btn btn-dark" onclick="runSmartSearch()">Ara</button>
+    </div>
+    <div class="search-status" id="searchStatus"></div>
+  </div>
+
 
   <section class="section" id="katalog">
     <div class="section-head">
@@ -3474,113 +3591,9 @@
     <div class="grid" id="trendGrid"></div>
   </section>
 
-  <section class="section" id="yeni">
-    <div class="section-head">
-      <div>
-        <h2 class="section-title">En Son Eklenen Yeni Ürünler</h2>
-      </div>
-    </div>
-    <div class="grid" id="newGrid">
-<!-- YENI_KARTLAR_START -->
-  <div class="card" onclick="openDetail('x17')">
-    <span class="badge-new">YENİ</span>
-    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('x17')" title="Favorilere ekle" aria-label="Casper Excalibur G915 ürününü favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
-    <div class="card-icon" style="background:#B23A5C22;color:#B23A5C;">
-      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M1 19h22l-2 2H3z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
-    </div>
-    <div class="card-cat">Dizüstü · Çıkış: 1 Haziran 2026</div>
-    <div class="card-name">Casper Excalibur G915</div>
-    <span class="score-pill" style="background:var(--mid)22;color:var(--mid);">Skor: 50</span>
-    <div class="card-blurb">RTX 5070 ekran kartlı, yeni nesil işlemcili üst segment yerli üretim oyuncu dizüstüsü</div>
-    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 99999</span><span class="spec-pill">Ekran (inç): 16</span><span class="spec-pill">Pil (saat): 5</span><span class="spec-pill">RAM (GB): 32</span></div>
-    <div class="card-foot">
-      <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" aria-label="Casper Excalibur G915 ürününü karşılaştırmaya ekle" onchange="toggleSelect('x17')" />
-        Karşılaştır
-      </label>
-      <span class="view-count"></span>
-    </div>
-  </div>
-  <div class="card" onclick="openDetail('z2')">
-    <span class="badge-new">YENİ</span>
-    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('z2')" title="Favorilere ekle" aria-label="Honor 600 Pro ürününü favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
-    <div class="card-icon" style="background:#2B6CB022;color:#2B6CB0;">
-      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="18.3" r="0.8" fill="currentColor"/></svg>
-    </div>
-    <div class="card-cat">Telefon · Çıkış: 5 Mayıs 2026</div>
-    <div class="card-name">Honor 600 Pro</div>
-    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 10</span>
-    <div class="card-blurb">Snapdragon 8 Elite işlemcili, 200MP üçlü kamera sistemine sahip üst segment model</div>
-    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 64999</span><span class="spec-pill">Ekran (inç): 6.57</span><span class="spec-pill">Pil (mAh): 6400</span><span class="spec-pill">Kamera (MP): 200</span></div>
-    <div class="card-foot">
-      <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" aria-label="Honor 600 Pro ürününü karşılaştırmaya ekle" onchange="toggleSelect('z2')" />
-        Karşılaştır
-      </label>
-      <span class="view-count"></span>
-    </div>
-  </div>
-  <div class="card" onclick="openDetail('s1')">
-    <span class="badge-new">YENİ</span>
-    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('s1')" title="Favorilere ekle" aria-label="Apple MacBook Air (M5, 13&quot;) ürününü favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
-    <div class="card-icon" style="background:#B23A5C22;color:#B23A5C;">
-      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M1 19h22l-2 2H3z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
-    </div>
-    <div class="card-cat">Dizüstü · Çıkış: 11 Mart 2026</div>
-    <div class="card-name">Apple MacBook Air (M5, 13&quot;)</div>
-    <span class="score-pill" style="background:var(--bad)22;color:var(--bad);">Skor: 19</span>
-    <div class="card-blurb">M5 çipli, fansız, 18 saate kadar pil ömrüne sahip ince ve hafif laptop</div>
-    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 67999</span><span class="spec-pill">Ekran (inç): 13.6</span><span class="spec-pill">Pil (saat): 18</span><span class="spec-pill">RAM (GB): 16</span></div>
-    <div class="card-foot">
-      <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" aria-label="Apple MacBook Air (M5, 13&quot;) ürününü karşılaştırmaya ekle" onchange="toggleSelect('s1')" />
-        Karşılaştır
-      </label>
-      <span class="view-count"></span>
-    </div>
-  </div>
-  <div class="card" onclick="openDetail('n9')">
-    <span class="badge-new">YENİ</span>
-    <button class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('n9')" title="Favorilere ekle" aria-label="Honor MagicPad 4 ürününü favorilere ekle"><svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg></button>
-    <div class="card-icon" style="background:#4A556822;color:#4A5568;">
-      <svg width="24" height="24" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="19" r="0.8" fill="currentColor"/></svg>
-    </div>
-    <div class="card-cat">Tablet · Çıkış: 1 Mart 2026</div>
-    <div class="card-name">Honor MagicPad 4</div>
-    <span class="score-pill" style="background:var(--mid)22;color:var(--mid);">Skor: 42</span>
-    <div class="card-blurb">12.4 inç 144Hz OLED ekranı ve Snapdragon 8s Gen 3 işlemcisiyle üst segment Android tablet</div>
-    <div class="card-specs"><span class="spec-pill">Fiyat (₺): 44199</span><span class="spec-pill">Ekran (inç): 12.4</span><span class="spec-pill">Pil (mAh): 10050</span><span class="spec-pill">Kamera (MP): 13</span></div>
-    <div class="card-foot">
-      <label class="compare-check" onclick="event.stopPropagation()">
-        <input type="checkbox" aria-label="Honor MagicPad 4 ürününü karşılaştırmaya ekle" onchange="toggleSelect('n9')" />
-        Karşılaştır
-      </label>
-      <span class="view-count"></span>
-    </div>
-  </div>
-<!-- YENI_KARTLAR_END -->
-    </div>
-  </section>
+  
 
-  <!-- POPULER_KARSILASTIRMALAR_START -->
-  <section class="section" id="karsilastirmalar">
-    <div class="section-head">
-      <div>
-        <div class="section-label">Kafa Kafaya</div>
-        <h2 class="section-title">Hangi Ürünler Birbiriyle Karşılaştırılıyor?</h2>
-      </div>
-    </div>
-    <div class="wrap" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
-      <a class="chip-filter" href="karsilastir/apple-macbook-pro-16-m3-pro-vs-macbook-air-m2-13.html">Apple MacBook Pro 16&quot; (M3 Pro) vs MacBook Air (M2, 13&quot;)</a>
-      <a class="chip-filter" href="karsilastir/iphone-16-vs-iphone-16-pro.html">iPhone 16 vs iPhone 16 Pro</a>
-      <a class="chip-filter" href="karsilastir/apple-ipad-mini-7-nesil-vs-honor-magicpad-4.html">Apple iPad mini (7. Nesil) vs Honor MagicPad 4</a>
-      <a class="chip-filter" href="karsilastir/airpods-pro-2-nesil-vs-bose-quietcomfort-ultra-earbuds.html">AirPods Pro (2. Nesil) vs Bose QuietComfort Ultra Earbuds</a>
-      <a class="chip-filter" href="karsilastir/amazfit-gts-4-vs-apple-watch-ultra.html">Amazfit GTS 4 vs Apple Watch Ultra</a>
-      <a class="chip-filter" href="karsilastir/lg-43ur78-vs-vestel-55ua9540.html">LG 43UR78 vs Vestel 55UA9540</a>
-      <a class="chip-filter" href="karsilastir/nikon-z6-iii-vs-sony-alpha-a6400.html">Nikon Z6 III vs Sony Alpha a6400</a>
-    </div>
-  </section>
-  <!-- POPULER_KARSILASTIRMALAR_END -->
+  
 
   <section class="section" id="katalog-ozet">
     <div class="section-head">
@@ -3854,6 +3867,64 @@ function updateCatalogStats(){
   body.innerHTML = rows;
 }
 
+// ---- A tasarımı (21 Ekim 2026): üstteki karşılaştırma aracı ----
+// İki ürün seçilince, o ikili için üretilmiş statik karşılaştırma sayfası
+// varsa oraya gider (adres build'deki comparisonFileName() ile birebir aynı
+// kuralla hesaplanır); yoksa sayfadaki karşılaştırma penceresini açar.
+function haSlug(text){
+  return String(text).toLowerCase()
+    .replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s')
+    .replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c')
+    .replace(/[^a-z0-9]/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
+}
+async function haPairUrl(a, b){
+  if(!(window.crypto && crypto.subtle && window.TextEncoder)) return null;
+  const ordered = [a, b].sort((x, y) => String(x.id).localeCompare(String(y.id), 'en'));
+  const key = ordered.map(p => String(p.id)).join('|');
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(key));
+  const hash = Array.from(new Uint8Array(buf)).map(x => x.toString(16).padStart(2, '0')).join('').slice(0, 12);
+  const ss = n => { const t = haSlug(n).slice(0, 34).replace(/-+$/, ''); return t || 'urun'; };
+  return `karsilastir/${ss(ordered[0].name)}-vs-${ss(ordered[1].name)}-${hash}.html`;
+}
+function haFind(value){
+  const v = String(value || '').trim().toLocaleLowerCase('tr-TR');
+  if(!v) return null;
+  const list = products.filter(p => !p.upcoming);
+  const nm = p => p.name.toLocaleLowerCase('tr-TR');
+  return list.find(p => nm(p) === v) || list.find(p => nm(p).startsWith(v)) || list.find(p => nm(p).includes(v)) || null;
+}
+function haInitTool(){
+  const dl = document.getElementById('haProducts');
+  if(!dl) return;
+  const names = products.filter(p => !p.upcoming).map(p => p.name).sort((a, b) => a.localeCompare(b, 'tr'));
+  dl.innerHTML = '';
+  names.forEach(n => { const o = document.createElement('option'); o.value = n; dl.appendChild(o); });
+}
+async function haCompare(ev){
+  if(ev) ev.preventDefault();
+  const msg = document.getElementById('haToolMsg');
+  const say = t => { if(msg) msg.textContent = t; };
+  say('');
+  if(!products || !products.length){ say('Ürün listesi yükleniyor, bir saniye sonra tekrar dene.'); return; }
+  const v1 = document.getElementById('haP1').value, v2 = document.getElementById('haP2').value;
+  const a = haFind(v1), b = haFind(v2);
+  if(!a){ say('"' + v1 + '" katalogda bulunamadı. Yazmaya başlayınca çıkan listeden seç.'); return; }
+  if(!b){ say('"' + v2 + '" katalogda bulunamadı. Yazmaya başlayınca çıkan listeden seç.'); return; }
+  if(a.id === b.id){ say('İki farklı ürün seç.'); return; }
+  if(a.cat !== b.cat){ say('Sadece aynı kategorideki ürünler karşılaştırılabilir (' + a.cat + ' ile ' + b.cat + ' olmaz).'); return; }
+  try{ if(typeof gtag === 'function') gtag('event', 'home_compare_tool', { pair: a.name + ' vs ' + b.name }); }catch(e){}
+  try{
+    const url = await haPairUrl(a, b);
+    if(url){
+      const r = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+      if(r.ok){ location.href = url; return; }
+    }
+  }catch(e){}
+  selected = new Set([a.id, b.id]);
+  updateCompareBar();
+  openCompare();
+}
+
 async function init(){
   // 2 Ekim 2026: HER adım kendi try/catch'inde, veri yükleme adımları da
   // dahil. Hosting WAF'ı shared.js'i ara sıra kesiyor (bkz. tvBoot); kesinti
@@ -3873,7 +3944,7 @@ async function init(){
   try{ render(); }catch(e){ console.error('render() başarısız:', e); }
   try{ updateCatalogStats(); }catch(e){ console.error('updateCatalogStats() başarısız:', e); }
   try{ renderCatNavStrip(); }catch(e){ console.error('renderCatNavStrip() başarısız:', e); }
-  try{ renderHeroDuel(); }catch(e){ console.error('renderHeroDuel() başarısız:', e); }
+  try{ haInitTool(); }catch(e){ console.error('haInitTool() başarısız:', e); }
   try{ renderRecentlyViewedInto('recentlyViewedStrip', products, null); }catch(e){ console.error('renderRecentlyViewedInto() başarısız:', e); }
   try{ renderTrending(); }catch(e){ console.error('renderTrending() başarısız:', e); }
   if(new URLSearchParams(location.search).get('finder') === '1') openFinder();
@@ -4011,7 +4082,8 @@ function render(){
   const sortedByDate = [...catalog].sort((a,b)=> new Date(b.addedAt) - new Date(a.addedAt));
   const newIds = new Set(sortedByDate.slice(0, 4).map(p=>p.id));
 
-  document.getElementById('newGrid').innerHTML = sortedByDate.slice(0,4).map(p=>cardHTML(p,{newIds})).join('');
+  const newGridEl = document.getElementById('newGrid'); // A tasarımında 'Yeni' bölümü yok
+  if(newGridEl) newGridEl.innerHTML = sortedByDate.slice(0,4).map(p=>cardHTML(p,{newIds})).join('');
 
   let base = catalog;
   if(searchIds){

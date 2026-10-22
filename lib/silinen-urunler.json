@@ -1,0 +1,68 @@
+{
+  "_aciklama": "Silinen (çift kayıt) ürünler. Build, bu ürünlerin eski urun/inceleme/rehber/karsilastir sayfalarını 'yerine' ürünün sayfalarına 301 ile yönlendirir. Ürün hâlâ katalogdaysa (henüz silinmediyse) kural yazılmaz.",
+  "urunler": [
+    {
+      "id": "apple-iphone-11",
+      "name": "Apple iPhone 11",
+      "cat": "Telefon",
+      "yerine": "n1",
+      "yerine_ad": "iPhone 11",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "apple-iphone-12",
+      "name": "Apple iPhone 12",
+      "cat": "Telefon",
+      "yerine": "h10",
+      "yerine_ad": "iPhone 12",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "apple-iphone-13",
+      "name": "Apple iPhone 13",
+      "cat": "Telefon",
+      "yerine": "n2",
+      "yerine_ad": "iPhone 13",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "apple-iphone-14",
+      "name": "Apple iPhone 14",
+      "cat": "Telefon",
+      "yerine": "n3",
+      "yerine_ad": "iPhone 14",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "apple-iphone-15",
+      "name": "Apple iPhone 15",
+      "cat": "Telefon",
+      "yerine": "n4",
+      "yerine_ad": "iPhone 15",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "apple-iphone-16",
+      "name": "Apple iPhone 16",
+      "cat": "Telefon",
+      "yerine": "n5",
+      "yerine_ad": "iPhone 16",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "p_1787680633621_81",
+      "name": "Redmi Note 13 Pro",
+      "cat": "Telefon",
+      "yerine": "x1",
+      "yerine_ad": "Xiaomi Redmi Note 13 Pro",
+      "tarih": "2026-11-01",
+      "neden": "çift kayıt"
+    }
+  ]
+}

@@ -31,6 +31,7 @@ const { generateFiyatPerformansIndeksi } = require('./lib/generate-fiyat-perform
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
 const { injectPwaTags } = require('./lib/pwa-inject');
 const { writeDeletedProductRedirects } = require('./lib/deleted-redirects');
+const { writeDirIndexRedirects } = require('./lib/dir-redirects');
 const { splitSitemap } = require('./lib/split-sitemap');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
@@ -246,6 +247,7 @@ async function main(){
   // ---- PWA: manifest + pwa.js etiketlerini TÜM sayfalara ekle (en son, tüm HTML üretildikten sonra) ----
   // ---- Silinen çift kayıt ürünlerin eski sayfaları -> 301 (lib/silinen-urunler.json) ----
   writeDeletedProductRedirects({ rootDir, products });
+  writeDirIndexRedirects({ rootDir });
 
   injectPwaTags({ rootDir });
 

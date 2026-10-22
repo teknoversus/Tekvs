@@ -30,6 +30,7 @@ const { generateLandingPages } = require('./lib/generate-landing-pages');
 const { generateFiyatPerformansIndeksi } = require('./lib/generate-fiyat-performans-indeksi');
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
 const { injectPwaTags } = require('./lib/pwa-inject');
+const { planFromRegistry, writeRegistry } = require('./lib/pair-registry');
 const { writeDeletedProductRedirects } = require('./lib/deleted-redirects');
 const { writeDirIndexRedirects } = require('./lib/dir-redirects');
 const { splitSitemap } = require('./lib/split-sitemap');
@@ -195,10 +196,17 @@ async function main(){
   // spread ile generateSite'a otomatik geçiyor.
 
   const categories = [...new Set(products.filter(p => !p.upcoming).map(p => p.cat))];
+  // Daha önce yayınlanmış karşılaştırmalar korunur / yönlendirilir (lib/pair-registry.js).
+  const pairPlan = planFromRegistry({ rootDir, catalog: products.filter(p => !p.upcoming),
+    productUrl: p => `/urun/${helpers.productSlug(p)}.html` });
+  let lastGeneratedPairs = [];
   generateComparisons({
     products, colorFor: helpers.colorFor, computeScores: helpers.computeScores,
     categories, neighborCount: 2, rootDir, illustrationFor, productImageFor, prosConsFor: helpers.prosConsFor,
+    stickyPairs: pairPlan.sticky, registryRedirects: pairPlan.redirects,
+    onGenerated: gp => { lastGeneratedPairs = gp; },
   });
+  writeRegistry({ rootDir, resolved: pairPlan.resolved, generatedPairs: lastGeneratedPairs });
   linkHeroComparisons({ rootDir });
 
   console.log('→ Supabase\'den haber verisi çekiliyor...');

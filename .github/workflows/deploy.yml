@@ -40,6 +40,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # contents: write — yalnızca deploy sonrası lib/yayinda-ciftler.txt'i geri yazmak için.
+    permissions:
+      contents: write
     steps:
       - name: Kodu çek
         uses: actions/checkout@v4
@@ -140,6 +143,7 @@ jobs:
           PYEOF
 
       - name: FTP ile hosting'e yükle
+        id: ftp
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -246,3 +250,33 @@ jobs:
           if [ "$FAILED" -eq 1 ]; then
             exit 1
           fi
+
+      # ============================================================
+      # 22 Ekim 2026: Yayındaki karşılaştırma kaydını (lib/yayinda-ciftler.txt)
+      # repoya geri yaz. Bir sonraki build bu listedeki ikilileri yine üretir
+      # ya da yönlendirir; böylece skor komşuluğu kaydığında sayfalar 404
+      # olmaz (bkz. lib/pair-registry.js). Sadece FTP yüklemesi başarılıysa
+      # çalışır. GITHUB_TOKEN ile yapılan push yeni bir workflow tetiklemez.
+      # Kayıt değişmediyse hiçbir şey yapmaz.
+      # ============================================================
+      - name: Yayındaki karşılaştırma kaydını repoya yaz
+        if: always() && steps.ftp.outcome == 'success'
+        run: |
+          set -e
+          REG=lib/yayinda-ciftler.txt
+          [ -f "$REG" ] || { echo "Kayıt dosyası yok, atlanıyor."; exit 0; }
+          cp "$REG" /tmp/yayinda-ciftler.txt
+          git config user.name "teknoversus-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3; do
+            git fetch -q --depth=1 origin main
+            git checkout -q -f -B kayit-guncelle origin/main
+            cp /tmp/yayinda-ciftler.txt "$REG"
+            if git diff --quiet -- "$REG"; then echo "Kayıt değişmemiş."; exit 0; fi
+            git add "$REG"
+            git commit -q -m "Yayındaki karşılaştırma kaydı güncellendi [skip ci]"
+            if git push -q origin HEAD:main; then echo "Kayıt main'e yazıldı."; exit 0; fi
+            echo "Push reddedildi (main bu arada değişmiş), tekrar deneniyor ($i)..."
+            sleep 5
+          done
+          echo "::warning::Karşılaştırma kaydı repoya yazılamadı; bir sonraki deploy'da tekrar denenecek."

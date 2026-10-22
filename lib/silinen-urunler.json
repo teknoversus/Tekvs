@@ -7,7 +7,7 @@
       "cat": "Telefon",
       "yerine": "n1",
       "yerine_ad": "iPhone 11",
-      "tarih": "2026-11-01",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     },
     {
@@ -16,7 +16,7 @@
       "cat": "Telefon",
       "yerine": "h10",
       "yerine_ad": "iPhone 12",
-      "tarih": "2026-11-01",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     },
     {
@@ -25,7 +25,7 @@
       "cat": "Telefon",
       "yerine": "n2",
       "yerine_ad": "iPhone 13",
-      "tarih": "2026-11-01",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     },
     {
@@ -34,7 +34,7 @@
       "cat": "Telefon",
       "yerine": "n3",
       "yerine_ad": "iPhone 14",
-      "tarih": "2026-11-01",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     },
     {
@@ -43,7 +43,7 @@
       "cat": "Telefon",
       "yerine": "n4",
       "yerine_ad": "iPhone 15",
-      "tarih": "2026-11-01",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     },
     {
@@ -52,16 +52,151 @@
       "cat": "Telefon",
       "yerine": "n5",
       "yerine_ad": "iPhone 16",
-      "tarih": "2026-11-01",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     },
     {
-      "id": "p_1787680633621_81",
-      "name": "Redmi Note 13 Pro",
-      "cat": "Telefon",
-      "yerine": "x1",
-      "yerine_ad": "Xiaomi Redmi Note 13 Pro",
-      "tarih": "2026-11-01",
+      "id": "n35",
+      "name": "Wave Beam 2",
+      "cat": "Kulaklık",
+      "yerine": "p10",
+      "yerine_ad": "JBL Wave Beam 2",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "g17",
+      "name": "ASUS ROG Pelta",
+      "cat": "Kulaklık",
+      "yerine": "n34",
+      "yerine_ad": "ROG Pelta",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "p_recent_2026_004",
+      "name": "Galaxy Watch Ultra2",
+      "cat": "Akıllı Saat",
+      "yerine": "p_new_012",
+      "yerine_ad": "Samsung Galaxy Watch Ultra 2",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "p_xiaomi_022",
+      "name": "Redmi Watch 5",
+      "cat": "Akıllı Saat",
+      "yerine": "p_new_008",
+      "yerine_ad": "Xiaomi Redmi Watch 5",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "p_xiaomi_025",
+      "name": "Redmi Watch 6",
+      "cat": "Akıllı Saat",
+      "yerine": "p_new_027",
+      "yerine_ad": "Xiaomi Redmi Watch 6",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "p_new_077",
+      "name": "Honor Watch 5 Ultra",
+      "cat": "Akıllı Saat",
+      "yerine": "p_new_051",
+      "yerine_ad": "Honor Watch 5 Ultra",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "act09",
+      "name": "GoPro HERO12 Black",
+      "cat": "Kamera",
+      "yerine": "x27",
+      "yerine_ad": "GoPro HERO12 Black",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "retro01",
+      "name": "Canon PowerShot G7 X Mark III",
+      "cat": "Kamera",
+      "yerine": "y40",
+      "yerine_ad": "Canon PowerShot G7X Mark III",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "laptop_20260924_011",
+      "name": "Asus ROG Strix Scar 18 G835LXG-TQ378W",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090547",
+      "yerine_ad": "ASUS ROG Strix SCAR 18 G835LXG-TQ378W",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "laptop_20260924_012",
+      "name": "Asus ROG Strix Scar 18 G835LXG-TQ548",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090541",
+      "yerine_ad": "ASUS ROG Strix SCAR 18 G835LXG-TQ548",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "laptop_20260924_013",
+      "name": "Asus ROG Strix Scar 18 G835LXG-TQ547",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090545",
+      "yerine_ad": "ASUS ROG Strix SCAR 18 G835LXG-TQ547",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "laptop_20260924_014",
+      "name": "Asus ROG Strix Scar 18 G835LXG-TQ549",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090546",
+      "yerine_ad": "ASUS ROG Strix SCAR 18 G835LXG-TQ549",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "amazon_20260924_006",
+      "name": "LENOVO IdeaPad Slim 3 15IRH10",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090510",
+      "yerine_ad": "Lenovo IdeaPad Slim 3 15IRH10",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "amazon_20260924_030",
+      "name": "ASUS ExpertBook P5 P5405CSA-I516512S0D",
+      "cat": "Dizüstü",
+      "yerine": "amazon_20260924_latest_012",
+      "yerine_ad": "ASUS ExpertBook P5 P5405CSA-I516512S0D",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "amazon_20260924_latest_024",
+      "name": "ASUS ROG Strix G16 G614PR-RV052",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090501",
+      "yerine_ad": "ASUS ROG Strix G16 G614PR-RV052",
+      "tarih": "2026-10-22",
+      "neden": "çift kayıt"
+    },
+    {
+      "id": "laptop_20260924_018",
+      "name": "Asus ROG Zephyrus G16 GU606AX-TB044",
+      "cat": "Dizüstü",
+      "yerine": "trend_2026090540",
+      "yerine_ad": "ASUS ROG Zephyrus G16 GU606AX-TB044",
+      "tarih": "2026-10-22",
       "neden": "çift kayıt"
     }
   ]

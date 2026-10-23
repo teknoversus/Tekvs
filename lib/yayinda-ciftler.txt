@@ -35,6 +35,7 @@ ac06|p25	acer-predator-galea-350-vs-jbl-tune-660nc-6d0086dcae5e.html
 ac06|n70	acer-predator-galea-350-vs-soundpeats-capsule3-pro-b85d05a8af04.html
 ac06|n35	acer-predator-galea-350-vs-wave-beam-2-116b9765c1e8.html
 ac05|ac06	acer-predator-galea-365-vs-acer-predator-galea-350-f89ef9427e9e.html
+ac05|p02	acer-predator-galea-365-vs-anker-soundcore-p31i-r60i-ee9215158533.html
 ac05|n01	acer-predator-galea-365-vs-galaxy-buds-4-pro-7cd75053ce82.html
 ac05|n70	acer-predator-galea-365-vs-soundpeats-capsule3-pro-936b4132352b.html
 ac05|n35	acer-predator-galea-365-vs-wave-beam-2-b7f4c0d47fee.html
@@ -177,6 +178,7 @@ p_amazfit_012|p_amazfit_016	amazfit-gtr-3-pro-limited-edition-vs-amazfit-gts-156
 p_amazfit_011|p_amazfit_012	amazfit-gtr-3-pro-vs-amazfit-gtr-3-pro-limited-edition-5ec321d2e7c7.html
 p_amazfit_011|p_amazfit_014	amazfit-gtr-3-pro-vs-amazfit-gtr-4-limited-edition-01edad2687fc.html
 p_amazfit_010|p_huawei_2025_huawei_watch_fit_4	amazfit-gtr-3-vs-huawei-watch-fit-4-70b376889396.html
+p_amazfit_010|p_huawei_2022_huawei_watch_gt_3_se	amazfit-gtr-3-vs-huawei-watch-gt-3-se-fcb6027eb833.html
 p_amazfit_010|p_xiaomi_025	amazfit-gtr-3-vs-redmi-watch-6-419ac1d18a82.html
 p_amazfit_010|p_child_008	amazfit-gtr-3-vs-wiky-watch-4s-9d7b20313fe4.html
 p_amazfit_010|p_new_026	amazfit-gtr-3-vs-xiaomi-smart-band-10-4094ad0303bd.html
@@ -197,6 +199,7 @@ p_amazfit_006|p_amazfit_007	amazfit-gtr-vs-amazfit-gtr-42mm-b4d81ceb748f.html
 p_amazfit_019|p_amazfit_022	amazfit-gts-2-mini-vs-amazfit-bip-57774ccb741d.html
 p_amazfit_019|p_amazfit_020	amazfit-gts-2-mini-vs-amazfit-gts-3-f44fbb1f3af2.html
 p_amazfit_017|p_honor_018	amazfit-gts-2-vs-honor-watch-5-racing-5a9a751bba7b.html
+p_amazfit_017|p_mibro_023	amazfit-gts-2-vs-mibro-gs-explorer-s-468ba31799be.html
 p_amazfit_017|p_xiaomi_022	amazfit-gts-2-vs-redmi-watch-5-52c3ad2ddc26.html
 p_amazfit_017|p_child_017	amazfit-gts-2-vs-reeder-kiddo-2-05b098cfed8e.html
 p_amazfit_017|p_child_016	amazfit-gts-2-vs-reeder-kiddo-3f090d3e2291.html
@@ -231,6 +234,7 @@ p_amazfit_037|p_garmin_010	amazfit-t-rex-3-vs-garmin-forerunner-955-4f0327128ca3
 p_amazfit_037|p_huawei_2023_huawei_watch_ultimate	amazfit-t-rex-3-vs-huawei-watch-ultimate-852a1f22697f.html
 p_recent_2026_016|p_zeblaze_018	amazfit-t-rex-dual-solar-vs-zeblaze-beyond-2-d8488732ec8f.html
 p_recent_2026_016|p_zeblaze_019	amazfit-t-rex-dual-solar-vs-zeblaze-beyond-3-pro-1ad012e3e49b.html
+p_recent_2026_016|p_zeblaze_017	amazfit-t-rex-dual-solar-vs-zeblaze-beyond-c5949f791b30.html
 p_amazfit_034|p_amazfit_040	amazfit-t-rex-pro-vs-amazfit-active-89aa6858ade2.html
 p_amazfit_034|p_amazfit_035	amazfit-t-rex-pro-vs-amazfit-t-rex-2-70a3784d4f3b.html
 p_new_024|s6	amazfit-t-rex-ultra-2-vs-apple-watch-series-11-42mm-1d85693a4402.html
@@ -809,6 +813,7 @@ comp_20260924_19|laptop_20260924_005	dell-alienware-18-area-51-aa18250-vs-asus-r
 comp_20260924_19|trend_2026090569	dell-alienware-18-area-51-aa18250-vs-msi-cyborg-17-b13wfkga94-092xtra94-e79b41723bb2.html
 p_2026090510|x13	dell-precision-5690-vs-asus-rog-strix-g16-854143e6c2e8.html
 p_2026090510|trend_2026090554	dell-precision-5690-vs-hp-omen-gaming-16-ap00014nta56-fa373f250149.html
+p_2026090510|trend_2026090510	dell-precision-5690-vs-lenovo-ideapad-slim-3-15irh10-039917f32fbc.html
 p_2026090510|trend_2026090539	dell-precision-5690-vs-msi-raider-16-max-hx-b2wi-092tr-b0d83318cbf3.html
 p_2026090510|trend_2026090544	dell-precision-5690-vs-msi-stealth-a16-ai-b3wi-003tr-45ec9643f8e2.html
 amazon_20260924_035|comp_20260924_06	dell-pro-15-essential-pv15250-004-vs-casper-nirvana-c550-1235-8v00t-g-f-7b9c409c01ca.html
@@ -879,6 +884,7 @@ act06|add13	dji-osmo-360-ii-vs-canon-eos-r8-862dc403f84c.html
 act06|add35	dji-osmo-360-ii-vs-fujifilm-x-s20-ea077f7c2d92.html
 act06|y37	dji-osmo-360-ii-vs-sony-zv-e10-c1dde5a5e06b.html
 final08|retro02	dji-osmo-360-vs-canon-powershot-sx740-hs-2fe9de76c8e6.html
+final08|retro07	dji-osmo-360-vs-sony-cyber-shot-dsc-w830-698957bb8d89.html
 act08|retro11	dji-osmo-action-4-vs-casio-exilim-ex-z4-3e53c17130ce.html
 act08|trend10	dji-osmo-action-4-vs-sjcam-sj30-1729e6748395.html
 act08|retro04	dji-osmo-action-4-vs-sony-cyber-shot-dsc-t9-1f772e7838ad.html
@@ -978,6 +984,7 @@ p_recent_2026_003|p_recent_2026_016	galaxy-watch9-vs-amazfit-t-rex-dual-solar-b3
 p_recent_2026_003|p_recent_2026_004	galaxy-watch9-vs-galaxy-watch-ultra2-edebfa95885f.html
 p_recent_2026_003|p_zeblaze_016	galaxy-watch9-vs-zeblaze-ares-gps-b663d0f6437c.html
 p_recent_2026_003|p_zeblaze_017	galaxy-watch9-vs-zeblaze-beyond-1b72cae8c949.html
+p_recent_2026_003|p_zeblaze_018	galaxy-watch9-vs-zeblaze-beyond-2-0d4f974bb8b4.html
 trend_2026090564|x16	game-garaj-slayer-r9m3d-xl-5070-c3-vs-monster-abra-a5-v21-6-deebbac19596.html
 trend_2026090528|x17	game-garaj-slayer-r9t-5070ti-c2-vs-casper-excalibur-g915-1362-8n70a-c-541c42a1df87.html
 trend_2026090528|trend_2026090543	game-garaj-slayer-r9t-5070ti-c2-vs-casper-excalibur-g915-356h-ex70a-c-2e0b42dd3dbb.html
@@ -1116,6 +1123,7 @@ p_new_036|p_new_055	garmin-vivoactive-6-vs-oppo-watch-x2-f49d0dea2b72.html
 z4|z5	general-mobile-gm-26-pro-5g-vs-general-mobile-gm-fenix-ii-pro-5g-4c66fe748e76.html
 z6|z9	general-mobile-gm-era-50-vs-casper-via-m40-b8e414f37d68.html
 add17|retro01	gfx100-ii-vs-canon-powershot-g7-x-mark-iii-ac3ef6b609c8.html
+add17|s16	gfx100-ii-vs-sony-alpha-1-ii-12a0312b77fb.html
 add17|final04	gfx100-ii-vs-sony-fx5-a22dc58265fe.html
 add17|s19	gfx100-ii-vs-sony-rx1r-iii-8c3a57ef8405.html
 amazon_20260924_latest_017|comp_20260924_18	gigabyte-gaming-a18-pro-slim-gamin-vs-asus-rog-flow-z13-gz302ea-ru004w-319946eed739.html
@@ -1697,6 +1705,7 @@ p_new_013|p_new_031	huawei-watch-gt-6-pro-vs-apple-watch-se-3-eb738dbc655b.html
 p_new_004|x7	huawei-watch-gt-6-vs-amazfit-gts-4-bc36758373db.html
 p_new_004|p_new_077	huawei-watch-gt-6-vs-honor-watch-5-ultra-64425da36611.html
 p_new_004|p_new_014	huawei-watch-gt-6-vs-huawei-watch-fit-5-pro-472d19d9cdd8.html
+p_new_004|x31	huawei-watch-gt-6-vs-samsung-galaxy-watch7-0a20d618c96b.html
 p_new_004|p_new_063	huawei-watch-gt-6-vs-xiaomi-watch-2-053e5b462e86.html
 p_huawei_2025_huawei_watch_gt_7|p_huawei_2026_huawei_watch_buds_2	huawei-watch-gt-7-vs-huawei-watch-buds-2-5a7b6c8ff26d.html
 p_huawei_2025_huawei_watch_gt_7|p_huawei_2026_huawei_watch_gt_runner_2	huawei-watch-gt-7-vs-huawei-watch-gt-runner-2-1e6f1d585b55.html
@@ -1724,9 +1733,11 @@ g48|p07	hyperx-cloud-earbuds-iii-s-vs-jbl-tune-680bt-nc-3f1080fd85ae.html
 g48|p08	hyperx-cloud-earbuds-iii-s-vs-jbl-wave-buds-2-5d8adf42a06e.html
 g48|ss06	hyperx-cloud-earbuds-iii-s-vs-steelseries-arctis-nova-1-f00d554ecdaf.html
 g11|g17	hyperx-cloud-iii-s-wireless-vs-asus-rog-pelta-2f5baac09ce2.html
+g11|g21	hyperx-cloud-iii-s-wireless-vs-turtle-beach-atlas-air-3c7dd94b7670.html
 g11|g20	hyperx-cloud-iii-s-wireless-vs-turtle-beach-stealth-700-gen-3-d0aa45bbdb20.html
 g10|g17	hyperx-cloud-iii-wireless-vs-asus-rog-pelta-d119f7d6f72a.html
 g10|g11	hyperx-cloud-iii-wireless-vs-hyperx-cloud-iii-s-wireless-1e2a541812d4.html
+g10|g20	hyperx-cloud-iii-wireless-vs-turtle-beach-stealth-700-gen-3-4c5e1686f1ca.html
 g32|rz07	hyperx-cloud-jet-vs-razer-barracuda-fa9f4bfaf48b.html
 g32|rz05	hyperx-cloud-jet-vs-razer-barracuda-x-chroma-3b86aa812ea8.html
 g32|rz03	hyperx-cloud-jet-vs-razer-blackshark-v2-pro-2023-86e4090eb85e.html
@@ -1836,6 +1847,7 @@ apple-iphone-16e|vivo-x300-ultra-2026	iphone-16e-vs-vivo-x300-ultra-990661e27378
 apple-iphone-17-pro|huawei-pura-80-pro	iphone-17-pro-vs-huawei-pura-80-pro-64a34b617189.html
 apple-iphone-17-pro|huawei-pura-80-ultra	iphone-17-pro-vs-huawei-pura-80-ultra-29434e3e9f09.html
 apple-iphone-17-pro|samsung-galaxy-note-20-ultra	iphone-17-pro-vs-samsung-galaxy-note-20-ultra-1d48fe77a276.html
+apple-iphone-17-pro|s2	iphone-17-pro-vs-samsung-galaxy-s26-ultra-1c7804219350.html
 n6|s4	iphone-17-vs-apple-iphone-17-pro-max-374fe661a3d6.html
 n6|z1	iphone-17-vs-honor-magic8-pro-adfd539ad4c9.html
 n6|z13	iphone-17-vs-nubia-z80-ultra-6410a1df6ef2.html
@@ -1882,6 +1894,7 @@ p08|ss06	jbl-wave-buds-2-vs-steelseries-arctis-nova-1-7e4f225931eb.html
 n72|p16	jbl-wave-flex-vs-earfun-air-pro-4i-ae5e70eb45b8.html
 add18|retro02	kandao-qoocam-3-ultra-vs-canon-powershot-sx740-hs-b879c7fe75a1.html
 add18|final08	kandao-qoocam-3-ultra-vs-dji-osmo-360-74e4bd9f0dc1.html
+add18|x25	kandao-qoocam-3-ultra-vs-sony-alpha-a6400-ecf754f51075.html
 add18|retro07	kandao-qoocam-3-ultra-vs-sony-cyber-shot-dsc-w830-a0c1113a8e52.html
 add22|add38	kodak-pixpro-sp360-vs-fujifilm-instax-mini-13-kamera-ac7f33087f2e.html
 add22|retro06	kodak-pixpro-sp360-vs-sony-cyber-shot-dsc-tx9-0e36657601ab.html
@@ -1985,6 +1998,7 @@ laptop_20260924_004|trend_2026090573	lenovo-legion-5-15iph11-83rw0004tr-vs-hp-om
 y17|y23	lenovo-legion-5-pro-vs-lg-gram-16-c42603cac3d0.html
 p_2026090507|trend_2026090575	lenovo-legion-pro-5-16adr10-83lt00-vs-acer-predator-helios-neo-16-ai-phn-d48622349e48.html
 p_2026090507|trend_2026090557	lenovo-legion-pro-5-16adr10-83lt00-vs-hp-omen-gaming-16-ap00014nta40-e5f4dea4ff98.html
+p_2026090507|trend_2026090511	lenovo-legion-pro-5-16adr10-83lt00-vs-msi-thin-15-b13ve-efdf1f633578.html
 amazon_20260924_016|comp_20260924_18	lenovo-legion-pro-5-16adr10-vs-asus-rog-flow-z13-gz302ea-ru004w-acecc4872ad6.html
 amazon_20260924_016|trend_2026090555	lenovo-legion-pro-5-16adr10-vs-hp-omen-gaming-16-ap00014nta60-b8c4e8796dc9.html
 amazon_20260924_016|amazon_20260924_latest_016	lenovo-legion-pro-5-16adr10-vs-lenovo-yoga-slim-7-83hm005mtrp302-e008d5266027.html
@@ -2098,6 +2112,7 @@ amazon_20260924_031|amazon_20260924_latest_002	lenovo-v15-83a100hxtr-vs-msi-cros
 amazon_20260924_023|trend_2026090543	lenovo-yoga-7-2-in-1-14akp10-vs-casper-excalibur-g915-356h-ex70a-c-c098735cf1ab.html
 amazon_20260924_023|amazon_20260924_latest_011	lenovo-yoga-7-2-in-1-14akp10-vs-dell-alienware-16x-aurora-ac16251-08c4617f7b70.html
 amazon_20260924_023|trend_2026090552	lenovo-yoga-7-2-in-1-14akp10-vs-lenovo-thinkbook-16p-g6-21u00013tx-a14e10308b89.html
+amazon_20260924_023|monster_20260908	lenovo-yoga-7-2-in-1-14akp10-vs-monster-tulpar-t7-v26-4-3-afe64648cad8.html
 amazon_20260924_023|amazon_20260924_latest_019	lenovo-yoga-7-2-in-1-14akp10-vs-msi-cyborg-15-b13wfkg-489tr-c2cba062b8a9.html
 trend_2026090560|y17	lenovo-yoga-pro-7-82y7004ltx-vs-lenovo-legion-5-pro-37d02974a351.html
 lenovo-yoga-slim-7-83hm005mtr-vs-casper-excalibur-g915-356h-ef60a-c-3955f969bc0d.html
@@ -2319,6 +2334,7 @@ monster_20260908|s1	monster-tulpar-t7-v26-4-3-vs-apple-macbook-air-m5-77663b6452
 monster_20260908|trend_2026090513	monster-tulpar-t7-v26-4-3-vs-asus-rog-strix-g18-g814pp-6b71f86ba45d.html
 monster_20260908|trend_2026090552	monster-tulpar-t7-v26-4-3-vs-lenovo-thinkbook-16p-g6-21u00013tx-35abbe96f59f.html
 monster_20260906|trend_2026090575	monster-tulpar-t7-v26-5-1-vs-acer-predator-helios-neo-16-ai-phn-8ce3c721867c.html
+monster_20260906|trend_2026090557	monster-tulpar-t7-v26-5-1-vs-hp-omen-gaming-16-ap00014nta40-986c3a7fe849.html
 monster_20260906|p_2026090507	monster-tulpar-t7-v26-5-1-vs-lenovo-legion-pro-5-16adr10-83lt00-de9ce67621e8.html
 monster_20260905|trend_2026090575	monster-tulpar-t7-v26-5-2-vs-acer-predator-helios-neo-16-ai-phn-f395dca6119d.html
 monster_20260905|monster_20260908	monster-tulpar-t7-v26-5-2-vs-monster-tulpar-t7-v26-4-3-a88f34db3a44.html
@@ -2388,6 +2404,7 @@ amazon_20260924_038|comp_20260924_15	msi-cyborg-15-b13wekg-613xtr-vs-lenovo-idea
 amazon_20260924_latest_019|trend_2026090543	msi-cyborg-15-b13wfkg-489tr-vs-casper-excalibur-g915-356h-ex70a-c-108a3f8051c2.html
 amazon_20260924_latest_019|trend_2026090528	msi-cyborg-15-b13wfkg-489tr-vs-game-garaj-slayer-r9t-5070ti-c2-74c1f1bb66e5.html
 amazon_20260924_latest_019|trend_2026090556	msi-cyborg-15-b13wfkg-489tr-vs-hp-omen-gaming-16-ap00014nta36-ccfd6abd4fd1.html
+amazon_20260924_latest_019|trend_2026090552	msi-cyborg-15-b13wfkg-489tr-vs-lenovo-thinkbook-16p-g6-21u00013tx-ee6e34ff296f.html
 amazon_20260924_latest_019|amazon_20260924_latest_028	msi-cyborg-15-b13wfkg-489tr-vs-msi-vector-16-hx-ai-a2xwhg-091xtr-dbb7f3b50a27.html
 amazon_20260924_021|trend_2026090516	msi-cyborg-15-b13wfkg-494xtr-vs-asus-tuf-gaming-f16-fx608jmr-rv024-e236f1d77a4f.html
 amazon_20260924_021|amazon_20260924_latest_004	msi-cyborg-15-b13wfkg-494xtr-vs-hp-omen-16-ap0006nt-c52r1ea-636ad7575dab.html
@@ -2426,6 +2443,7 @@ amazon_20260924_019|amazon_20260924_023	msi-prestige-16-ai-c3mg-039tr-vs-lenovo-
 amazon_20260924_019|monster_20260908	msi-prestige-16-ai-c3mg-039tr-vs-monster-tulpar-t7-v26-4-3-04d8b588b2bb.html
 amazon_20260924_019|monster_20260907	msi-prestige-16-ai-c3mg-039tr-vs-monster-tulpar-t7-v26-5-521ca73dbddc.html
 trend_2026090539|x13	msi-raider-16-max-hx-b2wi-092tr-vs-asus-rog-strix-g16-2377c22d8579.html
+trend_2026090539|trend_2026090544	msi-raider-16-max-hx-b2wi-092tr-vs-msi-stealth-a16-ai-b3wi-003tr-13b12c123979.html
 trend_2026090538|trend_2026090571	msi-raider-16-max-hx-b2wj-022tr-vs-msi-cyborg-17-b13wfkg-091xtr-k33-08f3bd94b83d.html
 trend_2026090538|trend_2026090570	msi-raider-16-max-hx-b2wj-022tr-vs-msi-cyborg-17-b13wfkg-091xtr-k34-b1495040f88d.html
 trend_2026090536|trend_2026090548	msi-raider-18-max-hx-a2wi-1040tr-vs-lenovo-thinkbook-16p-g6-iax-21r000-721871a0a079.html
@@ -2556,6 +2574,7 @@ add05|retro01	panasonic-lumix-s1ii-vs-canon-powershot-g7-x-mark-iii-1c8795910605
 add05|add17	panasonic-lumix-s1ii-vs-gfx100-ii-bb696555c187.html
 add05|final04	panasonic-lumix-s1ii-vs-sony-fx5-174fd6a436ef.html
 add05|trend06	panasonic-lumix-s1ii-vs-sony-rx10-v-7a7903e51603.html
+add05|s19	panasonic-lumix-s1ii-vs-sony-rx1r-iii-f371458e0c26.html
 finaladd01|finaladd02	panasonic-lumix-s1rii-vs-panasonic-lumix-gh7-58cc1b187768.html
 finaladd01|finaladd05	panasonic-lumix-s1rii-vs-sony-rx100-vii-8f43bbb0ca36.html
 add37|trend06	panasonic-lumix-s5ii-vs-sony-rx10-v-ec5ce80d911a.html
@@ -2633,6 +2652,7 @@ poco-m2-pro|poco-x3-gt	poco-m2-pro-vs-poco-x3-gt-97fc20669d4a.html
 poco-m2-pro|samsung-galaxy-a32	poco-m2-pro-vs-samsung-galaxy-a32-70eca8ed2d6e.html
 poco-m2-pro|samsung-galaxy-a71	poco-m2-pro-vs-samsung-galaxy-a71-a2f7b24f8311.html
 poco-m2-pro|xiaomi-redmi-note-12s	poco-m2-pro-vs-xiaomi-redmi-note-12s-d340186fc0f9.html
+poco-m3-pro-5g|poco-m4-pro	poco-m3-pro-5g-vs-poco-m4-pro-0b62627727e3.html
 poco-m3-pro-5g|redmi-9a	poco-m3-pro-5g-vs-redmi-9a-4fffa3a14717.html
 poco-m3-pro-5g|samsung-galaxy-a21s	poco-m3-pro-5g-vs-samsung-galaxy-a21s-8996c88ab9f1.html
 poco-m3-pro-5g|samsung-galaxy-a70	poco-m3-pro-5g-vs-samsung-galaxy-a70-edc34b46a27d.html
@@ -2822,6 +2842,7 @@ redmi-6a|samsung-galaxy-a7-2016	redmi-6a-vs-samsung-galaxy-a7-2016-7fb7d41c1727.
 redmi-6a|samsung-galaxy-s	redmi-6a-vs-samsung-galaxy-s-780f159a75fe.html
 redmi-6a|xiaomi-mi-5	redmi-6a-vs-xiaomi-mi-5-f1b3e0ae60f6.html
 redmi-9a|samsung-galaxy-a11	redmi-9a-vs-samsung-galaxy-a11-8e565798c721.html
+redmi-9a|samsung-galaxy-a21s	redmi-9a-vs-samsung-galaxy-a21s-bf5d9e9ab375.html
 redmi-buds-8-pro-vs-jbl-wave-beam-2-3fe78a74866f.html
 redmi-note-10-pro|redmi-note-13	redmi-note-10-pro-vs-redmi-note-13-e362102d5018.html
 redmi-note-10-pro|redmi-note-14	redmi-note-10-pro-vs-redmi-note-14-33334fd9a71f.html
@@ -2857,7 +2878,10 @@ redmi-note-14|samsung-galaxy-m51	redmi-note-14-vs-samsung-galaxy-m51-51bb57bbb3e
 redmi-note-17-4g|samsung-galaxy-a37-5g	redmi-note-17-4g-vs-samsung-galaxy-a37-5g-e0b00b942b4d.html
 redmi-note-17-5g|samsung-galaxy-s21	redmi-note-17-5g-vs-samsung-galaxy-s21-31fb32057696.html
 redmi-note-17-pro-5g|redmi-note-17-pro-max	redmi-note-17-pro-5g-vs-redmi-note-17-pro-max-c1b385aa1229.html
+redmi-note-17-pro-5g|samsung-galaxy-note-20	redmi-note-17-pro-5g-vs-samsung-galaxy-note-20-49e16bc1b526.html
 redmi-note-17-pro-5g|samsung-galaxy-s25	redmi-note-17-pro-5g-vs-samsung-galaxy-s25-012dc0f74357.html
+redmi-note-17-pro-max|samsung-galaxy-note-10-plus	redmi-note-17-pro-max-vs-samsung-galaxy-note-10-plus-d088d6517c2a.html
+redmi-note-17-pro-max|samsung-galaxy-note-20	redmi-note-17-pro-max-vs-samsung-galaxy-note-20-069b39e9c8f1.html
 redmi-note-4g|xiaomi-mi-3	redmi-note-4g-vs-xiaomi-mi-3-c2c4a7d0dfc0.html
 redmi-note-5-pro|redmi-note-8-pro	redmi-note-5-pro-vs-redmi-note-8-pro-000ec92e7eeb.html
 redmi-note-5-pro|samsung-galaxy-s4	redmi-note-5-pro-vs-samsung-galaxy-s4-50cad42dbfa1.html
@@ -2904,6 +2928,7 @@ p_xiaomi_016|p_xiaomi_017	redmi-watch-vs-redmi-watch-2-d363cb17e361.html
 p_xiaomi_016|p_xiaomi_018	redmi-watch-vs-redmi-watch-2-lite-5b7e072fc083.html
 ree_a11s|t25	reeder-a11s-vs-samsung-galaxy-tab-s11-7a921faf292e.html
 ree_a11s|sam_s8	reeder-a11s-vs-samsung-galaxy-tab-s8-a565e4260eef.html
+p_child_017|p_honor_018	reeder-kiddo-2-vs-honor-watch-5-racing-9d9a0879e7cc.html
 p_child_017|p_xiaomi_022	reeder-kiddo-2-vs-redmi-watch-5-6a4c096dd422.html
 p_child_017|p_child_023	reeder-kiddo-2-vs-xiaomi-mibro-p5-729160467fb9.html
 p_child_016|p_mibro_021	reeder-kiddo-vs-mibro-gs-pro2-dab2b1a59e42.html
@@ -3169,6 +3194,7 @@ samsung-galaxy-note-10-lite|samsung-galaxy-s22	samsung-galaxy-note-10-lite-vs-sa
 samsung-galaxy-note-10-lite|samsung-galaxy-s23	samsung-galaxy-note-10-lite-vs-samsung-galaxy-s23-1a0f9b9061c9.html
 samsung-galaxy-note-10-plus|samsung-galaxy-note-20	samsung-galaxy-note-10-plus-vs-samsung-galaxy-note-20-846a131830c2.html
 samsung-galaxy-note-10-plus|samsung-galaxy-s23	samsung-galaxy-note-10-plus-vs-samsung-galaxy-s23-cfc14ba5fccf.html
+samsung-galaxy-note-20-ultra|samsung-galaxy-s26	samsung-galaxy-note-20-ultra-vs-samsung-galaxy-s26-aee1487dfc1a.html
 samsung-galaxy-note-4|samsung-galaxy-s7	samsung-galaxy-note-4-vs-samsung-galaxy-s7-1c7c1c46a76f.html
 samsung-galaxy-note-4|xiaomi-mi-8	samsung-galaxy-note-4-vs-xiaomi-mi-8-41c3ffac2113.html
 samsung-galaxy-note-5|xiaomi-pocophone-f1	samsung-galaxy-note-5-vs-xiaomi-pocophone-f1-497d97b886ef.html
@@ -3346,6 +3372,7 @@ p_new_002|p_new_014	samsung-galaxy-watch8-vs-huawei-watch-fit-5-pro-8f875a006998
 p_new_002|p_new_004	samsung-galaxy-watch8-vs-huawei-watch-gt-6-2ecd0f58d4d1.html
 p_new_002|x31	samsung-galaxy-watch8-vs-samsung-galaxy-watch7-613cd09889fd.html
 p_new_002|p_new_041	samsung-galaxy-watch8-vs-suunto-race-7eb75b91f03c.html
+p_new_002|p_new_063	samsung-galaxy-watch8-vs-xiaomi-watch-2-c2bf5b175ecf.html
 p_new_011|p_new_024	samsung-galaxy-watch9-44mm-vs-amazfit-t-rex-ultra-2-989a05a13360.html
 p_new_011|s6	samsung-galaxy-watch9-44mm-vs-apple-watch-series-11-42mm-010515f7532d.html
 p_zflip7|p_zfold7	samsung-galaxy-z-flip7-vs-samsung-galaxy-z-fold7-f5491d41d1af.html
@@ -3931,6 +3958,7 @@ p_new_008|p_samsung_2022_samsung_galaxy_watch5_pro	xiaomi-redmi-watch-5-vs-samsu
 p_new_027|p_recent_2026_021	xiaomi-redmi-watch-6-vs-honor-choice-kids-watch-plus-fd819026f55f.html
 p_new_027|p_new_052	xiaomi-redmi-watch-6-vs-honor-watch-5-5803033e3a1c.html
 p_new_026|p_xiaomi_025	xiaomi-smart-band-10-vs-redmi-watch-6-9199e5696247.html
+p_new_026|p_zeblaze_014	xiaomi-smart-band-10-vs-zeblaze-ares-3-pro-5d23fb9c7470.html
 tvbrand015|tvpop016	xiaomi-tv-a-65-2026-vs-iffalcon-55u85a-aa345c1cfc3f.html
 tvbrand015|tvbrand035	xiaomi-tv-a-65-2026-vs-seg-65sbu740-c51dcda646f1.html
 tvsearch061|tvsearch063	xiaomi-tv-a-pro-55-2026-vs-xiaomi-tv-a-55-2026-c7813b13ffa1.html

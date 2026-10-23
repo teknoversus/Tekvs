@@ -198,6 +198,60 @@
       "yerine_ad": "ASUS ROG Zephyrus G16 GU606AX-TB044",
       "tarih": "2026-10-22",
       "neden": "çift kayıt"
+    },
+    {
+      "id": "amazon_20260924_latest_013",
+      "name": "Lenovo IdeaPad Slim 3",
+      "cat": "Dizüstü",
+      "yerine": "x37",
+      "yerine_ad": "Lenovo IdeaPad Slim 3",
+      "tarih": "2026-10-23",
+      "neden": "aynı isimli kayıt (farklı konfigürasyon)"
+    },
+    {
+      "id": "amazon_20260924_011",
+      "name": "Lenovo IdeaPad Slim 3",
+      "cat": "Dizüstü",
+      "yerine": "x37",
+      "yerine_ad": "Lenovo IdeaPad Slim 3",
+      "tarih": "2026-10-23",
+      "neden": "aynı isimli kayıt (farklı konfigürasyon)"
+    },
+    {
+      "id": "amazon_20260924_latest_030",
+      "name": "Lenovo IdeaPad Slim 3",
+      "cat": "Dizüstü",
+      "yerine": "x37",
+      "yerine_ad": "Lenovo IdeaPad Slim 3",
+      "tarih": "2026-10-23",
+      "neden": "aynı isimli kayıt (farklı konfigürasyon)"
+    },
+    {
+      "id": "amazon_20260924_latest_029",
+      "name": "Lenovo LOQ 15AHP10",
+      "cat": "Dizüstü",
+      "yerine": "amazon_20260924_latest_009",
+      "yerine_ad": "Lenovo LOQ 15AHP10",
+      "tarih": "2026-10-23",
+      "neden": "aynı isimli kayıt (farklı konfigürasyon)"
+    },
+    {
+      "id": "amazon_20260924_latest_018",
+      "name": "Lenovo LOQ 15AHP10",
+      "cat": "Dizüstü",
+      "yerine": "amazon_20260924_latest_009",
+      "yerine_ad": "Lenovo LOQ 15AHP10",
+      "tarih": "2026-10-23",
+      "neden": "aynı isimli kayıt (farklı konfigürasyon)"
+    },
+    {
+      "id": "amazon_20260924_036",
+      "name": "Lenovo LOQ 15AHP10",
+      "cat": "Dizüstü",
+      "yerine": "amazon_20260924_latest_009",
+      "yerine_ad": "Lenovo LOQ 15AHP10",
+      "tarih": "2026-10-23",
+      "neden": "aynı isimli kayıt (farklı konfigürasyon)"
     }
   ]
 }

@@ -1,0 +1,33 @@
+name: noindex raporu (sadece ölçer, deploy ETMEZ)
+
+# Elle çalıştırılır (Actions → "noindex raporu" → Run workflow).
+# Siteyi üretir, raporu hesaplar, sonucu "rapor-noindex" dalına yazar.
+# FTP adımı yok; canlı siteye dokunmaz. deploy.yml'in concurrency grubunu kullanmaz.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  rapor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Siteyi üret (yalnızca ölçüm için)
+        run: node build.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      - name: Raporu hesapla
+        run: node scripts/noindex-raporu.js
+      - name: Raporu rapor-noindex dalına yaz
+        run: |
+          git config user.name "teknoversus-bot"
+          git config user.email "bot@teknoversus.com.tr"
+          git checkout -B rapor-noindex
+          git add -f rapor
+          git commit -m "noindex raporu [skip ci]"
+          git push -f origin rapor-noindex

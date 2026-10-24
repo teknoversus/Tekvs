@@ -1351,3 +1351,24 @@ vivo-v29-y6-vs-xiaomi-redmi-note-13-pro-x1.html
 vivo-v40-p_1787680633621_73-vs-xiaomi-redmi-note-15-pro-5g-redmi-note-15-pro-plus-5g-2026.html
 withings-scanwatch-2-p_new_030-vs-xiaomi-watch-2-p_new_063.html
 xiaomi-pad-mini-t31-vs-xiaomi-redmi-pad-se-8-7-xia_redmise87.html
+# Search Console (son 3 ay, 2026-10-24) hâlâ gösterim alan ama 404 veren adresler (noindex raporu).
+canon-eos-r6-mark-iii-c17-vs-nikon-z6-iii-y41.html
+huawei-matepad-pro-12-2-2025-vs-apple-ipad-11-a16-efa1a51c89d3.html
+iphone-14-vs-iphone-15-pro.html
+redmi-watch-5-lite-p_new_079-vs-wiky-watch-5s-p_child_007.html
+macbook-air-m2-13-vs-apple-macbook-air-m5-13-859bb7b358f9.html
+samsung-galaxy-s26-fe-vs-samsung-galaxy-a57-5g-183930f2ed6e.html
+huawei-matepad-se-11-lte-huase11lte-vs-samsung-galaxy-tab-a8-sam_a8.html
+bilicra-round-p_child_010-vs-tcl-movetime-mt40-p_child_004.html
+casper-via-a40-p_casper_via_a40-vs-redmi-13c-p_1787680633621_82.html
+asus-vivobook-go-15-e1504fa-bq4892-vs-lenovo-ideapad-slim-3-i5-13420h-8g-0466bd6f704d.html
+lenovo-yoga-7-2-in-1-14akp10-vs-lenovo-yoga-slim-7-83hm005mtrp302-c22c76c4eb7a.html
+huawei-watch-gt-runner-2-vs-suunto-run-9dfd57cbe541.html
+poco-x6-pro-x2-vs-redmi-note-13-pro-p_1787680633621_80.html
+tcl-55c655-x34-vs-tcl-65c6k-n8.html
+samsung-galaxy-s22-ultra-h7-vs-xiaomi-15t-pro-xiaomi-15t-pro-2025.html
+apple-watch-ultra-vs-samsung-galaxy-watch7.html
+macbook-air-m2-13-vs-macbook-pro-14-m3.html
+xiaomi-smart-band-10-vs-redmi-watch-5-active-5714e2cc5266.html
+honor-watch-5-racing-vs-zeblaze-btalk-3-plus-b3aabaa37181.html
+lenovo-thinkbook-16p-g6-21u00013tx-trend_2026090552-vs-monster-tulpar-t7-v26-5-4-monster_20260904.html

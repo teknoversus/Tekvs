@@ -80,6 +80,33 @@ fs.mkdirSync(path.join(root, 'rapor'), { recursive: true });
 fs.writeFileSync(path.join(root, 'rapor', 'noindex-raporu.md'), L.join('\n') + '\n');
 fs.writeFileSync(path.join(root, 'rapor', 'aday-noindex.csv'), 'dosya,sebep,korunan\n' + cand.map(x => `${x.f},"${x.reasons.join('; ')}",${prot.has(x.f) ? 'evet' : 'hayir'}`).join('\n') + '\n');
 fs.writeFileSync(path.join(root, 'rapor', 'korunan-eksik.csv'), 'dosya,durum,tiklama,gosterim\n' + [...protGone.map(f => [f, 'kayip']), ...protRedirected.map(f => [f, 'yonlendirilen']), ...protNoindex.map(f => [f, 'noindex'])].map(([f, s]) => `${f},${s},${prot.get(f).c},${prot.get(f).g}`).join('\n') + '\n');
+
+// ---- 26 Ekim 2026 Search Console 404 doğrulama listesi: şimdi kapsanıyor mu? ----
+(function(){
+  const f = path.join(root, 'lib', 'gsc-404-urller.txt');
+  if(!fs.existsSync(f)) return;
+  const urls = fs.readFileSync(f, 'utf8').split('\n').filter(l => l.startsWith('/'));
+  const rules = {};
+  const rulesOf = d => {
+    if(rules[d]) return rules[d];
+    const set = new Set();
+    try{ fs.readFileSync(path.join(root, d, '.htaccess'), 'utf8').split('\n').forEach(l => { const m = /^Redirect 301 (\S+)/.exec(l.trim()); if(m) set.add(m[1]); }); }catch(e){}
+    return rules[d] = set;
+  };
+  const st = { 'yayında': 0, 'yönlendiriliyor': 0, '404 kalıyor': 0 };
+  const left = [];
+  urls.forEach(u => {
+    const d = u.split('/')[1];
+    if(fs.existsSync(path.join(root, u))) st['yayında']++;
+    else if(rulesOf(d).has(u)) st['yönlendiriliyor']++;
+    else { st['404 kalıyor']++; left.push(u); }
+  });
+  L.push('', '## 26 Ekim 404 doğrulama listesi (' + urls.length + ' adres)', '- Yayında: ' + st['yayında'], '- Yönlendiriliyor: ' + st['yönlendiriliyor'], '- 404 kalıyor: ' + st['404 kalıyor']);
+  fs.mkdirSync(path.join(root, 'rapor'), { recursive: true });
+  fs.writeFileSync(path.join(root, 'rapor', 'hala-404.txt'), left.join('\n') + '\n');
+  fs.writeFileSync(path.join(root, 'rapor', 'noindex-raporu.md'), L.join('\n') + '\n');
+  console.log('::notice::404 listesi ' + urls.length + ': yayında ' + st['yayında'] + ', yönlendirilen ' + st['yönlendiriliyor'] + ', 404 kalan ' + st['404 kalıyor']);
+})();
 console.log(L.join('\n'));
 [`Toplam ${all.length}, indekslenebilir ${idx.length}, noindex ${noi.length}`,
  `Korunan ${prot.size}: sitede ${protExist.length} (noindex ${protNoindex.length}), yönlendirilen ${protRedirected.length}, kayıp ${protGone.length}`,

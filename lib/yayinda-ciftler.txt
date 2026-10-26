@@ -13,6 +13,7 @@ ac10|x21	acer-nitro-gaming-headset-ii-nhw20-vs-tune-510bt-dfc400fbe01f.html
 x15|x4	acer-nitro-lite-16-vs-casper-excalibur-g870-1362-bfb0x-b-a05431f5122b.html
 x15|y24	acer-nitro-lite-16-vs-casper-nirvana-x500-5ec1ee51e12c.html
 trend_2026090531|y20	acer-nitro-v-15-anv15-52a7-vs-huawei-matebook-d-14-2024-09f6b74c6e92.html
+acer-nitro-v15-nh-qz7ey-005-vs-dell-vostro-3520-n2062pvnb3520u-56889dc1cc18.html
 amazon_20260924_014|amazon_20260924_025	acer-nitro-v15-nh-qz7ey-005-vs-hp-hyperx-omen-96a38f9654d5.html
 amazon_20260924_014|amazon_20260924_036	acer-nitro-v15-nh-qz7ey-005-vs-lenovo-loq-15ahp10-a235ddfe6637.html
 amazon_20260924_014|amazon_20260924_032	acer-nitro-v15-nh-qz7ey-005-vs-lenovo-thinkbook-16p-g6-iax-ba234b9ee8c4.html
@@ -350,6 +351,7 @@ apple-iphone-se-2020|huawei-p30	apple-iphone-se-2020-vs-huawei-p30-f20f6e7c1deb.
 apple-iphone-se-2020|huawei-p30-pro	apple-iphone-se-2020-vs-huawei-p30-pro-eac8d6b50041.html
 apple-iphone-se-2020|poco-f5	apple-iphone-se-2020-vs-poco-f5-8e9b8f2e8cfa.html
 apple-iphone-se-2020|xiaomi-11t-pro	apple-iphone-se-2020-vs-xiaomi-11t-pro-a108f832be6b.html
+trend_2026090529|x12	apple-macbook-air-13-6-m4-mw0w3tu-vs-asus-vivobook-15-x1504va-nj009w-73ba2681a4d7.html
 trend_2026090529|y20	apple-macbook-air-13-6-m4-mw0w3tu-vs-huawei-matebook-d-14-2024-d3640addc97e.html
 amazon_20260924_latest_007|amazon_20260924_latest_026	apple-macbook-air-m2-13-6-vs-gameraider-flux-gr16-bc723ceecf64.html
 amazon_20260924_latest_007|trend_2026090514	apple-macbook-air-m2-13-6-vs-lenovo-loq-15irx10-83je01betr-825e8925a99a.html
@@ -362,6 +364,7 @@ amazon_20260924_005|amazon_20260924_latest_011	apple-macbook-air-m5-15-3-vs-dell
 amazon_20260924_005|trend_2026090564	apple-macbook-air-m5-15-3-vs-game-garaj-slayer-r9m3d-xl-5070-c3-43389a259be6.html
 amazon_20260924_005|amazon_20260924_036	apple-macbook-air-m5-15-3-vs-lenovo-loq-15ahp10-6104fe8cc298.html
 amazon_20260924_005|amazon_20260924_019	apple-macbook-air-m5-15-3-vs-msi-prestige-16-ai-c3mg-039tr-d0038d5d3e93.html
+p_1787255489051|y16	apple-macbook-neo-13-vs-dell-xps-13-9340-8ced39565599.html
 p_1787255489051|trend_2026090530	apple-macbook-neo-13-vs-lenovo-thinkbook-16p-g6-21u00014tx-49b94a042b8a.html
 p_2026090501|trend_2026090564	apple-macbook-pro-14-m5-vs-game-garaj-slayer-r9m3d-xl-5070-c3-1e9658f14445.html
 p_2026090501|trend_2026090508	apple-macbook-pro-14-m5-vs-hp-omen-16-am0044nt-cd8m2ea-7f8ae98b120f.html
@@ -550,6 +553,7 @@ comp_20260924_12|y19	asus-tuf-gaming-a16-fa607nuq-rl071-vs-msi-modern-14-5b012b1
 comp_20260924_02|trend_2026090561	asus-tuf-gaming-a16-fa608um-rv130-vs-acer-nitro-v-16-anv16-71-751z-nh-q-1057bfbcfda9.html
 comp_20260924_02|trend_2026090529	asus-tuf-gaming-a16-fa608um-rv130-vs-apple-macbook-air-13-6-m4-mw0w3tu-b563688b9a47.html
 comp_20260924_02|comp_20260924_12	asus-tuf-gaming-a16-fa608um-rv130-vs-asus-tuf-gaming-a16-fa607nuq-rl071-87efaf4f3907.html
+comp_20260924_02|comp_20260924_11	asus-tuf-gaming-a16-fa608um-rv130-vs-dell-pro-15-essential-pv15250-rplu-9a4f977b6ae5.html
 comp_20260924_01|trend_2026090502	asus-tuf-gaming-a16-fa608um-rv131-vs-asus-zenbook-14-oled-ux3405-719c71d2c648.html
 comp_20260924_01|trend_2026090520	asus-tuf-gaming-a16-fa608um-rv131-vs-lenovo-loq-essential-15irx11-83sc0-d436a0d91b27.html
 amazon_20260924_024|comp_20260924_12	asus-tuf-gaming-f16-fx607vjb-rl279-vs-asus-tuf-gaming-a16-fa607nuq-rl071-f527013d704b.html
@@ -566,6 +570,7 @@ g49|n71	asus-tuf-gaming-h3-vs-jbl-tune-520bt-dc5ddab206b9.html
 g49|p04	asus-tuf-gaming-h3-vs-jbl-tune-530bt-db331603db05.html
 amazon_20260924_028|x14	asus-vivobook-15-x1504va-bq4126w-vs-acer-aspire-5-a515-56g-nx-at1ey-00-8086a855076c.html
 amazon_20260924_028|comp_20260924_09	asus-vivobook-15-x1504va-bq4126w-vs-dell-alienware-16-aurora-ac16250-r-a47790107ca0.html
+amazon_20260924_028|comp_20260924_14	asus-vivobook-15-x1504va-bq4126w-vs-lenovo-ideapad-gaming-3-82sa0065tx-6484ac09f11b.html
 amazon_20260924_028|x37	asus-vivobook-15-x1504va-bq4126w-vs-lenovo-ideapad-slim-3-3ce7ef02e51a.html
 amazon_20260924_028|amazon_20260924_latest_025	asus-vivobook-15-x1504va-bq4126w-vs-lenovo-ideapad-slim-3-82xq00jktx-c48e6a877ed8.html
 amazon_20260924_028|comp_20260924_10	asus-vivobook-15-x1504va-bq4126w-vs-lenovo-ideapad-slim-3-82xq00rwtx-96a074da7847.html
@@ -599,6 +604,7 @@ amazon_20260924_latest_001|trend_2026090502	asus-zenbook-14-ux3405ca-st826w-vs-a
 amazon_20260924_latest_001|amazon_20260924_latest_014	asus-zenbook-14-ux3405ca-st826w-vs-casper-excalibur-g870-1362-cf60a-c-a25f5f95ea3f.html
 amazon_20260924_latest_001|amazon_20260924_latest_027	asus-zenbook-14-ux3405ca-st826w-vs-hp-2n2n7ea-8f3ce94e8445.html
 amazon_20260924_latest_001|amazon_20260924_latest_006	asus-zenbook-14-ux3405ca-st826w-vs-lenovo-ideapad-slim-3-83k1004etr02-e8e19fcd0ce3.html
+asus-zenbook-14-ux3405ca-st826w-vs-lenovo-loq-15ahp10-151ee4a822bb.html
 amazon_20260924_latest_001|amazon_20260924_latest_009	asus-zenbook-14-ux3405ca-st826w-vs-lenovo-loq-15ahp10-f06c87603bc2.html
 amazon_20260924_latest_001|trend_2026090559	asus-zenbook-14-ux3405ca-st826w-vs-lenovo-loq-17irx10-83je012mtr-2d521b4f9a47.html
 amazon_20260924_latest_010|y15	asus-zenbook-a14-ux3407na-qd165w-vs-dell-inspiron-15-3520-ccbe66effec7.html
@@ -769,6 +775,7 @@ amazon_20260924_latest_014|amazon_20260924_latest_028	casper-excalibur-g870-1362
 laptop_20260924_009|p_2026090501	casper-excalibur-g915-356h-ef60a-c-vs-apple-macbook-pro-14-m5-46d24ec320ef.html
 laptop_20260924_009|trend_2026090556	casper-excalibur-g915-356h-ef60a-c-vs-hp-omen-gaming-16-ap00014nta36-73e2f93010a1.html
 laptop_20260924_009|trend_2026090567	casper-excalibur-g915-356h-ef60a-c-vs-lenovo-legion-pro-5-83f3008btr-979956cc74ca.html
+laptop_20260924_009|x16	casper-excalibur-g915-356h-ef60a-c-vs-monster-abra-a5-v21-6-45a2637c0c9f.html
 laptop_20260924_019|y26	casper-excalibur-g915-356h-en60a-c-vs-hp-elitebook-840-g10-244adb6cc457.html
 laptop_20260924_019|trend_2026090555	casper-excalibur-g915-356h-en60a-c-vs-hp-omen-gaming-16-ap00014nta60-62946557dcfb.html
 laptop_20260924_019|trend_2026090569	casper-excalibur-g915-356h-en60a-c-vs-msi-cyborg-17-b13wfkga94-092xtra94-8cefbf17ce76.html
@@ -794,6 +801,7 @@ n32|rz01	cloud-iii-wireless-vs-razer-blackshark-v3-x-hyperspeed-a388894a6971.htm
 n32|x22	cloud-iii-wireless-vs-soundcore-r50i-nc-02368e0afc87.html
 p_new_059|y52	cmf-watch-3-pro-vs-fitbit-charge-6-22392df92ebb.html
 p_new_059|p_new_071	cmf-watch-3-pro-vs-fitbit-inspire-3-78b920b509cb.html
+cmf-watch-pro-vs-redmi-watch-6-607e7677d4e7.html
 p_new_060|p_zeblaze_014	cmf-watch-pro-vs-zeblaze-ares-3-pro-6f2faeacee64.html
 p_new_047|p_new_081	coros-apex-2-pro-vs-garmin-forerunner-55-680ed8418e67.html
 p_new_045|p_new_050	coros-pace-3-vs-polar-ignite-3-46c3ad2b2525.html
@@ -807,6 +815,7 @@ p_new_048|y54	coros-vertix-2s-vs-oneplus-watch-2-10dbb9bf38c3.html
 p_new_048|p_new_057	coros-vertix-2s-vs-ticwatch-pro-5-enduro-4913ec689ec1.html
 g19|g24	corsair-hs80-max-wireless-vs-jbl-quantum-810-wireless-0733adab931d.html
 g19|g25	corsair-hs80-max-wireless-vs-turtle-beach-stealth-600-gen-3-1778f1b42bec.html
+comp_20260924_09|trend_2026090519	dell-alienware-16-aurora-ac16250-r-vs-asus-tuf-gaming-a16-fa607nuq-rl048-ed923e03cc89.html
 comp_20260924_09|trend_2026090532	dell-alienware-16-aurora-ac16250-r-vs-hp-victus-gaming-15-fb3038nt-bx9u9-436e4bf856f2.html
 amazon_20260924_latest_011|p_2026090501	dell-alienware-16x-aurora-ac16251-vs-apple-macbook-pro-14-m5-9dca64b41270.html
 amazon_20260924_latest_011|x17	dell-alienware-16x-aurora-ac16251-vs-casper-excalibur-g915-1362-8n70a-c-19a19f9e667b.html
@@ -822,6 +831,8 @@ p_2026090510|trend_2026090510	dell-precision-5690-vs-lenovo-ideapad-slim-3-15irh
 p_2026090510|trend_2026090539	dell-precision-5690-vs-msi-raider-16-max-hx-b2wi-092tr-b0d83318cbf3.html
 p_2026090510|trend_2026090544	dell-precision-5690-vs-msi-stealth-a16-ai-b3wi-003tr-45ec9643f8e2.html
 amazon_20260924_035|comp_20260924_06	dell-pro-15-essential-pv15250-004-vs-casper-nirvana-c550-1235-8v00t-g-f-7b9c409c01ca.html
+amazon_20260924_035|comp_20260924_05	dell-pro-15-essential-pv15250-004-vs-casper-nirvana-s500-1021-8d50r-g-d4cd22326edd.html
+amazon_20260924_035|amazon_20260924_latest_011	dell-pro-15-essential-pv15250-004-vs-dell-alienware-16x-aurora-ac16251-50cb8ceccfca.html
 amazon_20260924_035|amazon_20260924_latest_023	dell-pro-15-essential-pv15250-004-vs-dell-pro-15-essential-pv15255-a4d105273af6.html
 amazon_20260924_035|comp_20260924_08	dell-pro-15-essential-pv15250-004-vs-hp-hyperx-omen-15-gb0008nt-d2qw4ea-ff1d4056d7c5.html
 amazon_20260924_035|p_2026090511	dell-pro-15-essential-pv15250-004-vs-huawei-matebook-d-16-2024-01959e6b4baa.html
@@ -835,6 +846,7 @@ amazon_20260924_latest_023|trend_2026090519	dell-pro-15-essential-pv15255-vs-asu
 amazon_20260924_latest_023|comp_20260924_06	dell-pro-15-essential-pv15255-vs-casper-nirvana-c550-1235-8v00t-g-f-3ed852d1ba42.html
 amazon_20260924_latest_023|comp_20260924_09	dell-pro-15-essential-pv15255-vs-dell-alienware-16-aurora-ac16250-r-0b112db42ac3.html
 amazon_20260924_latest_023|comp_20260924_08	dell-pro-15-essential-pv15255-vs-hp-hyperx-omen-15-gb0008nt-d2qw4ea-4cbf4f5e7d0f.html
+amazon_20260924_latest_023|comp_20260924_13	dell-pro-15-essential-pv15255-vs-hp-hyperx-omen-15-gb0015nt-d62c9ea-9d7a0b200c0d.html
 amazon_20260924_latest_023|amazon_20260924_latest_025	dell-pro-15-essential-pv15255-vs-lenovo-ideapad-slim-3-82xq00jktx-d5c038b65b9e.html
 amazon_20260924_latest_023|comp_20260924_10	dell-pro-15-essential-pv15255-vs-lenovo-ideapad-slim-3-82xq00rwtx-38defe55dc8d.html
 amazon_20260924_latest_021|trend_2026090531	dell-vostro-3530-n1601pvnb3530u09-vs-acer-nitro-v-15-anv15-52a7-373051c6150e.html
@@ -1002,6 +1014,7 @@ amazon_20260924_latest_026|trend_2026090561	gameraider-flux-gr16-vs-acer-nitro-v
 amazon_20260924_latest_026|laptop_20260924_007	gameraider-flux-gr16-vs-acer-predator-helios-neo-16-ai-phn-21958766b853.html
 amazon_20260924_latest_026|comp_20260924_02	gameraider-flux-gr16-vs-asus-tuf-gaming-a16-fa608um-rv130-be7f21745b99.html
 amazon_20260924_latest_026|comp_20260924_01	gameraider-flux-gr16-vs-asus-tuf-gaming-a16-fa608um-rv131-9c3935f8c22a.html
+amazon_20260924_latest_026|laptop_20260924_009	gameraider-flux-gr16-vs-casper-excalibur-g915-356h-ef60a-c-d4013f4bbf1c.html
 amazon_20260924_latest_026|amazon_20260924_latest_035	gameraider-flux-gr16-vs-msi-katana-17-hx-b14wfk-216xtr-a9e47fc3fbb9.html
 p_garmin_048|p_garmin_049	garmin-approach-s42-vs-garmin-approach-s62-b565bb5a45fe.html
 p_garmin_048|p_garmin_051	garmin-approach-s42-vs-garmin-bounce-e0df8d89d72f.html
@@ -1009,6 +1022,8 @@ p_garmin_049|p_garmin_052	garmin-approach-s62-vs-garmin-bounce-2-b79e04e9c294.ht
 p_garmin_049|p_garmin_051	garmin-approach-s62-vs-garmin-bounce-f9a95f38ca1d.html
 p_garmin_051|p_garmin_052	garmin-bounce-vs-garmin-bounce-2-cfcaafe214d2.html
 p_garmin_047|p_new_024	garmin-descent-g1-vs-amazfit-t-rex-ultra-2-2ab05e303f31.html
+p_garmin_047|p_huawei_2023_huawei_watch_ultimate	garmin-descent-g1-vs-huawei-watch-ultimate-a2921c18de48.html
+p_garmin_047|p_huawei_2023_huawei_watch_ultimate_design	garmin-descent-g1-vs-huawei-watch-ultimate-design-0dd88e257923.html
 p_garmin_047|p_new_011	garmin-descent-g1-vs-samsung-galaxy-watch9-44mm-e600a836fdf4.html
 p_garmin_046|p_garmin_048	garmin-descent-mk2-vs-garmin-approach-s42-74fe35c98690.html
 p_garmin_046|p_garmin_049	garmin-descent-mk2-vs-garmin-approach-s62-e322993bc037.html
@@ -1033,6 +1048,7 @@ p_garmin_025|p_garmin_047	garmin-f-nix-8-vs-garmin-descent-g1-db35d0d578fb.html
 p_garmin_025|p_garmin_037	garmin-f-nix-8-vs-garmin-enduro-2-a880177ac030.html
 p_garmin_025|p_garmin_040	garmin-f-nix-8-vs-garmin-epix-pro-517059a07ad3.html
 p_garmin_025|p_new_040	garmin-f-nix-8-vs-garmin-forerunner-955-solar-f64a86344466.html
+p_garmin_025|p_new_011	garmin-f-nix-8-vs-samsung-galaxy-watch9-44mm-9048003d4e01.html
 p_garmin_026|p_garmin_027	garmin-f-nix-9-vs-garmin-instinct-0ca2bb988c49.html
 p_garmin_026|p_garmin_028	garmin-f-nix-9-vs-garmin-instinct-2-1b85a9dbb667.html
 p_new_019|p_new_038	garmin-fenix-8-vs-garmin-enduro-3-8b41c2a1e1e8.html
@@ -1063,6 +1079,7 @@ p_garmin_008|p_xiaomi_020	garmin-forerunner-745-vs-redmi-watch-3-active-c73be04c
 p_garmin_009|p_garmin_014	garmin-forerunner-945-vs-garmin-v-voactive-5-34797ad418b6.html
 p_garmin_009|p_garmin_016	garmin-forerunner-945-vs-garmin-venu-f758f6dcc291.html
 p_garmin_009|p_xiaomi_020	garmin-forerunner-945-vs-redmi-watch-3-active-8410b040224c.html
+p_garmin_010|p_garmin_014	garmin-forerunner-955-vs-garmin-v-voactive-5-d9419e77aa32.html
 p_garmin_011|p_huawei_2025_huawei_watch_5	garmin-forerunner-965-vs-huawei-watch-5-a9c9d0a5d454.html
 p_garmin_011|p_huawei_2023_huawei_watch_ultimate_design	garmin-forerunner-965-vs-huawei-watch-ultimate-design-69a06ea847bb.html
 p_garmin_011|p_suunto_021	garmin-forerunner-965-vs-suunto-7-dab73142a986.html
@@ -1142,6 +1159,7 @@ y2|y5	google-pixel-8-vs-nothing-phone-2-1af0298b0324.html
 p_1787680633621_69|p_zflip7	google-pixel-9-pro-vs-samsung-galaxy-z-flip7-2e02c6356d6c.html
 p_1787680633621_69|p_zfold7	google-pixel-9-pro-vs-samsung-galaxy-z-fold7-15899b776d40.html
 p_1787680633621_69|p_1787680633621_79	google-pixel-9-pro-vs-xiaomi-14-ultra-815574a7ebc1.html
+p_1787680633621_69|x_17t_pro	google-pixel-9-pro-vs-xiaomi-17t-pro-d942f54b6844.html
 p_1787680633621_68|p_1787680633621_69	google-pixel-9-vs-google-pixel-9-pro-e9ae58a907d8.html
 p_1787680633621_68|p_1787680633621_83	google-pixel-9-vs-oppo-find-x7-ultra-2ae89a1ce3f9.html
 p_1787680633621_68|p_zflip7	google-pixel-9-vs-samsung-galaxy-z-flip7-804194810601.html
@@ -1245,6 +1263,7 @@ p_haylou_015|p_haylou_017	haylou-rs4-max-vs-haylou-watch-s8-c42fa01b3e33.html
 p_haylou_015|p_zeblaze_038	haylou-rs4-max-vs-zeblaze-btalk-3-gps-67ce27f5fe95.html
 p_haylou_007|p_haylou_016	haylou-rs4-plus-vs-haylou-solar-pro-54247e37d842.html
 p_haylou_007|p_mibro_015	haylou-rs4-plus-vs-mibro-fit-b22590e15dd6.html
+p_haylou_007|p_new_078	haylou-rs4-plus-vs-redmi-watch-5-active-93125e7f2764.html
 p_haylou_007|y51	haylou-rs4-plus-vs-xiaomi-smart-band-8-e66179e6b907.html
 p_haylou_007|p_zeblaze_031	haylou-rs4-plus-vs-zeblaze-gts-3-pro-6f24d9a27f55.html
 p_haylou_006|p_haylou_011	haylou-rs4-vs-haylou-solar-lite-184c11a19dfe.html
@@ -1343,6 +1362,8 @@ p17|x21	honor-choice-earbuds-x7-vs-tune-510bt-978928ff1d2e.html
 p_recent_2026_021|p_xiaomi_011	honor-choice-kids-watch-plus-vs-xiaomi-watch-s4-41mm-0c6f560cf40e.html
 p_recent_2026_021|p_zeblaze_007	honor-choice-kids-watch-plus-vs-zeblaze-stratos-3-pro-8e0ed1ad8300.html
 p_recent_2026_020|p_xiaomi_019	honor-choice-watch-2-pro-vs-redmi-watch-3-7d5d547ef739.html
+honor-choice-watch-2-pro-vs-redmi-watch-6-d8588e052354.html
+p_recent_2026_020|p_zeblaze_014	honor-choice-watch-2-pro-vs-zeblaze-ares-3-pro-2b44bd5e753e.html
 p_recent_2026_020|p_zeblaze_058	honor-choice-watch-2-pro-vs-zeblaze-vibe-7-pro-e32f28815862.html
 honor-magic-v6|iphone-17e-2026	honor-magic-v6-vs-iphone-17e-f04c46e8dd3e.html
 honor-magic-v6|u1	honor-magic-v6-vs-iphone-18-pro-4a466b656d88.html
@@ -1370,6 +1391,7 @@ hon_pad20_paper|lenovo-m11	honor-pad-20-paperlike-edition-vs-lenovo-tab-m11-3339
 hon_pad20_paper|ree_a11s	honor-pad-20-paperlike-edition-vs-reeder-a11s-1f4e6085ca99.html
 hon_pad20_paper|x28	honor-pad-20-paperlike-edition-vs-samsung-galaxy-tab-s9-fe-ba3e461ae5b9.html
 hon_pad20_pro_paper|t21	honor-pad-20-pro-paperlike-edition-vs-apple-ipad-11-a16-1376c0598375.html
+hon_pad20_pro_paper|t33	honor-pad-20-pro-paperlike-edition-vs-honor-pad-v9-ad1dd12ed35e.html
 hon_pad20_pro_paper|huawei-pro122-2025	honor-pad-20-pro-paperlike-edition-vs-huawei-matepad-pro-12-2-2025-40bf2c54f070.html
 hon_pad20_pro_paper|ree_a11s	honor-pad-20-pro-paperlike-edition-vs-reeder-a11s-51f00b84d3db.html
 hon_pad20_pro_paper|x28	honor-pad-20-pro-paperlike-edition-vs-samsung-galaxy-tab-s9-fe-48b33cd3d64c.html
@@ -1440,6 +1462,7 @@ amazon_20260924_latest_027|x10	hp-2n2n7ea-vs-hp-pavilion-15-eg2002nt-5862672b2fb
 amazon_20260924_latest_027|y25	hp-2n2n7ea-vs-monster-tulpar-t5-v22-1-ecc44d8ee009.html
 amazon_20260924_029|comp_20260924_20	hp-ai-15-fd2026nta70-d51e0eaa70-vs-apple-macbook-air-m2-15-3-mqkp3tu-3a5e4d17af0a.html
 amazon_20260924_029|amazon_20260924_035	hp-ai-15-fd2026nta70-d51e0eaa70-vs-dell-pro-15-essential-pv15250-004-a5952802dab5.html
+amazon_20260924_029|amazon_20260924_latest_023	hp-ai-15-fd2026nta70-d51e0eaa70-vs-dell-pro-15-essential-pv15255-ebd0c30b6a8e.html
 amazon_20260924_029|amazon_20260924_latest_022	hp-ai-15-fd2026nta70-d51e0eaa70-vs-dell-vostro-3530-n3404pvnb3530u-89356012d068.html
 amazon_20260924_029|comp_20260924_08	hp-ai-15-fd2026nta70-d51e0eaa70-vs-hp-hyperx-omen-15-gb0008nt-d2qw4ea-7f1f1f3d59f5.html
 amazon_20260924_029|trend_2026090527	hp-ai-15-fd2026nta70-d51e0eaa70-vs-huawei-matebook-14-2024-53014nbf-f84ef5e44d68.html
@@ -1458,6 +1481,7 @@ comp_20260924_13|trend_2026090559	hp-hyperx-omen-15-gb0015nt-d62c9ea-vs-lenovo-l
 comp_20260924_13|y25	hp-hyperx-omen-15-gb0015nt-d62c9ea-vs-monster-tulpar-t5-v22-1-e9e6440f8fb8.html
 comp_20260924_13|y19	hp-hyperx-omen-15-gb0015nt-d62c9ea-vs-msi-modern-14-c2ea8ebcf02f.html
 amazon_20260924_025|laptop_20260924_016	hp-hyperx-omen-vs-erazer-beast-16-x10-md600094-556850d58d11.html
+amazon_20260924_025|amazon_20260924_latest_009	hp-hyperx-omen-vs-lenovo-loq-15ahp10-665309f0eb96.html
 amazon_20260924_025|amazon_20260924_034	hp-hyperx-omen-vs-lenovo-thinkbook-14-g7-21mr0095tr-419dec784677.html
 amazon_20260924_025|trend_2026090549	hp-hyperx-omen-vs-lenovo-thinkbook-16p-g6-iax-21r000-e3b799f833a7.html
 amazon_20260924_025|amazon_20260924_latest_032	hp-hyperx-omen-vs-msi-vector-16-hx-ai-4ed074b382f8.html
@@ -1774,6 +1798,7 @@ n7|tv31	iffalcon-65u95a-vs-onvo-65vq90f3ua-553edeed41e0.html
 n7|tv41	iffalcon-65u95a-vs-samsung-50u8000f-fc8c06ff59e2.html
 n7|tv50	iffalcon-65u95a-vs-tcl-55c6k-41443856cf5b.html
 n7|tv46	iffalcon-65u95a-vs-tcl-55p8k-ca6f55707992.html
+n7|tv35	iffalcon-65u95a-vs-tcl-55q6c-0bdb7082cf78.html
 n7|n8	iffalcon-65u95a-vs-tcl-65c6k-390637a03c75.html
 n7|tvsearch062	iffalcon-65u95a-vs-xiaomi-tv-a-pro-65-2026-4762e2577e58.html
 tv13|tvpop035	iffalcon-75u95a-vs-philips-55mled810-1b990289c01d.html
@@ -1804,6 +1829,7 @@ trend02|y40	insta360-x6-vs-canon-powershot-g7x-mark-iii-f2602420913c.html
 n1|y1	iphone-11-vs-apple-iphone-se-2022-18ca443d928a.html
 n1|n2	iphone-11-vs-iphone-13-74435c40ec63.html
 n1|n6	iphone-11-vs-iphone-17-0ecaf747aaef.html
+h10|huawei-nova-14-pro	iphone-12-vs-huawei-nova-14-pro-4914461b9942.html
 h10|huawei-pura-90s-pro	iphone-12-vs-huawei-pura-90s-pro-e42ae02c0056.html
 h10|n1	iphone-12-vs-iphone-11-a02507339769.html
 h10|n2	iphone-12-vs-iphone-13-b9b5407e025c.html
@@ -1869,6 +1895,7 @@ u1|x_17t_pro	iphone-18-pro-vs-xiaomi-17t-pro-0cee2a94ccad.html
 p19|rz15	jabra-evolve2-85-usb-a-vs-razer-hammerhead-pro-hyperspeed-57550d60a2e2.html
 p11|rz02	jbl-endurance-peak-4-vs-razer-blackshark-v3-x-hyperspeed-f-0299cd49d911.html
 n59|rz07	jbl-live-770nc-vs-razer-barracuda-983d01add6f0.html
+n59|rz04	jbl-live-770nc-vs-razer-blackshark-v2-hyperspeed-0e1dce3ed46e.html
 n59|rz08	jbl-live-770nc-vs-razer-kraken-v4-6e00570df94a.html
 n59|n68	jbl-live-770nc-vs-shokz-openfit-air-5480894c8e28.html
 g45|g49	jbl-quantum-100m2-vs-asus-tuf-gaming-h3-707b367e71d6.html
@@ -1929,9 +1956,12 @@ amazon_20260924_017|trend_2026090532	lenovo-ideapad-slim-3-15amn8-vs-hp-victus-g
 amazon_20260924_017|comp_20260924_14	lenovo-ideapad-slim-3-15amn8-vs-lenovo-ideapad-gaming-3-82sa0065tx-077a1b9f34e6.html
 amazon_20260924_017|comp_20260924_10	lenovo-ideapad-slim-3-15amn8-vs-lenovo-ideapad-slim-3-82xq00rwtx-11e59107a891.html
 amazon_20260924_017|amazon_20260924_latest_013	lenovo-ideapad-slim-3-15amn8-vs-lenovo-ideapad-slim-3-f21087b565db.html
+amazon_20260924_001|laptop_20260924_006	lenovo-ideapad-slim-3-15arp10-vs-acer-predator-helios-neo-16-ai-phn-af8ba42e0209.html
+amazon_20260924_001|amazon_20260924_latest_012	lenovo-ideapad-slim-3-15arp10-vs-asus-expertbook-p5-p5405csa-i51651-7a5ba4284cd9.html
 amazon_20260924_001|amazon_20260924_004	lenovo-ideapad-slim-3-15arp10-vs-asus-vivobook-go-15-e1504fa-bq4892-01dfa1ca8777.html
 amazon_20260924_001|amazon_20260924_025	lenovo-ideapad-slim-3-15arp10-vs-hp-hyperx-omen-e75897b2400b.html
 amazon_20260924_001|comp_20260924_15	lenovo-ideapad-slim-3-15arp10-vs-lenovo-ideapad-gaming-3-82sa0063tx-13f3f4451ca3.html
+lenovo-ideapad-slim-3-15arp10-vs-lenovo-loq-15ahp10-2336524940f2.html
 amazon_20260924_001|amazon_20260924_002	lenovo-ideapad-slim-3-15arp10-vs-lenovo-loq-15irx10-860484497c43.html
 amazon_20260924_001|amazon_20260924_031	lenovo-ideapad-slim-3-15arp10-vs-lenovo-v15-83a100hxtr-974962496ab3.html
 amazon_20260924_001|x16	lenovo-ideapad-slim-3-15arp10-vs-monster-abra-a5-v21-6-f3660e7233f1.html
@@ -1943,6 +1973,7 @@ amazon_20260924_001|amazon_20260924_latest_028	lenovo-ideapad-slim-3-15arp10-vs-
 amazon_20260924_006|trend_2026090531	lenovo-ideapad-slim-3-15irh10-vs-acer-nitro-v-15-anv15-52a7-7abaa13b1bef.html
 amazon_20260924_006|p_2026090501	lenovo-ideapad-slim-3-15irh10-vs-apple-macbook-pro-14-m5-3d0a482c60d5.html
 amazon_20260924_006|amazon_20260924_015	lenovo-ideapad-slim-3-15irh10-vs-asus-expertbook-p5-p5405csa-i7321t-bc25af79c5cb.html
+lenovo-ideapad-slim-3-15irh10-vs-dell-alienware-16x-aurora-ac16251-fc0f9e5b3553.html
 amazon_20260924_006|trend_2026090505	lenovo-ideapad-slim-3-15irh10-vs-lenovo-loq-15irx10-83je00k1tr-deb74a0258a6.html
 amazon_20260924_006|trend_2026090552	lenovo-ideapad-slim-3-15irh10-vs-lenovo-thinkbook-16p-g6-21u00013tx-c69a6aefde90.html
 trend_2026090510|trend_2026090551	lenovo-ideapad-slim-3-15irh10-vs-lenovo-thinkbook-16p-g6-iax-21r000-0a0650330654.html
@@ -1952,11 +1983,14 @@ amazon_20260924_006|monster_20260908	lenovo-ideapad-slim-3-15irh10-vs-monster-tu
 amazon_20260924_006|amazon_20260924_latest_019	lenovo-ideapad-slim-3-15irh10-vs-msi-cyborg-15-b13wfkg-489tr-221a9de19b4e.html
 trend_2026090510|trend_2026090536	lenovo-ideapad-slim-3-15irh10-vs-msi-raider-18-max-hx-a2wi-1040tr-357c15e7de01.html
 trend_2026090510|trend_2026090544	lenovo-ideapad-slim-3-15irh10-vs-msi-stealth-a16-ai-b3wi-003tr-95116bf8ae1c.html
+lenovo-ideapad-slim-3-15irh10-vs-msi-vector-16-hx-ai-a2xwhg-091xtr-e0eb437afc78.html
 lenovo-ideapad-slim-3-16irh10-83k2-vs-acer-nitro-v15-nh-qz7ey-005-50b75126e627.html
 amazon_20260924_026|trend_2026090503	lenovo-ideapad-slim-3-16irh10-83k2-vs-asus-tuf-gaming-a16-2025-fa608um-23a3b18c6063.html
+amazon_20260924_026|comp_20260924_02	lenovo-ideapad-slim-3-16irh10-83k2-vs-asus-tuf-gaming-a16-fa608um-rv130-5800e4e17780.html
 amazon_20260924_026|comp_20260924_01	lenovo-ideapad-slim-3-16irh10-83k2-vs-asus-tuf-gaming-a16-fa608um-rv131-15630658e074.html
 amazon_20260924_026|amazon_20260924_028	lenovo-ideapad-slim-3-16irh10-83k2-vs-asus-vivobook-15-x1504va-bq4126w-ba91d8dd7b6d.html
 amazon_20260924_026|comp_20260924_11	lenovo-ideapad-slim-3-16irh10-83k2-vs-dell-pro-15-essential-pv15250-rplu-9dc32f77a554.html
+lenovo-ideapad-slim-3-16irh10-83k2-vs-lenovo-ideapad-slim-3-82xq00jktx-248ba6d0578f.html
 amazon_20260924_026|laptop_20260924_010	lenovo-ideapad-slim-3-16irh10-83k2-vs-lenovo-thinkbook-16p-g6-iax-21r000-8844a860c415.html
 amazon_20260924_026|amazon_20260924_031	lenovo-ideapad-slim-3-16irh10-83k2-vs-lenovo-v15-83a100hxtr-74df1b4dfb40.html
 amazon_20260924_026|amazon_20260924_latest_002	lenovo-ideapad-slim-3-16irh10-83k2-vs-msi-crosshair-a16-hx-e8wgxk-058xtr-cfde247eea8b.html
@@ -1966,6 +2000,7 @@ amazon_20260924_003|amazon_20260924_014	lenovo-ideapad-slim-3-16irh10-vs-acer-ni
 amazon_20260924_003|laptop_20260924_007	lenovo-ideapad-slim-3-16irh10-vs-acer-predator-helios-neo-16-ai-phn-2a1d638aabb7.html
 amazon_20260924_003|amazon_20260924_latest_007	lenovo-ideapad-slim-3-16irh10-vs-apple-macbook-air-m2-13-6-8e23b396c172.html
 amazon_20260924_003|comp_20260924_02	lenovo-ideapad-slim-3-16irh10-vs-asus-tuf-gaming-a16-fa608um-rv130-ee6e14653cd2.html
+amazon_20260924_003|comp_20260924_11	lenovo-ideapad-slim-3-16irh10-vs-dell-pro-15-essential-pv15250-rplu-433702151bc5.html
 amazon_20260924_003|amazon_20260924_latest_026	lenovo-ideapad-slim-3-16irh10-vs-gameraider-flux-gr16-e0f6608d074d.html
 amazon_20260924_003|amazon_20260924_latest_030	lenovo-ideapad-slim-3-16irh10-vs-lenovo-ideapad-slim-3-16ddb3e765a1.html
 amazon_20260924_003|amazon_20260924_032	lenovo-ideapad-slim-3-16irh10-vs-lenovo-thinkbook-16p-g6-iax-b92a933abc26.html
@@ -1973,6 +2008,7 @@ amazon_20260924_003|y22	lenovo-ideapad-slim-3-16irh10-vs-samsung-galaxy-book4-15
 amazon_20260924_latest_025|y15	lenovo-ideapad-slim-3-82xq00jktx-vs-dell-inspiron-15-3520-a0dc09fa6203.html
 amazon_20260924_latest_025|comp_20260924_14	lenovo-ideapad-slim-3-82xq00jktx-vs-lenovo-ideapad-gaming-3-82sa0065tx-ea039c7dd156.html
 amazon_20260924_latest_025|comp_20260924_10	lenovo-ideapad-slim-3-82xq00jktx-vs-lenovo-ideapad-slim-3-82xq00rwtx-639d230ff67a.html
+amazon_20260924_latest_025|comp_20260924_07	lenovo-ideapad-slim-3-82xq00jktx-vs-msi-cyborg-15-a13ve-2055tr-ff6c447021d3.html
 comp_20260924_10|comp_20260924_13	lenovo-ideapad-slim-3-82xq00rwtx-vs-hp-hyperx-omen-15-gb0015nt-d62c9ea-5b9c252c0e6e.html
 comp_20260924_10|comp_20260924_14	lenovo-ideapad-slim-3-82xq00rwtx-vs-lenovo-ideapad-gaming-3-82sa0065tx-ef3ccfb46518.html
 amazon_20260924_latest_006|comp_20260924_12	lenovo-ideapad-slim-3-83k1004etr02-vs-asus-tuf-gaming-a16-fa607nuq-rl071-08886c4c6673.html
@@ -1994,6 +2030,7 @@ amazon_20260924_011|comp_20260924_13	lenovo-ideapad-slim-3-vs-hp-hyperx-omen-15-
 amazon_20260924_latest_013|trend_2026090558	lenovo-ideapad-slim-3-vs-hp-omen-gaming-16-ap00014nta16-a2686c87b1d6.html
 amazon_20260924_011|y20	lenovo-ideapad-slim-3-vs-huawei-matebook-d-14-2024-62b00313b1a0.html
 amazon_20260924_011|amazon_20260924_026	lenovo-ideapad-slim-3-vs-lenovo-ideapad-slim-3-16irh10-83k2-4d3482673334.html
+lenovo-ideapad-slim-3-vs-lenovo-loq-15ahp10-3269a7fab279.html
 amazon_20260924_011|amazon_20260924_020	lenovo-ideapad-slim-3-vs-lenovo-loq-15arp10e-57936bc2bfb0.html
 amazon_20260924_011|trend_2026090559	lenovo-ideapad-slim-3-vs-lenovo-loq-17irx10-83je012mtr-e002e9a2b82a.html
 amazon_20260924_latest_013|y18	lenovo-ideapad-slim-3-vs-lenovo-thinkpad-e14-gen-5-21jk0005-d9cf29d97d07.html
@@ -2003,6 +2040,7 @@ amazon_20260924_011|amazon_20260924_latest_005	lenovo-ideapad-slim-3-vs-msi-cybo
 laptop_20260924_004|laptop_20260924_009	lenovo-legion-5-15iph11-83rw0004tr-vs-casper-excalibur-g915-356h-ef60a-c-60e346a0e83c.html
 laptop_20260924_004|trend_2026090573	lenovo-legion-5-15iph11-83rw0004tr-vs-hp-omen-gaming-16-ap00014nta64-af91e1bd9b2b.html
 y17|y23	lenovo-legion-5-pro-vs-lg-gram-16-c42603cac3d0.html
+p_2026090507|trend_2026090531	lenovo-legion-pro-5-16adr10-83lt00-vs-acer-nitro-v-15-anv15-52a7-f12c91607e1e.html
 p_2026090507|trend_2026090575	lenovo-legion-pro-5-16adr10-83lt00-vs-acer-predator-helios-neo-16-ai-phn-d48622349e48.html
 p_2026090507|trend_2026090557	lenovo-legion-pro-5-16adr10-83lt00-vs-hp-omen-gaming-16-ap00014nta40-e5f4dea4ff98.html
 p_2026090507|trend_2026090511	lenovo-legion-pro-5-16adr10-83lt00-vs-msi-thin-15-b13ve-efdf1f633578.html
@@ -2016,6 +2054,7 @@ amazon_20260924_016|trend_2026090515	lenovo-legion-pro-5-16adr10-vs-msi-thin-15-
 trend_2026090563|x12	lenovo-loq-15ahp10-83jg00bmtr-vs-asus-vivobook-15-x1504va-nj009w-277f2e58d78d.html
 trend_2026090563|y22	lenovo-loq-15ahp10-83jg00bmtr-vs-samsung-galaxy-book4-15-6-np750xgj-462c353381d8.html
 amazon_20260924_latest_009|y21	lenovo-loq-15ahp10-vs-apple-macbook-pro-16-m3-pro-ab74cee88508.html
+lenovo-loq-15ahp10-vs-asus-expertbook-p5-p5405csa-i51651-0fbcf5fcb097.html
 amazon_20260924_latest_029|trend_2026090522	lenovo-loq-15ahp10-vs-asus-rog-strix-g16-g614ph-rv036-a714a5ccd04a.html
 amazon_20260924_latest_029|comp_20260924_12	lenovo-loq-15ahp10-vs-asus-tuf-gaming-a16-fa607nuq-rl071-f54f3d2ff3ed.html
 amazon_20260924_latest_009|comp_20260924_01	lenovo-loq-15ahp10-vs-asus-tuf-gaming-a16-fa608um-rv131-952e449f8d38.html
@@ -2032,7 +2071,9 @@ amazon_20260924_latest_018|x10	lenovo-loq-15ahp10-vs-hp-pavilion-15-eg2002nt-f17
 amazon_20260924_latest_029|trend_2026090517	lenovo-loq-15ahp10-vs-hp-victus-gaming-15-fa2021nt-bv7v8-0cc3400a7440.html
 amazon_20260924_latest_009|amazon_20260924_latest_013	lenovo-loq-15ahp10-vs-lenovo-ideapad-slim-3-5e9b0e08fc77.html
 amazon_20260924_latest_018|laptop_20260924_004	lenovo-loq-15ahp10-vs-lenovo-legion-5-15iph11-83rw0004tr-09d925e4732a.html
+lenovo-loq-15ahp10-vs-lenovo-legion-5-pro-bad627aef0af.html
 amazon_20260924_latest_029|trend_2026090526	lenovo-loq-15ahp10-vs-lenovo-loq-15irx10-83je012ltr-31cf2dffbada.html
+lenovo-loq-15ahp10-vs-lenovo-thinkbook-16p-g6-iax-21r000-9a8d65d067b0.html
 amazon_20260924_036|y18	lenovo-loq-15ahp10-vs-lenovo-thinkpad-e14-gen-5-21jk0005-9ea290954c2d.html
 amazon_20260924_latest_029|h15	lenovo-loq-15ahp10-vs-macbook-pro-14-m1-pro-cb7526c69d4f.html
 amazon_20260924_latest_018|y25	lenovo-loq-15ahp10-vs-monster-tulpar-t5-v22-1-58c501b245ca.html
@@ -2045,6 +2086,8 @@ trend_2026090521|x14	lenovo-loq-15arp10e-83s0002vtr-vs-acer-aspire-5-a515-56g-nx
 trend_2026090521|x11	lenovo-loq-15arp10e-83s0002vtr-vs-hp-omen-16-a3985e6121ae.html
 trend_2026090521|x37	lenovo-loq-15arp10e-83s0002vtr-vs-lenovo-ideapad-slim-3-b532049dccce.html
 trend_2026090521|trend_2026090559	lenovo-loq-15arp10e-83s0002vtr-vs-lenovo-loq-17irx10-83je012mtr-a8d735488376.html
+amazon_20260924_020|comp_20260924_02	lenovo-loq-15arp10e-vs-asus-tuf-gaming-a16-fa608um-rv130-b1eafb2ee40b.html
+amazon_20260924_020|amazon_20260924_latest_014	lenovo-loq-15arp10e-vs-casper-excalibur-g870-1362-cf60a-c-054a9211d319.html
 amazon_20260924_020|amazon_20260924_035	lenovo-loq-15arp10e-vs-dell-pro-15-essential-pv15250-004-4f94329c7db4.html
 amazon_20260924_020|comp_20260924_11	lenovo-loq-15arp10e-vs-dell-pro-15-essential-pv15250-rplu-c2d34c84ec9e.html
 amazon_20260924_020|trend_2026090518	lenovo-loq-15arp10e-vs-hp-hyperx-omen-15-15-ga0005nt-d2qd-959910db1d19.html
@@ -2053,6 +2096,7 @@ amazon_20260924_020|trend_2026090520	lenovo-loq-15arp10e-vs-lenovo-loq-essential
 amazon_20260924_020|laptop_20260924_010	lenovo-loq-15arp10e-vs-lenovo-thinkbook-16p-g6-iax-21r000-799b07c6393d.html
 amazon_20260924_020|h14	lenovo-loq-15arp10e-vs-macbook-air-m2-d066815efd50.html
 trend_2026090525|trend_2026090527	lenovo-loq-15irx10-83je00entr-k7-vs-huawei-matebook-14-2024-53014nbf-9a95f9d9eee3.html
+lenovo-loq-15irx10-83je012ltr-vs-dell-pro-max-18-plus-d7fa86f5515b.html
 trend_2026090514|trend_2026090524	lenovo-loq-15irx10-83je01betr-vs-asus-tuf-gaming-f16-fx608jmr-rv078-f01a67de2fc8.html
 trend_2026090514|trend_2026090526	lenovo-loq-15irx10-83je01betr-vs-lenovo-loq-15irx10-83je012ltr-23ae0b8860b9.html
 amazon_20260924_002|amazon_20260924_latest_012	lenovo-loq-15irx10-vs-asus-expertbook-p5-p5405csa-i51651-b93647db4c92.html
@@ -2075,7 +2119,10 @@ lenovo-tab-m10-plus-gen-2|lenovo-yoga-smart-tab	lenovo-tab-m10-plus-gen-2-vs-len
 x30|y44	lenovo-tab-m10-plus-vs-apple-ipad-10-nesil-afb753dc8268.html
 x30|y48	lenovo-tab-m10-plus-vs-huawei-matepad-pro-13-2-651b83bcb153.html
 x30|xia_redmipro	lenovo-tab-m10-plus-vs-xiaomi-redmi-pad-pro-4c3acc729552.html
+lenovo-m11|t21	lenovo-tab-m11-vs-apple-ipad-11-a16-555404f261d7.html
+lenovo-m11|n9	lenovo-tab-m11-vs-honor-magicpad-4-db2c52a33a5c.html
 lenovo-m11|ree_a11s	lenovo-tab-m11-vs-reeder-a11s-3d62ce06bc28.html
+lenovo-m11|t25	lenovo-tab-m11-vs-samsung-galaxy-tab-s11-7f7b59ce05a6.html
 lenovo-tab-m8-4th-gen|lenovo-yoga-smart-tab	lenovo-tab-m8-4th-gen-vs-lenovo-yoga-smart-tab-230d1b0f0c6d.html
 lenovo-tab-p11-plus|xiaomi-pad-4	lenovo-tab-p11-plus-vs-xiaomi-pad-4-a9d158f7ef63.html
 lenovo-tab-p11|lenovo-tab-p11-plus	lenovo-tab-p11-vs-lenovo-tab-p11-plus-49bbf95daf30.html
@@ -2092,12 +2139,14 @@ trend_2026090530|y24	lenovo-thinkbook-16p-g6-21u00014tx-vs-casper-nirvana-x500-9
 trend_2026090550|trend_2026090554	lenovo-thinkbook-16p-g6-iax-21r000-vs-hp-omen-gaming-16-ap00014nta56-082fd66cd567.html
 trend_2026090551|trend_2026090554	lenovo-thinkbook-16p-g6-iax-21r000-vs-hp-omen-gaming-16-ap00014nta56-5ec61699f3e5.html
 laptop_20260924_010|p_2026090509	lenovo-thinkbook-16p-g6-iax-21r000-vs-hp-victus-16-s0065nt-f6beb2dbc843.html
+laptop_20260924_010|y20	lenovo-thinkbook-16p-g6-iax-21r000-vs-huawei-matebook-d-14-2024-f5793f1692d3.html
 trend_2026090551|trend_2026090568	lenovo-thinkbook-16p-g6-iax-21r000-vs-lenovo-legion-5-15iax10-83f0008btr-a53179f6228c.html
 trend_2026090548|trend_2026090571	lenovo-thinkbook-16p-g6-iax-21r000-vs-msi-cyborg-17-b13wfkg-091xtr-k33-988dc50880f2.html
 trend_2026090548|trend_2026090570	lenovo-thinkbook-16p-g6-iax-21r000-vs-msi-cyborg-17-b13wfkg-091xtr-k34-b6834b2bfeec.html
 amazon_20260924_032|amazon_20260924_latest_007	lenovo-thinkbook-16p-g6-iax-vs-apple-macbook-air-m2-13-6-8b410762f070.html
 amazon_20260924_032|comp_20260924_11	lenovo-thinkbook-16p-g6-iax-vs-dell-pro-15-essential-pv15250-rplu-99b90338ac49.html
 amazon_20260924_032|y20	lenovo-thinkbook-16p-g6-iax-vs-huawei-matebook-d-14-2024-f638b2a22c0f.html
+amazon_20260924_032|amazon_20260924_037	lenovo-thinkbook-16p-g6-iax-vs-lenovo-ideapad-slim-3-15abr8-82xm0-68dd1470909d.html
 amazon_20260924_032|laptop_20260924_010	lenovo-thinkbook-16p-g6-iax-vs-lenovo-thinkbook-16p-g6-iax-21r000-2ad13b18de0a.html
 amazon_20260924_latest_031|trend_2026090574	lenovo-thinkpad-e16-21sr006rtx-vs-asus-rog-strix-g16-g615pr-feddf558889d.html
 amazon_20260924_latest_031|trend_2026090549	lenovo-thinkpad-e16-21sr006rtx-vs-lenovo-thinkbook-16p-g6-iax-21r000-4caca8b494dd.html
@@ -2110,6 +2159,7 @@ amazon_20260924_012|trend_2026090542	lenovo-thinkpad-l13-2in1-21lm0037t-vs-caspe
 amazon_20260924_012|laptop_20260924_004	lenovo-thinkpad-l13-2in1-21lm0037t-vs-lenovo-legion-5-15iph11-83rw0004tr-53c993fd1938.html
 amazon_20260924_012|amazon_20260924_016	lenovo-thinkpad-l13-2in1-21lm0037t-vs-lenovo-legion-pro-5-16adr10-5637fa974fe5.html
 amazon_20260924_012|amazon_20260924_latest_033	lenovo-thinkpad-l13-2in1-21lm0037t-vs-msi-katana-17-hx-b14wgk-048xtr-7cdae0e5540c.html
+amazon_20260924_031|comp_20260924_02	lenovo-v15-83a100hxtr-vs-asus-tuf-gaming-a16-fa608um-rv130-2f3b6b75e478.html
 amazon_20260924_031|comp_20260924_01	lenovo-v15-83a100hxtr-vs-asus-tuf-gaming-a16-fa608um-rv131-88fb3da9fbbd.html
 amazon_20260924_031|amazon_20260924_latest_009	lenovo-v15-83a100hxtr-vs-lenovo-loq-15ahp10-c315b8fff593.html
 amazon_20260924_031|trend_2026090505	lenovo-v15-83a100hxtr-vs-lenovo-loq-15irx10-83je00k1tr-2560be977541.html
@@ -2125,8 +2175,10 @@ trend_2026090560|y17	lenovo-yoga-pro-7-82y7004ltx-vs-lenovo-legion-5-pro-37d0297
 lenovo-yoga-slim-7-83hm005mtr-vs-casper-excalibur-g915-356h-ef60a-c-3955f969bc0d.html
 amazon_20260924_latest_016|laptop_20260924_006	lenovo-yoga-slim-7-83hm005mtrp302-vs-acer-predator-helios-neo-16-ai-phn-194353be7d43.html
 amazon_20260924_latest_016|amazon_20260924_latest_021	lenovo-yoga-slim-7-83hm005mtrp302-vs-dell-vostro-3530-n1601pvnb3530u09-c419b2630763.html
+amazon_20260924_latest_016|amazon_20260924_latest_017	lenovo-yoga-slim-7-83hm005mtrp302-vs-gigabyte-gaming-a18-pro-slim-gamin-d6788af60090.html
 amazon_20260924_latest_016|trend_2026090555	lenovo-yoga-slim-7-83hm005mtrp302-vs-hp-omen-gaming-16-ap00014nta60-2454da253c4b.html
 amazon_20260924_latest_016|trend_2026090510	lenovo-yoga-slim-7-83hm005mtrp302-vs-lenovo-ideapad-slim-3-15irh10-24bc821f441a.html
+amazon_20260924_latest_016|amazon_20260924_latest_031	lenovo-yoga-slim-7-83hm005mtrp302-vs-lenovo-thinkpad-e16-21sr006rtx-50c774201bc5.html
 amazon_20260924_latest_016|trend_2026090566	lenovo-yoga-slim-7-83hm005mtrp302-vs-msi-katana-17-hx-b14wgk-048xtr-fr3-106fb5f8dc38.html
 amazon_20260924_latest_016|trend_2026090515	lenovo-yoga-slim-7-83hm005mtrp302-vs-msi-thin-15-b13ve-2884tr-ff4a0769f8ee.html
 len_yoga_tab_plus_g2|samsung-galaxy-tab-s6-lite-2020	lenovo-yoga-tab-plus-gen-2-vs-samsung-galaxy-tab-s6-lite-2020-0c44c406a2f5.html
@@ -2152,6 +2204,7 @@ tv24|tv30	lg-65qned87b6a-vs-tcl-75c7l-cbae3ad3a8dc.html
 tv28|tvpop018	lg-65qned93a6a-vs-iffalcon-75u85a-f2bdb53c7ff8.html
 tv28|tv48	lg-65qned93a6a-vs-samsung-65q7fa-52cd3b70e40d.html
 tv28|tv8	lg-65qned93a6a-vs-samsung-65qn70f-8d09e4eeb403.html
+tv28|tv47	lg-65qned93a6a-vs-tcl-65t61c-f007e1032382.html
 tv28|tv7	lg-65qned93a6a-vs-tcl-75p8l-6d01e6145fc2.html
 tv3|tvbrand008	lg-oled55b4-oled55b46la-vs-grundig-55-gjq-9100-631f3d71f23e.html
 tv3|y61	lg-oled55b4-oled55b46la-vs-grundig-55-gua-9200-b4e468dbf4d2.html
@@ -2199,6 +2252,7 @@ tv112|tv126	lg-oled83m59la-vs-lg-oled83c54la-e19acce0fbcf.html
 tv112|tv122	lg-oled83m59la-vs-samsung-98qn90f-c08a158cdcb8.html
 tv108|tv113	lg-oled83w69la-vs-lg-115qned93b6-a593fdbeaaa7.html
 tv108|tv110	lg-oled83w69la-vs-lg-oled83g55lw-63d6048f880f.html
+tv101|tvpop019	lg-oled97g54lw-vs-iffalcon-43u65-11ead33d7ede.html
 tv101|tv113	lg-oled97g54lw-vs-lg-115qned93b6-0fe3676cb9e5.html
 tv101|tv108	lg-oled97g54lw-vs-lg-oled83w69la-a78a536be329.html
 tv101|tv104	lg-oled97g54lw-vs-tcl-115c7k-4d914f710b4d.html
@@ -2323,10 +2377,12 @@ monster_20260911|trend_2026090574	monster-semruk-s8-v1-2-1-vs-asus-rog-strix-g16
 monster_20260911|monster_20260912	monster-semruk-s8-v1-2-1-vs-monster-semruk-s8-v1-2-3-51bb6d9b36d7.html
 monster_20260911|monster_20260913	monster-semruk-s8-v1-2-1-vs-monster-semruk-s8-v1-2-4-296f49e09d40.html
 monster_20260911|trend_2026090534	monster-semruk-s8-v1-2-1-vs-msi-raider-18-max-hx-a2wj-1059tr-c97dc7dff84b.html
+monster_20260911|trend_2026090535	monster-semruk-s8-v1-2-1-vs-msi-raider-a18-hx-a9wig-092tr-d4244b4c2308.html
 monster_20260912|trend_2026090538	monster-semruk-s8-v1-2-3-vs-msi-raider-16-max-hx-b2wj-022tr-ce70ca4bbc04.html
 monster_20260912|trend_2026090534	monster-semruk-s8-v1-2-3-vs-msi-raider-18-max-hx-a2wj-1059tr-b5ed0553859e.html
 monster_20260912|trend_2026090535	monster-semruk-s8-v1-2-3-vs-msi-raider-a18-hx-a9wig-092tr-d99e093baf48.html
 monster_20260913|trend_2026090574	monster-semruk-s8-v1-2-4-vs-asus-rog-strix-g16-g615pr-7c224e2ce84d.html
+monster_20260913|trend_2026090511	monster-semruk-s8-v1-2-4-vs-msi-thin-15-b13ve-556f70347f60.html
 monster_20260914|trend_2026090545	monster-semruk-s8-v1-2-5-vs-asus-rog-strix-scar-18-g835lxg-tq5-029beda744da.html
 monster_20260914|trend_2026090541	monster-semruk-s8-v1-2-5-vs-asus-rog-strix-scar-18-g835lxg-tq5-c856de0b15e2.html
 monster_20260914|trend_2026090553	monster-semruk-s8-v1-2-5-vs-dell-pro-max-18-plus-64gb-4tb-7f6efe499198.html
@@ -2372,11 +2428,13 @@ msi-crosshair-a16-hx-e8wgk-011xtr-vs-gigabyte-gaming-a18-pro-dade89cb3366.html
 amazon_20260924_latest_015|amazon_20260924_latest_017	msi-crosshair-a16-hx-e8wgk-011xtr-vs-gigabyte-gaming-a18-pro-slim-gamin-dade89cb3366.html
 amazon_20260924_latest_015|trend_2026090508	msi-crosshair-a16-hx-e8wgk-011xtr-vs-hp-omen-16-am0044nt-cd8m2ea-4fcf77a2c99c.html
 amazon_20260924_latest_015|x16	msi-crosshair-a16-hx-e8wgk-011xtr-vs-monster-abra-a5-v21-6-2604951aaf80.html
+amazon_20260924_latest_002|laptop_20260924_007	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-acer-predator-helios-neo-16-ai-phn-7135e8660ea7.html
 amazon_20260924_latest_002|comp_20260924_01	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-asus-tuf-gaming-a16-fa608um-rv131-ab6e667e9445.html
 amazon_20260924_latest_002|x12	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-asus-vivobook-15-x1504va-nj009w-f8c418d33e6c.html
 amazon_20260924_latest_002|trend_2026090502	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-asus-zenbook-14-oled-ux3405-2b8fe0d42212.html
 amazon_20260924_latest_002|amazon_20260924_latest_014	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-casper-excalibur-g870-1362-cf60a-c-b7327ebde75a.html
 amazon_20260924_latest_002|comp_20260924_15	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-lenovo-ideapad-gaming-3-82sa0063tx-1cb0a7887194.html
+amazon_20260924_latest_002|amazon_20260924_latest_009	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-lenovo-loq-15ahp10-31030af2b1c4.html
 amazon_20260924_latest_002|monster_20260901	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-monster-abra-a5-v22-2-5-705db29860ea.html
 amazon_20260924_latest_002|amazon_20260924_latest_003	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-msi-cyborg-17-b13wfkg-092xtr-9d9f9ad38b96.html
 amazon_20260924_latest_002|amazon_20260924_latest_035	msi-crosshair-a16-hx-e8wgxk-058xtr-vs-msi-katana-17-hx-b14wfk-216xtr-cd1ce0d99177.html
@@ -2393,6 +2451,7 @@ amazon_20260924_008|laptop_20260924_007	msi-cyborg-15-a13ve-2269xtrnn-vs-acer-pr
 amazon_20260924_008|y21	msi-cyborg-15-a13ve-2269xtrnn-vs-apple-macbook-pro-16-m3-pro-4e3d7c8cd573.html
 amazon_20260924_008|amazon_20260924_latest_011	msi-cyborg-15-a13ve-2269xtrnn-vs-dell-alienware-16x-aurora-ac16251-ec8e25012866.html
 amazon_20260924_008|comp_20260924_13	msi-cyborg-15-a13ve-2269xtrnn-vs-hp-hyperx-omen-15-gb0015nt-d62c9ea-9eb6f7976190.html
+amazon_20260924_008|trend_2026090558	msi-cyborg-15-a13ve-2269xtrnn-vs-hp-omen-gaming-16-ap00014nta16-f5b998e35138.html
 amazon_20260924_008|trend_2026090562	msi-cyborg-15-a13ve-2269xtrnn-vs-hp-omen-slim-gaming-16-an0004nt-bq-401d9267df79.html
 amazon_20260924_008|amazon_20260924_011	msi-cyborg-15-a13ve-2269xtrnn-vs-lenovo-ideapad-slim-3-0f2a65d8dcee.html
 amazon_20260924_008|amazon_20260924_020	msi-cyborg-15-a13ve-2269xtrnn-vs-lenovo-loq-15arp10e-a0db04506965.html
@@ -2401,10 +2460,13 @@ amazon_20260924_008|y18	msi-cyborg-15-a13ve-2269xtrnn-vs-lenovo-thinkpad-e14-gen
 amazon_20260924_033|laptop_20260924_007	msi-cyborg-15-a13ve-2270xtrnn-vs-acer-predator-helios-neo-16-ai-phn-87f8b88ed212.html
 amazon_20260924_033|amazon_20260924_latest_007	msi-cyborg-15-a13ve-2270xtrnn-vs-apple-macbook-air-m2-13-6-89da80b4cfab.html
 amazon_20260924_033|p_1787255489051	msi-cyborg-15-a13ve-2270xtrnn-vs-apple-macbook-neo-13-c12dec82d32d.html
+amazon_20260924_033|comp_20260924_05	msi-cyborg-15-a13ve-2270xtrnn-vs-casper-nirvana-s500-1021-8d50r-g-96aa9e2261bf.html
+amazon_20260924_033|amazon_20260924_035	msi-cyborg-15-a13ve-2270xtrnn-vs-dell-pro-15-essential-pv15250-004-429e9d8d48fb.html
 amazon_20260924_033|comp_20260924_11	msi-cyborg-15-a13ve-2270xtrnn-vs-dell-pro-15-essential-pv15250-rplu-781bf3e63c79.html
 amazon_20260924_033|amazon_20260924_latest_026	msi-cyborg-15-a13ve-2270xtrnn-vs-gameraider-flux-gr16-73a8536c9d6c.html
 amazon_20260924_033|amazon_20260924_latest_027	msi-cyborg-15-a13ve-2270xtrnn-vs-hp-2n2n7ea-d9692df4d4b1.html
 amazon_20260924_033|x10	msi-cyborg-15-a13ve-2270xtrnn-vs-hp-pavilion-15-eg2002nt-ee9333bf666d.html
+amazon_20260924_033|amazon_20260924_latest_006	msi-cyborg-15-a13ve-2270xtrnn-vs-lenovo-ideapad-slim-3-83k1004etr02-7ee14f6439d4.html
 amazon_20260924_033|amazon_20260924_latest_018	msi-cyborg-15-a13ve-2270xtrnn-vs-lenovo-loq-15ahp10-1dff234e8f55.html
 amazon_20260924_033|amazon_20260924_latest_029	msi-cyborg-15-a13ve-2270xtrnn-vs-lenovo-loq-15ahp10-e0fc73c6e16c.html
 amazon_20260924_033|trend_2026090526	msi-cyborg-15-a13ve-2270xtrnn-vs-lenovo-loq-15irx10-83je012ltr-8f637e4e1df5.html
@@ -2419,6 +2481,7 @@ amazon_20260924_latest_019|trend_2026090556	msi-cyborg-15-b13wfkg-489tr-vs-hp-om
 amazon_20260924_latest_019|trend_2026090552	msi-cyborg-15-b13wfkg-489tr-vs-lenovo-thinkbook-16p-g6-21u00013tx-ee6e34ff296f.html
 amazon_20260924_latest_019|amazon_20260924_latest_028	msi-cyborg-15-b13wfkg-489tr-vs-msi-vector-16-hx-ai-a2xwhg-091xtr-dbb7f3b50a27.html
 amazon_20260924_021|trend_2026090516	msi-cyborg-15-b13wfkg-494xtr-vs-asus-tuf-gaming-f16-fx608jmr-rv024-e236f1d77a4f.html
+msi-cyborg-15-b13wfkg-494xtr-vs-dell-vostro-3520-n2062pvnb3520u-0758fd8d4168.html
 amazon_20260924_021|amazon_20260924_latest_004	msi-cyborg-15-b13wfkg-494xtr-vs-hp-omen-16-ap0006nt-c52r1ea-636ad7575dab.html
 amazon_20260924_021|amazon_20260924_latest_013	msi-cyborg-15-b13wfkg-494xtr-vs-lenovo-ideapad-slim-3-345aa5f74a18.html
 amazon_20260924_021|amazon_20260924_latest_009	msi-cyborg-15-b13wfkg-494xtr-vs-lenovo-loq-15ahp10-e37bbc376ece.html
@@ -2439,6 +2502,7 @@ amazon_20260924_latest_035|trend_2026090509	msi-katana-17-hx-b14wfk-216xtr-vs-de
 amazon_20260924_latest_035|laptop_20260924_010	msi-katana-17-hx-b14wfk-216xtr-vs-lenovo-thinkbook-16p-g6-iax-21r000-d0d805b7b48d.html
 amazon_20260924_latest_034|trend_2026090522	msi-katana-17-hx-b14wfk-248xtr-vs-asus-rog-strix-g16-g614ph-rv036-537e24746f2a.html
 amazon_20260924_latest_034|trend_2026090512	msi-katana-17-hx-b14wfk-248xtr-vs-asus-rog-strix-g16-g615jh-rv052-a90565ae1af3.html
+amazon_20260924_latest_034|x12	msi-katana-17-hx-b14wfk-248xtr-vs-asus-vivobook-15-x1504va-nj009w-d3ab17511345.html
 amazon_20260924_latest_034|trend_2026090526	msi-katana-17-hx-b14wfk-248xtr-vs-lenovo-loq-15irx10-83je012ltr-41413c7e9ef3.html
 amazon_20260924_latest_034|trend_2026090520	msi-katana-17-hx-b14wfk-248xtr-vs-lenovo-loq-essential-15irx11-83sc0-4c00f4611c96.html
 amazon_20260924_latest_034|h15	msi-katana-17-hx-b14wfk-248xtr-vs-macbook-pro-14-m1-pro-8b2607070c27.html
@@ -2517,6 +2581,7 @@ add08|s15	nikon-zf-vs-sony-alpha-7-v-55cac62904b0.html
 n18|y38	nikon-zr-vs-fujifilm-x-t5-fa4045b63a3c.html
 n18|r15	nikon-zr-vs-ricoh-gr-iv-fd80f48f49a0.html
 n53|n63	nothing-ear-a-vs-marshall-major-v-03c294270181.html
+n53|rz01	nothing-ear-a-vs-razer-blackshark-v3-x-hyperspeed-3510fc08fc6e.html
 n53|rz11	nothing-ear-a-vs-razer-kraken-kitty-v3-x-1bc68d5a5294.html
 n53|rz09	nothing-ear-a-vs-razer-kraken-v4-x-e3e0c1f03f79.html
 n53|n60	nothing-ear-a-vs-soundcore-space-one-ceaaf97d502e.html
@@ -2543,6 +2608,7 @@ add27|x25	om-system-tough-tg-7-vs-sony-alpha-a6400-11bcbb802a92.html
 add27|retro07	om-system-tough-tg-7-vs-sony-cyber-shot-dsc-w830-5e7c4ed4bac1.html
 add27|s18	om-system-tough-tg-7-vs-sony-zv-e10-ii-c6a5563a5521.html
 y3|y4	oneplus-12-vs-motorola-edge-50-pro-ce37fba4aa56.html
+p_1787680633621_67|y2	oneplus-13-vs-google-pixel-8-de65a79a4743.html
 p_1787680633621_67|p_1787680633621_70	oneplus-13-vs-honor-magic7-pro-a93c91648bf9.html
 p_1787680633621_67|poco_f8_pro	oneplus-13-vs-poco-f8-pro-c74f187b0738.html
 p_1787680633621_67|poco-f9-ultra-2026	oneplus-13-vs-poco-f9-ultra-72df8d69b434.html
@@ -2724,6 +2790,7 @@ poco-x8-pro-2026|samsung-a57-5g-2026	poco-x8-pro-vs-samsung-galaxy-a57-5g-218cdd
 poco-x8-pro-2026|samsung-galaxy-s25	poco-x8-pro-vs-samsung-galaxy-s25-7a36b1c84c6f.html
 poco-x8-pro-2026|samsung-galaxy-s25-fe	poco-x8-pro-vs-samsung-galaxy-s25-fe-830f63bf81d4.html
 poco-x8-pro-2026|x_17t	poco-x8-pro-vs-xiaomi-17t-8615b081ab4d.html
+poco-x8-pro-2026|redmi-note-15-pro-5g-2026	poco-x8-pro-vs-xiaomi-redmi-note-15-pro-5g-e0b3d6b9e727.html
 p_new_009|p_new_017	polar-grit-x2-vs-garmin-forerunner-970-2724a1348d25.html
 p_new_009|p_new_037	polar-grit-x2-vs-garmin-venu-x1-86c1e142c037.html
 p_new_009|p_new_010	polar-grit-x2-vs-polar-vantage-m3-44c32a24b6b6.html
@@ -2952,6 +3019,7 @@ ree_m10blue|sam_s9feplus	reeder-m10-blue-max-lte-vs-samsung-galaxy-tab-s9-fe-77a
 ree_m10blue|t29	reeder-m10-blue-max-lte-vs-xiaomi-pad-8-2c1be89fc988.html
 ree_m11pro|tcl_11gen2	reeder-m11-pro-max-vs-tcl-tab-11-gen2-c64b6814618f.html
 p_1787680633621_89|z9	reeder-p13-blue-max-l-vs-casper-via-m40-9ea8a68dc7c2.html
+p_1787680633621_89|poco-m8-5g	reeder-p13-blue-max-l-vs-poco-m8-5g-c69f479be0f5.html
 p_1787680633621_89|samsung-galaxy-a22	reeder-p13-blue-max-l-vs-samsung-galaxy-a22-afc9fbd200d1.html
 p_1787680633621_89|samsung-galaxy-a70	reeder-p13-blue-max-l-vs-samsung-galaxy-a70-e10855d51a11.html
 p_1787680633621_89|samsung-galaxy-a8-2015	reeder-p13-blue-max-l-vs-samsung-galaxy-a8-2015-4a5788621d0c.html
@@ -3061,6 +3129,7 @@ tv44|tv48	samsung-75qn70f-vs-samsung-65q7fa-2e7240abdc73.html
 tvpop005|tvpop022	samsung-75qn80f-vs-lg-86qned87b6a-289e97e11cdb.html
 tvpop005|tvpop031	samsung-75qn80f-vs-philips-65pus8909-419a4a66e78c.html
 tvpop005|tvpop008	samsung-75qn80f-vs-samsung-65s90f-1895dd937cf2.html
+tvpop005|tvpop014	samsung-75qn80f-vs-tcl-55q7c-31a509446d3b.html
 tv133|y57	samsung-75qn900d-vs-samsung-43q60d-666881747f5d.html
 tv133|tvpop014	samsung-75qn900d-vs-tcl-55q7c-ef1b5e03ca88.html
 tv133|tvpop012	samsung-75qn900d-vs-tcl-75c8l-c10c9f07a127.html
@@ -3074,6 +3143,7 @@ tv111|tv131	samsung-77s95f-vs-samsung-83s90f-0fe069f30268.html
 tv111|tv123	samsung-77s95f-vs-samsung-85qn990f-f0f8c793820a.html
 tv111|tv128	samsung-77s95f-vs-samsung-98qn100b-0ff575f1cdc5.html
 tv131|tv136	samsung-83s90f-vs-lg-oled65g55lw-9f1510fb4eaa.html
+tv131|tvpop026	samsung-83s90f-vs-philips-65oled760-f96428fc9da3.html
 tv131|tvpop007	samsung-83s90f-vs-samsung-75qn90f-6bb1c6cb9e28.html
 tv121|tv124	samsung-83s90h-vs-samsung-85r95h-ef394bfeaab3.html
 tv121|tv134	samsung-83s90h-vs-tcl-85c7k-e9cea4f18d12.html
@@ -3087,6 +3157,7 @@ tv125|tvpop026	samsung-85qn900d-vs-philips-65oled760-ace7fd5c27f7.html
 tv125|tv132	samsung-85qn900d-vs-samsung-75qn990f-7107a4237e30.html
 tv125|tv130	samsung-85qn900d-vs-samsung-85qn900f-18dc1867ee3e.html
 tv125|tvpop010	samsung-85qn900d-vs-tcl-75c7k-d28f481ecbb6.html
+tv130|tv27	samsung-85qn900f-vs-lg-oled65c54la-80cf59ae6368.html
 tv130|tvpop026	samsung-85qn900f-vs-philips-65oled760-94f6d7b7a691.html
 tv130|tvpop006	samsung-85qn900f-vs-samsung-65qn90f-5aa4833b4c00.html
 tv130|tvpop013	samsung-85qn900f-vs-tcl-98c6k-ff291bd39b29.html
@@ -3094,6 +3165,7 @@ tv123|tv136	samsung-85qn990f-vs-lg-oled65g55lw-9328517dd0a0.html
 tv123|tv131	samsung-85qn990f-vs-samsung-83s90f-eb3d375ccf66.html
 tv123|tv128	samsung-85qn990f-vs-samsung-98qn100b-6b29e190e70a.html
 tv124|tv134	samsung-85r95h-vs-tcl-85c7k-996ef7cd48f9.html
+tv128|tvpop006	samsung-98qn100b-vs-samsung-65qn90f-2e7fd0f7794b.html
 tv128|tv134	samsung-98qn100b-vs-tcl-85c7k-9818c4bc1b6f.html
 tv122|tvpop024	samsung-98qn90f-vs-lg-oled77w69la-0e0bedc1d1de.html
 tv107|tv113	samsung-98qn990f-vs-lg-115qned93b6-a8d98043a319.html
@@ -3166,6 +3238,7 @@ samsung-a57-5g-2026|xiaomi-15t-pro-2025	samsung-galaxy-a57-5g-vs-xiaomi-15t-pro-
 samsung-a57-5g-2026|x_17t	samsung-galaxy-a57-5g-vs-xiaomi-17t-cb63762433d2.html
 samsung-galaxy-a7-2016|xiaomi-mi-5	samsung-galaxy-a7-2016-vs-xiaomi-mi-5-5ce6673edf1d.html
 samsung-galaxy-a70|samsung-galaxy-a8-2015	samsung-galaxy-a70-vs-samsung-galaxy-a8-2015-38136465cdb1.html
+samsung-galaxy-a71|samsung-galaxy-m51	samsung-galaxy-a71-vs-samsung-galaxy-m51-21402304ab44.html
 samsung-galaxy-a71|z11	samsung-galaxy-a71-vs-tcl-40-nxtpaper-5g-7c67b3c607d5.html
 samsung-galaxy-a72|y6	samsung-galaxy-a72-vs-vivo-v29-937d64fa5d6a.html
 samsung-galaxy-a80|samsung-galaxy-j5-prime	samsung-galaxy-a80-vs-samsung-galaxy-j5-prime-4c1843164eb9.html
@@ -3531,6 +3604,7 @@ g28|n47	steelseries-arctis-nova-3p-wireles-vs-samsung-galaxy-buds-fe-f61920e9c55
 g28|x22	steelseries-arctis-nova-3p-wireles-vs-soundcore-r50i-nc-190ef48fb1de.html
 g29|n44	steelseries-arctis-nova-3x-wireles-vs-buds-pro-2-8473fc36e2d9.html
 g29|g36	steelseries-arctis-nova-3x-wireles-vs-havit-gamenote-h2015-pro-2a930d77bfec.html
+g29|n54	steelseries-arctis-nova-3x-wireles-vs-nothing-ear-anc-2cd2c109532a.html
 g29|rz04	steelseries-arctis-nova-3x-wireles-vs-razer-blackshark-v2-hyperspeed-45df61d78e73.html
 g29|rz08	steelseries-arctis-nova-3x-wireles-vs-razer-kraken-v4-efca333ebab4.html
 g03|g05	steelseries-arctis-nova-5-wireless-vs-razer-blackshark-v3-pro-c84c8c768b8b.html
@@ -3660,6 +3734,7 @@ tv35|tvbrand007	tcl-55q6c-vs-grundig-55-gku-700-f1f579d10a89.html
 tv35|tv39	tcl-55q6c-vs-grundig-55-gq-850a-a42d07558158.html
 tv35|tv5	tcl-55q6c-vs-iffalcon-55u95a-35d94a84bb7a.html
 tv35|tvbrand032	tcl-55q6c-vs-onvo-65ovf9000uq-68b14594d4a3.html
+tv35|tvbrand006	tcl-55q6c-vs-profilo-55pa535esg-2ac259ac33a4.html
 tvpop014|tvpop033	tcl-55q7c-vs-philips-50pus9000-cb9a976770ae.html
 tvpop014|y57	tcl-55q7c-vs-samsung-43q60d-9278899b0f1c.html
 tvpop014|tvpop015	tcl-55q7c-vs-tcl-65q7c-d2f2dc53de37.html
@@ -3864,6 +3939,7 @@ p_child_006|p_recent_2026_010	wiky-watch-5-vs-garmin-f-nix-8-pro-491a58950b24.ht
 p_child_006|p_haylou_011	wiky-watch-5-vs-haylou-solar-lite-0a123caf2c30.html
 p_child_006|p_haylou_012	wiky-watch-5-vs-haylou-watch-r8-41b39cc67d69.html
 p_child_007|p_new_058	wiky-watch-5s-vs-cmf-watch-pro-2-27f75f359181.html
+p_child_007|p_child_013	wiky-watch-5s-vs-dijikid-4-5g-449a3a27814d.html
 p_child_007|p_new_051	wiky-watch-5s-vs-honor-watch-5-ultra-a60e1e8e24c1.html
 p_child_007|p_mibro_010	wiky-watch-5s-vs-mibro-kids-s1-5ec1b72545de.html
 p_child_007|p_zeblaze_040	wiky-watch-5s-vs-zeblaze-btalk-3-pro-5128976cbd5c.html
@@ -3953,6 +4029,7 @@ p_1787680633621_71|p_1787680633621_80	xiaomi-redmi-note-14-pro-vs-redmi-note-13-
 p_mid_03|samsung-galaxy-a37-5g	xiaomi-redmi-note-14-pro-vs-samsung-galaxy-a37-5g-4029eed4abe6.html
 p_1787680633621_71|redmi-15c-5g-2026	xiaomi-redmi-note-14-pro-vs-xiaomi-redmi-15c-5g-b1fa45d72046.html
 p_1787680633621_71|redmi-note-15-5g-2026	xiaomi-redmi-note-14-pro-vs-xiaomi-redmi-note-15-5g-74d0df101b61.html
+redmi-note-15-5g-2026|x2	xiaomi-redmi-note-15-5g-vs-poco-x6-pro-cbea959e4e99.html
 redmi-note-15-5g-2026|samsung-galaxy-a17-5g	xiaomi-redmi-note-15-5g-vs-samsung-galaxy-a17-5g-692b0843adb0.html
 redmi-note-15-pro-5g-2026|samsung-galaxy-a37-5g	xiaomi-redmi-note-15-pro-5g-vs-samsung-galaxy-a37-5g-890ff69c2252.html
 redmi-note-15-pro-plus-5g-2026|samsung-galaxy-a37-5g	xiaomi-redmi-note-15-pro-5g-vs-samsung-galaxy-a37-5g-dd41c498867d.html
@@ -4126,80 +4203,3 @@ p_zeblaze_059|y52	zeblaze-vibe-8-vs-fitbit-charge-6-077fdc73e669.html
 p_zeblaze_046|p_zeblaze_047	zeblaze-vibe-lite-vs-zeblaze-vibe-3-ecg-62ae6b48fcf4.html
 p_zeblaze_046|p_zeblaze_048	zeblaze-vibe-lite-vs-zeblaze-vibe-3-gps-7f131aeb70f0.html
 z14|z3	zte-red-magic-11-air-vs-honor-magic8-lite-0a5606cb7f08.html
-acer-nitro-v15-nh-qz7ey-005-vs-dell-vostro-3520-n2062pvnb3520u-56889dc1cc18.html
-apple-macbook-air-13-6-m4-mw0w3tu-vs-asus-vivobook-15-x1504va-nj009w-73ba2681a4d7.html
-apple-macbook-neo-13-vs-dell-xps-13-9340-8ced39565599.html
-asus-tuf-gaming-a16-fa608um-rv130-vs-dell-pro-15-essential-pv15250-rplu-9a4f977b6ae5.html
-asus-vivobook-15-x1504va-bq4126w-vs-lenovo-ideapad-gaming-3-82sa0065tx-6484ac09f11b.html
-asus-zenbook-14-ux3405ca-st826w-vs-lenovo-loq-15ahp10-151ee4a822bb.html
-casper-excalibur-g915-356h-ef60a-c-vs-monster-abra-a5-v21-6-45a2637c0c9f.html
-cmf-watch-pro-vs-redmi-watch-6-607e7677d4e7.html
-dell-alienware-16-aurora-ac16250-r-vs-asus-tuf-gaming-a16-fa607nuq-rl048-ed923e03cc89.html
-dell-pro-15-essential-pv15250-004-vs-casper-nirvana-s500-1021-8d50r-g-d4cd22326edd.html
-dell-pro-15-essential-pv15250-004-vs-dell-alienware-16x-aurora-ac16251-50cb8ceccfca.html
-dell-pro-15-essential-pv15255-vs-hp-hyperx-omen-15-gb0015nt-d62c9ea-9d7a0b200c0d.html
-gameraider-flux-gr16-vs-casper-excalibur-g915-356h-ef60a-c-d4013f4bbf1c.html
-garmin-descent-g1-vs-huawei-watch-ultimate-a2921c18de48.html
-garmin-descent-g1-vs-huawei-watch-ultimate-design-0dd88e257923.html
-garmin-f-nix-8-vs-samsung-galaxy-watch9-44mm-9048003d4e01.html
-garmin-forerunner-955-vs-garmin-v-voactive-5-d9419e77aa32.html
-google-pixel-9-pro-vs-xiaomi-17t-pro-d942f54b6844.html
-haylou-rs4-plus-vs-redmi-watch-5-active-93125e7f2764.html
-honor-choice-watch-2-pro-vs-redmi-watch-6-d8588e052354.html
-honor-choice-watch-2-pro-vs-zeblaze-ares-3-pro-2b44bd5e753e.html
-honor-pad-20-pro-paperlike-edition-vs-honor-pad-v9-ad1dd12ed35e.html
-hp-ai-15-fd2026nta70-d51e0eaa70-vs-dell-pro-15-essential-pv15255-ebd0c30b6a8e.html
-hp-hyperx-omen-vs-lenovo-loq-15ahp10-665309f0eb96.html
-iffalcon-65u95a-vs-tcl-55q6c-0bdb7082cf78.html
-iphone-12-vs-huawei-nova-14-pro-4914461b9942.html
-jbl-live-770nc-vs-razer-blackshark-v2-hyperspeed-0e1dce3ed46e.html
-lenovo-ideapad-slim-3-15arp10-vs-acer-predator-helios-neo-16-ai-phn-af8ba42e0209.html
-lenovo-ideapad-slim-3-15arp10-vs-asus-expertbook-p5-p5405csa-i51651-7a5ba4284cd9.html
-lenovo-ideapad-slim-3-15arp10-vs-lenovo-loq-15ahp10-2336524940f2.html
-lenovo-ideapad-slim-3-15irh10-vs-dell-alienware-16x-aurora-ac16251-fc0f9e5b3553.html
-lenovo-ideapad-slim-3-15irh10-vs-msi-vector-16-hx-ai-a2xwhg-091xtr-e0eb437afc78.html
-lenovo-ideapad-slim-3-16irh10-83k2-vs-asus-tuf-gaming-a16-fa608um-rv130-5800e4e17780.html
-lenovo-ideapad-slim-3-16irh10-83k2-vs-lenovo-ideapad-slim-3-82xq00jktx-248ba6d0578f.html
-lenovo-ideapad-slim-3-16irh10-vs-dell-pro-15-essential-pv15250-rplu-433702151bc5.html
-lenovo-ideapad-slim-3-82xq00jktx-vs-msi-cyborg-15-a13ve-2055tr-ff6c447021d3.html
-lenovo-ideapad-slim-3-vs-lenovo-loq-15ahp10-3269a7fab279.html
-lenovo-legion-pro-5-16adr10-83lt00-vs-acer-nitro-v-15-anv15-52a7-f12c91607e1e.html
-lenovo-loq-15ahp10-vs-asus-expertbook-p5-p5405csa-i51651-0fbcf5fcb097.html
-lenovo-loq-15ahp10-vs-lenovo-legion-5-pro-bad627aef0af.html
-lenovo-loq-15ahp10-vs-lenovo-thinkbook-16p-g6-iax-21r000-9a8d65d067b0.html
-lenovo-loq-15arp10e-vs-asus-tuf-gaming-a16-fa608um-rv130-b1eafb2ee40b.html
-lenovo-loq-15arp10e-vs-casper-excalibur-g870-1362-cf60a-c-054a9211d319.html
-lenovo-loq-15irx10-83je012ltr-vs-dell-pro-max-18-plus-d7fa86f5515b.html
-lenovo-tab-m11-vs-apple-ipad-11-a16-555404f261d7.html
-lenovo-tab-m11-vs-honor-magicpad-4-db2c52a33a5c.html
-lenovo-tab-m11-vs-samsung-galaxy-tab-s11-7f7b59ce05a6.html
-lenovo-thinkbook-16p-g6-iax-21r000-vs-huawei-matebook-d-14-2024-f5793f1692d3.html
-lenovo-thinkbook-16p-g6-iax-vs-lenovo-ideapad-slim-3-15abr8-82xm0-68dd1470909d.html
-lenovo-v15-83a100hxtr-vs-asus-tuf-gaming-a16-fa608um-rv130-2f3b6b75e478.html
-lenovo-yoga-slim-7-83hm005mtrp302-vs-gigabyte-gaming-a18-pro-slim-gamin-d6788af60090.html
-lenovo-yoga-slim-7-83hm005mtrp302-vs-lenovo-thinkpad-e16-21sr006rtx-50c774201bc5.html
-lg-65qned93a6a-vs-tcl-65t61c-f007e1032382.html
-lg-oled97g54lw-vs-iffalcon-43u65-11ead33d7ede.html
-monster-semruk-s8-v1-2-1-vs-msi-raider-a18-hx-a9wig-092tr-d4244b4c2308.html
-monster-semruk-s8-v1-2-4-vs-msi-thin-15-b13ve-556f70347f60.html
-msi-crosshair-a16-hx-e8wgxk-058xtr-vs-acer-predator-helios-neo-16-ai-phn-7135e8660ea7.html
-msi-crosshair-a16-hx-e8wgxk-058xtr-vs-lenovo-loq-15ahp10-31030af2b1c4.html
-msi-cyborg-15-a13ve-2269xtrnn-vs-hp-omen-gaming-16-ap00014nta16-f5b998e35138.html
-msi-cyborg-15-a13ve-2270xtrnn-vs-casper-nirvana-s500-1021-8d50r-g-96aa9e2261bf.html
-msi-cyborg-15-a13ve-2270xtrnn-vs-dell-pro-15-essential-pv15250-004-429e9d8d48fb.html
-msi-cyborg-15-a13ve-2270xtrnn-vs-lenovo-ideapad-slim-3-83k1004etr02-7ee14f6439d4.html
-msi-cyborg-15-b13wfkg-494xtr-vs-dell-vostro-3520-n2062pvnb3520u-0758fd8d4168.html
-msi-katana-17-hx-b14wfk-248xtr-vs-asus-vivobook-15-x1504va-nj009w-d3ab17511345.html
-nothing-ear-a-vs-razer-blackshark-v3-x-hyperspeed-3510fc08fc6e.html
-oneplus-13-vs-google-pixel-8-de65a79a4743.html
-poco-x8-pro-vs-xiaomi-redmi-note-15-pro-5g-e0b3d6b9e727.html
-reeder-p13-blue-max-l-vs-poco-m8-5g-c69f479be0f5.html
-samsung-75qn80f-vs-tcl-55q7c-31a509446d3b.html
-samsung-83s90f-vs-philips-65oled760-f96428fc9da3.html
-samsung-85qn900f-vs-lg-oled65c54la-80cf59ae6368.html
-samsung-98qn100b-vs-samsung-65qn90f-2e7fd0f7794b.html
-samsung-galaxy-a71-vs-samsung-galaxy-m51-21402304ab44.html
-steelseries-arctis-nova-3x-wireles-vs-nothing-ear-anc-2cd2c109532a.html
-tcl-55q6c-vs-profilo-55pa535esg-2ac259ac33a4.html
-wiky-watch-5s-vs-dijikid-4-5g-449a3a27814d.html
-xiaomi-redmi-note-15-5g-vs-poco-x6-pro-cbea959e4e99.html

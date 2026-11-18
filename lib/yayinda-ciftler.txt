@@ -1156,12 +1156,16 @@ gigabyte-gaming-a18-pro-vs-acer-predator-helios-neo-16-ai-phn-3754e32f6707.html
 gigabyte-gaming-a18-pro-vs-lenovo-loq-15ahp10-c00e12418442.html
 y2|y8	google-pixel-8-vs-huawei-p60-pro-c73e26b526bb.html
 y2|y5	google-pixel-8-vs-nothing-phone-2-1af0298b0324.html
+p_1787680633621_69|p_1787680633621_83	google-pixel-9-pro-vs-oppo-find-x7-ultra-32b359ef6a18.html
 p_1787680633621_69|p_zflip7	google-pixel-9-pro-vs-samsung-galaxy-z-flip7-2e02c6356d6c.html
 p_1787680633621_69|p_zfold7	google-pixel-9-pro-vs-samsung-galaxy-z-fold7-15899b776d40.html
 p_1787680633621_69|p_1787680633621_79	google-pixel-9-pro-vs-xiaomi-14-ultra-815574a7ebc1.html
 p_1787680633621_69|x_17t_pro	google-pixel-9-pro-vs-xiaomi-17t-pro-d942f54b6844.html
 p_1787680633621_68|p_1787680633621_69	google-pixel-9-vs-google-pixel-9-pro-e9ae58a907d8.html
+p_1787680633621_68|p_1787680633621_70	google-pixel-9-vs-honor-magic7-pro-243649de2b5c.html
 p_1787680633621_68|p_1787680633621_83	google-pixel-9-vs-oppo-find-x7-ultra-2ae89a1ce3f9.html
+p_1787680633621_68|poco_f8_pro	google-pixel-9-vs-poco-f8-pro-428c9a2ffe4f.html
+p_1787680633621_68|p_1787680633621_86	google-pixel-9-vs-realme-gt-6-cfe5e740cde7.html
 p_1787680633621_68|p_zflip7	google-pixel-9-vs-samsung-galaxy-z-flip7-804194810601.html
 p_1787680633621_68|p_1787680633621_79	google-pixel-9-vs-xiaomi-14-ultra-3ecf5c5bbd7c.html
 p_1787680633621_68|x_17t_pro	google-pixel-9-vs-xiaomi-17t-pro-6226a348b291.html
@@ -1369,6 +1373,7 @@ honor-magic-v6|iphone-17e-2026	honor-magic-v6-vs-iphone-17e-f04c46e8dd3e.html
 honor-magic-v6|u1	honor-magic-v6-vs-iphone-18-pro-4a466b656d88.html
 honor-magic-v6|vivo-x300-ultra-2026	honor-magic-v6-vs-vivo-x300-ultra-f6cfa903abe2.html
 p_1787680633621_70|p_1787680633621_86	honor-magic7-pro-vs-realme-gt-6-9831944582a9.html
+z3|z4	honor-magic8-lite-vs-general-mobile-gm-26-pro-5g-e52f93702449.html
 z1|z2	honor-magic8-pro-vs-honor-600-pro-2dce857a7e55.html
 z1|z13	honor-magic8-pro-vs-nubia-z80-ultra-7b627ac55df1.html
 hon_magic2|hon_pad20	honor-magicpad-2-vs-honor-pad-20-07716ff5435d.html
@@ -1632,6 +1637,7 @@ huawei-nova-12s|poco-m6-pro	huawei-nova-12s-vs-poco-m6-pro-2c3770d049cf.html
 huawei-nova-12s|redmi-note-11-pro	huawei-nova-12s-vs-redmi-note-11-pro-70364bae9dd0.html
 huawei-nova-14-pro|huawei-pura-90s-pro	huawei-nova-14-pro-vs-huawei-pura-90s-pro-dc790c0ff263.html
 huawei-nova-14-pro|n1	huawei-nova-14-pro-vs-iphone-11-bbc64f3ce237.html
+huawei-nova-14-pro|poco_x8	huawei-nova-14-pro-vs-poco-x8-f890002b5050.html
 huawei-nova-14-pro|samsung-galaxy-s20	huawei-nova-14-pro-vs-samsung-galaxy-s20-c9af44a82901.html
 huawei-nova-14-pro|samsung-galaxy-s22	huawei-nova-14-pro-vs-samsung-galaxy-s22-f1ef5a6b8d44.html
 huawei-nova-9|x19	huawei-nova-9-vs-huawei-nova-12-2ab19b6dd5ec.html
@@ -1653,6 +1659,7 @@ huawei-pura-90s-pro-max|y1	huawei-pura-90s-pro-max-vs-apple-iphone-se-2022-7ac62
 huawei-pura-90s-pro-max|samsung-galaxy-z-fold8	huawei-pura-90s-pro-max-vs-samsung-galaxy-z-fold8-4e69f9cfc801.html
 huawei-pura-90s-pro-max|samsung-galaxy-z-fold8-ultra	huawei-pura-90s-pro-max-vs-samsung-galaxy-z-fold8-ultra-c3d18e75e5ae.html
 huawei-pura-90s-pro|n1	huawei-pura-90s-pro-vs-iphone-11-94ac6ec0929c.html
+huawei-pura-90s-pro|poco_x8	huawei-pura-90s-pro-vs-poco-x8-ed7917e50292.html
 huawei-pura-90s-pro|samsung-galaxy-s20	huawei-pura-90s-pro-vs-samsung-galaxy-s20-b99858a2affe.html
 p_huawei_2017_huawei_watch_2_classic|p_huawei_2018_huawei_watch_2_pro	huawei-watch-2-classic-vs-huawei-watch-2-pro-fa0517ba8ec6.html
 p_huawei_2017_huawei_watch_2_classic|p_huawei_2018_huawei_watch_gt	huawei-watch-2-classic-vs-huawei-watch-gt-1e6bee8c8796.html
@@ -1829,6 +1836,7 @@ trend02|y40	insta360-x6-vs-canon-powershot-g7x-mark-iii-f2602420913c.html
 n1|y1	iphone-11-vs-apple-iphone-se-2022-18ca443d928a.html
 n1|n2	iphone-11-vs-iphone-13-74435c40ec63.html
 n1|n6	iphone-11-vs-iphone-17-0ecaf747aaef.html
+n1|poco_x8	iphone-11-vs-poco-x8-8c0ded253b4e.html
 h10|huawei-nova-14-pro	iphone-12-vs-huawei-nova-14-pro-4914461b9942.html
 h10|huawei-pura-90s-pro	iphone-12-vs-huawei-pura-90s-pro-e42ae02c0056.html
 h10|n1	iphone-12-vs-iphone-11-a02507339769.html
@@ -1882,6 +1890,7 @@ apple-iphone-17-pro|huawei-pura-80-ultra	iphone-17-pro-vs-huawei-pura-80-ultra-2
 apple-iphone-17-pro|samsung-galaxy-note-20-ultra	iphone-17-pro-vs-samsung-galaxy-note-20-ultra-1d48fe77a276.html
 apple-iphone-17-pro|s2	iphone-17-pro-vs-samsung-galaxy-s26-ultra-1c7804219350.html
 n6|s4	iphone-17-vs-apple-iphone-17-pro-max-374fe661a3d6.html
+n6|z2	iphone-17-vs-honor-600-pro-40a60146a04b.html
 n6|z1	iphone-17-vs-honor-magic8-pro-adfd539ad4c9.html
 n6|z13	iphone-17-vs-nubia-z80-ultra-6410a1df6ef2.html
 n6|s2	iphone-17-vs-samsung-galaxy-s26-ultra-3ecc32c81329.html
@@ -1892,6 +1901,8 @@ apple-iphone-18-pro-max|u1	iphone-18-pro-max-vs-iphone-18-pro-29c74d6aaa76.html
 apple-iphone-18-pro-max|p_1787255318000	iphone-18-pro-max-vs-samsung-galaxy-s26-fe-2c8328994b95.html
 apple-iphone-18-pro-max|x_17t_pro	iphone-18-pro-max-vs-xiaomi-17t-pro-7657b6929dcb.html
 u1|x_17t_pro	iphone-18-pro-vs-xiaomi-17t-pro-0cee2a94ccad.html
+apple-iphone-duo|y1	iphone-duo-vs-apple-iphone-se-2022-06f41a9230f2.html
+apple-iphone-duo|huawei-pura-90s-pro-max	iphone-duo-vs-huawei-pura-90s-pro-max-115907d7b491.html
 p19|rz15	jabra-evolve2-85-usb-a-vs-razer-hammerhead-pro-hyperspeed-57550d60a2e2.html
 p11|rz02	jbl-endurance-peak-4-vs-razer-blackshark-v3-x-hyperspeed-f-0299cd49d911.html
 n59|rz07	jbl-live-770nc-vs-razer-barracuda-983d01add6f0.html
@@ -2594,6 +2605,7 @@ p_1787680633621_74|p_a26_5g	nothing-phone-2a-vs-samsung-galaxy-a26-5g-95c8b463ea
 p_1787680633621_74|p_1787680633621_75	nothing-phone-2a-vs-tecno-camon-30-premier-ea2fdce2b528.html
 p_1787680633621_74|redmi-note-15-pro-plus-5g-2026	nothing-phone-2a-vs-xiaomi-redmi-note-15-pro-5g-a4f243789b4e.html
 z15|z4	nubia-red-magic-10-pro-vs-general-mobile-gm-26-pro-5g-d4fd2f3ee9d5.html
+z13|z5	nubia-z80-ultra-vs-general-mobile-gm-fenix-ii-pro-5g-facc4e3bac3f.html
 z13|z2	nubia-z80-ultra-vs-honor-600-pro-fe0c6681a2c1.html
 retro13|retro15	olympus-stylus-710-vs-canon-eos-rebel-t7-824fc311bf49.html
 finaladd07|trend07	om-system-om-1-mark-ii-vs-canon-eos-r6-v-68ce03a43b28.html
@@ -2609,6 +2621,7 @@ add27|retro07	om-system-tough-tg-7-vs-sony-cyber-shot-dsc-w830-5e7c4ed4bac1.html
 add27|s18	om-system-tough-tg-7-vs-sony-zv-e10-ii-c6a5563a5521.html
 y3|y4	oneplus-12-vs-motorola-edge-50-pro-ce37fba4aa56.html
 p_1787680633621_67|y2	oneplus-13-vs-google-pixel-8-de65a79a4743.html
+p_1787680633621_67|p_1787680633621_68	oneplus-13-vs-google-pixel-9-e8c263829cc6.html
 p_1787680633621_67|p_1787680633621_70	oneplus-13-vs-honor-magic7-pro-a93c91648bf9.html
 p_1787680633621_67|poco_f8_pro	oneplus-13-vs-poco-f8-pro-c74f187b0738.html
 p_1787680633621_67|poco-f9-ultra-2026	oneplus-13-vs-poco-f9-ultra-72df8d69b434.html
@@ -2641,6 +2654,7 @@ n45|rz10	openrun-pro-2-vs-razer-kraken-kitty-v3-pro-90b95f1b66fc.html
 p_1787680633621_85|z10	oppo-a60-vs-casper-via-x40-eee46e2d82fa.html
 p_1787680633621_85|z6	oppo-a60-vs-general-mobile-gm-era-50-f2190ac02d51.html
 p_1787680633621_83|z2	oppo-find-x7-ultra-vs-honor-600-pro-4b6aff747da1.html
+p_1787680633621_83|z1	oppo-find-x7-ultra-vs-honor-magic8-pro-ef29b15cd326.html
 p_1787680633621_83|z13	oppo-find-x7-ultra-vs-nubia-z80-ultra-293bc563fc55.html
 p_1787680633621_84|p_1787680633621_90	oppo-reno-12-pro-vs-poco-f6-pro-16e5f174392a.html
 p_new_075|p_suunto_031	oppo-watch-free-vs-suunto-core-2-763926056047.html
@@ -2760,6 +2774,7 @@ poco_pad_m1|t54	poco-pad-m1-vs-huawei-matepad-11-5-s-papermatte-ebc552e4cfd4.htm
 poco_pad_m1|poco_pad_x1	poco-pad-m1-vs-poco-pad-x1-e97b01f28f86.html
 poco_pad_m1|tcl_10l2	poco-pad-m1-vs-tcl-tab-10l-gen-2-a52a07340056.html
 poco_pad_x1|ree_t71	poco-pad-x1-vs-reeder-t71-898e8b70af19.html
+poco-x3-gt|z9	poco-x3-gt-vs-casper-via-m40-43d0561f044a.html
 poco-x3-gt|samsung-galaxy-a32	poco-x3-gt-vs-samsung-galaxy-a32-166fe9e51923.html
 poco-x3-gt|xiaomi-redmi-note-12s	poco-x3-gt-vs-xiaomi-redmi-note-12s-4429b846d04a.html
 poco-x3-nfc|redmi-note-11-pro-plus-5g	poco-x3-nfc-vs-redmi-note-11-pro-5g-51326ba3733d.html
@@ -2791,6 +2806,7 @@ poco-x8-pro-2026|samsung-galaxy-s25	poco-x8-pro-vs-samsung-galaxy-s25-7a36b1c84c
 poco-x8-pro-2026|samsung-galaxy-s25-fe	poco-x8-pro-vs-samsung-galaxy-s25-fe-830f63bf81d4.html
 poco-x8-pro-2026|x_17t	poco-x8-pro-vs-xiaomi-17t-8615b081ab4d.html
 poco-x8-pro-2026|redmi-note-15-pro-5g-2026	poco-x8-pro-vs-xiaomi-redmi-note-15-pro-5g-e0b3d6b9e727.html
+poco_x8|samsung-galaxy-s20	poco-x8-vs-samsung-galaxy-s20-14caf6ba2e7a.html
 p_new_009|p_new_017	polar-grit-x2-vs-garmin-forerunner-970-2724a1348d25.html
 p_new_009|p_new_037	polar-grit-x2-vs-garmin-venu-x1-86c1e142c037.html
 p_new_009|p_new_010	polar-grit-x2-vs-polar-vantage-m3-44c32a24b6b6.html
@@ -2875,6 +2891,7 @@ x20|z10	realme-12-pro-vs-casper-via-x40-0a8b0d7c597f.html
 x20|y4	realme-12-pro-vs-motorola-edge-50-pro-50e545fcc7a1.html
 x20|x3	realme-12-pro-vs-reeder-p13-blue-max-671763cc57be.html
 x20|y6	realme-12-pro-vs-vivo-v29-bb8f3b5e34f5.html
+p_1787680633621_72|z4	realme-13-pro-vs-general-mobile-gm-26-pro-5g-4b8562780e96.html
 p_1787680633621_72|z3	realme-13-pro-vs-honor-magic8-lite-67ccb8c10167.html
 p_1787680633621_72|p_1787680633621_90	realme-13-pro-vs-poco-f6-pro-516838a15144.html
 p_1787680633621_72|p_mid_04	realme-13-pro-vs-poco-x7-pro-159ee95d0cc0.html
@@ -2886,7 +2903,12 @@ p_mid_05|samsung-galaxy-a37-5g	realme-14-pro-vs-samsung-galaxy-a37-5g-196d6c67e1
 p_mid_05|x18	realme-14-pro-vs-samsung-galaxy-a55-76d651c2d338.html
 p_1787680633621_87|p_casper_via_a40	realme-c67-vs-casper-via-a40-b049e833cc87.html
 p_1787680633621_87|poco-c81-pro	realme-c67-vs-poco-c81-pro-c6889c66757a.html
+p_1787680633621_87|poco-m8-5g	realme-c67-vs-poco-m8-5g-f9016e6cb680.html
+p_1787680633621_87|samsung-galaxy-m51	realme-c67-vs-samsung-galaxy-m51-4d0319b53ba7.html
+p_1787680633621_87|z11	realme-c67-vs-tcl-40-nxtpaper-5g-917fa74ae324.html
+p_1787680633621_87|z12	realme-c67-vs-tcl-50-se-7f1995afc757.html
 p_1787680633621_86|poco_f8_pro	realme-gt-6-vs-poco-f8-pro-6a887ba2e269.html
+redmi-12c|z9	redmi-12c-vs-casper-via-m40-93161578835e.html
 redmi-12c|redmi-note-9	redmi-12c-vs-redmi-note-9-a2a51af11c1b.html
 redmi-12c|xiaomi-redmi-9	redmi-12c-vs-xiaomi-redmi-9-144a0037f81c.html
 redmi-12c|xiaomi-redmi-note-12s	redmi-12c-vs-xiaomi-redmi-note-12s-6fee24aa1dd2.html
@@ -2934,6 +2956,7 @@ redmi-note-10s|z9	redmi-note-10s-vs-casper-via-m40-90290f2dee95.html
 redmi-note-10s|samsung-galaxy-a32	redmi-note-10s-vs-samsung-galaxy-a32-d1046f6bfab5.html
 redmi-note-10s|samsung-galaxy-a71	redmi-note-10s-vs-samsung-galaxy-a71-36eb3cc4bf52.html
 redmi-note-10s|z11	redmi-note-10s-vs-tcl-40-nxtpaper-5g-c87ca32fea23.html
+redmi-note-10s|z12	redmi-note-10s-vs-tcl-50-se-9b426947f525.html
 redmi-note-11-pro-plus-5g|x3	redmi-note-11-pro-5g-vs-reeder-p13-blue-max-181db3dc9958.html
 redmi-note-11-pro-plus-5g|y11	redmi-note-11-pro-5g-vs-xiaomi-redmi-13c-3107e2260eb6.html
 redmi-note-11|samsung-galaxy-m20	redmi-note-11-vs-samsung-galaxy-m20-59be2d1d1ac7.html
@@ -3205,6 +3228,7 @@ samsung-galaxy-a31|samsung-galaxy-a41	samsung-galaxy-a31-vs-samsung-galaxy-a41-5
 samsung-galaxy-a31|samsung-galaxy-a80	samsung-galaxy-a31-vs-samsung-galaxy-a80-0d0ee94513c4.html
 samsung-galaxy-a31|samsung-galaxy-j5-prime	samsung-galaxy-a31-vs-samsung-galaxy-j5-prime-61042e423127.html
 samsung-galaxy-a32|samsung-galaxy-a71	samsung-galaxy-a32-vs-samsung-galaxy-a71-419bba3ce466.html
+p_mid_02|z4	samsung-galaxy-a36-5g-vs-general-mobile-gm-26-pro-5g-e780901c206d.html
 p_mid_02|z3	samsung-galaxy-a36-5g-vs-honor-magic8-lite-f4c47728c13d.html
 p_mid_02|p_mid_04	samsung-galaxy-a36-5g-vs-poco-x7-pro-0577abedd065.html
 p_mid_02|p_mid_03	samsung-galaxy-a36-5g-vs-xiaomi-redmi-note-14-pro-b139dc461e84.html
@@ -3230,6 +3254,7 @@ x18|y3	samsung-galaxy-a55-vs-oneplus-12-d2acb3ca5f89.html
 p_mid_01|z4	samsung-galaxy-a56-5g-vs-general-mobile-gm-26-pro-5g-5f8abf269a88.html
 p_mid_01|z5	samsung-galaxy-a56-5g-vs-general-mobile-gm-fenix-ii-pro-5g-810db342a105.html
 p_mid_01|z15	samsung-galaxy-a56-5g-vs-nubia-red-magic-10-pro-f88152f317b0.html
+p_mid_01|z13	samsung-galaxy-a56-5g-vs-nubia-z80-ultra-e36d66f35814.html
 p_mid_01|s7	samsung-galaxy-a56-5g-vs-samsung-galaxy-s24-3f992f2fd910.html
 p_mid_01|xiaomi-15t-pro-2025	samsung-galaxy-a56-5g-vs-xiaomi-15t-pro-f180854e910d.html
 samsung-a57-5g-2026|samsung-galaxy-s25	samsung-galaxy-a57-5g-vs-samsung-galaxy-s25-139a5563a528.html
@@ -3337,8 +3362,12 @@ h2|p_1787680633621_68	samsung-galaxy-s25-ultra-vs-google-pixel-9-02df08415126.ht
 h2|n2	samsung-galaxy-s25-ultra-vs-iphone-13-4f62a5e6c295.html
 h2|n5	samsung-galaxy-s25-ultra-vs-iphone-16-664ceddb0b21.html
 h2|n6	samsung-galaxy-s25-ultra-vs-iphone-17-b1ece9b4d99c.html
+h2|z15	samsung-galaxy-s25-ultra-vs-nubia-red-magic-10-pro-64ba0550b66f.html
+h2|z13	samsung-galaxy-s25-ultra-vs-nubia-z80-ultra-df2561419ff2.html
 h2|poco-f9-ultra-2026	samsung-galaxy-s25-ultra-vs-poco-f9-ultra-1f170a680e8e.html
+h2|p_mid_01	samsung-galaxy-s25-ultra-vs-samsung-galaxy-a56-5g-ef0600c9afd6.html
 h2|h5	samsung-galaxy-s25-ultra-vs-samsung-galaxy-s23-ultra-4d950c81571b.html
+h2|s7	samsung-galaxy-s25-ultra-vs-samsung-galaxy-s24-e765c79720c1.html
 h2|h3	samsung-galaxy-s25-ultra-vs-samsung-galaxy-s24-ultra-2efea6ea2055.html
 h2|s2	samsung-galaxy-s25-ultra-vs-samsung-galaxy-s26-ultra-f566c17b15f3.html
 h2|y9	samsung-galaxy-s25-ultra-vs-samsung-galaxy-z-flip6-04ec512cda5a.html
@@ -3711,6 +3740,7 @@ tv104|tv113	tcl-115c7k-vs-lg-115qned93b6-eb062632ce8a.html
 tv104|tv105	tcl-115c7k-vs-samsung-115qn90f-9f9717fd884d.html
 tv102|tv105	tcl-115x955-max-vs-samsung-115qn90f-2730366045c8.html
 tv102|tv104	tcl-115x955-max-vs-tcl-115c7k-4e670da08f82.html
+p_tcl_30_se|z9	tcl-30-se-vs-casper-via-m40-b77c301640bf.html
 p_tcl_30_se|poco-x3-gt	tcl-30-se-vs-poco-x3-gt-2cfd73022064.html
 p_tcl_30_se|redmi-12c	tcl-30-se-vs-redmi-12c-f2731b0d031c.html
 p_tcl_30_se|redmi-note-9	tcl-30-se-vs-redmi-note-9-44490d707b87.html
@@ -3821,11 +3851,14 @@ p_1787680633621_75|p_1787680633621_90	tecno-camon-30-premier-vs-poco-f6-pro-eb84
 p_1787680633621_75|p_a26_5g	tecno-camon-30-premier-vs-samsung-galaxy-a26-5g-b29e17e0f890.html
 p_1787680633621_76|z4	tecno-phantom-x2-pro-vs-general-mobile-gm-26-pro-5g-f549373ca687.html
 p_1787680633621_76|z5	tecno-phantom-x2-pro-vs-general-mobile-gm-fenix-ii-pro-5g-3e4315abca60.html
+p_1787680633621_76|z13	tecno-phantom-x2-pro-vs-nubia-z80-ultra-85f253bd86da.html
 p_1787680633621_76|poco-x8-pro-max-2026	tecno-phantom-x2-pro-vs-poco-x8-pro-max-c207c506a5d1.html
 p_1787680633621_78|p_casper_via_a40	tecno-pova-6-pro-vs-casper-via-a40-05e0c0a79006.html
 p_1787680633621_78|y12	tecno-pova-6-pro-vs-infinix-note-40-3680f4fb1fea.html
+p_1787680633621_78|poco-c81-pro	tecno-pova-6-pro-vs-poco-c81-pro-488fc212d875.html
 p_1787680633621_78|p_1787680633621_87	tecno-pova-6-pro-vs-realme-c67-54ce756580ca.html
 p_1787680633621_78|y13	tecno-pova-6-pro-vs-tecno-camon-30-efe578f66278.html
+p_1787680633621_77|p_casper_via_a40	tecno-spark-20-pro-vs-casper-via-a40-477319d66367.html
 p_1787680633621_77|poco-c81-pro	tecno-spark-20-pro-vs-poco-c81-pro-55822bffce65.html
 p_1787680633621_77|p_1787680633621_87	tecno-spark-20-pro-vs-realme-c67-b26b94ab2c06.html
 p_1787680633621_77|samsung-galaxy-a07-5g	tecno-spark-20-pro-vs-samsung-galaxy-a07-5g-27c054ca5afd.html
@@ -3954,6 +3987,7 @@ p_new_072|y54	withings-scanwatch-nova-vs-oneplus-watch-2-d966e91ab265.html
 p_new_072|y56	withings-scanwatch-nova-vs-polar-vantage-v3-a9ec6dfa58c7.html
 p_1787680633621_79|z2	xiaomi-14-ultra-vs-honor-600-pro-c676b9745c47.html
 p_1787680633621_79|p_1787680633621_83	xiaomi-14-ultra-vs-oppo-find-x7-ultra-34e531e904c1.html
+p_1787680633621_79|p_zflip7	xiaomi-14-ultra-vs-samsung-galaxy-z-flip7-cbc74aa91e60.html
 y14|y2	xiaomi-14-vs-google-pixel-8-b4fc83d90a74.html
 y14|y5	xiaomi-14-vs-nothing-phone-2-81ede207735b.html
 p_1787680633621_66|z5	xiaomi-15-pro-vs-general-mobile-gm-fenix-ii-pro-5g-2fb8d5fa24e0.html
@@ -4016,6 +4050,7 @@ n48|rz07	xiaomi-redmi-buds-5-pro-vs-razer-barracuda-3ed2b7e4bfee.html
 n48|rz03	xiaomi-redmi-buds-5-pro-vs-razer-blackshark-v2-pro-2023-c2d0ab2c7dce.html
 p01|p11	xiaomi-redmi-buds-8-pro-vs-jbl-endurance-peak-4-a8d9b929001f.html
 p01|rz02	xiaomi-redmi-buds-8-pro-vs-razer-blackshark-v3-x-hyperspeed-f-0e3412a0420d.html
+xiaomi-redmi-note-12s|z9	xiaomi-redmi-note-12s-vs-casper-via-m40-640b689386d9.html
 x1|y4	xiaomi-redmi-note-13-pro-vs-motorola-edge-50-pro-476abf19cc5d.html
 x1|y7	xiaomi-redmi-note-13-pro-vs-oppo-reno11-43b9754b11d3.html
 x1|x2	xiaomi-redmi-note-13-pro-vs-poco-x6-pro-13f8bc3e582c.html
@@ -4202,4 +4237,5 @@ p_zeblaze_056|p_zeblaze_060	zeblaze-vibe-7-vs-zeblaze-thor-4-239d37f373f5.html
 p_zeblaze_059|y52	zeblaze-vibe-8-vs-fitbit-charge-6-077fdc73e669.html
 p_zeblaze_046|p_zeblaze_047	zeblaze-vibe-lite-vs-zeblaze-vibe-3-ecg-62ae6b48fcf4.html
 p_zeblaze_046|p_zeblaze_048	zeblaze-vibe-lite-vs-zeblaze-vibe-3-gps-7f131aeb70f0.html
+z14|z4	zte-red-magic-11-air-vs-general-mobile-gm-26-pro-5g-6c20bf51f60d.html
 z14|z3	zte-red-magic-11-air-vs-honor-magic8-lite-0a5606cb7f08.html

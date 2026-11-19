@@ -1,0 +1,113 @@
+{
+ "slug": "tv-120-hz-hdmi-2-1-oyun-konsolu",
+ "title": "TV'de 120 Hz ve HDMI 2.1 Ne İşe Yarar? PS5 ve Xbox İçin Rehber",
+ "description": "4K 120 Hz oyun için TV'de HDMI 2.1, VRR ve ALLM neden önemli? Hangi portun 4K120 desteklediğini, kablo gereksinimini ve etiketlerdeki tuzakları anlatıyoruz.",
+ "tldr": "PS5 veya Xbox Series X'te 4K çözünürlükte 120 kare/sn oynamak için yalnızca '120 Hz panel' yeterli değil: TV'nin HDMI 2.1 bant genişliğini destekleyen bir portu ve Ultra High Speed HDMI kablosu gerekir. Birçok TV'de bu özellik sadece bir veya iki portta bulunur. VRR ve ALLM da oyun deneyimini iyileştirir.",
+ "intro": [
+  "Yeni nesil konsol alan birçok kişi TV'de '120 Hz' yazısını görünce aradığı özelliği bulduğunu düşünür. Oysa 4K 120 kare/sn oyun, panelin hızı kadar HDMI girişinin bant genişliğine de bağlıdır. Etikette 120 Hz yazan bir TV, konsolunuzda 4K120 çalıştırmayabilir.",
+  "Bu rehberde HDMI 2.1'in ne anlama geldiğini, VRR ve ALLM gibi kısaltmaların ne işe yaradığını, hangi portu kullanmanız gerektiğini ve alışverişte nelere bakmanız gerektiğini sade biçimde anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "120 Hz ne demek?",
+   "p": [
+    "Yenileme hızı, ekranın saniyede kaç kez görüntüyü yenilediğini gösterir. 60 Hz ekran saniyede en fazla 60 kare, 120 Hz ekran ise 120 kare gösterebilir. Daha yüksek kare sayısı hızlı oyunlarda akıcılık ve düşük gecikme sağlar.",
+    "Günlük TV yayınları ve filmler bu kadar yüksek kare sayısı kullanmaz; yayınlar çoğunlukla saniyede 25 veya 50, filmler 24 kare civarındadır. Yani 120 Hz'in asıl faydası oyundadır. Film izlerken 120 Hz panelin gözle görülür bir avantajı yoktur."
+   ],
+   "note": "Bazı üreticiler 'Motion Rate', 'PMI' veya '200 Hz' gibi görüntü işleme değerleri yazar. Bunlar gerçek panel yenileme hızı değildir. Gerçek panel hızı genellikle 60 veya 120 Hz'dir; teknik özellikler tablosunda 'native' yenileme hızına bakın."
+  },
+  {
+   "h": "HDMI 2.1 neden gerekli?",
+   "p": [
+    "4K çözünürlükte 120 kare, HDMI 2.0'ın taşıyabileceğinden çok daha fazla veri demektir. HDMI 2.1 standardı bant genişliğini en fazla 48 Gbps'e çıkarır; bu da 4K 120 Hz görüntünün kablodan taşınmasını mümkün kılar.",
+    "Önemli ayrıntı şu ki televizyon üreticileri HDMI 2.1 özelliklerini farklı kombinasyonlarda sunabilir. Bir TV bazı HDMI 2.1 özelliklerini (örneğin eARC) destekleyip tam 48 Gbps bant genişliğini desteklemeyebilir. Bu yüzden 'HDMI 2.1' yazısı tek başına 4K120 garantisi değildir."
+   ]
+  },
+  {
+   "h": "Oyun için önemli kısaltmalar",
+   "list": [
+    "VRR (Değişken Yenileme Hızı): TV'nin yenileme hızını konsolun o an ürettiği kare sayısına uyarlar. Görüntü yırtılması ve takılma hissi azalır.",
+    "ALLM (Otomatik Düşük Gecikme Modu): Konsol açılınca TV kendiliğinden oyun moduna geçer, görüntü işleme gecikmesi düşer.",
+    "eARC: Soundbar veya AV alıcıya yüksek kaliteli ses göndermek için kullanılır. Oyunla doğrudan ilgisi yoktur ama konsolu soundbar'a bağlayacaksanız önemlidir.",
+    "4K 120 Hz: Konsoldan TV'ye 4K çözünürlükte saniyede 120 kare gönderebilme. Destekleyen oyunlarda daha akıcı görüntü sağlar."
+   ]
+  },
+  {
+   "h": "Hangi portu, hangi kabloyu kullanmalı?",
+   "p": [
+    "Birçok televizyonda dört HDMI portundan yalnızca bir veya ikisi tam HDMI 2.1 bant genişliğini destekler. Bunlar genellikle kılavuzda veya porta yakın etikette 4K 120 Hz ya da HDMI 2.1 yazısıyla belirtilir. Konsolu bu portlara takmak gerekir; diğer portlara takarsanız 4K 60 Hz ile sınırlı kalabilirsiniz.",
+    "Kablo da önemlidir. 4K 120 Hz için 'Ultra High Speed HDMI' sertifikalı kablo gerekir; eski 'High Speed' kablolar bu bant genişliğini taşıyamaz. PS5 ve Xbox Series X kutusunda uygun bir kablo gelir, ama uzun mesafe için kablo satın alacaksanız sertifikayı kontrol edin."
+   ],
+   "ol": [
+    "TV'nin kılavuzunda veya spec sayfasında hangi portların 4K 120 Hz desteklediğini bulun.",
+    "Konsolu bu porta takın.",
+    "Konsolun görüntü ayarlarından 120 Hz çıkışını ve VRR'ı açın.",
+    "TV'nin HDMI ayarlarında ilgili portta 'gelişmiş HDMI' veya 'Enhanced' modunu etkinleştirin; adı markaya göre değişir.",
+    "Oyun modunu açın ve oyunun 120 Hz desteklediğinden emin olun."
+   ]
+  },
+  {
+   "h": "Alışverişte tuzaklar",
+   "list": [
+    "'120 Hz' yazması tek başına yeterli değildir, HDMI portlarının bant genişliğine bakın.",
+    "Port sayısına dikkat edin: konsol, soundbar ve set üstü kutu aynı anda bağlanacaksa 4K120 destekleyen port sayısı yeterli olmalı.",
+    "Ucuz televizyonlarda 120 Hz panel olsa bile HDMI girişleri 4K 60 Hz ile sınırlı olabilir.",
+    "Pazarlama amaçlı 'efektif' hız değerlerini gerçek panel hızıyla karıştırmayın.",
+    "PC'ye bağlayacaksanız ekran kartının HDMI 2.1 çıkışı olduğundan emin olun."
+   ]
+  },
+  {
+   "h": "120 Hz sizin için ne zaman gerçekten değerli?",
+   "p": [
+    "120 Hz'in faydası oyunlarda ortaya çıkar. Hızlı tempolu nişancı oyunları, yarış oyunları ve rekabetçi çevrimiçi oyunlar, yüksek kare sayısı ve düşük gecikmeden en çok yararlanan türlerdir. Her oyun 120 kare desteklemez; konsolunuzda oynadığınız oyunların 120 Hz modu olup olmadığına bakmak gerekir.",
+    "Daha sakin tempolu hikaye ağırlıklı oyunlarda ve film izlerken 60 Hz ile 120 Hz farkı çoğu kullanıcı için küçüktür. Bu durumda HDMI 2.1 ve 120 Hz için fazladan bütçe ayırmak yerine panel kalitesine yatırım yapmak daha mantıklı olabilir.",
+    "Gelecek planınızı da düşünün. Televizyon yedi sekiz yıl kullanılır; bugünkü oyunlarınız 120 Hz'e ihtiyaç duymasa bile ileride çıkacak oyunlar ve konsol güncellemeleri bunu destekleyebilir."
+   ]
+  },
+  {
+   "h": "Soundbar ve eARC bağlantısı",
+   "p": [
+    "Konsolu doğrudan TV'ye bağlayıp sesi soundbar'a TV üzerinden göndermek en pratik yoldur. Bu bağlantıda eARC, yüksek kaliteli çok kanallı sesi TV'den soundbar'a taşır. Soundbar'ınızı TV'nin eARC yazan HDMI portuna bağlayın; konsolu ise 4K 120 Hz destekleyen porta takın. Bazı televizyonlarda bu iki özellik aynı portta bulunur, bu durumda iki cihazı tek porta bağlayamazsınız ve port planı yapmak gerekir.",
+    "Port sayısının yetmediği kurulumlarda bir HDMI 2.1 destekli AV alıcı üzerinden bağlantı kurmak da bir seçenektir, ancak aracı cihazın da 4K 120 Hz ve VRR desteğini doğrulamak gerekir."
+   ]
+  },
+  {
+   "h": "Konsol ve TV ayar kontrol listesi",
+   "list": [
+    "Konsolun görüntü çıkışı ayarlarında 120 Hz modunu ve VRR'ı açın.",
+    "TV'nin oyun portunda gelişmiş HDMI veya Enhanced modunu etkinleştirin.",
+    "TV'de oyun modunun açık olduğunu ve görüntü işleme efektlerinin kapalı olduğunu doğrulayın.",
+    "Oyun içi ayarlarda performans modunu veya 120 Hz seçeneğini seçin.",
+    "Görüntü gelmiyorsa kabloyu ve portu değiştirerek deneyin; sorun çoğunlukla eski veya sertifikasız kablodan çıkar."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "PS5 için 120 Hz TV şart mı?",
+   "a": "Hayır, PS5 60 Hz TV'de de çalışır. Ancak 120 kare destekleyen oyunlarda bu modu kullanmak için HDMI 2.1 destekleyen bir port ve 120 Hz panel gerekir."
+  },
+  {
+   "q": "Film izlerken 120 Hz fark yaratır mı?",
+   "a": "Genelde hayır. Filmler 24 kare civarında çekilir, yayınlar da çoğunlukla 25 veya 50 karedir. 120 Hz'in avantajı oyunlarda ortaya çıkar."
+  },
+  {
+   "q": "HDMI 2.1 kablosu ile eski kablo arasında fark var mı?",
+   "a": "Evet. 4K 120 Hz için Ultra High Speed HDMI kablosu gerekir. Eski High Speed kablolar 4K 60 Hz'e kadar çalışır, daha yüksek bant genişliğinde görüntü gelmeyebilir veya sorun çıkabilir."
+  },
+  {
+   "q": "VRR olmadan oyun oynanır mı?",
+   "a": "Evet, ama sabit yenileme hızında oyun kare sayısı dalgalandığında görüntü yırtılması veya takılma hissi oluşabilir. VRR bu durumu azaltır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "RTINGS: What Is HDMI 2.1?",
+   "u": "https://www.rtings.com/tv/learn/hdmi-2-1"
+  },
+  {
+   "t": "RTINGS: TV Learn",
+   "u": "https://www.rtings.com/tv/learn"
+  }
+ ]
+}

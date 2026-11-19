@@ -1,0 +1,175 @@
+{
+ "slug": "oled-qled-mini-led-tv-farki",
+ "title": "OLED mi QLED mi Mini LED mi? Hangi TV Teknolojisi Size Uygun",
+ "description": "OLED, QLED ve Mini LED televizyonlar arasındaki gerçek farklar: kontrast, parlaklık, yanma riski, görüş açısı ve hangi oda ve kullanım için hangisi mantıklı.",
+ "tldr": "OLED, her pikselin kendi ışığını ürettiği teknolojidir ve karanlık odada en derin siyahı verir. QLED ve Mini LED ise LED arka ışıklı LCD ekranlardır ve daha parlaktır; Mini LED, çok sayıda küçük LED ile yerel karartmayı OLED'e yaklaştırır. Karanlık odada film için OLED, aydınlık salonda gündüz izleme için QLED veya Mini LED genelde daha uygundur.",
+ "intro": [
+  "Mağazada yan yana duran televizyonların etiketlerinde OLED, QLED, Mini LED, QNED gibi birbirine benzeyen kısaltmalar görürsünüz. Bunların bir kısmı gerçek teknoloji farkı, bir kısmı ise üreticilerin kendi pazarlama adlarıdır.",
+  "Bu rehber ekranın nasıl ışık ürettiğini temel alarak üç ana yaklaşımı karşılaştırıyor ve gerçek kullanımda neyin önemli olduğunu açıklıyor: oda ışığı, siyah seviyesi, parlaklık, yanma riski ve bütçe."
+ ],
+ "sections": [
+  {
+   "h": "Temel fark: ışık nereden geliyor?",
+   "p": [
+    "OLED panelde her piksel kendi ışığını üretir. Siyah göstermek gerektiğinde ilgili piksel tamamen kapanır. Bu yüzden siyahlar gerçekten siyah, kontrast oranı çok yüksektir.",
+    "QLED ve Mini LED televizyonlar ise LCD ekranlardır: önde renkleri oluşturan bir panel, arkada ise onu aydınlatan LED'ler bulunur. QLED'deki 'Q' kuantum noktası katmanından gelir; bu katman renk saflığını ve parlaklığı artırır ama ışığı üreten yine arkadaki LED'lerdir. Mini LED ise bu arka ışığı çok sayıda küçük LED'e bölerek bölgesel olarak kısabilen bir yapıdır."
+   ],
+   "note": "QLED bir ekran paneli türü değil, Samsung'un ve bazı üreticilerin LCD televizyonları için kullandığı bir pazarlama adıdır. QLED ile OLED farklı teknolojilerdir; adların benzerliği yanıltıcı olabilir."
+  },
+  {
+   "h": "Üç teknolojinin karşılaştırması",
+   "table": {
+    "head": [
+     "Özellik",
+     "OLED",
+     "QLED (LED arka ışıklı)",
+     "Mini LED"
+    ],
+    "rows": [
+     [
+      "Siyah seviyesi",
+      "Piksel kapanır, en derin siyah",
+      "Sınırlı yerel karartma, gri siyah olabilir",
+      "İyi, bölge sayısına bağlı"
+     ],
+     [
+      "Tepe parlaklık",
+      "Orta-yüksek",
+      "Yüksek",
+      "Çok yüksek"
+     ],
+     [
+      "Parlak odada izleme",
+      "İyi, ama parlaklığı sınırlı",
+      "Çok iyi",
+      "Çok iyi"
+     ],
+     [
+      "Karanlık odada film",
+      "En iyisi",
+      "Orta",
+      "İyi"
+     ],
+     [
+      "Görüş açısı",
+      "Çok geniş",
+      "Panel türüne göre dar olabilir",
+      "Panel türüne göre değişir"
+     ],
+     [
+      "Haleleme (blooming)",
+      "Yok",
+      "Olabilir",
+      "Olabilir, bölge sayısı arttıkça azalır"
+     ],
+     [
+      "Yanma riski",
+      "Çok düşük ama sıfır değil",
+      "Yok",
+      "Yok"
+     ],
+     [
+      "Fiyat",
+      "Genelde daha yüksek",
+      "Geniş fiyat aralığı",
+      "Orta ve üst segment"
+     ]
+    ]
+   },
+   "p": [
+    "Tablodaki ifadeler genel eğilimleri anlatır; modelden modele fark büyüktür. Aynı teknolojiyi kullanan iki televizyonun görüntüsü işlemci, panel kalitesi ve yerel karartma algoritmasına göre ciddi biçimde değişebilir."
+   ]
+  },
+  {
+   "h": "OLED'in güçlü ve zayıf yanları",
+   "p": [
+    "OLED'in en büyük avantajı kontrasttır. Karanlık sahnelerde yıldızlar, altyazılar ve parlak nesneler siyah zeminde parlak noktalar olarak ayrışır. Geniş görüş açısı sayesinde yandan bakıldığında renkler solmaz; hareketli görüntülerde tepki süresi çok hızlıdır, bu da oyun ve spor için avantajdır.",
+    "Zayıf yanları parlaklık ve yanma riskidir. OLED televizyonlar çok parlak odalarda aynı fiyattaki Mini LED modeller kadar parlak olamaz. Uzun süre sabit görüntü gösterildiğinde (kanal logosu, oyun arayüzü, haber bandı) yanma riski doğar. Modern OLED'lerde piksel kaydırma ve logo karartma gibi korumalar bulunur; çeşitli içerik izleyen biri için günlük kullanımda risk düşüktür, ama haber kanalını günde 10 saat açık bırakan biri için daha dikkatli olmak gerekir."
+   ]
+  },
+  {
+   "h": "QLED ve Mini LED'in güçlü ve zayıf yanları",
+   "p": [
+    "LED arka ışıklı ekranların en büyük gücü parlaklıktır. Güneş alan bir salonda, gün ışığında HDR içerikte ve renk doygunluğunun öne çıktığı sahnelerde bu televizyonlar rahat görüntü verir. Yanma riski yoktur ve aynı boyutta daha uygun fiyatlıdır.",
+    "Zayıf yanları siyah seviyesi ve haleleme eğilimidir. Karanlık bir sahnede parlak bir nesnenin etrafında hafif bir ışık halkası görülebilir. Mini LED televizyonlar binlerce küçük LED ve yüzlerce karartma bölgesiyle bu sorunu belirgin biçimde azaltır, bu yüzden OLED'e en çok yaklaşan LCD yaklaşımı olarak görülür. Ancak bölge sayısı ve algoritma kalitesi modelden modele değişir; ekranda 'Mini LED' yazması tek başına yeterli kalite garantisi vermez."
+   ]
+  },
+  {
+   "h": "Size hangisi uygun?",
+   "list": [
+    "Akşamları ışıkları kısıp film ve dizi izliyorsanız: OLED.",
+    "Salonunuz gün boyu aydınlıksa ve daha çok gündüz içerik izliyorsanız: QLED veya Mini LED.",
+    "Hem aydınlık hem karanlık kullanıyor, bütçeniz de OLED'e yetmiyorsa: iyi bir Mini LED.",
+    "Çocuklar, sürekli açık bırakılan TV veya uzun süreli sabit görüntü: yanma riski olmayan LED arka ışıklı bir model.",
+    "Oyun konsolu için hızlı tepki süresi ve 120 Hz önemliyse: hem OLED hem iyi bir Mini LED uygundur; ayrıntı için 120 Hz ve HDMI 2.1 rehberimize bakın."
+   ]
+  },
+  {
+   "h": "Alışverişte dikkat edilecekler",
+   "ol": [
+    "Etiketteki teknoloji adına değil, model adına ve bağımsız testlere bakın.",
+    "Parlaklık için üreticinin verdiği tepe değer yerine, bağımsız ölçüm sitelerinin gerçek HDR parlaklık sonuçlarını karşılaştırın.",
+    "Mini LED ise yerel karartma bölge sayısını araştırın; sayı arttıkça haleleme azalır.",
+    "OLED ise garanti süresini ve yanma korumalarını inceleyin.",
+    "Ekran boyutunu oturma mesafenize göre seçin; boyut hesabı için TV ekran boyutu rehberimize göz atın."
+   ]
+  },
+  {
+   "h": "Pazarlama adları sözlüğü",
+   "list": [
+    "OLED: Kendi ışığını üreten pikseller. Gerçek bir panel teknolojisi.",
+    "QLED: Kuantum nokta katmanlı LED arka ışıklı LCD. OLED ile karıştırılmamalı.",
+    "Neo QLED: Samsung'un Mini LED arka ışık kullanan QLED serisinin adı.",
+    "QNED: LG'nin kuantum nokta ve nano hücre katmanı kullanan Mini LED arka ışıklı LCD serisi.",
+    "Mini LED: Arka ışıkta çok küçük ve çok sayıda LED kullanan LCD yaklaşımı.",
+    "QD-OLED: Kuantum nokta ve OLED'i birleştiren bir panel tipi; OLED sınıfındadır, LCD değildir."
+   ]
+  },
+  {
+   "h": "HDR ve parlaklık neden önemli?",
+   "p": [
+    "HDR içerikte parlak ve koyu bölgeler aynı karede bulunur: gün ışığı, güneşin parlak yansıması, ateş, ışık oyunları. Bunların etkisini görmek için ekranın yüksek tepe parlaklığına ulaşabilmesi gerekir. Mini LED ve üst seviye QLED modeller bu konuda genelde öndedir.",
+    "OLED televizyonlar HDR'de siyah seviyesi sayesinde yüksek kontrast verir ama tepe parlaklıkta LED arka ışıklı rakiplerinin gerisinde kalabilir. Günümüzde yeni nesil OLED paneller bu açığı kapatmaya çalışıyor; yine de aydınlık bir odada izleyecekseniz parlaklık değerlerini bağımsız testlerde karşılaştırın.",
+    "Üretici etiketlerindeki 'HDR' yazısı tek başına yeterli değildir. HDR10, HLG ve Dolby Vision gibi formatlar içeriğin nasıl kodlandığını söyler; ekranın bunu ne kadar iyi gösterebildiği ise panele bağlıdır."
+   ]
+  },
+  {
+   "h": "OLED'de yanma riskini azaltmanın yolları",
+   "ol": [
+    "Aynı sabit görüntüyü saatlerce açık bırakmayın; TV'yi kullanmadığınızda kapatın.",
+    "Ekran koruyucu ve piksel kaydırma özelliklerini açık tutun.",
+    "Kanal logosu ve oyun arayüzü gibi sabit öğeler için logo karartma ayarını etkinleştirin.",
+    "Parlaklığı ortam ışığına göre makul seviyede tutun; sürekli maksimum parlaklık ömrü kısaltır.",
+    "Üreticinin ekran bakım ve piksel yenileme işlemlerini TV beklemedeyken çalışmaya bırakın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "QLED, OLED'den daha mı iyi?",
+   "a": "Hayır, farklı teknolojilerdir. QLED daha parlak olabilir, OLED ise daha derin siyah ve daha yüksek kontrast verir. Hangisinin daha iyi olduğu odanızın ışığına ve ne izlediğinize bağlıdır."
+  },
+  {
+   "q": "OLED TV'de yanma gerçekten oluyor mu?",
+   "a": "Oluşabilir ama çeşitli içerik izleyen kullanıcılar için nadirdir. Aynı sabit öğeyi (kanal logosu, oyun arayüzü) uzun saatler boyunca göstermek riski artırır. Üreticilerin piksel kaydırma ve ekran koruma özellikleri bu riski azaltır."
+  },
+  {
+   "q": "Mini LED ile OLED arasındaki fark ne kadar büyük?",
+   "a": "Karanlık odada OLED'in siyah seviyesi ve kontrastı hâlâ üstündür. Parlak odada ise iyi bir Mini LED daha parlak görünür. Aradaki fark modele göre değişir; bağımsız testlere bakmak en güvenilir yoldur."
+  },
+  {
+   "q": "QNED nedir?",
+   "a": "QNED, LG'nin kullandığı bir pazarlama adıdır ve kuantum nokta ile nano hücre katmanını Mini LED arka ışıkla birleştiren LCD televizyonlar için kullanılır. OLED değildir."
+  }
+ ],
+ "sources": [
+  {
+   "t": "RTINGS: Mini LED vs. OLED TVs",
+   "u": "https://www.rtings.com/tv/learn/mini-led-vs-oled"
+  },
+  {
+   "t": "RTINGS: TV Learn",
+   "u": "https://www.rtings.com/tv/learn"
+  }
+ ]
+}

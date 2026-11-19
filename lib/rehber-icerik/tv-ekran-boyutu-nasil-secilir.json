@@ -1,0 +1,152 @@
+{
+ "slug": "tv-ekran-boyutu-nasil-secilir",
+ "title": "TV Ekran Boyutu Nasıl Seçilir? Mesafeye Göre İnç Tablosu",
+ "description": "Oturma mesafenize göre kaç inç TV almalısınız? THX ve SMPTE açılarına dayalı hesap, 43-85 inç için mesafe tablosu ve oda tipine göre pratik öneriler.",
+ "tldr": "Pratik kural: ekranın yatay açıda görüş alanınızın yaklaşık 30 ile 40 derecesini kaplaması hedeflenir. 4K bir TV için bu, 55 inçte yaklaşık 1,7-2,3 metre, 65 inçte 2-2,7 metre, 75 inçte 2,3-3,1 metre mesafeye denk gelir. Salonunuz küçükse ve mesafe 2 metrenin altındaysa 55 inç genelde yeterlidir.",
+ "intro": [
+  "TV alırken en sık yapılan hata, mağazadaki geniş ışıklı duvarda görülen boyutu evdeki oturma mesafesiyle karıştırmak. Mağazada 75 inç gösterişli görünür, ama koltuktan 2 metre uzaktaki küçük bir salonda gözünüzü yorabilir; tersine 3,5 metre uzaktan izlediğiniz bir odada 43 inç ekran sinema hissi vermez.",
+  "Bu rehberde ekran boyutunu tahmine bırakmadan, oturma mesafenizden hesaplamanın yolunu, 4K çözünürlüğün size sağladığı esnekliği ve oda tipine göre en mantıklı boyutları bulacaksınız. Hesabı kendi ölçünüzle yapabilmeniz için formülü de açık yazdık."
+ ],
+ "sections": [
+  {
+   "h": "İzleme açısı neden belirleyici?",
+   "p": [
+    "Ekranın büyüklüğü tek başına anlam taşımaz; önemli olan ekranın gözünüze kaç derecelik açıyla görünmesidir. Sinema ve ev sineması standartları bu açıyı temel alır. SMPTE yaklaşık 30 derecelik yatay görüş açısını, THX ise daha sürükleyici bir deneyim için yaklaşık 40 dereceyi hedef olarak tanımlar.",
+    "Aynı ekran uzaktan küçük, yakından büyük görünür. Bu yüzden önce koltuğunuz ile TV arasındaki mesafeyi ölçmek, sonra ekranı ona göre seçmek gerekir. Ölçüm için ekranın duvardaki ya da TV ünitesindeki yerinden koltuğun sırt dayama noktasına kadar bir şerit metre yeterlidir."
+   ],
+   "note": "Tabloda verilen mesafeler, 16:9 oranlı bir ekranın yatay genişliğinden hesaplanmış yaklaşık değerlerdir. Tabloda kullanılan 30 ve 40 derece hedefleri SMPTE ve THX önerilerine dayanır; kişisel konfor ve oda düzeni sonucu değiştirebilir."
+  },
+  {
+   "h": "Mesafeye göre TV boyutu tablosu",
+   "p": [
+    "Aşağıdaki değerler 16:9 ekranın yatay genişliğinden, 30 derece (SMPTE) ve 40 derece (THX) görüş açısına göre hesaplandı. İki sütun arasındaki aralık sizin için 'rahat' bölgedir: yakın değer daha sinematik, uzak değer daha rahat izleme demektir."
+   ],
+   "table": {
+    "head": [
+     "Ekran boyutu",
+     "Yatay genişlik",
+     "40° (THX) mesafe",
+     "30° (SMPTE) mesafe"
+    ],
+    "rows": [
+     [
+      "43 inç",
+      "yaklaşık 95 cm",
+      "1,3 m",
+      "1,8 m"
+     ],
+     [
+      "50 inç",
+      "yaklaşık 111 cm",
+      "1,5 m",
+      "2,1 m"
+     ],
+     [
+      "55 inç",
+      "yaklaşık 122 cm",
+      "1,7 m",
+      "2,3 m"
+     ],
+     [
+      "65 inç",
+      "yaklaşık 144 cm",
+      "2,0 m",
+      "2,7 m"
+     ],
+     [
+      "75 inç",
+      "yaklaşık 166 cm",
+      "2,3 m",
+      "3,1 m"
+     ],
+     [
+      "85 inç",
+      "yaklaşık 188 cm",
+      "2,6 m",
+      "3,5 m"
+     ]
+    ]
+   }
+  },
+  {
+   "h": "Formülü kendiniz uygulayın",
+   "p": [
+    "Tabloda yer almayan bir boyut için hesabı elle yapabilirsiniz. Önce ekranın yatay genişliğini bulun: 16:9 bir ekranda genişlik, inç cinsinden köşegen uzunluğunun yaklaşık 0,87 katıdır; bunu 2,54 ile çarparak santimetreye çevirirsiniz. Ardından bu genişliği 1,4 ile çarparsanız yaklaşık 40 derecelik, 1,9 ile çarparsanız yaklaşık 30 derecelik mesafeyi bulursunuz.",
+    "Örnek: 65 inç için genişlik yaklaşık 144 cm olur. 144 x 1,4 ile yaklaşık 2 metre, 144 x 1,9 ile yaklaşık 2,7 metre çıkar. Koltuğunuz 2,4 metredeyse 65 inç tam aralığın ortasındadır."
+   ]
+  },
+  {
+   "h": "4K çözünürlük size ne kazandırır?",
+   "p": [
+    "Eski Full HD televizyonlarda ekrana çok yaklaşınca tek tek pikseller görülürdü; bu yüzden büyük ekranlar için uzak oturmak gerekirdi. 4K çözünürlükte piksel yoğunluğu dört kat olduğu için aynı ekrana belirgin biçimde daha yakın oturabilirsiniz. Bu, tabloda yakın sütundaki (40 derece) değerlerin 4K için pratikte rahat uygulanabildiği anlamına gelir.",
+    "Bu avantaj kaynağın kalitesine bağlı. Dijital yayın ve eski kayıtlar 4K olmadığı için büyük ekranda yumuşak görünebilir; TV bunları ölçekleyerek büyütür. Ağırlıklı olarak kanal izliyorsanız çok büyük bir ekran yerine tablodaki orta değeri tercih etmek daha doğru olur."
+   ]
+  },
+  {
+   "h": "Oda tipine göre pratik öneriler",
+   "list": [
+    "Yatak odası ve çalışma odası, 1,5 metre civarı mesafe: 43 ile 50 inç yeterlidir.",
+    "Küçük veya orta salon, 2 ile 2,5 metre mesafe: 55 ile 65 inç en dengeli aralıktır.",
+    "Geniş salon, 2,5 ile 3,5 metre mesafe: 65 ile 75 inç mantıklıdır; 85 inç için mesafenin en az 3 metre olması iyi olur.",
+    "Güneş alan parlak odalarda ekran büyüklüğünden önce parlaklık ve yansıma kontrolü önemlidir; bu konuda OLED, QLED ve Mini LED farkını anlattığımız rehbere bakabilirsiniz.",
+    "Oyun konsolu ile izleyecekseniz masaya veya koltuğa daha yakın oturursunuz; bu durumda tablodaki yakın değeri esas alın."
+   ]
+  },
+  {
+   "h": "Satın almadan önce kontrol listesi",
+   "ol": [
+    "Koltuk ile TV arasındaki mesafeyi şerit metreyle ölçün.",
+    "Tablodan o mesafeye denk gelen boyut aralığını bulun.",
+    "Seçtiğiniz boyutun genişliğinin TV ünitesine veya duvardaki boşluğa sığdığını doğrulayın; ünite ekran ayaklarından geniş olmalıdır.",
+    "Duvara asacaksanız arka yüzdeki VESA ölçüsünü kontrol edin; duvar aparatı rehberimizde bu konuyu ayrıntılı anlattık.",
+    "Kapıdan ve asansörden geçecek kutu ölçüsünü hesaba katın; 75 inç ve üstü modeller 170 cm'ye yakın genişlikte kutularla gelir."
+   ]
+  },
+  {
+   "h": "En sık yapılan beş hata",
+   "list": [
+    "Mağazadaki izlenimle karar vermek: Mağaza ışıklı ve geniş bir alandır; ekran orada olduğundan küçük görünür. Evdeki mesafeyi ölçmeden karar vermeyin.",
+    "Yalnızca bütçeye bakıp en büyük ekranı almak: Aynı paraya daha küçük ama daha iyi panelli bir model, çoğu zaman daha iyi görüntü verir.",
+    "Duvara asılacak yüksekliği hesaba katmamak: Ekranın orta noktası oturduğunuzda göz hizasına yakın olmalıdır. Çok yüksek asılan büyük ekran boynu yorar.",
+    "Kutu ve kapı ölçüsünü unutmak: 75 inç ve üzeri televizyonlar büyük kutularla gelir; asansör ve kapı genişliği sorun çıkarabilir.",
+    "Soundbar ve ünite payını atlamak: Ekranın altına soundbar koyacaksanız ünite üstünden yüksekliği ve ekran alt çerçevesinin çakışmayacağını kontrol edin."
+   ]
+  },
+  {
+   "h": "İzlediğiniz içeriğe göre boyut ayarı",
+   "p": [
+    "Ağırlıklı olarak yerli dizi, haber ve kanal izliyorsanız içeriğin büyük kısmı 4K değildir. Bu durumda ekran çok büyüdükçe görüntü yumuşar. Tablodaki geniş aralığın orta ve uzak tarafına yakın bir boyut daha konforlu olur.",
+    "Netflix, YouTube veya diğer dijital platformlarda 4K içerik izliyor, film ve belgesel seviyorsanız ya da oyun oynuyorsanız tablonun yakın sütunu size uygundur. Bu içeriklerde büyük ekranın sağladığı detay ve sürükleyicilik fark yaratır.",
+    "Çocuk odası ve yatak odası gibi yakın mesafeli kullanımlarda ekran boyutunu küçük tutmak göz sağlığı açısından da mantıklıdır. Yakın mesafede aşırı büyük ekranda gözün sürekli yatayda tarama yapması yorgunluk yaratabilir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "55 inç TV kaç metreden izlenmeli?",
+   "a": "4K bir 55 inç TV için yaklaşık 1,7 ile 2,3 metre arası rahat bir izleme mesafesidir. Daha yakın oturursanız sinematik his artar, daha uzak oturursanız ekran küçük kalmaya başlar."
+  },
+  {
+   "q": "65 inç TV küçük salon için çok büyük mü?",
+   "a": "Koltuğunuz 2 metrenin altındaysa 65 inç gözü yorabilir. 2 ile 2,7 metre arasında ise 65 inç çoğu salon için dengeli bir seçimdir. Kararı mesafeye göre verin, oda alanına göre değil."
+  },
+  {
+   "q": "Daha büyük TV her zaman daha iyi midir?",
+   "a": "Hayır. Çok büyük bir ekran için yeterli mesafe yoksa görüntüyü bir bakışta kavramak zorlaşır ve gözü yorar. Ayrıca düşük çözünürlüklü yayınlar büyük ekranda daha bulanık görünür. Bütçeyi ekran boyutuna değil, panel kalitesine ayırmak çoğu zaman daha iyi sonuç verir."
+  },
+  {
+   "q": "Full HD TV için mesafe farklı mı hesaplanır?",
+   "a": "Evet. Full HD ekranlarda piksel yapısı yakından görüldüğü için aynı boyutta 4K TV'ye göre biraz daha uzak oturmak gerekir. Bugün satılan 43 inç üzeri modellerin neredeyse tamamı 4K olduğu için bu fark artık pek önemli değil."
+  }
+ ],
+ "sources": [
+  {
+   "t": "Audioholics: How to Find the Right Size TV",
+   "u": "https://www.audioholics.com/hdtv-formats/how-to-find-the-right-size-tv"
+  },
+  {
+   "t": "RTINGS: TV Learn",
+   "u": "https://www.rtings.com/tv/learn"
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "slug": "oyun-icin-tv-nasil-secilir",
+ "title": "Oyun İçin TV Nasıl Seçilir? PS5, Xbox ve PC İçin Kontrol Listesi",
+ "description": "Oyun TV'si seçerken 4K 120 Hz, HDMI 2.1, VRR, giriş gecikmesi, panel tipi ve ekran boyutu nasıl değerlendirilir? PS5, Xbox ve PC için pratik rehber.",
+ "tldr": "Oyun için TV seçerken önce HDMI 2.1 ile 4K 120 Hz ve VRR desteğine, sonra giriş gecikmesine ve panel tipine bakın. OLED hızlı tepki ve kontrast, Mini LED parlaklık sağlar. Ekran boyutunu oturma mesafesine göre seçin ve konsolunuzu 4K120 destekleyen porta takın.",
+ "intro": [
+  "Oyun TV'si seçmek sadece büyük ve parlak ekran bulmak demek değildir. Aynı konsoldan aynı oyunu oynasanız bile gecikme, akıcılık ve görüntü kalitesi televizyondan televizyona belirgin farklılık gösterir.",
+  "Bu rehber PS5, Xbox Series X ve PC kullanıcıları için hangi özelliklerin gerçekten önemli olduğunu, hangilerinin pazarlama olduğunu ve alışveriş öncesi bir kontrol listesini sunuyor."
+ ],
+ "sections": [
+  {
+   "h": "Önce bütçe ve kullanım senaryosunu belirleyin",
+   "p": [
+    "Sadece hikaye ağırlıklı tek oyunculu oyunlar oynuyorsanız yüksek yenileme hızı ve en düşük gecikme sizin için ikinci planda olabilir; panel kalitesi ve HDR öne çıkar. Rekabetçi çevrimiçi oyunlarda ise yenileme hızı ve gecikme belirleyicidir.",
+    "PC kullanıyorsanız TV'nin 4K 120 Hz ve VRR desteği ekran kartınızın çıkışlarıyla uyumlu olmalıdır. Konsol kullanıyorsanız konsolun desteklediği özellikler TV'de eksiksiz çalışmalıdır."
+   ]
+  },
+  {
+   "h": "Oyun için kritik özellikler",
+   "list": [
+    "4K 120 Hz: Destekleyen oyunlarda akıcı görüntü. HDMI 2.1 bant genişliği gerektirir.",
+    "VRR: Kare sayısı dalgalandığında görüntü yırtılmasını azaltır.",
+    "ALLM: Konsol açılınca TV'yi otomatik olarak düşük gecikme moduna alır.",
+    "Düşük giriş gecikmesi: Kumandaya bastığınız an ile ekranda tepkinin görülmesi arasındaki süre; bağımsız testlerde ölçülür.",
+    "Hızlı tepki süresi: Hareketli sahnelerde görüntü izi bırakmasını azaltır.",
+    "HDR ve kontrast: Oyun atmosferini güçlendirir; ayrıntı için HDR rehberimize bakabilirsiniz."
+   ]
+  },
+  {
+   "h": "Panel tipine göre oyun deneyimi",
+   "table": {
+    "head": [
+     "Panel",
+     "Güçlü yanı",
+     "Dikkat edilecek"
+    ],
+    "rows": [
+     [
+      "OLED",
+      "Çok hızlı tepki, derin siyah, yüksek kontrast",
+      "Sabit arayüz öğelerinde yanma riski, parlak odada daha düşük parlaklık"
+     ],
+     [
+      "Mini LED",
+      "Çok yüksek parlaklık, HDR etkisi, yanma yok",
+      "Haleleme ve tepki süresi modele göre değişir"
+     ],
+     [
+      "Standart LED / QLED",
+      "Uygun fiyat, parlak görüntü",
+      "Kontrast ve HDR performansı sınırlı olabilir"
+     ]
+    ]
+   },
+   "p": [
+    "Farkı ayrıntılı anlattığımız OLED, QLED ve Mini LED rehberine göz atabilirsiniz. Oyun için hangi paneli seçeceğiniz oda ışığına ve oyun türüne bağlıdır."
+   ]
+  },
+  {
+   "h": "HDMI portlarını doğru kullanın",
+   "p": [
+    "Her TV'de tüm HDMI portları 4K 120 Hz desteklemez. Genellikle bir veya iki port tam bant genişliği sunar. Konsolunuzu bu porta takın, soundbar'ı eARC portuna bağlayın. Port düzenini TV'yi almadan önce kılavuzdan kontrol edin; ayrıntılı anlatım için 120 Hz ve HDMI 2.1 rehberimize bakın."
+   ],
+   "ol": [
+    "TV'nin kılavuzunda 4K 120 Hz destekleyen portu bulun.",
+    "Konsolu bu porta bağlayın ve Ultra High Speed HDMI kablosu kullanın.",
+    "Konsolda 120 Hz ve VRR çıkışını açın.",
+    "TV'de gelişmiş HDMI ayarını ve oyun modunu etkinleştirin.",
+    "Oyun içi ayarlarda performans veya 120 Hz modunu seçin."
+   ]
+  },
+  {
+   "h": "Ekran boyutu ve oturma mesafesi",
+   "p": [
+    "Oyunda ekrana masa veya koltuktan daha yakın oturulur. 55 ve 65 inç çoğu oyuncu için dengeli seçimdir. Çok büyük ekranlarda ekranın köşelerindeki arayüz öğelerini görmek için göz gezdirmek gerekir. Mesafeye göre boyut hesabı için TV ekran boyutu rehberimizdeki tabloyu kullanabilirsiniz."
+   ]
+  },
+  {
+   "h": "Oyun modunu doğru ayarlayın",
+   "p": [
+    "Oyun modu görüntü işleme efektlerini kapatarak gecikmeyi düşürür. Bu mod açıkken hareket yumuşatma, gürültü azaltma gibi ek işleme yapılmaz. ALLM destekli TV'lerde konsol bağlanınca bu mod kendiliğinden açılır; desteklemiyorsa menüden elle seçmeniz gerekir.",
+    "Oyun modunda renk ve kontrast ayarlarını da kontrol edin. Bazı televizyonlarda oyun modu görüntüyü sönük gösterebilir; bu durumda parlaklık, kontrast ve HDR ayarlarını oyun menüsünden dengeleyin."
+   ]
+  },
+  {
+   "h": "OLED ile oynarken yanma riskini azaltma",
+   "list": [
+    "Aynı arayüz öğesi (can çubuğu, harita, skor) saatlerce sabit kalıyorsa TV'yi mola verdirerek kapatın.",
+    "Oyun içi arayüz yoğunluğunu veya parlaklığını azaltın; birçok oyun arayüzü gizleme seçeneği sunar.",
+    "TV'nin piksel kaydırma ve ekran koruma özelliklerini açık tutun.",
+    "Çeşitli içerik izlemek, uzun süre aynı oyunu oynamaktan daha güvenlidir.",
+    "Çok uzun süreli sabit görüntü için Mini LED gibi yanma riski olmayan bir panel düşünün."
+   ]
+  },
+  {
+   "h": "Sık yapılan hatalar",
+   "list": [
+    "Konsolu 4K 120 Hz desteklemeyen porta takmak ve sorunun TV'de olduğunu düşünmek.",
+    "Eski HDMI kablosu kullanmak.",
+    "Oyun modunu açmayı unutmak ve gecikmenin yüksek kalması.",
+    "Sadece 120 Hz etiketine bakıp HDMI portlarını kontrol etmemek.",
+    "Çok büyük ekran alıp yakın oturmak."
+   ]
+  },
+  {
+   "h": "Alışveriş kontrol listesi",
+   "list": [
+    "HDMI 2.1 ve 4K 120 Hz destekleyen port sayısı.",
+    "VRR ve ALLM desteği.",
+    "Bağımsız testlerde ölçülmüş giriş gecikmesi.",
+    "Panel tipi: OLED veya Mini LED, oda ışığınıza göre.",
+    "HDR formatları: HDR10 ve gerekiyorsa Dolby Vision.",
+    "Oyun menüsü: kare sayısı, gecikme ve HDR ayarlarının gösterildiği oyun çubuğu.",
+    "Boyut: oturma mesafesine göre 55-65 inç çoğu durumda yeterli."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "PS5 için hangi TV özellikleri şart?",
+   "a": "Şart değil ama önerilen: HDMI 2.1 ile 4K 120 Hz, VRR ve ALLM. Bu özellikler olmadan da oynayabilirsiniz ancak 120 kare modundan yararlanamazsınız."
+  },
+  {
+   "q": "Oyun için OLED mi Mini LED mi daha iyi?",
+   "a": "OLED daha hızlı tepki ve derin siyah sunar; Mini LED daha parlaktır ve yanma riski taşımaz. Karanlık odada OLED, aydınlık odada Mini LED öne çıkar."
+  },
+  {
+   "q": "Giriş gecikmesi nedir ve ne kadar olmalı?",
+   "a": "Kumandaya basma ile ekranda tepki arasındaki süredir. Düşük olması rekabetçi oyunlarda avantaj sağlar. Bağımsız testlerde ölçülen değere ve oyun modundaki sonuçlara bakın."
+  },
+  {
+   "q": "Monitör mü TV mi daha iyi?",
+   "a": "Masa başı ve rekabetçi oyunda monitör genelde daha düşük gecikme ve daha yüksek yenileme hızı sunar. Oturma odasında konsol ve sinematik deneyim için TV daha uygundur."
+  }
+ ],
+ "sources": [
+  {
+   "t": "RTINGS: What Is HDMI 2.1?",
+   "u": "https://www.rtings.com/tv/learn/hdmi-2-1"
+  },
+  {
+   "t": "RTINGS: Mini LED vs. OLED TVs",
+   "u": "https://www.rtings.com/tv/learn/mini-led-vs-oled"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "slug": "google-tv-webos-tizen-farki",
+ "title": "Google TV, webOS ve Tizen Farkı: Hangi Akıllı TV Sistemi Size Uygun?",
+ "description": "Google TV, LG webOS ve Samsung Tizen arasındaki farklar: arayüz hızı, uygulama desteği, güncelleme, ekran yansıtma ve hangi kullanıcıya hangisi uygun?",
+ "tldr": "Google TV uygulama çeşitliliği, Chromecast ve Google Asistan ile öne çıkar. LG webOS imleç kumandası ve sade arayüzüyle, Samsung Tizen hızlı menüleri ve kendi ekosistemiyle tanınır. Kararı TV markası verir, çünkü işletim sistemi markaya bağlıdır; satın almadan önce kullandığınız uygulamaların ve yerli yayın platformlarının desteklendiğini doğrulayın.",
+ "intro": [
+  "Akıllı TV alırken ekran teknolojisine, boyutuna ve fiyatına bakarız ama TV'yi her gün kullandığımız arayüz çoğu zaman gözden kaçar. Oysa uygulama mağazası, menü hızı, kumanda ve güncelleme politikası günlük deneyimi ekran kadar etkiler.",
+  "Bu rehberde üç yaygın sistemi, yani Google TV, LG webOS ve Samsung Tizen'i, gerçek kullanımda önem taşıyan başlıklar üzerinden karşılaştırıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "İşletim sistemini TV markası belirler",
+   "p": [
+    "Bilgisayardaki gibi TV'ye istediğiniz sistemi kuramazsınız. Samsung televizyonlar Tizen, LG televizyonlar webOS kullanır. Google TV ise Sony, TCL, Philips ve Hisense gibi birçok markanın bazı modellerinde yer alır. Yerli ve bazı uluslararası markalar kendi arayüzlerini veya Android tabanlı sürümleri kullanabilir.",
+    "Bu yüzden 'hangi sistem daha iyi' sorusu aslında 'hangi markayı alıyorum' sorusuyla iç içedir. Bir markanın panelini beğenip arayüzünü beğenmemek mümkün; bu durumda harici bir medya oynatıcı çözüm olabilir."
+   ],
+   "note": "Aynı sistemin farklı yıllarda çıkan sürümleri veya farklı modelleri arasında hız ve özellik farkı olabilir. Karar vermeden önce kullanıcı yorumlarına ve bağımsız testlere bakın."
+  },
+  {
+   "h": "Üç sistemin karşılaştırması",
+   "table": {
+    "head": [
+     "Özellik",
+     "Google TV",
+     "LG webOS",
+     "Samsung Tizen"
+    ],
+    "rows": [
+     [
+      "Uygulama çeşitliliği",
+      "Çok geniş, Google Play",
+      "Geniş, LG Content Store",
+      "Geniş, Samsung uygulama mağazası"
+     ],
+     [
+      "Kumanda",
+      "Klasik tuşlar, bazı modellerde sesli arama",
+      "İmleç (Magic Remote) ile hızlı gezinme",
+      "Sade kumanda, güneş pilli modeller"
+     ],
+     [
+      "Ekran yansıtma",
+      "Chromecast dahili",
+      "AirPlay ve ekran paylaşımı",
+      "AirPlay ve SmartThings"
+     ],
+     [
+      "Sesli asistan",
+      "Google Asistan",
+      "LG ThinQ, Alexa ve diğerleri",
+      "Bixby, Alexa ve diğerleri"
+     ],
+     [
+      "Arayüz hissi",
+      "Öneri odaklı ana ekran",
+      "Kart tabanlı, sade",
+      "Hızlı ve içerik öneri odaklı"
+     ],
+     [
+      "Reklam yoğunluğu",
+      "Orta, öneri alanları",
+      "Ana ekran reklamları olabilir",
+      "Ana ekran reklamları olabilir"
+     ]
+    ]
+   },
+   "p": [
+    "Tablodaki ifadeler genel eğilimlerdir. Model ve yazılım sürümüne göre değişebilir."
+   ]
+  },
+  {
+   "h": "Uygulama desteği ve yerli platformlar",
+   "p": [
+    "Netflix, YouTube, Prime Video ve Disney+ gibi büyük platformlar hemen her sistemde bulunur. Asıl fark, daha küçük veya yerel uygulamalarda ortaya çıkar. Türkiye'de kullandığınız yerli dizi, spor ve yayın uygulamaları (örneğin yerel yayın platformları ve spor kanalları) sistemde bulunmuyorsa TV'ye medya oynatıcı bağlamanız gerekebilir.",
+    "Satın almadan önce kullandığınız tüm uygulamaların listesini çıkarın ve TV üreticisinin uygulama mağazasında veya kullanıcı yorumlarında desteklendiğini doğrulayın."
+   ]
+  },
+  {
+   "h": "Hız, güncelleme ve ömür",
+   "list": [
+    "Arayüz hızı genellikle işlemci ve bellek miktarıyla ilgilidir; giriş seviyesi modellerde sistem yavaş çalışabilir.",
+    "Güncelleme süresi marka ve modele göre değişir. Daha uzun yazılım desteği veren markalar TV'nin ömrünü uzatır.",
+    "Google TV'de uygulamalar Google Play üzerinden güncellenir; diğer sistemlerde güncelleme marka mağazasına bağlıdır.",
+    "Bazı TV'lerde ilk kurulumdan sonra gelen güncellemeler arayüzü yavaşlatabilir; bellek boşaltmak ve gereksiz uygulamaları kaldırmak yardımcı olur."
+   ]
+  },
+  {
+   "h": "Gizlilik ve reklam ayarları",
+   "p": [
+    "Akıllı TV'ler kullanım verisi toplayabilir ve ana ekranda reklam gösterebilir. İlk kurulumda kişiselleştirilmiş reklam, ses ve görüntü tanıma gibi özellikleri gözden geçirin. Ayarlar menüsünde genellikle gizlilik veya veri kullanımı başlığı altında bu özellikleri kapatma imkanı bulunur."
+   ]
+  },
+  {
+   "h": "Sistemi beğenmediyseniz: harici medya oynatıcı",
+   "p": [
+    "Panelinden memnun olduğunuz ama arayüzünü yavaş veya eksik bulduğunuz bir TV için en pratik çözüm, HDMI'a takılan bir medya oynatıcıdır. Bu cihazlar kendi işletim sistemini getirir, TV'nin sistemini devre dışı bırakmanıza gerek kalmaz.",
+    "Medya oynatıcı seçerken desteklediği çözünürlüğü (4K), HDR formatlarını ve Dolby Atmos çıkışını kontrol edin. TV'nin eARC portuna soundbar bağlıysa ses geçişinin doğru yapıldığından emin olun."
+   ]
+  },
+  {
+   "h": "İlk kurulumda yapılacak ayarlar",
+   "ol": [
+    "Kurulum sırasında kişiselleştirilmiş reklam ve veri paylaşımı seçeneklerini gözden geçirin.",
+    "Gereksiz önceden yüklü uygulamaları kaldırın veya gizleyin.",
+    "Yazılım güncellemesini kontrol edin ve otomatik güncellemeyi açık bırakın.",
+    "Ana ekran öneri satırlarını kendi kullanımınıza göre düzenleyin.",
+    "Görüntü modunu 'Film' veya 'Sinema' olarak ayarlayıp canlı modu kapatın."
+   ]
+  },
+  {
+   "h": "Sık yaşanan sorunlar",
+   "list": [
+    "Menü yavaşlıyor: Kullanılmayan uygulamaları kaldırın, önbelleği temizleyin ve TV'yi yeniden başlatın.",
+    "Uygulama bulunamıyor: Uygulamanın o TV modeli veya yıl sürümünde desteklenmiyor olabilir; harici oynatıcı çözüm olur.",
+    "Wi-Fi kopuyor: Router'a yaklaştırın veya kabloyla bağlanın; ayrıntı için TV'yi Wi-Fi'a bağlama rehberimize bakın.",
+    "Ekran yansıtma çalışmıyor: Telefon ve TV'nin aynı ağda olduğunu doğrulayın; ayrıntı için telefonu TV'ye yansıtma rehberimizi okuyun."
+   ]
+  },
+  {
+   "h": "Size hangisi uygun?",
+   "list": [
+    "Google ekosistemini, Chromecast ve geniş uygulama çeşitliliğini seviyorsanız: Google TV.",
+    "Sade arayüz ve imleç kumanda istiyorsanız: LG webOS.",
+    "Samsung telefon, saat veya ev aletleri kullanıyorsanız ve hızlı menü istiyorsanız: Tizen.",
+    "Sistemi beğenmeseniz bile panelden memnunsanız: harici bir medya oynatıcı ile sorun çözülebilir."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Akıllı TV'nin işletim sistemi değiştirilebilir mi?",
+   "a": "Hayır, TV'nin sistemi genellikle üreticiye bağlıdır ve değiştirilemez. İstediğiniz platformu kullanmak için HDMI ile bağlanan bir medya oynatıcı kullanabilirsiniz."
+  },
+  {
+   "q": "Google TV ile Android TV aynı mı?",
+   "a": "Google TV, Android TV tabanlıdır ancak daha öneri odaklı yeni bir arayüz sunar. Eski modellerde Android TV arayüzü kullanılırken yeni modellerde Google TV tercih ediliyor."
+  },
+  {
+   "q": "Hangi sistem daha hızlıdır?",
+   "a": "Hız sistemden çok TV'nin işlemcisine ve belleğine bağlıdır. Aynı sistem, üst seviye modelde akıcı, giriş seviyesinde yavaş olabilir."
+  },
+  {
+   "q": "Yerli yayın uygulamaları her sistemde var mı?",
+   "a": "Büyük çoğunluğu var ama hepsi değil. Kullandığınız uygulamaların mağazada olduğunu satın almadan önce kontrol edin."
+  }
+ ],
+ "sources": []
+}

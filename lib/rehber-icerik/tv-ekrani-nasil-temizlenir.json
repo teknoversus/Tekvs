@@ -1,0 +1,136 @@
+{
+ "slug": "tv-ekrani-nasil-temizlenir",
+ "title": "TV Ekranı Nasıl Temizlenir? Çizmeden ve Zarar Vermeden Adım Adım",
+ "description": "LED, OLED ve QLED TV ekranı hangi bezle, hangi sıvıyla temizlenir? Kullanılmaması gereken ürünler, leke çıkarma, çerçeve ve port temizliği.",
+ "tldr": "TV'yi kapatıp fişini çekin, ekranın soğumasını bekleyin, kuru mikrofiber bezle tozu alın. Yağ lekesi için bezi saf su ile hafifçe nemlendirin; ekrana doğrudan sprey sıkmayın, alkol, amonyak içeren cam temizleyici veya mutfak spreyi kullanmayın.",
+ "intro": [
+  "Ekrandaki parmak izi, toz ve leke zamanla görüntü kalitesini düşürür ve özellikle karanlık sahnelerde dikkat çeker. Yanlış bir temizlik ürünü ise ekrandaki yansıma önleyici kaplamaya kalıcı zarar verebilir.",
+  "Bu rehberde güvenli temizlik yöntemini, kaçınılması gereken ürünleri, inatçı lekeler için çözümleri ve çerçeve, ayak ve port temizliğini adım adım anlatıyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Başlamadan önce",
+   "p": [
+    "TV'yi kapatın ve fişini çekin. Sıcak ekranı temizlemek hem leke bırakır hem de nem içeriye girerse risk oluşturur. Ekranın tamamen soğumasını bekleyin.",
+    "Ekran kapalıyken karanlık olduğu için toz ve lekeleri görmek de kolaylaşır. Işığı yan taraftan vurdurarak lekelerin yerini kontrol edebilirsiniz."
+   ],
+   "note": "Üreticinin kullanım kılavuzunda ekran temizliği bölümü varsa onu esas alın. Bazı üreticiler yalnızca kuru mikrofiber kullanılmasını, bazıları da hafif nemli bez kullanılabileceğini belirtir."
+  },
+  {
+   "h": "Gerekli malzemeler",
+   "list": [
+    "Temiz, kuru ve yumuşak mikrofiber bez (gözlük bezi gibi)",
+    "İkinci bir mikrofiber bez (nemli kullanım için)",
+    "Saf su veya damıtılmış su (musluk suyu kireç bırakabilir)",
+    "Gerekirse üreticinin onayladığı ekran temizleme sıvısı",
+    "Kulak çubuğu veya yumuşak fırça (port ve çerçeve için)"
+   ]
+  },
+  {
+   "h": "Adım adım ekran temizliği",
+   "ol": [
+    "Kuru mikrofiber bezle ekranı yukarıdan aşağıya, hafif ve tek yönlü hareketlerle silin. Dairesel ve sert bastırma hareketlerinden kaçının.",
+    "Leke kalırsa ikinci bezi saf su ile hafifçe nemlendirin; bez ıslak değil, hafif nemli olmalıdır.",
+    "Nemli bezle lekeli bölgeyi yumuşak hareketlerle silin. Sıvıyı ekrana değil, her zaman bez üzerine uygulayın.",
+    "Kuru bir mikrofiberle ekranı hemen kurulayın; su izi kalmasın.",
+    "Ekranın kenarlarını ve çerçevesini aynı şekilde silin; sıvının ekran altından içeri sızmasına izin vermeyin.",
+    "Tamamen kuruduğundan emin olduktan sonra fişi takın."
+   ]
+  },
+  {
+   "h": "Kullanılmaması gerekenler",
+   "table": {
+    "head": [
+     "Ürün",
+     "Neden sakıncalı"
+    ],
+    "rows": [
+     [
+      "Alkol, aseton, tiner",
+      "Yansıma önleyici ve koruyucu kaplamayı aşındırır"
+     ],
+     [
+      "Amonyaklı cam temizleyiciler",
+      "Ekran yüzeyinde kalıcı matlaşma yapabilir"
+     ],
+     [
+      "Mutfak veya genel yüzey spreyleri",
+      "Ekranda iz bırakır, kaplamaya zarar verebilir"
+     ],
+     [
+      "Kağıt havlu, peçete, kaba bez",
+      "Mikro çizik bırakır"
+     ],
+     [
+      "Doğrudan ekrana sıkılan sprey",
+      "Sıvı çerçeveden içeri sızabilir"
+     ]
+    ]
+   },
+   "p": [
+    "Islak mendil ve bebek bezi gibi ürünlerde de koruyucu kimyasallar bulunabilir. Sadece kuru mikrofiber ve saf su kombinasyonu çoğu durumda yeterli ve en güvenli yöntemdir."
+   ]
+  },
+  {
+   "h": "İnatçı lekeler ve özel durumlar",
+   "list": [
+    "Parmak izi ve yağ lekesi: Hafif nemli mikrofiber ile tek yönlü silin, ardından kuru bezle parlatın.",
+    "Yapışkan veya kuru leke: Bezi nemlendirip birkaç saniye üzerine koyarak yumuşatın, sonra silin. Tırnak veya sert bir nesneyle kazımayın.",
+    "OLED ekranlar: Yüzey çok hassas olabilir; yalnızca kuru veya çok hafif nemli bez kullanın ve bastırmayın.",
+    "Mat (anti-glare) ekranlar: Parlak yüzeylere göre daha kolay iz tutar; mikrofiberi sık yıkayıp temiz tutun."
+   ]
+  },
+  {
+   "h": "Çerçeve, ayak, port ve havalandırma",
+   "p": [
+    "Çerçeve ve arka kapak için hafif nemli bez yeterlidir. Arkadaki havalandırma delikleri tozla tıkandığında TV daha çok ısınır; bu delikleri fırça veya düşük güçte elektrik süpürgesi ile dikkatle temizleyin.",
+    "HDMI ve USB portlarına sıvı sıkmayın. Toz için kuru fırça veya basınçlı hava (kısa aralıklarla, uzaktan) kullanılabilir. Kumandayı da hafif nemli bezle silmeyi unutmayın."
+   ]
+  },
+  {
+   "h": "Temizlik sonrası ekran bakım ipuçları",
+   "list": [
+    "TV'yi doğrudan güneş ışığına karşı konumlandırmayın; hem yansıma hem de toz görünürlüğü artar.",
+    "Ekranın yanında yemek yerken veya sprey kullanırken dikkatli olun; yağ ve sıvı damlaları ekranı kirletir.",
+    "Çocuklu evlerde ekranı parmak izinden korumak için sık sık kuru mikrofiberle silmek yeterlidir.",
+    "Mikrofiber bezi ara sıra yıkayın; kir ve tozla dolu bez çizik bırakabilir. Yıkarken yumuşatıcı kullanmayın.",
+    "Ekran koruyucu film yapıştırmaktan kaçının; çoğu modern TV'de gereksizdir ve görüntü kalitesini bozabilir."
+   ]
+  },
+  {
+   "h": "Ne zaman profesyonel yardım almalı?",
+   "p": [
+    "Ekranda siyah lekeler, renk bozulması, çatlak veya içeriye sızmış sıvı izi görüyorsanız temizlikle çözülecek bir durum değildir. Bu belirtiler panel hasarına işaret edebilir. Cihazı kapatıp servis veya garanti kapsamında teknik desteğe başvurun.",
+    "Sıvı içeri girdiyse TV'yi hemen kapatıp fişten çekin ve kendi başınıza açmaya çalışmayın. Yeniden çalıştırmak devre kartlarına ek zarar verebilir."
+   ]
+  },
+  {
+   "h": "Mevsimsel ve düzenli bakım takvimi",
+   "list": [
+    "Haftalık: Kuru mikrofiberle ekran ve çerçeveyi silin.",
+    "Aylık: Hafif nemli bezle çerçeve, ayak ve kumanda temizliği; havalandırma deliklerinin kontrolü.",
+    "Altı ayda bir: Arka paneldeki tozu ve kabloların çevresini temizleyin; bağlantıların gevşemediğini kontrol edin.",
+    "Taşınma veya uzun süre kullanılmayan TV: Kutuya veya koruyucu kılıfa koyun, toz ve neme karşı kapalı tutun."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "TV ekranı kaç günde bir temizlenmeli?",
+   "a": "Toz ve parmak izi durumuna göre haftada bir kuru mikrofiberle silmek yeterlidir. Derin temizlik gerekiyorsa ayda bir hafif nemli bezle yapılabilir."
+  },
+  {
+   "q": "TV ekranını su ile silmek zararlı mı?",
+   "a": "Bezi hafifçe nemlendirmek zararlı değildir. Ancak ekrana doğrudan su sıkmak veya aşırı ıslak bez kullanmak sıvının içeri girmesine neden olabilir."
+  },
+  {
+   "q": "Cam temizleyici kullanılır mı?",
+   "a": "Hayır. Çoğu cam temizleyici amonyak veya alkol içerir ve ekran kaplamasını bozabilir."
+  },
+  {
+   "q": "Ekranda çizik oluşursa ne yapmalı?",
+   "a": "Derin çizikler TV ekranında onarılamaz. Mikro çizikler için bile kimyasallarla ovmak durumu kötüleştirebilir. Çizik varsa servis veya teknik destekle iletişime geçmek en doğrusudur."
+  }
+ ],
+ "sources": []
+}

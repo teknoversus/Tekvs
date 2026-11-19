@@ -1,0 +1,137 @@
+{
+ "slug": "tv-hdr-nedir-hdr10-dolby-vision",
+ "title": "HDR Nedir? HDR10, HDR10+, Dolby Vision ve HLG Farkları",
+ "description": "TV'de HDR ne işe yarar, HDR10, HDR10+, Dolby Vision ve HLG arasındaki fark nedir ve 'HDR destekli' etiketi neden tek başına yeterli değildir?",
+ "tldr": "HDR, ekranın çok parlak ve çok koyu bölgeleri aynı karede daha geniş bir aralıkta ve daha zengin renklerle göstermesini sağlar. HDR10 herkesin desteklediği temel formattır; Dolby Vision ve HDR10+ sahne sahne ayar yapan dinamik formatlardır; HLG ise canlı yayınlar içindir. Etiketten çok ekranın gerçek parlaklığı ve panel kalitesi önemlidir.",
+ "intro": [
+  "TV kutusunda HDR, HDR10, Dolby Vision gibi yazılar görünce bunların hepsinin aynı şey olduğunu düşünmek kolaydır. Oysa HDR bir tek özellik değil, içeriğin nasıl kodlandığını ve ekranın bunu ne kadar iyi gösterebildiğini anlatan bir kavramlar bütünüdür.",
+  "Bu rehberde HDR'nin ne yaptığını, dört ana formatın farkını, ucuz televizyonlardaki 'sözde HDR' tuzağını ve satın almadan önce neye bakmanız gerektiğini bulacaksınız."
+ ],
+ "sections": [
+  {
+   "h": "HDR tam olarak ne yapar?",
+   "p": [
+    "HDR, 'Yüksek Dinamik Aralık' demektir. Standart (SDR) görüntüde parlak ve koyu tonlar sınırlı bir aralığa sıkıştırılır. HDR'de ise güneşin parıltısı ile gölgedeki detay aynı karede daha doğal biçimde görünebilir.",
+    "Bunun iki ayağı vardır: ekranın daha yüksek tepe parlaklığa ulaşabilmesi ve daha geniş bir renk aralığı gösterebilmesi. HDR içerik ayrıca daha fazla renk basamağı taşır; bu da gökyüzü gibi geçişli alanlarda bantlanmayı azaltır.",
+    "HDR'nin etkisini görmek için üç şey birlikte gerekir: HDR destekleyen içerik, HDR'yi okuyabilen bir TV ve bunu taşıyabilen bir bağlantı (HDMI kablosu ve doğru port)."
+   ],
+   "note": "HDR içeriği her platformda otomatik açılmaz. Netflix, YouTube, Disney+ gibi uygulamalarda içeriğin HDR sürümü olması, aboneliğin uygun pakette olması ve TV'nin HDR modunun açık olması gerekebilir."
+  },
+  {
+   "h": "Formatların karşılaştırması",
+   "table": {
+    "head": [
+     "Format",
+     "Metadata",
+     "Kimler destekler",
+     "Neye uygun"
+    ],
+    "rows": [
+     [
+      "HDR10",
+      "Statik: tüm film için tek ayar",
+      "Hemen her HDR TV ve içerik",
+      "Temel, evrensel format"
+     ],
+     [
+      "HDR10+",
+      "Dinamik: sahne sahne ayar",
+      "Samsung ve bazı üreticiler, bazı platformlar",
+      "HDR10'a ücretsiz alternatif"
+     ],
+     [
+      "Dolby Vision",
+      "Dinamik: kare kare ayar",
+      "Birçok TV markası, büyük akış platformları",
+      "Üst seviye HDR deneyimi"
+     ],
+     [
+      "HLG",
+      "Yayın için tasarlanmış",
+      "TV kanalları ve canlı yayınlar",
+      "Spor ve canlı yayın"
+     ]
+    ]
+   },
+   "p": [
+    "Dinamik metadata, televizyona her sahnenin parlaklık bilgisini ayrıca verir. Böylece TV, çok karanlık bir sahnede ayrıntıyı korurken çok parlak bir sahnede ışığı bastırmadan gösterebilir. Statik formatta ise tüm içerik tek bir ortalama ayara göre gösterilir.",
+    "Hangi TV hangi formatı destekler sorusu markadan markaya değişir. Samsung televizyonlar genellikle HDR10+ destekler ve Dolby Vision desteklemez; birçok diğer marka Dolby Vision destekler. Alırken teknik özellikler sayfasındaki format listesini kontrol edin."
+   ]
+  },
+  {
+   "h": "'HDR destekli' etiketi neden yanıltıcı olabilir?",
+   "p": [
+    "Bir TV'nin HDR sinyalini kabul etmesi ile HDR'yi iyi göstermesi aynı şey değildir. Giriş seviyesi birçok televizyon HDR10 etiketine sahiptir ama paneli yeterince parlak olmadığı için HDR içerikte hiçbir fark yaratmaz, hatta SDR'den daha soluk görünebilir.",
+    "HDR'nin gerçek etkisi için gereken şeyler: yüksek tepe parlaklık, iyi bir kontrast (OLED veya yerel karartmalı Mini LED), geniş renk gamı ve 10 bit panel veya işleme desteği. Bunları üreticinin etiketinden değil, bağımsız ölçüm sonuçlarından anlayabilirsiniz."
+   ]
+  },
+  {
+   "h": "HDR'ye hazırlık kontrol listesi",
+   "ol": [
+    "TV'nin teknik özelliklerinde desteklenen HDR formatlarını kontrol edin.",
+    "Kullandığınız HDMI portunun HDR ve 4K'yı desteklediğinden emin olun; bazı portlar yalnızca düşük çözünürlük veya düşük bant genişliği destekler.",
+    "Konsol, medya oynatıcı veya PC'de HDR çıkışını açın.",
+    "TV'nin HDR modunu 'Otomatik' bırakın veya ilgili porta 'Gelişmiş HDMI' ayarını uygulayın.",
+    "Akış uygulamasında içeriğin HDR veya Dolby Vision rozeti taşıdığını doğrulayın.",
+    "Karanlık odada izlerken HDR etkisinin en iyi göründüğünü unutmayın; parlak odada gün ışığı etkiyi azaltır."
+   ]
+  },
+  {
+   "h": "HDR'de sık yaşanan sorunlar",
+   "list": [
+    "Görüntü soluk veya grimsi: HDR çıkışı açık ama TV HDR modunu algılamamış olabilir. HDMI portunu ve kablonuzu kontrol edin.",
+    "Görüntü çok karanlık: Bazı içerik HDR'de loş masteringle gelir. TV'nin HDR parlaklık ayarını ve ortam ışığını gözden geçirin.",
+    "Renkler yapay görünüyor: Fotoğraf veya sinema modunu seçin; canlı mod HDR'de aşırı doygun sonuç verebilir.",
+    "HDR içerik hiç açılmıyor: Uygulamanın HDR desteği, TV modeli ve abonelik paketi uyumlu olmayabilir."
+   ]
+  },
+  {
+   "h": "HDR için ekran özellikleri: neye bakmalı?",
+   "p": [
+    "Parlaklık: HDR'nin etkisi parlak vurguların gerçekten parlak görünmesine dayanır. Bağımsız testlerde ölçülen HDR tepe parlaklığı, etiketteki rakamlardan daha güvenilirdir. Güneş alan odalarda parlak ekran avantaj sağlar.",
+    "Kontrast ve yerel karartma: Siyahların derinliği HDR'de en az parlaklık kadar önemlidir. OLED her pikseli ayrı kontrol ettiği için bu konuda güçlüdür; Mini LED modellerde ise karartma bölgesi sayısı ve algoritma kalitesi belirleyicidir. Bu iki teknolojinin farkını OLED, QLED ve Mini LED rehberimizde anlattık.",
+    "Renk gamı: Geniş renk gamı (DCI-P3 gibi) HDR içeriğin zengin renklerini daha doğru gösterir. Dar renk gamlı ekranlarda HDR içerik soluk kalır.",
+    "Bit derinliği: 10 bit panel veya 10 bit işleme, geçişli alanlarda bantlanmayı azaltır."
+   ]
+  },
+  {
+   "h": "Hangi kaynaklardan HDR izlenir?",
+   "list": [
+    "Akış platformları: Netflix, YouTube, Disney+ ve diğer büyük platformların birçok içeriği HDR sunar; uygun abonelik paketi gerekebilir.",
+    "4K Blu-ray: Disk üzerindeki HDR10 ve çoğu zaman Dolby Vision içerik en yüksek kalite seçeneklerinden biridir.",
+    "Oyun konsolları: PS5 ve Xbox Series X birçok oyunda HDR çıkışı sunar. Konsolun ayarlarında HDR'yi açmayı ve TV'de ilgili HDMI portunu etkinleştirmeyi unutmayın; ayrıntı için 120 Hz ve HDMI 2.1 rehberimize bakın.",
+    "TV kanalları: Canlı yayınların büyük kısmı hâlâ SDR'dir. HLG ile HDR yayın yapan kanallar sınırlı sayıdadır."
+   ]
+  },
+  {
+   "h": "SDR içeriği HDR yapan modlar",
+   "p": [
+    "Bazı televizyonlarda SDR içeriği HDR gibi göstermeye çalışan 'HDR yükseltme' veya 'HDR+' modları bulunur. Bunlar gerçek HDR değildir; görüntüyü yapay biçimde parlak ve kontrastlı gösterir. Bazı sahnelerde hoş görünebilir, ama sanatçının amaçladığı görüntüyü bozabilir. Sinema ve film modu bunun aksine içeriğin orijinalini korumaya çalışır; film izlerken bu modu tercih edin."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "HDR ile 4K aynı şey mi?",
+   "a": "Hayır. 4K çözünürlük piksel sayısını, HDR ise parlaklık ve renk aralığını ifade eder. Bir TV 4K olup HDR desteklemeyebilir veya HDR destekleyip düşük çözünürlüklü olabilir."
+  },
+  {
+   "q": "Dolby Vision, HDR10'dan her zaman daha mı iyi?",
+   "a": "Dolby Vision dinamik metadata kullandığı için teorik olarak daha iyi uyum sağlar. Gerçek fark TV'nin panel kalitesine ve içeriğin masteringine bağlıdır; zayıf bir TV'de fark çok az hissedilir."
+  },
+  {
+   "q": "Ucuz TV'de HDR işe yarar mı?",
+   "a": "Çoğu zaman sınırlıdır. HDR sinyalini kabul eder ama yeterli parlaklığa ve kontrasta sahip olmadığı için HDR etkisi belirgin olmaz. Bütçe sınırlıysa HDR etiketinden çok panel kalitesine bakın."
+  },
+  {
+   "q": "HLG nedir?",
+   "a": "HLG, canlı yayın ve TV kanalları için geliştirilmiş HDR formatıdır. Metadata gerektirmediği için eski ekranlarla da geriye dönük uyumludur."
+  }
+ ],
+ "sources": [
+  {
+   "t": "RTINGS: HDR10 vs HDR10+ vs Dolby Vision",
+   "u": "https://www.rtings.com/tv/learn/hdr10-vs-dolby-vision"
+  }
+ ]
+}

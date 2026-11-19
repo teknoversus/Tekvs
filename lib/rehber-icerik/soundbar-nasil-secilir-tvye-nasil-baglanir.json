@@ -1,0 +1,134 @@
+{
+ "slug": "soundbar-nasil-secilir-tvye-nasil-baglanir",
+ "title": "Soundbar Nasıl Seçilir ve TV'ye Nasıl Bağlanır? (HDMI ARC, eARC, Optik)",
+ "description": "TV için soundbar seçerken kanal sayısı, subwoofer, Dolby Atmos ve boyuta nasıl bakılır; HDMI ARC, eARC ve optik bağlantı adım adım nasıl yapılır?",
+ "tldr": "Çoğu ince TV'nin dahili hoparlörü sınırlıdır. Soundbar seçerken önce bütçeye ve oda boyutuna, sonra kanal yapısına (2.1, 3.1, 5.1.2) ve subwoofer ihtiyacına bakın. Bağlantı için en pratik yol HDMI ARC/eARC portudur; olmazsa optik kablo kullanılır.",
+ "intro": [
+  "İnce TV'lerde hoparlörlere yer kalmaz. Bu yüzden diyaloglar bazen anlaşılmaz, bas ise neredeyse hiç duyulmaz. Bir soundbar, nispeten küçük bir yatırımla TV ses deneyimini belirgin biçimde iyileştirir.",
+  "Bu rehber soundbar seçerken nelere bakacağınızı, kanal gösterimlerinin ne anlama geldiğini, Dolby Atmos'un gerçekten gerekli olup olmadığını ve soundbar'ı TV'ye adım adım nasıl bağlayacağınızı anlatıyor."
+ ],
+ "sections": [
+  {
+   "h": "Kanal gösterimi ne demek? (2.1, 3.1, 5.1.2)",
+   "p": [
+    "Soundbar tanımlarındaki sayılar hoparlör gruplarını gösterir. İlk sayı ana hoparlör kanalı, ikinci sayı subwoofer sayısı, varsa üçüncü sayı yukarı bakan Atmos hoparlörleridir.",
+    "Örneğin 2.1 sol ve sağ kanal ile bir subwoofer demektir. 3.1'de bunlara bir merkez kanal eklenir; merkez kanal diyalog netliğini artırdığı için dizi ve film izleyenler için faydalıdır. 5.1.2 ise çevre kanallar ve iki yukarı bakan hoparlör içeren daha kapsamlı bir yapıdır."
+   ]
+  },
+  {
+   "h": "Hangi özellik ne işe yarar?",
+   "list": [
+    "Subwoofer: Alçak frekansları (bas) güçlendirir. Kablosuz subwoofer yerleşimi kolaylaştırır.",
+    "Merkez kanal: Konuşma ve diyalogları netleştirir.",
+    "Dolby Atmos: Sesi yukarıdan ve çevreden gelir gibi sunmayı hedefler. Alçak ve düz tavanlı odalarda, Atmos destekli içerikte daha etkilidir.",
+    "eARC: TV'den soundbar'a yüksek kaliteli, kayıpsız çok kanallı ses taşır.",
+    "Diyalog modu: Konuşma seslerini öne çıkarır, gece izlemede işe yarar.",
+    "Bluetooth ve Wi-Fi: Telefondan müzik dinlemek için ek kolaylık sağlar."
+   ]
+  },
+  {
+   "h": "Oda ve TV boyutuna göre seçim",
+   "table": {
+    "head": [
+     "Durum",
+     "Önerilen yapı"
+    ],
+    "rows": [
+     [
+      "Küçük oda, 43-50 inç TV",
+      "2.0 veya 2.1 soundbar"
+     ],
+     [
+      "Orta salon, 55-65 inç TV",
+      "3.1 veya 3.1.2, kablosuz subwoofer"
+     ],
+     [
+      "Geniş salon, sinema hissi isteyenler",
+      "5.1.2 veya ayrı çevre hoparlörlü set"
+     ],
+     [
+      "Komşu hassasiyeti, gece izleme",
+      "Gece modlu ve bas ayarlı model"
+     ]
+    ]
+   },
+   "p": [
+    "Soundbar genişliğinin TV genişliğine yakın olması hem görünüm hem de ses dağılımı açısından iyidir. Ayrıca TV ayağının yüksekliği soundbar'ın TV'nin alt çerçevesini kapatmayacağı kadar olmalıdır; duvara asılı TV'lerde ise soundbar için ayrı bir raf veya duvar aparatı planlayın."
+   ]
+  },
+  {
+   "h": "TV'ye bağlama yöntemleri",
+   "p": [
+    "En iyi yol HDMI ARC veya eARC bağlantısıdır. Tek kabloyla hem ses TV'den soundbar'a gider hem de TV kumandası soundbar'ı kontrol edebilir. TV'de HDMI portlarından birinin yanında 'ARC' veya 'eARC' yazar; soundbar'ı bu porta bağlamanız gerekir.",
+    "Optik (dijital ses) kablo, ARC olmayan TV'ler için iyi bir yedektir. Dolby Atmos gibi yüksek bant genişliği gerektiren formatları taşıyamaz, ama normal TV sesi için yeterlidir. Aux (3,5 mm) bağlantısı en basit ama en düşük kaliteli seçenektir."
+   ],
+   "ol": [
+    "TV ve soundbar'ı kapatın.",
+    "HDMI kablosunun bir ucunu soundbar'ın 'HDMI OUT (ARC)' girişine takın.",
+    "Diğer ucunu TV'deki 'HDMI ARC' veya 'eARC' portuna takın.",
+    "TV'yi açın; ses ayarlarında 'harici hoparlör' veya 'HDMI ARC' çıkışını seçin.",
+    "HDMI-CEC özelliğini açın (markaya göre Anynet+, Bravia Sync vb. adlar kullanır).",
+    "Ses gelmezse TV ayarlarında ses formatını 'PCM' veya 'Otomatik' yapın."
+   ]
+  },
+  {
+   "h": "Soundbar yerleşimi ve ilk ayarlar",
+   "list": [
+    "Soundbar'ı TV'nin hemen altına, kulak hizasına yakın bir yüksekliğe yerleştirin.",
+    "Subwoofer'ı köşeye koymak basları güçlendirir ama gürültüye neden olabilir; küçük deneme yerleşimleri yapın.",
+    "Mod ayarlarında film, müzik ve diyalog modlarını deneyin; çoğu zaman 'standart' en dengelisidir.",
+    "Atmos soundbar kullanıyorsanız Atmos içeriği olan bir uygulamada test edin."
+   ]
+  },
+  {
+   "h": "Soundbar mı, ev sinema sistemi mi?",
+   "p": [
+    "Soundbar tek bir cihazla basit kurulum sunar. Ev sinema sistemi ise ayrı hoparlörler ve bir AV alıcıdan oluşur; çevre ses ve güç açısından üstündür ama kablolama, yerleşim ve bütçe gerektirir. Çoğu kullanıcı için kablosuz subwoofer ve opsiyonel arka hoparlörlü bir soundbar yeterli ve pratik çözümdür.",
+    "Eğer salonunuzda ses kaçışı veya komşu hassasiyeti varsa, güçlü ve büyük bir sistem yerine gece modu ve bas ayarı olan bir soundbar daha mantıklıdır."
+   ]
+  },
+  {
+   "h": "Alışverişte sık yapılan hatalar",
+   "list": [
+    "Yalnızca watt değerine bakmak: Watt, ses kalitesinin tek göstergesi değildir. Ses dengesi, diyalog netliği ve bas kontrolü daha önemlidir.",
+    "Atmos etiketine güvenmek: Küçük ve ucuz bir soundbar Atmos'u etiket olarak taşıyabilir ama gerçek yükseklik hissi vermeyebilir.",
+    "TV'nin ARC desteğini kontrol etmemek: Atmos veya kayıpsız ses için eARC gerekebilir.",
+    "Soundbar boyutunu TV ayağı ile uyumlu seçmemek: Soundbar TV'nin alt çerçevesini kapatabilir.",
+    "Kablo kalitesini önemsememek: eARC için HDMI kablosunun uygun sertifikaya sahip olması gerekebilir."
+   ]
+  },
+  {
+   "h": "Bağlantı sorunları ve çözümler",
+   "list": [
+    "Ses gelmiyor: TV ses çıkışını 'harici hoparlör' olarak değiştirin ve HDMI-CEC'in açık olduğunu doğrulayın.",
+    "Ses gecikmesi var: TV ayarlarında ses gecikme (lip sync) ayarını kullanın.",
+    "Atmos çalışmıyor: İçeriğin Atmos desteklediğini ve soundbar'ın eARC portuna bağlı olduğunu kontrol edin. TV'nin ses çıkışı formatı 'Otomatik' veya 'Geçiş (Passthrough)' olmalı.",
+    "Kumanda uyumsuz: HDMI-CEC kapalı olabilir; TV ayarlarından Anynet+, Bravia Sync veya benzer özelliği açın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Her TV'ye soundbar bağlanır mı?",
+   "a": "Evet, hemen her TV'ye bağlanır. HDMI ARC yoksa optik veya 3,5 mm aux ile bağlanabilir. Atmos veya yüksek kalite ses istiyorsanız TV'nin eARC desteği olması gerekir."
+  },
+  {
+   "q": "ARC ile eARC arasındaki fark nedir?",
+   "a": "eARC, ARC'a göre çok daha yüksek bant genişliği sunar ve kayıpsız ses formatlarını ve Dolby Atmos'u taşıyabilir. ARC daha sınırlıdır ama normal TV sesi için yeterlidir."
+  },
+  {
+   "q": "Subwoofer'sız soundbar yeterli mi?",
+   "a": "Küçük odalar ve diyalog odaklı izleme için yeterli olabilir. Film, dizi ve müzikte bas isteniyorsa subwoofer'lı bir model daha tatmin edicidir."
+  },
+  {
+   "q": "Soundbar TV kumandasıyla yönetilir mi?",
+   "a": "HDMI ARC bağlantısında HDMI-CEC açıksa TV kumandası soundbar'ın sesini ve açma kapamasını yönetebilir. Aksi durumda soundbar'ın kendi kumandası kullanılır."
+  }
+ ],
+ "sources": [
+  {
+   "t": "RTINGS: Audio Passthrough Test",
+   "u": "https://www.rtings.com/tv/tests/inputs/5-1-surround-audio-passthrough"
+  }
+ ]
+}

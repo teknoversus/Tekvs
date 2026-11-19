@@ -1,267 +1,315 @@
 {
-  "_aciklama": "Elle yazılmış inceleme değerlendirmeleri. Anahtar: ürün id'si. 'kisa', 'kimlerAlmali', 'kimlerAlmamali', 'sonKarar' alanları şablon metinlerin yerine geçer; 'metin' paragrafları 'Editör Değerlendirmesi' başlığı altında gösterilir.",
-  "h3": {
-    "tarih": "2026-10-18",
-    "kisa": "Galaxy S24 Ultra, iki nesil sonra bile kamerası, S Pen'i ve uzun güncelleme desteğiyle güçlü bir amiral gemisi. Yeni modellere göre ağır ve şarjı daha yavaş; fiyatı düştüyse çok mantıklı bir alım.",
-    "metin": [
-      "S24 Ultra, Samsung'un Galaxy AI özelliklerini tanıttığı ilk Ultra modeli. 6,8 inç 120 Hz Dynamic AMOLED ekran, Snapdragon 8 Gen 3 işlemci, 12 GB RAM ve titanyum kasa ile geliyor. Ekranı yansımayı azaltan bir kaplamaya sahip; güneş altında okunabilirliği hâlâ sınıfının iyilerinden.",
-      "Kamerada 200 MP ana sensör ve 50 MP 5x telefoto, uzak çekimlerde bu telefonu öne çıkarıyor. Ultra geniş açı kamera 12 MP'de kaldı; sonraki modeller burada 50 MP'ye geçti. Kutudan çıkan S Pen Bluetooth destekli; kalemle uzaktan deklanşöre basmak gibi hareketler bu modelde çalışıyor, yeni nesillerde ise bu özellik kaldırıldı.",
-      "Boyutlar sık soruluyor: S24 Ultra 162,3 x 79 x 8,6 mm ölçülerinde ve 232 g. Elde büyük ve ağır bir telefon; tek elle kullanım zor. Samsung bu model için yedi yıl işletim sistemi ve güvenlik güncellemesi sözü verdi, yani 2026'da alınan bir S24 Ultra'nın önünde hâlâ uzun bir destek süresi var."
-    ],
-    "kimlerAlmali": "Telefonda iyi zoom kamerası, S Pen ile not alma ve büyük ekran isteyenler; amiral gemisi deneyimini yeni model fiyatı ödemeden almak isteyenler.",
-    "kimlerAlmamali": "Hafif ve kompakt telefon sevenler, hızlı şarjı önemseyenler (kablolu şarj 45 W) ve S Pen'i hiç kullanmayacak olanlar. Bu kişiler için daha küçük ve daha ucuz modeller daha mantıklı.",
-    "sonKarar": "S24 Ultra alınır, ama doğru fiyattan. S25 Ultra veya S26 Ultra ile arasındaki fark belirginse, kamera ve S Pen tarafında çok az şey kaybederek ciddi tasarruf edersiniz."
-  },
-  "n7": {
-    "tarih": "2026-10-18",
-    "kisa": "iFFALCON 65U95A, QD-Mini LED panel, 144 Hz ve Dolby Vision gibi üst segment özellikleri uygun fiyata getiren 65 inç bir televizyon. Özellikle oyun ve parlak oda kullanımı için iyi bir seçim.",
-    "metin": [
-      "Önce marka sorusu: iFFALCON, TCL'nin kendi markası. 65U95A da TCL'nin QD-Mini LED televizyonlarıyla aynı teknolojiyi kullanıyor ve 2026 modeli olarak satılıyor. 65 inç 4K panel, Mini LED arka aydınlatma sayesinde parlak sahnelerde güçlü HDR görüntü veriyor; Dolby Vision ve HDR10+ desteği var.",
-      "Oyuncular için öne çıkan nokta 144 Hz yenileme hızı ve HDMI 2.1 girişler. PS5, Xbox Series X ya da güçlü bir bilgisayarla akıcı oyun deneyimi alırsınız. Arayüz Google TV; Netflix, YouTube ve Disney+ gibi uygulamalar hazır geliyor. Ses tarafında 30 W çıkış var; diyaloglar net, ama film için güçlü bas istiyorsanız bir soundbar düşünmelisiniz.",
-      "Panel VA tipinde. Karşıdan bakınca kontrast iyi, ama geniş açılardan renkler soluklaşabiliyor. Aynı serinin kullanıcıları karanlık sahnelerde zaman zaman iz kalması bildirdi; sonraki yazılım güncellemeleriyle azaldığı belirtiliyor. Kurulumdan sonra ilk iş güncellemeleri yapmanızı öneririz."
-    ],
-    "kimlerAlmali": "Konsol veya bilgisayarla oyun oynayanlar, gündüz aydınlık odada televizyon izleyenler ve Mini LED görüntüyü makul bütçeyle almak isteyenler.",
-    "kimlerAlmamali": "Televizyonu geniş bir L koltuktan yan açılarla izleyecekler ve karanlık odada OLED seviyesinde siyah bekleyenler. Bu ihtiyaçlar için OLED modellere bakmak daha doğru.",
-    "sonKarar": "65U95A, fiyatına göre çok şey sunan bir televizyon. Kardeş modeli TCL 65C6K ile özellikleri çok yakın; ikisi arasında hangisi daha ucuzsa onu almak mantıklı."
-  },
-  "h20": {
-    "tarih": "2026-10-18",
-    "kisa": "iPad Pro M4 11 inç, Tandem OLED ekranı ve M4 işlemcisiyle tablet dünyasının en güçlü cihazlarından. Yerine M5'li yeni model geldi; indirimli bulursanız yine çok iyi bir alım.",
-    "metin": [
-      "Bu iPad Pro'nun en güçlü yanı ekranı. Apple'ın Ultra Retina XDR adını verdiği Tandem OLED panel, iki OLED katmanı üst üste kullanarak hem çok parlak hem de gerçek siyah sunuyor. 120 Hz ProMotion ile kaydırma ve çizim akıcı. Gövde 5,1 mm kalınlıkta ve 444 g; elde gerçekten hafif.",
-      "M4 işlemci video düzenleme, çizim ve fotoğraf işleme gibi ağır işlerde rahat. 256 GB ve 512 GB modellerde 8 GB RAM var; 1 TB ve üstünde 16 GB'a çıkıyor. Apple Pencil Pro ve yeni Magic Keyboard ile çalışıyor, eski Apple Pencil 2 ile çalışmıyor. Bunu, aksesuarlarınız varsa satın almadan önce bilin. USB-C girişi Thunderbolt destekli; harici ekran ve hızlı disklerle iyi anlaşıyor.",
-      "Dikkat edilmesi gereken iki nokta var. Birincisi fiyat: kalem ve klavye eklenince toplam tutar bir dizüstü bilgisayarı geçebiliyor. İkincisi, Apple Ekim 2025'te M5 işlemcili yeni iPad Pro'yu çıkardı. Günlük kullanımda fark küçük, bu yüzden M4 modeli iyi bir indirimle bulursanız tercih etmek mantıklı."
-    ],
-    "kimlerAlmali": "Çizim, tasarım, video ve not alma için en iyi ekranı isteyenler; iPad'i dizüstüne yakın bir iş aracı olarak kullanacaklar.",
-    "kimlerAlmamali": "Tableti çoğunlukla video izleme ve internette gezinme için kullanacaklar. Bu kullanım için iPad Air veya standart iPad çok daha ucuza aynı işi görür.",
-    "sonKarar": "iPad Pro M4 11 inç, ekranı ve gücüyle hâlâ üst sınıfta. M5 modeliyle fiyat farkı belirginse M4'ü almak akıllıca; aksesuar uyumluluğunu kontrol etmeyi unutmayın."
-  },
-  "n8": {
-    "tarih": "2026-10-18",
-    "kisa": "TCL 65C6K, 2025 yılının fiyat/performans odaklı QD-Mini LED televizyonlarından. 144 Hz, Dolby Vision ve güçlü kontrastı makul fiyata sunuyor; en büyük rakibi kendi kardeş markası iFFALCON.",
-    "metin": [
-      "65C6K, TCL'nin C6K serisinin 65 inç modeli. 4K QD-Mini LED panel kullanıyor; Mini LED arka aydınlatma ekranı bölgeler halinde karartabildiği için kontrast sıradan LED televizyonlara göre belirgin şekilde daha iyi. TCL bu seride yüksek kontrastlı HVA tipi panel kullanıyor; karşıdan izlerken siyahlar derin görünüyor.",
-      "Yenileme hızı 144 Hz ve HDMI 2.1 girişler var; PS5 ve Xbox Series X ile 120 Hz oyun oynanabiliyor. HDR tarafında Dolby Vision ve HDR10+ destekleniyor. Ses sistemi ONKYO imzalı 2.1 kanal ve Dolby Atmos destekli; televizyon hoparlörü için iyi, ama sinema hissi için soundbar yine fark yaratır. Arayüz Google TV.",
-      "VA tipi panellerin ortak özelliği olarak yan açılardan bakınca renkler soluklaşıyor. Geniş bir salon düzeninde herkesin ekranın karşısında oturmadığını düşünüyorsanız bunu göz önünde bulundurun."
-    ],
-    "kimlerAlmali": "Bütçesini aşmadan Mini LED görüntü ve 144 Hz oyun desteği isteyenler; filmi ve diziyi genelde ekranın karşısından izleyenler.",
-    "kimlerAlmamali": "Geniş açılardan izleyecek kalabalık aileler ve karanlık odada OLED siyahı bekleyenler.",
-    "sonKarar": "TCL 65C6K, fiyatına göre güçlü bir televizyon ve alınır. Karar vermeden önce iFFALCON 65U95A'nın fiyatına da bakın; iki model özellik olarak çok yakın."
-  },
-  "x28": {
-    "tarih": "2026-10-18",
-    "kisa": "Galaxy Tab S9 FE, kutudan çıkan S Pen'i ve IP68 su geçirmezliğiyle not almak ve ders çalışmak için en mantıklı orta segment tabletlerden biri. Ekranı LCD ve 90 Hz; üst segment beklentisi olanlar için yetersiz kalabilir.",
-    "metin": [
-      "Tab S9 FE'nin en büyük artısı kutudaki S Pen. Ayrıca para vermeden not alma, PDF işaretleme ve basit çizim yapabiliyorsunuz. Tabletlerde nadir görülen IP68 su ve toz dayanıklılığı da var; mutfakta tarif okumak ya da havuz kenarında kullanmak için içiniz rahat olur.",
-      "10,9 inç ekran LCD ve 90 Hz. Günlük kullanımda yeterince akıcı, ama Galaxy Tab S9 serisinin AMOLED ekranlarındaki canlı renk ve derin siyahı vermiyor. Exynos 1380 işlemci; ders, video, web ve hafif oyunlar için yeterli, ağır oyunlarda ise grafik ayarlarını düşürmeniz gerekebilir. Samsung DeX moduyla klavye bağlayıp masaüstüne benzer bir kullanım da mümkün.",
-      "Samsung bu modelin yerine Galaxy Tab S10 FE'yi çıkardı. Fiyat farkı belirginse S9 FE hâlâ iyi bir seçim; fark küçükse yeni modele bakmak daha uzun güncelleme desteği demek."
-    ],
-    "kimlerAlmali": "Öğrenciler, not almayı ve PDF üzerinde çalışmayı seven kullanıcılar ve dayanıklı bir aile tableti arayanlar.",
-    "kimlerAlmamali": "Film izlemek için en iyi ekranı isteyenler ve tablette ağır oyun oynamayı düşünenler. Bu kişiler için AMOLED ekranlı ve daha güçlü işlemcili modeller daha uygun.",
-    "sonKarar": "Galaxy Tab S9 FE alınır, özellikle S Pen'i kullanacaksanız. Kalem ve su geçirmezlik bu fiyat aralığında rakiplerinde çoğu zaman yok."
-  },
-  "y46": {
-    "tarih": "2026-10-18",
-    "kisa": "Galaxy Tab A9, video izlemek, internette gezinmek ve çocuklar için uygun fiyatlı, kompakt bir tablet. 8,7 inç ekranı küçük; ders çalışmak ve çoklu görev için daha büyük bir model daha uygun olabilir.",
-    "metin": [
-      "Tab A9, Samsung'un en uygun fiyatlı tabletlerinden. 8,7 inçlik ekranı onu elde taşımayı kolaylaştırıyor; yatakta video izlemek, kitap okumak ya da çocuklara vermek için iyi bir boyut. Ekran LCD ve 60 Hz; fiyatına göre yeterli ama renkler ve akıcılık üst modellerle kıyaslanamaz.",
-      "4 GB RAM ve 64 GB depolamalı sürüm temel işlerde idare ediyor; birçok uygulama ve oyun yükleyecekseniz 8 GB RAM / 128 GB sürüme bakın. Hafıza kartı yuvası sayesinde depolama alanı genişletilebiliyor. Kalem desteği yok ve ön kamera görüntülü görüşme için ancak yeterli.",
-      "Sık karıştırılan bir nokta: Galaxy Tab A9+ farklı bir model. 11 inç ekranlı ve 90 Hz; ders ve not için daha uygun. Hangisini aldığınızı satın alırken kontrol edin."
-    ],
-    "kimlerAlmali": "Çocuğuna ilk tabletini almak isteyenler, video ve internet için uygun fiyatlı ikinci bir ekran arayanlar.",
-    "kimlerAlmamali": "Tableti ders, not alma ya da ofis işi için kullanacaklar ve oyun oynayacaklar. Bu ihtiyaçlar için Tab A9+ veya Tab S9 FE daha doğru.",
-    "sonKarar": "Galaxy Tab A9, beklentiyi doğru tuttuğunuzda alınır: ucuz, hafif ve günlük medya kullanımı için yeterli. Daha büyük ekran istiyorsanız Tab A9+'a bakın."
-  },
-  "x29": {
-    "tarih": "2026-10-18",
-    "kisa": "Huawei MatePad 11.5, 120 Hz geniş ekranı ve uygun fiyatıyla güçlü bir medya tableti. Ama Google servisleri yok; bunu satın almadan önce mutlaka bilmeniz gerekiyor.",
-    "metin": [
-      "MatePad 11.5'in en güçlü yanı ekranı: 11,5 inç ve 120 Hz. Video izlerken geniş, kaydırırken akıcı. Bazı sürümler yansımayı azaltan PaperMatte ekranla satılıyor; okumak ve not almak için göz yorgunluğunu azaltıyor. M-Pencil kalem desteği var ama kalem ayrı satılıyor.",
-      "Satın almadan önce bilinmesi gereken en önemli konu yazılım. Huawei cihazlarda Google Play Store, YouTube uygulaması, Gmail ve Google Haritalar resmi olarak yüklü gelmiyor. Uygulamalar Huawei'nin AppGallery mağazasından yükleniyor; birçok popüler uygulama orada var, ama bazı bankacılık, okul ve oyun uygulamaları sorun çıkarabiliyor. Kullanmayı planladığınız uygulamaları önceden kontrol edin.",
-      "Tablet, sürüme göre farklı işlemci, RAM ve depolama seçenekleriyle satılıyor. Ürün sayfasındaki teknik özellikleri kendi sürümünüzle karşılaştırmanızı öneririz."
-    ],
-    "kimlerAlmali": "Tableti video, okuma ve not almak için kullanacak, ihtiyaç duyduğu uygulamaların AppGallery'de olduğunu kontrol etmiş kullanıcılar.",
-    "kimlerAlmamali": "Google uygulamalarına bağlı olanlar, okul veya iş için Google Classroom, Drive gibi araçları yoğun kullananlar.",
-    "sonKarar": "MatePad 11.5, donanımı ve fiyatıyla iyi bir tablet. Google servisleri olmadan yaşayabiliyorsanız alınır; emin değilseniz Samsung veya Xiaomi tabletlere bakın."
-  },
-  "h7": {
-    "tarih": "2026-10-18",
-    "kisa": "Galaxy S22 Ultra, S Pen'in gövdeye yerleştiği ilk S Ultra. 2026'da hâlâ iyi bir kamera ve ekran sunuyor, ama yazılım desteğinin sonuna yaklaştığı için yalnızca uygun fiyatlı ikinci el olarak mantıklı.",
-    "metin": [
-      "S22 Ultra, Galaxy Note serisinin ruhunu S serisine taşıyan model. S Pen gövdenin içinde duruyor; not almak, imza atmak ve ekran görüntüsü üzerine yazmak için pratik. 6,8 inç QHD+ Dynamic AMOLED ekran ve 108 MP ana kamera, 10x periskop zoom ile hâlâ birçok yeni orta segment telefondan iyi fotoğraf çekiyor.",
-      "Türkiye'de satılan sürümde Snapdragon değil, Samsung'un Exynos 2200 işlemcisi var. Bu işlemci ısınma ve pil ömrü konusunda Snapdragon sürümünün gerisinde kaldı; yoğun oyun ve uzun video çekiminde bunu hissedebilirsiniz.",
-      "Samsung bu model için dört yıl işletim sistemi güncellemesi verdi; büyük sürüm güncellemeleri sona erdi, güvenlik güncellemeleri ise bir süre daha devam ediyor. İkinci el alıyorsanız pil sağlığını ve ekranda yanma (burn-in) olup olmadığını mutlaka kontrol edin."
-    ],
-    "kimlerAlmali": "S Pen'li büyük ekranlı bir telefonu uygun fiyata isteyenler, özellikle iyi durumda ikinci el bir cihaz bulanlar.",
-    "kimlerAlmamali": "Telefonu uzun yıllar kullanmayı planlayanlar ve yoğun oyun oynayanlar. Bu kişiler için S23 Ultra veya daha yeni modeller daha doğru.",
-    "sonKarar": "S22 Ultra, doğru fiyattan ikinci el olarak hâlâ alınabilir. Sıfır fiyatına almak için artık yaşlı bir model."
-  },
-  "z4": {
-    "tarih": "2026-10-18",
-    "kisa": "General Mobile GM 26 Pro 5G, arka yüzündeki ikinci ekranı ve yerli marka olmasıyla dikkat çeken orta segment bir telefon. 120 Hz AMOLED ekranı ve 5000 mAh pili güçlü yanları.",
-    "metin": [
-      "GM 26 Pro'nun en farklı özelliği arka yüzdeki küçük ekran. Bildirimleri görmek, saati kontrol etmek ve arka kamerayla selfie çekerken kadrajı görmek için kullanılıyor. Ön tarafta 6,67 inç 120 Hz AMOLED ekran var; renkler canlı, kaydırma akıcı.",
-      "İşlemci MediaTek Dimensity 7060. Sosyal medya, video ve günlük uygulamalarda rahat; ağır oyunlarda ise grafik ayarlarını düşürmeniz gerekebilir. 5000 mAh pil normal kullanımda bir günü rahat çıkarıyor. 50 MP ana kamera gün ışığında iyi sonuç veriyor. Gövde 7,55 mm kalınlığında ve 182 g; elde ince ve hafif.",
-      "Dikkat edilmesi gereken nokta suya dayanıklılık: telefon IPX4 sınıfında, yani su sıçramasına dayanıklı ama suya düşmeye dayanıklı değil. General Mobile'ın Türkiye'deki servis ağı ise yerli marka olmasının pratik bir avantajı."
-    ],
-    "kimlerAlmali": "Orta bütçeyle canlı ekranlı, ince ve hafif bir telefon isteyenler; arka ekran gibi farklı bir özelliği sevenler ve yerli markayı tercih edenler.",
-    "kimlerAlmamali": "Yoğun oyun oynayanlar ve telefonun suya düşmeye dayanıklı olmasını önemseyenler.",
-    "sonKarar": "GM 26 Pro 5G, fiyatına göre dengeli bir telefon. Aynı fiyattaki Samsung Galaxy A ve Xiaomi Redmi Note modelleriyle karşılaştırarak karar vermenizi öneririz."
-  },
-  "h22": {
-    "tarih": "2026-10-18",
-    "kisa": "iPad Pro M1 11 inç, 2021 modeli olmasına rağmen M1 işlemcisi sayesinde hâlâ çok hızlı. İkinci el ya da yenilenmiş olarak uygun fiyata bulunursa iPad Air'e güçlü bir alternatif.",
-    "metin": [
-      "Bu iPad Pro'yu 2026'da da değerli kılan şey M1 işlemci ve 8 GB RAM. Bu ikili sayesinde güncel iPadOS sürümlerini ve Apple Intelligence özelliklerini destekliyor. Video düzenleme, çizim ve çoklu görevde hâlâ rahat.",
-      "11 inç modelde 120 Hz ProMotion LCD ekran var; akıcı ama OLED değil. Face ID, Thunderbolt destekli USB-C girişi ve dört hoparlör üst sınıf bir deneyim sunuyor. 2. nesil Apple Pencil ile çalışıyor; yeni Apple Pencil Pro ile çalışmıyor.",
-      "Sık sorulan 'iPad Pro M1 mi, M2 mi, M4 mü?' sorusuna kısa cevap: M1 ile M2 arasındaki fark küçük, M4 ise ekran ve tasarımda büyük bir sıçrama. Bütçeniz kısıtlıysa M1, en iyisini istiyorsanız M4."
-    ],
-    "kimlerAlmali": "Uygun fiyata güçlü bir iPad isteyen öğrenciler ve çizerler; ikinci el veya yenilenmiş cihaz almaya açık olanlar.",
-    "kimlerAlmamali": "Uzun yıllar güncelleme desteği isteyenler ve OLED ekran bekleyenler.",
-    "sonKarar": "iPad Pro M1, doğru fiyattan alınır. İkinci el alırken pil sağlığını, ekranda leke olup olmadığını ve iCloud kilidinin kaldırıldığını kontrol edin."
-  },
-  "h21": {
-    "tarih": "2026-10-18",
-    "kisa": "iPad Pro M2 11 inç, M1 modelinin biraz daha hızlı versiyonu. Tasarımı ve ekranı aynı; asıl yenilikler M2 işlemci ve Apple Pencil'ı ekrana dokunmadan algılayan hover özelliği.",
-    "metin": [
-      "iPad Pro M2, M1 modeliyle aynı kasaya, aynı 11 inç 120 Hz ProMotion LCD ekrana ve aynı Face ID, Thunderbolt girişine sahip. Fark M2 işlemcide: grafik performansı ve video işleme gücü daha yüksek, ProRes video desteği var.",
-      "Çizerler için en önemli yenilik Apple Pencil hover özelliği. 2. nesil Apple Pencil ekrana değmeden birkaç milimetre yukarıdayken iPad nereye dokunacağınızı gösteriyor; fırça boyutunu ve rengini çizmeden görebiliyorsunuz. Wi-Fi 6E desteği de geldi.",
-      "M2 de 8 GB RAM'e sahip olduğu için Apple Intelligence'ı ve güncel iPadOS sürümlerini destekliyor. Yeni Apple Pencil Pro ile çalışmıyor; aksesuarlarınız varsa bunu hesaba katın."
-    ],
-    "kimlerAlmali": "Profesyonel çizim ve video için güçlü ama M4 kadar pahalı olmayan bir iPad arayanlar.",
-    "kimlerAlmamali": "M1 modeliyle arasında büyük fiyat farkı varsa, hover özelliğine ihtiyacınız olmayanlar. Bu durumda M1 aynı işi görür.",
-    "sonKarar": "iPad Pro M2, M1 ile M4 arasında dengeli bir seçim. M1'e göre fiyat farkı küçükse M2'yi alın."
-  },
-  "tv3": {
-    "tarih": "2026-10-18",
-    "kisa": "LG OLED55B4, OLED görüntü kalitesine en uygun fiyatla ulaşmanın yollarından biri. Mükemmel siyahlar ve kontrast sunuyor; parlaklığı ise üst OLED serilerinin gerisinde.",
-    "metin": [
-      "OLED televizyonlarda her piksel kendi ışığını üretiyor ve gerektiğinde tamamen kapanıyor. Bu yüzden B4'te siyahlar gerçekten siyah, kontrast sonsuz. Karanlık odada film ve dizi izlerken Mini LED ve LED televizyonlardan belirgin şekilde daha iyi bir görüntü alırsınız. Yan açılardan bakınca renkler bozulmuyor; geniş salonlar için de uygun.",
-      "B serisi, LG'nin giriş seviyesi OLED'i. C ve G serilerine göre parlaklığı daha düşük; çok güneş alan bir odada gündüz izlerken bunu fark edebilirsiniz. 120 Hz panel, Dolby Vision desteği ve webOS arayüzü var. Oyuncular için düşük gecikme ve değişken yenileme hızı desteğiyle iyi bir seçim.",
-      "OLED'de yanma (burn-in) riski sık soruluyor. Normal kullanımda modern OLED'lerde bu risk düşük; ama ekranda saatlerce sabit kalan haber kanalı logoları ya da oyun arayüzleri varsa dikkatli olun."
-    ],
-    "kimlerAlmali": "Akşamları ve loş odada film, dizi izleyenler; en iyi kontrastı makul bütçeyle isteyenler ve oyuncular.",
-    "kimlerAlmamali": "Çok aydınlık bir odada gündüz yoğun televizyon izleyenler ve aynı sabit görüntüyü saatlerce ekranda tutanlar.",
-    "sonKarar": "LG OLED55B4, OLED'e geçmek isteyenler için alınır. Aydınlık odalarda daha parlak bir Mini LED modeli de karşılaştırmanızı öneririz."
-  },
-  "x9": {
-    "tarih": "2026-10-18",
-    "kisa": "Xiaomi TV A Pro 55, QLED paneli ve Google TV arayüzüyle uygun fiyatlı bir 55 inç televizyon. Günlük TV ve dizi izlemek için yeterli; Dolby Vision desteği olmaması ve giriş seviyesi parlaklığı sınırları.",
-    "metin": [
-      "TV A Pro 55, 4K çözünürlüklü QLED panel kullanıyor; QLED katmanı sayesinde renkler standart LED televizyonlara göre daha canlı. Arayüz Google TV; Netflix, YouTube, Disney+ ve diğer uygulamalar hazır, telefonunuzdan görüntü aktarmak için Chromecast desteği var. Ses çıkışı 30 W.",
-      "HDR tarafında HDR10 ve HLG destekleniyor, Dolby Vision ise yok. Netflix ve Disney+'taki Dolby Vision içeriklerini standart HDR olarak izlersiniz. Panel parlaklığı giriş seviyesinde olduğu için HDR'ın etkisi üst modellerdeki kadar belirgin değil.",
-      "Xiaomi oyun için Game Boost adında 120 Hz moddan bahsediyor. Bu oyunlarda akıcılığa katkı sağlıyor, ama konsolda gerçek 4K 120 Hz oyun istiyorsanız HDMI 2.1 girişli ve 144 Hz panelli modellere bakmanız daha doğru."
-    ],
-    "kimlerAlmali": "Uygun bütçeyle akıllı TV özellikleri olan 55 inç bir televizyon arayanlar; ağırlıklı olarak dizi, YouTube ve TV yayını izleyenler.",
-    "kimlerAlmamali": "Film izlerken en iyi HDR deneyimini isteyenler ve PS5, Xbox gibi konsollarla ciddi oyun oynayanlar.",
-    "sonKarar": "Xiaomi TV A Pro 55 fiyatına göre alınır. Biraz daha bütçe ayırabilirseniz Mini LED ve 144 Hz panelli TCL veya iFFALCON modelleri belirgin şekilde daha iyi görüntü sunuyor."
-  },
-  "h28": {
-    "tarih": "2026-10-18",
-    "kisa": "Apple Watch Series 7, daha büyük ekranı ve dayanıklı tasarımıyla hâlâ işini gören bir akıllı saat. Sıcaklık sensörü ve yeni hareket özellikleri yok; yalnızca uygun fiyatlı ikinci el olarak mantıklı.",
-    "metin": [
-      "Series 7, Apple Watch'ta ekranı büyüten ve kenarlıkları incelten ilk model. Ekranda daha fazla metin görünüyor, tam klavye kullanılabiliyor. Ön camı önceki modellere göre daha dayanıklı, IP6X toz ve 50 metre su dayanıklılığı var. Hızlı şarj desteği de bu modelle geldi.",
-      "Sağlık tarafında kalp ritmi, EKG ve kan oksijeni ölçümü mevcut. Sonraki modellerde gelen sıcaklık sensörü, kaza algılama ve Çift Dokunuş ise bu modelde yok. Pil ömrü 18 saat; eski bir cihazda pil yıpranmış olabileceği için bu süre kısalabilir.",
-      "Series 7 güncel watchOS sürümlerini almaya devam ediyor, ama yaşı nedeniyle destek süresi daha yeni modellere göre kısa."
-    ],
-    "kimlerAlmali": "iPhone kullanan ve bildirim, spor takibi ve temel sağlık ölçümleri için uygun fiyatlı bir Apple Watch arayanlar.",
-    "kimlerAlmamali": "Uzun yıllar kullanacak bir saat isteyenler ve uyku, döngü takibi için sıcaklık sensörüne ihtiyaç duyanlar.",
-    "sonKarar": "Series 7'yi ikinci el olarak alacaksanız pil sağlığına bakın (yüzde 85 ve üzeri iyi). Fiyat farkı küçükse Series 9 veya daha yeni bir model daha uzun ömürlü olur."
-  },
-  "tv30": {
-    "tarih": "2026-10-18",
-    "kisa": "TCL 75C7L, 75 inç büyük ekranı, QD-Mini LED paneli ve 144 Hz yenileme hızıyla büyük salonlar ve oyuncular için güçlü bir televizyon. Büyük boyutu nedeniyle odanızın ölçülerini önceden kontrol etmeniz gerekiyor.",
-    "metin": [
-      "75 inç, salonda sinema hissi isteyenler için en popüler büyük boyut. 75C7L bu boyutu QD-Mini LED panelle birleştiriyor: Mini LED arka aydınlatma ekranı bölgeler halinde karartıp aydınlatabildiği için kontrast güçlü, parlak sahnelerde HDR etkisi belirgin. Dolby Vision ve HDR10+ desteği var.",
-      "144 Hz yenileme hızı oyun ve spor yayınlarında akıcılık sağlıyor; PS5 ve Xbox Series X ile 120 Hz oyun oynanabiliyor. 60 W ses çıkışı televizyon hoparlörü için güçlü; çoğu kullanıcı için ayrıca soundbar almak şart değil. Arayüz Google TV.",
-      "75 inç bir televizyon için önerilen izleme mesafesi yaklaşık 2,5–3 metre. Koltuğunuz ekrana daha yakınsa 65 inç modeller daha rahat olabilir. Duvara asacaksanız duvarın ve aparatın 75 inç ağırlığını taşıdığından emin olun."
-    ],
-    "kimlerAlmali": "Geniş salonu olanlar, film ve spor yayınını büyük ekranda izlemek isteyenler ve konsolla oyun oynayanlar.",
-    "kimlerAlmamali": "Küçük odada 2 metreden yakın oturanlar ve karanlık odada OLED seviyesinde siyah bekleyenler.",
-    "sonKarar": "TCL 75C7L, 75 inçte Mini LED görüntü ve 144 Hz isteyenler için alınır. Satın almadan önce 65 inç sürümüyle fiyat farkını da karşılaştırın."
-  },
-  "tv47": {
-    "tarih": "2026-10-18",
-    "kisa": "TCL 65T61C, 65 inç büyük ekranı uygun fiyata isteyenler için bütçe dostu bir QLED televizyon. Mini LED ve 120 Hz yok; günlük TV, dizi ve YouTube için yeterli, oyun ve HDR filmler için sınırlı.",
-    "metin": [
-      "65T61C'nin en büyük artısı fiyatına göre sunduğu ekran boyutu. 65 inç 4K QLED panel, standart LED televizyonlara göre daha canlı renkler veriyor. Google TV arayüzü sayesinde Netflix, YouTube, Disney+ ve diğer uygulamalar hazır geliyor; telefondan Chromecast ile görüntü aktarılabiliyor.",
-      "Sınırları da bilinmeli. Yenileme hızı 60 Hz; konsolda 120 Hz oyun oynanamıyor. HDR tarafında HDR10 ve HLG destekleniyor, Dolby Vision yok. Arka aydınlatma Mini LED değil, bu yüzden karanlık sahnelerde siyahlar üst modellerdeki kadar derin değil. 20 W ses çıkışı diyaloglar için yeterli, film için soundbar fark yaratır.",
-      "Arayanların sık sorduğu 'alınır mı' sorusunun cevabı beklentiye bağlı: büyük ekranda TV yayını, dizi ve YouTube izleyecekseniz evet. Oyun ve sinema deneyimi istiyorsanız biraz daha bütçeyle TCL'nin Mini LED'li Q6C veya C6K modellerine bakın."
-    ],
-    "kimlerAlmali": "Uygun bütçeyle 65 inç akıllı televizyon isteyenler; ağırlıklı olarak TV yayını, dizi ve YouTube izleyenler.",
-    "kimlerAlmamali": "Konsolda 120 Hz oyun oynamak isteyenler ve Dolby Vision ile en iyi HDR film deneyimini arayanlar.",
-    "sonKarar": "TCL 65T61C fiyatına göre alınır. Biraz daha bütçe ayırabilirseniz 144 Hz ve Mini LED'li modeller belirgin şekilde daha iyi görüntü sunuyor."
-  },
-  "tv29": {
-    "tarih": "2026-10-18",
-    "kisa": "TCL 65C8L, TCL'nin üst seviye 65 inç Mini LED televizyonlarından. SQD-Mini LED paneli, 144 Hz yenileme hızı ve güçlü ses sistemiyle OLED'e alternatif arayanlar için iddialı bir seçenek.",
-    "metin": [
-      "C8L, TCL'nin C serisinde C6 ve C7'nin üstünde konumlanıyor. TCL'nin SQD-Mini LED adını verdiği panel, daha fazla karartma bölgesi ve daha yüksek parlaklıkla standart Mini LED modellerden bir adım ileri gidiyor. Sonuç olarak aydınlık odada bile güçlü HDR görüntü ve iyi kontrast elde ediliyor; Dolby Vision ve HDR10+ desteği var.",
-      "144 Hz panel ve HDMI 2.1 girişler oyun için ideal. Ses sistemi bu serinin en güçlü yanlarından; televizyon hoparlörüyle yetinmek isteyenler için iyi bir seçenek. Arayüz Google TV.",
-      "Asıl soru OLED mi, Mini LED mi? Karanlık odada film izliyorsanız OLED hâlâ siyahlarda önde. Gündüz aydınlık bir salonda izliyorsanız C8L gibi parlak bir Mini LED daha iyi sonuç verir ve yanma (burn-in) riski taşımaz."
-    ],
-    "kimlerAlmali": "Aydınlık salonda izleyen, yüksek parlaklık ve güçlü HDR isteyen, konsol veya bilgisayarla oyun oynayan kullanıcılar.",
-    "kimlerAlmamali": "Bütçesi sınırlı olanlar; C6K ve Q6C gibi modeller fiyatın çok altında benzer bir deneyimin büyük kısmını sunuyor.",
-    "sonKarar": "TCL 65C8L, üst seviye Mini LED görüntü isteyenler için alınır. Aynı fiyat aralığındaki OLED modellerle izleme ortamınıza göre karşılaştırın."
-  },
-  "tv37": {
-    "tarih": "2026-10-18",
-    "kisa": "LG OLED65G64LW, LG'nin en üst seviye OLED serisi olan G serisinden. Yüksek parlaklığı, mükemmel siyahları ve duvara tam oturan tasarımıyla en iyi görüntüyü isteyenler için; fiyatı da buna göre yüksek.",
-    "metin": [
-      "G serisi, LG OLED'leri arasında en parlak panelleri kullanıyor. OLED'in sonsuz kontrastı ve gerçek siyahları korunurken parlaklığın da artması, bu televizyonu gündüz aydınlık odada da iyi bir seçim yapıyor; giriş seviyesi OLED'lerin en zayıf yönü burada büyük ölçüde ortadan kalkıyor. Dolby Vision, 144 Hz'e kadar yenileme hızı ve webOS arayüzü var.",
-      "Tasarım duvara montaj için düşünülmüş: televizyon duvara neredeyse boşluk bırakmadan oturuyor. Bazı ülkelerde ayak kutudan çıkmıyor ve ayrıca satılıyor; televizyonu sehpaya koyacaksanız satın alırken bunu kontrol edin. 60 W ses çıkışı televizyon hoparlörü için iyi seviyede.",
-      "Oyuncular için 144 Hz, düşük gecikme ve değişken yenileme hızı desteği önemli artılar. Fiyat farkını düşünenler için LG'nin C serisi daha düşük parlaklıkla benzer OLED deneyimini daha uygun fiyata sunuyor."
-    ],
-    "kimlerAlmali": "En iyi görüntüyü bütçe sınırı olmadan isteyenler, televizyonu duvara asacak olanlar ve hem film hem oyun için üst seviye OLED arayanlar.",
-    "kimlerAlmamali": "Bütçesine dikkat edenler; LG C serisi veya iyi bir Mini LED, fiyatın çok altında deneyimin büyük kısmını sunuyor.",
-    "sonKarar": "LG OLED65G64LW, en iyisini isteyenler için alınır. Parlaklık sizin için kritik değilse C serisiyle aradaki fiyat farkını değerlendirin."
-  },
-  "tv15": {
-    "tarih": "2026-10-18",
-    "kisa": "LG 55QNED87B6A, Mini LED arka aydınlatmalı, 144 Hz destekli 55 inç bir LG televizyon. webOS arayüzü ve Dolby Vision desteğiyle orta-üst segmentte dengeli bir seçim.",
-    "metin": [
-      "QNED, LG'nin LCD tabanlı televizyonları için kullandığı ad. 55QNED87B6A'da Mini LED arka aydınlatma var; bu sayede kontrast ve parlaklık standart LED modellere göre belirgin şekilde daha iyi. Dolby Vision ile Netflix ve Disney+'taki HDR içerikler iyi görünüyor; HDR10+ desteği ise yok.",
-      "Yenileme hızı 144 Hz'e kadar çıkıyor; konsol ve bilgisayar oyunları için iyi. Arayüz LG'nin webOS'u: hızlı ve kullanımı kolay, sihirli kumandası ekranda fare gibi imleç kullanmayı sağlıyor. 20 W ses çıkışı temel kullanım için yeterli.",
-      "Karar verirken aynı fiyat aralığındaki TCL ve iFFALCON Mini LED modelleriyle karşılaştırmanızı öneririz. Onlar genelde benzer paraya daha fazla özellik sunuyor; LG ise marka, arayüz ve servis tercihi olanlar için öne çıkıyor."
-    ],
-    "kimlerAlmali": "LG'nin webOS arayüzünü ve markasını tercih edenler, 55 inçte Mini LED görüntü ve 144 Hz oyun desteği isteyenler.",
-    "kimlerAlmamali": "Yalnızca fiyat/performansa bakanlar ve HDR10+ içerik izleyenler.",
-    "sonKarar": "LG 55QNED87B6A dengeli bir televizyon ve alınır. Fiyat farkı belirginse TCL'nin 55 inç Mini LED modellerine de bakın."
-  },
-  "tv16": {
-    "tarih": "2026-10-18",
-    "kisa": "iFFALCON 55U65A, 55 inç 4K QLED ekranı ve Google TV arayüzüyle bütçe dostu bir televizyon. Dolby Vision desteği fiyatına göre artı; 60 Hz panel nedeniyle oyun için sınırlı.",
-    "metin": [
-      "Önce marka sorusu: iFFALCON, TCL'nin kendi markası. 55U65A markanın uygun fiyatlı modeli. 55 inç 4K QLED panel, standart LED televizyonlara göre daha canlı renkler veriyor. Bu fiyat aralığında Dolby Vision ve HDR10+ desteğinin birlikte olması dikkat çekici.",
-      "Google TV arayüzü sayesinde Netflix, YouTube, Disney+ gibi uygulamalar hazır geliyor ve telefondan Chromecast ile görüntü aktarılabiliyor. 20 W ses çıkışı günlük kullanım için yeterli.",
-      "Panel 60 Hz; konsolda 120 Hz oyun oynanamıyor ve Mini LED arka aydınlatma yok. Bu yüzden HDR desteği olsa da parlaklık ve kontrast üst modellerdeki kadar güçlü değil. Oyun önceliğinizse aynı markanın 144 Hz'lik U95A serisine bakın."
-    ],
-    "kimlerAlmali": "Uygun fiyatlı, 55 inç bir akıllı TV arayanlar; ağırlıklı olarak dizi, film ve YouTube izleyenler.",
-    "kimlerAlmamali": "Konsolla oyun oynayanlar ve parlak odada güçlü HDR görüntü isteyenler.",
-    "sonKarar": "iFFALCON 55U65A, fiyatına göre iyi bir televizyon ve alınır. Oyun için biraz daha bütçeyle 55U95A daha doğru tercih."
-  },
-  "p_mid_02": {
-    "tarih": "2026-10-18",
-    "kisa": "Galaxy A36 5G, Samsung'un altı yıllık güncelleme sözü, AMOLED ekranı ve dengeli performansıyla orta segmentte güvenli bir seçim. Kamera ve işlemci rakiplerine göre iddialı değil.",
-    "metin": [
-      "A36 5G'nin en güçlü yanı uzun ömür. Samsung bu model için altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor; bu, orta segmentte nadir görülen bir destek süresi. Telefonu uzun yıllar kullanmak isteyenler için önemli bir avantaj.",
-      "Ekran 120 Hz Super AMOLED: renkler canlı, kaydırma akıcı. Snapdragon 6 Gen 3 işlemci sosyal medya, video ve günlük uygulamalarda rahat; ağır oyunlarda ise orta grafik ayarları gerekiyor. 5000 mAh pil normal kullanımda bir günü rahat çıkarıyor. IP67 su ve toz koruması var; 7,4 mm kalınlıkla ince bir telefon.",
-      "Kamera tarafında 50 MP ana kamera gün ışığında iyi sonuç veriyor, düşük ışıkta ise rakiplerin gerisinde kalabiliyor. Bu fiyat aralığında daha güçlü kamera veya daha hızlı şarj arıyorsanız Xiaomi ve POCO modelleri öne çıkabilir."
-    ],
-    "kimlerAlmali": "Telefonunu 4–5 yıl kullanmak isteyenler, Samsung'un yazılım ve servis ağını tercih edenler ve dengeli bir orta segment telefon arayanlar.",
-    "kimlerAlmamali": "Oyun performansını ve kamerayı öncelikli görenler; aynı fiyata daha güçlü işlemcili rakipler var.",
-    "sonKarar": "Galaxy A36 5G alınır, özellikle uzun güncelleme desteği sizin için önemliyse. Yeni nesil Galaxy A37 ile fiyat farkına da bakın."
-  },
-  "p_mid_04": {
-    "tarih": "2026-10-18",
-    "kisa": "POCO X7 Pro, güçlü MediaTek Dimensity 8400-Ultra işlemcisiyle orta segment fiyatına üst segment performans sunan bir telefon. Oyun oynayanlar için bu fiyatta en mantıklı seçeneklerden biri.",
-    "metin": [
-      "X7 Pro'nun en büyük kozu performans. Dimensity 8400-Ultra işlemci, bu fiyat aralığındaki çoğu rakibin çok önünde; popüler oyunları yüksek grafik ayarlarında akıcı oynatabiliyor. 12 GB RAM ve geniş depolama seçenekleriyle çoklu görevde de rahat.",
-      "Ekran 6,67 inç, 1,5K çözünürlüklü 120 Hz AMOLED; keskin ve canlı. Ana kamera 50 MP ve optik görüntü sabitlemeli; gün ışığında iyi fotoğraf çekiyor, ama kamera bu telefonun ana satış noktası değil. Hızlı şarj desteği sayesinde kısa sürede doluyor.",
-      "Yazılım Xiaomi'nin HyperOS arayüzü. Kurulumda gelen bazı ek uygulamaları kaldırmanız gerekebilir. Güncelleme süresi Samsung'un orta segment modellerinden daha kısa; telefonu çok uzun yıllar kullanmayı planlıyorsanız bunu hesaba katın."
-    ],
-    "kimlerAlmali": "Mobil oyun oynayanlar ve orta bütçeyle en yüksek performansı isteyenler.",
-    "kimlerAlmamali": "Kamerayı öncelikli görenler ve uzun yıllar güncelleme desteği isteyenler. Bu durumda Galaxy A serisi veya kamera odaklı modeller daha uygun.",
-    "sonKarar": "POCO X7 Pro, fiyat/performans arayanlar için alınır. Satın almadan önce POCO'nun daha yeni modelleriyle fiyat farkını da kontrol edin."
-  }
+ "_aciklama": "Elle yazılmış inceleme değerlendirmeleri. Anahtar: ürün id'si. 'kisa', 'kimlerAlmali', 'kimlerAlmamali', 'sonKarar' alanları şablon metinlerin yerine geçer; 'metin' paragrafları 'Editör Değerlendirmesi' başlığı altında gösterilir.",
+ "h3": {
+  "tarih": "2026-10-18",
+  "kisa": "Galaxy S24 Ultra, iki nesil sonra bile kamerası, S Pen'i ve uzun güncelleme desteğiyle güçlü bir amiral gemisi. Yeni modellere göre ağır ve şarjı daha yavaş; fiyatı düştüyse çok mantıklı bir alım.",
+  "metin": [
+   "S24 Ultra, Samsung'un Galaxy AI özelliklerini tanıttığı ilk Ultra modeli. 6,8 inç 120 Hz Dynamic AMOLED ekran, Snapdragon 8 Gen 3 işlemci, 12 GB RAM ve titanyum kasa ile geliyor. Ekranı yansımayı azaltan bir kaplamaya sahip; güneş altında okunabilirliği hâlâ sınıfının iyilerinden.",
+   "Kamerada 200 MP ana sensör ve 50 MP 5x telefoto, uzak çekimlerde bu telefonu öne çıkarıyor. Ultra geniş açı kamera 12 MP'de kaldı; sonraki modeller burada 50 MP'ye geçti. Kutudan çıkan S Pen Bluetooth destekli; kalemle uzaktan deklanşöre basmak gibi hareketler bu modelde çalışıyor, yeni nesillerde ise bu özellik kaldırıldı.",
+   "Boyutlar sık soruluyor: S24 Ultra 162,3 x 79 x 8,6 mm ölçülerinde ve 232 g. Elde büyük ve ağır bir telefon; tek elle kullanım zor. Samsung bu model için yedi yıl işletim sistemi ve güvenlik güncellemesi sözü verdi, yani 2026'da alınan bir S24 Ultra'nın önünde hâlâ uzun bir destek süresi var."
+  ],
+  "kimlerAlmali": "Telefonda iyi zoom kamerası, S Pen ile not alma ve büyük ekran isteyenler; amiral gemisi deneyimini yeni model fiyatı ödemeden almak isteyenler.",
+  "kimlerAlmamali": "Hafif ve kompakt telefon sevenler, hızlı şarjı önemseyenler (kablolu şarj 45 W) ve S Pen'i hiç kullanmayacak olanlar. Bu kişiler için daha küçük ve daha ucuz modeller daha mantıklı.",
+  "sonKarar": "S24 Ultra alınır, ama doğru fiyattan. S25 Ultra veya S26 Ultra ile arasındaki fark belirginse, kamera ve S Pen tarafında çok az şey kaybederek ciddi tasarruf edersiniz."
+ },
+ "n7": {
+  "tarih": "2026-10-18",
+  "kisa": "iFFALCON 65U95A, QD-Mini LED panel, 144 Hz ve Dolby Vision gibi üst segment özellikleri uygun fiyata getiren 65 inç bir televizyon. Özellikle oyun ve parlak oda kullanımı için iyi bir seçim.",
+  "metin": [
+   "Önce marka sorusu: iFFALCON, TCL'nin kendi markası. 65U95A da TCL'nin QD-Mini LED televizyonlarıyla aynı teknolojiyi kullanıyor ve 2026 modeli olarak satılıyor. 65 inç 4K panel, Mini LED arka aydınlatma sayesinde parlak sahnelerde güçlü HDR görüntü veriyor; Dolby Vision ve HDR10+ desteği var.",
+   "Oyuncular için öne çıkan nokta 144 Hz yenileme hızı ve HDMI 2.1 girişler. PS5, Xbox Series X ya da güçlü bir bilgisayarla akıcı oyun deneyimi alırsınız. Arayüz Google TV; Netflix, YouTube ve Disney+ gibi uygulamalar hazır geliyor. Ses tarafında 30 W çıkış var; diyaloglar net, ama film için güçlü bas istiyorsanız bir soundbar düşünmelisiniz.",
+   "Panel VA tipinde. Karşıdan bakınca kontrast iyi, ama geniş açılardan renkler soluklaşabiliyor. Aynı serinin kullanıcıları karanlık sahnelerde zaman zaman iz kalması bildirdi; sonraki yazılım güncellemeleriyle azaldığı belirtiliyor. Kurulumdan sonra ilk iş güncellemeleri yapmanızı öneririz."
+  ],
+  "kimlerAlmali": "Konsol veya bilgisayarla oyun oynayanlar, gündüz aydınlık odada televizyon izleyenler ve Mini LED görüntüyü makul bütçeyle almak isteyenler.",
+  "kimlerAlmamali": "Televizyonu geniş bir L koltuktan yan açılarla izleyecekler ve karanlık odada OLED seviyesinde siyah bekleyenler. Bu ihtiyaçlar için OLED modellere bakmak daha doğru.",
+  "sonKarar": "65U95A, fiyatına göre çok şey sunan bir televizyon. Kardeş modeli TCL 65C6K ile özellikleri çok yakın; ikisi arasında hangisi daha ucuzsa onu almak mantıklı."
+ },
+ "h20": {
+  "tarih": "2026-10-18",
+  "kisa": "iPad Pro M4 11 inç, Tandem OLED ekranı ve M4 işlemcisiyle tablet dünyasının en güçlü cihazlarından. Yerine M5'li yeni model geldi; indirimli bulursanız yine çok iyi bir alım.",
+  "metin": [
+   "Bu iPad Pro'nun en güçlü yanı ekranı. Apple'ın Ultra Retina XDR adını verdiği Tandem OLED panel, iki OLED katmanı üst üste kullanarak hem çok parlak hem de gerçek siyah sunuyor. 120 Hz ProMotion ile kaydırma ve çizim akıcı. Gövde 5,1 mm kalınlıkta ve 444 g; elde gerçekten hafif.",
+   "M4 işlemci video düzenleme, çizim ve fotoğraf işleme gibi ağır işlerde rahat. 256 GB ve 512 GB modellerde 8 GB RAM var; 1 TB ve üstünde 16 GB'a çıkıyor. Apple Pencil Pro ve yeni Magic Keyboard ile çalışıyor, eski Apple Pencil 2 ile çalışmıyor. Bunu, aksesuarlarınız varsa satın almadan önce bilin. USB-C girişi Thunderbolt destekli; harici ekran ve hızlı disklerle iyi anlaşıyor.",
+   "Dikkat edilmesi gereken iki nokta var. Birincisi fiyat: kalem ve klavye eklenince toplam tutar bir dizüstü bilgisayarı geçebiliyor. İkincisi, Apple Ekim 2025'te M5 işlemcili yeni iPad Pro'yu çıkardı. Günlük kullanımda fark küçük, bu yüzden M4 modeli iyi bir indirimle bulursanız tercih etmek mantıklı."
+  ],
+  "kimlerAlmali": "Çizim, tasarım, video ve not alma için en iyi ekranı isteyenler; iPad'i dizüstüne yakın bir iş aracı olarak kullanacaklar.",
+  "kimlerAlmamali": "Tableti çoğunlukla video izleme ve internette gezinme için kullanacaklar. Bu kullanım için iPad Air veya standart iPad çok daha ucuza aynı işi görür.",
+  "sonKarar": "iPad Pro M4 11 inç, ekranı ve gücüyle hâlâ üst sınıfta. M5 modeliyle fiyat farkı belirginse M4'ü almak akıllıca; aksesuar uyumluluğunu kontrol etmeyi unutmayın."
+ },
+ "n8": {
+  "tarih": "2026-10-18",
+  "kisa": "TCL 65C6K, 2025 yılının fiyat/performans odaklı QD-Mini LED televizyonlarından. 144 Hz, Dolby Vision ve güçlü kontrastı makul fiyata sunuyor; en büyük rakibi kendi kardeş markası iFFALCON.",
+  "metin": [
+   "65C6K, TCL'nin C6K serisinin 65 inç modeli. 4K QD-Mini LED panel kullanıyor; Mini LED arka aydınlatma ekranı bölgeler halinde karartabildiği için kontrast sıradan LED televizyonlara göre belirgin şekilde daha iyi. TCL bu seride yüksek kontrastlı HVA tipi panel kullanıyor; karşıdan izlerken siyahlar derin görünüyor.",
+   "Yenileme hızı 144 Hz ve HDMI 2.1 girişler var; PS5 ve Xbox Series X ile 120 Hz oyun oynanabiliyor. HDR tarafında Dolby Vision ve HDR10+ destekleniyor. Ses sistemi ONKYO imzalı 2.1 kanal ve Dolby Atmos destekli; televizyon hoparlörü için iyi, ama sinema hissi için soundbar yine fark yaratır. Arayüz Google TV.",
+   "VA tipi panellerin ortak özelliği olarak yan açılardan bakınca renkler soluklaşıyor. Geniş bir salon düzeninde herkesin ekranın karşısında oturmadığını düşünüyorsanız bunu göz önünde bulundurun."
+  ],
+  "kimlerAlmali": "Bütçesini aşmadan Mini LED görüntü ve 144 Hz oyun desteği isteyenler; filmi ve diziyi genelde ekranın karşısından izleyenler.",
+  "kimlerAlmamali": "Geniş açılardan izleyecek kalabalık aileler ve karanlık odada OLED siyahı bekleyenler.",
+  "sonKarar": "TCL 65C6K, fiyatına göre güçlü bir televizyon ve alınır. Karar vermeden önce iFFALCON 65U95A'nın fiyatına da bakın; iki model özellik olarak çok yakın."
+ },
+ "x28": {
+  "tarih": "2026-10-18",
+  "kisa": "Galaxy Tab S9 FE, kutudan çıkan S Pen'i ve IP68 su geçirmezliğiyle not almak ve ders çalışmak için en mantıklı orta segment tabletlerden biri. Ekranı LCD ve 90 Hz; üst segment beklentisi olanlar için yetersiz kalabilir.",
+  "metin": [
+   "Tab S9 FE'nin en büyük artısı kutudaki S Pen. Ayrıca para vermeden not alma, PDF işaretleme ve basit çizim yapabiliyorsunuz. Tabletlerde nadir görülen IP68 su ve toz dayanıklılığı da var; mutfakta tarif okumak ya da havuz kenarında kullanmak için içiniz rahat olur.",
+   "10,9 inç ekran LCD ve 90 Hz. Günlük kullanımda yeterince akıcı, ama Galaxy Tab S9 serisinin AMOLED ekranlarındaki canlı renk ve derin siyahı vermiyor. Exynos 1380 işlemci; ders, video, web ve hafif oyunlar için yeterli, ağır oyunlarda ise grafik ayarlarını düşürmeniz gerekebilir. Samsung DeX moduyla klavye bağlayıp masaüstüne benzer bir kullanım da mümkün.",
+   "Samsung bu modelin yerine Galaxy Tab S10 FE'yi çıkardı. Fiyat farkı belirginse S9 FE hâlâ iyi bir seçim; fark küçükse yeni modele bakmak daha uzun güncelleme desteği demek."
+  ],
+  "kimlerAlmali": "Öğrenciler, not almayı ve PDF üzerinde çalışmayı seven kullanıcılar ve dayanıklı bir aile tableti arayanlar.",
+  "kimlerAlmamali": "Film izlemek için en iyi ekranı isteyenler ve tablette ağır oyun oynamayı düşünenler. Bu kişiler için AMOLED ekranlı ve daha güçlü işlemcili modeller daha uygun.",
+  "sonKarar": "Galaxy Tab S9 FE alınır, özellikle S Pen'i kullanacaksanız. Kalem ve su geçirmezlik bu fiyat aralığında rakiplerinde çoğu zaman yok."
+ },
+ "y46": {
+  "tarih": "2026-10-18",
+  "kisa": "Galaxy Tab A9, video izlemek, internette gezinmek ve çocuklar için uygun fiyatlı, kompakt bir tablet. 8,7 inç ekranı küçük; ders çalışmak ve çoklu görev için daha büyük bir model daha uygun olabilir.",
+  "metin": [
+   "Tab A9, Samsung'un en uygun fiyatlı tabletlerinden. 8,7 inçlik ekranı onu elde taşımayı kolaylaştırıyor; yatakta video izlemek, kitap okumak ya da çocuklara vermek için iyi bir boyut. Ekran LCD ve 60 Hz; fiyatına göre yeterli ama renkler ve akıcılık üst modellerle kıyaslanamaz.",
+   "4 GB RAM ve 64 GB depolamalı sürüm temel işlerde idare ediyor; birçok uygulama ve oyun yükleyecekseniz 8 GB RAM / 128 GB sürüme bakın. Hafıza kartı yuvası sayesinde depolama alanı genişletilebiliyor. Kalem desteği yok ve ön kamera görüntülü görüşme için ancak yeterli.",
+   "Sık karıştırılan bir nokta: Galaxy Tab A9+ farklı bir model. 11 inç ekranlı ve 90 Hz; ders ve not için daha uygun. Hangisini aldığınızı satın alırken kontrol edin."
+  ],
+  "kimlerAlmali": "Çocuğuna ilk tabletini almak isteyenler, video ve internet için uygun fiyatlı ikinci bir ekran arayanlar.",
+  "kimlerAlmamali": "Tableti ders, not alma ya da ofis işi için kullanacaklar ve oyun oynayacaklar. Bu ihtiyaçlar için Tab A9+ veya Tab S9 FE daha doğru.",
+  "sonKarar": "Galaxy Tab A9, beklentiyi doğru tuttuğunuzda alınır: ucuz, hafif ve günlük medya kullanımı için yeterli. Daha büyük ekran istiyorsanız Tab A9+'a bakın."
+ },
+ "x29": {
+  "tarih": "2026-10-18",
+  "kisa": "Huawei MatePad 11.5, 120 Hz geniş ekranı ve uygun fiyatıyla güçlü bir medya tableti. Ama Google servisleri yok; bunu satın almadan önce mutlaka bilmeniz gerekiyor.",
+  "metin": [
+   "MatePad 11.5'in en güçlü yanı ekranı: 11,5 inç ve 120 Hz. Video izlerken geniş, kaydırırken akıcı. Bazı sürümler yansımayı azaltan PaperMatte ekranla satılıyor; okumak ve not almak için göz yorgunluğunu azaltıyor. M-Pencil kalem desteği var ama kalem ayrı satılıyor.",
+   "Satın almadan önce bilinmesi gereken en önemli konu yazılım. Huawei cihazlarda Google Play Store, YouTube uygulaması, Gmail ve Google Haritalar resmi olarak yüklü gelmiyor. Uygulamalar Huawei'nin AppGallery mağazasından yükleniyor; birçok popüler uygulama orada var, ama bazı bankacılık, okul ve oyun uygulamaları sorun çıkarabiliyor. Kullanmayı planladığınız uygulamaları önceden kontrol edin.",
+   "Tablet, sürüme göre farklı işlemci, RAM ve depolama seçenekleriyle satılıyor. Ürün sayfasındaki teknik özellikleri kendi sürümünüzle karşılaştırmanızı öneririz."
+  ],
+  "kimlerAlmali": "Tableti video, okuma ve not almak için kullanacak, ihtiyaç duyduğu uygulamaların AppGallery'de olduğunu kontrol etmiş kullanıcılar.",
+  "kimlerAlmamali": "Google uygulamalarına bağlı olanlar, okul veya iş için Google Classroom, Drive gibi araçları yoğun kullananlar.",
+  "sonKarar": "MatePad 11.5, donanımı ve fiyatıyla iyi bir tablet. Google servisleri olmadan yaşayabiliyorsanız alınır; emin değilseniz Samsung veya Xiaomi tabletlere bakın."
+ },
+ "h7": {
+  "tarih": "2026-10-18",
+  "kisa": "Galaxy S22 Ultra, S Pen'in gövdeye yerleştiği ilk S Ultra. 2026'da hâlâ iyi bir kamera ve ekran sunuyor, ama yazılım desteğinin sonuna yaklaştığı için yalnızca uygun fiyatlı ikinci el olarak mantıklı.",
+  "metin": [
+   "S22 Ultra, Galaxy Note serisinin ruhunu S serisine taşıyan model. S Pen gövdenin içinde duruyor; not almak, imza atmak ve ekran görüntüsü üzerine yazmak için pratik. 6,8 inç QHD+ Dynamic AMOLED ekran ve 108 MP ana kamera, 10x periskop zoom ile hâlâ birçok yeni orta segment telefondan iyi fotoğraf çekiyor.",
+   "Türkiye'de satılan sürümde Snapdragon değil, Samsung'un Exynos 2200 işlemcisi var. Bu işlemci ısınma ve pil ömrü konusunda Snapdragon sürümünün gerisinde kaldı; yoğun oyun ve uzun video çekiminde bunu hissedebilirsiniz.",
+   "Samsung bu model için dört yıl işletim sistemi güncellemesi verdi; büyük sürüm güncellemeleri sona erdi, güvenlik güncellemeleri ise bir süre daha devam ediyor. İkinci el alıyorsanız pil sağlığını ve ekranda yanma (burn-in) olup olmadığını mutlaka kontrol edin."
+  ],
+  "kimlerAlmali": "S Pen'li büyük ekranlı bir telefonu uygun fiyata isteyenler, özellikle iyi durumda ikinci el bir cihaz bulanlar.",
+  "kimlerAlmamali": "Telefonu uzun yıllar kullanmayı planlayanlar ve yoğun oyun oynayanlar. Bu kişiler için S23 Ultra veya daha yeni modeller daha doğru.",
+  "sonKarar": "S22 Ultra, doğru fiyattan ikinci el olarak hâlâ alınabilir. Sıfır fiyatına almak için artık yaşlı bir model."
+ },
+ "z4": {
+  "tarih": "2026-10-18",
+  "kisa": "General Mobile GM 26 Pro 5G, arka yüzündeki ikinci ekranı ve yerli marka olmasıyla dikkat çeken orta segment bir telefon. 120 Hz AMOLED ekranı ve 5000 mAh pili güçlü yanları.",
+  "metin": [
+   "GM 26 Pro'nun en farklı özelliği arka yüzdeki küçük ekran. Bildirimleri görmek, saati kontrol etmek ve arka kamerayla selfie çekerken kadrajı görmek için kullanılıyor. Ön tarafta 6,67 inç 120 Hz AMOLED ekran var; renkler canlı, kaydırma akıcı.",
+   "İşlemci MediaTek Dimensity 7060. Sosyal medya, video ve günlük uygulamalarda rahat; ağır oyunlarda ise grafik ayarlarını düşürmeniz gerekebilir. 5000 mAh pil normal kullanımda bir günü rahat çıkarıyor. 50 MP ana kamera gün ışığında iyi sonuç veriyor. Gövde 7,55 mm kalınlığında ve 182 g; elde ince ve hafif.",
+   "Dikkat edilmesi gereken nokta suya dayanıklılık: telefon IPX4 sınıfında, yani su sıçramasına dayanıklı ama suya düşmeye dayanıklı değil. General Mobile'ın Türkiye'deki servis ağı ise yerli marka olmasının pratik bir avantajı."
+  ],
+  "kimlerAlmali": "Orta bütçeyle canlı ekranlı, ince ve hafif bir telefon isteyenler; arka ekran gibi farklı bir özelliği sevenler ve yerli markayı tercih edenler.",
+  "kimlerAlmamali": "Yoğun oyun oynayanlar ve telefonun suya düşmeye dayanıklı olmasını önemseyenler.",
+  "sonKarar": "GM 26 Pro 5G, fiyatına göre dengeli bir telefon. Aynı fiyattaki Samsung Galaxy A ve Xiaomi Redmi Note modelleriyle karşılaştırarak karar vermenizi öneririz."
+ },
+ "h22": {
+  "tarih": "2026-10-18",
+  "kisa": "iPad Pro M1 11 inç, 2021 modeli olmasına rağmen M1 işlemcisi sayesinde hâlâ çok hızlı. İkinci el ya da yenilenmiş olarak uygun fiyata bulunursa iPad Air'e güçlü bir alternatif.",
+  "metin": [
+   "Bu iPad Pro'yu 2026'da da değerli kılan şey M1 işlemci ve 8 GB RAM. Bu ikili sayesinde güncel iPadOS sürümlerini ve Apple Intelligence özelliklerini destekliyor. Video düzenleme, çizim ve çoklu görevde hâlâ rahat.",
+   "11 inç modelde 120 Hz ProMotion LCD ekran var; akıcı ama OLED değil. Face ID, Thunderbolt destekli USB-C girişi ve dört hoparlör üst sınıf bir deneyim sunuyor. 2. nesil Apple Pencil ile çalışıyor; yeni Apple Pencil Pro ile çalışmıyor.",
+   "Sık sorulan 'iPad Pro M1 mi, M2 mi, M4 mü?' sorusuna kısa cevap: M1 ile M2 arasındaki fark küçük, M4 ise ekran ve tasarımda büyük bir sıçrama. Bütçeniz kısıtlıysa M1, en iyisini istiyorsanız M4."
+  ],
+  "kimlerAlmali": "Uygun fiyata güçlü bir iPad isteyen öğrenciler ve çizerler; ikinci el veya yenilenmiş cihaz almaya açık olanlar.",
+  "kimlerAlmamali": "Uzun yıllar güncelleme desteği isteyenler ve OLED ekran bekleyenler.",
+  "sonKarar": "iPad Pro M1, doğru fiyattan alınır. İkinci el alırken pil sağlığını, ekranda leke olup olmadığını ve iCloud kilidinin kaldırıldığını kontrol edin."
+ },
+ "h21": {
+  "tarih": "2026-10-18",
+  "kisa": "iPad Pro M2 11 inç, M1 modelinin biraz daha hızlı versiyonu. Tasarımı ve ekranı aynı; asıl yenilikler M2 işlemci ve Apple Pencil'ı ekrana dokunmadan algılayan hover özelliği.",
+  "metin": [
+   "iPad Pro M2, M1 modeliyle aynı kasaya, aynı 11 inç 120 Hz ProMotion LCD ekrana ve aynı Face ID, Thunderbolt girişine sahip. Fark M2 işlemcide: grafik performansı ve video işleme gücü daha yüksek, ProRes video desteği var.",
+   "Çizerler için en önemli yenilik Apple Pencil hover özelliği. 2. nesil Apple Pencil ekrana değmeden birkaç milimetre yukarıdayken iPad nereye dokunacağınızı gösteriyor; fırça boyutunu ve rengini çizmeden görebiliyorsunuz. Wi-Fi 6E desteği de geldi.",
+   "M2 de 8 GB RAM'e sahip olduğu için Apple Intelligence'ı ve güncel iPadOS sürümlerini destekliyor. Yeni Apple Pencil Pro ile çalışmıyor; aksesuarlarınız varsa bunu hesaba katın."
+  ],
+  "kimlerAlmali": "Profesyonel çizim ve video için güçlü ama M4 kadar pahalı olmayan bir iPad arayanlar.",
+  "kimlerAlmamali": "M1 modeliyle arasında büyük fiyat farkı varsa, hover özelliğine ihtiyacınız olmayanlar. Bu durumda M1 aynı işi görür.",
+  "sonKarar": "iPad Pro M2, M1 ile M4 arasında dengeli bir seçim. M1'e göre fiyat farkı küçükse M2'yi alın."
+ },
+ "tv3": {
+  "tarih": "2026-10-18",
+  "kisa": "LG OLED55B4, OLED görüntü kalitesine en uygun fiyatla ulaşmanın yollarından biri. Mükemmel siyahlar ve kontrast sunuyor; parlaklığı ise üst OLED serilerinin gerisinde.",
+  "metin": [
+   "OLED televizyonlarda her piksel kendi ışığını üretiyor ve gerektiğinde tamamen kapanıyor. Bu yüzden B4'te siyahlar gerçekten siyah, kontrast sonsuz. Karanlık odada film ve dizi izlerken Mini LED ve LED televizyonlardan belirgin şekilde daha iyi bir görüntü alırsınız. Yan açılardan bakınca renkler bozulmuyor; geniş salonlar için de uygun.",
+   "B serisi, LG'nin giriş seviyesi OLED'i. C ve G serilerine göre parlaklığı daha düşük; çok güneş alan bir odada gündüz izlerken bunu fark edebilirsiniz. 120 Hz panel, Dolby Vision desteği ve webOS arayüzü var. Oyuncular için düşük gecikme ve değişken yenileme hızı desteğiyle iyi bir seçim.",
+   "OLED'de yanma (burn-in) riski sık soruluyor. Normal kullanımda modern OLED'lerde bu risk düşük; ama ekranda saatlerce sabit kalan haber kanalı logoları ya da oyun arayüzleri varsa dikkatli olun."
+  ],
+  "kimlerAlmali": "Akşamları ve loş odada film, dizi izleyenler; en iyi kontrastı makul bütçeyle isteyenler ve oyuncular.",
+  "kimlerAlmamali": "Çok aydınlık bir odada gündüz yoğun televizyon izleyenler ve aynı sabit görüntüyü saatlerce ekranda tutanlar.",
+  "sonKarar": "LG OLED55B4, OLED'e geçmek isteyenler için alınır. Aydınlık odalarda daha parlak bir Mini LED modeli de karşılaştırmanızı öneririz."
+ },
+ "x9": {
+  "tarih": "2026-10-18",
+  "kisa": "Xiaomi TV A Pro 55, QLED paneli ve Google TV arayüzüyle uygun fiyatlı bir 55 inç televizyon. Günlük TV ve dizi izlemek için yeterli; Dolby Vision desteği olmaması ve giriş seviyesi parlaklığı sınırları.",
+  "metin": [
+   "TV A Pro 55, 4K çözünürlüklü QLED panel kullanıyor; QLED katmanı sayesinde renkler standart LED televizyonlara göre daha canlı. Arayüz Google TV; Netflix, YouTube, Disney+ ve diğer uygulamalar hazır, telefonunuzdan görüntü aktarmak için Chromecast desteği var. Ses çıkışı 30 W.",
+   "HDR tarafında HDR10 ve HLG destekleniyor, Dolby Vision ise yok. Netflix ve Disney+'taki Dolby Vision içeriklerini standart HDR olarak izlersiniz. Panel parlaklığı giriş seviyesinde olduğu için HDR'ın etkisi üst modellerdeki kadar belirgin değil.",
+   "Xiaomi oyun için Game Boost adında 120 Hz moddan bahsediyor. Bu oyunlarda akıcılığa katkı sağlıyor, ama konsolda gerçek 4K 120 Hz oyun istiyorsanız HDMI 2.1 girişli ve 144 Hz panelli modellere bakmanız daha doğru."
+  ],
+  "kimlerAlmali": "Uygun bütçeyle akıllı TV özellikleri olan 55 inç bir televizyon arayanlar; ağırlıklı olarak dizi, YouTube ve TV yayını izleyenler.",
+  "kimlerAlmamali": "Film izlerken en iyi HDR deneyimini isteyenler ve PS5, Xbox gibi konsollarla ciddi oyun oynayanlar.",
+  "sonKarar": "Xiaomi TV A Pro 55 fiyatına göre alınır. Biraz daha bütçe ayırabilirseniz Mini LED ve 144 Hz panelli TCL veya iFFALCON modelleri belirgin şekilde daha iyi görüntü sunuyor."
+ },
+ "h28": {
+  "tarih": "2026-10-18",
+  "kisa": "Apple Watch Series 7, daha büyük ekranı ve dayanıklı tasarımıyla hâlâ işini gören bir akıllı saat. Sıcaklık sensörü ve yeni hareket özellikleri yok; yalnızca uygun fiyatlı ikinci el olarak mantıklı.",
+  "metin": [
+   "Series 7, Apple Watch'ta ekranı büyüten ve kenarlıkları incelten ilk model. Ekranda daha fazla metin görünüyor, tam klavye kullanılabiliyor. Ön camı önceki modellere göre daha dayanıklı, IP6X toz ve 50 metre su dayanıklılığı var. Hızlı şarj desteği de bu modelle geldi.",
+   "Sağlık tarafında kalp ritmi, EKG ve kan oksijeni ölçümü mevcut. Sonraki modellerde gelen sıcaklık sensörü, kaza algılama ve Çift Dokunuş ise bu modelde yok. Pil ömrü 18 saat; eski bir cihazda pil yıpranmış olabileceği için bu süre kısalabilir.",
+   "Series 7 güncel watchOS sürümlerini almaya devam ediyor, ama yaşı nedeniyle destek süresi daha yeni modellere göre kısa."
+  ],
+  "kimlerAlmali": "iPhone kullanan ve bildirim, spor takibi ve temel sağlık ölçümleri için uygun fiyatlı bir Apple Watch arayanlar.",
+  "kimlerAlmamali": "Uzun yıllar kullanacak bir saat isteyenler ve uyku, döngü takibi için sıcaklık sensörüne ihtiyaç duyanlar.",
+  "sonKarar": "Series 7'yi ikinci el olarak alacaksanız pil sağlığına bakın (yüzde 85 ve üzeri iyi). Fiyat farkı küçükse Series 9 veya daha yeni bir model daha uzun ömürlü olur."
+ },
+ "tv30": {
+  "tarih": "2026-10-18",
+  "kisa": "TCL 75C7L, 75 inç büyük ekranı, QD-Mini LED paneli ve 144 Hz yenileme hızıyla büyük salonlar ve oyuncular için güçlü bir televizyon. Büyük boyutu nedeniyle odanızın ölçülerini önceden kontrol etmeniz gerekiyor.",
+  "metin": [
+   "75 inç, salonda sinema hissi isteyenler için en popüler büyük boyut. 75C7L bu boyutu QD-Mini LED panelle birleştiriyor: Mini LED arka aydınlatma ekranı bölgeler halinde karartıp aydınlatabildiği için kontrast güçlü, parlak sahnelerde HDR etkisi belirgin. Dolby Vision ve HDR10+ desteği var.",
+   "144 Hz yenileme hızı oyun ve spor yayınlarında akıcılık sağlıyor; PS5 ve Xbox Series X ile 120 Hz oyun oynanabiliyor. 60 W ses çıkışı televizyon hoparlörü için güçlü; çoğu kullanıcı için ayrıca soundbar almak şart değil. Arayüz Google TV.",
+   "75 inç bir televizyon için önerilen izleme mesafesi yaklaşık 2,5–3 metre. Koltuğunuz ekrana daha yakınsa 65 inç modeller daha rahat olabilir. Duvara asacaksanız duvarın ve aparatın 75 inç ağırlığını taşıdığından emin olun."
+  ],
+  "kimlerAlmali": "Geniş salonu olanlar, film ve spor yayınını büyük ekranda izlemek isteyenler ve konsolla oyun oynayanlar.",
+  "kimlerAlmamali": "Küçük odada 2 metreden yakın oturanlar ve karanlık odada OLED seviyesinde siyah bekleyenler.",
+  "sonKarar": "TCL 75C7L, 75 inçte Mini LED görüntü ve 144 Hz isteyenler için alınır. Satın almadan önce 65 inç sürümüyle fiyat farkını da karşılaştırın."
+ },
+ "tv47": {
+  "tarih": "2026-10-18",
+  "kisa": "TCL 65T61C, 65 inç büyük ekranı uygun fiyata isteyenler için bütçe dostu bir QLED televizyon. Mini LED ve 120 Hz yok; günlük TV, dizi ve YouTube için yeterli, oyun ve HDR filmler için sınırlı.",
+  "metin": [
+   "65T61C'nin en büyük artısı fiyatına göre sunduğu ekran boyutu. 65 inç 4K QLED panel, standart LED televizyonlara göre daha canlı renkler veriyor. Google TV arayüzü sayesinde Netflix, YouTube, Disney+ ve diğer uygulamalar hazır geliyor; telefondan Chromecast ile görüntü aktarılabiliyor.",
+   "Sınırları da bilinmeli. Yenileme hızı 60 Hz; konsolda 120 Hz oyun oynanamıyor. HDR tarafında HDR10 ve HLG destekleniyor, Dolby Vision yok. Arka aydınlatma Mini LED değil, bu yüzden karanlık sahnelerde siyahlar üst modellerdeki kadar derin değil. 20 W ses çıkışı diyaloglar için yeterli, film için soundbar fark yaratır.",
+   "Arayanların sık sorduğu 'alınır mı' sorusunun cevabı beklentiye bağlı: büyük ekranda TV yayını, dizi ve YouTube izleyecekseniz evet. Oyun ve sinema deneyimi istiyorsanız biraz daha bütçeyle TCL'nin Mini LED'li Q6C veya C6K modellerine bakın."
+  ],
+  "kimlerAlmali": "Uygun bütçeyle 65 inç akıllı televizyon isteyenler; ağırlıklı olarak TV yayını, dizi ve YouTube izleyenler.",
+  "kimlerAlmamali": "Konsolda 120 Hz oyun oynamak isteyenler ve Dolby Vision ile en iyi HDR film deneyimini arayanlar.",
+  "sonKarar": "TCL 65T61C fiyatına göre alınır. Biraz daha bütçe ayırabilirseniz 144 Hz ve Mini LED'li modeller belirgin şekilde daha iyi görüntü sunuyor."
+ },
+ "tv29": {
+  "tarih": "2026-10-18",
+  "kisa": "TCL 65C8L, TCL'nin üst seviye 65 inç Mini LED televizyonlarından. SQD-Mini LED paneli, 144 Hz yenileme hızı ve güçlü ses sistemiyle OLED'e alternatif arayanlar için iddialı bir seçenek.",
+  "metin": [
+   "C8L, TCL'nin C serisinde C6 ve C7'nin üstünde konumlanıyor. TCL'nin SQD-Mini LED adını verdiği panel, daha fazla karartma bölgesi ve daha yüksek parlaklıkla standart Mini LED modellerden bir adım ileri gidiyor. Sonuç olarak aydınlık odada bile güçlü HDR görüntü ve iyi kontrast elde ediliyor; Dolby Vision ve HDR10+ desteği var.",
+   "144 Hz panel ve HDMI 2.1 girişler oyun için ideal. Ses sistemi bu serinin en güçlü yanlarından; televizyon hoparlörüyle yetinmek isteyenler için iyi bir seçenek. Arayüz Google TV.",
+   "Asıl soru OLED mi, Mini LED mi? Karanlık odada film izliyorsanız OLED hâlâ siyahlarda önde. Gündüz aydınlık bir salonda izliyorsanız C8L gibi parlak bir Mini LED daha iyi sonuç verir ve yanma (burn-in) riski taşımaz."
+  ],
+  "kimlerAlmali": "Aydınlık salonda izleyen, yüksek parlaklık ve güçlü HDR isteyen, konsol veya bilgisayarla oyun oynayan kullanıcılar.",
+  "kimlerAlmamali": "Bütçesi sınırlı olanlar; C6K ve Q6C gibi modeller fiyatın çok altında benzer bir deneyimin büyük kısmını sunuyor.",
+  "sonKarar": "TCL 65C8L, üst seviye Mini LED görüntü isteyenler için alınır. Aynı fiyat aralığındaki OLED modellerle izleme ortamınıza göre karşılaştırın."
+ },
+ "tv37": {
+  "tarih": "2026-10-18",
+  "kisa": "LG OLED65G64LW, LG'nin en üst seviye OLED serisi olan G serisinden. Yüksek parlaklığı, mükemmel siyahları ve duvara tam oturan tasarımıyla en iyi görüntüyü isteyenler için; fiyatı da buna göre yüksek.",
+  "metin": [
+   "G serisi, LG OLED'leri arasında en parlak panelleri kullanıyor. OLED'in sonsuz kontrastı ve gerçek siyahları korunurken parlaklığın da artması, bu televizyonu gündüz aydınlık odada da iyi bir seçim yapıyor; giriş seviyesi OLED'lerin en zayıf yönü burada büyük ölçüde ortadan kalkıyor. Dolby Vision, 144 Hz'e kadar yenileme hızı ve webOS arayüzü var.",
+   "Tasarım duvara montaj için düşünülmüş: televizyon duvara neredeyse boşluk bırakmadan oturuyor. Bazı ülkelerde ayak kutudan çıkmıyor ve ayrıca satılıyor; televizyonu sehpaya koyacaksanız satın alırken bunu kontrol edin. 60 W ses çıkışı televizyon hoparlörü için iyi seviyede.",
+   "Oyuncular için 144 Hz, düşük gecikme ve değişken yenileme hızı desteği önemli artılar. Fiyat farkını düşünenler için LG'nin C serisi daha düşük parlaklıkla benzer OLED deneyimini daha uygun fiyata sunuyor."
+  ],
+  "kimlerAlmali": "En iyi görüntüyü bütçe sınırı olmadan isteyenler, televizyonu duvara asacak olanlar ve hem film hem oyun için üst seviye OLED arayanlar.",
+  "kimlerAlmamali": "Bütçesine dikkat edenler; LG C serisi veya iyi bir Mini LED, fiyatın çok altında deneyimin büyük kısmını sunuyor.",
+  "sonKarar": "LG OLED65G64LW, en iyisini isteyenler için alınır. Parlaklık sizin için kritik değilse C serisiyle aradaki fiyat farkını değerlendirin."
+ },
+ "tv15": {
+  "tarih": "2026-10-18",
+  "kisa": "LG 55QNED87B6A, Mini LED arka aydınlatmalı, 144 Hz destekli 55 inç bir LG televizyon. webOS arayüzü ve Dolby Vision desteğiyle orta-üst segmentte dengeli bir seçim.",
+  "metin": [
+   "QNED, LG'nin LCD tabanlı televizyonları için kullandığı ad. 55QNED87B6A'da Mini LED arka aydınlatma var; bu sayede kontrast ve parlaklık standart LED modellere göre belirgin şekilde daha iyi. Dolby Vision ile Netflix ve Disney+'taki HDR içerikler iyi görünüyor; HDR10+ desteği ise yok.",
+   "Yenileme hızı 144 Hz'e kadar çıkıyor; konsol ve bilgisayar oyunları için iyi. Arayüz LG'nin webOS'u: hızlı ve kullanımı kolay, sihirli kumandası ekranda fare gibi imleç kullanmayı sağlıyor. 20 W ses çıkışı temel kullanım için yeterli.",
+   "Karar verirken aynı fiyat aralığındaki TCL ve iFFALCON Mini LED modelleriyle karşılaştırmanızı öneririz. Onlar genelde benzer paraya daha fazla özellik sunuyor; LG ise marka, arayüz ve servis tercihi olanlar için öne çıkıyor."
+  ],
+  "kimlerAlmali": "LG'nin webOS arayüzünü ve markasını tercih edenler, 55 inçte Mini LED görüntü ve 144 Hz oyun desteği isteyenler.",
+  "kimlerAlmamali": "Yalnızca fiyat/performansa bakanlar ve HDR10+ içerik izleyenler.",
+  "sonKarar": "LG 55QNED87B6A dengeli bir televizyon ve alınır. Fiyat farkı belirginse TCL'nin 55 inç Mini LED modellerine de bakın."
+ },
+ "tv16": {
+  "tarih": "2026-10-18",
+  "kisa": "iFFALCON 55U65A, 55 inç 4K QLED ekranı ve Google TV arayüzüyle bütçe dostu bir televizyon. Dolby Vision desteği fiyatına göre artı; 60 Hz panel nedeniyle oyun için sınırlı.",
+  "metin": [
+   "Önce marka sorusu: iFFALCON, TCL'nin kendi markası. 55U65A markanın uygun fiyatlı modeli. 55 inç 4K QLED panel, standart LED televizyonlara göre daha canlı renkler veriyor. Bu fiyat aralığında Dolby Vision ve HDR10+ desteğinin birlikte olması dikkat çekici.",
+   "Google TV arayüzü sayesinde Netflix, YouTube, Disney+ gibi uygulamalar hazır geliyor ve telefondan Chromecast ile görüntü aktarılabiliyor. 20 W ses çıkışı günlük kullanım için yeterli.",
+   "Panel 60 Hz; konsolda 120 Hz oyun oynanamıyor ve Mini LED arka aydınlatma yok. Bu yüzden HDR desteği olsa da parlaklık ve kontrast üst modellerdeki kadar güçlü değil. Oyun önceliğinizse aynı markanın 144 Hz'lik U95A serisine bakın."
+  ],
+  "kimlerAlmali": "Uygun fiyatlı, 55 inç bir akıllı TV arayanlar; ağırlıklı olarak dizi, film ve YouTube izleyenler.",
+  "kimlerAlmamali": "Konsolla oyun oynayanlar ve parlak odada güçlü HDR görüntü isteyenler.",
+  "sonKarar": "iFFALCON 55U65A, fiyatına göre iyi bir televizyon ve alınır. Oyun için biraz daha bütçeyle 55U95A daha doğru tercih."
+ },
+ "p_mid_02": {
+  "tarih": "2026-10-18",
+  "kisa": "Galaxy A36 5G, Samsung'un altı yıllık güncelleme sözü, AMOLED ekranı ve dengeli performansıyla orta segmentte güvenli bir seçim. Kamera ve işlemci rakiplerine göre iddialı değil.",
+  "metin": [
+   "A36 5G'nin en güçlü yanı uzun ömür. Samsung bu model için altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor; bu, orta segmentte nadir görülen bir destek süresi. Telefonu uzun yıllar kullanmak isteyenler için önemli bir avantaj.",
+   "Ekran 120 Hz Super AMOLED: renkler canlı, kaydırma akıcı. Snapdragon 6 Gen 3 işlemci sosyal medya, video ve günlük uygulamalarda rahat; ağır oyunlarda ise orta grafik ayarları gerekiyor. 5000 mAh pil normal kullanımda bir günü rahat çıkarıyor. IP67 su ve toz koruması var; 7,4 mm kalınlıkla ince bir telefon.",
+   "Kamera tarafında 50 MP ana kamera gün ışığında iyi sonuç veriyor, düşük ışıkta ise rakiplerin gerisinde kalabiliyor. Bu fiyat aralığında daha güçlü kamera veya daha hızlı şarj arıyorsanız Xiaomi ve POCO modelleri öne çıkabilir."
+  ],
+  "kimlerAlmali": "Telefonunu 4–5 yıl kullanmak isteyenler, Samsung'un yazılım ve servis ağını tercih edenler ve dengeli bir orta segment telefon arayanlar.",
+  "kimlerAlmamali": "Oyun performansını ve kamerayı öncelikli görenler; aynı fiyata daha güçlü işlemcili rakipler var.",
+  "sonKarar": "Galaxy A36 5G alınır, özellikle uzun güncelleme desteği sizin için önemliyse. Yeni nesil Galaxy A37 ile fiyat farkına da bakın."
+ },
+ "p_mid_04": {
+  "tarih": "2026-10-18",
+  "kisa": "POCO X7 Pro, güçlü MediaTek Dimensity 8400-Ultra işlemcisiyle orta segment fiyatına üst segment performans sunan bir telefon. Oyun oynayanlar için bu fiyatta en mantıklı seçeneklerden biri.",
+  "metin": [
+   "X7 Pro'nun en büyük kozu performans. Dimensity 8400-Ultra işlemci, bu fiyat aralığındaki çoğu rakibin çok önünde; popüler oyunları yüksek grafik ayarlarında akıcı oynatabiliyor. 12 GB RAM ve geniş depolama seçenekleriyle çoklu görevde de rahat.",
+   "Ekran 6,67 inç, 1,5K çözünürlüklü 120 Hz AMOLED; keskin ve canlı. Ana kamera 50 MP ve optik görüntü sabitlemeli; gün ışığında iyi fotoğraf çekiyor, ama kamera bu telefonun ana satış noktası değil. Hızlı şarj desteği sayesinde kısa sürede doluyor.",
+   "Yazılım Xiaomi'nin HyperOS arayüzü. Kurulumda gelen bazı ek uygulamaları kaldırmanız gerekebilir. Güncelleme süresi Samsung'un orta segment modellerinden daha kısa; telefonu çok uzun yıllar kullanmayı planlıyorsanız bunu hesaba katın."
+  ],
+  "kimlerAlmali": "Mobil oyun oynayanlar ve orta bütçeyle en yüksek performansı isteyenler.",
+  "kimlerAlmamali": "Kamerayı öncelikli görenler ve uzun yıllar güncelleme desteği isteyenler. Bu durumda Galaxy A serisi veya kamera odaklı modeller daha uygun.",
+  "sonKarar": "POCO X7 Pro, fiyat/performans arayanlar için alınır. Satın almadan önce POCO'nun daha yeni modelleriyle fiyat farkını da kontrol edin."
+ },
+ "samsung-galaxy-s25": {
+  "tarih": "2026-11-19",
+  "kisa": "Galaxy S25, 6,2 inç kompakt gövdesi, Snapdragon 8 Elite for Galaxy işlemcisi ve IP68 korumasıyla küçük ama güçlü bir amiral gemisi arayanlara hitap ediyor. Pili 4.000 mAh'de kaldığı için ağır kullanımda şarj kaygısı yaşatabilir.",
+  "metin": [
+   "Galaxy S25'in en belirgin özelliği boyutu: 6,2 inç ekran, 70,5 mm genişlik, 7,2 mm kalınlık ve 162 gram ağırlıkla tek elle rahat kullanılan, hafif bir amiral gemisi. Ekran Dynamic AMOLED 2X, 120 Hz yenileme hızıyla geliyor; 2340x1080 çözünürlük günlük kullanımda yeterince keskin.",
+   "Performans tarafında Snapdragon 8 Elite for Galaxy işlemcisi ve 12 GB RAM var. Bu kombinasyon oyunlarda, çoklu görevde ve yapay zeka özelliklerinde sınıfının üst seviyesinde. Wi-Fi 7, Bluetooth 5.4, NFC ve çift SIM desteği, ultrasonik ekran içi parmak izi okuyucu ve IP68 su ve toz koruması da eksiksiz. Arkada üç kamera bulunuyor; ana kamera 50 MP ve ön kamera 12 MP.",
+   "Dikkat edilecek iki nokta var. Birincisi pil: 4.000 mAh, aynı yılın büyük modellerinin gerisinde. Gün boyu yoğun kullananlar için bu sınırlayıcı olabilir. İkincisi depolama: katalogdaki sürüm 128 GB, ve microSD yuvası yok. Fotoğraf ve video çekmeyi seven biri için 256 GB seçeneği daha mantıklı olur."
+  ],
+  "kimlerAlmali": "Kompakt ve hafif bir amiral gemisi isteyenler, uzun yıllar güncelleme alacak güçlü bir Samsung arayanlar, yapay zeka özelliklerini ve kamera performansını önemseyen ama büyük telefon istemeyenler.",
+  "kimlerAlmamali": "Pil ömrünü her şeyin önünde tutanlar ve büyük ekranda içerik tüketmeyi sevenler. Bu kişiler için Plus ve Ultra modelleri veya iki günlük pil sunan orta segment telefonlar daha uygun olur.",
+  "sonKarar": "Galaxy S25 alınır, ama fiyatı kendi sınıfındaki rakiplerle karşılaştırın. Küçük gövdede en güçlü donanımı arayanlar için seçeneklerin başında; pil beklentisi yüksekse daha büyük modelleri düşünün."
+ },
+ "p_mid_01": {
+  "tarih": "2026-11-19",
+  "kisa": "Galaxy A56 5G, 5.000 mAh pili, 6,6 inç Super AMOLED 120 Hz ekranı ve IP67 korumasıyla Samsung'un orta segmentte dengeli seçeneği. Exynos 1580 işlemci günlük kullanıma yeter ama oyunlarda amiral gemisi seviyesi beklenmemeli.",
+  "metin": [
+   "Galaxy A56 5G, 6,6 inç Super AMOLED ekran ve 120 Hz yenileme hızıyla geliyor. 1080x2340 çözünürlük ve 393 PPI piksel yoğunluğu günlük kullanım için keskin bir görüntü veriyor. Gövde 8,2 mm kalınlığında ve 197 gram; elde dolgun ama büyük ekran ve geniş pil için makul bir ağırlık.",
+   "İşlemci Exynos 1580, 8 GB RAM ve 256 GB depolama ile eşleşiyor. Sosyal medya, video, günlük uygulamalar ve hafif oyunlar için yeterli. Ağır grafikli oyunlarda daha güçlü işlemcili rakipler öne çıkar. Pil 5.000 mAh; çoğu kullanıcı için tam gün kullanımı rahat karşılar. Katalogdaki bilgiye göre 1 TB'a kadar bellek kartı desteği var, yani depolama genişletilebilir. IP67 koruma, NFC, çift SIM, ekran içi parmak izi ve yüz tanıma da var; kulaklık girişi yok.",
+   "Kamera tarafında 50 MP ana, 12 MP ve 5 MP olmak üzere üç arka kamera bulunuyor, ön kamera 12 MP. Pratikte ana kamera güçlü yanı; yardımcı kameralar daha mütevazı."
+  ],
+  "kimlerAlmali": "Güvenilir bir marka, şık ekran, uzun pil ömrü ve düzenli yazılım desteği isteyen orta segment kullanıcıları; bellek kartıyla depolamayı genişletmek isteyenler.",
+  "kimlerAlmamali": "Yoğun oyun oynayanlar ve en iyi performansı arayanlar. Aynı bütçede daha güçlü işlemcili rakipler bulunuyor.",
+  "sonKarar": "Galaxy A56 5G alınır, özellikle ekran, pil ve marka güvencesine önem verenler için. Ham performans öncelikse aynı fiyat bandındaki alternatifleri de karşılaştırın."
+ },
+ "p_1787680633621_71": {
+  "tarih": "2026-11-19",
+  "kisa": "Redmi Note 14 Pro, 200 MP ana kamerası, 5.500 mAh pili, IP68 koruması ve kavisli AMOLED ekranıyla fiyatına bol özellik sunuyor. Dimensity 7300-Ultra işlemcisi orta seviye; oyunlarda en üst performans beklenmemeli.",
+  "metin": [
+   "Redmi Note 14 Pro'nun öne çıkan özelliği donanım listesinin uzunluğu. 6,67 inç kavisli AMOLED ekran 120 Hz yenileme hızı ve 1220x2712 çözünürlükle geliyor; 446 PPI piksel yoğunluğu keskin bir görüntü demek. Bu fiyat segmentinde IP68 koruma bulmak da nadir.",
+   "Pil 5.500 mAh ve çoğu kullanıcı için gün sonunu rahat getirir. İşlemci MediaTek Dimensity 7300-Ultra, 8 GB RAM ve 256 GB depolamayla eşleşiyor. Günlük kullanım, sosyal medya, video ve orta seviye oyunlar için yeterli. Ağır oyunlarda ve uzun süreli yüksek grafikte daha güçlü işlemciler fark yaratır. Wi-Fi 6, Bluetooth 5.2, NFC, 5G, çift SIM ve ekran içi parmak izi mevcut. Kulaklık girişi de var, bu artık nadir bir özellik.",
+   "Kamerada 200 MP ana sensör ve 20 MP ön kamera dikkat çekiyor. Yüksek megapiksel her zaman daha iyi fotoğraf demek değildir; gündüz çekimlerde detaylı sonuç alırsınız, düşük ışıkta ise yazılım işlemesi belirleyici olur."
+  ],
+  "kimlerAlmali": "Fiyatına çok özellik arayanlar, uzun pil ve su geçirmezlik isteyenler, kulaklık girişini önemseyenler.",
+  "kimlerAlmamali": "Yoğun oyun oynayanlar ve uzun yıllar güncelleme güvencesi arayanlar. Samsung veya Pixel gibi markalar yazılım desteğinde daha uzun taahhüt verir.",
+  "sonKarar": "Redmi Note 14 Pro alınır; fiyat performans odaklı kullanıcılar için güçlü bir adaydır. Performans ve uzun süreli güncelleme öncelikse alternatifleri karşılaştırın."
+ },
+ "poco-x7": {
+  "tarih": "2026-11-19",
+  "kisa": "POCO X7, 5.110 mAh pili, 6,67 inç AMOLED 120 Hz ekranı ve IP68 korumasıyla orta segmentte fiyat odaklı bir model. Dimensity 7300-Ultra işlemcisi günlük kullanıma yeter, ama bu sınıfta amiral gemisi hızı beklenmemeli.",
+  "metin": [
+   "POCO X7, 6,67 inç AMOLED ekran, 120 Hz yenileme hızı ve 2712x1220 çözünürlük sunuyor. Bu ekran, video ve oyun içerikleri için akıcı ve canlı bir görüntü sağlar. IP68 su ve toz koruması orta segmentte güçlü bir artı.",
+   "İşlemci MediaTek Dimensity 7300-Ultra, 8 GB RAM ve 256 GB depolamayla eşleşiyor. Günlük kullanım ve orta seviye oyunlar için yeterli. Pil 5.110 mAh; ortalama kullanımda gün boyu dayanır. Wi-Fi 6, Bluetooth 5.4, NFC, 5G ve çift SIM desteği var. Gövde 8,4 mm kalınlığında ve 185,5 gram; büyük ekran ve pil için makul bir ağırlık.",
+   "Arkada üç kamera ve 50 MP ana kamera var, ön kamera 20 MP. Katalogdaki bilgilere göre kamera donanımı sade; fotoğraf kalitesi öncelikse daha pahalı modellere bakmak gerekir."
+  ],
+  "kimlerAlmali": "Büyük ve akıcı ekran, uzun pil ve su geçirmezliği uygun fiyata isteyenler.",
+  "kimlerAlmamali": "Kamera ve uzun süreli yazılım desteği öncelikli olanlar, ağır oyun oynayanlar.",
+  "sonKarar": "POCO X7 alınır; fiyat performans odaklı kullanıcılar için iyi bir seçenek. Daha güçlü performans veya kamera için üst modelleri de karşılaştırın."
+ }
 }

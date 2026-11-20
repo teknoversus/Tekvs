@@ -657,5 +657,41 @@
   "kimlerAlmali": "Vlog ve içerik üretenler, Sony lens sistemine girmek isteyenler.",
   "kimlerAlmamali": "Fotoğraf ağırlıklı ve hava koşullarına dayanıklı gövde isteyenler.",
   "sonKarar": "Sony ZV-E10 alınır, video ve vlog odaklı kompakt bir aynasız arayanlar için."
+ },
+ "x24": {
+  "tarih": "2026-11-20",
+  "kisa": "Sony WF-C510, kulaklık başına 4,6 gramlık küçük gövdesi, IPX4 direnci ve uzun pil süresiyle sade bir günlük kulaklık. Aktif gürültü engelleme yok; yalnızca ortam sesi modu var.",
+  "metin": [
+   "Sony WF-C510, markanın giriş seviyesi tam kablosuz kulaklığı. Kulaklık başına yaklaşık 4,6 gram; küçük kulaklara da rahat oturan kompakt bir tasarımı var. Bluetooth 5.3 ile bağlanıyor ve IPX4 sertifikasıyla ter ve su sıçramalarına dayanıklı.",
+   "Önemli bir ayrıntı: bu modelde aktif gürültü engelleme (ANC) bulunmuyor. Bunun yerine dış sesleri içeri alan ortam sesi modu var. Toplu taşımada veya gürültülü ofiste dış sesi bastırmak istiyorsanız bu kulaklık o işi yapmaz.",
+   "Pil tarafında Sony, ortam sesi modu kapalıyken kulaklık başına 11 saate kadar müzik süresi veriyor; katalogdaki kutuyla toplam süre 22 saat. Siyah, beyaz, mavi ve sarı renk seçenekleri bulunuyor."
+  ],
+  "kimlerAlmali": "Küçük, hafif ve güvenilir markalı bir günlük kulaklık isteyenler; sessiz ortamlarda dinleyenler.",
+  "kimlerAlmamali": "Gürültülü ortamda ANC'ye ihtiyaç duyanlar. Bu fiyat bandında ANC'li alternatifler bulunuyor.",
+  "sonKarar": "Sony WF-C510 alınır, ama yalnızca ANC'ye ihtiyacınız yoksa. Gürültü engelleme istiyorsanız aynı bütçede ANC'li modellere bakın."
+ },
+ "x22": {
+  "tarih": "2026-11-20",
+  "kisa": "Soundcore R50i NC, ANC, Bluetooth 5.4 ve IP54 korumasını çok uygun fiyata sunan giriş seviyesi bir kulaklık. Kulaklık başına pil süresi kısa (ANC açıkken yaklaşık 7 saat).",
+  "metin": [
+   "Soundcore R50i NC, Anker'in alt markası Soundcore'un en uygun fiyatlı ANC'li modellerinden biri. Kulaklık başına yaklaşık 4,3 gram; Bluetooth 5.4 ile bağlanıyor ve IP54 sertifikasıyla toz ve su sıçramalarına dayanıklı.",
+   "Katalogdaki pil verileri kulaklık için 7 saat, kutuyla toplam 28 saat. Bu süre sınıfında ortalama; uzun yolculuklarda kutuyla şarj etmek gerekecek. Kablosuz şarj yok.",
+   "Bu fiyatta ANC sunması güçlü yanı. Ancak giriş seviyesi bir kulaklıktan üst segment modeller kadar güçlü gürültü engelleme ve ses detayı beklememek gerekir."
+  ],
+  "kimlerAlmali": "Bütçesi sınırlı ama ANC isteyenler, öğrenciler, yedek kulaklık arayanlar.",
+  "kimlerAlmamali": "Uzun tek şarj pil süresi ve güçlü ANC isteyenler.",
+  "sonKarar": "Soundcore R50i NC alınır, bütçe dostu ANC'li kulaklık arayanlar için mantıklı bir giriş seçeneği."
+ },
+ "n56": {
+  "tarih": "2026-11-20",
+  "kisa": "Google Pixel Buds Pro 2, ANC, Bluetooth 5.4, IP54 ve Qi kablosuz şarj destekli kutusuyla üst segment bir tam kablosuz kulaklık. Fiyatı yüksek; Pixel telefon kullananlara en çok değer sunar.",
+  "metin": [
+   "Pixel Buds Pro 2, Google'ın üst segment tam kablosuz kulaklığı. Kulaklık başına yaklaşık 4,7 gram; aktif gürültü engelleme ve Bluetooth 5.4 bağlantısı sunuyor. Kulaklıklar IP54, şarj kutusu IPX4 sertifikalı.",
+   "Pil tarafında Google, ANC açıkken kulaklık başına 8 saate kadar, kutuyla birlikte 30 saate kadar dinleme süresi veriyor. Kutu hem USB-C hem de Qi kablosuz şarjla şarj edilebiliyor.",
+   "Pixel telefonlarla birlikte kullanıldığında Google'ın yazılım özellikleri ve hızlı eşleşme gibi ek kolaylıklardan yararlanılıyor. Android'in genelinde de çalışıyor, ancak bazı özellikler Pixel telefonlara özgü olabiliyor. Renk seçenekleri katalogda Porcelain, Hazel, Wintergreen ve Peony olarak geçiyor."
+  ],
+  "kimlerAlmali": "Pixel veya Android telefon kullananlar, ANC ve kablosuz şarjı birlikte isteyenler.",
+  "kimlerAlmamali": "iPhone kullananlar ve bütçe odaklı alıcılar.",
+  "sonKarar": "Google Pixel Buds Pro 2 alınır, özellikle Pixel kullanıcıları için. Fiyatını AirPods Pro 3 ve Galaxy Buds alternatifleriyle karşılaştırın."
  }
 }

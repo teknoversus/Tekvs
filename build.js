@@ -35,6 +35,7 @@ const { writeDeletedProductRedirects } = require('./lib/deleted-redirects');
 const { writeDirIndexRedirects } = require('./lib/dir-redirects');
 const { writeLegacyPageRedirects } = require('./lib/legacy-pages');
 const { splitSitemap } = require('./lib/split-sitemap');
+const { applyTrafficNoindex } = require('./lib/trafik-noindex');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -260,6 +261,9 @@ async function main(){
   writeDirIndexRedirects({ rootDir });
 
   injectPwaTags({ rootDir });
+
+  // ---- Trafik almayan otomatik sayfalar: noindex + sitemap dışı (lib/trafik-noindex.js) ----
+  applyTrafficNoindex({ rootDir, products, productSlug: helpers.productSlug });
 
   console.log('→ sitemap.xml parçalara bölünüyor (hosting WAF limiti için)...');
   splitSitemap({ rootDir });

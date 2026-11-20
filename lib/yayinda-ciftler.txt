@@ -722,6 +722,7 @@ tvsearch141|tvsearch143	blaupunkt-bl65u845g-vs-blaupunkt-bl55u800g-ff98ffb12bd4.
 tvsearch141|tvsearch145	blaupunkt-bl65u845g-vs-blaupunkt-bl65u800g-efe410386a7f.html
 n65|n66	bose-quietcomfort-headphones-vs-bose-quietcomfort-ultra-headphones-dba851292818.html
 n65|ss01	bose-quietcomfort-headphones-vs-steelseries-arctis-nova-elite-78daa41ec2bd.html
+n65|y27	bose-quietcomfort-headphones-vs-wf-1000xm5-3f8580999c82.html
 n66|ss01	bose-quietcomfort-ultra-headphones-vs-steelseries-arctis-nova-elite-95cbf7108c7e.html
 n42|rz11	buds-2-vs-razer-kraken-kitty-v3-x-b029827d3904.html
 n42|rz09	buds-2-vs-razer-kraken-v4-x-b2ca5adcc461.html
@@ -983,6 +984,7 @@ n33|n69	g-pro-x-2-lightspeed-vs-shokz-opendots-one-45eb758f4816.html
 n33|y29	g-pro-x-2-lightspeed-vs-studio-buds-f8643ef55a59.html
 n03|n32	galaxy-buds-3-fe-vs-cloud-iii-wireless-9a2a86a8fa61.html
 n03|p09	galaxy-buds-3-fe-vs-jbl-tune-beam-2-f381d0db8c18.html
+n03|rz01	galaxy-buds-3-fe-vs-razer-blackshark-v3-x-hyperspeed-b2f8d2c9144a.html
 n03|x22	galaxy-buds-3-fe-vs-soundcore-r50i-nc-bf05f0f040d9.html
 n01|p24	galaxy-buds-4-pro-vs-anker-soundcore-p40i-b103bfa8a4f9.html
 n01|n70	galaxy-buds-4-pro-vs-soundpeats-capsule3-pro-9e0e13636c7e.html
@@ -1172,8 +1174,10 @@ p_1787680633621_68|x_17t_pro	google-pixel-9-vs-xiaomi-17t-pro-6226a348b291.html
 n55|n64	google-pixel-buds-2a-vs-beats-studio-pro-0b39bf8fe4ef.html
 n55|p19	google-pixel-buds-2a-vs-jabra-evolve2-85-usb-a-6a09541072c6.html
 n55|ss08	google-pixel-buds-2a-vs-steelseries-arctis-gamebuds-8271f9909bc4.html
+n56|p15	google-pixel-buds-pro-2-vs-apple-airpods-5-ve-kablosuz-sarj-k-44eafbbe30c0.html
 n56|n65	google-pixel-buds-pro-2-vs-bose-quietcomfort-headphones-12bb1cb27a85.html
 n56|n66	google-pixel-buds-pro-2-vs-bose-quietcomfort-ultra-headphones-2aa11cfaa687.html
+n56|rz15	google-pixel-buds-pro-2-vs-razer-hammerhead-pro-hyperspeed-c83b6b96d68a.html
 n56|y27	google-pixel-buds-pro-2-vs-wf-1000xm5-043f58c0feae.html
 t55|y44	google-pixel-tablet-vs-apple-ipad-10-nesil-3bbf55bd97b3.html
 p_google_pixel_watch_003|p_google_pixel_watch_005	google-pixel-watch-3-vs-google-pixel-watch-5-d477446ae519.html
@@ -1905,6 +1909,7 @@ apple-iphone-duo|y1	iphone-duo-vs-apple-iphone-se-2022-06f41a9230f2.html
 apple-iphone-duo|huawei-pura-90s-pro-max	iphone-duo-vs-huawei-pura-90s-pro-max-115907d7b491.html
 p19|rz15	jabra-evolve2-85-usb-a-vs-razer-hammerhead-pro-hyperspeed-57550d60a2e2.html
 p11|rz02	jbl-endurance-peak-4-vs-razer-blackshark-v3-x-hyperspeed-f-0299cd49d911.html
+p11|x22	jbl-endurance-peak-4-vs-soundcore-r50i-nc-bced7e61a11e.html
 n59|rz07	jbl-live-770nc-vs-razer-barracuda-983d01add6f0.html
 n59|rz04	jbl-live-770nc-vs-razer-blackshark-v2-hyperspeed-0e1dce3ed46e.html
 n59|rz08	jbl-live-770nc-vs-razer-kraken-v4-6e00570df94a.html
@@ -2374,6 +2379,7 @@ p_mibro_004|p_mibro_005	mibro-lite2-vs-mibro-x1-365dd36266af.html
 p_mibro_005|p_mibro_006	mibro-x1-vs-mibro-gs-35359c592cb4.html
 p_mibro_005|p_mibro_009	mibro-x1-vs-mibro-kids-p6-5522bf995244.html
 n23|n65	momentum-4-wireless-se-vs-bose-quietcomfort-headphones-585a0e9d54ba.html
+n23|n66	momentum-4-wireless-se-vs-bose-quietcomfort-ultra-headphones-bb0b654eb9e4.html
 n23|n56	momentum-4-wireless-se-vs-google-pixel-buds-pro-2-60793dc58b12.html
 n23|y31	momentum-4-wireless-se-vs-quietcomfort-ultra-earbuds-972f435da6f1.html
 n23|y27	momentum-4-wireless-se-vs-wf-1000xm5-208625037992.html
@@ -2595,6 +2601,7 @@ n53|n63	nothing-ear-a-vs-marshall-major-v-03c294270181.html
 n53|rz01	nothing-ear-a-vs-razer-blackshark-v3-x-hyperspeed-3510fc08fc6e.html
 n53|rz11	nothing-ear-a-vs-razer-kraken-kitty-v3-x-1bc68d5a5294.html
 n53|rz09	nothing-ear-a-vs-razer-kraken-v4-x-e3e0c1f03f79.html
+n53|x22	nothing-ear-a-vs-soundcore-r50i-nc-804992c054f2.html
 n53|n60	nothing-ear-a-vs-soundcore-space-one-ceaaf97d502e.html
 n54|n58	nothing-ear-anc-vs-jbl-tune-770nc-d9f8b936c953.html
 n54|rz04	nothing-ear-anc-vs-razer-blackshark-v2-hyperspeed-88be77504d7f.html
@@ -3616,17 +3623,20 @@ n09|rz06	soundcore-liberty-5-pro-vs-razer-barracuda-pro-a53a7643ba6c.html
 n09|x24	soundcore-liberty-5-pro-vs-wf-c510-d66c0da2ae90.html
 n07|p11	soundcore-liberty-5-vs-jbl-endurance-peak-4-a6dbda5f17f8.html
 n07|n53	soundcore-liberty-5-vs-nothing-ear-a-d8b992f96c46.html
+n07|x22	soundcore-liberty-5-vs-soundcore-r50i-nc-ca5bb537a57c.html
 n07|n60	soundcore-liberty-5-vs-soundcore-space-one-dbb79e1e2b14.html
 n07|p01	soundcore-liberty-5-vs-xiaomi-redmi-buds-8-pro-2d1fc68386c8.html
 n62|n63	soundcore-life-q30-vs-marshall-major-v-1566e0a9496e.html
 n60|p11	soundcore-space-one-vs-jbl-endurance-peak-4-016881ed63ca.html
 n60|n63	soundcore-space-one-vs-marshall-major-v-d4260e145211.html
 n60|rz09	soundcore-space-one-vs-razer-kraken-v4-x-52486094f450.html
+n60|x22	soundcore-space-one-vs-soundcore-r50i-nc-91f7ceca4f06.html
 n61|y35	soundcore-space-q45-vs-indy-3534396ef9be.html
 n61|rz07	soundcore-space-q45-vs-razer-barracuda-03ca9d94a6c2.html
 n61|rz13	soundcore-space-q45-vs-razer-kaira-hyperspeed-a27c074caef6.html
 n61|ss10	soundcore-space-q45-vs-steelseries-arctis-7x-wireless-236af7867859.html
 ss04|y32	steelseries-arctis-nova-3-wireless-vs-buds-4-0d6f67bb38d3.html
+g28|n32	steelseries-arctis-nova-3p-wireles-vs-cloud-iii-wireless-da82fd0baef5.html
 g28|n03	steelseries-arctis-nova-3p-wireles-vs-galaxy-buds-3-fe-f9f20a72a409.html
 g28|p09	steelseries-arctis-nova-3p-wireles-vs-jbl-tune-beam-2-4dcaaba168b6.html
 g28|n47	steelseries-arctis-nova-3p-wireles-vs-samsung-galaxy-buds-fe-f61920e9c55a.html
@@ -3912,6 +3922,7 @@ tvbrand014|tvbrand018	toshiba-65ul3063dt-vs-telefunken-55tu9090ua-b93b49265093.h
 tvsearch026|tvsearch029	toshiba-70ua5d63dt-vs-toshiba-55ul3063dt-a320c5f46cad.html
 tvsearch026|tvsearch027	toshiba-70ua5d63dt-vs-toshiba-65qa5d63dt-8341a735d6bf.html
 n39|p15	tour-pro-3-vs-apple-airpods-5-ve-kablosuz-sarj-k-5d157e780aeb.html
+n39|n56	tour-pro-3-vs-google-pixel-buds-pro-2-071699446923.html
 n39|rz15	tour-pro-3-vs-razer-hammerhead-pro-hyperspeed-1fe0fe35011d.html
 g21|g23	turtle-beach-atlas-air-vs-jbl-quantum-910-wireless-c945f7e1023a.html
 g20|g23	turtle-beach-stealth-700-gen-3-vs-jbl-quantum-910-wireless-d8f1edcfc60b.html
@@ -3952,6 +3963,7 @@ n35|p02	wave-beam-2-vs-anker-soundcore-p31i-r60i-143a370a657c.html
 n35|n70	wave-beam-2-vs-soundpeats-capsule3-pro-bfd147147f45.html
 y27|y31	wf-1000xm5-vs-quietcomfort-ultra-earbuds-340e7a903df6.html
 n36|p15	wf-1000xm6-vs-apple-airpods-5-ve-kablosuz-sarj-k-6eae76d4be9e.html
+n36|n56	wf-1000xm6-vs-google-pixel-buds-pro-2-0b465b3a5fd3.html
 n36|n39	wf-1000xm6-vs-tour-pro-3-ed9a44b4b8c9.html
 h19|y35	wh-1000xm4-vs-indy-82385ba801cd.html
 h19|n61	wh-1000xm4-vs-soundcore-space-q45-52712382a218.html

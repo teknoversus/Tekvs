@@ -431,5 +431,99 @@
   "kimlerAlmali": "Bütçeye duyarlı ama ANC'yi önemseyen, uzun pil arayan kullanıcılar.",
   "kimlerAlmamali": "En yeni Bluetooth sürümü ve hafif tasarım isteyenler.",
   "sonKarar": "Soundcore Space One alınır, fiyat odaklı kullanıcılar için. Hafiflik ve yeni bağlantı standardı öncelikse alternatifleri bakın."
+ },
+ "n10": {
+  "tarih": "2026-11-20",
+  "kisa": "Galaxy Tab S10 FE, 10,9 inç ekranı, 8.000 mAh pili, kutuda gelen S Pen'i ve IP68 koruması ile okul ve ofis kullanımı için dengeli bir tablet. Ekran türü TFT ve 90 Hz; AMOLED beklentisi olanlar için sınırlı.",
+  "metin": [
+   "Galaxy Tab S10 FE, 10,9 inç ekran ve 2304x1440 çözünürlükle geliyor; yenileme hızı 90 Hz. Ekran türü katalogda TFT olarak geçiyor, yani üst modellerdeki AMOLED panele göre siyah seviyesi ve kontrast daha mütevazı. Gövde 6 mm kalınlığında ve 497 gram.",
+   "İşlemci Exynos 1580, 12 GB RAM ve 256 GB depolamayla eşleşiyor. Pil 8.000 mAh; ders, video ve ofis kullanımında tam gün rahat karşılar. Kutuda S Pen dahil, opsiyonel klavye desteği var. IP68 koruma listelenmiş, bu seviyede tablette nadir. Bağlantı Wi-Fi 6 ve Bluetooth 5.4; 5G'li opsiyonel model de bulunuyor. Arka kamera 13 MP, ön kamera 12 MP.",
+   "S Pen'in kutuda gelmesi not alma ve çizim için pratik bir avantaj; rakiplerde kalem genelde ayrı satılıyor."
+  ],
+  "kimlerAlmali": "Öğrenciler, not almak ve çizim yapmak isteyenler, Samsung telefon kullananlar.",
+  "kimlerAlmamali": "En iyi ekran kalitesi (AMOLED) ve yüksek yenileme hızı isteyenler.",
+  "sonKarar": "Galaxy Tab S10 FE alınır, okul ve ofis için kalemiyle birlikte dengeli bir tablet arayanlar için. Ekran kalitesi öncelikse S11 gibi AMOLED modellere bakın."
+ },
+ "n13": {
+  "tarih": "2026-11-20",
+  "kisa": "Redmi Pad 2 Pro, 12,1 inç 120 Hz ekranı ve 12.000 mAh devasa pili ile fiyatına çok pil ve ekran sunuyor. 610 gram ağırlık ve kalemin ayrı satılması dikkate alınmalı.",
+  "metin": [
+   "Redmi Pad 2 Pro, 12,1 inç IPS LCD ekranlı (1600x2560) ve 120 Hz yenileme hızlı bir tablet. Büyük ekran film izlemek ve ders çalışmak için ferah. Piksel yoğunluğu 249 PPI.",
+   "Pil 12.000 mAh; katalogdaki en büyük tablet pillerinden biri. İşlemci Snapdragon 7s Gen 4, 8 GB RAM ve 256 GB depolamayla geliyor. Kalem (Redmi Smart Pen) ve klavye desteği var ama ayrı satılıyor. Bağlantı Wi-Fi 6 ve Bluetooth 5.4, hücresel bağlantı yok. Kasa 7,5 mm kalınlığında ve 610 gram; büyük ekran ve pil için beklenen bir ağırlık.",
+   "İşletim sistemi HyperOS 2 (Android 15 tabanlı). IP54 koruma listelenmiş. Fiyat segmentinde ekran boyutu ve pil kapasitesiyle öne çıkıyor."
+  ],
+  "kimlerAlmali": "Film ve dizi izleyenler, uzun pil isteyenler, bütçe odaklı kullanıcılar.",
+  "kimlerAlmamali": "Hafif tablet isteyenler ve kalemi kutudan çıkacak şekilde arayanlar.",
+  "sonKarar": "Redmi Pad 2 Pro alınır, geniş ekran ve uzun pil arayanlar için fiyat performans odaklı bir seçim."
+ },
+ "t25": {
+  "tarih": "2026-11-20",
+  "kisa": "Galaxy Tab S11, 11 inç Dynamic AMOLED 2X ekranı, Dimensity 9400+ işlemcisi, 5,5 mm incelik ve IP68 koruması ile Samsung'un üst segment tableti. Fiyatı katalogdaki en yüksek seviyelerden biri.",
+  "metin": [
+   "Galaxy Tab S11, 11 inç Dynamic AMOLED 2X ekranlı, 2560x1600 çözünürlük ve 120 Hz yenileme hızına sahip. 274 PPI keskinliği ve AMOLED'in derin siyahı, medya tüketimi ve çizim için güçlü bir ekran sağlıyor. Kalınlık yalnızca 5,5 mm, ağırlık 471 gram.",
+   "İşlemci MediaTek Dimensity 9400+, 12 GB RAM ve 256 GB depolama, işletim sistemi Android 16. Wi-Fi 7 bağlantı, opsiyonel 5G ve IP68 koruma listelenmiş. S Pen kutuda dahil, Book Cover Keyboard desteği var. Pil 8.400 mAh, arka kamera 13 MP, ön kamera 12 MP.",
+   "Üretkenlik odaklı kullanıcılar için kalem ve klavye kombinasyonu masaüstüne yakın bir deneyim sunar. Fiyat yüksek olduğu için S10 FE ile karşılaştırmak mantıklı."
+  ],
+  "kimlerAlmali": "Samsung ekosisteminde çalışanlar, öğrenci veya profesyonel not alıp çizim yapanlar, premium ekran isteyenler.",
+  "kimlerAlmamali": "Bütçesi sınırlı olanlar ve temel medya tüketimi için tablet arayanlar.",
+  "sonKarar": "Galaxy Tab S11 alınır, premium ekran ve S Pen deneyimi için. Bütçe öncelikse Tab S10 FE daha dengeli."
+ },
+ "n16": {
+  "tarih": "2026-11-20",
+  "kisa": "Nikon Z50 II, 20,9 MP APS-C sensörlü, 3,2 inç dönen dokunmatik ekranlı bir aynasız kamera. 4K60 video çekimi crop ile yapılıyor; toz ve su koruması katalogda belirtilmemiş.",
+  "metin": [
+   "Nikon Z50 II, Nikon Z montajlı ve 20,9 MP APS-C (23,5x15,7 mm) sensörlü bir aynasız kamera. ISO aralığı 100-51200, genişletilmiş 100-204800. Gövde 550 gram ve bu sınıf için taşınabilir.",
+   "Arkada 3,2 inç dönen (vari-angle) dokunmatik LCD ekran bulunuyor; bu özellik özellikle vlog çekenler ve alçak veya yüksek açıdan çekim yapanlar için yararlı. Video tarafında 4K60 destekleniyor ama katalogda 'crop' olarak belirtiliyor, yani 60 kare modunda görüş alanı daralıyor. Bluetooth 5.3 ve USB-C bağlantısı var.",
+   "Toz ve damla koruması katalogda belirtilmemiş; zorlu hava koşullarında kullanacaksanız bunu üreticiden doğrulayın."
+  ],
+  "kimlerAlmali": "Fotoğrafa yeni başlayan veya orta seviye kullanıcılar, vlog çekenler, Nikon Z sistemine girmek isteyenler.",
+  "kimlerAlmamali": "Tam kare sensör isteyenler ve hava koşullarına dayanıklı gövde arayanlar.",
+  "sonKarar": "Nikon Z50 II alınır, taşınabilir ve dönen ekranlı bir APS-C aynasız arayanlar için. Tam kare ve profesyonel koruma öncelikse üst modellere bakın."
+ },
+ "g15": {
+  "tarih": "2026-11-20",
+  "kisa": "GoPro HERO13 Black, 27 MP, 5.3K60 video ve 10 metreye kadar su geçirmezlik ile aksiyon kamera sınıfının öncülerinden. Sabit lensli ve küçük; düşük ışıkta büyük sensörlü kameraların gerisinde kalır.",
+  "metin": [
+   "GoPro HERO13 Black, 154 gram ağırlığında ve 71,8x50,8x33,6 mm ölçülerinde bir aksiyon kamera. Ön ve arka 2,27 inç dokunmatik ekran sunuyor; bu özellikle kendi görüntünüzü kontrol etmek için faydalı.",
+   "Sensör 1/1,9 inç, 27 MP; video 5.3K60 ve ISO aralığı 100-6400. Su geçirmezlik 10 metreye kadar ek kutu olmadan listelenmiş. Bağlantı 2.4 GHz ve Bluetooth, şarj USB-C ile yapılıyor. Lens sabit ve değiştirilemez.",
+   "Küçük sensör sebebiyle düşük ışıkta aynasız kameralar kadar iyi sonuç beklememek gerekir; ancak sarsıntısız görüntü, dayanıklılık ve taşınabilirlikte aksiyon kameraların avantajı büyük."
+  ],
+  "kimlerAlmali": "Spor, seyahat ve su altı çekimi yapanlar, kask veya bisiklete takıp çekim yapanlar.",
+  "kimlerAlmamali": "Düşük ışıkta profesyonel görüntü arayanlar ve lens değiştirmek isteyenler.",
+  "sonKarar": "GoPro HERO13 Black alınır, aksiyon ve seyahat çekimleri için. Sinematik görüntü ve düşük ışık öncelikse aynasız kamera düşünün."
+ },
+ "p_a26_5g": {
+  "tarih": "2026-11-20",
+  "kisa": "Galaxy A26 5G, 6,6 inç Super AMOLED 120 Hz ekranı, 5.000 mAh pili, IP67 koruması ve microSD desteği ile giriş-orta segmentte sağlam bir seçim. Exynos 1380 ve 6 GB RAM ağır oyunlarda sınırlı kalır.",
+  "metin": [
+   "Galaxy A26 5G, 6,6 inç Super AMOLED ekran (1080x2340, 393 PPI) ve 120 Hz yenileme hızıyla geliyor. Bu fiyat bandında AMOLED ve 120 Hz birlikte bulmak güçlü bir artı. Gövde 8,2 mm kalınlığında ve 197 gram.",
+   "İşlemci Exynos 1380, 6 GB RAM ve 128 GB depolama. Günlük kullanım ve sosyal medya için yeterli; ağır oyunlarda sınırlı. 1 TB'a kadar microSD desteği depolamayı genişletmeye izin veriyor. Pil 5.000 mAh. Arkada üç kamera ve 50 MP ana kamera, ön kamera 13 MP. IP67 koruma, çift SIM, yandan parmak izi okuyucu ve Android 15 listeleniyor. Kulaklık girişi yok, Wi-Fi 5 ve Bluetooth 5.3 bağlantı sağlıyor."
+  ],
+  "kimlerAlmali": "Güvenilir marka, AMOLED ekran ve pil ömrü arayan orta segment kullanıcıları.",
+  "kimlerAlmamali": "Yoğun oyun oynayanlar ve Wi-Fi 6 veya üstü bağlantı isteyenler.",
+  "sonKarar": "Galaxy A26 5G alınır, ekran ve pil odaklı günlük kullanım için. Performans öncelikse daha güçlü işlemcili alternatiflere bakın."
+ },
+ "poco_f8_pro": {
+  "tarih": "2026-11-20",
+  "kisa": "POCO F8 Pro, Snapdragon 8 Elite işlemcisi, 12 GB RAM, 512 GB depolama ve 6.210 mAh pili ile bu fiyat bandında performans odaklı bir telefon. Wi-Fi 7 ve IP68 de var; microSD yok.",
+  "metin": [
+   "POCO F8 Pro, Snapdragon 8 Elite işlemci, 12 GB RAM ve 512 GB depolama ile geliyor. Bu kombinasyon, oyun ve yoğun çoklu görev için bu fiyat sınıfında güçlü. Ekran 6,59 inç AMOLED, 1220x2712 çözünürlük, 120 Hz yenileme hızı ve 446 PPI piksel yoğunluğu sunuyor.",
+   "Pil 6.210 mAh, gün boyu rahat. IP68 su ve toz koruması, Wi-Fi 7, Bluetooth 5.4, NFC, 5G, çift SIM ve ekran altı parmak izi listeleniyor. Arkada üç kamera, ana kamera 50 MP, ön kamera 20 MP. Depolama genişletilemez, kulaklık girişi yok. Ağırlık 199 gram, kalınlık 8 mm."
+  ],
+  "kimlerAlmali": "Oyun ve yüksek performans arayanlar, fiyat performans odaklı kullanıcılar.",
+  "kimlerAlmamali": "Kompakt telefon isteyenler ve uzun yıllar yazılım desteği arayanlar.",
+  "sonKarar": "POCO F8 Pro alınır, performans ve pil odaklı kullanıcılar için güçlü bir seçim. Kamera ve uzun güncelleme taahhüdü öncelikse Samsung ve Pixel modellerine bakın."
+ },
+ "comp_20260924_01": {
+  "tarih": "2026-11-20",
+  "kisa": "ASUS TUF Gaming A16, Ryzen 7 260 işlemci, RTX 5060 ekran kartı ve 165 Hz 16 inç ekranıyla oyun odaklı bir dizüstü. İşletim sistemi FreeDOS, yani Windows lisansı ayrıca gerekir; ağırlık 2,2 kg.",
+  "metin": [
+   "ASUS TUF Gaming A16, 16 inç IPS ekran, 1920x1200 çözünürlük, 165 Hz yenileme hızı ve %100 sRGB renk gamı sunuyor. Parlaklık 250 nit, yani aydınlık ortamda sınırlı. Ekran kartı NVIDIA GeForce RTX 5060, 8 GB GPU belleği ve 115 W TGP ile geliyor; MUX ve Advanced Optimus desteği listelenmiş.",
+   "İşlemci AMD Ryzen 7 260 (16 TOPS NPU), 16 GB DDR5 5600 MHz RAM ve 512 GB NVMe SSD var; RAM ve SSD yükseltilebilir. Pil 90 Wh, ağırlık 2,2 kg ve kalınlık 25,7 mm. Bağlantılar USB-C (USB4), USB-A, HDMI, RJ45 ve 3,5 mm giriş; Wi-Fi 6E, Bluetooth 5.3, IR kamera, 1080p webcam ve klavye aydınlatması bulunuyor.",
+   "İşletim sistemi FreeDOS olarak geçtiği için Windows lisansı ve kurulumu ayrıca gerekecek. Fiyat katalogda üst segment; benzer donanımlı rakiplerle karşılaştırmak iyi olur."
+  ],
+  "kimlerAlmali": "Oyun ve yoğun grafik işleri için güçlü, yükseltilebilir bir dizüstü isteyenler.",
+  "kimlerAlmamali": "Hafif ve ince dizüstü arayanlar, hazır Windows lisanslı cihaz isteyenler.",
+  "sonKarar": "ASUS TUF Gaming A16 alınır, performans ve yükseltilebilirlik arayan oyuncular için. Taşınabilirlik ve yazılım lisansı öncelikse başka modellere bakın."
  }
 }

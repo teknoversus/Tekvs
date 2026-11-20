@@ -36,6 +36,7 @@ const { writeDirIndexRedirects } = require('./lib/dir-redirects');
 const { writeLegacyPageRedirects } = require('./lib/legacy-pages');
 const { splitSitemap } = require('./lib/split-sitemap');
 const { applyTrafficNoindex } = require('./lib/trafik-noindex');
+const { applyContentLastmod } = require('./lib/sitemap-lastmod');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -264,6 +265,9 @@ async function main(){
 
   // ---- Trafik almayan otomatik sayfalar: noindex + sitemap dışı (lib/trafik-noindex.js) ----
   applyTrafficNoindex({ rootDir, products, productSlug: helpers.productSlug });
+
+  // ---- Sitemap lastmod: build tarihi yerine gerçek içerik değişikliği (lib/sitemap-lastmod.js) ----
+  await applyContentLastmod({ rootDir });
 
   console.log('→ sitemap.xml parçalara bölünüyor (hosting WAF limiti için)...');
   splitSitemap({ rootDir });

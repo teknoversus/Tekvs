@@ -1,0 +1,121 @@
+{
+ "title": "Oyun Laptopu Nasıl Seçilir? TGP, MUX, Ekran ve Soğutma Rehberi",
+ "description": "Aynı ekran kartı neden farklı performans verir? Oyun laptopu alırken TGP, MUX anahtarı, ekran yenileme hızı, RAM, soğutma ve işletim sistemi lisansına nasıl bakılır?",
+ "tldr": "Oyun laptopunda ekran kartının modeli kadar güç sınırı (TGP) önemlidir: aynı RTX kart 60 W'ta ve 140 W'ta çok farklı performans verir. MUX anahtarı kare sayısını artırır, 144 Hz ve üzeri ekran akıcılık sağlar, 16 GB RAM bugün için alt sınırdır. FreeDOS'lu modellerde Windows lisansını bütçeye ekleyin.",
+ "intro": [
+  "Oyun laptopu ilanlarında çoğu zaman yalnızca işlemci ve ekran kartı modeli öne çıkar. Oysa aynı ekran kartını taşıyan iki laptop arasında, cihazın soğutması ve güç sınırına bağlı olarak belirgin performans farkı olabilir.",
+  "Bu rehberde etiketin arkasındaki ayrıntıları, yani TGP, MUX anahtarı, ekran, RAM, depolama, soğutma ve işletim sistemi konularını sırayla ele alıyoruz. Amaç, aynı bütçeyle daha doğru bir seçim yapmanızı sağlamak."
+ ],
+ "sections": [
+  {
+   "h": "TGP nedir, neden bu kadar önemli?",
+   "p": [
+    "TGP (Total Graphics Power), dizüstü bilgisayardaki ekran kartının çalışmasına izin verilen en yüksek güçtür ve watt ile ifade edilir. Masaüstü kartlardan farklı olarak dizüstü ekran kartları, üreticinin soğutma tasarımına göre farklı güç sınırlarıyla kullanılır.",
+    "Aynı model ekran kartı, ince bir laptopta düşük TGP ile, kalın bir oyun laptopunda yüksek TGP ile çalışabilir. Yüksek TGP genellikle daha yüksek kare sayısı demektir ama daha fazla ısı, daha güçlü fan ve daha ağır gövde de getirir. Ürün sayfasında TGP yazmıyorsa üreticinin teknik özellik sayfasından kontrol edin."
+   ],
+   "note": "Bir laptopu sadece ekran kartı modeline bakarak karşılaştırmayın. Aynı GPU'yu taşıyan iki model arasında TGP farkı, bir alt seviye ekran kartı farkı kadar büyük olabilir."
+  },
+  {
+   "h": "MUX anahtarı ve Advanced Optimus",
+   "p": [
+    "Çoğu oyun laptopunda görüntü, ekran kartından ekrana doğrudan değil, işlemcinin entegre grafik birimi üzerinden gider. Bu yöntem pil tasarrufu sağlar ama oyunlarda performans kaybına yol açabilir.",
+    "MUX anahtarı, ekran kartının ekrana doğrudan bağlanmasını sağlar. Bu, özellikle işlemciyi yoran oyunlarda kare sayısını artırabilir. Advanced Optimus ise bu geçişi yeniden başlatmadan otomatik yapan bir teknolojidir. Oyun odaklı alım yapıyorsanız MUX veya Advanced Optimus desteği güçlü bir artıdır."
+   ]
+  },
+  {
+   "h": "Ekran: yenileme hızı, çözünürlük ve parlaklık",
+   "table": {
+    "head": [
+     "Özellik",
+     "Önerilen",
+     "Neden"
+    ],
+    "rows": [
+     [
+      "Yenileme hızı",
+      "144 Hz ve üzeri",
+      "Hızlı oyunlarda akıcılık ve düşük gecikme"
+     ],
+     [
+      "Çözünürlük",
+      "1080p veya 1440p (QHD)",
+      "Orta seviye kartlarda 1080p, üst seviyede QHD"
+     ],
+     [
+      "Parlaklık",
+      "300 nit ve üzeri",
+      "Aydınlık ortamda okunabilirlik"
+     ],
+     [
+      "Renk gamı",
+      "%100 sRGB",
+      "Doğru ve canlı renkler"
+     ],
+     [
+      "G-SYNC / FreeSync",
+      "Var",
+      "Görüntü yırtılmasını azaltır"
+     ]
+    ]
+   },
+   "p": [
+    "Ekran kartı ile ekran çözünürlüğü dengeli olmalı. Orta seviye bir kartla QHD ekranda yüksek kare sayısına ulaşmak zorlaşabilir; bu durumda 1080p ekran daha akıcı bir deneyim verir."
+   ]
+  },
+  {
+   "h": "RAM, depolama ve yükseltilebilirlik",
+   "list": [
+    "RAM: Bugünün oyunları için 16 GB alt sınırdır. Oyun yanında yayın veya içerik üretimi yapıyorsanız 32 GB fark yaratır.",
+    "RAM'in çift kanal (iki modül) çalışması performansı artırır; tek modüllü yapılandırmalarda kare sayısı düşebilir.",
+    "Depolama: Modern oyunlar 100 GB'ı aşabilir. 512 GB hızlı dolar; 1 TB ve üzeri daha rahat bir başlangıçtır.",
+    "Yükseltilebilirlik: İkinci bir SSD yuvası ve değiştirilebilir RAM, cihazın ömrünü uzatır. Lehimli RAM olan modellerde baştan doğru miktarı seçin."
+   ]
+  },
+  {
+   "h": "Soğutma, ağırlık ve pil",
+   "p": [
+    "Yüksek performans ısı demektir. İyi bir soğutma sistemi, uzun oyun seanslarında performansın düşmesini (thermal throttling) engeller. Bağımsız testlerde uzun süreli yük altındaki sıcaklık ve fan gürültüsü ölçümlerine bakmak faydalıdır.",
+    "Oyun laptopları genellikle 2,2 ile 3,2 kg arasında ağırlıktadır. Sık taşıyacaksanız daha hafif ve ince bir model, masa başında kullanacaksanız daha kalın ve iyi soğutmalı bir model mantıklıdır. Pil ömrü oyun sırasında kısadır; oyun laptopunu prize bağlı kullanmayı planlayın."
+   ]
+  },
+  {
+   "h": "İşletim sistemi ve gizli maliyetler",
+   "p": [
+    "Türkiye'de satılan birçok oyun laptopu FreeDOS ile gelir, yani Windows kurulu değildir. Bu, cihazı daha uygun fiyata sunar ama Windows lisansını ayrıca almanız gerekir. Fiyat karşılaştırırken Windows'lu ve FreeDOS'lu modelleri aynı ölçüde değerlendirin.",
+    "Ek olarak soğutucu altlık, harici mouse ve kulaklık gibi aksesuarlar da oyun deneyiminin bir parçasıdır."
+   ]
+  },
+  {
+   "h": "Satın alma kontrol listesi",
+   "ol": [
+    "Ekran kartı modelini ve TGP değerini birlikte kontrol edin.",
+    "MUX anahtarı veya Advanced Optimus desteği olup olmadığına bakın.",
+    "Ekranın en az 144 Hz ve 300 nit olduğundan emin olun.",
+    "RAM'in en az 16 GB ve çift kanal olduğunu doğrulayın.",
+    "Depolamanın en az 1 TB veya genişletilebilir olduğunu kontrol edin.",
+    "İşletim sistemini kontrol edin; FreeDOS ise lisans maliyetini ekleyin.",
+    "Bağımsız testlerde sıcaklık ve fan sesi sonuçlarına bakın."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Aynı RTX ekran kartı farklı laptoplarda neden farklı performans verir?",
+   "a": "Çünkü üreticiler ekran kartını farklı güç sınırlarıyla (TGP) kullanır. Yüksek TGP daha yüksek performans, ama daha fazla ısı ve ağırlık demektir."
+  },
+  {
+   "q": "MUX anahtarı şart mı?",
+   "a": "Şart değil ama oyunlarda kare sayısını artırabilir. Oyun odaklı alımda tercih sebebi olmalıdır."
+  },
+  {
+   "q": "Oyun laptopu için 16 GB RAM yeterli mi?",
+   "a": "Bugünün oyunları için 16 GB yeterli alt sınırdır. Yayın, video düzenleme veya uzun vadeli kullanım planlıyorsanız 32 GB daha rahat eder."
+  },
+  {
+   "q": "FreeDOS ne demek?",
+   "a": "Cihazın Windows yüklü olmadan satıldığını ifade eder. Windows lisansını ayrıca almanız ve kurmanız gerekir."
+  }
+ ],
+ "sources": [],
+ "slug": "oyun-laptopu-nasil-secilir-tgp-mux"
+}

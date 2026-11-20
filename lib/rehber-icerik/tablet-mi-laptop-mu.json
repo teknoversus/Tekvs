@@ -1,0 +1,132 @@
+{
+ "title": "Tablet mi Laptop mu? Öğrenci, Ofis ve Eğlence İçin Doğru Seçim",
+ "description": "Tablet mi laptop mu almalı? İşletim sistemi, yazılım uyumluluğu, klavye, kalem, pil, taşınabilirlik ve fiyat açısından karşılaştırma ve kullanım senaryosuna göre öneriler.",
+ "tldr": "Not alma, çizim, film ve okuma ağırlıklıysa tablet; uzun yazılar, ofis programları, okul yazılımları ve çoklu pencereyle çalışmak gerekiyorsa laptop daha doğru seçimdir. Klavyeli tablet laptopun yerini kısmen tutar, ama masaüstü yazılımları gerektiren işlerde sınırlı kalır.",
+ "intro": [
+  "Tablet ve laptop arasındaki çizgi her yıl biraz daha bulanıklaşıyor: tabletlere klavye ve kalem ekleniyor, laptoplar inceliyor ve dokunmatik ekranlar yaygınlaşıyor. Yine de iki cihazın güçlü olduğu alanlar hâlâ farklı.",
+  "Bu rehberde iki cihazı gerçek kullanımda önemli olan başlıklarla karşılaştırıyor ve öğrenci, ofis çalışanı ve eğlence odaklı kullanıcı için ayrı öneriler veriyoruz."
+ ],
+ "sections": [
+  {
+   "h": "Temel fark: işletim sistemi ve yazılım",
+   "p": [
+    "Tabletler genellikle Android veya iPadOS ile çalışır. Bu sistemler dokunmatik kullanım için tasarlanmıştır ve mobil uygulamaları çalıştırır. Laptoplar ise Windows, macOS veya ChromeOS gibi masaüstü sistemlerle gelir ve tam sürüm masaüstü programlarını çalıştırabilir.",
+    "Bu fark, kullanacağınız yazılım açısından belirleyicidir. Okulunuz veya işiniz belirli bir masaüstü programı istiyorsa (muhasebe yazılımı, CAD, bazı kodlama araçları, sınav tarayıcısı gibi) tablet bu programları çalıştıramayabilir."
+   ],
+   "note": "Satın almadan önce kullanmanız gereken uygulamaların listesini çıkarın ve tablet sürümlerinin var olup olmadığını kontrol edin. Web sürümü olan programlar çoğu zaman tablette de çalışır."
+  },
+  {
+   "h": "Karşılaştırma tablosu",
+   "table": {
+    "head": [
+     "Özellik",
+     "Tablet",
+     "Laptop"
+    ],
+    "rows": [
+     [
+      "Not alma ve çizim",
+      "Kalemle çok güçlü",
+      "Dokunmatik ve kalem destekli modeller sınırlı"
+     ],
+     [
+      "Uzun yazı ve ofis işleri",
+      "Klavye ile yapılabilir, sınırlı",
+      "Çok güçlü"
+     ],
+     [
+      "Masaüstü yazılımlar",
+      "Çoğunlukla yok",
+      "Tam destek"
+     ],
+     [
+      "Taşınabilirlik",
+      "Çok iyi, hafif",
+      "Modele göre değişir"
+     ],
+     [
+      "Pil ömrü",
+      "Genellikle uzun",
+      "Modele göre değişir"
+     ],
+     [
+      "Film, okuma, oyun",
+      "Çok iyi",
+      "İyi"
+     ],
+     [
+      "Çoklu pencere",
+      "Sınırlı (bölünmüş ekran)",
+      "Çok iyi"
+     ],
+     [
+      "Fiyat",
+      "Giriş seviyesi daha uygun",
+      "Aynı kalitede genelde daha pahalı"
+     ]
+    ]
+   },
+   "p": [
+    "Tabloda genel eğilimler yer alıyor; üst seviye tabletler ile giriş seviyesi laptoplar arasında örtüşen alanlar bulunuyor."
+   ]
+  },
+  {
+   "h": "Öğrenciler için",
+   "list": [
+    "Ders notu, PDF okuma, kalemle soru çözme ve çevrim içi ders için tablet çok pratiktir.",
+    "Ödev, proje ve uzun yazılar için klavye şarttır; tablete klavye ekleyebilir veya laptop tercih edebilirsiniz.",
+    "Üniversitede bölümün kullandığı yazılımları (mühendislik, tasarım, istatistik) kontrol edin; çoğu masaüstü gerektirir.",
+    "Bütçe kısıtlıysa kalemli orta segment bir tablet ve ortak kullanılan bir bilgisayar iyi bir kombinasyondur."
+   ]
+  },
+  {
+   "h": "Ofis çalışanları için",
+   "p": [
+    "E-posta, toplantı, belge düzenleme ve tablo hazırlama işlerinde laptop daha verimlidir. Birden fazla pencereyi yan yana açmak, büyük tablolarla çalışmak ve harici monitör bağlamak laptopta daha rahattır.",
+    "Sık seyahat edenler için tablet, toplantıda not alma ve sunum kontrolü için ikinci cihaz olarak değerlidir."
+   ]
+  },
+  {
+   "h": "Eğlence ve günlük kullanım için",
+   "p": [
+    "Film, dizi, kitap, sosyal medya ve hafif oyun için tablet çoğu zaman daha keyiflidir: koltukta veya yatakta tutması kolaydır, pil ömrü uzundur ve dokunmatik kullanım doğaldır. Ailede birden fazla kişinin kullanacağı ortak bir cihaz için de pratik bir seçimdir."
+   ]
+  },
+  {
+   "h": "Klavyeli tablet laptopun yerini tutar mı?",
+   "p": [
+    "Kısmen. Klavye kılıfı ve kalemle bir tablet; yazı, not ve web tabanlı işlerin çoğunu karşılar. Ancak masaüstü yazılım desteği, dosya yönetimi ve çoklu pencere esnekliğinde laptopun gerisinde kalır. Ayrıca kaliteli klavye ve kalem aksesuarlarının fiyatı eklendiğinde toplam maliyet bir laptopa yaklaşabilir."
+   ]
+  },
+  {
+   "h": "Karar kontrol listesi",
+   "ol": [
+    "Kullanmanız gereken yazılımları listeleyin.",
+    "Günlük kullanımınızın çoğu yazı mı, okuma ve not mu, bunu belirleyin.",
+    "Taşınabilirlik ve pil ihtiyacınızı değerlendirin.",
+    "Aksesuar maliyetini (klavye, kalem) toplam bütçeye ekleyin.",
+    "Gerekirse iki cihazlı kombinasyonu (tablet ve masaüstü) düşünün."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Üniversite öğrencisi tablet mi laptop mu almalı?",
+   "a": "Bölüme bağlıdır. Masaüstü yazılım gerektiren bölümlerde laptop şarttır. Not alma ve okuma ağırlıklı bölümlerde kalemli bir tablet çok işe yarar."
+  },
+  {
+   "q": "Tablete klavye takınca laptop olur mu?",
+   "a": "Yazı ve web işlerinin çoğunu karşılar ama masaüstü programları çalıştıramaz ve çoklu pencere desteği sınırlıdır."
+  },
+  {
+   "q": "Hangisinin pil ömrü daha uzun?",
+   "a": "Genellikle tabletler daha uzun pil ömrü sunar, ancak bazı yeni nesil laptoplar da tam gün kullanım sağlayabilir."
+  },
+  {
+   "q": "Çocuk için hangisi daha uygun?",
+   "a": "Küçük yaşlarda eğitim uygulamaları ve video için tablet daha pratiktir. Ödev ve kodlama gibi işler başladığında laptop gerekir."
+  }
+ ],
+ "sources": [],
+ "slug": "tablet-mi-laptop-mu"
+}

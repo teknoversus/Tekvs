@@ -36,11 +36,11 @@ const ICONS = {
 
 function logoSVG(){
   return `<svg width="26" height="26" viewBox="0 0 30 30" fill="none">
-    <line x1="15" y1="3" x2="15" y2="24" stroke="#1B211D" stroke-width="2"/>
-    <line x1="4" y1="8" x2="26" y2="8" stroke="#1B211D" stroke-width="2"/>
+    <line x1="15" y1="3" x2="15" y2="24" stroke="#1c1917" stroke-width="2"/>
+    <line x1="4" y1="8" x2="26" y2="8" stroke="#1c1917" stroke-width="2"/>
     <path d="M4 8 L1 15 A4 4 0 0 0 9 15 Z" stroke="#1F7A6C" stroke-width="1.6" fill="none"/>
     <path d="M26 8 L23 15 A4 4 0 0 0 31 15 Z" stroke="#B23A5C" stroke-width="1.6" fill="none"/>
-    <rect x="10" y="24" width="10" height="2.4" rx="1" fill="#1B211D"/>
+    <rect x="10" y="24" width="10" height="2.4" rx="1" fill="#1c1917"/>
   </svg>`;
 }
 
@@ -380,6 +380,20 @@ async function addRating(id, stars, name, comment){
 // ============================================================
 // Kataloğa girmeyen ("bulunamadı") arama talepleri
 // ============================================================
+// Site içi arama kaydı (21 Kasım 2026): admin paneldeki "En çok arananlar" için.
+// Sadece aranan kelime, sonuç sayısı ve sayfa türü yazılır; kişiyi tanıtan bilgi yok.
+// search_logs tablosu yoksa (arama-kayitlari.sql çalıştırılmadıysa) sessizce geçer.
+async function logSiteSearch(query, results, page){
+  try{
+    const q = (query||'').trim().slice(0,200);
+    if(!q) return;
+    await sbFetch('/rest/v1/search_logs', {
+      method: 'POST',
+      headers: { 'Prefer': 'return=minimal' },
+      body: JSON.stringify({ query: q, results: Math.max(0, results|0), page: (page||'anasayfa').slice(0,40) })
+    });
+  }catch(e){}
+}
 async function logMissedSearch(query){
   try{
     await sbFetch('/rest/v1/product_requests', {
@@ -1201,7 +1215,7 @@ function scoreColor(s){
 function heartIcon(filled){
   return filled
     ? `<svg viewBox="0 0 24 24" fill="#B23A5C"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg>`
-    : `<svg viewBox="0 0 24 24" fill="none" stroke="#5B6B60" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg>`;
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="#57534e" stroke-width="1.6"><path d="M12 21s-7.2-4.6-10-9.1C.4 8.6 1.8 5 5.4 4.2 7.7 3.7 10 4.8 12 7c2-2.2 4.3-3.3 6.6-2.8C22.2 5 23.6 8.6 22 11.9 19.2 16.4 12 21 12 21z"/></svg>`;
 }
 
 // ============================================================

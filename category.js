@@ -262,8 +262,8 @@ function renderTable(list){
     const price = parsePrice(p);
     return `<tr onclick="openDetail('${p.id}')" style="cursor:pointer;">
       <td style="padding:8px 10px 8px 0;font-weight:600;">${p.name}</td>
-      <td style="padding:8px 10px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;">${price ? price.toLocaleString('tr-TR')+' ₺' : '—'}</td>
-      <td style="padding:8px 10px;font-family:'IBM Plex Mono',monospace;color:${scoreColor(scores[p.id]||0)};">${scores[p.id] ?? '—'}</td>
+      <td style="padding:8px 10px;font-family:'Inter',sans-serif;white-space:nowrap;">${price ? price.toLocaleString('tr-TR')+' ₺' : '—'}</td>
+      <td style="padding:8px 10px;font-family:'Inter',sans-serif;color:${scoreColor(scores[p.id]||0)};">${scores[p.id] ?? '—'}</td>
       ${specKeys.map(k => `<td style="padding:8px 10px;font-size:12.5px;color:var(--ink-soft);">${(p.specs||{})[k] ?? '—'}</td>`).join('')}
     </tr>`;
   }).join('');
@@ -281,7 +281,7 @@ function renderTable(list){
 function renderCatNav(){
   const el = document.getElementById('catChipsNav');
   if(!el) return;
-  const all = `<a class="chip-filter" href="index.html#katalog">Tümü</a>`;
+  const all = `<a class="chip-filter" href="index.html#kategoriler">Tümü</a>`;
   const rest = CATS.map(c => `<a class="chip-filter ${c===CATEGORY_FIXED?'active':''}" href="${SLUG_MAP[c]}.html">${c}</a>`).join('');
   el.innerHTML = all + rest;
 }
@@ -311,6 +311,7 @@ async function runSmartSearch(){
     const results = filterAndRankProducts(criteria, products, scores);
     searchIds = results.map(p => p.id);
     currentPage = 1;
+    try{ if(typeof logSiteSearch === 'function') logSiteSearch(q, searchIds.length, 'kategori:' + CATEGORY_FIXED); }catch(e){}
     if(searchIds.length){
       statusEl.innerHTML = `"${q}" için ${searchIds.length} sonuç bulundu. <button onclick="clearSmartSearch()">Aramayı temizle</button>`;
     } else {
@@ -527,7 +528,7 @@ function openCompare(){
       if(n){ pct = max===min ? 100 : ((n.v-min)/(max-min))*100; if(lowerBetter) pct = 100-pct; pct = Math.max(pct,6); }
       return `<div class="cmp-seg" style="flex:${pct};background:${colorMap[p.id]};opacity:${!specValueMissing(raw)?0.35+0.65*pct/100:0.15}"></div>`;
     }).join('');
-    const vals = list.map(p=>`<span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink-soft);margin-right:14px;">${specValueMissing(p.specs[key]) ? '—' : p.specs[key]}</span>`).join('');
+    const vals = list.map(p=>`<span style="font-family:'Inter',sans-serif;font-size:12.5px;color:var(--ink-soft);margin-right:14px;">${specValueMissing(p.specs[key]) ? '—' : p.specs[key]}</span>`).join('');
     return `<div class="cmp-row"><strong style="font-size:13.5px;">${key}</strong><div style="margin:4px 0;">${vals}</div><div class="cmp-track">${segs}</div></div>`;
   }).join('');
 

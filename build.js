@@ -37,6 +37,7 @@ const { writeLegacyPageRedirects } = require('./lib/legacy-pages');
 const { splitSitemap } = require('./lib/split-sitemap');
 const { applyTrafficNoindex } = require('./lib/trafik-noindex');
 const { applyContentLastmod } = require('./lib/sitemap-lastmod');
+const { applySiteChrome } = require('./lib/site-chrome');
 
 // Faz 2/3 hedef ürün listeleri artık main() içinde, o an gelen canlı
 // ürün verisine göre dinamik hesaplanıyor (bkz. aşağıda).
@@ -236,7 +237,6 @@ async function main(){
   console.log('→ Konu kümesi destek makaleleri üretiliyor...');
   generateClusterArticles({ rootDir });
 
-  updateHomeBlocks({ rootDir, news: homeNews, products, computeScores: helpers.computeScores });
 
   console.log('→ İnceleme sayfaları üretiliyor...');
   generateReviews({ products, prosConsFor: helpers.prosConsFor, computeScores: helpers.computeScores, targetIds: FAZ3_TARGET_IDS, rootDir });
@@ -252,6 +252,11 @@ async function main(){
   console.log('→ Fiyat/Performans İndeksi (linkable asset) üretiliyor...');
   generateFiyatPerformansIndeksi({ products, computeScores: helpers.computeScores, productSlug: helpers.productSlug, rootDir });
 
+  // Anasayfa blokları en sonda: inceleme, liste ve rehber sayfaları artık üretilmiş olduğu için
+  // bağlantılar yalnızca gerçekten var olan sayfalara verilir.
+  updateHomeBlocks({ rootDir, news: homeNews, products, computeScores: helpers.computeScores,
+    productSlug: helpers.productSlug, colorFor: helpers.colorFor, productImageFor });
+
   // ---- sitemap.xml'i WAF limiti altında kalacak parçalara böl ----
   // TÜM generate-*.js modülleri sitemap.xml'i tamamladıktan sonra, en son adım
   // olarak çalışmalı (bkz. lib/split-sitemap.js'teki kök neden açıklaması).
@@ -261,6 +266,7 @@ async function main(){
   writeLegacyPageRedirects({ rootDir, products });
   writeDirIndexRedirects({ rootDir });
 
+  applySiteChrome({ rootDir });
   injectPwaTags({ rootDir });
 
   // ---- Trafik almayan otomatik sayfalar: noindex + sitemap dışı (lib/trafik-noindex.js) ----

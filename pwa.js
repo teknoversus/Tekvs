@@ -53,7 +53,7 @@
       'font:14px/1.45 Inter,system-ui,sans-serif;display:flex;gap:12px;align-items:center;';
     box.innerHTML = '<img src="/assets/icon-192.png" alt="" width="40" height="40" style="width:40px;height:40px;border-radius:9px;background:#fff;flex:0 0 40px;">' +
       '<div style="flex:1;min-width:0;">' + html + '</div>' +
-      (onInstall ? '<button type="button" id="tvPwaInstall" style="background:#EFB123;color:#1B211D;border:0;border-radius:9px;padding:0 14px;height:40px;font:inherit;font-weight:700;cursor:pointer;">Yükle</button>' : '') +
+      (onInstall ? '<button type="button" id="tvPwaInstall" style="background:#EFB123;color:#1c1917;border:0;border-radius:9px;padding:0 14px;height:40px;font:inherit;font-weight:700;cursor:pointer;">Yükle</button>' : '') +
       '<button type="button" id="tvPwaClose" aria-label="Kapat" style="background:transparent;color:#C3CDD8;border:0;width:36px;height:40px;font-size:20px;cursor:pointer;">×</button>';
     document.body.appendChild(box);
     document.getElementById('tvPwaClose').addEventListener('click', function(){

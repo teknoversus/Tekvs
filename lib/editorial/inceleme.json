@@ -525,5 +525,137 @@
   "kimlerAlmali": "Oyun ve yoğun grafik işleri için güçlü, yükseltilebilir bir dizüstü isteyenler.",
   "kimlerAlmamali": "Hafif ve ince dizüstü arayanlar, hazır Windows lisanslı cihaz isteyenler.",
   "sonKarar": "ASUS TUF Gaming A16 alınır, performans ve yükseltilebilirlik arayan oyuncular için. Taşınabilirlik ve yazılım lisansı öncelikse başka modellere bakın."
+ },
+ "trend_2026090526": {
+  "tarih": "2026-11-20",
+  "kisa": "Lenovo LOQ 15IRX10 (83JE012LTR), Core i5-14500HX ve RTX 5060 (100 W) ile bu fiyat bandında oyun performansı yüksek bir dizüstü. 300 nit IPS ekran ve FreeDOS işletim sistemi bilinmesi gereken ödünler.",
+  "metin": [
+   "Lenovo LOQ 15IRX10, Intel Core i5-14500HX işlemci ve NVIDIA GeForce RTX 5060 8 GB GDDR7 ekran kartıyla geliyor. Ekran kartının güç sınırı (TGP) 100 W; aynı GPU'nun daha düşük güçte çalıştığı ince modellere göre oyunlarda daha yüksek kare sayısı bekleyebilirsiniz. 16 GB DDR5 RAM ve 512 GB depolama, başlangıç için yeterli ama oyun kütüphanesi büyüdükçe depolamayı artırmanız gerekebilir.",
+   "15,6 inç IPS ekran 1920x1080 çözünürlük, 144 Hz yenileme hızı ve %100 sRGB renk gamı sunuyor; G-SYNC desteği oyunda yırtılmayı azaltır. Parlaklık 300 nit; iç mekanda yeterli, güneşli ortamda zorlanır. Klavye aydınlatması var, bağlantıda Wi-Fi 6 ve Bluetooth 5.2 bulunuyor.",
+   "Gövde 2,4 kg ve 23,9 mm kalınlığında; taşınabilirlikten çok masa başı oyun için tasarlanmış. Pil 60 Wh, bu sınıfta oyun sırasında prizden uzak uzun süre beklenmemeli. İşletim sistemi FreeDOS olarak geliyor, yani Windows lisansı ayrıca gerekecek."
+  ],
+  "kimlerAlmali": "Bütçe sınırı içinde güçlü oyun performansı arayanlar, masa başında kullanacak öğrenciler ve oyuncular.",
+  "kimlerAlmamali": "Sık taşıyanlar, uzun pil ömrü isteyenler ve kutudan Windows'lu cihaz bekleyenler.",
+  "sonKarar": "Lenovo LOQ 15IRX10 alınır, fiyat-performans odaklı oyuncular için güçlü bir seçenek. Windows lisans maliyetini bütçeye eklemeyi unutmayın."
+ },
+ "laptop_20260924_017": {
+  "tarih": "2026-11-20",
+  "kisa": "ASUS ROG Strix G18 G815LR, 18 inç 240 Hz QHD+ ekranı, Core Ultra 9 290HX Plus işlemcisi, 140 W RTX 5070'i ve 32 GB RAM'iyle masaüstü yerine geçebilecek bir oyun dizüstüsü. 3,2 kg ağırlık ve yüksek fiyat en büyük ödünleri.",
+  "metin": [
+   "ROG Strix G18, 18 inç IPS ekranı 2560x1600 çözünürlük ve 240 Hz yenileme hızıyla sunuyor. %100 DCI-P3 renk gamı, oyun dışında fotoğraf ve video düzenleme için de geniş renk alanı demek.",
+   "Donanım tarafında Intel Core Ultra 9 290HX Plus, 140 W TGP'li NVIDIA GeForce RTX 5070, 32 GB DDR5-5600 RAM ve 2 TB depolama var. Bu yapı, yüksek ayarlarda oyun ve yoğun yaratıcı işler için güçlü. Wi-Fi 7, Bluetooth 5.4, Thunderbolt/USB4, 1080p webcam ve klavye aydınlatması mevcut. Windows 11 Home kurulu geliyor.",
+   "Cihaz 3,2 kg ağırlığında ve 280 W adaptörle geliyor; çanta ile taşımak mümkün ama günlük kullanım için ağır. 90 Wh pil, yüksek performanslı donanımla birlikte prizden uzak uzun oyun seanslarına yetmez."
+  ],
+  "kimlerAlmali": "Masaüstü yerine güçlü bir taşınabilir oyun bilgisayarı isteyenler, büyük ekranda oyun ve içerik üretimi yapanlar.",
+  "kimlerAlmamali": "Hafif cihaz arayanlar ve bütçesi sınırlı olanlar; benzer oyun performansı daha düşük fiyatlı modellerle de alınabilir.",
+  "sonKarar": "ASUS ROG Strix G18 alınır, en üst seviyede büyük ekranlı oyun deneyimi isteyenler için. Fiyatı ve ağırlığı ihtiyacınızla tartın."
+ },
+ "amazon_20260924_latest_016": {
+  "tarih": "2026-11-20",
+  "kisa": "Lenovo Yoga Slim 7 (83HM), 15,3 inç 120 Hz OLED ekranı, 1,53 kg ağırlığı ve 32 GB RAM'iyle taşınabilir bir üretkenlik dizüstüsü. Ayrı ekran kartı olmadığı için ağır oyunlara uygun değil, FreeDOS ile geliyor.",
+  "metin": [
+   "Yoga Slim 7, 15,3 inç OLED ekranı 2560x1600 çözünürlük, 120 Hz yenileme hızı ve 500 nit parlaklıkla sunuyor. OLED panel derin siyah ve canlı renkler sağlıyor; film izlemek, fotoğraf düzenlemek ve uzun süre metin okumak için keyifli bir ekran.",
+   "İşlemci Intel Core Ultra 7 258V ve entegre Intel Arc Graphics; 32 GB RAM ve 512 GB depolama ile geliyor. Ofis, tarayıcı ağırlıklı işler, hafif fotoğraf düzenleme ve çoklu görev için rahat. Ayrı ekran kartı yok; yeni oyunları yüksek ayarlarda oynamak için uygun değil.",
+   "13,9 mm kalınlık ve 1,53 kg ağırlık, 15 inç sınıfında taşınabilirlik için iyi. 70 Wh pil, Wi-Fi 7, Bluetooth 5.4, Thunderbolt/USB4 ve klavye aydınlatması mevcut. İşletim sistemi FreeDOS; Windows lisansını bütçeye dahil edin."
+  ],
+  "kimlerAlmali": "Öğrenciler, ofis çalışanları ve büyük OLED ekranla hafif bir dizüstü arayanlar.",
+  "kimlerAlmamali": "Oyun oynayanlar ve ekran kartı gerektiren 3D, video kurgu gibi işleri yapanlar.",
+  "sonKarar": "Lenovo Yoga Slim 7 alınır, taşınabilir ve ekranı güçlü bir üretkenlik cihazı arayanlar için."
+ },
+ "p16": {
+  "tarih": "2026-11-20",
+  "kisa": "EarFun Air Pro 4i, ANC, Bluetooth 5.4, IPX5 ve kutuyla 35 saat pil ömrünü giriş seviyesi fiyata sunuyor. Kablosuz şarj yok; ses ve ANC performansında üst segment beklenmemeli.",
+  "metin": [
+   "EarFun Air Pro 4i, aktif gürültü engellemeli ve Bluetooth 5.4 ile bağlanan tam kablosuz bir kulaklık. Kulaklık başına 5,2 gram; uzun süre takarken rahatsız etmeyecek kadar hafif. IPX5 su ve ter direnci sporda ve yağmurda kullanım için yeterli.",
+   "Katalogdaki pil verileri kulaklık için 10 saat, kutuyla toplam 35 saat. Hızlı şarj var, kablosuz şarj yok. Siyah ve beyaz renk seçenekleri bulunuyor.",
+   "Bu fiyat bandında ANC, yeni Bluetooth sürümü ve IPX5'i bir arada sunması güçlü yanı."
+  ],
+  "kimlerAlmali": "İlk ANC'li kulaklığını alacaklar, öğrenciler ve yedek kulaklık arayanlar.",
+  "kimlerAlmamali": "Kablosuz şarj ve en güçlü gürültü engellemeyi isteyenler.",
+  "sonKarar": "EarFun Air Pro 4i alınır, bütçe dostu ANC'li kulaklık arayanlar için çok mantıklı bir seçim."
+ },
+ "n49": {
+  "tarih": "2026-11-20",
+  "kisa": "JBL Tune Buds 2, ANC, IP54 ve kutuyla 48 saate varan toplam pil ömrüyle JBL kalitesini uygun fiyata sunuyor. Kablosuz şarj yok, Bluetooth 5.3.",
+  "metin": [
+   "JBL Tune Buds 2, aktif gürültü engellemeli tam kablosuz bir kulaklık. Kulaklık başına 4,5 gram, IP54 toz ve su direnci var. Bağlantı Bluetooth 5.3 ile yapılıyor.",
+   "Pil ömrü kulaklık için 10 saat, kutuyla toplam 48 saat olarak listelenmiş; bu, bu fiyat bandında oldukça uzun. Hızlı şarj destekleniyor, kablosuz şarj yok. Siyah ve beyaz renkleri bulunuyor.",
+   "JBL'in ses karakteri genellikle bas ağırlıklıdır; pop ve elektronik müzik dinleyenler için uygun bir profil sunar. Dengeli ve analitik ses isteyenler uygulama üzerinden ekolayzırla ayar yapmalı."
+  ],
+  "kimlerAlmali": "Uzun pil ömrü ve tanınmış marka isteyenler, bas ağırlıklı ses sevenler.",
+  "kimlerAlmamali": "Kablosuz şarj isteyenler ve en güçlü ANC'yi arayanlar.",
+  "sonKarar": "JBL Tune Buds 2 alınır, uygun fiyatlı ve uzun pilli bir ANC kulaklık için iyi bir seçim."
+ },
+ "p_new_045": {
+  "tarih": "2026-11-20",
+  "kisa": "COROS Pace 3, 30 gram ağırlığı, çift frekanslı GPS'i ve yaklaşık 15 günlük pil ömrüyle koşucular için hafif ve odaklı bir spor saati. Akıllı saat özellikleri sınırlı; NFC ödeme yok.",
+  "metin": [
+   "COROS Pace 3, 1,2 inç MIP ekranlı (240x240) bir spor saati. MIP ekran güneş altında okunaklıdır ve çok az enerji harcar; AMOLED kadar canlı değildir ama spor kullanımında pratiktir. 30 gram ağırlık ve fiber takviyeli polimer kasa sayesinde koşarken bilekte neredeyse hissedilmez.",
+   "En güçlü yanı GPS: çift frekanslı (çok bantlı) GPS, şehirde binalar arasında ve ormanda konum doğruluğunu artırır. Barometre, pusula, harita ve navigasyon desteği var; sensörler arasında optik kalp, SpO2 ve sıcaklık bulunuyor. Bluetooth, Wi-Fi ve ANT+ bağlantısı spor ekipmanlarıyla uyumu kolaylaştırır. Su geçirmezlik 5 ATM.",
+   "Pil süresi katalogda yaklaşık 15 gün olarak geçiyor. NFC ödeme bilgisi yok, uygulama mağazası olan bir akıllı saat değil; bildirimleri gösterir ama Wear OS veya watchOS esnekliği beklenmemeli."
+  ],
+  "kimlerAlmali": "Koşu ve dayanıklılık sporları yapanlar, doğru GPS ve uzun pil isteyenler.",
+  "kimlerAlmamali": "Temassız ödeme, uygulamalar ve şık AMOLED ekran isteyenler.",
+  "sonKarar": "COROS Pace 3 alınır, özellikle koşucular için fiyatına göre çok güçlü bir spor saati."
+ },
+ "p_new_006": {
+  "tarih": "2026-11-20",
+  "kisa": "Amazfit Balance 2, 1,5 inç AMOLED ekranı, çok bantlı GPS'i, NFC'si ve yaklaşık 21 günlük piliyle sağlık ve spor odaklı dengeli bir saat. Zepp OS uygulama ekosistemi Wear OS kadar geniş değil.",
+  "metin": [
+   "Amazfit Balance 2, 1,5 inç AMOLED ekran (480x480) ve alüminyum kasayla geliyor. 43 gram ağırlığında, 12,3 mm kalınlığında; spor saati ile şık günlük saat arasında bir denge kuruyor.",
+   "Çok bantlı GPS, barometre ve geniş sensör seti (BioTracker PPG, biyoempedans, sıcaklık, ortam ışığı, manyetik sensör) sağlık ve spor takibini kapsamlı hale getiriyor. Biyoempedans sensörü vücut kompozisyonu ölçümüne imkân tanır. NFC ile temassız ödeme var; Bluetooth 5.2 ve Wi-Fi bağlantısı bulunuyor. Su geçirmezlik 5 ATM.",
+   "Pil süresi katalogda yaklaşık 21 gün. İşletim sistemi Zepp OS; bildirim ve temel uygulamalar sunar ama Wear OS kadar geniş bir uygulama mağazası yok."
+  ],
+  "kimlerAlmali": "Uzun pil, AMOLED ekran ve sağlık takibini bir arada isteyenler, hem Android hem iPhone kullananlar.",
+  "kimlerAlmamali": "Geniş uygulama desteği ve akıllı saat ekosistemi isteyenler.",
+  "sonKarar": "Amazfit Balance 2 alınır, pil ömrü ve özellik dengesi isteyenler için güçlü bir seçim."
+ },
+ "p_new_014": {
+  "tarih": "2026-11-20",
+  "kisa": "Huawei Watch Fit 5 Pro, 1,92 inç AMOLED ekranı, NFC ve dahili GPS'iyle ince ve hafif bir akıllı saat. Pil yaklaşık 10 gün; HarmonyOS ile Google uygulamaları çalışmaz.",
+  "metin": [
+   "Huawei Watch Fit 5 Pro, 1,92 inç AMOLED ekranlı, dikdörtgen kasalı bir akıllı saat. 30 gram ağırlığı ve alüminyum alaşım kasasıyla bilekte hafif. Siyah, gümüş ve altın renk seçenekleri var.",
+   "Sensörler arasında optik kalp, SpO2, sıcaklık, ivmeölçer, jiroskop ve ortam ışığı bulunuyor. Dahili GPS koşu ve yürüyüşte telefonsuz konum takibi sağlar. NFC ile temassız ödeme destekleniyor, su geçirmezlik 5 ATM. Pil süresi katalogda 240 saat, yani yaklaşık 10 gün olarak geçiyor.",
+   "İşletim sistemi HarmonyOS; Google uygulamaları ve Play Store bulunmaz. Bildirim, sağlık ve spor takibi için yeterli, ama uygulama ekosistemi sınırlı."
+  ],
+  "kimlerAlmali": "Şık ve hafif bir saatle sağlık ve spor takibi isteyenler, uzun pil arayanlar.",
+  "kimlerAlmamali": "Google uygulamaları ve geniş uygulama mağazası isteyenler.",
+  "sonKarar": "Huawei Watch Fit 5 Pro alınır, şık tasarım ve pil ömrü için. Akıllı saat esnekliği arayanlar Wear OS modellerine bakmalı."
+ },
+ "y38": {
+  "tarih": "2026-11-20",
+  "kisa": "Fujifilm X-T5, 40,2 MP APS-C sensörü, 6K30 video, toz ve nem koruması ve 557 gramlık gövdesiyle fotoğraf odaklı kullanıcılar için güçlü bir aynasız kamera. Fiyatı orta-üst segmentte.",
+  "metin": [
+   "Fujifilm X-T5, Fujifilm X montajlı ve 40,2 MP APS-C (23,5x15,6 mm) sensörlü bir aynasız kamera. Yüksek çözünürlük, kırpma payını artırır ve manzara, portre, ürün fotoğrafçılığında ayrıntıyı belirginleştirir. ISO aralığı 125-12800, genişletilmiş 64-51200.",
+   "Video tarafında 6K30 destekleniyor. Gövde 557 gram ve toz/nem korumalı; dış mekanda değişken hava koşullarında güven verir. USB Type-C bağlantısı ve siyah, gümüş renk seçenekleri bulunuyor.",
+   "Fujifilm'in film simülasyonları, fotoğrafları düzenleme gerektirmeden karakterli renklerle almayı sağlar; bu, markayı tercih edenlerin en sık dile getirdiği avantajdır."
+  ],
+  "kimlerAlmali": "Fotoğraf ağırlıklı çeken hobi ve profesyonel kullanıcılar, yüksek çözünürlük ve dayanıklı gövde isteyenler.",
+  "kimlerAlmamali": "Video odaklı vlog çekenler ve bütçesi sınırlı yeni başlayanlar.",
+  "sonKarar": "Fujifilm X-T5 alınır, fotoğraf kalitesini ön planda tutanlar için güçlü bir seçim."
+ },
+ "x8": {
+  "tarih": "2026-11-20",
+  "kisa": "Canon EOS R50, 24,2 MP APS-C sensörü, 375 gramlık hafif gövdesi, dönen dokunmatik ekranı ve 4K30 videosuyla yeni başlayanlar ve vlog çekenler için uygun bir aynasız. Toz/su koruması yok.",
+  "metin": [
+   "Canon EOS R50, Canon RF-S montajlı ve 24,2 MP APS-C (22,3x14,9 mm) sensörlü bir aynasız kamera. 375 gram ağırlığıyla oldukça hafif; günlük çantada taşımak kolay.",
+   "3,0 inç dönen dokunmatik LCD ekran, vlog ve selfie çekimlerinde kendinizi kadrajda görmenizi sağlar. Video 4K30, ISO aralığı 100-32000 (genişletilmiş 51200). USB Type-C bağlantısı var; siyah ve beyaz renkleri bulunuyor.",
+   "Toz ve su koruması yok; yağmurda ve tozlu ortamda dikkatli kullanılmalı. Lens seçenekleri RF-S ve RF lens sistemine dayanıyor."
+  ],
+  "kimlerAlmali": "Fotoğrafa yeni başlayanlar, vlog çekenler, hafif kamera isteyenler.",
+  "kimlerAlmamali": "Zorlu hava koşullarında çekim yapanlar ve profesyonel düzeyde kontrol isteyenler.",
+  "sonKarar": "Canon EOS R50 alınır, ilk aynasız kamerası için hafif ve kullanımı kolay bir seçenek arayanlar için."
+ },
+ "y37": {
+  "tarih": "2026-11-20",
+  "kisa": "Sony ZV-E10, 24,2 MP APS-C sensörü, 343 gramlık gövdesi ve değiştirilebilir lens sistemiyle vlog odaklı bir aynasız kamera. 4K30 video var; toz ve su koruması yok.",
+  "metin": [
+   "Sony ZV-E10, Sony E montajlı ve 24,2 MP APS-C (23,5x15,6 mm) sensörlü bir kamera. 343 gram ağırlığıyla kompakt ve elde tutarak çekim için uygun. ISO aralığı 100-32000, genişletilmiş 51200.",
+   "Video 4K30 destekleniyor. Sony E montaj, geniş bir lens ekosistemine erişim sağlar; bu, sistemi zamanla büyütmek isteyenler için avantaj. USB Type-C bağlantısı var, siyah ve beyaz renkleri bulunuyor.",
+   "Toz ve su koruması yok. Vlog odaklı tasarım fotoğraf çekimlerinde de kullanılabilir, ama fotoğraf ağırlıklı kullanıcılar için vizör ve ergonomi açısından farklı modellere bakmak mantıklı olabilir."
+  ],
+  "kimlerAlmali": "Vlog ve içerik üretenler, Sony lens sistemine girmek isteyenler.",
+  "kimlerAlmamali": "Fotoğraf ağırlıklı ve hava koşullarına dayanıklı gövde isteyenler.",
+  "sonKarar": "Sony ZV-E10 alınır, video ve vlog odaklı kompakt bir aynasız arayanlar için."
  }
 }

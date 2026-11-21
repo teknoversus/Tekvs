@@ -163,6 +163,21 @@
 .tvh-note strong{color:#fff;}
 .tvh-open{display:block;text-align:center;padding:14px;border-radius:12px;background:#fff;color:#1c1917;font-weight:700;font-size:15px;text-decoration:none;}
 .tvh-open:hover{background:#ffedd5;}
+/* iki ürünü karşılaştır */
+.tvh-cmp{margin-top:56px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:32px;align-items:center;}
+.tvh-cmp h2{font-family:'Inter',sans-serif;margin:0 0 8px;font-size:24px;font-weight:700;letter-spacing:-0.02em;}
+.tvh-cmp p{margin:0;font-size:15px;color:var(--ink-soft);line-height:1.55;}
+.tvh-cmp-form{display:flex;flex-direction:column;gap:10px;}
+.tvh-cmp-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto;gap:12px;align-items:end;}
+.tvh-cmp-f{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.tvh-cmp-f label{font-size:13px;font-weight:600;color:var(--ink-soft);}
+.tvh-cmp-f input{height:50px;padding:0 14px;border:1px solid var(--line-strong);border-radius:10px;font:inherit;font-size:15px;background:#fafaf9;color:var(--ink);min-width:0;}
+.tvh-cmp-f input:focus{outline:2px solid #fdba74;border-color:#ea580c;background:#fff;}
+.tvh-cmp-vs{width:40px;height:40px;margin-bottom:5px;border-radius:50%;background:#1c1917;color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;}
+.tvh-cmp-go{height:50px;padding:0 24px;border:0;border-radius:10px;background:#ea580c;color:#fff;font:inherit;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap;}
+.tvh-cmp-go:hover{background:#c2410c;}
+.tvh-cmp-msg{font-size:14px;color:#b91c1c;min-height:20px;}
+.tvh-cmp-hint{font-size:13px;color:#78716c;}
 /* bölümler */
 .tvh-blk{padding-top:64px;}
 .tvh-bh{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:24px;}
@@ -212,6 +227,7 @@
 .tvh-upd{font-size:13px;color:var(--ink-soft);margin-top:24px;}
 @media (prefers-reduced-motion:reduce){.tvh-slide{transition:none;}}
 @media (max-width:900px){
+  .tvh-cmp{grid-template-columns:minmax(0,1fr);}
   .tvh-hgrid{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:32px;padding-bottom:28px;}
   .tvh-pgrid{grid-template-columns:repeat(2,minmax(0,1fr));}
 }
@@ -237,6 +253,11 @@
   .tvh-k .nm{font-size:15px;}.tvh-k .sp{font-size:13px;}.tvh-k .pr{font-size:16px;}
   .tvh-n .nimg{height:140px;}.tvh-n .nt{font-size:16px;}
   .tvh-rl{grid-template-columns:1fr;}
+  .tvh-cmp{margin-top:40px;padding:18px;gap:16px;}
+  .tvh-cmp h2{font-size:21px;}
+  .tvh-cmp-row{grid-template-columns:minmax(0,1fr);gap:8px;}
+  .tvh-cmp-vs{margin:2px auto;}
+  .tvh-cmp-go{width:100%;}
 }
 </style>
 </head>
@@ -273,6 +294,22 @@
 </section>
 
 <main class="wrap">
+  <section class="tvh-cmp" id="karsilastir" aria-labelledby="cmpTitle">
+    <div>
+      <h2 id="cmpTitle">İki ürünü karşılaştır</h2>
+      <p>Aynı kategoriden iki model seç; özellikler, fiyat ve puan yan yana açılsın.</p>
+    </div>
+    <form class="tvh-cmp-form" id="cmpForm" autocomplete="off" novalidate>
+      <div class="tvh-cmp-row">
+        <div class="tvh-cmp-f"><label for="cmpA">1. ürün</label><input id="cmpA" list="cmpList" placeholder="Örn. iPhone 17" /></div>
+        <span class="tvh-cmp-vs" aria-hidden="true">VS</span>
+        <div class="tvh-cmp-f"><label for="cmpB">2. ürün</label><input id="cmpB" list="cmpList" placeholder="Örn. Galaxy S26" /></div>
+        <button type="submit" class="tvh-cmp-go">Karşılaştır</button>
+      </div>
+      <datalist id="cmpList"></datalist>
+      <div class="tvh-cmp-msg" id="cmpMsg" role="status" aria-live="polite"></div>
+    </form>
+  </section>
 <!-- HOME_KATEGORI_START --><!-- HOME_KATEGORI_END -->
 <!-- HOME_URUNLER_START --><!-- HOME_URUNLER_END -->
 <!-- HOME_HABER_START --><!-- HOME_HABER_END -->
@@ -384,6 +421,50 @@
     });
   });
   if(input) input.addEventListener('focus',function(){ loadProducts(); },{once:true});
+
+  // İki ürünü karşılaştır: o ikilinin statik sayfası varsa oraya gider
+  // (adres build'deki comparisonFileName() ile aynı kural), yoksa kategori
+  // sayfasındaki karşılaştırma penceresini açar (?compare=id1,id2).
+  var CAT_PAGE={'Telefon':'telefon.html','Televizyon':'televizyon.html','Dizüstü':'dizustu.html','Tablet':'tablet.html','Kulaklık':'kulaklik.html','Akıllı Saat':'akilli-saat.html','Kamera':'kamera.html'};
+  var cmpForm=document.getElementById('cmpForm'), cA=document.getElementById('cmpA'), cB=document.getElementById('cmpB'), cMsg=document.getElementById('cmpMsg'), cList=document.getElementById('cmpList');
+  var cmpReady=false;
+  function cmpInit(){ if(cmpReady) return; cmpReady=true; loadProducts().then(function(list){
+    var names=(list||[]).filter(function(p){ return !p.upcoming; }).map(function(p){ return p.name; }).sort(function(a,b){ return a.localeCompare(b,'tr'); });
+    var frag=document.createDocumentFragment(); names.forEach(function(n){ var o=document.createElement('option'); o.value=n; frag.appendChild(o); }); cList.appendChild(frag); }); }
+  function slug(t){ return String(t).toLowerCase().replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c').replace(/[^a-z0-9]/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,''); }
+  function pairUrl(a,b){
+    if(!(window.crypto&&crypto.subtle&&window.TextEncoder)) return Promise.resolve(null);
+    var o=[a,b].sort(function(x,y){ return String(x.id).localeCompare(String(y.id),'en'); });
+    return crypto.subtle.digest('SHA-256',new TextEncoder().encode(o.map(function(p){ return String(p.id); }).join('|'))).then(function(buf){
+      var h=Array.prototype.map.call(new Uint8Array(buf),function(x){ return x.toString(16).padStart(2,'0'); }).join('').slice(0,12);
+      var ss=function(n){ var t=slug(n).slice(0,34).replace(/-+$/,''); return t||'urun'; };
+      return 'karsilastir/'+ss(o[0].name)+'-vs-'+ss(o[1].name)+'-'+h+'.html'; });
+  }
+  function findP(list,v){ v=String(v||'').trim().toLocaleLowerCase('tr-TR'); if(!v) return null; var l=list.filter(function(p){ return !p.upcoming; }); var nm=function(p){ return p.name.toLocaleLowerCase('tr-TR'); };
+    return l.find(function(p){ return nm(p)===v; })||l.find(function(p){ return nm(p).indexOf(v)===0; })||(v.length>=3?l.find(function(p){ return nm(p).indexOf(v)>=0; }):null)||null; }
+  if(cmpForm){
+    [cA,cB].forEach(function(el){ el.addEventListener('focus',cmpInit,{once:true}); });
+    cmpForm.addEventListener('submit',function(e){
+      e.preventDefault(); cMsg.textContent='';
+      var v1=cA.value, v2=cB.value;
+      if(!v1.trim()||!v2.trim()){ cMsg.textContent='İki ürünü de yaz; yazmaya başlayınca çıkan listeden seçebilirsin.'; return; }
+      cMsg.style.color='#78716c'; cMsg.textContent='Açılıyor…';
+      loadProducts().then(function(list){
+        list=list||[]; var a=findP(list,v1), b=findP(list,v2); cMsg.style.color='';
+        if(!list.length){ cMsg.textContent='Ürün listesi yüklenemedi, sayfayı yenileyip tekrar dene.'; return; }
+        if(!a){ cMsg.textContent='"'+v1+'" katalogda bulunamadı. Listeden seçmeyi dene.'; return; }
+        if(!b){ cMsg.textContent='"'+v2+'" katalogda bulunamadı. Listeden seçmeyi dene.'; return; }
+        if(a.id===b.id){ cMsg.textContent='İki farklı ürün seç.'; return; }
+        if(a.cat!==b.cat){ cMsg.textContent='Sadece aynı kategorideki ürünler karşılaştırılabilir ('+a.cat+' ile '+b.cat+' olmaz).'; return; }
+        try{ if(typeof gtag==='function') gtag('event','home_compare_tool',{pair:a.name+' vs '+b.name}); }catch(err){}
+        var fallback=(CAT_PAGE[a.cat]||'index.html')+'?compare='+encodeURIComponent(a.id)+','+encodeURIComponent(b.id);
+        pairUrl(a,b).then(function(u){
+          if(!u){ location.href=fallback; return; }
+          return fetch(u,{method:'HEAD',cache:'no-store'}).then(function(r){ location.href=r.ok?u:fallback; });
+        }).catch(function(){ location.href=fallback; });
+      });
+    });
+  }
 })();
 </script>
 </body>

@@ -14,7 +14,8 @@
 //   1. Model sayfası ≥ MIN_SPECS dolu özellik VE ≥ MIN_EDITOR_WORDS kelimelik
 //      özgün editör metni yoksa noindex olur, sitemap'e girmez.
 //   2. Karşılaştırma yalnızca elle seçilmiş curatedPairs için üretilir; tüm
-//      kombinasyonlar üretilmez. İki model de indekslenebilir değilse noindex.
+//      kombinasyonlar üretilmez. İki model de indekslenebilir değilse ya da
+//      ≥80 kelimelik özgün editör yorumu (pairNotes) yoksa noindex.
 //   3. Her sayfada veri kaynağı bağlantısı ve tarih; Türkiye donanım uyarısı.
 //   4. Sayfalar gerçek kullanım değeri taşır: şarj maliyeti hesaplayıcı,
 //      özgün değerlendirme, rehberler. Fotoğraf yerine jenerik çizim (telif yok).
@@ -355,6 +356,7 @@ ${creditsHtml([m, ...similar])}`;
       if(wa) aw++; if(wb) bw++;
       return `<tr><td>${esc(k)}</td><td class="${wa ? 'w' : ''}">${x != null ? esc(num(x)) : '—'}</td><td class="${wb ? 'w' : ''}">${y != null ? esc(num(y)) : '—'}</td></tr>`;
     }).join('');
+    const note = (data.pairNotes || {})[`${a.id}|${b.id}`];
     const pa = minPrice(a), pb = minPrice(b);
     const priceRow = pa && pb ? `<tr><td>Başlangıç fiyatı</td><td class="${pa < pb ? 'w' : ''}">${tl(pa)}</td><td class="${pb < pa ? 'w' : ''}">${tl(pb)}</td></tr>` : '';
     const lead = aw === bw ? null : (aw > bw ? a : b);
@@ -381,12 +383,13 @@ ${creditsHtml([m, ...similar])}`;
 <h1 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px">${esc(a.name)} vs ${esc(b.name)}</h1>
 <section class="ev-vs"><a href="../${modelUrl(a)}">${photo(a, '../../', 'a' + slugify(a.name), true)}<h2>${esc(a.name)}</h2></a><div class="vsb">VS</div><a href="../${modelUrl(b)}">${photo(b, '../../', 'b' + slugify(b.name), true)}<h2>${esc(b.name)}</h2></a></section>
 <section class="ev-sec"><h2>Kısa sonuç</h2><div class="ev-box"><p>${esc(verdict)}</p></div></section>
+${note ? `<section class="ev-sec"><h2>Editör yorumu</h2><div class="ev-box"><p>${esc(note)}</p></div></section>` : ''}
 <section class="ev-sec"><h2>Özellik karşılaştırması</h2><table class="ev-t"><tr><th>Özellik</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th></tr>${priceRow}${rows}</table>
 <p class="ev-note">Renkli hücre o satırdaki daha iyi değeri gösterir. Fiyat satırı modelin en uygun varyantını, teknik satırlar ${esc(a.name)} için ${esc(a.refVariant || '')}, ${esc(b.name)} için ${esc(b.refVariant || '')} varyantını gösterir; tüm varyantlar model sayfalarında. Kaynaklar: <a href="${esc(a.source)}" rel="noopener nofollow" target="_blank">${esc(a.name)}</a>, <a href="${esc(b.source)}" rel="noopener nofollow" target="_blank">${esc(b.name)}</a>.</p></section>
 <section class="ev-sec"><h2>Hangisi kimin için?</h2><div class="ev-two">${[a, b].map(x => `<div class="ev-box"><h3>${esc(x.name)}</h3><ul>${x.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul><p class="ev-note" style="margin-top:8px">Dikkat: ${esc(x.cons.join('; '))}.</p><p class="ev-note"><a href="../${modelUrl(x)}">Ayrıntılı değerlendirmeyi oku →</a></p></div>`).join('')}</div></section>
 <section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${faq.map(([q, a2]) => `<details><summary>${esc(q)}</summary><p>${esc(a2)}</p></details>`).join('')}</section>
 ${creditsHtml([a, b])}`;
-    const ok = isIndexable(a) && isIndexable(b);
+    const ok = isIndexable(a) && isIndexable(b) && words(note) >= 80;
     write(rel, shell({ title: `${a.name} vs ${b.name}: Menzil, Şarj ve Tüketim | TeknoVersus`, desc: `${a.name} mı ${b.name} mı? WLTP menzil, tüketim, %10-80 şarj süresi ve bagaj karşılaştırması.`.slice(0, 160), canonical: url, robots: robots(ok), body, root: '../../', draft,
       jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [`${a.name} vs ${b.name}`, url]]), faqLd(faq)] }));
     if(publish && ok) sitemap.push(rel);

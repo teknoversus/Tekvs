@@ -27,7 +27,7 @@ Bu bölüm `ev-taslak` dalında durur ve **main'e birleştirilmedi**. Deploy yal
 ## AdSense kuralları (kodda zorunlu)
 - `sample:true` kayıt varsa yayın modu hata verir.
 - Model sayfası: ≥8 dolu özellik + ≥120 kelimelik editör metni yoksa `noindex`.
-- Karşılaştırma: yalnızca `curatedPairs`, iki model de indekslenebilirse `index`.
+- Karşılaştırma: yalnızca `curatedPairs`, iki model de indekslenebilir ve `pairNotes` içinde ≥80 kelimelik özgün yorum varsa `index`.
 - Sitemap'e yalnızca indekslenebilir sayfalar girer.
 
 ## Doğrulama durumu (22 Kasım 2026)

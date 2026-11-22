@@ -3,7 +3,7 @@
   "slug": "evde-elektrikli-arac-sarji",
   "title": "Evde Elektrikli Araç Şarjı: Wallbox, Kablo Kesiti ve Sözleşme Gücü",
   "desc": "Evde elektrikli araç şarj etmek için ne gerekir? Monofaze ve trifaze şarj gücü, wallbox seçimi, kablo kesiti, kaçak akım koruması ve sözleşme gücü.",
-  "intro": "Elektrikli araç sahiplerinin büyük kısmı şarjın çoğunu evde ya da sitede yapıyor. Doğru kurulmuş bir ev şarj noktası hem en ucuz hem en zahmetsiz yöntem. Yanlış kurulmuş bir hat ise saatlerce tam yükte çalışan bir cihaz olduğu için kablo ısınmasından sigorta atmasına kadar sorun çıkarır. Bu rehberde kurulumdan önce bilmeniz gerekenleri adım adım anlatıyoruz.",
+  "intro": "Elektrikli araç sahiplerinin büyük kısmı şarjın çoğunu evde ya da sitede yapıyor. Doğru kurulmuş bir ev şarj noktası hem en ucuz hem en zahmetsiz yöntem. Yanlış kurulmuş bir hat ise saatlerce tam yükte çalışan bir cihaz olduğu için kablo ısınmasından sigorta atmasına kadar sorun çıkarır. Bu rehberde kurulumdan önce bilmeniz gerekenleri adım adım anlatıyoruz. Rehber genel bilgi amaçlıdır; kesin hesap ve kurulumu her zaman yetkili bir elektrik tesisatçısı yapmalıdır.",
   "sections": [
    {
     "h": "Önce şunu bilin: şarj gücünü ne belirler?",
@@ -40,13 +40,15 @@
      "16 A trifaze (11 kW), kısa hat: genellikle 2,5-4 mm² bakır",
      "32 A monofaze (7,4 kW): genellikle 6 mm² bakır",
      "32 A trifaze (22 kW): genellikle 6-10 mm² bakır",
-     "Hat uzadıkça (örneğin bodrum otoparka 40-50 m) kesit bir üst değere çıkabilir"
+     "Hat uzadıkça (örneğin bodrum otoparka 40-50 m) kesit bir üst değere çıkabilir",
+     "Hat sigortası (otomatik sigorta) kablo kesitine ve şarj ünitesinin akımına uygun seçilmeli; sigortayı büyütüp kabloyu aynı bırakmak tehlikelidir",
+     "Trifaze binalarda 7,4 kW'lık monofaze bir şarj ünitesi tek faza saatlerce yük bindirir; mümkünse trifaze ünite tercih edilmeli ya da yük fazlara dengelenmeli"
     ]
    },
    {
     "h": "Kaçak akım koruması neden özel?",
     "p": [
-     "Elektrikli araç şarjında, standart kaçak akım rölelerinin (Tip AC) algılayamadığı doğru akım (DC) kaçakları oluşabilir. Bu yüzden şarj noktası için ya Tip B kaçak akım rölesi ya da Tip A röle ile birlikte 6 mA DC kaçak algılama gerekir. Birçok wallbox bu DC algılamayı kendi içinde barındırır; satın alırken teknik föyünde \"6 mA DC kaçak akım algılama\" ibaresini arayın. Ayrıca topraklamanın ölçülmesi ve uygun değerde olması şarttır."
+     "Her şarj noktası kendine ait, en fazla 30 mA'lik bir kaçak akım koruma cihazıyla korunmalıdır; şarj ünitesini evdeki başka devrelerle aynı kaçak akım rölesine bağlamak doğru değildir. Elektrikli araç şarjında, standart kaçak akım rölelerinin (Tip AC) algılayamadığı doğru akım (DC) kaçakları oluşabilir. Bu yüzden şarj noktası için ya Tip B kaçak akım rölesi ya da Tip A röle ile birlikte 6 mA DC kaçak algılama gerekir. Birçok wallbox bu DC algılamayı kendi içinde barındırır; satın alırken teknik föyünde \"6 mA DC kaçak akım algılama\" ibaresini arayın. Ayrıca topraklamanın ölçülmesi ve uygun değerde olması şarttır."
     ],
     "list": []
    },
@@ -58,11 +60,32 @@
     "list": []
    },
    {
+    "h": "Gece şarjı ve üç zamanlı tarife",
+    "p": [
+     "Mesken aboneliklerinde tek zamanlı tarifenin yanında üç zamanlı tarife de seçilebilir. Üç zamanlı tarifede gece saatlerindeki (22.00-06.00) birim fiyat gündüze ve puant saatlere göre daha düşüktür. Aracı her gece şarj edecekseniz, çoğu wallbox ve araç uygulamasının sunduğu zamanlanmış şarj özelliğiyle şarjı bu saatlere kaydırmak aylık maliyeti belirgin şekilde düşürebilir. Tarife değişikliği için elektrik tedarik şirketinize başvurmanız yeterlidir; sayacınız üç zamanlı ölçüme uygun değilse değiştirilmesi gerekebilir."
+    ],
+    "list": []
+   },
+   {
     "h": "Sitede ya da apartmanda kurulum",
     "p": [
      "Ortak otoparka şarj ünitesi kurmak için site ya da apartman yönetiminin onayı gerekir; ortak alanlardaki değişiklikler için kat malikleri kurulu kararı istenebilir. Hattın hangi sayaçtan besleneceği önemlidir: kendi dairenizin sayacından ayrı bir hat çekmek, tüketimin size ait olmasını sağlar. Birden fazla kişinin şarj edeceği sitelerde yük yönetimli, ölçümlü ve kart ile kullanılan ortak sistemler daha adil ve güvenlidir."
     ],
     "list": []
+   },
+   {
+    "h": "Kurulumdan önce kontrol listesi",
+    "p": [
+     "Elektrikçinizle görüşmeden önce şu soruların cevabını hazırlamak hem süreyi hem maliyeti kısaltır:"
+    ],
+    "list": [
+     "Bina monofaze mi trifaze mi beslenmiş, sayaç ve pano nerede?",
+     "Pano ile park yeri arasındaki kablo mesafesi kaç metre?",
+     "Mevcut sözleşme gücünüz kaç kW, aynı anda çalışan büyük yükleriniz neler?",
+     "Aracınızın dahili şarj cihazı kaç kW (çoğunda 7,4 ya da 11 kW)?",
+     "Şarj ünitesi açık havada mı duracak? Açık hava için en az IP54 koruma sınıfı aranmalı",
+     "Site ya da apartman yönetiminden yazılı onay alındı mı?"
+    ]
    }
   ],
   "faq": [
@@ -81,6 +104,10 @@
    {
     "q": "Wallbox kurulumunu kim yapmalı?",
     "a": "Hesaplamaları yapabilecek ve tesisatı standarda uygun kuracak yetkili bir elektrik tesisatçısı yapmalıdır."
+   },
+   {
+    "q": "Gece şarj etmek daha ucuz mu?",
+    "a": "Üç zamanlı mesken tarifesine geçerseniz gece saatlerinde (22.00-06.00) birim fiyat daha düşüktür. Zamanlanmış şarjla aracı bu saatlerde şarj etmek maliyeti düşürür."
    }
   ]
  },

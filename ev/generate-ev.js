@@ -29,7 +29,7 @@ const BASE = 'elektrikli-araclar';
 
 const esc = s => (s == null ? '' : String(s)).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const TR = {'ı':'i','İ':'i','ş':'s','Ş':'s','ğ':'g','Ğ':'g','ü':'u','Ü':'u','ö':'o','Ö':'o','ç':'c','Ç':'c','ë':'e'};
-const slugify = n => String(n).split('').map(c => TR[c] || c).join('').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const slugify = n => String(n).replace(/\+/g, ' plus').split('').map(c => TR[c] || c).join('').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const num = v => (typeof v === 'number') ? v.toLocaleString('tr-TR') : v;
 const trDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -51,6 +51,10 @@ const SPEC_GROUPS = [
 const COMPARE_KEYS = ['WLTP menzil (km)', 'WLTP tüketim (kWh/100 km)', 'Batarya net (kWh)', 'DC şarj (kW)', 'DC %10-80 (dk)', 'AC şarj (kW)', 'Güç (kW)', '0-100 km/s (sn)', 'Bagaj (litre)', 'Ağırlık (kg)'];
 
 const sp = (m, k) => (m.spec || {})[k];
+const tl = n => n.toLocaleString('tr-TR') + ' ₺';
+const prices = m => (m.variants || []).flatMap(v => v.trims.map(t => t.price)).filter(Boolean);
+const minPrice = m => prices(m).length ? Math.min(...prices(m)) : null;
+const maxPrice = m => prices(m).length ? Math.max(...prices(m)) : null;
 const consumption = m => sp(m, 'WLTP tüketim (kWh/100 km)') || (sp(m, 'Batarya net (kWh)') && sp(m, 'WLTP menzil (km)') ? sp(m, 'Batarya net (kWh)') / sp(m, 'WLTP menzil (km)') * 100 : null);
 const specCount = m => Object.values(m.spec || {}).filter(v => v !== null && v !== '' && v !== undefined).length;
 const words = s => (s || '').trim().split(/\s+/).filter(Boolean).length;
@@ -116,6 +120,16 @@ const CSS = `
 .ev-hero .ev-ph{border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.35);}
 .ev-vs .ev-ph{border-radius:12px;margin-bottom:10px;}
 .ev-cred{margin-top:28px;line-height:1.7;}
+.ev-price{font-size:13.5px;color:var(--ink-soft);margin:-4px 0 10px;}
+.ev-price b{color:var(--ink);font-size:15px;}
+table.ev-v td,table.ev-v th{vertical-align:top;}
+table.ev-v td:first-child{width:auto;font-weight:600;}
+table.ev-v td:not(:first-child):not(:last-child),table.ev-v th{white-space:nowrap;}
+table.ev-v tr.ref td{background:var(--ev-soft);}
+.ev-trim{display:flex;justify-content:space-between;gap:12px;white-space:nowrap;}
+.ev-trim+.ev-trim{margin-top:4px;}
+.ev-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;}
+.ev-scroll table{min-width:640px;}
 .ev-card .bd{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column;}
 .ev-card .tag{font-size:11.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;font-weight:600;}
 .ev-card h3{font-size:16.5px;margin:3px 0 10px;}
@@ -222,6 +236,14 @@ ${scripts}
 const crumbLd = items => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: u })) });
 const faqLd = faq => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
 
+function variantsHtml(m){
+  if(!m.variants || !m.variants.length) return '';
+  const rows = m.variants.map(v => `<tr class="${v.name === m.refVariant && m.variants.length > 1 ? 'ref' : ''}"><td>${esc(v.name)}</td><td>${v.battery ? esc(v.battery) + ' kWh' : '—'}</td><td>${v.range ? esc(num(v.range)) + ' km' : '—'}</td><td>${v.power ? v.power + ' kW' : '—'}</td><td>${v.accel ? num(v.accel) + ' sn' : '—'}</td><td>${esc(v.drive || '—')}</td><td>${v.trims.map(t => `<div class="ev-trim"><span>${esc(t.name)}</span><b>${tl(t.price)}</b></div>`).join('')}</td></tr>`).join('');
+  return `<section class="ev-sec" id="fiyatlar"><h2>Türkiye varyantları ve fiyatları</h2>
+<div class="ev-scroll"><table class="ev-t ev-v"><tr><th>Varyant</th><th>Batarya</th><th>WLTP menzil</th><th>Güç</th><th>0-100 km/s</th><th>Çekiş</th><th>Donanım ve liste fiyatı</th></tr>${rows}</table></div>
+<p class="ev-note">Fiyatlar ${esc(m.priceDate)} tarihli tavsiye edilen anahtar teslim liste fiyatlarıdır (<a href="${esc(m.priceSource)}" rel="noopener nofollow" target="_blank">kaynak</a>); kampanya ve ÖTV güncellemeleriyle değişebilir. ${m.variants.length > 1 ? `Vurgulu satır, teknik özellik tablosundaki varyanttır. ` : ''}Varyant teknik verileri: ${[...new Set(m.variants.map(v => v.specSource || m.source))].map((u, i) => `<a href="${esc(u)}" rel="noopener nofollow" target="_blank">${esc(new URL(u).hostname.replace('www.', ''))}</a>`).join(', ')}.</p></section>`;
+}
+
 function generateEv({ rootDir, outDir, publish = false }){
   const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'models.json'), 'utf8'));
   const guides = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'guides.json'), 'utf8'));
@@ -243,14 +265,17 @@ function generateEv({ rootDir, outDir, publish = false }){
   const best = (k, hi) => models.slice().sort((x, y) => hi ? sp(y, k) - sp(x, k) : sp(x, k) - sp(y, k))[0];
   const updated = models.map(m => m.sourceDate).sort().pop();
 
-  const card = (m, pre = '') => `<a class="ev-card" href="${pre}${modelUrl(m)}" data-brand="${esc(m.brand)}" data-body="${esc(m.body)}" data-range="${sp(m, 'WLTP menzil (km)')}" data-cons="${consumption(m)}" data-dc="${sp(m, 'DC %10-80 (dk)')}">
+  const card = (m, pre = '') => `<a class="ev-card" href="${pre}${modelUrl(m)}" data-brand="${esc(m.brand)}" data-body="${esc(m.body)}" data-range="${sp(m, 'WLTP menzil (km)')}" data-cons="${consumption(m)}" data-dc="${sp(m, 'DC %10-80 (dk)')}" data-price="${minPrice(m) || 0}">
     <div class="art">${photo(m, '../', 'c' + slugify(m.name), false)}</div>
     <div class="bd"><div class="tag">${esc(m.brand)} · ${esc(m.body)}</div><h3>${esc(m.name)}</h3>
+    ${minPrice(m) ? `<div class="ev-price"><b>${tl(minPrice(m))}</b>'den başlayan · ${m.variants.length} varyant</div>` : ''}
     <div class="kpi"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(consumption(m))}</b><span>kWh/100 km</span></div><div><b>${sp(m, 'DC %10-80 (dk)')} dk</b><span>DC %10-80</span></div></div></div></a>`;
   const guideCards = (pre) => guides.map(g => `<a class="ev-box ev-gl" href="${pre}rehber/${g.slug}.html"><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p><span>Rehberi oku →</span></a>`).join('');
 
   // ---------- Liste sayfası ----------
+  const cheapest = models.filter(minPrice).sort((a, b) => minPrice(a) - minPrice(b))[0];
   const listFaq = [
+    ['Türkiye\'de en ucuz elektrikli araç hangisi?', `Listemizdeki modeller arasında başlangıç fiyatı en düşük olan ${cheapest.name} (${tl(minPrice(cheapest))}, ${cheapest.priceDate} liste fiyatı).`],
     ['Türkiye\'de en uzun menzilli elektrikli araç hangisi?', `Listemizdeki modeller arasında WLTP menzili en yüksek olan ${best('WLTP menzil (km)', true).name} (${num(sp(best('WLTP menzil (km)', true), 'WLTP menzil (km)'))} km). Gerçek menzil otoyol hızı ve hava sıcaklığına göre düşer.`],
     ['En verimli elektrikli araç hangisi?', `Onaylı WLTP tüketimi en düşük model ${best('WLTP tüketim (kWh/100 km)', false).name} (${num(sp(best('WLTP tüketim (kWh/100 km)', false), 'WLTP tüketim (kWh/100 km)'))} kWh/100 km).`],
     ['En hızlı şarj olan elektrikli araç hangisi?', `%10-80 DC şarj süresi en kısa model ${best('DC %10-80 (dk)', false).name} (yaklaşık ${sp(best('DC %10-80 (dk)', false), 'DC %10-80 (dk)')} dakika). Bu süre için yeterince güçlü bir istasyon gerekir.`],
@@ -262,9 +287,9 @@ function generateEv({ rootDir, outDir, publish = false }){
 <div class="stats"><div><b>${models.length}</b><span>Model</span></div><div><b>${brands.length}</b><span>Marka</span></div><div><b>${num(sp(best('WLTP menzil (km)', true), 'WLTP menzil (km)'))} km</b><span>En uzun menzil</span></div></div></div>
 <div>${photo(models.find(x => x.id === 'togg-t10x-v2-rwd-uzun-menzil') || models[0], '../', 'hero', true)}</div></section>
 <div class="ev-bar"><div class="ev-chips" id="evFilters"><button class="on" data-f="*" data-k="brand">Tümü</button>${bodies.map(b => `<button data-f="${esc(b)}" data-k="body">${esc(b)}</button>`).join('')}${brands.map(b => `<button data-f="${esc(b)}" data-k="brand">${esc(b)}</button>`).join('')}</div>
-<select id="evSort" aria-label="Sırala"><option value="range">Menzile göre</option><option value="cons">Verimliliğe göre</option><option value="dc">Şarj süresine göre</option></select></div>
+<select id="evSort" aria-label="Sırala"><option value="range">Menzile göre</option><option value="cons">Verimliliğe göre</option><option value="dc">Şarj süresine göre</option><option value="price">Fiyata göre</option></select></div>
 <div class="ev-grid" id="evGrid">${models.slice().sort((a, b) => sp(b, 'WLTP menzil (km)') - sp(a, 'WLTP menzil (km)')).map(m => card(m)).join('\n')}</div>
-<p class="ev-note">Veriler son olarak ${trDate(updated)} tarihinde kontrol edildi. Fiyat bilgisi vermiyoruz; Türkiye fiyatları sık değiştiği için güncel fiyatı yetkili satıcıdan teyit edin.</p>
+<p class="ev-note">Teknik veriler son olarak ${trDate(updated)} tarihinde kontrol edildi. Fiyatlar Kasım 2026 tavsiye edilen anahtar teslim liste fiyatlarıdır; kampanya, kur ve ÖTV güncellemeleriyle ay içinde değişebilir. Satın almadan önce yetkili satıcıdan teyit edin.</p>
 ${calcHtml(models, null)}
 <section class="ev-sec"><h2>Öne çıkan karşılaştırmalar</h2><div class="ev-grid">${pairs.map(([a, b]) => `<a class="ev-card" href="${pairUrl(a, b)}"><div class="bd"><div class="tag">Karşılaştırma</div><h3>${esc(a.name)} <span style="color:var(--ev)">vs</span> ${esc(b.name)}</h3>
     <div class="kpi" style="grid-template-columns:1fr 1fr"><div><b>${num(sp(a, 'WLTP menzil (km)'))} km</b><span>${esc(a.brand)}</span></div><div><b>${num(sp(b, 'WLTP menzil (km)'))} km</b><span>${esc(b.brand)}</span></div></div></div></a>`).join('\n')}</div></section>
@@ -292,6 +317,7 @@ s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children)
       [`${m.name} menzili ne kadar?`, `Onaylı WLTP menzili ${num(sp(m, 'WLTP menzil (km)'))} km. Yazın 120 km/s otoyolda bunun yaklaşık %70-75'i, kışın daha azı beklenebilir.`],
       [`${m.name} kaç kWh batarya kullanıyor?`, `Brüt ${num(sp(m, 'Batarya brüt (kWh)'))} kWh, kullanılabilir (net) ${num(sp(m, 'Batarya net (kWh)'))} kWh batarya.`],
       [`${m.name} ne kadar sürede şarj olur?`, `DC hızlı şarjda tepe güç ${sp(m, 'DC şarj (kW)')} kW, %10'dan %80'e yaklaşık ${sp(m, 'DC %10-80 (dk)')} dakika. Evde ${num(sp(m, 'AC şarj (kW)'))} kW AC şarjla boş bataryayı doldurmak yaklaşık ${Math.ceil(sp(m, 'Batarya net (kWh)') / sp(m, 'AC şarj (kW)') * 1.1)} saat sürer.`],
+      ...(minPrice(m) ? [[`${m.name} fiyatı ne kadar?`, `${m.priceDate} liste fiyatlarına göre ${tl(minPrice(m))}${maxPrice(m) !== minPrice(m) ? ` ile ${tl(maxPrice(m))} arasında` : ''}. Türkiye'de ${m.variants.length} varyant ve ${prices(m).length} donanım seçeneği var.`]] : []),
       [`${m.name} 100 km'de ne kadar elektrik harcar?`, `Onaylı WLTP tüketimi ${num(c)} kWh/100 km. Gerçek tüketim hız, sıcaklık ve sürüş tarzına göre değişir.`],
     ];
     const url = `${SITE}/${BASE}/${modelUrl(m)}`;
@@ -299,20 +325,21 @@ s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children)
 <nav class="crumb"><a href="../index.html">Anasayfa</a> / <a href="index.html">Elektrikli Araçlar</a> / ${esc(m.name)}</nav>
 <section class="ev-hero"><div><div class="eyebrow">${esc(m.brand)} · ${esc(m.body)} · ${esc(sp(m, 'Çekiş'))}</div><h1>${esc(m.name)}</h1>
 <p>${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(sp(m, 'Batarya net (kWh)'))} kWh kullanılabilir batarya ve %10-80 DC şarj için yaklaşık ${sp(m, 'DC %10-80 (dk)')} dakika.</p>
-<div class="stats"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(c)}</b><span>kWh/100 km</span></div><div><b>${num(sp(m, '0-100 km/s (sn)'))} sn</b><span>0-100 km/s</span></div><div><b>${sp(m, 'DC şarj (kW)')} kW</b><span>DC şarj</span></div></div></div>
+<div class="stats"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(c)}</b><span>kWh/100 km</span></div><div><b>${num(sp(m, '0-100 km/s (sn)'))} sn</b><span>0-100 km/s</span></div><div><b>${sp(m, 'DC şarj (kW)')} kW</b><span>DC şarj</span></div></div>${minPrice(m) ? `<p style="margin-top:16px"><a href="#fiyatlar" style="color:#5eead4;font-weight:600">${tl(minPrice(m))}'den başlayan fiyatlar · ${m.variants.length} varyant →</a></p>` : ''}</div>
 <div>${photo(m, '../', 'm' + slugify(m.name), true)}</div></section>
 <section class="ev-sec"><h2>Editör değerlendirmesi</h2><div class="ev-box"><p>${esc(m.editor)}</p></div></section>
 <section class="ev-sec"><h2>Artılar ve eksiler</h2><div class="ev-two"><div class="ev-box"><h3>Artılar</h3><ul>${m.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div><div class="ev-box"><h3>Eksiler</h3><ul>${m.cons.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div></div></section>
-<section class="ev-sec"><h2>Teknik özellikler</h2><table class="ev-t">${rows}</table>
-<p class="ev-note">Kaynak: <a href="${esc(m.source)}" rel="noopener nofollow" target="_blank">${esc(new URL(m.source).hostname)}</a>, ${trDate(m.sourceDate)} itibarıyla. Değerler Avrupa sürümüne aittir; Türkiye'de satılan donanım farklı olabilir.</p></section>
+${variantsHtml(m)}
+<section class="ev-sec"><h2>Teknik özellikler${m.refVariant && m.variants.length > 1 ? ` <span style="font-size:14px;font-weight:500;color:var(--ink-soft)">(${esc(m.refVariant)})</span>` : ''}</h2><table class="ev-t">${rows}</table>
+<p class="ev-note">Kaynak: <a href="${esc(m.source)}" rel="noopener nofollow" target="_blank">${esc(new URL(m.source).hostname)}</a>, ${trDate(m.sourceDate)} itibarıyla. ${m.specNote ? esc(m.specNote) + ' ' : ''}Donanıma göre küçük farklar olabilir.</p></section>
 ${calcHtml(models, m)}
 ${myPairs.length ? `<section class="ev-sec"><h2>Karşılaştırmalar</h2><div class="ev-grid">${myPairs.map(([a, b]) => { const o = a.id === m.id ? b : a; return `<a class="ev-card" href="${pairUrl(a, b)}"><div class="bd"><div class="tag">Karşılaştırma</div><h3>${esc(m.name)} <span style="color:var(--ev)">vs</span> ${esc(o.name)}</h3></div></a>`; }).join('')}</div></section>` : ''}
 <section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>
 <section class="ev-sec"><h2>Benzer modeller</h2><div class="ev-grid">${similar.map(s => card(s)).join('')}</div></section>
 ${creditsHtml([m, ...similar])}`;
     const ok = isIndexable(m);
-    write(`${BASE}/${modelUrl(m)}`, shell({ title: `${m.name} — Menzil, Şarj Süresi ve Özellikler | TeknoVersus`, desc: `${m.name}: ${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(c)} kWh/100 km tüketim, %10-80 DC şarj ${sp(m, 'DC %10-80 (dk)')} dk. Değerlendirme ve şarj maliyeti.`.slice(0, 160), canonical: url, robots: robots(ok), body, root: '../', draft, image: m.image && m.image.src,
-      jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [m.name, url]]), faqLd(faq), { '@context': 'https://schema.org', '@type': 'Car', name: m.name, brand: { '@type': 'Brand', name: m.brand }, bodyType: m.body, fuelType: 'Electricity', driveWheelConfiguration: sp(m, 'Çekiş'), vehicleSeatingCapacity: sp(m, 'Koltuk'), ...(m.image ? { image: `${SITE}/${m.image.src}` } : {}), description: m.editor.slice(0, 300) }],
+    write(`${BASE}/${modelUrl(m)}`, shell({ title: `${m.name} Fiyatı ve Özellikleri — Menzil, Şarj, Varyantlar | TeknoVersus`, desc: `${m.name} Türkiye fiyatı ${minPrice(m) ? tl(minPrice(m)) + "'den başlıyor" : ''}. ${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, %10-80 DC şarj ${sp(m, 'DC %10-80 (dk)')} dk; tüm varyantlar ve değerlendirme.`.slice(0, 160), canonical: url, robots: robots(ok), body, root: '../', draft, image: m.image && m.image.src,
+      jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [m.name, url]]), faqLd(faq), { '@context': 'https://schema.org', '@type': 'Car', name: m.name, brand: { '@type': 'Brand', name: m.brand }, bodyType: m.body, fuelType: 'Electricity', driveWheelConfiguration: sp(m, 'Çekiş'), vehicleSeatingCapacity: sp(m, 'Koltuk'), ...(m.image ? { image: `${SITE}/${m.image.src}` } : {}), ...(minPrice(m) ? { offers: { '@type': 'AggregateOffer', priceCurrency: 'TRY', lowPrice: minPrice(m), highPrice: maxPrice(m), offerCount: prices(m).length } } : {}), description: m.editor.slice(0, 300) }],
       scripts: `<script>${CALC_JS}</script>` }));
     if(publish && ok) sitemap.push(`${BASE}/${modelUrl(m)}`);
   });
@@ -326,6 +353,8 @@ ${creditsHtml([m, ...similar])}`;
       if(wa) aw++; if(wb) bw++;
       return `<tr><td>${esc(k)}</td><td class="${wa ? 'w' : ''}">${x != null ? esc(num(x)) : '—'}</td><td class="${wb ? 'w' : ''}">${y != null ? esc(num(y)) : '—'}</td></tr>`;
     }).join('');
+    const pa = minPrice(a), pb = minPrice(b);
+    const priceRow = pa && pb ? `<tr><td>Başlangıç fiyatı</td><td class="${pa < pb ? 'w' : ''}">${tl(pa)}</td><td class="${pb < pa ? 'w' : ''}">${tl(pb)}</td></tr>` : '';
     const lead = aw === bw ? null : (aw > bw ? a : b);
     const dR = sp(a, 'WLTP menzil (km)') - sp(b, 'WLTP menzil (km)');
     const longer = dR >= 0 ? a : b, faster = sp(a, 'DC %10-80 (dk)') <= sp(b, 'DC %10-80 (dk)') ? a : b, roomier = sp(a, 'Bagaj (litre)') >= sp(b, 'Bagaj (litre)') ? a : b;
@@ -336,10 +365,12 @@ ${creditsHtml([m, ...similar])}`;
     if(sp(a, 'Bagaj (litre)') !== sp(b, 'Bagaj (litre)')) addWin(roomier, `bagaj hacminde (${num(sp(roomier, 'Bagaj (litre)'))} litre)`);
     const join = arr => arr.length > 1 ? arr.slice(0, -1).join(', ') + ' ve ' + arr[arr.length - 1] : arr[0];
     const parts = [...wins.entries()].map(([m, t]) => `${m.name} ${join(t)} önde.`);
+    if(pa && pb && pa !== pb) parts.push(`Başlangıç fiyatında ${pa < pb ? a.name : b.name} ${tl(Math.abs(pa - pb))} daha uygun.`);
     const verdict = `${parts.length ? parts.join(' ') : 'İki model aynı altyapıyı paylaştığı için menzil, şarj süresi ve bagajda aynı değerlere sahip; seçimi tasarım, konfor ve donanım belirler.'} ${lead ? `Karşılaştırdığımız ${COMPARE_KEYS.length} ölçülebilir özelliğin ${Math.max(aw, bw)} tanesinde ${lead === wins.keys().next().value && wins.size === 1 ? 'yine' : ''} ${lead.name} daha iyi değere sahip.`.replace('  ', ' ') : 'Ölçülebilir özelliklerin toplamında iki model başa baş.'}`;
     const faq = [
       [`${a.name} mı ${b.name} mı daha uzun menzilli?`, `${longer.name}: ${num(sp(longer, 'WLTP menzil (km)'))} km WLTP. Fark ${num(Math.abs(dR))} km.`],
       [`Hangisi daha hızlı şarj oluyor?`, `%10-80 DC şarjda ${a.name} yaklaşık ${sp(a, 'DC %10-80 (dk)')} dk, ${b.name} yaklaşık ${sp(b, 'DC %10-80 (dk)')} dk.`],
+      ...(pa && pb ? [[`Hangisi daha ucuz?`, `Kasım 2026 liste fiyatlarına göre ${a.name} ${tl(pa)}, ${b.name} ${tl(pb)}'den başlıyor.`]] : []),
       [`Hangisi daha az elektrik harcıyor?`, `${a.name} ${num(consumption(a))}, ${b.name} ${num(consumption(b))} kWh/100 km WLTP tüketime sahip.`],
     ];
     const rel = `${BASE}/${pairUrl(a, b)}`, url = `${SITE}/${rel}`;
@@ -348,8 +379,8 @@ ${creditsHtml([m, ...similar])}`;
 <h1 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px">${esc(a.name)} vs ${esc(b.name)}</h1>
 <section class="ev-vs"><a href="../${modelUrl(a)}">${photo(a, '../../', 'a' + slugify(a.name), true)}<h2>${esc(a.name)}</h2></a><div class="vsb">VS</div><a href="../${modelUrl(b)}">${photo(b, '../../', 'b' + slugify(b.name), true)}<h2>${esc(b.name)}</h2></a></section>
 <section class="ev-sec"><h2>Kısa sonuç</h2><div class="ev-box"><p>${esc(verdict)}</p></div></section>
-<section class="ev-sec"><h2>Özellik karşılaştırması</h2><table class="ev-t"><tr><th>Özellik</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th></tr>${rows}</table>
-<p class="ev-note">Renkli hücre o satırdaki daha iyi değeri gösterir. Kaynaklar: <a href="${esc(a.source)}" rel="noopener nofollow" target="_blank">${esc(a.name)}</a>, <a href="${esc(b.source)}" rel="noopener nofollow" target="_blank">${esc(b.name)}</a>.</p></section>
+<section class="ev-sec"><h2>Özellik karşılaştırması</h2><table class="ev-t"><tr><th>Özellik</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th></tr>${priceRow}${rows}</table>
+<p class="ev-note">Renkli hücre o satırdaki daha iyi değeri gösterir. Fiyat satırı modelin en uygun varyantını, teknik satırlar ${esc(a.name)} için ${esc(a.refVariant || '')}, ${esc(b.name)} için ${esc(b.refVariant || '')} varyantını gösterir; tüm varyantlar model sayfalarında. Kaynaklar: <a href="${esc(a.source)}" rel="noopener nofollow" target="_blank">${esc(a.name)}</a>, <a href="${esc(b.source)}" rel="noopener nofollow" target="_blank">${esc(b.name)}</a>.</p></section>
 <section class="ev-sec"><h2>Hangisi kimin için?</h2><div class="ev-two">${[a, b].map(x => `<div class="ev-box"><h3>${esc(x.name)}</h3><ul>${x.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul><p class="ev-note" style="margin-top:8px">Dikkat: ${esc(x.cons.join('; '))}.</p><p class="ev-note"><a href="../${modelUrl(x)}">Ayrıntılı değerlendirmeyi oku →</a></p></div>`).join('')}</div></section>
 <section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${faq.map(([q, a2]) => `<details><summary>${esc(q)}</summary><p>${esc(a2)}</p></details>`).join('')}</section>
 ${creditsHtml([a, b])}`;

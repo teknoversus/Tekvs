@@ -4,7 +4,7 @@
   {
    "id": "togg-t10x-v2-rwd-uzun-menzil",
    "brand": "Togg",
-   "name": "Togg T10X V2 RWD Uzun Menzil",
+   "name": "Togg T10X",
    "body": "SUV",
    "year": 2023,
    "spec": {
@@ -45,12 +45,77 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Togg_T10X_IAA_2025_DSC_1648.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "V1 RWD Standart Menzil",
+     "battery": "52,4",
+     "range": 314,
+     "power": 160,
+     "accel": 7.4,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "V1 RWD Standart Menzil",
+       "price": 1909048
+      }
+     ],
+     "specSource": "https://evkx.net/models/togg/t10x/t10x_standard_range_rwd/specifications/"
+    },
+    {
+     "name": "V1 RWD Uzun Menzil",
+     "battery": "88,5",
+     "range": 523,
+     "power": 160,
+     "accel": 7.8,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "V1 RWD Uzun Menzil",
+       "price": 2219668
+      }
+     ],
+     "specSource": "https://ev-database.org/car/3302/TOGG-T10X-Long-Range-RWD"
+    },
+    {
+     "name": "V2 RWD Uzun Menzil",
+     "battery": "88,5",
+     "range": 523,
+     "power": 160,
+     "accel": 7.8,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "V2 RWD Uzun Menzil",
+       "price": 2411000
+      }
+     ],
+     "specSource": "https://ev-database.org/car/3302/TOGG-T10X-Long-Range-RWD"
+    },
+    {
+     "name": "V2 4More AWD",
+     "battery": "88,5",
+     "range": 468,
+     "power": 320,
+     "accel": 4.8,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "V2 4More Obsidiyen",
+       "price": 3218137
+      }
+     ],
+     "specSource": "https://evkx.net/models/togg/t10x/t10x_4more_awd/specifications/"
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "V2 RWD Uzun Menzil"
   },
   {
    "id": "togg-t10f-v2-rwd-uzun-menzil",
    "brand": "Togg",
-   "name": "Togg T10F V2 RWD Uzun Menzil",
+   "name": "Togg T10F",
    "body": "Sedan",
    "year": 2025,
    "spec": {
@@ -91,12 +156,77 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Togg_T10F_IAA_2025_DSC_2233.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "V1 RWD Standart Menzil",
+     "battery": "52,4",
+     "range": 335,
+     "power": 160,
+     "accel": 7.2,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "V1 RWD Standart Menzil",
+       "price": 1884980
+      }
+     ],
+     "specSource": "https://www.log.com.tr/togg-t10f-icin-resmi-teknik-veriler-paylasildi/"
+    },
+    {
+     "name": "V1 RWD Uzun Menzil",
+     "battery": "88,5",
+     "range": 623,
+     "power": 160,
+     "accel": 7.5,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "V1 RWD Uzun Menzil",
+       "price": 2195600
+      }
+     ],
+     "specSource": "https://www.log.com.tr/togg-t10f-icin-resmi-teknik-veriler-paylasildi/"
+    },
+    {
+     "name": "V2 RWD Uzun Menzil",
+     "battery": "88,5",
+     "range": 610,
+     "power": 160,
+     "accel": 7.5,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "V2 RWD Uzun Menzil",
+       "price": 2370930
+      }
+     ],
+     "specSource": "https://www.log.com.tr/togg-t10f-icin-resmi-teknik-veriler-paylasildi/"
+    },
+    {
+     "name": "V2 4More AWD",
+     "battery": "88,5",
+     "range": 523,
+     "power": 320,
+     "accel": 4.1,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "V2 4More",
+       "price": 3217937
+      }
+     ],
+     "specSource": "https://www.log.com.tr/togg-t10f-icin-resmi-teknik-veriler-paylasildi/"
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "V1 RWD Uzun Menzil"
   },
   {
    "id": "kgm-torres-evx-80-6-kwh",
    "brand": "KGM",
-   "name": "KGM Torres EVX 80,6 kWh",
+   "name": "KGM Torres EVX",
    "body": "SUV",
    "year": 2025,
    "spec": {
@@ -137,7 +267,27 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:KGM_Torres_EVX_Auto_Zuerich_2025_DSC_3332.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "4x2",
+     "battery": "80,6",
+     "range": 503,
+     "power": 152,
+     "accel": 8.2,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Torres EVX 4x2 Panoramik Cam Tavan",
+       "price": 2487420
+      }
+     ],
+     "specSource": null
+    }
+   ],
+   "priceSource": "https://www.webtekno.com/kasim-2026-kgm-ssangyong-fiyat-listesi-h228289.html",
+   "priceDate": "5 Kasım 2026",
+   "refVariant": "4x2"
   },
   {
    "id": "mini-countryman-e",
@@ -183,43 +333,82 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Mini_Countryman_(U25)_SE_IAA_2023_1X7A0735.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "Countryman E (150 kW)",
+     "battery": "66,5",
+     "range": 501,
+     "power": 150,
+     "accel": 8.6,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Favoured Plus",
+       "price": 3999900
+      },
+      {
+       "name": "John Cooper Works",
+       "price": 4138300
+      }
+     ],
+     "specSource": null
+    },
+    {
+     "name": "Countryman SE ALL4 (230 kW)",
+     "battery": "66,5",
+     "range": "424–467",
+     "power": 230,
+     "accel": 5.6,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "John Cooper Works",
+       "price": 5806000
+      }
+     ],
+     "specSource": "https://evkx.net/models/mini/countryman/countryman_se_all4/specifications/"
+    }
+   ],
+   "priceSource": "https://webtekno.com/mini-2026-fiyat-listesi-h228388.html",
+   "priceDate": "5 Kasım 2026",
+   "refVariant": "Countryman E (150 kW)"
   },
   {
    "id": "volvo-ex30-single-motor-er",
    "brand": "Volvo",
-   "name": "Volvo EX30 Single Motor Extended Range",
+   "name": "Volvo EX30",
    "body": "SUV",
    "year": 2023,
    "spec": {
     "Batarya net (kWh)": 64.0,
     "Batarya brüt (kWh)": 69.0,
-    "WLTP menzil (km)": 476,
+    "WLTP menzil (km)": 475,
     "WLTP tüketim (kWh/100 km)": 17.0,
-    "Güç (kW)": 200,
-    "0-100 km/s (sn)": 5.3,
+    "Güç (kW)": 150,
+    "0-100 km/s (sn)": 6.5,
     "Azami hız (km/s)": 180,
     "Çekiş": "Arkadan itiş",
-    "DC şarj (kW)": 158,
-    "DC %10-80 (dk)": 25,
+    "DC şarj (kW)": 175,
+    "DC %10-80 (dk)": 27,
     "AC şarj (kW)": 11,
     "Bagaj (litre)": 318,
     "Uzunluk (mm)": 4233,
     "Ağırlık (kg)": 1850,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/1910/Volvo-EX30-Single-Motor-ER",
+   "source": "https://www.volvocars.com/tr/cars/ex30-electric/specifications/",
    "sourceDate": "2026-11-22",
    "pros": [
-    "0-100 km/s 5,3 sn ile çok hızlı",
-    "25 dakikalık %10-80 şarj",
-    "Kompakt, şehirde park kolaylığı"
+    "Kompakt, şehirde park kolaylığı",
+    "27 dakikalık %10-80 şarj",
+    "6,5 sn 0-100 km/s"
    ],
    "cons": [
     "318 litre küçük bagaj",
     "Fiziksel düğme neredeyse yok"
    ],
-   "editor": "EX30, Volvo'nun en küçük SUV'u ama tek motorlu uzun menzil sürümü bile 200 kW güç ve 5,3 saniyelik 0-100 km/s ile bu listedeki en çevik modellerden biri. 4,23 metrelik boyu şehir içinde park etmeyi kolaylaştırıyor, 476 km WLTP menzil de bu boyut için iyi bir değer. Şarj tarafı güçlü: 158 kW DC ve yaklaşık 25 dakikalık %10-80 süresiyle yolculukta duraklar kısa. Bedeli ise iç hacimde ödeniyor. 318 litrelik bagaj, aile ile uzun tatile çıkarken sıkışık kalabilir ve arka koltuk yetişkinler için uzun yolda dar. Kabinde neredeyse tüm işlevler orta ekrana taşınmış; bu, sürüş sırasında klima gibi temel ayarları değiştirmeyi zorlaştırabiliyor. Bir ya da iki kişilik hane, şehir ağırlıklı kullanım ve performans arayanlar için EX30 çok cazip; dört kişilik aile için Volvo EX40 daha mantıklı.",
+   "editor": "EX30, Volvo'nun en küçük SUV'u ve Türkiye'de P4 Long Range adıyla, 150 kW'lık arkadan itişli motorla satılıyor. Bu güç ÖTV dilimine göre ayarlanmış olsa da 6,5 saniyelik 0-100 km/s, şehir içinde ve otoyolda fazlasıyla çevik bir sürüş veriyor. 69 kWh'lik batarya Volvo'nun Türkiye sayfasına göre 475 km'ye kadar WLTP menzil sunuyor; 4,23 metrelik bir araç için iyi bir değer. 175 kW DC şarj ve yaklaşık 27 dakikalık %10-80 süresi yolculuktaki molaları kısa tutuyor. Bedeli iç hacimde ödeniyor: 318 litrelik bagaj, aileyle uzun tatile çıkarken sıkışık kalabilir ve arka koltuk yetişkinler için uzun yolda dar. Kabinde neredeyse tüm işlevler orta ekrana taşınmış; bu da sürüş sırasında klima gibi temel ayarları değiştirmeyi zorlaştırabiliyor. Bir ya da iki kişilik hane ve şehir ağırlıklı kullanım için EX30 cazip; dört kişilik aile için EX40 daha mantıklı.",
    "note": "",
    "image": {
     "src": "assets/ev/volvo-ex30-single-motor-er.webp",
@@ -229,18 +418,38 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Volvo_EX30_Auto_Zuerich_2023_1X7A0949.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "P4 Long Range (150 kW)",
+     "battery": "69",
+     "range": 475,
+     "power": 150,
+     "accel": 6.5,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "Ultra",
+       "price": 2472390
+      }
+     ],
+     "specSource": "https://www.volvocars.com/tr/cars/ex30-electric/specifications/"
+    }
+   ],
+   "priceSource": "https://www.webtekno.com/volvo-kasim-2026-fiyat-listesi-h228322.html",
+   "priceDate": "5 Kasım 2026",
+   "refVariant": "P4 Long Range (150 kW)"
   },
   {
    "id": "opel-frontera-electric-44-kwh",
    "brand": "Opel",
-   "name": "Opel Frontera Electric 44 kWh",
+   "name": "Opel Frontera Elektrik",
    "body": "SUV",
    "year": 2024,
    "spec": {
     "Batarya net (kWh)": 43.8,
     "Batarya brüt (kWh)": 44.0,
-    "WLTP menzil (km)": 310,
+    "WLTP menzil (km)": 305,
     "WLTP tüketim (kWh/100 km)": 18.1,
     "Güç (kW)": 83,
     "0-100 km/s (sn)": 12.1,
@@ -257,16 +466,16 @@
    "source": "https://ev-database.org/car/2238/Opel-Frontera-Electric-44-kWh",
    "sourceDate": "2026-11-22",
    "pros": [
-    "Uygun giriş fiyatı segmenti",
+    "Uygun giriş fiyatı",
     "460 litre bagaj",
-    "Hafif (1.579 kg)"
+    "54 kWh uzun menzil seçeneği (408 km)"
    ],
    "cons": [
-    "310 km WLTP menzil kısa",
+    "Standart sürümde 305 km WLTP menzil",
     "0-100 km/s 12,1 sn yavaş",
     "Standart AC şarj 7,4 kW"
    ],
-   "editor": "Frontera Electric, elektrikliye geçişi bütçe odaklı yapmak isteyenler için tasarlanmış bir model ve Citroën ë-C3 Aircross ile aynı altyapıyı kullanıyor. 44 kWh'lik LFP batarya 310 km WLTP menzil veriyor; günlük işe gidiş ve şehir içi kullanım için bu fazlasıyla yeterli, ama sık sık şehirlerarası yol yapanlar için her 200-250 km'de bir şarj durağı demek. 83 kW motor ve 12,1 saniyelik 0-100 km/s, otoyolda sollama yaparken planlı davranmayı gerektiriyor; azami hız da 143 km/s ile sınırlı. Buna karşın 460 litrelik bagaj ve 4,4 metrelik boy, aile kullanımına uygun bir pratiklik sunuyor. Standart AC şarj 7,4 kW olduğu için evde gece boyunca dolum sorunsuz, ancak 11 kW opsiyonu varsa işyerinde ya da sitede hızlandırır. Günde 100 km'nin altında yol yapan ve evde şarj imkânı olan biri için Frontera akıllı ve ekonomik bir tercih.",
+   "editor": "Frontera Electric, elektrikliye geçişi bütçe odaklı yapmak isteyenler için tasarlanmış bir model ve Citroën ë-C3 Aircross ile aynı altyapıyı kullanıyor. 44 kWh'lik LFP batarya 305 km WLTP menzil veriyor; 54 kWh'lik uzun menzil sürümü ise bunu 408 km'ye çıkarıyor; günlük işe gidiş ve şehir içi kullanım için bu fazlasıyla yeterli, ama sık sık şehirlerarası yol yapanlar için her 200-250 km'de bir şarj durağı demek. 83 kW motor ve 12,1 saniyelik 0-100 km/s, otoyolda sollama yaparken planlı davranmayı gerektiriyor; azami hız da 143 km/s ile sınırlı. Buna karşın 460 litrelik bagaj ve 4,4 metrelik boy, aile kullanımına uygun bir pratiklik sunuyor. Standart AC şarj 7,4 kW olduğu için evde gece boyunca dolum sorunsuz, ancak 11 kW opsiyonu varsa işyerinde ya da sitede hızlandırır. Günde 100 km'nin altında yol yapan ve evde şarj imkânı olan biri için Frontera akıllı ve ekonomik bir tercih.",
    "note": "",
    "image": {
     "src": "assets/ev/opel-frontera-electric-44-kwh.webp",
@@ -276,20 +485,55 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Opel_Frontera_C_Electric_Auto_Zuerich_2024_DSC_6135.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "Standart Menzil",
+     "battery": "44",
+     "range": 305,
+     "power": 83,
+     "accel": 12.1,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "GS",
+       "price": 1895000
+      }
+     ],
+     "specSource": "https://www.media.stellantis.com/me-tr/opel/press/opel-frontera-elektrik-te-uzun-menzilli-yeni-secenek"
+    },
+    {
+     "name": "Uzun Menzil",
+     "battery": "54",
+     "range": 408,
+     "power": 83,
+     "accel": null,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "GS Uzun Menzil",
+       "price": 2010000
+      }
+     ],
+     "specSource": "https://www.media.stellantis.com/me-tr/opel/press/opel-frontera-elektrik-te-uzun-menzilli-yeni-secenek"
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "Standart Menzil"
   },
   {
    "id": "tesla-model-y-rwd",
    "brand": "Tesla",
-   "name": "Tesla Model Y RWD",
+   "name": "Tesla Model Y",
    "body": "SUV",
    "year": 2025,
    "spec": {
     "Batarya net (kWh)": 60.0,
     "Batarya brüt (kWh)": 64.0,
-    "WLTP menzil (km)": 534,
+    "WLTP menzil (km)": 525,
     "WLTP tüketim (kWh/100 km)": 13.1,
-    "Güç (kW)": 220,
+    "Güç (kW)": 227,
     "0-100 km/s (sn)": 7.2,
     "Azami hız (km/s)": 201,
     "Çekiş": "Arkadan itiş",
@@ -301,7 +545,7 @@
     "Ağırlık (kg)": 1981,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/3362/Tesla-Model-Y-RWD",
+   "source": "https://ev-database.org/car/3741/Tesla-Model-Y-RWD",
    "sourceDate": "2026-11-22",
    "pros": [
     "13,1 kWh/100 km ile sınıfının en verimlisi",
@@ -312,7 +556,7 @@
     "Fiziksel kontroller sınırlı",
     "Servis ağı diğer markalardan dar"
    ],
-   "editor": "Model Y'nin yenilenen RWD sürümü, 60 kWh'lik nispeten küçük bir bataryadan 534 km WLTP menzil çıkarıyor. Bunu sağlayan şey 13,1 kWh/100 km'lik onaylı tüketim; bu listede hiçbir SUV bu verimliliğe yaklaşmıyor. Pratikte bu, aynı kilometre için daha düşük elektrik faturası ve daha kısa şarj durakları anlamına geliyor. 175 kW DC şarj ve 24 dakikalık %10-80 süresi, Tesla'nın Supercharger ağıyla birleşince uzun yolu en sorunsuz hâle getiren modellerden biri. 854 litre arka bagaj ve 117 litre ön bagaj ile toplam 952 litre hacim, aile kullanımında ciddi bir avantaj. Eksi tarafta, neredeyse tüm işlevler orta ekrandan yönetiliyor ve vites seçimi bile ekranda. Servis ve kaporta onarımı için yetkili nokta sayısı diğer büyük markalara göre az. Verimlilik ve şarj altyapısı sizin için öncelikse Model Y hâlâ referans noktası.",
+   "editor": "Model Y'nin Türkiye'deki giriş sürümü Standart Range RWD, 60 kWh'lik nispeten küçük bir bataryadan 525 km WLTP menzil çıkarıyor. Daha uzun yol yapanlar için Long Range RWD 622 km'ye çıkıyor. Bunu sağlayan şey 13,1 kWh/100 km'lik onaylı tüketim; bu listede hiçbir SUV bu verimliliğe yaklaşmıyor. Pratikte bu, aynı kilometre için daha düşük elektrik faturası ve daha kısa şarj durakları anlamına geliyor. 175 kW DC şarj ve 24 dakikalık %10-80 süresi, Tesla'nın Supercharger ağıyla birleşince uzun yolu en sorunsuz hâle getiren modellerden biri. 854 litre arka bagaj ve 117 litre ön bagaj ile toplam 952 litre hacim, aile kullanımında ciddi bir avantaj. Eksi tarafta, neredeyse tüm işlevler orta ekrandan yönetiliyor ve vites seçimi bile ekranda. Servis ve kaporta onarımı için yetkili nokta sayısı diğer büyük markalara göre az. Verimlilik ve şarj altyapısı sizin için öncelikse Model Y hâlâ referans noktası.",
    "note": "",
    "image": {
     "src": "assets/ev/tesla-model-y-rwd.webp",
@@ -322,12 +566,77 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_(8).jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "Standart Range RWD",
+     "battery": "64",
+     "range": 525,
+     "power": 227,
+     "accel": 7.2,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "Standart Range Arkadan Çekiş",
+       "price": 2474985
+      }
+     ],
+     "specSource": "https://ev-database.org/car/3741/Tesla-Model-Y-RWD"
+    },
+    {
+     "name": "Long Range RWD",
+     "battery": "78,1",
+     "range": 622,
+     "power": 250,
+     "accel": 5.6,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "Long Range Arkadan Çekiş",
+       "price": 3906000
+      }
+     ],
+     "specSource": "https://ev-database.org/car/3120/Tesla-Model-Y-Long-Range-RWD"
+    },
+    {
+     "name": "Long Range AWD",
+     "battery": "78,4",
+     "range": 586,
+     "power": 331,
+     "accel": 4.8,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "Long Range Dört Çeker",
+       "price": 4620000
+      }
+     ],
+     "specSource": "https://www.evspecifications.com/en/model/583c331"
+    },
+    {
+     "name": "Performance AWD",
+     "battery": "82",
+     "range": 580,
+     "power": 461,
+     "accel": 3.8,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "Performance Dört Çeker",
+       "price": 4966500
+      }
+     ],
+     "specSource": "https://ev-database.org/car/3269/Tesla-Model-Y-Performance"
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "Standart Range RWD"
   },
   {
    "id": "citroen-e-c3-aircross-44-kwh",
    "brand": "Citroën",
-   "name": "Citroën ë-C3 Aircross 44 kWh",
+   "name": "Citroën ë-C3 Aircross",
    "body": "SUV",
    "year": 2024,
    "spec": {
@@ -358,7 +667,7 @@
     "306 km WLTP menzil",
     "Düşük performans (12,9 sn)"
    ],
-   "editor": "ë-C3 Aircross, Opel Frontera ile aynı Smart Car altyapısını, aynı 44 kWh LFP bataryayı ve aynı 83 kW motoru kullanıyor; teknik verilerin neredeyse birebir aynı olması bu yüzden. İki model arasındaki fark karakterde: Citroën, konfor odaklı süspansiyon ayarı ve Advanced Comfort koltuklarla bozuk yollarda daha rahat bir sürüş vaat ediyor, Opel ise daha sade ve sıkı bir ayar tercih ediyor. 306 km WLTP menzil şehir içi ve banliyö kullanımı için uygun; otoyolda 120 km/s hızda bu değerin belirgin şekilde düşeceğini hesaba katmak gerekiyor. 460 litrelik bagaj ve geniş arka kapılar aile için pratik. 100 kW DC şarj yolculukta yeterli ama hızlı değil. Fiyatı ön planda tutan, evde ya da işyerinde düzenli AC şarj imkânı olan ve konforu performansa tercih eden biri için ë-C3 Aircross, Frontera'ya göre daha yumuşak bir seçenek.",
+   "editor": "ë-C3 Aircross, Opel Frontera ile aynı Smart Car altyapısını, aynı 44 kWh LFP bataryayı ve aynı 83 kW motoru kullanıyor; teknik verilerin neredeyse birebir aynı olması bu yüzden. İki model arasındaki fark karakterde: Citroën, konfor odaklı süspansiyon ayarı ve Advanced Comfort koltuklarla bozuk yollarda daha rahat bir sürüş vaat ediyor, Opel ise daha sade ve sıkı bir ayar tercih ediyor. Standart sürümün 306 km WLTP menzili şehir içi ve banliyö kullanımı için uygun; Türkiye'de satılan 54 kWh'lik uzun menzil sürümü ise yaklaşık 399 km sunuyor; otoyolda 120 km/s hızda bu değerin belirgin şekilde düşeceğini hesaba katmak gerekiyor. 460 litrelik bagaj ve geniş arka kapılar aile için pratik. 100 kW DC şarj yolculukta yeterli ama hızlı değil. Fiyatı ön planda tutan, evde ya da işyerinde düzenli AC şarj imkânı olan ve konforu performansa tercih eden biri için ë-C3 Aircross, Frontera'ya göre daha yumuşak bir seçenek.",
    "note": "",
    "image": {
     "src": "assets/ev/citroen-e-c3-aircross-44-kwh.webp",
@@ -368,7 +677,46 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_Aircross_(2024)_DSC_8767.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "Standart Menzil",
+     "battery": "44",
+     "range": 306,
+     "power": 83,
+     "accel": 12.9,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Max",
+       "price": 1875000
+      }
+     ],
+     "specSource": null
+    },
+    {
+     "name": "Uzun Menzil",
+     "battery": "54",
+     "range": 399,
+     "power": 83,
+     "accel": null,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Collection",
+       "price": 1990000
+      },
+      {
+       "name": "Max",
+       "price": 2020000
+      }
+     ],
+     "specSource": "https://www.media.stellantis.com/me-tr/citroen/press/yeni-citroen-e-c3-aircross-un-uzun-menzil-versiyonu-tuerkiye-de"
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "Standart Menzil"
   },
   {
    "id": "bmw-ix1-edrive20",
@@ -414,43 +762,71 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:BMW_iX1_DSC_7506.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "eDrive20",
+     "battery": "66,5",
+     "range": 517,
+     "power": 150,
+     "accel": 8.6,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Sport Line",
+       "price": 4304800
+      },
+      {
+       "name": "X-Line",
+       "price": 4531200
+      },
+      {
+       "name": "M Sport",
+       "price": 4701100
+      }
+     ],
+     "specSource": null
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "eDrive20"
   },
   {
    "id": "volvo-ex40-single-motor-er",
    "brand": "Volvo",
-   "name": "Volvo EX40 Single Motor Extended Range",
+   "name": "Volvo EX40",
    "body": "SUV",
    "year": 2025,
    "spec": {
     "Batarya net (kWh)": 79.0,
     "Batarya brüt (kWh)": 82.0,
-    "WLTP menzil (km)": 576,
+    "WLTP menzil (km)": 566,
     "WLTP tüketim (kWh/100 km)": 16.6,
-    "Güç (kW)": 185,
-    "0-100 km/s (sn)": 7.3,
+    "Güç (kW)": 150,
+    "0-100 km/s (sn)": 7.9,
     "Azami hız (km/s)": 180,
     "Çekiş": "Arkadan itiş",
-    "DC şarj (kW)": 207,
-    "DC %10-80 (dk)": 32,
+    "DC şarj (kW)": 200,
+    "DC %10-80 (dk)": 28,
     "AC şarj (kW)": 11,
     "Bagaj (litre)": 410,
     "Uzunluk (mm)": 4440,
     "Ağırlık (kg)": 2075,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/3159/Volvo-EX40-Single-Motor-ER",
+   "source": "https://www.volvocars.com/tr/cars/ex40-electric/",
    "sourceDate": "2026-11-22",
    "pros": [
-    "576 km WLTP menzil",
-    "207 kW DC şarj",
+    "566 km WLTP menzil",
+    "28 dakikalık %10-80 şarj",
     "Volvo güvenlik donanımları"
    ],
    "cons": [
     "410 litre bagaj boyuta göre küçük",
     "Ağır (2.075 kg)"
    ],
-   "editor": "EX40 (eski adıyla XC40 Recharge), EX30'un bir üst basamağı ve özellikle aileler için daha mantıklı bir Volvo. Arkadan itişli uzun menzil sürümü 82 kWh brüt batarya ile 576 km'ye varan WLTP menzil sunuyor; bu, EX30'dan yaklaşık 100 km fazla. 207 kW tepe DC şarj gücü listedeki yüksek değerlerden biri, ancak %10-80 süresi 32 dakika ile rakiplerine benzer; yani tepe güç kısa süreli. 185 kW motor ve 7,3 saniyelik hızlanma rahat bir otoyol performansı veriyor. Kabin, EX30'a göre daha klasik: fiziksel düğmeler ve daha geniş arka koltuk. Zayıf nokta 410 litrelik bagaj; 4,44 metrelik bir SUV için beklenenden küçük. 2 tonu aşan ağırlık da tüketimi 16,6 kWh/100 km'ye çıkarıyor. Volvo'nun güvenlik donanımlarına güvenen ve EX30'u küçük bulan aileler için EX40 doğal bir adım.",
+   "editor": "EX40 (eski adıyla XC40 Recharge), EX30'un bir üst basamağı ve özellikle aileler için daha mantıklı bir Volvo. Türkiye'de tek motorlu uzun menzil sürümü 150 kW güçle satılıyor ve Volvo'nun Türkiye sayfasına göre 566 km'ye kadar WLTP menzil sunuyor; bu, EX30'dan yaklaşık 90 km fazla. 82 kWh brüt batarya 200 kW'a kadar DC şarj kabul ediyor ve %10-80 dolum yaklaşık 28 dakika sürüyor. 7,9 saniyelik 0-100 km/s, EX30'dan yavaş ama aile kullanımında yeterli. Daha fazla performans isteyenler için 300 kW'lık çift motorlu sürüm 4,8 saniyeye iniyor, menzil ise 532 km'ye düşüyor. Kabin, EX30'a göre daha klasik: fiziksel düğmeler ve daha geniş arka koltuk var. Zayıf nokta 410 litrelik bagaj; 4,44 metrelik bir SUV için beklenenden küçük. 2 tonu aşan ağırlık da tüketimi yukarı çekiyor. EX30'u küçük bulan ve Volvo'nun güvenlik donanımlarına güvenen aileler için EX40 doğal bir adım.",
    "note": "",
    "image": {
     "src": "assets/ev/volvo-ex40-single-motor-er.webp",
@@ -460,12 +836,52 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Volvo_XC40_Recharge_Facelift_1X7A7461.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "Single Motor Extended Range (150 kW)",
+     "battery": "82",
+     "range": 566,
+     "power": 150,
+     "accel": 7.9,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "Ultra",
+       "price": 4609229
+      },
+      {
+       "name": "Black Edition Ultra",
+       "price": 4757936
+      }
+     ],
+     "specSource": "https://www.volvocars.com/tr/cars/ex40-electric/"
+    },
+    {
+     "name": "Twin Motor (300 kW)",
+     "battery": "82",
+     "range": 532,
+     "power": 300,
+     "accel": 4.8,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "Ultra",
+       "price": 5544856
+      }
+     ],
+     "specSource": "https://www.volvocars.com/tr/cars/ex40-electric/"
+    }
+   ],
+   "priceSource": "https://www.webtekno.com/volvo-kasim-2026-fiyat-listesi-h228322.html",
+   "priceDate": "5 Kasım 2026",
+   "refVariant": "Single Motor Extended Range (150 kW)",
+   "specNote": "Batarya, tüketim, bagaj ve ağırlık değerleri Avrupa'daki 185 kW'lık sürüme (EV Database) aittir."
   },
   {
    "id": "citroen-e-c3-44-kwh",
    "brand": "Citroën",
-   "name": "Citroën ë-C3 44 kWh",
+   "name": "Citroën ë-C3",
    "body": "Hatchback",
    "year": 2024,
    "spec": {
@@ -507,12 +923,36 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Citroen_%C3%AB-C3_IMG_4539.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "83 kW",
+     "battery": "44",
+     "range": 326,
+     "power": 83,
+     "accel": 11.5,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Plus",
+       "price": 1645000
+      },
+      {
+       "name": "Max",
+       "price": 1725000
+      }
+     ],
+     "specSource": null
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "83 kW"
   },
   {
    "id": "kia-ev3-long-range",
    "brand": "Kia",
-   "name": "Kia EV3 Long Range",
+   "name": "Kia EV3",
    "body": "SUV",
    "year": 2024,
    "spec": {
@@ -553,7 +993,54 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Kia_EV3_DSC_9146.jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "Long Range (150 kW)",
+     "battery": "81,4",
+     "range": 605,
+     "power": 150,
+     "accel": 7.7,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Cool Long Range",
+       "price": 2450000
+      },
+      {
+       "name": "Elegance Long Range",
+       "price": 3199000
+      },
+      {
+       "name": "GT-Line Long Range",
+       "price": 3790000
+      }
+     ],
+     "specSource": null
+    },
+    {
+     "name": "Batarya belirtilmemiş (150 kW)",
+     "battery": null,
+     "range": null,
+     "power": 150,
+     "accel": null,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Elegance Comfort",
+       "price": 2485000
+      },
+      {
+       "name": "Prestige",
+       "price": 3199000
+      }
+     ],
+     "specSource": null
+    }
+   ],
+   "priceSource": "https://www.kia.com/tr/modeller/ev3/fiyat-listesi.html",
+   "priceDate": "14 Kasım 2026",
+   "refVariant": "Long Range (150 kW)"
   },
   {
    "id": "bmw-ix3-50-xdrive",
@@ -599,21 +1086,41 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:BMW_iX3,_IAA_Summit_2025,_Munich_(20250908-P1049823).jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "50 xDrive",
+     "battery": "113,4",
+     "range": 806,
+     "power": 345,
+     "accel": 4.9,
+     "drive": "Dört çeker",
+     "trims": [
+      {
+       "name": "M Sport",
+       "price": 6819500
+      }
+     ],
+     "specSource": null
+    }
+   ],
+   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
+   "priceDate": "3 Kasım 2026",
+   "refVariant": "50 xDrive"
   },
   {
    "id": "mercedes-cla-250-plus",
    "brand": "Mercedes-Benz",
-   "name": "Mercedes-Benz CLA 250+",
+   "name": "Mercedes-Benz CLA 200+",
    "body": "Sedan",
    "year": 2025,
    "spec": {
     "Batarya net (kWh)": 85.0,
     "Batarya brüt (kWh)": 90.0,
-    "WLTP menzil (km)": 792,
-    "WLTP tüketim (kWh/100 km)": 12.3,
-    "Güç (kW)": 200,
-    "0-100 km/s (sn)": 6.7,
+    "WLTP menzil (km)": 730,
+    "WLTP tüketim (kWh/100 km)": 13.5,
+    "Güç (kW)": 160,
+    "0-100 km/s (sn)": 7.6,
     "Azami hız (km/s)": 210,
     "Çekiş": "Arkadan itiş",
     "DC şarj (kW)": 353,
@@ -624,18 +1131,18 @@
     "Ağırlık (kg)": 2055,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/3139/Mercedes-Benz-CLA-250plus",
+   "source": "https://www.auto-motor-und-sport.de/elektroauto/mercedes-cla-200-eq-elektrisches-steuersparmodell-fuer-die-tuerkei/",
    "sourceDate": "2026-11-22",
    "pros": [
-    "12,3 kWh/100 km ile listenin en verimlisi",
-    "792 km WLTP menzil",
-    "18 dakikalık %10-80 şarj"
+    "730 km WLTP menzil",
+    "13,5 kWh/100 km ile çok verimli",
+    "Hızlı DC şarj (800 V)"
    ],
    "cons": [
     "Arka koltuk tavan yüksekliği sınırlı",
     "Üst fiyat segmenti"
    ],
-   "editor": "Yeni elektrikli CLA, verimlilikte bu listenin en iddialı modeli. 12,3 kWh/100 km'lik onaylı tüketim, aerodinamik sedan gövde ve 800 voltluk mimarinin birleşiminden geliyor; sonuç 85 kWh net bataryadan 792 km WLTP menzil. Boyut olarak Togg T10F'ye yakın olan CLA, ondan yaklaşık 170 km daha uzun WLTP menzil sunuyor. Şarj tarafı da etkileyici: 353 kW tepe güç ve 18 dakikalık %10-80 süresi, uygun bir istasyonda kahve molası kadar kısa. 200 kW arkadan itişli motor ve 6,7 saniyelik 0-100 km/s rahat bir performans veriyor. 405 litre arka bagaja 101 litrelik ön bagaj ekleniyor. Coupé benzeri tavan çizgisi arka koltukta uzun boylu yolcular için baş mesafesini kısıtlıyor; bu bir aile sedanından çok sürücü odaklı bir araç. Uzun yolu sık yapan ve verimliliği önemseyen biri için CLA, fiyatının karşılığını en net veren premium elektrikli modellerden.",
+   "editor": "Elektrikli CLA, Türkiye'de yalnızca CLA 200+ olarak satılıyor. Mercedes bu sürümün gücünü ÖTV dilimine sığdırmak için 160 kW'a çekmiş; Avrupa'daki CLA 250+ ile aynı 85 kWh bataryayı ve 800 voltluk mimariyi kullanıyor. Sonuç 730 km WLTP menzil ve 13,5 kWh/100 km'lik tüketim: bu listedeki en verimli araçlardan biri. Boyut olarak Togg T10F'ye yakın olan CLA, onun uzun menzilli sürümünden yaklaşık 100 km daha uzun WLTP menzil sunuyor. 800 volt mimari sayesinde uygun bir istasyonda %10-80 şarj 20 dakikanın altında tamamlanabiliyor. 7,6 saniyelik 0-100 km/s, 250+'nın 6,7 saniyesinin gerisinde kalsa da günlük sürüşte rahat bir performans veriyor. Ön ve arka bagaj toplamı 500 litreyi aşıyor. Coupé benzeri tavan çizgisi arka koltukta uzun boylu yolcuların baş mesafesini kısıtlıyor; bu bir aile sedanından çok sürücü odaklı bir araç. Uzun yolu sık yapan ve verimliliği önemseyen biri için CLA 200+, premium segmentteki en güçlü seçeneklerden.",
    "note": "",
    "image": {
     "src": "assets/ev/mercedes-cla-250-plus.webp",
@@ -645,7 +1152,28 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLA_250%2B_avec_technologie_EQ_Limited_Edition_(55085144824).jpg"
-   }
+   },
+   "variants": [
+    {
+     "name": "CLA 200+ (160 kW)",
+     "battery": "85",
+     "range": 730,
+     "power": 160,
+     "accel": 7.6,
+     "drive": "Arkadan itiş",
+     "trims": [
+      {
+       "name": "AMG",
+       "price": 4449000
+      }
+     ],
+     "specSource": "https://www.auto-motor-und-sport.de/elektroauto/mercedes-cla-200-eq-elektrisches-steuersparmodell-fuer-die-tuerkei/"
+    }
+   ],
+   "priceSource": "https://www.webtekno.com/mercedes-benz-kasim-2026-fiyat-listesi-h228664.html",
+   "priceDate": "10 Kasım 2026",
+   "refVariant": "CLA 200+ (160 kW)",
+   "specNote": "Şarj, bagaj ve ağırlık değerleri aynı 85 kWh bataryayı kullanan CLA 250+ (EV Database) içindir."
   }
  ],
  "curatedPairs": [

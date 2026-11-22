@@ -19,7 +19,8 @@ Bu bölüm `ev-taslak` dalında durur ve **main'e birleştirilmedi**. Deploy yal
 
 ## Bakım
 - Veriler 3-6 ayda bir kaynaklarından kontrol edilmeli (`sourceDate` alanını güncelle).
-- Fiyat bilinçli olarak gösterilmiyor (Türkiye fiyatları sık değişiyor).
+- Fiyatlar: her modelde `variants[].trims[].price` (TL, tavsiye edilen anahtar teslim liste fiyatı), `priceDate` ve `priceSource`. Kasım 2026 fiyatlarıyla dolduruldu. Güncellemek için yalnızca `price` değerlerini ve `priceDate`'i değiştirmek yeterli; kartlar, "…'den başlayan" fiyatlar, SSS, karşılaştırma fiyat satırı ve JSON-LD otomatik güncellenir.
+- Varyantlar Türkiye'de satılanlardır (fiyat listelerinden). Model sayfasındaki teknik özellik tablosu `refVariant` varyantına aittir; Türkiye'ye özgü güç sınırlı sürümler (Volvo EX30/EX40 150 kW, Mercedes CLA 200+) referans alındı.
 - Yeni model: `models.json`'a ekle; ≥8 özellik ve ≥120 kelimelik `editor` metni yoksa sayfa otomatik noindex kalır.
 - Yeni karşılaştırma: yalnızca gerçek rakipleri `curatedPairs`'e ekle; tüm kombinasyonları üretme.
 

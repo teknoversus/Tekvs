@@ -30,7 +30,7 @@ const BASE = 'elektrikli-araclar';
 const esc = s => (s == null ? '' : String(s)).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const TR = {'ı':'i','İ':'i','ş':'s','Ş':'s','ğ':'g','Ğ':'g','ü':'u','Ü':'u','ö':'o','Ö':'o','ç':'c','Ç':'c','ë':'e'};
 const slugify = n => String(n).replace(/\+/g, ' plus').split('').map(c => TR[c] || c).join('').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-const num = v => (typeof v === 'number') ? v.toLocaleString('tr-TR') : v;
+const num = v => v == null ? '—' : (typeof v === 'number') ? v.toLocaleString('tr-TR') : v;
 const trDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
 
 const BRAND_COLORS = { Togg: '#c2410c', Tesla: '#b91c1c', KGM: '#475569', MINI: '#0f766e', Volvo: '#1e40af', Opel: '#ca8a04', 'Citroën': '#be123c', BMW: '#2563eb', Kia: '#7c2d12', 'Mercedes-Benz': '#334155' };
@@ -186,6 +186,7 @@ const CALC_JS = `
     el('evOut').textContent=Math.round(ev).toLocaleString('tr-TR')+' ₺';
     el('evCmp').textContent='Benzinli karşılığı yaklaşık '+Math.round(ice).toLocaleString('tr-TR')+' ₺; aylık fark '+Math.round(ice-ev).toLocaleString('tr-TR')+' ₺.';
   }
+  var w=el('evWhere'); if(w) w.addEventListener('change',function(){ el('evTl').value=w.value; run(); });
   var sel=el('evModel'); if(sel) sel.addEventListener('change',function(){ if(sel.value) el('evC').value=sel.value; run(); });
   ['evKm','evTl','evC','evFuelL','evFuelP'].forEach(function(i){el(i).addEventListener('input',run)}); run();
 })();`;
@@ -197,12 +198,13 @@ function calcHtml(models, m){
 <div class="ev-calc"><div>
   <label for="evModel">Model (WLTP tüketimini doldurur)</label><select id="evModel"><option value="">Elle gireceğim</option>${opts}</select>
   <label for="evKm">Aylık yol (km)</label><input id="evKm" type="number" value="1500" min="0" inputmode="numeric">
-  <label for="evTl">Elektrik birim fiyatı (₺/kWh)</label><input id="evTl" type="number" value="4.5" step="0.1" min="0" inputmode="decimal">
+  <label for="evWhere">Nerede şarj ediyorsunuz?</label><select id="evWhere"><option value="3.92">Evde (mesken tarifesi, ~3,92 ₺/kWh)</option><option value="13">Halka açık DC hızlı şarj (~13 ₺/kWh)</option><option value="10">Halka açık AC (~10 ₺/kWh)</option></select>
+  <label for="evTl">Elektrik birim fiyatı (₺/kWh)</label><input id="evTl" type="number" value="3.92" step="0.01" min="0" inputmode="decimal">
   <label for="evC">Tüketim (kWh/100 km)</label><input id="evC" type="number" step="0.1" min="0" value="${m ? consumption(m).toFixed(1) : '16'}" inputmode="decimal">
   <label for="evFuelL">Karşılaştırılacak benzinli araç (L/100 km)</label><input id="evFuelL" type="number" value="7" step="0.1" min="0" inputmode="decimal">
-  <label for="evFuelP">Benzin fiyatı (₺/L)</label><input id="evFuelP" type="number" value="45" step="0.5" min="0" inputmode="decimal">
+  <label for="evFuelP">Benzin fiyatı (₺/L)</label><input id="evFuelP" type="number" value="68.2" step="0.1" min="0" inputmode="decimal">
 </div><div class="out"><small>Tahmini aylık şarj maliyeti</small><b id="evOut">—</b><small id="evCmp"></small>
-<small>Hesaba %10 şarj kaybı eklenir. Elektrik ve benzin fiyatları örnek değerdir; kendi tarifenizi girin. Otoyol ve kış kullanımında tüketim artar.</small></div></div></section>`;
+<small>Hesaba %10 şarj kaybı eklenir. Varsayılanlar: EPDK 4 Nisan 2026 mesken tarifesi (yüksek kademe, vergiler dahil yaklaşık), Trugo/ZES/Eşarj/Tesla genel DC tarifelerinin ortası ve 21 Kasım 2026 İstanbul benzin fiyatı. Kendi tarifenizi girin; otoyol ve kış kullanımında tüketim artar.</small></div></div></section>`;
 }
 
 function shell({ title, desc, canonical, robots, body, root, draft, jsonld = [], scripts = '', image = null }){
@@ -325,7 +327,7 @@ s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children)
 <nav class="crumb"><a href="../index.html">Anasayfa</a> / <a href="index.html">Elektrikli Araçlar</a> / ${esc(m.name)}</nav>
 <section class="ev-hero"><div><div class="eyebrow">${esc(m.brand)} · ${esc(m.body)} · ${esc(sp(m, 'Çekiş'))}</div><h1>${esc(m.name)}</h1>
 <p>${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(sp(m, 'Batarya net (kWh)'))} kWh kullanılabilir batarya ve %10-80 DC şarj için yaklaşık ${sp(m, 'DC %10-80 (dk)')} dakika.</p>
-<div class="stats"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(c)}</b><span>kWh/100 km</span></div><div><b>${num(sp(m, '0-100 km/s (sn)'))} sn</b><span>0-100 km/s</span></div><div><b>${sp(m, 'DC şarj (kW)')} kW</b><span>DC şarj</span></div></div>${minPrice(m) ? `<p style="margin-top:16px"><a href="#fiyatlar" style="color:#5eead4;font-weight:600">${tl(minPrice(m))}'den başlayan fiyatlar · ${m.variants.length} varyant →</a></p>` : ''}</div>
+<div class="stats"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(c)}</b><span>kWh/100 km</span></div>${sp(m, '0-100 km/s (sn)') != null ? `<div><b>${num(sp(m, '0-100 km/s (sn)'))} sn</b><span>0-100 km/s</span></div>` : ''}<div><b>${sp(m, 'DC şarj (kW)')} kW</b><span>DC şarj</span></div></div>${minPrice(m) ? `<p style="margin-top:16px"><a href="#fiyatlar" style="color:#5eead4;font-weight:600">${tl(minPrice(m))}'den başlayan fiyatlar · ${m.variants.length} varyant →</a></p>` : ''}</div>
 <div>${photo(m, '../', 'm' + slugify(m.name), true)}</div></section>
 <section class="ev-sec"><h2>Editör değerlendirmesi</h2><div class="ev-box"><p>${esc(m.editor)}</p></div></section>
 <section class="ev-sec"><h2>Artılar ve eksiler</h2><div class="ev-two"><div class="ev-box"><h3>Artılar</h3><ul>${m.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div><div class="ev-box"><h3>Eksiler</h3><ul>${m.cons.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div></div></section>

@@ -18,7 +18,7 @@
     "Çekiş": "Arkadan itiş",
     "DC şarj (kW)": 180,
     "DC %10-80 (dk)": 33,
-    "AC şarj (kW)": 11,
+    "AC şarj (kW)": 22,
     "Bagaj (litre)": 441,
     "Uzunluk (mm)": 4599,
     "Ağırlık (kg)": 2173,
@@ -108,9 +108,10 @@
      "specSource": "https://evkx.net/models/togg/t10x/t10x_4more_awd/specifications/"
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
-   "refVariant": "V2 RWD Uzun Menzil"
+   "priceSource": "https://www.togg.com.tr/price-list",
+   "priceDate": "15 Haziran 2026 (Kasım'da değişmedi)",
+   "refVariant": "V2 RWD Uzun Menzil",
+   "specNote": "Togg'un eski kataloğunda V1 Uzun Menzil satırında 52,4 kWh yazıyor; model adına ve diğer kaynaklara göre 88,5 kWh esas alındı. DC %10-80 süresi EV Database verisidir; Togg %20-80 için 28 dakika veriyor."
   },
   {
    "id": "togg-t10f-v2-rwd-uzun-menzil",
@@ -206,7 +207,7 @@
     {
      "name": "V2 4More AWD",
      "battery": "88,5",
-     "range": 523,
+     "range": 500,
      "power": 320,
      "accel": 4.1,
      "drive": "Dört çeker",
@@ -216,12 +217,13 @@
        "price": 3217937
       }
      ],
-     "specSource": "https://www.log.com.tr/togg-t10f-icin-resmi-teknik-veriler-paylasildi/"
+     "specSource": "https://www.togg.com.tr/t10f"
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
-   "refVariant": "V1 RWD Uzun Menzil"
+   "priceSource": "https://www.togg.com.tr/t10f-price-list",
+   "priceDate": "15 Haziran 2026 (Kasım'da değişmedi)",
+   "refVariant": "V1 RWD Uzun Menzil",
+   "specNote": "Togg, uzun menzil sürümünün %20-80 DC şarjını 26,5 dakika olarak veriyor. Bagaj, ağırlık ve DC %10-80 süresi EV Database verisidir."
   },
   {
    "id": "kgm-torres-evx-80-6-kwh",
@@ -285,7 +287,7 @@
      "specSource": null
     }
    ],
-   "priceSource": "https://www.webtekno.com/kasim-2026-kgm-ssangyong-fiyat-listesi-h228289.html",
+   "priceSource": "https://www.ssangyong.com.tr/fiyat-listesi",
    "priceDate": "5 Kasım 2026",
    "refVariant": "4x2"
   },
@@ -370,7 +372,7 @@
      "specSource": "https://evkx.net/models/mini/countryman/countryman_se_all4/specifications/"
     }
    ],
-   "priceSource": "https://webtekno.com/mini-2026-fiyat-listesi-h228388.html",
+   "priceSource": "https://onlinestore.mini.com.tr/",
    "priceDate": "5 Kasım 2026",
    "refVariant": "Countryman E (150 kW)"
   },
@@ -449,8 +451,8 @@
    "spec": {
     "Batarya net (kWh)": 43.8,
     "Batarya brüt (kWh)": 44.0,
-    "WLTP menzil (km)": 305,
-    "WLTP tüketim (kWh/100 km)": 18.1,
+    "WLTP menzil (km)": 301,
+    "WLTP tüketim (kWh/100 km)": 18.5,
     "Güç (kW)": 83,
     "0-100 km/s (sn)": 12.1,
     "Azami hız (km/s)": 143,
@@ -463,7 +465,7 @@
     "Ağırlık (kg)": 1573,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/2238/Opel-Frontera-Electric-44-kWh",
+   "source": "https://www.opel.com.tr/araclar/frontera/genel-bakis.html",
    "sourceDate": "2026-11-22",
    "pros": [
     "Uygun giriş fiyatı",
@@ -471,11 +473,11 @@
     "54 kWh uzun menzil seçeneği (408 km)"
    ],
    "cons": [
-    "Standart sürümde 305 km WLTP menzil",
+    "Standart sürümde 301 km WLTP menzil",
     "0-100 km/s 12,1 sn yavaş",
     "Standart AC şarj 7,4 kW"
    ],
-   "editor": "Frontera Electric, elektrikliye geçişi bütçe odaklı yapmak isteyenler için tasarlanmış bir model ve Citroën ë-C3 Aircross ile aynı altyapıyı kullanıyor. 44 kWh'lik LFP batarya 305 km WLTP menzil veriyor; 54 kWh'lik uzun menzil sürümü ise bunu 408 km'ye çıkarıyor; günlük işe gidiş ve şehir içi kullanım için bu fazlasıyla yeterli, ama sık sık şehirlerarası yol yapanlar için her 200-250 km'de bir şarj durağı demek. 83 kW motor ve 12,1 saniyelik 0-100 km/s, otoyolda sollama yaparken planlı davranmayı gerektiriyor; azami hız da 143 km/s ile sınırlı. Buna karşın 460 litrelik bagaj ve 4,4 metrelik boy, aile kullanımına uygun bir pratiklik sunuyor. Standart AC şarj 7,4 kW olduğu için evde gece boyunca dolum sorunsuz, ancak 11 kW opsiyonu varsa işyerinde ya da sitede hızlandırır. Günde 100 km'nin altında yol yapan ve evde şarj imkânı olan biri için Frontera akıllı ve ekonomik bir tercih.",
+   "editor": "Frontera Electric, elektrikliye geçişi bütçe odaklı yapmak isteyenler için tasarlanmış bir model ve Citroën ë-C3 Aircross ile aynı altyapıyı kullanıyor. 44 kWh'lik LFP batarya 301 km WLTP menzil veriyor; 54 kWh'lik uzun menzil sürümü ise bunu 408 km'ye çıkarıyor; günlük işe gidiş ve şehir içi kullanım için bu fazlasıyla yeterli, ama sık sık şehirlerarası yol yapanlar için her 200-250 km'de bir şarj durağı demek. 83 kW motor ve 12,1 saniyelik 0-100 km/s, otoyolda sollama yaparken planlı davranmayı gerektiriyor; azami hız da 143 km/s ile sınırlı. Buna karşın 460 litrelik bagaj ve 4,4 metrelik boy, aile kullanımına uygun bir pratiklik sunuyor. Standart AC şarj 7,4 kW olduğu için evde gece boyunca dolum sorunsuz, ancak 11 kW opsiyonu varsa işyerinde ya da sitede hızlandırır. Günde 100 km'nin altında yol yapan ve evde şarj imkânı olan biri için Frontera akıllı ve ekonomik bir tercih.",
    "note": "",
    "image": {
     "src": "assets/ev/opel-frontera-electric-44-kwh.webp",
@@ -490,7 +492,7 @@
     {
      "name": "Standart Menzil",
      "battery": "44",
-     "range": 305,
+     "range": 301,
      "power": 83,
      "accel": 12.1,
      "drive": "Önden çekiş",
@@ -500,7 +502,7 @@
        "price": 1895000
       }
      ],
-     "specSource": "https://www.media.stellantis.com/me-tr/opel/press/opel-frontera-elektrik-te-uzun-menzilli-yeni-secenek"
+     "specSource": "https://www.opel.com.tr/araclar/frontera/genel-bakis.html"
     },
     {
      "name": "Uzun Menzil",
@@ -515,12 +517,13 @@
        "price": 2010000
       }
      ],
-     "specSource": "https://www.media.stellantis.com/me-tr/opel/press/opel-frontera-elektrik-te-uzun-menzilli-yeni-secenek"
+     "specSource": "https://www.opel.com.tr/araclar/frontera/genel-bakis.html"
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
-   "refVariant": "Standart Menzil"
+   "priceSource": "https://fiyatlisteleri.opel.com.tr/arac/frontera-elektrik",
+   "priceDate": "7 Kasım 2026",
+   "refVariant": "Standart Menzil",
+   "specNote": "0-100 km/s, DC %10-80, ağırlık ve bagaj değerleri EV Database (Avrupa) verisidir; Opel Türkiye bu değerleri yayımlamıyor. Fiyat listesindeki '100 kW' ibaresi DC şarj gücüdür, motor gücü 83 kW'tır."
   },
   {
    "id": "tesla-model-y-rwd",
@@ -531,10 +534,10 @@
    "spec": {
     "Batarya net (kWh)": 60.0,
     "Batarya brüt (kWh)": 64.0,
-    "WLTP menzil (km)": 525,
+    "WLTP menzil (km)": 534,
     "WLTP tüketim (kWh/100 km)": 13.1,
-    "Güç (kW)": 227,
-    "0-100 km/s (sn)": 7.2,
+    "Güç (kW)": 159,
+    "0-100 km/s (sn)": null,
     "Azami hız (km/s)": 201,
     "Çekiş": "Arkadan itiş",
     "DC şarj (kW)": 175,
@@ -545,7 +548,7 @@
     "Ağırlık (kg)": 1981,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/3741/Tesla-Model-Y-RWD",
+   "source": "https://www.tesla.com/tr_tr/support/power-consumption",
    "sourceDate": "2026-11-22",
    "pros": [
     "13,1 kWh/100 km ile sınıfının en verimlisi",
@@ -556,7 +559,7 @@
     "Fiziksel kontroller sınırlı",
     "Servis ağı diğer markalardan dar"
    ],
-   "editor": "Model Y'nin Türkiye'deki giriş sürümü Standart Range RWD, 60 kWh'lik nispeten küçük bir bataryadan 525 km WLTP menzil çıkarıyor. Daha uzun yol yapanlar için Long Range RWD 622 km'ye çıkıyor. Bunu sağlayan şey 13,1 kWh/100 km'lik onaylı tüketim; bu listede hiçbir SUV bu verimliliğe yaklaşmıyor. Pratikte bu, aynı kilometre için daha düşük elektrik faturası ve daha kısa şarj durakları anlamına geliyor. 175 kW DC şarj ve 24 dakikalık %10-80 süresi, Tesla'nın Supercharger ağıyla birleşince uzun yolu en sorunsuz hâle getiren modellerden biri. 854 litre arka bagaj ve 117 litre ön bagaj ile toplam 952 litre hacim, aile kullanımında ciddi bir avantaj. Eksi tarafta, neredeyse tüm işlevler orta ekrandan yönetiliyor ve vites seçimi bile ekranda. Servis ve kaporta onarımı için yetkili nokta sayısı diğer büyük markalara göre az. Verimlilik ve şarj altyapısı sizin için öncelikse Model Y hâlâ referans noktası.",
+   "editor": "Model Y'nin Türkiye'deki giriş sürümü Standart Range RWD, nispeten küçük bir bataryadan 534 km WLTP menzil çıkarıyor. Daha uzun yol yapanlar için Premium Long Range sürümleri 600 km'nin üzerine çıkıyor. Bunu sağlayan şey 13,1 kWh/100 km'lik onaylı tüketim; bu listede hiçbir SUV bu verimliliğe yaklaşmıyor. Pratikte bu, aynı kilometre için daha düşük elektrik faturası ve daha kısa şarj durakları anlamına geliyor. 175 kW DC şarj ve 24 dakikalık %10-80 süresi, Tesla'nın Supercharger ağıyla birleşince uzun yolu en sorunsuz hâle getiren modellerden biri. 854 litre arka bagaj ve 117 litre ön bagaj ile toplam 952 litre hacim, aile kullanımında ciddi bir avantaj. Eksi tarafta, neredeyse tüm işlevler orta ekrandan yönetiliyor ve vites seçimi bile ekranda. Servis ve kaporta onarımı için yetkili nokta sayısı diğer büyük markalara göre az. Verimlilik ve şarj altyapısı sizin için öncelikse Model Y hâlâ referans noktası.",
    "note": "",
    "image": {
     "src": "assets/ev/tesla-model-y-rwd.webp",
@@ -570,10 +573,10 @@
    "variants": [
     {
      "name": "Standart Range RWD",
-     "battery": "64",
-     "range": 525,
-     "power": 227,
-     "accel": 7.2,
+     "battery": null,
+     "range": 534,
+     "power": 159,
+     "accel": null,
      "drive": "Arkadan itiş",
      "trims": [
       {
@@ -581,13 +584,13 @@
        "price": 2474985
       }
      ],
-     "specSource": "https://ev-database.org/car/3741/Tesla-Model-Y-RWD"
+     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
     },
     {
-     "name": "Long Range RWD",
-     "battery": "78,1",
-     "range": 622,
-     "power": 250,
+     "name": "Premium Long Range RWD",
+     "battery": null,
+     "range": 603,
+     "power": 159,
      "accel": 5.6,
      "drive": "Arkadan itiş",
      "trims": [
@@ -596,14 +599,14 @@
        "price": 3906000
       }
      ],
-     "specSource": "https://ev-database.org/car/3120/Tesla-Model-Y-Long-Range-RWD"
+     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
     },
     {
-     "name": "Long Range AWD",
-     "battery": "78,4",
-     "range": 586,
-     "power": 331,
-     "accel": 4.8,
+     "name": "Premium Long Range AWD",
+     "battery": null,
+     "range": 622,
+     "power": "137 + 227",
+     "accel": 4.6,
      "drive": "Dört çeker",
      "trims": [
       {
@@ -611,14 +614,14 @@
        "price": 4620000
       }
      ],
-     "specSource": "https://www.evspecifications.com/en/model/583c331"
+     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
     },
     {
      "name": "Performance AWD",
-     "battery": "82",
+     "battery": null,
      "range": 580,
-     "power": 461,
-     "accel": 3.8,
+     "power": "158 + 303",
+     "accel": 3.5,
      "drive": "Dört çeker",
      "trims": [
       {
@@ -626,12 +629,13 @@
        "price": 4966500
       }
      ],
-     "specSource": "https://ev-database.org/car/3269/Tesla-Model-Y-Performance"
+     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
     }
    ],
    "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
    "priceDate": "3 Kasım 2026",
-   "refVariant": "Standart Range RWD"
+   "refVariant": "Standart Range RWD",
+   "specNote": "Tesla batarya kapasitesini açıklamaz; batarya, tüketim, DC şarj ve ağırlık değerleri EV Database verisidir. Güç, Tesla Türkiye'nin verdiği arka motor gücüdür. Standart sürümün 0-100 km/s değeri kaynaklar arasında çelişkili olduğu için gösterilmiyor."
   },
   {
    "id": "citroen-e-c3-aircross-44-kwh",
@@ -642,8 +646,8 @@
    "spec": {
     "Batarya net (kWh)": 43.8,
     "Batarya brüt (kWh)": 44.0,
-    "WLTP menzil (km)": 306,
-    "WLTP tüketim (kWh/100 km)": 18.1,
+    "WLTP menzil (km)": 303,
+    "WLTP tüketim (kWh/100 km)": 18.3,
     "Güç (kW)": 83,
     "0-100 km/s (sn)": 12.9,
     "Azami hız (km/s)": 143,
@@ -656,7 +660,7 @@
     "Ağırlık (kg)": 1579,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/2224/Citroen-e-C3-Aircross-Comfort-Range-44-kWh",
+   "source": "https://www.citroen.com.tr/araclar/c3-aircross-suv/ec3-aircross.html",
    "sourceDate": "2026-11-22",
    "pros": [
     "Yumuşak süspansiyon ve konfor odaklı koltuklar",
@@ -664,10 +668,10 @@
     "Uygun fiyat segmenti"
    ],
    "cons": [
-    "306 km WLTP menzil",
+    "303 km WLTP menzil (standart)",
     "Düşük performans (12,9 sn)"
    ],
-   "editor": "ë-C3 Aircross, Opel Frontera ile aynı Smart Car altyapısını, aynı 44 kWh LFP bataryayı ve aynı 83 kW motoru kullanıyor; teknik verilerin neredeyse birebir aynı olması bu yüzden. İki model arasındaki fark karakterde: Citroën, konfor odaklı süspansiyon ayarı ve Advanced Comfort koltuklarla bozuk yollarda daha rahat bir sürüş vaat ediyor, Opel ise daha sade ve sıkı bir ayar tercih ediyor. Standart sürümün 306 km WLTP menzili şehir içi ve banliyö kullanımı için uygun; Türkiye'de satılan 54 kWh'lik uzun menzil sürümü ise yaklaşık 399 km sunuyor; otoyolda 120 km/s hızda bu değerin belirgin şekilde düşeceğini hesaba katmak gerekiyor. 460 litrelik bagaj ve geniş arka kapılar aile için pratik. 100 kW DC şarj yolculukta yeterli ama hızlı değil. Fiyatı ön planda tutan, evde ya da işyerinde düzenli AC şarj imkânı olan ve konforu performansa tercih eden biri için ë-C3 Aircross, Frontera'ya göre daha yumuşak bir seçenek.",
+   "editor": "ë-C3 Aircross, Opel Frontera ile aynı Smart Car altyapısını, aynı 44 kWh LFP bataryayı ve aynı 83 kW motoru kullanıyor; teknik verilerin neredeyse birebir aynı olması bu yüzden. İki model arasındaki fark karakterde: Citroën, konfor odaklı süspansiyon ayarı ve Advanced Comfort koltuklarla bozuk yollarda daha rahat bir sürüş vaat ediyor, Opel ise daha sade ve sıkı bir ayar tercih ediyor. Standart sürümün 303 km WLTP menzili şehir içi ve banliyö kullanımı için uygun; Türkiye'de satılan 54 kWh'lik uzun menzil sürümü ise yaklaşık 399 km sunuyor; otoyolda 120 km/s hızda bu değerin belirgin şekilde düşeceğini hesaba katmak gerekiyor. 460 litrelik bagaj ve geniş arka kapılar aile için pratik. 100 kW DC şarj yolculukta yeterli ama hızlı değil. Fiyatı ön planda tutan, evde ya da işyerinde düzenli AC şarj imkânı olan ve konforu performansa tercih eden biri için ë-C3 Aircross, Frontera'ya göre daha yumuşak bir seçenek.",
    "note": "",
    "image": {
     "src": "assets/ev/citroen-e-c3-aircross-44-kwh.webp",
@@ -682,7 +686,7 @@
     {
      "name": "Standart Menzil",
      "battery": "44",
-     "range": 306,
+     "range": 303,
      "power": 83,
      "accel": 12.9,
      "drive": "Önden çekiş",
@@ -692,14 +696,14 @@
        "price": 1875000
       }
      ],
-     "specSource": null
+     "specSource": "https://www.citroen.com.tr/araclar/c3-aircross-suv/ec3-aircross.html"
     },
     {
      "name": "Uzun Menzil",
      "battery": "54",
      "range": 399,
      "power": 83,
-     "accel": null,
+     "accel": 12.9,
      "drive": "Önden çekiş",
      "trims": [
       {
@@ -711,12 +715,13 @@
        "price": 2020000
       }
      ],
-     "specSource": "https://www.media.stellantis.com/me-tr/citroen/press/yeni-citroen-e-c3-aircross-un-uzun-menzil-versiyonu-tuerkiye-de"
+     "specSource": "https://www.citroen.com.tr/araclar/c3-aircross-suv/ec3-aircross.html"
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
-   "refVariant": "Standart Menzil"
+   "priceSource": "https://talep.citroen.com.tr/fiyat-listesi/arac/e-c3-aircross",
+   "priceDate": "Kasım 2026",
+   "refVariant": "Standart Menzil",
+   "specNote": "DC %10-80, ağırlık ve bagaj değerleri EV Database (Avrupa) verisidir. Citroën Türkiye %20-80 DC şarj süresini standart menzilde yaklaşık 26, uzun menzilde 28 dakika olarak veriyor."
   },
   {
    "id": "bmw-ix1-edrive20",
@@ -802,7 +807,7 @@
     "Batarya net (kWh)": 79.0,
     "Batarya brüt (kWh)": 82.0,
     "WLTP menzil (km)": 566,
-    "WLTP tüketim (kWh/100 km)": 16.6,
+    "WLTP tüketim (kWh/100 km)": 16.9,
     "Güç (kW)": 150,
     "0-100 km/s (sn)": 7.9,
     "Azami hız (km/s)": 180,
@@ -876,7 +881,7 @@
    "priceSource": "https://www.webtekno.com/volvo-kasim-2026-fiyat-listesi-h228322.html",
    "priceDate": "5 Kasım 2026",
    "refVariant": "Single Motor Extended Range (150 kW)",
-   "specNote": "Batarya, tüketim, bagaj ve ağırlık değerleri Avrupa'daki 185 kW'lık sürüme (EV Database) aittir."
+   "specNote": "Kullanılabilir batarya (79 kWh) Volvo'nun teknik dokümanına, bagaj ve ağırlık değerleri EV Database (Avrupa) verisine dayanır."
   },
   {
    "id": "citroen-e-c3-44-kwh",
@@ -958,7 +963,7 @@
    "spec": {
     "Batarya net (kWh)": 78.0,
     "Batarya brüt (kWh)": 81.4,
-    "WLTP menzil (km)": 605,
+    "WLTP menzil (km)": 604,
     "WLTP tüketim (kWh/100 km)": 14.9,
     "Güç (kW)": 150,
     "0-100 km/s (sn)": 7.7,
@@ -972,10 +977,10 @@
     "Ağırlık (kg)": 1885,
     "Koltuk": 5
    },
-   "source": "https://ev-database.org/car/2212/Kia-EV3-Long-Range",
+   "source": "https://www.kia.com/tr/modeller/ev3/teknik-ozellikler.html",
    "sourceDate": "2026-11-22",
    "pros": [
-    "605 km WLTP menzil kompakt boyutta",
+    "604 km WLTP menzil kompakt boyutta",
     "Verimli (14,9 kWh/100 km)",
     "Düz zeminli, pratik iç mekân"
    ],
@@ -983,7 +988,7 @@
     "DC şarj 135 kW, büyük bataryaya göre yavaş",
     "Azami hız 170 km/s"
    ],
-   "editor": "EV3, kompakt bir SUV gövdesine 81,4 kWh'lik büyük bir batarya sığdırmasıyla öne çıkıyor. Sonuç, 4,3 metrelik bir araçtan 605 km WLTP menzil: bu boyuttaki rakiplerin çoğu 400-500 km bandında kalıyor. 14,9 kWh/100 km'lik tüketim de bu menzilin sadece batarya büyüklüğünden değil verimlilikten geldiğini gösteriyor. 460 litrelik bagaj ve düz zemin, boyutuna göre pratik bir iç mekân sunuyor. Zayıf nokta şarj hızı: 135 kW tepe güç ve 33 dakikalık %10-80 süresi, büyük bataryayı doldururken biraz sabır istiyor. Kia'nın kardeş modelleri EV6 ve Ioniq 5'teki 800 voltluk mimari burada yok. 150 kW motor ve 7,7 saniyelik 0-100 km/s günlük sürüşte yeterli. 4,3 metrelik boyu ise şehirde park etmeyi kolaylaştırıyor. Şehirde küçük, uzun yolda menzil kaygısı yaşatmayan tek bir araç arıyorsanız EV3 listedeki en dengeli seçeneklerden biri.",
+   "editor": "EV3, kompakt bir SUV gövdesine 81,4 kWh'lik büyük bir batarya sığdırmasıyla öne çıkıyor. Sonuç, 4,3 metrelik bir araçtan 604 km WLTP menzil: bu boyuttaki rakiplerin çoğu 400-500 km bandında kalıyor. 14,9 kWh/100 km'lik tüketim de bu menzilin sadece batarya büyüklüğünden değil verimlilikten geldiğini gösteriyor. 460 litrelik bagaj ve düz zemin, boyutuna göre pratik bir iç mekân sunuyor. Zayıf nokta şarj hızı: 135 kW tepe güç ve 33 dakikalık %10-80 süresi, büyük bataryayı doldururken biraz sabır istiyor. Kia'nın kardeş modelleri EV6 ve Ioniq 5'teki 800 voltluk mimari burada yok. 150 kW motor ve 7,7 saniyelik 0-100 km/s günlük sürüşte yeterli. 4,3 metrelik boyu ise şehirde park etmeyi kolaylaştırıyor. Şehirde küçük, uzun yolda menzil kaygısı yaşatmayan tek bir araç arıyorsanız EV3 listedeki en dengeli seçeneklerden biri.",
    "note": "",
    "image": {
     "src": "assets/ev/kia-ev3-long-range.webp",
@@ -996,9 +1001,9 @@
    },
    "variants": [
     {
-     "name": "Long Range (150 kW)",
+     "name": "Long Range (81,4 kWh)",
      "battery": "81,4",
-     "range": 605,
+     "range": 604,
      "power": 150,
      "accel": 7.7,
      "drive": "Önden çekiş",
@@ -1010,16 +1015,42 @@
       {
        "name": "Elegance Long Range",
        "price": 3199000
-      },
+      }
+     ],
+     "specSource": "https://www.kia.com/tr/modeller/ev3/teknik-ozellikler.html"
+    },
+    {
+     "name": "Long Range GT-Line (81,4 kWh)",
+     "battery": "81,4",
+     "range": 584,
+     "power": 150,
+     "accel": 7.7,
+     "drive": "Önden çekiş",
+     "trims": [
       {
        "name": "GT-Line Long Range",
        "price": 3790000
       }
      ],
-     "specSource": null
+     "specSource": "https://www.kia.com/tr/modeller/ev3/teknik-ozellikler.html"
     },
     {
-     "name": "Batarya belirtilmemiş (150 kW)",
+     "name": "Standart (58,3 kWh)",
+     "battery": "58,3",
+     "range": 431,
+     "power": 150,
+     "accel": 7.5,
+     "drive": "Önden çekiş",
+     "trims": [
+      {
+       "name": "Elegance Comfort",
+       "price": 2485000
+      }
+     ],
+     "specSource": "https://www.kia.com/tr/modeller/ev3/teknik-ozellikler.html"
+    },
+    {
+     "name": "Prestige (batarya teyit edilemedi)",
      "battery": null,
      "range": null,
      "power": 150,
@@ -1027,20 +1058,17 @@
      "drive": "Önden çekiş",
      "trims": [
       {
-       "name": "Elegance Comfort",
-       "price": 2485000
-      },
-      {
        "name": "Prestige",
        "price": 3199000
       }
      ],
-     "specSource": null
+     "specSource": "https://www.kia.com/tr/modeller/ev3/teknik-ozellikler.html"
     }
    ],
    "priceSource": "https://www.kia.com/tr/modeller/ev3/fiyat-listesi.html",
    "priceDate": "14 Kasım 2026",
-   "refVariant": "Long Range (150 kW)"
+   "refVariant": "Long Range (81,4 kWh)",
+   "specNote": "0-100 km/s, DC şarj, ağırlık ve bagaj değerleri EV Database (Avrupa) verisidir."
   },
   {
    "id": "bmw-ix3-50-xdrive",
@@ -1123,26 +1151,26 @@
     "0-100 km/s (sn)": 7.6,
     "Azami hız (km/s)": 210,
     "Çekiş": "Arkadan itiş",
-    "DC şarj (kW)": 353,
-    "DC %10-80 (dk)": 18,
+    "DC şarj (kW)": 320,
+    "DC %10-80 (dk)": 22,
     "AC şarj (kW)": 11,
-    "Bagaj (litre)": 506,
+    "Bagaj (litre)": 405,
     "Uzunluk (mm)": 4723,
     "Ağırlık (kg)": 2055,
     "Koltuk": 5
    },
-   "source": "https://www.auto-motor-und-sport.de/elektroauto/mercedes-cla-200-eq-elektrisches-steuersparmodell-fuer-die-tuerkei/",
+   "source": "https://www.mercedes-benz.com.tr/passengercars/models/saloon/cla-electric/overview.html",
    "sourceDate": "2026-11-22",
    "pros": [
     "730 km WLTP menzil",
     "13,5 kWh/100 km ile çok verimli",
-    "Hızlı DC şarj (800 V)"
+    "320 kW DC şarj, 22 dk %10-80"
    ],
    "cons": [
     "Arka koltuk tavan yüksekliği sınırlı",
     "Üst fiyat segmenti"
    ],
-   "editor": "Elektrikli CLA, Türkiye'de yalnızca CLA 200+ olarak satılıyor. Mercedes bu sürümün gücünü ÖTV dilimine sığdırmak için 160 kW'a çekmiş; Avrupa'daki CLA 250+ ile aynı 85 kWh bataryayı ve 800 voltluk mimariyi kullanıyor. Sonuç 730 km WLTP menzil ve 13,5 kWh/100 km'lik tüketim: bu listedeki en verimli araçlardan biri. Boyut olarak Togg T10F'ye yakın olan CLA, onun uzun menzilli sürümünden yaklaşık 100 km daha uzun WLTP menzil sunuyor. 800 volt mimari sayesinde uygun bir istasyonda %10-80 şarj 20 dakikanın altında tamamlanabiliyor. 7,6 saniyelik 0-100 km/s, 250+'nın 6,7 saniyesinin gerisinde kalsa da günlük sürüşte rahat bir performans veriyor. Ön ve arka bagaj toplamı 500 litreyi aşıyor. Coupé benzeri tavan çizgisi arka koltukta uzun boylu yolcuların baş mesafesini kısıtlıyor; bu bir aile sedanından çok sürücü odaklı bir araç. Uzun yolu sık yapan ve verimliliği önemseyen biri için CLA 200+, premium segmentteki en güçlü seçeneklerden.",
+   "editor": "Elektrikli CLA, Türkiye'de yalnızca CLA 200+ olarak satılıyor. Mercedes bu sürümün gücünü ÖTV dilimine sığdırmak için 160 kW'a çekmiş; Avrupa'daki CLA 250+ ile aynı 85 kWh bataryayı ve 800 voltluk mimariyi kullanıyor. Sonuç 730 km WLTP menzil ve 13,5 kWh/100 km'lik tüketim: bu listedeki en verimli araçlardan biri. Boyut olarak Togg T10F'ye yakın olan CLA, onun uzun menzilli sürümünden yaklaşık 100 km daha uzun WLTP menzil sunuyor. 800 volt mimari ve 320 kW'a kadar DC şarj sayesinde uygun bir istasyonda %10-80 dolum yaklaşık 22 dakika sürüyor. 7,6 saniyelik 0-100 km/s, 250+'nın 6,7 saniyesinin gerisinde kalsa da günlük sürüşte rahat bir performans veriyor. Arka bagaj 405 litre; ayrıca küçük bir ön bagaj bölmesi var. Coupé benzeri tavan çizgisi arka koltukta uzun boylu yolcuların baş mesafesini kısıtlıyor; bu bir aile sedanından çok sürücü odaklı bir araç. Uzun yolu sık yapan ve verimliliği önemseyen biri için CLA 200+, premium segmentteki en güçlü seçeneklerden.",
    "note": "",
    "image": {
     "src": "assets/ev/mercedes-cla-250-plus.webp",
@@ -1170,10 +1198,10 @@
      "specSource": "https://www.auto-motor-und-sport.de/elektroauto/mercedes-cla-200-eq-elektrisches-steuersparmodell-fuer-die-tuerkei/"
     }
    ],
-   "priceSource": "https://www.webtekno.com/mercedes-benz-kasim-2026-fiyat-listesi-h228664.html",
+   "priceSource": "https://fiyat.mercedes-benz.com.tr/model/cla/fiyat/2026",
    "priceDate": "10 Kasım 2026",
    "refVariant": "CLA 200+ (160 kW)",
-   "specNote": "Şarj, bagaj ve ağırlık değerleri aynı 85 kWh bataryayı kullanan CLA 250+ (EV Database) içindir."
+   "specNote": "Ön bagaj hacmi Mercedes Türkiye'de belirtilmiyor; tabloda yalnızca arka bagaj var. Ağırlık değeri CLA 250+ (EV Database) içindir."
   }
  ],
  "curatedPairs": [

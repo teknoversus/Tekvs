@@ -107,7 +107,7 @@
    {
     "h": "Neden %10-80 süresine bakmalısınız?",
     "p": [
-     "Tepe DC şarj gücü yalnızca kısa bir süre, genellikle batarya düşük ve sıcaklık uygunken görülür. Batarya doldukça araç gücü kademeli olarak düşürür; buna şarj eğrisi denir. %80'den sonra güç belirgin şekilde azalır ve son %20'yi doldurmak, %10'dan %80'e çıkmak kadar sürebilir. Bu yüzden iki aracı karşılaştırırken tepe güçten çok \"%10-80 süresi\" daha anlamlıdır. Örneğin listemizde 207 kW tepe güce sahip Volvo EX40 %10-80 şarjı yaklaşık 32 dakikada tamamlarken, 175 kW'lık Tesla Model Y aynı aralığı yaklaşık 24 dakikada tamamlıyor."
+     "Tepe DC şarj gücü yalnızca kısa bir süre, genellikle batarya düşük ve sıcaklık uygunken görülür. Batarya doldukça araç gücü kademeli olarak düşürür; buna şarj eğrisi denir. %80'den sonra güç belirgin şekilde azalır ve son %20'yi doldurmak, %10'dan %80'e çıkmak kadar sürebilir. Bu yüzden iki aracı karşılaştırırken tepe güçten çok \"%10-80 süresi\" daha anlamlıdır. Örneğin listemizde 200 kW tepe güce sahip Volvo EX40 %10-80 şarjı yaklaşık 28 dakikada tamamlarken, daha düşük tepe güce (175 kW) sahip Tesla Model Y aynı aralığı yaklaşık 24 dakikada tamamlıyor."
     ],
     "list": []
    },

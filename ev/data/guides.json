@@ -1,0 +1,211 @@
+[
+ {
+  "slug": "evde-elektrikli-arac-sarji",
+  "title": "Evde Elektrikli Araç Şarjı: Wallbox, Kablo Kesiti ve Sözleşme Gücü",
+  "desc": "Evde elektrikli araç şarj etmek için ne gerekir? Monofaze ve trifaze şarj gücü, wallbox seçimi, kablo kesiti, kaçak akım koruması ve sözleşme gücü.",
+  "intro": "Elektrikli araç sahiplerinin büyük kısmı şarjın çoğunu evde ya da sitede yapıyor. Doğru kurulmuş bir ev şarj noktası hem en ucuz hem en zahmetsiz yöntem. Yanlış kurulmuş bir hat ise saatlerce tam yükte çalışan bir cihaz olduğu için kablo ısınmasından sigorta atmasına kadar sorun çıkarır. Bu rehberde kurulumdan önce bilmeniz gerekenleri adım adım anlatıyoruz.",
+  "sections": [
+   {
+    "h": "Önce şunu bilin: şarj gücünü ne belirler?",
+    "p": [
+     "Evde ulaşabileceğiniz şarj gücü üç şeyin en küçüğüyle sınırlıdır: binanızın elektrik bağlantısı (monofaze ya da trifaze), wallbox'ın gücü ve aracın kendi dahili şarj cihazının (on-board charger) gücü. Örneğin 22 kW'lık bir wallbox alsanız bile aracınızın dahili şarj cihazı 11 kW ise araç 11 kW'tan fazla çekmez."
+    ],
+    "list": [
+     "Monofaze 230 V, 16 A: yaklaşık 3,7 kW",
+     "Monofaze 230 V, 32 A: yaklaşık 7,4 kW",
+     "Trifaze 400 V, 16 A: yaklaşık 11 kW",
+     "Trifaze 400 V, 32 A: yaklaşık 22 kW"
+    ]
+   },
+   {
+    "h": "Saatte kaç km kazanırsınız?",
+    "p": [
+     "Kabaca bir hesap için şarj gücünü aracın tüketimine bölmek yeterli. 11 kW ile şarj olan ve 15 kWh/100 km tüketen bir araç, kayıplar hariç saatte yaklaşık 70 km menzil kazanır. 7,4 kW'ta bu yaklaşık 45-50 km'ye iner. Günde 50-60 km yol yapan biri için gece boyunca 7,4 kW fazlasıyla yeterlidir; 11 kW ise büyük bataryalı araçları bir gecede tamamen doldurmayı kolaylaştırır."
+    ],
+    "list": []
+   },
+   {
+    "h": "Normal prizden şarj olur mu?",
+    "p": [
+     "Araçla birlikte gelen taşınabilir kablolar genellikle standart topraklı prizden 2-2,3 kW civarında şarj eder. Bu acil durumlar için iş görür, ancak priz ve tesisat saatlerce sürekli tam yükte çalışacak şekilde tasarlanmamıştır. Eski binalarda priz arkasındaki bağlantılar ve kablolar ısınabilir. Düzenli kullanım için ayrı hattan beslenen sabit bir şarj ünitesi (wallbox) en doğru çözümdür."
+    ],
+    "list": []
+   },
+   {
+    "h": "Kablo kesiti ve hat",
+    "p": [
+     "Şarj ünitesi panodan ayrı, kendine ait bir hattan beslenmelidir. Kablo kesiti akıma, hattın uzunluğuna ve kablonun döşenme şekline göre hesaplanır; gerilim düşümünün makul sınırlarda kalması gerekir. Aşağıdaki değerler yalnızca fikir vermek içindir, kesin değeri tesisatı yapacak yetkili elektrikçi hesaplamalıdır."
+    ],
+    "list": [
+     "16 A trifaze (11 kW), kısa hat: genellikle 2,5-4 mm² bakır",
+     "32 A monofaze (7,4 kW): genellikle 6 mm² bakır",
+     "32 A trifaze (22 kW): genellikle 6-10 mm² bakır",
+     "Hat uzadıkça (örneğin bodrum otoparka 40-50 m) kesit bir üst değere çıkabilir"
+    ]
+   },
+   {
+    "h": "Kaçak akım koruması neden özel?",
+    "p": [
+     "Elektrikli araç şarjında, standart kaçak akım rölelerinin (Tip AC) algılayamadığı doğru akım (DC) kaçakları oluşabilir. Bu yüzden şarj noktası için ya Tip B kaçak akım rölesi ya da Tip A röle ile birlikte 6 mA DC kaçak algılama gerekir. Birçok wallbox bu DC algılamayı kendi içinde barındırır; satın alırken teknik föyünde \"6 mA DC kaçak akım algılama\" ibaresini arayın. Ayrıca topraklamanın ölçülmesi ve uygun değerde olması şarttır."
+    ],
+    "list": []
+   },
+   {
+    "h": "Sözleşme gücü yetecek mi?",
+    "p": [
+     "Konut aboneliklerinin sözleşme gücü çoğu zaman sınırlıdır. 7,4 kW ya da 11 kW sürekli çeken bir şarj ünitesi; fırın, klima ve çamaşır makinesi gibi yüklerle aynı anda çalıştığında ana sigortanın atmasına neden olabilir. Bu durumda dağıtım şirketine başvurarak sözleşme gücünü artırmak ya da yük yönetimi (dinamik güç dengeleme) özelliği olan bir wallbox seçmek gerekir. Yük yönetimi, evdeki toplam tüketimi ölçer ve şarj gücünü buna göre otomatik olarak düşürür."
+    ],
+    "list": []
+   },
+   {
+    "h": "Sitede ya da apartmanda kurulum",
+    "p": [
+     "Ortak otoparka şarj ünitesi kurmak için site ya da apartman yönetiminin onayı gerekir; ortak alanlardaki değişiklikler için kat malikleri kurulu kararı istenebilir. Hattın hangi sayaçtan besleneceği önemlidir: kendi dairenizin sayacından ayrı bir hat çekmek, tüketimin size ait olmasını sağlar. Birden fazla kişinin şarj edeceği sitelerde yük yönetimli, ölçümlü ve kart ile kullanılan ortak sistemler daha adil ve güvenlidir."
+    ],
+    "list": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Evde elektrikli araç şarjı için wallbox şart mı?",
+    "a": "Zorunlu değil ama düzenli kullanım için önerilir. Normal priz 2-2,3 kW ile yavaştır ve saatlerce tam yükte çalışmaya uygun değildir."
+   },
+   {
+    "q": "Trifaze elektriğim yoksa ne olur?",
+    "a": "Monofaze hatta 7,4 kW'a kadar şarj mümkündür. Günlük kullanım için çoğu zaman yeterlidir."
+   },
+   {
+    "q": "Hangi kaçak akım rölesi gerekir?",
+    "a": "Tip B kaçak akım rölesi ya da Tip A röle ile birlikte 6 mA DC kaçak algılama gerekir."
+   },
+   {
+    "q": "Wallbox kurulumunu kim yapmalı?",
+    "a": "Hesaplamaları yapabilecek ve tesisatı standarda uygun kuracak yetkili bir elektrik tesisatçısı yapmalıdır."
+   }
+  ]
+ },
+ {
+  "slug": "ac-mi-dc-mi-sarj",
+  "title": "AC mi DC mi Şarj? Şarj Hızı, Şarj Eğrisi ve Batarya Ömrü",
+  "desc": "AC ve DC şarj arasındaki fark, neden %80'den sonra şarjın yavaşladığı, LFP ve NMC bataryalarda günlük şarj limiti ve batarya ömrünü uzatmanın yolları.",
+  "intro": "Elektrikli araç kataloglarında iki ayrı şarj değeri görürsünüz: AC şarj gücü (örneğin 11 kW) ve DC şarj gücü (örneğin 180 kW). Bu iki değer farklı durumlar içindir ve birini diğerinin yerine koymak yanlış beklentiye yol açar. Bu rehberde aradaki farkı, şarj eğrisini ve bataryayı uzun yıllar sağlıklı tutmanın pratik yollarını anlatıyoruz.",
+  "sections": [
+   {
+    "h": "AC şarj: evde ve otoparkta",
+    "p": [
+     "Şebekeden gelen elektrik alternatif akımdır (AC); batarya ise doğru akımla (DC) şarj olur. AC şarjda bu dönüşümü aracın içindeki dahili şarj cihazı yapar. Dahili cihazın gücü sınırlı olduğu için AC şarj genellikle 7,4 ile 22 kW arasında kalır. Yavaştır ama ucuz, bataryaya nazik ve gece boyunca beklemek için idealdir."
+    ],
+    "list": []
+   },
+   {
+    "h": "DC şarj: yolculukta",
+    "p": [
+     "DC hızlı şarj istasyonları dönüşümü istasyonun kendisinde yapar ve doğrudan bataryaya akım verir. Bu yüzden 50 kW'tan 400 kW'a kadar çok daha yüksek güçlere çıkılabilir. Katalogdaki DC değeri, aracın kabul edebileceği tepe güçtür; istasyon daha güçlü olsa bile araç bu değerin üzerine çıkmaz."
+    ],
+    "list": []
+   },
+   {
+    "h": "Neden %10-80 süresine bakmalısınız?",
+    "p": [
+     "Tepe DC şarj gücü yalnızca kısa bir süre, genellikle batarya düşük ve sıcaklık uygunken görülür. Batarya doldukça araç gücü kademeli olarak düşürür; buna şarj eğrisi denir. %80'den sonra güç belirgin şekilde azalır ve son %20'yi doldurmak, %10'dan %80'e çıkmak kadar sürebilir. Bu yüzden iki aracı karşılaştırırken tepe güçten çok \"%10-80 süresi\" daha anlamlıdır. Örneğin listemizde 207 kW tepe güce sahip Volvo EX40 %10-80 şarjı yaklaşık 32 dakikada tamamlarken, 175 kW'lık Tesla Model Y aynı aralığı yaklaşık 24 dakikada tamamlıyor."
+    ],
+    "list": []
+   },
+   {
+    "h": "Soğuk havada şarj neden yavaşlar?",
+    "p": [
+     "Lityum iyon hücreler soğukta yüksek akımı güvenli şekilde kabul edemez; araç bataryayı korumak için şarj gücünü düşürür. Kışın uzun yolda hızlı şarj istasyonuna gitmeden önce navigasyona istasyonu hedef olarak girmek, birçok modelde bataryayı önceden ısıtır (ön koşullandırma) ve şarj süresini belirgin şekilde kısaltır."
+    ],
+    "list": []
+   },
+   {
+    "h": "Batarya ömrü için günlük alışkanlıklar",
+    "p": [
+     "Batarya kimyası günlük şarj limitini belirler. Üreticilerin önerileri modele göre değişse de genel kurallar şunlardır:"
+    ],
+    "list": [
+     "NMC/NCA bataryalarda günlük kullanımda %80-90 üst limit önerilir; %100 uzun yol öncesi kullanılır",
+     "LFP bataryalarda üreticiler genellikle düzenli olarak %100'e şarj etmeyi önerir; bu, bataryanın doluluk tahmininin doğru kalmasına yardımcı olur",
+     "Aracı uzun süre %100 ya da %5'in altında bekletmekten kaçının",
+     "Sürekli DC hızlı şarj yerine mümkün olduğunda AC şarj bataryaya daha naziktir"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "AC ve DC şarj arasındaki fark nedir?",
+    "a": "AC şarjda akımı aracın dahili şarj cihazı dönüştürür ve güç 7,4-22 kW ile sınırlıdır. DC şarjda dönüşüm istasyonda yapılır ve çok daha yüksek güçlere çıkılır."
+   },
+   {
+    "q": "Neden %80'den sonra şarj yavaşlıyor?",
+    "a": "Batarya doldukça araç onu korumak için şarj gücünü düşürür. Son %20 genellikle ilk %70 kadar sürebilir."
+   },
+   {
+    "q": "Elektrikli aracı her gün %100 şarj etmek zararlı mı?",
+    "a": "NMC bataryalarda günlük %80-90 önerilir. LFP bataryalarda ise üreticiler çoğu zaman düzenli %100 şarjı önerir; aracınızın kılavuzuna bakın."
+   }
+  ]
+ },
+ {
+  "slug": "wltp-menzil-gercek-menzil",
+  "title": "WLTP Menzil ile Gerçek Menzil Arasındaki Fark: Otoyol ve Kış Etkisi",
+  "desc": "Elektrikli araçların WLTP menzili gerçek hayatta neden düşer? Otoyol hızı, kış koşulları, klima ve lastiklerin menzile etkisi ve kendi menzilinizi tahmin etme yöntemi.",
+  "intro": "Katalogda 500 km yazan bir elektrikli aracın otoyolda 350 km'de şarj istemesi şaşırtıcı değildir. WLTP, araçları birbiriyle karşılaştırmak için tasarlanmış standart bir testtir; sizin sürüşünüzü birebir yansıtmaz. Bu rehberde farkın nereden geldiğini ve kendi kullanımınıza göre menzili nasıl tahmin edebileceğinizi anlatıyoruz.",
+  "sections": [
+   {
+    "h": "WLTP testi nasıl yapılır?",
+    "p": [
+     "WLTP (Dünya Genelinde Uyumlaştırılmış Hafif Araç Test Prosedürü) laboratuvarda, makaralı bir test düzeneğinde ve ılıman sıcaklıkta yapılır. Test şehir içi, banliyö ve yol bölümlerinden oluşur; ortalama hız 50 km/s'nin altında kalır, azami hız ise yaklaşık 131 km/s'dir ve bu hız çok kısa süre görülür. Yani test, ağırlıklı olarak düşük ve orta hızları temsil eder."
+    ],
+    "list": []
+   },
+   {
+    "h": "Otoyolda menzil neden düşer?",
+    "p": [
+     "Elektrikli araçların motoru zaten çok verimlidir; yüksek hızda enerji kaybının büyük kısmı hava direncinden gelir. Hava direnci hızın karesiyle arttığı için 90 km/s'den 130 km/s'ye çıkmak, aerodinamik direnci kabaca iki katına çıkarır. Benzinli araçlarda bu etki motorun düşük verimliliği arasında kaybolurken, elektrikli araçlarda doğrudan menzile yansır. Aerodinamik sedanların (örneğin Mercedes CLA ya da Togg T10F) aynı bataryaya sahip SUV'lardan belirgin şekilde daha uzun menzil sunmasının nedeni budur."
+    ],
+    "list": []
+   },
+   {
+    "h": "Kışın menzil ne kadar azalır?",
+    "p": [
+     "Soğuk hava menzili iki yoldan etkiler: batarya kimyası soğukta daha az verimli çalışır ve kabini ısıtmak için ciddi enerji harcanır. Isı pompası olan araçlarda kayıp daha azdır. Kısa mesafeli şehir içi kullanımda, her yolculuk başında kabin ve batarya yeniden ısıtıldığı için kayıp oransal olarak daha büyüktür. Aracı şarja bağlıyken önceden ısıtmak, enerjiyi şebekeden alarak bu kaybı azaltır."
+    ],
+    "list": []
+   },
+   {
+    "h": "Kendi menzilinizi tahmin edin",
+    "p": [
+     "Kesin bir formül yoktur ama aşağıdaki oranlar planlama için iyi bir başlangıçtır. WLTP değerini aşağıdaki katsayılarla çarpın:"
+    ],
+    "list": [
+     "Yazın şehir içi ve karma kullanım: WLTP × 0,9-1,0",
+     "Yazın 120 km/s otoyol: WLTP × 0,7-0,75",
+     "Kışın karma kullanım: WLTP × 0,7-0,8",
+     "Kışın 120 km/s otoyol: WLTP × 0,55-0,65"
+    ]
+   },
+   {
+    "h": "Menzili artıran küçük alışkanlıklar",
+    "p": [
+     "Lastik basıncını üretici değerinde tutmak, gereksiz tavan barı ve yükleri çıkarmak, otoyolda 130 yerine 110-120 km/s ile gitmek ve klimayı makul bir sıcaklıkta kullanmak, toplamda menzile yüzde 10-20 arasında katkı sağlayabilir. Rejeneratif frenlemeyi en yüksek seviyede kullanmak da şehir içinde verimliliği artırır."
+    ],
+    "list": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "WLTP menzili gerçekçi mi?",
+    "a": "Karşılaştırma için güvenilirdir ama gerçek menzil otoyol hızı, sıcaklık ve sürüş tarzına göre genellikle daha düşüktür."
+   },
+   {
+    "q": "Elektrikli araç kışın ne kadar menzil kaybeder?",
+    "a": "Kullanıma göre değişir; karma kullanımda yüzde 20-30, soğukta otoyolda daha fazla kayıp görülebilir. Isı pompası kaybı azaltır."
+   },
+   {
+    "q": "Otoyolda en uzun menzili hangi elektrikli araçlar verir?",
+    "a": "Aerodinamik gövdeli ve verimli araçlar. WLTP tüketim değeri (kWh/100 km) düşük olan modeller otoyolda da genellikle daha uzun menzil sunar."
+   }
+  ]
+ }
+]

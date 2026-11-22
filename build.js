@@ -266,6 +266,20 @@ async function main(){
   writeLegacyPageRedirects({ rootDir, products });
   writeDirIndexRedirects({ rootDir });
 
+  // ---- Elektrikli araç bölümü (ev/generate-ev.js) ----
+  // YALNIZCA EV_PUBLISH=1 verildiğinde çalışır. Değişken yoksa hiçbir EV sayfası
+  // üretilmez ve sitemap'e eklenmez. Ayrıntı: ev/README.md
+  if(process.env.EV_PUBLISH === '1'){
+    const { generateEv } = require('./ev/generate-ev');
+    const { sitemap: evUrls } = generateEv({ rootDir, outDir: rootDir, publish: true });
+    const smPath = path.join(rootDir, 'sitemap.xml');
+    if(fs.existsSync(smPath) && evUrls.length){
+      const day = new Date().toISOString().slice(0, 10);
+      const add = evUrls.map(u => `  <url>\n    <loc>https://teknoversus.com.tr/${u}</loc>\n    <lastmod>${day}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>`).join('\n');
+      fs.writeFileSync(smPath, fs.readFileSync(smPath, 'utf8').replace('</urlset>', add + '\n</urlset>'));
+    }
+  }
+
   applySiteChrome({ rootDir });
   injectPwaTags({ rootDir });
 

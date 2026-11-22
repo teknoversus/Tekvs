@@ -236,6 +236,8 @@ ${scripts}
 </body></html>`;
 }
 
+const AUTHOR = { '@type': 'Person', name: 'Sinan Tanrı', url: `${SITE}/hakkimizda.html`, jobTitle: 'Kurucu, editör ve elektrikçi' };
+const byline = (date, root) => `<p class="ev-note" style="margin:0 0 14px"><a href="${root}hakkimizda.html" rel="author" style="color:inherit">Sinan Tanrı</a> · TeknoVersus · ${date} tarihinde güncellendi</p>`;
 const crumbLd = items => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: u })) });
 const faqLd = faq => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
 
@@ -330,7 +332,7 @@ s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children)
 <p>${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(sp(m, 'Batarya net (kWh)'))} kWh kullanılabilir batarya ve %10-80 DC şarj için yaklaşık ${sp(m, 'DC %10-80 (dk)')} dakika.</p>
 <div class="stats"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(c)}</b><span>kWh/100 km</span></div>${sp(m, '0-100 km/s (sn)') != null ? `<div><b>${num(sp(m, '0-100 km/s (sn)'))} sn</b><span>0-100 km/s</span></div>` : ''}<div><b>${sp(m, 'DC şarj (kW)')} kW</b><span>DC şarj</span></div></div>${minPrice(m) ? `<p style="margin-top:16px"><a href="#fiyatlar" style="color:#5eead4;font-weight:600">${tl(minPrice(m))}'den başlayan fiyatlar · ${m.variants.length} varyant →</a></p>` : ''}</div>
 <div>${photo(m, '../', 'm' + slugify(m.name), true)}</div></section>
-<section class="ev-sec"><h2>Editör değerlendirmesi</h2><div class="ev-box"><p>${esc(m.editor)}</p></div></section>
+<section class="ev-sec"><h2>Editör değerlendirmesi</h2>${byline(trDate(m.sourceDate), '../')}<div class="ev-box"><p>${esc(m.editor)}</p></div></section>
 <section class="ev-sec"><h2>Artılar ve eksiler</h2><div class="ev-two"><div class="ev-box"><h3>Artılar</h3><ul>${m.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div><div class="ev-box"><h3>Eksiler</h3><ul>${m.cons.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div></div></section>
 ${variantsHtml(m)}
 <section class="ev-sec"><h2>Teknik özellikler${m.refVariant && m.variants.length > 1 ? ` <span style="font-size:14px;font-weight:500;color:var(--ink-soft)">(${esc(m.refVariant)})</span>` : ''}</h2><table class="ev-t">${rows}</table>
@@ -383,7 +385,7 @@ ${creditsHtml([m, ...similar])}`;
 <h1 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px">${esc(a.name)} vs ${esc(b.name)}</h1>
 <section class="ev-vs"><a href="../${modelUrl(a)}">${photo(a, '../../', 'a' + slugify(a.name), true)}<h2>${esc(a.name)}</h2></a><div class="vsb">VS</div><a href="../${modelUrl(b)}">${photo(b, '../../', 'b' + slugify(b.name), true)}<h2>${esc(b.name)}</h2></a></section>
 <section class="ev-sec"><h2>Kısa sonuç</h2><div class="ev-box"><p>${esc(verdict)}</p></div></section>
-${note ? `<section class="ev-sec"><h2>Editör yorumu</h2><div class="ev-box"><p>${esc(note)}</p></div></section>` : ''}
+${note ? `<section class="ev-sec"><h2>Editör yorumu</h2>${byline(trDate(updated), '../../')}<div class="ev-box"><p>${esc(note)}</p></div></section>` : ''}
 <section class="ev-sec"><h2>Özellik karşılaştırması</h2><table class="ev-t"><tr><th>Özellik</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th></tr>${priceRow}${rows}</table>
 <p class="ev-note">Renkli hücre o satırdaki daha iyi değeri gösterir. Fiyat satırı modelin en uygun varyantını, teknik satırlar ${esc(a.name)} için ${esc(a.refVariant || '')}, ${esc(b.name)} için ${esc(b.refVariant || '')} varyantını gösterir; tüm varyantlar model sayfalarında. Kaynaklar: <a href="${esc(a.source)}" rel="noopener nofollow" target="_blank">${esc(a.name)}</a>, <a href="${esc(b.source)}" rel="noopener nofollow" target="_blank">${esc(b.name)}</a>.</p></section>
 <section class="ev-sec"><h2>Hangisi kimin için?</h2><div class="ev-two">${[a, b].map(x => `<div class="ev-box"><h3>${esc(x.name)}</h3><ul>${x.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul><p class="ev-note" style="margin-top:8px">Dikkat: ${esc(x.cons.join('; '))}.</p><p class="ev-note"><a href="../${modelUrl(x)}">Ayrıntılı değerlendirmeyi oku →</a></p></div>`).join('')}</div></section>
@@ -402,7 +404,7 @@ ${creditsHtml([a, b])}`;
     const body = `
 <nav class="crumb"><a href="../../index.html">Anasayfa</a> / <a href="../index.html">Elektrikli Araçlar</a> / Rehber</nav>
 <article class="ev-art"><h1 style="font-size:clamp(26px,3.6vw,36px);margin:14px 0 12px;line-height:1.2">${esc(g.title)}</h1>
-<p class="ev-note" style="margin:0 0 16px">TeknoVersus · Güncelleme: ${trDate(updated)}</p>
+${byline(trDate(updated), '../../')}
 <p class="lead">${esc(g.intro)}</p>
 ${g.sections.map(s => `<h2>${esc(s.h)}</h2>${s.p.map(p => `<p>${esc(p)}</p>`).join('')}${s.list.length ? `<ul>${s.list.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : ''}`).join('\n')}
 </article>
@@ -410,7 +412,7 @@ ${g.sections.map(s => `<h2>${esc(s.h)}</h2>${s.p.map(p => `<p>${esc(p)}</p>`).jo
 ${calcHtml(models, null)}
 <section class="ev-sec"><h2>Diğer rehberler</h2><div class="ev-grid">${others.map(o => `<a class="ev-box ev-gl" href="${o.slug}.html"><h3>${esc(o.title)}</h3><p>${esc(o.desc)}</p><span>Rehberi oku →</span></a>`).join('')}</div></section>`;
     write(rel, shell({ title: `${g.title} | TeknoVersus`, desc: g.desc.slice(0, 160), canonical: url, robots: robots(true), body, root: '../../', draft,
-      jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [g.title, url]]), faqLd(g.faq.map(f => [f.q, f.a])), { '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.desc, dateModified: updated, author: { '@type': 'Organization', name: 'TeknoVersus', url: `${SITE}/hakkimizda.html` }, publisher: { '@type': 'Organization', name: 'TeknoVersus' }, mainEntityOfPage: url }],
+      jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [g.title, url]]), faqLd(g.faq.map(f => [f.q, f.a])), { '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.desc, dateModified: updated, author: AUTHOR, publisher: { '@type': 'Organization', name: 'TeknoVersus' }, mainEntityOfPage: url }],
       scripts: `<script>${CALC_JS}</script>` }));
     if(publish) sitemap.push(rel);
   });

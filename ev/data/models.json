@@ -1,0 +1,36 @@
+{
+  "_uyari": "ÖRNEK VERİ — doğrulanmamıştır. Yalnızca tasarım ve şablon denemesi içindir. Yayına almadan önce her değer üretici sayfasından doğrulanmalı ve 'sample' alanı kaldırılmalıdır. Üretici, sample:true olan hiçbir kaydı yayınlamaz.",
+  "models": [
+    {"id":"togg-t10x-v2-rwd","brand":"Togg","name":"Togg T10X V2 RWD","body":"SUV","year":2025,"sample":true,
+     "spec":{"Batarya (kWh)":88.5,"WLTP menzil (km)":523,"Güç (kW)":160,"0-100 km/s (sn)":7.4,"DC şarj (kW)":180,"AC şarj (kW)":11,"Çekiş":"Arkadan","Bagaj (litre)":441,"Uzunluk (mm)":4560},
+     "pros":["Yerli üretim","Geniş batarya"],"cons":["Fiyat segmentine göre yüksek olabilir"],
+     "editor":"Örnek metin: bu alan, modeli gerçekten kullanan ya da inceleyen bir editörün 120 kelimeden uzun, özgün değerlendirmesi ile doldurulmalıdır."},
+    {"id":"tesla-model-y-rwd","brand":"Tesla","name":"Tesla Model Y RWD","body":"SUV","year":2024,"sample":true,
+     "spec":{"Batarya (kWh)":60,"WLTP menzil (km)":455,"Güç (kW)":220,"0-100 km/s (sn)":6.9,"DC şarj (kW)":170,"AC şarj (kW)":11,"Çekiş":"Arkadan","Bagaj (litre)":854,"Uzunluk (mm)":4751},
+     "pros":["Süper Şarj ağı","Yazılım güncellemeleri"],"cons":["Servis ağı sınırlı"],"editor":""},
+    {"id":"tesla-model-3-rwd","brand":"Tesla","name":"Tesla Model 3 RWD","body":"Sedan","year":2024,"sample":true,
+     "spec":{"Batarya (kWh)":60,"WLTP menzil (km)":513,"Güç (kW)":208,"0-100 km/s (sn)":6.1,"DC şarj (kW)":170,"AC şarj (kW)":11,"Çekiş":"Arkadan","Bagaj (litre)":594,"Uzunluk (mm)":4720},
+     "pros":["Verimli","Hızlı"],"cons":["Sert sürüş"],"editor":""},
+    {"id":"byd-seal-rwd","brand":"BYD","name":"BYD Seal RWD","body":"Sedan","year":2024,"sample":true,
+     "spec":{"Batarya (kWh)":82.5,"WLTP menzil (km)":570,"Güç (kW)":230,"0-100 km/s (sn)":5.9,"DC şarj (kW)":150,"AC şarj (kW)":11,"Çekiş":"Arkadan","Bagaj (litre)":400,"Uzunluk (mm)":4800},
+     "pros":["Uzun menzil","Donanım"],"cons":["Arka koltuk alanı"],"editor":""},
+    {"id":"byd-atto-3","brand":"BYD","name":"BYD Atto 3","body":"SUV","year":2023,"sample":true,
+     "spec":{"Batarya (kWh)":60.5,"WLTP menzil (km)":420,"Güç (kW)":150,"0-100 km/s (sn)":7.3,"DC şarj (kW)":88,"AC şarj (kW)":11,"Çekiş":"Önden","Bagaj (litre)":440,"Uzunluk (mm)":4455},
+     "pros":["Şehir içi uygun boyut","Donanım"],"cons":["DC şarj hızı düşük"],"editor":""},
+    {"id":"renault-megane-e-tech-ev60","brand":"Renault","name":"Renault Megane E-Tech EV60","body":"Hatchback","year":2023,"sample":true,
+     "spec":{"Batarya (kWh)":60,"WLTP menzil (km)":450,"Güç (kW)":160,"0-100 km/s (sn)":7.4,"DC şarj (kW)":130,"AC şarj (kW)":22,"Çekiş":"Önden","Bagaj (litre)":440,"Uzunluk (mm)":4200},
+     "pros":["Kompakt boyut","22 kW AC şarj"],"cons":["Menzil rakiplerin gerisinde"],"editor":""},
+    {"id":"hyundai-ioniq-5-rwd","brand":"Hyundai","name":"Hyundai Ioniq 5 RWD","body":"SUV","year":2023,"sample":true,
+     "spec":{"Batarya (kWh)":77.4,"WLTP menzil (km)":507,"Güç (kW)":168,"0-100 km/s (sn)":7.3,"DC şarj (kW)":238,"AC şarj (kW)":11,"Çekiş":"Arkadan","Bagaj (litre)":527,"Uzunluk (mm)":4655},
+     "pros":["800 V hızlı şarj","Geniş iç mekân"],"cons":["Fiyat"],"editor":""},
+    {"id":"kia-ev6-rwd","brand":"Kia","name":"Kia EV6 RWD","body":"Crossover","year":2023,"sample":true,
+     "spec":{"Batarya (kWh)":77.4,"WLTP menzil (km)":528,"Güç (kW)":168,"0-100 km/s (sn)":7.3,"DC şarj (kW)":240,"AC şarj (kW)":11,"Çekiş":"Arkadan","Bagaj (litre)":490,"Uzunluk (mm)":4680},
+     "pros":["Hızlı şarj","Sürüş keyfi"],"cons":["Arka kafa mesafesi"],"editor":""}
+  ],
+  "curatedPairs": [
+    ["tesla-model-y-rwd","byd-atto-3"],
+    ["tesla-model-3-rwd","byd-seal-rwd"],
+    ["hyundai-ioniq-5-rwd","kia-ev6-rwd"],
+    ["togg-t10x-v2-rwd","tesla-model-y-rwd"]
+  ]
+}

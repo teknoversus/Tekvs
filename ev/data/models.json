@@ -109,7 +109,7 @@
     }
    ],
    "priceSource": "https://www.togg.com.tr/price-list",
-   "priceDate": "15 Haziran 2026 (Kasım'da değişmedi)",
+   "priceDate": "15 Haziran 2026 (22 Kasım itibarıyla geçerli)",
    "refVariant": "V2 RWD Uzun Menzil",
    "specNote": "Togg'un eski kataloğunda V1 Uzun Menzil satırında 52,4 kWh yazıyor; model adına ve diğer kaynaklara göre 88,5 kWh esas alındı. DC %10-80 süresi EV Database verisidir; Togg %20-80 için 28 dakika veriyor."
   },
@@ -221,7 +221,7 @@
     }
    ],
    "priceSource": "https://www.togg.com.tr/t10f-price-list",
-   "priceDate": "15 Haziran 2026 (Kasım'da değişmedi)",
+   "priceDate": "15 Haziran 2026 (22 Kasım itibarıyla geçerli)",
    "refVariant": "V1 RWD Uzun Menzil",
    "specNote": "Togg, uzun menzil sürümünün %20-80 DC şarjını 26,5 dakika olarak veriyor. Bagaj, ağırlık ve DC %10-80 süresi EV Database verisidir."
   },
@@ -280,15 +280,15 @@
      "drive": "Önden çekiş",
      "trims": [
       {
-       "name": "Torres EVX 4x2 Panoramik Cam Tavan",
-       "price": 2487420
+       "name": "Torres EVX 4x2 Panoramik Cam Tavanlı (Telematik)",
+       "price": 2474830
       }
      ],
      "specSource": null
     }
    ],
    "priceSource": "https://www.ssangyong.com.tr/fiyat-listesi",
-   "priceDate": "5 Kasım 2026",
+   "priceDate": "22 Kasım 2026",
    "refVariant": "4x2"
   },
   {
@@ -537,7 +537,7 @@
     "WLTP menzil (km)": 534,
     "WLTP tüketim (kWh/100 km)": 13.1,
     "Güç (kW)": 159,
-    "0-100 km/s (sn)": null,
+    "0-100 km/s (sn)": 7.8,
     "Azami hız (km/s)": 201,
     "Çekiş": "Arkadan itiş",
     "DC şarj (kW)": 175,
@@ -548,7 +548,7 @@
     "Ağırlık (kg)": 1981,
     "Koltuk": 5
    },
-   "source": "https://www.tesla.com/tr_tr/support/power-consumption",
+   "source": "https://www.tesla.com/tr_tr/modely/design",
    "sourceDate": "2026-11-22",
    "pros": [
     "13,1 kWh/100 km ile sınıfının en verimlisi",
@@ -576,7 +576,7 @@
      "battery": null,
      "range": 534,
      "power": 159,
-     "accel": null,
+     "accel": 7.8,
      "drive": "Arkadan itiş",
      "trims": [
       {
@@ -584,14 +584,14 @@
        "price": 2474985
       }
      ],
-     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
+     "specSource": "https://www.tesla.com/tr_tr/modely/design"
     },
     {
      "name": "Premium Long Range RWD",
      "battery": null,
      "range": 603,
      "power": 159,
-     "accel": 5.6,
+     "accel": 7.6,
      "drive": "Arkadan itiş",
      "trims": [
       {
@@ -599,7 +599,7 @@
        "price": 3906000
       }
      ],
-     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
+     "specSource": "https://www.tesla.com/tr_tr/modely/design"
     },
     {
      "name": "Premium Long Range AWD",
@@ -614,7 +614,7 @@
        "price": 4620000
       }
      ],
-     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
+     "specSource": "https://www.tesla.com/tr_tr/modely/design"
     },
     {
      "name": "Performance AWD",
@@ -629,13 +629,13 @@
        "price": 4966500
       }
      ],
-     "specSource": "https://www.tesla.com/tr_tr/support/power-consumption"
+     "specSource": "https://www.tesla.com/tr_tr/modely/design"
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
+   "priceSource": "https://www.tesla.com/tr_tr/modely/design",
+   "priceDate": "22 Kasım 2026",
    "refVariant": "Standart Range RWD",
-   "specNote": "Tesla batarya kapasitesini açıklamaz; batarya, tüketim, DC şarj ve ağırlık değerleri EV Database verisidir. Güç, Tesla Türkiye'nin verdiği arka motor gücüdür. Standart sürümün 0-100 km/s değeri kaynaklar arasında çelişkili olduğu için gösterilmiyor."
+   "specNote": "Menzil, 0-100, azami hız, tüketim, motor gücü ve ağırlık Tesla Türkiye'nin resmî sayfalarından alınmıştır (güç, ruhsat/motor gücüdür). Tesla batarya kapasitesini açıklamaz; batarya, DC şarj ve bagaj değerleri EV Database verisidir."
   },
   {
    "id": "citroen-e-c3-aircross-44-kwh",
@@ -733,7 +733,7 @@
     "Batarya net (kWh)": 65.2,
     "Batarya brüt (kWh)": 66.5,
     "WLTP menzil (km)": 517,
-    "WLTP tüketim (kWh/100 km)": 14.2,
+    "WLTP tüketim (kWh/100 km)": 16.0,
     "Güç (kW)": 150,
     "0-100 km/s (sn)": 8.6,
     "Azami hız (km/s)": 171,
@@ -749,7 +749,7 @@
    "source": "https://ev-database.org/car/3458/BMW-iX1-eDrive20",
    "sourceDate": "2026-11-22",
    "pros": [
-    "Verimli (14,2 kWh/100 km)",
+    "Premium iç mekân kalitesi",
     "490 litre bagaj",
     "Premium donanım ve sürüş kalitesi"
    ],
@@ -757,7 +757,7 @@
     "DC şarj 130 kW orta seviye",
     "Önden çekiş, sportif değil"
    ],
-   "editor": "iX1 eDrive20, Türkiye'de BMW'nin en çok satan elektrikli modelleri arasında ve MINI Countryman E ile aynı teknik temele sahip. 2026 güncellemesiyle 65,2 kWh net batarya ve 517 km WLTP menzile ulaşan model, 14,2 kWh/100 km'lik tüketimle bu boyuttaki premium SUV'lar arasında verimli sayılır. 490 litrelik bagaj Countryman'den daha büyük ve arka koltuk alanı aile kullanımına daha uygun. 150 kW motor ve 8,6 saniyelik 0-100 km/s, BMW logosunun çağrıştırdığı sportifliği vermese de günlük sürüşte yeterli; önden çekiş olması da arkadan itişli BMW geleneğinden bir sapma. 130 kW DC şarj ve yaklaşık 30 dakikalık %10-80 süresi rakiplerle aynı seviyede. Kalite hissi, yaygın servis ağı ve ikinci el değeri önemliyse iX1 dengeli bir seçim; tasarımda daha karakterli bir şey isteyenler aynı altyapıdaki Countryman E'ye bakabilir.",
+   "editor": "iX1 eDrive20, Türkiye'de BMW'nin en çok satan elektrikli modelleri arasında ve MINI Countryman E ile aynı teknik temele sahip. 2026 güncellemesiyle 65,2 kWh net batarya ve 517 km WLTP menzile ulaşan model, BMW Türkiye'nin verdiği 16,0 kWh/100 km'lik tüketimle bu boyuttaki premium SUV'lar arasında makul bir verimlilik sunuyor. 490 litrelik bagaj Countryman'den daha büyük ve arka koltuk alanı aile kullanımına daha uygun. 150 kW motor ve 8,6 saniyelik 0-100 km/s, BMW logosunun çağrıştırdığı sportifliği vermese de günlük sürüşte yeterli; önden çekiş olması da arkadan itişli BMW geleneğinden bir sapma. 130 kW DC şarj ve yaklaşık 30 dakikalık %10-80 süresi rakiplerle aynı seviyede. Kalite hissi, yaygın servis ağı ve ikinci el değeri önemliyse iX1 dengeli bir seçim; tasarımda daha karakterli bir şey isteyenler aynı altyapıdaki Countryman E'ye bakabilir.",
    "note": "",
    "image": {
     "src": "assets/ev/bmw-ix1-edrive20.webp",
@@ -793,9 +793,10 @@
      "specSource": null
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
-   "refVariant": "eDrive20"
+   "priceSource": "https://borusanoto.bmw.com.tr/fiyat-listesi",
+   "priceDate": "22 Kasım 2026",
+   "refVariant": "eDrive20",
+   "specNote": "Tüketim değeri BMW Türkiye fiyat listesinden; diğer teknik değerler EV Database'den alınmıştır."
   },
   {
    "id": "volvo-ex40-single-motor-er",
@@ -1080,7 +1081,7 @@
     "Batarya net (kWh)": 108.7,
     "Batarya brüt (kWh)": 113.4,
     "WLTP menzil (km)": 806,
-    "WLTP tüketim (kWh/100 km)": 15.1,
+    "WLTP tüketim (kWh/100 km)": 16.5,
     "Güç (kW)": 345,
     "0-100 km/s (sn)": 4.9,
     "Azami hız (km/s)": 210,
@@ -1132,9 +1133,10 @@
      "specSource": null
     }
    ],
-   "priceSource": "https://www.donanimhaber.com/elektrikli-araba-fiyatlari--159687",
-   "priceDate": "3 Kasım 2026",
-   "refVariant": "50 xDrive"
+   "priceSource": "https://borusanoto.bmw.com.tr/fiyat-listesi",
+   "priceDate": "22 Kasım 2026",
+   "refVariant": "50 xDrive",
+   "specNote": "BMW Türkiye fiyat listesinde ruhsat (ÖTV) gücü 160 kW / 218 bg ve tüketim 16,5 kWh/100 km olarak yer alır; 345 kW tepe sistem gücü ve diğer teknik değerler EV Database'den alınmıştır."
   },
   {
    "id": "mercedes-cla-250-plus",

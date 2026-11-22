@@ -79,6 +79,17 @@ function carSvg(color, uid, body){
   </svg>`;
 }
 
+// Gerçek fotoğraf (Wikimedia Commons, CC BY-SA). Yüklenemezse çizime düşer.
+function photo(m, root, uid, eager){
+  if(!m.image) return carSvg(colorOf(m), uid, m.body);
+  return `<div class="ev-ph"><img src="${root}${m.image.src}" width="${m.image.w}" height="${m.image.h}" alt="${esc(m.name)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" onerror="this.parentNode.classList.add('err')"><div class="fb">${carSvg(colorOf(m), uid, m.body)}</div></div>`;
+}
+function creditsHtml(list){
+  const seen = new Set(), items = list.filter(m => m.image && !seen.has(m.id) && seen.add(m.id));
+  if(!items.length) return '';
+  return `<p class="ev-note ev-cred">Fotoğraflar: ${items.map(m => `<a href="${esc(m.image.page)}" rel="noopener nofollow" target="_blank">${esc(m.name)}</a> — ${esc(m.image.author)}, <a href="${esc(m.image.licenseUrl)}" rel="noopener nofollow" target="_blank">${esc(m.image.license)}</a>`).join(' · ')}. Wikimedia Commons üzerinden, yeniden boyutlandırılarak kullanılmıştır.</p>`;
+}
+
 const CSS = `
 .ev{--ev:#0f766e;--ev-dark:#115e59;--ev-soft:#f0fdfa;}
 .ev-hero{background:linear-gradient(135deg,#0f172a 0%,#134e4a 100%);color:#fff;border-radius:var(--radius-lg);padding:36px 32px;margin:18px 0 24px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;}
@@ -97,7 +108,14 @@ const CSS = `
 .ev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;}
 .ev-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .2s var(--ease),box-shadow .2s var(--ease);}
 .ev-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);}
-.ev-card .art{background:var(--ev-soft);padding:18px 18px 6px;}
+.ev-card .art{background:var(--ev-soft);}
+.ev-ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--ev-soft);}
+.ev-ph img{width:100%;height:100%;object-fit:cover;display:block;}
+.ev-ph .fb{display:none;position:absolute;inset:0;padding:18px;}
+.ev-ph.err img{display:none;}.ev-ph.err .fb{display:block;}
+.ev-hero .ev-ph{border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.35);}
+.ev-vs .ev-ph{border-radius:12px;margin-bottom:10px;}
+.ev-cred{margin-top:28px;line-height:1.7;}
 .ev-card .bd{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column;}
 .ev-card .tag{font-size:11.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;font-weight:600;}
 .ev-card h3{font-size:16.5px;margin:3px 0 10px;}
@@ -173,7 +191,7 @@ function calcHtml(models, m){
 <small>Hesaba %10 şarj kaybı eklenir. Elektrik ve benzin fiyatları örnek değerdir; kendi tarifenizi girin. Otoyol ve kış kullanımında tüketim artar.</small></div></div></section>`;
 }
 
-function shell({ title, desc, canonical, robots, body, root, draft, jsonld = [], scripts = '' }){
+function shell({ title, desc, canonical, robots, body, root, draft, jsonld = [], scripts = '', image = null }){
   return `<!DOCTYPE html>
 <html lang="tr"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -181,7 +199,7 @@ function shell({ title, desc, canonical, robots, body, root, draft, jsonld = [],
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="${robots}">
 <link rel="canonical" href="${canonical}">
-<meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${canonical}"><meta property="og:locale" content="tr_TR">
+<meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${canonical}"><meta property="og:locale" content="tr_TR">${image ? `<meta property="og:image" content="${SITE}/${image}">` : ''}
 <link rel="icon" href="${root}favicon.ico">
 <link rel="stylesheet" href="${root}styles.css"><style>${CSS}</style>
 ${jsonld.map(j => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join('\n')}
@@ -213,6 +231,8 @@ function generateEv({ rootDir, outDir, publish = false }){
   fs.mkdirSync(outDir, { recursive: true });
   if(path.resolve(outDir) !== path.resolve(rootDir)){
     ['styles.css', 'favicon.ico'].forEach(f => { const s = path.join(rootDir, f); if(fs.existsSync(s)) fs.copyFileSync(s, path.join(outDir, f)); });
+    const imgDir = path.join(rootDir, 'assets', 'ev');
+    if(fs.existsSync(imgDir)){ fs.mkdirSync(path.join(outDir, 'assets', 'ev'), { recursive: true }); fs.readdirSync(imgDir).forEach(f => fs.copyFileSync(path.join(imgDir, f), path.join(outDir, 'assets', 'ev', f))); }
   }
   const write = (rel, html) => { const f = path.join(outDir, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html); };
   const robots = ok => (publish && ok) ? 'index, follow' : 'noindex, follow';
@@ -224,7 +244,7 @@ function generateEv({ rootDir, outDir, publish = false }){
   const updated = models.map(m => m.sourceDate).sort().pop();
 
   const card = (m, pre = '') => `<a class="ev-card" href="${pre}${modelUrl(m)}" data-brand="${esc(m.brand)}" data-body="${esc(m.body)}" data-range="${sp(m, 'WLTP menzil (km)')}" data-cons="${consumption(m)}" data-dc="${sp(m, 'DC %10-80 (dk)')}">
-    <div class="art">${carSvg(colorOf(m), 'c' + slugify(m.name), m.body)}</div>
+    <div class="art">${photo(m, '../', 'c' + slugify(m.name), false)}</div>
     <div class="bd"><div class="tag">${esc(m.brand)} · ${esc(m.body)}</div><h3>${esc(m.name)}</h3>
     <div class="kpi"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(consumption(m))}</b><span>kWh/100 km</span></div><div><b>${sp(m, 'DC %10-80 (dk)')} dk</b><span>DC %10-80</span></div></div></div></a>`;
   const guideCards = (pre) => guides.map(g => `<a class="ev-box ev-gl" href="${pre}rehber/${g.slug}.html"><h3>${esc(g.title)}</h3><p>${esc(g.desc)}</p><span>Rehberi oku →</span></a>`).join('');
@@ -240,7 +260,7 @@ function generateEv({ rootDir, outDir, publish = false }){
 <section class="ev-hero"><div><div class="eyebrow">Elektrikli araç rehberi</div><h1>Elektrikli araçları menzil, şarj ve maliyete göre karşılaştır</h1>
 <p>Türkiye'de satılan ${models.length} elektrikli modelin batarya, WLTP menzil, tüketim ve şarj süresi verileri tek yerde. Her model için özgün değerlendirme ve kendi kullanımına göre aylık şarj maliyeti hesabı.</p>
 <div class="stats"><div><b>${models.length}</b><span>Model</span></div><div><b>${brands.length}</b><span>Marka</span></div><div><b>${num(sp(best('WLTP menzil (km)', true), 'WLTP menzil (km)'))} km</b><span>En uzun menzil</span></div></div></div>
-<div>${carSvg('#14b8a6', 'hero', 'SUV')}</div></section>
+<div>${photo(models.find(x => x.id === 'togg-t10x-v2-rwd-uzun-menzil') || models[0], '../', 'hero', true)}</div></section>
 <div class="ev-bar"><div class="ev-chips" id="evFilters"><button class="on" data-f="*" data-k="brand">Tümü</button>${bodies.map(b => `<button data-f="${esc(b)}" data-k="body">${esc(b)}</button>`).join('')}${brands.map(b => `<button data-f="${esc(b)}" data-k="brand">${esc(b)}</button>`).join('')}</div>
 <select id="evSort" aria-label="Sırala"><option value="range">Menzile göre</option><option value="cons">Verimliliğe göre</option><option value="dc">Şarj süresine göre</option></select></div>
 <div class="ev-grid" id="evGrid">${models.slice().sort((a, b) => sp(b, 'WLTP menzil (km)') - sp(a, 'WLTP menzil (km)')).map(m => card(m)).join('\n')}</div>
@@ -249,7 +269,8 @@ ${calcHtml(models, null)}
 <section class="ev-sec"><h2>Öne çıkan karşılaştırmalar</h2><div class="ev-grid">${pairs.map(([a, b]) => `<a class="ev-card" href="${pairUrl(a, b)}"><div class="bd"><div class="tag">Karşılaştırma</div><h3>${esc(a.name)} <span style="color:var(--ev)">vs</span> ${esc(b.name)}</h3>
     <div class="kpi" style="grid-template-columns:1fr 1fr"><div><b>${num(sp(a, 'WLTP menzil (km)'))} km</b><span>${esc(a.brand)}</span></div><div><b>${num(sp(b, 'WLTP menzil (km)'))} km</b><span>${esc(b.brand)}</span></div></div></div></a>`).join('\n')}</div></section>
 <section class="ev-sec"><h2>Rehberler</h2><div class="ev-grid">${guideCards('')}</div></section>
-<section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${listFaq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>`;
+<section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${listFaq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>
+${creditsHtml(models)}`;
   const listJs = `<script>(function(){var b=document.querySelectorAll('#evFilters button'),g=document.getElementById('evGrid'),s=document.getElementById('evSort');
 b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.classList.remove('on')});x.classList.add('on');var f=x.dataset.f,k=x.dataset.k;g.querySelectorAll('.ev-card').forEach(function(e){e.style.display=(f==='*'||e.dataset[k]===f)?'':'none'})})});
 s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children);c.sort(function(p,q){var a=+p.dataset[v],z=+q.dataset[v];return v==='range'?z-a:a-z});c.forEach(function(e){g.appendChild(e)})});})();${CALC_JS}</script>`;
@@ -279,7 +300,7 @@ s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children)
 <section class="ev-hero"><div><div class="eyebrow">${esc(m.brand)} · ${esc(m.body)} · ${esc(sp(m, 'Çekiş'))}</div><h1>${esc(m.name)}</h1>
 <p>${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(sp(m, 'Batarya net (kWh)'))} kWh kullanılabilir batarya ve %10-80 DC şarj için yaklaşık ${sp(m, 'DC %10-80 (dk)')} dakika.</p>
 <div class="stats"><div><b>${num(sp(m, 'WLTP menzil (km)'))} km</b><span>WLTP menzil</span></div><div><b>${num(c)}</b><span>kWh/100 km</span></div><div><b>${num(sp(m, '0-100 km/s (sn)'))} sn</b><span>0-100 km/s</span></div><div><b>${sp(m, 'DC şarj (kW)')} kW</b><span>DC şarj</span></div></div></div>
-<div>${carSvg(colorOf(m), 'm' + slugify(m.name), m.body)}</div></section>
+<div>${photo(m, '../', 'm' + slugify(m.name), true)}</div></section>
 <section class="ev-sec"><h2>Editör değerlendirmesi</h2><div class="ev-box"><p>${esc(m.editor)}</p></div></section>
 <section class="ev-sec"><h2>Artılar ve eksiler</h2><div class="ev-two"><div class="ev-box"><h3>Artılar</h3><ul>${m.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div><div class="ev-box"><h3>Eksiler</h3><ul>${m.cons.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div></div></section>
 <section class="ev-sec"><h2>Teknik özellikler</h2><table class="ev-t">${rows}</table>
@@ -287,10 +308,11 @@ s.addEventListener('change',function(){var v=s.value,c=[].slice.call(g.children)
 ${calcHtml(models, m)}
 ${myPairs.length ? `<section class="ev-sec"><h2>Karşılaştırmalar</h2><div class="ev-grid">${myPairs.map(([a, b]) => { const o = a.id === m.id ? b : a; return `<a class="ev-card" href="${pairUrl(a, b)}"><div class="bd"><div class="tag">Karşılaştırma</div><h3>${esc(m.name)} <span style="color:var(--ev)">vs</span> ${esc(o.name)}</h3></div></a>`; }).join('')}</div></section>` : ''}
 <section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</section>
-<section class="ev-sec"><h2>Benzer modeller</h2><div class="ev-grid">${similar.map(s => card(s)).join('')}</div></section>`;
+<section class="ev-sec"><h2>Benzer modeller</h2><div class="ev-grid">${similar.map(s => card(s)).join('')}</div></section>
+${creditsHtml([m, ...similar])}`;
     const ok = isIndexable(m);
-    write(`${BASE}/${modelUrl(m)}`, shell({ title: `${m.name} — Menzil, Şarj Süresi ve Özellikler | TeknoVersus`, desc: `${m.name}: ${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(c)} kWh/100 km tüketim, %10-80 DC şarj ${sp(m, 'DC %10-80 (dk)')} dk. Değerlendirme ve şarj maliyeti.`.slice(0, 160), canonical: url, robots: robots(ok), body, root: '../', draft,
-      jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [m.name, url]]), faqLd(faq), { '@context': 'https://schema.org', '@type': 'Car', name: m.name, brand: { '@type': 'Brand', name: m.brand }, bodyType: m.body, fuelType: 'Electricity', driveWheelConfiguration: sp(m, 'Çekiş'), vehicleSeatingCapacity: sp(m, 'Koltuk'), description: m.editor.slice(0, 300) }],
+    write(`${BASE}/${modelUrl(m)}`, shell({ title: `${m.name} — Menzil, Şarj Süresi ve Özellikler | TeknoVersus`, desc: `${m.name}: ${num(sp(m, 'WLTP menzil (km)'))} km WLTP menzil, ${num(c)} kWh/100 km tüketim, %10-80 DC şarj ${sp(m, 'DC %10-80 (dk)')} dk. Değerlendirme ve şarj maliyeti.`.slice(0, 160), canonical: url, robots: robots(ok), body, root: '../', draft, image: m.image && m.image.src,
+      jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [m.name, url]]), faqLd(faq), { '@context': 'https://schema.org', '@type': 'Car', name: m.name, brand: { '@type': 'Brand', name: m.brand }, bodyType: m.body, fuelType: 'Electricity', driveWheelConfiguration: sp(m, 'Çekiş'), vehicleSeatingCapacity: sp(m, 'Koltuk'), ...(m.image ? { image: `${SITE}/${m.image.src}` } : {}), description: m.editor.slice(0, 300) }],
       scripts: `<script>${CALC_JS}</script>` }));
     if(publish && ok) sitemap.push(`${BASE}/${modelUrl(m)}`);
   });
@@ -324,12 +346,13 @@ ${myPairs.length ? `<section class="ev-sec"><h2>Karşılaştırmalar</h2><div cl
     const body = `
 <nav class="crumb"><a href="../../index.html">Anasayfa</a> / <a href="../index.html">Elektrikli Araçlar</a> / Karşılaştırma</nav>
 <h1 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px">${esc(a.name)} vs ${esc(b.name)}</h1>
-<section class="ev-vs"><a href="../${modelUrl(a)}">${carSvg(colorOf(a), 'a' + slugify(a.name), a.body)}<h2>${esc(a.name)}</h2></a><div class="vsb">VS</div><a href="../${modelUrl(b)}">${carSvg(colorOf(b), 'b' + slugify(b.name), b.body)}<h2>${esc(b.name)}</h2></a></section>
+<section class="ev-vs"><a href="../${modelUrl(a)}">${photo(a, '../../', 'a' + slugify(a.name), true)}<h2>${esc(a.name)}</h2></a><div class="vsb">VS</div><a href="../${modelUrl(b)}">${photo(b, '../../', 'b' + slugify(b.name), true)}<h2>${esc(b.name)}</h2></a></section>
 <section class="ev-sec"><h2>Kısa sonuç</h2><div class="ev-box"><p>${esc(verdict)}</p></div></section>
 <section class="ev-sec"><h2>Özellik karşılaştırması</h2><table class="ev-t"><tr><th>Özellik</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th></tr>${rows}</table>
 <p class="ev-note">Renkli hücre o satırdaki daha iyi değeri gösterir. Kaynaklar: <a href="${esc(a.source)}" rel="noopener nofollow" target="_blank">${esc(a.name)}</a>, <a href="${esc(b.source)}" rel="noopener nofollow" target="_blank">${esc(b.name)}</a>.</p></section>
 <section class="ev-sec"><h2>Hangisi kimin için?</h2><div class="ev-two">${[a, b].map(x => `<div class="ev-box"><h3>${esc(x.name)}</h3><ul>${x.pros.map(p => `<li>${esc(p)}</li>`).join('')}</ul><p class="ev-note" style="margin-top:8px">Dikkat: ${esc(x.cons.join('; '))}.</p><p class="ev-note"><a href="../${modelUrl(x)}">Ayrıntılı değerlendirmeyi oku →</a></p></div>`).join('')}</div></section>
-<section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${faq.map(([q, a2]) => `<details><summary>${esc(q)}</summary><p>${esc(a2)}</p></details>`).join('')}</section>`;
+<section class="ev-sec ev-faq"><h2>Sık sorulan sorular</h2>${faq.map(([q, a2]) => `<details><summary>${esc(q)}</summary><p>${esc(a2)}</p></details>`).join('')}</section>
+${creditsHtml([a, b])}`;
     const ok = isIndexable(a) && isIndexable(b);
     write(rel, shell({ title: `${a.name} vs ${b.name}: Menzil, Şarj ve Tüketim | TeknoVersus`, desc: `${a.name} mı ${b.name} mı? WLTP menzil, tüketim, %10-80 şarj süresi ve bagaj karşılaştırması.`.slice(0, 160), canonical: url, robots: robots(ok), body, root: '../../', draft,
       jsonld: [crumbLd([['Anasayfa', `${SITE}/`], ['Elektrikli Araçlar', listUrl], [`${a.name} vs ${b.name}`, url]]), faqLd(faq)] }));

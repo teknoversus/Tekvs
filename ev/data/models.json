@@ -36,7 +36,16 @@
     "Çeki demiri takılamıyor"
    ],
    "editor": "T10X, Türkiye'de elektrikli otomobil pazarının açık ara lideri ve bunun en büyük nedeni sadece yerli üretim olması değil; 88,5 kWh'lik batarya bu fiyat bandında az rastlanan bir kapasite. Kâğıt üzerindeki 523 km WLTP menzil, uzun yol yapan bir aile için şehirlerarası yolculukları planlamayı rahatlatıyor. Öte yandan 2,1 tonu aşan ağırlık ve 19,1 kWh/100 km'lik onaylı tüketim, aynı bataryayla daha fazla yol giden Tesla Model Y ya da Togg'un kendi sedanı T10F'nin gerisinde kalıyor. Yani bataryanın büyüklüğünü verimlilikle değil kapasiteyle kazanıyor. 180 kW DC şarj ve yaklaşık 33 dakikalık %10-80 süresi, Trugo ağıyla birlikte düşünüldüğünde yolculukta beklemeyi makul tutuyor. Çeki demiri takılamaması karavan ya da römork çekmek isteyenler için eleyici bir detay. Yaygın servis ağı ve ikinci elde güçlü talep arıyorsanız T10X mantıklı bir başlangıç noktası.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/togg-t10x-v2-rwd-uzun-menzil.webp",
+    "w": 800,
+    "h": 535,
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Togg_T10X_IAA_2025_DSC_1648.jpg"
+   }
   },
   {
    "id": "togg-t10f-v2-rwd-uzun-menzil",
@@ -73,7 +82,16 @@
     "Sedan gövde yüksek oturuş arayanlara uymayabilir"
    ],
    "editor": "T10F, T10X ile aynı 88,5 kWh bataryayı ve 160 kW motoru kullanıyor ama sonuç bambaşka: daha alçak ve aerodinamik sedan gövde sayesinde WLTP menzil 623 km'ye, onaylı tüketim de 13,6 kWh/100 km'ye iniyor. Bu, aynı enerjiyle T10X'ten yaklaşık 100 km fazla yol demek. Günlük kullanımda şehir dışına sık çıkan, SUV'un yüksek oturuşuna ihtiyaç duymayan sürücüler için T10F ailenin daha akıllı seçimi. 505 litrelik bagaj bir sedan için cömert, 4,83 metrelik boy da arka koltukta rahat bir alan bırakıyor. 180 kW DC şarj ve yaklaşık 29 dakikalık %10-80 süresi T10X'ten biraz daha iyi. Eksi tarafta, 177 km/s azami hız otoyolda sorun yaratmasa da performans beklentisi olanları tatmin etmeyebilir. Aynı yerli servis ağını kullanması da T10X sahipleri için bilinen bir deneyim sunuyor. Menzil kaygısı ilk sıradaysa Türkiye pazarında bu fiyat bandındaki en güçlü seçeneklerden biri.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/togg-t10f-v2-rwd-uzun-menzil.webp",
+    "w": 800,
+    "h": 400,
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Togg_T10F_IAA_2025_DSC_2233.jpg"
+   }
   },
   {
    "id": "kgm-torres-evx-80-6-kwh",
@@ -110,7 +128,16 @@
     "Tüketim yüksek (19,3 kWh/100 km)"
    ],
    "editor": "Torres EVX, 2026'da Türkiye'de Togg modellerinin ardından en çok satan elektrikli modellerden biri ve nedenini anlamak zor değil: 839 litrelik bagaj, bu listedeki pek çok modelin iki katına yakın. Kare hatlı gövde, kamp ekipmanı, bebek arabası ya da iş için malzeme taşıyanlar için gerçek bir kullanım avantajı sağlıyor. 80,6 kWh'lik batarya 503 km WLTP menzil veriyor. Buna karşın kutu biçimli tasarımın bedeli aerodinamikte ödeniyor; onaylı tüketim 19,3 kWh/100 km ile T10X seviyesinde. Asıl zayıf nokta şarj: 130 kW DC ve 37 dakikalık %10-80 süresi, uzun yolda rakiplerine göre her durakta birkaç dakika daha fazla bekletir. 0-100 km/s 8,2 saniye ile hızlı değil ama aile kullanımında yeterli. Önden çekiş, kaygan zeminde öngörülebilir bir sürüş sağlıyor. Fiyat-hacim dengesi önceliğiniz ve uzun yolları seyrek yapıyorsanız Torres EVX güçlü bir aday.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/kgm-torres-evx-80-6-kwh.webp",
+    "w": 800,
+    "h": 478,
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:KGM_Torres_EVX_Auto_Zuerich_2025_DSC_3332.jpg"
+   }
   },
   {
    "id": "mini-countryman-e",
@@ -147,7 +174,16 @@
     "Bagaj BMW iX1'den küçük"
    ],
    "editor": "Countryman E, MINI'nin şimdiye kadarki en büyük modeli ve BMW iX1 ile aynı altyapıyı paylaşıyor. Bu yüzden 65,2 kWh net batarya, 150 kW motor ve 128 kW DC şarj gibi temel değerler iX1'e çok yakın. Fark tasarımda ve kabinde: yuvarlak OLED ekran, tekstil kaplamalar ve MINI'ye özgü sürüş ayarları, aynı teknik paketi daha eğlenceli bir kılıfa sokuyor. WLTP menzil yaklaşık 500 km ve 14,9 kWh/100 km'lik tüketim bu boyuttaki bir SUV için iyi. 460 litrelik bagaj gündelik ihtiyaçlar için yeterli ama iX1'in 490 litresinin gerisinde. 0-100 km/s 8,6 saniye. Şehir içinde büyük ölçüde AC şarj kullanacaksanız opsiyonel 22 kW şarj cihazı işyerinde ya da AVM'de kısa duraklarda fark yaratır. Tasarım ve marka karakteri sizin için önemliyse Countryman E, iX1'e duygusal bir alternatif.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/mini-countryman-e.webp",
+    "w": 800,
+    "h": 534,
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mini_Countryman_(U25)_SE_IAA_2023_1X7A0735.jpg"
+   }
   },
   {
    "id": "volvo-ex30-single-motor-er",
@@ -184,7 +220,16 @@
     "Fiziksel düğme neredeyse yok"
    ],
    "editor": "EX30, Volvo'nun en küçük SUV'u ama tek motorlu uzun menzil sürümü bile 200 kW güç ve 5,3 saniyelik 0-100 km/s ile bu listedeki en çevik modellerden biri. 4,23 metrelik boyu şehir içinde park etmeyi kolaylaştırıyor, 476 km WLTP menzil de bu boyut için iyi bir değer. Şarj tarafı güçlü: 158 kW DC ve yaklaşık 25 dakikalık %10-80 süresiyle yolculukta duraklar kısa. Bedeli ise iç hacimde ödeniyor. 318 litrelik bagaj, aile ile uzun tatile çıkarken sıkışık kalabilir ve arka koltuk yetişkinler için uzun yolda dar. Kabinde neredeyse tüm işlevler orta ekrana taşınmış; bu, sürüş sırasında klima gibi temel ayarları değiştirmeyi zorlaştırabiliyor. Bir ya da iki kişilik hane, şehir ağırlıklı kullanım ve performans arayanlar için EX30 çok cazip; dört kişilik aile için Volvo EX40 daha mantıklı.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/volvo-ex30-single-motor-er.webp",
+    "w": 800,
+    "h": 495,
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Volvo_EX30_Auto_Zuerich_2023_1X7A0949.jpg"
+   }
   },
   {
    "id": "opel-frontera-electric-44-kwh",
@@ -222,7 +267,16 @@
     "Standart AC şarj 7,4 kW"
    ],
    "editor": "Frontera Electric, elektrikliye geçişi bütçe odaklı yapmak isteyenler için tasarlanmış bir model ve Citroën ë-C3 Aircross ile aynı altyapıyı kullanıyor. 44 kWh'lik LFP batarya 310 km WLTP menzil veriyor; günlük işe gidiş ve şehir içi kullanım için bu fazlasıyla yeterli, ama sık sık şehirlerarası yol yapanlar için her 200-250 km'de bir şarj durağı demek. 83 kW motor ve 12,1 saniyelik 0-100 km/s, otoyolda sollama yaparken planlı davranmayı gerektiriyor; azami hız da 143 km/s ile sınırlı. Buna karşın 460 litrelik bagaj ve 4,4 metrelik boy, aile kullanımına uygun bir pratiklik sunuyor. Standart AC şarj 7,4 kW olduğu için evde gece boyunca dolum sorunsuz, ancak 11 kW opsiyonu varsa işyerinde ya da sitede hızlandırır. Günde 100 km'nin altında yol yapan ve evde şarj imkânı olan biri için Frontera akıllı ve ekonomik bir tercih.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/opel-frontera-electric-44-kwh.webp",
+    "w": 800,
+    "h": 491,
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Opel_Frontera_C_Electric_Auto_Zuerich_2024_DSC_6135.jpg"
+   }
   },
   {
    "id": "tesla-model-y-rwd",
@@ -259,7 +313,16 @@
     "Servis ağı diğer markalardan dar"
    ],
    "editor": "Model Y'nin yenilenen RWD sürümü, 60 kWh'lik nispeten küçük bir bataryadan 534 km WLTP menzil çıkarıyor. Bunu sağlayan şey 13,1 kWh/100 km'lik onaylı tüketim; bu listede hiçbir SUV bu verimliliğe yaklaşmıyor. Pratikte bu, aynı kilometre için daha düşük elektrik faturası ve daha kısa şarj durakları anlamına geliyor. 175 kW DC şarj ve 24 dakikalık %10-80 süresi, Tesla'nın Supercharger ağıyla birleşince uzun yolu en sorunsuz hâle getiren modellerden biri. 854 litre arka bagaj ve 117 litre ön bagaj ile toplam 952 litre hacim, aile kullanımında ciddi bir avantaj. Eksi tarafta, neredeyse tüm işlevler orta ekrandan yönetiliyor ve vites seçimi bile ekranda. Servis ve kaporta onarımı için yetkili nokta sayısı diğer büyük markalara göre az. Verimlilik ve şarj altyapısı sizin için öncelikse Model Y hâlâ referans noktası.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/tesla-model-y-rwd.webp",
+    "w": 800,
+    "h": 600,
+    "author": "Damian B Oh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_(8).jpg"
+   }
   },
   {
    "id": "citroen-e-c3-aircross-44-kwh",
@@ -296,7 +359,16 @@
     "Düşük performans (12,9 sn)"
    ],
    "editor": "ë-C3 Aircross, Opel Frontera ile aynı Smart Car altyapısını, aynı 44 kWh LFP bataryayı ve aynı 83 kW motoru kullanıyor; teknik verilerin neredeyse birebir aynı olması bu yüzden. İki model arasındaki fark karakterde: Citroën, konfor odaklı süspansiyon ayarı ve Advanced Comfort koltuklarla bozuk yollarda daha rahat bir sürüş vaat ediyor, Opel ise daha sade ve sıkı bir ayar tercih ediyor. 306 km WLTP menzil şehir içi ve banliyö kullanımı için uygun; otoyolda 120 km/s hızda bu değerin belirgin şekilde düşeceğini hesaba katmak gerekiyor. 460 litrelik bagaj ve geniş arka kapılar aile için pratik. 100 kW DC şarj yolculukta yeterli ama hızlı değil. Fiyatı ön planda tutan, evde ya da işyerinde düzenli AC şarj imkânı olan ve konforu performansa tercih eden biri için ë-C3 Aircross, Frontera'ya göre daha yumuşak bir seçenek.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/citroen-e-c3-aircross-44-kwh.webp",
+    "w": 800,
+    "h": 451,
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_Aircross_(2024)_DSC_8767.jpg"
+   }
   },
   {
    "id": "bmw-ix1-edrive20",
@@ -333,7 +405,16 @@
     "Önden çekiş, sportif değil"
    ],
    "editor": "iX1 eDrive20, Türkiye'de BMW'nin en çok satan elektrikli modelleri arasında ve MINI Countryman E ile aynı teknik temele sahip. 2026 güncellemesiyle 65,2 kWh net batarya ve 517 km WLTP menzile ulaşan model, 14,2 kWh/100 km'lik tüketimle bu boyuttaki premium SUV'lar arasında verimli sayılır. 490 litrelik bagaj Countryman'den daha büyük ve arka koltuk alanı aile kullanımına daha uygun. 150 kW motor ve 8,6 saniyelik 0-100 km/s, BMW logosunun çağrıştırdığı sportifliği vermese de günlük sürüşte yeterli; önden çekiş olması da arkadan itişli BMW geleneğinden bir sapma. 130 kW DC şarj ve yaklaşık 30 dakikalık %10-80 süresi rakiplerle aynı seviyede. Kalite hissi, yaygın servis ağı ve ikinci el değeri önemliyse iX1 dengeli bir seçim; tasarımda daha karakterli bir şey isteyenler aynı altyapıdaki Countryman E'ye bakabilir.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/bmw-ix1-edrive20.webp",
+    "w": 800,
+    "h": 453,
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:BMW_iX1_DSC_7506.jpg"
+   }
   },
   {
    "id": "volvo-ex40-single-motor-er",
@@ -370,7 +451,16 @@
     "Ağır (2.075 kg)"
    ],
    "editor": "EX40 (eski adıyla XC40 Recharge), EX30'un bir üst basamağı ve özellikle aileler için daha mantıklı bir Volvo. Arkadan itişli uzun menzil sürümü 82 kWh brüt batarya ile 576 km'ye varan WLTP menzil sunuyor; bu, EX30'dan yaklaşık 100 km fazla. 207 kW tepe DC şarj gücü listedeki yüksek değerlerden biri, ancak %10-80 süresi 32 dakika ile rakiplerine benzer; yani tepe güç kısa süreli. 185 kW motor ve 7,3 saniyelik hızlanma rahat bir otoyol performansı veriyor. Kabin, EX30'a göre daha klasik: fiziksel düğmeler ve daha geniş arka koltuk. Zayıf nokta 410 litrelik bagaj; 4,44 metrelik bir SUV için beklenenden küçük. 2 tonu aşan ağırlık da tüketimi 16,6 kWh/100 km'ye çıkarıyor. Volvo'nun güvenlik donanımlarına güvenen ve EX30'u küçük bulan aileler için EX40 doğal bir adım.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/volvo-ex40-single-motor-er.webp",
+    "w": 800,
+    "h": 481,
+    "author": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Volvo_XC40_Recharge_Facelift_1X7A7461.jpg"
+   }
   },
   {
    "id": "citroen-e-c3-44-kwh",
@@ -408,7 +498,16 @@
     "DC şarj sadece 100 kW"
    ],
    "editor": "ë-C3, Türkiye pazarında elektrikliye en düşük bütçeyle girilebilecek modellerden biri. 4 metrelik boyu ve 1,5 tonun altındaki ağırlığı ile tamamen şehir için düşünülmüş: dar sokaklarda park etmek kolay, 16,4 kWh/100 km'lik tüketim de küçük bataryadan 326 km WLTP menzil çıkarmasını sağlıyor. Yükseltilmiş hatchback gövde, Citroën'in konfor odaklı süspansiyonuyla birleşince bozuk asfaltta beklenenden yumuşak bir sürüş veriyor. Sınırlar net: azami hız 135 km/s, 0-100 km/s 11,5 saniye ve 310 litrelik bagaj. Otoyolda uzun mesafe, hem hız sınırı hem şarj sıklığı nedeniyle bu aracın güçlü yanı değil. 100 kW DC şarj ve yaklaşık 32 dakikalık %10-80 süresi acil durumlar için yeterli. Ailenin ikinci aracı, şehir içi işe gidiş ya da ilk elektrikli deneyimi için ë-C3 mantıklı; tek araçla her işi görmek isteyenler daha büyük bir model düşünmeli.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/citroen-e-c3-44-kwh.webp",
+    "w": 800,
+    "h": 473,
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Citroen_%C3%AB-C3_IMG_4539.jpg"
+   }
   },
   {
    "id": "kia-ev3-long-range",
@@ -445,7 +544,16 @@
     "Azami hız 170 km/s"
    ],
    "editor": "EV3, kompakt bir SUV gövdesine 81,4 kWh'lik büyük bir batarya sığdırmasıyla öne çıkıyor. Sonuç, 4,3 metrelik bir araçtan 605 km WLTP menzil: bu boyuttaki rakiplerin çoğu 400-500 km bandında kalıyor. 14,9 kWh/100 km'lik tüketim de bu menzilin sadece batarya büyüklüğünden değil verimlilikten geldiğini gösteriyor. 460 litrelik bagaj ve düz zemin, boyutuna göre pratik bir iç mekân sunuyor. Zayıf nokta şarj hızı: 135 kW tepe güç ve 33 dakikalık %10-80 süresi, büyük bataryayı doldururken biraz sabır istiyor. Kia'nın kardeş modelleri EV6 ve Ioniq 5'teki 800 voltluk mimari burada yok. 150 kW motor ve 7,7 saniyelik 0-100 km/s günlük sürüşte yeterli. 4,3 metrelik boyu ise şehirde park etmeyi kolaylaştırıyor. Şehirde küçük, uzun yolda menzil kaygısı yaşatmayan tek bir araç arıyorsanız EV3 listedeki en dengeli seçeneklerden biri.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/kia-ev3-long-range.webp",
+    "w": 800,
+    "h": 495,
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kia_EV3_DSC_9146.jpg"
+   }
   },
   {
    "id": "bmw-ix3-50-xdrive",
@@ -482,7 +590,16 @@
     "Üst fiyat segmenti"
    ],
    "editor": "Yeni iX3, BMW'nin Neue Klasse ailesinin ilk modeli ve teknik verileri sınıfının çıtasını yükseltiyor. 108,7 kWh net batarya ile 806 km WLTP menzil, bu listede açık ara en yüksek değer; gerçek hayatta otoyolda bile tek şarjla 500 km'yi rahat geçmesi beklenebilir. Daha da etkileyici olan şarj hızı: 800 volt mimari sayesinde 400 kW tepe DC güç ve 21 dakikalık %10-80 süresi, büyük bataryayı küçük bataryalı rakiplerden daha kısa sürede dolduruyor. Ancak bu hıza ulaşmak için yüksek güçlü istasyon gerekiyor; Türkiye'de 300 kW üzeri soket sayısı hâlâ sınırlı. 345 kW dört çeker sistem ve 4,9 saniyelik 0-100 km/s performans tarafını da kapatıyor. 578 litre toplam bagaj (ön bagaj dahil) aile için yeterli. 2,36 tonluk ağırlık ve üst segment fiyatı, iX3'ü herkes için değil, uzun yolu sık yapan ve en iyi teknolojiyi isteyenler için bir seçim yapıyor.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/bmw-ix3-50-xdrive.webp",
+    "w": 800,
+    "h": 640,
+    "author": "Matti Blume",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:BMW_iX3,_IAA_Summit_2025,_Munich_(20250908-P1049823).jpg"
+   }
   },
   {
    "id": "mercedes-cla-250-plus",
@@ -519,7 +636,16 @@
     "Üst fiyat segmenti"
    ],
    "editor": "Yeni elektrikli CLA, verimlilikte bu listenin en iddialı modeli. 12,3 kWh/100 km'lik onaylı tüketim, aerodinamik sedan gövde ve 800 voltluk mimarinin birleşiminden geliyor; sonuç 85 kWh net bataryadan 792 km WLTP menzil. Boyut olarak Togg T10F'ye yakın olan CLA, ondan yaklaşık 170 km daha uzun WLTP menzil sunuyor. Şarj tarafı da etkileyici: 353 kW tepe güç ve 18 dakikalık %10-80 süresi, uygun bir istasyonda kahve molası kadar kısa. 200 kW arkadan itişli motor ve 6,7 saniyelik 0-100 km/s rahat bir performans veriyor. 405 litre arka bagaja 101 litrelik ön bagaj ekleniyor. Coupé benzeri tavan çizgisi arka koltukta uzun boylu yolcular için baş mesafesini kısıtlıyor; bu bir aile sedanından çok sürücü odaklı bir araç. Uzun yolu sık yapan ve verimliliği önemseyen biri için CLA, fiyatının karşılığını en net veren premium elektrikli modellerden.",
-   "note": ""
+   "note": "",
+   "image": {
+    "src": "assets/ev/mercedes-cla-250-plus.webp",
+    "w": 800,
+    "h": 533,
+    "author": "Alexandre Prevot",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLA_250%2B_avec_technologie_EQ_Limited_Edition_(55085144824).jpg"
+   }
   }
  ],
  "curatedPairs": [

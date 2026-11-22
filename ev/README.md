@@ -5,6 +5,7 @@ Bu bölüm `ev-taslak` dalında durur ve **main'e birleştirilmedi**. Deploy yal
 ## İçerik
 - `ev/data/models.json`: Türkiye'de 2026'da satılan 14 elektrikli model (ODMD satış listelerinden seçildi). Teknik veriler EV Database ve evkx.net sayfalarından 22 Kasım 2026'da alındı, her modelde kaynak bağlantısı var. Her model için 120+ kelimelik özgün editör değerlendirmesi, artılar/eksiler.
 - `ev/data/guides.json`: 3 özgün rehber (evde şarj, AC/DC şarj, WLTP ve gerçek menzil).
+- `assets/ev/`: 14 gerçek araç fotoğrafı (Wikimedia Commons, CC BY-SA 4.0, 800 px WebP). Kaynak ve yazar bilgisi `models.json` içinde `image` alanında; her sayfada "Fotoğraflar" satırında atıf gösterilir. Lisans gereği bu atıflar kaldırılmamalı.
 - `ev/generate-ev.js`: liste, 14 model, 9 karşılaştırma, 3 rehber sayfası; şarj maliyeti hesaplayıcı; JSON-LD (Breadcrumb, FAQ, Car, Article, ItemList).
 
 ## Önizleme

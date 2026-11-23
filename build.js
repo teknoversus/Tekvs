@@ -33,9 +33,9 @@ const { injectPwaTags } = require('./lib/pwa-inject');
 const { planFromRegistry, writeRegistry } = require('./lib/pair-registry');
 const { writeDeletedProductRedirects } = require('./lib/deleted-redirects');
 const { writeDirIndexRedirects } = require('./lib/dir-redirects');
-const { writeDeletedNewsRedirects } = require('./lib/news-redirects');
 const { writeLegacyPageRedirects } = require('./lib/legacy-pages');
 const { splitSitemap } = require('./lib/split-sitemap');
+const { applySocialLinks } = require('./lib/social-links');
 const { applyTrafficNoindex } = require('./lib/trafik-noindex');
 const { applyContentLastmod } = require('./lib/sitemap-lastmod');
 const { applySiteChrome } = require('./lib/site-chrome');
@@ -219,7 +219,6 @@ async function main(){
   if(news !== null){
     console.log(`→ ${news.length} haber bulundu.`);
     await generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
-    writeDeletedNewsRedirects({ rootDir, news });
   }
   const homeNews = news || [];
 
@@ -276,6 +275,8 @@ async function main(){
 
   // ---- Sitemap lastmod: build tarihi yerine gerçek içerik değişikliği (lib/sitemap-lastmod.js) ----
   await applyContentLastmod({ rootDir });
+
+  applySocialLinks({ rootDir });
 
   console.log('→ sitemap.xml parçalara bölünüyor (hosting WAF limiti için)...');
   splitSitemap({ rootDir });

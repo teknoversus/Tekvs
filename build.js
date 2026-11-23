@@ -33,6 +33,7 @@ const { injectPwaTags } = require('./lib/pwa-inject');
 const { planFromRegistry, writeRegistry } = require('./lib/pair-registry');
 const { writeDeletedProductRedirects } = require('./lib/deleted-redirects');
 const { writeDirIndexRedirects } = require('./lib/dir-redirects');
+const { writeDeletedNewsRedirects } = require('./lib/news-redirects');
 const { writeLegacyPageRedirects } = require('./lib/legacy-pages');
 const { splitSitemap } = require('./lib/split-sitemap');
 const { applyTrafficNoindex } = require('./lib/trafik-noindex');
@@ -218,6 +219,7 @@ async function main(){
   if(news !== null){
     console.log(`→ ${news.length} haber bulundu.`);
     await generateNews({ news, products, productSlug: helpers.productSlug, rootDir });
+    writeDeletedNewsRedirects({ rootDir, news });
   }
   const homeNews = news || [];
 

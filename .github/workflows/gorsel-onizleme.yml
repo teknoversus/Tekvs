@@ -1,18 +1,16 @@
 name: Gorsel onizleme
 on:
-  workflow_dispatch:
-    inputs:
-      urls:
-        description: "Satir basina etiket|url (\\n yerine ; ile)"
-        required: true
+  push:
+    branches: [analiz-test]
+    paths: ['onizleme/urls.txt']
 jobs:
   onizle:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Indir ve kontak sayfasi uret
-        env:
-          URLS: ${{ github.event.inputs.urls }}
         run: |
+          URLS="$(cat onizleme/urls.txt)"
           sudo apt-get -qq install -y imagemagick >/dev/null 2>&1 || true
           mkdir -p img out
           i=0

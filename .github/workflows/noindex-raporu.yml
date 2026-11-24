@@ -30,8 +30,8 @@ jobs:
           curl -s "$SUPABASE_URL/rest/v1/news?select=id,title,date,summary,body&deleted=eq.false" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" > rapor/news.json
           for f in marka/samsung-telefon.html marka-karsilastir/axen-vs-vestel-televizyon.html televizyon-sayfa-10.html inceleme/apple-watch-series-8-h27-inceleme.html; do mkdir -p rapor/ornek/$(dirname $f); cp $f rapor/ornek/$f || true; done
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_URL: https://qsetmleywkhjcntajphx.supabase.co
+          SUPABASE_KEY: sb_publishable_z74ZnvDgMWR7JzQDezgdqg_G_eh3e5B
       - name: Site denetimi
         run: node scripts/site-denetim.js
       - name: Raporu rapor-noindex dalına yaz

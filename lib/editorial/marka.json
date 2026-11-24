@@ -1,0 +1,129 @@
+{
+  "_aciklama": "Elle yazılmış marka sayfası notları. Anahtar: marka/<slug>.html sayfasının slug'ı.",
+  "realme-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Realme, orta segmentte kavisli AMOLED ekranı, hızlı şarjı ve şık tasarımı uygun fiyata sunmasıyla tanınıyor. Kataloğumuzdaki modellerin ağırlığı da bu bantta: 12 Pro+, 13 Pro+ ve 14 Pro+ benzer bir formülü her yıl biraz geliştiriyor. GT 6 ise performans odaklı serinin temsilcisi; oyun oynayanlar için Pro+ modellerinden daha güçlü bir işlemci sunuyor.",
+      "Realme seçerken dikkat edilmesi gereken iki nokta var. Birincisi suya dayanıklılık: modellerin çoğu IP65, yani yağmurdan korunuyor ama suya düşmeye karşı garantili değil. İkincisi arayüz: Realme UI kurulumda bazı ek uygulamalarla geliyor, bunları ilk açılışta kaldırmanızı öneririz. Giriş seviyesinde C67, temel kullanım için uygun ama ekranı LCD."
+    ]
+  },
+  "apple-kulaklik": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Kataloğumuzda Apple'ın kulaklık tarafında AirPods 5'in iki sürümü bulunuyor: standart kutulu ve kablosuz şarj kutulu. İki model arasında ses ve gürültü engelleme açısından fark yok; tek fark kutunun kablosuz şarj desteği. Kablosuz şarj cihazınız yoksa standart sürüm yeterli.",
+      "AirPods, iPhone ile kullanıldığında anında eşleşme, cihazlar arasında otomatik geçiş ve Bul uygulamasıyla kaybolan kulaklığı bulma gibi kolaylıklar sunuyor. Android telefonda da çalışıyor ama bu özelliklerin çoğu kayboluyor; Android kullanıyorsanız aynı fiyata daha fazla özellik sunan alternatiflere bakmak daha mantıklı."
+    ]
+  },
+  "oppo-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Oppo'nun kataloğumuzdaki modelleri dört farklı segmente yayılıyor. Find X7 Ultra çift periskop kamerasıyla kamera odaklı bir amiral gemisi; Reno 12 Pro ve Reno11 ince tasarım ve portre kamerasıyla orta-üst segmentte; A60 ise giriş seviyesinde. Bu yüzden ortalama skor markanın genel kalitesini değil, farklı segmentlerin karışımını yansıtıyor.",
+      "Oppo'nun ColorOS arayüzü akıcı ve sade; uzun süreli kullanımda performans düşüşü az. Find X7 Ultra'nın IP68 sertifikası varken Reno modelleri IP65'te kalıyor. Oppo ile Realme aynı şirket grubunun parçası olduğu için iki markanın yazılımları ve şarj teknolojileri birbirine çok yakın."
+    ]
+  },
+  "gopro-kamera": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "GoPro, aksiyon kamerası denince akla gelen ilk marka ve kataloğumuzdaki modeller bunun neden böyle olduğunu gösteriyor. HERO12 ve HERO13 Black, sağlam kasası, güçlü görüntü sabitlemesi ve aksesuar ekosistemiyle bisiklet, kayak ve dalış çekimleri için standart. HERO9 Black daha eski ama ön ekranı sayesinde vlog için hâlâ kullanılabiliyor. MAX2 ise 360 derece çekim yapan model.",
+      "GoPro'yu DJI'ın Osmo Action serisiyle karşılaştırırken pil ömrü ve düşük ışık performansına dikkat edin; son nesillerde DJI bu alanlarda öne geçti. GoPro'nun avantajı ise geniş aksesuar seçeneği ve yazılım desteği."
+    ]
+  },
+  "tecno-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Tecno, Türkiye pazarına girdiği günden bu yana uygun fiyata büyük ekran, büyük batarya ve yüksek megapiksel kamera sunarak öne çıkıyor. Kataloğumuzda Camon serisi kamera ve tasarıma, Pova serisi büyük bataryaya (Pova 6 Pro'da 6.000 mAh), Spark serisi ise bütçeye odaklanıyor. Phantom X2 Pro, markanın amiral gemisi denemelerinden biri.",
+      "Tecno telefonlarda dikkat edilmesi gereken nokta yazılım desteği ve dayanıklılık. Modellerin çoğu IP53 ile yalnızca su sıçramasına karşı korunuyor ve Android sürüm güncellemeleri Samsung veya Xiaomi kadar uzun sürmüyor. Telefonu 2-3 yıl kullanmayı planlıyorsanız bu fiyatta güçlü bir seçenek."
+    ]
+  },
+  "coros-akilli-saat": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "COROS, akıllı saatten çok spor saati üreten bir marka. Kataloğumuzdaki Pace 3, Pace Pro, Apex 2 Pro ve Vertix 2S koşu, bisiklet, dağcılık ve triatlon için tasarlanmış. Bu saatlerin en güçlü yanı pil ömrü: GPS açıkken bile günlerce, normal kullanımda haftalarca şarj gerektirmiyor.",
+      "Bildirim, akıllı asistan ya da uygulama mağazası gibi özellikler COROS'ta sınırlı. Bu yüzden Apple Watch veya Galaxy Watch ile doğrudan karşılaştırmak doğru değil. Antrenmanlarını ciddi takip eden biriyseniz Pace 3 fiyat/performans açısından en mantıklı model; dağ ve uzun mesafe için Vertix 2S daha uygun."
+    ]
+  },
+  "honor-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "HONOR, Huawei'den ayrıldıktan sonra Google servisleriyle gelen telefonlarıyla Türkiye'de hızla büyüdü. Kataloğumuzda markanın neredeyse tüm segmentleri var: 600 Lite ve 400 orta segmentte, 200 Pro ve 600 Pro orta-üstte, Magic7 Pro ve Magic8 Pro amiral gemisi, Magic V6 ise katlanabilir.",
+      "HONOR'un bugünkü en belirgin avantajı batarya. Silikon-karbon batarya teknolojisi sayesinde birçok modelde 6.000 mAh ve üzeri kapasite var; kataloğumuzdaki en büyük batarya 8.560 mAh. Portre kamerası da markanın güçlü yanlarından. Suya dayanıklılık modele göre değişiyor (IP64'ten IP69'a kadar), alırken kontrol edin."
+    ]
+  },
+  "iffalcon-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "iFFALCON, TCL'in uygun fiyatlı alt markası. Bu yüzden iFFALCON televizyonlar TCL'in panel ve yazılım altyapısını daha düşük fiyata sunuyor. Kataloğumuzdaki modeller 43 inçten 98 inçe kadar uzanıyor; U95A serisi QD-Mini LED ile markanın en üst modelleri, U65 ve U75 ise giriş seviyesinde.",
+      "Büyük ekranlı bir televizyonu bütçe aşmadan almak istiyorsanız iFFALCON'un 85 ve 98 inç modelleri dikkat çekici. Google TV arayüzüyle uygulama desteği geniş. Servis ve garanti TCL üzerinden yürüdüğü için satış sonrası destek konusunda yabancı bir markadan alıyormuş gibi endişe etmeye gerek yok."
+    ]
+  },
+  "philips-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Philips televizyonların en tanınan özelliği Ambilight: ekranın arkasından duvara, görüntüdeki renklere uyumlu ışık yansıtan sistem. Kataloğumuzdaki modellerin büyük çoğunluğunda bu özellik var. OLED810, OLED808 ve OLED760 serileri markanın OLED tarafını, MLED serisi Mini LED'i, PUS serisi ise uygun fiyatlı LED modelleri temsil ediyor.",
+      "Film ve dizi izlemek için en iyi seçim OLED modeller; mükemmel siyahlar ve geniş görüş açısı sunuyor. Aydınlık bir salonda kullanacaksanız daha parlak olan MLED serisi daha mantıklı. Ambilight ilk bakışta süs gibi görünse de karanlık odada göz yorgunluğunu azaltıyor."
+    ]
+  },
+  "dji-kamera": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "DJI'ın kataloğumuzdaki kameraları üç farklı kullanım alanına hitap ediyor. Osmo Action serisi (Action 4, 5 Pro, 6) GoPro'ya rakip aksiyon kameraları; Osmo Pocket serisi gimbal'lı küçük vlog kameraları; Osmo 360 serisi ise her yönü aynı anda çeken kameralar. Osmo Nano ise vücuda takılabilen en küçük model.",
+      "Vlog ve seyahat çekimleri için en çok önerdiğimiz model Osmo Pocket. Mekanik gimbal sayesinde yürürken bile görüntü pürüzsüz ve ön ekran kendinizi kadrajda görmenizi sağlıyor. Sporda kullanılacaksa Osmo Action serisi daha dayanıklı ve suya dayanıklı."
+    ]
+  },
+  "honor-tablet": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "HONOR'un tablet yelpazesi kataloğumuzda en geniş seçeneklerden birini sunuyor: Pad X8a ve X8c giriş seviyesinde, Pad X9a ve X9b Max orta segmentte, Pad 10 ve Pad 20 serisi üst-orta segmentte, MagicPad ise amiral gemisi. Paperlike Edition modelleri mat ekranla kâğıda yakın bir okuma deneyimi sunuyor.",
+      "HONOR tabletlerin avantajı, büyük ekran ve iyi hoparlörleri uygun fiyata sunması. Video izleme ve ders için Pad X9b Max, okuma ve not almak için Pad 20 Paperlike Edition öne çıkıyor. Google Play desteği tüm modellerde var."
+    ]
+  },
+  "apple-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Kataloğumuzda Apple'ın iPhone 11'den iPhone 18 Pro Max'e kadar geniş bir model yelpazesi bulunuyor. Eski modeller (iPhone 11, 12, 13) Türkiye'de hâlâ yeni ya da yenilenmiş olarak satılıyor ve uygun fiyatlı iPhone arayanlar için seçenek oluşturuyor. iPhone Air ve iPhone Duo gibi yeni tasarımlar da listede.",
+      "iPhone seçerken en önemli kriter yazılım desteği. Apple eski modelleri uzun süre güncellese de iPhone 11 ve 12 bu desteğin sonuna yaklaşıyor. Yeni iPhone alacaksanız en az iPhone 15'i öneririz; USB-C girişi ve 48 MP kamera bu modelle geldi. Apple Intelligence özellikleri için ise iPhone 15 Pro veya iPhone 16 ve sonrası gerekiyor."
+    ]
+  },
+  "casper-dizustu": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Casper, Türkiye'de üretim yapan ve yaygın servis ağına sahip bir bilgisayar markası. Kataloğumuzdaki modeller iki ana seriye ayrılıyor: Excalibur oyun bilgisayarları ve Nirvana günlük kullanım/ofis bilgisayarları. Excalibur serisinde aynı modelin farklı RAM, depolama ve ekran kartı seçenekleri var; model kodundaki son harfler bu farkı gösteriyor.",
+      "Casper'ın en büyük avantajı satış sonrası hizmet. Yerli marka olduğu için yedek parça ve servis süreci yabancı markalara göre daha hızlı. Excalibur modellerini karşılaştırırken ekran kartının güç sınırına (TGP) ve soğutmaya bakın; aynı ekran kartı farklı modellerde farklı performans verebiliyor."
+    ]
+  },
+  "acer-kulaklik": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Acer'ın kataloğumuzdaki kulaklıklarının neredeyse tamamı oyuncu kulaklığı: Predator Galea serisi ve Nitro Gaming Headset. Galea 311 ve 315 giriş seviyesinde, 350 ve 365 orta seviyede, 530, 550 ve 570 ise serinin üst modelleri.",
+      "Oyuncu kulaklığı seçerken mikrofon kalitesi, uzun süre takıldığında rahatlık ve bağlantı türü (kablolu, 2,4 GHz kablosuz, Bluetooth) önemli. Konsolda oynuyorsanız 3,5 mm girişli modeller her cihazla uyumlu. Müzik dinlemek için ise bu kulaklıklar yerine stüdyo ya da müzik odaklı modellere bakmanızı öneririz."
+    ]
+  },
+  "huawei-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Huawei telefonlar Türkiye'de Google servisleri olmadan satılıyor. Gmail, YouTube, Google Haritalar ve Google Play bu telefonlarda resmi olarak yok; uygulamalar Huawei'nin AppGallery mağazasından ya da alternatif yollarla kuruluyor. Kataloğumuzdaki P30 gibi eski modeller bu kısıtlamadan önce çıktığı için Google servisleriyle geliyor; P40 ve sonrasında Google servisleri yok.",
+      "Huawei'nin güçlü olduğu alanlar kamera ve tasarım. Pura 80 Ultra ve Pura 90s serisi mobil fotoğrafçılığın en iyileri arasında; Mate X serisi ise katlanabilir telefonlarda öncü. nova serisi orta segmentte şık tasarım ve iyi ön kamera sunuyor. Bir Huawei almadan önce günlük kullandığınız uygulamaların AppGallery'de olup olmadığını kontrol edin."
+    ]
+  },
+  "acer-dizustu": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Acer'ın kataloğumuzdaki dizüstüleri ağırlıklı olarak oyun odaklı: Nitro V ve Nitro serisi giriş ve orta seviye oyun bilgisayarları, Predator Helios Neo serisi ise daha güçlü ekran kartları ve daha iyi soğutma sunan üst segment. Acer bu alanda fiyat/performansıyla öne çıkıyor.",
+      "Nitro V serisi, ilk oyun bilgisayarını alacaklar için mantıklı bir başlangıç. Ancak bu fiyat aralığında ekran kalitesi ve kasa malzemesi sınırlı. Daha parlak ekran, daha iyi soğutma ve daha uzun süre üst ayarlarda oyun istiyorsanız Predator Helios Neo serisine bakın."
+    ]
+  },
+  "tcl-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "TCL, dünyanın en büyük televizyon üreticilerinden biri ve kataloğumuzdaki 27 modelle en geniş seçeneği sunan markalardan. Yelpaze 50 inçten 115 inçe kadar uzanıyor. P serisi giriş, C serisi QLED ve Mini LED, X serisi ise markanın en üst modelleri. T serisi de uygun fiyatlı QLED seçenekleri sunuyor.",
+      "TCL'in güçlü olduğu alan, büyük ekranı ve Mini LED teknolojisini rakiplerine göre daha uygun fiyata sunması. 65 inç ve üzeri bir televizyon arıyorsanız C7 ve C8 serileri fiyat/performans açısından öne çıkıyor. Google TV arayüzü geniş uygulama desteği sunuyor."
+    ]
+  },
+  "dell-dizustu": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Dell'in kataloğumuzdaki dizüstüleri üç farklı kullanıcıya hitap ediyor. Vostro ve Pro Essential serileri iş ve ofis kullanımı için tasarlanmış, uygun fiyatlı modeller; Alienware serisi ise yüksek performanslı oyun bilgisayarları. Aynı modelin farklı işlemci, RAM ve depolama seçenekleri model kodundaki eklerle ayrılıyor.",
+      "Dell'in iş bilgisayarlarının avantajı sağlam kasa ve uzun garanti seçenekleri. Alienware ise güçlü soğutma ve yüksek kaliteli ekranlarla oyun tarafında premium bir seçenek. Ofis kullanımı için Vostro yeterli; oyun ve içerik üretimi için Alienware'e bakın."
+    ]
+  }
+}

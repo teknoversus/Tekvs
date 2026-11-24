@@ -1,0 +1,171 @@
+{
+ "_aciklama": "Ürün id → üreticinin resmi basın/ürün görseli. lib/product-photos.js build sırasında indirir. Yalnızca resmi üretici görselleri; insan içeren görseller eklenmez.",
+ "p_new_045": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/PACE_3_Black_with_Silicone_Band1.png",
+  "credit": "COROS"
+ },
+ "p_new_046": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/COROS_PACE_Pro_Grey1.png",
+  "credit": "COROS"
+ },
+ "p_new_048": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/VERTIX_2S_Space_Nylon1.png",
+  "credit": "COROS"
+ },
+ "t21": {
+  "url": "https://www.apple.com/v/ipad-11/d/images/meta/ipad-11_overview__brh97xhhd8b6_og.png",
+  "credit": "Apple"
+ },
+ "h20": {
+  "url": "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/tile/Apple-iPad-Pro-hero-240507.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "apple-iphone-air": {
+  "url": "https://www.apple.com/v/iphone-air/k/images/meta/iphone-air_overview__dwhg6l117yqa_og.png",
+  "credit": "Apple"
+ },
+ "n6": {
+  "url": "https://www.apple.com/v/iphone-17/k/images/meta/iphone-17_overview__cg0rlzmbhl7m_og.png",
+  "credit": "Apple"
+ },
+ "iphone-17e-2026": {
+  "url": "https://www.apple.com/v/iphone-17e/g/images/meta/iphone17e_overview__b9tcq8ttub9e_og.png",
+  "credit": "Apple"
+ },
+ "u1": {
+  "url": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/tile/Apple-iPhone-18-Pro-2up-260909-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "apple-iphone-18-pro-max": {
+  "url": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/tile/Apple-iPhone-18-Pro-2up-260909-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "apple-iphone-duo": {
+  "url": "https://www.apple.com/newsroom/images/2026/10/open-up-to-new-possibilities-with-iphone-duo/tile/Apple-iPhone-Duo-hero-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "sam_s12ultra": {
+  "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/09/28123529/Samsung-Mobile-Galaxy-Tab-S12-Series_Thumb932.jpg",
+  "credit": "Samsung"
+ },
+ "sam_s12plus": {
+  "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/09/28123529/Samsung-Mobile-Galaxy-Tab-S12-Series_Thumb932.jpg",
+  "credit": "Samsung"
+ },
+ "p_huawei_2026_mate_x8": {
+  "url": "https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/pdp/phones/mate-x8/img/hero/kv.jpg",
+  "credit": "Huawei"
+ },
+ "p_new_047": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/APEX_2_Pro_Black-1.png",
+  "credit": "COROS"
+ },
+ "p14": {
+  "url": "https://www.apple.com/v/airpods-5/b/images/meta/airpods-5__bwo9ith0md42_og.png",
+  "credit": "Apple"
+ },
+ "h12": {
+  "url": "https://www.apple.com/newsroom/images/2024/03/apple-unveils-the-new-13-and-15-inch-macbook-air-with-the-powerful-m3-chip/tile/Apple-MacBook-Air-2-up-hero-240304-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "h26": {
+  "url": "https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-Ultra-3up-hero-220907.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "hon_magic2": {
+  "url": "https://www.honor.com/content/dam/honor/global/product-list/tablets/honor-magicpad-2/honor-magicpad-2-white-list.png",
+  "credit": "HONOR"
+ },
+ "t33": {
+  "url": "https://www.honor.com/content/dam/honor/global/products/tablets/honor-pad-v9/500X500.jpg",
+  "credit": "HONOR"
+ },
+ "n8": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tv50": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tv42": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tv35": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tv29": {
+  "url": "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/1.png",
+  "credit": "TCL"
+ },
+ "tv23": {
+  "url": "https://www.lg.com/content/dam/channel/wcms/tr/ms/lgcom/2026/tv-audio-video/oled-evo/gallery-update/c6/c6-2010-update.jpg/jcr:content/renditions/thum-1600x1062.jpeg",
+  "credit": "LG"
+ },
+ "tv12": {
+  "url": "https://www.lg.com/content/dam/channel/wcms/tr/ms/lgcom/2026/tv-audio-video/oled-evo/gallery-update/c6/c6-2010-update.jpg/jcr:content/renditions/thum-1600x1062.jpeg",
+  "credit": "LG"
+ },
+ "t44": {
+  "url": "https://www.apple.com/v/ipad-air/ah/images/meta/ipad-air_overview__bc2fd15uec0y_og.png",
+  "credit": "Apple"
+ },
+ "t23": {
+  "url": "https://www.apple.com/newsroom/images/2025/03/apple-introduces-ipad-air-with-powerful-m3-chip-and-new-magic-keyboard/tile/Apple-iPad-Air-hero-250304-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "t22": {
+  "url": "https://www.apple.com/newsroom/images/2025/03/apple-introduces-ipad-air-with-powerful-m3-chip-and-new-magic-keyboard/tile/Apple-iPad-Air-hero-250304-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "h17": {
+  "url": "https://www.apple.com/newsroom/images/product/airpods/standard/Apple-AirPods-Pro-2nd-gen-hero-220907.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "t27": {
+  "url": "https://i02.appmifile.com/542_operatorx_operatorx_opx/02/03/2025/74faca2e3c1cad5a154a3b2aa32923a1.png",
+  "credit": "Xiaomi"
+ },
+ "huase11wifi8": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-se-11/images/kv/huawei-matepad-se-11-kv-2x.jpg",
+  "credit": "Huawei"
+ },
+ "huase11lte": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-se-11/images/kv/huawei-matepad-se-11-kv-2x.jpg",
+  "credit": "Huawei"
+ },
+ "hon_pad20_paper": {
+  "url": "https://www.honor.com/content/dam/honor/common/products/tablets/honor-pad-20/imgs/share.jpg",
+  "credit": "HONOR"
+ },
+ "poco_pad_x1": {
+  "url": "https://i02.appmifile.com/701_operatorx_operatorx_xm/24/11/2025/2d3237d98415cc6ed51068cf2f0c91f9.jpg",
+  "credit": "Xiaomi"
+ },
+ "t31": {
+  "url": "https://i02.appmifile.com/987_operatorx_operatorx_opx/24/09/2025/4ae5d04c45653be2c9883ab439220086.png",
+  "credit": "Xiaomi"
+ },
+ "n13": {
+  "url": "https://i02.appmifile.com/709_operatorx_operatorx_xm/23/09/2025/03e07b0722a5a9c435069c0c68fe0a9d.png",
+  "credit": "Xiaomi"
+ },
+ "p_mid_04": {
+  "url": "https://i02.appmifile.com/251_operatorx_operatorx_opx/09/01/2025/d7110ed0232cacb6c01be82fc953bd49.png",
+  "credit": "Xiaomi"
+ },
+ "y14": {
+  "url": "https://i02.appmifile.com/976_operatorx_operatorx_opx/23/02/2024/c4866f7bdd20c6ed7acf6082417dd340.png",
+  "credit": "Xiaomi"
+ },
+ "s3": {
+  "url": "https://www.apple.com/v/ipad-pro/aw/images/meta/ipad-pro_overview__bu4cql27diaa_og.png",
+  "credit": "Apple"
+ },
+ "t24": {
+  "url": "https://www.apple.com/v/ipad-pro/aw/images/meta/ipad-pro_overview__bu4cql27diaa_og.png",
+  "credit": "Apple"
+ }
+}

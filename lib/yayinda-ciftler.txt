@@ -32,6 +32,7 @@ ac09|n02	acer-predator-galea-330-vs-galaxy-buds-4-84c90c26c2e3.html
 ac09|n51	acer-predator-galea-330-vs-huawei-freebuds-se-4-anc-e4c6a7cb3c3f.html
 ac09|p10	acer-predator-galea-330-vs-jbl-wave-beam-2-53dc7a2f234d.html
 acer-predator-galea-330-vs-redmi-buds-8-pro-3cc026cf7bf0.html
+ac09|p13	acer-predator-galea-330-vs-sony-wh-ch520-5cb2a835856e.html
 ac06|p02	acer-predator-galea-350-vs-anker-soundcore-p31i-r60i-8e3954a73dc0.html
 ac06|p25	acer-predator-galea-350-vs-jbl-tune-660nc-6d0086dcae5e.html
 ac06|n70	acer-predator-galea-350-vs-soundpeats-capsule3-pro-b85d05a8af04.html
@@ -129,6 +130,7 @@ p_amazfit_048|p_garmin_001	amazfit-balance-3-vs-garmin-forerunner-45-1810cc00659
 p_amazfit_048|p_huawei_2025_huawei_watch_gt_7_pro	amazfit-balance-3-vs-huawei-watch-gt-7-pro-a2b6f11ffc8a.html
 p_amazfit_048|p_samsung_2018_samsung_galaxy_watch	amazfit-balance-3-vs-samsung-galaxy-watch-b31041eff3c2.html
 p_amazfit_049|p_garmin_010	amazfit-balance-ultra-vs-garmin-forerunner-955-423dc140d8df.html
+p_amazfit_049|p_huawei_2026_huawei_watch_buds_2	amazfit-balance-ultra-vs-huawei-watch-buds-2-84c514629e63.html
 p_amazfit_049|p_huawei_2023_huawei_watch_ultimate	amazfit-balance-ultra-vs-huawei-watch-ultimate-25de2d7f198c.html
 p_amazfit_049|p_huawei_2023_huawei_watch_ultimate_design	amazfit-balance-ultra-vs-huawei-watch-ultimate-design-ccd97a17b252.html
 p_amazfit_046|p_child_020	amazfit-balance-vs-havit-kw15-cae74cf9660a.html
@@ -180,6 +182,7 @@ p_amazfit_012|p_amazfit_014	amazfit-gtr-3-pro-limited-edition-vs-amazfit-gtr-4-l
 p_amazfit_012|p_amazfit_016	amazfit-gtr-3-pro-limited-edition-vs-amazfit-gts-156fa1fce771.html
 p_amazfit_011|p_amazfit_012	amazfit-gtr-3-pro-vs-amazfit-gtr-3-pro-limited-edition-5ec321d2e7c7.html
 p_amazfit_011|p_amazfit_014	amazfit-gtr-3-pro-vs-amazfit-gtr-4-limited-edition-01edad2687fc.html
+p_amazfit_010|p_child_013	amazfit-gtr-3-vs-dijikid-4-5g-978aa769cbf0.html
 p_amazfit_010|p_huawei_2025_huawei_watch_fit_4	amazfit-gtr-3-vs-huawei-watch-fit-4-70b376889396.html
 p_amazfit_010|p_huawei_2022_huawei_watch_gt_3_se	amazfit-gtr-3-vs-huawei-watch-gt-3-se-fcb6027eb833.html
 p_amazfit_010|p_xiaomi_025	amazfit-gtr-3-vs-redmi-watch-6-419ac1d18a82.html
@@ -234,6 +237,7 @@ p_new_021|p_new_036	amazfit-t-rex-3-pro-vs-garmin-vivoactive-6-1cb3b82d2fde.html
 p_amazfit_037|p_amazfit_049	amazfit-t-rex-3-vs-amazfit-balance-ultra-aab30a63e56d.html
 p_amazfit_037|p_garmin_006	amazfit-t-rex-3-vs-garmin-forerunner-255-c8c027a2e940.html
 p_amazfit_037|p_garmin_010	amazfit-t-rex-3-vs-garmin-forerunner-955-4f0327128ca3.html
+p_amazfit_037|p_huawei_2026_huawei_watch_buds_2	amazfit-t-rex-3-vs-huawei-watch-buds-2-ba2a81f461c6.html
 p_amazfit_037|p_huawei_2023_huawei_watch_ultimate	amazfit-t-rex-3-vs-huawei-watch-ultimate-852a1f22697f.html
 p_recent_2026_016|p_zeblaze_018	amazfit-t-rex-dual-solar-vs-zeblaze-beyond-2-d8488732ec8f.html
 p_recent_2026_016|p_zeblaze_019	amazfit-t-rex-dual-solar-vs-zeblaze-beyond-3-pro-1ad012e3e49b.html
@@ -242,6 +246,7 @@ p_amazfit_034|p_amazfit_040	amazfit-t-rex-pro-vs-amazfit-active-89aa6858ade2.htm
 p_amazfit_034|p_amazfit_035	amazfit-t-rex-pro-vs-amazfit-t-rex-2-70a3784d4f3b.html
 p_new_024|s6	amazfit-t-rex-ultra-2-vs-apple-watch-series-11-42mm-1d85693a4402.html
 p_amazfit_036|p_huawei_2026_huawei_watch_buds_2	amazfit-t-rex-ultra-vs-huawei-watch-buds-2-1d19d8bbb721.html
+p_amazfit_036|p_huawei_2025_huawei_watch_gt_7	amazfit-t-rex-ultra-vs-huawei-watch-gt-7-6fe4057b5fe5.html
 p_amazfit_036|p_huawei_2026_huawei_watch_gt_runner_2	amazfit-t-rex-ultra-vs-huawei-watch-gt-runner-2-72729f3e8468.html
 p_amazfit_036|p_suunto_030	amazfit-t-rex-ultra-vs-suunto-run-2-efeb8f57e967.html
 p_amazfit_036|p_suunto_027	amazfit-t-rex-ultra-vs-suunto-run-9704a072840d.html
@@ -396,6 +401,7 @@ p_apple_2016_apple_watch_series_1|p_samsung_2014_samsung_gear_live	apple-watch-s
 p_apple_2016_apple_watch_series_1|p_samsung_2014_samsung_gear_s	apple-watch-series-1-vs-samsung-gear-s-c5d00b7c6063.html
 p_new_032|p_new_046	apple-watch-series-10-46mm-vs-coros-pace-pro-f869a65da269.html
 p_new_032|p_new_066	apple-watch-series-10-46mm-vs-huawei-watch-d2-2838806b5a56.html
+p_new_032|p_new_054	apple-watch-series-10-46mm-vs-oneplus-watch-2r-617d3e5d4e5f.html
 p_new_032|p_new_074	apple-watch-series-10-46mm-vs-ticwatch-atlas-904f031551fb.html
 p_new_032|p_new_057	apple-watch-series-10-46mm-vs-ticwatch-pro-5-enduro-e0fa20678080.html
 h24|p_new_076	apple-watch-series-10-vs-amazfit-active-3-premium-74391e0ae786.html
@@ -403,6 +409,7 @@ h24|y50	apple-watch-series-10-vs-apple-watch-se-2-nesil-26dbb655fd8c.html
 h24|s6	apple-watch-series-10-vs-apple-watch-series-11-42mm-095449d2ffdc.html
 h24|h27	apple-watch-series-10-vs-apple-watch-series-8-418f57a07185.html
 h24|h25	apple-watch-series-10-vs-apple-watch-series-9-5d2c3455637e.html
+h24|y53	apple-watch-series-10-vs-google-pixel-watch-2-18822a862521.html
 h24|p_new_013	apple-watch-series-10-vs-huawei-watch-gt-6-pro-a89ce827507f.html
 h24|p_new_054	apple-watch-series-10-vs-oneplus-watch-2r-51b0e779d47e.html
 h24|p_new_042	apple-watch-series-10-vs-suunto-race-s-40bfae5edc42.html
@@ -819,6 +826,7 @@ p_new_046|p_new_074	coros-pace-pro-vs-ticwatch-atlas-768690b1daf2.html
 p_new_048|x33	coros-vertix-2s-vs-garmin-forerunner-165-bec563cdc703.html
 p_new_048|p_new_066	coros-vertix-2s-vs-huawei-watch-d2-2344d283564b.html
 p_new_048|y54	coros-vertix-2s-vs-oneplus-watch-2-10dbb9bf38c3.html
+p_new_048|p_new_054	coros-vertix-2s-vs-oneplus-watch-2r-e79d45408c42.html
 p_new_048|p_new_057	coros-vertix-2s-vs-ticwatch-pro-5-enduro-4913ec689ec1.html
 g19|g24	corsair-hs80-max-wireless-vs-jbl-quantum-810-wireless-0733adab931d.html
 g19|g25	corsair-hs80-max-wireless-vs-turtle-beach-stealth-600-gen-3-1778f1b42bec.html
@@ -874,11 +882,17 @@ amazon_20260924_040|amazon_20260924_latest_013	dell-vostro-3530-n3404pvnb3530u08
 amazon_20260924_040|x38	dell-vostro-3530-n3404pvnb3530u08-vs-msi-katana-15-f35eb3b91313.html
 p_child_014|p_child_018	dijikid-4-5g-pro-vs-havit-kw11-d32362a0972e.html
 p_child_014|p_child_020	dijikid-4-5g-pro-vs-havit-kw15-a53251c5d92a.html
+p_child_014|p_haylou_013	dijikid-4-5g-pro-vs-haylou-watch-2-pro-e88ed4f5cf4f.html
+p_child_014|p_new_079	dijikid-4-5g-pro-vs-redmi-watch-5-lite-6f80816adde6.html
 p_child_014|p_child_021	dijikid-4-5g-pro-vs-xiaomi-mibro-p6-d3d1eb8b3605.html
 p_child_014|p_child_024	dijikid-4-5g-pro-vs-xiaomi-mibro-watch-phone-s1-0d1e20255412.html
+p_child_014|p_xiaomi_009	dijikid-4-5g-pro-vs-xiaomi-watch-s3-61345fc06aac.html
+p_child_014|p_zeblaze_058	dijikid-4-5g-pro-vs-zeblaze-vibe-7-pro-471d511e59d8.html
 p_child_013|p_haylou_013	dijikid-4-5g-vs-haylou-watch-2-pro-cfbdcb622d02.html
+p_child_013|p_huawei_2025_huawei_watch_fit_4	dijikid-4-5g-vs-huawei-watch-fit-4-41db2afc8000.html
 p_child_013|p_new_079	dijikid-4-5g-vs-redmi-watch-5-lite-b481ffa101bc.html
 p_child_013|p_xiaomi_009	dijikid-4-5g-vs-xiaomi-watch-s3-14f2dadec5bc.html
+p_child_013|p_zeblaze_039	dijikid-4-5g-vs-zeblaze-btalk-3-plus-8fa2b27f5ccd.html
 p_child_013|p_zeblaze_058	dijikid-4-5g-vs-zeblaze-vibe-7-pro-bcb42981a1e9.html
 tvsearch086|tvsearch088	dijitsu-43dg22000-vs-dijitsu-65dg32000-1d8dfb1c8536.html
 tvsearch086|tvsearch089	dijitsu-43dg22000-vs-saba-sb55500-a832dc157561.html
@@ -954,6 +968,7 @@ freebuds-7i-vs-razer-kraken-kitty-v3-x-dd6a60c0f85a.html
 n14|y32	freebuds-pro-5-vs-buds-4-5d4d710f39fe.html
 n14|p12	freebuds-pro-5-vs-jbl-soundgear-clips-61e0d0858a79.html
 n14|x5	freebuds-pro-5-vs-redmi-buds-5-1531a9f80b1b.html
+n14|y32	freebuds-pro-5-vs-samsung-galaxy-buds-4-5d4d710f39fe.html
 n14|ss04	freebuds-pro-5-vs-steelseries-arctis-nova-3-wireless-1e8dccbe65fe.html
 retro08|retro09	fujifilm-finepix-f30-vs-fujifilm-finepix-f31fd-fe1e9ef5bcc3.html
 retro08|retro13	fujifilm-finepix-f30-vs-olympus-stylus-710-253e4e5093fe.html
@@ -1016,6 +1031,7 @@ trend_2026090528|trend_2026090543	game-garaj-slayer-r9t-5070ti-c2-vs-casper-exca
 g38|y32	gamepower-aero-ultra-7-1-vs-buds-4-33cf9c84daa0.html
 g38|n14	gamepower-aero-ultra-7-1-vs-freebuds-pro-5-e9e2b5fd2b1c.html
 g38|p12	gamepower-aero-ultra-7-1-vs-jbl-soundgear-clips-8872f4fc520b.html
+g38|y32	gamepower-aero-ultra-7-1-vs-samsung-galaxy-buds-4-33cf9c84daa0.html
 g38|ss07	gamepower-aero-ultra-7-1-vs-steelseries-arctis-nova-5-wireless-8f62139017a4.html
 amazon_20260924_latest_026|trend_2026090504	gameraider-flux-gr16-vs-acer-nitro-16-an16-51-596g-9cfa955869e7.html
 amazon_20260924_latest_026|trend_2026090561	gameraider-flux-gr16-vs-acer-nitro-v-16-anv16-71-751z-nh-q-6d220cfc0bfd.html
@@ -1246,6 +1262,7 @@ g44|p20	havit-gamenote-h2040d-vs-havit-h652bt-d09517ba7ca2.html
 g44|n73	havit-gamenote-h2040d-vs-qcy-buds-anc-ht15-456bc84cbe1e.html
 havit-gamenote-h2040d-vs-redmi-buds-8-lite-3b2191316885.html
 p_child_018|p_new_058	havit-kw11-vs-cmf-watch-pro-2-ee65d80458cf.html
+p_child_018|p_child_020	havit-kw11-vs-havit-kw15-4e4ebf90da17.html
 p_child_018|p_mibro_010	havit-kw11-vs-mibro-kids-s1-05b92d79ab99.html
 p_child_018|p_child_024	havit-kw11-vs-xiaomi-mibro-watch-phone-s1-b01bc1aa791a.html
 p_child_019|p_recent_2026_020	havit-kw12-vs-honor-choice-watch-2-pro-8cc3e826e66d.html
@@ -1770,6 +1787,7 @@ p_huawei_2025_huawei_watch_gt_7|p_huawei_2026_huawei_watch_buds_2	huawei-watch-g
 p_huawei_2025_huawei_watch_gt_7|p_huawei_2026_huawei_watch_gt_runner_2	huawei-watch-gt-7-vs-huawei-watch-gt-runner-2-1e6f1d585b55.html
 p_huawei_2025_huawei_watch_gt_7|p_xiaomi_005	huawei-watch-gt-7-vs-xiaomi-watch-s1-7afc11113bad.html
 p_huawei_2025_huawei_watch_gt_7|p_recent_2026_008	huawei-watch-gt-7-vs-xiaomi-watch-s5-295a89834fb0.html
+p_huawei_2026_huawei_watch_gt_runner_2|p_suunto_027	huawei-watch-gt-runner-2-vs-suunto-run-9dfd57cbe541.html
 p_huawei_2021_huawei_watch_gt_runner|p_huawei_2022_huawei_watch_gt_cyber	huawei-watch-gt-runner-vs-huawei-watch-gt-cyber-33da4a26de4a.html
 p_huawei_2018_huawei_watch_gt|p_huawei_2019_huawei_watch_gt_2	huawei-watch-gt-vs-huawei-watch-gt-2-6870dcdf076a.html
 p_huawei_2018_huawei_watch_gt|p_huawei_2020_huawei_watch_gt_2e	huawei-watch-gt-vs-huawei-watch-gt-2e-b812a3dd373b.html
@@ -1779,7 +1797,9 @@ p_huawei_2026_huawei_watch_kids_x1|p_zeblaze_010	huawei-watch-kids-x1-vs-zeblaze
 p_huawei_2018_huawei_watch_magic|p_huawei_2026_huawei_band_11_pro	huawei-watch-magic-vs-huawei-band-11-pro-060000b695a1.html
 p_new_016|p_new_055	huawei-watch-ultimate-2-vs-oppo-watch-x2-7ba6cdfca714.html
 p_huawei_2023_huawei_watch_ultimate_design|p_huawei_2025_huawei_watch_5	huawei-watch-ultimate-design-vs-huawei-watch-5-70f4c10a0c4f.html
+p_huawei_2023_huawei_watch_ultimate_design|p_huawei_2026_huawei_watch_buds_2	huawei-watch-ultimate-design-vs-huawei-watch-buds-2-80c440ff2bf6.html
 p_huawei_2023_huawei_watch_ultimate|p_huawei_2025_huawei_watch_5	huawei-watch-ultimate-vs-huawei-watch-5-0d9e1c728efb.html
+p_huawei_2023_huawei_watch_ultimate|p_huawei_2026_huawei_watch_buds_2	huawei-watch-ultimate-vs-huawei-watch-buds-2-9cfb07d1d5eb.html
 p_huawei_2023_huawei_watch_ultimate|p_huawei_2023_huawei_watch_ultimate_design	huawei-watch-ultimate-vs-huawei-watch-ultimate-design-50e2f9509707.html
 p_huawei_2015_huawei_watch|p_huawei_2026_huawei_band_11_pro	huawei-watch-vs-huawei-band-11-pro-c055da72ac19.html
 p_huawei_2015_huawei_watch|p_huawei_2024_huawei_band_9	huawei-watch-vs-huawei-band-9-29379fbf0d00.html
@@ -1961,6 +1981,7 @@ n49|n52	jbl-tune-buds-2-vs-huawei-freebuds-se-3-d285c5da48eb.html
 n49|n51	jbl-tune-buds-2-vs-huawei-freebuds-se-4-anc-47802643436e.html
 n49|p10	jbl-tune-buds-2-vs-jbl-wave-beam-2-12691c649a24.html
 n49|n72	jbl-tune-buds-2-vs-jbl-wave-flex-9511d5a90474.html
+p10|p21	jbl-wave-beam-2-vs-baseus-bowie-ma10-878e6516c94b.html
 p08|ss06	jbl-wave-buds-2-vs-steelseries-arctis-nova-1-7e4f225931eb.html
 n72|p16	jbl-wave-flex-vs-earfun-air-pro-4i-ae5e70eb45b8.html
 add18|retro02	kandao-qoocam-3-ultra-vs-canon-powershot-sx740-hs-b879c7fe75a1.html
@@ -2312,6 +2333,7 @@ g09|y32	logitech-g522-lightspeed-vs-buds-4-c66d51b263b6.html
 g09|n37	logitech-g522-lightspeed-vs-ear-3-480a10c70ffc.html
 g09|rz04	logitech-g522-lightspeed-vs-razer-blackshark-v2-hyperspeed-bf649588d966.html
 g09|g42	logitech-g522-lightspeed-vs-razer-hammerhead-hyperspeed-tws-b521708ed986.html
+g09|y32	logitech-g522-lightspeed-vs-samsung-galaxy-buds-4-c66d51b263b6.html
 g09|g29	logitech-g522-lightspeed-vs-steelseries-arctis-nova-3x-wireles-3f861658547a.html
 g30|rz12	logitech-g733-lightspeed-vs-razer-kaira-pro-hyperspeed-a661e8287040.html
 g30|rz10	logitech-g733-lightspeed-vs-razer-kraken-kitty-v3-pro-6168d429ddc6.html
@@ -2658,6 +2680,8 @@ p_1787680633621_67|p_1787680633621_86	oneplus-13-vs-realme-gt-6-5ad28870c7c1.htm
 y54|y56	oneplus-watch-2-vs-polar-vantage-v3-7ca4b3f92be1.html
 p_new_054|p_new_076	oneplus-watch-2r-vs-amazfit-active-3-premium-66abb88ca09f.html
 p_new_054|y53	oneplus-watch-2r-vs-google-pixel-watch-2-9da529e9a32f.html
+p_new_054|p_new_066	oneplus-watch-2r-vs-huawei-watch-d2-99c7f6c235a6.html
+p_new_054|p_new_057	oneplus-watch-2r-vs-ticwatch-pro-5-enduro-a4f836def63c.html
 p_new_028|p_new_046	oneplus-watch-3-vs-coros-pace-pro-221bacc49317.html
 p_new_028|p_new_036	oneplus-watch-3-vs-garmin-vivoactive-6-3719fd101b06.html
 p_new_028|p_new_055	oneplus-watch-3-vs-oppo-watch-x2-9e1a85ae84db.html
@@ -2911,6 +2935,7 @@ rz01|x22	razer-blackshark-v3-x-hyperspeed-vs-soundcore-r50i-nc-097526b315b2.html
 g42|y32	razer-hammerhead-hyperspeed-tws-vs-buds-4-6a149fa25a52.html
 g42|n37	razer-hammerhead-hyperspeed-tws-vs-ear-3-87f71c6755aa.html
 g42|rz03	razer-hammerhead-hyperspeed-tws-vs-razer-blackshark-v2-pro-2023-8a5eec4f8532.html
+g42|y32	razer-hammerhead-hyperspeed-tws-vs-samsung-galaxy-buds-4-6a149fa25a52.html
 g42|n48	razer-hammerhead-hyperspeed-tws-vs-xiaomi-redmi-buds-5-pro-00032b1caacc.html
 rz14|rz15	razer-hammerhead-v3-vs-razer-hammerhead-pro-hyperspeed-77a5cbb06f0a.html
 rz13|ss09	razer-kaira-hyperspeed-vs-steelseries-arctis-7p-wireless-63ceab1ed20f.html
@@ -2924,6 +2949,7 @@ rz10|ss03	razer-kraken-kitty-v3-pro-vs-steelseries-arctis-nova-pro-55c02fcfe106.
 g07|g16	razer-kraken-v4-pro-vs-asus-rog-delta-ii-7041b739d496.html
 g07|g13	razer-kraken-v4-pro-vs-audeze-maxwell-2-823238ce16f8.html
 rz08|y32	razer-kraken-v4-vs-buds-4-a0989c00c9fe.html
+rz08|y32	razer-kraken-v4-vs-samsung-galaxy-buds-4-a0989c00c9fe.html
 rz08|ss04	razer-kraken-v4-vs-steelseries-arctis-nova-3-wireless-485e72ca8406.html
 rz09|rz11	razer-kraken-v4-x-vs-razer-kraken-kitty-v3-x-c684b614a8d1.html
 x20|z10	realme-12-pro-vs-casper-via-x40-0a8b0d7c597f.html
@@ -3691,6 +3717,7 @@ n61|rz07	soundcore-space-q45-vs-razer-barracuda-03ca9d94a6c2.html
 n61|rz13	soundcore-space-q45-vs-razer-kaira-hyperspeed-a27c074caef6.html
 n61|ss10	soundcore-space-q45-vs-steelseries-arctis-7x-wireless-236af7867859.html
 ss04|y32	steelseries-arctis-nova-3-wireless-vs-buds-4-0d6f67bb38d3.html
+ss04|y32	steelseries-arctis-nova-3-wireless-vs-samsung-galaxy-buds-4-0d6f67bb38d3.html
 g28|n32	steelseries-arctis-nova-3p-wireles-vs-cloud-iii-wireless-da82fd0baef5.html
 g28|n03	steelseries-arctis-nova-3p-wireles-vs-galaxy-buds-3-fe-f9f20a72a409.html
 g28|p09	steelseries-arctis-nova-3p-wireles-vs-jbl-tune-beam-2-4dcaaba168b6.html
@@ -3769,6 +3796,7 @@ p_suunto_003|p_suunto_005	suunto-elementum-vs-suunto-ambit2-6b86b46b31c1.html
 p_suunto_012|p_suunto_014	suunto-kailash-vs-suunto-spartan-sport-0daa5c4709f4.html
 p_suunto_012|p_suunto_013	suunto-kailash-vs-suunto-spartan-trainer-wrist-hr-a6371ea66d79.html
 p_suunto_028|p_suunto_029	suunto-race-2-vs-suunto-vertical-2-b5cd088c27c4.html
+p_new_042|p_new_076	suunto-race-s-vs-amazfit-active-3-premium-9a8f545d7bfc.html
 p_new_042|y53	suunto-race-s-vs-google-pixel-watch-2-2304d0c2f3e3.html
 p_new_042|p_new_065	suunto-race-s-vs-huawei-watch-4-2af0f4a10064.html
 p_new_042|p_new_054	suunto-race-s-vs-oneplus-watch-2r-79e14d8d705e.html
@@ -4034,6 +4062,7 @@ n29|y28	wh-1000xm6-vs-airpods-4-ed81abb8b8f7.html
 n29|x23	wh-1000xm6-vs-galaxy-buds3-605bb6793f2b.html
 n29|n39	wh-1000xm6-vs-tour-pro-3-9915d66d6372.html
 n29|n36	wh-1000xm6-vs-wf-1000xm6-243abf3632d6.html
+p_child_008|p_child_013	wiky-watch-4s-vs-dijikid-4-5g-ba45d910cd16.html
 p_child_008|p_haylou_023	wiky-watch-4s-vs-haylou-watch-4s-6c62d5dfd2c0.html
 p_child_008|p_huawei_2025_huawei_watch_fit_4	wiky-watch-4s-vs-huawei-watch-fit-4-b80cdf094ebc.html
 p_child_008|p_child_016	wiky-watch-4s-vs-reeder-kiddo-4e827f4d817e.html
@@ -4080,6 +4109,7 @@ p_child_023|p_haylou_023	xiaomi-mibro-p5-vs-haylou-watch-4s-0da126a87236.html
 p_child_023|p_mibro_021	xiaomi-mibro-p5-vs-mibro-gs-pro2-151da28461d0.html
 p_child_023|p_new_080	xiaomi-mibro-p5-vs-samsung-galaxy-fit3-ebbf71c7ed15.html
 p_child_021|p_huawei_2025_huawei_watch_fit_4_pro	xiaomi-mibro-p6-vs-huawei-watch-fit-4-pro-67cd43f10d3e.html
+p_child_021|p_child_024	xiaomi-mibro-p6-vs-xiaomi-mibro-watch-phone-s1-ce829159824b.html
 p_child_024|p_new_058	xiaomi-mibro-watch-phone-s1-vs-cmf-watch-pro-2-85fbc0f1f21a.html
 p_child_022|p_new_058	xiaomi-mibro-z5-vs-cmf-watch-pro-2-3758e357cc6e.html
 p_child_022|p_google_pixel_watch_003	xiaomi-mibro-z5-vs-google-pixel-watch-3-869948178c75.html

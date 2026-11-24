@@ -1,8 +1,37 @@
 {
   "_aciklama": "Aynı olayı ikinci kez anlatan haberler. lib/site-quality.js bunları 'noindex, follow' yapar ve sitemap'ten çıkarır. Haber silinmez, metni değişmez, adresi çalışır. Her grupta ilk yayımlanan (asıl) haber indekste kalır. 24 Kasım 2026 site denetimi.",
   "haberler": [
-    { "id": "amazon-fire-markasini-birakti-yeni-alexa-tabletler-google-play-ile-geliyor", "asil": "amazon-fire-tabletleri-birakiyor-yeni-alexa-tabletler-android-ve-google-play-ile-geliyor", "neden": "8 Ekim haberiyle aynı duyuru" },
-    { "id": "apple-homeview-tanitildi-siri-ai-destekli-akilli-ev-ekrani-geliyor", "asil": "apple-homeview-tanitildi-yuz-taniyan-akilli-ev-ekrani", "neden": "13 Ekim haberiyle aynı tanıtım" },
-    { "id": "iphone-duo-turkiye-fiyati-belli-oldu-229-999-tl-den-basliyor", "asil": "iphone-duo-turkiye-de-229-999-tl-den-on-sipariste-abd-den-yuzde-137-daha-pahali", "neden": "24 Ekim haberiyle aynı Türkiye fiyatı" }
+    {
+      "id": "amazon-fire-markasini-birakti-yeni-alexa-tabletler-google-play-ile-geliyor",
+      "asil": "amazon-fire-tabletleri-birakiyor-yeni-alexa-tabletler-android-ve-google-play-ile-geliyor",
+      "neden": "8 Ekim haberiyle aynı duyuru"
+    },
+    {
+      "id": "apple-homeview-tanitildi-siri-ai-destekli-akilli-ev-ekrani-geliyor",
+      "asil": "apple-homeview-tanitildi-yuz-taniyan-akilli-ev-ekrani",
+      "neden": "13 Ekim haberiyle aynı tanıtım"
+    },
+    {
+      "id": "iphone-duo-turkiye-fiyati-belli-oldu-229-999-tl-den-basliyor",
+      "asil": "iphone-duo-turkiye-de-229-999-tl-den-on-sipariste-abd-den-yuzde-137-daha-pahali",
+      "neden": "24 Ekim haberiyle aynı Türkiye fiyatı"
+    },
+    {
+      "id": "fujifilm-icerik-ureticilerine-yonelik-kompakt-ve-guclu-x-t6-aynasiz-kamerasini-tanitti",
+      "neden": "Haber 'tanıttı' diyor ama X-T6 henüz resmi olarak tanıtılmadı (Kasım 2026 itibarıyla ertelendiği bildiriliyor); içerik doğrulanamıyor"
+    },
+    {
+      "id": "openai-kurumsal-kullanim-odakli-yeni-yapay-zeka-model-ailesini-duyurdu",
+      "neden": "Belirli bir ürün, tarih ya da kaynak içermeyen genel metin"
+    },
+    {
+      "id": "wi-fi-7-standardi-kuresel-capta-yayginlasirken-donanim-ureticileri-vites-yukseltiyor",
+      "neden": "Haber değeri olmayan genel metin, kaynak yok"
+    },
+    {
+      "id": "apple-oled-ekran-teknolojisine-sahip-yeni-nesil-macbook-pro-serisini-piyasaya-surdu",
+      "asil": "apple-dan-tarihi-macbook-pro-hamlesi-dokunmatik-oled-ekran-ve-m6-islemcili-yeni-modeller-tanitildi",
+      "neden": "4 Ekim'de ürün henüz tanıtılmamışken yazılmış; asıl tanıtım haberi ayrı mevcut"
+    }
   ]
 }

@@ -26,7 +26,7 @@ jobs:
       - name: Veri dökümü (ürün ve haber)
         run: |
           mkdir -p rapor
-          curl -s "$SUPABASE_URL/rest/v1/products?select=id,name,cat,specs,added_at,upcoming&deleted=eq.false" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" -H "Range: 0-4999" > rapor/products.json
+          for o in 0 1000 2000; do curl -s "$SUPABASE_URL/rest/v1/products?select=id,name,cat,specs,added_at,upcoming&deleted=eq.false&order=id&limit=1000&offset=$o" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" > rapor/products-$o.json; done
           curl -s "$SUPABASE_URL/rest/v1/news?select=id,title,date,summary,body&deleted=eq.false" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" > rapor/news.json
           for f in marka/samsung-telefon.html marka-karsilastir/axen-vs-vestel-televizyon.html televizyon-sayfa-10.html inceleme/apple-watch-series-8-h27-inceleme.html; do mkdir -p rapor/ornek/$(dirname $f); cp $f rapor/ornek/$f || true; done
         env:

@@ -315,6 +315,15 @@
    "yerine_ad": "TCL 40 NXTPAPER 5G",
    "tarih": "2026-11-24",
    "neden": "eski kayıt id'si değişti; Search Console trafiği olan eski adres 404 veriyordu"
+  },
+  {
+   "id": "n02",
+   "name": "Galaxy Buds 4",
+   "cat": "Kulaklık",
+   "yerine": "y32",
+   "yerine_ad": "Samsung Galaxy Buds 4",
+   "tarih": "2026-11-24",
+   "neden": "çift kayıt; daha eksiksiz verili ve trafik alan y32 kaydı tutuldu"
   }
  ]
 }

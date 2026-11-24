@@ -783,5 +783,437 @@
    "Huawei'de Google servisleri yok; POCO ise standart Android ve Google desteğiyle geliyor. Huawei'nin avantajı kamera (özellikle Pura serisi) ve tasarım; POCO'nun avantajı fiyat-performans, büyük pil ve hızlı şarj."
   ],
   "sonuc": "Oyun ve Google uygulamaları için POCO; kamera önceliğiniz varsa ve Google'sız kullanıma razıysanız Huawei."
+ },
+ "huawei-vs-redmi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Redmi'nin güncel Note modelleri 10-25 bin TL bandında, Huawei'nin en ucuz modelleri ise nova serisiyle 19 bin TL'den başlıyor. İki marka ancak orta segmentin alt kısmında kesişiyor.",
+   "Redmi standart Android ve tam Google desteğiyle geliyor; Huawei'de Google servisleri yok. Aynı fiyatta Redmi genelde daha büyük pil ve hızlı şarj sunarken, Huawei nova serisi tasarım ve ön kamerada iddialı."
+  ],
+  "sonuc": "Bütçe ve Google uygulamaları için Redmi; tasarım odaklı ve Google'sız kullanıma razıysanız Huawei nova."
+ },
+ "huawei-vs-samsung-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 91 modelle her bütçeye seçenek sunarken, Huawei 16 modelle 19-109 bin TL aralığında. Üst segmentte Huawei Pura/Mate ile Galaxy S Ultra, katlanabilirde Mate X ile Galaxy Z Fold rakip.",
+   "Samsung'un avantajı Google servisleri, 7 yıllık güncelleme desteği ve yaygın servis ağı. Huawei kamera donanımı ve şarj hızında güçlü, ancak Google'sız kullanım bankacılık ve bazı yerel uygulamalarda sorun yaratabiliyor."
+  ],
+  "sonuc": "Sorunsuz uygulama deneyimi ve uzun destek için Samsung; kamera odaklı ve Huawei ekosistemindeyseniz Huawei."
+ },
+ "huawei-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Xiaomi kataloğumuzda 32 modelle (eski nesiller dahil), Huawei 16 modelle yer alıyor. Üst segmentte Xiaomi 15/17 serisi ile Huawei Pura serisi kamera iddiasıyla doğrudan rakip; ikisi de Leica (Xiaomi) ve XMAGE (Huawei) gibi markalı kamera sistemleri kullanıyor.",
+   "En büyük fark Google desteği: Xiaomi'de var, Huawei'de yok. Xiaomi aynı fiyata genelde daha güçlü işlemci ve hızlı şarj sunuyor. Huawei'nin artısı değişken diyaframlı kameralar ve uzun pil ömrü."
+  ],
+  "sonuc": "Google uygulamaları ve donanım için Xiaomi; kamera tutkunuysanız ve Google'sız kullanıma razıysanız Huawei Pura."
+ },
+ "oppo-vs-poco-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "OPPO kataloğumuzda 4 modelle (11-70 bin TL), POCO 29 modelle (7-80 bin TL) yer alıyor. OPPO A60 ve Reno serisi orta segmentte, Find X7 Ultra ise kamera odaklı amiral gemisi segmentinde.",
+   "POCO aynı fiyata genelde daha güçlü işlemci ve oyun performansı sunuyor. OPPO ise tasarım, portre kamerası ve ColorOS arayüzünün akıcılığıyla öne çıkıyor. Find X7 Ultra'nın dörtlü kamera sistemi POCO'da karşılığı olmayan bir fotoğraf deneyimi."
+  ],
+  "sonuc": "Oyun performansı ve fiyat için POCO; kamera ve tasarım için OPPO Reno ya da Find serisi."
+ },
+ "oppo-vs-redmi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Giriş segmentinde OPPO A60 (11 bin TL) ile Redmi Note serisi rakip. OPPO'nun kataloğumuzdaki 4 modeli 11-70 bin TL, Redmi'nin güncel modelleri ise 10-45 bin TL aralığında.",
+   "Redmi Note modelleri aynı fiyata genelde daha iyi ekran (AMOLED) ve daha yüksek çözünürlüklü kamera sunuyor. OPPO A60 ise IP54 koruma, sade arayüz ve 256 GB depolamayla öne çıkıyor. Orta segmentte OPPO Reno serisi portre çekimlerinde güçlü."
+  ],
+  "sonuc": "Bütçe segmentinde ekran ve kamera için Redmi Note; sade kullanım ve portre için OPPO."
+ },
+ "oppo-vs-samsung-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 91 modelle, OPPO 4 modelle kataloğumuzda yer alıyor. Orta segmentte Galaxy A serisi ile OPPO Reno, üst segmentte Galaxy S Ultra ile Find X7 Ultra rakip.",
+   "Samsung'un avantajı uzun yazılım desteği, servis ağı ve model çeşitliliği. OPPO'nun avantajı hızlı şarj, ince tasarım ve kamera; Find X7 Ultra özellikle telefoto çekimlerde Galaxy S Ultra'ya güçlü bir rakip."
+  ],
+  "sonuc": "Uzun destek ve çeşitlilik için Samsung; hızlı şarj ve kamera odaklı tasarım için OPPO."
+ },
+ "oppo-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "İki Çinli marka da Türkiye'de orta ve üst segmentte yarışıyor. OPPO'nun 4 modeli 11-70 bin TL, Xiaomi'nin güncel modelleri ise 15-115 bin TL aralığında.",
+   "Xiaomi'nin Leica, OPPO'nun Hasselblad geçmişi olan kamera ortaklıkları var; iki marka da fotoğrafta iddialı. Xiaomi aynı fiyata genelde daha güçlü işlemci sunarken, OPPO ColorOS'un akıcılığı ve tasarımıyla öne çıkıyor."
+  ],
+  "sonuc": "Donanım ve model çeşitliliği için Xiaomi; tasarım ve sade arayüz için OPPO."
+ },
+ "poco-vs-realme-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "POCO 29 modelle 7-80 bin TL, realme ise 5 modelle 10-36 bin TL aralığında. İki marka da fiyat-performans odaklı ve gençlere hitap ediyor.",
+   "POCO işlemci gücünde ve oyun performansında genelde önde; X7 Pro ve F9 Ultra gibi modeller amiral gemisi işlemcilerini düşük fiyata sunuyor. realme ise kamera (14 Pro+'ın periskop telefotosu gibi) ve tasarımda daha iddialı."
+  ],
+  "sonuc": "Oyun için POCO; kamera ve tasarım için realme."
+ },
+ "poco-vs-redmi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "POCO ve Redmi, Xiaomi'nin iki alt markası. Redmi bütçe ve orta segmentte geniş kitleye, POCO ise performans isteyen gençlere hitap ediyor. Birçok POCO modeli aslında farklı isimle satılan Redmi modelleriyle aynı donanımı paylaşıyor.",
+   "Aynı fiyatta POCO genelde daha güçlü işlemci, Redmi ise daha iyi kamera ve ekran sunuyor. İki marka da HyperOS kullanıyor ve servis desteği Xiaomi üzerinden veriliyor."
+  ],
+  "sonuc": "Oyun ve performans için POCO; kamera ve günlük kullanım için Redmi Note."
+ },
+ "poco-vs-samsung-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "POCO 29 modelle 7-80 bin TL, Samsung ise 91 modelle her segmentte. Orta segmentte POCO X serisi ile Galaxy A serisi doğrudan rakip.",
+   "POCO aynı fiyata çok daha güçlü işlemci, daha hızlı şarj ve oyun performansı sunuyor. Samsung ise 6-7 yıllık yazılım güncellemesi, IP67/68 dayanıklılık ve Türkiye'deki yaygın servis ağıyla uzun vadeli kullanım için daha güvenli."
+  ],
+  "sonuc": "Oyun ve fiyat-performans için POCO; uzun ömür ve servis için Samsung Galaxy A."
+ },
+ "poco-vs-tecno-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Tecno 5 modelle 11-35 bin TL, POCO 29 modelle 7-80 bin TL aralığında. İki marka da bütçe ve orta segmentte büyük pil ve uygun fiyat vaat ediyor.",
+   "POCO işlemci performansında belirgin şekilde önde; Tecno ise büyük piller, yüksek depolama ve uygun fiyatlı AMOLED ekranlarla rekabet ediyor. POCO'nun yazılım desteği ve servis ağı Xiaomi altyapısıyla daha güçlü."
+  ],
+  "sonuc": "Performans için POCO; en düşük fiyata büyük pil için Tecno."
+ },
+ "poco-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "POCO, Xiaomi'nin performans odaklı alt markası; Xiaomi ana serisi ise kamera ve premium deneyime odaklanıyor. Kataloğumuzda POCO 7-80 bin, güncel Xiaomi modelleri 15-115 bin TL aralığında.",
+   "Aynı işlemciyi POCO genelde daha uygun fiyata sunuyor, ancak kamera, ekran kalitesi ve malzemede tasarruf yapıyor. Xiaomi 15/17 serisinin Leica kameraları ve premium yapısı fotoğraf tutkunlarına daha uygun."
+  ],
+  "sonuc": "Oyun ve fiyat-performans için POCO; kamera ve premium his için Xiaomi."
+ },
+ "realme-vs-redmi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Bütçe segmentinin iki güçlü rakibi. realme kataloğumuzda 5 modelle 10-36 bin TL, Redmi'nin güncel modelleri ise 8-45 bin TL aralığında.",
+   "Redmi Note serisi 200 MP kamera ve AMOLED ekranla öne çıkarken, realme 14 Pro+ periskop telefoto kamerayı 24 bin TL'ye getirmesiyle dikkat çekiyor. İki marka da hızlı şarj ve büyük pil sunuyor; yazılım tarafında Redmi'nin servis ağı daha yaygın."
+  ],
+  "sonuc": "Telefoto kamera için realme 14 Pro+; geniş model seçeneği ve servis için Redmi Note."
+ },
+ "realme-vs-samsung-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "realme 5 modelle 10-36 bin TL aralığında; Samsung ise 91 modelle her segmentte. Orta segmentte realme ile Galaxy A serisi rakip.",
+   "realme aynı fiyata genelde daha büyük pil, daha hızlı şarj ve daha iddialı kamera özellikleri sunuyor. Samsung ise uzun güncelleme desteği, IP67 dayanıklılık ve servis ağıyla öne çıkıyor."
+  ],
+  "sonuc": "Donanım ve şarj hızı için realme; uzun ömür için Samsung Galaxy A."
+ },
+ "realme-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "realme 10-36 bin TL aralığında orta segmentte yoğunlaşırken, Xiaomi 15-115 bin TL aralığında üst segmente kadar uzanıyor. Orta segmentte realme ile Redmi Note/Xiaomi T serisi rakip.",
+   "realme kamera ve tasarımda iddialı; Xiaomi ise Leica kameralı amiral gemileri ve daha geniş model seçeneği sunuyor. Xiaomi'nin servis ağı Türkiye'de daha yaygın."
+  ],
+  "sonuc": "Orta segmentte kamera ve tasarım için realme; üst segment ve seçenek için Xiaomi."
+ },
+ "redmi-vs-samsung-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Bütçe segmentinin en çok karşılaştırılan iki markası. Redmi Note serisi ile Galaxy A1x/A2x serisi aynı fiyat bantlarında yarışıyor.",
+   "Redmi aynı fiyata genelde daha iyi ekran, daha yüksek çözünürlüklü kamera ve daha hızlı şarj sunuyor. Samsung ise 6 yıllık güncelleme desteği ve ikinci el değeriyle uzun vadede avantajlı. Samsung'un One UI arayüzünde reklam yok; HyperOS'ta önceden yüklü uygulamalar olabiliyor."
+  ],
+  "sonuc": "Kısa vadede donanım için Redmi; uzun ömür ve temiz arayüz için Samsung Galaxy A."
+ },
+ "redmi-vs-tecno-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Tecno 11-35 bin TL, Redmi'nin güncel modelleri 8-45 bin TL aralığında. İki marka da bütçe segmentinde büyük pil ve uygun fiyatla rekabet ediyor.",
+   "Redmi Note serisi kamera ve ekran kalitesinde genelde önde; Tecno ise yüksek depolama, büyük pil ve şık tasarımla rekabet ediyor. Redmi'nin servis ağı ve yazılım güncellemeleri Tecno'ya göre daha güçlü."
+  ],
+  "sonuc": "Kamera ve yazılım desteği için Redmi; depolama ve pil için Tecno."
+ },
+ "redmi-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Redmi, Xiaomi'nin bütçe ve orta segment serisi; Xiaomi ana serisi ise üst segmentte. Kataloğumuzda Redmi'nin güncel modelleri 8-45 bin TL, Xiaomi'nin güncel modelleri 15-115 bin TL aralığında.",
+   "Redmi Note serisi günlük kullanımda yeterli performans ve iyi bir ekran sunuyor. Xiaomi 15/17 serisi ise Leica kameralar, amiral gemisi işlemciler ve premium malzemelerle bir üst deneyim veriyor. İki seri de HyperOS kullanıyor."
+  ],
+  "sonuc": "Bütçe için Redmi Note; kamera ve performans için Xiaomi ana seri."
+ },
+ "samsung-vs-tecno-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 91 modelle her segmentte, Tecno ise 5 modelle 11-35 bin TL aralığında. Bütçe segmentinde Galaxy A1x/A2x serisi ile Tecno Camon ve Pova rakip.",
+   "Tecno aynı fiyata genelde daha büyük pil, AMOLED ekran ve daha yüksek depolama sunuyor. Samsung ise uzun güncelleme desteği, servis ağı ve ikinci el değeriyle uzun vadede daha güvenli bir tercih."
+  ],
+  "sonuc": "Donanım için Tecno; uzun ömür ve servis için Samsung."
+ },
+ "samsung-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Türkiye'de en çok satan iki Android markası. Samsung 91, Xiaomi 32 modelle kataloğumuzda; iki marka da her segmentte yer alıyor.",
+   "Xiaomi aynı fiyata genelde daha güçlü işlemci, daha hızlı şarj ve daha yüksek çözünürlüklü kamera sunuyor. Samsung ise 7 yıla varan güncelleme desteği, S Pen'li Ultra modeller, katlanabilir Galaxy Z serisi ve reklamsız One UI ile öne çıkıyor."
+  ],
+  "sonuc": "Fiyat-performans ve şarj hızı için Xiaomi; uzun destek ve katlanabilir seçenekler için Samsung."
+ },
+ "tecno-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Tecno 11-35 bin TL aralığında bütçe ve orta segmentte, Xiaomi ise 15-115 bin TL aralığında orta ve üst segmentte. İki marka orta segmentin alt kısmında kesişiyor.",
+   "Tecno düşük fiyata büyük pil ve depolama sunarken, Xiaomi daha güçlü işlemciler, Leica kameralar ve daha geniş servis ağıyla öne çıkıyor. Xiaomi'nin yazılım güncellemeleri Tecno'ya göre daha uzun süreli."
+  ],
+  "sonuc": "En düşük bütçe için Tecno; kamera ve uzun destek için Xiaomi."
+ },
+ "huawei-vs-samsung-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 32 tabletle 4-79 bin TL, Huawei 22 tabletle 10-75 bin TL aralığında. Giriş segmentinde Galaxy Tab A ile MatePad SE, üst segmentte Galaxy Tab S ile MatePad Pro rakip.",
+   "Samsung tabletlerde Google servisleri, kutudan çıkan S Pen (Tab S serisinde) ve DeX modu var. Huawei'de Google yok ama OLED ve PaperMatte ekranlı Pro modelleri okuma ve çizim için çok iddialı."
+  ],
+  "sonuc": "Google uygulamaları ve kalem dahil fiyat için Samsung; mat ekran ve premium tasarım için Huawei."
+ },
+ "huawei-vs-xiaomi-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Xiaomi 15 tabletle 8-34 bin TL, Huawei 22 tabletle 10-75 bin TL aralığında. Orta segmentte Xiaomi Pad 7 ve Redmi Pad Pro ile MatePad 11.5 rakip.",
+   "Xiaomi tabletler aynı fiyata güçlü işlemci ve yüksek yenileme hızlı ekran sunuyor ve Google servisleriyle sorunsuz çalışıyor. Huawei ise Google desteği olmamasına rağmen PaperMatte ekranlı modelleriyle not alma ve okuma için farklı bir deneyim sunuyor."
+  ],
+  "sonuc": "Fiyat-performans ve Google uygulamaları için Xiaomi; mat ekran ve premium seçenekler için Huawei."
+ },
+ "lenovo-vs-samsung-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 32 tabletle 4-79 bin TL, Lenovo 14 tabletle 11-35 bin TL aralığında. Bütçe segmentinde Galaxy Tab A ile Lenovo Tab M ve Idea Tab serileri rakip.",
+   "Samsung'un avantajı uzun güncelleme desteği, AMOLED ekranlı Tab S serisi ve S Pen. Lenovo ise büyük ekranlı Idea Tab Pro ve Tab P12 gibi modellerle aynı fiyata daha büyük ekran ve JBL hoparlörler sunuyor."
+  ],
+  "sonuc": "Uzun ömür ve kalem için Samsung; büyük ekran ve ses için Lenovo."
+ },
+ "lenovo-vs-xiaomi-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Lenovo 11-35 bin TL, Xiaomi 8-34 bin TL aralığında; iki marka da orta segmentte yoğunlaşıyor. Lenovo Idea Tab Pro ile Xiaomi Pad 7 ve Redmi Pad 2 Pro doğrudan rakip.",
+   "Xiaomi aynı fiyata genelde daha güçlü işlemci ve daha yüksek çözünürlüklü ekran sunuyor. Lenovo ise geniş ekran boyutları, JBL hoparlörler ve bazı modellerde kutudan çıkan kalemle öne çıkıyor."
+  ],
+  "sonuc": "Performans için Xiaomi; büyük ekran ve ses için Lenovo."
+ },
+ "samsung-vs-xiaomi-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 32 tabletle 4-79 bin TL, Xiaomi 15 tabletle 8-34 bin TL aralığında. Orta segmentte Galaxy Tab S10 FE/S10 Lite ile Xiaomi Pad 7 rakip.",
+   "Xiaomi aynı fiyata daha güçlü işlemci ve 144 Hz ekran sunarken, Samsung kutudan çıkan S Pen, IP68 dayanıklılık (Tab S serisi) ve daha uzun güncelleme desteğiyle öne çıkıyor. Üst segmentte AMOLED ekranlı Galaxy Tab S modellerinin Xiaomi'de karşılığı az."
+  ],
+  "sonuc": "Fiyat-performans için Xiaomi; kalem, dayanıklılık ve uzun destek için Samsung."
+ },
+ "lenovo-vs-monster-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Lenovo 45 modelle 20-297 bin TL, Monster 16 modelle 34-442 bin TL aralığında. Oyun tarafında Lenovo LOQ ve Legion ile Monster Tulpar ve Abra rakip.",
+   "Lenovo LOQ serisi giriş seviyesi oyun bilgisayarlarında güçlü fiyat-performans sunuyor; Legion serisi ise soğutma ve yapı kalitesiyle öne çıkıyor. Monster'ın avantajı yüksek TGP'li ekran kartları, yükseltilebilir donanım ve yerli servis."
+  ],
+  "sonuc": "Bütçe oyun bilgisayarı için Lenovo LOQ; yüksek performans ve yerli servis için Monster."
+ },
+ "lenovo-vs-msi-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Lenovo 45, MSI 35 modelle kataloğumuzda; iki marka da geniş fiyat aralıklarına sahip. Oyun tarafında Lenovo LOQ/Legion ile MSI Cyborg/Katana/Raider rakip.",
+   "Lenovo, ThinkPad ve IdeaPad ile oyun dışı kullanımda çok daha geniş bir seçki sunuyor. MSI ise oyun bilgisayarlarında daha uzmanlaşmış; ince Stealth serisi ve üst segment Titan modelleri Lenovo'da karşılığı az olan seçenekler."
+  ],
+  "sonuc": "Oyun dışı ve iş kullanımı için Lenovo; oyun odaklı çeşitlilik için MSI."
+ },
+ "monster-vs-msi-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "İki marka da oyun bilgisayarlarında uzmanlaşmış. Monster 16 modelle 34-442 bin TL, MSI 35 modelle 20-526 bin TL aralığında.",
+   "Monster'ın avantajı yerli servis ağı, yükseltilebilir donanım ve Türkiye'ye özel yapılandırmalar. MSI ise daha geniş model seçeneği, ince Stealth serisi ve küresel garanti ağıyla öne çıkıyor. Aynı ekran kartında TGP değeri ve soğutma performansını karşılaştırmak önemli."
+  ],
+  "sonuc": "Yerli servis ve yükseltilebilirlik için Monster; model çeşitliliği ve ince kasalar için MSI."
+ },
+ "iffalcon-vs-sunny-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "iFFALCON 12 modelle 18-132 bin TL, Sunny 5 fiyatlı modelle 19-47 bin TL aralığında. Giriş segmentinde iki marka benzer fiyatlarda.",
+   "iFFALCON aynı fiyata QLED panel ve Google TV sunuyor; U95A serisi ise Mini LED'i uygun fiyata indiriyor. Sunny'nin avantajı yerli servis ağı ve 75 inç gibi büyük boyutlarda uygun seçenekler."
+  ],
+  "sonuc": "Görüntü kalitesi ve Mini LED için iFFALCON; yerli servis ve büyük ekran için Sunny."
+ },
+ "lg-vs-profilo-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "LG 29 modelle 17-630 bin TL aralığında; OLED ve QNED teknolojileriyle üst segmentin lideri. Profilo'nun ise yalnızca iki modelinin fiyatı açık (22-30 bin TL) ve seri Android TV'li LED modellerden oluşuyor.",
+   "İki marka çok farklı segmentlerde. Profilo temel 4K ihtiyacını uygun fiyatla karşılarken, LG'nin OLED modelleri film ve oyun için sınıfının en iyileri. LG'nin giriş seviyesi UHD modelleri Profilo ile aynı fiyat bandında rekabet ediyor."
+  ],
+  "sonuc": "Temel kullanım ve düşük bütçe için Profilo; görüntü kalitesi için LG OLED."
+ },
+ "lg-vs-samsung-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Televizyon dünyasının iki devi. LG 29 modelle 17-630 bin TL, Samsung 34 modelle 24-580 bin TL aralığında. Üst segmentte LG OLED ile Samsung Neo QLED/OLED rakip.",
+   "LG'nin OLED modelleri karanlık odada mükemmel siyahlar ve kontrast sunuyor; webOS arayüzü kolay kullanımlı ve Dolby Vision destekliyor. Samsung ise Mini LED Neo QLED modelleriyle aydınlık odalarda çok parlak görüntü, Tizen arayüzü ve oyun özellikleriyle öne çıkıyor; Samsung'da Dolby Vision yok."
+  ],
+  "sonuc": "Karanlık odada film için LG OLED; aydınlık salonda parlaklık için Samsung Neo QLED."
+ },
+ "lg-vs-sunny-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "LG 17-630 bin TL, Sunny 19-47 bin TL aralığında. Giriş segmentinde LG'nin UHD modelleri ile Sunny'nin webOS'lu modelleri benzer fiyatlarda.",
+   "Sunny'nin bazı modelleri LG'nin webOS arayüzünü kullanıyor; yani arayüz deneyimi benzer olabiliyor. Fark panel kalitesi ve görüntü işlemcisinde. LG'nin OLED ve QNED modelleri ise Sunny'de karşılığı olmayan bir görüntü kalitesi sunuyor."
+  ],
+  "sonuc": "Düşük bütçe ve büyük ekran için Sunny; görüntü kalitesi için LG."
+ },
+ "lg-vs-telefunken-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Telefunken'in kataloğumuzdaki 10 modelinden yalnızca birinin fiyatı açık (yaklaşık 22 bin TL). LG ise 29 modelle 17 bin TL'den başlayıp OLED'e kadar uzanan geniş bir seri sunuyor.",
+   "Telefunken uygun fiyatlı temel 4K televizyonlarla bütçe segmentinde yer alıyor. LG'nin giriş seviyesi modelleri bu fiyat bandında rekabet ederken, OLED ve QNED serileri tamamen farklı bir görüntü kalitesi sunuyor."
+  ],
+  "sonuc": "En düşük bütçe için Telefunken; marka güvencesi ve görüntü kalitesi için LG."
+ },
+ "lg-vs-vestel-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Vestel'in kataloğumuzdaki fiyatlı iki modeli 32-39 bin TL arasında; LG ise 17-630 bin TL aralığında geniş bir seri sunuyor. Vestel yerli üretim ve yaygın servis ağıyla, LG ise OLED teknolojisiyle öne çıkıyor.",
+   "Vestel'in QLED (QT) ve Android TV'li (UA) modelleri orta segmentte LG'nin QNED ve UHD modelleriyle rakip. LG'nin webOS arayüzü ve OLED seçenekleri, Vestel'in ise yerli servis ve uygun fiyat avantajı var."
+  ],
+  "sonuc": "Yerli servis ve uygun fiyat için Vestel; OLED ve görüntü kalitesi için LG."
+ },
+ "lg-vs-xiaomi-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Xiaomi 10 modelle 23-140 bin TL, LG 29 modelle 17-630 bin TL aralığında. Orta segmentte Xiaomi TV A Pro ve S Pro Mini LED ile LG QNED rakip.",
+   "Xiaomi aynı fiyata QLED ve Mini LED paneller ile Google TV sunuyor. LG ise OLED seçenekleri, webOS arayüzü ve Türkiye'deki servis ağıyla öne çıkıyor. Film odaklıysanız LG OLED, fiyat-performans odaklıysanız Xiaomi Mini LED mantıklı."
+  ],
+  "sonuc": "Fiyat-performans ve Google TV için Xiaomi; OLED ve servis için LG."
+ },
+ "onvo-vs-regal-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Onvo 5 fiyatlı modelle 17-28 bin TL, Regal 3 fiyatlı modelle 22-25 bin TL aralığında. İki marka da uygun fiyatlı segmentte.",
+   "Onvo'nun VQ90 serisi QLED panel, 120 Hz ve Google TV'yi bu fiyat bandında sunması açısından dikkat çekici. Regal ise Android TV'li standart LED modellerle daha sade bir çizgide kalıyor."
+  ],
+  "sonuc": "Özellik başına fiyat için Onvo VQ90; sade kullanım için Regal."
+ },
+ "onvo-vs-skytech-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Onvo'nun 5 modelinin fiyatı açık (17-28 bin TL); Skytech'in kataloğumuzdaki 10 modelinin ise hiçbirinin güncel fiyatı açık değil.",
+   "Onvo'nun VQ90 serisi QLED panel ve Google TV ile bu fiyat bandında güçlü bir özellik listesi sunuyor. Skytech'i değerlendirirken mağaza fiyatı, işletim sistemi ve panel tipini Onvo'nun modelleriyle karşılaştırmanızı öneririz."
+  ],
+  "sonuc": "Fiyatı açık ve QLED'li modeller için Onvo; Skytech'i güncel fiyatıyla karşılaştırarak değerlendirin."
+ },
+ "profilo-vs-regal-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "İki marka da uygun fiyatlı segmentte; Profilo'nun fiyatlı iki modeli 22-30 bin TL, Regal'in üç modeli 22-25 bin TL arasında. 55 inç modellerde fiyatlar birbirine çok yakın.",
+   "İki markanın modelleri de Android TV'li standart LED panellerden oluşuyor; özellik farkı küçük. Karar genellikle kampanya fiyatı ve bölgenizdeki servis erişimine göre verilmeli."
+  ],
+  "sonuc": "İki marka da benzer; aynı inçte güncel fiyatı uygun olanı ve servisine kolay ulaşabileceğinizi seçin."
+ },
+ "profilo-vs-samsung-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 34 modelle 24-580 bin TL aralığında; Profilo'nun ise yalnızca iki modelinin fiyatı açık (22-30 bin TL).",
+   "Profilo temel 4K ihtiyacını Android TV ile karşılıyor. Samsung ise QLED ve Neo QLED panelleri, gelişmiş görüntü işleme ve oyun özellikleriyle aynı fiyat aralığında bile daha iyi bir görüntü kalitesi sunabiliyor."
+  ],
+  "sonuc": "Görüntü kalitesi için Samsung; en düşük fiyat ve Android TV için Profilo."
+ },
+ "profilo-vs-tcl-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "TCL 27 modelle 24 bin TL'den başlayıp Mini LED ve dev ekranlara kadar uzanıyor. Profilo'nun iki fiyatlı modeli 22-30 bin TL arasında.",
+   "Aynı fiyat aralığında TCL QLED panel ve Google TV sunarken, Profilo standart LED panel ve Android TV ile geliyor. TCL'nin 144 Hz'lik modelleri oyuncular için de avantajlı."
+  ],
+  "sonuc": "Görüntü ve oyun özellikleri için TCL; yerli marka tercihi için Profilo."
+ },
+ "samsung-vs-sunny-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 24-580 bin TL, Sunny 19-47 bin TL aralığında. Giriş segmentinde Samsung Crystal UHD ile Sunny'nin LED modelleri rakip.",
+   "Sunny aynı inçte daha düşük fiyat ve 75 inç gibi büyük ekranlarda uygun seçenekler sunuyor. Samsung ise daha iyi görüntü işlemcisi, QLED seçenekleri ve hızlı Tizen arayüzüyle öne çıkıyor."
+  ],
+  "sonuc": "Büyük ekranı uygun fiyata isteyenler için Sunny; görüntü kalitesi için Samsung."
+ },
+ "samsung-vs-vestel-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 34 modelle 24-580 bin TL, Vestel'in fiyatlı iki modeli ise 32-39 bin TL aralığında. Orta segmentte Samsung QLED ile Vestel QT serisi rakip.",
+   "Samsung'un avantajı görüntü işleme, Neo QLED (Mini LED) seçenekleri ve oyun özellikleri. Vestel'in avantajı yerli üretim, Android TV'nin geniş uygulama desteği ve yaygın servis ağı."
+  ],
+  "sonuc": "Görüntü kalitesi ve oyun için Samsung; yerli servis ve Android TV için Vestel."
+ },
+ "samsung-vs-xiaomi-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 34 modelle 24-580 bin TL, Xiaomi 10 modelle 23-140 bin TL aralığında. Orta segmentte Samsung QLED ile Xiaomi TV A Pro ve S Pro Mini LED rakip.",
+   "Xiaomi aynı fiyata Mini LED ve Google TV sunarken, Samsung daha iyi görüntü işleme, Tizen arayüzü ve geniş ürün yelpazesiyle öne çıkıyor. Samsung'da Dolby Vision yok; Xiaomi'nin bazı modellerinde var."
+  ],
+  "sonuc": "Fiyat-performans ve Google TV için Xiaomi; marka güvencesi ve seçenek için Samsung."
+ },
+ "skytech-vs-sunny-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Sunny'nin 5 modelinin fiyatı açık (19-47 bin TL), Skytech'in ise hiçbir modelinin güncel fiyatı açık değil. İki marka da uygun fiyatlı segmentte.",
+   "Sunny'nin 50-75 inç arası modelleri ve bazı modellerdeki webOS arayüzü karşılaştırmayı kolaylaştırıyor. Skytech'i değerlendirirken aynı inçte mağaza fiyatını ve akıllı TV platformunu kontrol edin."
+  ],
+  "sonuc": "Fiyatı açık ve geniş boyut seçenekleri için Sunny; Skytech'i güncel fiyatıyla karşılaştırarak değerlendirin."
+ },
+ "skytech-vs-tcl-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "TCL 27 modelle 24 bin TL'den başlayan geniş bir seri sunuyor; Skytech'in ise hiçbir modelinin güncel fiyatı açık değil.",
+   "TCL QLED, QD-Mini LED, 144 Hz ve Google TV ile görüntü ve oyun özelliklerinde belirgin şekilde önde. Skytech ancak TCL'nin giriş modellerinden belirgin şekilde ucuz bulunursa değerlendirilebilir."
+  ],
+  "sonuc": "Görüntü kalitesi ve özellikler için TCL."
+ },
+ "skytech-vs-toshiba-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Toshiba'nın kataloğumuzdaki iki fiyatlı modeli 24-33 bin TL arasında; Skytech'in ise hiçbir modelinin güncel fiyatı açık değil.",
+   "Toshiba bilinen bir marka adı ve fiyatı açık modelleriyle karşılaştırmayı kolaylaştırıyor. Skytech'i değerlendirirken aynı inçte fiyat, işletim sistemi ve servis erişimine bakmanızı öneririz."
+  ],
+  "sonuc": "Fiyatı açık modeller ve marka bilinirliği için Toshiba."
+ },
+ "sunny-vs-telefunken-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Sunny 5 fiyatlı modelle 19-47 bin TL, Telefunken ise tek fiyatlı modeliyle 22 bin TL civarında. İki marka da uygun fiyatlı segmentte.",
+   "Sunny'nin 75 inçe kadar uzanan seçenekleri ve bazı modellerdeki webOS arayüzü daha geniş bir yelpaze sunuyor. Telefunken'i değerlendirirken aynı inçte mağaza fiyatlarını karşılaştırmak gerekiyor."
+  ],
+  "sonuc": "Boyut çeşitliliği ve fiyat şeffaflığı için Sunny."
+ },
+ "sunny-vs-toshiba-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Sunny 19-47 bin TL, Toshiba'nın iki fiyatlı modeli 24-33 bin TL aralığında. İki marka da orta-alt segmentte.",
+   "Sunny daha fazla boyut seçeneği ve daha düşük giriş fiyatı sunuyor. Toshiba ise bilinen bir marka adıyla benzer fiyat bandında temel 4K özellikleri sunuyor. Karar aynı inçteki güncel fiyata göre verilmeli."
+  ],
+  "sonuc": "Büyük ekran ve düşük fiyat için Sunny; marka tercihi için Toshiba."
+ },
+ "tcl-vs-telefunken-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "TCL 27 modelle 24 bin TL'den başlayan geniş bir seri sunuyor; Telefunken'in ise tek fiyatlı modeli 22 bin TL civarında.",
+   "Benzer fiyatta TCL QLED panel ve Google TV sunarken, Telefunken standart LED panelle temel özellikler sunuyor. TCL'nin Mini LED ve 144 Hz'lik modelleri ise üst segmentte Telefunken'de karşılığı olmayan seçenekler."
+  ],
+  "sonuc": "Görüntü ve özellikler için TCL; en düşük fiyat için Telefunken."
+ },
+ "tcl-vs-vestel-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "TCL 27 modelle 24-865 bin TL, Vestel'in fiyatlı iki modeli 32-39 bin TL aralığında. Orta segmentte TCL QLED/Mini LED ile Vestel QT serisi rakip.",
+   "TCL aynı fiyata genelde daha gelişmiş panel teknolojileri (QD-Mini LED) ve 144 Hz sunuyor. Vestel ise yerli üretim, yaygın servis ağı ve Android TV ile öne çıkıyor."
+  ],
+  "sonuc": "Görüntü teknolojisi için TCL; yerli servis güvencesi için Vestel."
+ },
+ "tcl-vs-xiaomi-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "İki Çinli marka da fiyat-performans odaklı. TCL 27 modelle 24-865 bin TL, Xiaomi 10 modelle 23-140 bin TL aralığında. Orta segmentte TCL C6K/Q6C ile Xiaomi S Pro Mini LED rakip.",
+   "TCL Mini LED teknolojisinde daha deneyimli ve daha geniş model seçeneği sunuyor; 98-115 inç gibi dev ekranlar da yalnızca TCL'de. Xiaomi ise şık tasarım ve Google TV ile rekabetçi fiyatlar sunuyor. İki marka da Google TV kullanıyor."
+  ],
+  "sonuc": "Mini LED ve geniş seçenek için TCL; şık tasarım ve rekabetçi fiyat için Xiaomi."
+ },
+ "mibro-vs-zeblaze-akilli-saat": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "İki marka da çok uygun fiyatlı akıllı saatlerle bilinen Çinli markalar. Mibro 26 modelle 1.000-6.800 TL, Zeblaze ise 78 modelle 1.100-6.400 TL aralığında; Zeblaze'in modellerinin çoğunun güncel fiyatı açık değil.",
+   "Mibro Xiaomi ekosistemine bağlı ve 4G'li çocuk saatleriyle öne çıkıyor. Zeblaze ise çok sayıda model ve outdoor tasarımlı saatlerle bütçe segmentinde geniş seçenek sunuyor. İkisinde de sensör doğruluğu ve uygulama kalitesi büyük markaların gerisinde."
+  ],
+  "sonuc": "Çocuk saati ve Xiaomi ekosistemi için Mibro; outdoor tasarım ve çeşitlilik için Zeblaze."
+ },
+ "nikon-vs-sony-kamera": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Sony 22 modelle 10-330 bin TL, Nikon 10 modelle 35-219 bin TL aralığında. Full frame aynasız segmentte Sony Alpha ile Nikon Z serisi doğrudan rakip.",
+   "Sony'nin E-mount lens ekosistemi üçüncü taraf desteğiyle en geniş seçenekleri sunuyor; ZV serisi vlog kameraları da içerik üreticilerine yönelik. Nikon ise ergonomi, parlak vizörler ve renk işlemede güçlü; Z6 III ve Z8 gibi modeller hem fotoğraf hem video için çok yönlü."
+  ],
+  "sonuc": "Video ve lens çeşitliliği için Sony; ergonomi ve fotoğraf odaklı kullanım için Nikon."
  }
 }

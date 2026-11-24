@@ -1566,6 +1566,7 @@ huawei-mate-x7|huawei-pura-80-pro	huawei-mate-x7-vs-huawei-pura-80-pro-29526a9ee
 huawei-mate-x7|huawei-pura-80-ultra	huawei-mate-x7-vs-huawei-pura-80-ultra-c02b28564d18.html
 huawei-mate-x7|samsung-galaxy-z-flip8	huawei-mate-x7-vs-samsung-galaxy-z-flip8-2f3dcbb12652.html
 p_huawei_2026_mate_x7|p_zfold7	huawei-mate-x7-vs-samsung-galaxy-z-fold7-21aec1316674.html
+huawei-mate-x7|p_zfold7	huawei-mate-x7-vs-samsung-galaxy-z-fold7-5abd19f8e4d2.html
 huawei-mate-x7|samsung-galaxy-z-fold8-ultra	huawei-mate-x7-vs-samsung-galaxy-z-fold8-ultra-8e8993932dc0.html
 trend_2026090527|y21	huawei-matebook-14-2024-53014nbf-vs-apple-macbook-pro-16-m3-pro-dfb014e869fa.html
 p_2026090511|y17	huawei-matebook-d-16-2024-vs-lenovo-legion-5-pro-e4bf3c8051c8.html

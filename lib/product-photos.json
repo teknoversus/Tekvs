@@ -55,5 +55,29 @@
  "p_huawei_2026_mate_x8": {
   "url": "https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/pdp/phones/mate-x8/img/hero/kv.jpg",
   "credit": "Huawei"
+ },
+ "p_new_047": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/APEX_2_Pro_Black-1.png",
+  "credit": "COROS"
+ },
+ "p14": {
+  "url": "https://www.apple.com/v/airpods-5/b/images/meta/airpods-5__bwo9ith0md42_og.png",
+  "credit": "Apple"
+ },
+ "h12": {
+  "url": "https://www.apple.com/newsroom/images/2024/03/apple-unveils-the-new-13-and-15-inch-macbook-air-with-the-powerful-m3-chip/tile/Apple-MacBook-Air-2-up-hero-240304-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "h26": {
+  "url": "https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-Ultra-3up-hero-220907.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "hon_magic2": {
+  "url": "https://www.honor.com/content/dam/honor/global/product-list/tablets/honor-magicpad-2/honor-magicpad-2-white-list.png",
+  "credit": "HONOR"
+ },
+ "t33": {
+  "url": "https://www.honor.com/content/dam/honor/global/products/tablets/honor-pad-v9/500X500.jpg",
+  "credit": "HONOR"
  }
 }

@@ -252,6 +252,15 @@
       "yerine_ad": "Lenovo LOQ 15AHP10",
       "tarih": "2026-10-23",
       "neden": "aynı isimli kayıt (farklı konfigürasyon)"
+    },
+    {
+      "id": "p_huawei_2026_mate_x7",
+      "name": "HUAWEI Mate X7",
+      "cat": "Telefon",
+      "yerine": "huawei-mate-x7",
+      "yerine_ad": "HUAWEI Mate X7",
+      "tarih": "2026-11-24",
+      "neden": "çift kayıt (24 Kasım'da yanlışlıkla ikinci kez eklendi)"
     }
   ]
 }

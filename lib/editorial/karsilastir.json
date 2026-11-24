@@ -360,7 +360,7 @@
     ],
     "sonuc": "Konsol oyuncusu ve film izleyici için iki model de yeterli; fiyatı uygun olanı seçin. Bilgisayar oyuncusuysanız 144 Hz'lik 65Q6C bir adım önde."
   },
-  "p_huawei_2026_mate_x7|p_zfold7": {
+  "huawei-mate-x7|p_zfold7": {
     "tarih": "2026-11-24",
     "baslik": "Editör Değerlendirmesi: HUAWEI Mate X7 mi, Samsung Galaxy Z Fold7 mi?",
     "metin": [
@@ -370,7 +370,7 @@
     ],
     "secim": [
       {
-        "urun": "p_huawei_2026_mate_x7",
+        "urun": "huawei-mate-x7",
         "metin": "Uzun batarya ömrü, hızlı ve kablosuz şarj, daha iyi su/toz koruması ve güçlü zoom kamera istiyorsanız; Google servisleri olmadan çalışmak sizin için sorun değilse."
       },
       {

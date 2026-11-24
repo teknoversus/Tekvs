@@ -12,7 +12,8 @@
 const vm = require('vm');
 const fs = require('fs');
 const path = require('path');
-const { generateSite, illustrationFor, productImageFor } = require('./lib/generate-site');
+const { generateSite, illustrationFor, productImageFor, setProductPhotos } = require('./lib/generate-site');
+const { buildProductPhotos } = require('./lib/product-photos');
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { linkHeroComparisons } = require('./lib/link-hero-comparisons');
 const { generateNews } = require('./lib/generate-news');
@@ -196,6 +197,7 @@ async function main(){
   const subcatMap = buildSubcatMap(products);
   console.log('→ Onaylanmış yorum özeti çekiliyor (AggregateRating için)...');
   const ratingsSummary = await fetchRatingsSummary();
+  setProductPhotos(await buildProductPhotos({ products, rootDir }));
   generateSite({ products, ...helpers, rootDir,
     reviewedIds: new Set(FAZ3_TARGET_IDS), guidedIds: new Set(FAZ2_TARGET_IDS), subcatMap, ratingsSummary });
   // Not: helpers içinde prosConsFor zaten var (loadHelpers'ta çıkarılıyor),

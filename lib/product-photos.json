@@ -1,0 +1,59 @@
+{
+ "_aciklama": "Ürün id → üreticinin resmi basın/ürün görseli. lib/product-photos.js build sırasında indirir. Yalnızca resmi üretici görselleri; insan içeren görseller eklenmez.",
+ "p_new_045": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/PACE_3_Black_with_Silicone_Band1.png",
+  "credit": "COROS"
+ },
+ "p_new_046": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/COROS_PACE_Pro_Grey1.png",
+  "credit": "COROS"
+ },
+ "p_new_048": {
+  "url": "https://cdn.shopify.com/s/files/1/1672/6075/files/VERTIX_2S_Space_Nylon1.png",
+  "credit": "COROS"
+ },
+ "t21": {
+  "url": "https://www.apple.com/v/ipad-11/d/images/meta/ipad-11_overview__brh97xhhd8b6_og.png",
+  "credit": "Apple"
+ },
+ "h20": {
+  "url": "https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/tile/Apple-iPad-Pro-hero-240507.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "apple-iphone-air": {
+  "url": "https://www.apple.com/v/iphone-air/k/images/meta/iphone-air_overview__dwhg6l117yqa_og.png",
+  "credit": "Apple"
+ },
+ "n6": {
+  "url": "https://www.apple.com/v/iphone-17/k/images/meta/iphone-17_overview__cg0rlzmbhl7m_og.png",
+  "credit": "Apple"
+ },
+ "iphone-17e-2026": {
+  "url": "https://www.apple.com/v/iphone-17e/g/images/meta/iphone17e_overview__b9tcq8ttub9e_og.png",
+  "credit": "Apple"
+ },
+ "u1": {
+  "url": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/tile/Apple-iPhone-18-Pro-2up-260909-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "apple-iphone-18-pro-max": {
+  "url": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/tile/Apple-iPhone-18-Pro-2up-260909-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "apple-iphone-duo": {
+  "url": "https://www.apple.com/newsroom/images/2026/10/open-up-to-new-possibilities-with-iphone-duo/tile/Apple-iPhone-Duo-hero-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "sam_s12ultra": {
+  "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/09/28123529/Samsung-Mobile-Galaxy-Tab-S12-Series_Thumb932.jpg",
+  "credit": "Samsung"
+ },
+ "sam_s12plus": {
+  "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/09/28123529/Samsung-Mobile-Galaxy-Tab-S12-Series_Thumb932.jpg",
+  "credit": "Samsung"
+ },
+ "p_huawei_2026_mate_x8": {
+  "url": "https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/pdp/phones/mate-x8/img/hero/kv.jpg",
+  "credit": "Huawei"
+ }
+}

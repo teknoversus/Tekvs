@@ -36,6 +36,7 @@ const { writeDirIndexRedirects } = require('./lib/dir-redirects');
 const { writeLegacyPageRedirects } = require('./lib/legacy-pages');
 const { splitSitemap } = require('./lib/split-sitemap');
 const { applySocialLinks } = require('./lib/social-links');
+const { applySiteQuality } = require('./lib/site-quality');
 const { applyTrafficNoindex } = require('./lib/trafik-noindex');
 const { applyContentLastmod } = require('./lib/sitemap-lastmod');
 const { applySiteChrome } = require('./lib/site-chrome');
@@ -272,6 +273,9 @@ async function main(){
 
   // ---- Trafik almayan otomatik sayfalar: noindex + sitemap dışı (lib/trafik-noindex.js) ----
   applyTrafficNoindex({ rootDir, products, productSlug: helpers.productSlug });
+
+  // ---- Sayfalama + tekrar haber noindex, kırık liste linkleri (lib/site-quality.js) ----
+  applySiteQuality({ rootDir });
 
   // ---- Sitemap lastmod: build tarihi yerine gerçek içerik değişikliği (lib/sitemap-lastmod.js) ----
   await applyContentLastmod({ rootDir });

@@ -1,0 +1,163 @@
+{
+  "_aciklama": "Elle yazılmış marka-vs-marka notları. Anahtar: sayfa slug'ı (marka-karsilastir/<slug>.html). Katalog verisine dayanır; fiyatlar yalnızca katalogdaki aralık olarak verilir.",
+  "oppo-vs-realme-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Oppo ve Realme aynı şirket grubundan geliyor ve bu yakınlık telefonlarda da görülüyor: ColorOS ile Realme UI'nin temeli aynı, şarj teknolojileri de birbirine benziyor. Ayrım daha çok hedef kitlede. Realme orta segmentte kavisli AMOLED ekranı ve hızlı şarjı uygun fiyata sunmaya odaklanıyor; kataloğumuzdaki Realme 12 Pro+, 13 Pro+ ve 14 Pro+ bunun iyi örnekleri.",
+      "Oppo ise kataloğumuzda iki uçta duruyor: bir yanda Find X7 Ultra gibi kamera odaklı bir amiral gemisi, diğer yanda Oppo A60 gibi giriş seviyesi bir model. Suya dayanıklılıkta Find X7 Ultra'nın IP68'i öne çıkarken Realme modellerinin çoğu IP65'te kalıyor; yani yağmurdan korunur ama suya düşmeye dayanıklı değil."
+    ],
+    "sonuc": "30-40 bin TL bandında ekranı ve şarjı iyi bir telefon arıyorsanız Realme'nin Pro+ serisi daha çok seçenek sunuyor. Kamerası güçlü bir amiral gemisi istiyorsanız Oppo'nun Find serisine bakın."
+  },
+  "realme-vs-tecno-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Realme ve Tecno, Türkiye'de uygun fiyatlı telefon pazarında doğrudan rakip. İkisi de kavisli AMOLED ekranları orta segmente taşıyor, ama işlemci tercihleri farklı: kataloğumuzdaki Realme modellerinin çoğu Snapdragon, Tecno modellerinin tamamı MediaTek kullanıyor. Günlük kullanımda bu fark hissedilmez, ancak Snapdragon'lu modeller genellikle daha uzun süre güncelleme alıyor.",
+      "Dayanıklılıkta Realme bir adım önde: Realme modellerinin çoğu IP65 iken Tecno modelleri IP53'te kalıyor. Tecno'nun güçlü olduğu alan ise fiyat; Camon 30 ve Pova 6 Pro gibi modeller benzer ekran ve batarya özelliklerini biraz daha ucuza sunuyor. Pova 6 Pro'nun 6.000 mAh bataryası bu iki markanın kataloğumuzdaki en büyüğü."
+    ],
+    "sonuc": "Uzun yazılım desteği ve suya dayanıklılık önemliyse Realme, aynı paraya daha büyük batarya ve ekran istiyorsanız Tecno."
+  },
+  "oppo-vs-tecno-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Bu iki marka aslında farklı alanlarda yarışıyor. Kataloğumuzdaki Oppo modelleri (Find X7 Ultra, Reno 12 Pro, Reno11, A60) kamera ve tasarıma öncelik veriyor; Tecno modelleri ise (Camon 30, Pova 6 Pro, Spark 20 Pro+) aynı fiyatta daha büyük batarya ve ekran sunmaya çalışıyor.",
+      "Dayanıklılık ve yazılım desteği tarafında Oppo önde. Find X7 Ultra IP68, Reno 12 Pro IP65 sertifikalı; Tecno modelleri ise IP53 ile yalnızca su sıçramasına karşı korunuyor. Oppo'nun ColorOS arayüzü daha az reklam ve önceden yüklü uygulamayla geliyor, bu da günlük kullanımda fark yaratıyor."
+    ],
+    "sonuc": "Kamera ve uzun ömür önemliyse Oppo, bütçe sınırlıysa ve batarya öncelikliyse Tecno daha mantıklı."
+  },
+  "honor-vs-realme-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "HONOR ve Realme kataloğumuzda farklı fiyat aralıklarında duruyor. HONOR'un modelleri 26 bin TL'den başlayıp Magic V6 katlanabilir telefonla 130 bin TL'ye kadar çıkıyor; Realme ise 10-36 bin TL arasında yoğunlaşıyor. Bu yüzden ortalama skor karşılaştırması iki markanın aynı segmentteki telefonlarını değil, genel kataloglarını yansıtıyor.",
+      "Asıl rekabet 25-40 bin TL bandında: HONOR 400 ve HONOR 600 Lite ile Realme 13 Pro+ ve 14 Pro+. Bu aralıkta HONOR daha büyük bataryalar (6.000 mAh ve üzeri) ve daha iyi suya dayanıklılık sunuyor, Realme ise kavisli ekranı ve hızlı şarjı daha uygun fiyata veriyor."
+    ],
+    "sonuc": "Pil ömrü ve dayanıklılık için HONOR, aynı bütçede daha şık ekran ve hızlı şarj için Realme."
+  },
+  "honor-vs-oppo-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "HONOR ve Oppo'nun kataloğumuzdaki amiral gemileri benzer bir yaklaşıma sahip: güçlü kamera, IP68 dayanıklılık ve hızlı şarj. Oppo Find X7 Ultra çift periskop kamerasıyla zoom tarafında güçlü; HONOR Magic7 Pro ve Magic8 Pro ise daha yeni işlemcileri ve büyük bataryalarıyla öne çıkıyor.",
+      "Orta segmentte HONOR'un seçenekleri daha geniş (HONOR 400, 600, 600 Lite, 200 Pro), Oppo'da ise Reno11 ve Reno 12 Pro var. Bataryalarda belirgin bir fark var: Oppo modellerinin tamamı 5.000 mAh'te kalırken HONOR'da 6.000-8.560 mAh arası modeller bulunuyor."
+    ],
+    "sonuc": "Uzun pil ömrü ve geniş model seçeneği için HONOR. Kamera odaklı bir amiral gemisi arıyorsanız Oppo Find serisi."
+  },
+  "honor-vs-tecno-telefon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "HONOR ve Tecno'yu karşılaştırırken fiyat aralığına dikkat etmek gerekiyor. Kataloğumuzda Tecno 11-35 bin TL arasında, HONOR ise 26 bin TL ve üzerinde. Yani doğrudan rakip olan modeller yalnızca 25-35 bin TL bandında: HONOR 600 Lite ve HONOR 400 ile Tecno Camon 30 Premier ve Phantom X2 Pro.",
+      "Bu aralıkta HONOR daha yeni Snapdragon işlemciler, daha büyük bataryalar ve IP65-IP68 dayanıklılık sunuyor. Tecno ise kavisli AMOLED ekran ve kamerada yüksek megapiksel değerleriyle öne çıkmaya çalışıyor, ama IP53 sertifikası ve daha kısa güncelleme desteği zayıf noktası."
+    ],
+    "sonuc": "Bütçeniz 25 bin TL'nin üzerindeyse HONOR daha uzun ömürlü bir seçim. Daha düşük bütçede Tecno'nun Spark ve Pova serileri daha fazla seçenek sunuyor."
+  },
+  "havit-vs-qcy-kulaklik": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Havit ve QCY, 2.000 TL altı kulaklık pazarının iki popüler markası, ama farklı kullanıcılara hitap ediyorlar. Kataloğumuzdaki Havit modellerinin çoğu Gamenote serisinden kablolu ya da kulak üstü oyuncu kulaklıkları; QCY ise tamamen kablosuz kulak içi kulaklıklara odaklanıyor.",
+      "QCY'nin HT15 ve T13 ANC 2 gibi modelleri bu fiyata aktif gürültü engelleme sunuyor ve IPX4-IPX5 ile terden etkilenmiyor. Havit'in güçlü olduğu alan ise oyun: mikrofonlu, uzun süre takılınca rahatsız etmeyen kulak üstü tasarımlar bilgisayar başında daha uygun."
+    ],
+    "sonuc": "Telefonla müzik dinlemek ve yolda kullanmak için QCY, bilgisayarda oyun oynamak için Havit."
+  },
+  "awox-vs-dijitsu-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Awox ve Dijitsu, Türkiye'de uygun fiyatlı 4K televizyon arayanların sık karşılaştığı iki yerli marka. Kataloğumuzdaki Awox modelleri VIDAA işletim sistemiyle, Dijitsu modelleri Android TV ile geliyor. Bu fark önemli: Android TV'de Google Play Store'daki tüm uygulamalara erişim var, VIDAA'da ise uygulama seçeneği daha sınırlı ama arayüz daha hafif ve hızlı.",
+      "Kataloğumuzda Awox modellerinin güncel fiyat bilgisi bulunmuyor; bu yüzden karşılaştırmadaki skor farkı kısmen fiyat verisinin eksikliğinden kaynaklanıyor. Dijitsu ise 43 inçten 75 inçe kadar geniş bir boyut yelpazesi sunuyor."
+    ],
+    "sonuc": "Uygulama çeşitliliği önemliyse Android TV'li Dijitsu. Sadece Netflix, YouTube gibi temel uygulamaları kullanacaksanız Awox'un VIDAA arayüzü de yeterli."
+  },
+  "awox-vs-vestel-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Vestel, Manisa'daki üretim tesisleri ve yaygın servis ağıyla Türkiye'nin en tanınan TV markası. Awox ise daha uygun fiyatlı segmentte yer alan bir marka. Kataloğumuzdaki Vestel modelleri Android TV ve 43-75 inç arası seçeneklerle geliyor; Awox modelleri VIDAA kullanıyor.",
+      "İki marka arasındaki en önemli fark satış sonrası hizmet. Vestel'in yetkili servis ağı Türkiye'nin hemen her ilçesinde bulunuyor; arıza durumunda bu ciddi bir avantaj. Kataloğumuzda Awox modellerinin güncel fiyat bilgisi olmadığı için fiyat/performans karşılaştırması sınırlı kalıyor."
+    ],
+    "sonuc": "Servis ağı ve uzun vadeli güven önemliyse Vestel. Awox'u düşünüyorsanız satın almadan önce garanti ve servis koşullarını kontrol edin."
+  },
+  "axen-vs-hi-level-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Axen ve Hi-Level televizyonlarının model kodlarına bakınca dikkat çekici bir benzerlik görünüyor: iki markanın da 43-65 inç modellerinde 'QUPRL' ve 'QUMLN' ekleri kullanılıyor ve her ikisi de webOS işletim sistemiyle geliyor. Bu, iki markanın aynı altyapıyı paylaşan ortak bir üretim ailesinden geldiğine işaret ediyor.",
+      "Bu yüzden aynı boyuttaki Axen ve Hi-Level modelleri arasındaki fark çoğunlukla fiyat ve garanti koşullarında. Hi-Level'in kataloğumuzda 32 inç HD bir giriş modeli de var; Axen'in en küçük modeli 43 inç. Axen modelleri kataloğumuzda 20-28 bin TL arasında."
+    ],
+    "sonuc": "Aynı boyutta hangisi daha ucuzsa onu alın; özellikler büyük ölçüde aynı. Küçük ekran arıyorsanız Hi-Level'in 32 inç modeli tek seçenek."
+  },
+  "axen-vs-toshiba-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Toshiba televizyonları Türkiye'de lisans altında üretiliyor ve kataloğumuzdaki modeller 43-70 inç arasında. Toshiba'nın bir kısmı Google TV, bir kısmı kendi Smart Portal arayüzüyle geliyor. Axen ise webOS kullanıyor; LG'nin işletim sistemi olduğu için arayüz akıcı ve uygulama desteği iyi.",
+      "Fiyat açısından Axen kataloğumuzda 20-28 bin TL, Toshiba 24-33 bin TL arasında. Toshiba'nın 70 inç seçenekleri, büyük ekran arayanlar için Axen'de bulunmayan bir avantaj. Smart Portal'lı Toshiba modellerinde uygulama seçeneği Google TV'li modellere göre daha sınırlı."
+    ],
+    "sonuc": "Bütçe öncelikliyse ve 65 inç yeterliyse Axen. 70 inç ekran ya da Google TV istiyorsanız Toshiba'nın ilgili modellerine bakın."
+  },
+  "axen-vs-vestel-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Vestel ile Axen arasındaki seçim çoğu zaman 'tanınmış marka mı, uygun fiyat mı' sorusuna dönüşüyor. Kataloğumuzda Axen modelleri 20-28 bin TL, Vestel modelleri 32-39 bin TL arasında. Aynı boyutta Axen genelde birkaç bin TL daha ucuz.",
+      "İşletim sistemi farklı: Axen webOS, Vestel Android TV kullanıyor. İkisi de Netflix, YouTube ve Disney+ gibi temel uygulamaları destekliyor; Android TV'de Google Play'deki tüm uygulamalara erişim var. Vestel'in yaygın servis ağı, uzun yıllar kullanılacak bir televizyon için önemli bir güvence."
+    ],
+    "sonuc": "Fiyat farkı sizin için önemliyse Axen mantıklı bir seçim. Servis ağı ve uygulama çeşitliliği öncelikliyse Vestel."
+  },
+  "blaupunkt-vs-vestel-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Blaupunkt, köklü bir Alman markası, ama bugün Türkiye'de satılan Blaupunkt televizyonlar lisans altında üretiliyor. Kataloğumuzdaki Blaupunkt modelleri Google TV ile geliyor ve QLED seçenekleri de var; Vestel modelleri ise Android TV kullanıyor.",
+      "Google TV, Android TV'nin daha yeni ve kişiselleştirilmiş arayüzü; içerik önerileri daha iyi. Kataloğumuzdaki fiyat verisine göre Blaupunkt'un 55 inç QLED modeli Vestel'in benzer boyuttaki modelleriyle aynı fiyat aralığında. Vestel'in avantajı ise Türkiye'deki servis ağı."
+    ],
+    "sonuc": "QLED panel ve Google TV arayüzü istiyorsanız Blaupunkt. Servis kolaylığı ve uzun garanti güvencesi isteyenler için Vestel."
+  },
+  "dijitsu-vs-seg-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Dijitsu ve SEG, uygun fiyatlı 4K televizyon segmentinde rakip. Kataloğumuzda Dijitsu 43-75 inç arasında 10 model sunuyor ve Android TV kullanıyor; SEG ise 43-65 inç arasında 10 modelle geliyor.",
+      "Dijitsu'nun 75 inç modeli, SEG'de olmayan büyük ekran seçeneği. Fiyatlarda iki marka birbirine yakın: Dijitsu 16-34 bin TL, SEG 19-33 bin TL arasında. SEG modellerinin işletim sistemi bilgisi kataloğumuzda eksik; satın almadan önce akıllı TV özelliklerini kontrol etmenizi öneririz."
+    ],
+    "sonuc": "Büyük ekran ve Android TV istiyorsanız Dijitsu. Aynı boyutta SEG daha ucuza bulunursa işletim sistemini kontrol ederek tercih edebilirsiniz."
+  },
+  "dijitsu-vs-sunny-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Sunny ve Dijitsu, Türkiye'nin uygun fiyatlı TV markaları arasında en geniş model yelpazelerine sahip ikisi. Kataloğumuzda Sunny 50-75 inç arasında QLED seçeneği de olan modellerle, Dijitsu 43-75 inç arasında Android TV'li modellerle yer alıyor.",
+      "Sunny'nin fiyat aralığı daha geniş (19-47 bin TL); en üstte 75 inç QLED modeli var. Dijitsu ise 16-34 bin TL arasında daha dar ve daha uygun bir aralıkta. QLED panel daha canlı renkler ve daha yüksek parlaklık sunuyor; aydınlık salonlarda bu fark belirgin."
+    ],
+    "sonuc": "Bütçe sınırlıysa Dijitsu. Büyük ve parlak bir QLED ekran istiyorsanız Sunny'nin üst modellerine bakın."
+  },
+  "dijitsu-vs-toshiba-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Toshiba, uluslararası bir marka olarak Dijitsu'ya göre daha tanınmış. Ancak kataloğumuzdaki fiyatlar Toshiba'nın 24-33 bin TL, Dijitsu'nun 16-34 bin TL arasında olduğunu gösteriyor; yani aynı boyutta Dijitsu genelde daha ucuz.",
+      "İşletim sistemi tarafında Dijitsu Android TV, Toshiba ise modele göre Google TV veya kendi Smart Portal arayüzünü kullanıyor. Smart Portal'da uygulama seçeneği daha sınırlı. Toshiba'nın 70 inç seçenekleri, Dijitsu'nun ise 75 inç modeli var."
+    ],
+    "sonuc": "Aynı boyutta daha uygun fiyat ve Android TV için Dijitsu. Marka güveni öncelikliyse Toshiba'nın Google TV'li modellerini tercih edin."
+  },
+  "dijitsu-vs-vestel-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Vestel ve Dijitsu'nun ikisi de Android TV kullanıyor ve kataloğumuzda 43-75 inç arasında benzer boyut seçenekleri sunuyor. Fark fiyatta: Dijitsu 16-34 bin TL, Vestel 32-39 bin TL arasında. Aynı boyutta Dijitsu belirgin şekilde ucuz.",
+      "Bu fiyat farkının karşılığı Vestel'in yaygın servis ağı ve marka güvencesi. Panel kalitesi ve görüntü işleme tarafında Vestel'in üst modelleri (QT serisi) daha iyi sonuç verebiliyor. Dijitsu ise temel 4K deneyimini en uygun fiyata isteyenler için mantıklı."
+    ],
+    "sonuc": "Bütçe öncelikliyse Dijitsu, servis ve uzun vadeli güvence öncelikliyse Vestel."
+  },
+  "hi-level-vs-vestel-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Hi-Level kataloğumuzda 6 bin TL'lik 32 inç HD modelden 26 bin TL'lik 65 inç 4K modellere kadar geniş bir aralıkta. Vestel ise 32-39 bin TL arasında daha üst segmentte. Bu yüzden ortalama skor karşılaştırması iki markanın farklı fiyat aralıklarını yansıtıyor.",
+      "Hi-Level'in 4K modelleri webOS, Vestel'in modelleri Android TV kullanıyor. İkisi de temel uygulamaları sorunsuz çalıştırıyor. Küçük bir ikinci TV (yatak odası, mutfak) arıyorsanız Hi-Level'in 32 inç modeli çok uygun; salon için büyük ve güvenilir bir TV arıyorsanız Vestel daha mantıklı."
+    ],
+    "sonuc": "Küçük ve ucuz ikinci TV için Hi-Level, salon TV'si ve servis güvencesi için Vestel."
+  },
+  "onvo-vs-profilo-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Onvo ve Profilo kataloğumuzda benzer fiyat aralığında: Onvo 17-28 bin TL, Profilo 22-30 bin TL. Ama özellikler farklı. Onvo modellerinin yarısı Google TV ile geliyor ve bazı QLED modellerde 100/120 Hz yenileme hızı var; bu, oyun konsolu kullananlar için önemli bir avantaj.",
+      "Profilo, BSH grubunun tanınmış bir markası ve televizyonları lisans altında üretiliyor. Kataloğumuzdaki Profilo modelleri 43-65 inç arasında ve Android TV kullanıyor. Onvo'nun 70 inç modeli de büyük ekran arayanlar için ek bir seçenek."
+    ],
+    "sonuc": "PlayStation veya Xbox kullanıyorsanız 120 Hz destekli Onvo QLED modelleri daha uygun. Bilinen bir marka adı ve servis güvencesi istiyorsanız Profilo."
+  },
+  "profilo-vs-sony-televizyon": {
+    "tarih": "2026-11-24",
+    "metin": [
+      "Bu karşılaştırma iki çok farklı segmenti karşı karşıya getiriyor. Kataloğumuzdaki Sony modelleri (A80K, A90J, A95K gibi OLED'ler ve Z9K gibi 8K modeller) premium segmentte ve çoğu önceki nesillere ait; şu an güncel fiyat bilgileri bulunmuyor. Profilo ise 22-30 bin TL arasında uygun fiyatlı 4K modeller sunuyor.",
+      "Sony'nin OLED modelleri görüntü kalitesi, siyah seviyeleri ve görüntü işlemede Profilo'nun çok önünde; ama fiyat farkı da o kadar büyük. Bu yüzden iki marka arasında seçim yapmak yerine bütçenizi belirleyip o segmentteki modelleri karşılaştırmanız daha doğru olur."
+    ],
+    "sonuc": "Uygun fiyatlı 4K TV için Profilo. Premium görüntü kalitesi istiyorsanız Sony'nin güncel OLED modellerine bakın; kataloğumuzdaki eski Sony modellerini ikinci elde bulmak daha olası."
+  }
+}

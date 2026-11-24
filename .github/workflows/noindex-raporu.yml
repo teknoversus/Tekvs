@@ -23,6 +23,15 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       - name: Raporu hesapla
         run: node scripts/noindex-raporu.js
+      - name: Veri dökümü (ürün ve haber)
+        run: |
+          mkdir -p rapor
+          curl -s "$SUPABASE_URL/rest/v1/products?select=id,name,cat,specs,added_at,upcoming&deleted=eq.false" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" -H "Range: 0-4999" > rapor/products.json
+          curl -s "$SUPABASE_URL/rest/v1/news?select=id,title,date,summary,body&deleted=eq.false" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" > rapor/news.json
+          for f in marka/samsung-telefon.html marka-karsilastir/axen-vs-vestel-televizyon.html televizyon-sayfa-10.html inceleme/apple-watch-series-8-h27-inceleme.html; do mkdir -p rapor/ornek/$(dirname $f); cp $f rapor/ornek/$f || true; done
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       - name: Site denetimi
         run: node scripts/site-denetim.js
       - name: Raporu rapor-noindex dalına yaz

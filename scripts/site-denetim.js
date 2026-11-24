@@ -129,7 +129,7 @@ idx.forEach(p => p.links.forEach(h => {
 
 // --- yer tutucu değerler
 const PH = [/>\s*(—|-|N\/A|Bilinmiyor|Belirtilmemiş|undefined|null|NaN)\s*</g, /\b0 ₺/g];
-const placeholder = idx.map(p => { const h = fs.readFileSync(path.join(root, p.f), 'utf8'); let n = 0; PH.forEach(r => n += (h.match(r) || []).length); return { f: p.f, n }; }).filter(x => x.n >= 8).sort((a, b) => b.n - a.n);
+const placeholder = idx.map(p => { const h = fs.readFileSync(path.join(root, p.f), 'utf8'); let n = 0, ctx = []; PH.forEach(r => { for (const m of h.matchAll(r)) { n++; if (ctx.length < 6) ctx.push(h.slice(Math.max(0, m.index - 160), m.index + 20).replace(/\s+/g, ' ')); } }); return { f: p.f, n, ctx }; }).filter(x => x.n >= 8).sort((a, b) => b.n - a.n);
 
 // --- klasör özetleri
 const csv = (name, rows) => fs.writeFileSync(path.join(out, name), rows.map(r => r.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(',')).join('\n'));
@@ -152,6 +152,7 @@ lines.push('', '## canonical başka sayfa (ilk 20)', ''); canonOther.slice(0, 20
 lines.push('', '## noindex ama sitemap\'te (ilk 20)', ''); noindexInSitemap.slice(0, 20).forEach(x => lines.push('- ' + x));
 lines.push('', '## indekslenebilir ama sitemap\'te değil (ilk 40)', ''); idxNotInSitemap.slice(0, 40).forEach(x => lines.push('- ' + x));
 lines.push('', '## Yer tutucu yoğun (ilk 20)', ''); placeholder.slice(0, 20).forEach(x => lines.push(`- ${x.n} · ${x.f}`));
+fs.writeFileSync(path.join(out, 'yer-tutucu-ornek.txt'), placeholder.slice(0, 12).map(x => x.f + '\n' + x.ctx.join('\n')).join('\n\n'));
 fs.writeFileSync(path.join(out, 'site-denetim.md'), lines.join('\n'));
 csv('indekslenebilir-sayfalar.csv', [['dosya', 'klasor', 'ozgun_kelime', 'toplam_kelime', 'sitemap', 'baslik']].concat(idx.map(p => [p.f, p.folder, p.uniqWords, p.words, inSitemap.has(p.f) ? 1 : 0, p.title])));
 csv('benzer-icerik.csv', [['a', 'b', 'jaccard']].concat(nearDup.map(d => [d.a, d.b, d.jac.toFixed(3)])));

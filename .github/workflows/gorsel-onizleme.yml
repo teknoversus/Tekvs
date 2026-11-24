@@ -1,0 +1,32 @@
+name: Gorsel onizleme
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Satir basina etiket|url (\\n yerine ; ile)"
+        required: true
+jobs:
+  onizle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Indir ve kontak sayfasi uret
+        env:
+          URLS: ${{ github.event.inputs.urls }}
+        run: |
+          sudo apt-get -qq install -y imagemagick >/dev/null 2>&1 || true
+          mkdir -p img out
+          i=0
+          echo "$URLS" | tr ';' '\n' | while IFS='|' read -r label url; do
+            [ -z "$url" ] && continue
+            i=$((i+1))
+            f="img/$(printf '%02d' $i)"
+            if curl -sSL -A "Mozilla/5.0" --max-time 40 -o "$f.src" "$url"; then
+              convert "$f.src[0]" -auto-orient -background white -alpha remove -resize 400x260 -gravity center -extent 400x260 -gravity south -background '#000' -splice 0x22 -fill white -pointsize 16 -annotate +0+2 "$(printf '%02d' $i) $label" "$f.png" 2>/dev/null || echo "CONVERT FAIL $label"
+            else echo "DL FAIL $label"; fi
+          done
+          montage img/*.png -tile 4x -geometry +4+4 out/sheet.png
+          ls -la img out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: onizleme
+          path: out/sheet.png

@@ -1391,5 +1391,365 @@
    "MediaTek G99 işlemci günlük kullanım için yeterli ama oyunlarda zorlanıyor. 5G desteği yok. Yazılım güncelleme desteği büyük markalara göre kısa. Aynı fiyatta Xiaomi ve Samsung'un giriş modelleriyle karşılaştırmak faydalı."
   ],
   "kimler": "Yerli marka ve kolay servis isteyen, temel kullanım için uygun fiyatlı telefon arayanlar için."
+ },
+ "t38": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Tab S10+, 12,4 inç Dynamic AMOLED 2X ekranı ve kutudan çıkan S Pen ile Samsung'un büyük ekranlı amiral gemisi tableti. IP68 su ve toz direnci tabletlerde nadir. 5,6 mm incelik ve 571 gram ağırlık bu ekran boyutu için hafif. Dimensity 9300+ işlemci hızlı ve verimli.",
+   "Samsung DeX modu klavyeyle birlikte masaüstüne yakın bir deneyim sunuyor. Galaxy AI özellikleri not özetleme ve çeviri gibi işlerde pratik. Yeni Tab S11 serisi çıktığı için indirimli bulunabilir."
+  ],
+  "kimler": "Büyük AMOLED ekranlı, kalemli ve dayanıklı bir Android tablet isteyen öğrenciler ve profesyoneller için."
+ },
+ "samsung-galaxy-s25-edge": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy S25 Edge, 5,8 mm kalınlık ve 163 gram ağırlıkla Samsung'un en ince telefonu. Elde neredeyse bir kart gibi duruyor. Buna rağmen 200 MP ana kamera ve Snapdragon 8 Elite for Galaxy işlemciyle amiral gemisi performansı sunuyor. Titanyum çerçeve dayanıklılık sağlıyor.",
+   "İnceliğin bedeli pil: 3.900 mAh yoğun kullanımda akşamı zor görebiliyor. Telefoto kamera yok; yakınlaştırma için ana sensörün dijital kırpması kullanılıyor. Fiyatı S25+'a yakın ama özellikleri daha az. Bu telefon tasarım için alınıyor."
+  ],
+  "kimler": "İnce ve hafif bir telefonu her şeyden çok önemseyen, pil ömründen taviz verebilecekler için."
+ },
+ "x35": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Philips 55PUS8118, 55 inç 4K ekranı uygun fiyata sunan bir televizyon. Dolby Vision ve HDR10 desteği bu fiyatta güzel bir artı. Android TV sayesinde popüler yayın uygulamalarına erişim sorunsuz.",
+   "Kataloğumuzdaki sürümde Philips'in imza özelliği Ambilight bulunup bulunmadığını satın almadan önce kontrol edin. 60 Hz panel ve standart LED teknolojisi, QLED ve Mini LED rakiplere göre renk ve kontrastta geride kalıyor. 20 W ses temel seviyede."
+  ],
+  "kimler": "Bütçesi sınırlı, ağırlıkla TV ve yayın platformu izleyenler için."
+ },
+ "x_17t": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Xiaomi 17T, 6.500 mAh pil ve Dimensity 8500 Ultra işlemciyle güçlü bir orta-üst segment telefon. Leica imzalı kamera sistemi gün ışığında ve portrelerde başarılı. IP68 su direnci ve 6,59 inçlik kompakt ekran tek elle kullanımı kolaylaştırıyor.",
+   "17T Pro'ya göre işlemci ve telefoto kamera daha zayıf, ama pil ömrü benzer. HyperOS arayüzünde önceden yüklü uygulamalar olabiliyor. Fiyatı amiral gemisi bölgesine yaklaşıyor; Galaxy S25 FE ve OnePlus 13 ile karşılaştırmak faydalı."
+  ],
+  "kimler": "Uzun pil ömrü ve Leica kamerayı kompakt bir gövdede isteyenler için."
+ },
+ "n9": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "HONOR MagicPad 4, 4,8 mm kalınlık ve 450 gram ağırlıkla piyasadaki en ince tabletlerden biri. 12,3 inçlik OLED ekran canlı renkler ve derin siyahlar sunuyor. Snapdragon 8 Gen 5 işlemci her türlü uygulama ve oyunda fazlasıyla hızlı.",
+   "10.100 mAh pil inceliğine rağmen uzun kullanım sunuyor. Magic Pencil ve klavye ayrı satılıyor. MagicOS 10, Android 16 tabanlı ve güncel. Fiyatı iPad Air seviyesinde; Android tercih edenler için güçlü bir alternatif."
+  ],
+  "kimler": "İnce, hafif ve OLED ekranlı bir premium Android tablet isteyenler için."
+ },
+ "g40": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Mchose X9, uygun fiyatlı bir kablosuz oyuncu kulaklığı. 40 saatlik pil ömrü uzun oyun oturumlarına rahatça yetiyor. Bluetooth bağlantı telefon ve tabletle de kullanılmasını sağlıyor.",
+   "Mchose Türkiye'de daha az bilinen bir marka; servis ve garanti koşullarını satın almadan önce kontrol edin. Aktif gürültü engelleme yok. HyperX, Razer ve SteelSeries'in giriş modelleriyle karşılaştırmak faydalı."
+  ],
+  "kimler": "Uzun pil ömrüne sahip uygun fiyatlı bir kablosuz oyuncu kulaklığı arayanlar için."
+ },
+ "p_zfold7": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Z Fold7, katlanabilir telefonlarda inceliği yeni bir seviyeye taşıyor: açıkken 4,2 mm, katlıyken 8,9 mm civarında ve 215 gram. Bu, normal bir amiral gemisi telefona çok yakın. 8 inçlik iç ekran ve 6,5 inçlik geniş kapak ekranı her iki modda da rahat kullanım sağlıyor. 200 MP ana kamera Ultra seviyesinde.",
+   "İnceliğin bedeli olarak S Pen desteği kaldırıldı. 4.400 mAh pil büyük ekran için sınırda kalabiliyor. IP48 koruma suya karşı iyi, toza karşı zayıf. Fiyatı premium; Fold8 çıktığı için indirimli bulunabilir."
+  ],
+  "kimler": "Telefonu tablet olarak da kullanmak isteyen ve ince bir katlanabilir arayanlar için."
+ },
+ "y41": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Nikon Z6 III, kısmen katmanlı sensörüyle hızlı okuma ve düşük rolling shutter sunan full frame aynasız bir fotoğraf makinesi. 6K RAW video kaydı ve gelişmiş otomatik odaklama hem fotoğraf hem video için çok yönlü. Parlak elektronik vizör sınıfının en iyilerinden.",
+   "24,5 MP çözünürlük kırpma ve büyük baskılar için sınırlı olabilir. Fiyatı ve 760 gram ağırlığı profesyonel segmentte. Nikon Z lens sistemi giderek genişliyor; adaptörle F lensleri de kullanılabiliyor."
+  ],
+  "kimler": "Hem fotoğraf hem ciddi video çeken, hızlı ve çok yönlü bir full frame kamera isteyenler için."
+ },
+ "z15": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Red Magic 10 Pro, oyuncular için tasarlanmış bir telefon. Dahili soğutma fanı uzun oyun oturumlarında performans düşüşünü önlüyor. Omuz tetik tuşları oyun kumandası hissi veriyor. 7.050 mAh pil ve Snapdragon 8 Elite yoğun kullanımda bile güçlü.",
+   "Ekran altı ön kamera tam ekran deneyimi sunuyor ama selfie kalitesi düşük. Kamera sistemi genel olarak amiral gemilerinin gerisinde. Türkiye'de resmi dağıtım ve servis sınırlı olabilir; satın almadan önce kontrol edin."
+  ],
+  "kimler": "Mobil oyunu ciddiye alan ve en iyi oyun performansını isteyenler için."
+ },
+ "h32": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Sony A7 IV, full frame aynasız kameraların en çok yönlülerinden. 33 MP sensör fotoğraf ve 4K 60p video için dengeli bir çözünürlük sunuyor. Gerçek zamanlı göz takibi insan, hayvan ve kuşlarda başarılı. Döner ekran vlog ve zor açılar için pratik.",
+   "4K 60p'de kırpma var. Sony E-mount lens ekosistemi en geniş seçeneklerden. 658 gram ağırlık ve dayanıklı gövde profesyonel kullanıma uygun. A7 V'in çıkışıyla fiyatı düşmüş olabilir."
+  ],
+  "kimler": "Fotoğraf ve videoyu birlikte yapan, full frame'e geçmek isteyen hobi ve yarı profesyonel kullanıcılar için."
+ },
+ "z6": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "General Mobile GM Era 50, yerli üretim ve 10 bin TL'nin altındaki fiyatıyla giriş segmentinde bir telefon. 5.000 mAh pil uzun kullanım sağlıyor. Türkiye'deki servis ağı ve kolay garanti süreci yerli markanın avantajı.",
+   "Helio G88 işlemci ve 720p ekran yalnızca temel kullanım için yeterli. Su direnci yok. Oyun ve ağır uygulamalarda yavaş kalıyor. Aynı fiyatta Xiaomi Redmi ve Samsung Galaxy A serisinin giriş modelleriyle karşılaştırmak faydalı."
+  ],
+  "kimler": "Yerli marka ve kolay servis isteyen, arama, mesaj ve sosyal medya için temel bir telefon arayanlar için."
+ },
+ "t37": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Tab S10 Lite, S Pen'i kutudan çıkan uygun fiyatlı bir Samsung tablet. 10,9 inç ekran ve 256 GB depolama not alma ve ders çalışma için yeterli. Exynos 1380 işlemci günlük kullanımda akıcı.",
+   "TFT LCD ekran ve 90 Hz yenileme hızı, S10 ve S10+'ın AMOLED ekranının gerisinde. Samsung DeX desteği verimlilik için pratik. Öğrenciler için kalem dahil fiyat-performans açısından mantıklı bir seçim."
+  ],
+  "kimler": "Kalemle not almak isteyen ve bütçesi sınırlı öğrenciler için."
+ },
+ "g15": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "GoPro HERO13 Black, değiştirilebilir lens modları (Ultra Wide, Macro, ND filtreler) ve daha büyük pil kapasitesiyle GoPro'nun en esnek modeli. 5.3K 60fps video ve HyperSmooth sabitleme aksiyon çekimlerinde referans kalitede. GPS yeniden eklendi.",
+   "Düşük ışıkta 1/1.9 inç sensör DJI Osmo Action 5 Pro'nun gerisinde kalabiliyor. Lens modları ayrı satılıyor. 10 metre su geçirmezlik çoğu su sporu için yeterli."
+  ],
+  "kimler": "Aksiyon sporları, seyahat ve vlog için en çok yönlü aksiyon kamerasını isteyenler için."
+ },
+ "poco-x7": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "POCO X7, 1.5K AMOLED ekran, IP68 su direnci ve Dimensity 7300-Ultra işlemciyle orta segmentte dengeli bir model. 5.110 mAh pil ve 45 W şarj günlük kullanım için yeterli. 256 GB depolama cömert.",
+   "X7 Pro'ya göre işlemci ve şarj hızı daha düşük, ama ekran ve su direnci benzer. Kamera gün ışığında başarılı, gece orta seviyede. HyperOS arayüzünde önceden yüklü uygulamalar olabiliyor."
+  ],
+  "kimler": "İyi ekran, su direnci ve yüksek depolamayı uygun fiyata isteyenler için."
+ },
+ "t36": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Tab A11, Samsung'un en uygun fiyatlı tableti. 8,7 inç kompakt ekran ve 335 gram ağırlık tek elle tutmayı kolaylaştırıyor. 90 Hz ekran bu fiyat için akıcı. Samsung'un Çocuk Modu ebeveyn kontrolü için pratik.",
+   "4 GB RAM ve 64 GB depolama temel kullanım için sınırlı, ama microSD kartla genişletilebiliyor. 1340x800 çözünürlük düşük. Kalem desteği yok."
+  ],
+  "kimler": "Çocuklar ve yalnızca video, okuma için küçük ve ucuz bir tablet arayanlar için."
+ },
+ "lenovo-p12": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Lenovo Tab P12, 12,7 inçlik büyük ekranı ve 3K çözünürlüğüyle film ve belge çalışması için geniş bir alan sunuyor. Dört JBL hoparlör ve 10.200 mAh pil uzun video oturumları için güçlü. Tab Pen Plus kalem kutudan çıkıyor (bölgeye göre değişebilir).",
+   "Ekran 60 Hz; aynı boyuttaki Idea Tab Pro 144 Hz sunuyor ve genelde daha ucuz. Dimensity 7050 orta seviye bir işlemci. 128 GB depolama bu fiyat için az. Idea Tab Pro ile karşılaştırmanızı öneririz."
+  ],
+  "kimler": "Büyük ekranda belge okuyan ve video izleyenler için. Fiyat farkına göre Idea Tab Pro'yu da değerlendirin."
+ },
+ "h31": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Canon EOS R6 Mark II, full frame aynasız kameralar arasında hız ve düşük ışık performansıyla öne çıkıyor. 24 MP sensör gürültü açısından çok başarılı; düğün ve etkinlik fotoğrafçılığı için ideal. 40 kare/saniye seri çekim ve gelişmiş takip odaklaması spor ve vahşi yaşam için güçlü.",
+   "Gövde içi sabitleme 8 stop'a kadar telafi sağlıyor. 4K 60p video kırpmasız. 24 MP çözünürlük büyük kırpmalar için sınırlı. Canon RF lens sistemi güçlü ama lensler pahalı."
+  ],
+  "kimler": "Düğün, etkinlik ve spor fotoğrafçıları ile düşük ışıkta çalışan hobi ve profesyonel kullanıcılar için."
+ },
+ "x37": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Lenovo IdeaPad Slim 3, öğrenciler ve ev kullanıcıları için uygun fiyatlı bir dizüstü. Intel Core i5-1335U işlemci ofis uygulamaları, web ve video izleme için yeterli. 512 GB PCIe 4 SSD hızlı açılış ve dosya erişimi sağlıyor. USB-C ile şarj destekleniyor.",
+   "8 GB RAM çoklu sekmede sınırlı kalabiliyor; yükseltilebilir olup olmadığını modele göre kontrol edin. Ekran parlaklığı ortalama. Entegre grafik oyun için uygun değil."
+  ],
+  "kimler": "Öğrenciler ve temel ofis işleri için uygun fiyatlı bir bilgisayar arayanlar için."
+ },
+ "h13": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "M3 çipli 14 inç MacBook Pro, Liquid Retina XDR (Mini LED) ekranı ve fanlı soğutmasıyla MacBook Air'den bir adım yukarıda. 22 saate varan pil ömrü sınıfının en iyisi. HDMI ve SD kart yuvası içerik üreticileri için pratik.",
+   "Bu kayıttaki 8 GB RAM'li yapılandırma Pro bir makine için yetersiz; Apple sonradan taban modeli 16 GB'a yükseltti. M3 Pro ve M4 modelleri daha fazla port ve harici ekran desteği sunuyor. Satın alırken RAM'e dikkat edin."
+  ],
+  "kimler": "Mini LED ekran ve uzun pil isteyen, fotoğraf ve hafif video düzenleme yapan kullanıcılar için. 16 GB RAM'li sürümü tercih edin."
+ },
+ "y51": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Xiaomi Smart Band 8, 1.500 TL civarındaki fiyatıyla en popüler akıllı bileklik serilerinden. 16 güne varan pil ömrü, AMOLED ekran ve 5 ATM su direnci bu fiyatta çok güçlü. Kalp atışı, SpO2 ve uyku takibi günlük sağlık takibi için yeterli.",
+   "Dahili GPS yok; koşu rotası için telefon gerekiyor. Bildirimleri görebiliyor ama yanıt veremiyor. Smart Band 9 ve 10 çıktığı için indirimli bulunabilir."
+  ],
+  "kimler": "İlk fitness takipçisini alanlar ve uzun pilli, ucuz bir bileklik isteyenler için."
+ },
+ "y8": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Huawei P60 Pro, değişken diyaframlı ana kamerası ve telefoto kamerasının düşük ışık performansıyla fotoğraf tutkunlarının ilgisini çeken bir model. LTPO OLED ekran ve IP68 su direnci amiral gemisi seviyesinde.",
+   "Google servisleri yok ve 5G desteği bulunmuyor. Bankacılık ve bazı yerel uygulamaların çalışıp çalışmadığını satın almadan önce kontrol edin. Pura 70 ve Pura 80 serileri çıktığı için önceki nesil."
+  ],
+  "kimler": "Kamera kalitesini her şeyin önüne koyan ve Google'sız kullanıma razı olanlar için."
+ },
+ "h18": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Sony WH-1000XM5, gürültü engelleme kulaklıklarının referans modellerinden. Sekiz mikrofonlu ANC sistemi uçak, ofis ve toplu taşımada çok etkili. Hafif yapı (250 gram) ve yumuşak kulak yastıkları uzun yolculuklarda rahat. Çağrı kalitesi sınıfının en iyilerinden.",
+   "Katlanmayan tasarım taşıma çantasını büyük yapıyor. 30 saatlik pil ömrü ANC açıkken yeterli. LDAC desteği Android telefonlarda yüksek çözünürlüklü ses sağlıyor. WH-1000XM6 çıktığı için indirimli bulunabilir."
+  ],
+  "kimler": "Sık seyahat eden, en iyi gürültü engelleme ve konforu isteyenler için."
+ },
+ "sam_s8ultra": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Tab S8 Ultra, 14,6 inçlik dev AMOLED ekranıyla tabletten çok taşınabilir bir çalışma alanı. Kutudan çıkan S Pen ve Samsung DeX modu, dizüstü yerine kullanılabilecek bir deneyim sunuyor. 5,5 mm incelik bu boyut için etkileyici.",
+   "Snapdragon 8 Gen 1 ısınmaya yatkın bir işlemci. Ekrandaki kamera çentiği bazı kullanıcıları rahatsız edebilir. 726 gram ağırlık uzun süre elde tutmayı zorlaştırıyor. Yeni Ultra modeller çıktığı için önceki nesil; indirimli bulunursa değerlendirilebilir."
+  ],
+  "kimler": "Çok büyük ekranda çizim ve çalışma yapan, indirimli bir Ultra tablet arayanlar için."
+ },
+ "y24": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Casper Nirvana X500, yerli marka Casper'ın günlük kullanım için tasarlanmış dizüstüsü. Intel Core i5-1235U işlemci ofis işleri ve web için yeterli. Türkiye'deki yaygın servis ağı ve kolay garanti süreci yerli markanın en büyük avantajı.",
+   "8 GB DDR4 RAM ve Wi-Fi 5 artık eski nesil. Ekran parlaklığı ve renk doğruluğu ortalama. Aynı fiyatta Lenovo IdeaPad ve HP 15 serileriyle karşılaştırmak faydalı."
+  ],
+  "kimler": "Yerli servis güvencesini önemseyen, temel ofis ve öğrenci kullanımı için bilgisayar arayanlar için."
+ },
+ "p_new_080": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Fit3, Samsung'un 2 bin TL bandındaki akıllı bilekliği. 1,6 inç AMOLED ekran ve alüminyum kasa fiyatına göre kaliteli bir his veriyor. 13 güne varan pil ömrü ve 5 ATM + IP68 koruma günlük kullanım ve yüzme için uygun.",
+   "Dahili GPS yok. Samsung Health uygulaması kapsamlı ama bazı özellikler Samsung telefon gerektiriyor. Düşme algılama ve acil SOS gibi güvenlik özellikleri yaşlılar için faydalı."
+  ],
+  "kimler": "Samsung telefon kullanan ve uygun fiyatlı, uzun pilli bir fitness takipçisi isteyenler için."
+ },
+ "z2": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "HONOR 600 Pro, Snapdragon 8 Elite işlemci ve 512 GB depolamayla amiral gemisi performansını daha uygun fiyata sunuyor. 50 MP periskop telefoto kamera portre ve uzak çekimlerde başarılı. 185 gram ağırlık bu sınıf için hafif.",
+   "5.200 mAh pil ve hızlı şarj günlük kullanım için yeterli. MagicOS arayüzü özelleştirilebilir ama önceden yüklü uygulamalar olabiliyor. HONOR'un yazılım güncelleme süresi Samsung ve Google'a göre daha kısa."
+  ],
+  "kimler": "Amiral gemisi performansı ve telefoto kamerayı rakiplerine göre daha uygun fiyata isteyenler için."
+ },
+ "x2": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "POCO X6 Pro, Dimensity 8300-Ultra işlemciyle piyasaya çıktığında orta segmentin en hızlı telefonlarından biriydi. 1.5K Flow AMOLED ekran keskin ve parlak. 67 W hızlı şarj pratik.",
+   "IP54 koruma yalnızca sıçramaya karşı. Kamera sistemi performansın gerisinde. X7 Pro ve X8 Pro çıktığı için önceki nesil; indirimli bulunursa oyun için hâlâ mantıklı."
+  ],
+  "kimler": "İndirimli fiyatta, oyun performansı isteyen ve bütçesi sınırlı kullanıcılar için."
+ },
+ "p_new_014": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Huawei Watch Fit 5 Pro, akıllı saat ile fitness bilekliği arasında konumlanan şık bir model. 1,92 inçlik büyük AMOLED ekran ve 30 gramlık hafif gövde günlük kullanımda rahat. Dahili GPS ve NFC ödeme bu fiyat aralığında güçlü.",
+   "Pil ömrü yaklaşık 10 gün. iPhone ile kullanımda bazı özellikler kısıtlı. Uygulama mağazası sınırlı. Fit 5'e göre daha dayanıklı malzemeler ve ek sensörler sunuyor."
+  ],
+  "kimler": "Şık, hafif ve GPS'li bir fitness saati isteyenler için."
+ },
+ "monster_20260906": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Tulpar T7 V26.5.1, RTX 5070 Max-Performance ekran kartı ve 2560x1440 çözünürlüklü 17,3 inç ekranla yüksek çözünürlükte oyun oynamak için tasarlanmış. Intel Core Ultra 9 185H işlemci oyunun yanında yayın ve içerik üretimi için de güçlü.",
+   "16 GB RAM bu sınıfta yeterli ama yükseltilebilir. 1 TB SSD geniş bir oyun kütüphanesi için iyi bir başlangıç. 2,65 kg ağırlık masada kullanım için tasarlandığını gösteriyor. V26.5.5'e göre fark ağırlıkla RAM miktarında."
+  ],
+  "kimler": "Yüksek çözünürlükte oyun oynayan ve yerli servis desteği isteyen oyuncular için."
+ },
+ "x_17t_pro": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Xiaomi 17T Pro, Dimensity 9500 işlemci, 7.000 mAh pil ve Leica imzalı üçlü kamera sistemiyle amiral gemisi seviyesinde bir model. 144 Hz ekran oyunlarda akıcı. IP68 su direnci ve hızlı şarj günlük kullanım için pratik.",
+   "Telefoto kamera portre ve uzak çekimlerde başarılı. 219 gram ağırlık büyük pil için makul. Fiyatı Galaxy S25 ve OnePlus 13 ile aynı bölgede; pil ömrü açısından rakiplerinin önünde."
+  ],
+  "kimler": "Uzun pil, güçlü performans ve Leica kamerayı birlikte isteyenler için."
+ },
+ "trend_2026090517": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "HP Victus 15, RTX 5050 ekran kartı ve Intel Core 5 210H işlemciyle giriş seviyesi oyun bilgisayarı arayanlara yönelik. 16 GB DDR5 RAM ve PCIe 4.0 SSD dengeli bir donanım. HP'nin yaygın servis ağı satın alma sonrası destekte avantaj.",
+   "Ekran parlaklığı ve renk gamı sınıfına göre ortalama. RTX 5050, 1080p'de çoğu oyunu orta-yüksek ayarlarda oynatabiliyor. Aynı fiyatta Lenovo LOQ ve ASUS TUF ile karşılaştırmak faydalı."
+  ],
+  "kimler": "Bütçe dahilinde yeni nesil ekran kartlı bir oyun bilgisayarı isteyen öğrenciler için."
+ },
+ "n64": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Beats Studio Pro, Apple'ın Beats markasından ANC'li kulak üstü kulaklık. iPhone ile tek dokunuşla eşleşme ve Android'de Google Hızlı Eşleşme desteği iki platformda da kolay kullanım sağlıyor. USB-C üzerinden kayıpsız ses desteği var.",
+   "40 saatlik pil ömrü ANC kapalıyken; açıkken yaklaşık 24 saat. Gürültü engelleme Sony ve Bose'un üst modellerinin gerisinde. Beats'in bas ağırlıklı ses karakteri pop ve hip-hop dinleyenlere hitap ediyor."
+  ],
+  "kimler": "Hem iPhone hem Android kullanan, şık tasarım ve güçlü bas isteyenler için."
+ },
+ "p_a26_5g": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy A26 5G, Samsung'un uygun fiyatlı 5G telefonları arasında IP67 su direnci ve Super AMOLED ekranla öne çıkıyor. Samsung'un 6 yıllık güncelleme desteği bu fiyat aralığında nadir. 5.000 mAh pil rahat bir gün çıkarıyor.",
+   "Exynos 1380 günlük kullanımda yeterli ama oyunlarda orta seviyede. 6 GB RAM çoklu görevde sınırlı kalabiliyor. Kamera gün ışığında başarılı."
+  ],
+  "kimler": "Uzun güncelleme desteği ve su direnci isteyen, bütçesi sınırlı Samsung kullanıcıları için."
+ },
+ "t25": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Galaxy Tab S11, 11 inç Dynamic AMOLED 2X ekranı ve kutudan çıkan S Pen ile Samsung'un kompakt amiral gemisi tableti. 5,5 mm incelik ve 471 gram ağırlık taşınabilirliği artırıyor. Dimensity 9400+ işlemci her türlü uygulamada hızlı. IP68 su direnci tabletlerde nadir.",
+   "Galaxy AI özellikleri not özetleme, çeviri ve görsel düzenlemede pratik. DeX modu klavyeyle birlikte verimli çalışma sağlıyor. Fiyatı iPad Air ile aynı bölgede; Android ve S Pen tercih edenler için güçlü bir alternatif."
+  ],
+  "kimler": "Kompakt, kalemli ve suya dayanıklı premium bir Android tablet isteyenler için."
+ },
+ "x7": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Amazfit GTS 4, kare kasası ve 1,75 inç AMOLED ekranıyla Apple Watch'a benzer bir görünüm sunuyor. 27 gramlık hafif gövde ve 9,9 mm incelik günlük kullanımda rahat. Dahili GPS ve 8 güne varan pil ömrü fiyatına göre güçlü.",
+   "Zepp OS'in uygulama mağazası sınırlı. GTS 4 artık önceki nesil; Active 2 ve Balance 2 gibi yeni modeller daha güncel özellikler sunuyor. İndirimli bulunursa mantıklı bir alım."
+  ],
+  "kimler": "Kare kasalı, şık ve uzun pilli bir saati uygun fiyata isteyenler için."
+ },
+ "x29": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Huawei MatePad 11.5, Snapdragon 7 Gen 1 işlemci ve 120 Hz ekranla uygun fiyatlı bir tablet. 11,5 inç ekran ve 6,85 mm incelik günlük kullanım için pratik. M-Pencil desteği not almak isteyenler için.",
+   "Google servisleri yok; YouTube ve Gmail gibi uygulamalar AppGallery ya da tarayıcı üzerinden kullanılmalı. 2200x1440 çözünürlük bu boyut için yeterli ama keskin değil. PaperMatte sürümü okuma için daha uygun."
+  ],
+  "kimler": "Google'sız kullanıma razı olan, uygun fiyatlı ve akıcı bir tablet isteyenler için."
+ },
+ "p_new_015": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Huawei Watch Fit 5, 1,82 inç AMOLED ekranı ve 27 gramlık hafif gövdesiyle günlük kullanıma uygun şık bir akıllı saat. Dahili GPS ve NFC ödeme bu fiyat aralığında güçlü. 9,5 mm incelik bileği yormuyor.",
+   "Pil ömrü yaklaşık 10 gün. iPhone ile kullanımda bazı özellikler kısıtlı. Fit 5 Pro'ya göre ekran biraz daha küçük ve malzemeler daha sade."
+  ],
+  "kimler": "Hafif, ince ve GPS'li bir fitness saatini uygun fiyata isteyenler için."
+ },
+ "x26": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Nikon Z50, APS-C sensörlü kompakt bir aynasız fotoğraf makinesi. Derin kavrama yeri elde rahat bir tutuş sağlıyor. 20,9 MP sensör ve Nikon'un renk işleme kalitesi başlangıç seviyesinde başarılı fotoğraflar sunuyor.",
+   "Gövde içi sabitleme yok. 4K video kırpmasız ama 30 fps ile sınırlı. Z50 II çıktığı için önceki nesil; indirimli bulunursa aynasız sisteme geçiş için uygun fiyatlı bir yol."
+  ],
+  "kimler": "Aynasız sisteme geçmek isteyen, uygun fiyatlı ve kompakt bir kamera arayan yeni başlayanlar için."
+ },
+ "p_1787680633621_67": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "OnePlus 13, Snapdragon 8 Elite işlemci, 6.000 mAh pil ve 2K ekranla amiral gemisi segmentinin en dengeli telefonlarından. IP68 ve IP69 koruma sıcak suya karşı bile dayanıklılık sunuyor. Hasselblad imzalı üçlü kamera her koşulda başarılı.",
+   "100 W kablolu ve 50 W kablosuz şarj çok hızlı. OxygenOS arayüzü temiz ve akıcı. Fiyatı Galaxy S25 ve iPhone'un altında; pil ömrü açısından rakiplerinin önünde."
+  ],
+  "kimler": "Amiral gemisi performansı ve uzun pili, rakiplerinden daha uygun fiyata isteyenler için."
+ },
+ "lenovo-m11": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Lenovo Tab M11, 11 inç ekranı ve kalem desteğiyle bütçe dostu bir tablet. 90 Hz ekran bu fiyat aralığında akıcılık sağlıyor. Dört hoparlör ve Dolby Atmos video izleme için iyi bir ses sunuyor.",
+   "Helio G88 işlemci yalnızca temel işler için yeterli; ağır uygulamalarda yavaş. 1920x1200 çözünürlük 11 inç için ortalama. Fiyatı bazen Idea Tab Pro gibi daha güçlü modellere yaklaşıyor; karşılaştırma yapmak faydalı."
+  ],
+  "kimler": "Öğrenciler ve not alma, video izleme için uygun fiyatlı tablet arayanlar için."
+ },
+ "t50": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "HONOR Pad 9, 12,1 inçlik büyük ekranı ve sekiz hoparlörüyle film ve dizi izlemek için tasarlanmış. 2.5K çözünürlük ve 120 Hz ekran keskin ve akıcı. 256 GB depolama bu fiyat için cömert.",
+   "Snapdragon 6 Gen 1 günlük kullanım ve orta düzey oyunlar için yeterli. 555 gram ağırlık büyük ekran için makul. Magic Pencil ve klavye ayrı satılıyor. Google servisleri sorunsuz çalışıyor."
+  ],
+  "kimler": "Büyük ekranda film izlemek ve not almak isteyen, uygun fiyatlı tablet arayanlar için."
+ },
+ "y38": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Fujifilm X-T5, 40 MP APS-C sensörü ve klasik kadranlı tasarımıyla fotoğrafçılar için tasarlanmış bir aynasız kamera. Fujifilm'in film simülasyonları düzenlemeye gerek kalmadan karakterli fotoğraflar üretiyor. Gövde içi sabitleme 7 stop'a kadar telafi sağlıyor.",
+   "Video özellikleri güçlü ama bu kamera öncelikle fotoğrafçılar için. Üç yönlü eğilen ekran fotoğraf için pratik, ama vlog için yana açılan ekran yok. Fujifilm X lens sistemi kaliteli ve çeşitli."
+  ],
+  "kimler": "Manuel kontrolleri seven, fotoğraf odaklı hobi ve profesyonel kullanıcılar için."
+ },
+ "x14": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Acer Aspire 5, MX450 ekran kartıyla temel grafik işleri ve hafif oyunlar için entegre grafiklere göre bir adım önde. Intel Core i5-1135G7 işlemci ofis ve eğitim uygulamaları için yeterli.",
+   "11. nesil Intel işlemci ve DDR4 RAM artık eski. 8 GB RAM çoklu görevde sınırlı. MX450 yeni oyunlar için yetersiz; yalnızca e-spor oyunları için uygun. Aynı fiyatta daha yeni işlemcili modellere bakmak mantıklı."
+  ],
+  "kimler": "İndirimli bulunursa, temel kullanım ve hafif oyun için bütçe dostu bir bilgisayar arayanlar için."
+ },
+ "rz15": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "Razer Hammerhead Pro HyperSpeed, kutusundaki USB-C kablosuz alıcı sayesinde PC, PlayStation ve Switch'te düşük gecikmeli bağlantı sunan bir kulak içi oyuncu kulaklığı. Bluetooth ile telefona da bağlanabiliyor. THX sertifikası ses kalitesi için bir güvence.",
+   "Kataloğumuzdaki pil ömrü verisi sınıfına göre kısa görünüyor; uzun oyun oturumlarında kutuya koyup şarj etmek gerekebilir. Fiyatı premium. Oyun dışında da kullanılabilir ama müzik için aynı fiyata daha iyi seçenekler bulunuyor."
+  ],
+  "kimler": "Birden fazla platformda oynayan ve kulak içi formda düşük gecikme isteyen oyuncular için."
+ },
+ "h21": {
+  "tarih": "2026-11-24",
+  "metin": [
+   "M2 çipli 11 inç iPad Pro, 120 Hz ProMotion ekranı ve Face ID'siyle hâlâ güçlü bir tablet. M2 çip video düzenleme ve çizim dahil çoğu iş için fazlasıyla hızlı. 2. nesil Apple Pencil ile hover özelliği destekleniyor.",
+   "M4'lü yeni iPad Pro'nun OLED ekranı ve daha ince tasarımı çok daha gelişmiş. Bu model Apple Pencil Pro'yu desteklemiyor. İndirimli bulunursa 120 Hz ekranlı en uygun fiyatlı iPad seçeneklerinden biri."
+  ],
+  "kimler": "120 Hz ekran ve Pro özelliklerini indirimli fiyata isteyenler için."
  }
 }

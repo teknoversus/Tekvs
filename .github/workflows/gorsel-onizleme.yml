@@ -6,6 +6,8 @@ on:
 jobs:
   onizle:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Indir ve kontak sayfasi uret
@@ -24,7 +26,12 @@ jobs:
           done
           montage img/*.png -tile 4x -geometry +4+4 out/sheet.png
           ls -la img out
-      - uses: actions/upload-artifact@v4
-        with:
-          name: onizleme
-          path: out/sheet.png
+      - name: Sonucu dala yaz
+        run: |
+          git config user.name "gorsel-bot"; git config user.email "bot@teknoversus.com.tr"
+          git checkout --orphan onizleme-sonuc
+          git rm -rq --cached . || true
+          cp out/sheet.png sheet.png
+          git add -f sheet.png
+          git commit -qm "onizleme [skip ci]"
+          git push -f origin onizleme-sonuc

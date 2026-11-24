@@ -23,11 +23,13 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
       - name: Raporu hesapla
         run: node scripts/noindex-raporu.js
+      - name: Site denetimi
+        run: node scripts/site-denetim.js
       - name: Raporu rapor-noindex dalına yaz
         run: |
           git config user.name "teknoversus-bot"
           git config user.email "bot@teknoversus.com.tr"
-          git checkout -B rapor-noindex
+          git checkout -B rapor-denetim
           git add -f rapor
-          git commit -m "noindex raporu [skip ci]"
-          git push -f origin rapor-noindex
+          git commit -m "site denetimi [skip ci]"
+          git push -f origin rapor-denetim

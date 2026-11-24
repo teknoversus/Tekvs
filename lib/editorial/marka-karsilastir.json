@@ -303,5 +303,245 @@
    "Arçelik'in AI etiketli modelleri görüntü iyileştirme ve sesli asistan özellikleri getiriyor. Sunny ise webOS'lu modelleri ve 75 inçe kadar uzanan seçenekleriyle büyük ekranı daha ucuza sunuyor. İki markanın da birçok modelinin güncel fiyatı belli değil. Aynı inç ve panel tipinde karşılaştırma yapmanızı öneririz."
   ],
   "sonuc": "Bütçe öncelikliyse Sunny. Geniş servis ağı ve Android TV ile daha bilinen bir marka isteyenler için Arçelik."
+ },
+ "acer-vs-dell-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Acer'ın kataloğumuzdaki modelleri ağırlıkla Nitro oyun serisinden: 37-70 bin TL aralığında RTX 3050'den RTX 5060'a kadar ekran kartları var. Dell tarafında ise Inspiron, Vostro ve Pro Essential gibi iş ve günlük kullanım modelleri öne çıkıyor; bunların çoğu entegre grafikli ve 15-40 bin TL bandında.",
+   "Yani bu iki marka farklı ihtiyaçlara hitap ediyor. Oyun oynayacaksanız aynı paraya Acer Nitro'nun harici ekran kartı belirgin fark yaratır. Ofis, okul ve uzun süreli dayanıklılık arıyorsanız Dell'in kurumsal serileri, sağlam klavyeleri ve yaygın servis desteğiyle daha mantıklı."
+  ],
+  "sonuc": "Oyun için Acer Nitro, iş ve okul için Dell Vostro/Pro serisi."
+ },
+ "acer-vs-msi-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "İki marka da oyun bilgisayarlarıyla tanınıyor ama MSI kataloğumuzda 35 modelle çok daha geniş bir yelpaze sunuyor: 20 bin TL'lik Modern 14'ten 500 bin TL'yi aşan üst seviye oyun makinelerine kadar. Acer'ın 9 modeli ise ağırlıkla 37-70 bin TL arasındaki Nitro serisinde toplanıyor.",
+   "Giriş seviyesi oyun bilgisayarında iki marka yakın: Acer Nitro V ile MSI Cyborg ve Katana aynı fiyatlarda benzer RTX 4050/4060 kartlar sunuyor. Fark daha çok soğutma, ekran kalitesi ve kasa malzemesinde. Üst segmentte RTX 5080/5090'lı seçenekleri yalnızca MSI sunuyor."
+  ],
+  "sonuc": "Bütçe oyun bilgisayarında ikisi de iyi; fiyat farkına göre seçin. Üst seviye performans için MSI."
+ },
+ "altus-vs-grundig-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Grundig'in 7 fiyatlı modeli 24-48 bin TL arasında ve 850A/950A serisinde QLED panel, 144 Hz ve Google TV sunuyor.",
+   "Altus da Grundig gibi Arçelik grubunda, ama daha sade ve uygun fiyatlı bir konumda; kataloğumuzdaki 10 Altus modelinin güncel fiyatı açık değil. Aynı servis ağını paylaştıkları için karar daha çok panel tipi ve fiyata kalıyor."
+  ],
+  "sonuc": "Bugün alınabilir, özellikleri belli bir televizyon için Grundig."
+ },
+ "altus-vs-iffalcon-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "iFFALCON'un 12 modelinin hepsi fiyatlı; 18 bin TL'den başlayan seride QLED ve Mini LED (U95A) seçenekleri var.",
+   "Altus'un 10 modeli ise standart LED panellerden oluşuyor ve hiçbirinin güncel fiyatı açık değil. iFFALCON'un Mini LED modelleriyle görüntü kalitesinde arada belirgin fark var; Altus'un artısı Arçelik'in servis ağı."
+  ],
+  "sonuc": "Görüntü kalitesi ve fiyat şeffaflığı için iFFALCON; özellikle U95A Mini LED serisi."
+ },
+ "altus-vs-profilo-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Profilo'nun da birçok modelinin fiyatı belli değil; fiyatlı iki model 22-30 bin TL arasında ve Android TV ile geliyor.",
+   "Altus Arçelik grubunun, Profilo ise BSH çatısı altındaki tanıdık bir yerli marka; ikisinin de Türkiye'de yaygın servis ağı var. Panel ve özellikler benzer olduğu için karar çoğu zaman kampanya fiyatına kalıyor."
+  ],
+  "sonuc": "İki marka da temel 4K ihtiyacına hitap ediyor; satın almadan önce güncel mağaza fiyatlarını karşılaştırın."
+ },
+ "altus-vs-samsung-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung ise 34 modelle 24 bin TL'lik Crystal UHD'den Neo QLED ve OLED modellere kadar geniş bir seri sunuyor; Tizen arayüzü ve 144 Hz'e varan yenileme hızı üst modellerde var.",
+   "Altus ise yalnızca temel LED modellerle ve açık fiyatı olmayan bir seriyle yer alıyor. Samsung'un QLED ve Neo QLED modelleriyle görüntü kalitesi arasında belirgin fark var; Altus'u ancak belirgin şekilde ucuz bulursanız değerlendirin."
+  ],
+  "sonuc": "Seçenek, görüntü kalitesi ve yazılım desteği için Samsung."
+ },
+ "altus-vs-seg-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "SEG'in de fiyatı açık olan iki modeli 19-33 bin TL arasında; seri, Altus gibi temel LED panellerden oluşuyor.",
+   "Altus ve SEG, Türkiye'nin en uygun fiyatlı yerli televizyon markaları arasında. Altus Arçelik'in servis ağından yararlanıyor; SEG için de bölgenizdeki yetkili servis noktalarını kontrol etmek, satın alma sonrası destek açısından faydalı olur."
+  ],
+  "sonuc": "İki marka da en düşük bütçeye hitap ediyor; aynı inçte güncel fiyatı uygun olanı seçin."
+ },
+ "altus-vs-sunny-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Sunny'nin 5 fiyatlı modeli 19-47 bin TL arasında; bazı modelleri webOS ile geliyor ve 75 inç seçeneği var.",
+   "Altus'un 10 modelinin güncel fiyatı açık değil ve seri standart LED panellerden oluşuyor. Sunny daha geniş boyut seçeneği ve açık fiyatlarıyla karşılaştırmayı kolaylaştırıyor."
+  ],
+  "sonuc": "Fiyatı belli, büyük ekran seçeneği olan model arıyorsanız Sunny."
+ },
+ "apple-vs-asus-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. Asus ise 35 modelle 22-515 bin TL aralığında, Vivobook ile bütçe, Zenbook ile ince-hafif, TUF ve ROG ile oyun serileri sunuyor.",
+   "Aynı 35-45 bin TL bandında ASUS, RTX 3050/4050'li TUF modelleri sunarken MacBook Air fansız ve sessiz bir deneyim veriyor. ASUS'un Zenbook OLED serisi ise ekran kalitesinde MacBook'a en yakın Windows alternatiflerinden."
+  ],
+  "sonuc": "Oyun oynayacaksanız ya da Windows yazılımlarına ihtiyacınız varsa ASUS; uzun pil, sessizlik ve ekran kalitesi öncelikse MacBook Air."
+ },
+ "apple-vs-casper-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. Casper ise 11 modelle 14-158 bin TL aralığında, Nirvana serisiyle uygun fiyatlı günlük kullanım, Excalibur serisiyle oyun modelleri sunuyor.",
+   "Casper'ın Excalibur modelleri RTX 4060-5070 kartlarla oyun odaklı; MacBook'larla aynı kulvarda değil. Nirvana serisi ise giriş seviyesinde ama eski nesil işlemciler içerebiliyor, alırken işlemci neslini kontrol edin."
+  ],
+  "sonuc": "Yerli servis ve oyun performansı için Casper Excalibur; ofis ve öğrenci kullanımında uzun ömür için MacBook Air."
+ },
+ "apple-vs-dell-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. Dell ise 14 modelle 15-363 bin TL aralığında, Inspiron ve Vostro ile iş ve günlük kullanım, XPS ve Alienware ile üst segment sunuyor.",
+   "Dell'in Vostro ve Pro Essential modelleri entegre grafikli, iş odaklı ve genelde MacBook Air'den ucuz; ancak ekran parlaklığı ve pil ömrü belirgin şekilde geride. Kurumsal yazılım ve Windows zorunluluğu varsa Dell mantıklı."
+  ],
+  "sonuc": "Kurumsal kullanım ve Windows için Dell; hafiflik, pil ve sessizlik için MacBook Air."
+ },
+ "apple-vs-hp-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. HP ise 21 modelle 25-174 bin TL aralığında, Pavilion ve HP 15 ile günlük kullanım, Victus ve OMEN ile oyun modelleri sunuyor.",
+   "HP'nin Victus ve OMEN modelleri 40-55 bin TL bandında RTX 4050-5050 kartlarla oyun oynatabiliyor; MacBook Air bu bütçede oyun yerine sessizlik ve pil ömrü sunuyor. HP'nin yaygın servis ağı satın alma sonrası destekte avantaj."
+  ],
+  "sonuc": "Oyun ve Windows ekosistemi için HP; pil ömrü ve yapı kalitesi için MacBook."
+ },
+ "apple-vs-lenovo-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. Lenovo ise 45 modelle 20-297 bin TL aralığında, IdeaPad ile bütçe, ThinkPad ile iş, Yoga ile ince-premium ve LOQ/Legion ile oyun serileri sunuyor.",
+   "Lenovo 45 modelle en geniş seçeneği sunuyor; IdeaPad Slim modelleri MacBook Air'in yarı fiyatına iniyor ama ekran ve pil kalitesi o seviyede değil. ThinkPad klavyesi ve dayanıklılığı yazı ağırlıklı çalışanlar için MacBook'a güçlü bir alternatif."
+  ],
+  "sonuc": "Seçenek çeşitliliği ve oyun için Lenovo; uzun pil ve sessizlik için MacBook Air."
+ },
+ "apple-vs-monster-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. Monster ise 16 modelle 34-442 bin TL aralığında, tamamen oyun odaklı Tulpar ve Abra serileri sunuyor.",
+   "Monster'ın her modeli harici ekran kartlı ve oyun için tasarlanmış; MacBook'la aynı ihtiyaca hitap etmiyor. Monster'ın avantajı yükseltilebilir RAM/SSD ve yerli servis; MacBook'un avantajı taşınabilirlik ve pil ömrü."
+  ],
+  "sonuc": "Oyun için kesinlikle Monster; oyun dışı her iş için MacBook Air daha uygun."
+ },
+ "apple-vs-msi-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple kataloğumuzda 15 MacBook modeliyle 34-217 bin TL aralığında yer alıyor; giriş noktası M1 ve M3'lü MacBook Air ile A18 Pro işlemcili MacBook Neo. MSI ise 35 modelle 20-526 bin TL aralığında, Modern serisiyle ofis, Cyborg, Katana ve Stealth serileriyle oyun modelleri sunuyor.",
+   "MSI'ın Cyborg ve Katana modelleri 42-57 bin TL bandında RTX 4050/4060 sunarken, MacBook Air aynı bütçede çok daha ince ve hafif. MSI'ın Stealth serisi ise ince kasada güçlü grafik isteyen içerik üreticilerine yönelik."
+  ],
+  "sonuc": "Oyun ve yüksek grafik gücü için MSI; taşınabilirlik ve pil için MacBook Air."
+ },
+ "apple-vs-huawei-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple 24 iPad modeliyle 20-74 bin TL aralığında, Huawei ise 22 MatePad modeliyle 10-75 bin TL aralığında yer alıyor. Huawei'nin giriş modelleri (MatePad SE 11, MatePad 11.5) iPad'in yarı fiyatına geliyor.",
+   "En önemli fark yazılım: Huawei tabletlerde Google servisleri yok, YouTube ve Gmail gibi uygulamalar AppGallery ya da tarayıcı üzerinden kullanılmak zorunda. iPad'ler ise geniş uygulama desteği, uzun güncelleme süresi ve Apple Pencil ekosistemiyle öne çıkıyor. Huawei'nin PaperMatte ekranlı modelleri okuma ve not alma için ilginç bir alternatif."
+  ],
+  "sonuc": "Uygulama desteği ve uzun ömür için iPad; düşük bütçe ve mat ekran için, Google'sız kullanıma razıysanız Huawei."
+ },
+ "apple-vs-huawei-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Apple 21 iPhone modeliyle 26-230 bin TL aralığında, Huawei ise 16 modelle 19-109 bin TL aralığında. Huawei'nin nova serisi orta segmentte, Pura ve Mate serileri ise üst segmentte konumlanıyor.",
+   "Huawei telefonlarda Google servisleri yok; bu, bankacılık, harita ve bazı yerel uygulamalarda sorun çıkarabiliyor. iPhone'lar ise uzun yazılım desteği ve ikinci el değeriyle öne çıkıyor. Kamera tarafında Huawei'nin Pura serisi iPhone Pro modelleriyle rahatça yarışıyor."
+  ],
+  "sonuc": "Sorunsuz uygulama deneyimi ve uzun destek için iPhone; kamera odaklıysanız ve Google'sız kullanıma razıysanız Huawei Pura serisi."
+ },
+ "apple-vs-lenovo-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Lenovo'nun 14 tablet modeli 11-35 bin TL aralığında ve ağırlıkla bütçe ile orta segmentte. Apple'ın en ucuz iPad'i ise 20 bin TL civarında başlıyor. Lenovo Idea Tab Pro ve Tab P12 gibi modeller büyük ekranı iPad'den daha uygun fiyata sunuyor.",
+   "iPad'ler işlemci gücü, uygulama kalitesi ve yazılım güncelleme süresinde belirgin şekilde önde. Lenovo tabletler ise geniş ekranları, JBL hoparlörleri ve uygun fiyatlarıyla video izleme ve ders çalışma için iyi bir alternatif."
+  ],
+  "sonuc": "Uzun ömür ve performans için iPad; büyük ekranı düşük bütçeyle isteyenler için Lenovo Idea Tab Pro."
+ },
+ "apple-vs-poco-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "POCO, Xiaomi'nin performans odaklı alt markası ve kataloğumuzda 29 modelle yer alıyor; en güncel modelleri X7 Pro, X8 Pro ve F9 Ultra gibi oyun performansı yüksek telefonlar. Apple'ın 21 iPhone modeli ise 26 bin TL'den başlıyor.",
+   "Aynı bütçeyle POCO çok daha güçlü işlemci, daha büyük pil ve hızlı şarj sunuyor. iPhone ise kamera tutarlılığı, video kalitesi, uzun yazılım desteği ve ikinci el değerinde öne çıkıyor. POCO'nun HyperOS arayüzünde önceden yüklü uygulamalar olabiliyor."
+  ],
+  "sonuc": "Oyun performansı ve pil için POCO; uzun ömür, video ve ekosistem için iPhone."
+ },
+ "apple-vs-redmi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Redmi, Xiaomi'nin uygun fiyatlı serisi ve kataloğumuzda 40 modelle (eski nesiller dahil) yer alıyor; güncel Redmi Note modelleri 10-25 bin TL bandında. Apple'ın en ucuz modelleri ise birkaç nesil önceki iPhone 11 ve 12.",
+   "Bu iki marka genellikle aynı alıcıya hitap etmiyor. Redmi Note serisi düşük fiyata büyük AMOLED ekran, 200 MP kamera ve hızlı şarj sunuyor. Eski bir iPhone ise daha akıcı yazılım ve kaliteli video çekimi sağlıyor, ancak pil sağlığı ve kalan güncelleme süresi dikkat edilmesi gereken noktalar."
+  ],
+  "sonuc": "Sıfır telefon ve uzun pil için Redmi Note; iOS şartsa eski iPhone yerine iPhone 16e/17e için bütçeyi artırmak daha mantıklı."
+ },
+ "apple-vs-samsung-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung 32 tablet modeliyle 4-79 bin TL gibi çok geniş bir aralıkta, Apple ise 24 iPad modeliyle 20-74 bin TL aralığında. Samsung'un Galaxy Tab A serisi iPad'in çok altında fiyatlarla giriş seviyesine hitap ediyor.",
+   "Üst segmentte Galaxy Tab S serisi ile iPad Pro/Air doğrudan rakip. Samsung'un avantajı kutudan çıkan S Pen, AMOLED ekran ve IP68 dayanıklılık; Apple'ın avantajı daha güçlü işlemci, profesyonel uygulama desteği ve daha uzun güncelleme süresi. Samsung DeX modu tableti dizüstüye yakın kullanmayı kolaylaştırıyor."
+  ],
+  "sonuc": "Kalem dahil fiyat ve AMOLED ekran için Galaxy Tab S; profesyonel uygulamalar ve performans için iPad."
+ },
+ "apple-vs-samsung-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Türkiye'de en çok karşılaştırılan iki marka. Samsung kataloğumuzda 91 modelle (eski nesiller dahil) her bütçeye seçenek sunarken, Apple'ın 21 iPhone modeli 26 bin TL'den başlıyor. Üst segmentte Galaxy S Ultra ile iPhone Pro Max doğrudan rakip.",
+   "Samsung'un avantajları çeşitlilik, S Pen, katlanabilir modeller ve 7 yıla varan güncelleme sözü. Apple'ın avantajları video kalitesi, ekosistem uyumu ve ikinci el değeri. Orta segmentte Galaxy A serisi, iPhone'un sunmadığı fiyat aralıklarında güçlü bir alternatif."
+  ],
+  "sonuc": "Bütçe esnekliği ve katlanabilir seçenekler için Samsung; ekosistem ve video için iPhone."
+ },
+ "apple-vs-xiaomi-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Xiaomi kataloğumuzda 32 modelle (eski nesiller dahil) yer alıyor; güncel amiral gemileri Xiaomi 15, 17 ve 17T serisi Leica imzalı kameralarla iPhone Pro modellerine rakip. Apple'ın 21 iPhone modeli 26 bin TL'den başlıyor.",
+   "Aynı fiyatta Xiaomi genellikle daha büyük pil, daha hızlı şarj ve daha yüksek çözünürlüklü kamera sensörleri sunuyor. iPhone ise yazılım optimizasyonu, video kalitesi ve uzun güncelleme süresiyle öne çıkıyor. Xiaomi'nin HyperOS arayüzü özelleştirme seçenekleri sunuyor ama önceden yüklü uygulamalar içerebiliyor."
+  ],
+  "sonuc": "Donanım ve şarj hızı için Xiaomi; uzun ömür ve video için iPhone."
+ },
+ "arcelik-vs-onvo-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Arçelik'in fiyatı açık iki modeli (55 inç A 755 C ve 65 inç A 1065 C AI) 26-47 bin TL arasında ve Android TV ile geliyor. Onvo ise daha yeni bir yerli marka ve Google TV'li modelleriyle dikkat çekiyor.",
+   "Onvo ise 5 fiyatlı modeliyle 17-28 bin TL aralığında; VQ90 serisinde QLED panel, 120 Hz ve Google TV gibi özellikleri Arçelik'ten daha düşük fiyata sunuyor."
+  ],
+  "sonuc": "Fiyat-performans için Onvo VQ90 serisi; servis ağı ve marka güveni için Arçelik."
+ },
+ "arcelik-vs-regal-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Arçelik'in 10 modelinden yalnızca ikisinin fiyatı açık ve bunlar 26-47 bin TL aralığında. Regal ise aynı inçte daha düşük fiyatla, sade özelliklere sahip modeller sunuyor.",
+   "Regal, Vestel üretimi uygun fiyatlı bir marka; 3 fiyatlı modeli 22-25 bin TL bandında 55 inç LED televizyonlardan oluşuyor."
+  ],
+  "sonuc": "İki marka da temel kullanıma hitap ediyor; Android TV'li ve servis ağı geniş bir model için Arçelik, en düşük fiyat için Regal."
+ },
+ "arcelik-vs-tcl-televizyon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Arçelik, Android TV'li LED modelleriyle orta segmentte; kataloğumuzdaki fiyatlı iki modeli 26-47 bin TL arasında. Aynı bütçeye TCL'de QLED ve hatta Mini LED modeller bulmak mümkün.",
+   "TCL ise 27 modelle 24 bin TL'den başlayıp QLED, QD-Mini LED ve 98-115 inç dev ekranlara kadar uzanan çok geniş bir seri sunuyor."
+  ],
+  "sonuc": "Görüntü teknolojisi ve seçenek için TCL; yerli servis güvencesi için Arçelik."
+ },
+ "asus-vs-casper-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "ASUS kataloğumuzda 35 modelle 22-515 bin TL aralığında: Vivobook ile bütçe, Zenbook ile ince-hafif, TUF ve ROG ile oyun serileri var. Casper'ın Nirvana serisi günlük kullanıma, Excalibur serisi oyuna yönelik; kataloğumuzdaki 11 modelin fiyatları 14-158 bin TL arasında.",
+   "Oyun tarafında ASUS TUF ile Casper Excalibur aynı fiyatlarda benzer RTX kartlar sunuyor; Casper'ın artısı yerli servis, ASUS'un artısı daha geniş model seçeneği ve yüksek TGP'li kartlar."
+  ],
+  "sonuc": "Seçenek ve küresel destek için ASUS; yerli servis isteyenler için Casper."
+ },
+ "asus-vs-dell-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "ASUS kataloğumuzda 35 modelle 22-515 bin TL aralığında: Vivobook ile bütçe, Zenbook ile ince-hafif, TUF ve ROG ile oyun serileri var. Dell'in serisi ağırlıkla iş ve günlük kullanım modellerinden (Inspiron, Vostro, Pro Essential) oluşuyor; kataloğumuzdaki 14 modelin fiyatları 15-363 bin TL arasında.",
+   "Dell iş odaklı modellerde dayanıklı yapı ve kurumsal destekle öne çıkarken, ASUS aynı fiyata daha fazla RAM ya da OLED ekran sunabiliyor. Oyun bilgisayarı arayanlar için ASUS'un TUF serisi daha uygun."
+  ],
+  "sonuc": "Oyun ve ince-hafif seçenekler için ASUS; kurumsal kullanım için Dell."
+ },
+ "asus-vs-hp-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "ASUS kataloğumuzda 35 modelle 22-515 bin TL aralığında: Vivobook ile bütçe, Zenbook ile ince-hafif, TUF ve ROG ile oyun serileri var. HP'nin serisi Pavilion ile günlük kullanım, Victus ve OMEN ile oyun modellerinden oluşuyor; kataloğumuzdaki 21 modelin fiyatları 25-174 bin TL arasında.",
+   "Giriş seviyesinde Vivobook ile HP 15/Pavilion benzer işlemciler sunuyor; oyun tarafında ASUS TUF ile HP Victus doğrudan rakip. Fark ekran kalitesi, RAM'in yükseltilebilirliği ve soğutmada ortaya çıkıyor."
+  ],
+  "sonuc": "İki marka da dengeli; aynı fiyatta ekran kartı, RAM ve ekran kalitesini karşılaştırın."
+ },
+ "asus-vs-lenovo-dizustu": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "ASUS kataloğumuzda 35 modelle 22-515 bin TL aralığında: Vivobook ile bütçe, Zenbook ile ince-hafif, TUF ve ROG ile oyun serileri var. Lenovo'nun serisi IdeaPad, ThinkPad, Yoga ve LOQ/Legion ile en geniş yelpazelerden biri; kataloğumuzdaki 45 modelin fiyatları 20-297 bin TL arasında.",
+   "Bütçe segmentinde Vivobook ile IdeaPad Slim aynı fiyatlarda benzer donanım sunuyor; oyun tarafında TUF ile LOQ doğrudan rakip. ThinkPad'in klavye kalitesi ve dayanıklılığı iş kullanıcıları için Lenovo'yu öne çıkarıyor."
+  ],
+  "sonuc": "Bütçe ve iş için Lenovo IdeaPad/ThinkPad; ince-hafif OLED ekranlı seçenekler için ASUS Zenbook."
  }
 }

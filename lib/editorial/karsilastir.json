@@ -359,5 +359,25 @@
       }
     ],
     "sonuc": "Konsol oyuncusu ve film izleyici için iki model de yeterli; fiyatı uygun olanı seçin. Bilgisayar oyuncusuysanız 144 Hz'lik 65Q6C bir adım önde."
+  },
+  "p_huawei_2026_mate_x7|p_zfold7": {
+    "tarih": "2026-11-24",
+    "baslik": "Editör Değerlendirmesi: HUAWEI Mate X7 mi, Samsung Galaxy Z Fold7 mi?",
+    "metin": [
+      "Türkiye'de satılan iki büyük katlanabilir telefon bunlar. İkisi de kitap gibi açılıyor ve içte 8 inç ekran sunuyor. Ama bu iki telefonu farklı insanlara önermek gerekiyor, çünkü aradaki en büyük fark donanımdan çok yazılım tarafında.",
+      "Mate X7 donanımda birkaç noktada önde. Bataryası 5.300 mAh, Fold7'de ise 4.400 mAh. Şarjda 66 W kablolu ve 50 W kablosuz destek var, Samsung bu konuda geride. Suya ve toza dayanıklılıkta da IP58/IP59 ile Fold7'nin IP48'inden daha iyi korunuyor. Kamera tarafında Huawei'nin değişken diyaframlı 50 MP ana kamerası ve 3,5x periskop telefotosu, özellikle zoom çekimlerde güçlü. Fold7 ise 200 MP ana kamerayla geliyor ve 215 gramla 236 gramlık Mate X7'den belirgin şekilde hafif, açıkken de daha ince.",
+      "Asıl karar noktası Google servisleri. Mate X7'nin global sürümü EMUI 15 ile geliyor ve Google Play, Gmail, YouTube gibi uygulamalar telefonda resmi olarak yok. Bankacılık ve e-Devlet gibi uygulamaların çoğu AppGallery üzerinden ya da alternatif yollarla kurulabiliyor, ama her şey Android'deki kadar sorunsuz değil. Türkiye sürümünde 5G desteği de bulunmuyor. Galaxy Z Fold7 ise Android 16, Google servisleri, 5G ve Samsung'un uzun yazılım güncelleme desteğiyle hiçbir uzlaşma gerektirmiyor."
+    ],
+    "secim": [
+      {
+        "urun": "p_huawei_2026_mate_x7",
+        "metin": "Uzun batarya ömrü, hızlı ve kablosuz şarj, daha iyi su/toz koruması ve güçlü zoom kamera istiyorsanız; Google servisleri olmadan çalışmak sizin için sorun değilse."
+      },
+      {
+        "urun": "p_zfold7",
+        "metin": "Telefonu tüm uygulamalarınızla sorunsuz kullanmak, 5G ve uzun güncelleme desteği istiyorsanız; daha hafif ve ince bir gövdeyi batarya ömrüne tercih ediyorsanız."
+      }
+    ],
+    "sonuc": "Kâğıt üzerinde Mate X7 daha çok şey sunuyor, ama çoğu kullanıcı için Galaxy Z Fold7 daha az sürprizli bir seçim. Google uygulamalarına bağımlıysanız Fold7, değilseniz ve batarya sizin için önemliyse Mate X7 daha mantıklı."
   }
 }

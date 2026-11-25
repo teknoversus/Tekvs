@@ -1,4 +1,0 @@
--- Samsung 65M80H (Mini LED, 2026) — Supabase SQL Editor'de çalıştır. Webhook build+deploy tetikler.
-insert into products (id, name, cat, blurb, added_at, link, upcoming, specs) values
-('tv65m80h', 'Samsung 65M80H', 'Televizyon', 'Mini LED aydınlatma, NQ4 AI Gen2 işlemci ve 144 Hz VRR desteğiyle oyuncu dostu 65 inç Samsung TV', '2026-11-25', '', false, '{"Renk": "Siyah", "Fiyat (₺)": "59999", "Ekran (inç)": "65", "Ekran Türü": "Mini LED", "HDR Desteği": "HDR10+", "Çözünürlük": "3840x2160", "İşletim Sistemi": "Tizen", "Yenileme Hızı (Hz)": "144", "Bağlantı Noktaları": "3x HDMI (eARC dahil, 4K 144Hz), USB, Bluetooth, Wi-Fi", "Ses Çıkış Gücü (W)": "20", "Ürünün Ağırlığı (kg)": "14.3 (standlı)"}')
-on conflict (id) do update set name=excluded.name, cat=excluded.cat, blurb=excluded.blurb, added_at=excluded.added_at, link=excluded.link, upcoming=excluded.upcoming, specs=excluded.specs, deleted=false;

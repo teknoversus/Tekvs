@@ -14,3 +14,5 @@ for page in open('onizleme/sayfalar.txt').read().split():
     for u in sorted(found):
         if not re.search(r'icon|logo|_nuxt|sprite|flag|qrcode|wechat',u,re.I): out.write(u+'\n')
     for m in re.findall(r'og:image"[^>]*',h)[:2]: out.write(m+'\n')
+    for m in re.findall(r'.{0,70}\.(?:jpg|webp|avif|png).{0,10}',h)[:60]: out.write('CTX '+m+'\n')
+    out.write('LEN %d\n'%len(h))

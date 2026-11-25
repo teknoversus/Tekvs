@@ -34,6 +34,7 @@ jobs:
               grep -oiE 'og:image"[^>]*' page.html | head -3 >> out/links.txt || true
             done < onizleme/sayfalar.txt
           fi
+          for f in img/*.src; do echo "$f $(identify -format '%wx%h' "$f[0]" 2>/dev/null)" >> out/links.txt; done
           montage img/*.png -tile 4x -geometry +4+4 out/sheet.png
           ls -la img out
       - name: Sonucu dala yaz

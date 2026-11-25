@@ -1,0 +1,158 @@
+{
+ "amazon-bee-frontier-ve-eclipse-tanitildi-gununuzu-dinleyip-ozetleyen-iki-cihaz": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Bu tür \"her şeyi dinleyen\" kişisel asistan cihazları yeni değil. Humane AI Pin ve Rabbit R1 gibi önceki denemeler, pil ömrü, yavaş yanıt süresi ve net bir kullanım amacı sunamamaları nedeniyle beklentiyi karşılayamamıştı. Amazon'un farkı, cihazları Alexa+ ve kendi hizmet ekosistemiyle birlikte sunabilmesi. Yine de bu ürünlerin başarısını teknik özelliklerden çok gizlilik belirleyecek: çevredeki kişilerin kaydedildiğinden haberdar olmaması, birçok ülkede hukuki açıdan da tartışma konusu. Bee cihazlarının Türkiye'de satışa çıkacağına dair bir açıklama yok."
+  ]
+ },
+ "amd-epyc-embedded-9006-tanitildi-256-cekirdege-kadar-yeni-nesil-islemciler": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "EPYC Embedded serisi, sunucu işlemcilerinin uzun süre üretimde kalması gereken cihazlar için uyarlanmış sürümü. Ağ cihazı, depolama sistemi ya da test ekipmanı üreten firmalar, aynı işlemciyi yıllarca tedarik edebilmek ister; embedded sürümler bu yüzden daha uzun üretim ve destek süresiyle sunuluyor. Bu işlemcileri doğrudan bir bilgisayarda görmeyeceksiniz, ama internet trafiğini yöneten ve verileri saklayan altyapının içinde olacaklar. PCIe 6.0 ve CXL desteği ise veri merkezlerinde bellek ve depolamanın işlemciden bağımsız ölçeklenmesini kolaylaştıran teknolojiler."
+  ]
+ },
+ "anthropic-hisselerinin-yuzde-5-ini-kamu-yarari-fonuna-ayiriyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Anthropic, kuruluşundan bu yana kendini bir kamu yararı şirketi (public benefit corporation) olarak tanımlıyor. Bu yapı, şirket yönetimine yalnızca hissedar kârını değil belirlenmiş bir kamu yararı hedefini de gözetme yükümlülüğü veriyor. Teknoloji dünyasında benzer adımlar daha önce de görüldü: bazı şirketler hisselerinin bir bölümünü vakıflara aktararak kârın bir kısmını toplumsal amaçlara yönlendirdi. Bu tür fonların gerçek etkisi, ne kadar bağımsız yönetildiklerine ve kaynakların nasıl dağıtıldığına bağlı; bu ayrıntılar netleştikçe adımın kapsamı daha iyi anlaşılacak."
+  ]
+ },
+ "apple-home-collection-tanitildi-apple-imzali-akilli-kilit-kamera-ve-termostatlar": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Akıllı ev ürünlerinde en büyük sorun yıllarca uyumluluktu: bir markanın kamerası başka bir markanın uygulamasında çalışmıyordu. Apple, Google, Amazon ve Samsung'un birlikte geliştirdiği Matter standardı bu sorunu çözmek için ortaya çıktı ve Home Collection'daki termostatların Matter desteklemesi bu yüzden önemli. Türkiye'de Apple Home ile çalışan akıllı kilit ve kamera seçenekleri sınırlı kaldığı için, bu ürünlerin buraya gelip gelmeyeceği iPhone kullanıcıları için belirleyici olacak. Apple şimdilik Türkiye için bir tarih açıklamadı."
+  ]
+ },
+ "apple-homeview-tanitildi-yuz-taniyan-akilli-ev-ekrani": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Akıllı ev ekranları kategorisi Amazon'un Echo Show ve Google'ın Nest Hub ürünleriyle oluştu; iki şirket de bu ürünleri genellikle düşük fiyatla satarak kullanıcıları kendi ekosistemlerine çekti. Apple'ın geç girişi, şirketin her kategoride izlediği \"ilk olmak yerine kendi yorumunu getirmek\" yaklaşımına uyuyor. Yüz tanıma ile kişiselleştirme, birden çok kişinin kullandığı ev cihazlarındaki en eski sorunlardan birine çözüm getiriyor. Türkiye açısından takip edilmesi gereken iki konu var: cihazın burada satışa çıkıp çıkmayacağı ve yüz tanımaya dayalı kişisel özelliklerin Türkçe arayüzde aynı şekilde çalışıp çalışmayacağı."
+  ]
+ },
+ "deepseek-ve-huawei-nvidia-cuda-ya-alternatif-olusturmak-icin-yeni-acik-kaynak-araclar-yayinladi": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "CUDA, NVIDIA'nın 2007'de tanıttığı paralel hesaplama platformu ve bugün yapay zekâ geliştirmede fiili standart. PyTorch ve TensorFlow gibi popüler kütüphaneler en iyi performansı NVIDIA kartlarında veriyor; bu da rakip donanım üreticileri için en büyük engel. AMD'nin ROCm'u ve Intel'in oneAPI'si de aynı sorunu aşmaya çalışan girişimler. ABD'nin Çin'e gelişmiş yapay zekâ çipi ihracatını kısıtlamasıyla, Çinli şirketler için yerli donanıma uygun yazılım ekosistemi kurmak ticari bir tercih olmaktan çıkıp zorunluluğa dönüştü."
+  ]
+ },
+ "e-ink-kaleido-4-tanitildi-renkli-e-kagit-daha-canli-ve-daha-hizli": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "E-kâğıt ekranlar, ışık yaymayıp ortam ışığını yansıttıkları için güneş altında rahat okunuyor ve yalnızca sayfa değiştiğinde enerji harcıyor. Bu yüzden e-kitap okuyucular haftalarca şarj gerektirmiyor. Renkli e-kâğıtta ise renk filtresi ışığın bir kısmını emdiği için görüntü siyah-beyaz ekrana göre daha soluk görünüyor. Kaleido 4'ün getirdiği parlaklık ve kontrast artışı bu temel sınırlamayı hafifletiyor. Türkiye'de Kindle, Kobo ve PocketBook'un renkli modelleri satılıyor; yeni ekranın bu modellere geçmesi genellikle birkaç ay sürüyor."
+  ]
+ },
+ "fairphone-fairbuds-2-icin-tarih-belli-tamir-edilebilir-kulaklik-yenileniyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Kablosuz kulaklıklar, içlerindeki küçük lityum pillerin değiştirilememesi nedeniyle en kısa ömürlü elektronik ürünlerden biri. Pil kapasitesi birkaç yıl içinde düştüğünde çoğu kullanıcı kulaklığı tamamen değiştiriyor; bu da hem maliyet hem de elektronik atık demek. Avrupa Birliği'nin taşınabilir cihazlarda kullanıcı tarafından değiştirilebilir pil şartını kademeli olarak getiren düzenlemesi, Fairphone'un yaklaşımını gelecekte sektörün geneline yayabilir. Fairphone ürünlerinin Türkiye'de yaygın bir satış kanalı yok, ancak tamir edilebilirlik tartışması burada da giderek daha çok konuşuluyor."
+  ]
+ },
+ "galaxy-s27-ne-zaman-cikacak-ocak-2027-iddiasi-ve-su-ana-kadar-bilinenler": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Samsung'un son yıllardaki takvimine bakınca Ocak iddiası şaşırtıcı değil: Galaxy S23, S24 ve S25 serileri Ocak ya da Şubat başında tanıtıldı ve tanıtımdan iki hafta kadar sonra satışa çıktı. Türkiye'de Samsung amiral gemileri genellikle küresel satışla aynı dönemde mağazalara geliyor ve ön sipariş kampanyaları depolama yükseltmesi ya da hediye aksesuar içeriyor. S27 serisinde fiyat tarafında en belirleyici etken, son dönemde yükselen bellek fiyatları olabilir; bu artışın etiketlere ne kadar yansıyacağı lansmanla netleşecek."
+  ]
+ },
+ "globalfoundries-fdx-fusion-duyuruldu-otomobil-ve-sensorler-icin-dusuk-guclu-cip-teknolojisi": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "FD-SOI teknolojisi, transistörlerin altına ince bir yalıtkan katman yerleştirerek kaçak akımı azaltıyor. Bu da özellikle pille çalışan cihazlarda ve otomobillerde önemli olan düşük güç tüketimini sağlıyor. Avrupa'da STMicroelectronics ve Samsung da bu teknolojiyi kullanıyor. Otomobil çipleri, telefon işlemcilerinden farklı olarak geniş sıcaklık aralığında çalışmak ve on yıldan uzun süre üretimde kalmak zorunda. 2021'deki çip krizinde otomobil üretiminin durması, bu tür \"olgun\" üretim teknolojilerinin de en yeni teknolojiler kadar kritik olduğunu göstermişti."
+  ]
+ },
+ "globalfoundries-ve-tsmc-arasinda-2-milyar-dolarlik-yapay-zeka-cipi-anlasmasi": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Gelişmiş paketleme, yapay zekâ çiplerinde son yıllarda en büyük darboğaz haline geldi. NVIDIA'nın üst düzey hızlandırıcıları TSMC'nin CoWoS paketleme teknolojisini kullanıyor ve bu kapasite uzun süre talebi karşılayamadı. Silikon ara katman (interposer), grafik işlemciyi yanındaki yüksek bant genişlikli bellek (HBM) yığınlarına binlerce ince bağlantıyla bağlayan parça. Bu bileşenin ABD'de üretilmesi, ülkenin çip üretimini yerelleştirmeye yönelik CHIPS Yasası hedefleriyle de örtüşüyor."
+  ]
+ },
+ "google-gemini-4-argon-kullanima-acildi-sohbetten-cok-is-bitirmeye-odaklaniyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Yapay zekâ şirketlerinin \"ajan\" dediği bu yaklaşımda model, yalnızca yanıt üretmek yerine araçları kullanıyor, birden çok adımı planlıyor ve sonucu kontrol ediyor. Google'ın avantajı, Gmail, Takvim, Drive ve Haritalar gibi milyarlarca kişinin kullandığı uygulamalara doğrudan erişebilmesi. Aynı alanda OpenAI, Anthropic ve Microsoft da benzer ürünler geliştiriyor. Türkiye'deki kullanıcılar için kritik nokta, bu özelliklerin Türkçe ve Türkiye'deki hizmetlerle ne kadar iyi çalışacağı; önceki Gemini özellikleri genellikle önce ABD'de ve İngilizce olarak açılmıştı."
+  ]
+ },
+ "googlebook-dizustuler-magazalarda-chromebook-tan-sonra-android-merkezli-yeni-donem": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Chromebook'lar 2011'den bu yana özellikle ABD'deki okullarda yaygınlaştı ama Türkiye'de hiçbir zaman büyük bir pazar payı yakalayamadı. Bunun bir nedeni, Chrome OS'in internet tarayıcısı merkezli yapısının Windows'a alışkın kullanıcılara sınırlı gelmesiydi. Android uygulamalarının ve telefonla entegrasyonun merkeze alınması bu algıyı değiştirebilir, çünkü Türkiye'de akıllı telefonların büyük çoğunluğu Android kullanıyor. Googlebook modellerinin Türkiye'de satışa çıkıp çıkmayacağı henüz açıklanmadı."
+  ]
+ },
+ "huawei-pura-90s-matepad-air-2026-watch-kids-x1": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Huawei, 2019'daki ABD yaptırımlarından sonra Google servislerine erişimini kaybetti ve Çin dışındaki telefon satışları ciddi şekilde düştü. Şirket buna kendi işletim sistemi HarmonyOS ve uygulama mağazası AppGallery ile yanıt verdi. Türkiye'de Huawei telefon, tablet ve akıllı saatleri resmi olarak satılmaya devam ediyor; özellikle akıllı saat ve tablet tarafında Google servislerinin eksikliği daha az hissedildiği için marka bu kategorilerde güçlü. Çocuk saati segmentinde ebeveynlerin dikkat etmesi gereken nokta, SIM kart desteği ve konum takibinin hangi operatörlerle çalıştığı."
+  ]
+ },
+ "intel-gpu-d-series-tanitildi-yapay-zeka-cikarimi-icin-hava-sogutmali-hizlandirici": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Yapay zekâ donanımında eğitim ve çıkarım iki farklı ihtiyaç. Eğitim, büyük modelleri haftalarca binlerce çipte işlemeyi gerektiriyor ve bu pazar büyük ölçüde NVIDIA'nın elinde. Çıkarım ise eğitilmiş modelin her kullanıcı isteğine yanıt vermesi; bu işin toplam maliyeti, model kullanımı arttıkça eğitimi geçebiliyor. Bu yüzden Intel, AMD ve Google gibi şirketler çıkarım odaklı, daha verimli çipler geliştiriyor. Hava soğutma vurgusu da önemli: sıvı soğutmalı sunucu altyapısı kurmak birçok veri merkezi için pahalı ve zaman alıcı."
+  ]
+ },
+ "lg-oled-w6-wallpaper-tv-turkiyede": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "LG, 2017'de ilk Wallpaper OLED'i (W7) tanıttığında televizyonu bir tablo gibi duvara yapıştırma fikri büyük ilgi görmüştü; ancak yüksek fiyat nedeniyle seri sonraki yıllarda geri plana çekilmişti. OLED panellerin kendi ışığını üreten yapısı, arka aydınlatma katmanı gerektirmediği için bu kadar ince tasarımları mümkün kılıyor. Kablosuz görüntü aktarımı ise duvara monte edilen televizyonlardaki en büyük sorunu, kablo ve priz yerleşimini çözüyor. Kataloğumuzda LG'nin W serisi modelleri de yer alıyor; fiyat ve özellik karşılaştırması için ilgili ürün sayfalarına bakabilirsiniz."
+  ]
+ },
+ "microsoft-copilot-windows-ta-dosyalari-yonetebilecek-hybrid-intelligence-tanitildi": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Microsoft, 2024'te Copilot+ PC adıyla NPU'lu bilgisayarları tanıtırken yerel yapay zekânın önemini vurgulamıştı; Hybrid Intelligence bu yaklaşımın devamı gibi görünüyor. Yerel modeller dosya adları ve içerikleri gibi kişisel verileri buluta göndermeden işleyebiliyor, daha karmaşık görevlerde ise bulut modelleri devreye giriyor. Microsoft'un daha önceki Recall özelliği gizlilik eleştirileri nedeniyle ertelenmişti; dosya sistemine erişen bir yapay zekâ ajanının da benzer sorularla karşılaşması muhtemel. Özellik için gereken donanım ve Türkçe desteği henüz netleşmedi."
+  ]
+ },
+ "mistral-large-4-duyuruldu-avrupa-dan-yeni-acik-agirlikli-yapay-zeka-modeli": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Mistral, 2023'te Paris'te kurulan ve kısa sürede Avrupa'nın en değerli yapay zekâ şirketlerinden biri haline gelen bir girişim. Açık ağırlıklı model yaklaşımı, Avrupa'daki veri koruma kuralları (GDPR) ve AB Yapay Zekâ Yasası nedeniyle verilerini kendi sunucularında tutmak isteyen kurumlar için cazip. Açık ağırlıklı modellerde Meta'nın Llama serisi, Çinli DeepSeek ve Qwen modelleri de güçlü rakipler. Türkçe performans bu modellerde genellikle İngilizceden zayıf kalıyor; Türkiye'deki şirketler için bu nokta test edilmeden karar verilmemeli."
+  ]
+ },
+ "msi-dan-128-gb-ram-li-yeni-dizustu-prestige-n16-flip-ai-geliyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Yerel yapay zekâ modellerini çalıştırmak için en kritik kaynak işlemci gücünden çok bellek. Büyük bir dil modelinin tamamı belleğe sığmazsa çalışma hızı dramatik şekilde düşüyor. Bu yüzden 64 GB ve üzeri birleşik bellekli bilgisayarlar, geliştiriciler ve yapay zekâ ile çalışanlar arasında giderek daha çok ilgi görüyor; Apple'ın M serisi MacBook Pro modelleri bu alanda uzun süredir tercih ediliyordu. Dönüştürülebilir tasarım ise kalem ve dokunmatik kullanımı da mümkün kılıyor. Kataloğumuzda MSI'ın diğer Prestige modelleri de yer alıyor."
+  ]
+ },
+ "qualcomm-dan-yeni-mobil-islemciler-telefonlar-yerel-yapay-zekada-gucleniyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Snapdragon 8 serisi, Android dünyasındaki amiral gemisi telefonların büyük bölümünde kullanılıyor ve her yıl Samsung Galaxy S, Xiaomi, OnePlus ve Honor'un üst modellerine giriyor. Yerel yapay zekânın önemi iki noktada: gizlilik, çünkü veriler telefondan çıkmıyor, ve hız, çünkü sunucuya gidip gelme süresi yok. Ancak büyük modelleri telefonda çalıştırmak pil ve ısınma açısından zorlu. Yeni işlemcilerin bu dengeyi nasıl kurduğu, ilk telefonlar test edildiğinde netleşecek."
+  ]
+ },
+ "ray-ban-meta-audio-icin-on-siparis-13-ekim-de-basliyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Ray-Ban Meta gözlükleri, kameralı sürümüyle akıllı gözlük kategorisinin en çok satan ürünü haline geldi ve EssilorLuxottica ile Meta'nın ortaklığı bu pazarda büyük bir avantaj sağladı. Kamerasız bir sürüm, kamerayla ilgili gizlilik endişeleri yüzünden akıllı gözlük kullanmak istemeyenlere yönelik. Bu ürün aslında kulaklık ile gözlük arasında bir yerde duruyor: açık kulak tasarımı çevreyi duymanızı sağlıyor ama ses yalıtımı yok. Meta'nın yapay zekâ özellikleri bölgeye göre farklı zamanlarda açıldığı için, yurt dışından alınan bir gözlükte bu özelliklerin Türkiye'de tam çalışmayabileceğini hesaba katmak gerekiyor."
+  ]
+ },
+ "reflection-beam-tanitildi-501-milyar-parametreli-acik-agirlikli-model": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Mixture-of-experts (MoE) mimarisi, son dönemde büyük dil modellerinde standart haline geldi. Modelde çok sayıda \"uzman\" alt ağ bulunuyor ve her istek için bunların yalnızca küçük bir bölümü çalışıyor. Böylece model çok büyük bir bilgi kapasitesine sahip olurken her yanıtın maliyeti daha düşük kalıyor. DeepSeek, Mixtral ve Qwen gibi açık modeller de bu yaklaşımı kullanıyor. Ancak tüm parametrelerin bellekte tutulması gerektiği için bu tür modelleri kendi sunucularında çalıştırmak isteyen kurumların yine de güçlü donanıma ihtiyacı var."
+  ]
+ },
+ "samsung-un-ucuncu-ceyrek-kar-tahmini-yapay-zeka-bellek-talebini-gosterdi": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Bellek pazarı tarihsel olarak döngüsel bir pazar: talep arttığında fiyatlar yükseliyor, üreticiler kapasite ekliyor, ardından arz fazlası fiyatları düşürüyor. Yapay zekâ veri merkezlerinin yüksek bant genişlikli bellek (HBM) talebi bu döngüyü farklılaştırdı, çünkü HBM üretimi standart DRAM'e göre çok daha fazla kapasite kullanıyor. Pazarın üç büyük oyuncusu Samsung, SK hynix ve Micron. Bu durumun tüketiciye yansıması, telefon ve dizüstü fiyatlarında RAM ve depolamaya bağlı artışlar olarak görülüyor; yüksek bellekli modellerin fiyat farkı açılıyor."
+  ]
+ },
+ "standart-playstation-5-e-yapay-zeka-destekli-goruntu-yukseltme-geliyor": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Yapay zekâ destekli görüntü yükseltme, oyunu daha düşük çözünürlükte işleyip sonucu yapay zekâ ile daha yüksek çözünürlüğe çıkarma tekniği. NVIDIA'nın DLSS'i bu alanı popüler hale getirdi; AMD'nin FSR'ı ve Intel'in XeSS'i de benzer çözümler. PS5 Pro'nun PSSR'ı, Sony'nin bu tekniği konsolda kullanan ilk adımıydı. Standart PS5'te bu tür bir teknolojinin çalışması, donanım yenilemeden görüntü kalitesinin artabileceği anlamına geliyor. PS5 Pro'nun Türkiye'deki yüksek fiyatı düşünüldüğünde bu güncelleme, standart konsol sahipleri için ayrıca değerli."
+  ]
+ },
+ "toshiba-hdd-uretimini-iki-katina-cikaracak-30-tb-diskler-icin-hazirlik-basladi": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "Nearline HDD, veri merkezlerinde sürekli çalışan ama SSD kadar hızlı erişim gerektirmeyen veriler için kullanılan sabit disk sınıfı. Terabayt başına maliyette HDD'ler hâlâ SSD'lerin oldukça altında; bu yüzden yedekler, arşivler ve yapay zekâ eğitimi için toplanan büyük veri setleri HDD'lerde tutuluyor. MAMR ve Seagate'in kullandığı HAMR, plakalara daha yoğun veri yazmayı sağlayan teknolojiler. Bu yatırımlar doğrudan ev kullanıcısına yönelik değil, ancak bulut depolama hizmetlerinin fiyatlarını uzun vadede etkileyebilir."
+  ]
+ },
+ "yeni-homepod-mini-tanitildi-s10-cip-ev-sinemasi-destegi-ve-9-999-tl-fiyat": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "HomePod mini, Apple'ın Amazon Echo ve Google Nest akıllı hoparlörlerine verdiği yanıt olarak 2020'de piyasaya çıkmıştı. Yeni modelin Türkiye fiyatının 9.999 TL olarak açıklanması, ürünün burada da doğrudan satılacağını gösteriyor. Ev sineması desteği, ayrı bir soundbar almadan Apple TV 4K ile surround ses kurmak isteyenler için ilginç bir seçenek. Ancak dört hoparlörün toplam maliyeti, birçok orta segment soundbar sisteminden yüksek; bu yüzden karar verirken bu karşılaştırmayı yapmakta fayda var."
+  ]
+ }
+}

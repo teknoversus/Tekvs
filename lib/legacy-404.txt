@@ -1,4 +1,5 @@
 # Search Console'da 404 görünen eski adresler (lib/site-quality.js yönlendirir).
+# "adres | hedef" biçimi hedefi elle belirler.
 # Bozuk biçimli adresler (ör. /urun/Belirtilmemiş) bilerek eklenmedi: 404 doğru yanıt.
 karsilastir/anker-soundcore-r50i-nc-vs-xiaomi-buds-4.html
 karsilastir/apple-airpods-4-y28-vs-beats-studio-buds-y29.html
@@ -39,4 +40,4 @@ liste/30000-60000-kulaklik.html
 liste/kalem-kulaklik.html
 liste/uzun-pil-kulaklik.html
 marka/redmi-kulaklik.html
-urun/dell-vostro-3520-n2062pvnb3520u-32gb-512gb-comp_20260924_16.html
+urun/dell-vostro-3520-n2062pvnb3520u-32gb-512gb-comp_20260924_16.html | /dizustu.html

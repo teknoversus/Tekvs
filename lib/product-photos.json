@@ -367,5 +367,77 @@
  "p_new_031": {
   "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-card-40-se-202609_GEO_TR?wid=800&hei=800&fmt=jpeg&qlt=90",
   "credit": "Apple"
+ },
+ "tv4": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/p/p8l/id/65-1.png",
+  "credit": "TCL"
+ },
+ "tv36": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/p/p8l/id/55-1.png",
+  "credit": "TCL"
+ },
+ "tv7": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/p/p8l/id/75-1.png",
+  "credit": "TCL"
+ },
+ "tv46": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/p/p8k/id/65-55-1.png",
+  "credit": "TCL"
+ },
+ "tv34": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/p/p7l/id/1.png",
+  "credit": "TCL"
+ },
+ "tv30": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c7l/id/1.png",
+  "credit": "TCL"
+ },
+ "tvpop009": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c7k/id/1.png",
+  "credit": "TCL"
+ },
+ "tvpop010": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c7k/id/1.png",
+  "credit": "TCL"
+ },
+ "tv134": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c7k/id/1.png",
+  "credit": "TCL"
+ },
+ "tv104": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c7k/id/1.png",
+  "credit": "TCL"
+ },
+ "tv114": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/98/1.png",
+  "credit": "TCL"
+ },
+ "tvpop012": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/1.png",
+  "credit": "TCL"
+ },
+ "tvpop011": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tvpop013": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/98c6k/id/1.png",
+  "credit": "TCL"
+ },
+ "tcl_11gen2": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/global/products/tablets/tcl-tab-11-gen2/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tcl_10l2": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/global/products/tablets/tcl-tab-10l-gen-2/id/01.jpg",
+  "credit": "TCL"
+ },
+ "tcl_10gen2": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/global/products/tablets/tcl-tab-10-gen-2/id-images/15.jpeg",
+  "credit": "TCL"
+ },
+ "p_tcl_30_se": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/global/products/smartphones/category-display/tcl30se-pc.png",
+  "credit": "TCL"
  }
 }

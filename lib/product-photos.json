@@ -231,5 +231,141 @@
  "huawei-pura-90s-pro-max": {
   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/phones/pura90s-pro-max/img/kv/kv-2x.webp",
   "credit": "Huawei"
+ },
+ "n7": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tv5": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tv13": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tv20": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u75a/id/75-id-1.jpg",
+  "credit": "iFFALCON"
+ },
+ "tvpop016": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u85a/98/id/85-1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop017": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u85a/98/id/85-1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop018": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u85a/98/id/85-1.png",
+  "credit": "iFFALCON"
+ },
+ "tv16": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u65/id/1-75.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop019": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u65/id/1-75.png",
+  "credit": "iFFALCON"
+ },
+ "tv19": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop020": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop021": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "redmi-note-17-4g": {
+  "url": "https://i02.appmifile.com/855_operatorx_operatorx_xm/21/08/2026/9a19ea4018b8b60b2e5c0b3dd8a28d0e.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-note-17-5g": {
+  "url": "https://i02.appmifile.com/908_operatorx_operatorx_xm/21/08/2026/e1c03c0804173504ce4751e78dd64f77.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-note-17-pro-5g": {
+  "url": "https://i02.appmifile.com/548_item_tr/31/08/2026/f2fc07c13a1f49613a6f5f0bfdbfa54d.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-note-17-pro-max": {
+  "url": "https://i02.appmifile.com/971_operatorx_operatorx_xm/25/08/2026/9abcec589ffdae27584fc0f82a2bad22.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-note-15-pro-plus-5g-2026": {
+  "url": "https://i02.appmifile.com/13_item_tr/29/12/2025/08843fabf4f7716f1412efdccc9f6c52.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-note-15-pro-5g-2026": {
+  "url": "https://i02.appmifile.com/90_item_tr/29/12/2025/8ae3676897da169eab83eb7e013447c0.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-15-5g-2026": {
+  "url": "https://i02.appmifile.com/87_item_tr/22/04/2026/3b0bf92663677a9db1a6d2aaa09ef651.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-15c-5g-2026": {
+  "url": "https://i02.appmifile.com/816_item_tr/22/04/2026/270548680fdb9680db9b41a341be4312.png",
+  "credit": "Xiaomi"
+ },
+ "t47": {
+  "url": "https://i02.appmifile.com/699_item_tr/16/06/2025/152f67891a020f856a0add8f6acc82e8.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-17-5g": {
+  "url": "https://i02.appmifile.com/50_operatorx_operatorx_xm/04/08/2026/6661b93596b4014675eb5bb511457230.png",
+  "credit": "Xiaomi"
+ },
+ "redmi-17": {
+  "url": "https://i02.appmifile.com/902_operatorx_operatorx_xm/04/08/2026/930209965a91eb47d6eab7bf7c23766b.png",
+  "credit": "Xiaomi"
+ },
+ "p_mid_03": {
+  "url": "https://i02.appmifile.com/460_item_tr/07/01/2025/2bf3c7127b82000d62a74778f95dfeab.png",
+  "credit": "Xiaomi"
+ },
+ "p_1787680633621_71": {
+  "url": "https://i02.appmifile.com/452_item_tr/07/01/2025/49f223d3d10622ce01a3d5713381d89c.png",
+  "credit": "Xiaomi"
+ },
+ "n48": {
+  "url": "https://i02.appmifile.com/191_item_tr/22/01/2024/1d202fa9350928c763209324151a769d.png",
+  "credit": "Xiaomi"
+ },
+ "h4": {
+  "url": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "n4": {
+  "url": "https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/tile/Apple-iPhone-15-lineup-hero-230912.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "n2": {
+  "url": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_design_09142021.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "h1": {
+  "url": "https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-240909-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "n5": {
+  "url": "https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/tile/Apple-iPhone-16-lineup-240909-lp.jpg.og.jpg",
+  "credit": "Apple"
+ },
+ "p_apple_2026_apple_watch_series_12": {
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-card-40-s12-202609_GEO_TR?wid=800&hei=800&fmt=jpeg&qlt=90",
+  "credit": "Apple"
+ },
+ "p_apple_2026_apple_watch_ultra_4": {
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-card-40-ultra4-202609_GEO_TR?wid=800&hei=800&fmt=jpeg&qlt=90",
+  "credit": "Apple"
+ },
+ "p_new_031": {
+  "url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-card-40-se-202609_GEO_TR?wid=800&hei=800&fmt=jpeg&qlt=90",
+  "credit": "Apple"
  }
 }

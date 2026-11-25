@@ -10,6 +10,7 @@ for page in open('onizleme/sayfalar.txt').read().split():
     h=h.replace('\\u002F','/').replace('\\/','/')
     found=set(re.findall(r'(?:https?:)?//[^"\'\s()<>]+?\.(?:jpe?g|png|webp|avif)',h,re.I))
     found|=set(re.findall(r'[\w./-]*/product/\d+/zip/[^"\'\s()<>]+',h))
+    found|=set(re.findall(r'[\w./-]*images?/[\w./-]+?\.(?:jpe?g|png|webp|avif)',h,re.I))
     for u in sorted(found):
         if not re.search(r'icon|logo|_nuxt|sprite|flag|qrcode|wechat',u,re.I): out.write(u+'\n')
     for m in re.findall(r'og:image"[^>]*',h)[:2]: out.write(m+'\n')

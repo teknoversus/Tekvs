@@ -12,7 +12,7 @@
 const vm = require('vm');
 const fs = require('fs');
 const path = require('path');
-const { generateSite, illustrationFor, productImageFor, setProductPhotos } = require('./lib/generate-site');
+const { generateSite, illustrationFor, productImageFor, setProductPhotos, productPhotoFor } = require('./lib/generate-site');
 const { buildProductPhotos } = require('./lib/product-photos');
 const { generateComparisons } = require('./lib/generate-comparisons');
 const { linkHeroComparisons } = require('./lib/link-hero-comparisons');
@@ -228,7 +228,7 @@ async function main(){
   console.log('→ Alt kategori sayfaları üretiliyor...');
   generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
 
-  generatePopulerKarsilastirmalar({ products, computeScores: helpers.computeScores, rootDir });
+  generatePopulerKarsilastirmalar({ products, computeScores: helpers.computeScores, rootDir, productPhotoFor });
 
   refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir, cardSpecEntries: helpers.cardSpecEntries });
 

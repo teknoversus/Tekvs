@@ -215,5 +215,21 @@
  "tv65m80h": {
   "url": "https://images.samsung.com/is/content/samsung/p6pim/uk/ue65m80hauxxu/gallery/uk-mini-led-m80h-ue65m80hauxxu-553427851.webp?$1164_776_PNG$",
   "credit": "Samsung"
+ },
+ "tv103": {
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/uk/mre115mr95fxxu/gallery/uk-microrgb-115r95h-mre115mr95fxxu-549496402?$720_576_JPG$",
+  "credit": "Samsung"
+ },
+ "tv100": {
+  "url": "https://www.lg.com/no/images/tv/md09003525/gallery/medium01.jpg",
+  "credit": "LG"
+ },
+ "p_new_016": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-ultimate-2/new/new/huawei-watch-ulitimate-2-kv.jpg",
+  "credit": "Huawei"
+ },
+ "huawei-pura-90s-pro-max": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/phones/pura90s-pro-max/img/kv/kv-2x.webp",
+  "credit": "Huawei"
  }
 }

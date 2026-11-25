@@ -231,5 +231,21 @@
  "huawei-pura-90s-pro-max": {
   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/phones/pura90s-pro-max/img/kv/kv-2x.webp",
   "credit": "Huawei"
+ },
+ "n7": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tv5": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tv13": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tv20": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u75a/id/75-id-1.jpg",
+  "credit": "iFFALCON"
  }
 }

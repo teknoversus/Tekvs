@@ -171,5 +171,65 @@
  "poco-x8-pro-2026": {
   "url": "https://i02.appmifile.com/679_operatorx_operatorx_xm/13/03/2026/0ffb8c8e38e2f48fa86dcab9f5fc3be9.png",
   "credit": "Xiaomi"
+ },
+ "y54": {
+  "url": "https://www.oneplus.com/content/dam/oasis/page/2024/global/product/almond/share-image.png",
+  "credit": "OnePlus"
+ },
+ "n09": {
+  "url": "https://cdn.shopify.com/s/files/1/0516/3761/6830/files/soundcore-liberty-5-pro-noise-cancelling-earbuds.png",
+  "credit": "Soundcore"
+ },
+ "p02": {
+  "url": "https://cdn.shopify.com/s/files/1/0516/3761/6830/files/Group_8_1.png",
+  "credit": "Soundcore"
+ },
+ "p16": {
+  "url": "https://api.myearfun.com/image/product/6283neazfkbjvziz2xr.jpg",
+  "credit": "EarFun"
+ },
+ "tv3": {
+  "url": "https://www.lg.com/no/images/tv/md07594931/gallery/1-1100.jpg",
+  "credit": "LG"
+ },
+ "tv2": {
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/uk/qe55qn80fauxxu/gallery/uk-qled-qn80f-qe55qn80fauxxu-555188840?$720_576_JPG$",
+  "credit": "Samsung"
+ },
+ "tv24": {
+  "url": "https://www.lg.com/no/images/tv/md08801464/gallery/medium01.jpg",
+  "credit": "LG"
+ },
+ "tv15": {
+  "url": "https://www.lg.com/no/images/tv/md08801462/gallery/medium01.jpg",
+  "credit": "LG"
+ },
+ "tv28": {
+  "url": "https://www.lg.com/no/images/tv/md07604960/gallery/medium01.jpg",
+  "credit": "LG"
+ },
+ "p_new_054": {
+  "url": "https://www.oneplus.com/content/dam/oasis/page/2024/global/product/bagel/share.jpg",
+  "credit": "OnePlus"
+ },
+ "tv65m80h": {
+  "url": "https://images.samsung.com/is/content/samsung/p6pim/uk/ue65m80hauxxu/gallery/uk-mini-led-m80h-ue65m80hauxxu-553427851.webp?$1164_776_PNG$",
+  "credit": "Samsung"
+ },
+ "tv103": {
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/uk/mre115mr95fxxu/gallery/uk-microrgb-115r95h-mre115mr95fxxu-549496402?$720_576_JPG$",
+  "credit": "Samsung"
+ },
+ "tv100": {
+  "url": "https://www.lg.com/no/images/tv/md09003525/gallery/medium01.jpg",
+  "credit": "LG"
+ },
+ "p_new_016": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-ultimate-2/new/new/huawei-watch-ulitimate-2-kv.jpg",
+  "credit": "Huawei"
+ },
+ "huawei-pura-90s-pro-max": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/phones/pura90s-pro-max/img/kv/kv-2x.webp",
+  "credit": "Huawei"
  }
 }

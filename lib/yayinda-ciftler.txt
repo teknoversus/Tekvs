@@ -2247,6 +2247,7 @@ tv26|tvpop012	lg-55qned70b6c-vs-tcl-75c8l-86580a211eef.html
 tv26|tvpop011	lg-55qned70b6c-vs-tcl-85c6k-fffc51adbe70.html
 tv15|y60	lg-55qned87b6a-vs-hisense-55u7-b0610bb1cb3d.html
 tv15|tv6	lg-55qned87b6a-vs-samsung-55qn70f-441f72e7db71.html
+tv15|tv65m80h	lg-55qned87b6a-vs-samsung-65m80h-d83b7be9a7c2.html
 tv15|y59	lg-55qned87b6a-vs-tcl-65c655-c35e0eafe7b9.html
 tv15|tv7	lg-55qned87b6a-vs-tcl-75p8l-96f079fa8def.html
 tv15|tvbrand016	lg-55qned87b6a-vs-xiaomi-tv-a-pro-75-2026-4884e66041f9.html
@@ -3190,6 +3191,7 @@ tvpop001|tvpop021	samsung-55q80f-vs-iffalcon-85u95a-be0775bccb31.html
 tvpop001|tvpop027	samsung-55q80f-vs-philips-75mled910-be20c3e5901e.html
 tvpop001|tvpop015	samsung-55q80f-vs-tcl-65q7c-94ee2379e581.html
 tv6|tvbrand002	samsung-55qn70f-vs-arcelik-a-1065-c-ai-0f3f2c9ee31c.html
+tv6|tv65m80h	samsung-55qn70f-vs-samsung-65m80h-c9393f112192.html
 tv6|y59	samsung-55qn70f-vs-tcl-65c655-bb0c9ebef105.html
 tv6|x9	samsung-55qn70f-vs-xiaomi-tv-a-pro-55-41c4833a4b6c.html
 tv6|tvbrand016	samsung-55qn70f-vs-xiaomi-tv-a-pro-75-2026-71ae4c0b8378.html
@@ -3200,6 +3202,8 @@ tv2|x35	samsung-55qn80f-vs-philips-55pus8118-06abca00b8cc.html
 tv2|tvbrand035	samsung-55qn80f-vs-seg-65sbu740-a52a32ef905d.html
 tv2|tvbrand015	samsung-55qn80f-vs-xiaomi-tv-a-65-2026-f59735150fc8.html
 tv2|x9	samsung-55qn80f-vs-xiaomi-tv-a-pro-55-3e86d8cd8f72.html
+tv65m80h|tv7	samsung-65m80h-vs-tcl-75p8l-6fc1233fa10c.html
+tv65m80h|tvbrand016	samsung-65m80h-vs-xiaomi-tv-a-pro-75-2026-bc4131cd99be.html
 tv48|tvpop018	samsung-65q7fa-vs-iffalcon-75u85a-918aa5dd346c.html
 tvpop002|tvpop020	samsung-65q80f-vs-iffalcon-98u95a-4728c036bddf.html
 tvpop002|tvpop009	samsung-65q80f-vs-tcl-65c7k-0c42b541d644.html

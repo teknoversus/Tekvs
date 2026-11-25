@@ -1,45 +1,51 @@
 {
  "_aciklama": "Elle yazılmış marka sayfası notları. Anahtar: marka/<slug>.html sayfasının slug'ı.",
  "realme-telefon": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "Realme, orta segmentte kavisli AMOLED ekranı, hızlı şarjı ve şık tasarımı uygun fiyata sunmasıyla tanınıyor. Kataloğumuzdaki modellerin ağırlığı da bu bantta: 12 Pro+, 13 Pro+ ve 14 Pro+ benzer bir formülü her yıl biraz geliştiriyor. GT 6 ise performans odaklı serinin temsilcisi; oyun oynayanlar için Pro+ modellerinden daha güçlü bir işlemci sunuyor.",
-   "Realme seçerken dikkat edilmesi gereken iki nokta var. Birincisi suya dayanıklılık: modellerin çoğu IP65, yani yağmurdan korunuyor ama suya düşmeye karşı garantili değil. İkincisi arayüz: Realme UI kurulumda bazı ek uygulamalarla geliyor, bunları ilk açılışta kaldırmanızı öneririz. Giriş seviyesinde C67, temel kullanım için uygun ama ekranı LCD."
+   "Realme seçerken dikkat edilmesi gereken iki nokta var. Birincisi suya dayanıklılık: modellerin çoğu IP65, yani yağmurdan korunuyor ama suya düşmeye karşı garantili değil. İkincisi arayüz: Realme UI kurulumda bazı ek uygulamalarla geliyor, bunları ilk açılışta kaldırmanızı öneririz. Giriş seviyesinde C67, temel kullanım için uygun ama ekranı LCD.",
+   "Kataloğumuzdaki Realme fiyatları 10.000 TL'nin hemen altındaki C67'den başlıyor, Pro+ modelleri 22.500-28.000 TL bandında, GT 6 ise 36.000 TL civarında. 12 Pro+, 13 Pro+ ve 14 Pro+ arasındaki fiyat farkı en fazla 5.500 TL civarında; bu yüzden en yeni modelin getirdiği kamera ve pil iyileştirmesi için küçük bir ek ödeme yeterli. C67 ise ikinci telefon ya da yalnızca temel kullanım için mantıklı."
   ]
  },
  "apple-kulaklik": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "Kataloğumuzda Apple'ın kulaklık tarafında AirPods 5'in iki sürümü bulunuyor: standart kutulu ve kablosuz şarj kutulu. İki model arasında ses ve gürültü engelleme açısından fark yok; tek fark kutunun kablosuz şarj desteği. Kablosuz şarj cihazınız yoksa standart sürüm yeterli.",
-   "AirPods, iPhone ile kullanıldığında anında eşleşme, cihazlar arasında otomatik geçiş ve Bul uygulamasıyla kaybolan kulaklığı bulma gibi kolaylıklar sunuyor. Android telefonda da çalışıyor ama bu özelliklerin çoğu kayboluyor; Android kullanıyorsanız aynı fiyata daha fazla özellik sunan alternatiflere bakmak daha mantıklı."
+   "AirPods, iPhone ile kullanıldığında anında eşleşme, cihazlar arasında otomatik geçiş ve Bul uygulamasıyla kaybolan kulaklığı bulma gibi kolaylıklar sunuyor. Android telefonda da çalışıyor ama bu özelliklerin çoğu kayboluyor; Android kullanıyorsanız aynı fiyata daha fazla özellik sunan alternatiflere bakmak daha mantıklı.",
+   "Fiyat tarafında kataloğumuzdaki tablo net: AirPods 4 7.000 TL civarından başlıyor, gürültü engellemeli AirPods 4 ANC yaklaşık 9.000 TL, AirPods Pro 3 yaklaşık 15.500 TL, kulak üstü AirPods Max 2 ise 30.000 TL'ye yaklaşıyor. Beats tarafında Powerbeats Pro 2 sporcular için kulak kancalı bir tasarım sunuyor, Beats Studio Pro ise AirPods Max'in yarı fiyatına kulak üstü bir alternatif. Gürültü engelleme sizin için önemliyse en mantıklı basamak AirPods 4 ANC; aradaki 2.000 TL civarındaki fark, metroda ve uçakta hissedilir bir sessizlik sağlıyor."
   ]
  },
  "oppo-telefon": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "Oppo'nun kataloğumuzdaki modelleri dört farklı segmente yayılıyor. Find X7 Ultra çift periskop kamerasıyla kamera odaklı bir amiral gemisi; Reno 12 Pro ve Reno11 ince tasarım ve portre kamerasıyla orta-üst segmentte; A60 ise giriş seviyesinde. Bu yüzden ortalama skor markanın genel kalitesini değil, farklı segmentlerin karışımını yansıtıyor.",
-   "Oppo'nun ColorOS arayüzü akıcı ve sade; uzun süreli kullanımda performans düşüşü az. Find X7 Ultra'nın IP68 sertifikası varken Reno modelleri IP65'te kalıyor. Oppo ile Realme aynı şirket grubunun parçası olduğu için iki markanın yazılımları ve şarj teknolojileri birbirine çok yakın."
+   "Oppo'nun ColorOS arayüzü akıcı ve sade; uzun süreli kullanımda performans düşüşü az. Find X7 Ultra'nın IP68 sertifikası varken Reno modelleri IP65'te kalıyor. Oppo ile Realme aynı şirket grubunun parçası olduğu için iki markanın yazılımları ve şarj teknolojileri birbirine çok yakın.",
+   "Fiyat tarafında Oppo'nun kataloğumuzdaki yelpazesi geniş: A60 yaklaşık 11.000 TL, Reno11 19.000 TL civarında, Reno 12 Pro 29.000 TL ve Find X7 Ultra 70.000 TL civarında. Find X7 Ultra'nın fiyatı yeni nesil Find X modelleri çıktıkça düşüyor; kamera odaklı bir amiral gemisi arıyorsanız takip etmeye değer. Reno serisinde ise bir önceki nesli almak, ince tasarımı ve hızlı şarjı korurken bütçede belirgin tasarruf sağlıyor."
   ]
  },
  "gopro-kamera": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "GoPro, aksiyon kamerası denince akla gelen ilk marka ve kataloğumuzdaki modeller bunun neden böyle olduğunu gösteriyor. HERO12 ve HERO13 Black, sağlam kasası, güçlü görüntü sabitlemesi ve aksesuar ekosistemiyle bisiklet, kayak ve dalış çekimleri için standart. HERO9 Black daha eski ama ön ekranı sayesinde vlog için hâlâ kullanılabiliyor. MAX2 ise 360 derece çekim yapan model.",
-   "GoPro'yu DJI'ın Osmo Action serisiyle karşılaştırırken pil ömrü ve düşük ışık performansına dikkat edin; son nesillerde DJI bu alanlarda öne geçti. GoPro'nun avantajı ise geniş aksesuar seçeneği ve yazılım desteği."
+   "GoPro'yu DJI'ın Osmo Action serisiyle karşılaştırırken pil ömrü ve düşük ışık performansına dikkat edin; son nesillerde DJI bu alanlarda öne geçti. GoPro'nun avantajı ise geniş aksesuar seçeneği ve yazılım desteği.",
+   "Kataloğumuzdaki fiyatlar GoPro'nun nesil farkını iyi gösteriyor: HERO9 Black 15.000 TL civarında, HERO12 ve HERO13 Black 22.000-25.000 TL arasında, 360 derece çeken MAX2 yaklaşık 68.000 TL. Yeni başlayan biri için HERO12 ile HERO13 arasındaki fark çoğu çekimde sınırlı kalıyor; değiştirilebilir lens modları ve daha büyük batarya isteyenler HERO13'e yönelmeli. Mission 1 Pro ise kataloğumuzda HERO serisinin dışında kalan ve fiyatı 50.000 TL'yi aşan bir model."
   ]
  },
  "tecno-telefon": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "Tecno, Türkiye pazarına girdiği günden bu yana uygun fiyata büyük ekran, büyük batarya ve yüksek megapiksel kamera sunarak öne çıkıyor. Kataloğumuzda Camon serisi kamera ve tasarıma, Pova serisi büyük bataryaya (Pova 6 Pro'da 6.000 mAh), Spark serisi ise bütçeye odaklanıyor. Phantom X2 Pro, markanın amiral gemisi denemelerinden biri.",
-   "Tecno telefonlarda dikkat edilmesi gereken nokta yazılım desteği ve dayanıklılık. Modellerin çoğu IP53 ile yalnızca su sıçramasına karşı korunuyor ve Android sürüm güncellemeleri Samsung veya Xiaomi kadar uzun sürmüyor. Telefonu 2-3 yıl kullanmayı planlıyorsanız bu fiyatta güçlü bir seçenek."
+   "Tecno telefonlarda dikkat edilmesi gereken nokta yazılım desteği ve dayanıklılık. Modellerin çoğu IP53 ile yalnızca su sıçramasına karşı korunuyor ve Android sürüm güncellemeleri Samsung veya Xiaomi kadar uzun sürmüyor. Telefonu 2-3 yıl kullanmayı planlıyorsanız bu fiyatta güçlü bir seçenek.",
+   "Kataloğumuzdaki Tecno fiyatları 11.000 TL civarındaki Camon 30 ile 35.000 TL civarındaki Camon 30 Premier arasında. Spark 20 Pro+ 14.000 TL, Pova 6 Pro 17.000 TL civarında. Aynı bütçede Redmi ve POCO modelleriyle yarışan Tecno, kâğıt üzerinde daha büyük ekran ve kamera çözünürlüğü sunuyor. Ancak yazılım güncellemesi ve servis ağı konusunda bu markaların gerisinde kalıyor. Pova 6 Pro, büyük pil ve oyun odaklı tasarımıyla markanın en dengeli seçeneği."
   ]
  },
  "coros-akilli-saat": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "COROS, akıllı saatten çok spor saati üreten bir marka. Kataloğumuzdaki Pace 3, Pace Pro, Apex 2 Pro ve Vertix 2S koşu, bisiklet, dağcılık ve triatlon için tasarlanmış. Bu saatlerin en güçlü yanı pil ömrü: GPS açıkken bile günlerce, normal kullanımda haftalarca şarj gerektirmiyor.",
-   "Bildirim, akıllı asistan ya da uygulama mağazası gibi özellikler COROS'ta sınırlı. Bu yüzden Apple Watch veya Galaxy Watch ile doğrudan karşılaştırmak doğru değil. Antrenmanlarını ciddi takip eden biriyseniz Pace 3 fiyat/performans açısından en mantıklı model; dağ ve uzun mesafe için Vertix 2S daha uygun."
+   "Bildirim, akıllı asistan ya da uygulama mağazası gibi özellikler COROS'ta sınırlı. Bu yüzden Apple Watch veya Galaxy Watch ile doğrudan karşılaştırmak doğru değil. Antrenmanlarını ciddi takip eden biriyseniz Pace 3 fiyat/performans açısından en mantıklı model; dağ ve uzun mesafe için Vertix 2S daha uygun.",
+   "Fiyatlara bakınca COROS'un nasıl konumlandığı netleşiyor: Pace 3 yaklaşık 11.000 TL ile kataloğumuzdaki en uygun GPS'li koşu saatlerinden biri. Pace Pro ve Apex 2 Pro 25.000-26.000 TL bandında, Vertix 2S ise 40.000 TL civarında. Pace Pro AMOLED ekran ve harita desteği getiriyor. Apex 2 Pro ve Vertix 2S'de ise titanyum gövde, safir cam ve çok bantlı GPS var. Aynı paraya Garmin'in benzer modelleri genelde daha pahalı kalıyor."
   ]
  },
  "honor-telefon": {
@@ -50,24 +56,27 @@
   ]
  },
  "iffalcon-televizyon": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "iFFALCON, TCL'in uygun fiyatlı alt markası. Bu yüzden iFFALCON televizyonlar TCL'in panel ve yazılım altyapısını daha düşük fiyata sunuyor. Kataloğumuzdaki modeller 43 inçten 98 inçe kadar uzanıyor; U95A serisi QD-Mini LED ile markanın en üst modelleri, U65 ve U75 ise giriş seviyesinde.",
-   "Büyük ekranlı bir televizyonu bütçe aşmadan almak istiyorsanız iFFALCON'un 85 ve 98 inç modelleri dikkat çekici. Google TV arayüzüyle uygulama desteği geniş. Servis ve garanti TCL üzerinden yürüdüğü için satış sonrası destek konusunda yabancı bir markadan alıyormuş gibi endişe etmeye gerek yok."
+   "Büyük ekranlı bir televizyonu bütçe aşmadan almak istiyorsanız iFFALCON'un 85 ve 98 inç modelleri dikkat çekici. Google TV arayüzüyle uygulama desteği geniş. Servis ve garanti TCL üzerinden yürüdüğü için satış sonrası destek konusunda yabancı bir markadan alıyormuş gibi endişe etmeye gerek yok.",
+   "Kataloğumuzdaki fiyatlar 43 inçlik U65 için 18.000 TL civarından başlıyor; 55 ve 65 inç U95A modelleri 39.000-52.000 TL bandında. 85 inç U95A 96.000 TL, 98 inç U95A ise 131.600 TL civarında. Aynı ekran boyutunda U85A ile U95A arasında 7.000-14.000 TL fark var; bu farkın karşılığı Mini LED arka aydınlatma ve daha yüksek parlaklık. Aydınlık bir salonda film ve maç izleyecekseniz U95A'ya çıkmak hissedilir bir fark yaratıyor."
   ]
  },
  "philips-televizyon": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "Philips televizyonların en tanınan özelliği Ambilight: ekranın arkasından duvara, görüntüdeki renklere uyumlu ışık yansıtan sistem. Kataloğumuzdaki modellerin büyük çoğunluğunda bu özellik var. OLED810, OLED808 ve OLED760 serileri markanın OLED tarafını, MLED serisi Mini LED'i, PUS serisi ise uygun fiyatlı LED modelleri temsil ediyor.",
-   "Film ve dizi izlemek için en iyi seçim OLED modeller; mükemmel siyahlar ve geniş görüş açısı sunuyor. Aydınlık bir salonda kullanacaksanız daha parlak olan MLED serisi daha mantıklı. Ambilight ilk bakışta süs gibi görünse de karanlık odada göz yorgunluğunu azaltıyor."
+   "Film ve dizi izlemek için en iyi seçim OLED modeller; mükemmel siyahlar ve geniş görüş açısı sunuyor. Aydınlık bir salonda kullanacaksanız daha parlak olan MLED serisi daha mantıklı. Ambilight ilk bakışta süs gibi görünse de karanlık odada göz yorgunluğunu azaltıyor.",
+   "Kataloğumuzda Philips fiyatları 22.000 TL civarındaki 55PUS8118 ile başlıyor ve 140.000 TL'yi aşan 65OLED808'e kadar çıkıyor. Ekran teknolojisine göre bakınca tablo şu: PUS LED serisi büyük ölçüde 22.000-70.000 TL arasında, MLED Mini LED serisi 38.000-90.000 TL, OLED serisi ise 60.000 TL'den başlıyor. 55 inç ekranda OLED760 ile MLED810 arasında yaklaşık 22.000 TL fark var. Karanlık odada film izlemek için bu farkın karşılığı alınıyor; gündüz kullanımında MLED yeterli."
   ]
  },
  "dji-kamera": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "DJI'ın kataloğumuzdaki kameraları üç farklı kullanım alanına hitap ediyor. Osmo Action serisi (Action 4, 5 Pro, 6) GoPro'ya rakip aksiyon kameraları; Osmo Pocket serisi gimbal'lı küçük vlog kameraları; Osmo 360 serisi ise her yönü aynı anda çeken kameralar. Osmo Nano ise vücuda takılabilen en küçük model.",
-   "Vlog ve seyahat çekimleri için en çok önerdiğimiz model Osmo Pocket. Mekanik gimbal sayesinde yürürken bile görüntü pürüzsüz ve ön ekran kendinizi kadrajda görmenizi sağlıyor. Sporda kullanılacaksa Osmo Action serisi daha dayanıklı ve suya dayanıklı."
+   "Vlog ve seyahat çekimleri için en çok önerdiğimiz model Osmo Pocket. Mekanik gimbal sayesinde yürürken bile görüntü pürüzsüz ve ön ekran kendinizi kadrajda görmenizi sağlıyor. Sporda kullanılacaksa Osmo Action serisi daha dayanıklı ve suya dayanıklı.",
+   "Fiyat sıralaması DJI kataloğunun mantığını gösteriyor: Osmo Action 4 yaklaşık 14.000 TL ile en uygun model, Osmo Nano 18.000 TL civarında. Action 5 Pro, Action 6, Pocket 3, Pocket 4 ve Osmo 360 ise 24.000-28.500 TL arasında yoğunlaşıyor. Pocket 4P ve Osmo 360 II 42.000 TL'nin üzerinde. Yeni nesil ile önceki nesil arasındaki farkın fiyatın yaklaşık yarısı kadar olduğu durumlarda, örneğin Action 4 ile Action 6 arasında, eski modeli almak çoğu kullanıcı için daha akıllıca."
   ]
  },
  "honor-tablet": {
@@ -92,10 +101,11 @@
   ]
  },
  "acer-kulaklik": {
-  "tarih": "2026-11-24",
+  "tarih": "2026-11-25",
   "metin": [
    "Acer'ın kataloğumuzdaki kulaklıklarının neredeyse tamamı oyuncu kulaklığı: Predator Galea serisi ve Nitro Gaming Headset. Galea 311 ve 315 giriş seviyesinde, 350 ve 365 orta seviyede, 530, 550 ve 570 ise serinin üst modelleri.",
-   "Oyuncu kulaklığı seçerken mikrofon kalitesi, uzun süre takıldığında rahatlık ve bağlantı türü (kablolu, 2,4 GHz kablosuz, Bluetooth) önemli. Konsolda oynuyorsanız 3,5 mm girişli modeller her cihazla uyumlu. Müzik dinlemek için ise bu kulaklıklar yerine stüdyo ya da müzik odaklı modellere bakmanızı öneririz."
+   "Oyuncu kulaklığı seçerken mikrofon kalitesi, uzun süre takıldığında rahatlık ve bağlantı türü (kablolu, 2,4 GHz kablosuz, Bluetooth) önemli. Konsolda oynuyorsanız 3,5 mm girişli modeller her cihazla uyumlu. Müzik dinlemek için ise bu kulaklıklar yerine stüdyo ya da müzik odaklı modellere bakmanızı öneririz.",
+   "Fiyat aralığı oldukça dar: en ucuz Nitro Gaming Headset II 1.700 TL civarında, serinin tepesindeki Galea 570 ise 8.000 TL'nin altında. Yani Acer'da 10.000 TL'yi aşan bir kulaklık yok; bu da markayı ilk oyuncu kulaklığını alacaklar için güvenli bir başlangıç noktası yapıyor. Galea 3xx serisi arasında fiyat farkı küçük olduğu için 330 yerine 350 ya da 365'e çıkmak genelde değer; daha iyi mikrofon ve daha rahat yastıklar bu basamakta geliyor."
   ]
  },
  "huawei-telefon": {

@@ -1,1 +1,1 @@
-mate|https://teknoversus.com.tr/haberler/img/huawei-mate-90-air-tanitildi-7-inc-ekran-6-58-mm-6500-mah-bc06d6f5-16x9.jpg;vivo|https://teknoversus.com.tr/haberler/img/vivo-x500-serisi-hindistan-26-kasim-lansman-200-mp-telefoto-ac4d44db-16x9.jpg;s27|https://teknoversus.com.tr/haberler/img/galaxy-s27-ultra-lazer-otomatik-odaklama-sensoru-kaldiriliyor-iddiasi-e0362681-16x9.jpg;vivo1x1|https://teknoversus.com.tr/haberler/img/vivo-x500-serisi-hindistan-26-kasim-lansman-200-mp-telefoto-ac4d44db-1x1.jpg
+x|https://teknoversus.com.tr/favicon.ico

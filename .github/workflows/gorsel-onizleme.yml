@@ -2,7 +2,7 @@ name: Gorsel onizleme
 on:
   push:
     branches: [analiz-test]
-    paths: ['onizleme/urls.txt', 'onizleme/sayfalar.txt']
+    paths: ['onizleme/**']
 jobs:
   onizle:
     runs-on: ubuntu-latest
@@ -25,15 +25,7 @@ jobs:
             else echo "DL FAIL $label"; fi
           done
           : > out/links.txt
-          if [ -f onizleme/sayfalar.txt ]; then
-            while read -r page; do
-              [ -z "$page" ] && continue
-              echo "=== $page" >> out/links.txt
-              curl -sSL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36" --max-time 40 "$page" -o page.html -w "HTTP %{http_code}\n" >> out/links.txt || echo "PAGE FAIL" >> out/links.txt
-              grep -oiE '(https?:)?//[^"'"'"' )]+\.(jpe?g|png|webp|avif)(\?[^"'"'"' )]*)?' page.html | sort -u | head -80 >> out/links.txt || true
-              grep -oiE 'og:image"[^>]*' page.html | head -3 >> out/links.txt || true
-            done < onizleme/sayfalar.txt
-          fi
+          [ -f onizleme/sayfalar.txt ] && python3 onizleme/tara.py || true
           for f in img/*.src; do echo "$f $(identify -format '%wx%h' "$f[0]" 2>/dev/null)" >> out/links.txt; done
           montage img/*.png -tile 4x -geometry +4+4 out/sheet.png
           ls -la img out

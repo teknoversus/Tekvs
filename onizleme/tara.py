@@ -9,4 +9,6 @@ for page in open('onizleme/sayfalar.txt').read().split():
     t=re.sub(r'<script.*?</script>|<style.*?</style>','',h,flags=re.S)
     t=re.sub(r'<[^>]+>',' ',t); t=re.sub(r'\s+',' ',t)
     out.write('editor-review:%d\n'%h.count('editor-review'))
-    out.write(t[:1800]+'\n')
+    for kw in ['Rakamlarla','yan yana','Arka plan','Haberde geçen','Konuyla ilgili']:
+        i=t.find(kw)
+        if i>=0: out.write('['+kw+'] '+t[i:i+260]+'\n')

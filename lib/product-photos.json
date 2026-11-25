@@ -247,5 +247,37 @@
  "tv20": {
   "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u75a/id/75-id-1.jpg",
   "credit": "iFFALCON"
+ },
+ "tvpop016": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u85a/98/id/85-1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop017": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u85a/98/id/85-1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop018": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u85a/98/id/85-1.png",
+  "credit": "iFFALCON"
+ },
+ "tv16": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u65/id/1-75.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop019": {
+  "url": "https://aws-obg-image-lb-3.tcl.com/content/dam/iffalcon/global/products/tv/u-series/u65/id/1-75.png",
+  "credit": "iFFALCON"
+ },
+ "tv19": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop020": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
+ },
+ "tvpop021": {
+  "url": "https://aws-obg-image-lb-2.tcl.com/content/dam/iffalcon/tr/product/tvs/u95a/id/85-55/1.png",
+  "credit": "iFFALCON"
  }
 }

@@ -16,3 +16,4 @@ for page in open('onizleme/sayfalar.txt').read().split():
     for m in re.findall(r'og:image"[^>]*',h)[:2]: out.write(m+'\n')
     for m in re.findall(r'.{0,70}\.(?:jpg|webp|avif|png).{0,10}',h)[:60]: out.write('CTX '+m+'\n')
     out.write('LEN %d\n'%len(h))
+    for m in sorted(set(re.findall(r'[\w./${}-]*x500[\w./${}-]*',h)))[:120]: out.write('X '+m+'\n')

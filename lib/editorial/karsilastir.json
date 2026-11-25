@@ -1,383 +1,431 @@
 {
-  "_aciklama": "Elle yazılmış karşılaştırma değerlendirmeleri. Anahtar: iki ürün id'si, alfabetik sıralı, '|' ile. 'secim' içindeki 'urun' alanı ürün id'sidir. Fiyat yazmıyoruz; güncel fiyat sayfanın üstünde zaten gösteriliyor.",
-  "n7|n8": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iFFALCON 65U95A mı, TCL 65C6K mı?",
-    "metin": [
-      "Önce sık sorulan soruyu cevaplayalım: iFFALCON, TCL'nin kendi markası. Bu yüzden iki televizyon aynı aileden geliyor ve kâğıt üzerinde birbirine çok benziyor. İkisinde de 65 inç 4K QD-Mini LED panel, 144 Hz yenileme hızı, Dolby Vision ve HDR10+ desteği, HDMI 2.1 girişleri ve Google TV var. Ses tarafında da iki model 30 W çıkış gücünde.",
-      "Asıl fark yaşta ve fiyatta. TCL 65C6K, TCL'nin 2025 C6K serisinden; piyasada daha uzun süredir var, kullanıcı yorumu ve yazılım güncellemesi geçmişi daha fazla. iFFALCON 65U95A ise 2026 modeli olarak satılıyor ve genelde benzer donanımı daha uygun fiyata sunmayı hedefliyor. Panel teknolojisi aynı sınıfta olduğu için resim kalitesinde gözle görülür bir fark beklemeyin; iki modelde de yerel karartma sayesinde kontrast iyi, ama OLED seviyesinde siyah yok.",
-      "İkisi de VA tipi panel kullanıyor. Bu, karşıdan bakınca güçlü kontrast demek; ama televizyonu yan açılardan izleyecek geniş bir oturma düzeniniz varsa renkler soluklaşabilir. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması (ghosting) bildirdi; sonraki yazılım güncellemeleriyle bunun azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
-    ],
-    "secim": [
-      {
-        "urun": "n8",
-        "metin": "Daha uzun süredir satılan, yorumu ve güncelleme geçmişi bol bir model istiyorsanız ya da fiyat farkı birkaç bin TL'nin altındaysa."
-      },
-      {
-        "urun": "n7",
-        "metin": "Aynı özellikleri daha düşük fiyata almak istiyorsanız. Fiyat farkı belirginse, aynı panel sınıfına daha az ödemiş olursunuz."
-      }
-    ],
-    "sonuc": "Kısacası, bu ikili arasında kararı özellikler değil fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın; fark anlamlıysa ucuz olanı almak mantıklı."
-  },
-  "h3|s2": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Galaxy S24 Ultra mı, S26 Ultra mı?",
-    "metin": [
-      "İki nesil arasında telefonun karakteri değişmedi: ikisi de 200 MP ana kameralı, S Pen'li, IP68 korumalı ve 5000 mAh pilli büyük ekranlı amiral gemisi. Değişen şeyler daha çok günlük konforla ilgili.",
-      "S26 Ultra elde belirgin şekilde daha rahat: kalınlık 8,6 mm'den 7,9 mm'ye, ağırlık 232 g'dan 218 g'a iniyor. İşlemci Snapdragon 8 Gen 3'ten Snapdragon 8 Elite Gen 5'e geçiyor; günlük kullanımda ikisi de çok hızlı, fark daha çok ağır oyunlarda ve uzun vadede hissedilir. Ultra geniş açı kamera 12 MP'den 50 MP'ye çıktı ve kablolu şarj hızı 45 W'tan 60 W'a yükseldi.",
-      "S24 Ultra'nın kendine ait bir artısı da var: S Pen'i Bluetooth destekli. Kalemle uzaktan fotoğraf çekme ya da sunum kaydırma gibi hareketleri kullanıyorsanız bunu bilin; sonraki nesillerde S Pen'den Bluetooth kaldırıldı. Yazılım tarafında Samsung iki modele de yedi yıl güncelleme sözü verdi; S24 Ultra 2024'te çıktığı için bu süre onda daha erken bitecek."
-    ],
-    "secim": [
-      {
-        "urun": "h3",
-        "metin": "Amiral gemisi kamerası ve S Pen'i makul fiyata istiyorsanız. İndirimli bir S24 Ultra hâlâ çok güçlü ve önünde yıllarca güncelleme var."
-      },
-      {
-        "urun": "s2",
-        "metin": "Telefonu 4–5 yıl kullanmayı planlıyorsanız, daha hafif bir gövde ve daha hızlı şarj sizin için önemliyse."
-      }
-    ],
-    "sonuc": "Elinizde S24 Ultra varsa yükseltme zorunlu değil. Sıfırdan alıyorsanız aradaki fiyat farkına bakın: fark büyükse S24 Ultra, küçükse S26 Ultra daha doğru tercih."
-  },
-  "h1|h4": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iPhone 15 Pro mu, iPhone 16 Pro mu?",
-    "metin": [
-      "iPhone 15 Pro ile 16 Pro aynı ailenin art arda gelen iki nesli: ikisi de titanyum kasalı, 120 Hz ProMotion ekranlı, USB-C girişli ve 8 GB RAM sayesinde Apple Intelligence özelliklerini destekliyor. Yani 15 Pro alan biri yapay zekâ özelliklerinden mahrum kalmıyor.",
-      "16 Pro'daki farklar kamera ve ekranda toplanıyor. Ekran 6,1 inçten 6,3 inçe büyüdü. 5x optik telefoto, önceki nesilde yalnızca Pro Max'te vardı; 16 Pro ile küçük modele de geldi (15 Pro'da 3x). Ultra geniş açı kamera 12 MP'den 48 MP'ye çıktı, 4K 120 fps video kaydı eklendi ve yan tarafta fotoğraf çekmeyi hızlandıran Kamera Denetimi tuşu var. İşlemci A17 Pro'dan A18 Pro'ya geçti; Apple'ın verdiği değerlere göre pil ömrü de bir miktar uzadı.",
-      "15 Pro'nun artısı ise daha kompakt ve hafif olması: 187 g'a karşı 199 g. Küçük telefon seviyorsanız bu fark elde hissediliyor."
-    ],
-    "secim": [
-      {
-        "urun": "h4",
-        "metin": "Kompakt bir Pro iPhone istiyorsanız ve 5x zoom, 4K 120 fps video gibi özelliklere ihtiyacınız yoksa. Fiyatı belirgin şekilde düşükse iyi bir fırsat."
-      },
-      {
-        "urun": "h1",
-        "metin": "Fotoğraf ve videoyu ciddiye alıyorsanız, uzak çekimlerde 5x zoom işinize yarayacaksa ve telefonu uzun yıllar kullanacaksanız."
-      }
-    ],
-    "sonuc": "İki fiyat birbirine yakınsa 16 Pro'yu alın; daha yeni olduğu için güncelleme desteği de daha uzun sürecek. Fark büyükse 15 Pro hâlâ çok iyi bir telefon."
-  },
-  "n4|n6": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iPhone 15 mi, iPhone 17 mi?",
-    "metin": [
-      "Bu iki model arasında iki nesil var ve fark, standart iPhone'larda uzun süredir görmediğimiz kadar büyük. En önemlisi ekran: iPhone 15 60 Hz ekran kullanıyor, iPhone 17 ise ilk kez standart modele 120 Hz ProMotion ve her zaman açık ekran getiriyor. Kaydırırken, oyunda ve gündelik kullanımda akıcılık farkı ilk dakikadan hissediliyor. Ekran da 6,1 inçten 6,3 inçe büyüdü.",
-      "İkinci büyük fark yapay zekâ. Apple Intelligence en az 8 GB RAM istiyor; iPhone 15'te 6 GB olduğu için bu özellikler gelmiyor, iPhone 17'de geliyor. Bunlara A16'dan A19'a geçen işlemci, 12 MP'den 18 MP'ye çıkan ön kamera, 48 MP'ye yükselen ultra geniş açı ve 3349 mAh'den 3692 mAh'e çıkan pil ekleniyor. Başlangıç depolaması da 128 GB'tan 256 GB'a çıktı.",
-      "iPhone 15'in tarafında ise fiyat var. Arama, mesaj, sosyal medya ve fotoğraf için hâlâ hızlı ve yeterli; USB-C girişi ve 48 MP ana kamerası da var."
-    ],
-    "secim": [
-      {
-        "urun": "n4",
-        "metin": "Bütçeniz sınırlıysa, telefonu temel işler için kullanıyorsanız ve 60 Hz ekran sizi rahatsız etmiyorsa."
-      },
-      {
-        "urun": "n6",
-        "metin": "Telefonu 4–5 yıl kullanmayı düşünüyorsanız. 120 Hz ekran, Apple Intelligence desteği ve daha uzun güncelleme ömrü aradaki farkı karşılıyor."
-      }
-    ],
-    "sonuc": "Uzun vadede iPhone 17 daha mantıklı yatırım. iPhone 15'i yalnızca fiyat farkı sizin için gerçekten önemliyse tercih edin."
-  },
-  "h8|n2": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iPhone 13 mü, iPhone 13 Pro mu?",
-    "metin": [
-      "İki telefon da aynı A15 Bionic işlemciyi kullanıyor ve ikisi de güncel iOS sürümlerini almaya devam ediyor. Bu yüzden günlük hız farkı küçük. Ayrım ekranda ve kamerada.",
-      "iPhone 13 Pro, 120 Hz ProMotion ekranın geldiği ilk iPhone; iPhone 13 ise 60 Hz. Pro'da ayrıca 3x optik telefoto, makro çekim ve daha parlak ekran var; RAM de 4 GB yerine 6 GB. Buna karşılık iPhone 13 daha hafif (174 g'a karşı 204 g) ve renk seçenekleri daha fazla. İkisi de Lightning girişli; USB-C yok.",
-      "2026'da bu modelleri çoğunlukla ikinci el ya da yenilenmiş olarak bulacaksınız. Bu durumda pil sağlığı, modelden bile daha önemli: Ayarlar > Pil > Pil Sağlığı bölümünde yüzde 85'in altındaysa yakında pil değişimi gerekebilir, fiyatı buna göre değerlendirin."
-    ],
-    "secim": [
-      {
-        "urun": "n2",
-        "metin": "Temel kullanım için uygun fiyatlı, hafif bir iPhone arıyorsanız."
-      },
-      {
-        "urun": "h8",
-        "metin": "Akıcı 120 Hz ekran ve uzağı yakınlaştıran telefoto kamera sizin için önemliyse, fiyat farkı da makulse."
-      }
-    ],
-    "sonuc": "İkisi arasında fiyat farkı küçükse 13 Pro daha çok şey sunuyor. Fark büyükse ve ekran akıcılığını önemsemiyorsanız iPhone 13 yeterli."
-  },
-  "n1|n6": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iPhone 11'den iPhone 17'ye geçmeye değer mi?",
-    "metin": [
-      "Bu karşılaştırmayı arayanların çoğu elinde iPhone 11 olan ve yenilemeyi düşünen kullanıcılar. Kısa cevap: evet, aradaki fark çok büyük. iPhone 11 2019 modeli; iPhone 17 ile arasında altı nesil var.",
-      "En belirgin fark ekranda. iPhone 11'de 6,1 inç LCD panel ve 60 Hz var; iPhone 17'de 6,3 inç OLED, 120 Hz ProMotion ve her zaman açık ekran. Siyahlar, parlaklık ve kaydırma akıcılığı başka bir sınıfta. Kamerada 12 MP'den 48 MP ana sensöre ve 48 MP ultra geniş açıya geçiliyor; ön kamera 18 MP oluyor. iPhone 11'de 5G yok, giriş Lightning; iPhone 17'de 5G ve USB-C var.",
-      "Yazılım tarafında iPhone 11 hâlâ güncelleme alıyor ama ömrünün sonuna yaklaşıyor ve Apple Intelligence özelliklerini hiç desteklemiyor. iPhone 17 hem bu özellikleri destekliyor hem de önünde uzun yıllar güncelleme var. Başlangıç depolaması da 64 GB'tan 256 GB'a çıkmış durumda."
-    ],
-    "secim": [
-      {
-        "urun": "n1",
-        "metin": "Yalnızca arama, mesaj ve temel uygulamalar için çok ucuz bir yedek telefon arıyorsanız. Ana telefon olarak artık önermiyoruz."
-      },
-      {
-        "urun": "n6",
-        "metin": "Telefonu birkaç yıl daha kullanmak istiyorsanız. Ekran, kamera, pil ve güncelleme süresinde iPhone 11'in çok önünde."
-      }
-    ],
-    "sonuc": "iPhone 11'den yükseltme yapacaksanız iPhone 17 doğru adres. Bütçe yetmiyorsa iPhone 15 veya 16 da büyük bir sıçrama olur; iPhone 11'i sıfırdan almanızı önermiyoruz."
-  },
-  "z1|z2": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Honor 600 Pro mu, Honor Magic8 Pro mu?",
-    "metin": [
-      "İkisi de Honor'un üst segment telefonları ama farklı hedefleri var. Magic8 Pro markanın amiral gemisi: Snapdragon 8 Elite Gen 5 işlemci, 6,71 inç LTPO OLED ekran ve 200 MP periskop telefoto kamerayla uzak çekimde iddialı. 600 Pro ise bir önceki neslin amiral işlemcisi Snapdragon 8 Elite'i daha uygun fiyata, daha kompakt bir gövdede sunuyor.",
-      "Honor 600 Pro'nun öne çıkan yanları: 6,57 inç ekranla elde daha kolay kullanılıyor, 200 MP ana kamera, 3,5x optik zoom yapan 50 MP periskop telefoto ve 80 W kablolu, 50 W kablosuz şarj var. Honor bu model için altı yıl işletim sistemi güncellemesi sözü veriyor. Magic8 Pro'da ise ekran daha büyük ve LTPO, pil kapasitesi daha yüksek, zoom kamerası daha güçlü.",
-      "İki telefonda da IP68, IP69 ve IP69K koruma var; yani suya ve tozun yanında yüksek basınçlı suya da dayanıklılar. Günlük kullanımda iki işlemci de çok hızlı; fark ağır oyunlarda ve uzun vadede hissedilir."
-    ],
-    "secim": [
-      {
-        "urun": "z2",
-        "metin": "Amiral gemisine yakın performansı daha uygun fiyata ve daha kompakt bir gövdede istiyorsanız."
-      },
-      {
-        "urun": "z1",
-        "metin": "En iyi zoom kamerasını, en büyük ekranı ve en güçlü işlemciyi istiyorsanız; fiyat farkı sizin için sorun değilse."
-      }
-    ],
-    "sonuc": "Çoğu kullanıcı için Honor 600 Pro fiyatına göre daha mantıklı. Fotoğrafta uzak çekim sizin için öncelikliyse Magic8 Pro'ya ödenen fark karşılığını verir."
-  },
-  "h3|z2": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Honor 600 Pro mu, Galaxy S24 Ultra mı?",
-    "metin": [
-      "Bu iki telefon benzer fiyat aralığında karşılaşıyor ama çok farklı kullanıcıları hedefliyor. Galaxy S24 Ultra büyük ekranlı, S Pen'li ve 5x zoom kameralı bir üretkenlik telefonu. Honor 600 Pro ise daha yeni bir işlemciyi (Snapdragon 8 Elite), daha büyük pili ve çok daha hızlı şarjı daha kompakt bir gövdede sunuyor.",
-      "Honor'un artıları: 80 W kablolu ve 50 W kablosuz şarj (S24 Ultra'da 45 W ve 15 W), IP68'e ek olarak IP69 koruma, 6,57 inç ekranla daha rahat tek el kullanımı ve 200 gram civarında ağırlık. S24 Ultra'nın artıları: kutudan çıkan S Pen, 6,8 inç QHD+ ekran, 5x optik zoom ve Samsung'un servis ağı ile yedi yıllık güncelleme sözü.",
-      "Kamera tarafında ikisinde de 200 MP ana sensör var. S24 Ultra daha uzun zoom sunuyor, Honor ise 3,5x periskop telefotoyla orta mesafede güçlü."
-    ],
-    "secim": [
-      {
-        "urun": "z2",
-        "metin": "Hızlı şarj, uzun pil ve daha yeni işlemci sizin için önemliyse; büyük ve ağır telefon sevmiyorsanız."
-      },
-      {
-        "urun": "h3",
-        "metin": "S Pen kullanıyorsanız, büyük ekranda çalışıyorsanız ve uzun süreli yazılım desteğini öncelikli görüyorsanız."
-      }
-    ],
-    "sonuc": "S Pen'e ihtiyacınız yoksa Honor 600 Pro günlük kullanımda daha pratik bir seçim. S Pen ve büyük ekran vazgeçilmezse S24 Ultra'yı alın."
-  },
-  "n3|n6": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iPhone 14 mü, iPhone 17 mi?",
-    "metin": [
-      "iPhone 14 ile iPhone 17 arasında üç nesil var ve fark, standart iPhone'larda son yılların en büyüğü. iPhone 14'te 60 Hz ekran, A15 işlemci, 12 MP ana kamera ve Lightning girişi var. iPhone 17 ise 120 Hz ProMotion ve her zaman açık ekran, A19 işlemci, 48 MP ana ve ultra geniş açı kameralar ve USB-C ile geliyor.",
-      "Önemli bir fark daha: iPhone 14'teki 6 GB RAM, Apple Intelligence özelliklerini desteklemiyor; iPhone 17'deki 8 GB RAM destekliyor. Ekran 6,1 inçten 6,3 inçe büyüyor, başlangıç depolaması 128 GB'tan 256 GB'a çıkıyor ve pil kapasitesi 3279 mAh'den 3692 mAh'e yükseliyor.",
-      "iPhone 14'ün avantajı fiyat. Günlük işler için hâlâ hızlı, kamerası gün ışığında iyi ve Kaza Algılama gibi güvenlik özellikleri var."
-    ],
-    "secim": [
-      {
-        "urun": "n3",
-        "metin": "Uygun fiyatlı bir iPhone arıyorsanız ve 60 Hz ekran ile Lightning girişi sizin için sorun değilse."
-      },
-      {
-        "urun": "n6",
-        "metin": "Telefonu uzun süre kullanacaksanız; akıcı ekran, Apple Intelligence ve daha iyi kamera için aradaki farkı ödemeye değer."
-      }
-    ],
-    "sonuc": "Fiyat farkı makulse iPhone 17'yi alın. iPhone 14'ü ancak belirgin şekilde ucuzsa ve temel kullanım için düşünüyorsanız tercih edin."
-  },
-  "h4|h6": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iPhone 14 Pro mu, iPhone 15 Pro mu?",
-    "metin": [
-      "İki model dışarıdan çok benzer: 6,1 inç 120 Hz ProMotion ekran, Dynamic Island, 48 MP ana kamera ve 3x telefoto ikisinde de var. Farklar daha çok kasanın içinde ve elde hissediliyor.",
-      "iPhone 15 Pro titanyum kasaya geçti ve 206 g'dan 187 g'a hafifledi; elde fark açıkça hissediliyor. Lightning yerine USB-C geldi ve bu giriş hızlı veri aktarımını (USB 3) destekliyor. Sessize alma anahtarının yerini kişiselleştirilebilen Eylem tuşu aldı. İşlemci A16'dan A17 Pro'ya geçti.",
-      "En önemli fark yazılımda: Apple Intelligence için en az 8 GB RAM gerekiyor. iPhone 15 Pro'da 8 GB var ve bu özellikleri destekliyor; iPhone 14 Pro'da 6 GB var ve desteklemiyor. Telefonu birkaç yıl daha kullanacaksanız bu fark giderek daha önemli hale gelecek."
-    ],
-    "secim": [
-      {
-        "urun": "h6",
-        "metin": "Pro ekran ve kamerayı en uygun fiyata istiyorsanız ve yapay zekâ özellikleri sizin için önemli değilse."
-      },
-      {
-        "urun": "h4",
-        "metin": "Daha hafif bir telefon, USB-C ve Apple Intelligence desteği istiyorsanız. Uzun vadede daha doğru seçim."
-      }
-    ],
-    "sonuc": "İkisi arasında fiyat farkı küçükse iPhone 15 Pro'yu alın. 14 Pro'yu yalnızca ciddi bir fiyat avantajı varsa düşünün."
-  },
-  "h24|s6": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Apple Watch Series 10 mu, Series 11 mi?",
-    "metin": [
-      "Series 10 ile Series 11 arasındaki fark, Apple Watch tarihindeki en küçük yıllık farklardan biri. Kasa tasarımı, ekran ve işlemci aynı: ikisinde de S10 çip ve geniş açılı OLED ekran var. Sağlık sensörleri de büyük ölçüde aynı; kalp ritmi, EKG, kan oksijeni ve sıcaklık ölçümü ikisinde de mevcut.",
-      "Series 11'in getirdiği yenilikler şunlar: pil ömrü Apple'ın değerlerine göre 18 saatten 24 saate çıktı; bu, saati gece uyku takibi için takıp sabah şarj etmeden kullanmayı kolaylaştırıyor. Hücresel modellerde 5G desteği geldi. Alüminyum modellerde ekran camı Apple'a göre iki kat daha çizilmeye dayanıklı.",
-      "Uyku puanı gibi bazı yazılım özellikleri güncellemeyle Series 10'a da geldi. Bu yüzden iki saati yan yana kullanınca günlük deneyim çok benzer."
-    ],
-    "secim": [
-      {
-        "urun": "h24",
-        "metin": "İndirimli bulursanız. Aynı tasarım ve işlemciyi daha düşük fiyata alırsınız."
-      },
-      {
-        "urun": "s6",
-        "metin": "Pil ömrü sizin için önemliyse, uyku takibi yapıyorsanız ya da hücresel model alacaksanız."
-      }
-    ],
-    "sonuc": "Fiyatlar yakınsa Series 11'i alın; daha uzun pil ömrü günlük kullanımda hissedilir. Elinizde Series 10 varsa yükseltmeye gerek yok."
-  },
-  "h25|h27": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Apple Watch Series 8 mi, Series 9 mu?",
-    "metin": [
-      "Series 8 ile Series 9 aynı kasa tasarımını, aynı 18 saatlik pil ömrünü ve benzer sağlık sensörlerini paylaşıyor. Fark, Series 9'daki yeni işlemci ve onun getirdiği özelliklerde.",
-      "Series 9'daki S9 çip, saatin daha hızlı açılmasını ve uygulamaların daha akıcı çalışmasını sağlıyor. Bu çip sayesinde Çift Dokunuş hareketi geldi: işaret ve başparmağınızı iki kez birbirine dokundurarak çağrı cevaplayabilir, alarmı kapatabilirsiniz. Ekran parlaklığı 2000 nite çıktı; güneş altında okumak daha kolay. Siri bazı komutları internet olmadan cihaz üzerinde işleyebiliyor ve uyumlu iPhone'u bulmak için hassas konum bulma destekleniyor.",
-      "Series 8 ise sıcaklık sensörü, kaza algılama, EKG ve kan oksijeni gibi önemli sağlık özelliklerinin hepsine sahip. İkisi de güncel watchOS sürümlerini almaya devam ediyor."
-    ],
-    "secim": [
-      {
-        "urun": "h27",
-        "metin": "Temel sağlık ve spor takibi için uygun fiyatlı bir Apple Watch arıyorsanız."
-      },
-      {
-        "urun": "h25",
-        "metin": "Çift Dokunuş ve daha parlak ekranı kullanacaksanız; daha yeni olduğu için güncelleme desteği de daha uzun sürecek."
-      }
-    ],
-    "sonuc": "Fiyatlar birbirine yakınsa Series 9 daha mantıklı. Series 8'i yalnızca belirgin şekilde ucuzsa tercih edin; ikinci el alıyorsanız pil sağlığını mutlaka kontrol edin."
-  },
-  "p_mid_03|samsung-galaxy-a37-5g": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Galaxy A37 5G mi, Redmi Note 14 Pro+ mı?",
-    "metin": [
-      "Bu iki telefon orta segmentte iki farklı yaklaşımı temsil ediyor. Galaxy A37 5G, 2026'da çıkan yeni bir model ve en büyük kozu uzun yazılım desteği: Samsung altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor. Redmi Note 14 Pro+ ise 2025 başında çıktı; donanım tarafında daha iddialı ama daha eski.",
-      "Redmi'nin öne çıkan yanları 200 MP ana kamera, 1,5K çözünürlüklü 120 Hz AMOLED ekran ve çok hızlı, 120 W HyperCharge şarj. Telefonu yarım saatten kısa sürede doldurmak mümkün. Snapdragon 7s Gen 3 işlemci günlük kullanımda ve orta seviye oyunlarda rahat.",
-      "Galaxy A37 5G ise 6,7 inç 120 Hz Super AMOLED ekran, optik görüntü sabitlemeli 50 MP ana kamera, 5000 mAh pil ve 45 W şarjla geliyor. Exynos 1480 işlemci günlük işler için yeterli. 7,4 mm kalınlığıyla ince; iki telefonda da IP68 koruma var."
-    ],
-    "secim": [
-      {
-        "urun": "samsung-galaxy-a37-5g",
-        "metin": "Telefonu 4–5 yıl kullanacaksanız ve düzenli güncelleme, Samsung servis ağı sizin için önemliyse."
-      },
-      {
-        "urun": "p_mid_03",
-        "metin": "Çok hızlı şarj, keskin ekran ve yüksek çözünürlüklü kamera istiyorsanız; fiyatı da A37'nin altındaysa."
-      }
-    ],
-    "sonuc": "Uzun vadeli kullanım için Galaxy A37, aynı paraya daha fazla donanım için Redmi Note 14 Pro+. Karar, telefonu kaç yıl kullanacağınıza bağlı."
-  },
-  "redmi-note-15-pro-5g-2026|samsung-galaxy-a37-5g": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Galaxy A37 5G mi, Redmi Note 15 Pro 5G mi?",
-    "metin": [
-      "İkisi de 2026'nın orta segment telefonları ve benzer fiyat aralığında karşılaşıyor. Redmi Note 15 Pro 5G donanımda daha cömert: 6,83 inç 1,5K AMOLED ekran, 200 MP ana kamera ve 6580 mAh gibi büyük bir pil. MediaTek Dimensity 7400-Ultra işlemci günlük kullanımda hızlı.",
-      "Galaxy A37 5G'nin kozları farklı: Samsung altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor, optik görüntü sabitlemeli 50 MP ana kamerası gün ışığında dengeli fotoğraflar çekiyor ve 7,4 mm kalınlığıyla daha ince. Ağırlık da 197 g'a karşı 210 g; Redmi'nin büyük pili elde hissediliyor.",
-      "Su ve toz korumasında ikisi de IP68 sınıfında. Pil ömrü önceliğinizse Redmi'nin daha büyük bataryası belirgin bir avantaj."
-    ],
-    "secim": [
-      {
-        "urun": "samsung-galaxy-a37-5g",
-        "metin": "Daha hafif bir telefon, uzun güncelleme desteği ve Samsung'un yazılım deneyimini istiyorsanız."
-      },
-      {
-        "urun": "redmi-note-15-pro-5g-2026",
-        "metin": "Büyük ekran, uzun pil ömrü ve yüksek çözünürlüklü kamera sizin için önemliyse."
-      }
-    ],
-    "sonuc": "Pil ve ekran için Redmi Note 15 Pro 5G, uzun ömürlü yazılım desteği ve hafiflik için Galaxy A37. Fiyat farkını da hesaba katarak seçin."
-  },
-  "redmi-15c-5g-2026|redmi-note-15-5g-2026": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: Redmi 15C 5G mi, Redmi Note 15 5G mi?",
-    "metin": [
-      "İki telefon aynı markanın farklı basamakları. Redmi 15C 5G giriş seviyesi; Redmi Note 15 5G bir üst segment. Aradaki fiyat farkının karşılığını en çok ekranda görüyorsunuz.",
-      "Redmi 15C 5G'de 6,9 inç büyük bir LCD ekran var, ama çözünürlüğü HD+ (1600x720). Yazılar ve videolar Full HD ekranlar kadar keskin görünmüyor. Buna karşılık 6000 mAh pil, 3,5 mm kulaklık girişi ve IP64 toz-su sıçrama koruması var; MediaTek Dimensity 6300 işlemci temel kullanım için yeterli.",
-      "Redmi Note 15 5G'de AMOLED ekran var: daha canlı renkler, gerçek siyahlar ve daha yüksek çözünürlük. 108 MP ana kamera, 15C'deki 50 MP kameradan daha ayrıntılı fotoğraf çekiyor. Gövde de 7,94 mm ve 183,7 g ile 15C'den (8,2 mm, 211 g) belirgin şekilde ince ve hafif."
-    ],
-    "secim": [
-      {
-        "urun": "redmi-15c-5g-2026",
-        "metin": "En düşük bütçeyle 5G'li, büyük pilli bir telefon arıyorsanız; telefonu arama, mesaj ve sosyal medya için kullanacaksanız."
-      },
-      {
-        "urun": "redmi-note-15-5g-2026",
-        "metin": "Ekran kalitesi ve kamera sizin için önemliyse. Fiyat farkı, günlük kullanımda en çok baktığınız ekranda karşılığını veriyor."
-      }
-    ],
-    "sonuc": "Bütçeniz elveriyorsa Redmi Note 15 5G'yi alın; AMOLED ekran farkı her gün hissediliyor. Redmi 15C ise sınırlı bütçede uzun pil ömrü isteyenler için mantıklı."
-  },
-  "h2|poco-f9-ultra-2026": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: POCO F9 Ultra mı, Galaxy S25 Ultra mı?",
-    "metin": [
-      "POCO F9 Ultra, Xiaomi'nin performans odaklı POCO markasının en iddialı telefonu. Yeni Snapdragon 8 Elite Gen 5 işlemci, 6,9 inç ve çok yüksek yenileme hızlı AMOLED ekran ve 8050 mAh gibi çok büyük bir pille geliyor; 100 W şarjla da hızlı doluyor. Kamerada 200 MP ana, 50 MP periskop telefoto ve 50 MP ultra geniş açı var.",
-      "Galaxy S25 Ultra ise bir önceki neslin Snapdragon 8 Elite işlemcisini kullanıyor ama paketin tamamı daha olgun: S Pen, 5x optik zoomlu telefoto, titanyum kasa, yansımayı azaltan ekran kaplaması ve Samsung'un yedi yıllık güncelleme sözü. 218 g ile POCO'dan (235 g) daha hafif.",
-      "Kısacası POCO daha yeni işlemci, daha büyük pil ve daha hızlı şarj sunuyor; Samsung ise S Pen, uzun yazılım desteği ve daha yaygın servis ağıyla öne çıkıyor."
-    ],
-    "secim": [
-      {
-        "urun": "poco-f9-ultra-2026",
-        "metin": "Oyun performansı, pil ömrü ve hızlı şarj önceliğinizse; S Pen kullanmıyorsanız."
-      },
-      {
-        "urun": "h2",
-        "metin": "S Pen'e ihtiyacınız varsa, telefonu uzun yıllar kullanacaksanız ve daha hafif bir amiral gemisi istiyorsanız."
-      }
-    ],
-    "sonuc": "Saf performans ve pil için POCO F9 Ultra, eksiksiz bir amiral gemisi deneyimi ve uzun güncelleme desteği için Galaxy S25 Ultra."
-  },
-  "tv35|tv5": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: iFFALCON 55U95A mı, TCL 55Q6C mi?",
-    "metin": [
-      "Önce bilinmesi gereken: iFFALCON, TCL'nin kendi markası. Bu yüzden iki televizyon benzer teknolojiyi kullanıyor. İkisinde de 55 inç 4K QD-Mini LED panel, 144 Hz yenileme hızı, Dolby Vision ve HDR10+ desteği ve 40 W ses çıkışı var.",
-      "Bu benzerlik nedeniyle resim kalitesinde gözle görülür bir fark beklemeyin. Mini LED arka aydınlatma sayesinde ikisi de parlak sahnelerde güçlü HDR görüntü veriyor ve standart LED televizyonlardan daha iyi kontrast sunuyor. 144 Hz panel, PS5 ve Xbox ile akıcı oyun için ideal.",
-      "Paneller VA tipinde: karşıdan bakınca kontrast güçlü, yan açılarda renkler biraz soluklaşıyor. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması bildirdi; yazılım güncellemeleriyle azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
-    ],
-    "secim": [
-      {
-        "urun": "tv35",
-        "metin": "TCL markasını ve daha uzun süredir piyasada olan Q6C serisini tercih ediyorsanız ya da fiyat farkı küçükse."
-      },
-      {
-        "urun": "tv5",
-        "metin": "Aynı özellikleri daha düşük fiyata istiyorsanız. Fiyat farkı belirginse mantıklı seçim bu."
-      }
-    ],
-    "sonuc": "Bu ikili arasında kararı fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın, hangisi daha ucuzsa onu alın."
-  },
-  "tv10|tv42": {
-    "tarih": "2026-10-18",
-    "baslik": "Editör Değerlendirmesi: TCL 65Q6C mi, TCL 65T8D mi?",
-    "metin": [
-      "İkisi de TCL'nin 65 inç QD-Mini LED televizyonları ama farklı yıllardan. 65Q6C 2025 serisinden, 65T8D ise 2026 serisinden. İkisinde de Dolby Vision, HDR10+, Google TV ve Mini LED arka aydınlatma var.",
-      "Oyun oynayanlar için asıl fark yenileme hızında: Q6C 144 Hz panel kullanıyor, T8D ise 120 Hz. PS5 ve Xbox Series X en fazla 120 Hz verdiği için konsol oyuncuları bu farkı hissetmez; 144 Hz yalnızca güçlü bir bilgisayar bağlayanlar için anlam taşıyor. Ses tarafında Q6C 40 W, T8D 35 W çıkış gücüne sahip.",
-      "T8D daha yeni olduğu için daha güncel yazılımla ve daha uzun güncelleme desteğiyle geliyor. Q6C ise piyasada daha uzun süredir olduğu için fiyatı genelde daha cazip ve hakkında daha fazla kullanıcı yorumu var."
-    ],
-    "secim": [
-      {
-        "urun": "tv42",
-        "metin": "Bilgisayardan 144 Hz oyun oynayacaksanız ya da Q6C belirgin şekilde daha ucuzsa."
-      },
-      {
-        "urun": "tv10",
-        "metin": "Daha yeni bir model ve daha uzun yazılım desteği istiyorsanız; fiyat farkı küçükse."
-      }
-    ],
-    "sonuc": "Konsol oyuncusu ve film izleyici için iki model de yeterli; fiyatı uygun olanı seçin. Bilgisayar oyuncusuysanız 144 Hz'lik 65Q6C bir adım önde."
-  },
-  "huawei-mate-x7|p_zfold7": {
-    "tarih": "2026-11-24",
-    "baslik": "Editör Değerlendirmesi: HUAWEI Mate X7 mi, Samsung Galaxy Z Fold7 mi?",
-    "metin": [
-      "Türkiye'de satılan iki büyük katlanabilir telefon bunlar. İkisi de kitap gibi açılıyor ve içte 8 inç ekran sunuyor. Ama bu iki telefonu farklı insanlara önermek gerekiyor, çünkü aradaki en büyük fark donanımdan çok yazılım tarafında.",
-      "Mate X7 donanımda birkaç noktada önde. Bataryası 5.300 mAh, Fold7'de ise 4.400 mAh. Şarjda 66 W kablolu ve 50 W kablosuz destek var, Samsung bu konuda geride. Suya ve toza dayanıklılıkta da IP58/IP59 ile Fold7'nin IP48'inden daha iyi korunuyor. Kamera tarafında Huawei'nin değişken diyaframlı 50 MP ana kamerası ve 3,5x periskop telefotosu, özellikle zoom çekimlerde güçlü. Fold7 ise 200 MP ana kamerayla geliyor ve 215 gramla 236 gramlık Mate X7'den belirgin şekilde hafif, açıkken de daha ince.",
-      "Asıl karar noktası Google servisleri. Mate X7'nin global sürümü EMUI 15 ile geliyor ve Google Play, Gmail, YouTube gibi uygulamalar telefonda resmi olarak yok. Bankacılık ve e-Devlet gibi uygulamaların çoğu AppGallery üzerinden ya da alternatif yollarla kurulabiliyor, ama her şey Android'deki kadar sorunsuz değil. Türkiye sürümünde 5G desteği de bulunmuyor. Galaxy Z Fold7 ise Android 16, Google servisleri, 5G ve Samsung'un uzun yazılım güncelleme desteğiyle hiçbir uzlaşma gerektirmiyor."
-    ],
-    "secim": [
-      {
-        "urun": "huawei-mate-x7",
-        "metin": "Uzun batarya ömrü, hızlı ve kablosuz şarj, daha iyi su/toz koruması ve güçlü zoom kamera istiyorsanız; Google servisleri olmadan çalışmak sizin için sorun değilse."
-      },
-      {
-        "urun": "p_zfold7",
-        "metin": "Telefonu tüm uygulamalarınızla sorunsuz kullanmak, 5G ve uzun güncelleme desteği istiyorsanız; daha hafif ve ince bir gövdeyi batarya ömrüne tercih ediyorsanız."
-      }
-    ],
-    "sonuc": "Kâğıt üzerinde Mate X7 daha çok şey sunuyor, ama çoğu kullanıcı için Galaxy Z Fold7 daha az sürprizli bir seçim. Google uygulamalarına bağımlıysanız Fold7, değilseniz ve batarya sizin için önemliyse Mate X7 daha mantıklı."
-  }
+ "_aciklama": "Elle yazılmış karşılaştırma değerlendirmeleri. Anahtar: iki ürün id'si, alfabetik sıralı, '|' ile. 'secim' içindeki 'urun' alanı ürün id'sidir. Fiyat yazmıyoruz; güncel fiyat sayfanın üstünde zaten gösteriliyor.",
+ "n7|n8": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iFFALCON 65U95A mı, TCL 65C6K mı?",
+  "metin": [
+   "Önce sık sorulan soruyu cevaplayalım: iFFALCON, TCL'nin kendi markası. Bu yüzden iki televizyon aynı aileden geliyor ve kâğıt üzerinde birbirine çok benziyor. İkisinde de 65 inç 4K QD-Mini LED panel, 144 Hz yenileme hızı, Dolby Vision ve HDR10+ desteği, HDMI 2.1 girişleri ve Google TV var. Ses tarafında da iki model 30 W çıkış gücünde.",
+   "Asıl fark yaşta ve fiyatta. TCL 65C6K, TCL'nin 2025 C6K serisinden; piyasada daha uzun süredir var, kullanıcı yorumu ve yazılım güncellemesi geçmişi daha fazla. iFFALCON 65U95A ise 2026 modeli olarak satılıyor ve genelde benzer donanımı daha uygun fiyata sunmayı hedefliyor. Panel teknolojisi aynı sınıfta olduğu için resim kalitesinde gözle görülür bir fark beklemeyin; iki modelde de yerel karartma sayesinde kontrast iyi, ama OLED seviyesinde siyah yok.",
+   "İkisi de VA tipi panel kullanıyor. Bu, karşıdan bakınca güçlü kontrast demek; ama televizyonu yan açılardan izleyecek geniş bir oturma düzeniniz varsa renkler soluklaşabilir. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması (ghosting) bildirdi; sonraki yazılım güncellemeleriyle bunun azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
+  ],
+  "secim": [
+   {
+    "urun": "n8",
+    "metin": "Daha uzun süredir satılan, yorumu ve güncelleme geçmişi bol bir model istiyorsanız ya da fiyat farkı birkaç bin TL'nin altındaysa."
+   },
+   {
+    "urun": "n7",
+    "metin": "Aynı özellikleri daha düşük fiyata almak istiyorsanız. Fiyat farkı belirginse, aynı panel sınıfına daha az ödemiş olursunuz."
+   }
+  ],
+  "sonuc": "Kısacası, bu ikili arasında kararı özellikler değil fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın; fark anlamlıysa ucuz olanı almak mantıklı."
+ },
+ "h3|s2": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Galaxy S24 Ultra mı, S26 Ultra mı?",
+  "metin": [
+   "İki nesil arasında telefonun karakteri değişmedi: ikisi de 200 MP ana kameralı, S Pen'li, IP68 korumalı ve 5000 mAh pilli büyük ekranlı amiral gemisi. Değişen şeyler daha çok günlük konforla ilgili.",
+   "S26 Ultra elde belirgin şekilde daha rahat: kalınlık 8,6 mm'den 7,9 mm'ye, ağırlık 232 g'dan 218 g'a iniyor. İşlemci Snapdragon 8 Gen 3'ten Snapdragon 8 Elite Gen 5'e geçiyor; günlük kullanımda ikisi de çok hızlı, fark daha çok ağır oyunlarda ve uzun vadede hissedilir. Ultra geniş açı kamera 12 MP'den 50 MP'ye çıktı ve kablolu şarj hızı 45 W'tan 60 W'a yükseldi.",
+   "S24 Ultra'nın kendine ait bir artısı da var: S Pen'i Bluetooth destekli. Kalemle uzaktan fotoğraf çekme ya da sunum kaydırma gibi hareketleri kullanıyorsanız bunu bilin; sonraki nesillerde S Pen'den Bluetooth kaldırıldı. Yazılım tarafında Samsung iki modele de yedi yıl güncelleme sözü verdi; S24 Ultra 2024'te çıktığı için bu süre onda daha erken bitecek."
+  ],
+  "secim": [
+   {
+    "urun": "h3",
+    "metin": "Amiral gemisi kamerası ve S Pen'i makul fiyata istiyorsanız. İndirimli bir S24 Ultra hâlâ çok güçlü ve önünde yıllarca güncelleme var."
+   },
+   {
+    "urun": "s2",
+    "metin": "Telefonu 4–5 yıl kullanmayı planlıyorsanız, daha hafif bir gövde ve daha hızlı şarj sizin için önemliyse."
+   }
+  ],
+  "sonuc": "Elinizde S24 Ultra varsa yükseltme zorunlu değil. Sıfırdan alıyorsanız aradaki fiyat farkına bakın: fark büyükse S24 Ultra, küçükse S26 Ultra daha doğru tercih."
+ },
+ "h1|h4": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iPhone 15 Pro mu, iPhone 16 Pro mu?",
+  "metin": [
+   "iPhone 15 Pro ile 16 Pro aynı ailenin art arda gelen iki nesli: ikisi de titanyum kasalı, 120 Hz ProMotion ekranlı, USB-C girişli ve 8 GB RAM sayesinde Apple Intelligence özelliklerini destekliyor. Yani 15 Pro alan biri yapay zekâ özelliklerinden mahrum kalmıyor.",
+   "16 Pro'daki farklar kamera ve ekranda toplanıyor. Ekran 6,1 inçten 6,3 inçe büyüdü. 5x optik telefoto, önceki nesilde yalnızca Pro Max'te vardı; 16 Pro ile küçük modele de geldi (15 Pro'da 3x). Ultra geniş açı kamera 12 MP'den 48 MP'ye çıktı, 4K 120 fps video kaydı eklendi ve yan tarafta fotoğraf çekmeyi hızlandıran Kamera Denetimi tuşu var. İşlemci A17 Pro'dan A18 Pro'ya geçti; Apple'ın verdiği değerlere göre pil ömrü de bir miktar uzadı.",
+   "15 Pro'nun artısı ise daha kompakt ve hafif olması: 187 g'a karşı 199 g. Küçük telefon seviyorsanız bu fark elde hissediliyor."
+  ],
+  "secim": [
+   {
+    "urun": "h4",
+    "metin": "Kompakt bir Pro iPhone istiyorsanız ve 5x zoom, 4K 120 fps video gibi özelliklere ihtiyacınız yoksa. Fiyatı belirgin şekilde düşükse iyi bir fırsat."
+   },
+   {
+    "urun": "h1",
+    "metin": "Fotoğraf ve videoyu ciddiye alıyorsanız, uzak çekimlerde 5x zoom işinize yarayacaksa ve telefonu uzun yıllar kullanacaksanız."
+   }
+  ],
+  "sonuc": "İki fiyat birbirine yakınsa 16 Pro'yu alın; daha yeni olduğu için güncelleme desteği de daha uzun sürecek. Fark büyükse 15 Pro hâlâ çok iyi bir telefon."
+ },
+ "n4|n6": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iPhone 15 mi, iPhone 17 mi?",
+  "metin": [
+   "Bu iki model arasında iki nesil var ve fark, standart iPhone'larda uzun süredir görmediğimiz kadar büyük. En önemlisi ekran: iPhone 15 60 Hz ekran kullanıyor, iPhone 17 ise ilk kez standart modele 120 Hz ProMotion ve her zaman açık ekran getiriyor. Kaydırırken, oyunda ve gündelik kullanımda akıcılık farkı ilk dakikadan hissediliyor. Ekran da 6,1 inçten 6,3 inçe büyüdü.",
+   "İkinci büyük fark yapay zekâ. Apple Intelligence en az 8 GB RAM istiyor; iPhone 15'te 6 GB olduğu için bu özellikler gelmiyor, iPhone 17'de geliyor. Bunlara A16'dan A19'a geçen işlemci, 12 MP'den 18 MP'ye çıkan ön kamera, 48 MP'ye yükselen ultra geniş açı ve 3349 mAh'den 3692 mAh'e çıkan pil ekleniyor. Başlangıç depolaması da 128 GB'tan 256 GB'a çıktı.",
+   "iPhone 15'in tarafında ise fiyat var. Arama, mesaj, sosyal medya ve fotoğraf için hâlâ hızlı ve yeterli; USB-C girişi ve 48 MP ana kamerası da var."
+  ],
+  "secim": [
+   {
+    "urun": "n4",
+    "metin": "Bütçeniz sınırlıysa, telefonu temel işler için kullanıyorsanız ve 60 Hz ekran sizi rahatsız etmiyorsa."
+   },
+   {
+    "urun": "n6",
+    "metin": "Telefonu 4–5 yıl kullanmayı düşünüyorsanız. 120 Hz ekran, Apple Intelligence desteği ve daha uzun güncelleme ömrü aradaki farkı karşılıyor."
+   }
+  ],
+  "sonuc": "Uzun vadede iPhone 17 daha mantıklı yatırım. iPhone 15'i yalnızca fiyat farkı sizin için gerçekten önemliyse tercih edin."
+ },
+ "h8|n2": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iPhone 13 mü, iPhone 13 Pro mu?",
+  "metin": [
+   "İki telefon da aynı A15 Bionic işlemciyi kullanıyor ve ikisi de güncel iOS sürümlerini almaya devam ediyor. Bu yüzden günlük hız farkı küçük. Ayrım ekranda ve kamerada.",
+   "iPhone 13 Pro, 120 Hz ProMotion ekranın geldiği ilk iPhone; iPhone 13 ise 60 Hz. Pro'da ayrıca 3x optik telefoto, makro çekim ve daha parlak ekran var; RAM de 4 GB yerine 6 GB. Buna karşılık iPhone 13 daha hafif (174 g'a karşı 204 g) ve renk seçenekleri daha fazla. İkisi de Lightning girişli; USB-C yok.",
+   "2026'da bu modelleri çoğunlukla ikinci el ya da yenilenmiş olarak bulacaksınız. Bu durumda pil sağlığı, modelden bile daha önemli: Ayarlar > Pil > Pil Sağlığı bölümünde yüzde 85'in altındaysa yakında pil değişimi gerekebilir, fiyatı buna göre değerlendirin."
+  ],
+  "secim": [
+   {
+    "urun": "n2",
+    "metin": "Temel kullanım için uygun fiyatlı, hafif bir iPhone arıyorsanız."
+   },
+   {
+    "urun": "h8",
+    "metin": "Akıcı 120 Hz ekran ve uzağı yakınlaştıran telefoto kamera sizin için önemliyse, fiyat farkı da makulse."
+   }
+  ],
+  "sonuc": "İkisi arasında fiyat farkı küçükse 13 Pro daha çok şey sunuyor. Fark büyükse ve ekran akıcılığını önemsemiyorsanız iPhone 13 yeterli."
+ },
+ "n1|n6": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iPhone 11'den iPhone 17'ye geçmeye değer mi?",
+  "metin": [
+   "Bu karşılaştırmayı arayanların çoğu elinde iPhone 11 olan ve yenilemeyi düşünen kullanıcılar. Kısa cevap: evet, aradaki fark çok büyük. iPhone 11 2019 modeli; iPhone 17 ile arasında altı nesil var.",
+   "En belirgin fark ekranda. iPhone 11'de 6,1 inç LCD panel ve 60 Hz var; iPhone 17'de 6,3 inç OLED, 120 Hz ProMotion ve her zaman açık ekran. Siyahlar, parlaklık ve kaydırma akıcılığı başka bir sınıfta. Kamerada 12 MP'den 48 MP ana sensöre ve 48 MP ultra geniş açıya geçiliyor; ön kamera 18 MP oluyor. iPhone 11'de 5G yok, giriş Lightning; iPhone 17'de 5G ve USB-C var.",
+   "Yazılım tarafında iPhone 11 hâlâ güncelleme alıyor ama ömrünün sonuna yaklaşıyor ve Apple Intelligence özelliklerini hiç desteklemiyor. iPhone 17 hem bu özellikleri destekliyor hem de önünde uzun yıllar güncelleme var. Başlangıç depolaması da 64 GB'tan 256 GB'a çıkmış durumda."
+  ],
+  "secim": [
+   {
+    "urun": "n1",
+    "metin": "Yalnızca arama, mesaj ve temel uygulamalar için çok ucuz bir yedek telefon arıyorsanız. Ana telefon olarak artık önermiyoruz."
+   },
+   {
+    "urun": "n6",
+    "metin": "Telefonu birkaç yıl daha kullanmak istiyorsanız. Ekran, kamera, pil ve güncelleme süresinde iPhone 11'in çok önünde."
+   }
+  ],
+  "sonuc": "iPhone 11'den yükseltme yapacaksanız iPhone 17 doğru adres. Bütçe yetmiyorsa iPhone 15 veya 16 da büyük bir sıçrama olur; iPhone 11'i sıfırdan almanızı önermiyoruz."
+ },
+ "z1|z2": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Honor 600 Pro mu, Honor Magic8 Pro mu?",
+  "metin": [
+   "İkisi de Honor'un üst segment telefonları ama farklı hedefleri var. Magic8 Pro markanın amiral gemisi: Snapdragon 8 Elite Gen 5 işlemci, 6,71 inç LTPO OLED ekran ve 200 MP periskop telefoto kamerayla uzak çekimde iddialı. 600 Pro ise bir önceki neslin amiral işlemcisi Snapdragon 8 Elite'i daha uygun fiyata, daha kompakt bir gövdede sunuyor.",
+   "Honor 600 Pro'nun öne çıkan yanları: 6,57 inç ekranla elde daha kolay kullanılıyor, 200 MP ana kamera, 3,5x optik zoom yapan 50 MP periskop telefoto ve 80 W kablolu, 50 W kablosuz şarj var. Honor bu model için altı yıl işletim sistemi güncellemesi sözü veriyor. Magic8 Pro'da ise ekran daha büyük ve LTPO, pil kapasitesi daha yüksek, zoom kamerası daha güçlü.",
+   "İki telefonda da IP68, IP69 ve IP69K koruma var; yani suya ve tozun yanında yüksek basınçlı suya da dayanıklılar. Günlük kullanımda iki işlemci de çok hızlı; fark ağır oyunlarda ve uzun vadede hissedilir."
+  ],
+  "secim": [
+   {
+    "urun": "z2",
+    "metin": "Amiral gemisine yakın performansı daha uygun fiyata ve daha kompakt bir gövdede istiyorsanız."
+   },
+   {
+    "urun": "z1",
+    "metin": "En iyi zoom kamerasını, en büyük ekranı ve en güçlü işlemciyi istiyorsanız; fiyat farkı sizin için sorun değilse."
+   }
+  ],
+  "sonuc": "Çoğu kullanıcı için Honor 600 Pro fiyatına göre daha mantıklı. Fotoğrafta uzak çekim sizin için öncelikliyse Magic8 Pro'ya ödenen fark karşılığını verir."
+ },
+ "h3|z2": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Honor 600 Pro mu, Galaxy S24 Ultra mı?",
+  "metin": [
+   "Bu iki telefon benzer fiyat aralığında karşılaşıyor ama çok farklı kullanıcıları hedefliyor. Galaxy S24 Ultra büyük ekranlı, S Pen'li ve 5x zoom kameralı bir üretkenlik telefonu. Honor 600 Pro ise daha yeni bir işlemciyi (Snapdragon 8 Elite), daha büyük pili ve çok daha hızlı şarjı daha kompakt bir gövdede sunuyor.",
+   "Honor'un artıları: 80 W kablolu ve 50 W kablosuz şarj (S24 Ultra'da 45 W ve 15 W), IP68'e ek olarak IP69 koruma, 6,57 inç ekranla daha rahat tek el kullanımı ve 200 gram civarında ağırlık. S24 Ultra'nın artıları: kutudan çıkan S Pen, 6,8 inç QHD+ ekran, 5x optik zoom ve Samsung'un servis ağı ile yedi yıllık güncelleme sözü.",
+   "Kamera tarafında ikisinde de 200 MP ana sensör var. S24 Ultra daha uzun zoom sunuyor, Honor ise 3,5x periskop telefotoyla orta mesafede güçlü."
+  ],
+  "secim": [
+   {
+    "urun": "z2",
+    "metin": "Hızlı şarj, uzun pil ve daha yeni işlemci sizin için önemliyse; büyük ve ağır telefon sevmiyorsanız."
+   },
+   {
+    "urun": "h3",
+    "metin": "S Pen kullanıyorsanız, büyük ekranda çalışıyorsanız ve uzun süreli yazılım desteğini öncelikli görüyorsanız."
+   }
+  ],
+  "sonuc": "S Pen'e ihtiyacınız yoksa Honor 600 Pro günlük kullanımda daha pratik bir seçim. S Pen ve büyük ekran vazgeçilmezse S24 Ultra'yı alın."
+ },
+ "n3|n6": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iPhone 14 mü, iPhone 17 mi?",
+  "metin": [
+   "iPhone 14 ile iPhone 17 arasında üç nesil var ve fark, standart iPhone'larda son yılların en büyüğü. iPhone 14'te 60 Hz ekran, A15 işlemci, 12 MP ana kamera ve Lightning girişi var. iPhone 17 ise 120 Hz ProMotion ve her zaman açık ekran, A19 işlemci, 48 MP ana ve ultra geniş açı kameralar ve USB-C ile geliyor.",
+   "Önemli bir fark daha: iPhone 14'teki 6 GB RAM, Apple Intelligence özelliklerini desteklemiyor; iPhone 17'deki 8 GB RAM destekliyor. Ekran 6,1 inçten 6,3 inçe büyüyor, başlangıç depolaması 128 GB'tan 256 GB'a çıkıyor ve pil kapasitesi 3279 mAh'den 3692 mAh'e yükseliyor.",
+   "iPhone 14'ün avantajı fiyat. Günlük işler için hâlâ hızlı, kamerası gün ışığında iyi ve Kaza Algılama gibi güvenlik özellikleri var."
+  ],
+  "secim": [
+   {
+    "urun": "n3",
+    "metin": "Uygun fiyatlı bir iPhone arıyorsanız ve 60 Hz ekran ile Lightning girişi sizin için sorun değilse."
+   },
+   {
+    "urun": "n6",
+    "metin": "Telefonu uzun süre kullanacaksanız; akıcı ekran, Apple Intelligence ve daha iyi kamera için aradaki farkı ödemeye değer."
+   }
+  ],
+  "sonuc": "Fiyat farkı makulse iPhone 17'yi alın. iPhone 14'ü ancak belirgin şekilde ucuzsa ve temel kullanım için düşünüyorsanız tercih edin."
+ },
+ "h4|h6": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iPhone 14 Pro mu, iPhone 15 Pro mu?",
+  "metin": [
+   "İki model dışarıdan çok benzer: 6,1 inç 120 Hz ProMotion ekran, Dynamic Island, 48 MP ana kamera ve 3x telefoto ikisinde de var. Farklar daha çok kasanın içinde ve elde hissediliyor.",
+   "iPhone 15 Pro titanyum kasaya geçti ve 206 g'dan 187 g'a hafifledi; elde fark açıkça hissediliyor. Lightning yerine USB-C geldi ve bu giriş hızlı veri aktarımını (USB 3) destekliyor. Sessize alma anahtarının yerini kişiselleştirilebilen Eylem tuşu aldı. İşlemci A16'dan A17 Pro'ya geçti.",
+   "En önemli fark yazılımda: Apple Intelligence için en az 8 GB RAM gerekiyor. iPhone 15 Pro'da 8 GB var ve bu özellikleri destekliyor; iPhone 14 Pro'da 6 GB var ve desteklemiyor. Telefonu birkaç yıl daha kullanacaksanız bu fark giderek daha önemli hale gelecek."
+  ],
+  "secim": [
+   {
+    "urun": "h6",
+    "metin": "Pro ekran ve kamerayı en uygun fiyata istiyorsanız ve yapay zekâ özellikleri sizin için önemli değilse."
+   },
+   {
+    "urun": "h4",
+    "metin": "Daha hafif bir telefon, USB-C ve Apple Intelligence desteği istiyorsanız. Uzun vadede daha doğru seçim."
+   }
+  ],
+  "sonuc": "İkisi arasında fiyat farkı küçükse iPhone 15 Pro'yu alın. 14 Pro'yu yalnızca ciddi bir fiyat avantajı varsa düşünün."
+ },
+ "h24|s6": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Apple Watch Series 10 mu, Series 11 mi?",
+  "metin": [
+   "Series 10 ile Series 11 arasındaki fark, Apple Watch tarihindeki en küçük yıllık farklardan biri. Kasa tasarımı, ekran ve işlemci aynı: ikisinde de S10 çip ve geniş açılı OLED ekran var. Sağlık sensörleri de büyük ölçüde aynı; kalp ritmi, EKG, kan oksijeni ve sıcaklık ölçümü ikisinde de mevcut.",
+   "Series 11'in getirdiği yenilikler şunlar: pil ömrü Apple'ın değerlerine göre 18 saatten 24 saate çıktı; bu, saati gece uyku takibi için takıp sabah şarj etmeden kullanmayı kolaylaştırıyor. Hücresel modellerde 5G desteği geldi. Alüminyum modellerde ekran camı Apple'a göre iki kat daha çizilmeye dayanıklı.",
+   "Uyku puanı gibi bazı yazılım özellikleri güncellemeyle Series 10'a da geldi. Bu yüzden iki saati yan yana kullanınca günlük deneyim çok benzer."
+  ],
+  "secim": [
+   {
+    "urun": "h24",
+    "metin": "İndirimli bulursanız. Aynı tasarım ve işlemciyi daha düşük fiyata alırsınız."
+   },
+   {
+    "urun": "s6",
+    "metin": "Pil ömrü sizin için önemliyse, uyku takibi yapıyorsanız ya da hücresel model alacaksanız."
+   }
+  ],
+  "sonuc": "Fiyatlar yakınsa Series 11'i alın; daha uzun pil ömrü günlük kullanımda hissedilir. Elinizde Series 10 varsa yükseltmeye gerek yok."
+ },
+ "h25|h27": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Apple Watch Series 8 mi, Series 9 mu?",
+  "metin": [
+   "Series 8 ile Series 9 aynı kasa tasarımını, aynı 18 saatlik pil ömrünü ve benzer sağlık sensörlerini paylaşıyor. Fark, Series 9'daki yeni işlemci ve onun getirdiği özelliklerde.",
+   "Series 9'daki S9 çip, saatin daha hızlı açılmasını ve uygulamaların daha akıcı çalışmasını sağlıyor. Bu çip sayesinde Çift Dokunuş hareketi geldi: işaret ve başparmağınızı iki kez birbirine dokundurarak çağrı cevaplayabilir, alarmı kapatabilirsiniz. Ekran parlaklığı 2000 nite çıktı; güneş altında okumak daha kolay. Siri bazı komutları internet olmadan cihaz üzerinde işleyebiliyor ve uyumlu iPhone'u bulmak için hassas konum bulma destekleniyor.",
+   "Series 8 ise sıcaklık sensörü, kaza algılama, EKG ve kan oksijeni gibi önemli sağlık özelliklerinin hepsine sahip. İkisi de güncel watchOS sürümlerini almaya devam ediyor."
+  ],
+  "secim": [
+   {
+    "urun": "h27",
+    "metin": "Temel sağlık ve spor takibi için uygun fiyatlı bir Apple Watch arıyorsanız."
+   },
+   {
+    "urun": "h25",
+    "metin": "Çift Dokunuş ve daha parlak ekranı kullanacaksanız; daha yeni olduğu için güncelleme desteği de daha uzun sürecek."
+   }
+  ],
+  "sonuc": "Fiyatlar birbirine yakınsa Series 9 daha mantıklı. Series 8'i yalnızca belirgin şekilde ucuzsa tercih edin; ikinci el alıyorsanız pil sağlığını mutlaka kontrol edin."
+ },
+ "p_mid_03|samsung-galaxy-a37-5g": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Galaxy A37 5G mi, Redmi Note 14 Pro+ mı?",
+  "metin": [
+   "Bu iki telefon orta segmentte iki farklı yaklaşımı temsil ediyor. Galaxy A37 5G, 2026'da çıkan yeni bir model ve en büyük kozu uzun yazılım desteği: Samsung altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor. Redmi Note 14 Pro+ ise 2025 başında çıktı; donanım tarafında daha iddialı ama daha eski.",
+   "Redmi'nin öne çıkan yanları 200 MP ana kamera, 1,5K çözünürlüklü 120 Hz AMOLED ekran ve çok hızlı, 120 W HyperCharge şarj. Telefonu yarım saatten kısa sürede doldurmak mümkün. Snapdragon 7s Gen 3 işlemci günlük kullanımda ve orta seviye oyunlarda rahat.",
+   "Galaxy A37 5G ise 6,7 inç 120 Hz Super AMOLED ekran, optik görüntü sabitlemeli 50 MP ana kamera, 5000 mAh pil ve 45 W şarjla geliyor. Exynos 1480 işlemci günlük işler için yeterli. 7,4 mm kalınlığıyla ince; iki telefonda da IP68 koruma var."
+  ],
+  "secim": [
+   {
+    "urun": "samsung-galaxy-a37-5g",
+    "metin": "Telefonu 4–5 yıl kullanacaksanız ve düzenli güncelleme, Samsung servis ağı sizin için önemliyse."
+   },
+   {
+    "urun": "p_mid_03",
+    "metin": "Çok hızlı şarj, keskin ekran ve yüksek çözünürlüklü kamera istiyorsanız; fiyatı da A37'nin altındaysa."
+   }
+  ],
+  "sonuc": "Uzun vadeli kullanım için Galaxy A37, aynı paraya daha fazla donanım için Redmi Note 14 Pro+. Karar, telefonu kaç yıl kullanacağınıza bağlı."
+ },
+ "redmi-note-15-pro-5g-2026|samsung-galaxy-a37-5g": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Galaxy A37 5G mi, Redmi Note 15 Pro 5G mi?",
+  "metin": [
+   "İkisi de 2026'nın orta segment telefonları ve benzer fiyat aralığında karşılaşıyor. Redmi Note 15 Pro 5G donanımda daha cömert: 6,83 inç 1,5K AMOLED ekran, 200 MP ana kamera ve 6580 mAh gibi büyük bir pil. MediaTek Dimensity 7400-Ultra işlemci günlük kullanımda hızlı.",
+   "Galaxy A37 5G'nin kozları farklı: Samsung altı yıl işletim sistemi ve güvenlik güncellemesi sözü veriyor, optik görüntü sabitlemeli 50 MP ana kamerası gün ışığında dengeli fotoğraflar çekiyor ve 7,4 mm kalınlığıyla daha ince. Ağırlık da 197 g'a karşı 210 g; Redmi'nin büyük pili elde hissediliyor.",
+   "Su ve toz korumasında ikisi de IP68 sınıfında. Pil ömrü önceliğinizse Redmi'nin daha büyük bataryası belirgin bir avantaj."
+  ],
+  "secim": [
+   {
+    "urun": "samsung-galaxy-a37-5g",
+    "metin": "Daha hafif bir telefon, uzun güncelleme desteği ve Samsung'un yazılım deneyimini istiyorsanız."
+   },
+   {
+    "urun": "redmi-note-15-pro-5g-2026",
+    "metin": "Büyük ekran, uzun pil ömrü ve yüksek çözünürlüklü kamera sizin için önemliyse."
+   }
+  ],
+  "sonuc": "Pil ve ekran için Redmi Note 15 Pro 5G, uzun ömürlü yazılım desteği ve hafiflik için Galaxy A37. Fiyat farkını da hesaba katarak seçin."
+ },
+ "redmi-15c-5g-2026|redmi-note-15-5g-2026": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: Redmi 15C 5G mi, Redmi Note 15 5G mi?",
+  "metin": [
+   "İki telefon aynı markanın farklı basamakları. Redmi 15C 5G giriş seviyesi; Redmi Note 15 5G bir üst segment. Aradaki fiyat farkının karşılığını en çok ekranda görüyorsunuz.",
+   "Redmi 15C 5G'de 6,9 inç büyük bir LCD ekran var, ama çözünürlüğü HD+ (1600x720). Yazılar ve videolar Full HD ekranlar kadar keskin görünmüyor. Buna karşılık 6000 mAh pil, 3,5 mm kulaklık girişi ve IP64 toz-su sıçrama koruması var; MediaTek Dimensity 6300 işlemci temel kullanım için yeterli.",
+   "Redmi Note 15 5G'de AMOLED ekran var: daha canlı renkler, gerçek siyahlar ve daha yüksek çözünürlük. 108 MP ana kamera, 15C'deki 50 MP kameradan daha ayrıntılı fotoğraf çekiyor. Gövde de 7,94 mm ve 183,7 g ile 15C'den (8,2 mm, 211 g) belirgin şekilde ince ve hafif."
+  ],
+  "secim": [
+   {
+    "urun": "redmi-15c-5g-2026",
+    "metin": "En düşük bütçeyle 5G'li, büyük pilli bir telefon arıyorsanız; telefonu arama, mesaj ve sosyal medya için kullanacaksanız."
+   },
+   {
+    "urun": "redmi-note-15-5g-2026",
+    "metin": "Ekran kalitesi ve kamera sizin için önemliyse. Fiyat farkı, günlük kullanımda en çok baktığınız ekranda karşılığını veriyor."
+   }
+  ],
+  "sonuc": "Bütçeniz elveriyorsa Redmi Note 15 5G'yi alın; AMOLED ekran farkı her gün hissediliyor. Redmi 15C ise sınırlı bütçede uzun pil ömrü isteyenler için mantıklı."
+ },
+ "h2|poco-f9-ultra-2026": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: POCO F9 Ultra mı, Galaxy S25 Ultra mı?",
+  "metin": [
+   "POCO F9 Ultra, Xiaomi'nin performans odaklı POCO markasının en iddialı telefonu. Yeni Snapdragon 8 Elite Gen 5 işlemci, 6,9 inç ve çok yüksek yenileme hızlı AMOLED ekran ve 8050 mAh gibi çok büyük bir pille geliyor; 100 W şarjla da hızlı doluyor. Kamerada 200 MP ana, 50 MP periskop telefoto ve 50 MP ultra geniş açı var.",
+   "Galaxy S25 Ultra ise bir önceki neslin Snapdragon 8 Elite işlemcisini kullanıyor ama paketin tamamı daha olgun: S Pen, 5x optik zoomlu telefoto, titanyum kasa, yansımayı azaltan ekran kaplaması ve Samsung'un yedi yıllık güncelleme sözü. 218 g ile POCO'dan (235 g) daha hafif.",
+   "Kısacası POCO daha yeni işlemci, daha büyük pil ve daha hızlı şarj sunuyor; Samsung ise S Pen, uzun yazılım desteği ve daha yaygın servis ağıyla öne çıkıyor."
+  ],
+  "secim": [
+   {
+    "urun": "poco-f9-ultra-2026",
+    "metin": "Oyun performansı, pil ömrü ve hızlı şarj önceliğinizse; S Pen kullanmıyorsanız."
+   },
+   {
+    "urun": "h2",
+    "metin": "S Pen'e ihtiyacınız varsa, telefonu uzun yıllar kullanacaksanız ve daha hafif bir amiral gemisi istiyorsanız."
+   }
+  ],
+  "sonuc": "Saf performans ve pil için POCO F9 Ultra, eksiksiz bir amiral gemisi deneyimi ve uzun güncelleme desteği için Galaxy S25 Ultra."
+ },
+ "tv35|tv5": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: iFFALCON 55U95A mı, TCL 55Q6C mi?",
+  "metin": [
+   "Önce bilinmesi gereken: iFFALCON, TCL'nin kendi markası. Bu yüzden iki televizyon benzer teknolojiyi kullanıyor. İkisinde de 55 inç 4K QD-Mini LED panel, 144 Hz yenileme hızı, Dolby Vision ve HDR10+ desteği ve 40 W ses çıkışı var.",
+   "Bu benzerlik nedeniyle resim kalitesinde gözle görülür bir fark beklemeyin. Mini LED arka aydınlatma sayesinde ikisi de parlak sahnelerde güçlü HDR görüntü veriyor ve standart LED televizyonlardan daha iyi kontrast sunuyor. 144 Hz panel, PS5 ve Xbox ile akıcı oyun için ideal.",
+   "Paneller VA tipinde: karşıdan bakınca kontrast güçlü, yan açılarda renkler biraz soluklaşıyor. U95A serisi kullanıcıları karanlık sahnelerde zaman zaman iz kalması bildirdi; yazılım güncellemeleriyle azaldığı belirtiliyor. Kurulumdan sonra güncellemeleri yapmanızı öneririz."
+  ],
+  "secim": [
+   {
+    "urun": "tv35",
+    "metin": "TCL markasını ve daha uzun süredir piyasada olan Q6C serisini tercih ediyorsanız ya da fiyat farkı küçükse."
+   },
+   {
+    "urun": "tv5",
+    "metin": "Aynı özellikleri daha düşük fiyata istiyorsanız. Fiyat farkı belirginse mantıklı seçim bu."
+   }
+  ],
+  "sonuc": "Bu ikili arasında kararı fiyat verir. Sayfanın üstündeki güncel fiyatlara bakın, hangisi daha ucuzsa onu alın."
+ },
+ "tv10|tv42": {
+  "tarih": "2026-10-18",
+  "baslik": "Editör Değerlendirmesi: TCL 65Q6C mi, TCL 65T8D mi?",
+  "metin": [
+   "İkisi de TCL'nin 65 inç QD-Mini LED televizyonları ama farklı yıllardan. 65Q6C 2025 serisinden, 65T8D ise 2026 serisinden. İkisinde de Dolby Vision, HDR10+, Google TV ve Mini LED arka aydınlatma var.",
+   "Oyun oynayanlar için asıl fark yenileme hızında: Q6C 144 Hz panel kullanıyor, T8D ise 120 Hz. PS5 ve Xbox Series X en fazla 120 Hz verdiği için konsol oyuncuları bu farkı hissetmez; 144 Hz yalnızca güçlü bir bilgisayar bağlayanlar için anlam taşıyor. Ses tarafında Q6C 40 W, T8D 35 W çıkış gücüne sahip.",
+   "T8D daha yeni olduğu için daha güncel yazılımla ve daha uzun güncelleme desteğiyle geliyor. Q6C ise piyasada daha uzun süredir olduğu için fiyatı genelde daha cazip ve hakkında daha fazla kullanıcı yorumu var."
+  ],
+  "secim": [
+   {
+    "urun": "tv42",
+    "metin": "Bilgisayardan 144 Hz oyun oynayacaksanız ya da Q6C belirgin şekilde daha ucuzsa."
+   },
+   {
+    "urun": "tv10",
+    "metin": "Daha yeni bir model ve daha uzun yazılım desteği istiyorsanız; fiyat farkı küçükse."
+   }
+  ],
+  "sonuc": "Konsol oyuncusu ve film izleyici için iki model de yeterli; fiyatı uygun olanı seçin. Bilgisayar oyuncusuysanız 144 Hz'lik 65Q6C bir adım önde."
+ },
+ "huawei-mate-x7|p_zfold7": {
+  "tarih": "2026-11-24",
+  "baslik": "Editör Değerlendirmesi: HUAWEI Mate X7 mi, Samsung Galaxy Z Fold7 mi?",
+  "metin": [
+   "Türkiye'de satılan iki büyük katlanabilir telefon bunlar. İkisi de kitap gibi açılıyor ve içte 8 inç ekran sunuyor. Ama bu iki telefonu farklı insanlara önermek gerekiyor, çünkü aradaki en büyük fark donanımdan çok yazılım tarafında.",
+   "Mate X7 donanımda birkaç noktada önde. Bataryası 5.300 mAh, Fold7'de ise 4.400 mAh. Şarjda 66 W kablolu ve 50 W kablosuz destek var, Samsung bu konuda geride. Suya ve toza dayanıklılıkta da IP58/IP59 ile Fold7'nin IP48'inden daha iyi korunuyor. Kamera tarafında Huawei'nin değişken diyaframlı 50 MP ana kamerası ve 3,5x periskop telefotosu, özellikle zoom çekimlerde güçlü. Fold7 ise 200 MP ana kamerayla geliyor ve 215 gramla 236 gramlık Mate X7'den belirgin şekilde hafif, açıkken de daha ince.",
+   "Asıl karar noktası Google servisleri. Mate X7'nin global sürümü EMUI 15 ile geliyor ve Google Play, Gmail, YouTube gibi uygulamalar telefonda resmi olarak yok. Bankacılık ve e-Devlet gibi uygulamaların çoğu AppGallery üzerinden ya da alternatif yollarla kurulabiliyor, ama her şey Android'deki kadar sorunsuz değil. Türkiye sürümünde 5G desteği de bulunmuyor. Galaxy Z Fold7 ise Android 16, Google servisleri, 5G ve Samsung'un uzun yazılım güncelleme desteğiyle hiçbir uzlaşma gerektirmiyor."
+  ],
+  "secim": [
+   {
+    "urun": "huawei-mate-x7",
+    "metin": "Uzun batarya ömrü, hızlı ve kablosuz şarj, daha iyi su/toz koruması ve güçlü zoom kamera istiyorsanız; Google servisleri olmadan çalışmak sizin için sorun değilse."
+   },
+   {
+    "urun": "p_zfold7",
+    "metin": "Telefonu tüm uygulamalarınızla sorunsuz kullanmak, 5G ve uzun güncelleme desteği istiyorsanız; daha hafif ve ince bir gövdeyi batarya ömrüne tercih ediyorsanız."
+   }
+  ],
+  "sonuc": "Kâğıt üzerinde Mate X7 daha çok şey sunuyor, ama çoğu kullanıcı için Galaxy Z Fold7 daha az sürprizli bir seçim. Google uygulamalarına bağımlıysanız Fold7, değilseniz ve batarya sizin için önemliyse Mate X7 daha mantıklı."
+ },
+ "p_huawei_2025_huawei_watch_gt_7|p_huawei_2026_huawei_watch_gt_runner_2": {
+  "tarih": "2026-11-25",
+  "baslik": "Editör Değerlendirmesi: Huawei Watch GT 7 mi, GT Runner 2 mi?",
+  "metin": [
+   "İki saat de Huawei'nin HarmonyOS tabanlı GT ailesinden, ikisi de GPS'li ve hem iPhone hem Android telefonlarla çalışıyor. Kataloğumuzdaki fiyatları da neredeyse aynı: GT 7 yaklaşık 15.700 TL, GT Runner 2 yaklaşık 16.000 TL. Yani bu karşılaştırmada fiyat belirleyici değil; asıl soru saati ne için kullanacağınız.",
+   "GT 7 günlük kullanım odaklı bir akıllı saat: bildirimler, uyku ve sağlık takibi, uzun pil ömrü ve farklı kasa seçenekleri öne çıkıyor. Runner serisi ise adından da anlaşılacağı gibi koşuculara yönelik; daha hafif bir gövde, koşu antrenman planları ve konum doğruluğuna verilen önem bu serinin temel farkı. Haftada birkaç kez düzenli koşuyorsanız ve yarışlara hazırlanıyorsanız GT Runner 2, saati daha çok gündelik hayatta ve iş yerinde takacaksanız GT 7 daha mantıklı. İki modelde de eSIM yok; telefon olmadan arama yapmak istiyorsanız bu ikili size uygun değil."
+  ]
+ },
+ "p_child_010|p_child_012": {
+  "tarih": "2026-11-25",
+  "baslik": "Editör Değerlendirmesi: Bilicra Round mı, Bilicra Mini mi?",
+  "metin": [
+   "Bilicra Round ve Bilicra Mini, aynı markanın 4G destekli çocuk saatleri ve kataloğumuzdaki fiyatları birbirine çok yakın: Round yaklaşık 6.200 TL, Mini yaklaşık 6.300 TL. İkisi de kendi SIM kartıyla telefondan bağımsız çalışıyor, GPS ile konum takibi yapıyor ve SOS düğmesi sunuyor.",
+   "Kayıtlı özelliklere bakınca Round'un öne çıkan yanı güvenli alan tanımlama: çocuk belirlediğiniz bölgenin dışına çıktığında uyarı alabiliyorsunuz. Mini ise sesli iletişim ve ebeveyn uygulaması üzerinden yönetimi vurguluyor. Çocuk saati seçerken asıl dikkat edilmesi gerekenler; saatin hangi operatörlerle çalıştığı, ebeveyn uygulamasının Türkçe ve kullanışlı olup olmadığı ve pilin bir okul gününü rahat çıkarıp çıkarmadığı. İki model arasındaki fiyat farkı 100 TL civarında olduğu için tercihi, mağazada kasa boyutunu çocuğun bileğinde deneyerek yapmanızı öneririz."
+  ]
+ },
+ "p_child_002|p_child_003": {
+  "tarih": "2026-11-25",
+  "baslik": "Editör Değerlendirmesi: TCL MOVETIME MT46 mı, MT42 mi?",
+  "metin": [
+   "MT46 ve MT42, TCL'in 4G'li çocuk saati serisinin iki modeli ve kataloğumuzdaki fiyatları neredeyse aynı: MT46 yaklaşık 6.860 TL, MT42 yaklaşık 6.760 TL. İkisinde de 4G ile görüntülü arama, gerçek zamanlı konum takibi, 2 MP kamera ve SOS düğmesi var.",
+   "Kayıtlara göre MT46'nın farkı konum ve dayanıklılık tarafında: GPS'in yanında BeiDou ve GLONASS uydu sistemlerini de kullanıyor ve IP65 sertifikasıyla toz ve su sıçramasına karşı korunuyor. MT42'nin öne çıkan özelliği ise okul modu; ders saatlerinde saatin oyun ve bildirim gibi işlevlerini kısıtlayabiliyorsunuz. Çocuğunuz dışarıda çok vakit geçiriyorsa konum doğruluğu için MT46, saati daha çok okul günlerinde kullanacaksa MT42 mantıklı. Aradaki 100 TL'lik fark kararı değiştirecek kadar büyük değil."
+  ]
+ },
+ "p_child_001|p_child_002": {
+  "tarih": "2026-11-25",
+  "baslik": "Editör Değerlendirmesi: TCL MOVETIME MT48 mi, MT46 mı?",
+  "metin": [
+   "MT48, TCL'in çocuk saatlerinin en yeni ve en donanımlı modeli; kataloğumuzda yaklaşık 9.980 TL ile MT46'dan (yaklaşık 6.860 TL) 3.000 TL'den fazla pahalı. İki model de 4G görüntülü arama, gerçek zamanlı takip ve SOS sunuyor; fark konum doğruluğu ve dayanıklılıkta.",
+   "MT48'de L1+L5 çift bantlı GPS var. Bu teknoloji, yüksek binaların arasında ve kalabalık şehir merkezlerinde konumun daha doğru belirlenmesini sağlıyor. MT48 ayrıca IP68 ve 2 ATM sertifikasıyla suya karşı daha iyi korunuyor, VoLTE ile daha net sesli arama yapıyor ve 900 mAh'lik pil sunuyor. MT46 ise IP65 ile yalnızca su sıçramasına dayanıklı. Çocuğunuz yüzmeye gidiyorsa ya da şehirde toplu taşımayı kendi başına kullanıyorsa MT48'in fiyat farkı mantıklı; okul ve mahalle içinde kullanılacaksa MT46 yeterli."
+  ]
+ },
+ "p_child_001|p_child_003": {
+  "tarih": "2026-11-25",
+  "baslik": "Editör Değerlendirmesi: TCL MOVETIME MT48 mi, MT42 mi?",
+  "metin": [
+   "Bu ikili TCL'in çocuk saati yelpazesinin iki ucunu temsil ediyor. MT42 kataloğumuzda yaklaşık 6.760 TL, MT48 ise yaklaşık 9.980 TL. Yani en yeni modele çıkmak için 3.200 TL civarında ek ödeme gerekiyor. İki saat de 4G ile kendi SIM kartıyla çalışıyor, görüntülü arama ve gerçek zamanlı konum takibi sunuyor.",
+   "MT48'in getirdikleri: çift bantlı (L1+L5) GPS ile daha doğru konum, IP68 ve 2 ATM su dayanıklılığı, VoLTE desteği ve 900 mAh pil. MT42'nin ise MT48'de kayıtlı olmayan bir özelliği var: okul modu, yani ders saatlerinde saatin dikkat dağıtıcı işlevlerini kapatabilme. Küçük yaştaki bir çocuk için temel konum takibi ve arama yeterliyse MT42 bütçe dostu bir seçim. Daha büyük çocuklarda, özellikle tek başına şehirde dolaşanlar için MT48'in konum doğruluğu ek ödemeye değer."
+  ]
+ },
+ "p_huawei_2026_huawei_watch_gt_runner_2|p_suunto_027": {
+  "tarih": "2026-11-25",
+  "baslik": "Editör Değerlendirmesi: Huawei Watch GT Runner 2 mi, Suunto Run mı?",
+  "metin": [
+   "İkisi de koşuculara yönelik GPS'li saatler ve kataloğumuzdaki fiyatları yakın: GT Runner 2 yaklaşık 16.000 TL, Suunto Run yaklaşık 16.600 TL. İkisi de iPhone ve Android telefonlarla çalışıyor. Aradaki fark, iki markanın yaklaşımında.",
+   "Suunto, Fin kökenli bir spor ve outdoor saati markası. Suunto Run'da kayıtlı özellikler arasında pusula ve harita/navigasyon desteği var; bu, patika koşusu ve bilmediğiniz rotalarda kaybolmamak için önemli. Huawei'nin GT Runner 2'si ise HarmonyOS tabanlı ve bildirim, sağlık takibi ve günlük kullanım tarafında daha gelişmiş bir akıllı saat deneyimi sunuyor. Koşuyu şehirde ve parkta yapıyorsanız ve saati gün boyu takacaksanız GT Runner 2, doğada ve uzun rotalarda koşuyorsanız Suunto Run daha uygun. Her iki saatin de eSIM'i yok."
+  ]
+ }
 }

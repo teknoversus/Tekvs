@@ -34,10 +34,10 @@ karsilastir/urun/samsung-galaxy-gear.html
 karsilastir/urun/samsung-galaxy-watch6-classic.html
 karsilastir/urun/samsung-gear-2.html
 karsilastir/urun/samsung-gear-s.html
-liste/10000-alti-kamera.html
 liste/12gb-ram-kulaklik.html
 liste/30000-60000-kulaklik.html
 liste/kalem-kulaklik.html
 liste/uzun-pil-kulaklik.html
 marka/redmi-kulaklik.html
 urun/dell-vostro-3520-n2062pvnb3520u-32gb-512gb-comp_20260924_16.html | /dizustu.html
+liste/60000-ustu-kulaklik.html

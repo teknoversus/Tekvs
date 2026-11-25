@@ -324,6 +324,213 @@
    "yerine_ad": "Samsung Galaxy Buds 4",
    "tarih": "2026-11-24",
    "neden": "çift kayıt; daha eksiksiz verili ve trafik alan y32 kaydı tutuldu"
+  },
+  {
+   "id": "p_1787681315164_65",
+   "name": "Xiaomi 15",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_65",
+   "yerine_ad": "Xiaomi 15",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_66",
+   "name": "Xiaomi 15 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_66",
+   "yerine_ad": "Xiaomi 15 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_67",
+   "name": "OnePlus 13",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_67",
+   "yerine_ad": "OnePlus 13",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_68",
+   "name": "Google Pixel 9",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_68",
+   "yerine_ad": "Google Pixel 9",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_69",
+   "name": "Google Pixel 9 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_69",
+   "yerine_ad": "Google Pixel 9 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_70",
+   "name": "Honor Magic7 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_70",
+   "yerine_ad": "Honor Magic7 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_71",
+   "name": "Xiaomi Redmi Note 14 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_71",
+   "yerine_ad": "Xiaomi Redmi Note 14 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_72",
+   "name": "Realme 13 Pro+",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_72",
+   "yerine_ad": "Realme 13 Pro+",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_73",
+   "name": "Vivo V40",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_73",
+   "yerine_ad": "Vivo V40",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_74",
+   "name": "Nothing Phone (2a)",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_74",
+   "yerine_ad": "Nothing Phone (2a)",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_75",
+   "name": "Tecno Camon 30 Premier",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_75",
+   "yerine_ad": "Tecno Camon 30 Premier",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_76",
+   "name": "Tecno Phantom X2 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_76",
+   "yerine_ad": "Tecno Phantom X2 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_77",
+   "name": "Tecno Spark 20 Pro+",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_77",
+   "yerine_ad": "Tecno Spark 20 Pro+",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_78",
+   "name": "Tecno Pova 6 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_78",
+   "yerine_ad": "Tecno Pova 6 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_79",
+   "name": "Xiaomi 14 Ultra",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_79",
+   "yerine_ad": "Xiaomi 14 Ultra",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_80",
+   "name": "Redmi Note 13 Pro+",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_80",
+   "yerine_ad": "Redmi Note 13 Pro+",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_81",
+   "name": "Redmi Note 13 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_81",
+   "yerine_ad": "Redmi Note 13 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_83",
+   "name": "Oppo Find X7 Ultra",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_83",
+   "yerine_ad": "Oppo Find X7 Ultra",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_84",
+   "name": "Oppo Reno 12 Pro",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_84",
+   "yerine_ad": "Oppo Reno 12 Pro",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_85",
+   "name": "Oppo A60",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_85",
+   "yerine_ad": "Oppo A60",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_86",
+   "name": "Realme GT 6",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_86",
+   "yerine_ad": "Realme GT 6",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_87",
+   "name": "Realme C67",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_87",
+   "yerine_ad": "Realme C67",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "p_1787681315164_89",
+   "name": "Reeder P13 Blue Max L",
+   "cat": "Telefon",
+   "yerine": "p_1787680633621_89",
+   "yerine_ad": "Reeder P13 Blue Max L",
+   "tarih": "2026-11-25",
+   "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
   }
  ]
 }

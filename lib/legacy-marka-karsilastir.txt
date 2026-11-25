@@ -1,0 +1,9 @@
+# Search Console'da 404 görünen eski marka karşılaştırma adresleri (lib/site-quality.js yönlendirir)
+general-mobile-vs-casper-telefon
+honor-vs-apple-telefon
+huawei-vs-huawei-telefon
+hyperx-vs-redmi-kulaklik
+logitech-vs-redmi-kulaklik
+qcy-vs-redmi-kulaklik
+redmi-vs-turtle-kulaklik
+xiaomi-vs-jbl-kulaklik

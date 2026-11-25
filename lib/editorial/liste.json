@@ -173,5 +173,26 @@
    "OLED ve AMOLED televizyonlar kataloğumuzda 36 model ve LG yaklaşık yarısından fazlasını oluşturuyor; Samsung, Philips ve Beko da listede. Fiyatlar 60.000 TL'den başlıyor ve çok büyük ekranlı üst düzey modellerde yüz binlerce TL'ye ulaşıyor. LG OLED55B4 ve Philips 55OLED760 giriş noktası, LG G serisi 77, 83 ve 97 inç modelleri ise en pahalı kesim.",
    "OLED'in televizyondaki avantajı her pikselin kendi ışığını üretmesi: mutlak siyah, sonsuz kontrast ve geniş görüş açısı. Karanlık odada film izleyenler için en iyi seçenek. Dezavantajı parlak odalarda QLED ve mini LED kadar parlak olamaması ve uzun süre sabit görüntü gösterildiğinde yanma riski. LG'de B serisi giriş, C serisi orta-üst, G serisi ise daha parlak panelli ve galeri tasarımlı üst sınıf."
   ]
+ },
+ "60000-ustu-tablet": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "60.000 TL üzeri tablet, kataloğumuzdaki 103 fiyatlı tabletin yalnızca sekizi; bu bantta seçenek sayısı bilerek az. Liste Samsung Galaxy Tab S12 Ultra (78.999 TL), Huawei MatePad Pro Max 13.2 (74.999 TL) ile iPad Pro 13 M5 (73.821 TL) arasında dağılıyor ve alt sınıra 60.000 TL'lik Huawei MatePad Pro 13.2 (2025) yaklaşıyor. İki farklı iPad Pro nesli birlikte listelendiği için M4 ve M5 modelleri arasındaki fark çoğunlukla çip ve ekran teknolojisi etrafında dönüyor.",
+   "Bu fiyatta tablet almak, tabletin yerine bir dizüstüyü ikame etmek istemek demek; bu yüzden klavye kılıfı, kalem ve yazılım desteği fiyata eklenince toplam maliyet kolayca 90.000 TL'yi geçebiliyor. Ekran boyutu 11 inç ile 13 inç arasında değişiyor; evde kullanım ve çizim için büyük ekran işe yarıyor, taşıma önceliğiyse 11 inç mantıklı. Ödeme yapmadan önce kullandığınız uygulamaların (video düzenleme, çizim, ofis) hangi platformda daha iyi çalıştığına bakın."
+  ]
+ },
+ "60000-ustu-telefon": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "60.000 TL üzeri telefonlar, kataloğumuzdaki 280 fiyatlı telefonun 40'ı. Bant geniş: alt uçta Samsung Galaxy S24 Ultra, HONOR Magic7 Pro ve HONOR 600 Pro 64.999 TL civarında dururken üst uçta iPhone Duo 229.999 TL, Samsung Galaxy Z Fold8 Ultra 151.999 TL ve iPhone 18 Pro Max 149.999 TL ile ayrışıyor. Yani aynı liste hem bir yıllık fiyatı düşmüş amiral gemilerini hem de yeni nesil katlanabilir modelleri içeriyor.",
+   "Bu aralıkta karar verirken iki ayrı soru sormak gerekiyor. Birincisi, telefon geleneksel mi olacak yoksa katlanabilir mi; Z Fold8, Z Fold8 Ultra ve HONOR Magic V6 gibi modeller tablet boyutunda ekran sunuyor ama ağır ve pahalı. İkincisi, yeni model mi eski nesil mi: 65.000 TL civarındaki bir S24 Ultra ile iki katı fiyatlı bir model arasındaki farkın günlük kullanımda ne kadarını fark edeceğinizi düşünün. Fiyat/performans skoru çoğu zaman alt banttaki modelleri öne çıkarıyor."
+  ]
+ },
+ "60000-ustu-kamera": {
+  "tarih": "2026-11-25",
+  "metin": [
+   "60.000 TL üzeri kameralar, kataloğumuzdaki 98 fiyatlı kameranın 45'i; yani kamera kategorisinde bu fiyat artık ‘pahalı’ değil, orta segmentin üst ucu. Alt uçta Canon EOS R7 (66.899 TL), Canon PowerShot G7 X Mark III (67.349 TL) ve GoPro MAX2 (67.923 TL) var; üst uçta ise GFX100 II 377.999 TL, Canon EOS R1 361.999 TL ve Sony Alpha 1 II 330.000 TL ile profesyonel gövdeler sıralanıyor.",
+   "Listedeki cihazlar çok farklı işler için üretilmiş: aksiyon kamerası, kompakt, APS-C aynasız, tam kare ve orta format aynı sayfada duruyor. Bu yüzden fiyata bakmadan önce ne çekeceğinize karar verin: fotoğraf için sensör boyutu ve lens sistemi, video için kayıt formatı ve ısınma, seyahat için ağırlık belirleyici. Gövdenin yanında lens ve hafıza kartı maliyetini de hesaba katın; özellikle profesyonel gövdelerde bu kalemler toplamı belirgin biçimde artırıyor."
+  ]
  }
 }

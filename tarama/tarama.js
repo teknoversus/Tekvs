@@ -3,8 +3,8 @@ const fs = require('fs'), crypto = require('crypto');
 const BASE = 'https://teknoversus.com.tr';
 const UA = 'Mozilla/5.0 (compatible; TeknoVersusAudit/1.0)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-async function req(url, { method = 'GET', timeout = 25000, text = false } = {}) {
-  for (let i = 0; i < 3; i++) {
+async function req(url, { method = 'GET', timeout = 25000, text = false, tries = 3 } = {}) {
+  for (let i = 0; i < tries; i++) {
     const ac = new AbortController(); const t = setTimeout(() => ac.abort(), timeout);
     try {
       const r = await fetch(url, { method, redirect: 'follow', signal: ac.signal, headers: { 'user-agent': UA, 'accept': '*/*' } });
@@ -12,7 +12,7 @@ async function req(url, { method = 'GET', timeout = 25000, text = false } = {}) 
       if (text) body = await r.text(); else { try { await r.body?.cancel(); } catch {} }
       clearTimeout(t);
       return { status: r.status, final: r.url, redirected: r.redirected, ctype: r.headers.get('content-type') || '', body };
-    } catch (e) { clearTimeout(t); if (i === 2) return { status: 0, err: String(e.cause?.code || e.message), final: url }; await sleep(800 * (i + 1)); }
+    } catch (e) { clearTimeout(t); if (i === tries - 1) return { status: 0, err: String(e.cause?.code || e.message), final: url }; await sleep(800 * (i + 1)); }
   }
 }
 async function pool(items, n, fn) {
@@ -89,11 +89,11 @@ function parse(html, pageUrl) {
   for (const p of pages) { for (const l of p.links || []) { try { const h = new URL(l).host; (h === host || h === 'www.' + host ? internal : ext).add(l); } catch {} } for (const i of p.imgs || []) imgs.add(i); }
   const inList = [...internal].filter(l => !crawled.has(l));
   console.log('ek ic link', inList.length, 'img', imgs.size, 'dis', ext.size);
-  const inRes = await pool(inList, 10, async l => { const r = await req(l); return { url: l, status: r.status, final: r.final, err: r.err }; });
+  const inRes = await pool(inList, 20, async l => { const r = await req(l); return { url: l, status: r.status, final: r.final, err: r.err }; });
   const imgList = [...imgs];
-  const imgRes = await pool(imgList, 12, async l => { const r = await req(l); return { url: l, status: r.status, ctype: r.ctype, err: r.err }; });
+  const imgRes = await pool(imgList, 20, async l => { const r = await req(l); return { url: l, status: r.status, ctype: r.ctype, err: r.err }; });
   const extList = [...ext];
-  const extRes = await pool(extList, 8, async l => { const r = await req(l, { timeout: 15000 }); return { url: l, status: r.status, err: r.err }; });
+  const extRes = await pool(extList, 40, async l => { const r = await req(l, { timeout: 8000, tries: 1 }); return { url: l, status: r.status, err: r.err }; });
   // kök dosyalar
   const misc = {};
   for (const p of ['/ads.txt', '/robots.txt', '/sitemap.xml', '/favicon.ico', '/manifest.json', '/ff24f614b05803dd642f59025f1a75a2.txt']) { const r = await req(BASE + p, { text: true }); misc[p] = { status: r.status, head: (r.body || '').slice(0, 300) }; }

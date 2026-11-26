@@ -1,0 +1,7 @@
+s2_s26ultra#0|https://images.samsung.com/is/image/samsung/p6pim/tr/s2602/gallery/tr-galaxy-s26-ultra-s948-sm-s948bzsgtur-thumb-550803385?$720_576_PNG$
+sam_s26_s942#0|https://images.samsung.com/is/image/samsung/p6pim/tr/s2602/gallery/tr-galaxy-s26-s942-sm-s942bzwgtur-thumb-550886612?$720_576_PNG$
+sam_s26p_s947#0|https://images.samsung.com/is/image/samsung/p6pim/tr/s2602/gallery/tr-galaxy-s26-s947-sm-s947blbdtur-thumb-550879426?$720_576_PNG$
+h2_s25ultra_s938#0|https://images.samsung.com/is/image/samsung/p6pim/tr/2501/gallery/tr-galaxy-s25-s938-sm-s938bzshtur-thumb-544710864?$720_576_PNG$
+sam_fold8#0|https://images.samsung.com/is/image/samsung/p6pim/tr/f2607/gallery/tr-galaxy-z-fold8-f971-sm-f971blvntur-thumb-553726820?$720_576_PNG$
+sam_fold8u#0|https://images.samsung.com/is/image/samsung/p6pim/tr/f2607/gallery/tr-galaxy-z-fold8-ultra-f976-sm-f976bzvbtur-thumb-553721240?$720_576_PNG$
+sam_flip8#0|https://images.samsung.com/is/image/samsung/p6pim/tr/f2607/gallery/tr-galaxy-zflip8-f776-sm-f776bzwhtur-thumb-553731625?$720_576_PNG$

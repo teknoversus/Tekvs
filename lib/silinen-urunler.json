@@ -531,6 +531,105 @@
    "yerine_ad": "Reeder P13 Blue Max L",
    "tarih": "2026-11-25",
    "neden": "yeniden içe aktarımda id değişti; eski inceleme/rehber adresleri 404 veriyordu"
+  },
+  {
+   "id": "new_1787947821207_4",
+   "name": "Samsung Galaxy A26 5G",
+   "cat": "Telefon",
+   "yerine": "p_a26_5g",
+   "yerine_ad": "Samsung Galaxy A26 5G",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_9",
+   "name": "POCO X8",
+   "cat": "Telefon",
+   "yerine": "poco_x8",
+   "yerine_ad": "POCO X8",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_5",
+   "name": "Xiaomi 17T",
+   "cat": "Telefon",
+   "yerine": "x_17t",
+   "yerine_ad": "Xiaomi 17T",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_6",
+   "name": "Xiaomi 17T Pro",
+   "cat": "Telefon",
+   "yerine": "x_17t_pro",
+   "yerine_ad": "Xiaomi 17T Pro",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_2",
+   "name": "Samsung Galaxy Z Fold7",
+   "cat": "Telefon",
+   "yerine": "p_zfold7",
+   "yerine_ad": "Samsung Galaxy Z Fold7",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_3",
+   "name": "Samsung Galaxy Z Flip7",
+   "cat": "Telefon",
+   "yerine": "p_zflip7",
+   "yerine_ad": "Samsung Galaxy Z Flip7",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_0",
+   "name": "Samsung Galaxy S27",
+   "cat": "Telefon",
+   "yerine": "p_s27",
+   "yerine_ad": "Samsung Galaxy S27",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_1",
+   "name": "Samsung Galaxy S27+",
+   "cat": "Telefon",
+   "yerine": "p_s27_plus",
+   "yerine_ad": "Samsung Galaxy S27+",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_8",
+   "name": "POCO F8 Pro",
+   "cat": "Telefon",
+   "yerine": "poco_f8_pro",
+   "yerine_ad": "POCO F8 Pro",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "new_1787947821207_7",
+   "name": "POCO F8",
+   "cat": "Telefon",
+   "yerine": "poco_f8",
+   "yerine_ad": "POCO F8",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
+  },
+  {
+   "id": "p_1787255409910",
+   "name": "Huawei MatePad Pro (Yeni Nesil)",
+   "cat": "Tablet",
+   "yerine": "huawei_matepad_pro_12_2026",
+   "yerine_ad": "Huawei MatePad Pro 12 (2026)",
+   "tarih": "2026-11-26",
+   "neden": "çift kayıt (beklenenler listesi)"
   }
  ]
 }

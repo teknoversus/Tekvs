@@ -490,6 +490,8 @@ function hasCookieConsent(){
 }
 
 function renderCookieBanner(privacyHref){
+  // consent.js (her sayfada reklam/analytics scriptlerinden önce yüklenir) bannerı kendisi yönetir.
+  if(window.tvConsent) return;
   if(hasCookieConsent()) return;
   const el = document.createElement('div');
   el.className = 'cookie-banner';
@@ -503,6 +505,7 @@ function renderCookieBanner(privacyHref){
 }
 
 function acceptCookies(){
+  if(window.tvConsent){ window.tvConsent.accept(); return; }
   try{ localStorage.setItem('tv_cookie_consent', '1'); }catch(e){}
   const el = document.querySelector('.cookie-banner');
   if(el) el.remove();

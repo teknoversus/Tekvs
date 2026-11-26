@@ -107,7 +107,7 @@ jobs:
           bust_files = [
               'shared.js', 'nlp-parser.js', 'performance-data.js',
               'product-filter.js', 'recommendation-reason.js',
-              'category.js', 'product.js', 'styles.css', 'pwa.js',
+              'category.js', 'product.js', 'styles.css', 'pwa.js', 'consent.js',
           ]
 
           # Her dosyanın versiyonu KENDİ içerik hash'i (ilk 10 hex karakter) —

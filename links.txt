@@ -1,0 +1,10 @@
+img/01.src 1100x730
+img/02.src 5120x1536
+img/03.src 5120x1536
+img/04.src 5120x1536
+img/05.src 5120x1536
+img/06.src 5120x1536
+img/07.src 1000x487
+img/08.src 728x410
+img/09.src 728x410
+img/10.src 728x410

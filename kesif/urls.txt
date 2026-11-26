@@ -1,4 +1,0 @@
-hw_band10b|https://consumer.huawei.com/tr/wearables/band10/
-hw_w4pro2|https://consumer.huawei.com/tr/wearables/watch4-pro/
-hw_ult2|https://consumer.huawei.com/en/wearables/watch-ultimate/
-hw_ultd2|https://consumer.huawei.com/en/wearables/watch-ultimate-design/

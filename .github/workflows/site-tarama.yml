@@ -12,10 +12,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
-      - run: node tarama/tarama2.js
-        timeout-minutes: 18
+      - run: node tarama/tarama3.js
+        timeout-minutes: 22
         continue-on-error: true
       - name: Sonucu tarama-sonuc dalina yaz
+        if: always()
         run: |
           git config user.name "teknoversus-bot"
           git config user.email "bot@teknoversus.com.tr"

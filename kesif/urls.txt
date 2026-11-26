@@ -1,5 +1,0 @@
-razer-bs-v3-pro|https://www.razer.com/gaming-headsets/razer-blackshark-v3-pro
-steelseries-nova7g2|https://steelseries.com/blog/introducing-arctis-nova-7-wireless-gen-2
-samsung-tabs9|https://www.samsung.com/tr/tablets/galaxy-tab-s/galaxy-tab-s9-wi-fi-beige-128gb-sm-x710nzeatur
-apple-ultra3|https://www.apple.com/tr/newsroom/2025/09/apple-watch-ultra-3-debuts/
-philips-55oled760|https://www.philips.co.uk/c-p/55OLED760_12/oled-4k-ambilight-tv

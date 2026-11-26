@@ -45,12 +45,14 @@
   "credit": "Apple"
  },
  "sam_s12ultra": {
-  "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/09/28123529/Samsung-Mobile-Galaxy-Tab-S12-Series_Thumb932.jpg",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x940nzaptur/gallery/tr-galaxy-tab-s12-ultra-sm-x940-sm-x940nzaptur-thumb-554741660?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "sam_s12plus": {
-  "url": "https://img.global.news.samsung.com/global/wp-content/uploads/2026/09/28123529/Samsung-Mobile-Galaxy-Tab-S12-Series_Thumb932.jpg",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x840nzaptur/gallery/tr-galaxy-tab-s12-plus-sm-x840-sm-x840nzaptur-thumb-554884067?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "p_huawei_2026_mate_x8": {
   "url": "https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/pdp/phones/mate-x8/img/hero/kv.jpg",
@@ -213,8 +215,9 @@
   "credit": "OnePlus"
  },
  "tv65m80h": {
-  "url": "https://images.samsung.com/is/content/samsung/p6pim/uk/ue65m80hauxxu/gallery/uk-mini-led-m80h-ue65m80hauxxu-553427851.webp?$1164_776_PNG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/ue85m80hauxtk/gallery/tr-mini-led-m80h-ue85m80hauxtk-thumb-554833416?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "tv103": {
   "url": "https://images.samsung.com/is/image/samsung/p6pim/uk/mre115mr95fxxu/gallery/uk-microrgb-115r95h-mre115mr95fxxu-549496402?$720_576_JPG$",
@@ -454,16 +457,19 @@
   "trim": true
  },
  "n10": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x520nlbptur/gallery/tr-galaxy-tab-s10-fe-sm-x526-543526-sm-x520nlbptur-545772951?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x520nlbptur/gallery/tr-galaxy-tab-s10-fe-sm-x526-543526-sm-x520nlbptur-thumb-545772952?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "n11": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x620nlbptur/gallery/tr-galaxy-tab-s10-fe-plus-sm-x626-543498-sm-x620nlbptur-545771074?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x626bzartur/gallery/tr-galaxy-tab-s10-fe-plus-sm-x626-sm-x626bzartur-thumb-545770285?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "n12": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x930nzattur/gallery/tr-galaxy-tab-s11-ultra-sm-x930-sm-x930nzattur-548734973?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x936bzaptur/gallery/tr-galaxy-tab-s11-ultra-sm-x930-562439-sm-x936bzaptur-thumb-548735298?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "n46": {
   "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/2407/gallery/tr-galaxy-buds3-pro-r630-sm-r630nzaatur-542137295?$720_576_JPG$",
@@ -584,20 +590,24 @@
   "trim": true
  },
  "t25": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x730nzaptur/gallery/tr-galaxy-tab-s11-sm-x730-sm-x730nzaptur-548735378?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x736bzaptur/gallery/tr-galaxy-tab-s11-sm-x730-562442-sm-x736bzaptur-thumb-548735536?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "t26": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x230nzaptur/gallery/tr-galaxy-tab-a11-plus-sm-x230-sm-x230nzaptur-550458720?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x230nzsrtur/gallery/tr-galaxy-tab-a11-plus-sm-x230-sm-x230nzsrtur-thumb-550458772?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "t36": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x135fzaetur/gallery/tr-galaxy-tab-a11-sm-x130-567009-sm-x135fzaetur-549394039?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x130nzsetur/gallery/tr-galaxy-tab-a11-sm-x130-sm-x130nzsetur-thumb-549393842?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "t37": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x400nzaptur/gallery/tr-galaxy-tab-s10-lite-sm-x406-sm-x400nzaptur-548601663?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x400nzaptur/gallery/tr-galaxy-tab-s10-lite-sm-x406-sm-x400nzaptur-thumb-548601664?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "t38": {
   "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/sm-x820nzaptur/gallery/tr-galaxy-tab-s10-plus-sm-x820-sm-x820nzaptur-543481365?$720_576_JPG$",
@@ -632,20 +642,23 @@
   "credit": "Samsung"
  },
  "tv118": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/qe65s95hatxtk/gallery/tr-oled-s95h-qe65s95hatxtk-554830115?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/qe65s95hatxtk/gallery/tr-oled-s95h-qe65s95hatxtk-thumb-554830118?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "tv121": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/qe83s90haextk/gallery/tr-oled-s90h-qe83s90haextk-554831349?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/qe48s90haextk/gallery/tr-oled-s90h-qe48s90haextk-thumb-554830411?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "tv124": {
   "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/mre85r95hatxtk/gallery/tr-microrgb-r95h-mre85r95hatxtk-554808213?$720_576_JPG$",
   "credit": "Samsung"
  },
  "tv137": {
-  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/ue75m80hauxtk/gallery/tr-mini-led-m80h-ue75m80hauxtk-554833383?$720_576_JPG$",
-  "credit": "Samsung"
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/ue85m80hauxtk/gallery/tr-mini-led-m80h-ue85m80hauxtk-thumb-554833416?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
  },
  "tv41": {
   "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/ue50u8000fuxtk/gallery/tr-uhd-u8000-556251-ue50u8000fuxtk-547695455?$720_576_JPG$",

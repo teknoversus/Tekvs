@@ -859,5 +859,41 @@
  "p_huawei_2025_huawei_band_10": {
   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/wearables/band10/list/green.png",
   "credit": "Huawei"
+ },
+ "hua12x8": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-12-x-2025/list-green.png",
+  "credit": "Huawei",
+  "trim": true
+ },
+ "huawei-pro122-2025": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-pro-12/list-space-gray.png",
+  "credit": "Huawei",
+  "trim": true
+ },
+ "huawei_matepad_pro_max_132": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-pro-max/list-blue.png",
+  "credit": "Huawei",
+  "trim": true
+ },
+ "huawei_matepad_air12_2026": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-air-new/list-white.png",
+  "credit": "Huawei",
+  "trim": true
+ },
+ "xiaomi-15t-pro-2025": {
+  "url": "https://i02.appmifile.com/866_operatorx_operatorx_xm/19/09/2025/f25258b1fe293171376412a95b902263.png",
+  "credit": "Xiaomi"
+ },
+ "p_xiaomi_011": {
+  "url": "https://i02.appmifile.com/450_operatorx_operatorx_xm/16/09/2025/3dde321016a79f6316c16d8bb93e4409.png",
+  "credit": "Xiaomi"
+ },
+ "poco_f8_pro": {
+  "url": "https://i02.appmifile.com/860_operatorx_operatorx_xm/25/11/2025/356733a8fd8d4688a01d07cb5df12459.png",
+  "credit": "POCO"
+ },
+ "poco_pad_m1": {
+  "url": "https://i02.appmifile.com/708_operatorx_operatorx_xm/20/11/2025/df065334baf186b46713095499ea485d.png",
+  "credit": "POCO"
  }
 }

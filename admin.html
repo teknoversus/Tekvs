@@ -72,6 +72,35 @@
   .review-row .stars{color:var(--yellow);}
   .review-actions{display:flex;gap:8px;}
   .review-actions button{padding:6px 14px;font-size:12px;}
+
+  /* Düzenleme: --bad hiç tanımlı değildi (giriş hatası ve sonuçsuz arama kırmızısı görünmüyordu) */
+  :root{ --bad:#B23A5C; }
+  button:focus-visible,.admin-tab:focus-visible,.cat-chip:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--c1);outline-offset:2px;}
+  .field input:focus,.field select:focus,.field textarea:focus,.admin-search:focus{border-color:var(--c1);}
+  .btn:disabled{opacity:.55;cursor:not-allowed;}
+  .brand a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:9px;}
+  .admin-row{flex-wrap:wrap;}
+  .admin-row .name{min-width:200px;overflow-wrap:anywhere;}
+  .admin-row .meta{flex-basis:100%;order:3;}
+  .admin-tabs{overflow-x:auto;white-space:nowrap;scrollbar-width:thin;}
+  .admin-tab{flex:0 0 auto;}
+  .pending-row{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:10px;}
+  .pending-head{display:flex;gap:12px;align-items:flex-start;}
+  .pending-thumb{width:120px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:#0F1622;flex:0 0 auto;}
+  .pending-row .name{font-weight:600;font-size:14px;overflow-wrap:anywhere;}
+  .pending-row .meta{font-size:11.5px;color:var(--ink-soft);margin-top:2px;}
+  .pending-detail{margin:10px 0;font-size:13px;line-height:1.6;background:var(--bg);border-radius:6px;padding:8px 12px;}
+  .pending-detail summary{cursor:pointer;font-weight:600;font-size:12.5px;color:var(--ink-soft);}
+  .pending-detail ul{margin:6px 0 6px 18px;}
+  .pending-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;}
+  @media (max-width:560px){
+    .wrap{padding:18px 14px 50px;}
+    .admin-tabs{gap:16px;}
+    .pending-head{flex-direction:column;}
+    .pending-thumb{width:100%;max-width:320px;}
+    .modal{padding:18px;}
+    .btn{padding:10px 14px;}
+  }
 </style>
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -107,18 +136,13 @@
     </div>
   </div>
 
-  <div class="warn">
-    Bu panel artık gerçek Supabase girişiyle korunuyor. Yine de ek güvenlik için bu sayfayı arama motorlarından
-    gizli tutmak (robots.txt zaten engelliyor) ve mümkünse hosting seviyesinde de bir erişim kısıtlaması eklemek iyi bir pratiktir.
-  </div>
-
   <div class="admin-tabs">
-    <div class="admin-tab active" id="tabProducts" onclick="switchAdminTab('products')">Ürünler</div>
-    <div class="admin-tab" id="tabNews" onclick="switchAdminTab('news')">Haberler</div>
-    <div class="admin-tab" id="tabReviews" onclick="switchAdminTab('reviews')">Yorumlar<span class="badge" id="pendingBadge" style="display:none;">0</span></div>
-    <div class="admin-tab" id="tabRequests" onclick="switchAdminTab('requests')">Talepler<span class="badge" id="requestsBadge" style="display:none;">0</span></div>
-    <div class="admin-tab" id="tabSearches" onclick="switchAdminTab('searches')">Aramalar</div>
-    <div class="admin-tab" id="tabCsv" onclick="switchAdminTab('csv')">CSV</div>
+    <div class="admin-tab active" id="tabProducts" role="tab" tabindex="0" onclick="switchAdminTab('products')" onkeydown="if(event.key==='Enter')switchAdminTab('products')">Ürünler</div>
+    <div class="admin-tab" id="tabNews" role="tab" tabindex="0" onclick="switchAdminTab('news')" onkeydown="if(event.key==='Enter')switchAdminTab('news')">Haberler<span class="badge" id="newsPendingBadge" style="display:none;">0</span></div>
+    <div class="admin-tab" id="tabReviews" role="tab" tabindex="0" onclick="switchAdminTab('reviews')" onkeydown="if(event.key==='Enter')switchAdminTab('reviews')">Yorumlar<span class="badge" id="pendingBadge" style="display:none;">0</span></div>
+    <div class="admin-tab" id="tabRequests" role="tab" tabindex="0" onclick="switchAdminTab('requests')" onkeydown="if(event.key==='Enter')switchAdminTab('requests')">Talepler<span class="badge" id="requestsBadge" style="display:none;">0</span></div>
+    <div class="admin-tab" id="tabSearches" role="tab" tabindex="0" onclick="switchAdminTab('searches')" onkeydown="if(event.key==='Enter')switchAdminTab('searches')">Aramalar</div>
+    <div class="admin-tab" id="tabCsv" role="tab" tabindex="0" onclick="switchAdminTab('csv')" onkeydown="if(event.key==='Enter')switchAdminTab('csv')">CSV</div>
   </div>
 
   <div id="productsPanel">
@@ -275,6 +299,13 @@
       <label>Haber metni (her paragrafı BOŞ SATIRLA ayır)</label>
       <textarea id="nBody" rows="10" placeholder="Birinci paragraf...&#10;&#10;İkinci paragraf...&#10;&#10;Üçüncü paragraf..." aria-label="Haber metni"></textarea>
     </div>
+    <details class="field" id="nExtraBox" style="border:1px solid var(--line);border-radius:10px;padding:12px;">
+      <summary style="cursor:pointer;font-size:12.5px;font-weight:600;color:var(--ink-soft);">Haber kutuları: TLDR, anahtar rakamlar, SSS, sonuç (opsiyonel, haber kurallarındaki yapı)</summary>
+      <div class="field" style="margin-top:10px;"><label>TLDR (1-2 cümle)</label><textarea id="nTldr" rows="2" aria-label="TLDR"></textarea></div>
+      <div class="field"><label>Anahtar rakamlar (her satır: Etiket | Değer)</label><textarea id="nTable" rows="4" placeholder="Fiyat | 49.999 TL&#10;Çıkış | 3 Aralık" aria-label="Anahtar rakamlar"></textarea></div>
+      <div class="field"><label>Sık sorulan sorular (her satır: Soru? | Cevap)</label><textarea id="nFaq" rows="4" placeholder="Fiyatı ne kadar? | 49.999 TL.&#10;Türkiye'de ne zaman? | Henüz açıklanmadı." aria-label="Sık sorulan sorular"></textarea></div>
+      <div class="field"><label>Sonuç paragrafı</label><textarea id="nConclusion" rows="3" aria-label="Sonuç"></textarea></div>
+    </details>
     <button class="btn btn-dark" id="submitNewsBtn" onclick="submitNews()">Yayınla</button>
     <p style="font-size:11.5px;color:var(--ink-soft);margin-top:10px;">
       Kaydettiğinde haber, sitedeki <code>haberler.html</code> listesine ve seçtiğin varsa ilgili ürün sayfasına
@@ -374,19 +405,14 @@ function newsToRow(n){
 }
 
 async function approveNewsShared(id){
+  // TEK istek: yayın saati = onay anı, tarih = onay günü. Eskiden iki ayrı PATCH
+  // atılıyordu; her güncelleme webhook'la ayrı bir deploy tetikleyebildiği için
+  // birleştirildi.
   const r = await sbFetch('/rest/v1/news?id=eq.'+encodeURIComponent(id), {
     method: 'PATCH',
     headers: { 'Prefer': 'return=minimal' },
-    body: JSON.stringify({ pending_review: false })
+    body: JSON.stringify({ pending_review: false, published_at: new Date().toISOString(), date: istanbulTodayISO() })
   });
-  if(r.ok){
-    // Yayın saati = onay anı; haberin tarihi de onay günü olur.
-    await sbFetch('/rest/v1/news?id=eq.'+encodeURIComponent(id), {
-      method: 'PATCH',
-      headers: { 'Prefer': 'return=minimal' },
-      body: JSON.stringify({ published_at: new Date().toISOString(), date: istanbulTodayISO() })
-    });
-  }
   return r.ok;
 }
 
@@ -485,6 +511,10 @@ function clearNewsImage(){
 }
 </script>
 <script>
+// Panele düşen metinlerin çoğu dışarıdan geliyor (haber agent'ı, ziyaretçi yorumu,
+// arama kaydı, ürün talebi). innerHTML'e HAM basılırsa admin oturumunda script çalışabilir;
+// bu yüzden her dinamik değer esc() ile basılır.
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let products = [];
 let newsViewCounts = {}; // haber id -> goruntulenme sayisi (getAllNewsViewCounts ile doldurulur)
 let editingId = null;
@@ -599,6 +629,13 @@ async function init(){
   renderCatChips();
   renderAdminList();
   refreshPendingBadge();
+  updateNewsPendingBadge();
+}
+
+function updateNewsPendingBadge(){
+  const b = document.getElementById('newsPendingBadge');
+  if(!b) return;
+  if(pendingNews.length){ b.style.display = ''; b.textContent = pendingNews.length; } else { b.style.display = 'none'; }
 }
 
 async function refreshPendingBadge(){
@@ -635,7 +672,6 @@ function switchAdminTab(tab){
 async function renderSearchesPanel(){
   const box = document.getElementById('searchesList');
   box.innerHTML = '<p style="color:var(--ink-soft);font-size:13px;">Yükleniyor…</p>';
-  const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   let rows = [];
   try{
     const r = await sbFetch('/rest/v1/search_top_30d?select=*&limit=200');
@@ -674,7 +710,7 @@ async function renderRequestsPanel(){
 
   list.innerHTML = requests.map(r => `
     <div class="review-row">
-      <div class="meta">"${r.query.replace(/</g,'&lt;')}" · ${new Date(r.created_at).toLocaleDateString('tr-TR')}</div>
+      <div class="meta">"${esc(r.query)}" · ${new Date(r.created_at).toLocaleDateString('tr-TR')}</div>
       <div class="review-actions">
         <button class="btn btn-dark" onclick="doResolveRequest(${r.id})">Ele Alındı</button>
         <button class="admin-remove" onclick="doDeleteRequest(${r.id})">Kaldır</button>
@@ -701,7 +737,7 @@ async function doDeleteRequest(id){
 function renderCatChips(){
   const chips = ['Tümü', ...CATS, 'Beklenenler'];
   document.getElementById('catChips').innerHTML = chips.map(c =>
-    `<span class="cat-chip ${catFilter===c ? 'active' : ''}" onclick="setCatFilter('${c}')">${c}</span>`
+    `<span class="cat-chip ${catFilter===c ? 'active' : ''}" role="button" tabindex="0" onclick="setCatFilter('${c}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();setCatFilter('${c}')}">${c}</span>`
   ).join('');
 }
 
@@ -1172,10 +1208,10 @@ async function submitProduct(){
 function adminRowHTML(p){
   return `
     <div class="admin-row">
-      <span class="name">${p.name}${p.upcoming ? ' <span style="color:var(--c3);font-size:11px;">(beklenen)</span>' : ''}</span>
-      <span class="meta">${p.cat} · ${fmtDate(p.addedAt)}</span>
-      <button class="admin-edit" onclick="openAdd('${p.id}')">Düzenle</button>
-      <button class="admin-remove" onclick="adminRemoveProduct('${p.id}')">Kaldır</button>
+      <span class="name">${esc(p.name)}${p.upcoming ? ' <span style="color:var(--c3);font-size:11px;">(beklenen)</span>' : ''}</span>
+      <span class="meta">${esc(p.cat)} · ${fmtDate(p.addedAt)}</span>
+      <button class="admin-edit" data-id="${esc(p.id)}" onclick="openAdd(this.dataset.id)">Düzenle</button>
+      <button class="admin-remove" data-id="${esc(p.id)}" onclick="adminRemoveProduct(this.dataset.id)">Kaldır</button>
     </div>`;
 }
 
@@ -1223,13 +1259,13 @@ async function renderReviewsPanel(){
 
   function reviewRowHTML(r, pending){
     const p = byId[r.product_id];
-    const pname = p ? p.name : `(ürün silinmiş: ${r.product_id})`;
+    const pname = esc(p ? p.name : `(ürün silinmiş: ${r.product_id})`);
     const stars = '★'.repeat(r.stars) + '☆'.repeat(5-r.stars);
     const date = r.created_at ? new Date(r.created_at).toLocaleDateString('tr-TR') : '';
     return `
       <div class="review-row">
-        <div class="meta"><span class="stars">${stars}</span> — <b>${pname}</b> · ${r.name || 'Anonim'} · ${date}</div>
-        ${r.comment ? `<div class="txt">${r.comment.replace(/</g,'&lt;')}</div>` : ''}
+        <div class="meta"><span class="stars">${stars}</span> — <b>${pname}</b> · ${esc(r.name || 'Anonim')} · ${date}</div>
+        ${r.comment ? `<div class="txt">${esc(r.comment)}</div>` : ''}
         <div class="review-actions">
           ${pending ? `<button class="btn btn-dark" onclick="doApproveReview(${r.id})">Onayla</button>` : ''}
           <button class="admin-remove" onclick="doDeleteReview(${r.id})">${pending ? 'Reddet' : 'Kaldır'}</button>
@@ -1298,6 +1334,11 @@ function openAddNews(id, isPending){
     document.getElementById('nImageUrl').value = n.imageUrl || '';
     document.getElementById('nImageAlt').value = n.imageAlt || '';
     document.getElementById('nImageCredit').value = n.imageCredit || '';
+    document.getElementById('nTldr').value = n.tldr || '';
+    document.getElementById('nTable').value = (n.table || []).map(t => `${t.k} | ${t.v}`).join('\n');
+    document.getElementById('nFaq').value = (n.faq || []).map(f => `${f.q} | ${f.a}`).join('\n');
+    document.getElementById('nConclusion').value = n.conclusion || '';
+    document.getElementById('nExtraBox').open = !!(n.tldr || (n.table||[]).length || (n.faq||[]).length || n.conclusion);
   } else {
     document.getElementById('newsModalTitle').textContent = 'Yeni haber ekle';
     document.getElementById('submitNewsBtn').textContent = 'Yayınla';
@@ -1311,6 +1352,8 @@ function openAddNews(id, isPending){
     document.getElementById('nImageUrl').value = '';
     document.getElementById('nImageAlt').value = '';
     document.getElementById('nImageCredit').value = '';
+    ['nTldr','nTable','nFaq','nConclusion'].forEach(i => document.getElementById(i).value = '');
+    document.getElementById('nExtraBox').open = false;
   }
   document.getElementById('nImageStatus').textContent = '';
   updateNewsImagePreview();
@@ -1346,8 +1389,15 @@ async function submitNews(){
   // Onay bekleyen bir taslağı düzenlerken pendingReview:true olarak KALIR —
   // "Taslağı kaydet" düzenlemeyi kaydeder ama yayınlamaz, ayrı bir "Onayla" adımı gerekir.
   const prev = editingNewsId ? (editingIsPending ? pendingNews : news).find(x => x.id === editingNewsId) : null;
+  // "Etiket | Değer" satırlarını diziye çevirir; ayraçsız satırlar atılır.
+  const pairs = raw => raw.split('\n').map(l => l.split('|')).filter(a => a.length >= 2 && a[0].trim() && a.slice(1).join('|').trim())
+    .map(a => [a[0].trim(), a.slice(1).join('|').trim()]);
+  const tldr = document.getElementById('nTldr').value.trim();
+  const conclusion = document.getElementById('nConclusion').value.trim();
+  const table = pairs(document.getElementById('nTable').value).map(([k, v]) => ({ k, v }));
+  const faq = pairs(document.getElementById('nFaq').value).map(([q, a]) => ({ q, a }));
   const newsItem = Object.assign({}, prev || {}, { id, title, cat, date: dateVal || istanbulTodayISO(), summary, relatedProductId, body, pendingReview: editingIsPending,
-    imageUrl, imageAlt, imageCredit, hadImage: !!(prev && prev.imageUrl) });
+    imageUrl, imageAlt, imageCredit, hadImage: !!(prev && prev.imageUrl), tldr, table, faq, conclusion });
   const ok = await saveNewsShared(newsItem);
   if(!ok){ alert('Kaydedilemedi — internet bağlantını veya Supabase ayarlarını kontrol et.'); return; }
 
@@ -1528,10 +1578,10 @@ function adminNewsRowHTML(n){
   const gorunum = (gVal != null) ? `<strong style="color:var(--ink);">👁 ${gVal}</strong>` : '—';
   return `
     <div class="admin-row">
-      <span class="name">${n.title}</span>
-      <span class="meta">${n.cat} · ${n.date || ''}${n.imageUrl ? ' · 🖼 görselli' : ' · <span style="color:#B8790F;">görsel yok</span>'}${relatedProduct ? ' · İlgili: ' + relatedProduct.name : ''} · ${gorunum} görüntülenme · <code style="font-size:11px;">haberler/${n.id}.html</code></span>
-      <button class="admin-edit" onclick="openAddNews('${n.id}')">Düzenle</button>
-      <button class="admin-remove" onclick="adminRemoveNews('${n.id}')">Kaldır</button>
+      <span class="name">${esc(n.title)}</span>
+      <span class="meta">${esc(n.cat)} · ${esc(n.date || '')}${n.imageUrl ? ' · 🖼 görselli' : ' · <span style="color:#B8790F;">görsel yok</span>'}${relatedProduct ? ' · İlgili: ' + esc(relatedProduct.name) : ''} · ${gorunum} görüntülenme · <a href="/haberler/${esc(n.id)}.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--c1);">sayfayı aç ↗</a></span>
+      <button class="admin-edit" data-id="${esc(n.id)}" onclick="openAddNews(this.dataset.id)">Düzenle</button>
+      <button class="admin-remove" data-id="${esc(n.id)}" onclick="adminRemoveNews(this.dataset.id)">Kaldır</button>
     </div>`;
 }
 
@@ -1553,19 +1603,42 @@ async function renderAdminNewsList(){
 }
 
 function adminPendingNewsRowHTML(n){
-  const bodyPreview = (n.body && n.body[0]) ? n.body[0].slice(0, 140) + (n.body[0].length > 140 ? '…' : '') : '';
+  const paras = (n.body || []).map(p => `<p style="margin:0 0 8px;">${esc(p)}</p>`).join('');
+  const faqHtml = (n.faq || []).map(f => `<li><b>${esc(f.q)}</b> ${esc(f.a)}</li>`).join('');
+  const tblHtml = (n.table || []).map(t => `<li>${esc(t.k)}: ${esc(t.v)}</li>`).join('');
+  const warns = [];
+  if(!n.imageUrl) warns.push('görsel yok');
+  if(!n.tldr) warns.push('TLDR yok');
+  if((n.body || []).length < 4) warns.push('4 paragraftan az');
+  if(!n.conclusion) warns.push('sonuç yok');
   return `
-    <div class="admin-row" style="background:#fff;border-radius:8px;padding:10px;margin-bottom:8px;">
-      <span class="name">${n.title}</span>
-      <span class="meta">${n.cat} · ${n.date || ''}</span>
-      <p style="font-size:12.5px;color:var(--ink-soft);margin:6px 0;">${bodyPreview}</p>
-      <button class="admin-edit" onclick="openAddNews('${n.id}', true)">Önce düzenle</button>
-      <button class="btn btn-dark" style="padding:6px 14px;font-size:13px;" onclick="adminApproveNews('${n.id}')">✓ Onayla ve yayınla</button>
-      <button class="admin-remove" onclick="adminRejectNews('${n.id}')">Reddet</button>
+    <div class="pending-row">
+      <div class="pending-head">
+        ${n.imageUrl ? `<img src="${esc(n.imageUrl)}" alt="" loading="lazy" class="pending-thumb" referrerpolicy="no-referrer" />` : ''}
+        <div style="flex:1;min-width:0;">
+          <div class="name">${esc(n.title)}</div>
+          <div class="meta">${esc(n.cat)} · ${esc(n.date || '')}${n.imageCredit ? ' · görsel: ' + esc(n.imageCredit) : ''}${warns.length ? ' · <span style="color:#B8790F;">⚠ ' + esc(warns.join(', ')) + '</span>' : ''}</div>
+          <p style="font-size:12.5px;color:var(--ink-soft);margin:6px 0 0;">${esc(n.summary || '')}</p>
+        </div>
+      </div>
+      <details class="pending-detail">
+        <summary>Tam metni göster</summary>
+        ${n.tldr ? `<p style="margin:8px 0;"><b>TLDR:</b> ${esc(n.tldr)}</p>` : ''}
+        ${paras}
+        ${tblHtml ? `<ul>${tblHtml}</ul>` : ''}
+        ${faqHtml ? `<ul>${faqHtml}</ul>` : ''}
+        ${n.conclusion ? `<p><b>Sonuç:</b> ${esc(n.conclusion)}</p>` : ''}
+      </details>
+      <div class="pending-actions">
+        <button class="admin-edit" data-id="${esc(n.id)}" onclick="openAddNews(this.dataset.id, true)">Önce düzenle</button>
+        <button class="btn btn-dark" style="padding:6px 14px;font-size:13px;" data-id="${esc(n.id)}" onclick="adminApproveNews(this.dataset.id)">✓ Onayla ve yayınla</button>
+        <button class="admin-remove" data-id="${esc(n.id)}" onclick="adminRejectNews(this.dataset.id)">Reddet</button>
+      </div>
     </div>`;
 }
 
 function renderPendingNewsList(){
+  updateNewsPendingBadge();
   const section = document.getElementById('pendingNewsSection');
   const list = document.getElementById('adminPendingNewsList');
   const countEl = document.getElementById('pendingCount');
@@ -1579,6 +1652,8 @@ function renderPendingNewsList(){
 }
 
 async function adminApproveNews(id){
+  const pn = pendingNews.find(n => n.id === id);
+  if(pn && !confirm('"' + pn.title + '" yayınlansın mı? Onayla = canlı sitede deploy başlar.')) return;
   const ok = await approveNewsShared(id);
   if(!ok){ alert('Onaylanamadı — internet bağlantını kontrol et.'); return; }
   const approved = pendingNews.find(n => n.id === id);

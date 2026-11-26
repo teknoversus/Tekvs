@@ -855,5 +855,9 @@
  "p_garmin_004": {
   "url": "https://res.garmin.com/en/products/010-04307-00/v/cf-lg.jpg",
   "credit": "Garmin"
+ },
+ "p_huawei_2025_huawei_band_10": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/wearables/band10/list/green.png",
+  "credit": "Huawei"
  }
 }

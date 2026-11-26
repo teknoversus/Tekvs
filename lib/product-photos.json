@@ -829,7 +829,7 @@
   "credit": "Garmin"
  },
  "p_new_036": {
-  "url": "https://res.garmin.com/en/products/010-02862-10/v/cf-lg.jpg",
+  "url": "https://res.garmin.com/en/products/010-02985-01/v/cf-lg.jpg",
   "credit": "Garmin"
  },
  "p_new_042": {
@@ -851,5 +851,9 @@
  "p_honor_002": {
   "url": "https://www-file.honor.com/content/dam/honor/common/product-list/wearables/product-series/magicwatch2/global/magicwatch2-list-pc-black-46.png",
   "credit": "HONOR"
+ },
+ "p_garmin_004": {
+  "url": "https://res.garmin.com/en/products/010-04307-00/v/cf-lg.jpg",
+  "credit": "Garmin"
  }
 }

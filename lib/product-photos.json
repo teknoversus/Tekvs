@@ -895,5 +895,13 @@
  "poco_pad_m1": {
   "url": "https://i02.appmifile.com/708_operatorx_operatorx_xm/20/11/2025/df065334baf186b46713095499ea485d.png",
   "credit": "POCO"
+ },
+ "p_huawei_2025_huawei_watch_fit_4": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-fit4/list-purple.png",
+  "credit": "Huawei"
+ },
+ "p_huawei_2025_huawei_watch_gt_7": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-gt7/list-46mm-black.png",
+  "credit": "Huawei"
  }
 }

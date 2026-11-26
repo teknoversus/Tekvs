@@ -1,8 +1,0 @@
-amz_us1|https://us.amazfit.com/products.json?limit=250&page=1
-amz_us2|https://us.amazfit.com/products.json?limit=250&page=2
-amz_us3|https://us.amazfit.com/products.json?limit=250&page=3
-amz_gl1|https://www.amazfit.com/products.json?limit=250&page=1
-amz_tr|https://tr.amazfit.com/products.json?limit=250&page=1
-huawei_tr|https://consumer.huawei.com/tr/wearables/
-garmin_tr|https://www.garmin.com/tr-TR/c/wearables-smartwatches/
-honor_tr|https://www.hihonor.com/tr/wearables/

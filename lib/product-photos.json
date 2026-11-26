@@ -903,5 +903,17 @@
  "p_huawei_2025_huawei_watch_gt_7": {
   "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-gt7/list-46mm-black.png",
   "credit": "Huawei"
+ },
+ "g02": {
+  "url": "https://images.ctfassets.net/w5r1fvmogo3f/3llphQqI8bKEhpprVT5TRq/64d4105c210ac4b1382c8078738bfaaa/arctis_nova_7_wl_gen_2_blog_headers_1.jpg?fit=fill&w=1200&h=630&q=80",
+  "credit": "SteelSeries"
+ },
+ "g05": {
+  "url": "https://assets2.razerzone.com/images/pnx.assets/cfe78783c16e99fd73ae2d1864d7d3b4/razer-blackshark-v3-pro-og-image.webp",
+  "credit": "Razer"
+ },
+ "p_1787255590831": {
+  "url": "https://www.apple.com/newsroom/images/2025/09/introducing-apple-watch-ultra-3/tile/Apple-Watch-Ultra-3-hero-250909-lp.jpg.og.jpg",
+  "credit": "Apple"
  }
 }

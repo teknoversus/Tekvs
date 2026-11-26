@@ -210,7 +210,7 @@ async function main(){
   let lastGeneratedPairs = [];
   generateComparisons({
     products, colorFor: helpers.colorFor, computeScores: helpers.computeScores,
-    categories, neighborCount: 2, rootDir, illustrationFor, productImageFor, prosConsFor: helpers.prosConsFor,
+    categories, neighborCount: 2, rootDir, illustrationFor, productImageFor, productPhotoFor, prosConsFor: helpers.prosConsFor,
     stickyPairs: pairPlan.sticky, registryRedirects: pairPlan.redirects,
     onGenerated: gp => { lastGeneratedPairs = gp; },
   });

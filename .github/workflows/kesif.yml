@@ -1,0 +1,25 @@
+name: kesif (gecici)
+on:
+  push:
+    paths: ['kesif/tetik.txt']
+jobs:
+  kesif:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: node kesif/kesif.js
+      - name: Sonuc dalina yaz
+        if: always()
+        run: |
+          git config user.name "teknoversus-bot"
+          git config user.email "bot@teknoversus.com.tr"
+          git checkout --orphan kesif-sonuc
+          git rm -rf -q --cached . >/dev/null 2>&1 || true
+          git add -f rapor
+          git commit -q -m "kesif sonucu"
+          git push -f origin kesif-sonuc

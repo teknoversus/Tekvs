@@ -767,6 +767,10 @@ add02|h31	canon-eos-r7-vs-canon-eos-r6-mark-ii-b59c43956322.html
 add02|y38	canon-eos-r7-vs-fujifilm-x-t5-df5a03c2fe65.html
 add02|h30	canon-eos-r7-vs-fujifilm-x100vi-35238e416bef.html
 add02|h32	canon-eos-r7-vs-sony-a7-iv-d7da57608f1c.html
+add31|c15	canon-eos-r8-mark-ii-vs-canon-eos-r5-mark-ii-183b6ee8d79b.html
+add31|final02	canon-eos-r8-mark-ii-vs-dji-osmo-pocket-4p-349272b95b5f.html
+add31|trend03	canon-eos-r8-mark-ii-vs-insta360-x4-air-ca3c239dfdd6.html
+add31|trend08	canon-eos-r8-mark-ii-vs-sony-a7r-vi-f923aebcda4d.html
 add13|y37	canon-eos-r8-vs-sony-zv-e10-942cb995c080.html
 add13|s18	canon-eos-r8-vs-sony-zv-e10-ii-c03b42bbef13.html
 retro03|trend11	canon-ixus-285-hs-vs-akaso-360-standart-1faae36943df.html

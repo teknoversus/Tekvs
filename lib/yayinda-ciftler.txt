@@ -3,6 +3,7 @@ n24|y33	accentum-anc-vs-freebuds-pro-3-6eb43c52b040.html
 n24|n33	accentum-anc-vs-g-pro-x-2-lightspeed-7cd167160c25.html
 n24|y29	accentum-anc-vs-studio-buds-fc2278406fe2.html
 tr_acer_aspire_go_16|trend_2026090512	acer-aspire-go-ag16-71p-592y-vs-asus-rog-strix-g16-g615jh-rv052-e49a910045d7.html
+tr_acer_aspire_go_16|tr_huawei_matebook_d16	acer-aspire-go-ag16-71p-592y-vs-huawei-matebook-d16-i5-13420h-766f54072e7f.html
 tr_acer_aspire_go_16|trend_2026090526	acer-aspire-go-ag16-71p-592y-vs-lenovo-loq-15irx10-83je012ltr-b31d826f7aad.html
 trend_2026090504|y16	acer-nitro-16-an16-51-596g-vs-dell-xps-13-9340-63856292f6f6.html
 trend_2026090504|trend_2026090530	acer-nitro-16-an16-51-596g-vs-lenovo-thinkbook-16p-g6-21u00014tx-b5035d08748b.html
@@ -76,6 +77,7 @@ n05|x24	airpods-4-anc-vs-wf-c510-a93008d4b22c.html
 n06|s5	airpods-max-2-vs-airpods-pro-3-a386601d1c05.html
 n06|y31	airpods-max-2-vs-quietcomfort-ultra-earbuds-a384a1609343.html
 n06|y27	airpods-max-2-vs-wf-1000xm5-1a3d826137f1.html
+n06|n29	airpods-max-2-vs-wh-1000xm6-724155186958.html
 h17|n24	airpods-pro-2-nesil-vs-accentum-anc-60dda9ca3fb8.html
 h17|n33	airpods-pro-2-nesil-vs-g-pro-x-2-lightspeed-07ad2551b3e5.html
 h17|n69	airpods-pro-2-nesil-vs-shokz-opendots-one-7a0cddfd6726.html
@@ -376,8 +378,10 @@ amazon_20260924_005|x17	apple-macbook-air-m5-15-3-vs-casper-excalibur-g915-1362-
 amazon_20260924_005|amazon_20260924_latest_011	apple-macbook-air-m5-15-3-vs-dell-alienware-16x-aurora-ac16251-edf0a19c65fc.html
 amazon_20260924_005|trend_2026090564	apple-macbook-air-m5-15-3-vs-game-garaj-slayer-r9m3d-xl-5070-c3-43389a259be6.html
 amazon_20260924_005|amazon_20260924_036	apple-macbook-air-m5-15-3-vs-lenovo-loq-15ahp10-6104fe8cc298.html
+amazon_20260924_005|amazon_20260924_latest_016	apple-macbook-air-m5-15-3-vs-lenovo-yoga-slim-7-83hm005mtrp302-bb6b8e7367aa.html
 amazon_20260924_005|amazon_20260924_019	apple-macbook-air-m5-15-3-vs-msi-prestige-16-ai-c3mg-039tr-d0038d5d3e93.html
 p_1787255489051|y16	apple-macbook-neo-13-vs-dell-xps-13-9340-8ced39565599.html
+p_1787255489051|x37	apple-macbook-neo-13-vs-lenovo-ideapad-slim-3-37c8746c5424.html
 p_1787255489051|trend_2026090530	apple-macbook-neo-13-vs-lenovo-thinkbook-16p-g6-21u00014tx-49b94a042b8a.html
 p_2026090501|trend_2026090564	apple-macbook-pro-14-m5-vs-game-garaj-slayer-r9m3d-xl-5070-c3-1e9658f14445.html
 p_2026090501|trend_2026090508	apple-macbook-pro-14-m5-vs-hp-omen-16-am0044nt-cd8m2ea-7f8ae98b120f.html
@@ -421,6 +425,7 @@ s6|x31	apple-watch-series-11-42mm-vs-samsung-galaxy-watch7-8e796e377b8c.html
 p_apple_2026_apple_watch_series_12|p_garmin_029	apple-watch-series-12-vs-garmin-instinct-3-3b696a7de9c1.html
 p_apple_2026_apple_watch_series_12|p_garmin_032	apple-watch-series-12-vs-garmin-lily-2-f4025486b2e8.html
 p_apple_2026_apple_watch_series_12|p_garmin_050	apple-watch-series-12-vs-garmin-swim-2-c0d382620a6c.html
+p_apple_2026_apple_watch_series_12|p_huawei_2025_huawei_watch_gt_7_pro	apple-watch-series-12-vs-huawei-watch-gt-7-pro-d0c44be1efe4.html
 p_apple_2016_apple_watch_series_2|p_apple_2017_apple_watch_series_3	apple-watch-series-2-vs-apple-watch-series-3-ab78bd7ed4dc.html
 p_apple_2016_apple_watch_series_2|p_apple_2018_apple_watch_series_4	apple-watch-series-2-vs-apple-watch-series-4-4c9b45f2ecfc.html
 p_apple_2016_apple_watch_series_2|p_samsung_2014_samsung_gear_s	apple-watch-series-2-vs-samsung-gear-s-aa9d7e040bb7.html
@@ -1018,6 +1023,8 @@ n03|n32	galaxy-buds-3-fe-vs-cloud-iii-wireless-9a2a86a8fa61.html
 n03|p09	galaxy-buds-3-fe-vs-jbl-tune-beam-2-f381d0db8c18.html
 n03|rz01	galaxy-buds-3-fe-vs-razer-blackshark-v3-x-hyperspeed-b2f8d2c9144a.html
 n03|x22	galaxy-buds-3-fe-vs-soundcore-r50i-nc-bf05f0f040d9.html
+n01|y28	galaxy-buds-4-pro-vs-airpods-4-8ecd38aa8afe.html
+n01|s5	galaxy-buds-4-pro-vs-airpods-pro-3-57b2028c1efc.html
 n01|p24	galaxy-buds-4-pro-vs-anker-soundcore-p40i-b103bfa8a4f9.html
 n01|n70	galaxy-buds-4-pro-vs-soundpeats-capsule3-pro-9e0e13636c7e.html
 n01|n35	galaxy-buds-4-pro-vs-wave-beam-2-fff8d1980c46.html
@@ -1440,6 +1447,7 @@ p_honor_005|p_honor_007	honor-magicwatch-2-42mm-vs-honor-watch-es-e6f573c4743f.h
 p_honor_006|p_honor_007	honor-magicwatch-2-46mm-vs-honor-watch-es-ff32b621f000.html
 p_honor_006|p_honor_008	honor-magicwatch-2-46mm-vs-honor-watch-gs-pro-e05f04f7c769.html
 t32|t54	honor-pad-10-vs-huawei-matepad-11-5-s-papermatte-46417bef5384.html
+t32|t47	honor-pad-10-vs-xiaomi-redmi-pad-2-42ecdc802325.html
 hon_pad20_paper|hon_pad20_pro_paper	honor-pad-20-paperlike-edition-vs-honor-pad-20-pro-paperlike-edition-31aba734fd67.html
 hon_pad20_paper|t33	honor-pad-20-paperlike-edition-vs-honor-pad-v9-da988c275f5c.html
 hon_pad20_paper|huawei-pro122-2025	honor-pad-20-paperlike-edition-vs-huawei-matepad-pro-12-2-2025-da6827ea4961.html
@@ -1464,6 +1472,7 @@ hon_x8a|tcl_11gen2	honor-pad-x8a-vs-tcl-tab-11-gen2-2e7ae2145569.html
 hon_x8c|t36	honor-pad-x8c-vs-samsung-galaxy-tab-a11-dfb9ffd0e518.html
 hon_x8c|tcl_10gen2	honor-pad-x8c-vs-tcl-tab-10-gen-2-0e1d9a6fa736.html
 hon_x8c|tcl_11gen2	honor-pad-x8c-vs-tcl-tab-11-gen2-b98eecd1315c.html
+t49|tr_samsung_tab_a11_plus	honor-pad-x9a-vs-samsung-galaxy-tab-a11-plus-51d5a94a68d9.html
 hon_pad20|hon_pad_x9b_max	honor-pad-x9b-max-vs-honor-pad-20-25c419bd99ba.html
 hon_pad_x9b_max|t50	honor-pad-x9b-max-vs-honor-pad-9-90c1bcbf6fa6.html
 hon_pad_x9b_max|poco_pad_c1	honor-pad-x9b-max-vs-poco-pad-c1-173f5dab3c1b.html
@@ -1874,6 +1883,7 @@ tv20|tvsearch077	iffalcon-65u75a-vs-sunny-sn65qmn252-d755be177b0b.html
 tv20|tvsearch061	iffalcon-65u75a-vs-xiaomi-tv-a-pro-55-2026-947ebda1244a.html
 tvpop017|x34	iffalcon-65u85a-vs-tcl-55c655-d4f3f161c54d.html
 n7|tvbrand029	iffalcon-65u95a-vs-hi-level-hl55quprl-w02s-fa41dde717a9.html
+n7|tv23	iffalcon-65u95a-vs-lg-oled65c64la-8ada4e6360d0.html
 n7|tv31	iffalcon-65u95a-vs-onvo-65vq90f3ua-553edeed41e0.html
 n7|tv41	iffalcon-65u95a-vs-samsung-50u8000f-fc8c06ff59e2.html
 n7|tvbrand019	iffalcon-65u95a-vs-sunny-sn50qmn252-b128d4221279.html
@@ -3307,6 +3317,7 @@ tvpop008|tvpop022	samsung-65s90f-vs-lg-86qned87b6a-30d434ac75c5.html
 tvpop008|tvpop031	samsung-65s90f-vs-philips-65pus8909-d73b9af098e7.html
 tvpop008|tvpop010	samsung-65s90f-vs-tcl-75c7k-c76a04e1882d.html
 tr_samsung_65s90h|tv13	samsung-65s90h-vs-iffalcon-75u95a-18555668788f.html
+tr_samsung_65s90h|tv23	samsung-65s90h-vs-lg-oled65c64la-1a5e78c1283e.html
 tr_samsung_65s90h|tvpop030	samsung-65s90h-vs-philips-55pus9000-61fca4507134.html
 tr_samsung_65s90h|tv6	samsung-65s90h-vs-samsung-55qn70f-8b3edba8f1ca.html
 tr_samsung_65s90h|tv47	samsung-65s90h-vs-tcl-65t61c-5e65f7192a73.html
@@ -3613,6 +3624,8 @@ sam_active5|sam_s7fe	samsung-galaxy-tab-active5-5g-vs-samsung-galaxy-tab-s7-fe-3
 sam_active5pro|t46	samsung-galaxy-tab-active5-pro-5g-vs-apple-ipad-pro-13-m4-a9f0dd629cbf.html
 sam_active5pro|t24	samsung-galaxy-tab-active5-pro-5g-vs-apple-ipad-pro-13-m5-80ef300e531d.html
 sam_active5pro|sam_s12ultra	samsung-galaxy-tab-active5-pro-5g-vs-samsung-galaxy-tab-s12-ultra-8eb45ebdad27.html
+n10|t21	samsung-galaxy-tab-s10-fe-vs-apple-ipad-11-a16-bc5daa121ba3.html
+n11|t44	samsung-galaxy-tab-s10-fe-vs-apple-ipad-air-11-m4-db4a42262ad2.html
 n10|t34	samsung-galaxy-tab-s10-fe-vs-huawei-matepad-11-5-s-2026-949f4262e1de.html
 n11|x30	samsung-galaxy-tab-s10-fe-vs-lenovo-tab-m10-plus-8c6183953d63.html
 n10|sam_a9plus	samsung-galaxy-tab-s10-fe-vs-samsung-galaxy-tab-a9-3321afe2ff51.html
@@ -3815,6 +3828,7 @@ n09|n28	soundcore-liberty-5-pro-vs-openfit-pro-09385ac93980.html
 n09|n40	soundcore-liberty-5-pro-vs-powerbeats-pro-2-f9a18f4d40aa.html
 n09|rz06	soundcore-liberty-5-pro-vs-razer-barracuda-pro-a53a7643ba6c.html
 n09|x24	soundcore-liberty-5-pro-vs-wf-c510-d66c0da2ae90.html
+n07|n52	soundcore-liberty-5-vs-huawei-freebuds-se-3-d3acace2cb5c.html
 n07|p11	soundcore-liberty-5-vs-jbl-endurance-peak-4-a6dbda5f17f8.html
 n07|n53	soundcore-liberty-5-vs-nothing-ear-a-d8b992f96c46.html
 n07|x22	soundcore-liberty-5-vs-soundcore-r50i-nc-ca5bb537a57c.html
@@ -4011,6 +4025,7 @@ n8|tvbrand006	tcl-65c6k-vs-profilo-55pa535esg-a3e4cc5f36eb.html
 n8|tvbrand009	tcl-65c6k-vs-regal-55v01900-e20a126d90ab.html
 n8|tv46	tcl-65c6k-vs-tcl-55p8k-2717dd9deb5b.html
 n8|y59	tcl-65c6k-vs-tcl-65c655-46d59f68545b.html
+n8|tr_tcl_65c7l	tcl-65c6k-vs-tcl-65c7l-ec1e1bea567c.html
 n8|tv4	tcl-65c6k-vs-tcl-65p8l-f92b8bd69a9b.html
 tvpop009|tvpop020	tcl-65c7k-vs-iffalcon-98u95a-e54508f7e8fb.html
 tvpop009|tvsearch058	tcl-65c7k-vs-xiaomi-tv-max-100-2025-9c9376ac3fa6.html
@@ -4054,6 +4069,7 @@ tv10|tv42	tcl-65t8d-vs-tcl-65q6c-32c60d776e6b.html
 tv10|tv47	tcl-65t8d-vs-tcl-65t61c-b9d0c2d52282.html
 tr_tcl_75c6k|tvbrand002	tcl-75c6k-vs-arcelik-a-1065-c-ai-9fc1b147364b.html
 tr_tcl_75c6k|tvbrand003	tcl-75c6k-vs-beko-b55-e-895-a-bd99fdf7d684.html
+tr_tcl_75c6k|tv13	tcl-75c6k-vs-iffalcon-75u95a-88cd7b036449.html
 tr_tcl_75c6k|tv34	tcl-75c6k-vs-tcl-50p7l-cf0edf345420.html
 tr_tcl_75c6k|tv36	tcl-75c6k-vs-tcl-55p8l-6025c94007c8.html
 tvpop010|tvpop022	tcl-75c7k-vs-lg-86qned87b6a-36856f3b28dc.html

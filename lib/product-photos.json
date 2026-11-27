@@ -977,11 +977,51 @@
   "credit": "Canon"
  },
  "s16": {
-  "url": "https://www.sony.co.uk/image/6c5b1b963315cb73b32f88b18f5de2be",
+  "url": "https://www.sony.co.in/image/6c5b1b963315cb73b32f88b18f5de2be?fmt=pjpeg&bgcolor=FFFFFF&wid=1200",
   "credit": "Sony"
  },
  "n59": {
   "url": "https://global.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwc208cb0c/01.JBL_Live_770NC_Product%20Image_Hero_Black.png?sw=1200",
   "credit": "JBL"
+ },
+ "tr_samsung_65s90h": {
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/hu/qe65s90haexxh/gallery/hu-oled-s90h-qe65s90haexxh-553123246",
+  "credit": "Samsung"
+ },
+ "tr_samsung_tab_a11_plus": {
+  "url": "https://images.samsung.com/is/image/samsung/p6pim/za/sm-x230nzaaafa/gallery/za-galaxy-tab-a11-plus-sm-x230-572120-sm-x230nzaaafa-thumb-550210557?$720_576_PNG$",
+  "credit": "Samsung",
+  "trim": true
+ },
+ "tr_acer_aspire_go_16": {
+  "url": "https://images.acer.com/is/image/acer/acer-aspire-go-16-ag16-71p-ag16-71pt-non-fingerprint-non-backlit-wp-copilot-pure-silver-01?wid=1200&fmt=png-alpha",
+  "credit": "Acer",
+  "trim": true
+ },
+ "tr_huawei_matebook_d16": {
+  "url": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/pc/matebook-d-16-2024/cee-nordics/images/kv/huawei-matebook-d-16-2024-kv-2x.webp",
+  "credit": "Huawei",
+  "trim": true
+ },
+ "add10": {
+  "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/Primary_Image-3?wid=1200&fmt=png-alpha",
+  "credit": "Sony",
+  "trim": true
+ },
+ "tr_tcl_75c6k": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tr_tcl_50c6k": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c6k/id/1.jpg",
+  "credit": "TCL"
+ },
+ "tr_tcl_65c7l": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c7l/id/1.png",
+  "credit": "TCL"
+ },
+ "tr_tcl_85p8l": {
+  "url": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/p/p8l/id/65-1.png",
+  "credit": "TCL"
  }
 }

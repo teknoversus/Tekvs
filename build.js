@@ -27,6 +27,7 @@ const { generateBrandVsBrandPages } = require('./lib/generate-brand-vs-brand');
 const { generateClusterArticles } = require('./lib/generate-cluster-articles');
 const { refreshCategoryCards } = require('./lib/refresh-category-cards');
 const { generatePopulerKarsilastirmalar } = require('./lib/generate-populer-karsilastirmalar');
+const { generateTurkiyePopuler } = require('./lib/generate-turkiye-populer');
 const { generateLandingPages } = require('./lib/generate-landing-pages');
 const { generateFiyatPerformansIndeksi } = require('./lib/generate-fiyat-performans-indeksi');
 const { pingIndexNow, extractSitemapUrls } = require('./scripts/indexnow-ping');
@@ -229,6 +230,7 @@ async function main(){
   generateSubcategories({ products, productSlug: helpers.productSlug, computeScores: helpers.computeScores, rootDir });
 
   generatePopulerKarsilastirmalar({ products, computeScores: helpers.computeScores, rootDir, productPhotoFor });
+  generateTurkiyePopuler({ products, computeScores: helpers.computeScores, productSlug: helpers.productSlug, rootDir, productPhotoFor });
 
   refreshCategoryCards({ products, colorFor: helpers.colorFor, fmtDate: helpers.fmtDate, computeScores: helpers.computeScores, ICONS: helpers.ICONS, rootDir, cardSpecEntries: helpers.cardSpecEntries });
 

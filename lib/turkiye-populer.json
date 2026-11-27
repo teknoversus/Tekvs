@@ -1,0 +1,36 @@
+{
+  "_aciklama": "Türkiye'de en çok ilgi gören ürünler. Kaynak: Akakçe kategori sayfalarının varsayılan ürün sıralaması (27 Kasım 2026), renk/hafıza varyantları tek modele indirildi. Aylık elle güncellenir. 'urunler' sırası = popülerlik sırası; adlar katalogdaki ürün adlarıyla birebir aynı olmalı (bulunamayan atlanır). 'ciftler' rakip eşleşmeleri; her biri için karşılaştırma sayfası üretilir.",
+  "tarih": "27 Kasım 2026",
+  "kategoriler": [
+    {
+      "cat": "Telefon",
+      "urunler": ["Apple iPhone 17 Pro Max","iPhone 17","iPhone 17 Pro","iPhone 15","Samsung Galaxy S25 Ultra","Samsung Galaxy S25 FE","iPhone 18 Pro Max","Samsung Galaxy A57 5G","Samsung Galaxy S26 Ultra","Xiaomi 17T Pro"],
+      "ciftler": [["iPhone 17 Pro","Samsung Galaxy S26 Ultra"],["iPhone 17","Samsung Galaxy S25 Ultra"],["iPhone 18 Pro Max","Xiaomi 17T Pro"],["Samsung Galaxy S25 Ultra","Samsung Galaxy S26 Ultra"],["iPhone 15","iPhone 16"],["Samsung Galaxy S25 FE","Samsung Galaxy A57 5G"]]
+    },
+    {
+      "cat": "Televizyon",
+      "urunler": ["iFFALCON 65U95A","LG OLED65C64LA","iFFALCON 75U95A","TCL 75C6K","TCL 65C6K","TCL 50C6K","LG 65QNED87B6A","Samsung 65S90H","TCL 65C7L","TCL 85P8L"],
+      "ciftler": [["iFFALCON 65U95A","TCL 65C6K"],["iFFALCON 65U95A","LG OLED65C64LA"],["iFFALCON 75U95A","TCL 75C6K"],["LG OLED65C64LA","Samsung 65S90H"],["TCL 65C7L","TCL 65C6K"]]
+    },
+    {
+      "cat": "Akıllı Saat",
+      "urunler": ["Huawei Watch GT 7 Pro","Apple Watch Series 12","Huawei Watch Fit 5 Pro","Apple Watch Series 11 (42mm)","Huawei Watch GT 6 Pro","Huawei Watch GT 7","Apple Watch SE 3","Galaxy Watch9","Samsung Galaxy Watch8 Classic","Huawei Watch D2"],
+      "ciftler": [["Apple Watch Series 11 (42mm)","Samsung Galaxy Watch9 44mm"],["Huawei Watch GT 7 Pro","Apple Watch Series 12"],["Huawei Watch GT 6 Pro","Apple Watch SE 3"],["Huawei Watch Fit 5 Pro","Samsung Galaxy Watch8 Classic"]]
+    },
+    {
+      "cat": "Kulaklık",
+      "urunler": ["AirPods Pro 3","AirPods 4","Galaxy Buds 4 Pro","WH-1000XM6","Soundcore Liberty 5","JBL Tune 520BT","Huawei FreeBuds SE 3","AirPods Max 2"],
+      "ciftler": [["AirPods Pro 3","Galaxy Buds 4 Pro"],["WH-1000XM6","AirPods Max 2"],["Soundcore Liberty 5","Huawei FreeBuds SE 3"],["AirPods 4","Galaxy Buds 4 Pro"]]
+    },
+    {
+      "cat": "Tablet",
+      "urunler": ["Apple iPad 11 (A16)","Samsung Galaxy Tab S10 FE","HONOR Pad 10","Samsung Galaxy Tab A11 Plus","Xiaomi Redmi Pad 2","HONOR Pad X9a","Apple iPad Air 11 (M4)"],
+      "ciftler": [["Apple iPad 11 (A16)","Samsung Galaxy Tab S10 FE"],["HONOR Pad 10","Xiaomi Redmi Pad 2"],["Apple iPad Air 11 (M4)","Samsung Galaxy Tab S10 FE+"],["Samsung Galaxy Tab A11 Plus","HONOR Pad X9a"]]
+    },
+    {
+      "cat": "Dizüstü",
+      "urunler": ["Apple MacBook Air M5 15.3","Lenovo Yoga Slim 7 83HM005MTRP302","Lenovo IdeaPad Slim 3","Huawei MateBook D16 (i5-13420H)","Apple MacBook Neo 13\"","Acer Aspire Go AG16-71P-592Y"],
+      "ciftler": [["Apple MacBook Air M5 15.3","Lenovo Yoga Slim 7 83HM005MTRP302"],["Apple MacBook Neo 13\"","Lenovo IdeaPad Slim 3"],["Huawei MateBook D16 (i5-13420H)","Acer Aspire Go AG16-71P-592Y"]]
+    }
+  ]
+}

@@ -1,9 +1,0 @@
-pixel9pro|https://store.google.com/product/pixel_9_pro
-bose-qcu2|https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html
-pixelbudspro2|https://store.google.com/product/pixel_buds_pro_2
-jbl770|https://global.jbl.com/LIVE770NC.html
-freeclip2|https://consumer.huawei.com/uk/headphones/freeclip2/
-tactix8|https://www.garmin.com/en-AU/blog/?p=3257
-canonr1|https://www.canon-europe.com/cameras/eos-r1/
-sonya1ii|https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-1m2
-oppox7u|https://www.oppo.com/en/smartphones/series-find-x/find-x7-ultra/

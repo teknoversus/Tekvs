@@ -1,6 +1,9 @@
-w8se2|https://www.apple.com/newsroom/2022/09/apple-reveals-apple-watch-series-8-and-the-new-apple-watch-se/
-w7|https://www.apple.com/newsroom/2021/09/apple-reveals-apple-watch-series-7-featuring-the-largest-most-advanced-display/
-w6ipadair4|https://www.apple.com/newsroom/2020/09/new-apple-watch-and-ipad-features-enable-wellness-fitness-and-creativity
-ipad9|https://www.apple.com/newsroom/2021/09/apples-most-popular-ipad-delivers-even-more-performance-and-advanced-features/
-ipadpro-m2|https://www.apple.com/newsroom/2022/10/apple-introduces-next-generation-ipad-pro-supercharged-by-the-m2-chip
-ipadpro-m1|https://www.apple.com/newsroom/2021/04/apple-unveils-new-ipad-pro-with-m1-chip-and-stunning-liquid-retina-xdr-display
+pixel9pro|https://store.google.com/product/pixel_9_pro
+bose-qcu2|https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html
+pixelbudspro2|https://store.google.com/product/pixel_buds_pro_2
+jbl770|https://global.jbl.com/LIVE770NC.html
+freeclip2|https://consumer.huawei.com/uk/headphones/freeclip2/
+tactix8|https://www.garmin.com/en-AU/blog/?p=3257
+canonr1|https://www.canon-europe.com/cameras/eos-r1/
+sonya1ii|https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-1m2
+oppox7u|https://www.oppo.com/en/smartphones/series-find-x/find-x7-ultra/

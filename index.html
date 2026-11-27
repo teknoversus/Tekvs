@@ -184,9 +184,10 @@
 .tvh-cmp-go:hover{background:#c2410c;}
 .tvh-cmp-msg{font-size:14px;color:#b91c1c;min-height:20px;}
 .tvh-cmp-f input[list]::-webkit-calendar-picker-indicator{opacity:1;display:block;cursor:pointer;}
-.tvh-cmp-pop{font-size:14px;color:#78716c;}
-.tvh-cmp-pop a{color:#ea580c;font-weight:600;text-decoration:none;}
-.tvh-cmp-pop a:hover{text-decoration:underline;}
+.tvh-cmp-pop{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:#78716c;}
+.tvh-cmp-pop span{margin-right:2px;}
+.tvh-cmp-pop a{display:inline-flex;align-items:center;height:32px;padding:0 13px;border:1px solid var(--line-strong);border-radius:999px;background:#fff;color:var(--ink);font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;}
+.tvh-cmp-pop a:hover{border-color:#ea580c;color:#c2410c;background:#fff7ed;}
 .tvh-cmp-hint{font-size:13px;color:#78716c;}
 /* bölümler */
 .tvh-blk{padding-top:64px;}
@@ -335,7 +336,7 @@
       </div>
       <datalist id="cmpList"></datalist>
       <div class="tvh-cmp-msg" id="cmpMsg" role="status" aria-live="polite"></div>
-      <div class="tvh-cmp-pop">Seçmekle uğraşmak istemezsen: <a href="turkiye-populer.html">Türkiye'de en çok aranan ürünler →</a> &nbsp;·&nbsp; <a href="populer-karsilastirmalar.html">Popüler karşılaştırmalara göz at →</a> &nbsp;·&nbsp; <a href="karsilastirmalar.html">Tüm karşılaştırmalar</a></div>
+      <nav class="tvh-cmp-pop" aria-label="Hazır karşılaştırma listeleri"><span>Hazır listeler:</span><a href="turkiye-populer.html">Türkiye'de en çok arananlar</a><a href="populer-karsilastirmalar.html">Popüler karşılaştırmalar</a><a href="karsilastirmalar.html">Tüm karşılaştırmalar</a></nav>
     </form>
   </section>
 <!-- HOME_KATEGORI_START --><!-- HOME_KATEGORI_END -->

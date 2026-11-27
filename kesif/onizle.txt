@@ -1,0 +1,9 @@
+a0|https://www.apple.com/newsroom/images/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/tile/Apple-iPad-mini-hero-261026-lp.jpg.og.jpg
+a1|https://www.apple.com/newsroom/images/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/tile/Apple-iPad-Air-M4-multitasking-260302-lp.jpg.og.jpg
+a2|https://www.apple.com/newsroom/images/2025/03/apple-introduces-ipad-air-with-powerful-m3-chip-and-new-magic-keyboard/tile/Apple-iPad-Air-hero-250304-lp.jpg.og.jpg
+a3|https://www.apple.com/newsroom/images/2024/05/apple-unveils-the-redesigned-11-inch-and-all-new-13-inch-ipad-air-with-m2/tile/Apple-iPad-Air-hero-240507-lp.jpg.og.jpg
+a4|https://www.apple.com/newsroom/images/2025/09/apple-debuts-apple-watch-series-11-featuring-groundbreaking-health-insights/tile/Apple-Watch-Series-11-hero-250909-lp.jpg.og.jpg
+a5|https://www.apple.com/newsroom/images/2025/09/apple-introduces-apple-watch-se-3/tile/Apple-Watch-SE-3-hero-250909-lp.jpg.og.jpg
+a6|https://www.apple.com/newsroom/images/2024/09/apple-watch-ultra-2-now-available-in-black-titanium/tile/Apple-Watch-Ultra-2-hero-240909-lp.jpg.og.jpg
+a7|https://www.apple.com/newsroom/images/2023/09/apple-introduces-the-advanced-new-apple-watch-series-9/tile/Apple-Watch-S9-hero-230912.jpg.og.jpg
+a8|https://www.apple.com/newsroom/images/2023/09/apple-unveils-apple-watch-ultra-2/tile/Apple-Watch-Ultra-2-hero-230912.jpg.og.jpg

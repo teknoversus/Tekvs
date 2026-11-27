@@ -971,5 +971,17 @@
  "p_samsung_2023_samsung_galaxy_watch6_classic": {
   "url": "https://images.samsung.com/is/image/samsung/p6pim/tr/2307/gallery/tr-galaxy-watch6-classic-r955-sm-r950nzsatur-thumb-537416667?$720_576_PNG$",
   "credit": "Samsung"
+ },
+ "c16": {
+  "url": "https://asia.canon/media/image/2024/07/16/f2f3f08189034a76848544428717bb43_EOS%20R1%20Body%20Front.png",
+  "credit": "Canon"
+ },
+ "s16": {
+  "url": "https://www.sony.co.uk/image/6c5b1b963315cb73b32f88b18f5de2be",
+  "credit": "Sony"
+ },
+ "n59": {
+  "url": "https://global.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwc208cb0c/01.JBL_Live_770NC_Product%20Image_Hero_Black.png?sw=1200",
+  "credit": "JBL"
  }
 }

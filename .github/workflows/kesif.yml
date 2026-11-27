@@ -1,0 +1,41 @@
+name: kesif (gecici)
+on:
+  push:
+    paths: ['kesif/tetik.txt']
+jobs:
+  kesif:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: node kesif/kesif.js
+      - name: Onizleme sayfalari
+        run: |
+          [ -s kesif/onizle.txt ] || exit 0
+          sudo apt-get -qq install -y imagemagick >/dev/null 2>&1 || true
+          mkdir -p img rapor
+          i=0
+          while IFS='|' read -r label url; do
+            [ -z "$url" ] && continue
+            i=$((i+1)); f="img/$(printf '%03d' $i)"
+            if curl -sSL -A "Mozilla/5.0" --max-time 40 -o "$f.src" "$url"; then
+              convert "$f.src[0]" -auto-orient -background white -alpha remove -resize 400x300 -gravity center -extent 400x300 -gravity south -background '#000' -splice 0x24 -fill white -pointsize 17 -annotate +0+3 "$label" "$f.png" 2>/dev/null || echo "CONVERT FAIL $label"
+            else echo "DL FAIL $label"; fi
+          done < kesif/onizle.txt
+          ls img/*.png | split -l 12 - grp_
+          n=0; for g in grp_*; do n=$((n+1)); montage $(cat $g) -tile 4x -geometry +4+4 rapor/sheet-$n.png; done
+          cp kesif/onizle.txt rapor/onizle.txt
+      - name: Sonuc dalina yaz
+        if: always()
+        run: |
+          git config user.name "teknoversus-bot"
+          git config user.email "bot@teknoversus.com.tr"
+          git checkout --orphan kesif-sonuc
+          git rm -rf -q --cached . >/dev/null 2>&1 || true
+          git add -f rapor
+          git commit -q -m "kesif sonucu"
+          git push -f origin kesif-sonuc

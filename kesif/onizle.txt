@@ -1,7 +1,0 @@
-apple-w10|https://www.apple.com/newsroom/images/2024/09/introducing-apple-watch-series-10/tile/Apple-Watch-Series-10-hero-240909-lp.jpg.og.jpg
-apple-ipad-air-m2|https://www.apple.com/newsroom/images/2024/05/apple-unveils-the-redesigned-11-inch-and-all-new-13-inch-ipad-air-with-m2/tile/Apple-iPad-Air-hero-240507-lp.jpg.og.jpg
-apple-ipad-pro-m4|https://www.apple.com/newsroom/images/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/tile/Apple-iPad-Pro-hero-240507.jpg.og.jpg
-apple-ipad-pro-m5|https://www.apple.com/newsroom/images/2025/10/apple-introduces-the-powerful-new-ipad-pro-with-the-m5-chip/tile/Apple-iPad-Pro-hero-251015-lp.jpg.og.jpg
-sam-s25u|https://images.samsung.com/tr/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-share-image.jpg
-sam-wultra2|https://images.samsung.com/is/image/samsung/p6pim/tr/f2607/gallery/tr-galaxy-watch-ultra2-l710-sm-l710nzsatur-thumb-553717533?$720_576_PNG$
-sam-wultra25|https://images.samsung.com/is/image/samsung/p6pim/tr/f2507/gallery/tr-galaxy-watch-ultra-2025-l705-sm-l705fzb1tur-thumb-547647036?$720_576_PNG$

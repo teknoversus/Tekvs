@@ -1,0 +1,12 @@
+ipad1|https://www.apple.com/newsroom/archive/ipad/?page=1
+ipad2|https://www.apple.com/newsroom/archive/ipad/?page=2
+ipad3|https://www.apple.com/newsroom/archive/ipad/?page=3
+ipad4|https://www.apple.com/newsroom/archive/ipad/?page=4
+ipad5|https://www.apple.com/newsroom/archive/ipad/?page=5
+ipad6|https://www.apple.com/newsroom/archive/ipad/?page=6
+watch1|https://www.apple.com/newsroom/archive/apple-watch/?page=1
+watch2|https://www.apple.com/newsroom/archive/apple-watch/?page=2
+watch3|https://www.apple.com/newsroom/archive/apple-watch/?page=3
+watch4|https://www.apple.com/newsroom/archive/apple-watch/?page=4
+watch5|https://www.apple.com/newsroom/archive/apple-watch/?page=5
+watch6|https://www.apple.com/newsroom/archive/apple-watch/?page=6

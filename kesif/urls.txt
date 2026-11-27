@@ -1,8 +1,0 @@
-apple-w10|https://www.apple.com/tr/newsroom/2024/09/introducing-apple-watch-series-10/
-apple-ipad-air-m2|https://www.apple.com/newsroom/2024/05/apple-unveils-the-redesigned-11-inch-and-all-new-13-inch-ipad-air-with-m2
-apple-ipad-pro-m4|https://www.apple.com/newsroom/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro
-apple-ipad-pro-m5|https://www.apple.com/tr/newsroom/2025/10/apple-introduces-the-powerful-new-ipad-pro-with-the-m5-chip
-sam-s25u|https://www.samsung.com/tr/smartphones/galaxy-s/galaxy-s25-ultra-titanium-jetblack-256gb-sm-s938bakdtur/buy
-sam-buds3pro|https://ushl.samsung.com/tr/audio-sound/galaxy-buds/galaxy-buds3-pro-silver-sm-r630nzaatur
-sam-wultra2|https://www.samsung.com/tr/watches/galaxy-watch/galaxy-watch-ultra2-titanium-silver-bluetooth-sm-l710nzsatur/
-sam-wultra25|https://www.samsung.com/tr/watches/galaxy-watch/galaxy-watch-ultra-2025-47mm-titanium-blue-lte-sm-l705fzb1tur/

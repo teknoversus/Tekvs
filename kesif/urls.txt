@@ -1,0 +1,16 @@
+canon-r1|https://www.canon-europe.com/cameras/eos-r1/specifications/
+canon-r1b|https://www.canon.co.uk/press-centre/press-releases/2024/07/canon-launches-flagship-eos-r1-and-advanced-eos-r5-mark-ii-mirrorless-cameras/
+sony-a1ii|https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-1m2/specifications
+sony-a1iib|https://sony.mediaroom.com/2024-11-19-Sony-Electronics-Announces-Second-Generation-Flagship-Alpha-1-II
+jbl-770|https://support.jbl.com/id/en/headphones/headphones-over-ear/LIVE770NC.html
+jbl-770b|https://kh.jbl.com/over-ear-headphones/LIVE770NC.html
+pixel9pro|https://store.google.com/gb/product/pixel_9_pro
+oppo-x7u|https://www.oppo.com/tr/smartphones/series-find-x/find-x7-ultra/
+oppo-x7ub|https://www.oppo.com/global/smartphones/series-find-x/find-x7-ultra/
+s-w6c|https://www.samsung.com/tr/business/watches/galaxy-watch/galaxy-watch6-classic-43mm-silver-bluetooth-sm-r950nzsatur
+s-w9|https://www.samsung.com/tr/watches/galaxy-watch/galaxy-watch9-40mm-cream-bluetooth-sm-l340nzeatur/
+s-wfe|https://www.samsung.com/tr/watches/galaxy-watch/galaxy-watch-fe-40mm-pink-gold-bluetooth-sm-r861nidatur
+s-w6|https://www.samsung.com/tr/watches/galaxy-watch/galaxy-watch6-44mm-graphite-bluetooth-sm-r940nzkatur
+s-w5pro|https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch5-pro-45mm-black-titanium-bluetooth-sm-r920nzkaeua/
+s-fit3|https://www.samsung.com/uk/watches/galaxy-fit/galaxy-fit3-silver-sm-r390nzsaeua/
+s-tabs9|https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s9-wi-fi-graphite-128gb-sm-x710nzaaeub/

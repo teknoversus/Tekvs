@@ -1,0 +1,40 @@
+name: Katalog dökümü (geçici)
+on:
+  push:
+    branches: [katalog-dokum-is]
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Ürünleri çek
+        run: |
+          K=sb_publishable_z74ZnvDgMWR7JzQDezgdqg_G_eh3e5B
+          U=https://qsetmleywkhjcntajphx.supabase.co/rest/v1/products
+          mkdir out
+          for off in 0 1000 2000 3000 4000 5000; do
+            curl -sf "$U?deleted=eq.false&select=*&order=id&limit=1000&offset=$off" -H "apikey: $K" -H "Authorization: Bearer $K" > out/p_$off.json
+          done
+          python3 - <<'P'
+          import json,glob,csv,collections
+          rows=[]
+          for f in sorted(glob.glob('out/p_*.json')): rows+=json.load(open(f))
+          json.dump(rows,open('out/urunler.json','w'),ensure_ascii=False,indent=1)
+          by=collections.defaultdict(list)
+          for r in rows: by[r.get('cat') or '?'].append(r)
+          for cat,rs in by.items():
+            keys=sorted({k for r in rs for k in (r.get('specs') or {})})
+            with open(f'out/{cat}.csv','w',newline='',encoding='utf-8-sig') as fh:
+              w=csv.writer(fh); w.writerow(['id','name','cat','added_at','upcoming','link']+keys)
+              for r in sorted(rs,key=lambda x:x['name']):
+                s=r.get('specs') or {}; w.writerow([r['id'],r['name'],r['cat'],r.get('added_at'),r.get('upcoming'),r.get('link')]+[s.get(k,'') for k in keys])
+          print(len(rows),{k:len(v) for k,v in by.items()})
+          P
+          rm out/p_*.json
+      - name: Sonucu yaz
+        run: |
+          cd out && git init -q && git checkout -q -b katalog-dokum
+          git config user.name ci && git config user.email ci@example.com
+          git add -A && git commit -qm "katalog dökümü $(date -u +%F)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" katalog-dokum

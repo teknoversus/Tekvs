@@ -1032,7 +1032,7 @@ function processCsvRows(rows, fields){
     // YANLIŞ ANAHTAR ALTINDA gelir ve skor hesaplaması bu ürünü görmezden
     // gelip bozuk sonuç üretir — daha önce tam olarak bu yüzden tüm skorlar
     // bozulmuştu. O yüzden burada sıkı kontrol var.
-    const fiyatBenzeriSutunlar = specCols.filter(k => /fiyat|price|\$/i.test(k) && k !== 'Fiyat (₺)');
+    const fiyatBenzeriSutunlar = specCols.filter(k => /fiyat|price|\$/i.test(k) && k !== 'Fiyat (₺)' && k !== 'Çin Fiyatı'); // 'Çin Fiyatı' gerçek bir özellik sütunu (dışa aktarılan dosyada gelir)
     if(fiyatBenzeriSutunlar.length){
       hatalar.push(`Satır ${satirNo} (${name}): "${fiyatBenzeriSutunlar[0]}" adlı bir sütun var — fiyat sütununun adı tam olarak "Fiyat (₺)" olmalı. Sütun başlığını değiştirmiş olabilirsin, indirdiğin dosyadaki orijinal başlığı geri koy.`);
       return;
